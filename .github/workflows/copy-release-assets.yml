@@ -1,0 +1,70 @@
+name: Copy release assets to repo
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Create destination directory
+        run: mkdir -p kurikulum
+
+      - name: Download release assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          assets=(
+            "508249626:Antropologi_BG_KLS_XII.pdf"
+            "508249725:Antropologi_BS_KLS_XII.pdf"
+            "508249800:Biologi_BG_KLS_XII.pdf"
+            "508249957:Biologi_BS_KLS_XII_Rev.pdf"
+            "508250591:Ekonomi_BG_KLS_XII.pdf"
+            "508250650:Ekonomi_BS_KLS_XII.pdf"
+            "508250691:Fisika_BG_KLS_XII.pdf"
+            "508250723:Fisika_BS_KLS_XII.pdf"
+            "508250828:Geografi_BG_KLS_XII.pdf"
+            "508250900:Geografi_BS_KLS_XII.pdf"
+            "508251071:Indonesia_BG_TL_KLS_XII_Rev.pdf"
+            "508251116:Indonesia_BS_TL_KLS_XII_Rev.pdf"
+            "508251168:Informatika_BG_KLS_XII.pdf"
+            "508251220:Informatika_BS_KLS_XII.pdf"
+            "508251634:Kimia_BG_KLS_XII.pdf"
+            "508251671:Kimia_BS_KLS_XII.pdf"
+            "508251745:Matematika_BG_KLS_XII_Rev.pdf"
+            "508251758:Matematika_BG_XII_TL_Rev.pdf"
+            "508251796:Matematika_BS_KLS_XII_Rev.pdf"
+            "508251818:Pendidikan-Pancasila-BG-KLS-XII.pdf"
+            "508251847:Pendidikan-Pancasila-BS-KLS-XII.pdf"
+            "508251928:Sejarah_BG_KLS_XII.pdf"
+            "508251971:Sejarah_BS_KLS_XII.pdf"
+            "508252133:Sosiologi_BG_KLS_XII.pdf"
+            "508252208:Sosiologi_BS_KLS_XII.pdf"
+          )
+
+          for entry in "${assets[@]}"; do
+            id="${entry%%:*}"
+            name="${entry#*:}"
+            echo "Downloading $name (asset id: $id)"
+            curl -fL -H "Accept: application/octet-stream" -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/${{ github.repository }}/releases/assets/$id" -o "kurikulum/$name"
+          done
+
+      - name: Commit and push files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add kurikulum || true
+          if git commit -m "Add release assets into kurikulum/ (from release V1.0)"; then
+            git push origin HEAD
+          else
+            echo "No changes to commit"
+          fi
