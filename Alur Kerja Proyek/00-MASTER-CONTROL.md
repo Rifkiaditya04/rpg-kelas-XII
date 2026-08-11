@@ -17,6 +17,9 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Phase 3 GDD v1: tersedia di `phase-3/gdd-v1.md`
 - **World 1 — Career Mission slice design: selesai untuk prototype**
 - **World 1 — Career Mission playable slice: tersedia di `prototype/bahasa-indonesia/career-mission.html`**
+- **World 1 — deterministic/source QA: selesai**
+- **World 1 — live browser playtest: belum terverifikasi**
+- QA report: `phase-3/world-1-qa-report.md`
 - Workflow verification protocol: aktif dan wajib dipakai
 
 ## 1. Tujuan utama
@@ -108,14 +111,22 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Mission map: `phase-3/world-1-mission-map.json`.
 - Slice design: `phase-3/world-1-career-mission.md`.
 - Playable slice: `prototype/bahasa-indonesia/career-mission.html`.
-- The slice consumes the approved JSON dataset and selects questions by mission data; presentation code does not duplicate question text.
-- Runtime browser playtest could not be executed from the current tool environment because direct external network access is unavailable. Source-level verification and repository re-fetch were completed; live browser execution remains an explicit QA task before declaring the slice fully playtested.
+- The slice now consumes the approved JSON dataset and the mission map; presentation code does not duplicate mission question IDs.
+- Runtime reads mission reward configuration for per-correct and completion XP.
+- Deterministic/source QA passed; defects found during QA were fixed.
+- Live browser playtest remains unverified because the current tool environment has no direct browser runtime and external network access is unavailable. Do not claim live browser playtest passed until it is executed in a real browser/hosted environment.
+- QA report: `phase-3/world-1-qa-report.md`.
 
-## 12. Aturan komunikasi kerja
+## 12. QA findings resolved in World 1
+- Earlier mission-map bypass was fixed: question selection now comes from `mission.nodes[].question_ids`.
+- Earlier completion-XP mismatch was fixed: final XP now includes `mission.rewards.mission_completion_xp`.
+- These defects are considered resolved; do not treat them as open implementation issues.
+
+## 13. Aturan komunikasi kerja
 Partner/technical lead menentukan urutan kerja dan keputusan teknis default. Pengguna hanya dimintai keputusan ketika benar-benar membutuhkan preferensi pribadi, akses yang hanya dimiliki pengguna, atau keputusan yang berisiko mengubah tujuan proyek.
 
-## 13. Aturan pembaruan Master Control
+## 14. Aturan pembaruan Master Control
 Setiap perubahan keputusan, status fase, quality gate, artefak penting, atau prosedur wajib memperbarui file ini setelah perubahan diverifikasi dari repo. Master Control terbaru menjadi aturan kerja terbaru kecuali sengaja direvisi melalui keputusan proyek yang terdokumentasi.
 
-## 14. Pengingat
+## 15. Pengingat
 > **Kita sedang membangun alat belajar yang terasa seperti game, bukan game yang kebetulan berisi soal.**
