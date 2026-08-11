@@ -105,38 +105,43 @@ Jangan mencampurkan ketiganya menjadi satu klaim.
 ### 7.6 Tidak percaya state lama
 Artefak, status fase, angka progres, commit, source page, dan hasil validasi lama harus dianggap **stale** sampai diverifikasi ulang dari repo/proyek saat sesi berlangsung.
 
-## 8. Status saat ini
+## 8. Status saat ini — diperbarui setelah quality gate
 - Phase 0 — Concept & Architecture: selesai
-- Phase 1 — Content Audit: selesai pada level struktural/pedagogis; provenance mendalam tetap harus dijaga pada produksi
-- Phase 2 — Knowledge Base: aktif
+- Phase 1 — Content Audit: selesai pada level struktural/pedagogis; provenance produksi tetap wajib dijaga
+- Phase 2 — Knowledge Base: **quality gate selesai untuk seed prototype**
 - Exam Blueprint v1: selesai
-- Golden Dataset v1: validation candidate
-- Question Renderer: prototype selesai; belum dinyatakan production-ready
-- Playable Micro-Prototype: tersedia di `prototype/bahasa-indonesia/index.html`; belum lulus quality gate
-- Phase 3 — Game Design Document: belum dimulai
-- Workflow verification protocol: **aktif dan wajib dipakai mulai sesi ini**
+- Golden Dataset v1: **approved seed**
+- Question Schema v1.1: selesai dan selaras dengan renderer
+- Question Renderer: **data-driven dan diverifikasi dari source code**
+- Playable Micro-Prototype: **quality gate lulus untuk seed saat ini**
+- Browser Quality Gate: tersedia di `prototype/bahasa-indonesia/quality-gate.html`
+- Phase 3 — Game Design Document: **berikutnya / siap dimulai**
+- Workflow verification protocol: **aktif dan wajib dipakai**
 
-## 9. Quality gate sebelum Phase 3
-Micro-prototype harus diperiksa untuk:
-- alur permainan
-- kejelasan feedback
-- scoring
-- responsif HP/laptop
-- kualitas soal
-- provenance
-- kesesuaian mekanik dengan kompetensi
-- renderer bersifat data-driven, bukan hard-coded per ID soal
+## 9. Quality gate yang sudah dilalui sebelum Phase 3
+- Provenance student-book: terisi untuk seluruh seed
+- Provenance teacher-guide: terisi untuk seluruh seed
+- Answer shape: tervalidasi
+- Unique question IDs: tervalidasi oleh renderer/quality gate
+- Supported interaction types: tervalidasi
+- Renderer dispatch: berdasarkan `question_type`, bukan ID soal
+- Gameplay flow: soal → jawaban → feedback → XP → hasil
+- Source cross-validation: Buku Siswa ↔ Buku Guru dilakukan pada seed
 
-Golden Dataset belum boleh dimassalkan sampai quality gate terpenuhi.
+## 10. Batasan setelah quality gate
+- Golden Dataset v1 disetujui sebagai **seed**, bukan sebagai bank soal produksi massal.
+- Mass generation tetap memerlukan QA batch dan provenance.
+- Creative/open-ended assessment belum menjadi bagian renderer saat ini; rubric renderer akan dirancang bila dibutuhkan pada fase konten/gameplay.
+- Visual final, map, progression, karakter, mission system, dan RPG layer masuk Phase 3, bukan diperluas di micro-prototype.
 
-## 10. Aturan komunikasi kerja
+## 11. Aturan komunikasi kerja
 Partner/technical lead menentukan urutan kerja dan keputusan teknis default. Pengguna hanya perlu dimintai keputusan ketika benar-benar membutuhkan preferensi pribadi, akses yang hanya dimiliki pengguna, atau keputusan yang berisiko mengubah tujuan proyek.
 
-## 11. Aturan pembaruan Master Control
+## 12. Aturan pembaruan Master Control
 - Setiap perjalanan kerja yang menghasilkan perubahan keputusan, status fase, quality gate, artefak penting, atau prosedur wajib memperbarui file ini.
 - Pembaruan harus dilakukan **setelah fakta perubahan diverifikasi dari repo**, bukan berdasarkan asumsi.
 - Catat perubahan penting secara ringkas agar dokumen tetap menjadi sumber kontrol, bukan jurnal panjang.
 - Jika ada konflik antara dokumen lama dan Master Control terbaru, Master Control menjadi aturan kerja terbaru kecuali sengaja direvisi melalui keputusan proyek yang terdokumentasi.
 
-## 12. Satu kalimat pengingat
+## 13. Satu kalimat pengingat
 > **Kita sedang membangun alat belajar yang terasa seperti game, bukan game yang kebetulan berisi soal.**
