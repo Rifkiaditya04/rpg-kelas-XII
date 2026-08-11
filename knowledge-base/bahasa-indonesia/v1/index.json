@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "project": "KELAS 12 — THE FINAL MISSION",
+  "subject": "Bahasa Indonesia Tingkat Lanjut",
+  "grade": 12,
+  "source": {
+    "student_book": "texts/Indonesia_BS_TL_KLS_XII_Rev.md",
+    "teacher_guide": "texts/Indonesia_BG_TL_KLS_XII_Rev.md",
+    "edition": "Edisi Revisi 2025",
+    "student_book_isbn": "978-634-00-2429-6"
+  },
+  "status": "v1_content_audit",
+  "chapters": [
+    {"id":"BI12-C01","title":"Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup yang Mengesankan","pages":"1-48","world":"Career Mission"},
+    {"id":"BI12-C02","title":"Layar Kecil, Pikiran Besar: Literasi dari Film Pendek","pages":"49-117","world":"Film Detective"},
+    {"id":"BI12-C03","title":"Menelusuri Realitas Sosial melalui Drama Indonesia dan Dunia","pages":"119-170","world":"Drama Stage"},
+    {"id":"BI12-C04","title":"Mengeksplorasi Khazanah Budaya Nusantara melalui Feature Berbasis Digital","pages":"171-224","world":"Nusantara Explorer"}
+  ],
+  "design_principles": [
+    "Materi akademik harus bersumber dari buku siswa dan divalidasi dengan panduan guru bila diperlukan.",
+    "Jangan membuat klaim atau soal yang tidak dapat ditelusuri ke sumber.",
+    "Uji Kompetensi dan aktivitas buku digunakan sebagai blueprint, bukan disalin mentah menjadi bank soal.",
+    "Setiap item bank soal harus menyimpan chapter_id, topic_id, source_page, skill, difficulty, explanation, and provenance.",
+    "Game harus melatih pemahaman, penerapan, analisis, evaluasi, dan produksi karya sesuai karakter materi.",
+    "Learning, Training, dan Exam Simulation dipisahkan agar game tetap berfungsi sebagai alat persiapan ujian."
+  ],
+  "next_stage": "question_blueprint_and_game_design"
+}
