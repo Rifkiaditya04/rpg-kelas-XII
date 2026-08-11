@@ -20,8 +20,9 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **World 1 — deterministic/source QA: selesai**
 - **World 1 — live browser playtest: belum terverifikasi**
 - QA report: `phase-3/world-1-qa-report.md`
-- **GitHub Pages deployment workflow: ditambahkan; deployment run/URL masih perlu diverifikasi di GitHub Actions oleh hosting**
-- **GitHub Pages launcher: tersedia di root `index.html`; live rendering belum terverifikasi sampai Pages deployment selesai**
+- **GitHub Pages workflow: dikoreksi agar memakai Pages yang sudah diaktifkan; saat ini Pages belum dapat diaktifkan otomatis oleh GitHub Actions token**
+- **GitHub Pages launcher: tersedia di root `index.html`; live rendering belum terverifikasi**
+- **Manual prerequisite: pemilik repo perlu mengaktifkan GitHub Pages sekali di Settings → Pages → Source: GitHub Actions. Setelah itu workflow dapat melakukan deployment otomatis.**
 - Workflow verification protocol: aktif dan wajib dipakai
 
 ## 1. Tujuan utama
@@ -128,8 +129,11 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Deployment workflow: `.github/workflows/pages.yml`.
 - Root launcher: `/index.html`.
 - Intended hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`.
-- The intended hosted URL is **not confirmed live until the GitHub Pages Actions deployment completes successfully**.
+- The workflow now relies on the repository's existing GitHub Pages configuration; it no longer asks the Actions token to create/enable the Pages site.
+- Verified blocker: the Actions token has `Pages: write` but GitHub rejects automatic site creation with `Resource not accessible by integration` when no Pages site exists.
+- Therefore one manual repository-owner action is required: open repository Settings → Pages → Build and deployment → Source → GitHub Actions, then save. This creates/enables the Pages site; the existing workflow will then deploy automatically on the next run.
 - Do not use GitHub `blob/main/...` URLs as the game runtime; those are source-code views.
+- After manual activation, verify the workflow run reaches Setup Pages → Upload artifact → Deploy to GitHub Pages successfully before claiming the hosted launcher is live.
 - After deployment, the user can open the hosted launcher and perform the live click/tap playtest.
 - If the hosted launcher loads but a game screen cannot fetch JSON, treat it as a deployment/path defect and investigate before expanding scope.
 
