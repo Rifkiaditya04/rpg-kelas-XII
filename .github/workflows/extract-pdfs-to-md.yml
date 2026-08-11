@@ -1,0 +1,134 @@
+name: Extract PDFs to Markdown
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag to pull assets from (e.g. V1.0)'
+        required: false
+        default: 'V1.0'
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Install tools
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y poppler-utils jq
+
+      - name: Prepare directories
+        run: |
+          mkdir -p /tmp/pdf_assets
+          mkdir -p texts
+
+      - name: Download release assets list
+        env:
+          TAG: ${{ inputs.release_tag }}
+          REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Fetching release $TAG assets for $REPO"
+          api="https://api.github.com/repos/$REPO/releases/tags/$TAG"
+          resp=$(curl -sSL -H "Authorization: token $GITHUB_TOKEN" "$api")
+          # If tag not found, try latest release
+          if echo "$resp" | jq -e '.message' >/dev/null 2>&1; then
+            echo "Tag $TAG not found; fetching latest release instead"
+            api="https://api.github.com/repos/$REPO/releases/latest"
+            resp=$(curl -sSL -H "Authorization: token $GITHUB_TOKEN" "$api")
+          fi
+          echo "$resp" | jq -r '.assets[] | "\(.id) \(.name) \(.size)"' > /tmp/release_assets.txt || true
+          echo "Assets discovered:"
+          cat /tmp/release_assets.txt || true
+
+      - name: Download assets and extract text
+        env:
+          REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          threshold_bytes=$((100*1024*1024))   # max commitable generated .md size
+          rm -f /tmp/extract_skipped.txt
+          touch /tmp/extract_skipped.txt
+
+          if [ -s /tmp/release_assets.txt ]; then
+            while read -r aid name size; do
+              echo "Processing release asset: $name (asset id: $aid, size: ${size:-unknown})"
+              out="/tmp/pdf_assets/$name"
+              if curl -fL -H "Accept: application/octet-stream" -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/$REPO/releases/assets/$aid" -o "$out"; then
+                txtname="texts/${name%.*}.md"
+                echo "Extracting to $txtname"
+                pdftotext -layout "$out" "$txtname" || ( echo "pdftotext failed for $name" && echo "$name (extract-failed)" >> /tmp/extract_skipped.txt && continue )
+                # normalize to utf-8 (pdftotext outputs utf-8 usually)
+                # check size of generated file
+                gen_size=$(stat -c%s "$txtname" || echo 0)
+                if [ "$gen_size" -gt "$threshold_bytes" ]; then
+                  echo "Generated $txtname is too large ($gen_size bytes); skipping commit"
+                  rm -f "$txtname"
+                  echo "$name (generated-md-too-large $gen_size)" >> /tmp/extract_skipped.txt
+                else
+                  echo "Extracted $txtname size=$gen_size"
+                fi
+                rm -f "$out"
+              else
+                echo "Download failed for $name"
+                echo "$name (download-failed)" >> /tmp/extract_skipped.txt
+              fi
+            done < /tmp/release_assets.txt
+          else
+            echo "No release assets found to download."
+          fi
+
+          # Also extract text from PDFs already checked-out in the repo (root and kurikulum/)
+          echo "Extracting from PDFs already present in repository..."
+          find . -type f -name '*.pdf' -not -path "./.git/*" -print0 | while IFS= read -r -d '' pdf; do
+            # skip PDFs already processed from release by name conflict (we write based on basename)
+            base=$(basename "$pdf")
+            outmd="texts/${base%.*}.md"
+            if [ -f "$outmd" ]; then
+              echo "$outmd already exists; skipping extraction from repo copy"
+              continue
+            fi
+            echo "Extracting repo PDF $pdf to $outmd"
+            pdftotext -layout "$pdf" "$outmd" || ( echo "pdftotext failed for $pdf" && echo "$pdf (repo-extract-failed)" >> /tmp/extract_skipped.txt && continue )
+            gen_size=$(stat -c%s "$outmd" || echo 0)
+            if [ "$gen_size" -gt "$threshold_bytes" ]; then
+              echo "Generated $outmd is too large ($gen_size bytes); skipping commit"
+              rm -f "$outmd"
+              echo "$pdf (generated-md-too-large $gen_size)" >> /tmp/extract_skipped.txt
+            else
+              echo "Extracted $outmd size=$gen_size"
+            fi
+          done
+
+          # write SKIPPED list into repository folder
+          if [ -s /tmp/extract_skipped.txt ]; then
+            mkdir -p texts
+            cat /tmp/extract_skipped.txt > texts/SKIPPED_TEXTS.txt
+          else
+            echo "No skipped items" > texts/SKIPPED_TEXTS.txt
+          fi
+          echo "Extraction step complete. Summary:"
+          ls -lh texts || true
+          echo "Skipped list:"
+          cat texts/SKIPPED_TEXTS.txt || true
+
+      - name: Commit and push extracted Markdown
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add texts || true
+          if git commit -m "Add extracted text (.md) from release PDFs (automated)"; then
+            git push origin HEAD
+            echo "Pushed extracted files."
+          else
+            echo "No changes to commit"
+          fi
