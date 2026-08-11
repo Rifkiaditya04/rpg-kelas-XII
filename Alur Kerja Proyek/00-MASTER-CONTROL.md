@@ -20,6 +20,8 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **World 1 — deterministic/source QA: selesai**
 - **World 1 — live browser playtest: belum terverifikasi**
 - QA report: `phase-3/world-1-qa-report.md`
+- **GitHub Pages deployment workflow: ditambahkan; deployment run/URL masih perlu diverifikasi di GitHub Actions oleh hosting**
+- **GitHub Pages launcher: tersedia di root `index.html`; live rendering belum terverifikasi sampai Pages deployment selesai**
 - Workflow verification protocol: aktif dan wajib dipakai
 
 ## 1. Tujuan utama
@@ -122,11 +124,20 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Earlier completion-XP mismatch was fixed: final XP now includes `mission.rewards.mission_completion_xp`.
 - These defects are considered resolved; do not treat them as open implementation issues.
 
-## 13. Aturan komunikasi kerja
+## 13. GitHub Pages — browser playtest path
+- Deployment workflow: `.github/workflows/pages.yml`.
+- Root launcher: `/index.html`.
+- Intended hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`.
+- The intended hosted URL is **not confirmed live until the GitHub Pages Actions deployment completes successfully**.
+- Do not use GitHub `blob/main/...` URLs as the game runtime; those are source-code views.
+- After deployment, the user can open the hosted launcher and perform the live click/tap playtest.
+- If the hosted launcher loads but a game screen cannot fetch JSON, treat it as a deployment/path defect and investigate before expanding scope.
+
+## 14. Aturan komunikasi kerja
 Partner/technical lead menentukan urutan kerja dan keputusan teknis default. Pengguna hanya dimintai keputusan ketika benar-benar membutuhkan preferensi pribadi, akses yang hanya dimiliki pengguna, atau keputusan yang berisiko mengubah tujuan proyek.
 
-## 14. Aturan pembaruan Master Control
+## 15. Aturan pembaruan Master Control
 Setiap perubahan keputusan, status fase, quality gate, artefak penting, atau prosedur wajib memperbarui file ini setelah perubahan diverifikasi dari repo. Master Control terbaru menjadi aturan kerja terbaru kecuali sengaja direvisi melalui keputusan proyek yang terdokumentasi.
 
-## 15. Pengingat
+## 16. Pengingat
 > **Kita sedang membangun alat belajar yang terasa seperti game, bukan game yang kebetulan berisi soal.**
