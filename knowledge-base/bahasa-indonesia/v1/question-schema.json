@@ -1,34 +1,7 @@
 {
-  "schema_version": "1.0",
-  "purpose": "Question bank for learning, training, and exam simulation",
-  "required_fields": {
-    "id": "stable unique ID",
-    "chapter_id": "BI12-Cxx",
-    "topic_id": "stable topic ID",
-    "skill": "understand|identify|apply|analyze|evaluate|create",
-    "difficulty": "1-5",
-    "question_type": "mcq|true_false|matching|ordering|short_answer|case_analysis",
-    "question": "question text",
-    "options": "array when applicable",
-    "answer": "canonical answer",
-    "explanation": "why the answer is correct and why relevant alternatives are wrong when useful",
-    "source": {
-      "document": "student_book|teacher_guide|both",
-      "page": "page number or page range",
-      "section": "chapter/subchapter/activity"
-    },
-    "provenance": "short statement explaining how the item was derived from the source",
-    "mode": "learning|training|exam",
-    "game_mechanic": "mechanic identifier",
-    "tags": "array of searchable tags"
-  },
-  "quality_rules": [
-    "Never invent source facts.",
-    "Do not copy textbook exercises verbatim; use them as competency blueprints unless a direct quotation is necessary and permitted.",
-    "Every item must be traceable to a source section/page.",
-    "The answer must be unambiguous from the supplied source/context.",
-    "Explanation must teach the underlying concept, not merely state the answer.",
-    "Difficulty must reflect cognitive demand, not merely wording length.",
-    "Exam-mode items should avoid unnecessary game hints."
-  ]
+  "schema_version":"1.1",
+  "purpose":"Question bank for learning, training, and exam simulation",
+  "required_fields":{"id":"stable unique ID","chapter_id":"BI12-Cxx","topic_id":"stable topic ID","skill":"understand|identify|apply|analyze|evaluate|create","cognitive_level":"remember|understand|apply|analyze|evaluate|create","difficulty":"easy|medium|hard or numeric 1-5","question_type":"mcq|multi_select|true_false|matching|ordering|evidence_matching|dialogue_analysis|short_answer|case_analysis|scenario_task","question":"question text","options":"array when applicable","answer":"canonical answer or answer set","explanation":"why the answer is correct and why relevant alternatives are wrong when useful","source":{"student_book":{"pages":"exact page/range","section":"chapter/subchapter/activity"},"teacher_guide":{"pages":"exact page/range","section":"indicator/guidance when used for validation"}},"provenance":"short statement explaining how the item was derived from the source","mode":"learning|training|exam","game_mechanic":"mechanic identifier","tags":"array of searchable tags"},
+  "quality_rules":["Never invent source facts.","Do not copy textbook exercises verbatim; use them as competency blueprints unless a direct quotation is necessary and permitted.","Every item must be traceable to a source section/page.","The answer must be unambiguous from the supplied source/context.","Explanation must teach the underlying concept, not merely state the answer.","Difficulty must reflect cognitive demand, not merely wording length.","Exam-mode items should avoid unnecessary game hints.","Renderer behavior must be selected from question_type data, never from a question ID.","Source provenance should be cross-validated between student book and teacher guide when the teacher guide contains a relevant indicator or pedagogical validation."],
+  "renderer_contract":{"input":"golden-dataset-v1.json or compatible question-bank JSON","dispatch_key":"question_type","unsupported_type_behavior":"fail visibly and do not silently fall back to another interaction type","answer_normalization":"string for single-answer; array for multi-select/matching where applicable"}
 }
