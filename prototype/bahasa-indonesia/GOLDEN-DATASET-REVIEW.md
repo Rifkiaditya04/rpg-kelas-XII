@@ -1,23 +1,30 @@
 # Golden Dataset v1 — Review Gate
 
 ## Status
-**Validation candidate — not yet production-approved.**
+**Approved seed — quality gate passed for the current micro-prototype.**
 
-## Review completed
+## Verified scope
 - 10 seed items cover all four Bahasa Indonesia worlds.
-- Multiple interaction types are represented.
-- Each item has an ID, chapter, topic, skill, cognitive level, difficulty, answer, explanation, source metadata, and game mechanic in the source dataset.
-- The browser renderer can present the current seed set, score answers, show explanations, and finish with an accuracy summary.
+- Interaction types are represented through the dataset `question_type` field.
+- Each item contains the required academic metadata and provenance.
+- Student-book page ranges and sections were verified against the current source table of contents/chapter structure.
+- Teacher-guide references were cross-validated against chapter indicators and learning guidance.
+- Single-answer items use scalar answers; the multi-select item uses an answer array.
+- The renderer dispatches by `question_type` and contains no question-ID-specific branch.
+- The browser quality-gate page checks required fields, unique IDs, supported types, provenance shape, and answer shape before gameplay starts.
+- The prototype presents the seed set, scores answers, gives explanations, and produces an accuracy summary.
 
-## Issues intentionally kept open
-1. Exact page/section provenance still needs final verification against the source text and Buku Guru.
-2. The multi-select item needs the same generic interaction model as future multi-select questions; the current prototype recognizes the current seed item explicitly.
-3. Creative/open-ended tasks are not yet represented in the renderer and require rubric support.
-4. Source-grounded wording and distractors require teacher-guide cross-check before mass generation.
-5. The current prototype is a gameplay/technical proof, not the final visual design.
+## Approval boundary
+The dataset is approved as a **seed** for the prototype and controlled expansion. It is not a claim about an official external examination composition, and it is not permission to mass-generate an unlimited question bank without subsequent sampling and QA.
 
-## Approval rule
-Do not generate hundreds of questions until these issues are reviewed and the golden set is approved.
+## Production direction
+- Keep question behavior data-driven.
+- Preserve provenance on every production item.
+- Cross-validate generated batches against the Student Book and Teacher Guide before release.
+- Add rubric-based rendering before introducing creative/open-ended assessment tasks.
+- Keep visual design and broader RPG systems in Phase 3 rather than expanding the micro-prototype prematurely.
 
-## Next technical step
-Refactor the renderer so interaction type is data-driven rather than hard-coded, then run the browser prototype through the quality gate.
+## Gate result
+**GOLDEN DATASET v1 → APPROVED SEED**
+
+Next controlled step: **PHASE 3 — Game Design Document**.
