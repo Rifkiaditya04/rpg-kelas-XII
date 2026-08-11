@@ -123,6 +123,8 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Micro-prototype user feedback identified an unsupported `document_inspection` type; renderer and quality gate now explicitly support it.
 - `prototype/bahasa-indonesia/index.html` now loads renderer with cache-busting query `renderer.js?v=2`.
 - Full post-fix browser regression is still required after the latest deployment; do not claim that regression passed until the user tests the new deployment.
+- **Multi-select UX fix:** renderer now explicitly labels `multi_select` questions as “Pilih semua jawaban yang benar” and states the number of correct choices from the dataset; selection state is exposed through `aria-pressed`.
+- Multi-select scoring remains answer-value based; Training feedback may reveal all correct options after submission. Exam Simulation will use stricter post-session review behavior when that mode is implemented.
 - QA report: `phase-3/world-1-qa-report.md`.
 
 ## 12. QA findings resolved in World 1
@@ -131,7 +133,8 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Unsupported `document_inspection` in the seed was a renderer/quality-gate contract defect; it is now included in supported types and option validation.
 - Static challenge order was a usability/anti-memorization defect; mission questions are now shuffled at mission load.
 - Static answer-option order was an anti-memorization defect; options are now shuffled on each question render and evaluated by answer value rather than fixed position.
-- These implementation defects are considered resolved; the remaining gate is post-fix live regression, not an open design defect.
+- Multi-select instruction ambiguity was a UX defect; the renderer now explicitly communicates that multiple answers must be selected and how many are expected when the dataset provides that count.
+- These implementation/UX defects are considered resolved; the remaining gate is post-fix live regression, not an open design defect.
 
 ## 13. GitHub Pages — browser playtest path
 - Deployment workflow: `.github/workflows/pages.yml`.
