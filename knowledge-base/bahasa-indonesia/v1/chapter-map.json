@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "status": "draft-v1",
+  "chapters": [
+    {
+      "id": "BI12-C01",
+      "title": "Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup yang Mengesankan",
+      "world": "Career Mission",
+      "source_pages": "1-48",
+      "core_topics": [
+        "menyimak kritis surat lamaran kerja",
+        "sistematika surat lamaran kerja",
+        "ciri kebahasaan surat lamaran kerja",
+        "menulis surat lamaran kerja",
+        "daftar riwayat hidup/CV",
+        "ATS dan keterbacaan CV",
+        "presentasi dan simulasi wawancara",
+        "publikasi lamaran dan refleksi"
+      ],
+      "core_skills": ["identify", "evaluate", "apply", "write", "present", "revise"],
+      "game_patterns": ["document_inspection", "error_detection", "document_builder", "interview_dialogue", "timed_review"]
+    },
+    {
+      "id": "BI12-C02",
+      "title": "Layar Kecil, Pikiran Besar: Literasi dari Film Pendek",
+      "world": "Film Detective",
+      "source_pages": "49-117",
+      "core_topics": [
+        "menyimak dan menyampaikan ulang cerita film pendek",
+        "cerpen dan film ekranisasi",
+        "unsur intrinsik dan ekstrinsik",
+        "peristiwa penting dan struktur cerita",
+        "perubahan struktur akibat ekranisasi",
+        "simbol dan pesan sosial",
+        "menulis skenario film pendek",
+        "instruksi teknis produksi",
+        "presentasi dan publikasi/promosi"
+      ],
+      "core_skills": ["understand", "sequence", "analyze", "compare", "interpret", "write", "present"],
+      "game_patterns": ["evidence_hunt", "story_reconstruction", "adaptation_compare", "symbol_analysis", "script_builder"]
+    },
+    {
+      "id": "BI12-C03",
+      "title": "Menelusuri Realitas Sosial melalui Drama Indonesia dan Dunia",
+      "world": "Drama Stage",
+      "source_pages": "119-170",
+      "core_topics": [
+        "menyimak kritis drama",
+        "membaca cermat naskah drama",
+        "unsur pembangun drama",
+        "struktur drama",
+        "tokoh dan penokohan",
+        "dialog dan petunjuk penulis",
+        "menulis naskah drama",
+        "pementasan",
+        "publikasi dan refleksi"
+      ],
+      "core_skills": ["identify", "analyze", "interpret", "write", "sequence", "perform", "evaluate"],
+      "game_patterns": ["dialogue_choice", "character_analysis", "scene_ordering", "conflict_detection", "stage_planning"]
+    },
+    {
+      "id": "BI12-C04",
+      "title": "Mengeksplorasi Khazanah Budaya Nusantara melalui Feature Berbasis Digital",
+      "world": "Nusantara Explorer",
+      "source_pages": "171-224",
+      "core_topics": [
+        "menyimak kritis teks feature",
+        "struktur teks feature",
+        "ciri kebahasaan feature",
+        "mengidentifikasi dan mengevaluasi informasi",
+        "eksplorasi budaya lokal/Nusantara",
+        "menulis feature berbasis digital",
+        "presentasi",
+        "publikasi dan refleksi"
+      ],
+      "core_skills": ["identify", "evaluate", "infer", "organize", "write", "present", "publish"],
+      "game_patterns": ["field_investigation", "fact_check", "information_sorting", "feature_builder", "culture_explorer"]
+    }
+  ],
+  "validation_note": "Topic lists are conservative and must be refined against full chapter text before question generation."
+}
