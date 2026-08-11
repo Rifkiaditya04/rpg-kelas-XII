@@ -13,8 +13,10 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Question Renderer: data-driven dan diverifikasi dari source code
 - Playable Micro-Prototype: quality gate lulus untuk seed saat ini
 - Browser Quality Gate: tersedia di `prototype/bahasa-indonesia/quality-gate.html`
-- **Phase 3 — Game Design Document: dimulai**
-- **Phase 3 GDD v1: tersedia di `phase-3/gdd-v1.md`**
+- **Phase 3 — Game Design Document: aktif**
+- Phase 3 GDD v1: tersedia di `phase-3/gdd-v1.md`
+- **World 1 — Career Mission slice design: selesai untuk prototype**
+- **World 1 — Career Mission playable slice: tersedia di `prototype/bahasa-indonesia/career-mission.html`**
 - Workflow verification protocol: aktif dan wajib dipakai
 
 ## 1. Tujuan utama
@@ -98,11 +100,22 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Mobile-first: touch-friendly, readable, responsive, no hover-only controls.
 - Phase 3 berikutnya: bangun satu playable World 1 slice sebelum memperluas semua world.
 
-## 11. Aturan komunikasi kerja
+## 11. World 1 — Career Mission slice
+- Mission: `BI12-W01-M01`
+- Sequence: Mission Brief → Relevance Scan → Error Hunt → Application Review → Debrief.
+- Seed items: `BI12-GOLD-001`, `BI12-GOLD-002`, `BI12-GOLD-009`.
+- Learning focus: relevance, evaluation, application/review process.
+- Mission map: `phase-3/world-1-mission-map.json`.
+- Slice design: `phase-3/world-1-career-mission.md`.
+- Playable slice: `prototype/bahasa-indonesia/career-mission.html`.
+- The slice consumes the approved JSON dataset and selects questions by mission data; presentation code does not duplicate question text.
+- Runtime browser playtest could not be executed from the current tool environment because direct external network access is unavailable. Source-level verification and repository re-fetch were completed; live browser execution remains an explicit QA task before declaring the slice fully playtested.
+
+## 12. Aturan komunikasi kerja
 Partner/technical lead menentukan urutan kerja dan keputusan teknis default. Pengguna hanya dimintai keputusan ketika benar-benar membutuhkan preferensi pribadi, akses yang hanya dimiliki pengguna, atau keputusan yang berisiko mengubah tujuan proyek.
 
-## 12. Aturan pembaruan Master Control
+## 13. Aturan pembaruan Master Control
 Setiap perubahan keputusan, status fase, quality gate, artefak penting, atau prosedur wajib memperbarui file ini setelah perubahan diverifikasi dari repo. Master Control terbaru menjadi aturan kerja terbaru kecuali sengaja direvisi melalui keputusan proyek yang terdokumentasi.
 
-## 13. Pengingat
+## 14. Pengingat
 > **Kita sedang membangun alat belajar yang terasa seperti game, bukan game yang kebetulan berisi soal.**
