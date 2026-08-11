@@ -62,17 +62,61 @@ Semua world mengarah ke Final Exam dan analisis kelemahan siswa.
 - Prototype digunakan untuk membuktikan asumsi, bukan alasan untuk memperluas scope.
 - Setiap fase harus menghasilkan artefak yang dapat diperiksa sebelum pindah ke fase berikutnya.
 
-## 7. Status saat ini
+## 7. PROTOKOL VERIFIKASI WAJIB — berlaku mulai 11 Agustus 2026
+Setiap sesi kerja baru, sinkronisasi repo, upload/perubahan file, atau sebelum mengambil keputusan baru wajib mengikuti urutan berikut:
+
+### 7.1 Re-sync dari sumber asli
+- Jangan memperlakukan state dari context percakapan sebagai sumber kebenaran.
+- Tarik ulang file dan data yang relevan dari repository/proyek sebelum menganalisis.
+- Jika ada perubahan repo sejak pemeriksaan sebelumnya, gunakan versi terbaru sebagai dasar.
+
+### 7.2 Baca dokumen alur kerja lengkap sebelum bekerja
+Sebelum melakukan pekerjaan apa pun, baca **seluruh isi** file dalam folder `Alur Kerja Proyek` yang relevan, dan untuk sesi proyek ini default-nya adalah semua file di folder tersebut satu per satu.
+- `00-MASTER-CONTROL.md`
+- `game edukasi kelas XII.txt`
+- `Golden Dataset v1.txt`
+- `PHASE 1.txt`
+- `PHASE 2.txt`
+- `PHASE 2.2 — Exam Blueprint.txt`
+
+Judul file, ringkasan lama, atau ingatan percakapan tidak boleh menggantikan pembacaan isi dokumen.
+
+### 7.3 Pisahkan tiga lapisan temuan
+Dalam setiap analisis atau laporan, pisahkan secara eksplisit:
+- **Evidence** — apa yang benar-benar terbukti dari sumber/data.
+- **Implementation** — apa yang benar-benar terkonfirmasi dari kode/artefak yang ada.
+- **Interpretation** — hipotesis, inferensi, atau keputusan desain yang belum merupakan fakta sumber.
+
+Jangan mencampurkan ketiganya menjadi satu klaim.
+
+### 7.4 Traceability ke baris aktual
+- Setiap temuan teknis atau data yang material harus dapat ditelusuri ke file dan nomor baris.
+- Untuk kode, ambil potongan kode aktual pada baris terkait; jangan menggantinya dengan generalisasi.
+- Untuk data, kutip/ambil nilai aktual dari baris/record yang menjadi dasar.
+- Jika perlu gunakan pencarian/grep/query langsung terhadap sumber.
+- Jika nomor baris belum tersedia atau sumber tidak dapat dibaca dengan presisi, nyatakan keterbatasannya dan jangan mengarang lokasi.
+
+### 7.5 Cross-validation independen
+- Klaim penting tidak boleh dipercaya hanya karena muncul pada satu sumber.
+- Cross-check dengan sumber independen yang sesuai, misalnya Buku Siswa ↔ Buku Guru, source data ↔ kode renderer, atau blueprint ↔ dataset.
+- Jika sumber berbeda atau konflik, catat konflik tersebut dan jangan memilih salah satu secara diam-diam.
+- Status klaim harus jelas: `confirmed`, `partially confirmed`, `conflicting`, atau `unverified`.
+
+### 7.6 Tidak percaya state lama
+Artefak, status fase, angka progres, commit, source page, dan hasil validasi lama harus dianggap **stale** sampai diverifikasi ulang dari repo/proyek saat sesi berlangsung.
+
+## 8. Status saat ini
 - Phase 0 — Concept & Architecture: selesai
 - Phase 1 — Content Audit: selesai pada level struktural/pedagogis; provenance mendalam tetap harus dijaga pada produksi
 - Phase 2 — Knowledge Base: aktif
 - Exam Blueprint v1: selesai
 - Golden Dataset v1: validation candidate
-- Question Renderer: prototype selesai
-- Playable Micro-Prototype: tersedia di `prototype/bahasa-indonesia/index.html`
+- Question Renderer: prototype selesai; belum dinyatakan production-ready
+- Playable Micro-Prototype: tersedia di `prototype/bahasa-indonesia/index.html`; belum lulus quality gate
 - Phase 3 — Game Design Document: belum dimulai
+- Workflow verification protocol: **aktif dan wajib dipakai mulai sesi ini**
 
-## 8. Quality gate sebelum Phase 3
+## 9. Quality gate sebelum Phase 3
 Micro-prototype harus diperiksa untuk:
 - alur permainan
 - kejelasan feedback
@@ -81,11 +125,18 @@ Micro-prototype harus diperiksa untuk:
 - kualitas soal
 - provenance
 - kesesuaian mekanik dengan kompetensi
+- renderer bersifat data-driven, bukan hard-coded per ID soal
 
 Golden Dataset belum boleh dimassalkan sampai quality gate terpenuhi.
 
-## 9. Aturan komunikasi kerja
+## 10. Aturan komunikasi kerja
 Partner/technical lead menentukan urutan kerja dan keputusan teknis default. Pengguna hanya perlu dimintai keputusan ketika benar-benar membutuhkan preferensi pribadi, akses yang hanya dimiliki pengguna, atau keputusan yang berisiko mengubah tujuan proyek.
 
-## 10. Satu kalimat pengingat
+## 11. Aturan pembaruan Master Control
+- Setiap perjalanan kerja yang menghasilkan perubahan keputusan, status fase, quality gate, artefak penting, atau prosedur wajib memperbarui file ini.
+- Pembaruan harus dilakukan **setelah fakta perubahan diverifikasi dari repo**, bukan berdasarkan asumsi.
+- Catat perubahan penting secara ringkas agar dokumen tetap menjadi sumber kontrol, bukan jurnal panjang.
+- Jika ada konflik antara dokumen lama dan Master Control terbaru, Master Control menjadi aturan kerja terbaru kecuali sengaja direvisi melalui keputusan proyek yang terdokumentasi.
+
+## 12. Satu kalimat pengingat
 > **Kita sedang membangun alat belajar yang terasa seperti game, bukan game yang kebetulan berisi soal.**
