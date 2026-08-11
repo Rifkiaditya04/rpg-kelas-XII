@@ -1,0 +1,19 @@
+{
+  "schema_version":"1.0",
+  "world_id":"BI12-W01",
+  "title":"Career Mission",
+  "status":"prototype_slice",
+  "source_chapter":"BI12-C01",
+  "mission_id":"BI12-W01-M01",
+  "objective":"Menilai relevansi dan kualitas awal dokumen lamaran kerja sebelum dikirim.",
+  "nodes":[
+    {"id":"briefing","type":"narrative","next":"relevance-scan"},
+    {"id":"relevance-scan","type":"challenge","question_ids":["BI12-GOLD-001"],"skill_tags":["understand","relevance"],"mechanic":"document_inspection","next":"error-hunt"},
+    {"id":"error-hunt","type":"challenge","question_ids":["BI12-GOLD-002"],"skill_tags":["evaluate","relevance"],"mechanic":"error_hunt","next":"application-review"},
+    {"id":"application-review","type":"challenge","question_ids":["BI12-GOLD-009"],"skill_tags":["apply","review-process"],"mechanic":"document_inspection","next":"debrief"},
+    {"id":"debrief","type":"result","next":null}
+  ],
+  "rewards":{"xp_per_correct":100,"mission_completion_xp":100,"achievement":"Career Mission: First Review"},
+  "learning_outcomes":["relevance","evaluation","application/review process"],
+  "data_contract":{"source":"../../knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json","selection":"question_ids from this map","rendering":"generic question_type renderer"}
+}
