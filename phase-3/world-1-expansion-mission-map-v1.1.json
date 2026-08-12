@@ -1,0 +1,24 @@
+{
+  "schema_version":"1.1",
+  "world_id":"BI12-W01",
+  "title":"Career Mission — Chapter I Expansion",
+  "status":"controlled_expansion",
+  "source_chapter":"BI12-C01",
+  "mission_id":"BI12-W01-M02",
+  "objective":"Menghubungkan enam kompetensi Chapter I menjadi satu alur review lamaran kerja yang lebih lengkap.",
+  "content_index":"phase-3/world-1-approved-content-v1.1-index.json",
+  "nodes":[
+    {"id":"briefing","type":"narrative","next":"relevance-scan"},
+    {"id":"relevance-scan","type":"challenge","question_ids":["BI12-W1-AC-001"],"lane":"A","next":"structure-check"},
+    {"id":"structure-check","type":"challenge","question_ids":["BI12-W1-AC-004"],"lane":"B","next":"language-check"},
+    {"id":"language-check","type":"challenge","question_ids":["BI12-W1-AC-007"],"lane":"C","next":"revision-repair"},
+    {"id":"revision-repair","type":"challenge","question_ids":["BI12-W1-DF-001"],"lane":"D","next":"presentation-check"},
+    {"id":"presentation-check","type":"challenge","question_ids":["BI12-W1-DF-005"],"lane":"E","next":"career-decision"},
+    {"id":"career-decision","type":"challenge","question_ids":["BI12-W1-DF-007"],"lane":"F","next":"debrief"},
+    {"id":"debrief","type":"result","next":null}
+  ],
+  "rewards":{"xp_per_correct":100,"mission_completion_xp":100,"achievement":"Career Mission: Chapter I Reviewer"},
+  "learning_outcomes":["relevance","structure","formal language","revision","presentation","integrated career decision"],
+  "selection_policy":"This is a controlled six-item expansion slice: one approved item per Chapter I lane. The full 18-item A-F pool remains available through the approved content index and is not silently sampled.",
+  "data_contract":{"source":"phase-3/world-1-approved-content-v1.1-index.json","selection":"question_ids from this map","rendering":"actual data-driven question renderer"}
+}
