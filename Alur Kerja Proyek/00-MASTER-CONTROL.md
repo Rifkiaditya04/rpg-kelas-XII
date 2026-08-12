@@ -21,6 +21,9 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **World 1 — live regression: user-verified for the current slice; expansion gate is now active**
 - QA report: `phase-3/world-1-qa-report.md`
 - **World 1 expansion plan v1: tersedia di `phase-3/world-1-expansion-plan.md`**
+- **Chapter I Deep Content / Provenance Pass v1: selesai untuk controlled lanes A–C**
+- Provenance artifact: `phase-3/chapter-1-deep-content-provenance.md`
+- **World 1 controlled content batch: next active gate; mass generation tetap ditahan**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
 - **GitHub Pages launcher: tersedia di root `index.html`; deployment live sudah terverifikasi oleh GitHub Actions**
 - Hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
@@ -129,9 +132,13 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 
 ## 12. World 1 expansion
 - Expansion plan: `phase-3/world-1-expansion-plan.md`.
+- **Chapter I Deep Content / Provenance Pass v1: `phase-3/chapter-1-deep-content-provenance.md`.**
+- Controlled lanes A–C are now source-mapped: relevance/vacancy fit, systematics/structure, and language features.
+- Student Book and Teacher Guide were re-synced and cross-validated for Chapter I goals, indicators, structure, language features, writing/revision, digital submission, and summative indicators.
+- Page + subsection is the current human-auditable provenance locator for the converted Markdown source; no artificial source line numbers are invented when the connector representation does not expose stable original-file line numbers.
 - Do not mass-generate the World 1 bank yet.
-- Next controlled batch begins with Chapter I lanes: relevance/vacancy fit, systematics, and language features.
-- Each batch requires source extraction → skill/indicator mapping → drafting → answer verification → pedagogical review → provenance completion → renderer compatibility → batch QA.
+- Next controlled batch begins with a small approved question batch from Chapter I lanes A–C.
+- Each batch requires source extraction → skill/indicator mapping → drafting → answer verification → provenance completion → pedagogical review → renderer compatibility → batch QA.
 - New content must enter the approved dataset only after the required quality gates pass.
 - World 2–4 expansion waits until the World 1 content-expansion gate is satisfied.
 
