@@ -1,0 +1,273 @@
+{
+  "schema_version": "1.1",
+  "batch_id": "BI12-W01-BATCH-DF-V1",
+  "status": "qa_pending",
+  "purpose": "Controlled 9-item World 1 expansion batch for Chapter I Lanes D-F. Not approved for production promotion.",
+  "source_pass": "phase-3/chapter-1-deep-content-provenance-lanes-d-f-v1.md",
+  "items": [
+    {
+      "id": "BI12-W1-DF-001",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-T04",
+      "lane": "D",
+      "skill": "revise",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "question_type": "mcq",
+      "question": "Sebuah surat lamaran untuk posisi staf administrasi menyebutkan bahwa pelamar suka menonton film dan mengoleksi gim, tetapi tidak menjelaskan pengalaman mengelola dokumen. Revisi yang paling tepat adalah...",
+      "options": [
+        "Mengganti informasi tersebut dengan pengalaman mengelola arsip atau dokumen yang relevan dengan posisi",
+        "Menambahkan lebih banyak cerita tentang film agar surat lebih panjang",
+        "Menghapus seluruh informasi tentang pengalaman pelamar",
+        "Menambahkan hobi lain tanpa menghubungkannya dengan posisi"
+      ],
+      "answer": "Mengganti informasi tersebut dengan pengalaman mengelola arsip atau dokumen yang relevan dengan posisi",
+      "explanation": "Revisi memperkuat relevansi isi dan keterampilan/pengalaman dengan posisi yang dilamar, sesuai kriteria penilaian surat lamaran.",
+      "source": {
+        "student_book": {"pages": "23-25", "section": "C. Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup; rubrik penulisan"},
+        "teacher_guide": {"pages": "32, 36-39, 75-77", "section": "Indikator menulis/editing; konteks kerja autentik; asesmen Chapter I"}
+      },
+      "provenance": "Original revision scenario derived from the source requirement that application content emphasize skills/experience relevant to the target position. Source text is in texts/Indonesia_BS_TL_KLS_XII_Rev.md, tool line 2, pp. 23-25.",
+      "generation_method": "source-grounded original scenario",
+      "game_mechanic": "revision_repair",
+      "mode": "training",
+      "tags": ["surat-lamaran", "revisi", "relevansi"]
+    },
+    {
+      "id": "BI12-W1-DF-002",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-T04",
+      "lane": "D",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "medium",
+      "question_type": "multi_select",
+      "question": "Seorang siswa sedang merevisi CV untuk posisi penulis konten. Pilih semua perubahan yang paling mendukung kualitas CV berdasarkan kriteria yang dipelajari.",
+      "options": [
+        "Menonjolkan pengalaman menulis yang relevan dan menjelaskannya dengan jelas",
+        "Menampilkan keterampilan yang relevan dengan posisi yang dilamar",
+        "Menambahkan semua hobi meskipun tidak berhubungan dengan posisi",
+        "Menyusun riwayat pendidikan secara terstruktur dan konsisten"
+      ],
+      "answer": [
+        "Menonjolkan pengalaman menulis yang relevan dan menjelaskannya dengan jelas",
+        "Menampilkan keterampilan yang relevan dengan posisi yang dilamar",
+        "Menyusun riwayat pendidikan secara terstruktur dan konsisten"
+      ],
+      "explanation": "Rubrik CV menilai relevansi informasi, pendidikan yang terstruktur, pengalaman yang relevan dan jelas, serta keterampilan yang mendukung posisi. Hobi yang tidak relevan tidak otomatis meningkatkan kualitas CV.",
+      "source": {
+        "student_book": {"pages": "26-29", "section": "C. Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup; rubrik penilaian antarteman"},
+        "teacher_guide": {"pages": "32, 36-39, 75-77", "section": "Menulis/editing; authentic work context; assessment"}
+      },
+      "provenance": "Original multi-select revision task operationalizing the CV rubric dimensions: relevance, education structure, relevant experience, and skills. Source text is in texts/Indonesia_BS_TL_KLS_XII_Rev.md, tool line 2, pp. 26-29.",
+      "generation_method": "source-grounded original scenario",
+      "game_mechanic": "revision_review",
+      "mode": "training",
+      "tags": ["CV", "revisi", "relevansi", "multi-select"]
+    },
+    {
+      "id": "BI12-W1-DF-003",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-T04",
+      "lane": "D",
+      "skill": "revise",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "document_inspection",
+      "question": "Perhatikan draft isi surat: 'Saya sangat tertarik dengan posisi ini. Saya punya banyak pengalaman. Saya yakin saya cocok.' Tidak ada contoh pengalaman atau keterampilan yang dikaitkan dengan posisi. Temuan revisi utama adalah...",
+      "options": [
+        "Isi perlu diperkuat dengan kualifikasi, pengalaman, atau keterampilan yang relevan serta alasan kecocokannya",
+        "Isi harus diganti dengan daftar hobi pelamar",
+        "Semua kalimat harus dihapus agar surat lebih singkat",
+        "Penutup surat harus dipindahkan ke awal tanpa menambah bukti"
+      ],
+      "answer": "Isi perlu diperkuat dengan kualifikasi, pengalaman, atau keterampilan yang relevan serta alasan kecocokannya",
+      "explanation": "Bagian isi berfungsi menyajikan kualifikasi, pengalaman, dan alasan mengapa pelamar cocok dengan posisi. Pernyataan umum tanpa bukti belum menjalankan fungsi tersebut.",
+      "source": {
+        "student_book": {"pages": "10-12, 23-25", "section": "B. Mengevaluasi Sistematika dan Ciri Kebahasaan; C. Menulis Surat Lamaran Kerja"},
+        "teacher_guide": {"pages": "32, 36-39, 75-77", "section": "Writing/editing and Chapter I assessment indicators"}
+      },
+      "provenance": "Original document-inspection item derived from the textbook description of the letter body: qualifications, experience, and reasons the applicant fits the position. Source text is in texts/Indonesia_BS_TL_KLS_XII_Rev.md, tool line 2, pp. 10-12 and 23-25.",
+      "generation_method": "source-grounded document inspection",
+      "game_mechanic": "error_hunt",
+      "mode": "training",
+      "tags": ["surat-lamaran", "revisi", "kualifikasi", "document-inspection"]
+    },
+    {
+      "id": "BI12-W1-DF-004",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-T05",
+      "lane": "E",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "question_type": "mcq",
+      "question": "Dalam simulasi wawancara, tindakan yang paling mendukung presentasi surat lamaran adalah...",
+      "options": [
+        "Memahami isi surat, menyiapkan pertanyaan yang relevan, lalu menyampaikan informasi dengan jelas dan menanggapi pertanyaan",
+        "Membaca seluruh surat tanpa memperhatikan pertanyaan pewawancara",
+        "Menghindari umpan balik agar presentasi tidak berubah",
+        "Menghafalkan semua kalimat tanpa memahami isi surat"
+      ],
+      "answer": "Memahami isi surat, menyiapkan pertanyaan yang relevan, lalu menyampaikan informasi dengan jelas dan menanggapi pertanyaan",
+      "explanation": "Aktivitas presentasi menekankan pemahaman isi, pertanyaan relevan, interaksi bertanya-menjawab, komunikasi yang jelas, umpan balik, dan refleksi.",
+      "source": {
+        "student_book": {"pages": "30-31", "section": "D. Mempresentasikan Surat Lamaran Kerja dan Daftar Riwayat Hidup; Diskusi dan Bermain Peran"},
+        "teacher_guide": {"pages": "32-35", "section": "Indikator presentasi dan alokasi kegiatan"}
+      },
+      "provenance": "Original scenario based on the explicit presentation/role-play steps and rubric for preparation, professional role performance, interaction, questions/answers, and feedback. Source text is in texts/Indonesia_BS_TL_KLS_XII_Rev.md, tool line 2, pp. 30-31.",
+      "generation_method": "source-grounded role-play scenario",
+      "game_mechanic": "presentation_check",
+      "mode": "training",
+      "tags": ["presentasi", "wawancara", "komunikasi"]
+    },
+    {
+      "id": "BI12-W1-DF-005",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-T05",
+      "lane": "E",
+      "skill": "evaluate",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "multi_select",
+      "question": "Sebelum membuat video resume untuk posisi yang dilamar, pilih semua hal yang perlu disiapkan berdasarkan materi.",
+      "options": [
+        "Menentukan posisi yang dilamar dan menyesuaikan isi video dengan kebutuhan pekerjaan",
+        "Menyiapkan perkenalan diri, kelebihan, pengalaman kerja, dan keterampilan",
+        "Membuat skrip sederhana agar penyampaian mudah dipersiapkan",
+        "Memasukkan sebanyak mungkin informasi yang tidak relevan agar video lebih panjang"
+      ],
+      "answer": [
+        "Menentukan posisi yang dilamar dan menyesuaikan isi video dengan kebutuhan pekerjaan",
+        "Menyiapkan perkenalan diri, kelebihan, pengalaman kerja, dan keterampilan",
+        "Membuat skrip sederhana agar penyampaian mudah dipersiapkan"
+      ],
+      "explanation": "Materi meminta isi video disesuaikan dengan kebutuhan pekerjaan dan mencakup perkenalan diri, kelebihan, pengalaman, serta keterampilan. Skrip sederhana juga digunakan dalam proses produksi.",
+      "source": {
+        "student_book": {"pages": "32-33", "section": "D. Mempresentasikan Surat Lamaran Kerja dan Daftar Riwayat Hidup; Membuat Resume dan Video Daftar Riwayat Hidup; Memproduksi Video Resume"},
+        "teacher_guide": {"pages": "32-35", "section": "Presentation/publication indicators and activity allocation"}
+      },
+      "provenance": "Original multi-select production-preparation task derived from the textbook instructions for a one-to-two-minute video resume. Source text is in texts/Indonesia_BS_TL_KLS_XII_Rev.md, tool line 2, pp. 32-33.",
+      "generation_method": "source-grounded production scenario",
+      "game_mechanic": "presentation_check",
+      "mode": "training",
+      "tags": ["video-resume", "presentasi", "multi-select"]
+    },
+    {
+      "id": "BI12-W1-DF-006",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-T06",
+      "lane": "E",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "document_inspection",
+      "question": "Seorang pelamar akan mengunggah video resume. Isi videonya menjelaskan nama, pendidikan, pengalaman yang relevan, keterampilan, dan kontribusi, tetapi pelamar berbicara tanpa latihan sehingga penyampaian tidak jelas. Temuan yang paling tepat adalah...",
+      "options": [
+        "Konten sudah memiliki unsur penting, tetapi proses produksi perlu diperbaiki melalui latihan dan penyampaian yang jelas",
+        "Semua konten harus dihapus karena video resume tidak boleh memuat pengalaman",
+        "Pelamar cukup menambah durasi video tanpa memperbaiki penyampaian",
+        "Pelamar harus menghilangkan keterampilan agar video lebih singkat"
+      ],
+      "answer": "Konten sudah memiliki unsur penting, tetapi proses produksi perlu diperbaiki melalui latihan dan penyampaian yang jelas",
+      "explanation": "Materi mencantumkan unsur penting video resume dan mengarahkan pelamar untuk mencoba/berlatih serta berbicara jelas dan percaya diri sebelum merekam.",
+      "source": {
+        "student_book": {"pages": "32-33", "section": "D. Membuat Resume dan Video Daftar Riwayat Hidup; Memproduksi Video Resume"},
+        "teacher_guide": {"pages": "32-39", "section": "Presentation, communication, and project/problem-based learning"}
+      },
+      "provenance": "Original inspection scenario combining explicit video-resume content requirements with production/rehearsal guidance. Source text is in texts/Indonesia_BS_TL_KLS_XII_Rev.md, tool line 2, pp. 32-33.",
+      "generation_method": "source-grounded document inspection",
+      "game_mechanic": "presentation_check",
+      "mode": "training",
+      "tags": ["video-resume", "presentasi", "komunikasi", "document-inspection"]
+    },
+    {
+      "id": "BI12-W1-DF-007",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-T07",
+      "lane": "F",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah lowongan meminta staf administrasi yang teliti, mampu mengelola dokumen, dan dapat berkomunikasi dengan baik. Pelamar memiliki pengalaman mengarsipkan dokumen, membuat rekap data, dan menjadi penghubung panitia. Pilihan tindakan yang paling kuat untuk paket lamaran adalah...",
+      "options": [
+        "Menonjolkan ketiga pengalaman tersebut dalam surat/CV dan menyiapkan penyampaian yang menghubungkannya dengan kebutuhan posisi",
+        "Menonjolkan hobi dan mengurangi pengalaman agar dokumen lebih singkat",
+        "Menampilkan semua pengalaman tanpa memilih yang relevan dengan lowongan",
+        "Menghapus pengalaman organisasi karena hanya pengalaman kerja formal yang boleh disebutkan"
+      ],
+      "answer": "Menonjolkan ketiga pengalaman tersebut dalam surat/CV dan menyiapkan penyampaian yang menghubungkannya dengan kebutuhan posisi",
+      "explanation": "Keputusan mengintegrasikan relevansi lowongan, bukti pengalaman, kualitas dokumen, dan penyampaian. Ketiga pengalaman yang diberikan memiliki hubungan langsung dengan kebutuhan posisi.",
+      "source": {
+        "student_book": {"pages": "23-25, 30-33", "section": "C. Menulis Surat Lamaran Kerja; D. Mempresentasikan Surat Lamaran Kerja dan Daftar Riwayat Hidup"},
+        "teacher_guide": {"pages": "32, 36-39, 75-77", "section": "Authentic work context, decision making, revision, presentation, and assessment"}
+      },
+      "provenance": "Original integrated scenario combining vacancy relevance, evidence selection, document quality, and presentation; each component maps to Chapter I source criteria.",
+      "generation_method": "source-grounded integrated scenario",
+      "game_mechanic": "career_decision",
+      "mode": "training",
+      "tags": ["integrated", "lowongan", "CV", "presentasi"]
+    },
+    {
+      "id": "BI12-W1-DF-008",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-T07",
+      "lane": "F",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question_type": "multi_select",
+      "question": "Dalam paket lamaran untuk posisi penulis konten, pilih semua tindakan yang paling tepat berdasarkan materi Chapter I.",
+      "options": [
+        "Memilih pengalaman menulis dan keterampilan yang paling relevan dengan posisi",
+        "Menyusun CV secara terstruktur dengan pengalaman relevan yang dijelaskan dengan jelas",
+        "Menyiapkan video resume yang memuat perkenalan, pengalaman relevan, keterampilan, dan kontribusi",
+        "Mengisi paket dengan seluruh hobi meskipun tidak mendukung posisi agar terlihat lebih lengkap"
+      ],
+      "answer": [
+        "Memilih pengalaman menulis dan keterampilan yang paling relevan dengan posisi",
+        "Menyusun CV secara terstruktur dengan pengalaman relevan yang dijelaskan dengan jelas",
+        "Menyiapkan video resume yang memuat perkenalan, pengalaman relevan, keterampilan, dan kontribusi"
+      ],
+      "explanation": "Ketiga tindakan pertama mengintegrasikan relevansi isi, kualitas CV, dan presentasi/video resume. Hobi yang tidak mendukung posisi tidak otomatis menjadi bukti kualitas paket lamaran.",
+      "source": {
+        "student_book": {"pages": "23-29, 30-33", "section": "C. Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup; D. Mempresentasikan..."},
+        "teacher_guide": {"pages": "32-39, 75-77", "section": "Writing/editing, authentic work context, presentation, and assessment"}
+      },
+      "provenance": "Original integrated multi-select scenario; each accepted action is supported by explicit Chapter I criteria for relevance, CV quality, and video-resume content.",
+      "generation_method": "source-grounded integrated scenario",
+      "game_mechanic": "career_decision",
+      "mode": "training",
+      "tags": ["integrated", "CV", "video-resume", "multi-select"]
+    },
+    {
+      "id": "BI12-W1-DF-009",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-T07",
+      "lane": "F",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "document_inspection",
+      "question": "Sebuah paket lamaran berisi CV dengan pengalaman yang relevan, tetapi surat lamaran tidak menjelaskan hubungan pengalaman tersebut dengan posisi. Video resume juga memuat pendidikan dan pengalaman, tetapi tidak menyebut keterampilan atau kontribusi. Diagnosis terbaik adalah...",
+      "options": [
+        "Paket perlu diperbaiki dengan menghubungkan pengalaman dengan kebutuhan posisi pada surat serta menambahkan keterampilan dan kontribusi yang relevan pada video resume",
+        "Paket sudah optimal karena CV saja sudah cukup",
+        "Surat harus dihapus dan video dibuat lebih panjang tanpa menambah informasi",
+        "Pengalaman relevan harus dihapus agar semua dokumen memiliki isi yang berbeda"
+      ],
+      "answer": "Paket perlu diperbaiki dengan menghubungkan pengalaman dengan kebutuhan posisi pada surat serta menambahkan keterampilan dan kontribusi yang relevan pada video resume",
+      "explanation": "Diagnosis menggabungkan dua kekurangan yang dapat ditelusuri: surat lamaran perlu menunjukkan relevansi kualifikasi/pengalaman dengan posisi, sedangkan video resume memuat keterampilan dan kontribusi sebagai unsur penting.",
+      "source": {
+        "student_book": {"pages": "23-25, 32-33", "section": "C. Menulis Surat Lamaran Kerja; D. Membuat Resume dan Video Daftar Riwayat Hidup"},
+        "teacher_guide": {"pages": "32, 36-39, 75-77", "section": "Writing/editing, authentic decision making, presentation, and assessment"}
+      },
+      "provenance": "Original multi-artifact diagnostic scenario decomposable into source-grounded relevance, revision, and video-resume subskills.",
+      "generation_method": "source-grounded integrated document inspection",
+      "game_mechanic": "application_review",
+      "mode": "training",
+      "tags": ["integrated", "revisi", "surat-lamaran", "video-resume", "document-inspection"]
+    }
+  ]
+}
