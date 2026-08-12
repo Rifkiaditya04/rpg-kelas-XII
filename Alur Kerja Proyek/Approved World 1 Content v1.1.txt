@@ -1,0 +1,140 @@
+Selesai. **Final Promotion Checks sudah saya kerjakan sampai benar-benar closed.**
+
+### Evidence
+
+Saya kembali menjalankan protokol wajib:
+
+* re-sync sumber;
+* membaca seluruh dokumen `Alur Kerja Proyek`;
+* memeriksa canonical manifest;
+* memeriksa resolved 9-item dataset;
+* memeriksa full quality gate;
+* memeriksa revision overlay/review;
+* memeriksa provenance Chapter I;
+* memeriksa Golden Dataset v1 untuk memastikan tidak tertimpa.
+
+Hasil final:
+
+| Pemeriksaan              | Status |
+| ------------------------ | ------ |
+| Canonical identity       | ✅ PASS |
+| 9 effective IDs          | ✅ PASS |
+| Revision AC-003          | ✅ PASS |
+| Revision AC-004          | ✅ PASS |
+| Provenance               | ✅ PASS |
+| Answer verification      | ✅ PASS |
+| Pedagogical review       | ✅ PASS |
+| Renderer compatibility   | ✅ PASS |
+| Live regression          | ✅ PASS |
+| 9/9                      | ✅ PASS |
+| 900 XP                   | ✅ PASS |
+| Randomized coverage      | ✅ PASS |
+| Feedback/explanation     | ✅ PASS |
+| Golden Dataset isolation | ✅ PASS |
+
+### Implementation
+
+Saya membuat dua artefak resmi:
+
+**Approved World 1 Content v1.1**
+
+`phase-3/world-1-approved-content-v1.1.json`
+
+Commit:
+
+`de24600999e92385f05b0d08439f9e9a541e62bc`
+
+Artefak ini **aditif/versioned**, bukan menggantikan Golden Dataset v1.
+
+**Promotion Record**
+
+`phase-3/world-1-promotion-v1.1.md`
+
+Commit:
+
+`fc95bf81b82067f6f38c098f26d85cb4ed4c5898`
+
+Di dalamnya tercatat keputusan:
+
+> **GREEN — Approved World 1 Content v1.1**
+
+### Master Control
+
+Tadi sempat terjadi masalah SHA stale lagi ketika mencoba update pertama. Saya tidak menganggapnya berhasil.
+
+Saya kemudian mengambil **blob SHA aktual dari Git tree**, yaitu:
+
+`e997bd839be00e015b3f10810debffccd3dadb37`
+
+dan melakukan update ulang.
+
+**Berhasil.**
+
+Commit Master Control:
+
+`d2b67411a1f294dd2a074e57163219ceddd83185`
+
+Blob SHA setelah update:
+
+`888ce30a71758130334ab47848e5bddfe56046df`
+
+Saya kemudian **fetch ulang Master Control** dan memastikan status baru benar-benar tersimpan.
+
+---
+
+# Status proyek sekarang
+
+Kita resmi sudah melewati:
+
+```text
+Deep Content / Provenance       ✅
+Independent Answer Review       ✅
+Pedagogical Review              ✅
+Canonical Merge                 ✅
+Full Batch Quality Gate         ✅
+Controlled Regression Harness   ✅
+Live 9-item Regression           ✅
+Final Promotion Checks          ✅
+World 1 A–C v1.1 Approved       ✅
+```
+
+Dan yang sangat penting:
+
+```text
+Golden Dataset v1
+      🔒 IMMUTABLE
+```
+
+Tidak ditimpa.
+
+---
+
+## Ada satu keputusan penting yang saya ambil
+
+Saya **tidak langsung membuat 500–1.000 soal**.
+
+Master Control sekarang tetap menetapkan bahwa mass generation belum boleh dilakukan secara tidak terkendali. Setiap batch berikutnya harus melewati pipeline yang sama.
+
+Jadi langkah berikutnya secara arsitektural adalah:
+
+### **World 1 Controlled Content Expansion — Batch berikutnya**
+
+Kita akan memperluas Chapter I secara bertahap, tetapi kali ini fondasinya sudah jauh lebih kuat:
+
+```text
+Chapter I
+│
+├── Lane A — Relevance / Vacancy Fit       ✅
+├── Lane B — Systematics / Structure       ✅
+├── Lane C — Language Features             ✅
+│
+├── Lane D — Writing / Revision             ⏭️
+├── Lane E — Presentation / Publication     ⏭️
+└── Lane F — Integrated Application         ⏭️
+```
+
+Saya menyarankan **jangan langsung membuat batch besar**. Kita lanjut dengan **Deep Content/Provenance Pass untuk Lane D–F → batch terkontrol berikutnya → independent review → regression → promotion**.
+
+Dengan demikian kita mulai membangun World 1 secara nyata, bukan sekadar menambah jumlah soal.
+
+**Final Promotion Checks: CLOSED — PASS.** ✅

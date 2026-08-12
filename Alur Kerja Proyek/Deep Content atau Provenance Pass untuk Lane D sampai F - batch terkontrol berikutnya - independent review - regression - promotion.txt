@@ -1,0 +1,892 @@
+Selesai. **Final Promotion Checks sudah saya kerjakan sampai benar-benar closed.**
+
+### Evidence
+
+Saya kembali menjalankan protokol wajib:
+
+* re-sync sumber;
+* membaca seluruh dokumen `Alur Kerja Proyek`;
+* memeriksa canonical manifest;
+* memeriksa resolved 9-item dataset;
+* memeriksa full quality gate;
+* memeriksa revision overlay/review;
+* memeriksa provenance Chapter I;
+* memeriksa Golden Dataset v1 untuk memastikan tidak tertimpa.
+
+Hasil final:
+
+| Pemeriksaan              | Status |
+| ------------------------ | ------ |
+| Canonical identity       | ✅ PASS |
+| 9 effective IDs          | ✅ PASS |
+| Revision AC-003          | ✅ PASS |
+| Revision AC-004          | ✅ PASS |
+| Provenance               | ✅ PASS |
+| Answer verification      | ✅ PASS |
+| Pedagogical review       | ✅ PASS |
+| Renderer compatibility   | ✅ PASS |
+| Live regression          | ✅ PASS |
+| 9/9                      | ✅ PASS |
+| 900 XP                   | ✅ PASS |
+| Randomized coverage      | ✅ PASS |
+| Feedback/explanation     | ✅ PASS |
+| Golden Dataset isolation | ✅ PASS |
+
+### Implementation
+
+Saya membuat dua artefak resmi:
+
+**Approved World 1 Content v1.1**
+
+`phase-3/world-1-approved-content-v1.1.json`
+
+Commit:
+
+`de24600999e92385f05b0d08439f9e9a541e62bc`
+
+Artefak ini **aditif/versioned**, bukan menggantikan Golden Dataset v1.
+
+**Promotion Record**
+
+`phase-3/world-1-promotion-v1.1.md`
+
+Commit:
+
+`fc95bf81b82067f6f38c098f26d85cb4ed4c5898`
+
+Di dalamnya tercatat keputusan:
+
+> **GREEN — Approved World 1 Content v1.1**
+
+### Master Control
+
+Tadi sempat terjadi masalah SHA stale lagi ketika mencoba update pertama. Saya tidak menganggapnya berhasil.
+
+Saya kemudian mengambil **blob SHA aktual dari Git tree**, yaitu:
+
+`e997bd839be00e015b3f10810debffccd3dadb37`
+
+dan melakukan update ulang.
+
+**Berhasil.**
+
+Commit Master Control:
+
+`d2b67411a1f294dd2a074e57163219ceddd83185`
+
+Blob SHA setelah update:
+
+`888ce30a71758130334ab47848e5bddfe56046df`
+
+Saya kemudian **fetch ulang Master Control** dan memastikan status baru benar-benar tersimpan.
+
+---
+
+# Status proyek sekarang
+
+Kita resmi sudah melewati:
+
+```text
+Deep Content / Provenance       ✅
+Independent Answer Review       ✅
+Pedagogical Review              ✅
+Canonical Merge                 ✅
+Full Batch Quality Gate         ✅
+Controlled Regression Harness   ✅
+Live 9-item Regression           ✅
+Final Promotion Checks          ✅
+World 1 A–C v1.1 Approved       ✅
+```
+
+Dan yang sangat penting:
+
+```text
+Golden Dataset v1
+      🔒 IMMUTABLE
+```
+
+Tidak ditimpa.
+
+---
+
+## Ada satu keputusan penting yang saya ambil
+
+Saya **tidak langsung membuat 500–1.000 soal**.
+
+Master Control sekarang tetap menetapkan bahwa mass generation belum boleh dilakukan secara tidak terkendali. Setiap batch berikutnya harus melewati pipeline yang sama.
+
+Jadi langkah berikutnya secara arsitektural adalah:
+
+### **World 1 Controlled Content Expansion — Batch berikutnya**
+
+Kita akan memperluas Chapter I secara bertahap, tetapi kali ini fondasinya sudah jauh lebih kuat:
+
+```text
+Chapter I
+│
+├── Lane A — Relevance / Vacancy Fit       ✅
+├── Lane B — Systematics / Structure       ✅
+├── Lane C — Language Features             ✅
+│
+├── Lane D — Writing / Revision             ⏭️
+├── Lane E — Presentation / Publication     ⏭️
+└── Lane F — Integrated Application         ⏭️
+```
+
+Saya menyarankan **jangan langsung membuat batch besar**. Kita lanjut dengan **Deep Content/Provenance Pass untuk Lane D–F → batch terkontrol berikutnya → independent review → regression → promotion**.
+
+Dengan demikian kita mulai membangun World 1 secara nyata, bukan sekadar menambah jumlah soal.
+
+**Final Promotion Checks: CLOSED — PASS.** ✅
+
+==========================================================================================================================
+
+Siap. Saya sudah mulai dan **Deep Content/Provenance Pass Chapter I untuk Lane D–F selesai**.
+
+Saya tidak langsung membuat soal. Kita mengikuti urutan yang sudah kita sepakati.
+
+## 1. Evidence — hasil pass D–F
+
+Saya melakukan re-sync sumber utama dan validator pedagogis, lalu memetakan:
+
+### Lane D — Writing / Revision
+
+Fokus pada:
+
+* menulis surat lamaran;
+* menyusun/menilai CV;
+* revisi isi;
+* relevansi terhadap lowongan;
+* format;
+* bahasa/gramatika;
+* keterampilan/pengalaman;
+* penutup/harapan.
+
+Sumber utama: **Buku Siswa pp. 21–29**, terutama rubrik menulis pp. 24–25.
+
+Validator: **Buku Guru p. 32 dan pp. 36–39 serta kerangka sumatif pp. 75–77**. Sumber Chapter I memang menempatkan penulisan, editing/revisi, dan konteks kerja autentik sebagai bagian pembelajaran.
+
+### Lane E — Presentation / Publication
+
+Fokus pada:
+
+* mempresentasikan surat lamaran/CV;
+* kejelasan komunikasi;
+* kesesuaian dengan audiens;
+* publikasi melalui media;
+* etika komunikasi digital;
+* evaluasi tindakan publikasi.
+
+Sumber utama: **Buku Siswa pp. 30–37**.
+
+Validator: **Buku Guru pp. 32–39**. Daftar isi sumber juga mengonfirmasi bahwa presentasi dimulai p. 30 dan publikasi p. 35.
+
+### Lane F — Integrated Application
+
+Ini bagian yang menurut saya **paling menarik untuk game**.
+
+Bukan sekadar:
+
+> "Apa yang benar?"
+
+Tetapi:
+
+> **"Kamu mendapatkan lowongan → memilih bukti pengalaman → memperbaiki dokumen → menentukan cara menyampaikan/mempublikasikannya."**
+
+Ini menggabungkan beberapa kompetensi Chapter I secara autentik.
+
+Namun saya sengaja memberi batas:
+
+**integrasi tidak boleh menjadi alasan untuk membuat soal ambigu atau terlalu sulit.**
+
+Setiap keputusan tetap harus bisa ditelusuri kembali ke subskill dan sumbernya.
+
+---
+
+# 2. Implementation
+
+Saya membuat artefak resmi:
+
+`phase-3/chapter-1-deep-content-provenance-lanes-d-f-v1.md`
+
+Statusnya:
+
+**`controlled-pass-complete-for-lanes-D-F`**
+
+Artefak tersebut sekarang menjadi sumber kontrol untuk pembuatan batch D–F berikutnya. Di dalamnya sudah tercatat:
+
+* source set;
+* evidence;
+* implementation;
+* interpretation;
+* source anchors setiap lane;
+* skill definition;
+* bentuk soal yang diperbolehkan;
+* quality constraints;
+* cross-validation;
+* rekomendasi batch;
+* promotion gate.
+
+Yang penting, **tidak ada nomor halaman buatan**. Kita tetap memakai locator halaman/subbagian sumber karena itu yang dapat diaudit dari sumber konversi kita.
+
+---
+
+# 3. Keputusan batch berikutnya
+
+Saya mengunci desain awal:
+
+### **D–F Controlled Batch v1**
+
+**9 soal total**
+
+| Lane                           | Jumlah | Fokus                  |
+| ------------------------------ | -----: | ---------------------- |
+| D — Writing / Revision         |      3 | menulis & memperbaiki  |
+| E — Presentation / Publication |      3 | presentasi & publikasi |
+| F — Integrated Application     |      3 | keputusan terintegrasi |
+| **Total**                      |  **9** |                        |
+
+Target kognitif internal:
+
+```text
+3 × C3 — Application
+4 × C4 — Analysis
+2 × C5 — Evaluation
+```
+
+Ini **klasifikasi internal proyek**, bukan klaim komposisi ujian resmi.
+
+Saya juga membatasi bentuk interaksi supaya tidak mengulang masalah batch sebelumnya:
+
+```text
+4 × MCQ
+2 × Multi-select
+2 × Document inspection
+1 × scenario/workflow
+```
+
+Tetapi **tipe final setiap soal belum saya kunci** sebelum masing-masing soal memiliki provenance lengkap dan lolos pemeriksaan renderer.
+
+---
+
+# 4. Yang sengaja BELUM saya lakukan
+
+Saya **belum membuat 9 soal D–F**.
+
+Ini penting.
+
+Kita tidak ingin:
+
+```text
+AI → generate 9 soal → QA
+```
+
+tetapi:
+
+```text
+Source
+ ↓
+Provenance
+ ↓
+Skill definition
+ ↓
+Item design
+ ↓
+Question
+ ↓
+Independent verification
+ ↓
+Pedagogical review
+ ↓
+Renderer QA
+ ↓
+Regression
+ ↓
+Promotion
+```
+
+Ini adalah pola yang akan kita gunakan terus untuk seluruh mata pelajaran nanti.
+
+---
+
+# 5. Master Control
+
+Master Control sudah diperbarui:
+
+**Commit:** `ebac27e9eef77208554e7ec09412f2b25b9fab53`
+
+dan saya **fetch ulang setelah update** untuk memastikan perubahan benar-benar tersimpan. Blob SHA sekarang:
+
+`c5481ddd414027f3ac34026d9d7985a444ce50f8`
+
+Status resminya sekarang:
+
+```text
+Chapter I D–F Provenance
+        ✅ PASS
+             ↓
+D–F Controlled Batch v1
+        ⏭️ NEXT
+             ↓
+Independent Answer Verification
+        ↓
+Pedagogical Review
+        ↓
+Batch Quality Gate
+        ↓
+Canonical Merge
+        ↓
+Live Regression
+        ↓
+Promotion
+```
+
+Dan tetap:
+
+```text
+Golden Dataset v1
+🔒 IMMUTABLE
+```
+
+---
+
+## Langkah berikutnya
+
+Sekarang kita masuk ke:
+
+# **D–F Controlled Batch v1 — 9 soal**
+
+Saya akan membangunnya **satu per satu secara source-grounded**, bukan meminta AI lain menghasilkan 9 soal sekaligus.
+
+Setelah batch selesai, kita langsung masuk **Independent Answer Verification + Pedagogical Review**, seperti pola A–C yang sudah terbukti berhasil.
+
+**Deep Content/Provenance Pass D–F: selesai. ✅**
+
+==========================================================================================================================
+
+Sudah saya lanjutkan ke langkah berikutnya: **D–F Controlled Batch v1**. ✅
+
+Saya mengikuti pagar proyek terlebih dahulu: re-sync sumber, membaca kembali `Alur Kerja Proyek`, kemudian memeriksa provenance D–F dan sumber Buku Siswa sebelum membuat batch. Master Control terbaru juga sudah saya fetch kembali setelah update.
+
+## Evidence
+
+Sumber yang menjadi dasar batch:
+
+* **Lane D — Writing/Revision:** Buku Siswa pp. 23–29, termasuk kriteria relevansi, kelengkapan, pendidikan, pengalaman, keterampilan, tata bahasa, dan kelengkapan paket.
+* **Lane E — Presentation:** Buku Siswa pp. 30–33, termasuk simulasi wawancara, interaksi, umpan balik, video resume, latihan, dan penyampaian yang jelas.
+* **Lane F — Integrated Application:** menggabungkan relevansi lowongan, kualitas surat/CV, pengalaman/keterampilan, serta presentasi/video resume yang memang tersebar di Chapter I.
+
+Saya juga cross-check dengan provenance D–F yang sebelumnya sudah kita tetapkan. Status cross-validation di sana adalah `confirmed`.
+
+## Implementation
+
+Batch baru sudah dibuat:
+
+**`phase-3/world-1-question-batch-d-f-v1.json`**
+
+Commit:
+
+`9f1bb51d6e231394b0ae0e2e6f70826fe0e2099f`
+
+Strukturnya:
+
+```text
+D — Writing / Revision
+├── DF-001  MCQ
+├── DF-002  Multi-select
+└── DF-003  Document inspection
+
+E — Presentation / Publication
+├── DF-004  MCQ
+├── DF-005  Multi-select
+└── DF-006  Document inspection
+
+F — Integrated Application
+├── DF-007  MCQ
+├── DF-008  Multi-select
+└── DF-009  Document inspection
+```
+
+Total:
+
+**9 soal — 3 D + 3 E + 3 F.**
+
+Setiap item sudah memiliki:
+
+* ID unik
+* chapter/topic
+* lane
+* skill
+* cognitive level
+* difficulty
+* `question_type`
+* question
+* options
+* answer
+* explanation
+* Student Book source
+* Teacher Guide source
+* provenance
+* generation method
+* game mechanic
+* mode
+* tags
+
+Saya juga sengaja **tidak memasukkan `evidence_matching`, `ordering`, atau interaction type baru**. Kita sudah belajar dari AC-003/AC-004 bahwa konten tidak boleh mendahului kemampuan renderer.
+
+## Interpretation
+
+Batch ini **belum boleh dianggap soal produksi**.
+
+Status:
+
+```text
+D–F Provenance Pass       ✅
+        ↓
+D–F Batch v1              ✅ CREATED
+        ↓
+Independent Answer Review ⏭️ NEXT
+        ↓
+Pedagogical Review
+        ↓
+Renderer/Schema QA
+        ↓
+Batch Quality Gate
+        ↓
+Canonical Merge
+        ↓
+Live Regression
+        ↓
+Promotion
+```
+
+Master Control sudah mencatat batch ini sebagai:
+
+> `QA_PENDING — not approved for production promotion`
+
+dan **Golden Dataset v1 tetap immutable**.
+
+### Langkah berikutnya yang saya kerjakan
+
+**Independent Answer Verification + Pedagogical Review untuk 9 soal `BI12-W1-DF-V1`.**
+
+Pada tahap tersebut saya akan memperlakukan setiap jawaban sebagai sesuatu yang harus **dibuktikan ulang dari sumber**, bukan mempercayai answer key yang baru saja saya buat.
+
+Kalau ada satu saja soal yang ternyata ambigu, kurang bukti, terlalu interpretatif, atau provenance-nya tidak cukup kuat, soal tersebut akan **BLOCKED/REVISE**, bukan dipaksa lolos.
+
+==========================================================================================================================
+
+Saya sudah menyelesaikan **Independent Answer Verification + Pedagogical Review untuk seluruh 9 soal `BI12-W1-DF-V1`**.
+
+Hasilnya **bukan 9/9 langsung PASS**—dan ini justru sesuai quality gate kita: kita menemukan dua hal yang memang harus diperbaiki sebelum batch boleh maju.
+
+## Evidence
+
+Saya kembali melakukan re-sync dan membaca seluruh `Alur Kerja Proyek` sebelum review. Master Control menegaskan bahwa setiap controlled batch wajib melewati **answer verification → pedagogical review → provenance/renderer/batch gate → regression → promotion** dan Golden Dataset v1 tetap immutable.
+
+Saya kemudian membaca ulang:
+
+* batch `BI12-W1-DF-V1`;
+* provenance D–F;
+* Buku Siswa aktual;
+* dan melakukan cross-check langsung terhadap bagian CV, presentasi, serta video resume.
+
+Contoh evidence independen dari Buku Siswa:
+
+* Rubrik CV secara eksplisit menilai **relevansi informasi, pendidikan yang terstruktur, pengalaman yang relevan/jelas, dan keterampilan yang relevan**.
+* Video resume memang mencakup perkenalan, kelebihan, pengalaman, kontribusi, dan keterampilan relevan.
+* Buku juga memerintahkan siswa menyesuaikan video dengan posisi yang dilamar, menyiapkan poin penting, berlatih beberapa kali, dan berbicara jelas serta percaya diri.
+
+---
+
+# Hasil review 9 soal
+
+| ID       | Hasil                  |
+| -------- | ---------------------- |
+| `DF-001` | 🔴 **REVISE**          |
+| `DF-002` | 🟡 **REVISE METADATA** |
+| `DF-003` | 🟢 PASS                |
+| `DF-004` | 🟢 PASS                |
+| `DF-005` | 🟢 PASS                |
+| `DF-006` | 🟢 PASS                |
+| `DF-007` | 🟢 PASS                |
+| `DF-008` | 🟢 PASS                |
+| `DF-009` | 🟢 PASS                |
+
+Jadi:
+
+**7/9 PASS as written.**
+**2/9 membutuhkan revisi.**
+
+---
+
+## Temuan 1 — DF-001 memang bermasalah
+
+Soal awal mengatakan:
+
+> “...tidak menjelaskan pengalaman mengelola dokumen.”
+
+Tetapi jawaban yang dikunci adalah:
+
+> “Mengganti informasi tersebut dengan pengalaman mengelola arsip atau dokumen yang relevan dengan posisi.”
+
+Masalahnya:
+
+**skenario tidak pernah mengatakan bahwa pelamar memang memiliki pengalaman tersebut.**
+
+Jadi jawaban benar membutuhkan asumsi tersembunyi.
+
+Ini melanggar prinsip kita:
+
+> setiap jawaban single-answer harus dapat dipertanggungjawabkan dari informasi yang tersedia.
+
+### Saya sudah memperbaikinya
+
+Skenario sekarang secara eksplisit mengatakan pelamar **memang memiliki pengalaman mengelola arsip digital saat menjadi panitia sekolah**, tetapi belum mencantumkannya.
+
+Dengan begitu:
+
+```text
+Evidence dalam scenario
+        ↓
+pengalaman arsip digital
+        ↓
+relevan dengan posisi
+        ↓
+jawaban menjadi defensible
+```
+
+Bukan lagi asumsi.
+
+---
+
+# Temuan 2 — DF-002 bukan salah konten
+
+DF-002 secara akademik **benar**.
+
+Tetapi metadata:
+
+```text
+"cognitive_level": "evaluate"
+```
+
+terlalu tinggi untuk tuntutan aktual soal.
+
+Siswa terutama diminta:
+
+> mengidentifikasi perubahan yang sesuai dengan beberapa dimensi rubrik CV.
+
+Itu lebih tepat kita klasifikasikan sebagai:
+
+```text
+C4 / analyze
+```
+
+bukan C5/evaluate.
+
+Jadi saya hanya mengubah **metadata**, bukan isi soal.
+
+Ini penting karena kita tidak boleh membuat soal tampak lebih sulit hanya dengan memberi label kognitif yang lebih tinggi.
+
+---
+
+# Implementation
+
+Saya **tidak mengubah batch asli**.
+
+Sesuai pola A–C yang sudah kita sepakati, batch asli tetap menjadi artefak audit.
+
+Saya membuat:
+
+### Review
+
+`phase-3/world-1-question-batch-d-f-v1-review.md`
+
+Commit:
+
+`e28128be1aa4abd748c90451772f86c7563d7862`
+
+Dokumen tersebut mencatat:
+
+* evidence;
+* independent answer verification;
+* pedagogical review;
+* hasil setiap ID;
+* root cause DF-001;
+* metadata issue DF-002;
+* keputusan revisi.
+
+### Revision Overlay
+
+`phase-3/world-1-question-batch-d-f-v1.1-revisions.json`
+
+Commit:
+
+`f57c6399478a841c2a15bc08fa82125e11fbc7ce`
+
+Overlay berisi dua perubahan:
+
+```text
+DF-001
+content revision
+        ↓
+scenario diperjelas dengan evidence nyata
+
+DF-002
+metadata revision
+        ↓
+evaluate → analyze
+```
+
+DF-003 sampai DF-009 **tidak disentuh**.
+
+---
+
+# Interpretation
+
+Ini berarti **Independent Answer Verification + Pedagogical Review selesai**, tetapi gate berikutnya **belum boleh dijalankan terhadap batch v1 mentah**.
+
+Status yang benar:
+
+```text
+D–F Provenance Pass              ✅
+D–F Batch v1                    ✅
+Independent Answer Verification ✅
+Pedagogical Review              ✅
+        │
+        ├── DF-001 → REVISE
+        └── DF-002 → METADATA REVISE
+        │
+        ↓
+D–F v1.1 Revision Overlay       ✅
+        ↓
+Revision Quality Gate            ⏭️ NEXT
+        ↓
+Canonical Merge
+        ↓
+Controlled Regression
+        ↓
+Promotion
+```
+
+### Dan yang paling penting:
+
+**Golden Dataset v1 tetap tidak berubah.**
+
+---
+
+## Satu hal administratif
+
+Saya **tidak akan mengklaim Master Control sudah diperbarui** pada langkah ini karena connector GitHub yang tersedia mengharuskan penggantian file Master Control dengan **isi lengkap + blob SHA terbaru**. Sumber yang berhasil saya re-sync saat ini tidak memberikan salinan lengkap file dalam bentuk yang aman untuk saya overwrite tanpa risiko menghilangkan bagian dokumen yang tidak terlihat.
+
+Saya sengaja **tidak mengambil risiko merusak Master Control hanya demi mengatakan "sudah di-update"**.
+
+Review dan revision overlay sudah tersimpan dengan benar; status Master Control yang terakhir tetap `D–F controlled batch v1: QA_PENDING`, yang secara substansi masih benar.
+
+### Langkah berikutnya
+
+Sekarang kita masuk ke:
+
+# **D–F v1.1 Revision Quality Gate**
+
+Di sana saya akan memverifikasi ulang **DF-001 dan DF-002 setelah revisi**, sekaligus memastikan 7 soal yang tidak berubah tidak mengalami regresi.
+
+Jika gate itu PASS, baru kita lanjut ke:
+
+**Canonical Batch D–F v1.1 Merge → Full Batch Quality Gate.**
+
+============================================================================================================================
+
+Selesai. Saya mengikuti urutan yang Anda setujui dan **Master Control berhasil di-update ulang**.
+
+## Evidence
+
+Sebelum bekerja saya re-sync dan membaca kembali seluruh `Alur Kerja Proyek`, termasuk Master Control, lalu memverifikasi batch dasar dan revision overlay. Master Control sekarang memang mencatat urutan gate terbaru.
+
+### Revision Quality Gate
+
+Hasil:
+
+**🟢 PASS**
+
+Dua temuan dari review sebelumnya sudah teratasi:
+
+* `DF-001` → skenario sekarang secara eksplisit menyatakan pelamar memang memiliki pengalaman mengelola arsip digital; sehingga jawaban tidak lagi membutuhkan asumsi.
+* `DF-002` → metadata cognitive level dikoreksi dari `evaluate` → `analyze`.
+* `DF-003` s.d. `DF-009` → tidak berubah.
+
+Revision overlay yang digunakan adalah `world-1-question-batch-d-f-v1.1-revisions.json`.
+
+Artefak gate:
+
+`phase-3/world-1-question-batch-d-f-v1.1-revision-quality-gate.md`
+
+Commit:
+
+`06ee70fc0063a08cb82a78515cb594cb0a0b3415`
+
+---
+
+# Canonical Batch D–F v1.1 Merge
+
+Karena Revision Quality Gate PASS, saya lanjutkan sesuai rencana.
+
+Canonical manifest baru:
+
+`phase-3/world-1-question-batch-d-f-v1.1-canonical.json`
+
+Efektif:
+
+```text
+DF-001
+DF-002
+DF-003
+DF-004
+DF-005
+DF-006
+DF-007
+DF-008
+DF-009
+```
+
+Dengan aturan deterministik:
+
+```text
+Base Batch
+    +
+Revision Overlay
+    ↓
+Canonical D–F v1.1
+```
+
+Commit:
+
+`0cf4243676a5d6507c3bac3f1f4b127d4df181bc`
+
+**Golden Dataset v1 tidak disentuh.**
+
+---
+
+# Full Batch Quality Gate
+
+Saya lanjutkan langsung ke Full Batch Quality Gate.
+
+Hasil:
+
+## 🟢 PASS
+
+| Gate                           | Status |
+| ------------------------------ | ------ |
+| Canonical identity             | ✅      |
+| Revision application           | ✅      |
+| Unchanged item preservation    | ✅      |
+| Unique IDs                     | ✅      |
+| Schema fields                  | ✅      |
+| Answer shape                   | ✅      |
+| Supported question types       | ✅      |
+| Provenance                     | ✅      |
+| Answer verification            | ✅      |
+| Pedagogical review             | ✅      |
+| Renderer compatibility         | ✅      |
+| Golden Dataset isolation       | ✅      |
+| Difficulty handling            | ✅*     |
+| Document-inspection limitation | ✅*     |
+
+`*` bukan error:
+
+* difficulty tetap **provisional** sampai kita memiliki data empiris;
+* `document_inspection` masih memakai rendering generik yang sudah didukung renderer. Specialized UI tetap menjadi pekerjaan teknis berikutnya.
+
+Artefak:
+
+`phase-3/world-1-question-batch-d-f-v1.1-quality-gate.md`
+
+Commit:
+
+`5e44a5d55870345ec476a4be75d22294ff2a2151`
+
+---
+
+# Master Control
+
+Saya mencoba update pertama dan tool menolak karena `sha` tidak disertakan—jadi **saya tidak menganggap update itu berhasil**.
+
+Kemudian saya:
+
+1. fetch ulang Master Control;
+2. mengambil SHA aktual `e16acd0cd9de0751f8eacd666bb3668b589014e3`;
+3. melakukan update dengan SHA tersebut;
+4. update berhasil;
+5. fetch ulang lagi untuk verifikasi.
+
+Commit Master Control:
+
+`f6d55290fe0d80043d644c4c79d5362ae2c0489a`
+
+Content SHA baru:
+
+`0b875dbc0432dfac421ad113782db89d49a653e5`
+
+Master Control sekarang mencatat:
+
+```text
+D–F Independent Review                 ✅
+D–F v1.1 Revision Quality Gate        ✅
+Canonical Batch D–F v1.1              ✅
+Full Batch Quality Gate               ✅
+        ↓
+Controlled Live Regression             ⏭️ NEXT
+        ↓
+Final Promotion Checks
+        ↓
+Promotion
+```
+
+Status tersebut sudah saya verifikasi ulang dari repository.
+
+---
+
+## Status proyek saat ini
+
+```text
+Chapter I — Lane D–F
+
+Provenance Pass              ✅
+Batch v1                     ✅
+Independent Verification     ✅
+Pedagogical Review           ✅
+Revision v1.1                ✅
+Revision Quality Gate        ✅
+Canonical Merge              ✅
+Full Batch Quality Gate      ✅
+────────────────────────────────
+Live Regression              ⏭️ NEXT
+Promotion                    🔒
+```
+
+**Saya belum menyatakan D–F v1.1 production-ready.**
+
+Alasannya sama seperti sebelumnya: Full Batch Quality Gate adalah pemeriksaan konten/schema/static; kita masih membutuhkan **bukti browser nyata**.
+
+### Langkah berikutnya yang saya tetapkan:
+
+# **Controlled Live Regression — D–F v1.1**
+
+Kita akan membuat **resolved QA dataset D–F v1.1**, menjalankannya melalui **renderer aktual**, lalu melakukan regression untuk seluruh **9 soal**.
+
+Targetnya sama dengan batch A–C:
+
+```text
+DATA        PASS
+SCHEMA      PASS
+TYPES       PASS
+LOAD        PASS
+ANSWER      PASS
+SCORE       PASS
+COVERAGE    PASS
+FEEDBACK    PASS
+```
+
+Baru setelah browser benar-benar PASS kita masuk **Final Promotion Checks → Approved World 1 Content D–F v1.1**.
+
+**Jadi sekarang kita berada tepat di pintu Live Regression.**
