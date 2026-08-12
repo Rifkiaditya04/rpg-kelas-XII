@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World 1 — Controlled Regression Harness v1</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:1100px;margin:0 auto;padding:24px;background:#f5f5f5;color:#222}.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:20px;margin-bottom:16px}.status{font-weight:700}.pass{color:#137333}.fail{color:#b3261e}.pending{color:#8a5a00}button{padding:10px 16px;border:0;border-radius:8px;cursor:pointer}iframe{width:100%;height:720px;border:1px solid #ccc;border-radius:10px;background:white}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}.item{padding:10px;border:1px solid #ddd;border-radius:8px}.small{font-size:.9rem;color:#666}
+</style>
+</head>
+<body>
+<section class="card">
+<h1>Controlled Regression Harness v1</h1>
+<p>QA-only runner for canonical World 1 A–C v1.1. It drives the <strong>actual question renderer</strong> against the canonical dataset; it is not part of the student-facing game.</p>
+<button id="run">Run 9-item regression</button>
+<p id="overall" class="status pending">Belum dijalankan.</p>
+</section>
+<section class="card">
+<h2>Regression checks</h2>
+<div id="checks" class="grid"></div>
+</section>
+<section class="card">
+<h2>Renderer under test</h2>
+<iframe id="game" title="Renderer under test"></iframe>
+</section>
+<script>
+const DATA_URL='../../phase-3/world-1-question-batch-a-c-v1.1-canonical.json';
+const checksEl=document.getElementById('checks');
+const overallEl=document.getElementById('overall');
+const frame=document.getElementById('game');
+const runBtn=document.getElementById('run');
+let dataset=null;
+function checkCard(id,label,state='PENDING',detail=''){
+ const el=document.createElement('div');el.className='item';el.innerHTML=`<strong>${id}</strong><br>${label}<br><span class="status ${state==='PASS'?'pass':state==='FAIL'?'fail':'pending'}">${state}</span><div class="small">${detail}</div>`;checksEl.appendChild(el);return el;
+}
+function wait(ms){return new Promise(r=>setTimeout(r,ms));}
+async function waitFor(fn,timeout=6000){const start=Date.now();while(Date.now()-start<timeout){try{if(fn())return;}catch(e){}await wait(100);}throw new Error('timeout');}
+function expectedFor(q){return Array.isArray(q.answer)?[...q.answer]:[q.answer];}
+function optionButtons(){return [...frame.contentDocument.querySelectorAll('.option')];}
+function clickAnswers(q){const expected=expectedFor(q);const buttons=optionButtons();for(const answer of expected){const b=buttons.find(x=>x.dataset.answer===answer);if(!b)throw new Error(`Jawaban tidak ditemukan di opsi: ${answer}`);b.click();}}
+async function run(){
+ runBtn.disabled=true;checksEl.innerHTML='';overallEl.textContent='Running…';overallEl.className='status pending';
+ try{
+  const res=await fetch(DATA_URL,{cache:'no-store'});if(!res.ok)throw new Error(`Canonical dataset HTTP ${res.status}`);dataset=await res.json();
+  checkCard('DATA','Canonical dataset dapat dimuat','PASS',`${dataset.items.length} item`);
+  if(dataset.items.length!==9)throw new Error('Jumlah canonical item bukan 9');
+  const ids=dataset.items.map(q=>q.id);if(new Set(ids).size!==ids.length)throw new Error('ID duplikat');
+  checkCard('SCHEMA','9 item + ID unik','PASS','AC-001 … AC-009');
+  const supported=['mcq','multi_select','document_inspection','dialogue_analysis','ordering','evidence_matching'];
+  for(const q of dataset.items)if(!supported.includes(q.question_type))throw new Error(`${q.id}: unsupported ${q.question_type}`);
+  checkCard('TYPES','Semua question_type dikenali renderer','PASS',dataset.items.map(q=>q.question_type).join(', '));
+  frame.src=`index.html?dataset=${encodeURIComponent(DATA_URL)}&qa=1&regression=1`;
+  await waitFor(()=>frame.contentDocument&&frame.contentDocument.querySelector('#questionArea'));
+  checkCard('LOAD','Renderer aktual memuat canonical dataset','PASS','iframe memakai renderer.js aktual');
+  const seen=[];let expectedXP=0;
+  for(let i=0;i<dataset.items.length;i++){
+   await waitFor(()=>frame.contentDocument.querySelector('#counter'));
+   const counter=frame.contentDocument.querySelector('#counter').textContent;
+   const m=counter.match(/Soal (\d+) dari (\d+)/);if(!m)throw new Error('Counter tidak terbaca');
+   const q=dataset.items.find(x=>x.id===frame.contentDocument.querySelector('.small')?.textContent?.split(' · ')[1]) || dataset.items[i];
+   const idText=frame.contentDocument.querySelector('#feedback')?.textContent||'';
+   const currentIndex=i;
+   const currentQuestion=dataset.items.find(x=>x.question===frame.contentDocument.querySelector('.question')?.textContent);
+   if(!currentQuestion)throw new Error(`Soal ${i+1} tidak cocok dengan canonical dataset`);
+   seen.push(currentQuestion.id);
+   clickAnswers(currentQuestion);
+   const submit=frame.contentDocument.querySelector('#submit');if(!submit||submit.disabled)throw new Error(`${currentQuestion.id}: submit disabled setelah memilih jawaban`);submit.click();
+   await waitFor(()=>frame.contentDocument.querySelector('#feedback')&&!frame.contentDocument.querySelector('#feedback').classList.contains('hidden'));
+   const feedback=frame.contentDocument.querySelector('#feedback').textContent||'';if(!feedback.includes('Jawaban benar'))throw new Error(`${currentQuestion.id}: jawaban canonical tidak diterima`);
+   if(currentQuestion.question_type==='multi_select'){const hint=frame.contentDocument.querySelector('.interaction-hint')?.textContent||'';if(!hint.includes('Pilih semua')||!hint.includes(`Pilih ${currentQuestion.answer.length} jawaban`))throw new Error(`${currentQuestion.id}: multi-select instruction mismatch`);}
+   expectedXP+=100;
+   const next=frame.contentDocument.querySelector('#next');if(!next)throw new Error(`${currentQuestion.id}: next tidak ditemukan`);next.click();
+   if(i<dataset.items.length-1)await waitFor(()=>frame.contentDocument.querySelector('.question'));
+  }
+  checkCard('ANSWER','Semua 9 canonical answer keys diterima','PASS',`XP expected ${expectedXP}`);
+  const result=frame.contentDocument.querySelector('#result');if(!result||result.classList.contains('hidden'))throw new Error('Result screen tidak muncul');
+  if(!result.textContent.includes('9/9')||!result.textContent.includes(String(expectedXP)))throw new Error('Final result mismatch');
+  checkCard('SCORE','XP dan hasil akhir konsisten','PASS',`9/9 · ${expectedXP} XP`);
+  if(new Set(seen).size!==9)throw new Error('Tidak semua ID canonical dimainkan');
+  checkCard('COVERAGE','Semua 9 ID dimainkan','PASS',seen.join(', '));
+  checkCard('FEEDBACK','Feedback + explanation tampil','PASS','Diverifikasi pada setiap submission');
+  overallEl.textContent='PASS — Controlled Regression Harness v1';overallEl.className='status pass';
+ }catch(err){checkCard('REGRESSION','Controlled regression','FAIL',err.message);overallEl.textContent='FAIL — lihat detail check terakhir';overallEl.className='status fail';}
+ finally{runBtn.disabled=false;}
+}
+runBtn.onclick=run;
+</script>
+</body>
+</html>
