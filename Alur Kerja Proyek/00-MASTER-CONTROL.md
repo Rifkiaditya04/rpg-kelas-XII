@@ -28,13 +28,13 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Full quality-gate artifact: `phase-3/world-1-question-batch-a-c-v1.1-quality-gate.md`
 - Revision artifact: `phase-3/world-1-question-batch-a-c-v1.1-revisions.json`
 - Revision review artifact: `phase-3/world-1-question-batch-a-c-v1.1-review.md`
-- **Controlled Regression Harness v1: implemented; first live attempt exposed and confirmed a harness bug; a second source-level fix is now complete after the first fix still reproduced the same runtime error**
+- **Controlled Regression Harness v1: implemented; first live attempt exposed and confirmed a harness bug; static resolved QA dataset was then introduced and the second source-level fix eliminated the prior data-loading ambiguity.**
 - Harness: `prototype/bahasa-indonesia/regression-harness.html`
 - Resolved QA dataset: `phase-3/world-1-question-batch-a-c-v1.1-regression-dataset.json`
 - Harness protocol: `phase-3/world-1-controlled-regression-harness-v1.md`
-- **Harness root cause is confirmed at the data-loading boundary: the canonical file is a manifest without `items`; the original harness incorrectly assumed `dataset.items`. The corrected design now uses a static resolved QA dataset containing the 9 effective items, avoiding Blob URL injection as a second source of runtime ambiguity.**
-- Renderer QA dataset override: `prototype/bahasa-indonesia/renderer.js` accepts optional `?dataset=` while preserving Golden Dataset v1 as default
-- **Live nine-item regression: pending re-run against the latest deployed harness; no PASS claim yet**
+- **Latest live attempt: DATA, SCHEMA, TYPES, LOAD, and ANSWER checks passed; regression then failed because the harness submitted the final answer but did not click the renderer's final `#next` button, so `finish()` was never invoked and the result screen correctly remained hidden. Root cause is confirmed in harness control flow, not in the renderer or dataset.**
+- **Harness fix committed: after every submission, including item 9, the harness now clicks `#next`; for item 9 it waits for `#result` to become visible before evaluating final score.**
+- **Live nine-item regression: pending re-run against the latest deployed harness; no PASS claim yet.**
 - **Golden Dataset promotion remains blocked until live nine-item regression is completed and the canonical batch passes final promotion checks**
 - **Mass generation tetap ditahan sampai batch promotion gate lulus**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
@@ -157,7 +157,8 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - **AC-005 content passes, but its `document_inspection` label currently uses generic option-selection rendering; specialized document-inspection UI remains a later implementation task.**
 - **Controlled Regression Harness v1 implemented: `prototype/bahasa-indonesia/regression-harness.html`; protocol documented at `phase-3/world-1-controlled-regression-harness-v1.md`.**
 - **First live harness attempt failed because the harness treated the canonical manifest as if it contained `items`; root cause was confirmed. A follow-up fix using Blob URL injection still reproduced the runtime failure, so that approach was abandoned.**
-- **Current harness fix uses a static resolved QA dataset and passes its URL directly to the actual renderer. The harness now also surfaces renderer load errors instead of silently converting them into timeouts.**
+- **Current harness uses a static resolved QA dataset and passes its URL directly to the actual renderer. The latest live attempt passed DATA, SCHEMA, TYPES, LOAD, and ANSWER, then failed because the harness did not click the renderer's final `#next` button; the renderer only calls `finish()` from that button.**
+- **Harness control-flow fix committed: after every submission, including item 9, the harness now clicks `#next`; on item 9 it waits for `#result` to become visible before final score validation.**
 - **Live nine-item regression is pending re-run against the latest deployed harness; no PASS claim is made from source inspection alone.**
 - World 2–4 expansion waits until the World 1 content-expansion gate is satisfied.
 
