@@ -49,7 +49,7 @@ async function run(){
   const supported=['mcq','multi_select','document_inspection','dialogue_analysis','ordering','evidence_matching'];
   for(const q of dataset.items)if(!supported.includes(q.question_type))throw new Error(`${q.id}: unsupported ${q.question_type}`);
   checkCard('TYPES','Semua question_type dikenali renderer','PASS',dataset.items.map(q=>q.question_type).join(', '));
-  frame.src=`index.html?dataset=${encodeURIComponent(DATASET_URL)}&qa=1&regression=1&v=3`;
+  frame.src=`index.html?dataset=${encodeURIComponent(DATASET_URL)}&qa=1&regression=1&v=4`;
   await waitFor(()=>frame.contentDocument&&frame.contentDocument.querySelector('#questionArea'));
   await waitFor(()=>{const err=frame.contentDocument.querySelector('#loadError');if(err&&!err.classList.contains('hidden'))throw new Error(err.textContent.trim());return true;});
   checkCard('LOAD','Renderer aktual memuat resolved canonical dataset','PASS','iframe memakai renderer.js aktual + regression dataset');
@@ -67,7 +67,14 @@ async function run(){
    const feedback=frame.contentDocument.querySelector('#feedback').textContent||'';if(!feedback.includes('Jawaban benar'))throw new Error(`${currentQuestion.id}: jawaban canonical tidak diterima`);
    if(currentQuestion.question_type==='multi_select'){const hint=frame.contentDocument.querySelector('.interaction-hint')?.textContent||'';if(!hint.includes('Pilih semua')||!hint.includes(`Pilih ${currentQuestion.answer.length} jawaban`))throw new Error(`${currentQuestion.id}: multi-select instruction mismatch`);}
    expectedXP+=100;
-   if(i<dataset.items.length-1){const next=frame.contentDocument.querySelector('#next');if(!next)throw new Error(`${currentQuestion.id}: next tidak ditemukan`);next.click();await waitFor(()=>frame.contentDocument.querySelector('.question'));}
+   const next=frame.contentDocument.querySelector('#next');
+   if(!next)throw new Error(`${currentQuestion.id}: next tidak ditemukan`);
+   next.click();
+   if(i<dataset.items.length-1){
+     await waitFor(()=>frame.contentDocument.querySelector('.question'));
+   }else{
+     await waitFor(()=>{const result=frame.contentDocument.querySelector('#result');return result&&!result.classList.contains('hidden');});
+   }
   }
   checkCard('ANSWER','Semua 9 canonical answer keys diterima','PASS',`XP expected ${expectedXP}`);
   const result=frame.contentDocument.querySelector('#result');if(!result||result.classList.contains('hidden'))throw new Error('Result screen tidak muncul');
