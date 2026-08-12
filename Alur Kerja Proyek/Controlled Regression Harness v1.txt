@@ -1,0 +1,162 @@
+Saya sudah melanjutkan pemeriksaan sampai titik **Live Nine-Item Regression**, dan ada satu hal penting yang saya temukan sebelum kita mengklaim gate ini selesai.
+
+## Evidence
+
+Sesuai aturan proyek, saya melakukan re-sync lalu membaca kembali **seluruh file `Alur Kerja Proyek` satu per satu** sebelum bekerja. Master Control terbaru juga sudah dibaca.
+
+Kemudian saya verifikasi canonical batch:
+
+```text
+BI12-W1-AC-001
+BI12-W1-AC-002
+BI12-W1-AC-003
+BI12-W1-AC-004
+BI12-W1-AC-005
+BI12-W1-AC-006
+BI12-W1-AC-007
+BI12-W1-AC-008
+BI12-W1-AC-009
+```
+
+Canonical artifact memang berisi **9 ID** dan menggunakan base batch + revision overlay.
+
+Full Quality Gate juga masih menyatakan:
+
+> `Production Golden Dataset promotion: BLOCKED / NOT YET PROMOTED`
+
+dan secara eksplisit mensyaratkan live browser regression.
+
+### Temuan penting
+
+Saya tidak akan berpura-pura mengatakan **Live Nine-Item Regression sudah PASS**.
+
+Sebab setelah saya telusuri implementasinya, **9 soal canonical A–C v1.1 belum menjadi dataset yang dimainkan oleh halaman game produksi**.
+
+Saat ini:
+
+```text
+Golden Dataset v1
+        ↓
+Micro-Prototype
+        ↓
+Playable
+```
+
+sedangkan:
+
+```text
+Canonical A–C v1.1
+        ↓
+Quality Gate
+        ↓
+❌ belum masuk playable regression harness
+```
+
+Jadi kalau saya mengatakan "saya sudah melakukan live regression 9 soal", itu akan melanggar prinsip kita sendiri:
+
+> **Evidence ≠ asumsi.**
+
+---
+
+# Implementation
+
+Karena itu saya **tidak akan memasukkan 9 soal ini langsung ke Golden Dataset atau mengganti Micro-Prototype**.
+
+Langkah yang benar adalah membuat:
+
+### `Controlled Regression Harness`
+
+Tujuannya:
+
+```text
+Canonical Batch v1.1
+       ↓
+QA Regression Harness
+       ↓
+Renderer aktual
+       ↓
+9 soal dimainkan
+       ↓
+Feedback / scoring / randomization
+       ↓
+Regression Report
+```
+
+Harness tersebut harus menjadi **lingkungan QA**, bukan bagian dari game final.
+
+Dengan begitu kita bisa menguji:
+
+1. semua 9 soal benar-benar dapat dimuat;
+2. setiap `question_type` bekerja;
+3. jawaban benar dapat diverifikasi;
+4. jawaban salah menghasilkan feedback;
+5. multi-select bekerja;
+6. opsi teracak;
+7. urutan soal teracak;
+8. explanation tampil;
+9. provenance/metadata tidak merusak runtime;
+10. tidak ada JavaScript error;
+11. skor/XP tidak rusak;
+12. `document_inspection` tetap usable walaupun masih generic option-selection.
+
+---
+
+# Interpretation
+
+Ini justru menemukan **satu gap arsitektur yang bagus untuk kita perbaiki sekarang**.
+
+Kita sebelumnya punya:
+
+```text
+Content QA
++
+Renderer QA
++
+Live World 1 QA
+```
+
+tetapi belum punya:
+
+```text
+Canonical Content
+        ↓
+Automated/Controlled Regression
+        ↓
+Actual Renderer
+```
+
+Kalau kita melewati gap ini, setiap kali membuat batch 50/100/500 soal kita akan kembali mengandalkan pemeriksaan manual.
+
+Saya tidak ingin itu.
+
+### Jadi langkah berikutnya yang saya tetapkan:
+
+**Controlled Regression Harness v1 → jalankan 9 soal canonical melalui renderer aktual → hasilkan Regression Report → baru Promotion Gate.**
+
+Setelah harness dibuat, Anda **tidak perlu memilih desain apa pun**. Saya yang akan menentukan struktur QA-nya berdasarkan arsitektur yang sudah dikunci.
+
+Dan Golden Dataset v1 tetap **immutable** selama proses ini.
+
+```text
+Canonical A–C v1.1
+        ↓
+Controlled Regression Harness   ← NEXT
+        ↓
+9-item regression
+        ↓
+Regression Report
+        ↓
+Promotion Gate
+        ↓
+Approved World 1 Content
+```
+
+**Status saat ini:**
+
+* Canonical merge ✅
+* Full content/schema/provenance gate ✅
+* Master Control ✅
+* Live regression ❌ belum dapat dinyatakan PASS
+* Golden Dataset promotion 🔒 tetap ditahan
+
+Saya akan melanjutkan dari sini dengan **Controlled Regression Harness v1**, bukan langsung mempromosikan batch.
