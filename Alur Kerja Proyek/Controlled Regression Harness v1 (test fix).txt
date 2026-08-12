@@ -1,0 +1,593 @@
+Sudah selesai saya kerjakan **Controlled Regression Harness v1** dan saya pastikan statusnya tercatat dengan benar di Master Control.
+
+## Evidence
+
+Sebelum bekerja, saya melakukan re-sync dan membaca kembali seluruh dokumen di `Alur Kerja Proyek`, termasuk Master Control terbaru.
+
+Saya juga memeriksa **renderer aktual**, bukan membuat renderer tiruan. Source terbaru menunjukkan bahwa renderer tetap menggunakan Golden Dataset v1 secara default, tetapi sekarang dapat menerima dataset QA melalui parameter `?dataset=`.
+
+Ini penting karena:
+
+```text
+Normal game
+index.html
+   ↓
+renderer.js
+   ↓
+Golden Dataset v1
+```
+
+tetap **tidak berubah**.
+
+Sedangkan QA:
+
+```text
+Regression Harness
+       ↓
+index.html
+       ↓
+renderer.js
+       ↓
+Canonical Batch A–C v1.1
+```
+
+---
+
+# Implementation
+
+Saya membuat:
+
+### 1. Controlled Regression Harness
+
+`prototype/bahasa-indonesia/regression-harness.html`
+
+Harness ini menggunakan **renderer aktual melalui iframe**, bukan menyalin ulang logika game.
+
+Ia melakukan pemeriksaan terhadap:
+
+* canonical dataset berhasil dimuat;
+* jumlah soal = 9;
+* ID unik;
+* `question_type` dikenali;
+* renderer aktual berhasil memuat dataset;
+* setiap soal canonical ditemukan di UI;
+* answer key setiap soal diterima renderer;
+* tombol `Periksa Jawaban` bekerja;
+* feedback muncul;
+* multi-select menampilkan instruksi jumlah jawaban;
+* seluruh 9 ID dimainkan;
+* XP akhir = **900** untuk all-correct regression;
+* hasil akhir = **9/9**.
+
+### 2. Renderer QA injection
+
+Saya menambahkan kemampuan:
+
+```text
+index.html?dataset=<canonical-dataset>&qa=1
+```
+
+ke `renderer.js`.
+
+Perubahan ini **tidak mengganti dataset default**.
+
+Default tetap:
+
+```text
+knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json
+```
+
+sehingga Micro-Prototype siswa tidak tiba-tiba memakai batch eksperimen.
+
+Perubahan renderer sudah berhasil di-commit:
+
+`c89e6b6facfddf0356c80c9b56705ef23a796f8d`
+
+dan diverifikasi ulang setelah commit.
+
+### 3. Protokol QA
+
+Saya juga membuat:
+
+`phase-3/world-1-controlled-regression-harness-v1.md`
+
+yang mendokumentasikan seluruh check dan batasan eksekusi.
+
+---
+
+# ⚠️ Satu hal yang harus kita bedakan
+
+Harness-nya **sudah selesai dibuat dan secara statis sudah diverifikasi**.
+
+Tetapi saya **belum menyatakan Live Regression PASS**.
+
+Alasannya sangat penting:
+
+> Tool yang saya punya untuk mengakses GitHub dapat membaca dan mengubah repository, tetapi tidak memberikan saya sesi browser interaktif nyata untuk menekan tombol `Run 9-item regression` dan mengamati DOM browser seperti yang Anda lakukan.
+
+Jadi saya tidak akan membuat klaim palsu seperti:
+
+> "9 soal sudah dimainkan dan semuanya PASS."
+
+Itu akan melanggar aturan proyek kita sendiri mengenai **Evidence vs Implementation vs Interpretation**.
+
+Status yang benar:
+
+```text
+Controlled Regression Harness
+        ✅ IMPLEMENTED
+
+Static/source verification
+        ✅ PASS
+
+Live browser execution
+        ⏳ PENDING
+
+Golden Dataset promotion
+        🔒 BLOCKED
+```
+
+Master Control sudah diperbarui dan saya **re-fetch setelah update** untuk memastikan status tersebut benar-benar tersimpan.
+
+---
+
+========================================================================================================================
+
+Benar, error yang Anda kirim **berhasil saya telusuri sampai root cause-nya**, dan ini ternyata bukan masalah pada 9 soal maupun renderer.
+
+## Evidence
+
+Saya re-sync dan membaca kembali seluruh `Alur Kerja Proyek` sebelum memperbaiki apa pun, lalu memeriksa langsung tiga sumber yang dipakai harness:
+
+1. `world-1-question-batch-a-c-v1.1-canonical.json`
+2. `world-1-question-batch-a-c-v1.json`
+3. `world-1-question-batch-a-c-v1.1-revisions.json`
+
+Canonical file ternyata memang **bukan dataset `{items:[...]}`**, melainkan **manifest** yang berisi `item_ids`, referensi base batch, dan revision overlay.
+
+Sedangkan `items` sebenarnya berada di base batch dan dua revisi berada di overlay.
+
+Jadi error:
+
+```text
+Cannot read properties of undefined (reading 'length')
+```
+
+berasal dari kode harness lama yang melakukan:
+
+```text
+dataset.items.length
+```
+
+langsung terhadap **manifest**.
+
+### Klasifikasi root cause
+
+**Evidence:** browser benar-benar menghasilkan error tersebut.
+
+**Implementation:** harness menganggap manifest mempunyai `items`, padahal tidak.
+
+**Interpretation:** **confirmed — bug berada di Controlled Regression Harness, bukan di konten atau Question Renderer.**
+
+---
+
+# Implementation — sudah diperbaiki
+
+Saya memperbaiki `regression-harness.html`.
+
+Sekarang alurnya:
+
+```text
+canonical manifest
+       ↓
+base batch
+       ↓
+revision overlay
+       ↓
+deterministic merge
+       ↓
+resolved dataset
+{
+   items: [9 soal]
+}
+       ↓
+actual renderer
+```
+
+Khusus:
+
+```text
+AC-001 → base
+AC-002 → base
+AC-003 → revision v1.1
+AC-004 → revision v1.1
+AC-005 → base
+AC-006 → base
+AC-007 → base
+AC-008 → base
+AC-009 → base
+```
+
+Kemudian resolved dataset dikirim ke renderer aktual melalui **QA-only Blob URL**.
+
+Jadi kita **tidak mengubah Golden Dataset v1**.
+
+Perubahan harness sudah berhasil di-commit:
+
+`e4f2056e16e7554bd30462628bf14ebd1875742f`
+
+dan saya **re-fetch setelah commit** untuk memverifikasi source aktual.
+
+Saya juga memperbarui dokumentasi regression harness agar root cause dan perbaikannya tercatat secara permanen.
+
+---
+
+# Master Control juga sudah diperbarui
+
+Status sekarang secara resmi:
+
+```text
+Harness v1
+   ↓
+Bug ditemukan                  ✅
+Root cause verified            ✅
+Source fix                     ✅
+Protocol updated               ✅
+Master Control updated         ✅
+   ↓
+LIVE REGRESSION RE-RUN         ⏳
+```
+
+Master Control sudah saya **update dan fetch ulang untuk verifikasi**.
+
+Commit Master Control:
+
+`3e4e35a7a07518ce1908861de3391367bbd251ed`
+
+---
+
+=============================================================================================================================
+
+Terima kasih. Saya tidak akan meminta Anda mencoba lagi dengan versi yang sama. **Saya menemukan bahwa perbaikan pertama memang belum menyelesaikan akar masalah runtime**, karena setelah manifest diperbaiki ke Blob URL, browser masih menghasilkan error yang sama.
+
+Saya sudah melakukan **perbaikan kedua yang lebih fundamental**.
+
+### Evidence
+
+Dari source aktual:
+
+* canonical file memang **manifest**, bukan objek yang mempunyai `items`;
+* renderer aktual mengharuskan dataset berbentuk `data.items` dan langsung menjalankan validasi terhadap `data.items.length`;
+* percobaan pertama menggunakan Blob URL sebagai dataset ternyata masih menghasilkan error yang sama pada browser Anda.
+
+Jadi saya tidak akan mempertahankan mekanisme Blob tersebut.
+
+### Perbaikan baru
+
+Saya membuat dataset QA yang sudah **resolved secara eksplisit**:
+
+`phase-3/world-1-question-batch-a-c-v1.1-regression-dataset.json`
+
+Isinya:
+
+```text
+Canonical Manifest
+       +
+Base Batch
+       +
+Revision Overlay
+       ↓
+9 effective questions
+       ↓
+REGRESSION DATASET
+```
+
+Kemudian harness sekarang langsung menjalankan renderer dengan:
+
+```text
+?dataset=../../phase-3/world-1-question-batch-a-c-v1.1-regression-dataset.json
+```
+
+bukan lagi:
+
+```text
+?dataset=blob:...
+```
+
+Harness juga sekarang akan menangkap dan menampilkan **error dari `#loadError` renderer secara langsung**, sehingga kalau masih ada masalah kita mendapatkan error sebenarnya, bukan sekadar `timeout`.
+
+Perubahan harness sudah tersimpan dan diverifikasi ulang di GitHub.
+
+Master Control juga sudah diperbarui setelah perubahan ini. Commit:
+
+`9f57780d8e4798cb3a1e73d1467d6b150d8fa1af`
+
+dan statusnya tetap dengan benar:
+
+> **Live nine-item regression: pending re-run — no PASS claim yet.**
+
+Saya sengaja belum menyatakan PASS.
+
+---
+
+======================================================================================================================
+
+Ya. Saya sudah menemukan **root cause yang sebenarnya** dari error terbaru, memperbaikinya, dan memperbarui Master Control.
+
+## Evidence — root cause terkonfirmasi
+
+Hasil browser Anda:
+
+```text
+DATA      PASS
+SCHEMA    PASS
+TYPES     PASS
+LOAD      PASS
+ANSWER    PASS
+REGRESSION FAIL
+Result screen tidak muncul
+```
+
+Ini sangat membantu karena membuktikan bahwa:
+
+* dataset resolved benar;
+* 9 soal benar;
+* renderer berhasil memuatnya;
+* answer key diterima;
+* masalah **bukan pada konten maupun renderer**.
+
+Saya kemudian membaca source renderer aktual. Fungsi `finish()` hanya dipanggil ketika tombol `#next` pada soal terakhir diklik.
+
+Sementara harness sebelumnya melakukan:
+
+```text id="6q8v5f"
+submit jawaban soal ke-9
+↓
+menunggu #result
+```
+
+tetapi **tidak pernah mengklik `#next` pada soal ke-9**.
+
+Akibatnya:
+
+```text id="3wz0iz"
+soal 9
+ ↓
+Periksa Jawaban
+ ↓
+Feedback
+ ↓
+[ Lihat Hasil ]   ← masih menunggu klik
+```
+
+dan `finish()` memang belum pernah dijalankan.
+
+**Root cause: CONFIRMED — bug control-flow pada Harness.**
+
+---
+
+# Implementation — sudah diperbaiki
+
+Sekarang harness melakukan:
+
+```text id="y1tq7j"
+Submit
+ ↓
+Feedback
+ ↓
+klik #next
+ ↓
+jika soal 1–8 → tunggu soal berikutnya
+jika soal 9 → tunggu #result
+ ↓
+validasi 9/9 + 900 XP
+```
+
+Perubahan aktual sudah tersimpan di:
+
+`prototype/bahasa-indonesia/regression-harness.html`
+
+dan saya **re-fetch setelah update** untuk memastikan kode yang tersimpan memang versi baru.
+
+Commit:
+
+`508b0d539df856264ceadcf51cb65161ef6e6692`
+
+---
+
+## Master Control juga sudah diperbarui
+
+Saya mencatat root cause ini secara eksplisit:
+
+> latest live attempt passed DATA, SCHEMA, TYPES, LOAD, and ANSWER, then failed because the harness did not click the renderer's final `#next` button; the renderer only calls `finish()` from that button.
+
+Kemudian dicatat juga bahwa fix sudah committed dan live regression masih **pending re-run**.
+
+Commit Master Control:
+
+`13380858f9cd752114ef0d7464d75ddaf3679746`
+
+---
+
+# Status sekarang
+
+```text
+Controlled Regression Harness
+        ↓
+DATA                 ✅
+SCHEMA               ✅
+TYPES                ✅
+LOAD                 ✅
+ANSWER               ✅
+        ↓
+Final navigation fix ✅
+        ↓
+LIVE RE-RUN           ⏳
+        ↓
+SCORE                ⏳
+COVERAGE             ⏳
+FEEDBACK             ⏳
+        ↓
+PROMOTION            🔒
+```
+
+**Belum saya klaim PASS**, karena source fix harus dibuktikan lagi oleh browser.
+
+### Silakan lakukan satu kali lagi
+
+Buka:
+
+[Controlled Regression Harness v1](https://rifkiaditya04.github.io/rpg-kelas-XII/prototype/bahasa-indonesia/regression-harness.html?utm_source=chatgpt.com)
+
+Lakukan **hard refresh (`Ctrl + F5`)**, kemudian:
+
+**Run 9-item regression**
+
+Kali ini yang kita harapkan adalah:
+
+```text
+DATA       PASS
+SCHEMA     PASS
+TYPES      PASS
+LOAD       PASS
+ANSWER     PASS
+SCORE      PASS
+COVERAGE   PASS
+FEEDBACK   PASS
+
+PASS — Controlled Regression Harness v1
+```
+
+Jika sudah PASS, **jangan melakukan apa-apa lagi di repository**. Beri tahu saya hasilnya, dan saya lanjutkan ke **Final Promotion Checks → Promotion Gate**.
+
+Golden Dataset v1 tetap aman dan belum dipromosikan.
+
+===========================================================================================================================
+
+**PASS terkonfirmasi.** Ini adalah milestone penting proyek kita.
+
+## Evidence
+
+Hasil yang Anda jalankan di browser adalah:
+
+* **DATA** → PASS
+* **SCHEMA** → PASS
+* **TYPES** → PASS
+* **LOAD** → PASS
+* **ANSWER** → PASS
+* **SCORE** → PASS
+* **COVERAGE** → PASS
+* **FEEDBACK** → PASS
+* **9/9 soal**
+* **900 XP**
+* seluruh 9 ID dimainkan dalam urutan yang teracak.
+
+Urutan yang Anda dapatkan juga membuktikan bahwa regression harness tidak lagi menggunakan urutan statis:
+
+`AC-006 → AC-007 → AC-001 → AC-008 → AC-004 → AC-005 → AC-009 → AC-003 → AC-002`
+
+Ini adalah **evidence nyata dari browser**, bukan sekadar pemeriksaan source.
+
+Saya juga kembali menjalankan protokol proyek: re-sync dan membaca seluruh dokumen `Alur Kerja Proyek` sebelum mengubah status.
+
+## Implementation
+
+Master Control sekarang sudah diperbarui dan diverifikasi ulang.
+
+Commit:
+
+`3b8f6b53bc88180ef8e77760bb0b4d6c0193a2e4`
+
+Status resmi sekarang:
+
+```text
+Controlled Regression Harness v1       ✅ PASS
+        │
+        ├── DATA                         ✅
+        ├── SCHEMA                       ✅
+        ├── TYPES                        ✅
+        ├── LOAD                         ✅
+        ├── ANSWER                       ✅
+        ├── SCORE                        ✅
+        ├── COVERAGE                     ✅
+        └── FEEDBACK                     ✅
+        │
+        ↓
+Final Promotion Checks                 🔴 NEXT
+        │
+        ↓
+Approved World 1 Content               ⏳
+        │
+        ↓
+Golden Dataset / production expansion  ⏳
+```
+
+Master Control secara eksplisit sekarang mencatat **Live nine-item regression: PASS** dan **Final Promotion Gate: aktif**.
+
+## Interpretation
+
+Kita sekarang sudah membuktikan seluruh rantai berikut secara nyata:
+
+```text
+SOURCE
+  ↓
+Knowledge Base
+  ↓
+Exam Blueprint
+  ↓
+Question Dataset
+  ↓
+Canonical Merge
+  ↓
+Resolved QA Dataset
+  ↓
+Actual Question Renderer
+  ↓
+Browser
+  ↓
+9 Questions
+  ↓
+Answer Verification
+  ↓
+Feedback
+  ↓
+Score
+  ↓
+900 XP
+  ↓
+Result Screen
+```
+
+**Ini berarti Controlled World 1 A–C v1.1 sudah berhasil melewati regression runtime.**
+
+Namun saya **belum akan menyebutnya "production content"**. Itu sengaja.
+
+Masih ada satu tahap yang sangat penting:
+
+# **Final Promotion Checks**
+
+Pada tahap ini kita tidak lagi mencari bug renderer utama. Kita memastikan bahwa batch 9 soal:
+
+1. canonical dan resolved dataset identik secara semantik;
+2. semua provenance masih utuh;
+3. revision overlay sudah benar;
+4. tidak ada duplicate/ID collision;
+5. tidak ada field wajib yang hilang;
+6. answer key dan explanation tetap konsisten;
+7. batch tidak secara tidak sengaja mengubah Golden Dataset v1;
+8. status `difficulty provisional` diperlakukan sesuai aturan;
+9. `document_inspection` limitation tetap terdokumentasi;
+10. artefak promotion dapat diaudit.
+
+Jika semuanya PASS, **barulah kita melakukan promotion**.
+
+Dan ada satu prinsip yang saya pertahankan:
+
+> **Golden Dataset v1 tidak akan ditimpa.**
+
+Batch A–C v1.1 akan menjadi **approved World 1 expansion content**, bukan mengubah sejarah Golden Dataset v1.
+
+### Status proyek saat ini
+
+**Controlled Regression Harness → SELESAI. ✅**
+
