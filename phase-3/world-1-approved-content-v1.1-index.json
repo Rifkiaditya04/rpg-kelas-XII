@@ -1,0 +1,16 @@
+{
+  "schema_version":"1.1",
+  "dataset":"World 1 Approved Content v1.1 — A-F Index",
+  "status":"approved_content_index",
+  "purpose":"Data-driven integration index for approved World 1 Chapter I content. It references the additive A-C and D-F approved pools without mutating either pool or Golden Dataset v1.",
+  "chapter_id":"BI12-C01",
+  "pools":[
+    {"id":"AC","path":"phase-3/world-1-approved-content-v1.1.json","lanes":["A","B","C"],"item_count":9,"item_ids":["BI12-W1-AC-001","BI12-W1-AC-002","BI12-W1-AC-003","BI12-W1-AC-004","BI12-W1-AC-005","BI12-W1-AC-006","BI12-W1-AC-007","BI12-W1-AC-008","BI12-W1-AC-009"]},
+    {"id":"DF","path":"phase-3/world-1-approved-content-d-f-v1.1.json","lanes":["D","E","F"],"item_count":9,"item_ids":["BI12-W1-DF-001","BI12-W1-DF-002","BI12-W1-DF-003","BI12-W1-DF-004","BI12-W1-DF-005","BI12-W1-DF-006","BI12-W1-DF-007","BI12-W1-DF-008","BI12-W1-DF-009"]}
+  ],
+  "item_count":18,
+  "lane_count":6,
+  "golden_dataset_policy":"knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json remains unchanged.",
+  "integration_policy":"Approved pools remain additive/versioned; gameplay missions select explicit approved IDs through mission maps.",
+  "mass_generation":"blocked without the existing batch gates"
+}
