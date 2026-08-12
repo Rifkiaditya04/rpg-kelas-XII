@@ -1,0 +1,181 @@
+Sudah saya lanjutkan langkah kerja berikutnya: **Phase 3 → World 1 — Career Mission**.
+
+Saya mengikuti prosedur yang sudah kita kunci: re-sync repo → baca seluruh `Alur Kerja Proyek` → baca GDD → cross-check sumber Buku Siswa + Buku Guru → implementasi → re-fetch artefak → update Master Control.
+
+## Evidence
+
+Dari Buku Siswa, Bab I memang berfokus pada surat lamaran kerja dan CV. Tujuan pembelajarannya mencakup mengevaluasi surat lamaran, menulis surat lamaran yang efektif dan relevan, menyusun CV, mempresentasikan, dan memublikasikannya. Bab I dimulai pada halaman 1 dan Subbab B tentang evaluasi sistematika/ciri kebahasaan dimulai pada halaman 8.
+
+Buku juga secara eksplisit menjelaskan bahwa surat lamaran kerja merupakan surat resmi dan perlu menggunakan bahasa formal, struktur sistematis, serta isi yang jelas dan relevan.
+
+Dari Buku Guru, Bab I memiliki tujuan/indikator, aktivitas pembelajaran, asesmen formatif/sumatif, kunci jawaban, remedial, dan pengayaan; bagian panduan khusus Bab I berada pada rentang halaman 31–90.
+
+Golden Dataset yang sudah disetujui kemudian menyediakan tiga item yang memang berasal dari domain Bab I:
+
+* `BI12-GOLD-001`
+* `BI12-GOLD-002`
+* `BI12-GOLD-009`
+
+dengan provenance Buku Siswa dan Buku Guru yang sudah tercatat.
+
+**Kesimpulan evidence:** fondasi akademik untuk slice World 1 terkonfirmasi.
+
+---
+
+# Implementation
+
+Saya membuat tiga artefak baru.
+
+### 1. World 1 Design
+
+`phase-3/world-1-career-mission.md`
+
+Dokumen ini mendefinisikan slice pertama:
+
+```text
+Mission Brief
+     ↓
+Recruiter Desk
+     ↓
+Relevance Scan
+     ↓
+Error Hunt
+     ↓
+Application Review
+     ↓
+Mission Result
+     ↓
+Skill Feedback
+```
+
+### 2. Mission Map
+
+`phase-3/world-1-mission-map.json`
+
+Mission ID:
+
+`BI12-W01-M01`
+
+Dengan tiga challenge:
+
+```text
+BI12-GOLD-001
+      ↓
+BI12-GOLD-002
+      ↓
+BI12-GOLD-009
+```
+
+dan semuanya mengambil konten dari Golden Dataset, bukan menyalin pertanyaan ke mission map.
+
+### 3. Playable World 1 Slice
+
+`prototype/bahasa-indonesia/career-mission.html`
+
+Prototype ini:
+
+* memuat Golden Dataset melalui JSON;
+* memilih tiga soal berdasarkan mission ID;
+* tidak menyalin teks soal ke HTML;
+* menampilkan briefing;
+* menjalankan tiga challenge;
+* memberi XP;
+* memberi feedback;
+* menampilkan provenance sumber pada feedback;
+* menghitung akurasi per skill;
+* menampilkan hasil mission;
+* responsive untuk desktop/mobile.
+
+Source aktualnya sudah saya re-fetch setelah dibuat.
+
+Jadi arsitekturnya sekarang:
+
+```text
+mission-map.json
+       ↓
+Golden Dataset
+       ↓
+Career Mission Renderer
+       ↓
+Challenge
+       ↓
+Feedback
+       ↓
+XP + Skill Result
+```
+
+Bukan:
+
+```text
+HTML
+└── soal-soal hard-coded
+```
+
+---
+
+# Verification
+
+Saya melakukan re-fetch ketiga artefak baru dan memastikan semuanya benar-benar ada di repository.
+
+Master Control juga sudah diperbarui dan diverifikasi kembali.
+
+Commit Master Control:
+
+`0b9d42a5716558c887985923824f792448837141`
+
+Master Control sekarang mencatat World 1 slice sebagai artefak aktif dan mencatat secara eksplisit satu keterbatasan penting: **live browser playtest belum dapat saya jalankan dari environment tool ini karena akses jaringan eksternal langsung tidak tersedia**. Source-level verification dan repository re-fetch sudah dilakukan, tetapi saya tidak akan mengklaim "playtest berhasil" tanpa benar-benar menjalankannya.
+
+Ini contoh penerapan aturan kita:
+
+> **confirmed** ≠ **assumed to work**.
+
+---
+
+# Interpretation
+
+Kita sekarang punya **prototype World 1 yang jauh lebih dekat dengan game sebenarnya**.
+
+Yang belum kita lakukan adalah mempercantiknya dengan karakter, map besar, animasi, musik, dan sebagainya.
+
+Dan itu **disengaja**.
+
+Kita ingin terlebih dahulu membuktikan:
+
+> **Apakah learning loop + mission loop benar-benar terasa sebagai sebuah game?**
+
+Sebelum kita menghabiskan waktu membuat visual.
+
+---
+
+## Status proyek
+
+```text
+PHASE 0  Architecture                 ✅
+PHASE 1  Content Audit                ✅
+PHASE 2  Knowledge Base               ✅
+         Golden Dataset               ✅
+         Renderer                     ✅
+         Micro-Prototype              ✅
+
+PHASE 3  Game Design                  🔄
+         GDD v1                       ✅
+         World 1 Design               ✅
+         Mission Map                  ✅
+         World 1 Playable Slice       🔶
+         Live Browser Playtest        ⏳
+
+PHASE 4  Prototype Expansion           ⏳
+PHASE 5  Full Game Engine              ⏳
+PHASE 6  Content Integration           ⏳
+PHASE 7  Polish                        ⏳
+PHASE 8  QA + Curriculum Validation    ⏳
+PHASE 9  Publish                       ⏳
+```
+
+**Kita belum boleh menyatakan World 1 slice "lulus final" sampai live playtest dilakukan.**
+
+Namun desain, data contract, provenance, dan implementasinya sudah berada di tempat yang benar.
+
+[Repository KELAS 12 — THE FINAL MISSION](https://github.com/Rifkiaditya04/rpg-kelas-XII?utm_source=chatgpt.com)
+
+**Langkah berikutnya yang paling tepat:** lakukan **QA/playtest World 1 slice**, kemudian berdasarkan hasilnya kita kunci pola gameplay World 1 sebelum memperluas isi World 1 secara besar-besaran.

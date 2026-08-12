@@ -1,0 +1,175 @@
+Sudah saya lanjutkan sampai **langkah berikutnya selesai**: **Controlled Question Batch A–C v1** sudah dibuat dan dicatat ke Master Control.
+
+## Evidence
+
+Sesuai prosedur proyek, sebelum bekerja saya re-sync dan membaca kembali seluruh file dalam `Alur Kerja Proyek`, lalu memverifikasi kembali:
+
+* Master Control
+* Golden Dataset v1
+* Deep Content / Provenance Pass
+* World 1 Expansion Plan
+
+Deep Content Pass sebelumnya memang menetapkan bahwa setelah A–C terpetakan, langkah berikutnya adalah membuat batch kecil, melakukan verifikasi jawaban, review pedagogis, provenance audit, renderer compatibility, lalu quality gate.
+
+Golden Dataset yang ada tetap berstatus **approved seed**, sehingga saya tidak memasukkan batch baru langsung ke dataset produksi.
+
+---
+
+# Implementation
+
+Saya membuat:
+
+`phase-3/world-1-question-batch-a-c-v1.json`
+
+Commit:
+
+`c4b32ba2c371c6ffef2974071fb1bbd1bc9b1b4a`
+
+File tersebut sudah saya **re-fetch setelah dibuat**.
+
+Batch berisi **9 soal baru**:
+
+```text
+Lane A — Relevance / Vacancy Fit
+├── BI12-W1-AC-001  MCQ
+├── BI12-W1-AC-002  Multi-select
+└── BI12-W1-AC-003  Evidence matching
+
+Lane B — Systematics / Structure
+├── BI12-W1-AC-004  Ordering
+├── BI12-W1-AC-005  Document inspection
+└── BI12-W1-AC-006  Multi-select
+
+Lane C — Language Features
+├── BI12-W1-AC-007  MCQ
+├── BI12-W1-AC-008  Document inspection
+└── BI12-W1-AC-009  Multi-select
+```
+
+Jadi kita tidak sekadar menambah jumlah soal; kita mulai membangun **variasi mekanik belajar**.
+
+Semua item memiliki:
+
+* chapter;
+* topic;
+* skill;
+* cognitive level;
+* difficulty;
+* question type;
+* answer;
+* explanation;
+* Student Book provenance;
+* Teacher Guide provenance;
+* generation method;
+* game mechanic.
+
+Ini mengikuti data contract yang sudah dikunci.
+
+---
+
+# ⚠️ Status batch: QA PENDING
+
+Saya **sengaja belum memasukkannya ke Golden Dataset**.
+
+Ada satu item yang secara eksplisit saya tahan untuk pemeriksaan lebih lanjut:
+
+`BI12-W1-AC-003`
+
+karena menggunakan:
+
+```text
+evidence_matching
+```
+
+dan kita harus memastikan renderer generiknya benar-benar mendukung **kontrak data yang kita gunakan untuk tipe tersebut**, bukan hanya kebetulan nama `question_type` sudah tersedia.
+
+Ini justru sesuai aturan kita:
+
+> **Render berhasil ≠ konten sudah production-ready.**
+
+Master Control sudah diperbarui dengan status ini.
+
+Commit Master Control:
+
+`6a8397034f9ab865bd8274798f0817918a4b4cca`
+
+dan sudah saya re-fetch untuk memastikan perubahan tersimpan.
+
+---
+
+# Interpretation
+
+Kita sekarang memasuki **quality gate konten pertama yang sebenarnya**.
+
+Pipeline kita sekarang:
+
+```text
+Chapter I
+   ↓
+Deep Content / Provenance
+        ✅
+   ↓
+Question Batch A–C
+        ✅
+   ↓
+Independent Answer Verification
+        ← SEKARANG
+   ↓
+Pedagogical Review
+   ↓
+Provenance Audit
+   ↓
+Renderer Compatibility
+   ↓
+Batch Quality Gate
+   ↓
+Golden Dataset
+```
+
+Dan saya **belum akan membuat batch 2** sebelum batch pertama ini melewati gate.
+
+Ini penting supaya kita tidak mengulangi kesalahan klasik proyek AI:
+
+```text
+AI generate
+   ↓
+AI generate lagi
+   ↓
+AI generate lagi
+   ↓
+1000 soal
+   ↓
+baru sadar fondasinya salah
+```
+
+Kita melakukan kebalikannya:
+
+```text
+9 soal
+ ↓
+audit
+ ↓
+perbaiki aturan
+ ↓
+approve
+ ↓
+baru scale
+```
+
+### Langkah berikutnya yang saya kerjakan:
+
+**Independent Answer Verification + Pedagogical Review untuk 9 soal `BI12-W1-AC-V1`.**
+
+Pada tahap itu saya akan memeriksa **setiap soal satu per satu**, bukan hanya apakah jawabannya masuk akal, tetapi apakah:
+
+1. jawabannya benar berdasarkan sumber;
+2. distractor benar-benar salah;
+3. tidak ada ambiguitas;
+4. cognitive level sesuai;
+5. difficulty masuk akal;
+6. explanation benar-benar mengikuti evidence;
+7. provenance cukup kuat;
+8. interaction type cocok;
+9. tidak ada soal yang diam-diam menguji pengetahuan di luar sumber.
+
+**Mass generation tetap ditahan sampai gate ini PASS.**
