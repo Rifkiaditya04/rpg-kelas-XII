@@ -53,7 +53,9 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Resolved QA dataset: `phase-3/world-1-question-batch-d-f-v1.1-regression-dataset.json`
 - **D–F v1.1 Controlled Live Regression: PASS. User-verified against the actual hosted renderer; DATA, SCHEMA, TYPES, LOAD, ANSWER, SCORE, COVERAGE, and FEEDBACK all passed; 9/9 and 900 XP; all 9 IDs played in randomized order.**
 - D–F harness: `prototype/bahasa-indonesia/regression-harness-df-v1.1.html`
-- **Next active gate: Final Promotion Checks → promotion of D–F v1.1 if all promotion criteria pass.**
+- **D–F v1.1 Final Promotion Checks: PASS.**
+- Final promotion checks artifact: `phase-3/world-1-d-f-v1.1-final-promotion-checks.md`
+- **D–F v1.1 is eligible for additive/versioned promotion; Approved World 1 D–F pool and promotion record are the next active artifacts.**
 - **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
@@ -196,7 +198,9 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Resolved QA dataset: `phase-3/world-1-question-batch-d-f-v1.1-regression-dataset.json`
 - **D–F v1.1 Controlled Live Regression: PASS. User-verified against the actual hosted renderer; DATA, SCHEMA, TYPES, LOAD, ANSWER, SCORE, COVERAGE, and FEEDBACK all passed; 9/9 and 900 XP; all 9 IDs played in randomized order.**
 - D–F harness: `prototype/bahasa-indonesia/regression-harness-df-v1.1.html`
-- **Next active gate: Final Promotion Checks → promotion of D–F v1.1 if all promotion criteria pass.**
+- **D–F v1.1 Final Promotion Checks: PASS.**
+- Final promotion checks artifact: `phase-3/world-1-d-f-v1.1-final-promotion-checks.md`
+- **D–F v1.1 is eligible for additive/versioned promotion; Approved World 1 D–F pool and promotion record are the next active artifacts.**
 - **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
