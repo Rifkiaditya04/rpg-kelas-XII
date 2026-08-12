@@ -28,12 +28,13 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Full quality-gate artifact: `phase-3/world-1-question-batch-a-c-v1.1-quality-gate.md`
 - Revision artifact: `phase-3/world-1-question-batch-a-c-v1.1-revisions.json`
 - Revision review artifact: `phase-3/world-1-question-batch-a-c-v1.1-review.md`
-- **Controlled Regression Harness v1: implemented; first live attempt exposed and confirmed a harness bug; source fix completed**
+- **Controlled Regression Harness v1: implemented; first live attempt exposed and confirmed a harness bug; a second source-level fix is now complete after the first fix still reproduced the same runtime error**
 - Harness: `prototype/bahasa-indonesia/regression-harness.html`
+- Resolved QA dataset: `phase-3/world-1-question-batch-a-c-v1.1-regression-dataset.json`
 - Harness protocol: `phase-3/world-1-controlled-regression-harness-v1.md`
-- **Harness root cause:** the canonical file is a manifest without `items`; the first harness incorrectly executed `dataset.items.length`. The corrected harness now resolves manifest + base batch + revision overlay into a renderer-ready `{items:[...]}` dataset before injecting it into the actual renderer.
+- **Harness root cause is confirmed at the data-loading boundary: the canonical file is a manifest without `items`; the original harness incorrectly assumed `dataset.items`. The corrected design now uses a static resolved QA dataset containing the 9 effective items, avoiding Blob URL injection as a second source of runtime ambiguity.**
 - Renderer QA dataset override: `prototype/bahasa-indonesia/renderer.js` accepts optional `?dataset=` while preserving Golden Dataset v1 as default
-- **Live nine-item regression: pending re-run against the corrected deployed harness; no PASS claim yet**
+- **Live nine-item regression: pending re-run against the latest deployed harness; no PASS claim yet**
 - **Golden Dataset promotion remains blocked until live nine-item regression is completed and the canonical batch passes final promotion checks**
 - **Mass generation tetap ditahan sampai batch promotion gate lulus**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
@@ -150,13 +151,14 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - **AC-004 revision:** `ordering` → supported `mcq`, mechanic `structure_check`.
 - Revision artifact: `phase-3/world-1-question-batch-a-c-v1.1-revisions.json`.
 - Revision review: `phase-3/world-1-question-batch-a-c-v1.1-review.md`.
-- **Canonical batch `phase-3/world-1-question-batch-a-c-v1.1-canonical.json` materialized as a deterministic manifest with 9 effective item IDs; renderer-ready resolution is performed by the regression harness.**
+- **Canonical batch `phase-3/world-1-question-batch-a-c-v1.1-canonical.json` materialized as a deterministic manifest with 9 effective item IDs.**
+- **Resolved QA dataset `phase-3/world-1-question-batch-a-c-v1.1-regression-dataset.json` materializes those 9 effective items for browser regression only; it is not Golden Dataset v1.**
 - **Full batch quality gate `phase-3/world-1-question-batch-a-c-v1.1-quality-gate.md`: PASS with documented limitation; schema, IDs, answer shape, provenance, answer verification, pedagogy, explanations, and renderer compatibility passed. Difficulty remains provisional.**
 - **AC-005 content passes, but its `document_inspection` label currently uses generic option-selection rendering; specialized document-inspection UI remains a later implementation task.**
 - **Controlled Regression Harness v1 implemented: `prototype/bahasa-indonesia/regression-harness.html`; protocol documented at `phase-3/world-1-controlled-regression-harness-v1.md`.**
-- **First live harness attempt failed because the harness treated the canonical manifest as if it contained `items`; root cause is confirmed and source fix is complete.**
-- **Corrected harness now resolves canonical manifest + base batch + revision overlay into renderer-ready `items` before injecting the dataset into the actual renderer.**
-- **Live nine-item regression is pending re-run against the corrected deployed harness; no PASS claim is made from source inspection alone.**
+- **First live harness attempt failed because the harness treated the canonical manifest as if it contained `items`; root cause was confirmed. A follow-up fix using Blob URL injection still reproduced the runtime failure, so that approach was abandoned.**
+- **Current harness fix uses a static resolved QA dataset and passes its URL directly to the actual renderer. The harness now also surfaces renderer load errors instead of silently converting them into timeouts.**
+- **Live nine-item regression is pending re-run against the latest deployed harness; no PASS claim is made from source inspection alone.**
 - World 2–4 expansion waits until the World 1 content-expansion gate is satisfied.
 
 ## 13. QA findings resolved in World 1
