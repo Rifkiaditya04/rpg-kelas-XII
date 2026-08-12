@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.1",
+  "batch_id": "BI12-W01-BATCH-DF-V1.1-CANONICAL",
+  "status": "qa_pending",
+  "purpose": "Deterministic canonical manifest for World 1 Chapter I lanes D-F after revision quality gate.",
+  "base_batch": "phase-3/world-1-question-batch-d-f-v1.json",
+  "revision_overlay": "phase-3/world-1-question-batch-d-f-v1.1-revisions.json",
+  "effective_item_ids": [
+    "BI12-W1-DF-001",
+    "BI12-W1-DF-002",
+    "BI12-W1-DF-003",
+    "BI12-W1-DF-004",
+    "BI12-W1-DF-005",
+    "BI12-W1-DF-006",
+    "BI12-W1-DF-007",
+    "BI12-W1-DF-008",
+    "BI12-W1-DF-009"
+  ],
+  "revision_policy": "Apply overlay by exact item ID; unchanged items remain byte-for-byte sourced from base batch; Golden Dataset v1 is not modified.",
+  "effective_revision_ids": ["BI12-W1-DF-001", "BI12-W1-DF-002"],
+  "unchanged_item_ids": [
+    "BI12-W1-DF-003",
+    "BI12-W1-DF-004",
+    "BI12-W1-DF-005",
+    "BI12-W1-DF-006",
+    "BI12-W1-DF-007",
+    "BI12-W1-DF-008",
+    "BI12-W1-DF-009"
+  ]
+}
