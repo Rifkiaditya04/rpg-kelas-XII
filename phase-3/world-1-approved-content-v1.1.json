@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.1",
+  "dataset": "World 1 Approved Content v1.1",
+  "status": "approved_world1_content",
+  "purpose": "Approved controlled World 1 content pool after final promotion checks. This is not a replacement for Golden Dataset v1.",
+  "source_canonical": "phase-3/world-1-question-batch-a-c-v1.1-canonical.json",
+  "resolved_runtime_dataset": "phase-3/world-1-question-batch-a-c-v1.1-regression-dataset.json",
+  "promotion_record": "phase-3/world-1-promotion-v1.1.md",
+  "chapter_id": "BI12-C01",
+  "lanes": ["A", "B", "C"],
+  "item_count": 9,
+  "item_ids": [
+    "BI12-W1-AC-001",
+    "BI12-W1-AC-002",
+    "BI12-W1-AC-003",
+    "BI12-W1-AC-004",
+    "BI12-W1-AC-005",
+    "BI12-W1-AC-006",
+    "BI12-W1-AC-007",
+    "BI12-W1-AC-008",
+    "BI12-W1-AC-009"
+  ],
+  "golden_dataset_policy": "knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json remains unchanged; this approved pool is additive and versioned.",
+  "production_use": "approved_for_world1_controlled_content_expansion",
+  "mass_generation": "still_requires_separate_batch_generation_and_quality_gates"
+}
