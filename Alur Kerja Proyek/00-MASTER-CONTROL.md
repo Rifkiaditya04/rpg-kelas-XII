@@ -55,7 +55,10 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - D–F harness: `prototype/bahasa-indonesia/regression-harness-df-v1.1.html`
 - **D–F v1.1 Final Promotion Checks: PASS.**
 - Final promotion checks artifact: `phase-3/world-1-d-f-v1.1-final-promotion-checks.md`
-- **D–F v1.1 is eligible for additive/versioned promotion; Approved World 1 D–F pool and promotion record are the next active artifacts.**
+- **D–F v1.1 PROMOTED to Approved World 1 D–F Content v1.1.**
+- Approved D–F pool: `phase-3/world-1-approved-content-d-f-v1.1.json`
+- Promotion record: `phase-3/world-1-promotion-d-f-v1.1.md`
+- **A–C and D–F approved pools remain additive/versioned; no consolidation is performed without a separate explicit gate.**
 - **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
@@ -200,7 +203,10 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - D–F harness: `prototype/bahasa-indonesia/regression-harness-df-v1.1.html`
 - **D–F v1.1 Final Promotion Checks: PASS.**
 - Final promotion checks artifact: `phase-3/world-1-d-f-v1.1-final-promotion-checks.md`
-- **D–F v1.1 is eligible for additive/versioned promotion; Approved World 1 D–F pool and promotion record are the next active artifacts.**
+- **D–F v1.1 PROMOTED to Approved World 1 D–F Content v1.1.**
+- Approved D–F pool: `phase-3/world-1-approved-content-d-f-v1.1.json`
+- Promotion record: `phase-3/world-1-promotion-d-f-v1.1.md`
+- **A–C and D–F approved pools remain additive/versioned; no consolidation is performed without a separate explicit gate.**
 - **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
