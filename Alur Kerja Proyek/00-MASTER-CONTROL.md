@@ -22,7 +22,7 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - QA report: `phase-3/world-1-qa-report.md`
 - **World 1 expansion plan v1: tersedia di `phase-3/world-1-expansion-plan.md`**
 - **Chapter I Deep Content / Provenance Pass v1: selesai untuk controlled lanes A–C**
-- Provenance artifact: `phase-3/chapter-1-deep-content-provenance.md`
+- Provenance artifact A–C: `phase-3/chapter-1-deep-content-provenance.md`
 - **World 1 controlled content batch A–C v1.1: canonical merge completed; full batch quality gate passed with documented renderer limitation**
 - Canonical batch artifact: `phase-3/world-1-question-batch-a-c-v1.1-canonical.json`
 - Full quality-gate artifact: `phase-3/world-1-question-batch-a-c-v1.1-quality-gate.md`
@@ -33,10 +33,13 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Resolved QA dataset: `phase-3/world-1-question-batch-a-c-v1.1-regression-dataset.json`
 - Harness protocol: `phase-3/world-1-controlled-regression-harness-v1.md`
 - **Live nine-item regression: PASS. DATA, SCHEMA, TYPES, LOAD, ANSWER, SCORE, COVERAGE, and FEEDBACK all passed; 9/9 and 900 XP; all 9 IDs played in randomized order.**
-- **Final Promotion Checks: PASS. World 1 A–C v1.1 is now promoted to Approved World 1 Content v1.1.**
+- **Final Promotion Checks: PASS. World 1 A–C v1.1 is promoted to Approved World 1 Content v1.1.**
 - Approved pool: `phase-3/world-1-approved-content-v1.1.json`
 - Promotion record: `phase-3/world-1-promotion-v1.1.md`
-- **Golden Dataset v1 remains unchanged and is not overwritten by the World 1 expansion batch.**
+- **Chapter I Deep Content / Provenance Pass v1 — lanes D–F: PASS for controlled expansion; not yet approved for production promotion**
+- Provenance artifact D–F: `phase-3/chapter-1-deep-content-provenance-lanes-d-f-v1.md`
+- **Next active gate: 9-item controlled D–F batch → independent answer verification → pedagogical review → renderer/batch quality gate → canonical merge if needed → live regression → promotion**
+- **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
 - **GitHub Pages launcher: tersedia di root `index.html`; deployment live sudah terverifikasi oleh GitHub Actions**
@@ -143,7 +146,7 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 
 ## 12. World 1 expansion and promotion
 - Expansion plan: `phase-3/world-1-expansion-plan.md`.
-- Chapter I Deep Content / Provenance Pass v1: `phase-3/chapter-1-deep-content-provenance.md`.
+- Chapter I Deep Content / Provenance Pass A–C: `phase-3/chapter-1-deep-content-provenance.md`.
 - Controlled lanes A–C are source-mapped: relevance/vacancy fit, systematics/structure, and language features.
 - Student Book and Teacher Guide were cross-validated for Chapter I goals, indicators, structure, language features, writing/revision, digital submission, and summative indicators.
 - Page + subsection is the current human-auditable provenance locator for converted Markdown sources when stable original-file line numbers are unavailable; no artificial line numbers are invented.
@@ -158,12 +161,13 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - AC-005 content passes, but its `document_inspection` label currently uses generic option-selection rendering; specialized document-inspection UI remains a later implementation task.
 - Controlled Regression Harness v1: live PASS; all 9 IDs played through actual renderer; 9/9 and 900 XP; randomized coverage; feedback/explanation verified.
 - Regression bugs resolved: manifest-vs-items mismatch, failed Blob URL approach, and final-`#next` control-flow omission.
-- **Final Promotion Checks: PASS.** Approved content pool: `phase-3/world-1-approved-content-v1.1.json`.
+- Final Promotion Checks: PASS. Approved content pool: `phase-3/world-1-approved-content-v1.1.json`.
 - Promotion record: `phase-3/world-1-promotion-v1.1.md`.
 - Approved status is additive/versioned; Golden Dataset v1 remains unchanged.
 - Difficulty labels remain provisional until empirical production analytics are available; this does not block controlled content promotion.
 - Specialized document-inspection UX remains a later technical task and does not block the current approved content pool.
-- New World 1 batches must repeat the full QA and live regression process before promotion.
+- **D–F provenance pass:** `phase-3/chapter-1-deep-content-provenance-lanes-d-f-v1.md`; PASS for controlled expansion into writing/revision, presentation/publication, and integrated application.
+- **D–F controlled batch recommendation:** 9 items (3 D, 3 E, 3 F), followed by independent answer verification, pedagogical review, renderer/batch quality gate, canonical merge if revisions occur, live regression, and promotion.
 - World 2–4 expansion remains gated until controlled World 1 expansion is stable.
 
 ## 13. QA findings resolved in World 1
