@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.1",
+  "batch_id": "BI12-W01-BATCH-AC-V1.1-CANONICAL",
+  "status": "quality_gate_ready",
+  "purpose": "Canonical controlled World 1 batch for Lanes A-C. It supersedes AC-003 and AC-004 with renderer-compatible revisions while preserving the other seven independently reviewed items from BI12-W01-BATCH-AC-V1.",
+  "base_batch": "phase-3/world-1-question-batch-a-c-v1.json",
+  "revision_overlay": "phase-3/world-1-question-batch-a-c-v1.1-revisions.json",
+  "item_ids": [
+    "BI12-W1-AC-001",
+    "BI12-W1-AC-002",
+    "BI12-W1-AC-003",
+    "BI12-W1-AC-004",
+    "BI12-W1-AC-005",
+    "BI12-W1-AC-006",
+    "BI12-W1-AC-007",
+    "BI12-W1-AC-008",
+    "BI12-W1-AC-009"
+  ],
+  "effective_replacements": {
+    "BI12-W1-AC-003": "phase-3/world-1-question-batch-a-c-v1.1-revisions.json#BI12-W1-AC-003",
+    "BI12-W1-AC-004": "phase-3/world-1-question-batch-a-c-v1.1-revisions.json#BI12-W1-AC-004"
+  },
+  "review_basis": "phase-3/world-1-question-batch-a-c-v1-review.md",
+  "revision_review": "phase-3/world-1-question-batch-a-c-v1.1-review.md",
+  "promotion_target": "knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json",
+  "promotion_rule": "Do not promote until full schema, provenance, answer-shape, duplicate-ID, renderer-compatibility, and batch-quality gates pass.",
+  "important_note": "The canonical artifact is intentionally expressed as a deterministic base-plus-overlay merge so the original seven reviewed records remain byte-identifiable in their source artifact and the two revisions are independently auditable. This is not yet a production Golden Dataset merge."
+}
