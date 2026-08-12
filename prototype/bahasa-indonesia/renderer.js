@@ -1,4 +1,6 @@
-const DATA_URL='../../knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json';
+const params=new URLSearchParams(location.search);
+const DATA_URL=params.get('dataset')||'../../knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json';
+const QA_MODE=params.get('qa')==='1';
 const SUPPORTED_TYPES=new Set(['mcq','multi_select','ordering','document_inspection','evidence_matching','dialogue_analysis']);
 const $=id=>document.getElementById(id);
 let questions=[],index=0,xp=0,correct=0,answered=false,selected=[];
@@ -13,4 +15,5 @@ function render(){answered=false;selected=[];const q=questions[index];$('world')
 function choose(text,q,buttons){if(answered)return;if(isMulti(q)){const p=selected.indexOf(text);p<0?selected.push(text):selected.splice(p,1);}else selected=[text];buttons.forEach(button=>{const active=selected.includes(button.dataset.answer);button.classList.toggle('selected',active);button.setAttribute('aria-pressed',String(active));});$('submit').disabled=!selected.length;}
 function check(q,buttons){if(answered)return;answered=true;const expected=Array.isArray(q.answer)?[...q.answer].sort():[q.answer];const actual=[...selected].sort();const ok=actual.length===expected.length&&actual.every((v,n)=>v===expected[n]);if(ok){xp+=100;correct++;}buttons.forEach(button=>{const text=button.dataset.answer;if(expected.includes(text))button.classList.add('correct');else if(selected.includes(text))button.classList.add('wrong');button.disabled=true;});$('score').textContent=`XP ${xp}`;const feedback=$('feedback');feedback.classList.remove('hidden');feedback.innerHTML=`<strong>${ok?'✓ Jawaban benar!':'✗ Belum tepat.'}</strong><p>${escapeHtml(q.explanation)}</p><p class="small">${escapeHtml(q.game_mechanic)} · ${escapeHtml(q.id)}</p><button class="button" id="next">${index===questions.length-1?'Lihat Hasil':'Soal Berikutnya'}</button>`;$('next').onclick=()=>{if(index===questions.length-1)finish();else{index++;render();}};}
 function finish(){$('game').classList.add('hidden');$('result').classList.remove('hidden');$('result').innerHTML=`<h1>🏆 Mission Complete</h1><p>Kamu menyelesaikan micro-prototype Bahasa Indonesia.</p><div class="stats"><div class="stat"><strong>${correct}/${questions.length}</strong><br><span class="small">Benar</span></div><div class="stat"><strong>${xp}</strong><br><span class="small">XP</span></div><div class="stat"><strong>${Math.round(correct/questions.length*100)}%</strong><br><span class="small">Akurasi</span></div></div><p>Seed tervalidasi melalui quality gate konten dan renderer data-driven. Ini tetap micro-prototype, bukan desain visual final.</p><button class="button" onclick="location.reload()">Main Lagi</button>`;}
+if(QA_MODE)document.documentElement.dataset.qaMode='true';
 loadData();
