@@ -23,7 +23,9 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **World 1 expansion plan v1: tersedia di `phase-3/world-1-expansion-plan.md`**
 - **Chapter I Deep Content / Provenance Pass v1: selesai untuk controlled lanes A–C**
 - Provenance artifact: `phase-3/chapter-1-deep-content-provenance.md`
-- **World 1 controlled content batch: next active gate; mass generation tetap ditahan**
+- **World 1 controlled content batch A–C v1: dibuat, provenance-backed, status QA pending; belum dipromosikan ke Golden Dataset produksi**
+- Controlled batch artifact: `phase-3/world-1-question-batch-a-c-v1.json`
+- **Mass generation tetap ditahan sampai batch QA lulus**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
 - **GitHub Pages launcher: tersedia di root `index.html`; deployment live sudah terverifikasi oleh GitHub Actions**
 - Hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
@@ -136,10 +138,13 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Controlled lanes A–C are now source-mapped: relevance/vacancy fit, systematics/structure, and language features.
 - Student Book and Teacher Guide were re-synced and cross-validated for Chapter I goals, indicators, structure, language features, writing/revision, digital submission, and summative indicators.
 - Page + subsection is the current human-auditable provenance locator for the converted Markdown source; no artificial source line numbers are invented when the connector representation does not expose stable original-file line numbers.
-- Do not mass-generate the World 1 bank yet.
-- Next controlled batch begins with a small approved question batch from Chapter I lanes A–C.
-- Each batch requires source extraction → skill/indicator mapping → drafting → answer verification → provenance completion → pedagogical review → renderer compatibility → batch QA.
-- New content must enter the approved dataset only after the required quality gates pass.
+- **Controlled batch `BI12-W01-BATCH-AC-V1` has been drafted with 9 items (3 per lane), but remains `qa_pending`.**
+- Batch artifact: `phase-3/world-1-question-batch-a-c-v1.json`.
+- Batch covers MCQ, multi-select, evidence matching, ordering, and document inspection.
+- No item from this batch is yet part of the production Golden Dataset.
+- One evidence-matching item is explicitly flagged for renderer-contract verification before promotion.
+- Required next gate: independent answer verification → pedagogical review → provenance audit → renderer compatibility → batch quality gate → only then promotion to approved dataset.
+- Mass generation remains blocked until this batch passes.
 - World 2–4 expansion waits until the World 1 content-expansion gate is satisfied.
 
 ## 13. QA findings resolved in World 1
