@@ -18,15 +18,18 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **World 1 — Career Mission slice design: selesai untuk prototype**
 - **World 1 — Career Mission playable slice: tersedia di `prototype/bahasa-indonesia/career-mission.html`**
 - **World 1 — deterministic/source QA: selesai; defects yang ditemukan dari feedback live sudah diperbaiki**
-- **World 1 — live regression: user-verified for the current slice; expansion gate is now active**
+- **World 1 — live regression: user-verified for the current slice; expansion gate is active**
 - QA report: `phase-3/world-1-qa-report.md`
 - **World 1 expansion plan v1: tersedia di `phase-3/world-1-expansion-plan.md`**
 - **Chapter I Deep Content / Provenance Pass v1: selesai untuk controlled lanes A–C**
 - Provenance artifact: `phase-3/chapter-1-deep-content-provenance.md`
-- **World 1 controlled content batch A–C v1: drafted; independent answer verification + pedagogical review completed; status QA needs revision; belum dipromosikan ke Golden Dataset produksi**
+- **World 1 controlled content batch A–C v1: independently reviewed; 7 pass, AC-003/AC-004 blocked by interaction-contract mismatch; not promoted**
 - Controlled batch artifact: `phase-3/world-1-question-batch-a-c-v1.json`
 - Review artifact: `phase-3/world-1-question-batch-a-c-v1-review.md`
-- **Batch gate blocked by AC-003 evidence-matching interaction mismatch and AC-004 ordering interaction mismatch**
+- **World 1 controlled content batch A–C v1.1 revisions: created for AC-003 and AC-004; targeted recheck pending**
+- Revision artifact: `phase-3/world-1-question-batch-a-c-v1.1-revisions.json`
+- Revision review artifact: `phase-3/world-1-question-batch-a-c-v1.1-review.md`
+- **Golden Dataset promotion remains blocked until the v1.1 targeted recheck and batch quality gate pass**
 - **Mass generation tetap ditahan sampai batch QA lulus**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
 - **GitHub Pages launcher: tersedia di root `index.html`; deployment live sudah terverifikasi oleh GitHub Actions**
@@ -85,7 +88,7 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 5. Cross-validate klaim penting dengan sumber independen yang sesuai.
 6. Jika ada konflik, nyatakan `confirmed`, `partially confirmed`, `conflicting`, atau `unverified`.
 
-## 8. Quality gate sebelum Phase 3
+## 8. Quality gate
 - Provenance student-book: terisi untuk seluruh seed
 - Provenance teacher-guide: terisi untuk seluruh seed
 - Answer shape: tervalidasi
@@ -94,6 +97,7 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Renderer dispatch: berdasarkan `question_type`, bukan ID soal
 - Gameplay flow: soal → jawaban → feedback → XP → hasil
 - Source cross-validation: Buku Siswa ↔ Buku Guru dilakukan pada seed
+- Controlled batch baru wajib melewati answer verification, pedagogical review, provenance audit, renderer compatibility, dan batch quality gate sebelum promosi.
 
 ## 9. Batasan Phase 3
 - Golden Dataset v1 tetap approved seed, bukan bank soal produksi massal.
@@ -122,43 +126,37 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Mission map: `phase-3/world-1-mission-map.json`.
 - Slice design: `phase-3/world-1-career-mission.md`.
 - Playable slice: `prototype/bahasa-indonesia/career-mission.html`.
-- The slice consumes the approved JSON dataset and the mission map; presentation code does not duplicate mission question IDs.
+- Runtime consumes approved JSON data and the mission map; presentation code does not duplicate mission question IDs.
 - Runtime reads mission reward configuration for per-correct and completion XP.
-- Runtime randomizes challenge order per mission start and option order per question render using Fisher-Yates-style shuffling; answer evaluation uses answer text, so correctness is independent of A/B/C/D position.
-- Deterministic/source QA passed; defects found during QA were fixed.
+- Runtime randomizes challenge order per mission start and option order per question render using Fisher-Yates-style shuffling; answer evaluation uses answer text.
 - User live playtest confirmed: three challenges rendered, all-correct run produced 400 XP, wrong answers showed explanation/source verification, and post-fix multi-select instructions were clear.
 - User live playtest identified and subsequently verified fixes for static challenge order and static option order.
-- Micro-prototype user feedback identified an unsupported `document_inspection` type; renderer and quality gate now explicitly support it.
-- `prototype/bahasa-indonesia/index.html` now loads renderer with cache-busting query `renderer.js?v=2`.
-- Multi-select UX fix: renderer explicitly labels `multi_select` questions as “Pilih semua jawaban yang benar” and states the number of correct choices from the dataset; selection state is exposed through `aria-pressed`.
-- Multi-select scoring remains answer-value based; Training feedback may reveal all correct options after submission. Exam Simulation will use stricter post-session review behavior when that mode is implemented.
-- QA report: `phase-3/world-1-qa-report.md`.
+- Multi-select UX explicitly labels multiple-answer questions and states the number of expected choices.
+- Development-status text is intentionally retained until final release cleanup.
 
 ## 12. World 1 expansion
 - Expansion plan: `phase-3/world-1-expansion-plan.md`.
-- **Chapter I Deep Content / Provenance Pass v1: `phase-3/chapter-1-deep-content-provenance.md`.**
-- Controlled lanes A–C are now source-mapped: relevance/vacancy fit, systematics/structure, and language features.
-- Student Book and Teacher Guide were re-synced and cross-validated for Chapter I goals, indicators, structure, language features, writing/revision, digital submission, and summative indicators.
-- Page + subsection is the current human-auditable provenance locator for the converted Markdown source; no artificial source line numbers are invented when the connector representation does not expose stable original-file line numbers.
-- **Controlled batch `BI12-W01-BATCH-AC-V1` has been drafted with 9 items (3 per lane) and independently reviewed. It remains `qa_needs_revision`.**
-- Batch artifact: `phase-3/world-1-question-batch-a-c-v1.json`.
-- Review artifact: `phase-3/world-1-question-batch-a-c-v1-review.md`.
-- Batch covers MCQ, multi-select, evidence matching, ordering, and document inspection.
-- **Review result: 7 items pass; AC-003 is blocked because `evidence_matching` is not a true matching interaction in the current renderer; AC-004 is blocked because `ordering` is not a true ordering interaction in the current renderer.**
-- AC-005 content passes, but its `document_inspection` label currently uses the generic option-selection renderer; specialized document-inspection UI remains a later implementation task.
-- No item from this batch is yet part of the production Golden Dataset.
-- Required next gate: revise blocked items → provenance audit → renderer compatibility → batch quality gate → only then promotion to approved dataset.
-- Mass generation remains blocked until this batch passes.
+- Chapter I Deep Content / Provenance Pass v1: `phase-3/chapter-1-deep-content-provenance.md`.
+- Controlled lanes A–C are source-mapped: relevance/vacancy fit, systematics/structure, and language features.
+- Student Book and Teacher Guide were cross-validated for Chapter I goals, indicators, structure, language features, writing/revision, digital submission, and summative indicators.
+- Page + subsection is the current human-auditable provenance locator for converted Markdown sources when stable original-file line numbers are unavailable; no artificial line numbers are invented.
+- **Controlled batch `BI12-W01-BATCH-AC-V1`: 9 items; independent answer/pedagogical review completed; 7 pass, AC-003 and AC-004 blocked by renderer interaction mismatch.**
+- **AC-003 revision:** `evidence_matching` → supported `mcq`, mechanic `relevance_scan`.
+- **AC-004 revision:** `ordering` → supported `mcq`, mechanic `structure_check`.
+- Revision artifact: `phase-3/world-1-question-batch-a-c-v1.1-revisions.json`.
+- Revision review: `phase-3/world-1-question-batch-a-c-v1.1-review.md`.
+- **Current v1.1 status: revision_ready_for_recheck; not yet promoted.**
+- AC-005 content passes, but its `document_inspection` label currently uses generic option-selection rendering; specialized document-inspection UI remains a later implementation task.
 - World 2–4 expansion waits until the World 1 content-expansion gate is satisfied.
 
 ## 13. QA findings resolved in World 1
-- Earlier mission-map bypass was fixed: question selection now comes from `mission.nodes[].question_ids`.
-- Earlier completion-XP mismatch was fixed: final XP now includes `mission.rewards.mission_completion_xp`.
-- Unsupported `document_inspection` in the seed was a renderer/quality-gate contract defect; it is now included in supported types and option validation.
-- Static challenge order was a usability/anti-memorization defect; mission questions are now shuffled at mission load.
-- Static answer-option order was an anti-memorization defect; options are now shuffled on each question render and evaluated by answer value rather than fixed position.
-- Multi-select instruction ambiguity was a UX defect; the renderer now explicitly communicates that multiple answers must be selected and how many are expected when the dataset provides that count.
-- These implementation/UX defects are resolved for the current slice; the active gate is controlled content expansion and its batch QA.
+- Mission-map bypass fixed: question selection comes from `mission.nodes[].question_ids`.
+- Completion-XP mismatch fixed: final XP includes `mission.rewards.mission_completion_xp`.
+- Unsupported `document_inspection` in the seed fixed in renderer/quality gate.
+- Static challenge order fixed by shuffling at mission load.
+- Static answer-option order fixed by shuffling on render and evaluating by answer value.
+- Multi-select instruction ambiguity fixed by explicit multiple-choice instruction and expected count.
+- These implementation/UX defects are resolved for the current slice; active gate is controlled content expansion and batch QA.
 
 ## 14. GitHub Pages — browser playtest path
 - Deployment workflow: `.github/workflows/pages.yml`.
