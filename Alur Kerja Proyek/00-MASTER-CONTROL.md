@@ -49,7 +49,11 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Canonical artifact: `phase-3/world-1-question-batch-d-f-v1.1-canonical.json`
 - **Full Batch Quality Gate D–F v1.1: PASS.**
 - Full quality-gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-quality-gate.md`
-- **Next active gate: controlled live regression for resolved D–F v1.1 dataset → final promotion checks → promotion if browser evidence passes.**
+- **D–F v1.1 resolved QA dataset created for live regression; QA-only and separate from Golden Dataset v1.**
+- Resolved QA dataset: `phase-3/world-1-question-batch-d-f-v1.1-regression-dataset.json`
+- **D–F v1.1 Controlled Live Regression Harness created; browser evidence pending.**
+- D–F harness: `prototype/bahasa-indonesia/regression-harness-df-v1.1.html`
+- **Next active gate: execute the hosted D–F v1.1 harness and capture browser evidence; if PASS, proceed to Final Promotion Checks → promotion.**
 - **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
@@ -183,7 +187,9 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - **D–F v1.1 Revision Quality Gate: PASS.** Revision gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-revision-quality-gate.md`.
 - **Canonical Batch D–F v1.1 Merge: completed as deterministic manifest; effective IDs DF-001 … DF-009.** Canonical artifact: `phase-3/world-1-question-batch-d-f-v1.1-canonical.json`.
 - **Full Batch Quality Gate D–F v1.1: PASS.** Full quality-gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-quality-gate.md`.
-- **Next active gate: controlled live regression for resolved D–F v1.1 dataset → final promotion checks → promotion if browser evidence passes.**
+- **D–F v1.1 resolved QA dataset:** `phase-3/world-1-question-batch-d-f-v1.1-regression-dataset.json`; QA-only, resolved from canonical base + revision overlay, not Golden Dataset v1.
+- **D–F v1.1 Controlled Live Regression Harness:** `prototype/bahasa-indonesia/regression-harness-df-v1.1.html`; created and wired to the actual renderer. Browser execution evidence is pending.
+- **Next active gate:** hosted D–F v1.1 harness execution → browser evidence → Final Promotion Checks if PASS → promotion.
 - World 2–4 expansion remains gated until controlled World 1 expansion is stable.
 
 ## 13. QA findings resolved in World 1
@@ -208,12 +214,3 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - The development-status text `Seed tervalidasi melalui quality gate konten dan renderer data-driven. Ini tetap micro-prototype, bukan desain visual final.` is intentionally retained during prototype/QA.
 - **Do not remove it yet.**
 - It must be removed from the student-facing production build only during the final release-cleanup pass, after the entire game has passed final QA and is declared ready for distribution.
-
-## 16. Aturan komunikasi kerja
-Partner/technical lead menentukan urutan kerja dan keputusan teknis default. Pengguna hanya dimintai keputusan ketika benar-benar membutuhkan preferensi pribadi, akses yang hanya dimiliki pengguna, atau keputusan yang berisiko mengubah tujuan proyek.
-
-## 17. Aturan pembaruan Master Control
-Setiap perubahan keputusan, status fase, quality gate, artefak penting, atau prosedur wajib memperbarui file ini setelah perubahan diverifikasi dari repo. Master Control terbaru menjadi aturan kerja terbaru kecuali sengaja direvisi melalui keputusan proyek yang terdokumentasi.
-
-## 18. Pengingat
-> **Kita sedang membangun alat belajar yang terasa seperti game, bukan game yang kebetulan berisi soal.**
