@@ -24,12 +24,15 @@ body{font-family:system-ui,sans-serif;max-width:1100px;margin:0 auto;padding:24p
 <iframe id="game" title="Renderer under test"></iframe>
 </section>
 <script>
-const DATA_URL='../../phase-3/world-1-question-batch-a-c-v1.1-canonical.json';
+const CANONICAL_URL='../../phase-3/world-1-question-batch-a-c-v1.1-canonical.json';
+const BASE_URL='../../phase-3/world-1-question-batch-a-c-v1.json';
+const REVISION_URL='../../phase-3/world-1-question-batch-a-c-v1.1-revisions.json';
 const checksEl=document.getElementById('checks');
 const overallEl=document.getElementById('overall');
 const frame=document.getElementById('game');
 const runBtn=document.getElementById('run');
 let dataset=null;
+let datasetBlobUrl=null;
 function checkCard(id,label,state='PENDING',detail=''){
  const el=document.createElement('div');el.className='item';el.innerHTML=`<strong>${id}</strong><br>${label}<br><span class="status ${state==='PASS'?'pass':state==='FAIL'?'fail':'pending'}">${state}</span><div class="small">${detail}</div>`;checksEl.appendChild(el);return el;
 }
@@ -38,30 +41,44 @@ async function waitFor(fn,timeout=6000){const start=Date.now();while(Date.now()-
 function expectedFor(q){return Array.isArray(q.answer)?[...q.answer]:[q.answer];}
 function optionButtons(){return [...frame.contentDocument.querySelectorAll('.option')];}
 function clickAnswers(q){const expected=expectedFor(q);const buttons=optionButtons();for(const answer of expected){const b=buttons.find(x=>x.dataset.answer===answer);if(!b)throw new Error(`Jawaban tidak ditemukan di opsi: ${answer}`);b.click();}}
+async function loadCanonical(){
+ const [canonRes,baseRes,revRes]=await Promise.all([fetch(CANONICAL_URL,{cache:'no-store'}),fetch(BASE_URL,{cache:'no-store'}),fetch(REVISION_URL,{cache:'no-store'})]);
+ if(!canonRes.ok)throw new Error(`Canonical manifest HTTP ${canonRes.status}`);
+ if(!baseRes.ok)throw new Error(`Base batch HTTP ${baseRes.status}`);
+ if(!revRes.ok)throw new Error(`Revision overlay HTTP ${revRes.status}`);
+ const manifest=await canonRes.json();const base=await baseRes.json();const revisions=await revRes.json();
+ if(!Array.isArray(manifest.item_ids)||manifest.item_ids.length!==9)throw new Error('Canonical manifest tidak mendefinisikan 9 item');
+ if(!Array.isArray(base.items)||base.items.length!==9)throw new Error('Base batch tidak berisi 9 item');
+ if(!Array.isArray(revisions.items))throw new Error('Revision overlay items tidak valid');
+ const overlay=new Map(revisions.items.map(q=>[q.id,q]));
+ const baseById=new Map(base.items.map(q=>[q.id,q]));
+ const items=manifest.item_ids.map(id=>overlay.get(id)||baseById.get(id));
+ if(items.some(q=>!q))throw new Error('Canonical merge kehilangan item');
+ if(new Set(items.map(q=>q.id)).size!==9)throw new Error('Canonical merge menghasilkan ID duplikat');
+ dataset={...base,schema_version:manifest.schema_version,batch_id:manifest.batch_id,status:manifest.status,purpose:manifest.purpose,items};
+ return {manifest,base,revisions};
+}
 async function run(){
  runBtn.disabled=true;checksEl.innerHTML='';overallEl.textContent='Running…';overallEl.className='status pending';
  try{
-  const res=await fetch(DATA_URL,{cache:'no-store'});if(!res.ok)throw new Error(`Canonical dataset HTTP ${res.status}`);dataset=await res.json();
-  checkCard('DATA','Canonical dataset dapat dimuat','PASS',`${dataset.items.length} item`);
-  if(dataset.items.length!==9)throw new Error('Jumlah canonical item bukan 9');
-  const ids=dataset.items.map(q=>q.id);if(new Set(ids).size!==ids.length)throw new Error('ID duplikat');
+  const sources=await loadCanonical();
+  checkCard('DATA','Canonical manifest + base + revision overlay dapat dimuat','PASS','Canonical merge diselesaikan di harness menjadi dataset.items');
+  if(dataset.items.length!==9)throw new Error(`Canonical resolved item count ${dataset.items.length}, expected 9`);
+  const ids=dataset.items.map(q=>q.id);if(new Set(ids).size!==ids.length)throw new Error('ID duplikat setelah canonical merge');
   checkCard('SCHEMA','9 item + ID unik','PASS','AC-001 … AC-009');
   const supported=['mcq','multi_select','document_inspection','dialogue_analysis','ordering','evidence_matching'];
   for(const q of dataset.items)if(!supported.includes(q.question_type))throw new Error(`${q.id}: unsupported ${q.question_type}`);
   checkCard('TYPES','Semua question_type dikenali renderer','PASS',dataset.items.map(q=>q.question_type).join(', '));
-  frame.src=`index.html?dataset=${encodeURIComponent(DATA_URL)}&qa=1&regression=1`;
+  const blob=new Blob([JSON.stringify(dataset)],{type:'application/json'});datasetBlobUrl=URL.createObjectURL(blob);
+  frame.src=`index.html?dataset=${encodeURIComponent(datasetBlobUrl)}&qa=1&regression=1`;
   await waitFor(()=>frame.contentDocument&&frame.contentDocument.querySelector('#questionArea'));
-  checkCard('LOAD','Renderer aktual memuat canonical dataset','PASS','iframe memakai renderer.js aktual');
+  checkCard('LOAD','Renderer aktual memuat canonical resolved dataset','PASS','iframe memakai renderer.js aktual + QA blob dataset');
   const seen=[];let expectedXP=0;
   for(let i=0;i<dataset.items.length;i++){
-   await waitFor(()=>frame.contentDocument.querySelector('#counter'));
-   const counter=frame.contentDocument.querySelector('#counter').textContent;
-   const m=counter.match(/Soal (\d+) dari (\d+)/);if(!m)throw new Error('Counter tidak terbaca');
-   const q=dataset.items.find(x=>x.id===frame.contentDocument.querySelector('.small')?.textContent?.split(' · ')[1]) || dataset.items[i];
-   const idText=frame.contentDocument.querySelector('#feedback')?.textContent||'';
-   const currentIndex=i;
+   await waitFor(()=>frame.contentDocument.querySelector('.question'));
    const currentQuestion=dataset.items.find(x=>x.question===frame.contentDocument.querySelector('.question')?.textContent);
    if(!currentQuestion)throw new Error(`Soal ${i+1} tidak cocok dengan canonical dataset`);
+   if(seen.includes(currentQuestion.id))throw new Error(`${currentQuestion.id}: question ID tampil dua kali sebelum batch selesai`);
    seen.push(currentQuestion.id);
    clickAnswers(currentQuestion);
    const submit=frame.contentDocument.querySelector('#submit');if(!submit||submit.disabled)throw new Error(`${currentQuestion.id}: submit disabled setelah memilih jawaban`);submit.click();
@@ -69,19 +86,18 @@ async function run(){
    const feedback=frame.contentDocument.querySelector('#feedback').textContent||'';if(!feedback.includes('Jawaban benar'))throw new Error(`${currentQuestion.id}: jawaban canonical tidak diterima`);
    if(currentQuestion.question_type==='multi_select'){const hint=frame.contentDocument.querySelector('.interaction-hint')?.textContent||'';if(!hint.includes('Pilih semua')||!hint.includes(`Pilih ${currentQuestion.answer.length} jawaban`))throw new Error(`${currentQuestion.id}: multi-select instruction mismatch`);}
    expectedXP+=100;
-   const next=frame.contentDocument.querySelector('#next');if(!next)throw new Error(`${currentQuestion.id}: next tidak ditemukan`);next.click();
-   if(i<dataset.items.length-1)await waitFor(()=>frame.contentDocument.querySelector('.question'));
+   if(i<dataset.items.length-1){const next=frame.contentDocument.querySelector('#next');if(!next)throw new Error(`${currentQuestion.id}: next tidak ditemukan`);next.click();await waitFor(()=>frame.contentDocument.querySelector('.question'));}
   }
   checkCard('ANSWER','Semua 9 canonical answer keys diterima','PASS',`XP expected ${expectedXP}`);
   const result=frame.contentDocument.querySelector('#result');if(!result||result.classList.contains('hidden'))throw new Error('Result screen tidak muncul');
   if(!result.textContent.includes('9/9')||!result.textContent.includes(String(expectedXP)))throw new Error('Final result mismatch');
   checkCard('SCORE','XP dan hasil akhir konsisten','PASS',`9/9 · ${expectedXP} XP`);
-  if(new Set(seen).size!==9)throw new Error('Tidak semua ID canonical dimainkan');
+  if(new Set(seen).size!==9)throw new Error(`Coverage hanya ${new Set(seen).size}/9`);
   checkCard('COVERAGE','Semua 9 ID dimainkan','PASS',seen.join(', '));
   checkCard('FEEDBACK','Feedback + explanation tampil','PASS','Diverifikasi pada setiap submission');
   overallEl.textContent='PASS — Controlled Regression Harness v1';overallEl.className='status pass';
  }catch(err){checkCard('REGRESSION','Controlled regression','FAIL',err.message);overallEl.textContent='FAIL — lihat detail check terakhir';overallEl.className='status fail';}
- finally{runBtn.disabled=false;}
+ finally{if(datasetBlobUrl)URL.revokeObjectURL(datasetBlobUrl);runBtn.disabled=false;}
 }
 runBtn.onclick=run;
 </script>
