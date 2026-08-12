@@ -28,6 +28,11 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Full quality-gate artifact: `phase-3/world-1-question-batch-a-c-v1.1-quality-gate.md`
 - Revision artifact: `phase-3/world-1-question-batch-a-c-v1.1-revisions.json`
 - Revision review artifact: `phase-3/world-1-question-batch-a-c-v1.1-review.md`
+- **Controlled Regression Harness v1: implemented and ready for live execution**
+- Harness: `prototype/bahasa-indonesia/regression-harness.html`
+- Harness protocol: `phase-3/world-1-controlled-regression-harness-v1.md`
+- Renderer QA dataset override: `prototype/bahasa-indonesia/renderer.js` accepts optional `?dataset=` while preserving Golden Dataset v1 as default
+- **Live nine-item regression: pending actual browser execution; no PASS claim yet**
 - **Golden Dataset promotion remains blocked until live nine-item regression is completed and the canonical batch passes final promotion checks**
 - **Mass generation tetap ditahan sampai batch promotion gate lulus**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
@@ -147,7 +152,9 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - **Canonical batch `phase-3/world-1-question-batch-a-c-v1.1-canonical.json` materialized with 9 effective items.**
 - **Full batch quality gate `phase-3/world-1-question-batch-a-c-v1.1-quality-gate.md`: PASS with documented limitation; schema, IDs, answer shape, provenance, answer verification, pedagogy, explanations, and renderer compatibility passed. Difficulty remains provisional.**
 - **AC-005 content passes, but its `document_inspection` label currently uses generic option-selection rendering; specialized document-inspection UI remains a later implementation task.**
-- **Next promotion gate: live nine-item regression, then final promotion checks before Golden Dataset promotion.**
+- **Controlled Regression Harness v1 implemented: `prototype/bahasa-indonesia/regression-harness.html`; protocol documented at `phase-3/world-1-controlled-regression-harness-v1.md`.**
+- **Harness drives the actual renderer with a QA-only dataset override and checks canonical load, schema, answer acceptance, feedback, multi-select instruction, nine-item coverage, and final 9/9 / 900 XP result.**
+- **Live nine-item regression is still pending actual browser execution; no PASS claim is made from static inspection alone.**
 - World 2–4 expansion waits until the World 1 content-expansion gate is satisfied.
 
 ## 13. QA findings resolved in World 1
