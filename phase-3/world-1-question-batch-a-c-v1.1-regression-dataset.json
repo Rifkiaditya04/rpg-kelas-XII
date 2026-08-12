@@ -1,0 +1,89 @@
+{
+  "schema_version":"1.1",
+  "batch_id":"BI12-W01-BATCH-AC-V1.1-REGRESSION",
+  "status":"qa_only",
+  "purpose":"Resolved nine-item QA dataset produced deterministically from the canonical base batch plus the v1.1 revision overlay. Not production Golden Dataset.",
+  "items":[
+    {
+      "id":"BI12-W1-AC-001","chapter_id":"BI12-C01","topic_id":"BI12-C01-T01","lane":"A","skill":"apply","cognitive_level":"apply","difficulty":"easy","question_type":"mcq",
+      "question":"Sebuah lowongan meminta pelamar memiliki pengalaman mengelola dokumen dan mampu menggunakan aplikasi perkantoran. Bukti mana yang paling relevan untuk ditonjolkan dalam surat lamaran?",
+      "options":["Pengalaman mengelola arsip digital dan membuat laporan dengan aplikasi perkantoran","Hobi mengoleksi film dari berbagai negara","Jumlah pengikut akun media sosial pribadi","Makanan favorit saat bekerja"],
+      "answer":"Pengalaman mengelola arsip digital dan membuat laporan dengan aplikasi perkantoran",
+      "explanation":"Bukti yang dipilih harus menunjukkan hubungan langsung antara pengalaman pelamar dan kebutuhan posisi yang dilamar.",
+      "source":{"student_book":{"pages":"10-11, 23","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja; C. Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup"},"teacher_guide":{"pages":"32, 75-76","section":"Indikator Bab I; blueprint asesmen sumatif"}},
+      "provenance":"Original scenario derived from the source requirement that qualifications, skills, and experience be relevant to the target position.","generation_method":"source-grounded original scenario","game_mechanic":"relevance_scan","mode":"training","tags":["surat-lamaran","relevansi","lowongan"]
+    },
+    {
+      "id":"BI12-W1-AC-002","chapter_id":"BI12-C01","topic_id":"BI12-C01-T01","lane":"A","skill":"evaluate","cognitive_level":"evaluate","difficulty":"medium","question_type":"multi_select",
+      "question":"Sebuah lowongan untuk staf administrasi menekankan ketelitian, pengelolaan dokumen, dan komunikasi. Pilih semua bukti pelamar yang paling relevan.",
+      "options":["Pernah mengelola arsip dan dokumen kegiatan sekolah secara sistematis","Pernah menjadi panitia yang bertugas membuat surat dan berkomunikasi dengan pihak luar","Memiliki koleksi gim digital yang besar","Pernah membuat rekap data menggunakan aplikasi spreadsheet"],
+      "answer":["Pernah mengelola arsip dan dokumen kegiatan sekolah secara sistematis","Pernah menjadi panitia yang bertugas membuat surat dan berkomunikasi dengan pihak luar","Pernah membuat rekap data menggunakan aplikasi spreadsheet"],
+      "explanation":"Ketiga bukti tersebut berhubungan langsung dengan ketelitian, dokumen, komunikasi, atau pengolahan data yang diminta dalam lowongan. Koleksi gim tidak memberikan bukti relevansi yang sama.",
+      "source":{"student_book":{"pages":"10-11, 23","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja; C. Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup"},"teacher_guide":{"pages":"32, 75-76","section":"Indikator Bab I; memilih informasi/pengalaman dan lampiran yang relevan"}},
+      "provenance":"Original multi-select scenario operationalizing the source rule that relevant skills and experience should be emphasized.","generation_method":"source-grounded original scenario","game_mechanic":"relevance_scan","mode":"training","tags":["surat-lamaran","relevansi","multi-select"]
+    },
+    {
+      "id":"BI12-W1-AC-003","chapter_id":"BI12-C01","topic_id":"BI12-C01-T01","lane":"A","skill":"analyze","cognitive_level":"analyze","difficulty":"medium","question_type":"mcq",
+      "question":"Sebuah lowongan membutuhkan ketelitian dalam mengelola dokumen. Bukti pelamar manakah yang paling kuat untuk menunjukkan kesesuaian dengan kebutuhan tersebut?",
+      "options":["Pengalaman menyusun dan memeriksa arsip kegiatan secara sistematis","Hobi menonton film pada waktu luang","Memiliki koleksi gim digital yang besar","Mengikuti banyak akun media sosial"],
+      "answer":"Pengalaman menyusun dan memeriksa arsip kegiatan secara sistematis",
+      "explanation":"Bukti tersebut menunjukkan pengalaman yang langsung berkaitan dengan ketelitian dan pengelolaan dokumen, sehingga lebih relevan dengan kebutuhan lowongan daripada hobi atau aktivitas pribadi yang tidak menunjukkan kompetensi tersebut.",
+      "source":{"student_book":{"pages":"10-11, 23","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja; C. Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup"},"teacher_guide":{"pages":"32, 75-76","section":"Indikator relevansi isi, pengalaman, dan lampiran"}},
+      "provenance":"Revised from the blocked evidence-matching item into a single-answer evidence-based MCQ. The underlying skill remains matching job requirements with relevant applicant evidence.","generation_method":"source-grounded revision","game_mechanic":"relevance_scan","mode":"training","tags":["surat-lamaran","relevansi","bukti","revision-v1.1"]
+    },
+    {
+      "id":"BI12-W1-AC-004","chapter_id":"BI12-C01","topic_id":"BI12-C01-T02","lane":"B","skill":"understand","cognitive_level":"understand","difficulty":"easy","question_type":"mcq",
+      "question":"Manakah urutan bagian awal surat lamaran kerja yang sesuai dengan sistematika yang dipelajari?",
+      "options":["Tempat dan tanggal → perihal/lampiran → alamat tujuan → salam pembuka","Salam pembuka → tempat dan tanggal → alamat tujuan → perihal/lampiran","Alamat tujuan → isi surat → tempat dan tanggal → salam pembuka","Isi surat → perihal/lampiran → salam penutup → alamat tujuan"],
+      "answer":"Tempat dan tanggal → perihal/lampiran → alamat tujuan → salam pembuka",
+      "explanation":"Urutan tersebut mengikuti sistematika bagian awal surat lamaran yang dipelajari. Tiga pilihan lain menempatkan bagian surat pada urutan yang tidak sesuai.",
+      "source":{"student_book":{"pages":"8-12","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja"},"teacher_guide":{"pages":"32, 75-76","section":"Fungsi sistematika dan indikator evaluasi surat"}},
+      "provenance":"Revised from the blocked ordering interaction into a single-answer structural MCQ. The content still tests recognition of the taught sequence without pretending the current renderer supports drag-and-drop ordering.","generation_method":"source-grounded revision","game_mechanic":"structure_check","mode":"training","tags":["surat-lamaran","sistematika","struktur","revision-v1.1"]
+    },
+    {
+      "id":"BI12-W1-AC-005","chapter_id":"BI12-C01","topic_id":"BI12-C01-T02","lane":"B","skill":"evaluate","cognitive_level":"evaluate","difficulty":"medium","question_type":"document_inspection",
+      "question":"Sebuah surat lamaran sudah memiliki alamat tujuan dan salam pembuka, tetapi langsung berpindah dari salam pembuka ke salam penutup tanpa menjelaskan posisi yang dilamar dan kualifikasi pelamar. Apa masalah utamanya?",
+      "options":["Bagian isi yang menjelaskan posisi dan kualifikasi belum menjalankan fungsinya","Alamat tujuan harus dihapus","Salam pembuka harus ditempatkan setelah tanda tangan","Surat menjadi lebih baik jika seluruh isi dihilangkan"],
+      "answer":"Bagian isi yang menjelaskan posisi dan kualifikasi belum menjalankan fungsinya",
+      "explanation":"Isi surat perlu menyampaikan informasi yang mendukung tujuan lamaran, termasuk posisi yang dituju serta kualifikasi atau pengalaman yang relevan.",
+      "source":{"student_book":{"pages":"9-12","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja"},"teacher_guide":{"pages":"32, 75-76","section":"Fungsi bagian surat dan evaluasi kekuatan/kelemahan"}},
+      "provenance":"Original document-inspection scenario testing function of the body section rather than arbitrary formatting preference.","generation_method":"source-grounded document inspection","game_mechanic":"document_inspection","mode":"training","tags":["surat-lamaran","sistematika","fungsi"]
+    },
+    {
+      "id":"BI12-W1-AC-006","chapter_id":"BI12-C01","topic_id":"BI12-C01-T02","lane":"B","skill":"evaluate","cognitive_level":"evaluate","difficulty":"hard","question_type":"multi_select",
+      "question":"Saat memeriksa sistematika surat lamaran, pilih semua temuan yang memang merupakan masalah struktur atau fungsi bagian surat.",
+      "options":["Tidak ada bagian yang menjelaskan posisi yang dilamar","Isi tidak menunjukkan kualifikasi atau pengalaman yang relevan","Salam penutup muncul sebelum isi surat selesai","Pelamar memilih jenis huruf yang disukai selama seluruh informasi surat lengkap"],
+      "answer":["Tidak ada bagian yang menjelaskan posisi yang dilamar","Isi tidak menunjukkan kualifikasi atau pengalaman yang relevan","Salam penutup muncul sebelum isi surat selesai"],
+      "explanation":"Ketiga temuan pertama berkaitan dengan fungsi atau urutan bagian surat. Preferensi jenis huruf tidak otomatis menjadi masalah struktur jika sumber tidak menetapkannya sebagai kesalahan.",
+      "source":{"student_book":{"pages":"8-12","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja"},"teacher_guide":{"pages":"32, 75-76","section":"Fungsi sistematika dan evaluasi kelemahan surat"}},
+      "provenance":"Original multi-select inspection task designed to distinguish structural/function defects from unsupported formatting preferences.","generation_method":"source-grounded document inspection","game_mechanic":"document_inspection","mode":"training","tags":["surat-lamaran","sistematika","multi-select"]
+    },
+    {
+      "id":"BI12-W1-AC-007","chapter_id":"BI12-C01","topic_id":"BI12-C01-T03","lane":"C","skill":"apply","cognitive_level":"apply","difficulty":"easy","question_type":"mcq",
+      "question":"Kalimat manakah yang paling sesuai dengan prinsip bahasa formal, jelas, dan sopan dalam surat lamaran kerja?",
+      "options":["Saya berharap Bapak/Ibu dapat mempertimbangkan lamaran saya untuk posisi tersebut.","Saya pengin banget diterima karena pekerjaan ini keren.","Pokoknya saya cocok banget dengan pekerjaan itu.","Kalau bisa saya langsung diterima saja ya."],
+      "answer":"Saya berharap Bapak/Ibu dapat mempertimbangkan lamaran saya untuk posisi tersebut.",
+      "explanation":"Kalimat tersebut menyampaikan harapan secara formal dan sopan dengan makna yang jelas.",
+      "source":{"student_book":{"pages":"17-20","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja"},"teacher_guide":{"pages":"32, 76","section":"Ciri kebahasaan dan indikator penggunaan bahasa formal"}},
+      "provenance":"Original language-selection item based on formal/polite expression and concise/clear sentence guidance.","generation_method":"source-grounded original item","game_mechanic":"error_hunt","mode":"training","tags":["surat-lamaran","bahasa-formal","kesopanan"]
+    },
+    {
+      "id":"BI12-W1-AC-008","chapter_id":"BI12-C01","topic_id":"BI12-C01-T03","lane":"C","skill":"analyze","cognitive_level":"analyze","difficulty":"medium","question_type":"document_inspection",
+      "question":"Dalam paragraf surat lamaran terdapat beberapa kalimat yang berulang dan sangat panjang sehingga gagasan utama sulit ditemukan. Perbaikan yang paling sesuai dengan prinsip kebahasaan adalah...",
+      "options":["Memadatkan kalimat dan menghilangkan pengulangan agar informasi lebih jelas dan efektif","Menambah kalimat yang sama agar surat terlihat lebih meyakinkan","Menggunakan lebih banyak kata tidak baku agar terasa akrab","Menghapus semua informasi tentang kualifikasi pelamar"],
+      "answer":"Memadatkan kalimat dan menghilangkan pengulangan agar informasi lebih jelas dan efektif",
+      "explanation":"Bahasa surat lamaran perlu menggunakan kalimat yang singkat, padat, dan jelas sehingga informasi utama mudah dipahami.",
+      "source":{"student_book":{"pages":"17-18","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja"},"teacher_guide":{"pages":"32, 76","section":"Kalimat efektif dan ciri kebahasaan"}},
+      "provenance":"Original document-repair scenario derived from the source rule on concise and clear sentences.","generation_method":"source-grounded repair scenario","game_mechanic":"error_hunt","mode":"training","tags":["surat-lamaran","kalimat-efektif","revisi"]
+    },
+    {
+      "id":"BI12-W1-AC-009","chapter_id":"BI12-C01","topic_id":"BI12-C01-T03","lane":"C","skill":"evaluate","cognitive_level":"evaluate","difficulty":"hard","question_type":"multi_select",
+      "question":"Pilih semua perubahan yang sesuai dengan prinsip kebahasaan surat lamaran kerja.",
+      "options":["Mengganti kata tidak baku dengan bentuk baku yang sesuai konteks","Memperbaiki tanda baca yang mengganggu kejelasan kalimat","Mengubah ungkapan santai menjadi ungkapan formal dan sopan","Menambahkan slang agar surat lebih dekat dengan pembaca"],
+      "answer":["Mengganti kata tidak baku dengan bentuk baku yang sesuai konteks","Memperbaiki tanda baca yang mengganggu kejelasan kalimat","Mengubah ungkapan santai menjadi ungkapan formal dan sopan"],
+      "explanation":"Ketiga perubahan tersebut sejalan dengan penggunaan kosakata baku, tanda baca, serta bahasa formal dan sopan dalam surat lamaran. Slang tidak menjadi pilihan yang tepat untuk dokumen formal.",
+      "source":{"student_book":{"pages":"15-20","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja"},"teacher_guide":{"pages":"32, 76","section":"Kosakata baku, kalimat efektif, ungkapan formal, dan tanda baca"}},
+      "provenance":"Original multi-select language-repair task derived from explicit source rules on standard vocabulary, punctuation, and formal/polite language.","generation_method":"source-grounded repair scenario","game_mechanic":"error_hunt","mode":"training","tags":["surat-lamaran","bahasa","multi-select","revisi"]
+    }
+  ]
+}
