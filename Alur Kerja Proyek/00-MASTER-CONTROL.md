@@ -38,7 +38,7 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Promotion record: `phase-3/world-1-promotion-v1.1.md`
 - **Chapter I Deep Content / Provenance Pass v1 — lanes D–F: PASS for controlled expansion; not yet approved for production promotion**
 - Provenance artifact D–F: `phase-3/chapter-1-deep-content-provenance-lanes-d-f-v1.md`
-- **D–F controlled batch v1: created as 9 source-grounded items (3 D, 3 E, 3 F); status QA_PENDING, not approved for production promotion.**
+- **D–F controlled batch v1: created as 9 source-grounded items (3 D, 3 E, 3 F); status QA_PENDING, not promoted.**
 - D–F controlled batch artifact: `phase-3/world-1-question-batch-d-f-v1.json`
 - **D–F independent answer verification + pedagogical review: completed. Seven items passed as written; DF-001 required a content revision because its original scenario did not establish the claimed prior experience; DF-002 required a cognitive-metadata revision from evaluate to analyze.**
 - D–F review artifact: `phase-3/world-1-question-batch-d-f-v1-review.md`
@@ -51,9 +51,9 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Full quality-gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-quality-gate.md`
 - **D–F v1.1 resolved QA dataset created for live regression; QA-only and separate from Golden Dataset v1.**
 - Resolved QA dataset: `phase-3/world-1-question-batch-d-f-v1.1-regression-dataset.json`
-- **D–F v1.1 Controlled Live Regression Harness created; browser evidence pending.**
+- **D–F v1.1 Controlled Live Regression: PASS. User-verified against the actual hosted renderer; DATA, SCHEMA, TYPES, LOAD, ANSWER, SCORE, COVERAGE, and FEEDBACK all passed; 9/9 and 900 XP; all 9 IDs played in randomized order.**
 - D–F harness: `prototype/bahasa-indonesia/regression-harness-df-v1.1.html`
-- **Next active gate: execute the hosted D–F v1.1 harness and capture browser evidence; if PASS, proceed to Final Promotion Checks → promotion.**
+- **Next active gate: Final Promotion Checks → promotion of D–F v1.1 if all promotion criteria pass.**
 - **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
@@ -183,14 +183,26 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Specialized document-inspection UX remains a later technical task and does not block the current approved content pool.
 - **D–F provenance pass:** `phase-3/chapter-1-deep-content-provenance-lanes-d-f-v1.md`; PASS for controlled expansion into writing/revision, presentation/publication, and integrated application.
 - **D–F controlled batch v1:** `phase-3/world-1-question-batch-d-f-v1.json`; 9 items (3 D, 3 E, 3 F), QA_PENDING, not promoted.
-- **D–F independent answer verification + pedagogical review:** completed. Seven items passed as written; DF-001 required a content revision because its original scenario did not establish the claimed prior experience; DF-002 required a cognitive-metadata revision from evaluate to analyze. Revision overlay: `phase-3/world-1-question-batch-d-f-v1.1-revisions.json`; review artifact: `phase-3/world-1-question-batch-d-f-v1-review.md`.
-- **D–F v1.1 Revision Quality Gate: PASS.** Revision gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-revision-quality-gate.md`.
-- **Canonical Batch D–F v1.1 Merge: completed as deterministic manifest; effective IDs DF-001 … DF-009.** Canonical artifact: `phase-3/world-1-question-batch-d-f-v1.1-canonical.json`.
-- **Full Batch Quality Gate D–F v1.1: PASS.** Full quality-gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-quality-gate.md`.
-- **D–F v1.1 resolved QA dataset:** `phase-3/world-1-question-batch-d-f-v1.1-regression-dataset.json`; QA-only, resolved from canonical base + revision overlay, not Golden Dataset v1.
-- **D–F v1.1 Controlled Live Regression Harness:** `prototype/bahasa-indonesia/regression-harness-df-v1.1.html`; created and wired to the actual renderer. Browser execution evidence is pending.
-- **Next active gate:** hosted D–F v1.1 harness execution → browser evidence → Final Promotion Checks if PASS → promotion.
-- World 2–4 expansion remains gated until controlled World 1 expansion is stable.
+- **D–F independent answer verification + pedagogical review:** completed. Seven items passed as written; DF-001 required a content revision because its original scenario did not establish the claimed prior experience; DF-002 required a cognitive-metadata revision from evaluate to analyze.
+- D–F review artifact: `phase-3/world-1-question-batch-d-f-v1-review.md`
+- D–F revision overlay: `phase-3/world-1-question-batch-d-f-v1.1-revisions.json`
+- **D–F v1.1 Revision Quality Gate: PASS.**
+- Revision gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-revision-quality-gate.md`
+- **Canonical Batch D–F v1.1 Merge: completed as deterministic manifest; effective IDs DF-001 … DF-009.**
+- Canonical artifact: `phase-3/world-1-question-batch-d-f-v1.1-canonical.json`
+- **Full Batch Quality Gate D–F v1.1: PASS.**
+- Full quality-gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-quality-gate.md`
+- **D–F v1.1 resolved QA dataset created for live regression; QA-only and separate from Golden Dataset v1.**
+- Resolved QA dataset: `phase-3/world-1-question-batch-d-f-v1.1-regression-dataset.json`
+- **D–F v1.1 Controlled Live Regression: PASS. User-verified against the actual hosted renderer; DATA, SCHEMA, TYPES, LOAD, ANSWER, SCORE, COVERAGE, and FEEDBACK all passed; 9/9 and 900 XP; all 9 IDs played in randomized order.**
+- D–F harness: `prototype/bahasa-indonesia/regression-harness-df-v1.1.html`
+- **Next active gate: Final Promotion Checks → promotion of D–F v1.1 if all promotion criteria pass.**
+- **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
+- **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
+- **GitHub Pages workflow: aktif dan deployment berhasil**
+- **GitHub Pages launcher: tersedia di root `index.html`; deployment live sudah terverifikasi oleh GitHub Actions**
+- Hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
+- Workflow verification protocol: aktif dan wajib dipakai
 
 ## 13. QA findings resolved in World 1
 - Mission-map bypass fixed: question selection comes from `mission.nodes[].question_ids`.
