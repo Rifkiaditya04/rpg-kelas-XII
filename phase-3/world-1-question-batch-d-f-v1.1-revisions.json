@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "BI12-W01-BATCH-DF-V1.1-REV",
+  "base_batch": "phase-3/world-1-question-batch-d-f-v1.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay after independent answer verification and pedagogical review.",
+  "revisions": [
+    {
+      "id": "BI12-W1-DF-001",
+      "change_type": "content_revision",
+      "reason": "Original keyed answer assumed an archive/document experience that the scenario did not establish.",
+      "before_question": "Sebuah surat lamaran untuk posisi staf administrasi menyebutkan bahwa pelamar suka menonton film dan mengoleksi gim, tetapi tidak menjelaskan pengalaman mengelola dokumen. Revisi yang paling tepat adalah...",
+      "after_question": "Sebuah surat lamaran untuk posisi staf administrasi menyebutkan bahwa pelamar suka menonton film dan mengoleksi gim. Pelamar sebenarnya memiliki pengalaman mengelola arsip digital saat menjadi panitia sekolah, tetapi pengalaman itu belum dicantumkan. Revisi yang paling tepat adalah...",
+      "answer": "Mengganti informasi yang tidak relevan tersebut dengan pengalaman mengelola arsip digital yang benar-benar dimiliki dan relevan dengan posisi",
+      "replacement_options": [
+        "Mengganti informasi yang tidak relevan tersebut dengan pengalaman mengelola arsip digital yang benar-benar dimiliki dan relevan dengan posisi",
+        "Menambahkan lebih banyak cerita tentang film agar surat lebih panjang",
+        "Menghapus seluruh informasi tentang pengalaman pelamar",
+        "Menambahkan hobi lain tanpa menghubungkannya dengan posisi"
+      ],
+      "explanation": "Revisi memperkuat relevansi isi dengan menggunakan bukti pengalaman yang benar-benar dimiliki pelamar dan berhubungan dengan kebutuhan posisi. Ini selaras dengan kriteria relevansi serta keterampilan/pengalaman dalam penilaian surat lamaran.",
+      "source": {
+        "student_book": {"pages": "23-25", "section": "C. Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup; rubrik penulisan"},
+        "teacher_guide": {"pages": "32, 36-39, 75-77", "section": "Indikator menulis/editing; konteks kerja autentik; asesmen Chapter I"}
+      }
+    },
+    {
+      "id": "BI12-W1-DF-002",
+      "change_type": "metadata_revision",
+      "reason": "The item asks the learner to classify rubric-aligned revisions; the original cognitive label evaluate overstated the demand.",
+      "before": {"cognitive_level": "evaluate"},
+      "after": {"cognitive_level": "analyze"},
+      "content_unchanged": true
+    }
+  ],
+  "unchanged_item_ids": [
+    "BI12-W1-DF-003",
+    "BI12-W1-DF-004",
+    "BI12-W1-DF-005",
+    "BI12-W1-DF-006",
+    "BI12-W1-DF-007",
+    "BI12-W1-DF-008",
+    "BI12-W1-DF-009"
+  ]
+}
