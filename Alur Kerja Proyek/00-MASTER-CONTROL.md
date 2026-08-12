@@ -28,15 +28,14 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Full quality-gate artifact: `phase-3/world-1-question-batch-a-c-v1.1-quality-gate.md`
 - Revision artifact: `phase-3/world-1-question-batch-a-c-v1.1-revisions.json`
 - Revision review artifact: `phase-3/world-1-question-batch-a-c-v1.1-review.md`
-- **Controlled Regression Harness v1: implemented; first live attempt exposed and confirmed a harness bug; static resolved QA dataset was then introduced and the second source-level fix eliminated the prior data-loading ambiguity.**
+- **Controlled Regression Harness v1: implemented and live-verified against the actual renderer.**
 - Harness: `prototype/bahasa-indonesia/regression-harness.html`
 - Resolved QA dataset: `phase-3/world-1-question-batch-a-c-v1.1-regression-dataset.json`
 - Harness protocol: `phase-3/world-1-controlled-regression-harness-v1.md`
-- **Latest live attempt: DATA, SCHEMA, TYPES, LOAD, and ANSWER checks passed; regression then failed because the harness submitted the final answer but did not click the renderer's final `#next` button, so `finish()` was never invoked and the result screen correctly remained hidden. Root cause is confirmed in harness control flow, not in the renderer or dataset.**
-- **Harness fix committed: after every submission, including item 9, the harness now clicks `#next`; for item 9 it waits for `#result` to become visible before evaluating final score.**
-- **Live nine-item regression: pending re-run against the latest deployed harness; no PASS claim yet.**
-- **Golden Dataset promotion remains blocked until live nine-item regression is completed and the canonical batch passes final promotion checks**
-- **Mass generation tetap ditahan sampai batch promotion gate lulus**
+- **Live nine-item regression: PASS. DATA, SCHEMA, TYPES, LOAD, ANSWER, SCORE, COVERAGE, and FEEDBACK all passed. The 9 canonical items were played in randomized order and produced 9/9 and 900 XP.**
+- **Final promotion gate is now active: canonical batch must pass final promotion checks before being promoted to approved World 1 content.**
+- **Golden Dataset v1 remains unchanged and is not overwritten by the World 1 expansion batch.**
+- **Mass generation tetap ditahan sampai final promotion gate lulus.**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
 - **GitHub Pages launcher: tersedia di root `index.html`; deployment live sudah terverifikasi oleh GitHub Actions**
 - Hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
@@ -155,12 +154,11 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - **Resolved QA dataset `phase-3/world-1-question-batch-a-c-v1.1-regression-dataset.json` materializes those 9 effective items for browser regression only; it is not Golden Dataset v1.**
 - **Full batch quality gate `phase-3/world-1-question-batch-a-c-v1.1-quality-gate.md`: PASS with documented limitation; schema, IDs, answer shape, provenance, answer verification, pedagogy, explanations, and renderer compatibility passed. Difficulty remains provisional.**
 - **AC-005 content passes, but its `document_inspection` label currently uses generic option-selection rendering; specialized document-inspection UI remains a later implementation task.**
-- **Controlled Regression Harness v1 implemented: `prototype/bahasa-indonesia/regression-harness.html`; protocol documented at `phase-3/world-1-controlled-regression-harness-v1.md`.**
-- **First live harness attempt failed because the harness treated the canonical manifest as if it contained `items`; root cause was confirmed. A follow-up fix using Blob URL injection still reproduced the runtime failure, so that approach was abandoned.**
-- **Current harness uses a static resolved QA dataset and passes its URL directly to the actual renderer. The latest live attempt passed DATA, SCHEMA, TYPES, LOAD, and ANSWER, then failed because the harness did not click the renderer's final `#next` button; the renderer only calls `finish()` from that button.**
-- **Harness control-flow fix committed: after every submission, including item 9, the harness now clicks `#next`; on item 9 it waits for `#result` to become visible before final score validation.**
-- **Live nine-item regression is pending re-run against the latest deployed harness; no PASS claim is made from source inspection alone.**
-- World 2–4 expansion waits until the World 1 content-expansion gate is satisfied.
+- **Controlled Regression Harness v1: live PASS.** The resolved canonical QA dataset loaded successfully; all 9 IDs were unique; all question types were recognized; the actual renderer loaded the dataset; all canonical answer keys were accepted; final score was 9/9 and 900 XP; all 9 IDs were played; feedback/explanation appeared for every submission.
+- **Observed randomized coverage order:** `BI12-W1-AC-006`, `BI12-W1-AC-007`, `BI12-W1-AC-001`, `BI12-W1-AC-008`, `BI12-W1-AC-004`, `BI12-W1-AC-005`, `BI12-W1-AC-009`, `BI12-W1-AC-003`, `BI12-W1-AC-002`.
+- **Regression bugs resolved before PASS:** manifest-vs-items mismatch, Blob URL approach abandoned after reproduction, and final-`#next` control-flow omission fixed so renderer `finish()` executes.
+- **Current gate: Final Promotion Checks.** World 1 A–C v1.1 may proceed to promotion review, but is not yet promoted to Golden Dataset v1 or mass-generation source.
+- World 2–4 expansion waits until the World 1 content-promotion gate is satisfied.
 
 ## 13. QA findings resolved in World 1
 - Mission-map bypass fixed: question selection comes from `mission.nodes[].question_ids`.
@@ -169,7 +167,9 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Static challenge order fixed by shuffling at mission load.
 - Static answer-option order fixed by shuffling on render and evaluating by answer value.
 - Multi-select instruction ambiguity fixed by explicit multiple-choice instruction and expected count.
-- These implementation/UX defects are resolved for the current slice; active gate is controlled content expansion and batch QA.
+- Controlled regression harness manifest/data-resolution bug fixed.
+- Controlled regression harness final-navigation bug fixed.
+- These implementation/UX defects are resolved for the current slice; active gate is final promotion review for controlled content expansion.
 
 ## 14. GitHub Pages — browser playtest path
 - Deployment workflow: `.github/workflows/pages.yml`.
