@@ -23,14 +23,13 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **World 1 expansion plan v1: tersedia di `phase-3/world-1-expansion-plan.md`**
 - **Chapter I Deep Content / Provenance Pass v1: selesai untuk controlled lanes A–C**
 - Provenance artifact: `phase-3/chapter-1-deep-content-provenance.md`
-- **World 1 controlled content batch A–C v1: independently reviewed; 7 pass, AC-003/AC-004 blocked by interaction-contract mismatch; not promoted**
-- Controlled batch artifact: `phase-3/world-1-question-batch-a-c-v1.json`
-- Review artifact: `phase-3/world-1-question-batch-a-c-v1-review.md`
-- **World 1 controlled content batch A–C v1.1 revisions: targeted recheck passed; canonical batch merge + full batch gate pending**
+- **World 1 controlled content batch A–C v1.1: canonical merge completed; full batch quality gate passed with documented renderer limitation**
+- Canonical batch artifact: `phase-3/world-1-question-batch-a-c-v1.1-canonical.json`
+- Full quality-gate artifact: `phase-3/world-1-question-batch-a-c-v1.1-quality-gate.md`
 - Revision artifact: `phase-3/world-1-question-batch-a-c-v1.1-revisions.json`
 - Revision review artifact: `phase-3/world-1-question-batch-a-c-v1.1-review.md`
-- **Golden Dataset promotion remains blocked until the canonical v1.1 batch is materialized and passes the full schema/provenance/renderer/batch quality gate**
-- **Mass generation tetap ditahan sampai batch QA lulus**
+- **Golden Dataset promotion remains blocked until live nine-item regression is completed and the canonical batch passes final promotion checks**
+- **Mass generation tetap ditahan sampai batch promotion gate lulus**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
 - **GitHub Pages launcher: tersedia di root `index.html`; deployment live sudah terverifikasi oleh GitHub Actions**
 - Hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
@@ -145,8 +144,10 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - **AC-004 revision:** `ordering` → supported `mcq`, mechanic `structure_check`.
 - Revision artifact: `phase-3/world-1-question-batch-a-c-v1.1-revisions.json`.
 - Revision review: `phase-3/world-1-question-batch-a-c-v1.1-review.md`.
-- **Current v1.1 targeted recheck: PASS for both revised items; canonical batch merge and full quality gate remain pending.**
-- AC-005 content passes, but its `document_inspection` label currently uses generic option-selection rendering; specialized document-inspection UI remains a later implementation task.
+- **Canonical batch `phase-3/world-1-question-batch-a-c-v1.1-canonical.json` materialized with 9 effective items.**
+- **Full batch quality gate `phase-3/world-1-question-batch-a-c-v1.1-quality-gate.md`: PASS with documented limitation; schema, IDs, answer shape, provenance, answer verification, pedagogy, explanations, and renderer compatibility passed. Difficulty remains provisional.**
+- **AC-005 content passes, but its `document_inspection` label currently uses generic option-selection rendering; specialized document-inspection UI remains a later implementation task.**
+- **Next promotion gate: live nine-item regression, then final promotion checks before Golden Dataset promotion.**
 - World 2–4 expansion waits until the World 1 content-expansion gate is satisfied.
 
 ## 13. QA findings resolved in World 1
