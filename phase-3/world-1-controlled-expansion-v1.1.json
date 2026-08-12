@@ -1,0 +1,67 @@
+{
+  "schema_version":"1.1",
+  "dataset_id":"BI12-W01-M02-CONTROLLED-EXPANSION-V1.1",
+  "status":"controlled_expansion",
+  "purpose":"Student-facing controlled gameplay slice using six already-approved World 1 Chapter I items, one per lane A-F. This dataset is derived from approved pools and does not modify them or Golden Dataset v1.",
+  "source_index":"phase-3/world-1-approved-content-v1.1-index.json",
+  "mission_map":"phase-3/world-1-expansion-mission-map-v1.1.json",
+  "chapter_id":"BI12-C01",
+  "item_count":6,
+  "selection_policy":"Explicit IDs from the controlled expansion mission map; no uncontrolled sampling.",
+  "items":[
+    {
+      "id":"BI12-W1-AC-001","chapter_id":"BI12-C01","topic_id":"BI12-C01-T01","lane":"A","skill":"apply","cognitive_level":"apply","difficulty":"easy","question_type":"mcq",
+      "question":"Sebuah lowongan meminta pelamar memiliki pengalaman mengelola dokumen dan mampu menggunakan aplikasi perkantoran. Bukti mana yang paling relevan untuk ditonjolkan dalam surat lamaran?",
+      "options":["Pengalaman mengelola arsip digital dan membuat laporan dengan aplikasi perkantoran","Hobi mengoleksi film dari berbagai negara","Jumlah pengikut akun media sosial pribadi","Makanan favorit saat bekerja"],
+      "answer":"Pengalaman mengelola arsip digital dan membuat laporan dengan aplikasi perkantoran",
+      "explanation":"Bukti yang dipilih harus menunjukkan hubungan langsung antara pengalaman pelamar dan kebutuhan posisi yang dilamar.",
+      "source":{"student_book":{"pages":"10-11, 23","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja; C. Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup"},"teacher_guide":{"pages":"32, 75-76","section":"Indikator Bab I; blueprint asesmen sumatif"}},
+      "provenance":"Original scenario derived from the source requirement that qualifications, skills, and experience be relevant to the target position.","generation_method":"source-grounded original scenario","game_mechanic":"relevance_scan","mode":"training","tags":["surat-lamaran","relevansi","lowongan"]
+    },
+    {
+      "id":"BI12-W1-AC-004","chapter_id":"BI12-C01","topic_id":"BI12-C01-T02","lane":"B","skill":"understand","cognitive_level":"understand","difficulty":"easy","question_type":"mcq",
+      "question":"Manakah urutan bagian awal surat lamaran kerja yang sesuai dengan sistematika yang dipelajari?",
+      "options":["Tempat dan tanggal → perihal/lampiran → alamat tujuan → salam pembuka","Salam pembuka → tempat dan tanggal → alamat tujuan → perihal/lampiran","Alamat tujuan → isi surat → tempat dan tanggal → salam pembuka","Isi surat → perihal/lampiran → salam penutup → alamat tujuan"],
+      "answer":"Tempat dan tanggal → perihal/lampiran → alamat tujuan → salam pembuka",
+      "explanation":"Urutan tersebut mengikuti sistematika bagian awal surat lamaran yang dipelajari. Tiga pilihan lain menempatkan bagian surat pada urutan yang tidak sesuai.",
+      "source":{"student_book":{"pages":"8-12","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja"},"teacher_guide":{"pages":"32, 75-76","section":"Fungsi sistematika dan indikator evaluasi surat"}},
+      "provenance":"Revised from the blocked ordering interaction into a single-answer structural MCQ. The content still tests recognition of the taught sequence without pretending the current renderer supports drag-and-drop ordering.","generation_method":"source-grounded revision","game_mechanic":"structure_check","mode":"training","tags":["surat-lamaran","sistematika","struktur","revision-v1.1"]
+    },
+    {
+      "id":"BI12-W1-AC-007","chapter_id":"BI12-C01","topic_id":"BI12-C01-T03","lane":"C","skill":"apply","cognitive_level":"apply","difficulty":"easy","question_type":"mcq",
+      "question":"Kalimat manakah yang paling sesuai dengan prinsip bahasa formal, jelas, dan sopan dalam surat lamaran kerja?",
+      "options":["Saya berharap Bapak/Ibu dapat mempertimbangkan lamaran saya untuk posisi tersebut.","Saya pengin banget diterima karena pekerjaan ini keren.","Pokoknya saya cocok banget dengan pekerjaan itu.","Kalau bisa saya langsung diterima saja ya."],
+      "answer":"Saya berharap Bapak/Ibu dapat mempertimbangkan lamaran saya untuk posisi tersebut.",
+      "explanation":"Kalimat tersebut menyampaikan harapan secara formal dan sopan dengan makna yang jelas.",
+      "source":{"student_book":{"pages":"17-20","section":"B. Mengevaluasi Sistematika dan Ciri Kebahasaan Teks Surat Lamaran Kerja"},"teacher_guide":{"pages":"32, 76","section":"Ciri kebahasaan dan indikator penggunaan bahasa formal"}},
+      "provenance":"Original language-selection item based on formal/polite expression and concise/clear sentence guidance.","generation_method":"source-grounded original item","game_mechanic":"error_hunt","mode":"training","tags":["surat-lamaran","bahasa-formal","kesopanan"]
+    },
+    {
+      "id":"BI12-W1-DF-001","chapter_id":"BI12-C01","topic_id":"BI12-C01-T04","lane":"D","skill":"revise","cognitive_level":"apply","difficulty":"easy","question_type":"mcq",
+      "question":"Sebuah surat lamaran untuk posisi staf administrasi menyebutkan bahwa pelamar suka menonton film dan mengoleksi gim. Pelamar sebenarnya memiliki pengalaman mengelola arsip digital saat menjadi panitia sekolah, tetapi pengalaman itu belum dicantumkan. Revisi yang paling tepat adalah...",
+      "options":["Mengganti informasi yang tidak relevan tersebut dengan pengalaman mengelola arsip digital yang benar-benar dimiliki dan relevan dengan posisi","Menambahkan lebih banyak cerita tentang film agar surat lebih panjang","Menghapus seluruh informasi tentang pengalaman pelamar","Menambahkan hobi lain tanpa menghubungkannya dengan posisi"],
+      "answer":"Mengganti informasi yang tidak relevan tersebut dengan pengalaman mengelola arsip digital yang benar-benar dimiliki dan relevan dengan posisi",
+      "explanation":"Revisi memperkuat relevansi isi dengan menggunakan bukti pengalaman yang benar-benar dimiliki pelamar dan berhubungan dengan kebutuhan posisi. Ini selaras dengan kriteria relevansi serta keterampilan/pengalaman dalam penilaian surat lamaran.",
+      "source":{"student_book":{"pages":"23-25","section":"C. Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup; rubrik penulisan"},"teacher_guide":{"pages":"32, 36-39, 75-77","section":"Indikator menulis/editing; konteks kerja autentik; asesmen Chapter I"}},
+      "provenance":"Revision overlay BI12-W1-DF-001 after independent verification; source-grounded original scenario.","generation_method":"source-grounded revised scenario","game_mechanic":"revision_repair","mode":"training","tags":["surat-lamaran","revisi","relevansi"]
+    },
+    {
+      "id":"BI12-W1-DF-005","chapter_id":"BI12-C01","topic_id":"BI12-C01-T05","lane":"E","skill":"evaluate","cognitive_level":"analyze","difficulty":"medium","question_type":"multi_select",
+      "question":"Sebelum membuat video resume untuk posisi yang dilamar, pilih semua hal yang perlu disiapkan berdasarkan materi.",
+      "options":["Menentukan posisi yang dilamar dan menyesuaikan isi video dengan kebutuhan pekerjaan","Menyiapkan perkenalan diri, kelebihan, pengalaman kerja, dan keterampilan","Membuat skrip sederhana agar penyampaian mudah dipersiapkan","Memasukkan sebanyak mungkin informasi yang tidak relevan agar video lebih panjang"],
+      "answer":["Menentukan posisi yang dilamar dan menyesuaikan isi video dengan kebutuhan pekerjaan","Menyiapkan perkenalan diri, kelebihan, pengalaman kerja, dan keterampilan","Membuat skrip sederhana agar penyampaian mudah dipersiapkan"],
+      "explanation":"Materi meminta isi video disesuaikan dengan kebutuhan pekerjaan dan mencakup perkenalan diri, kelebihan, pengalaman, serta keterampilan. Skrip sederhana juga digunakan dalam proses produksi.",
+      "source":{"student_book":{"pages":"32-33","section":"D. Mempresentasikan Surat Lamaran Kerja dan Daftar Riwayat Hidup; Membuat Resume dan Video Daftar Riwayat Hidup; Memproduksi Video Resume"},"teacher_guide":{"pages":"32-35","section":"Presentation/publication indicators and activity allocation"}},
+      "provenance":"Original multi-select production-preparation task derived from textbook instructions.","generation_method":"source-grounded production scenario","game_mechanic":"presentation_check","mode":"training","tags":["video-resume","presentasi","multi-select"]
+    },
+    {
+      "id":"BI12-W1-DF-007","chapter_id":"BI12-C01","topic_id":"BI12-C01-T07","lane":"F","skill":"apply","cognitive_level":"apply","difficulty":"medium","question_type":"mcq",
+      "question":"Sebuah lowongan meminta staf administrasi yang teliti, mampu mengelola dokumen, dan dapat berkomunikasi dengan baik. Pelamar memiliki pengalaman mengarsipkan dokumen, membuat rekap data, dan menjadi penghubung panitia. Pilihan tindakan yang paling kuat untuk paket lamaran adalah...",
+      "options":["Menonjolkan ketiga pengalaman tersebut dalam surat/CV dan menyiapkan penyampaian yang menghubungkannya dengan kebutuhan posisi","Menonjolkan hobi dan mengurangi pengalaman agar dokumen lebih singkat","Menampilkan semua pengalaman tanpa memilih yang relevan dengan lowongan","Menghapus pengalaman organisasi karena hanya pengalaman kerja formal yang boleh disebutkan"],
+      "answer":"Menonjolkan ketiga pengalaman tersebut dalam surat/CV dan menyiapkan penyampaian yang menghubungkannya dengan kebutuhan posisi",
+      "explanation":"Keputusan mengintegrasikan relevansi lowongan, bukti pengalaman, kualitas dokumen, dan penyampaian. Ketiga pengalaman yang diberikan memiliki hubungan langsung dengan kebutuhan posisi.",
+      "source":{"student_book":{"pages":"23-25, 30-33","section":"C. Menulis Surat Lamaran Kerja; D. Mempresentasikan Surat Lamaran Kerja dan Daftar Riwayat Hidup"},"teacher_guide":{"pages":"32, 36-39, 75-77","section":"Authentic work context, decision making, revision, presentation, and assessment"}},
+      "provenance":"Original integrated scenario combining vacancy relevance, evidence selection, document quality, and presentation.","generation_method":"source-grounded integrated scenario","game_mechanic":"career_decision","mode":"training","tags":["integrated","lowongan","CV","presentasi"]
+    }
+  ]
+}
