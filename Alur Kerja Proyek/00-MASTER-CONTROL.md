@@ -27,7 +27,7 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Canonical batch artifact: `phase-3/world-1-question-batch-a-c-v1.1-canonical.json`
 - Full quality-gate artifact: `phase-3/world-1-question-batch-a-c-v1.1-quality-gate.md`
 - Revision artifact: `phase-3/world-1-question-batch-a-c-v1.1-revisions.json`
-- Revision review artifact: `phase-3/world-1-question-batch-a-c-v1.1-review.md`
+- Revision review: `phase-3/world-1-question-batch-a-c-v1.1-review.md`
 - **Controlled Regression Harness v1: implemented and live-verified against the actual renderer**
 - Harness: `prototype/bahasa-indonesia/regression-harness.html`
 - Resolved QA dataset: `phase-3/world-1-question-batch-a-c-v1.1-regression-dataset.json`
@@ -38,7 +38,9 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Promotion record: `phase-3/world-1-promotion-v1.1.md`
 - **Chapter I Deep Content / Provenance Pass v1 — lanes D–F: PASS for controlled expansion; not yet approved for production promotion**
 - Provenance artifact D–F: `phase-3/chapter-1-deep-content-provenance-lanes-d-f-v1.md`
-- **Next active gate: 9-item controlled D–F batch → independent answer verification → pedagogical review → renderer/batch quality gate → canonical merge if needed → live regression → promotion**
+- **D–F controlled batch v1: created as 9 source-grounded items (3 D, 3 E, 3 F); status QA_PENDING, not approved for production promotion.**
+- D–F controlled batch artifact: `phase-3/world-1-question-batch-d-f-v1.json`
+- **Next active gate: independent answer verification → pedagogical review → provenance/renderer/batch quality gate → canonical merge if needed → live regression → promotion.**
 - **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
 - **GitHub Pages workflow: aktif dan deployment berhasil**
@@ -167,7 +169,8 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Difficulty labels remain provisional until empirical production analytics are available; this does not block controlled content promotion.
 - Specialized document-inspection UX remains a later technical task and does not block the current approved content pool.
 - **D–F provenance pass:** `phase-3/chapter-1-deep-content-provenance-lanes-d-f-v1.md`; PASS for controlled expansion into writing/revision, presentation/publication, and integrated application.
-- **D–F controlled batch recommendation:** 9 items (3 D, 3 E, 3 F), followed by independent answer verification, pedagogical review, renderer/batch quality gate, canonical merge if revisions occur, live regression, and promotion.
+- **D–F controlled batch v1:** `phase-3/world-1-question-batch-d-f-v1.json`; 9 items (3 D, 3 E, 3 F), QA_PENDING, not promoted.
+- **Next active gate:** independent answer verification → pedagogical review → provenance/renderer/batch quality gate → canonical merge if needed → live regression → promotion.
 - World 2–4 expansion remains gated until controlled World 1 expansion is stable.
 
 ## 13. QA findings resolved in World 1
