@@ -1,64 +1,31 @@
 # World 1 — Visual Direction Proposal v1
 
-**Status:** PROPOSAL — awaiting explicit approval
+**Status:** APPROVED — user approved visual direction on 2026-08-13
 **Phase:** Phase 3 — Game Design / Visual Direction
 **World:** World 1 — Career Mission
-**Scope:** Visual language and presentation direction only; no final asset implementation yet.
+**Scope:** Visual language and presentation direction; final asset production follows later design gates.
 
-## Evidence
-
-The current Master Control and Phase 3 GDD establish:
-
-- educational adventure / light RPG;
-- browser / HTML5;
-- HP + laptop;
-- professional UX;
-- mobile-first, touch-friendly, readable, responsive;
-- core loop: Explore → Mission → Learn/Inspect → Challenge → Feedback → XP/Progress → Unlock → Review Weak Skill → Mastery Check;
-- World 1 is Career Mission;
-- visual final, map, progression, character, mission system, and RPG layer must be discussed in GDD before large implementation.
-
-The current question renderer is a QA/data-driven challenge interface. Its plain white/text presentation is not the final visual design.
-
-## Implementation status
-
-No final visual assets or large visual implementation are introduced by this document. This is a design proposal so that a visual decision can be reviewed and explicitly approved before implementation.
-
-## Interpretation / proposal
-
-### 1. Recommended visual direction
+## Approved direction
 
 **2D top-down / slightly angled adventure presentation with clean stylized illustration**, designed for low asset weight and readable educational interaction.
 
-The target feel is:
-
+Target feel:
 - warm and adventurous rather than childish;
 - contemporary Indonesian school environment;
 - clear silhouettes and readable interactable objects;
-- moderate detail, avoiding visual clutter;
+- moderate detail without visual clutter;
 - expressive but restrained animation;
 - consistent across browser and eventual Android packaging.
 
-This proposal deliberately does **not** lock a specific art production method such as pixel art, anime, vector, or painterly rendering. That should be selected only after comparing production cost, readability, asset scalability, and AI/tool export quality.
+## Player view
 
-### 2. Player view
+Preferred view: **top-down / 3-quarter 2D**.
 
-Preferred starting direction: **top-down / 3-quarter 2D view**.
+This supports character movement between locations, home → school → room/world structure, visible interaction targets, keyboard/touch input, browser-first delivery, and low production/performance cost compared with complex 3D.
 
-Reasoning:
+## World 1 visual fantasy
 
-- supports the already-discussed idea of moving a character between locations;
-- works naturally for a home → school → room/world structure;
-- makes interaction targets visible;
-- can work with keyboard and touch controls;
-- avoids the production cost and performance risk of complex 3D;
-- fits the browser-first/static-build constraint.
-
-### 3. World 1 visual fantasy
-
-World 1 should visually communicate a student's transition into a practical career/application scenario.
-
-Suggested visual sequence:
+The visual progression should communicate a student's transition into a practical career/application scenario:
 
 ```text
 HOME / HUB
@@ -76,35 +43,30 @@ DOCUMENT / APPLICATION INTERACTION
 CHALLENGE
 ```
 
-This is consistent with the project's existing educational adventure direction, but the exact map is still a later design step.
+The exact map is the next dedicated design step.
 
-### 4. Environment language
+## Environment language
 
-Initial visual vocabulary:
-
-- Indonesian residential/school cues;
+Initial vocabulary:
+- Indonesian residential and school cues;
 - classroom and office/document elements;
 - readable signs and mission markers;
-- doors/portals used as navigation affordances;
+- doors/portals as navigation affordances;
 - desks, noticeboards, documents, folders, computers, and stationery as contextual objects;
 - restrained UI overlays rather than permanent full-screen HUD clutter.
 
-### 5. Character direction
+## Character direction
 
-Proposal only:
-
+Character design is a separate next-step artifact. The approved visual direction supports:
 - one student protagonist;
-- neutral/customizable appearance should be considered for inclusivity;
+- neutral/customizable appearance to be considered for inclusivity;
 - readable silhouette at small screen sizes;
-- simple walk cycle and a small set of contextual interaction animations;
+- simple walk cycle and contextual interaction animations;
 - no combat-centric character design.
 
-Character design is intentionally not finalized here; it is the next dedicated design step after this visual direction is approved.
+## Animation direction
 
-### 6. Animation direction
-
-Keep animation purposeful:
-
+Purposeful animation only:
 - walking;
 - idle/breathing;
 - interaction/inspection;
@@ -113,87 +75,55 @@ Keep animation purposeful:
 - XP/progress feedback;
 - simple environmental motion.
 
-Avoid decorative animation that materially increases asset weight without improving learning or orientation.
+## UI direction
 
-### 7. UI direction
-
-The final UI should remain visually richer than the current QA renderer while preserving its clarity.
-
-Required principles:
-
+Final UI should be visually richer than the current QA renderer while preserving its clarity:
 - large readable question text;
 - obvious selected/disabled/correct/incorrect states;
-- touch targets sized for mobile;
-- progress and mission state always understandable;
+- mobile-sized touch targets;
+- understandable mission/progress state;
 - no information conveyed by color alone;
 - feedback remains source/explanation oriented;
-- visual effects must never obscure academic content.
+- effects never obscure academic content.
 
-### 8. Color and typography
+## Color, typography, audio, and exact art-production method
 
-**Not locked yet.**
+These are **not yet locked**. The approved decision is the visual family and camera/presentation direction. A small comparison of pixel-art, vector/illustrated, or related production styles may still be performed before final asset production, provided it does not overturn the approved 2D adventure direction without a documented decision.
 
-A palette should be selected after a small visual comparison, with accessibility and contrast as constraints. Typography should prioritize Indonesian readability on phone screens.
+Audio is a later presentation-layer decision.
 
-### 9. Audio
+## Asset strategy
 
-Music and sound effects are part of the future visual/presentation layer but are **not selected in this proposal**. They should be designed after the visual language and interaction vocabulary are approved.
-
-### 10. Asset strategy
-
-Target: low-weight, reusable 2D assets.
-
-Prefer:
-
+Target low-weight reusable 2D assets:
 - modular tiles/backgrounds;
 - reusable props;
 - reusable character animation states;
 - compressed web-friendly assets;
 - deterministic asset naming and repository storage.
 
-Avoid large assets that make the browser build unnecessarily heavy.
-
 ## Alternatives considered
 
-### A. Pixel-art top-down
-
+### Pixel-art top-down
 Pros: small assets, strong RPG identity, relatively simple animation.
+Cons: may reduce text/context readability and impose a specific aesthetic.
 
-Cons: can reduce text/context readability and may impose a highly specific aesthetic.
+### Clean vector/illustrated top-down
+Pros: scalable, readable, modern, suitable for educational UI.
+Cons: needs strong animation/environment design to feel like an RPG.
 
-### B. Clean vector/illustrated top-down
+### 3D / complex isometric
+Not recommended because it conflicts with simplicity, portability, low-asset-weight, and delivery priorities.
 
-Pros: scalable, readable, modern, good for educational UI.
+## Approval record
 
-Cons: may feel less like a conventional RPG unless animation and environment design are strong.
+User explicitly approved this visual direction on 2026-08-13.
 
-### C. 3D / complex isometric
+The approval means the project may proceed to the next design stage: **World 1 Map / World Structure**. It does not authorize unrestricted final-asset production or silently change the approved project scope.
 
-Pros: visually impressive and spatially rich.
+## Evidence / Implementation / Interpretation
 
-Cons: conflicts with the project's simplicity, portability, low-asset-weight and delivery priorities. Not recommended.
+**Evidence:** Master Control and Phase 3 GDD establish educational adventure/light RPG, browser-first delivery, mobile-first UX, and the Explore → Mission → Learn/Inspect → Challenge → Feedback → XP/Progress → Unlock → Review Weak Skill → Mastery Check loop.
 
-### Recommendation
+**Implementation:** This document records the approved visual family; no final asset set is introduced here.
 
-Proceed with **2D top-down / 3-quarter stylized adventure** as the leading direction, but keep the exact rendering style (pixel/vector/illustrated) as an explicit decision after a visual comparison.
-
-## Approval gate
-
-This document is **not a final visual decision**.
-
-Before final implementation:
-
-1. review the recommendation against Master Control and GDD;
-2. compare a small number of visual style samples;
-3. explicitly select the art style;
-4. record the decision in Project Log;
-5. update Master Control/GDD;
-6. only then create final visual assets.
-
-## Next step if approved
-
-1. lock art-style family;
-2. design World 1 map structure;
-3. design protagonist and interaction vocabulary;
-4. define mission/progression presentation;
-5. build a small visual prototype around the existing approved A–F content.
+**Interpretation:** The 2D top-down / 3-quarter stylized adventure direction is the chosen presentation foundation for subsequent World 1 map, character, mission, progression, and RPG-layer design.
