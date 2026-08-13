@@ -209,10 +209,13 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - **A–C and D–F approved pools remain additive/versioned; no consolidation is performed without a separate explicit gate.**
 - **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
-- **GitHub Pages workflow: aktif dan deployment berhasil**
-- **GitHub Pages launcher: tersedia di root `index.html`; deployment live sudah terverifikasi oleh GitHub Actions**
-- Hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
-- Workflow verification protocol: aktif dan wajib dipakai
+- **Controlled expansion XP defect: RESOLVED.** User live playtest after renderer/data-contract fix produced 6/6, 700 XP, 100% accuracy.
+- XP QA artifact: `phase-3/world-1-controlled-expansion-xp-fix-qa.md` — PASS.
+- **World 1 A–F Integrated QA / Regression Gate: PREPARED, QA_PENDING.**
+- Integrated harness: `prototype/bahasa-indonesia/world-1-integrated-regression-harness.html`.
+- Integrated gate covers the complete approved A–F pool through the actual renderer: 9 A–C + 9 D–F = 18 approved IDs. The approved pools remain additive/versioned and are tested as separate resolved QA datasets; Golden Dataset v1 remains untouched.
+- Expected integrated evidence: DATA, SCHEMA, TYPES, PROVENANCE, LOAD/AC, LOAD/DF, ANSWER, SCORE, COVERAGE, FEEDBACK, INTEGRATION.
+- **The integrated gate is not PASS until the hosted browser harness has been executed and the result is verified.**
 
 ## 13. QA findings resolved in World 1
 - Mission-map bypass fixed: question selection comes from `mission.nodes[].question_ids`.
@@ -223,6 +226,7 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Multi-select instruction ambiguity fixed by explicit multiple-choice instruction and expected count.
 - Controlled regression harness manifest/data-resolution bug fixed.
 - Controlled regression harness final-navigation bug fixed.
+- **Controlled expansion XP defect fixed and user-verified: 6/6 = 700 XP.**
 
 ## 14. GitHub Pages — browser playtest path
 - Deployment workflow: `.github/workflows/pages.yml`.
@@ -231,8 +235,16 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - GitHub Actions deployment has been verified successfully.
 - Do not use GitHub `blob/main/...` URLs as the game runtime; those are source-code views.
 - After every runtime change, verify the new Pages deployment succeeds before asking for live regression.
+- Integrated QA harness: `prototype/bahasa-indonesia/world-1-integrated-regression-harness.html`.
 
 ## 15. Final-release cleanup rule
 - The development-status text `Seed tervalidasi melalui quality gate konten dan renderer data-driven. Ini tetap micro-prototype, bukan desain visual final.` is intentionally retained during prototype/QA.
 - **Do not remove it yet.**
 - It must be removed from the student-facing production build only during the final release-cleanup pass, after the entire game has passed final QA and is declared ready for distribution.
+
+## 16. REQUIRED WORK SESSION PROTOCOL
+- Operational procedure is also archived in `Alur Kerja Proyek/REQUIRED-WORK-SESSION-PROTOCOL.md`.
+- Before every new work session, repo sync, upload/change, or decision: re-sync source → read every file in `Alur Kerja Proyek` → read relevant active artifacts → verify Master Control → separate Evidence / Implementation / Interpretation → cross-validate → execute the applicable gate.
+- After work: verify the gate, update QA artifacts, update Master Control when status/decision/defect changes, and store important decisions in the repository.
+- Do not repeat completed work without first searching the repository and documenting why a new version is necessary.
+- Browser-required gates remain `QA_PENDING` until actual hosted browser evidence exists.
