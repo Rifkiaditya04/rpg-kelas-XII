@@ -61,6 +61,17 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **A–C and D–F approved pools remain additive/versioned; no consolidation is performed without a separate explicit gate.**
 - **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
+- **Controlled expansion XP defect: RESOLVED.** User live playtest after renderer/data-contract fix produced 6/6, 700 XP, 100% accuracy.
+- XP QA artifact: `phase-3/world-1-controlled-expansion-xp-fix-qa.md` — PASS.
+- **World 1 A–F Integrated QA / Regression Gate: PASS.** User-verified hosted browser regression covered 18/18 approved IDs; A–C 900 XP + D–F 900 XP; feedback/explanation PASS; additive/versioned integration PASS.
+- Integrated harness: `prototype/bahasa-indonesia/world-1-integrated-regression-harness.html`.
+- **World 1 approved A–F gameplay integration: implemented.** The controlled student-facing gameplay slice is `BI12-W01-M02`, using six explicit approved IDs (one per lane A–F) through `phase-3/world-1-controlled-expansion-v1.1.json` and the actual renderer.
+- Approved-content index: `phase-3/world-1-approved-content-v1.1-index.json`.
+- Expansion mission map: `phase-3/world-1-expansion-mission-map-v1.1.json`.
+- Controlled runtime dataset: `phase-3/world-1-controlled-expansion-v1.1.json`.
+- Student-facing launcher: `prototype/bahasa-indonesia/world-1-expansion.html`.
+- **World 1 gameplay integration is additive and explicit: no uncontrolled sampling, no Golden Dataset mutation, and no consolidation of A–C/D–F pools.**
+- Integration record: `Alur Kerja Proyek/PROJECT LOG/002-World-1-Approved-AF-Gameplay-Integration.md`.
 - **GitHub Pages workflow: aktif dan deployment berhasil**
 - **GitHub Pages launcher: tersedia di root `index.html`; deployment live sudah terverifikasi oleh GitHub Actions**
 - Hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
@@ -209,13 +220,12 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - **A–C and D–F approved pools remain additive/versioned; no consolidation is performed without a separate explicit gate.**
 - **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
-- **Controlled expansion XP defect: RESOLVED.** User live playtest after renderer/data-contract fix produced 6/6, 700 XP, 100% accuracy.
-- XP QA artifact: `phase-3/world-1-controlled-expansion-xp-fix-qa.md` — PASS.
-- **World 1 A–F Integrated QA / Regression Gate: PREPARED, QA_PENDING.**
-- Integrated harness: `prototype/bahasa-indonesia/world-1-integrated-regression-harness.html`.
-- Integrated gate covers the complete approved A–F pool through the actual renderer: 9 A–C + 9 D–F = 18 approved IDs. The approved pools remain additive/versioned and are tested as separate resolved QA datasets; Golden Dataset v1 remains untouched.
-- Expected integrated evidence: DATA, SCHEMA, TYPES, PROVENANCE, LOAD/AC, LOAD/DF, ANSWER, SCORE, COVERAGE, FEEDBACK, INTEGRATION.
-- **The integrated gate is not PASS until the hosted browser harness has been executed and the result is verified.**
+- **Controlled expansion XP defect fixed and user-verified: 6/6 = 700 XP.**
+- **World 1 A–F Integrated QA / Regression Gate: PASS.** User-verified hosted browser regression: 18/18 approved IDs, A–C 900 XP + D–F 900 XP, feedback PASS, additive/versioned integration PASS.
+- **Approved A–F gameplay integration: implemented for controlled mission `BI12-W01-M02`.** Six explicit approved IDs (one per lane A–F) are resolved through `phase-3/world-1-controlled-expansion-v1.1.json` and played through the actual renderer via `prototype/bahasa-indonesia/world-1-expansion.html`.
+- Approved-content index: `phase-3/world-1-approved-content-v1.1-index.json`.
+- Expansion mission map: `phase-3/world-1-expansion-mission-map-v1.1.json`.
+- Integration record: `Alur Kerja Proyek/PROJECT LOG/002-World-1-Approved-AF-Gameplay-Integration.md`.
 
 ## 13. QA findings resolved in World 1
 - Mission-map bypass fixed: question selection comes from `mission.nodes[].question_ids`.
