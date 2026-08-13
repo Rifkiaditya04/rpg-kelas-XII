@@ -890,3 +890,853 @@ FEEDBACK    PASS
 Baru setelah browser benar-benar PASS kita masuk **Final Promotion Checks → Approved World 1 Content D–F v1.1**.
 
 **Jadi sekarang kita berada tepat di pintu Live Regression.**
+
+===========================================================================================================================
+
+Sudah saya lanjutkan **Controlled Live Regression — D–F v1.1** sampai tahap yang bisa saya verifikasi secara programatis. Namun saya **belum akan menyatakan PASS browser**, karena eksekusi JavaScript di browser harus benar-benar menghasilkan evidence runtime.
+
+## Evidence
+
+Saya kembali re-sync sumber dan membaca Master Control terlebih dahulu. Statusnya masih konsisten: D–F v1.1 sudah melewati Revision Quality Gate dan Full Batch Quality Gate, sehingga sekarang memang berada di **live regression**.
+
+Saya juga memeriksa renderer aktual. Renderer memang:
+
+* mengambil dataset melalui parameter `?dataset=...`;
+* melakukan `validateDataset()`;
+* mendukung `mcq`, `multi_select`, dan `document_inspection`;
+* mengacak urutan soal;
+* mengacak pilihan jawaban;
+* mengevaluasi berdasarkan nilai jawaban, bukan posisi A/B/C/D.
+
+Canonical manifest D–F v1.1 juga mengonfirmasi **9 ID efektif DF-001 sampai DF-009**, dengan DF-001 dan DF-002 sebagai dua item yang direvisi.
+
+---
+
+# Implementation
+
+Saya membuat **resolved QA dataset**:
+
+`phase-3/world-1-question-batch-d-f-v1.1-regression-dataset.json`
+
+Dataset ini benar-benar merupakan:
+
+```text
+Canonical Base
+      +
+Revision Overlay
+      ↓
+Resolved D–F v1.1
+      ↓
+9 item
+```
+
+Commit:
+
+`2cfa9b09e67e48c07e4b387c22277793eadc4362`
+
+Saya **tidak mengubah Golden Dataset v1**.
+
+### Harness khusus D–F
+
+Saya juga membuat:
+
+`prototype/bahasa-indonesia/regression-harness-df-v1.1.html`
+
+Commit:
+
+`97781ff17011108cdd316ac7aa0ea99225aaa136`
+
+Harness ini tidak menggunakan dataset A–C. Ia secara khusus menjalankan:
+
+```text
+DF-001
+DF-002
+DF-003
+DF-004
+DF-005
+DF-006
+DF-007
+DF-008
+DF-009
+```
+
+melalui **renderer aktual**.
+
+Check yang dilakukan:
+
+```text
+DATA
+SCHEMA
+TYPES
+LOAD
+ANSWER
+SCORE
+COVERAGE
+FEEDBACK
+```
+
+Dan untuk multi-select, harness juga memverifikasi instruksi jumlah jawaban yang harus dipilih.
+
+---
+
+# Verification
+
+Saya juga sudah melakukan **static verification** terhadap harness dan renderer:
+
+### DATA
+
+Resolved dataset berisi 9 item. ✅
+
+### SCHEMA
+
+9 ID unik. ✅
+
+### TYPES
+
+Seluruh tipe yang digunakan D–F:
+
+```text
+mcq
+multi_select
+document_inspection
+```
+
+semuanya didukung renderer aktual. ✅
+
+### LOAD
+
+Harness menggunakan:
+
+```text
+index.html?dataset=<D-F regression dataset>&qa=1&regression=1
+```
+
+sehingga bukan renderer tiruan. Ia memuat `index.html` dan `renderer.js` aktual. ✅
+
+### ANSWER
+
+Harness memilih jawaban berdasarkan **teks jawaban**, sehingga randomisasi pilihan tidak membuat test bergantung pada posisi A/B/C/D. Ini konsisten dengan implementasi renderer.
+
+---
+
+# Yang belum boleh saya klaim
+
+**Browser execution: PENDING.**
+
+Ini penting.
+
+GitHub connector dapat:
+
+* membaca source;
+* membuat dataset;
+* membuat harness;
+* memverifikasi struktur dan kode;
+
+tetapi tidak memberikan saya browser automation yang dapat mengklik tombol pada GitHub Pages dan mengamati DOM JavaScript secara langsung.
+
+Bahkan setelah commit Master Control, pemeriksaan workflow terhadap commit tersebut belum menghasilkan run yang dapat saya gunakan sebagai bukti browser. Jadi saya **tidak akan mengubah status menjadi PASS berdasarkan asumsi**.
+
+---
+
+# Master Control
+
+Sudah saya update **setelah** artefak regression dibuat.
+
+Commit:
+
+`43b3bf5e06f4454e3bacb42728dee1ce902abc37`
+
+Content SHA:
+
+`95ff1f7cdd607e07f6d2b7c02149f230a6acc1f0`
+
+Kemudian saya fetch ulang Master Control untuk memastikan perubahan tersimpan.
+
+Status resminya sekarang:
+
+```text
+D–F Provenance                         ✅
+D–F Batch v1                           ✅
+Independent Verification              ✅
+Pedagogical Review                    ✅
+Revision Quality Gate                 ✅
+Canonical Merge                       ✅
+Full Batch Quality Gate               ✅
+Resolved Regression Dataset           ✅
+Regression Harness                    ✅
+────────────────────────────────────────
+Hosted Browser Regression             ⏳ PENDING
+Final Promotion Checks                🔒
+Promotion                              🔒
+```
+
+---
+
+# Yang perlu Anda lakukan sekarang
+
+Buka harness ini **setelah GitHub Pages selesai deploy**:
+
+[D–F v1.1 Controlled Regression Harness](https://rifkiaditya04.github.io/rpg-kelas-XII/prototype/bahasa-indonesia/regression-harness-df-v1.1.html?utm_source=chatgpt.com)
+
+Kemudian:
+
+**1. Klik `Run 9-item regression`**
+
+**2. Tunggu sampai selesai.**
+
+**3. Jangan menilai hanya dari halaman akhirnya.** Kita membutuhkan seluruh daftar:
+
+```text
+DATA       PASS
+SCHEMA     PASS
+TYPES      PASS
+LOAD       PASS
+ANSWER     PASS
+SCORE      PASS
+COVERAGE   PASS
+FEEDBACK   PASS
+```
+
+**4. Kirimkan kepada saya hasil yang tampil di halaman tersebut**—boleh cukup copy-paste seluruh hasilnya seperti yang Anda lakukan pada regression A–C.
+
+Jika semuanya PASS, **saya langsung lanjutkan ke Final Promotion Checks → Promotion D–F v1.1**, tanpa mengulang langkah yang sudah selesai.
+
+Jika ada FAIL, **jangan kita bypass**. Saya akan telusuri root cause-nya dari kode/data aktual, perbaiki, lalu regression ulang.
+
+===========================================================================================================================
+
+## Controlled Live Regression — D–F v1.1: **PASS** ✅
+
+Hasil yang Anda berikan memenuhi seluruh gate:
+
+| Check    | Hasil                    |
+| -------- | ------------------------ |
+| DATA     | ✅ PASS                   |
+| SCHEMA   | ✅ PASS                   |
+| TYPES    | ✅ PASS                   |
+| LOAD     | ✅ PASS                   |
+| ANSWER   | ✅ PASS                   |
+| SCORE    | ✅ PASS — 9/9 · 900 XP    |
+| COVERAGE | ✅ PASS — DF-001 … DF-009 |
+| FEEDBACK | ✅ PASS                   |
+
+Yang paling penting, ini **bukan sekadar static QA**. Anda sudah menjalankan harness melalui **renderer aktual** dan memverifikasi seluruh 9 item di browser.
+
+Randomisasi juga terbukti berjalan: urutan coverage Anda adalah:
+
+`DF-004 → DF-007 → DF-009 → DF-005 → DF-008 → DF-006 → DF-001 → DF-002 → DF-003`
+
+Jadi kita memiliki bukti bahwa soal tidak dimainkan dalam urutan canonical yang tetap.
+
+### Master Control juga sudah diperbarui
+
+Saya mencatat hasil live regression sebagai **PASS**, lalu fetch ulang Master Control untuk memastikan perubahan benar-benar tersimpan.
+
+Commit:
+
+`1ce51bc009453b2dcfaeb66a86d7af9d0f5aeb13`
+
+Content SHA:
+
+`16a40714a18998518b2c5db46d985bd573d9f9d5`
+
+Status sekarang:
+
+```text
+D–F Provenance Pass                 ✅
+D–F Batch v1                        ✅
+Independent Verification            ✅
+Pedagogical Review                  ✅
+Revision Quality Gate               ✅
+Canonical Merge                     ✅
+Full Batch Quality Gate             ✅
+Controlled Live Regression           ✅
+──────────────────────────────────────
+Final Promotion Checks              ⏭️ NEXT
+Promotion                            🔒
+```
+
+## Evidence vs Implementation vs Interpretation
+
+**Evidence:** browser Anda menghasilkan `PASS` untuk 8 regression checks, 9/9 soal, 900 XP, dan semua ID dimainkan.
+
+**Implementation:** dataset resolved + harness D–F menggunakan renderer aktual; bukan renderer khusus yang menduplikasi logika soal.
+
+**Interpretation:** D–F v1.1 sekarang **layak masuk Final Promotion Checks**, tetapi **belum boleh disebut Approved Production Content** sampai promotion gate selesai.
+
+---
+
+# Langkah berikutnya
+
+Kita sekarang masuk:
+
+## **Final Promotion Checks — World 1 D–F v1.1**
+
+Pada tahap ini saya akan memeriksa apakah D–F v1.1 memenuhi seluruh syarat untuk menjadi **Approved World 1 Content**, termasuk:
+
+1. canonical integrity;
+2. provenance completeness;
+3. independent review completion;
+4. revision integrity;
+5. full batch gate;
+6. live regression;
+7. renderer compatibility;
+8. Golden Dataset isolation;
+9. promotion artifact;
+10. tidak ada unresolved blocker.
+
+Jika semuanya PASS, barulah kita melakukan **Promotion D–F v1.1**.
+
+Setelah promotion, **A–C + D–F** akan menjadi dua batch terkontrol yang sudah approved dalam World 1—dan baru setelah itu kita menentukan langkah pengembangan konten Chapter I berikutnya, bukan langsung melakukan mass generation.
+
+============================================================================================================================
+
+## Final Promotion Checks — World 1 D–F v1.1: **PASS** ✅
+
+Saya sudah menyelesaikan langkah ini dan **tidak melompati gate**.
+
+Sesuai aturan proyek, sebelum bekerja saya melakukan re-sync repository dan membaca kembali seluruh isi folder **`Alur Kerja Proyek`**, kemudian memeriksa artefak D–F v1.1 yang menjadi sumber langsung untuk promotion gate. Master Control juga diverifikasi ulang.
+
+### Hasil Final Promotion Checks
+
+| Pemeriksaan                     | Hasil          |
+| ------------------------------- | -------------- |
+| Canonical identity              | ✅ PASS         |
+| 9 effective IDs                 | ✅ PASS         |
+| Revision integrity              | ✅ PASS         |
+| DF-001 revision                 | ✅ PASS         |
+| DF-002 metadata revision        | ✅ PASS         |
+| Independent answer verification | ✅ PASS         |
+| Pedagogical review              | ✅ PASS         |
+| Provenance                      | ✅ PASS         |
+| Full Batch Quality Gate         | ✅ PASS         |
+| Renderer compatibility          | ✅ PASS         |
+| Golden Dataset isolation        | ✅ PASS         |
+| Controlled Live Regression      | ✅ PASS         |
+| DATA / SCHEMA / TYPES / LOAD    | ✅ PASS         |
+| ANSWER                          | ✅ PASS         |
+| SCORE                           | ✅ 9/9 · 900 XP |
+| COVERAGE                        | ✅ 9/9 ID       |
+| FEEDBACK                        | ✅ PASS         |
+
+Canonical manifest memang menetapkan tepat 9 item `DF-001` sampai `DF-009`, dengan hanya DF-001 dan DF-002 sebagai revision overlay dan tujuh item lainnya tetap unchanged.
+
+Full Batch Quality Gate juga sebelumnya sudah GREEN dan secara eksplisit menyatakan batch eligible untuk live regression; live regression kemudian benar-benar Anda jalankan dan menghasilkan PASS.
+
+---
+
+# Evidence → Implementation → Interpretation
+
+### Evidence
+
+Bukti runtime terakhir yang Anda berikan:
+
+```text
+DATA       PASS
+SCHEMA     PASS
+TYPES      PASS
+LOAD       PASS
+ANSWER     PASS
+SCORE      PASS — 9/9 · 900 XP
+COVERAGE   PASS — DF-001 … DF-009
+FEEDBACK   PASS
+```
+
+Ini adalah **user-verified browser evidence**, bukan asumsi saya.
+
+### Implementation
+
+Saya membuat artefak resmi:
+
+`phase-3/world-1-d-f-v1.1-final-promotion-checks.md`
+
+Commit:
+
+`b94e3b0055a381cf142e49a0db4969fb45a3c191`
+
+Artefak tersebut mencatat seluruh promotion criteria dan menghasilkan:
+
+> **GREEN — FINAL PROMOTION CHECKS PASS**
+
+### Interpretation
+
+D–F v1.1 **sudah memenuhi syarat untuk dipromosikan** menjadi konten World 1 yang approved.
+
+Namun saya sengaja **belum melakukan promotion itu sendiri** pada langkah ini.
+
+Kita memisahkan:
+
+```text
+Final Promotion Checks
+        ✅ PASS
+           ↓
+Promotion Artifact
+        ⏭️ NEXT
+           ↓
+Approved World 1 D–F Content
+```
+
+Ini menjaga audit trail tetap bersih.
+
+---
+
+# Golden Dataset tetap aman 🔒
+
+Saya juga melakukan cross-check terhadap:
+
+`knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json`
+
+Statusnya tetap:
+
+```text
+approved_seed
+```
+
+dan namespace-nya tetap `BI12-GOLD-*`.
+
+D–F memakai namespace:
+
+```text
+BI12-W1-DF-*
+```
+
+Jadi **D–F tidak menimpa atau mengubah Golden Dataset v1**.
+
+---
+
+# Master Control sudah diperbarui
+
+Saya memperbarui:
+
+`Alur Kerja Proyek/00-MASTER-CONTROL.md`
+
+dan kemudian **fetch ulang untuk verifikasi**.
+
+Commit:
+
+`06068e197936b1046ad7483b5f5c2c460bcf8738`
+
+Content SHA:
+
+`522d2dcbe32ab82c812a88ddb746cf197631ea7a`
+
+Master Control sekarang mencatat:
+
+```text
+D–F Provenance Pass                  ✅
+D–F Controlled Batch                 ✅
+Independent Verification             ✅
+Pedagogical Review                   ✅
+Revision Quality Gate                ✅
+Canonical Merge                      ✅
+Full Batch Quality Gate              ✅
+Controlled Live Regression            ✅
+Final Promotion Checks               ✅
+────────────────────────────────────────
+D–F Promotion                         ⏭️ NEXT
+```
+
+Status itu sudah diverifikasi ulang dari repository.
+
+---
+
+# Status World 1 sekarang
+
+Kita sudah punya:
+
+```text
+WORLD 1 — CAREER MISSION
+│
+├── Lane A — Relevance / Vacancy Fit
+│      └── 9 approved items ✅
+│
+├── Lane B — Systematics / Structure
+│      └── 9 approved items ✅
+│
+├── Lane C — Language Features
+│      └── 9 approved items ✅
+│
+├── Lane D — Writing / Revision
+│      └── 3 items → promotion-ready ✅
+│
+├── Lane E — Presentation / Publication
+│      └── 3 items → promotion-ready ✅
+│
+└── Lane F — Integrated Application
+       └── 3 items → promotion-ready ✅
+```
+
+**Total controlled World 1 content yang sudah melewati pipeline: 18 item** — 9 A–C sudah approved dan 9 D–F sekarang sudah lolos Final Promotion Checks.
+
+### Catatan penting
+
+`document_inspection` masih menggunakan renderer generic, dan difficulty masih provisional. Keduanya **sudah diklasifikasikan sebagai non-blocking notes**, bukan defect promotion.
+
+---
+
+## Langkah berikutnya yang sekarang terkunci
+
+# **Promotion D–F v1.1 → Approved World 1 Content**
+
+Saya akan membuat:
+
+1. `world-1-approved-content-d-f-v1.1.json`
+2. `world-1-promotion-d-f-v1.1.md`
+3. memperbarui Master Control
+4. fetch ulang Master Control
+5. memverifikasi bahwa A–C + D–F tetap additive dan Golden Dataset tidak berubah.
+
+**Setelah itu baru kita memiliki World 1 Chapter I lanes A–F yang approved.**
+
+Dan baru kemudian kita menentukan langkah berikutnya berdasarkan Master Control—bukan kembali mengulang pekerjaan yang sudah selesai.
+
+=============================================================================================================================
+
+# Promotion D–F v1.1 → Approved World 1 Content: **SELESAI** ✅
+
+Saya sudah menyelesaikan promotion sesuai alur yang kita kunci.
+
+### Evidence
+
+Saya re-sync kembali repository dan memverifikasi artefak hasil promotion. Master Control sekarang mencatat bahwa D–F v1.1 sudah **PROMOTED**, dan A–C serta D–F tetap diperlakukan sebagai pool additive/versioned.
+
+Approved pool D–F berisi tepat **9 item**:
+
+`BI12-W1-DF-001` … `BI12-W1-DF-009`
+
+dengan status:
+
+`approved_world1_content`
+
+dan secara eksplisit menyatakan tidak menggantikan Golden Dataset v1 maupun pool A–C.
+
+### Implementation
+
+Artefak resmi yang sekarang tersedia:
+
+* `phase-3/world-1-approved-content-d-f-v1.1.json`
+* `phase-3/world-1-promotion-d-f-v1.1.md`
+
+Promotion record menyatakan:
+
+> **GREEN — Approved World 1 D–F Content v1.1**
+
+dan mencatat seluruh evidence dari Final Promotion Checks serta Controlled Live Regression.
+
+Master Control berhasil diperbarui dan diverifikasi ulang.
+
+Commit Master Control:
+
+`e9a815d5badc3def2b47f06924b0e5e3d4633c3d`
+
+Content SHA:
+
+`99f4747b92c29e329e9cb43ba5b9b3355ec70180`
+
+---
+
+## Status World 1 sekarang
+
+```text
+WORLD 1 — CAREER MISSION
+Chapter I
+│
+├── Lane A ── 3 soal ──┐
+├── Lane B ── 3 soal   │
+├── Lane C ── 3 soal   │
+│                      ├── A–C Approved ✅
+├── Lane D ── 3 soal   │
+├── Lane E ── 3 soal   │
+└── Lane F ── 3 soal ──┘
+                         D–F Approved ✅
+```
+
+**Total controlled content approved: 18 soal.**
+
+Dan yang sangat penting:
+
+```text
+Golden Dataset v1
+       🔒 IMMUTABLE
+
+A–C Approved Pool
+       +
+D–F Approved Pool
+       ↓
+World 1 Controlled Content
+```
+
+Kita **belum melakukan consolidation** menjadi satu file besar karena Master Control memang mengharuskan consolidation memiliki gate tersendiri.
+
+---
+
+## Yang belum kita lakukan
+
+Saya tidak akan langsung membuat puluhan/ratusan soal baru.
+
+Kita masih memiliki dua catatan non-blocking yang memang sudah disepakati:
+
+* `document_inspection` masih memakai UI generik.
+* difficulty masih provisional sampai tersedia data empiris.
+
+Keduanya **bukan blocker promotion**.
+
+Dan teks:
+
+> `Seed tervalidasi melalui quality gate konten dan renderer data-driven...`
+
+**tetap dipertahankan**, sesuai aturan final-release cleanup. Belum waktunya dihapus.
+
+---
+
+# Posisi proyek sekarang
+
+```text
+Phase 3
+  ↓
+World 1 prototype
+  ↓
+Chapter I Deep Content
+  ↓
+A–C ──────────────── ✅ APPROVED
+  ↓
+D–F ──────────────── ✅ APPROVED
+  ↓
+18 controlled items
+  ↓
+NEXT GATE
+```
+
+### Langkah berikutnya yang paling tepat menurut saya:
+
+**Integrate Approved A–F Content → World 1 Content Pipeline → Controlled World 1 Expansion / Gameplay Integration**
+
+Bukan langsung pindah ke World 2.
+
+Kita sudah membuktikan **pipeline konten** sampai promotion. Sekarang waktunya memastikan **18 soal approved tersebut benar-benar terintegrasi ke pengalaman World 1**, sehingga Career Mission tidak lagi hanya berupa micro/playable slice dengan seed terbatas.
+
+Dan seperti biasa, pada langkah berikutnya saya akan mulai dengan **re-sync + membaca seluruh `Alur Kerja Proyek` lagi**, baru mengambil tindakan.
+
+=============================================================================================================================
+
+Sudah saya kerjakan **Integrate Approved A–F Content → World 1 Content Pipeline → Controlled World 1 Expansion / Gameplay Integration**.
+
+Namun ada satu hal penting: **saya belum mengubah Master Control pada commit ini**, karena file Master Control saat ini cukup besar dan tool update yang tersedia mensyaratkan pengiriman ulang seluruh isi file. Saya tidak mau mengambil risiko mengganti/merusak riwayat Master Control hanya demi menambahkan beberapa baris. Saya sudah membuat artefak status integrasi sebagai jejak kerja, dan Master Control akan menjadi langkah sinkronisasi sebelum gate berikutnya.
+
+## Evidence
+
+Saya re-sync repository dan memverifikasi kembali Master Control serta artefak approved A–C/D–F. Master Control menegaskan:
+
+* A–C approved;
+* D–F approved;
+* kedua pool additive/versioned;
+* Golden Dataset v1 immutable;
+* consolidation belum boleh dilakukan tanpa gate terpisah.
+
+Approved A–C memang berisi **9 ID**, dan D–F juga **9 ID**.
+
+Renderer aktual tetap data-driven dan melakukan validasi berdasarkan `question_type`, bukan berdasarkan ID soal. Ia juga mengacak soal dan opsi.
+
+---
+
+# Implementation
+
+Saya membuat empat artefak baru.
+
+### 1. Approved Content Pipeline Index
+
+`phase-3/world-1-approved-content-v1.1-index.json`
+
+Ini menjadi **indeks resmi A–F**:
+
+```text
+A–C = 9
+D–F = 9
+────────
+TOTAL = 18 approved items
+```
+
+Tidak menggabungkan atau menggandakan pool secara destruktif.
+
+### 2. Controlled Expansion Mission Map
+
+`phase-3/world-1-expansion-mission-map-v1.1.json`
+
+Alur baru:
+
+```text
+Briefing
+   ↓
+Lane A — Relevance
+   ↓
+Lane B — Structure
+   ↓
+Lane C — Language
+   ↓
+Lane D — Revision
+   ↓
+Lane E — Presentation
+   ↓
+Lane F — Integrated Career Decision
+   ↓
+Debrief
+```
+
+Ini sengaja hanya memakai **satu soal per lane** untuk controlled gameplay slice.
+
+### 3. Controlled Runtime Dataset
+
+`phase-3/world-1-controlled-expansion-v1.1.json`
+
+Enam soal yang dipilih secara eksplisit:
+
+```text
+BI12-W1-AC-001  → Lane A
+BI12-W1-AC-004  → Lane B
+BI12-W1-AC-007  → Lane C
+
+BI12-W1-DF-001  → Lane D
+BI12-W1-DF-005  → Lane E
+BI12-W1-DF-007  → Lane F
+```
+
+Dataset tersebut sudah saya fetch ulang setelah dibuat dan isinya konsisten.
+
+**Tidak ada soal baru yang dihasilkan pada tahap ini.** Semua enam berasal dari konten yang sudah approved.
+
+### 4. Gameplay Launcher
+
+Saya membuat:
+
+`prototype/bahasa-indonesia/world-1-expansion.html`
+
+dan menambahkan tombol baru pada root launcher:
+
+**World 1 — Chapter I Expansion**
+
+Root launcher sekarang memiliki:
+
+```text
+Micro-Prototype
+       ↓
+Career Mission
+       ↓
+Chapter I Expansion
+```
+
+Deployment GitHub Pages untuk perubahan launcher berhasil:
+
+**Deploy GitHub Pages #77 — SUCCESS**.
+
+---
+
+# Evidence vs Implementation vs Interpretation
+
+### Evidence
+
+Pipeline sekarang memiliki **18 approved item A–F**.
+
+Controlled gameplay slice memiliki **6 item**, satu dari masing-masing lane.
+
+### Implementation
+
+Enam item tersebut disediakan sebagai dataset runtime terpisah dan dijalankan melalui **renderer aktual**:
+
+`prototype/bahasa-indonesia/index.html → renderer.js`
+
+bukan renderer baru yang menggandakan logika.
+
+### Interpretation
+
+Kita sekarang sudah bergerak dari:
+
+```text
+Approved Content
+```
+
+menjadi:
+
+```text
+Approved Content
+      ↓
+Content Pipeline
+      ↓
+Mission Map
+      ↓
+Controlled Gameplay Slice
+```
+
+Tetapi **belum boleh disebut gameplay integration PASS** sampai Anda melakukan live playtest.
+
+---
+
+# QA saat ini
+
+Static QA:
+
+| Check                    | Status |
+| ------------------------ | ------ |
+| 6 item                   | ✅      |
+| Unique IDs               | ✅      |
+| Lane A–F coverage        | ✅      |
+| MCQ support              | ✅      |
+| Multi-select support     | ✅      |
+| Student Book provenance  | ✅      |
+| Teacher Guide provenance | ✅      |
+| Golden Dataset unchanged | ✅      |
+| A–C pool unchanged       | ✅      |
+| D–F pool unchanged       | ✅      |
+| Pages deployment         | ✅      |
+
+Artefak QA:
+
+`phase-3/world-1-controlled-expansion-integration-v1.1.md`
+
+Statusnya:
+
+**QA_PENDING**
+
+karena browser playtest masih diperlukan.
+
+---
+
+# Sekarang giliran Anda
+
+Buka:
+
+[KELAS 12 — The Final Mission](https://rifkiaditya04.github.io/rpg-kelas-XII/?utm_source=chatgpt.com)
+
+lalu pilih:
+
+**World 1 — Chapter I Expansion → Main Chapter I Expansion**
+
+Mainkan **keenam soal**.
+
+Saya ingin Anda memverifikasi khusus:
+
+1. Keenam soal muncul.
+2. Soal benar/salah memberikan feedback.
+3. Soal multi-select meminta jumlah pilihan yang benar.
+4. Pilihan jawaban berubah posisi.
+5. Urutan soal tidak selalu sama ketika dimainkan ulang.
+6. Coba minimal satu jawaban salah.
+7. Coba DF-005 dan pilih **3 jawaban benar**.
+8. Jika semua benar, hasil akhirnya harus:
+
+**6/6 · 700 XP**
+
+Karena:
+
+```text
+6 × 100 XP = 600
+Mission completion = 100
+────────────────────
+TOTAL = 700 XP
+```
+
+Artefak integrasi juga sudah mencatat check tersebut secara eksplisit.
+
+**Jangan lanjut ke consolidation 18 soal atau Final World 1 QA dulu.** Kita selesaikan dulu **Controlled World 1 Expansion Live Playtest**. Jika Anda kirim hasilnya, saya akan melakukan regression/QA berikutnya dan baru menyinkronkan Master Control dengan status resmi gate ini.
+
+============================================================================================================================
+
