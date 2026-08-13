@@ -1740,3 +1740,50 @@ Artefak integrasi juga sudah mencatat check tersebut secara eksplisit.
 
 ============================================================================================================================
 
+## XP Regression — **PASS** ✅
+
+Hasil live playtest Anda sudah sesuai dengan kontrak reward:
+
+```text id="d8jz5x"
+6/6 benar
+600 XP dari jawaban
++100 XP completion reward
+────────────────────
+700 XP
+```
+
+Jadi defect **600 → 700 XP** sudah terverifikasi selesai di browser.
+
+### Status
+
+```text
+World 1 Controlled Expansion
+│
+├── Content integration       ✅
+├── A–F coverage              ✅
+├── Renderer integration      ✅
+├── Question randomization    ✅
+├── Option randomization      ✅
+├── Feedback                  ✅
+├── 6/6 scoring               ✅
+├── Completion reward         ✅
+└── Live XP regression        ✅ PASS
+```
+
+**Tidak ada perubahan pada Golden Dataset atau approved question content.**
+
+Dan teks:
+
+> Seed tervalidasi melalui quality gate konten dan renderer data-driven...
+
+**sengaja belum dihapus**, sesuai aturan Master Control. Teks itu baru dibersihkan pada **final release cleanup**, ketika seluruh game benar-benar siap distribusi.
+
+### Langkah berikutnya
+
+Sekarang kita bisa menutup **Controlled World 1 Expansion Gameplay Integration** dan masuk ke:
+
+**World 1 Integrated QA / Regression Gate**
+
+Di sana kita akan menguji **Career Mission + Chapter I Expansion sebagai satu World 1**, bukan lagi sebagai dua slice terpisah.
+
+Sebelum melakukan itu, sesuai protokol yang Anda tetapkan, saya akan **re-sync repository → baca seluruh `Alur Kerja Proyek` → verifikasi perubahan XP → update Master Control → baru menjalankan gate berikutnya.**
