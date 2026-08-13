@@ -76,8 +76,11 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **GitHub Pages launcher: tersedia di root `index.html`; deployment live sudah terverifikasi oleh GitHub Actions**
 - Hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
 - Workflow verification protocol: aktif dan wajib dipakai
-- **Phase 3 Visual Direction: proposal v1 created; decision pending explicit approval.** `phase-3/world-1-visual-direction-proposal-v1.md`
-- Visual proposal record: `Alur Kerja Proyek/PROJECT LOG/decisions/002-world-1-visual-direction-proposal.md`
+- **Phase 3 Visual Direction v1: APPROVED by user.** `phase-3/world-1-visual-direction-proposal-v1.md`
+- Visual direction decision record: `Alur Kerja Proyek/PROJECT LOG/decisions/003-world-1-visual-direction-approved.md`
+- **World 1 Map / World Structure v1: APPROVED by user as the structural design basis; final asset-level map production remains a later implementation step.** `phase-3/world-1-map-world-structure-proposal-v1.md`
+- Map decision record: `Alur Kerja Proyek/PROJECT LOG/decisions/004-world-1-map-structure-proposal.md`
+- **Next Phase 3 design step: Character Design, followed by Mission System, Progression System, and RPG Layer; no stage is skipped merely because it was previously undiscussed.**
 
 ## 1. Tujuan utama
 Membangun game edukasi kelas XII berbasis browser untuk membantu persiapan ujian, dimulai dari Bahasa Indonesia dan kemudian dapat diperluas ke mata pelajaran lain.
@@ -202,23 +205,23 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - **D–F provenance pass:** `phase-3/chapter-1-deep-content-provenance-lanes-d-f-v1.md`; PASS for controlled expansion into writing/revision, presentation/publication, and integrated application.
 - **D–F controlled batch v1:** `phase-3/world-1-question-batch-d-f-v1.json`; 9 items (3 D, 3 E, 3 F), QA_PENDING, not promoted.
 - **D–F independent answer verification + pedagogical review:** completed. Seven items passed as written; DF-001 required a content revision because its original scenario did not establish the claimed prior experience; DF-002 required a cognitive-metadata revision from evaluate to analyze.
-- D–F review artifact: `phase-3/world-1-question-batch-d-f-v1-review.md`
-- D–F revision overlay: `phase-3/world-1-question-batch-d-f-v1.1-revisions.json`
+- D–F review artifact: `phase-3/world-1-question-batch-d-f-v1-review.md`.
+- D–F revision overlay: `phase-3/world-1-question-batch-d-f-v1.1-revisions.json`.
 - **D–F v1.1 Revision Quality Gate: PASS.**
-- Revision gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-revision-quality-gate.md`
+- Revision gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-revision-quality-gate.md`.
 - **Canonical Batch D–F v1.1 Merge: completed as deterministic manifest; effective IDs DF-001 … DF-009.**
-- Canonical artifact: `phase-3/world-1-question-batch-d-f-v1.1-canonical.json`
+- Canonical artifact: `phase-3/world-1-question-batch-d-f-v1.1-canonical.json`.
 - **Full Batch Quality Gate D–F v1.1: PASS.**
-- Full quality-gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-quality-gate.md`
+- Full quality-gate artifact: `phase-3/world-1-question-batch-d-f-v1.1-quality-gate.md`.
 - **D–F v1.1 resolved QA dataset created for live regression; QA-only and separate from Golden Dataset v1.**
-- Resolved QA dataset: `phase-3/world-1-question-batch-d-f-v1.1-regression-dataset.json`
+- Resolved QA dataset: `phase-3/world-1-question-batch-d-f-v1.1-regression-dataset.json`.
 - **D–F v1.1 Controlled Live Regression: PASS. User-verified against the actual hosted renderer; DATA, SCHEMA, TYPES, LOAD, ANSWER, SCORE, COVERAGE, and FEEDBACK all passed; 9/9 and 900 XP; all 9 IDs played in randomized order.**
-- D–F harness: `prototype/bahasa-indonesia/regression-harness-df-v1.1.html`
+- D–F harness: `prototype/bahasa-indonesia/regression-harness-df-v1.1.html`.
 - **D–F v1.1 Final Promotion Checks: PASS.**
-- Final promotion checks artifact: `phase-3/world-1-d-f-v1.1-final-promotion-checks.md`
+- Final promotion checks artifact: `phase-3/world-1-d-f-v1.1-final-promotion-checks.md`.
 - **D–F v1.1 PROMOTED to Approved World 1 D–F Content v1.1.**
-- Approved D–F pool: `phase-3/world-1-approved-content-d-f-v1.1.json`
-- Promotion record: `phase-3/world-1-promotion-d-f-v1.1.md`
+- Approved D–F pool: `phase-3/world-1-approved-content-d-f-v1.1.json`.
+- Promotion record: `phase-3/world-1-promotion-d-f-v1.1.md`.
 - **A–C and D–F approved pools remain additive/versioned; no consolidation is performed without a separate explicit gate.**
 - **Golden Dataset v1 remains unchanged and is not overwritten by World 1 expansion batches.**
 - **Mass generation remains blocked from uncontrolled scaling; every new batch must pass the same gates.**
