@@ -76,6 +76,8 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **GitHub Pages launcher: tersedia di root `index.html`; deployment live sudah terverifikasi oleh GitHub Actions**
 - Hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
 - Workflow verification protocol: aktif dan wajib dipakai
+- **Phase 3 Visual Direction: proposal v1 created; decision pending explicit approval.** `phase-3/world-1-visual-direction-proposal-v1.md`
+- Visual proposal record: `Alur Kerja Proyek/PROJECT LOG/decisions/002-world-1-visual-direction-proposal.md`
 
 ## 1. Tujuan utama
 Membangun game edukasi kelas XII berbasis browser untuk membantu persiapan ujian, dimulai dari Bahasa Indonesia dan kemudian dapat diperluas ke mata pelajaran lain.
