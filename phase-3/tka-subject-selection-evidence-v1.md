@@ -17,47 +17,83 @@ The current official TKA information for SMA/MA/SMK states that TKA covers:
 - Bahasa Inggris;
 - 2 mata pelajaran pilihan.
 
-The official FAQ states that students select 2 subjects from the available list, with guidance expected from the education unit so choices can align with student interests and further-study plans. Selection is made during TKA registration.
+The official FAQ states that students select 2 choice subjects from the available list and that selection is made during TKA registration. The game must therefore treat its subject choice as a **study-plan/preparation model**, not as official registration.
 
 Official source: https://pusmendik.kemendikdasmen.go.id/tka/
 
-### Official subject list
+### Curriculum intersection
 
-The official Pusat Asesmen Pendidikan subject pages list the SMA/MA choice subjects including Matematika Tingkat Lanjut, Bahasa Indonesia Tingkat Lanjut, Bahasa Inggris Tingkat Lanjut, Fisika, Kimia, Biologi, Pendidikan Pancasila/PPKn, Ekonomi, Geografi, Sosiologi, Sejarah, Antropologi, and listed foreign languages, with additional SMK-specific options.
+The official TKA overview states that TKA questions are the same for Kurikulum Merdeka and Kurikulum 2013 because the assessment is developed by considering the materials/competencies applicable to both curricula.
 
-Official source: https://pusmendik.kemendikdasmen.go.id/tka/tka/view/mata-pelajaran-wajib/sma/
+This means the project does **not** need to recreate a separate Kurikulum 2013 curriculum. For each future subject, the correct source hierarchy is:
 
-### Official 2026 schedule context
+```text
+Official TKA assessment framework
+        +
+Applicable curriculum intersection
+        +
+Current Student Book / Teacher Guide
+        ↓
+Knowledge Base
+```
 
-A 29 July 2026 Kemendikdasmen release states that TKA 2026 registration for SMA/SMK/MA/sederajat opened 27 July–27 September 2026 and the main TKA implementation is scheduled for 26 October–8 November 2026.
+### Official subject baseline
 
-Official source: https://bkpdm.kemendikdasmen.go.id/publikasi/kemendikdasmen-kembali-buka-pendaftaran-tes-kemampuan-akademik-untuk-jenjang-smasmkmasederajat-tahun-2026
+Official TKA material lists a baseline choice catalogue including:
+- Matematika Tingkat Lanjut;
+- Bahasa Indonesia Tingkat Lanjut;
+- Bahasa Inggris Tingkat Lanjut;
+- Fisika;
+- Kimia;
+- Biologi;
+- Pendidikan Pancasila/PPKn;
+- Ekonomi;
+- Geografi;
+- Sosiologi;
+- Sejarah;
+- Antropologi;
+- Bahasa Prancis;
+- Bahasa Jerman;
+- Bahasa Jepang;
+- Bahasa Mandarin;
+- Bahasa Korea;
+- Bahasa Arab;
+- Produk/Projek Kreatif dan Kewirausahaan for the SMK option baseline.
+
+Official subject source: https://pusmendik.kemendikdasmen.go.id/tka/tka/view/mata-pelajaran-wajib/sma/
+
+The current official site also exposes additional SMK program-specific options. These are intentionally **not yet hard-coded into the game's final subject-selection rule** until the current authoritative catalogue is reconciled and a project decision is recorded.
+
+### Current official assessment forms
+
+Official TKA material describes objective question forms including single-answer multiple choice and complex multiple-choice forms such as multiple-answer and category models. This is relevant to future renderer/content planning but does not replace the project's existing content quality gates.
 
 ## Important correction for project terminology
 
-TKA should not be described as an additional school subject. It is a standardized academic assessment. The game may create a **TKA Preparation** layer/hub that organizes learning and practice around TKA subjects, but the game should not silently redefine TKA as a curriculum subject.
+TKA should not be described as an additional school subject. It is a standardized academic assessment. The game may create a **TKA Preparation / Academic Planning** layer that organizes learning and practice around TKA subjects.
 
 ## Interpretation — proposed game architecture, not yet approved
 
-The user's locked-room idea is compatible with the project architecture if implemented as two distinct gates:
+The user's locked-room idea is compatible with the project architecture if implemented as distinct gates:
 
-1. **Selection gate** — a subject room is locked when it is outside the student's selected study/TKA preparation path.
+1. **Selection gate** — a subject room is locked when it is outside the student's selected preparation path.
 2. **Progression gate** — a selected subject's next mission/area remains locked until the required preceding learning stage is completed.
+3. **Mastery gate** — an optional future gate may require demonstrated readiness.
 
 Recommended anti-skip rule:
 - Do not allow a student to bypass a required prerequisite mission merely by walking to a later room.
 - Do not permanently punish a student for choosing the wrong path.
 - Keep already-unlocked practice/review available.
-- Allow the student's subject plan to be reviewed/changed through an explicit planning interaction rather than by accidental map traversal.
+- Allow the study plan to be reviewed/changed through an explicit planning interaction.
 
-The project should avoid requiring mastery of unrelated subjects to unlock a student's selected subjects. Gates should follow the learning path and prerequisite relationships, not create arbitrary walls.
+The game should avoid requiring mastery of unrelated subjects to unlock a selected subject. Gates should follow learning prerequisites rather than arbitrary walls.
 
 ## Unverified / requires later project decision
 
 - Exact subject-room layout for the full game.
 - Whether the initial game profile uses official TKA registration choices verbatim or a broader study-plan model.
-- Whether mandatory TKA preparation rooms are always accessible or are introduced progressively.
 - Exact progression/mastery thresholds.
+- Current complete SMK program-specific subject catalogue and its mapping to the game.
 - Whether non-TKA curriculum subjects will also receive rooms/worlds.
 
 These must be decided in Mission System / Progression System design and documented in Master Control before implementation.
