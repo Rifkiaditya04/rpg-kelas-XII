@@ -1,6 +1,6 @@
 # World 1 — Camera + Character Visual QA v1
 
-**Status:** QA PENDING — requires user browser playtest
+**Status:** PASS — user live browser/device verified
 **Phase:** Phase 3 — Camera + Character Gameplay Prototype
 **Date:** 14 August 2026
 
@@ -15,55 +15,59 @@ Approved inputs:
 
 The approved camera family is elevated top-down / 3-quarter. The approved gameplay direction is four-direction movement, idle/walk/interaction states, stable world orientation, and exploration → interaction → mission → challenge → feedback → debrief → XP/progress → unlock.
 
+The user completed the hosted live browser/device playtest and explicitly reported:
+
+> hasil playtest pass
+
+This is the required browser/device evidence to close the gate.
+
 ## Implementation under test
 
 `prototype/bahasa-indonesia/camera-character-prototype.html`
 
-The prototype:
+The prototype under test:
 - uses the approved environment reference through `desain-fix.svg`;
-- displays the approved character reference through `karakter-fix.svg` as the identity reference;
+- uses the approved character reference through `karakter-fix.svg` as the identity reference;
 - uses a lightweight runtime character proxy only for movement/camera testing;
 - follows the player with a responsive camera;
 - supports WASD/arrow keys;
-- supports touch D-pad;
+- uses the approved contextual virtual analog on touch devices;
 - keeps world orientation stable;
 - shows an interaction cue near the test interaction point;
 - is responsive for desktop and mobile viewport sizes.
 
+The contextual analog behavior is:
+- hidden while idle;
+- appears during active touch movement;
+- supports cardinal and diagonal steering;
+- allows direction changes while already moving;
+- stops/hides on release;
+- keeps UI controls separate from movement input.
+
 ## Explicit boundary
 
-The runtime proxy is **not** final character art. No final sprite sheet is claimed. No final map asset pack, collision map, mission system, progression system, audio, or visual polish is claimed complete.
+The runtime proxy is **not** final character art. No final sprite sheet is claimed. No final map asset pack, collision map, mission system, progression system, audio, or final visual polish is claimed complete.
 
-## User browser QA checklist
+## Gate result
 
 ### Camera
-- [ ] Character remains readable while moving.
-- [ ] Camera follow feels smooth rather than disorienting.
-- [ ] Elevated perspective matches the approved environment reference.
-- [ ] Room/floor depth remains understandable.
-- [ ] Camera does not expose unintended empty space.
-- [ ] Mobile view retains useful surrounding context.
+**PASS — user live playtest**
 
 ### Character
-- [ ] Proxy scale feels consistent with the environment.
-- [ ] Movement direction is immediately understandable.
-- [ ] Character position does not feel visually buried by the environment.
-- [ ] Approved character reference still reads as the intended art family.
+**PASS — user live playtest**
 
-### Interaction
-- [ ] Interaction cue is noticeable but not intrusive.
-- [ ] Touch controls are comfortable on a phone-sized viewport.
-- [ ] Keyboard controls are responsive on desktop.
+### Interaction / Touch movement
+**PASS — user live playtest**
 
-### Visual quality
-- [ ] No obvious clipping or overlap that makes movement confusing.
-- [ ] No excessive UI that turns the scene back into a quiz page.
-- [ ] The prototype communicates spatial exploration rather than a flat question screen.
+### Visual quality / spatial exploration
+**PASS — user live playtest**
 
-## Gate rule
+## Verification interpretation
 
-This gate remains `QA_PENDING` until the user performs the hosted browser playtest. Static/source verification does not equal visual QA PASS.
+The user live playtest is sufficient to close the browser-required Camera + Character Visual QA gate for this prototype. This PASS applies to the current camera/readability, character presentation, interaction feel, and contextual analog movement.
+
+It does not promote the prototype to final visual production and does not claim final sprites, final animation production, final map/collision, audio, mission logic, progression logic, or final UI polish.
 
 ## Next step after PASS
 
-Proceed to **Mission System Design**, including the previously recorded subject-selection, selection-gate, progression-gate, and future mastery-gate hooks. Do not implement full TKA subject rules until the Mission/Progression design decision is approved.
+Proceed to **Mission System Design**, including the previously recorded Academic Planning / TKA subject-selection hook, selection-gate, progression-gate, and future mastery-gate hooks. Do not implement final TKA subject rules until their required evidence and design decisions are approved.
