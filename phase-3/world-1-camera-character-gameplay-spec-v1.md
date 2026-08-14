@@ -55,7 +55,7 @@ Desktop may show more context; mobile should preserve character and interaction 
 
 Primary movement: up, down, left, right.
 
-Diagonal movement may be enabled when the input system supports it, but diagonal speed must be normalized so diagonal movement is not faster than cardinal movement.
+Diagonal movement is supported when the input system supports it. Diagonal speed must be normalized so diagonal movement is not faster than cardinal movement.
 
 ### 4.2 Input
 
@@ -64,8 +64,15 @@ Desktop:
 - arrow keys.
 
 Mobile:
-- virtual directional control / touch movement;
-- touch targets must be comfortable and not dependent on hover.
+- **contextual virtual analog stick**;
+- the analog stick is hidden during idle/non-movement state;
+- on touch-down in the playable world, the analog control appears at the touch origin (or a bounded safe position), then follows the player's drag direction;
+- touch-drag direction supports smooth cardinal and diagonal movement, including turning while already walking;
+- releasing the touch stops movement and hides the analog control;
+- the analog control must not permanently occupy the screen or obscure the environment;
+- UI controls remain separate from movement input and take precedence when touched.
+
+The purpose of the analog control is to avoid the rigid feel of a four-button D-pad: the player can steer continuously through diagonal directions and change direction without first stopping.
 
 ### 4.3 Collision
 
@@ -132,11 +139,11 @@ This specification does not yet define which subjects are mandatory/optional, no
 
 ## 9. Evidence / Implementation / Interpretation
 
-**Evidence:** The character and environment references were directly inspected and approved by the user. Existing GDD/workflow artifacts define browser-first, mobile-first, educational-adventure, and data-driven constraints.
+**Evidence:** The character and environment references were directly inspected and approved by the user. Existing GDD/workflow artifacts define browser-first, mobile-first, educational-adventure, and data-driven constraints. The user additionally approved a contextual analog control for mobile: visible only while the character is being directed, supporting smooth diagonal steering and turning without requiring the character to stop.
 
-**Implementation:** No runtime camera or sprite system is changed by this document. It defines the testable contract for the next implementation step.
+**Implementation:** The mobile prototype should use a temporary contextual analog control for the next browser QA pass. It must not be treated as final UI polish until the interaction is validated on-device.
 
-**Interpretation:** A stable elevated camera with four-direction character presentation is the best bridge between the user's chosen visual references and the existing light-RPG exploration model. Exact numeric camera settings should be validated visually rather than guessed from a single reference image.
+**Interpretation:** A contextual analog stick is a better fit than a fixed D-pad for the approved light-RPG movement model because it preserves a clean scene while allowing continuous cardinal/diagonal steering and turning.
 
 ## 10. Approval record
 
@@ -146,6 +153,7 @@ Approval covers:
 - approved male/female character costume direction;
 - approved elevated top-down / 3-quarter camera direction;
 - approved idle/walk/interaction animation direction;
-- approved exploration → interaction → mission → challenge → feedback → debrief → XP/progress → unlock flow.
+- approved exploration → interaction → mission → challenge → feedback → debrief → XP/progress → unlock flow;
+- **approved mobile input direction: contextual virtual analog stick, visible only during active touch movement.**
 
-Approval authorizes a **small Camera + Character Gameplay visual prototype**, not full-map production. The numeric camera configuration remains a test parameter until the visual prototype passes readability QA.
+Approval authorizes a **small Camera + Character Gameplay visual prototype**, not full-map production. The numeric camera configuration and final analog-control visual treatment remain test parameters until the visual prototype passes readability QA.
