@@ -40,8 +40,11 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **Approved character direction:** user-selected illustrated/anime-inspired male/female visual family; Grade 12 school costume adaptation; female uniform uses the requested short school skirt; no further character/design changes requested at this gate.
 - **Approved camera direction:** elevated top-down / 3-quarter perspective based on the user's environment reference; exact numeric angle/zoom remains an implementation test parameter.
 - **Approved animation/gameplay direction:** readable four-direction gameplay views, idle/walk/interaction states, exploration → interaction → mission → challenge → feedback → debrief → XP/progress → unlock.
-- **Next active design artifact:** `phase-3/world-1-camera-character-gameplay-spec-v1.md` — PROPOSAL / pending user approval.
-- **Next sequence after camera specification:** small Camera + Character visual gameplay prototype → visual QA → Mission System → Progression System → RPG Layer. No stage is skipped merely because it was previously undiscussed.
+- **Camera / Character Gameplay Specification v1: APPROVED by user on 14 August 2026.** `phase-3/world-1-camera-character-gameplay-spec-v1.md`
+- **Next active implementation artifact:** small Camera + Character visual gameplay prototype → visual QA.
+- **Next design sequence after visual QA:** Mission System → Progression System → RPG Layer. No stage is skipped merely because it was previously undiscussed.
+- **TKA subject-selection evidence:** `phase-3/tka-subject-selection-evidence-v1.md`. Current official sources verify TKA as an assessment with 3 mandatory SMA/MA/SMK subjects (Bahasa Indonesia, Matematika, Bahasa Inggris) plus 2 selected choice subjects. This is evidence for design only, not yet a complete game-rule specification.
+- **Locked subject-room concept:** recorded as a design hook. Selection gates and progression gates will be designed during Mission/Progression System work; they must not be encoded as official TKA rules until the relevant evidence and design decisions are approved.
 
 ## 1. Tujuan utama
 Membangun game edukasi kelas XII berbasis browser untuk membantu persiapan ujian, dimulai dari Bahasa Indonesia dan dapat diperluas ke mata pelajaran lain.
@@ -167,8 +170,9 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Map / World Structure v1 — APPROVED.
 - Character Design v1 — SUPERSEDED.
 - Character Design v2 — **APPROVED 14 August 2026**.
-- Camera / Character Gameplay Specification v1 — **PROPOSAL / PENDING USER APPROVAL**.
-- Next after camera spec: small visual gameplay prototype, then Mission System Design.
+- Camera / Character Gameplay Specification v1 — **APPROVED 14 August 2026**.
+- TKA subject-selection evidence — verified from current official sources; game subject-gating remains a design hook pending Mission/Progression System decisions.
+- Next: small Camera + Character visual gameplay prototype → visual QA → Mission System → Progression System → RPG Layer.
 - User's future idea for locked subject rooms is recorded as a design hook only: selection gates and progression gates are to be designed later; official TKA subject structure must be independently verified before becoming a game rule.
 
 ## 17. REQUIRED WORK SESSION PROTOCOL
