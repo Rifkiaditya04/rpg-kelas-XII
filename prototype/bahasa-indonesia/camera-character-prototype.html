@@ -30,9 +30,10 @@
     .interaction.show{opacity:1}
     .hud{position:absolute;left:12px;top:12px;right:12px;display:flex;justify-content:space-between;gap:8px;z-index:20;pointer-events:none}
     .badge{padding:8px 10px;border-radius:10px;background:#ffffffdd;backdrop-filter:blur(6px);font-size:12px;box-shadow:0 3px 12px #0001}
-    .touch{position:absolute;left:14px;bottom:14px;z-index:30;display:grid;grid-template-columns:48px 48px 48px;grid-template-rows:48px 48px 48px;gap:5px;opacity:.9}
-    .touch button{border:0;border-radius:12px;background:#172033dd;color:#fff;font-size:18px;touch-action:none}
-    .touch .up{grid-column:2}.touch .left{grid-column:1;grid-row:2}.touch .down{grid-column:2;grid-row:3}.touch .right{grid-column:3;grid-row:2}
+    .analog{position:absolute;z-index:40;width:116px;height:116px;border-radius:50%;display:none;pointer-events:none;transform:translate(-50%,-50%);background:#1720332b;border:2px solid #ffffffa8;box-shadow:0 5px 18px #0002;backdrop-filter:blur(3px)}
+    .analog.show{display:block}
+    .analog-base{position:absolute;left:50%;top:50%;width:54px;height:54px;border-radius:50%;transform:translate(-50%,-50%);background:#172033d9;border:2px solid #ffffffc7;box-shadow:0 2px 8px #0003}
+    .analog-knob{position:absolute;left:50%;top:50%;width:44px;height:44px;border-radius:50%;transform:translate(-50%,-50%);background:#fff;box-shadow:0 3px 10px #0003}
     aside{display:flex;flex-direction:column;gap:12px}
     .card{background:#fff;border-radius:14px;padding:14px;box-shadow:0 5px 20px #0001}
     .card h2{font-size:14px;margin:0 0 8px}.card p,.card li{font-size:12px;line-height:1.55}.card ul{padding-left:18px;margin:8px 0}
@@ -40,7 +41,7 @@
     .controls{display:grid;grid-template-columns:1fr 1fr;gap:7px}.controls button{padding:9px;border:1px solid #d8dee8;background:#fff;border-radius:9px;cursor:pointer}
     .status{font-size:12px;line-height:1.5;padding:9px;border-radius:9px;background:#f5f7fa}
     @media(max-width:900px){main{grid-template-columns:1fr;padding:8px}.stage-wrap{min-height:0}#viewport{height:68vh;min-height:480px}aside{display:grid;grid-template-columns:1fr 1fr}.card:last-child{grid-column:1/-1}}
-    @media(max-width:560px){aside{display:flex}.ref{height:150px}#viewport{height:66vh;min-height:440px}.badge{font-size:11px}.touch{transform:scale(.9);transform-origin:left bottom}}
+    @media(max-width:560px){aside{display:flex}.ref{height:150px}#viewport{height:66vh;min-height:440px}.badge{font-size:11px}}
   </style>
 </head>
 <body>
@@ -57,14 +58,12 @@
         </div>
         <div id="interaction" class="interaction">E / TAP — Interaksi</div>
       </div>
-      <div class="touch" aria-label="Touch movement controls">
-        <button class="up" data-dir="up">▲</button><button class="left" data-dir="left">◀</button><button class="down" data-dir="down">▼</button><button class="right" data-dir="right">▶</button>
-      </div>
+      <div id="analog" class="analog" aria-hidden="true"><div class="analog-base"></div><div id="analogKnob" class="analog-knob"></div></div>
     </div>
   </section>
   <aside>
     <div class="card"><h2>Approved Character Reference</h2><img class="ref" src="../../phase-3/visuals/karakter-fix.svg" alt="Approved character reference"><p>Reference ini adalah sumber identitas visual. Proxy di scene belum merupakan final sprite sheet.</p></div>
-    <div class="card"><h2>Camera / Character QA</h2><ul><li>WASD / arrow keys</li><li>Touch D-pad</li><li>Camera follows player</li><li>Stable world orientation</li><li>Interaction cue near center</li><li>Responsive mobile viewport</li></ul><div class="status" id="status">Status: siap dimainkan.</div></div>
+    <div class="card"><h2>Camera / Character QA</h2><ul><li>WASD / arrow keys</li><li>Contextual virtual analog on touch</li><li>Analog hidden when idle</li><li>Continuous diagonal steering</li><li>Camera follows player</li><li>Stable world orientation</li><li>Interaction cue near center</li><li>Responsive mobile viewport</li></ul><div class="status" id="status">Status: siap dimainkan.</div></div>
     <div class="card"><h2>Prototype boundary</h2><p>Yang diuji sekarang adalah presentasi gameplay: camera family, movement, scale, collision-free proxy movement, interaction cue, dan mobile readability. Final sprite production, final map assets, animation production, mission system, progression rules, audio, dan polish tetap mengikuti gate masing-masing.</p><div class="controls"><button id="reset">Reset</button><button id="center">Center camera</button></div></div>
   </aside>
 </main>
@@ -72,7 +71,8 @@
 (function(){
   const world=document.getElementById('world'), player=document.getElementById('player'), viewport=document.getElementById('viewport');
   const coords=document.getElementById('coords'), status=document.getElementById('status'), interaction=document.getElementById('interaction');
-  const keys=new Set(); const p={x:610,y:455}; const start={x:610,y:455}; const speed=3.1; let running=false;
+  const analog=document.getElementById('analog'), knob=document.getElementById('analogKnob');
+  const keys=new Set(); const p={x:610,y:455}; const start={x:610,y:455}; const speed=3.1; let analogPointer=null;
   function clamp(){p.x=Math.max(55,Math.min(1145,p.x));p.y=Math.max(80,Math.min(830,p.y));}
   function updateCamera(){
     clamp();
@@ -87,19 +87,49 @@
   function frame(){
     let dx=0,dy=0;
     if(keys.has('ArrowLeft')||keys.has('a'))dx-=1;if(keys.has('ArrowRight')||keys.has('d'))dx+=1;if(keys.has('ArrowUp')||keys.has('w'))dy-=1;if(keys.has('ArrowDown')||keys.has('s'))dy+=1;
-    if(dx||dy){const n=Math.hypot(dx,dy);p.x+=dx/n*speed;p.y+=dy/n*speed;player.classList.add('moving');status.textContent='Status: bergerak — camera mengikuti player.';running=true}else{player.classList.remove('moving');running=false}
+    if(dx||dy){const n=Math.hypot(dx,dy);p.x+=dx/n*speed;p.y+=dy/n*speed;player.classList.add('moving');status.textContent='Status: bergerak — camera mengikuti player.'}else{player.classList.remove('moving')}
     updateCamera(); requestAnimationFrame(frame);
   }
   window.addEventListener('keydown',e=>{if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','w','a','s','d'].includes(e.key)){e.preventDefault();keys.add(e.key)}});
   window.addEventListener('keyup',e=>keys.delete(e.key));
-  document.querySelectorAll('[data-dir]').forEach(btn=>{
-    const d=btn.dataset.dir, map={up:'ArrowUp',down:'ArrowDown',left:'ArrowLeft',right:'ArrowRight'};
-    const down=e=>{e.preventDefault();keys.add(map[d])}, up=e=>{e.preventDefault();keys.delete(map[d])};
-    btn.addEventListener('pointerdown',down);btn.addEventListener('pointerup',up);btn.addEventListener('pointercancel',up);btn.addEventListener('pointerleave',up);
+
+  function setAnalogPosition(x,y){
+    analog.style.left=x+'px'; analog.style.top=y+'px';
+  }
+  function setKnob(dx,dy){knob.style.transform=`translate(calc(-50% + ${dx}px),calc(-50% + ${dy}px))`}
+  function clearAnalog(){
+    analogPointer=null; analog.classList.remove('show'); setKnob(0,0); keys.delete('Analog');
+  }
+  function handleAnalogMove(e){
+    if(e.pointerId!==analogPointer)return;
+    const rect=viewport.getBoundingClientRect();
+    const cx=parseFloat(analog.style.left), cy=parseFloat(analog.style.top);
+    const x=e.clientX-rect.left, y=e.clientY-rect.top;
+    let dx=x-cx,dy=y-cy; const max=42; const mag=Math.hypot(dx,dy);
+    if(mag>max){dx=dx/mag*max;dy=dy/mag*max}
+    setKnob(dx,dy);
+    const nx=dx/max,ny=dy/max;
+    if(Math.hypot(nx,ny)<.12){keys.delete('Analog');return}
+    keys.delete('AnalogUp');keys.delete('AnalogDown');keys.delete('AnalogLeft');keys.delete('AnalogRight');
+    if(Math.abs(nx)>.12)keys.add(nx<0?'AnalogLeft':'AnalogRight');
+    if(Math.abs(ny)>.12)keys.add(ny<0?'AnalogUp':'AnalogDown');
+    status.textContent='Status: analog aktif — arah gerak kontinu.';
+  }
+  viewport.addEventListener('pointerdown',e=>{
+    if(e.pointerType==='mouse' || e.target.closest('button') || e.target.closest('.controls'))return;
+    const rect=viewport.getBoundingClientRect();
+    analogPointer=e.pointerId;
+    setAnalogPosition(e.clientX-rect.left,e.clientY-rect.top);
+    analog.classList.add('show');
+    viewport.setPointerCapture(e.pointerId);
+    handleAnalogMove(e);
   });
+  viewport.addEventListener('pointermove',handleAnalogMove);
+  viewport.addEventListener('pointerup',e=>{if(e.pointerId===analogPointer)clearAnalog()});
+  viewport.addEventListener('pointercancel',e=>{if(e.pointerId===analogPointer)clearAnalog()});
+
   document.getElementById('reset').onclick=()=>{p.x=start.x;p.y=start.y;status.textContent='Status: posisi di-reset.'};
   document.getElementById('center').onclick=()=>{p.x=610;p.y=455;status.textContent='Status: camera dipusatkan pada player.'};
-  viewport.addEventListener('pointerdown',e=>{if(e.target.closest('.touch'))return; if(interaction.classList.contains('show'))status.textContent='Status: interaction cue aktif — mission system belum diimplementasikan pada prototype ini.'});
   window.addEventListener('resize',updateCamera); updateCamera(); requestAnimationFrame(frame);
 })();
 </script>
