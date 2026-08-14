@@ -41,10 +41,20 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **Approved camera direction:** elevated top-down / 3-quarter perspective based on the user's environment reference; exact numeric angle/zoom remains an implementation test parameter.
 - **Approved animation/gameplay direction:** readable four-direction gameplay views, idle/walk/interaction states, exploration → interaction → mission → challenge → feedback → debrief → XP/progress → unlock.
 - **Camera / Character Gameplay Specification v1: APPROVED by user on 14 August 2026.** `phase-3/world-1-camera-character-gameplay-spec-v1.md`
-- **Next active implementation artifact:** small Camera + Character visual gameplay prototype → visual QA.
-- **Next design sequence after visual QA:** Mission System → Progression System → RPG Layer. No stage is skipped merely because it was previously undiscussed.
-- **TKA subject-selection evidence:** `phase-3/tka-subject-selection-evidence-v1.md`. Current official sources verify TKA as an assessment with 3 mandatory SMA/MA/SMK subjects (Bahasa Indonesia, Matematika, Bahasa Inggris) plus 2 selected choice subjects. This is evidence for design only, not yet a complete game-rule specification.
-- **Locked subject-room concept:** recorded as a design hook. Selection gates and progression gates will be designed during Mission/Progression System work; they must not be encoded as official TKA rules until the relevant evidence and design decisions are approved.
+- **Camera + Character visual gameplay prototype: IMPLEMENTED; visual QA is now PENDING user browser playtest.** `prototype/bahasa-indonesia/camera-character-prototype.html`
+- Visual QA artifact: `phase-3/world-1-camera-character-visual-qa-v1.md`
+- **Next design sequence after visual QA PASS:** Mission System → Progression System → RPG Layer. No stage is skipped merely because it was previously undiscussed.
+
+### TKA / Academic Planning foundation
+- **TKA evidence pass is current and design-only.** `phase-3/tka-subject-selection-evidence-v1.md`
+- TKA terminology is locked: TKA is an assessment, not an additional school subject.
+- Official evidence verifies 3 mandatory TKA subjects for SMA/MA/SMK (Bahasa Indonesia, Matematika, Bahasa Inggris) plus 2 selected choice subjects.
+- Official TKA information states that assessment content considers applicable competencies/materials from Kurikulum Merdeka and Kurikulum 2013. This does **not** require rebuilding a separate Kurikulum 2013 curriculum.
+- **TKA Preparation / Academic Planning foundation v1 created.** `phase-3/tka-study-path-foundation-v1.md`
+- **TKA subject catalogue foundation v1 created.** `phase-3/tka-subject-catalog-foundation-v1.json`
+- The future game may contain an Academic Planning Office with mandatory subjects, two selected choice slots, locked unselected rooms, progression gates, and optional mastery gates.
+- This is a **game design foundation only**. It is not official TKA registration and does not yet encode final curriculum/subject-room rules.
+- SMK program-specific catalogue reconciliation remains `pending` before it can become a final game rule.
 
 ## 1. Tujuan utama
 Membangun game edukasi kelas XII berbasis browser untuk membantu persiapan ujian, dimulai dari Bahasa Indonesia dan dapat diperluas ke mata pelajaran lain.
@@ -60,6 +70,7 @@ Membangun game edukasi kelas XII berbasis browser untuk membantu persiapan ujian
 - Prioritas teknologi: gratis → mudah dikembangkan → profesional
 - AI dipilih berdasarkan pekerjaan, bukan dikunci ke satu layanan
 - Game tidak boleh menjadi sekadar PDF/kuis yang diberi skin; materi harus diubah menjadi pengalaman belajar
+- **TKA preparation is an extension layer, not a replacement for the main curriculum/content architecture.**
 
 ## 3. Prinsip akademik wajib
 1. Tidak ada soal produksi tanpa provenance.
@@ -71,9 +82,13 @@ Membangun game edukasi kelas XII berbasis browser untuk membantu persiapan ujian
 7. Tugas kreatif memakai rubric.
 8. Jangan mengarang nomor halaman, fakta, kompetensi, atau klaim kurikulum.
 9. Blueprint internal proyek tidak boleh disebut sebagai komposisi ujian resmi.
+10. Untuk TKA preparation, gunakan official TKA assessment framework sebagai assessment specification; gunakan Student Book/Teacher Guide sebagai learning-content sources; jangan menganggap TKA sebagai buku pelajaran baru.
 
 ## 4. Arsitektur konten
 Sumber Buku → Knowledge Base → Exam Blueprint → Golden Dataset → Question Renderer → Game Mechanics → Training / Exam Simulation.
+
+Untuk future TKA subjects:
+Official TKA Framework + applicable curriculum intersection + Student Book/Teacher Guide → Subject Knowledge Base → Subject Blueprint → Controlled Question Pipeline.
 
 ## 5. Arsitektur pengalaman
 - World 1 — Career Mission
@@ -81,6 +96,7 @@ Sumber Buku → Knowledge Base → Exam Blueprint → Golden Dataset → Questio
 - World 3 — Drama Stage
 - World 4 — Nusantara Explorer
 - Semua world mengarah ke Final Exam dan analisis kelemahan siswa.
+- Future Academic Planning Office can act as the subject-selection/planning hub before additional subject worlds are implemented.
 
 ## 6. Aturan perubahan
 - Jangan mengubah keputusan yang sudah dikunci hanya karena teknologi baru terlihat menarik.
@@ -92,12 +108,13 @@ Sumber Buku → Knowledge Base → Exam Blueprint → Golden Dataset → Questio
 ## 7. PROTOKOL VERIFIKASI WAJIB
 Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 1. Re-sync sumber asli; state percakapan lama dianggap stale.
-2. Baca seluruh file dalam `Alur Kerja Proyek` satu per satu sebelum bekerja.
-3. Pisahkan **Evidence**, **Implementation**, dan **Interpretation**.
-4. Temuan material harus tertelusur ke file + nomor baris + potongan aktual; jangan mengarang lokasi.
-5. Cross-validate klaim penting dengan sumber independen yang sesuai.
-6. Jika ada konflik, nyatakan `confirmed`, `partially confirmed`, `conflicting`, atau `unverified`.
-7. Setelah pekerjaan, verifikasi hasil dan simpan kejadian/keputusan penting di `Alur Kerja Proyek/PROJECT LOG/`.
+2. Baca seluruh file dalam `Alur Kerja Proyek` satu per satu.
+3. Baca artefak aktif yang relevan.
+4. Pisahkan **Evidence**, **Implementation**, dan **Interpretation**.
+5. Temuan material harus tertelusur ke file + nomor baris + potongan aktual bila line-level evidence tersedia; jangan mengarang lokasi.
+6. Cross-validate klaim penting dengan sumber independen yang sesuai.
+7. Jika ada konflik, nyatakan `confirmed`, `partially confirmed`, `conflicting`, atau `unverified`.
+8. Setelah pekerjaan, verifikasi hasil dan simpan kejadian/keputusan penting di `Alur Kerja Proyek/PROJECT LOG/`.
 
 ## 8. Quality gate
 - Provenance student-book dan teacher-guide terisi untuk seed.
@@ -105,6 +122,8 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Gameplay flow: soal → jawaban → feedback → XP → hasil.
 - Source cross-validation Buku Siswa ↔ Buku Guru dilakukan pada seed.
 - Controlled batch baru wajib melewati answer verification, pedagogical review, provenance audit, renderer compatibility, batch quality gate, dan live regression sebelum promosi.
+- Visual gameplay gates requiring browser interaction remain `QA_PENDING` until user browser evidence exists.
+- TKA foundation/catalogue does not become a final subject-rule gate until authoritative subject mapping and game-design decisions are approved.
 
 ## 9. Batasan Phase 3
 - Golden Dataset v1 tetap approved seed, bukan bank soal produksi massal.
@@ -113,6 +132,7 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Visual final, map, progression, karakter, mission system, dan RPG layer dibahas dalam GDD sebelum implementasi besar.
 - Prototype expansion dimulai dari satu World slice sebelum empat world diperluas.
 - Multiplayer, online accounts, complex 3D, real-time AI NPC, monetization, dan social features tidak masuk scope kecuali keputusan terdokumentasi membuktikan manfaatnya.
+- TKA subject catalogue is a future expansion layer; do not build full subject worlds before the current World 1 gameplay architecture is validated.
 
 ## 10. Phase 3 GDD v1 — keputusan desain awal
 - Core loop: Explore → Mission → Learn/Inspect → Challenge → Feedback → XP/Progress → Unlock → Review Weak Skill → Mastery Check.
@@ -171,9 +191,12 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Character Design v1 — SUPERSEDED.
 - Character Design v2 — **APPROVED 14 August 2026**.
 - Camera / Character Gameplay Specification v1 — **APPROVED 14 August 2026**.
+- **Camera + Character visual gameplay prototype — IMPLEMENTED; Visual QA PENDING user browser playtest.**
 - TKA subject-selection evidence — verified from current official sources; game subject-gating remains a design hook pending Mission/Progression System decisions.
-- Next: small Camera + Character visual gameplay prototype → visual QA → Mission System → Progression System → RPG Layer.
-- User's future idea for locked subject rooms is recorded as a design hook only: selection gates and progression gates are to be designed later; official TKA subject structure must be independently verified before becoming a game rule.
+- **TKA Preparation / Academic Planning foundation v1 — DOCUMENTED; not yet implemented as final student-facing rules.**
+- **TKA subject catalogue foundation v1 — DOCUMENTED; current SMK program-specific catalogue remains pending reconciliation.**
+- User's locked subject-room idea is recorded as a design hook: selection gates, progression gates, and optional mastery gates will be designed during Mission/Progression System work.
+- **Next:** user visual QA of Camera + Character prototype → Mission System → Progression System → RPG Layer.
 
 ## 17. REQUIRED WORK SESSION PROTOCOL
 Operational procedure is also archived in `Alur Kerja Proyek/REQUIRED-WORK-SESSION-PROTOCOL.md`.
