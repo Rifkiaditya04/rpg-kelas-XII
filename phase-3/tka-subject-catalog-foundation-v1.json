@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "status": "FOUNDATION_ONLY",
+  "purpose": "Stable future menu/catalog foundation for TKA preparation. Not yet a student-facing TKA rule engine.",
+  "source_basis": [
+    "Official Pusat Asesmen Pendidikan TKA overview",
+    "Official TKA SMA/MA/SMK assessment framework and subject pages"
+  ],
+  "mandatory": [
+    {"id":"tka-bahasa-indonesia","name":"Bahasa Indonesia","status":"verified"},
+    {"id":"tka-matematika","name":"Matematika","status":"verified"},
+    {"id":"tka-bahasa-inggris","name":"Bahasa Inggris","status":"verified"}
+  ],
+  "choice_baseline": [
+    {"id":"tka-matematika-lanjutan","name":"Matematika Tingkat Lanjut","status":"verified_baseline"},
+    {"id":"tka-bahasa-indonesia-lanjutan","name":"Bahasa Indonesia Tingkat Lanjut","status":"verified_baseline"},
+    {"id":"tka-bahasa-inggris-lanjutan","name":"Bahasa Inggris Tingkat Lanjut","status":"verified_baseline"},
+    {"id":"tka-fisika","name":"Fisika","status":"verified_baseline"},
+    {"id":"tka-kimia","name":"Kimia","status":"verified_baseline"},
+    {"id":"tka-biologi","name":"Biologi","status":"verified_baseline"},
+    {"id":"tka-pendidikan-pancasila","name":"Pendidikan Pancasila / PPKn","status":"verified_baseline"},
+    {"id":"tka-ekonomi","name":"Ekonomi","status":"verified_baseline"},
+    {"id":"tka-geografi","name":"Geografi","status":"verified_baseline"},
+    {"id":"tka-sosiologi","name":"Sosiologi","status":"verified_baseline"},
+    {"id":"tka-sejarah","name":"Sejarah","status":"verified_baseline"},
+    {"id":"tka-antropologi","name":"Antropologi","status":"verified_baseline"},
+    {"id":"tka-bahasa-prancis","name":"Bahasa Prancis","status":"verified_baseline"},
+    {"id":"tka-bahasa-jerman","name":"Bahasa Jerman","status":"verified_baseline"},
+    {"id":"tka-bahasa-jepang","name":"Bahasa Jepang","status":"verified_baseline"},
+    {"id":"tka-bahasa-mandarin","name":"Bahasa Mandarin","status":"verified_baseline"},
+    {"id":"tka-bahasa-korea","name":"Bahasa Korea","status":"verified_baseline"},
+    {"id":"tka-bahasa-arab","name":"Bahasa Arab","status":"verified_baseline"},
+    {"id":"tka-projek-kreatif-kewirausahaan","name":"Produk/Projek Kreatif dan Kewirausahaan","status":"verified_smk_option"}
+  ],
+  "selection_rule_baseline": {
+    "mandatory_count": 3,
+    "choice_count": 2,
+    "selection_is_game_study_plan": true,
+    "official_registration_is_external": true
+  },
+  "smk_program_specific": {
+    "status": "catalogue_extension_pending_verification",
+    "note": "Do not expose program-specific SMK options as official game rules until the current authoritative list is reconciled and approved."
+  },
+  "gating": {
+    "selection_gate": "future_design",
+    "progression_gate": "future_design",
+    "mastery_gate": "future_design"
+  }
+}
