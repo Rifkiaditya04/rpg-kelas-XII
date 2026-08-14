@@ -1,6 +1,6 @@
 # World 1 — Camera / Character Gameplay Specification v1
 
-**Status:** PROPOSAL — pending explicit approval
+**Status:** APPROVED — user approved 14 August 2026
 **Phase:** Phase 3 — Game Design / Camera & Character Gameplay
 **Prerequisites:** Visual Direction v1 APPROVED; Map / World Structure v1 APPROVED; Character Design v2 APPROVED
 
@@ -138,6 +138,14 @@ This specification does not yet define which subjects are mandatory/optional, no
 
 **Interpretation:** A stable elevated camera with four-direction character presentation is the best bridge between the user's chosen visual references and the existing light-RPG exploration model. Exact numeric camera settings should be validated visually rather than guessed from a single reference image.
 
-## 10. Approval gate
+## 10. Approval record
 
-Pending user approval. Approval authorizes a **small Camera + Character Gameplay visual prototype**, not full-map production. The prototype must be visually reviewed before the numeric camera configuration is frozen.
+**APPROVED by user — 14 August 2026.**
+
+Approval covers:
+- approved male/female character costume direction;
+- approved elevated top-down / 3-quarter camera direction;
+- approved idle/walk/interaction animation direction;
+- approved exploration → interaction → mission → challenge → feedback → debrief → XP/progress → unlock flow.
+
+Approval authorizes a **small Camera + Character Gameplay visual prototype**, not full-map production. The numeric camera configuration remains a test parameter until the visual prototype passes readability QA.
