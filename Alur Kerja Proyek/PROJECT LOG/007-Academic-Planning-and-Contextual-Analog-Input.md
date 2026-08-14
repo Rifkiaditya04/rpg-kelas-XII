@@ -2,11 +2,13 @@
 
 **Date:** 14 August 2026  
 **Phase:** Phase 3 — Game Design / Camera & Character Gameplay  
-**Status:** Implemented for browser QA; not final visual polish
+**Status:** Visual QA PASS — user live browser/device verified
 
 ## Re-sync / Evidence
 
-The current Master Control and active Phase 3 camera/character specification were re-read before implementation. The project already records:
+The current Master Control, REQUIRED WORK SESSION PROTOCOL, active Phase 3 GDD, Camera / Character Gameplay Specification, and current visual QA artifact were re-read before closing this gate.
+
+The project records:
 
 - Academic Planning Office as a future subject-selection/planning hub.
 - TKA as an assessment, not an additional school subject.
@@ -67,23 +69,32 @@ Updated:
 
 The prototype remains a QA-only presentation test. It does not introduce final sprite production, final map collision, mission logic, progression logic, audio, or final UI polish.
 
-## Verification state
+## Live verification
 
-Source-level verification after the implementation update:
+The user completed the hosted live browser/device playtest and explicitly reported:
 
-- contextual analog markup present;
-- analog hidden by default;
-- pointer/touch movement handlers present;
-- analog direction dispatched into normalized movement;
-- diagonal movement is supported;
-- release/cancel clears analog direction and hides control;
-- desktop keyboard input remains available;
-- approved character/environment references remain the runtime visual references.
+> hasil playtest pass
 
-Browser/device visual QA remains **PENDING USER PLAYTEST**. The contextual analog is not considered final until the user confirms its feel, size, position behavior, visibility, and steering responsiveness on an actual touch device.
+This closes the browser-required visual QA gate for the current Camera + Character prototype.
+
+The PASS applies to the current prototype's camera/readability, character presentation, interaction feel, and contextual analog movement as tested by the user. It does not claim completion of final art, final map production, final animation set, audio, mission logic, progression logic, or final UI polish.
+
+## Gate result
+
+**CAMERA + CHARACTER VISUAL QA v1 — PASS**
+
+A dedicated QA record was created at:
+
+`Alur Kerja Proyek/PROJECT LOG/qa/001-camera-character-visual-qa-pass.md`
+
+A decision record was created at:
+
+`Alur Kerja Proyek/PROJECT LOG/decisions/007-camera-character-visual-qa-approved.md`
 
 ## Next gate
 
-After the user browser/device playtest passes camera + character visual QA:
+Proceed to:
 
 **Mission System Design → Progression System Design → RPG Layer Design.**
+
+Mission System must incorporate the previously documented Academic Planning / TKA subject-selection hook, selection gates, progression gates, and future mastery gates without prematurely encoding final TKA subject rules.
