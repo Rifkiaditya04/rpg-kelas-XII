@@ -1,6 +1,6 @@
 # World 1 — Map / World Structure Proposal v1
 
-**Status:** PROPOSAL — next design gate
+**Status:** APPROVED — user approved structural basis on 2026-08-14
 **Phase:** Phase 3 — World 1 Map / World Structure
 **World:** World 1 — Career Mission
 **Prerequisite:** Visual Direction v1 approved
@@ -19,7 +19,7 @@ The existing World 1 expansion plan establishes six learning lanes A–F and req
 
 This document designs the **world structure**, not final art assets. It does not replace the approved A–F content pools, Golden Dataset v1, renderer, or existing mission data.
 
-## Proposed World 1 structure
+## Approved World 1 structure
 
 ```text
                     [HOME / HUB]
@@ -88,7 +88,7 @@ This is where the player transitions from general exploration into the current l
 ### 5. Career Mission Hub
 Purpose: contextualize the Career Mission before the challenge renderer appears.
 
-Possible interactables: mission board, document desk, NPC/mentor, computer, or application folder. These are proposals; exact interaction set belongs to the Mission System design stage.
+Possible interactables: mission board, document desk, NPC/mentor, computer, or application folder. These remain proposals; exact interaction set belongs to the Mission System design stage.
 
 ### 6. Challenge Space
 Purpose: host the existing data-driven question renderer without making the renderer responsible for world navigation.
@@ -141,10 +141,10 @@ These should be decided during Character, Mission System, Progression, and RPG L
 
 **Evidence:** Approved Visual Direction v1, Phase 3 GDD, World 1 expansion plan, and approved A–F integration establish the experience direction and content boundaries.
 
-**Implementation:** This proposal defines a small navigable World 1 structure around the existing controlled mission slice; no final art or large map implementation is introduced.
+**Implementation:** This document defines the approved small navigable World 1 structure around the existing controlled mission slice; no final art or large map implementation is introduced.
 
 **Interpretation:** World 1 should feel like a place the student moves through, with the question renderer functioning as a challenge subsystem inside the world rather than the world itself being a quiz screen.
 
-## Gate
+## Approval record
 
-This is a proposal. Final map structure should be explicitly approved before implementation of the full navigable map.
+User explicitly approved this structural map basis on 2026-08-14. Approval authorizes the project to proceed to **Character Design**. It does not authorize unrestricted final map-asset production; exact geometry, art assets, collision, and production implementation remain later implementation decisions.
