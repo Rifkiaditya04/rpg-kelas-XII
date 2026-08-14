@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#f5efe6"/>
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#243447">WORLD 1 — CHARACTER DESIGN v1</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#52616b">Concept sheet — 2D top-down / slightly angled educational adventure</text>
+
+  <!-- 3/4 hero -->
+  <g transform="translate(120,150)">
+    <ellipse cx="180" cy="505" rx="115" ry="28" fill="#d9d1c7"/>
+    <!-- backpack -->
+    <rect x="266" y="250" width="72" height="160" rx="25" fill="#315f72"/>
+    <path d="M282 260 Q300 215 320 260" fill="none" stroke="#244856" stroke-width="14"/>
+    <!-- legs -->
+    <rect x="140" y="385" width="48" height="105" rx="20" fill="#334e68"/>
+    <rect x="205" y="385" width="48" height="105" rx="20" fill="#334e68"/>
+    <ellipse cx="165" cy="492" rx="38" ry="16" fill="#263238"/>
+    <ellipse cx="230" cy="492" rx="38" ry="16" fill="#263238"/>
+    <!-- torso -->
+    <path d="M112 250 Q180 220 252 250 L270 395 Q180 425 94 395 Z" fill="#f0f3f5" stroke="#d0d7de" stroke-width="5"/>
+    <path d="M170 245 L180 330 L190 245" fill="#dbe4e8"/>
+    <circle cx="180" cy="300" r="7" fill="#315f72"/>
+    <circle cx="180" cy="330" r="7" fill="#315f72"/>
+    <!-- arms -->
+    <rect x="76" y="270" width="42" height="128" rx="20" transform="rotate(8 97 334)" fill="#f3c6a8"/>
+    <rect x="240" y="270" width="42" height="128" rx="20" transform="rotate(-12 261 334)" fill="#f3c6a8"/>
+    <!-- neck -->
+    <rect x="155" y="210" width="50" height="48" rx="18" fill="#f3c6a8"/>
+    <!-- head -->
+    <ellipse cx="180" cy="165" rx="72" ry="82" fill="#f3c6a8"/>
+    <!-- hair -->
+    <path d="M111 165 Q105 72 180 65 Q260 70 251 158 Q225 115 195 124 Q155 112 111 165 Z" fill="#263238"/>
+    <!-- face -->
+    <circle cx="155" cy="170" r="6" fill="#263238"/>
+    <circle cx="205" cy="170" r="6" fill="#263238"/>
+    <path d="M165 205 Q180 214 195 205" fill="none" stroke="#8d5a4a" stroke-width="4" stroke-linecap="round"/>
+    <text x="180" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#243447">Student Protagonist</text>
+    <text x="180" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#52616b">neutral / customizable direction</text>
+  </g>
+
+  <!-- silhouettes / views -->
+  <g transform="translate(455,160)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#243447">Readable at small scale</text>
+    <text x="0" y="32" font-family="Arial, sans-serif" font-size="15" fill="#52616b">Front • back • side • interaction</text>
+    <g transform="translate(25,70) scale(.62)">
+      <circle cx="80" cy="75" r="55" fill="#f3c6a8"/><path d="M28 76 Q20 8 80 5 Q145 10 137 72 Q112 40 80 50 Q55 40 28 76" fill="#263238"/><rect x="60" y="125" width="40" height="45" rx="14" fill="#f3c6a8"/><path d="M30 165 Q80 145 130 165 L145 280 Q80 305 15 280 Z" fill="#f0f3f5"/><rect x="45" y="270" width="28" height="100" rx="12" fill="#334e68"/><rect x="88" y="270" width="28" height="100" rx="12" fill="#334e68"/>
+    </g>
+    <g transform="translate(205,70) scale(.62)">
+      <circle cx="80" cy="75" r="55" fill="#f3c6a8"/><path d="M28 76 Q20 8 80 5 Q145 10 137 72 Q112 40 80 50 Q55 40 28 76" fill="#263238"/><rect x="60" y="125" width="40" height="45" rx="14" fill="#f3c6a8"/><path d="M30 165 Q80 145 130 165 L145 280 Q80 305 15 280 Z" fill="#f0f3f5"/><rect x="45" y="270" width="28" height="100" rx="12" fill="#334e68"/><rect x="88" y="270" width="28" height="100" rx="12" fill="#334e68"/><rect x="125" y="180" width="55" height="115" rx="18" fill="#315f72"/>
+    </g>
+    <g transform="translate(25,330) scale(.62)">
+      <circle cx="80" cy="75" r="55" fill="#f3c6a8"/><path d="M28 76 Q20 8 80 5 Q145 10 137 72 Q112 40 80 50 Q55 40 28 76" fill="#263238"/><rect x="60" y="125" width="40" height="45" rx="14" fill="#f3c6a8"/><path d="M30 165 Q80 145 130 165 L145 280 Q80 305 15 280 Z" fill="#f0f3f5"/><rect x="45" y="270" width="28" height="100" rx="12" fill="#334e68"/><rect x="88" y="270" width="28" height="100" rx="12" fill="#334e68"/>
+    </g>
+    <g transform="translate(205,330) scale(.62)">
+      <circle cx="80" cy="75" r="55" fill="#f3c6a8"/><path d="M28 76 Q20 8 80 5 Q145 10 137 72 Q112 40 80 50 Q55 40 28 76" fill="#263238"/><rect x="60" y="125" width="40" height="45" rx="14" fill="#f3c6a8"/><path d="M30 165 Q80 145 130 165 L145 280 Q80 305 15 280 Z" fill="#f0f3f5"/><rect x="45" y="270" width="28" height="100" rx="12" fill="#334e68"/><rect x="88" y="270" width="28" height="100" rx="12" fill="#334e68"/><path d="M135 210 Q195 180 205 235" fill="none" stroke="#f3c6a8" stroke-width="22" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- design principles -->
+  <g transform="translate(850,155)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#243447">Design principles</text>
+    <text x="0" y="42" font-family="Arial, sans-serif" font-size="17" fill="#243447">• Student, not combat hero</text>
+    <text x="0" y="76" font-family="Arial, sans-serif" font-size="17" fill="#243447">• Clear silhouette</text>
+    <text x="0" y="110" font-family="Arial, sans-serif" font-size="17" fill="#243447">• School / career context</text>
+    <text x="0" y="144" font-family="Arial, sans-serif" font-size="17" fill="#243447">• Walk + idle + interact</text>
+    <text x="0" y="178" font-family="Arial, sans-serif" font-size="17" fill="#243447">• Touch + keyboard friendly</text>
+    <text x="0" y="212" font-family="Arial, sans-serif" font-size="17" fill="#243447">• Low-weight 2D assets</text>
+    <text x="0" y="246" font-family="Arial, sans-serif" font-size="17" fill="#243447">• Inclusive customization later</text>
+    <rect x="0" y="285" width="250" height="90" rx="18" fill="#e7eef2"/>
+    <text x="20" y="320" font-family="Arial, sans-serif" font-size="15" fill="#243447">NOT FINAL ART</text>
+    <text x="20" y="347" font-family="Arial, sans-serif" font-size="14" fill="#52616b">Concept direction only.</text>
+  </g>
+
+  <!-- walk strip -->
+  <g transform="translate(80,650)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#243447">Animation target: 4-frame simple walk cycle</text>
+    <text x="420" y="0" font-family="Arial, sans-serif" font-size="15" fill="#52616b">idle • walk • interact • enter/exit</text>
+  </g>
+</svg>
