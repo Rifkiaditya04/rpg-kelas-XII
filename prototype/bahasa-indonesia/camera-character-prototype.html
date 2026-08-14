@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>World 1 — Camera + Character Visual Gameplay Prototype</title>
+  <style>
+    :root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#172033;background:#eef2f7}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:#eef2f7}
+    header{padding:16px 18px;background:#172033;color:#fff}
+    header h1{margin:0 0 4px;font-size:18px} header p{margin:0;opacity:.78;font-size:12px}
+    main{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:14px;padding:14px;max-width:1400px;margin:auto}
+    .stage-wrap{position:relative;border-radius:16px;overflow:hidden;background:#cfd8e3;box-shadow:0 8px 30px #0002;min-height:620px}
+    #viewport{position:relative;width:100%;height:min(76vh,760px);min-height:520px;overflow:hidden;background:#dfe6ee;touch-action:none}
+    #world{position:absolute;width:1200px;height:900px;left:50%;top:50%;transform-origin:50% 50%;will-change:transform}
+    #environment{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;user-select:none;pointer-events:none}
+    .room-overlay{position:absolute;inset:0;background:linear-gradient(180deg,#fff0 60%,#10182722)}
+    #player{position:absolute;left:610px;top:455px;width:54px;height:74px;transform:translate(-50%,-78%);z-index:5;transition:filter .12s}
+    .avatar{position:relative;width:100%;height:100%}
+    .head{position:absolute;width:28px;height:28px;border-radius:50%;left:13px;top:3px;background:#f0bd91;border:2px solid #7b4b35}
+    .hair{position:absolute;width:32px;height:19px;left:11px;top:0;border-radius:18px 18px 9px 9px;background:#2e2b2a}
+    .body{position:absolute;width:34px;height:34px;left:10px;top:28px;border-radius:8px 8px 5px 5px;background:#f7f7f4;border:2px solid #39465b}
+    .tie{position:absolute;left:25px;top:31px;width:5px;height:16px;background:#b33c3c;clip-path:polygon(0 0,100% 0,80% 100%,20% 100%)}
+    .legs{position:absolute;left:12px;top:59px;width:30px;height:14px;border-left:7px solid #27364c;border-right:7px solid #27364c}
+    .shadow{position:absolute;left:3px;bottom:-8px;width:48px;height:14px;border-radius:50%;background:#1720333b;filter:blur(2px);z-index:-1}
+    #player.moving .avatar{animation:bob .28s infinite alternate}
+    @keyframes bob{to{transform:translateY(-3px)}}
+    .interaction{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);padding:7px 10px;border-radius:999px;background:#172033e8;color:#fff;font-size:12px;white-space:nowrap;opacity:0;pointer-events:none;transition:.15s;z-index:10}
+    .interaction.show{opacity:1}
+    .hud{position:absolute;left:12px;top:12px;right:12px;display:flex;justify-content:space-between;gap:8px;z-index:20;pointer-events:none}
+    .badge{padding:8px 10px;border-radius:10px;background:#ffffffdd;backdrop-filter:blur(6px);font-size:12px;box-shadow:0 3px 12px #0001}
+    .touch{position:absolute;left:14px;bottom:14px;z-index:30;display:grid;grid-template-columns:48px 48px 48px;grid-template-rows:48px 48px 48px;gap:5px;opacity:.9}
+    .touch button{border:0;border-radius:12px;background:#172033dd;color:#fff;font-size:18px;touch-action:none}
+    .touch .up{grid-column:2}.touch .left{grid-column:1;grid-row:2}.touch .down{grid-column:2;grid-row:3}.touch .right{grid-column:3;grid-row:2}
+    aside{display:flex;flex-direction:column;gap:12px}
+    .card{background:#fff;border-radius:14px;padding:14px;box-shadow:0 5px 20px #0001}
+    .card h2{font-size:14px;margin:0 0 8px}.card p,.card li{font-size:12px;line-height:1.55}.card ul{padding-left:18px;margin:8px 0}
+    .ref{width:100%;height:180px;object-fit:contain;background:#f3f5f8;border-radius:10px}
+    .controls{display:grid;grid-template-columns:1fr 1fr;gap:7px}.controls button{padding:9px;border:1px solid #d8dee8;background:#fff;border-radius:9px;cursor:pointer}
+    .status{font-size:12px;line-height:1.5;padding:9px;border-radius:9px;background:#f5f7fa}
+    @media(max-width:900px){main{grid-template-columns:1fr;padding:8px}.stage-wrap{min-height:0}#viewport{height:68vh;min-height:480px}aside{display:grid;grid-template-columns:1fr 1fr}.card:last-child{grid-column:1/-1}}
+    @media(max-width:560px){aside{display:flex}.ref{height:150px}#viewport{height:66vh;min-height:440px}.badge{font-size:11px}.touch{transform:scale(.9);transform-origin:left bottom}}
+  </style>
+</head>
+<body>
+<header><h1>World 1 — Camera + Character Visual Gameplay Prototype</h1><p>QA-only visual prototype · bukan final art · menguji camera, movement, scale, interaction cue, dan mobile readability.</p></header>
+<main>
+  <section class="stage-wrap">
+    <div id="viewport" aria-label="Playable visual prototype">
+      <div class="hud"><div class="badge">Camera: elevated top-down / 3-quarter</div><div class="badge" id="coords">x 610 · y 455</div></div>
+      <div id="world">
+        <img id="environment" src="../../phase-3/visuals/desain-fix.svg" alt="Approved environment visual reference">
+        <div class="room-overlay"></div>
+        <div id="player" aria-label="Character gameplay proxy">
+          <div class="avatar"><div class="hair"></div><div class="head"></div><div class="body"></div><div class="tie"></div><div class="legs"></div><div class="shadow"></div></div>
+        </div>
+        <div id="interaction" class="interaction">E / TAP — Interaksi</div>
+      </div>
+      <div class="touch" aria-label="Touch movement controls">
+        <button class="up" data-dir="up">▲</button><button class="left" data-dir="left">◀</button><button class="down" data-dir="down">▼</button><button class="right" data-dir="right">▶</button>
+      </div>
+    </div>
+  </section>
+  <aside>
+    <div class="card"><h2>Approved Character Reference</h2><img class="ref" src="../../phase-3/visuals/karakter-fix.svg" alt="Approved character reference"><p>Reference ini adalah sumber identitas visual. Proxy di scene belum merupakan final sprite sheet.</p></div>
+    <div class="card"><h2>Camera / Character QA</h2><ul><li>WASD / arrow keys</li><li>Touch D-pad</li><li>Camera follows player</li><li>Stable world orientation</li><li>Interaction cue near center</li><li>Responsive mobile viewport</li></ul><div class="status" id="status">Status: siap dimainkan.</div></div>
+    <div class="card"><h2>Prototype boundary</h2><p>Yang diuji sekarang adalah presentasi gameplay: camera family, movement, scale, collision-free proxy movement, interaction cue, dan mobile readability. Final sprite production, final map assets, animation production, mission system, progression rules, audio, dan polish tetap mengikuti gate masing-masing.</p><div class="controls"><button id="reset">Reset</button><button id="center">Center camera</button></div></div>
+  </aside>
+</main>
+<script>
+(function(){
+  const world=document.getElementById('world'), player=document.getElementById('player'), viewport=document.getElementById('viewport');
+  const coords=document.getElementById('coords'), status=document.getElementById('status'), interaction=document.getElementById('interaction');
+  const keys=new Set(); const p={x:610,y:455}; const start={x:610,y:455}; const speed=3.1; let running=false;
+  function clamp(){p.x=Math.max(55,Math.min(1145,p.x));p.y=Math.max(80,Math.min(830,p.y));}
+  function updateCamera(){
+    clamp();
+    const vw=viewport.clientWidth,vh=viewport.clientHeight;
+    const scale=Math.max(.72,Math.min(1.02,Math.min(vw/980,vh/650)));
+    const tx=vw/2-p.x*scale, ty=vh/2-p.y*scale;
+    world.style.transform=`translate(${tx}px,${ty}px) scale(${scale})`;
+    player.style.left=p.x+'px'; player.style.top=p.y+'px';
+    coords.textContent=`x ${Math.round(p.x)} · y ${Math.round(p.y)}`;
+    const near=Math.hypot(p.x-610,p.y-455)<85; interaction.classList.toggle('show',near);
+  }
+  function frame(){
+    let dx=0,dy=0;
+    if(keys.has('ArrowLeft')||keys.has('a'))dx-=1;if(keys.has('ArrowRight')||keys.has('d'))dx+=1;if(keys.has('ArrowUp')||keys.has('w'))dy-=1;if(keys.has('ArrowDown')||keys.has('s'))dy+=1;
+    if(dx||dy){const n=Math.hypot(dx,dy);p.x+=dx/n*speed;p.y+=dy/n*speed;player.classList.add('moving');status.textContent='Status: bergerak — camera mengikuti player.';running=true}else{player.classList.remove('moving');running=false}
+    updateCamera(); requestAnimationFrame(frame);
+  }
+  window.addEventListener('keydown',e=>{if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','w','a','s','d'].includes(e.key)){e.preventDefault();keys.add(e.key)}});
+  window.addEventListener('keyup',e=>keys.delete(e.key));
+  document.querySelectorAll('[data-dir]').forEach(btn=>{
+    const d=btn.dataset.dir, map={up:'ArrowUp',down:'ArrowDown',left:'ArrowLeft',right:'ArrowRight'};
+    const down=e=>{e.preventDefault();keys.add(map[d])}, up=e=>{e.preventDefault();keys.delete(map[d])};
+    btn.addEventListener('pointerdown',down);btn.addEventListener('pointerup',up);btn.addEventListener('pointercancel',up);btn.addEventListener('pointerleave',up);
+  });
+  document.getElementById('reset').onclick=()=>{p.x=start.x;p.y=start.y;status.textContent='Status: posisi di-reset.'};
+  document.getElementById('center').onclick=()=>{p.x=610;p.y=455;status.textContent='Status: camera dipusatkan pada player.'};
+  viewport.addEventListener('pointerdown',e=>{if(e.target.closest('.touch'))return; if(interaction.classList.contains('show'))status.textContent='Status: interaction cue aktif — mission system belum diimplementasikan pada prototype ini.'});
+  window.addEventListener('resize',updateCamera); updateCamera(); requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
