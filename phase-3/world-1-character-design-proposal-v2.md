@@ -1,6 +1,6 @@
 # World 1 — Character Design Proposal v2
 
-**Status:** PROPOSAL — updated from user-provided visual references; pending explicit approval
+**Status:** APPROVED — user approval received 14 August 2026
 **Phase:** Phase 3 — Game Design / Character Design
 **World:** World 1 — Career Mission
 **Prerequisites:** Visual Direction v1 APPROVED; World 1 Map / World Structure v1 APPROVED
@@ -21,11 +21,11 @@ The project now provides canonical repository wrappers:
 - `phase-3/visuals/karakter-fix.svg`
 - `phase-3/visuals/desain-fix.svg`
 
-These wrappers point to the original repository reference SVGs. They are canonical reference pointers, not standalone copied production art. The original source files must not be deleted until a true standalone copy is committed.
+These wrappers point to the original repository reference SVGs. They are canonical reference pointers, not standalone copied production art. The original source files must not be deleted until a true standalone copy is committed and verified.
 
-## 3. Character direction — locked reference basis
+## 3. Character direction — approved reference basis
 
-The character visual language should follow the user-provided reference rather than the previous assistant concept sheet:
+The character visual language follows the user-provided reference rather than the previous assistant concept sheet:
 
 - clean illustrated/anime-inspired character rendering;
 - youthful Grade 12 student proportions;
@@ -37,9 +37,7 @@ The character visual language should follow the user-provided reference rather t
 
 The previous `world-1-character-design-v1.svg` remains an earlier exploration and is not the primary visual reference.
 
-## 4. Costume adaptation
-
-The reference appearance is adapted to the educational game context:
+## 4. Costume adaptation — approved
 
 ### Male protagonist
 - Grade 12 school uniform;
@@ -58,22 +56,22 @@ The reference appearance is adapted to the educational game context:
 
 The project does not copy a real school's exact uniform identity unless a later documented decision explicitly selects one.
 
-## 5. Camera / gameplay presentation
+## 5. Camera / gameplay presentation — approved direction
 
 The environment reference establishes the desired gameplay camera family: elevated top-down / 3-quarter perspective with visible floor plane, walls, room depth, shadows, and character orientation readable from above.
 
-The final game camera should therefore:
+The approved direction is to:
 
 - preserve the visual depth of the reference environment;
 - keep the player character readable at small/mobile scale;
-- allow movement in the four primary directions plus diagonals where implementation supports it;
+- support four primary movement directions plus diagonals where implementation supports it;
 - maintain consistent character/world orientation;
 - keep interactable objects visually legible;
 - avoid a flat white quiz-page presentation once the visual gameplay phase is implemented.
 
-Exact camera angle, zoom, tile scale, and sprite projection remain implementation parameters and must be tested against the reference environment before being locked numerically.
+Exact camera angle, zoom, tile scale, and sprite projection are implementation parameters to be validated in the Camera/Character Gameplay Specification before numeric locking.
 
-## 6. Character gameplay views
+## 6. Character gameplay views — approved requirements
 
 The production character set should be prepared for:
 
@@ -87,19 +85,24 @@ The production character set should be prepared for:
 
 The reference full-body illustration is a style/identity anchor; it is not itself the final gameplay sprite sheet.
 
-## 7. Evidence / Implementation / Interpretation
+## 7. Approval scope
 
-**Evidence:** The uploaded SVGs were directly rendered and inspected. The character SVG establishes the character art language; the environment SVG establishes the desired elevated gameplay presentation.
+User explicitly approved on 14 August 2026:
 
-**Implementation:** Canonical reference wrappers `karakter-fix.svg` and `desain-fix.svg` were added to the repository. No final gameplay sprite sheet, map asset pack, or runtime camera implementation is claimed complete by this proposal.
+1. Male and female school costume adaptation.
+2. Camera direction based on the environment reference.
+3. Character animation and gameplay-flow direction.
+4. No requested changes to the character/design direction at this gate.
+
+Approval supersedes v1 as the character visual direction and authorizes the next design step: **Camera/Character Gameplay Specification**. It does not authorize mass production of final sprites or final environment assets; those remain subject to production and visual QA.
+
+## 8. Evidence / Implementation / Interpretation
+
+**Evidence:** The uploaded SVGs were directly rendered and inspected. The character SVG establishes the character art language; the environment SVG establishes the desired elevated gameplay presentation. User explicitly approved the resulting costume, camera, animation, and gameplay direction.
+
+**Implementation:** Canonical reference wrappers `karakter-fix.svg` and `desain-fix.svg` exist in the repository. No final gameplay sprite sheet, map asset pack, or runtime camera implementation is claimed complete by this document.
 
 **Interpretation:** The strongest coherent direction is to preserve the user's chosen illustrated character style and adapt the costumes to Grade 12 school uniforms, while using the user's school-environment reference as the camera/composition basis.
-
-## 8. Approval gate
-
-**Current gate: PENDING USER APPROVAL.**
-
-Approval of v2 will supersede v1 as the character visual direction and authorize the next design step. It does not yet authorize mass production of final sprites or final environment assets; those remain subject to production and visual QA.
 
 ## 9. Important repository handling rule
 
