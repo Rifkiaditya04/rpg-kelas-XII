@@ -41,8 +41,10 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **Approved camera direction:** elevated top-down / 3-quarter perspective based on the user's environment reference; exact numeric angle/zoom remains an implementation test parameter.
 - **Approved animation/gameplay direction:** readable four-direction gameplay views, idle/walk/interaction states, exploration → interaction → mission → challenge → feedback → debrief → XP/progress → unlock.
 - **Camera / Character Gameplay Specification v1: APPROVED by user on 14 August 2026.** `phase-3/world-1-camera-character-gameplay-spec-v1.md`
-- **Camera + Character visual gameplay prototype: IMPLEMENTED; visual QA is now PENDING user browser playtest.** `prototype/bahasa-indonesia/camera-character-prototype.html`
+- **Mobile input direction: APPROVED by user on 14 August 2026 — contextual virtual analog stick, hidden while idle, shown during active touch movement, supporting smooth diagonal steering and turning while already moving.**
+- **Camera + Character visual gameplay prototype: IMPLEMENTED; updated with contextual analog movement; visual QA is now PENDING user browser/device playtest.** `prototype/bahasa-indonesia/camera-character-prototype.html`
 - Visual QA artifact: `phase-3/world-1-camera-character-visual-qa-v1.md`
+- Decision/log record: `Alur Kerja Proyek/PROJECT LOG/007-Academic-Planning-and-Contextual-Analog-Input.md`
 - **Next design sequence after visual QA PASS:** Mission System → Progression System → RPG Layer. No stage is skipped merely because it was previously undiscussed.
 
 ### TKA / Academic Planning foundation
@@ -52,6 +54,7 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Official TKA information states that assessment content considers applicable competencies/materials from Kurikulum Merdeka and Kurikulum 2013. This does **not** require rebuilding a separate Kurikulum 2013 curriculum.
 - **TKA Preparation / Academic Planning foundation v1 created.** `phase-3/tka-study-path-foundation-v1.md`
 - **TKA subject catalogue foundation v1 created.** `phase-3/tka-subject-catalog-foundation-v1.json`
+- **Approved Academic Planning Office structure:** School → Classrooms / Academic Office → Study Planning → Mandatory + Choice; Mandatory contains Bahasa Indonesia, Matematika, Bahasa Inggris; Choice contains Choice Slot 1 and Choice Slot 2.
 - The future game may contain an Academic Planning Office with mandatory subjects, two selected choice slots, locked unselected rooms, progression gates, and optional mastery gates.
 - This is a **game design foundation only**. It is not official TKA registration and does not yet encode final curriculum/subject-room rules.
 - SMK program-specific catalogue reconciliation remains `pending` before it can become a final game rule.
@@ -191,12 +194,14 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Character Design v1 — SUPERSEDED.
 - Character Design v2 — **APPROVED 14 August 2026**.
 - Camera / Character Gameplay Specification v1 — **APPROVED 14 August 2026**.
-- **Camera + Character visual gameplay prototype — IMPLEMENTED; Visual QA PENDING user browser playtest.**
+- **Mobile input direction — APPROVED 14 August 2026: contextual virtual analog stick, hidden while idle and visible only during active touch movement; supports smooth diagonal steering and turning while already moving.**
+- **Camera + Character visual gameplay prototype — UPDATED; contextual analog movement implemented; Visual QA PENDING user browser/device playtest.**
 - TKA subject-selection evidence — verified from current official sources; game subject-gating remains a design hook pending Mission/Progression System decisions.
 - **TKA Preparation / Academic Planning foundation v1 — DOCUMENTED; not yet implemented as final student-facing rules.**
 - **TKA subject catalogue foundation v1 — DOCUMENTED; current SMK program-specific catalogue remains pending reconciliation.**
+- **Academic Planning Office structure — APPROVED as a game-design foundation:** School → Classrooms / Academic Office → Study Planning → Mandatory + Choice; Mandatory = Bahasa Indonesia, Matematika, Bahasa Inggris; Choice = Choice Slot 1 + Choice Slot 2.
 - User's locked subject-room idea is recorded as a design hook: selection gates, progression gates, and optional mastery gates will be designed during Mission/Progression System work.
-- **Next:** user visual QA of Camera + Character prototype → Mission System → Progression System → RPG Layer.
+- **Next:** user visual/device QA of Camera + Character prototype → Mission System → Progression System → RPG Layer.
 
 ## 17. REQUIRED WORK SESSION PROTOCOL
 Operational procedure is also archived in `Alur Kerja Proyek/REQUIRED-WORK-SESSION-PROTOCOL.md`.
