@@ -80,7 +80,10 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - Visual direction decision record: `Alur Kerja Proyek/PROJECT LOG/decisions/003-world-1-visual-direction-approved.md`
 - **World 1 Map / World Structure v1: APPROVED by user as the structural design basis; final asset-level map production remains a later implementation step.** `phase-3/world-1-map-world-structure-proposal-v1.md`
 - Map decision record: `Alur Kerja Proyek/PROJECT LOG/decisions/004-world-1-map-structure-proposal.md`
-- **Next Phase 3 design step: Character Design, followed by Mission System, Progression System, and RPG Layer; no stage is skipped merely because it was previously undiscussed.**
+- **World 1 Character Design Proposal v1: created; status PROPOSAL / PENDING USER APPROVAL.** `phase-3/world-1-character-design-proposal-v1.md`
+- Character visual concept sheet: `phase-3/visuals/world-1-character-design-v1.svg`
+- Character design log: `Alur Kerja Proyek/PROJECT LOG/003-World-1-Character-Design.md`
+- **Next Phase 3 design step after Character approval: Mission System, followed by Progression System and RPG Layer; no stage is skipped merely because it was previously undiscussed.**
 
 ## 1. Tujuan utama
 Membangun game edukasi kelas XII berbasis browser untuk membantu persiapan ujian, dimulai dari Bahasa Indonesia dan kemudian dapat diperluas ke mata pelajaran lain.
