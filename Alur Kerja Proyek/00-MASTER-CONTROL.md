@@ -42,10 +42,11 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **Approved animation/gameplay direction:** readable four-direction gameplay views, idle/walk/interaction states, exploration → interaction → mission → challenge → feedback → debrief → XP/progress → unlock.
 - **Camera / Character Gameplay Specification v1: APPROVED by user on 14 August 2026.** `phase-3/world-1-camera-character-gameplay-spec-v1.md`
 - **Mobile input direction: APPROVED by user on 14 August 2026 — contextual virtual analog stick, hidden while idle, shown during active touch movement, supporting smooth diagonal steering and turning while already moving.**
-- **Camera + Character visual gameplay prototype: IMPLEMENTED; updated with contextual analog movement; visual QA is now PENDING user browser/device playtest.** `prototype/bahasa-indonesia/camera-character-prototype.html`
-- Visual QA artifact: `phase-3/world-1-camera-character-visual-qa-v1.md`
-- Decision/log record: `Alur Kerja Proyek/PROJECT LOG/007-Academic-Planning-and-Contextual-Analog-Input.md`
-- **Next design sequence after visual QA PASS:** Mission System → Progression System → RPG Layer. No stage is skipped merely because it was previously undiscussed.
+- **Camera + Character visual gameplay prototype: IMPLEMENTED; contextual analog movement implemented.** `prototype/bahasa-indonesia/camera-character-prototype.html`
+- **Camera + Character Visual QA v1: PASS — user live browser/device verified on 14 August 2026.** `phase-3/world-1-camera-character-visual-qa-v1.md`
+- QA record: `Alur Kerja Proyek/PROJECT LOG/qa/001-camera-character-visual-qa-pass.md`
+- Decision record: `Alur Kerja Proyek/PROJECT LOG/decisions/007-camera-character-visual-qa-approved.md`
+- **Next design sequence after visual QA PASS: Mission System → Progression System → RPG Layer. No stage is skipped merely because it was previously undiscussed.**
 
 ### TKA / Academic Planning foundation
 - **TKA evidence pass is current and design-only.** `phase-3/tka-subject-selection-evidence-v1.md`
@@ -125,7 +126,7 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Gameplay flow: soal → jawaban → feedback → XP → hasil.
 - Source cross-validation Buku Siswa ↔ Buku Guru dilakukan pada seed.
 - Controlled batch baru wajib melewati answer verification, pedagogical review, provenance audit, renderer compatibility, batch quality gate, dan live regression sebelum promosi.
-- Visual gameplay gates requiring browser interaction remain `QA_PENDING` until user browser evidence exists.
+- Visual gameplay gates requiring browser interaction remain `QA_PENDING` until user browser evidence exists; Camera + Character Visual QA v1 is now closed as PASS after user live playtest.
 - TKA foundation/catalogue does not become a final subject-rule gate until authoritative subject mapping and game-design decisions are approved.
 
 ## 9. Batasan Phase 3
@@ -194,14 +195,17 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Character Design v1 — SUPERSEDED.
 - Character Design v2 — **APPROVED 14 August 2026**.
 - Camera / Character Gameplay Specification v1 — **APPROVED 14 August 2026**.
-- **Mobile input direction — APPROVED 14 August 2026: contextual virtual analog stick, hidden while idle and visible only during active touch movement; supports smooth diagonal steering and turning while already moving.**
-- **Camera + Character visual gameplay prototype — UPDATED; contextual analog movement implemented; Visual QA PENDING user browser/device playtest.**
+- **Mobile input direction — APPROVED 14 August 2026: contextual virtual analog stick, hidden while idle and visible only during active touch movement; supports smooth diagonal steering and turning without requiring the character to stop.**
+- **Camera + Character visual gameplay prototype — UPDATED; contextual analog movement implemented.**
+- **Camera + Character Visual QA v1 — PASS 14 August 2026, user live browser/device verified.**
+- QA record: `Alur Kerja Proyek/PROJECT LOG/qa/001-camera-character-visual-qa-pass.md`.
+- Decision record: `Alur Kerja Proyek/PROJECT LOG/decisions/007-camera-character-visual-qa-approved.md`.
 - TKA subject-selection evidence — verified from current official sources; game subject-gating remains a design hook pending Mission/Progression System decisions.
 - **TKA Preparation / Academic Planning foundation v1 — DOCUMENTED; not yet implemented as final student-facing rules.**
 - **TKA subject catalogue foundation v1 — DOCUMENTED; current SMK program-specific catalogue remains pending reconciliation.**
 - **Academic Planning Office structure — APPROVED as a game-design foundation:** School → Classrooms / Academic Office → Study Planning → Mandatory + Choice; Mandatory = Bahasa Indonesia, Matematika, Bahasa Inggris; Choice = Choice Slot 1 + Choice Slot 2.
 - User's locked subject-room idea is recorded as a design hook: selection gates, progression gates, and optional mastery gates will be designed during Mission/Progression System work.
-- **Next:** user visual/device QA of Camera + Character prototype → Mission System → Progression System → RPG Layer.
+- **Next:** Mission System Design → Progression System Design → RPG Layer Design.
 
 ## 17. REQUIRED WORK SESSION PROTOCOL
 Operational procedure is also archived in `Alur Kerja Proyek/REQUIRED-WORK-SESSION-PROTOCOL.md`.
