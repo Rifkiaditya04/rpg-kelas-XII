@@ -1,9 +1,8 @@
 # World 1 — Mission System Proposal v1
 
 **Phase:** Phase 3 — Game Design  
-**Status:** PROPOSAL — ready for user review, not yet approved for runtime implementation  
-**World:** Bahasa Indonesia / World 1 — Career Mission  
-**Date:** 14 August 2026
+**Status:** **APPROVED WITH REVISION — user approved on 15 August 2026**  
+**World:** Bahasa Indonesia / World 1 — Career Mission
 
 ## 1. Evidence baseline
 
@@ -205,7 +204,47 @@ Mission unlocked
 
 This proposal does **not** encode final TKA subject rules. Those require the authoritative subject mapping and future curriculum/source evidence already required by Master Control.
 
-## 12. World 1 example
+## 12. Question-count rule — chapter/context driven
+
+**There is intentionally no fixed number of questions per chapter or mission.**
+
+Question quantity must be determined from the actual scope of the chapter/topic and from the mission's:
+
+- theme;
+- learning objective;
+- narrative;
+- context;
+- learning outcomes;
+- competency coverage;
+- required challenge evidence.
+
+A broad chapter may therefore receive more challenge items than a narrow chapter. A small chapter may require fewer items. The goal is **sufficient coverage**, not numerical symmetry.
+
+The content team must be able to demonstrate that the selected question set adequately covers the chapter's relevant learning objectives and mission context without introducing redundant questions merely to reach a quota.
+
+This rule applies to future mission/content planning and does not retroactively alter already approved canonical batches unless a separate content revision gate is opened.
+
+### Question-count decision principle
+
+```text
+Chapter / Topic Scope
+        ↓
+Theme + Narrative + Context
+        ↓
+Learning Objectives / Competencies
+        ↓
+Coverage Mapping
+        ↓
+Determine minimum sufficient challenge set
+        ↓
+Add questions only when they cover a distinct need
+        ↓
+Mission QA / Pedagogical Review
+```
+
+A chapter is considered sufficiently represented when its intended narrative/context and relevant learning outcomes can be demonstrated through the challenge set. The exact numeric count is an output of this analysis, not a preset input.
+
+## 13. World 1 example
 
 Current `BI12-W01-M01` can eventually evolve from:
 
@@ -232,11 +271,11 @@ Inspect vacancy / context
         ↓
 Learn relevant criteria
         ↓
-Relevance Challenge
+Relevance Challenge(s)
         ↓
-Language / structure challenge
+Language / structure challenge(s)
         ↓
-Application review
+Application review challenge(s)
         ↓
 Mission evaluation
         ↓
@@ -245,9 +284,9 @@ Mission evaluation
         └─ <70% → Training Room → Retry
 ```
 
-This is a **design example**, not yet a production implementation.
+The number of `(s)` challenge items is determined by the chapter/mission coverage analysis above, not by a fixed quota.
 
-## 13. Boundaries
+## 14. Boundaries
 
 This proposal does not yet finalize:
 - the full World 1 mission count;
@@ -261,20 +300,14 @@ This proposal does not yet finalize:
 
 Those decisions remain in their appropriate gates.
 
-## 14. Acceptance criteria for Mission System approval
+## 15. Acceptance status
 
-Before implementation begins, the user should approve:
+The user approved Mission System Proposal v1 with one explicit revision:
 
-1. Mission = contextual learning journey, not question list.
-2. Mission lifecycle and states.
-3. 70% current pass direction with non-punitive retry.
-4. Training Room integration.
-5. Data-driven mission manifest and separation from renderer.
-6. XP as game progression, separate from learning mastery.
-7. Academic Planning / TKA treated as future prerequisite hooks, not hard-coded final rules.
+> **Question count is chapter/context driven. There is no fixed number of questions per chapter.**
 
-## 15. Next step
+All other proposal decisions are approved as previously specified.
 
-**User review / approval of Mission System Proposal v1.**
+## 16. Next step
 
-After approval, create the Mission System Specification v1 and implement only a small World 1 mission-system prototype before expanding the full mission architecture.
+Create **Mission System Specification v1**, carrying forward the chapter/context-driven question-count rule. Then implement only a small controlled World 1 mission-system prototype before expanding the full mission architecture.
