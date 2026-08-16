@@ -2,23 +2,19 @@
 
 **Date:** 16 August 2026  
 **Phase:** Phase 3 — Mission System  
-**Status:** QA_PENDING — browser evidence required
+**Status:** QA_PENDING — browser evidence required; Training Room deferred by approved scope decision
 
-## Evidence
+## Re-sync / Evidence
 
-Re-sync was performed before execution. Master Control, the workflow rules, required work-session protocol, Project Log README, Mission System Proposal v1, Mission System Specification v1, the controlled prototype log, prototype dataset, mission wrapper, and actual renderer were checked.
+Re-sync was performed before execution. The workflow rules, required work-session protocol, Project Log structure, Mission System Proposal v1, Mission System Specification v1, controlled prototype log, prototype dataset, mission wrapper, actual renderer, and the approved below-70% scope decision were checked.
 
-The specification requires the first mission prototype to prove: mission entry, authored NPC/context, Learn/Teach, data-driven challenge, feedback, 70% evaluation, Training Room below threshold, retry, one-time completion reward, and progression/unlock transition.
+The approved decision states that **Retry/Remedial is the scope of Mission System Prototype v1**, while the dedicated **Training Room is deferred to a later gate when the project reaches the Progression / RPG Layer stage**.
 
-The controlled prototype log records that these implementation components were created but had not yet received browser QA evidence. fileciteturn306file0
-
-The dataset contains three approved Golden Dataset v1 seed IDs, complete Student Book / Teacher Guide provenance, and `mission_completion_xp: 0` so the mission layer can own the completion gate. fileciteturn313file0
-
-The actual renderer supports the relevant interaction types, randomizes question/options, evaluates answer values, and posts a mission result to its parent wrapper after completion. fileciteturn314file0
+The controlled prototype uses approved Golden Dataset v1 seed IDs and the actual generic renderer. The current below-70% branch is a remedial retry, not a distinct Training Room.
 
 ## Implementation
 
-Created QA-only runner:
+QA-only runner:
 
 `prototype/bahasa-indonesia/mission-system-qa.html`
 
@@ -33,31 +29,37 @@ The runner performs automatic preflight checks for:
 
 It then embeds the actual `mission-system-prototype-v1.html`, which in turn embeds the actual `renderer.js`.
 
-## Interpretation
+## Revised QA Scope
 
-The automated preflight is not sufficient to declare the gate PASS. Browser interaction evidence is deliberately separated from static/data checks.
-
-The user must verify the actual hosted flow for:
+The Mission System v1 browser regression must verify:
 
 1. Mission Brief;
 2. Learn/Teach NPC before challenge;
 3. correct-answer path;
 4. wrong-answer + explanation;
 5. randomized question/option order;
-6. below-70% Training Room;
-7. retry;
+6. below-70% **Retry / Remedial** branch;
+7. `Coba Lagi` retry behavior;
 8. ≥70% mission completion;
 9. completion reward exactly once;
 10. no generic renderer regression.
 
+A dedicated Training Room is **not** part of this v1 promotion gate. It remains a future feature requiring its own specification, implementation, and QA gate.
+
+## Interpretation
+
+The scope decision prevents the prototype from falsely claiming a Training Room exists when the current behavior is only retry/remedial. It also prevents unnecessary scope expansion before the Progression / RPG Layer phase.
+
+The QA gate can therefore be completed against the approved Mission System v1 scope without treating the deferred Training Room as a failure.
+
 ## Master Control
 
-Master Control was successfully updated before this QA handoff. It now records Mission System Specification v1 as created/verified, the Controlled Mission System Prototype v1 as implemented and QA_PENDING, and this Mission System QA / Regression Gate as the current gate.
+Master Control was previously updated to record Mission System Specification v1 as created/verified, the Controlled Mission System Prototype v1 as implemented and QA_PENDING, and this Mission System QA / Regression Gate as the current gate. The approved retry-vs-Training-Room scope decision is now part of the QA record.
 
 ## Gate status
 
-**Automated preflight:** PASS by construction when the runner reports all static checks PASS.  
-**Browser regression:** PENDING user-hosted-playtest evidence.  
+**Automated preflight:** PASS when the runner reports all static checks PASS.  
+**Browser regression:** PENDING final live-playtest evidence under the revised scope.  
 **Promotion:** BLOCKED until browser regression PASS.
 
 ## User test link
@@ -72,4 +74,4 @@ Direct mission prototype:
 
 ## Next step
 
-Run the hosted QA runner and report the observed result. If any check or gameplay path fails, fix the defect, re-run the gate, and only then promote Mission System v1.
+Run the hosted QA runner and report the final observed result. If all revised-scope checks PASS, the Mission System v1 can be promoted and the next project gate can be selected from Master Control. If any revised-scope check fails, fix the defect and re-run the gate before promotion.
