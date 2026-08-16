@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mission System QA / Regression Gate</title>
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#eef2f6;color:#18202a}.wrap{max-width:1000px;margin:auto;padding:18px}.card{background:#fff;border-radius:16px;padding:18px;margin:12px 0;box-shadow:0 6px 24px #0001}h1{margin-top:0}.row{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid #e5e7eb}.pass{color:#087f3d;font-weight:700}.fail{color:#b42318;font-weight:700}.pending{color:#8a5a00;font-weight:700}.btn{border:0;border-radius:10px;padding:11px 16px;background:#26384d;color:#fff;cursor:pointer}.btn:disabled{opacity:.45}.small{font-size:.9rem;opacity:.75}.iframe{width:100%;height:720px;border:1px solid #d7dce2;border-radius:12px;background:#fff}.hidden{display:none}.steps li{margin:8px 0}
+</style>
+</head>
+<body><main class="wrap">
+<section class="card"><div class="small">QA-only · not student-facing</div><h1>World 1 — Mission System QA / Regression Gate</h1><p>Runner ini memeriksa data/provenance secara otomatis lalu menyediakan harness untuk menjalankan <strong>actual mission prototype + actual renderer</strong>.</p><button class="btn" id="run">Run QA preflight</button></section>
+<section class="card"><h2>Automated preflight</h2><div id="checks"></div></section>
+<section class="card"><h2>Required browser regression</h2><ol class="steps"><li>Mulai Mission → pastikan Mission Brief tampil.</li><li>Lanjut → pastikan NPC Learn/Teach tampil sebelum soal.</li><li>Jalankan semua challenge melalui renderer aktual.</li><li>Uji minimal satu jawaban salah dan verifikasi explanation.</li><li>Uji randomization dengan mengulang mission; urutan soal/options boleh berubah.</li><li>Uji jalur <strong>&lt;70%</strong> → Training Room → Retry.</li><li>Uji jalur <strong>≥70%</strong> → Mission Complete → completion XP hanya sekali.</li><li>Pastikan tidak ada regresi pada generic renderer.</li></ol><p class="small">Harness otomatis akan menangkap hasil akhir renderer bila mission selesai.</p></section>
+<section class="card"><h2>Actual Mission System Prototype</h2><iframe id="app" class="iframe" title="Mission System Prototype"></iframe><div id="result" class="small"></div></section>
+</main>
+<script>
+const checks=document.getElementById('checks'),app=document.getElementById('app'),result=document.getElementById('result');
+const DATA='../../phase-3/world-1-mission-system-prototype-v1-dataset.json';
+function line(name,status,detail=''){const cls=status==='PASS'?'pass':status==='FAIL'?'fail':'pending';return `<div class="row"><div><strong>${name}</strong><div class="small">${detail}</div></div><span class="${cls}">${status}</span></div>`}
+async function run(){checks.innerHTML='';let data;
+try{const r=await fetch(DATA,{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);data=await r.json();checks.innerHTML+=line('DATA','PASS','Prototype dataset dapat dimuat');}catch(e){checks.innerHTML+=line('DATA','FAIL',e.message);return;}
+const items=Array.isArray(data.items)?data.items:[],ids=items.map(x=>x.id),unique=new Set(ids).size===ids.length;
+checks.innerHTML+=line('SCHEMA',items.length===3&&unique?'PASS':'FAIL',`${items.length} item · ID unik=${unique}`);
+const supported=new Set(['mcq','multi_select','ordering','document_inspection','evidence_matching','dialogue_analysis']);const types=items.every(x=>supported.has(x.question_type));
+checks.innerHTML+=line('TYPES',types?'PASS':'FAIL',items.map(x=>x.question_type).join(', '));
+const provenance=items.every(x=>x.source?.student_book?.pages&&x.source?.student_book?.section&&x.source?.teacher_guide?.pages&&x.source?.teacher_guide?.section&&x.provenance);
+checks.innerHTML+=line('PROVENANCE',provenance?'PASS':'FAIL',provenance?'Student Book + Teacher Guide provenance lengkap':'Ada provenance yang tidak lengkap');
+const idsOk=JSON.stringify(ids.sort())===JSON.stringify(['BI12-GOLD-001','BI12-GOLD-002','BI12-GOLD-009']);
+checks.innerHTML+=line('APPROVED SEED',idsOk?'PASS':'FAIL',ids.join(', '));
+const reward=data.rewards?.mission_completion_xp===0&&data.rewards?.xp_per_correct===100;
+checks.innerHTML+=line('REWARD CONTRACT',reward?'PASS':'FAIL',`xp_per_correct=${data.rewards?.xp_per_correct}; mission_completion_xp=${data.rewards?.mission_completion_xp}`);
+checks.innerHTML+=line('BROWSER', 'PENDING','Manual/user verification required for actual interaction paths');
+app.src='mission-system-prototype-v1.html?qa=1';
+}
+window.addEventListener('message',e=>{const d=e.data||{};if(d.type!=='MISSION_RENDERER_RESULT')return;result.innerHTML=`<strong>Renderer result captured:</strong> ${d.correct}/${d.total} · ${d.accuracy}% · renderer XP ${d.xp}. <strong>Manual gate decision remains required</strong> for wrong-answer, training, retry, and one-time completion reward paths.`;});
+document.getElementById('run').onclick=run;run();
+</script></body></html>
