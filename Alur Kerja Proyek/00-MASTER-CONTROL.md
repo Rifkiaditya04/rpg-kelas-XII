@@ -27,8 +27,11 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **World 1 A–F Integrated QA / Regression Gate: PASS; 18/18 approved IDs; A–C 900 XP + D–F 900 XP; feedback PASS; additive/versioned integration PASS**
 - **World 1 approved A–F gameplay integration: implemented for controlled mission `BI12-W01-M02`**
 - **Mission System Specification v1: CREATED and verified** `phase-3/world-1-mission-system-specification-v1.md`
-- **Controlled World 1 Mission System Prototype v1: IMPLEMENTED; QA_PENDING** `phase-3/world-1-mission-system-prototype-v1.json`, `phase-3/world-1-mission-system-prototype-v1-dataset.json`, `prototype/bahasa-indonesia/mission-system-prototype-v1.html`
-- **Current gate: Mission System QA / Regression Gate**
+- **Controlled World 1 Mission System Prototype v1: IMPLEMENTED and PROMOTED after user-verified hosted/browser regression PASS** `phase-3/world-1-mission-system-prototype-v1.json`, `phase-3/world-1-mission-system-prototype-v1-dataset.json`, `prototype/bahasa-indonesia/mission-system-prototype-v1.html`
+- **Mission System QA / Regression Gate: PASS — revised v1 scope user-verified in hosted browser**
+- **Mission System v1: APPROVED / PROMOTED** `Alur Kerja Proyek/PROJECT LOG/012-Mission-System-v1-Promotion.md`
+- **Training Room: DEFERRED to the later Progression / RPG Layer gate; Mission System v1 uses Retry / Remedial below 70%**
+- **Current next gate: determine and execute the next Phase 3 progression/gameplay gate from the verified Master Control; do not retroactively expand Mission System v1**
 - GitHub Pages workflow active; hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
 
 ### Phase 3 visual/game design status
@@ -130,7 +133,7 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Source cross-validation Buku Siswa ↔ Buku Guru dilakukan pada seed.
 - Controlled batch baru wajib melewati answer verification, pedagogical review, provenance audit, renderer compatibility, batch quality gate, dan live regression sebelum promosi.
 - Visual gameplay gates requiring browser interaction remain `QA_PENDING` until user browser evidence exists; Camera + Character Visual QA v1 is now closed as PASS after user live playtest.
-- **Mission System Prototype v1 remains `QA_PENDING` until the hosted/browser Mission System QA / Regression Gate is verified.**
+- **Mission System Prototype v1 QA / Regression Gate is now PASS by user-verified hosted/browser evidence and Mission System v1 is promoted.**
 - TKA foundation/catalogue does not become a final subject-rule gate until authoritative subject mapping and game-design decisions are approved.
 
 ## 9. Batasan Phase 3
@@ -210,8 +213,10 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - **Academic Planning Office structure — APPROVED as a game-design foundation:** School → Classrooms / Academic Office → Study Planning → Mandatory + Choice; Mandatory = Bahasa Indonesia, Matematika, Bahasa Inggris; Choice = Choice Slot 1 + Choice Slot 2.
 - User's locked subject-room idea is recorded as a design hook: selection gates, progression gates, and optional mastery gates will be designed during Mission/Progression System work.
 - **Mission System Specification v1 — CREATED and verified.** `phase-3/world-1-mission-system-specification-v1.md`
-- **Controlled World 1 Mission System Prototype v1 — IMPLEMENTED; QA_PENDING.** `phase-3/world-1-mission-system-prototype-v1.json`, `phase-3/world-1-mission-system-prototype-v1-dataset.json`, `prototype/bahasa-indonesia/mission-system-prototype-v1.html`.
-- **Current gate: Mission System QA / Regression Gate.**
+- **Controlled World 1 Mission System Prototype v1 — IMPLEMENTED and promoted after user-verified hosted/browser regression PASS.** `phase-3/world-1-mission-system-prototype-v1.json`, `phase-3/world-1-mission-system-prototype-v1-dataset.json`, `prototype/bahasa-indonesia/mission-system-prototype-v1.html`.
+- **Mission System QA / Regression Gate — PASS; revised v1 scope user-verified in hosted browser.**
+- **Mission System v1 — APPROVED / PROMOTED.** `Alur Kerja Proyek/PROJECT LOG/012-Mission-System-v1-Promotion.md`
+- **Below-70% scope decision — APPROVED: Mission System v1 uses Retry / Remedial; dedicated Training Room is deferred to Progression / RPG Layer.** `Alur Kerja Proyek/PROJECT LOG/011-Mission-System-QA-below-70-retry-correction.md`
 
 ## 17. REQUIRED WORK SESSION PROTOCOL
 Operational procedure is also archived in `Alur Kerja Proyek/REQUIRED-WORK-SESSION-PROTOCOL.md`.
