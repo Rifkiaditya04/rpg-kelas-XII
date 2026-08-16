@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World 1 — Mission System Prototype v1</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#18202a;background:#eef2f6}body{margin:0}.wrap{max-width:900px;margin:auto;padding:16px}.card{background:#fff;border-radius:18px;padding:22px;box-shadow:0 8px 30px #0001;margin:12px 0}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;opacity:.65}.btn{border:0;border-radius:12px;padding:12px 18px;background:#27364a;color:#fff;cursor:pointer}.btn:disabled{opacity:.4}.hidden{display:none}.npc{display:grid;grid-template-columns:90px 1fr;gap:16px;align-items:center}.portrait{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:#e7edf4;font-size:2rem}.teach{background:#f3f6f9;border-radius:14px;padding:16px}.teach li{margin:7px 0}.iframe-wrap{overflow:hidden;border-radius:16px;border:1px solid #d7dce2;background:#fff}.iframe-wrap iframe{display:block;width:100%;height:720px;border:0}.result{text-align:center}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{padding:14px;border-radius:12px;background:#f1f4f7}.warning{background:#fff5df;border:1px solid #e4c77b;border-radius:12px;padding:14px}@media(max-width:600px){.wrap{padding:10px}.card{padding:16px}.npc{grid-template-columns:1fr}.iframe-wrap iframe{height:760px}.stats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section id="brief" class="card">
+<div class="eyebrow">World 1 · Controlled Mission System Prototype v1</div>
+<h1>📄 The Application Review</h1>
+<p>Kamu mendapat misi untuk memeriksa sebuah dokumen lamaran kerja sebelum dikirim.</p>
+<p><strong>Tujuan:</strong> memahami apa yang perlu diperiksa, membuktikan pemahaman melalui challenge, lalu menentukan apakah misi sudah layak diselesaikan.</p>
+<button class="btn" id="start">Mulai Mission</button>
+</section>
+
+<section id="teach" class="card hidden">
+<div class="eyebrow">Learn / Teach</div>
+<div class="npc">
+<div class="portrait" aria-hidden="true">👩‍🏫</div>
+<div><h2>Guru Pembimbing</h2><p>“Sebelum lamaran dikirim, jangan hanya melihat apakah dokumennya terlihat rapi. Kita perlu memeriksa relevansi, menemukan masalah, dan melakukan pemeriksaan secara sistematis.”</p></div>
+</div>
+<div class="teach">
+<strong>Yang perlu kamu ingat:</strong>
+<ul><li>Informasi harus relevan dengan posisi yang dilamar.</li><li>Informasi yang tidak relevan perlu diseleksi.</li><li>Pemeriksaan dilakukan secara sistematis: relevansi, kelengkapan, lalu ketepatan bahasa dan penyajian.</li></ul>
+</div>
+<button class="btn" id="toChallenge">Saya siap melakukan challenge</button>
+</section>
+
+<section id="challenge" class="card hidden">
+<div class="eyebrow">Challenge</div>
+<h2>Buktikan pemahamanmu</h2>
+<p class="small">Challenge memakai <strong>renderer.js aktual</strong> dan dataset prototype yang mengambil tiga ID approved seed tanpa menyalin ulang item ke kode presentasi.</p>
+<div class="iframe-wrap"><iframe id="renderer" title="Question Renderer"></iframe></div>
+</section>
+
+<section id="training" class="card hidden">
+<div class="eyebrow">Training Room</div>
+<h2>Belum mencapai 70%</h2>
+<p id="trainingText"></p>
+<div class="warning"><strong>💡 Kamu mengalami kesulitan pada kompetensi yang sedang dilatih.</strong><br>Masuk Training Room untuk mencoba lagi. Kegagalan pertama tidak menghapus progres belajar.</div>
+<br><button class="btn" id="retry">Masuk Training Room / Coba Lagi</button>
+</section>
+
+<section id="result" class="card result hidden"></section>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const RENDERER='index.html?dataset=../../phase-3/world-1-mission-system-prototype-v1-dataset.json&mission=BI12-W01-M01';
+const PASS=70;
+let completionAwarded=false;
+function show(id){['brief','teach','challenge','training','result'].forEach(x=>$(x).classList.toggle('hidden',x!==id));}
+$('start').onclick=()=>show('teach');
+$('toChallenge').onclick=()=>{show('challenge');$('renderer').src=RENDERER;};
+$('retry').onclick=()=>{show('challenge');$('renderer').src=RENDERER+'&retry='+Date.now();};
+window.addEventListener('message',event=>{
+ const d=event.data||{};
+ if(d.type!=='MISSION_RENDERER_RESULT'||d.mission_id!=='BI12-W01-M01')return;
+ const accuracy=Number(d.accuracy)||0;
+ if(accuracy>=PASS){
+   if(!completionAwarded){completionAwarded=true;}
+   show('result');
+   $('result').innerHTML=`<div class="eyebrow">Mission Evaluation</div><h1>🏆 Mission Complete</h1><div class="stats"><div class="stat"><strong>${d.correct}/${d.total}</strong><br>Benar</div><div class="stat"><strong>${d.xp+100}</strong><br>XP</div><div class="stat"><strong>${accuracy}%</strong><br>Akurasi</div></div><p><strong>Lolos ≥ ${PASS}%.</strong> Misi selesai dan completion reward diberikan sekali.</p><p class="small">Game progression dan learning progression tetap dipisahkan.</p><button class="btn" onclick="location.reload()">Main Lagi</button>`;
+ }else{
+   show('training');
+   $('trainingText').textContent=`Hasilmu ${accuracy}%. Misi membutuhkan minimal ${PASS}% untuk dinyatakan selesai.`;
+ }
+});
+</script>
+</body>
+</html>
