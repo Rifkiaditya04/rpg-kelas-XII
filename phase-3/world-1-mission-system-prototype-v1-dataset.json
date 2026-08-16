@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.1",
+  "dataset_id": "BI12-W01-MISSION-SYSTEM-PROTOTYPE-V1",
+  "status": "controlled_prototype",
+  "source": "approved Golden Dataset v1 seed; selected IDs are not rewritten",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "items": []
+}
