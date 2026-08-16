@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "prototype_id": "BI12-W01-MISSION-SYSTEM-PROTOTYPE-V1",
+  "status": "controlled_prototype",
+  "mission_id": "BI12-W01-M01",
+  "title": "The Application Review",
+  "objective": "Menilai relevansi dan kualitas awal dokumen lamaran kerja sebelum dikirim.",
+  "completion_rule": {
+    "type": "percentage",
+    "pass_percent": 70,
+    "first_attempt_failure_is_non_punitive": true
+  },
+  "nodes": [
+    {
+      "id": "briefing",
+      "type": "narrative",
+      "title": "Mission Brief",
+      "next": "teach-relevance"
+    },
+    {
+      "id": "teach-relevance",
+      "type": "learn",
+      "title": "Guru Pembimbing",
+      "next": "challenge-sequence",
+      "content": {
+        "npc": "Guru Pembimbing",
+        "dialogue": "Sebelum lamaran dikirim, kita perlu memeriksa apakah informasi yang dipilih benar-benar relevan, apakah ada masalah yang harus diperbaiki, dan apakah pemeriksaan dilakukan secara sistematis.",
+        "teaching_points": [
+          "Periksa relevansi informasi terhadap tujuan lamaran.",
+          "Temukan bagian yang perlu diperbaiki sebelum dokumen dikirim.",
+          "Gunakan pemeriksaan yang sistematis, bukan hanya melihat tampilan akhir."
+        ]
+      }
+    },
+    {
+      "id": "challenge-sequence",
+      "type": "challenge",
+      "question_ids": [
+        "BI12-GOLD-001",
+        "BI12-GOLD-002",
+        "BI12-GOLD-009"
+      ],
+      "renderer": "prototype/bahasa-indonesia/index.html",
+      "dataset": "phase-3/world-1-mission-system-prototype-v1-dataset.json",
+      "next": "evaluation"
+    },
+    {
+      "id": "training",
+      "type": "training",
+      "title": "Training Room",
+      "next": "challenge-sequence",
+      "message": "Kamu belum mencapai 70%. Kita akan kembali berlatih pada kompetensi yang masih lemah sebelum mencoba lagi."
+    },
+    {
+      "id": "evaluation",
+      "type": "debrief",
+      "next": null
+    }
+  ],
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100,
+    "completion_award_once": true,
+    "achievement": "Career Mission: First Review"
+  }
+}
