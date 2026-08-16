@@ -26,6 +26,9 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **Controlled expansion XP defect RESOLVED and user-verified: 6/6 = 700 XP**
 - **World 1 A–F Integrated QA / Regression Gate: PASS; 18/18 approved IDs; A–C 900 XP + D–F 900 XP; feedback PASS; additive/versioned integration PASS**
 - **World 1 approved A–F gameplay integration: implemented for controlled mission `BI12-W01-M02`**
+- **Mission System Specification v1: CREATED and verified** `phase-3/world-1-mission-system-specification-v1.md`
+- **Controlled World 1 Mission System Prototype v1: IMPLEMENTED; QA_PENDING** `phase-3/world-1-mission-system-prototype-v1.json`, `phase-3/world-1-mission-system-prototype-v1-dataset.json`, `prototype/bahasa-indonesia/mission-system-prototype-v1.html`
+- **Current gate: Mission System QA / Regression Gate**
 - GitHub Pages workflow active; hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
 
 ### Phase 3 visual/game design status
@@ -46,7 +49,7 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **Camera + Character Visual QA v1: PASS — user live browser/device verified on 14 August 2026.** `phase-3/world-1-camera-character-visual-qa-v1.md`
 - QA record: `Alur Kerja Proyek/PROJECT LOG/qa/001-camera-character-visual-qa-pass.md`
 - Decision record: `Alur Kerja Proyek/PROJECT LOG/decisions/007-camera-character-visual-qa-approved.md`
-- **Next design sequence after visual QA PASS: Mission System → Progression System → RPG Layer. No stage is skipped merely because it was previously undiscussed.**
+- **Mission System follows Visual QA in the Phase 3 sequence; no stage is skipped merely because it was previously undiscussed.**
 
 ### TKA / Academic Planning foundation
 - **TKA evidence pass is current and design-only.** `phase-3/tka-subject-selection-evidence-v1.md`
@@ -127,6 +130,7 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Source cross-validation Buku Siswa ↔ Buku Guru dilakukan pada seed.
 - Controlled batch baru wajib melewati answer verification, pedagogical review, provenance audit, renderer compatibility, batch quality gate, dan live regression sebelum promosi.
 - Visual gameplay gates requiring browser interaction remain `QA_PENDING` until user browser evidence exists; Camera + Character Visual QA v1 is now closed as PASS after user live playtest.
+- **Mission System Prototype v1 remains `QA_PENDING` until the hosted/browser Mission System QA / Regression Gate is verified.**
 - TKA foundation/catalogue does not become a final subject-rule gate until authoritative subject mapping and game-design decisions are approved.
 
 ## 9. Batasan Phase 3
@@ -205,7 +209,9 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - **TKA subject catalogue foundation v1 — DOCUMENTED; current SMK program-specific catalogue remains pending reconciliation.**
 - **Academic Planning Office structure — APPROVED as a game-design foundation:** School → Classrooms / Academic Office → Study Planning → Mandatory + Choice; Mandatory = Bahasa Indonesia, Matematika, Bahasa Inggris; Choice = Choice Slot 1 + Choice Slot 2.
 - User's locked subject-room idea is recorded as a design hook: selection gates, progression gates, and optional mastery gates will be designed during Mission/Progression System work.
-- **Next:** Mission System Design → Progression System Design → RPG Layer Design.
+- **Mission System Specification v1 — CREATED and verified.** `phase-3/world-1-mission-system-specification-v1.md`
+- **Controlled World 1 Mission System Prototype v1 — IMPLEMENTED; QA_PENDING.** `phase-3/world-1-mission-system-prototype-v1.json`, `phase-3/world-1-mission-system-prototype-v1-dataset.json`, `prototype/bahasa-indonesia/mission-system-prototype-v1.html`.
+- **Current gate: Mission System QA / Regression Gate.**
 
 ## 17. REQUIRED WORK SESSION PROTOCOL
 Operational procedure is also archived in `Alur Kerja Proyek/REQUIRED-WORK-SESSION-PROTOCOL.md`.
