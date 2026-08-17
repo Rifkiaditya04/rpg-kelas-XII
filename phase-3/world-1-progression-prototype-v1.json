@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "prototype_id": "BI12-W01-PROGRESSION-PROTOTYPE-V1",
+  "status": "controlled_prototype",
+  "mission_id": "BI12-W01-M01",
+  "source": "phase-3/world-1-progression-system-specification-v1.md",
+  "xp": {
+    "source": "mission.reward_contract",
+    "completion_award_once": true,
+    "universal_level_curve": null
+  },
+  "unlock": {
+    "type": "mission_completion",
+    "target": "BI12-W01-M02",
+    "threshold": "approved mission completion",
+    "cross_world_threshold": null
+  },
+  "learning": {
+    "record_per_challenge": true,
+    "fields": ["skill_topic", "attempts", "correct", "accuracy", "cognitive_level", "difficulty", "recent_error_pattern", "last_attempt"]
+  },
+  "anti_farming": {
+    "completion_reward_once": true,
+    "retry_does_not_duplicate_completion_reward": true
+  }
+}
