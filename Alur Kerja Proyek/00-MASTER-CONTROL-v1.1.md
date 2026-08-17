@@ -3,7 +3,7 @@
 
 > **MASTER CONTROL v1.1 adalah LANJUTAN RESMI dari `Alur Kerja Proyek/00-MASTER-CONTROL.md`.**
 >
-> Dokumen ini tidak menggantikan, menghapus, atau membatalkan Master Control pertama. Untuk setiap sesi kerja, keputusan, perubahan, implementasi, QA, atau promotion, **WAJIB membaca lengkap `00-MASTER-CONTROL.md` terlebih dahulu dan kemudian membaca lengkap dokumen `00-MASTER-CONTROL-v1.1.md` ini**.
+> Dokumen ini tidak menggantikan, menghapus, atau membatalkan Master Control pertama. Untuk setiap sesi kerja, keputusan, perubahan, implementasi, QA, atau promotion, **WAJIB membaca lengkap `00-MASTER-CONTROL.md` terlebih dahulu dan kemudian membaca lengkap `00-MASTER-CONTROL-v1.1.md` ini**.
 >
 > Jika terjadi konflik, jangan memilih salah satu secara diam-diam. Tandai sebagai `conflicting`, lakukan cross-validation terhadap artefak sumber, dan dokumentasikan resolusinya di PROJECT LOG sebelum melanjutkan.
 
@@ -22,17 +22,15 @@
 - **Controlled World 1 Progression Prototype v1: IMPLEMENTED.**
 - **Progression QA / Regression Gate: PASS — user-verified live browser evidence.**
 - Evidence mencakup fresh private-browser state, first-attempt capture, completion XP, Mission Complete, learning evidence accumulation, accuracy calculation, anti-farming, unlock eligibility, dan persistence.
-- **Progression v1: READY FOR PROMOTION.**
+- **Progression v1: PROMOTED / APPROVED.** Promotion record: `Alur Kerja Proyek/PROJECT LOG/017-Master-Control-v1.1-Continuation-and-Progression-Promotion.md`.
 - Training Room tetap **DEFERRED** dari Mission System v1; Retry / Remedial tetap scope Mission System v1. Training Room menjadi gate berikutnya pada Progression / RPG Layer sesuai keputusan yang sudah dikunci.
 - Tidak ada universal player-level curve atau mastery threshold yang boleh diciptakan tanpa keputusan desain baru.
 
-## 2. Promotion checkpoint berikutnya
+## 2. Promotion checkpoint — CLOSED
 
-Langkah aktif setelah dokumen ini dibuat:
+**Promotion of World 1 Progression v1: PASS / APPROVED**
 
-**Promotion of World 1 Progression v1**
-
-Promotion wajib mempertahankan:
+Promotion mempertahankan:
 - pemisahan Game Progression dan Learning Progression;
 - completion reward diberikan sekali;
 - retry/remedial tidak menggandakan completion XP;
@@ -43,7 +41,7 @@ Promotion wajib mempertahankan:
 - approved content pools tetap additive/versioned;
 - Training Room belum diimplementasikan pada promotion ini.
 
-Promotion bukan berarti seluruh RPG Layer selesai. Promotion hanya mengesahkan **Progression v1** sebagai komponen approved yang dapat menjadi fondasi untuk gate berikutnya.
+Promotion tidak berarti seluruh RPG Layer selesai. Promotion hanya mengesahkan **Progression v1** sebagai komponen approved yang dapat menjadi fondasi untuk gate berikutnya.
 
 ## 3. Evidence ledger — Progression v1
 
@@ -107,3 +105,9 @@ Setelah **Promotion of World 1 Progression v1** selesai dan lulus, langkah berik
 ## 8. Audit note
 
 `00-MASTER-CONTROL-v1.1.md` dibuat untuk mengatasi pertumbuhan panjang Master Control tanpa kehilangan sejarah. File pertama tetap authoritative sebagai bagian pertama; file ini adalah continuation layer. Setiap sesi baru harus membaca **keduanya secara lengkap**.
+
+## 9. Current project milestone
+
+**World 1 Progression v1 PROMOTED / APPROVED.**
+
+The promotion is recorded in `PROJECT LOG/017-Master-Control-v1.1-Continuation-and-Progression-Promotion.md`. The next work must begin with the mandatory re-sync protocol and must not assume that promotion of Progression v1 equals completion of the full RPG Layer.
