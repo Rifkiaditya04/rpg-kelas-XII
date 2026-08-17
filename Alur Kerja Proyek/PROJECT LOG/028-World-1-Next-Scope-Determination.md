@@ -8,82 +8,78 @@ Re-sync → read Alur Kerja Proyek → read complete Master Control Part 1 + v1.
 
 ## Evidence
 
-### 1. Product direction
+### Product and RPG direction
 The active Master Control and GDD define the product as a Light RPG Educational Platform, not a quiz with RPG decoration. Mission context, learning, challenge, feedback, progression, and future mastery remain separate layers.
 
-### 2. Training Room status
-World 1 Training Room v1 is already PROMOTED / APPROVED. Its promotion record explicitly says the next scope must be determined through the mandatory protocol rather than invented from the promotion alone.
+### Current promoted state
+World 1 RPG Layer v1 and Training Room v1 are both PROMOTED / APPROVED. Training Room promotion explicitly requires the next scope to be determined through the mandatory protocol rather than invented from the promotion alone.
 
-### 3. Existing World 1 expansion plan
-`phase-3/world-1-expansion-plan.md` identifies Chapter I Lanes A–C as the next content-expansion target and requires a source extraction/provenance pass before drafting more questions. The exact number of questions must be determined by coverage, not a fixed quota.
+### Existing World 1 expansion plan
+`phase-3/world-1-expansion-plan.md` identifies Chapter I Lanes A–C as the next content-expansion target and requires source extraction/provenance before drafting more questions. The exact number of questions must be determined by coverage, not a fixed quota.
 
-### 4. Critical source cross-validation
-The current standard Kurikulum Merdeka Bahasa Indonesia Class XII Student Book in the repository is:
-`Buku Kurikulum/Kurikulum Merdeka/Indonesia_BS_KLS_XII_Rev_.md`.
+### Current standard Kurikulum Merdeka source
+The repository contains:
+- `Buku Kurikulum/Kurikulum Merdeka/Indonesia_BS_KLS_XII_Rev_.md`
+- `Buku Kurikulum/Kurikulum Merdeka/Indonesia_BG_KLS_XII_Rev_.md`
 
-Its Chapter 1 is titled **Mengomunikasikan Informasi Penting tentang Pendidikan dan/atau Pekerjaan** and its listed learning activities concern **surat resmi**, including listening/evaluating official letters, evaluating explicit/implicit messages, reflecting on official-letter content, analyzing official-letter structure/language, presenting errors, writing official letters, replying through electronic mail, and publishing announcement posters.
+The Student Book's Chapter 1 is **Mengomunikasikan Informasi Penting tentang Pendidikan dan/atau Pekerjaan** and its table of contents lists learning activities around **surat resmi**: listening/evaluating official letters, evaluating explicit/implicit messages, reflection, structure/language analysis, presentation of writing errors, writing official letters, replying through electronic mail, and publishing announcement posters.
 
-The corresponding standard Teacher Guide is:
-`Buku Kurikulum/Kurikulum Merdeka/Indonesia_BG_KLS_XII_Rev_.md`.
-It identifies itself as the revised 2025 teacher guide and states that it is based on the applicable 2025 learning outcomes and supports implementation/assessment of the Student Book.
+The Teacher Guide is the corresponding revised 2025 guide and supports implementation and assessment of the Student Book.
 
-### 5. Existing World 1 content source mismatch
-The currently approved World 1 A–C/D–F expansion artifacts and their provenance pass were built around **surat lamaran kerja / daftar riwayat hidup** and cite the repository's older `Indonesia_BS_TL...` / `Indonesia_BG_TL...` Tingkat Lanjut source set in `chapter-1-deep-content-provenance.md` and `chapter-1-deep-content-provenance-lanes-d-f-v1.md`.
+### Existing World 1 expansion source mismatch
+The currently approved World 1 A–C/D–F expansion provenance artifacts use `Indonesia_BS_TL...` / `Indonesia_BG_TL...` (Bahasa Indonesia Tingkat Lanjut) and center the controlled content on **surat lamaran kerja / daftar riwayat hidup**.
 
-Therefore the current approved prototype content can remain intact for regression/history, but it is **not the correct source basis for the next new main-game content expansion** if the locked project decision is that main-game content should use the current Kurikulum Merdeka standard source and K13 is reserved for future TKA preparation.
-
-### 6. TKA boundary
-TKA evidence remains a separate future Academic Planning / Preparation layer. It does not justify using K13 as the main World 1 source. The repository's TKA evidence says the project should use the official TKA assessment framework plus applicable curriculum intersection and current learning sources.
+This is materially different from the current standard Kurikulum Merdeka Class XII Chapter 1 source now stored in the repository.
 
 ## Interpretation
 
-The next step is **not** immediately generating more Career Mission questions from the existing A–F pool.
+The next step is **not** to generate more questions from the existing Career Mission source basis.
 
-The correct next step is a **World 1 Curriculum Merdeka Content Rebaseline**:
+The correct next step is a **World 1 Kurikulum Merdeka Standard Chapter 1 Content Rebaseline** before new main-game content is drafted or promoted.
+
+Existing approved A–F artifacts remain preserved for regression/history. They are not silently deleted or rewritten by this determination.
 
 ```text
-Current approved prototype content
+Existing approved prototype
         ↓
 Preserve for regression/history
         ↓
-Do NOT silently rewrite approved datasets
-        ↓
 Kurikulum Merdeka standard Student Book + Teacher Guide
         ↓
-Chapter 1 deep content / competency map
+Chapter 1 deep source / competency map
         ↓
 World 1 mission-domain revalidation
         ↓
-New Lane A–C coverage matrix
+Coverage matrix
         ↓
-Original question / teaching-content drafting
+Original teaching + challenge content
         ↓
 QA gates
 ```
 
-This is required because silently continuing with the old Career Mission academic domain would conflict with the user's previously approved source policy and with the current standard Kurikulum Merdeka source actually present in the repository.
+## TKA boundary
+TKA remains a separate Academic Planning / Preparation extension. K13 is relevant to the official TKA curriculum intersection but is not a reason to continue using the older K13/Tingkat Lanjut basis for new main-game World 1 content under the current source policy.
 
 ## Implementation boundary
-No existing approved A–F dataset is deleted, overwritten, or silently reclassified by this record.
+No existing approved dataset is deleted, overwritten, or silently reclassified by this record.
 
 No new student-facing question bank is generated by this determination record.
 
 ## Required next artifact
-Create a new controlled specification/provenance artifact for:
-**World 1 — Kurikulum Merdeka Standard Chapter 1 Content Rebaseline v1**.
+`phase-3/world-1-kurikulum-merdeka-chapter-1-content-rebaseline-v1.md`
 
-That artifact must establish:
-- authoritative Student Book and Teacher Guide source pair;
+This proposal must establish:
+- authoritative Student Book + Teacher Guide pair;
 - Chapter 1 scope;
 - learning activities / competencies;
 - skill map;
 - proposed World 1 gameplay translation;
 - copyright-safe authoring boundary;
-- coverage matrix for the next small batch;
-- explicit treatment of the existing Career Mission prototype content as legacy/regression content unless separately re-approved.
+- coverage matrix requirements;
+- treatment of existing Career Mission content as legacy/regression content unless separately re-approved.
 
 ## Approval boundary
-Because this rebaseline changes the academic domain of future World 1 content, the resulting rebaseline specification must be reviewed/approved before new content is promoted. This is a controlled design/content decision, not an automatic implementation change.
+Because the rebaseline changes the academic domain of future World 1 content, the rebaseline proposal requires user review/approval before new content drafting/promotion.
 
-## Next step
-**World 1 — Kurikulum Merdeka Standard Chapter 1 Content Rebaseline v1.**
+## Next gate
+**USER REVIEW / APPROVAL — World 1 Kurikulum Merdeka Standard Chapter 1 Content Rebaseline v1.**
