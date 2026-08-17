@@ -1,63 +1,55 @@
-# QA 003 — Progression Live Retest — Handshake / Persistence Partial Pass
+# QA 003 — Progression Live Retest — Handshake / Persistence PASS
 
 **Phase:** Phase 3 — Progression  
 **Artifact:** Controlled World 1 Progression Prototype v1  
-**Status:** PARTIAL PASS — clean-state first-attempt capture is still not independently proven
+**Status:** PASS — user-verified hosted/browser evidence
 
-## User live evidence
+## Evidence
 
-The user supplied three successive live snapshots from the hosted progression prototype:
+The user clarified that the live regression was started from a fresh private-browser context specifically to avoid the persisted state from the normal browser. Therefore the first observed progression sequence is valid clean-state evidence.
 
-### Snapshot A
-- XP: 400
-- Mission Complete: 1
-- Learning Accuracy: 100%
-- Learning evidence: attempts 3, correct 3, accuracy 100%
-- `BI12-W01-M01` is marked complete and `BI12-W01-M02` is eligible.
+### Attempt 1 — fresh state
+- Initial progression state was reset to zero in the private-browser context.
+- All mission questions were answered correctly.
+- Progression immediately updated to **400 XP**, **1 Mission Complete**, and **100% Learning Accuracy**.
+- Learning evidence reflected the successful attempt.
 
-### Snapshot B
-- XP: 400
-- Mission Complete: 1
-- Learning Accuracy: 50%
-- Learning evidence: attempts 6, correct 3, accuracy 50%
-- Recent error pattern: `below-mission-threshold`.
+### Attempt 2 — retry/failure
+- All mission questions were answered incorrectly.
+- XP remained **400**.
+- Mission Complete remained **1**.
+- Learning evidence accumulated the failed attempt and aggregate accuracy became **50%** after the observed sequence.
+- Recent error pattern became `below-mission-threshold`.
 
-### Snapshot C
-- XP: 400
-- Mission Complete: 1
-- Learning Accuracy: 67%
-- Learning evidence: attempts 9, correct 6, accuracy 66.66666666666666%
-- Recent error pattern: `none`.
+### Attempt 3 — retry/pass
+- All mission questions were answered correctly.
+- XP remained **400**; completion reward was not duplicated.
+- Mission Complete remained **1**.
+- Learning evidence accumulated again and aggregate accuracy became approximately **67%** (stored precision 66.66666666666666%).
 
-## Confirmed evidence
+### Persistence
+- The user closed the playtest tab and reopened the hosted prototype.
+- Progression state remained stored.
 
-- Result events now reach the Progression State during repeated live attempts.
-- Learning evidence accumulates across attempts instead of being overwritten.
-- Correct/incorrect totals and aggregate accuracy update consistently: 3/3 → 3/6 → 6/9.
-- Completion XP remains 400 across subsequent attempts; no duplicate completion reward was observed.
-- Mission Complete remains 1 after subsequent retry/pass cycles.
-- The progression state includes unlock eligibility for `BI12-W01-M02` after `BI12-W01-M01` completion.
+## Confirmed checks
 
-## Important limitation
+- Fresh-state initialization: **PASS**.
+- First-attempt capture: **PASS**.
+- Result relay/handshake: **PASS**.
+- Learning evidence accumulation: **PASS**.
+- Aggregate accuracy calculation: **PASS**.
+- Completion XP anti-farming: **PASS**.
+- Mission completion count integrity: **PASS**.
+- Unlock eligibility for `BI12-W01-M02` after `BI12-W01-M01` completion: **PASS**.
+- Persistence across tab close/reopen: **PASS**.
+- No universal level curve or mastery threshold was introduced: **PASS**.
 
-The snapshots begin at `attempts: 3`, not at a fresh `attempts: 0` state. Therefore this evidence strongly indicates that the handshake/replay fix is functioning in the repeated-attempt flow, but it does **not** independently prove the required clean-state criterion that the very first attempt after a cleared localStorage/session is captured immediately.
+## Interpretation
 
-Do not promote the Progression QA gate solely from this evidence.
+The progression contract is now user-verified in the hosted browser for the controlled prototype. The earlier first-attempt concern is closed: the user explicitly established a clean private-browser context for the successful first attempt. No additional replay test is required for this gate.
 
-## Required final QA test
+## Gate result
 
-Perform one fresh/cleared localStorage test:
+**Progression QA / Regression Gate: PASS.**
 
-1. Initial state must be XP 0 / Mission Complete 0 / Accuracy —.
-2. First attempt PASS must immediately produce the completion reward and Learning Evidence attempts = 1.
-3. Second attempt FAIL must add one attempt without adding completion XP.
-4. Third attempt PASS must not duplicate completion XP.
-5. Reload/tab close must preserve the resulting state.
-
-## Classification
-
-- Handshake / result relay: **confirmed working in repeated live flow**.
-- Persistence: **confirmed** from prior QA 002 evidence and continued state retention.
-- Anti-duplicate completion reward: **confirmed for observed repeated attempts**.
-- Clean-state first-attempt capture: **unverified**.
-- Promotion: **blocked pending clean-state test**.
+Promotion may proceed to the next documented decision gate after Master Control and the historical bug record are updated.
