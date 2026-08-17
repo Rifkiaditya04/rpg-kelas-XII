@@ -65,7 +65,9 @@ function render(){
  if(state.completionAwarded)unlock.classList.remove('hidden');
 }
 function save(){localStorage.setItem(STORAGE,JSON.stringify(state));render()}
+function announceReady(){if(mission.contentWindow)mission.contentWindow.postMessage({type:'PROGRESSION_READY',mission_id:'BI12-W01-M01'},'*')}
 render();
+mission.addEventListener('load',announceReady);
 mission.src='mission-system-prototype-v1.html';
 window.addEventListener('message',event=>{
  const d=event.data||{};
