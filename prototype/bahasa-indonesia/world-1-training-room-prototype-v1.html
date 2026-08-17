@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World 1 — Training Room Prototype v1</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#18202a;background:#eef2f6}body{margin:0}.wrap{max-width:900px;margin:auto;padding:16px}.card{background:#fff;border-radius:18px;padding:22px;box-shadow:0 8px 30px #0001;margin:12px 0}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;opacity:.65}.btn{border:0;border-radius:12px;padding:12px 18px;background:#27364a;color:#fff;cursor:pointer}.btn.secondary{background:#e9eef4;color:#18202a}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{padding:14px;border-radius:12px;background:#f1f4f7}.teach,.example,.practice{background:#f3f6f9;border-radius:14px;padding:16px;margin-top:12px}.choice{display:block;width:100%;text-align:left;margin:8px 0;padding:12px;border:1px solid #cbd3dc;border-radius:10px;background:#fff;cursor:pointer}.choice.correct{border-color:#72b887;background:#e9f7ee}.choice.wrong{border-color:#d99090;background:#fff0f0}.ok{background:#e9f7ee;border:1px solid #9fd4ad;border-radius:12px;padding:14px}.note{background:#fff7df;border:1px solid #e6ce86;border-radius:12px;padding:14px}.state{font-family:ui-monospace,monospace;background:#f7f8fa;border-radius:12px;padding:14px;white-space:pre-wrap}.hidden{display:none}@media(max-width:650px){.wrap{padding:10px}.card{padding:16px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="card">
+<div class="eyebrow">World 1 · Controlled Training Room Prototype v1</div>
+<h1>🎓 Training Room</h1>
+<p>QA-only prototype untuk menguji <strong>Training Hook → Explanation → Guided Example → Practice → Return</strong>.</p>
+<div class="grid">
+<div class="stat"><strong id="xp">0</strong><br>XP dari Training Room</div>
+<div class="stat"><strong id="missions">0</strong><br>Mission Complete</div>
+<div class="stat"><strong id="accuracy">—</strong><br>Learning Accuracy</div>
+</div>
+<p class="note"><strong>Boundary:</strong> Training Room tidak memberikan XP, tidak menyelesaikan mission, dan tidak menghapus evidence sebelumnya.</p>
+</section>
+
+<section id="locked" class="card hidden">
+<h2>🔒 Training Room belum tersedia</h2>
+<p>Training Room dibuka melalui Training Hook ketika learning evidence menunjukkan kesulitan pada mission yang sedang berjalan.</p>
+<p class="small">Untuk live QA, selesaikan atau gagal-kan Mission System v1 pada origin yang sama terlebih dahulu.</p>
+</section>
+
+<section id="room" class="card hidden">
+<div class="eyebrow">Learning Weakness</div>
+<h2>🎯 Kompetensi: Menelaah unsur surat lamaran kerja</h2>
+<p id="weakness"></p>
+
+<div class="teach">
+<h3>📖 Pembekalan</h3>
+<p>Surat lamaran kerja perlu diperiksa dari tujuan dan relevansinya. Informasi yang mendukung posisi yang dilamar perlu dipertahankan, sedangkan informasi yang tidak membantu tujuan lamaran perlu ditinjau kembali. Pemeriksaan juga perlu dilakukan secara sistematis agar keputusan tidak hanya berdasarkan tampilan dokumen.</p>
+</div>
+
+<div class="example">
+<h3>🔎 Contoh Terbimbing</h3>
+<p><strong>Situasi:</strong> sebuah lamaran ditujukan untuk posisi administrasi. Di dalamnya terdapat pengalaman mengelola dokumen dan jadwal, tetapi juga terdapat informasi pribadi yang tidak berkaitan dengan pekerjaan.</p>
+<p><strong>Cara berpikir:</strong> mulai dari tujuan lamaran, lalu tanyakan apakah setiap informasi membantu menunjukkan kesesuaian kandidat dengan posisi. Informasi yang tidak relevan tidak otomatis menjadi bukti kualitas dokumen hanya karena ditulis dengan lengkap.</p>
+</div>
+
+<div class="practice">
+<h3>✏️ Practice</h3>
+<p id="practiceQuestion"></p>
+<div id="choices"></div>
+<p id="practiceFeedback" class="hidden"></p>
+<button id="next" class="btn hidden">Latihan Berikutnya</button>
+</div>
+
+<div id="complete" class="ok hidden">
+<strong>Latihan selesai.</strong>
+<p>Training Room tidak memberikan XP dan tidak menambah Mission Complete.</p>
+<button class="btn" id="returnMission">Kembali ke Mission</button>
+</div>
+</section>
+
+<section class="card">
+<div class="eyebrow">Learning Evidence</div>
+<div id="evidence" class="state">—</div>
+</section>
+</main>
+<script>
+const STORAGE='bi12-w01-progression-v1';
+const state=JSON.parse(localStorage.getItem(STORAGE)||'null');
+const locked=document.getElementById('locked');
+const room=document.getElementById('room');
+const evidenceEl=document.getElementById('evidence');
+const xpEl=document.getElementById('xp');
+const missionsEl=document.getElementById('missions');
+const accuracyEl=document.getElementById('accuracy');
+const weaknessEl=document.getElementById('weakness');
+const qEl=document.getElementById('practiceQuestion');
+const choicesEl=document.getElementById('choices');
+const feedbackEl=document.getElementById('practiceFeedback');
+const nextBtn=document.getElementById('next');
+const complete=document.getElementById('complete');
+const PASS=70;
+const missionId='BI12-W01-M01';
+const trainingReturn='world-1-progression-prototype-v1.html';
+
+if(state){
+ xpEl.textContent=state.xp||0;
+ missionsEl.textContent=state.missions||0;
+ const entry=state.learning?.[missionId];
+ evidenceEl.textContent=entry?JSON.stringify(entry,null,2):'Tidak ada learning evidence untuk mission ini.';
+ if(entry){accuracyEl.textContent=Math.round(entry.accuracy)+'%';}
+ if(entry && entry.accuracy<70){
+   room.classList.remove('hidden');
+   weaknessEl.textContent=`Evidence terakhir menunjukkan ${Math.round(entry.accuracy)}% akurasi. Training Room menyediakan pembekalan dan practice; tidak ada perubahan XP atau Mission Complete.`;
+ }else locked.classList.remove('hidden');
+}else locked.classList.remove('hidden');
+
+const practice=[
+ {q:'Sebuah lamaran ditujukan untuk posisi administrasi. Informasi mana yang paling relevan untuk dipertahankan?',a:['Pengalaman mengelola dokumen dan jadwal','Hobi yang tidak berkaitan dengan pekerjaan','Informasi pribadi yang tidak berhubungan dengan posisi','Cerita perjalanan liburan'],c:0},
+ {q:'Apa langkah awal yang paling tepat saat menilai informasi dalam surat lamaran?',a:['Menilai apakah informasi mendukung tujuan lamaran','Menghapus semua informasi yang panjang','Memilih informasi yang paling menarik secara visual','Mengutamakan informasi yang paling pribadi'],c:0},
+ {q:'Mengapa pemeriksaan dilakukan secara sistematis?',a:['Agar keputusan tidak hanya berdasarkan tampilan dan setiap aspek relevan dapat diperiksa','Agar semua informasi harus dibuat lebih panjang','Agar surat terlihat seperti dokumen resmi','Agar semua pengalaman pribadi wajib dimasukkan'],c:0}
+];
+let qi=0,correct=0,answered=false;
+function renderQ(){
+ answered=false; feedbackEl.className='hidden'; nextBtn.className='btn hidden';
+ const item=practice[qi]; qEl.textContent=item.q; choicesEl.innerHTML='';
+ item.a.forEach((text,i)=>{const b=document.createElement('button');b.className='choice';b.textContent=text;b.onclick=()=>answer(i,b);choicesEl.appendChild(b)});
+}
+function answer(i,button){if(answered)return;answered=true;const item=practice[qi];document.querySelectorAll('.choice').forEach((b,n)=>{b.disabled=true;if(n===item.c)b.classList.add('correct')});if(i===item.c){correct++;feedbackEl.textContent='Benar. Gunakan alasan yang sama saat menilai dokumen: hubungkan informasi dengan tujuan dan posisi yang dilamar.';feedbackEl.className='ok'}else{button.classList.add('wrong');feedbackEl.textContent='Belum tepat. Kembali ke prinsip: mulai dari tujuan lamaran, lalu nilai relevansi setiap informasi.';feedbackEl.className='note'}if(qi<practice.length-1)nextBtn.className='btn';else{nextBtn.className='hidden';setTimeout(finish,0)}}
+nextBtn.onclick=()=>{qi++;renderQ()};
+function finish(){complete.classList.remove('hidden');evidenceEl.textContent=state?.learning?.[missionId]?JSON.stringify(state.learning[missionId],null,2):'—';}
+document.getElementById('returnMission').onclick=()=>{location.href=trainingReturn};
+if(!room.classList.contains('hidden'))renderQ();
+</script>
+</body>
+</html>
