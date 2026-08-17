@@ -17,7 +17,7 @@
 - Progression QA / Regression Gate: PASS — user-verified live browser evidence.
 - Progression v1: PROMOTED / APPROVED.
 - Evidence includes fresh private-browser state, completion XP, Mission Complete, learning evidence accumulation, accuracy, anti-farming, unlock eligibility, and persistence.
-- Training Room was deferred from Mission System v1 and is now a later RPG-layer component.
+- Training Room was deferred from Mission System v1 and is now implemented as the next controlled RPG-layer component.
 - No universal player-level curve or mastery threshold is approved without a separate design decision.
 
 ## 2. RPG Layer v1 — PROMOTED / APPROVED
@@ -30,44 +30,36 @@
 - Promoted integration scope: Explore → NPC/Context → Learn → Mission → Progression → Learning Weakness / Training Hook.
 - Verified runtime boundaries: Learn/context does not mutate XP or Mission Complete; Training Hook does not award XP; Retry remains distinct from Training Room; mission/progression state persists and M01 → M02 unlock remains deterministic.
 
-## 3. Training Room boundary
-- **Actual Training Room experience/content is NOT yet implemented or promoted.**
-- The current Training Room feature is only the approved weakness/entry hook.
-- The next official scope is **World 1 Training Room Specification v1**, followed by controlled implementation, QA/regression, live evidence, and promotion.
+## 3. Training Room v1 — IMPLEMENTED / QA PENDING
+- World 1 Training Room Specification v1: **APPROVED**.
+- Approval record: `Alur Kerja Proyek/PROJECT LOG/024-Training-Room-Specification-v1-Approval.md`.
+- Controlled Training Room Prototype v1: **IMPLEMENTED — QA PENDING**.
+- Implementation record: `Alur Kerja Proyek/PROJECT LOG/025-Training-Room-Prototype-v1-Implementation.md`.
+- Prototype: `prototype/bahasa-indonesia/world-1-training-room-prototype-v1.html`.
+- Progression Training Hook integration: `prototype/bahasa-indonesia/world-1-progression-prototype-v1.html`.
+- Actual Training Room is not promoted yet.
 - Training Room must not become an XP-farming mechanism or duplicate Mission completion rewards.
-- Training Room must be competency/evidence-oriented rather than a random extra-quiz loop.
+- Training Room is competency/evidence-oriented rather than a random extra-quiz loop.
 - Retry/Remedial remains distinct from Training Room.
 - Final mastery thresholds/algorithms remain unapproved until separately specified and approved.
 
-## 4. Scope determination after RPG Layer promotion
-The post-promotion scope was determined through re-sync against Master Control, latest promotion/QA records, and the approved RPG-layer boundary.
+## 4. Training Room implementation boundary
+Implemented flow:
+`Learning Weakness → Training Hook → Competency Context → Explanation → Guided Example → Practice → Return to Mission/Progression`.
 
-**Decision: NEXT OFFICIAL WORK = World 1 Training Room Specification v1.**
+Current implementation boundaries:
+- Training Room awards 0 XP.
+- Training Room does not increment Mission Complete.
+- Existing progression state is preserved.
+- Existing learning evidence is read rather than erased.
+- Practice content is controlled and original for the prototype; it is not a textbook copy.
+- No account/backend persistence is introduced.
+- This is a controlled prototype, not final visual presentation.
 
-Rationale:
-1. The RPG Layer already exposes a Training Hook based on learning weakness.
-2. The actual Training Room was explicitly excluded from RPG Layer promotion.
-3. Implementing broader RPG/gameplay expansion before defining this dependency would expand scope without completing the learning loop.
-4. Training Room requires its own specification and QA/promotion gate under the project's promotion discipline.
+## 5. Current scope determination
+The post-RPG promotion scope was formally determined as Training Room Specification v1, then approved by the user. The specification is now implemented in controlled prototype form.
 
-Expected conceptual loop:
-`Mission → Learning Evidence → Weakness → Training Hook → Training Room → Reattempt/Readiness → Mission/Progression`.
-
-## 5. Training Room specification constraints
-The specification must define, before implementation:
-- entry condition based on existing learning evidence;
-- competency/skill context;
-- explanation or guided learning content;
-- practice interaction;
-- return/readiness behavior;
-- XP and Mission Complete boundaries;
-- evidence updates;
-- Retry vs Training Room distinction;
-- persistence and deterministic state behavior;
-- content provenance requirements;
-- QA and live-browser acceptance criteria.
-
-It must NOT invent a universal mastery curve, final mastery threshold, combat system, economy, inventory, online backend, or unrelated RPG mechanics.
+**Current gate: Training Room QA / Regression Gate → user browser evidence → promotion.**
 
 ## 6. Existing project boundaries remain active
 - Golden Dataset v1 remains immutable.
@@ -91,6 +83,8 @@ No component may be marked PROMOTED solely because source code looks correct. Pr
 ## 9. Current milestone
 **World 1 RPG Layer v1: PROMOTED / APPROVED.**
 
-**Next: World 1 Training Room Specification v1.**
+**World 1 Training Room v1: IMPLEMENTED / QA PENDING.**
 
-This does not authorize implementation yet. Specification approval must precede controlled implementation.
+**Next: Training Room QA / Regression Gate.**
+
+Training Room implementation is not promotion; QA and live evidence remain separate gates.
