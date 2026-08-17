@@ -111,3 +111,30 @@ Setelah **Promotion of World 1 Progression v1** selesai dan lulus, langkah berik
 **World 1 Progression v1 PROMOTED / APPROVED.**
 
 The promotion is recorded in `PROJECT LOG/017-Master-Control-v1.1-Continuation-and-Progression-Promotion.md`. The next work must begin with the mandatory re-sync protocol and must not assume that promotion of Progression v1 equals completion of the full RPG Layer.
+
+## 10. World 1 RPG Layer & Training Room Specification v1 — APPROVED
+
+- User reviewed `phase-3/world-1-rpg-layer-training-room-specification-v1.md` and approved the specification.
+- Approval record: `Alur Kerja Proyek/PROJECT LOG/019-World-1-RPG-Layer-Training-Room-Specification-Approval.md`.
+- **Status: APPROVED FOR CONTROLLED PROTOTYPE IMPLEMENTATION.**
+- The approved scope tests World 1 exploration/context, NPC interaction, Learn/context hook, deterministic mission availability, progression-state consumption, learning weakness hook, and a controlled Training Room entry concept.
+- Retry/Remedial remains distinct from Training Room.
+- Training Room must not multiply mission completion XP.
+- Final mastery thresholds/algorithm remain unapproved until separately specified and approved.
+- Final art, music/sound, combat, inventory/economy, universal levels, skill trees, online accounts/backend, real-time AI NPC conversations, and Worlds 2–4 remain out of scope.
+
+## 11. Controlled World 1 RPG Layer Prototype v1 — IMPLEMENTED / QA_PENDING
+
+- Prototype: `prototype/bahasa-indonesia/world-1-rpg-layer-training-room-prototype-v1.html`.
+- Implementation commit: `7358a1d0a644a548f3bfbfd3f5f521218915508c`.
+- The prototype is QA-only and does not promote the RPG layer.
+- It consumes the existing Mission/Progression contracts rather than duplicating question content.
+- Runtime gate remains open until deterministic mission availability, NPC/context interaction, Learn/context behavior, Training Room XP boundary, Retry-vs-Training distinction, Mission regression, Progression regression, and required live browser evidence are verified.
+
+## 12. Current project milestone
+
+**World 1 Progression v1 PROMOTED / APPROVED.**
+
+**World 1 RPG Layer & Training Room Specification v1 APPROVED. Controlled RPG Layer Prototype v1 IMPLEMENTED / QA_PENDING.**
+
+The next mandatory step is **Controlled World 1 RPG Layer QA / Regression Gate**, not promotion and not final visual production.
