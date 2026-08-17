@@ -52,26 +52,44 @@ const unlock=document.getElementById('unlock');
 const STORAGE='bi12-w01-progression-v1';
 const initial={xp:0,missions:0,completionAwarded:false,learning:{}};
 let state=JSON.parse(localStorage.getItem(STORAGE)||'null')||initial;
-function render(){xpEl.textContent=state.xp;missionsEl.textContent=state.missions;const vals=Object.values(state.learning);if(vals.length){const a=vals.reduce((s,v)=>s+v.correct,0),t=vals.reduce((s,v)=>s+v.attempts,0);accuracyEl.textContent=t?Math.round(a/t*100)+'%':'—';learning.classList.remove('hidden');learningState.textContent=JSON.stringify(state.learning,null,2)}else{accuracyEl.textContent='—'}}
+function render(){
+ xpEl.textContent=state.xp;
+ missionsEl.textContent=state.missions;
+ const vals=Object.values(state.learning);
+ if(vals.length){
+   const a=vals.reduce((s,v)=>s+v.correct,0),t=vals.reduce((s,v)=>s+v.attempts,0);
+   accuracyEl.textContent=t?Math.round(a/t*100)+'%':'—';
+   learning.classList.remove('hidden');
+   learningState.textContent=JSON.stringify(state.learning,null,2);
+ }else{accuracyEl.textContent='—'}
+ if(state.completionAwarded)unlock.classList.remove('hidden');
+}
 function save(){localStorage.setItem(STORAGE,JSON.stringify(state));render()}
 render();
 mission.src='mission-system-prototype-v1.html';
 window.addEventListener('message',event=>{
  const d=event.data||{};
  if(d.type!=='MISSION_RENDERER_RESULT'||d.mission_id!=='BI12-W01-M01')return;
- const accuracy=Number(d.accuracy)||0;
  const correct=Number(d.correct)||0;
  const total=Number(d.total)||0;
- state.learning['BI12-W01-M01']={skill_topic:'career-application-review',attempts:total,correct,accuracy,cognitive_level:'from-content',difficulty:'from-content',recent_error_pattern:accuracy<70?'below-mission-threshold':'none',last_attempt:new Date().toISOString()};
- if(accuracy>=70){
-   if(!state.completionAwarded){
-     const missionXp=Number(d.xp)||0;
-     const completionBonus=100;
-     state.xp+=missionXp+completionBonus;
-     state.missions+=1;
-     state.completionAwarded=true;
-   }
-   unlock.classList.remove('hidden');
+ const accuracy=Number(d.accuracy)||0;
+ const previous=state.learning['BI12-W01-M01']||{attempts:0,correct:0};
+ state.learning['BI12-W01-M01']={
+   skill_topic:'career-application-review',
+   attempts:previous.attempts+total,
+   correct:previous.correct+correct,
+   accuracy:(previous.correct+correct)/(previous.attempts+total)*100,
+   cognitive_level:'from-content',
+   difficulty:'from-content',
+   recent_error_pattern:accuracy<70?'below-mission-threshold':'none',
+   last_attempt:new Date().toISOString()
+ };
+ if(accuracy>=70 && !state.completionAwarded){
+   const missionXp=Number(d.xp)||0;
+   const completionBonus=100;
+   state.xp+=missionXp+completionBonus;
+   state.missions+=1;
+   state.completionAwarded=true;
  }
  save();
 });
