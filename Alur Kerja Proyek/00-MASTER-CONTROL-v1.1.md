@@ -30,7 +30,7 @@
 - Promoted integration scope: Explore → NPC/Context → Learn → Mission → Progression → Learning Weakness / Training Hook.
 - Verified runtime boundaries: Learn/context does not mutate XP or Mission Complete; Training Hook does not award XP; Retry remains distinct from Training Room; mission/progression state persists and M01 → M02 unlock remains deterministic.
 
-## 3. Training Room v1 — QA PASS / PROMOTION PENDING
+## 3. Training Room v1 — PROMOTED / APPROVED
 - World 1 Training Room Specification v1: **APPROVED**.
 - Approval record: `Alur Kerja Proyek/PROJECT LOG/024-Training-Room-Specification-v1-Approval.md`.
 - Controlled Training Room Prototype v1: **IMPLEMENTED**.
@@ -39,7 +39,8 @@
 - Progression Training Hook integration: `prototype/bahasa-indonesia/world-1-progression-prototype-v1.html`.
 - Training Room QA / Regression Gate: **PASS — user-verified live browser evidence**.
 - QA record: `Alur Kerja Proyek/PROJECT LOG/026-Training-Room-QA-Gate.md`.
-- Actual Training Room is not promoted yet.
+- **Training Room v1: PROMOTED / APPROVED for the controlled World 1 prototype scope.**
+- Promotion record: `Alur Kerja Proyek/PROJECT LOG/027-Training-Room-v1-Promotion.md`.
 - Training Room must not become an XP-farming mechanism or duplicate Mission completion rewards.
 - Training Room is competency/evidence-oriented rather than a random extra-quiz loop.
 - Retry/Remedial remains distinct from Training Room.
@@ -60,9 +61,11 @@ Verified runtime boundaries:
 - This is a controlled prototype, not final visual presentation.
 
 ## 5. Current scope determination
-The post-RPG promotion scope was formally determined as Training Room Specification v1, then approved by the user. The specification was implemented and has now passed the core live QA checks.
+The post-RPG promotion scope was formally determined as Training Room Specification v1, then approved by the user. The specification was implemented, passed the core live QA checks, and was subsequently promoted through a separate documented promotion gate.
 
-**Current gate: Training Room v1 Promotion Review → documented promotion decision.**
+**Current status: Training Room v1 PROMOTED / APPROVED.**
+
+The next scope must be determined through the mandatory project protocol and cross-validation; promotion alone does not authorize unrelated feature expansion.
 
 ## 6. Existing project boundaries remain active
 - Golden Dataset v1 remains immutable.
@@ -86,8 +89,6 @@ No component may be marked PROMOTED solely because source code looks correct. Pr
 ## 9. Current milestone
 **World 1 RPG Layer v1: PROMOTED / APPROVED.**
 
-**World 1 Training Room v1: QA PASS / PROMOTION PENDING.**
+**World 1 Training Room v1: PROMOTED / APPROVED.**
 
-**Next: Training Room v1 Promotion Review.**
-
-Training Room QA PASS does not itself equal promotion; promotion remains a separate documented gate.
+**Next: determine the next World 1 gameplay/RPG expansion scope through the mandatory protocol.**
