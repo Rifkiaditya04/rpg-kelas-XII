@@ -2,139 +2,95 @@
 ## MASTER CONTROL — v1.1 CONTINUATION
 
 > **MASTER CONTROL v1.1 adalah LANJUTAN RESMI dari `Alur Kerja Proyek/00-MASTER-CONTROL.md`.**
->
 > Dokumen ini tidak menggantikan, menghapus, atau membatalkan Master Control pertama. Untuk setiap sesi kerja, keputusan, perubahan, implementasi, QA, atau promotion, **WAJIB membaca lengkap `00-MASTER-CONTROL.md` terlebih dahulu dan kemudian membaca lengkap `00-MASTER-CONTROL-v1.1.md` ini**.
->
-> Jika terjadi konflik, jangan memilih salah satu secara diam-diam. Tandai sebagai `conflicting`, lakukan cross-validation terhadap artefak sumber, dan dokumentasikan resolusinya di PROJECT LOG sebelum melanjutkan.
 
 ## 0. Aturan kontinuitas
-
 - `00-MASTER-CONTROL.md` = Master Control utama / bagian pertama.
 - `00-MASTER-CONTROL-v1.1.md` = kelanjutan resmi / bagian kedua.
-- Keduanya bersama-sama membentuk **Master Control aktif proyek**.
-- Nomor versi v1.1 menunjukkan perluasan kapasitas dokumentasi, bukan reset keputusan proyek.
-- Keputusan yang sudah dikunci di Master Control pertama tetap berlaku kecuali ada keputusan baru yang secara eksplisit mengubahnya dan perubahan tersebut didokumentasikan.
+- Keduanya bersama-sama membentuk Master Control aktif proyek.
 - Jangan membuat ringkasan pengganti yang menyebabkan pembacaan Master Control pertama dilewati.
+- Jika ada konflik, tandai `conflicting`, cross-validate artefak sumber, dan dokumentasikan resolusinya di PROJECT LOG.
 
-## 1. Status aktif setelah Progression QA
+## 1. Progression v1 — PROMOTED / APPROVED
+- Progression System Specification v1: APPROVED.
+- Controlled World 1 Progression Prototype v1: IMPLEMENTED.
+- Progression QA / Regression Gate: PASS — user-verified live browser evidence.
+- Progression v1: PROMOTED / APPROVED.
+- Evidence includes fresh private-browser state, completion XP, Mission Complete, learning evidence accumulation, accuracy, anti-farming, unlock eligibility, and persistence.
+- Training Room was deferred from Mission System v1 and is now a later RPG-layer component.
+- No universal player-level curve or mastery threshold is approved without a separate design decision.
 
-- **Progression System Specification v1: APPROVED.**
-- **Controlled World 1 Progression Prototype v1: IMPLEMENTED.**
-- **Progression QA / Regression Gate: PASS — user-verified live browser evidence.**
-- Evidence mencakup fresh private-browser state, first-attempt capture, completion XP, Mission Complete, learning evidence accumulation, accuracy calculation, anti-farming, unlock eligibility, dan persistence.
-- **Progression v1: PROMOTED / APPROVED.** Promotion record: `Alur Kerja Proyek/PROJECT LOG/017-Master-Control-v1.1-Continuation-and-Progression-Promotion.md`.
-- Training Room tetap **DEFERRED** dari Mission System v1; Retry / Remedial tetap scope Mission System v1. Training Room menjadi gate berikutnya pada Progression / RPG Layer sesuai keputusan yang sudah dikunci.
-- Tidak ada universal player-level curve atau mastery threshold yang boleh diciptakan tanpa keputusan desain baru.
+## 2. RPG Layer v1 — PROMOTED / APPROVED
+- World 1 RPG Layer & Training Room Specification v1: APPROVED.
+- Controlled World 1 RPG Layer Prototype v1: IMPLEMENTED.
+- Controlled World 1 RPG Layer QA / Regression Gate: **PASS — user-verified browser evidence**.
+- World 1 RPG Layer v1: **PROMOTED / APPROVED**.
+- Promotion record: `Alur Kerja Proyek/PROJECT LOG/022-World-1-RPG-Layer-Promotion-v1.md`.
+- QA record: `Alur Kerja Proyek/PROJECT LOG/021-World-1-RPG-Layer-QA-Gate-PASS-and-Promotion-v1.md`.
+- Promoted integration scope: Explore → NPC/Context → Learn → Mission → Progression → Learning Weakness / Training Hook.
+- Verified runtime boundaries: Learn/context does not mutate XP or Mission Complete; Training Hook does not award XP; Retry remains distinct from Training Room; mission/progression state persists and M01 → M02 unlock remains deterministic.
 
-## 2. Promotion checkpoint — CLOSED
-
-**Promotion of World 1 Progression v1: PASS / APPROVED**
-
-Promotion mempertahankan:
-- pemisahan Game Progression dan Learning Progression;
-- completion reward diberikan sekali;
-- retry/remedial tidak menggandakan completion XP;
-- learning evidence tetap dapat bertambah setelah retry;
-- XP bukan bukti academic mastery;
-- unlock tetap data-driven dan deterministic;
-- Golden Dataset v1 tetap immutable;
-- approved content pools tetap additive/versioned;
-- Training Room belum diimplementasikan pada promotion ini.
-
-Promotion tidak berarti seluruh RPG Layer selesai. Promotion hanya mengesahkan **Progression v1** sebagai komponen approved yang dapat menjadi fondasi untuk gate berikutnya.
-
-## 3. Evidence ledger — Progression v1
-
-### Confirmed
-- Fresh private-browser test menghasilkan initial state baru.
-- First successful mission attempt langsung tercatat.
-- Completion reward tercatat sebagai 400 XP.
-- Mission Complete tercatat sebagai 1.
-- Repeated attempts mengakumulasi `attempts` dan `correct`.
-- Accuracy berubah mengikuti aggregate evidence.
-- Failed retry tidak menghapus learning progress dan tidak menambah completion reward.
-- Successful retry tidak menggandakan completion reward.
-- `BI12-W01-M02` menjadi eligible setelah completion event.
-- State tetap tersedia setelah tab ditutup dan prototype dibuka kembali.
-
-### Historical defect
-- Result relay/iframe handshake pernah menyebabkan Progression State tetap 0 walaupun Mission System menampilkan result.
-- Hardened relay/ready handshake diperbaiki dan kemudian user-verified pada fresh private-browser test.
-- Bug log terkait harus dipertahankan sebagai historical audit record, bukan dihapus.
-
-## 4. Required work-session protocol — reinforced
-
-Setiap pekerjaan berikutnya wajib mengikuti urutan:
-
-**re-sync → baca seluruh `Alur Kerja Proyek` → baca lengkap `00-MASTER-CONTROL.md` → baca lengkap `00-MASTER-CONTROL-v1.1.md` → verifikasi artefak terbaru → Evidence / Implementation / Interpretation → cross-validation → baru eksekusi.**
-
-Setelah pekerjaan:
-
-**verifikasi hasil → dokumentasikan kejadian/keputusan/bug/QA di `PROJECT LOG` → update Master Control yang relevan tanpa menghapus histori.**
-
-Jika tool atau batas ukuran membuat Master Control sulit diperbarui, jangan mengganti isi dengan versi parsial. Gunakan dokumen continuation seperti v1.1 dan dokumentasikan hubungan keduanya.
-
-## 5. Promotion gate discipline
-
-Jangan menyatakan komponen `PROMOTED` hanya karena source code terlihat benar. Promotion memerlukan:
-1. implementation evidence;
-2. relevant deterministic/source QA;
-3. user/browser evidence bila gate membutuhkan runtime interaction;
-4. documented PASS;
-5. promotion record di PROJECT LOG;
-6. Master Control status yang dapat ditelusuri.
-
-## 6. Scope boundary
-
-Dokumen ini tidak mengubah keputusan tentang:
-- Visual Direction;
-- Map / World Structure;
-- Character Design v2;
-- Camera / Character Gameplay Specification;
-- Mission System v1;
-- approved A–F content;
-- TKA Academic Planning foundation;
-- Light RPG Educational Platform direction.
-
-Semua keputusan tersebut tetap mengikuti Master Control pertama dan artefak keputusan masing-masing.
-
-## 7. Next-stage rule
-
-Setelah **Promotion of World 1 Progression v1** selesai dan lulus, langkah berikutnya harus ditentukan berdasarkan Master Control + GDD + artefak terbaru. Jangan melompat ke implementasi besar hanya karena prototype tersedia. Jika tahap berikutnya adalah RPG Layer / Training Room / gameplay expansion, spesifikasi dan QA gate harus dibuat terlebih dahulu bila belum ada.
-
-## 8. Audit note
-
-`00-MASTER-CONTROL-v1.1.md` dibuat untuk mengatasi pertumbuhan panjang Master Control tanpa kehilangan sejarah. File pertama tetap authoritative sebagai bagian pertama; file ini adalah continuation layer. Setiap sesi baru harus membaca **keduanya secara lengkap**.
-
-## 9. Current project milestone
-
-**World 1 Progression v1 PROMOTED / APPROVED.**
-
-The promotion is recorded in `PROJECT LOG/017-Master-Control-v1.1-Continuation-and-Progression-Promotion.md`. The next work must begin with the mandatory re-sync protocol and must not assume that promotion of Progression v1 equals completion of the full RPG Layer.
-
-## 10. World 1 RPG Layer & Training Room Specification v1 — APPROVED
-
-- User reviewed `phase-3/world-1-rpg-layer-training-room-specification-v1.md` and approved the specification.
-- Approval record: `Alur Kerja Proyek/PROJECT LOG/019-World-1-RPG-Layer-Training-Room-Specification-Approval.md`.
-- **Status: APPROVED FOR CONTROLLED PROTOTYPE IMPLEMENTATION.**
-- The approved scope tests World 1 exploration/context, NPC interaction, Learn/context hook, deterministic mission availability, progression-state consumption, learning weakness hook, and a controlled Training Room entry concept.
+## 3. Training Room boundary
+- **Actual Training Room experience/content is NOT yet implemented or promoted.**
+- The current Training Room feature is only the approved weakness/entry hook.
+- The next official scope is **World 1 Training Room Specification v1**, followed by controlled implementation, QA/regression, live evidence, and promotion.
+- Training Room must not become an XP-farming mechanism or duplicate Mission completion rewards.
+- Training Room must be competency/evidence-oriented rather than a random extra-quiz loop.
 - Retry/Remedial remains distinct from Training Room.
-- Training Room must not multiply mission completion XP.
-- Final mastery thresholds/algorithm remain unapproved until separately specified and approved.
-- Final art, music/sound, combat, inventory/economy, universal levels, skill trees, online accounts/backend, real-time AI NPC conversations, and Worlds 2–4 remain out of scope.
+- Final mastery thresholds/algorithms remain unapproved until separately specified and approved.
 
-## 11. Controlled World 1 RPG Layer Prototype v1 — IMPLEMENTED / QA_PENDING
+## 4. Scope determination after RPG Layer promotion
+The post-promotion scope was determined through re-sync against Master Control, latest promotion/QA records, and the approved RPG-layer boundary.
 
-- Prototype: `prototype/bahasa-indonesia/world-1-rpg-layer-training-room-prototype-v1.html`.
-- Implementation commit: `7358a1d0a644a548f3bfbfd3f5f521218915508c`.
-- The prototype is QA-only and does not promote the RPG layer.
-- It consumes the existing Mission/Progression contracts rather than duplicating question content.
-- Runtime gate remains open until deterministic mission availability, NPC/context interaction, Learn/context behavior, Training Room XP boundary, Retry-vs-Training distinction, Mission regression, Progression regression, and required live browser evidence are verified.
+**Decision: NEXT OFFICIAL WORK = World 1 Training Room Specification v1.**
 
-## 12. Current project milestone
+Rationale:
+1. The RPG Layer already exposes a Training Hook based on learning weakness.
+2. The actual Training Room was explicitly excluded from RPG Layer promotion.
+3. Implementing broader RPG/gameplay expansion before defining this dependency would expand scope without completing the learning loop.
+4. Training Room requires its own specification and QA/promotion gate under the project's promotion discipline.
 
-**World 1 Progression v1 PROMOTED / APPROVED.**
+Expected conceptual loop:
+`Mission → Learning Evidence → Weakness → Training Hook → Training Room → Reattempt/Readiness → Mission/Progression`.
 
-**World 1 RPG Layer & Training Room Specification v1 APPROVED. Controlled RPG Layer Prototype v1 IMPLEMENTED / QA_PENDING.**
+## 5. Training Room specification constraints
+The specification must define, before implementation:
+- entry condition based on existing learning evidence;
+- competency/skill context;
+- explanation or guided learning content;
+- practice interaction;
+- return/readiness behavior;
+- XP and Mission Complete boundaries;
+- evidence updates;
+- Retry vs Training Room distinction;
+- persistence and deterministic state behavior;
+- content provenance requirements;
+- QA and live-browser acceptance criteria.
 
-The next mandatory step is **Controlled World 1 RPG Layer QA / Regression Gate**, not promotion and not final visual production.
+It must NOT invent a universal mastery curve, final mastery threshold, combat system, economy, inventory, online backend, or unrelated RPG mechanics.
+
+## 6. Existing project boundaries remain active
+- Golden Dataset v1 remains immutable.
+- Approved A–F content remains additive/versioned.
+- Mission System v1 remains approved/promoted.
+- Progression v1 remains approved/promoted.
+- Visual Direction, Map/World Structure, Character Design v2, Camera/Character Gameplay Specification, and Visual QA remain approved according to Master Control first.
+- TKA Academic Planning remains a design foundation and is not replaced by the current Training Room work.
+- Light RPG Educational Platform remains the project direction; the project is not reduced to a quiz with an RPG skin.
+
+## 7. Mandatory work-session protocol
+Every future session:
+**re-sync → read all `Alur Kerja Proyek` → read complete `00-MASTER-CONTROL.md` → read complete `00-MASTER-CONTROL-v1.1.md` → verify latest artifacts → Evidence / Implementation / Interpretation → cross-validation → execute.**
+
+After work:
+**verify result → document event/decision/bug/QA in PROJECT LOG → update relevant Master Control without deleting history.**
+
+## 8. Promotion gate discipline
+No component may be marked PROMOTED solely because source code looks correct. Promotion requires implementation evidence, relevant deterministic/source QA, runtime evidence when required, documented PASS, a PROJECT LOG promotion record, and traceable Master Control status.
+
+## 9. Current milestone
+**World 1 RPG Layer v1: PROMOTED / APPROVED.**
+
+**Next: World 1 Training Room Specification v1.**
+
+This does not authorize implementation yet. Specification approval must precede controlled implementation.
