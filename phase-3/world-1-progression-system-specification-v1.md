@@ -1,7 +1,7 @@
 # World 1 — Progression System Specification v1
 
-**Phase:** Phase 3 — Gameplay / Progression
-**Status:** DRAFT — awaiting user review/approval
+**Phase:** Phase 3 — Gameplay / Progression  
+**Status:** APPROVED — user approved all specification decisions  
 **Scope:** World 1 controlled gameplay; no full RPG implementation yet
 
 ## 1. Purpose
@@ -66,11 +66,11 @@ Challenge result
      Next eligible content
 ```
 
-## 5. XP contract — proposal, not yet locked
+## 5. XP contract — approved boundary
 
-The current project has verified XP behavior in existing mission/content gates, but this specification does not invent a new universal XP formula yet.
+The current project has verified XP behavior in existing mission/content gates. This specification does not invent a new universal XP formula.
 
-For v1 progression implementation, XP should be awarded through an explicit mission/challenge reward configuration rather than inferred from UI text or question count.
+For v1 progression implementation, XP must be awarded through an explicit mission/challenge reward configuration rather than inferred from UI text or question count.
 
 Required safeguards:
 
@@ -79,7 +79,7 @@ Required safeguards:
 - XP must be inspectable in the progression state;
 - existing approved mission XP values remain unchanged unless a separate approved decision changes them.
 
-A universal level curve and exact XP thresholds remain **UNVERIFIED / pending design approval**.
+A universal level curve and exact XP thresholds remain **UNVERIFIED / pending a separate design decision**. This is intentional and is not a blocker for the controlled World 1 progression prototype.
 
 ## 6. Mission progression
 
@@ -111,7 +111,7 @@ The current Mission System v1 completion threshold remains the approved 70% gate
 
 World unlocking must be explicit and versioned.
 
-Initial proposal for the World 1 slice:
+Initial approved World 1 slice:
 
 - World 1 is available according to the existing World 1 entry flow.
 - Completion of required World 1 mission content can produce eligibility for subsequent content.
@@ -130,7 +130,7 @@ attempts
 correct
 accuracy
 cognitive_level
- difficulty
+difficulty
 recent_error_pattern
 last_attempt
 ```
@@ -253,8 +253,14 @@ Before implementation:
 4. QA/regression verifies XP integrity, mission completion, unlock behavior, retry behavior, and learning-state separation.
 5. Browser/live evidence is required before promotion.
 
-## 18. Current status
+## 18. Approval record
 
-**SPECIFICATION DRAFT — USER REVIEW REQUIRED.**
+**USER APPROVAL:** Approved in full. The user explicitly approved all decisions and scope in this specification.
 
-No universal XP curve, level threshold, or mastery threshold is considered locked by this document.
+The specification is now locked as the design baseline for the controlled World 1 progression prototype. Any future change to locked behavior requires a new decision/revision rather than silent modification.
+
+## 19. Current status
+
+**SPECIFICATION APPROVED — READY FOR CONTROLLED IMPLEMENTATION.**
+
+Universal XP curve, level thresholds, and mastery thresholds remain intentionally unverified and require separate decisions if/when they become necessary.
