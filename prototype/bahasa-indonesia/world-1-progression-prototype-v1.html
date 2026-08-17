@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>World 1 — Progression Prototype v1</title>
 <style>
-:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#18202a;background:#eef2f6}body{margin:0}.wrap{max-width:980px;margin:auto;padding:16px}.card{background:#fff;border-radius:18px;padding:22px;box-shadow:0 8px 30px #0001;margin:12px 0}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;opacity:.65}.btn{border:0;border-radius:12px;padding:12px 18px;background:#27364a;color:#fff;cursor:pointer}.btn:disabled{opacity:.45}.hidden{display:none}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{padding:16px;border-radius:14px;background:#f1f4f7}.state{font-family:ui-monospace,monospace;background:#f7f8fa;border-radius:12px;padding:14px;white-space:pre-wrap}.iframe-wrap{overflow:hidden;border-radius:16px;border:1px solid #d7dce2;background:#fff}.iframe-wrap iframe{display:block;width:100%;height:760px;border:0}.ok{background:#e9f7ee;border:1px solid #9fd4ad;border-radius:12px;padding:14px}.note{background:#fff7df;border:1px solid #e6ce86;border-radius:12px;padding:14px}@media(max-width:650px){.wrap{padding:10px}.card{padding:16px}.grid{grid-template-columns:1fr}.iframe-wrap iframe{height:780px}}
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#18202a;background:#eef2f6}body{margin:0}.wrap{max-width:980px;margin:auto;padding:16px}.card{background:#fff;border-radius:18px;padding:22px;box-shadow:0 8px 30px #0001;margin:12px 0}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;opacity:.65}.btn{border:0;border-radius:12px;padding:12px 18px;background:#27364a;color:#fff;cursor:pointer}.btn:disabled{opacity:.45}.hidden{display:none}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{padding:16px;border-radius:14px;background:#f1f4f7}.state{font-family:ui-monospace,monospace;background:#f7f8fa;border-radius:12px;padding:14px;white-space:pre-wrap}.iframe-wrap{overflow:hidden;border-radius:16px;border:1px solid #d7dce2;background:#fff}.iframe-wrap iframe{display:block;width:100%;height:760px;border:0}.ok{background:#e9f7ee;border:1px solid #9fd4ad;border-radius:12px;padding:14px}.note{background:#fff7df;border:1px solid #e6ce86;border-radius:12px;padding:14px}.training{background:#eef6ff;border:1px solid #a9c8e8;border-radius:12px;padding:14px}@media(max-width:650px){.wrap{padding:10px}.card{padding:16px}.grid{grid-template-columns:1fr}.iframe-wrap iframe{height:780px}}
 </style>
 </head>
 <body>
@@ -35,6 +35,14 @@
 <div id="learningState" class="state"></div>
 </section>
 
+<section id="training" class="card hidden">
+<div class="eyebrow">Learning Weakness / Training Hook</div>
+<h2>🎯 Training Room</h2>
+<p id="trainingText"></p>
+<div class="training"><strong>💡 Kamu mengalami kesulitan pada kompetensi ini.</strong><br>Masuk Training Room untuk pembekalan, contoh terbimbing, dan practice. Training Room tidak memberikan XP.</div><br>
+<a class="btn" href="world-1-training-room-prototype-v1.html">Masuk Training Room</a>
+</section>
+
 <section id="unlock" class="card hidden">
 <div class="eyebrow">Unlock Eligibility</div>
 <h2>World 1 Progression</h2>
@@ -48,6 +56,8 @@ const missionsEl=document.getElementById('missions');
 const accuracyEl=document.getElementById('accuracy');
 const learning=document.getElementById('learning');
 const learningState=document.getElementById('learningState');
+const training=document.getElementById('training');
+const trainingText=document.getElementById('trainingText');
 const unlock=document.getElementById('unlock');
 const STORAGE='bi12-w01-progression-v1';
 const initial={xp:0,missions:0,completionAwarded:false,learning:{}};
@@ -61,7 +71,12 @@ function render(){
    accuracyEl.textContent=t?Math.round(a/t*100)+'%':'—';
    learning.classList.remove('hidden');
    learningState.textContent=JSON.stringify(state.learning,null,2);
- }else{accuracyEl.textContent='—'}
+   const entry=state.learning['BI12-W01-M01'];
+   if(entry && entry.accuracy<70){
+     training.classList.remove('hidden');
+     trainingText.textContent=`Evidence terakhir menunjukkan ${Math.round(entry.accuracy)}% akurasi. Hook remedial tersedia tanpa mengubah XP atau Mission Complete.`;
+   } else training.classList.add('hidden');
+ }else{accuracyEl.textContent='—';training.classList.add('hidden')}
  if(state.completionAwarded)unlock.classList.remove('hidden');
 }
 function save(){localStorage.setItem(STORAGE,JSON.stringify(state));render()}
