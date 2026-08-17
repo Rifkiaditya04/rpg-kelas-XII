@@ -3,78 +3,82 @@
 **Date:** 17 August 2026  
 **Phase:** Phase 3 — Progression  
 **Artifact:** Controlled World 1 Progression Prototype v1  
-**Status:** FIX IMPLEMENTED — REQUIRES LIVE RE-TEST
+**Status:** HARDENED FIX IMPLEMENTED — REQUIRES FRESH LIVE RE-TEST
 
-## Evidence
+## Evidence — first defect
 
-User performed live playtest with two attempts:
+Initial live playtest showed that Mission System displayed correct results but the outer Progression State remained at zero. The defect was traced to the nested iframe message path.
 
-- 1 successful attempt: 3/3 correct, 100%, Mission Complete, 400 XP shown inside the Mission System.
-- 1 failed attempt: below 70%, Retry / Remedial shown.
-- Outer Progression State remained:
-  - XP: 0
-  - Mission Complete: 0
-  - Learning Accuracy: —
+## First fix
 
-Therefore the Mission System displayed the correct local result, but the outer Progression Prototype did not receive or persist the result event.
+The Mission System was changed to relay `MISSION_RENDERER_RESULT` to its parent Progression Prototype.
 
-## Root cause
+## Evidence — second live playtest after relay fix
 
-The Progression Prototype listens for `MISSION_RENDERER_RESULT` on its own window. The actual event originates from the Question Renderer iframe nested inside the Mission System iframe.
+User reported:
 
-`window.postMessage` does not bubble through iframe boundaries automatically.
+1. First attempt: all answers correct, but Progression State did not change.
+2. Second attempt: all answers wrong; Progression State began updating.
+3. Third attempt: all answers correct; XP / mission state / learning accuracy updated.
+4. Closing the tab and reopening the hosted prototype preserved the progression state.
 
-The message path was therefore:
+Observed state after the sequence:
+
+- XP: 400
+- Mission Complete: 1
+- Learning Accuracy: 67%
+
+### Interpretation
+
+Persistence is confirmed by user evidence because state survived tab closure/reopen.
+
+The first-attempt capture is **not yet confirmed reliable**. Because the first passing attempt was not reflected while later attempts were, the system still has a startup/handshake race or equivalent first-result delivery risk.
+
+The displayed 67% accuracy also cannot be used as proof that all three reported attempts were accumulated correctly without first-attempt capture; it is an observed state, not yet a validated expected result for the described sequence.
+
+## Root-cause hardening
+
+The nested iframe chain is:
 
 ```text
 Question Renderer
       ↓ postMessage
 Mission System iframe
-      ✕ no relay
-Progression Prototype
-```
-
-The Progression Prototype listener itself was not the primary defect.
-
-## Fix
-
-`prototype/bahasa-indonesia/mission-system-prototype-v1.html` was updated to relay the validated renderer result to its parent when embedded:
-
-```text
-Question Renderer
-      ↓
-Mission System iframe
       ↓ relay
 Progression Prototype
-      ↓
-localStorage + progression state
 ```
 
-The Mission System UI was restored to its previous approved presentation while adding only the relay behavior.
+The relay alone is insufficient if the parent/child relationship is not ready when the first result is emitted. To remove that timing dependency, the Mission System now caches the latest validated renderer result and can replay it when the Progression Prototype sends a `PROGRESSION_READY` handshake.
 
-Fix commit:
-`08f3108919dd9c86bb7fa8062fb1ee6fc886c9f6`
+The Progression Prototype now sends `PROGRESSION_READY` after the Mission System iframe loads. The Mission System responds with its cached result when one exists.
 
-## Important state note
+## Hardened implementation
 
-The two previous live-playtest attempts cannot be reconstructed retroactively because the event never reached the progression state and therefore was never persisted there.
+Commits:
 
-The next live test must use fresh attempts after the fix.
+- First relay fix: `08f3108919dd9c86bb7fa8062fb1ee6fc886c9f6`
+- Mission handshake/replay hardening: `5db5ea4dfac413eed97eb4ebe3a3c3b5d7ee63fa`
+- Progression ready-handshake implementation: `75ba1d06c3a267b05852873cac46b3e804f5497d`
 
-## Required re-test
+The Mission System presentation remains unchanged in scope; the changes are transport/reliability behavior only.
 
-1. Open the current hosted Progression Prototype.
-2. Complete one passing mission.
-3. Verify outer XP changes from 0 and Mission Complete changes to 1.
-4. Verify Learning Evidence appears.
-5. Retry and produce a failing attempt.
-6. Verify failed attempt does not award completion XP.
-7. Retry and pass again.
-8. Verify completion reward is still awarded only once.
-9. Reload the page and verify persisted progression state remains intact.
+## Required fresh re-test
+
+Use a clean progression state for the test. The existing browser state should not be used as evidence for the first-attempt test.
+
+1. Clear site data/localStorage for the hosted prototype, or use a fresh browser/incognito context.
+2. Open the current hosted Progression Prototype.
+3. First attempt: PASS (all questions correct).
+4. Immediately verify outer Progression State updates after submission.
+5. Verify Learning Evidence appears and reflects that first attempt.
+6. Second attempt: FAIL (<70%).
+7. Verify learning evidence increases while completion XP does not increase.
+8. Third attempt: PASS.
+9. Verify completion XP is awarded only once.
+10. Close the tab, reopen the hosted prototype, and verify persisted state.
 
 ## Gate status
 
-**Progression QA / Regression Gate: FAIL — fixed, awaiting user re-test.**
+**Progression QA / Regression Gate: FAIL — first-attempt capture reliability not yet proven; hardened fix awaiting fresh live re-test.**
 
-Promotion remains blocked until fresh browser evidence confirms the corrected message path and persistence behavior.
+Promotion remains blocked until a clean-state first-attempt PASS is observed and persistence/anti-farming checks pass.
