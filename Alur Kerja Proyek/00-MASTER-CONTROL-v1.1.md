@@ -65,16 +65,24 @@ The post-RPG promotion scope was formally determined as Training Room Specificat
 
 **Current status: Training Room v1 PROMOTED / APPROVED.**
 
-The next scope must be determined through the mandatory project protocol and cross-validation; promotion alone does not authorize unrelated feature expansion.
+The next scope has now been determined through the mandatory protocol as a **World 1 Kurikulum Merdeka Standard Chapter 1 Content Rebaseline** before any new question-bank expansion.
+
+Reason: the repository's current standard Kurikulum Merdeka Bahasa Indonesia Class XII Student Book (`Buku Kurikulum/Kurikulum Merdeka/Indonesia_BS_KLS_XII_Rev_.md`) defines Chapter 1 around surat resmi and related communication activities, while the existing World 1 A–F expansion provenance artifacts were built from an older Tingkat Lanjut source set centered on surat lamaran kerja/CV. Existing approved prototype content is preserved for regression/history, but new main-game content must not silently continue the old source basis.
+
+Determination record: `Alur Kerja Proyek/PROJECT LOG/028-World-1-Next-Scope-Determination.md`.
+Rebaseline proposal: `phase-3/world-1-kurikulum-merdeka-chapter-1-content-rebaseline-v1.md`.
+
+**Current next gate: USER REVIEW / APPROVAL of World 1 Kurikulum Merdeka Standard Chapter 1 Content Rebaseline v1.**
 
 ## 6. Existing project boundaries remain active
 - Golden Dataset v1 remains immutable.
-- Approved A–F content remains additive/versioned.
+- Approved A–F content remains additive/versioned and is not deleted by the rebaseline.
 - Mission System v1 remains approved/promoted.
 - Progression v1 remains approved/promoted.
 - Visual Direction, Map/World Structure, Character Design v2, Camera/Character Gameplay Specification, and Visual QA remain approved according to Master Control first.
-- TKA Academic Planning remains a design foundation and is not replaced by the current Training Room work.
+- TKA Academic Planning remains a design foundation and is not replaced by the current Training Room or World 1 content rebaseline.
 - Light RPG Educational Platform remains the project direction; the project is not reduced to a quiz with an RPG skin.
+- K13 remains reserved for the future TKA Preparation / Academic Planning intersection where supported by the official TKA framework; it is not the automatic source for new main-game World 1 content.
 
 ## 7. Mandatory work-session protocol
 Every future session:
@@ -91,4 +99,4 @@ No component may be marked PROMOTED solely because source code looks correct. Pr
 
 **World 1 Training Room v1: PROMOTED / APPROVED.**
 
-**Next: determine the next World 1 gameplay/RPG expansion scope through the mandatory protocol.**
+**Next: World 1 Kurikulum Merdeka Standard Chapter 1 Content Rebaseline v1 — USER REVIEW / APPROVAL.**
