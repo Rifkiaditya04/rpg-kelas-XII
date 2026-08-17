@@ -32,7 +32,8 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **Mission System v1: APPROVED / PROMOTED** `Alur Kerja Proyek/PROJECT LOG/012-Mission-System-v1-Promotion.md`
 - **Training Room: DEFERRED to the later Progression / RPG Layer gate; Mission System v1 uses Retry / Remedial below 70%**
 - **Progression System Specification v1: APPROVED by user; locked as design baseline** `phase-3/world-1-progression-system-specification-v1.md`
-- **Current next gate: Controlled World 1 Progression Prototype → Progression QA / Regression Gate**
+- **Controlled World 1 Progression Prototype v1: IMPLEMENTED — QA_PENDING** `phase-3/world-1-progression-prototype-v1.json`, `prototype/bahasa-indonesia/world-1-progression-prototype-v1.html`
+- **Current gate: Progression QA / Regression Gate → user browser evidence → promotion**
 - GitHub Pages workflow active; hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
 
 ### Phase 3 visual/game design status
@@ -197,4 +198,5 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Existing approved mission XP values remain unchanged unless a separate decision changes them.
 - Universal XP curve, exact player-level thresholds, and final mastery thresholds remain explicitly unverified/pending separate decisions; this does not block the controlled World 1 progression prototype.
 - Training Room remains deferred to a later Progression / RPG Layer gate and is not part of Mission System v1 promotion.
-- **NEXT:** Controlled World 1 Progression Prototype → Progression QA / Regression Gate → user browser evidence → promotion.
+- **Controlled World 1 Progression Prototype v1: IMPLEMENTED — QA_PENDING.** `phase-3/world-1-progression-prototype-v1.json`, `prototype/bahasa-indonesia/world-1-progression-prototype-v1.html`
+- **CURRENT GATE:** Progression QA / Regression Gate → user browser evidence → promotion.
