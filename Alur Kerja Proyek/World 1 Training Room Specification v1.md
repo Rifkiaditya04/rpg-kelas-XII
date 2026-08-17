@@ -1,6 +1,8 @@
 # World 1 — Training Room Specification v1
 
-Status: **PROPOSAL — AWAITING USER APPROVAL**
+Status: **APPROVED**
+
+Approval: User reviewed and approved the proposal on 2026-08-17.
 
 ## 1. Purpose
 Training Room is the next controlled component after World 1 RPG Layer v1 promotion. It completes the learning loop by turning evidence of difficulty into guided remedial learning before reattempting a mission.
@@ -42,9 +44,6 @@ The exact final mastery threshold is **not defined here**. The prototype should 
 
 ### A. Context / competency
 Display the competency or skill topic associated with the weakness.
-
-Example:
-> Kompetensi: Menelaah unsur surat lamaran kerja.
 
 ### B. Explanation
 A concise learning explanation addressing the identified competency.
@@ -146,7 +145,7 @@ The controlled implementation should demonstrate:
 
 ```text
 Specification
-   ↓ user approval
+   ↓ APPROVED
 Controlled implementation
    ↓
 Training Room QA / Regression Gate
@@ -154,7 +153,5 @@ Training Room QA / Regression Gate
 Promotion of Training Room v1
 ```
 
-No implementation should be treated as approved before the specification is approved.
-
-## 13. Current decision
-This document is a proposal for review. **No implementation authorization is implied until the user approves Training Room Specification v1.**
+## 13. Approval boundary
+This specification is approved for controlled implementation. Approval does not itself promote the Training Room implementation. Implementation, QA, live evidence, and promotion remain separate gates.
