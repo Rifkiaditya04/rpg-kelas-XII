@@ -31,7 +31,8 @@ Dokumen ini adalah **pagar proyek**. Sebelum mengambil keputusan, membuat artefa
 - **Mission System QA / Regression Gate: PASS — revised v1 scope user-verified in hosted browser**
 - **Mission System v1: APPROVED / PROMOTED** `Alur Kerja Proyek/PROJECT LOG/012-Mission-System-v1-Promotion.md`
 - **Training Room: DEFERRED to the later Progression / RPG Layer gate; Mission System v1 uses Retry / Remedial below 70%**
-- **Current next gate: determine and execute the next Phase 3 progression/gameplay gate from the verified Master Control; do not retroactively expand Mission System v1**
+- **Progression System Specification v1: APPROVED by user; locked as design baseline** `phase-3/world-1-progression-system-specification-v1.md`
+- **Current next gate: Controlled World 1 Progression Prototype → Progression QA / Regression Gate**
 - GitHub Pages workflow active; hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`
 
 ### Phase 3 visual/game design status
@@ -134,6 +135,7 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Controlled batch baru wajib melewati answer verification, pedagogical review, provenance audit, renderer compatibility, batch quality gate, dan live regression sebelum promosi.
 - Visual gameplay gates requiring browser interaction remain `QA_PENDING` until user browser evidence exists; Camera + Character Visual QA v1 is now closed as PASS after user live playtest.
 - **Mission System Prototype v1 QA / Regression Gate is now PASS by user-verified hosted/browser evidence and Mission System v1 is promoted.**
+- **Progression System Specification v1 is approved; controlled progression implementation must preserve the separation between game progression and learning progression, the explicit XP reward contract, anti-farming rules, and the deferred Training Room boundary.**
 - TKA foundation/catalogue does not become a final subject-rule gate until authoritative subject mapping and game-design decisions are approved.
 
 ## 9. Batasan Phase 3
@@ -180,51 +182,19 @@ Setiap sesi baru, sinkronisasi repo, upload/perubahan file, atau keputusan baru:
 - Unsupported `document_inspection` seed support fixed.
 - Static challenge order and static answer-option order fixed.
 - Multi-select instruction ambiguity fixed.
-- Regression harness data-resolution and final-navigation bugs fixed.
-- Controlled expansion XP defect fixed and user-verified: 6/6 = 700 XP.
+- Regression stale-iframe issue fixed.
+- Mission System below-70% label corrected from Training Room to Retry / Remedial so the UI matches actual v1 behavior.
 
-## 14. GitHub Pages — browser playtest path
-- Deployment workflow: `.github/workflows/pages.yml`.
-- Root launcher: `/index.html`.
-- Hosted launcher: `https://rifkiaditya04.github.io/rpg-kelas-XII/`.
-- GitHub Actions deployment has been verified successfully.
-- Do not use GitHub `blob/main/...` URLs as the game runtime; those are source-code views.
-- After every runtime change, verify the new Pages deployment succeeds before live regression.
+## 14. Current gate discipline
+- Do not promote any new gameplay subsystem without its own specification, controlled implementation, regression gate, and user-verified browser evidence where applicable.
+- Do not backfill deferred features into already-promoted prototypes unless a new scope decision explicitly changes the contract.
+- Do not change Golden Dataset v1 while testing progression or gameplay layers.
+- Any future universal XP curve, player-level thresholds, mastery thresholds, Training Room behavior, or RPG economy requires an explicit design decision and its own documented gate before being treated as locked.
 
-## 15. Final-release cleanup rule
-- Development-status text `Seed tervalidasi melalui quality gate konten dan renderer data-driven. Ini tetap micro-prototype, bukan desain visual final.` is intentionally retained during prototype/QA.
-- Do not remove it yet.
-- Remove it only during final release-cleanup after the entire game passes final QA and is declared ready for distribution.
-
-## 16. Current Phase 3 decision trail
-- Visual Direction v1 — APPROVED.
-- Map / World Structure v1 — APPROVED.
-- Character Design v1 — SUPERSEDED.
-- Character Design v2 — **APPROVED 14 August 2026**.
-- Camera / Character Gameplay Specification v1 — **APPROVED 14 August 2026**.
-- **Mobile input direction — APPROVED 14 August 2026: contextual virtual analog stick, hidden while idle and visible only during active touch movement; supports smooth diagonal steering and turning without requiring the character to stop.**
-- **Camera + Character visual gameplay prototype — UPDATED; contextual analog movement implemented.**
-- **Camera + Character Visual QA v1 — PASS 14 August 2026, user live browser/device verified.**
-- QA record: `Alur Kerja Proyek/PROJECT LOG/qa/001-camera-character-visual-qa-pass.md`.
-- Decision record: `Alur Kerja Proyek/PROJECT LOG/decisions/007-camera-character-visual-qa-approved.md`.
-- TKA subject-selection evidence — verified from current official sources; game subject-gating remains a design hook pending Mission/Progression System decisions.
-- **TKA Preparation / Academic Planning foundation v1 — DOCUMENTED; not yet implemented as final student-facing rules.**
-- **TKA subject catalogue foundation v1 — DOCUMENTED; current SMK program-specific catalogue remains pending reconciliation.**
-- **Academic Planning Office structure — APPROVED as a game-design foundation:** School → Classrooms / Academic Office → Study Planning → Mandatory + Choice; Mandatory = Bahasa Indonesia, Matematika, Bahasa Inggris; Choice = Choice Slot 1 + Choice Slot 2.
-- User's locked subject-room idea is recorded as a design hook: selection gates, progression gates, and optional mastery gates will be designed during Mission/Progression System work.
-- **Mission System Specification v1 — CREATED and verified.** `phase-3/world-1-mission-system-specification-v1.md`
-- **Controlled World 1 Mission System Prototype v1 — IMPLEMENTED and promoted after user-verified hosted/browser regression PASS.** `phase-3/world-1-mission-system-prototype-v1.json`, `phase-3/world-1-mission-system-prototype-v1-dataset.json`, `prototype/bahasa-indonesia/mission-system-prototype-v1.html`.
-- **Mission System QA / Regression Gate — PASS; revised v1 scope user-verified in hosted browser.**
-- **Mission System v1 — APPROVED / PROMOTED.** `Alur Kerja Proyek/PROJECT LOG/012-Mission-System-v1-Promotion.md`
-- **Below-70% scope decision — APPROVED: Mission System v1 uses Retry / Remedial; dedicated Training Room is deferred to Progression / RPG Layer.** `Alur Kerja Proyek/PROJECT LOG/011-Mission-System-QA-below-70-retry-correction.md`
-
-## 17. REQUIRED WORK SESSION PROTOCOL
-Operational procedure is also archived in `Alur Kerja Proyek/REQUIRED-WORK-SESSION-PROTOCOL.md`.
-
-Before every new work session, repo sync, upload/change, or decision:
-**re-sync source → read every file in `Alur Kerja Proyek` → read relevant active artifacts → verify Master Control → Evidence / Implementation / Interpretation → cross-validation → execute applicable gate.**
-
-After work:
-**verify result → update QA artifacts → update Master Control when status/decision/defect changes → store important decisions in Project Log.**
-
-Do not repeat completed work without first searching the repository and documenting why a new version is necessary. Browser-required gates remain `QA_PENDING` until actual hosted browser evidence exists.
+## 15. Phase 3 Progression Gate
+- **Progression System Specification v1: APPROVED by user.** `phase-3/world-1-progression-system-specification-v1.md`
+- Approved boundary: game progression and learning progression remain separate; XP is not academic mastery evidence; learning evidence is topic/skill-based; retry cannot farm completion XP; unlocks are deterministic and inspectable.
+- Existing approved mission XP values remain unchanged unless a separate decision changes them.
+- Universal XP curve, exact player-level thresholds, and final mastery thresholds remain explicitly unverified/pending separate decisions; this does not block the controlled World 1 progression prototype.
+- Training Room remains deferred to a later Progression / RPG Layer gate and is not part of Mission System v1 promotion.
+- **NEXT:** Controlled World 1 Progression Prototype → Progression QA / Regression Gate → user browser evidence → promotion.
