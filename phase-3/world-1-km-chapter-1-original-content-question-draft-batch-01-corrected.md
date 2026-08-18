@@ -1,50 +1,39 @@
 # World 1 — KM Standard Chapter 1 Original Content / Question Draft Batch 01 — Corrected
 
-**Status:** DRAFT — STUDENT-BOOK PROVENANCE RESOLVED; TEACHER-GUIDE CROSS-VALIDATION / SCHEMA QA PENDING
+**Status:** DRAFT — BS/BG PROVENANCE RESOLVED; SCHEMA / FINAL PEDAGOGICAL QA PENDING
 **Date:** 2026-08-18
 **Design basis:** `phase-3/world-1-km-chapter-1-detailed-competency-challenge-design-v1.md`
-**Curriculum source:** Bahasa Indonesia untuk SMA/MA/SMK/MAK Kelas XII (Edisi Revisi), 2025 — Kurikulum Merdeka
-**Source file:** `Buku Kurikulum/Kurikulum Merdeka/Indonesia_BS_KLS_XII_Rev_.md`
+**Curriculum source pair:**
+- `Buku Kurikulum/Kurikulum Merdeka/Indonesia_BS_KLS_XII_Rev_.md`
+- `Buku Kurikulum/Kurikulum Merdeka/Indonesia_BG_KLS_XII_Rev_.md`
 
-## 1. Correction
+## 1. Source boundary
 
-This corrected batch replaces the superseded draft `world-1-km-chapter-1-original-content-question-draft-batch-01.md`.
+This batch is based only on the **Bahasa Indonesia Standard / Kurikulum Merdeka** source pair. The separate Tingkat Lanjut files are excluded:
+- `Indonesia_BS_TL_KLS_XII_Rev.md`
+- `Indonesia_BG_TL_KLS_XII_Rev.md`
 
-The superseded draft was incorrectly based on the separate `Bahasa Indonesia Tingkat Lanjut` source family. It is retained only as an audit artifact and must not be promoted.
+Student Book Chapter 1: **Mengomunikasikan Informasi Penting tentang Pendidikan dan/atau Pekerjaan**.
 
-## 2. Source boundary verified
+Student Book activity ranges:
+- A — pp. 5–7
+- B — pp. 8–11
+- C — pp. 12–13
+- D — pp. 14–18
+- E — pp. 19–28
+- F — pp. 29–33
+- G — pp. 34–36
+- H — p. 37 onward
 
-The authoritative Student Book table of contents establishes Chapter 1 as:
+Teacher Guide Chapter 1 begins at printed page 25; **F. Panduan Pembelajaran Buku Siswa** begins at printed page 34.
 
-**Bab 1 — Mengomunikasikan Informasi Penting tentang Pendidikan dan/atau Pekerjaan**
-
-Activity boundaries:
-- A — Mengevaluasi Isi Rekaman Surat Resmi yang Disimak — pp. 5–7
-- B — Mengevaluasi Pesan Tersurat dan Tersirat dari Dua Surat Resmi yang Berbeda — pp. 8–11
-- C — Merefleksikan Gagasan Berdasarkan Isi Surat Resmi — pp. 12–13
-- D — Menganalisis Struktur dan Penggunaan Bahasa pada Surat Resmi — pp. 14–18
-- E — Mempresentasikan Kesalahan Kaidah Penulisan Contoh Surat Resmi — pp. 19–28
-- F — Menulis Surat Resmi dengan Memperhatikan Penggunaan Kata Baku dan Kalimat Efektif — pp. 29–33
-- G — Membalas Pesan Surat Resmi yang Diterima Menggunakan Layanan Pos Elektronik — pp. 34–36
-- H — Memublikasikan Poster Pengumuman Berdasarkan Surat Edaran yang Diperoleh — p. 37 onward within Chapter 1
-
-These page boundaries are taken from the Student Book's printed table of contents, not guessed.
-
-## 3. Teacher Guide status
-
-The exact Bahasa Indonesia Kurikulum Merdeka Class XII Teacher Guide artifact is **not currently resolved as a readable repository file**. Earlier provenance artifacts referring to `texts/Indonesia_BG_TL_KLS_XII_Rev.md` belong to the wrong Tingkat Lanjut source family and are therefore **not valid Teacher Guide evidence for this KM batch**.
-
-Accordingly:
-- Student Book provenance: **RESOLVED**
-- Teacher Guide cross-validation: **PENDING**
-- Canonical schema-1.1 materialization: **BLOCKED until Teacher Guide requirement is resolved or formally waived by the project gate**
-- Golden Dataset promotion: **NOT AUTHORIZED**
-
-## 4. Corrected original draft items
+## 2. Corrected original draft items
 
 ### KM01-A1 — Evidence-supported action
 
 **Activity:** A
+**Teacher Guide anchor:** Aktivitas 1.1 — explicit information from a listened-to official letter
+**Teacher Guide pages:** 34–35
 **Cluster:** A–B — Receive & Evaluate Information
 **Skill:** analyze
 **Cognitive level:** analyze
@@ -76,7 +65,7 @@ D. Ask the inspection team to change its schedule immediately.
 **Explanation:** The announcement only establishes that the auditorium is unavailable during 13.00–15.00 on Tuesday. Moving the rehearsal is directly supported; the other choices extend the information beyond the message.
 
 **Student Book provenance:** Chapter 1 Activity A, pp. 5–7.
-**Teacher Guide provenance:** pending exact KM Teacher Guide artifact.
+**Teacher Guide provenance:** Chapter 1 Subbab A, Aktivitas 1.1, pp. 34–35.
 
 **Originality statement:** Scenario, names, institution, wording, options, and explanation are independently authored from the competency of evaluating information in an official communication.
 
@@ -85,6 +74,8 @@ D. Ask the inspection team to change its schedule immediately.
 ### KM01-B1 — Explicit vs implicit meaning
 
 **Activity:** B
+**Teacher Guide anchor:** Aktivitas 1.4 — comparing explicit and implicit meanings of two official letters
+**Teacher Guide pages:** 38–42
 **Cluster:** A–B — Receive & Evaluate Information
 **Skill:** analyze
 **Cognitive level:** analyze
@@ -114,7 +105,7 @@ D. The second letter discusses the seating list.
 **Explanation:** A, B, and D are directly established by the communications. C is a reasonable inference from the consequence described in the second letter, but its wording is not stated directly.
 
 **Student Book provenance:** Chapter 1 Activity B, pp. 8–11.
-**Teacher Guide provenance:** pending exact KM Teacher Guide artifact.
+**Teacher Guide provenance:** Chapter 1 Subbab B, Aktivitas 1.4, pp. 38–42.
 
 **Originality statement:** Both communications and all answer choices are newly authored.
 
@@ -123,6 +114,8 @@ D. The second letter discusses the seating list.
 ### KM01-B2 — Evidence-based comparison
 
 **Activity:** B
+**Teacher Guide anchor:** Aktivitas 1.4 — comparing/evaluating explicit and implicit meanings of two official letters
+**Teacher Guide pages:** 38–42
 **Cluster:** A–B — Receive & Evaluate Information
 **Skill:** evaluate
 **Cognitive level:** evaluate
@@ -152,7 +145,7 @@ D. The laboratory accepts online reports during the closure.
 **Explanation:** Both letters establish a Friday-morning physical closure. The laboratory provides a physical collection box, while the library provides an online renewal service. The alternatives and purposes differ.
 
 **Student Book provenance:** Chapter 1 Activity B, pp. 8–11.
-**Teacher Guide provenance:** pending exact KM Teacher Guide artifact.
+**Teacher Guide provenance:** Chapter 1 Subbab B, Aktivitas 1.4, pp. 38–42.
 
 **Originality statement:** Both official communications are fictional and independently authored.
 
@@ -161,6 +154,8 @@ D. The laboratory accepts online reports during the closure.
 ### KM01-C1 — Reasoned reflection
 
 **Activity:** C
+**Teacher Guide anchor:** Aktivitas 1.5 — reflecting on the writer's ideas in an official letter
+**Teacher Guide pages:** 43–45
 **Cluster:** C — Reflect & Interpret
 **Skill:** apply
 **Cognitive level:** apply
@@ -190,7 +185,9 @@ D. Assume the two-day rule does not apply to science activities.
 **Explanation:** A respects the stated procedure while addressing the practical situation. The other responses invent an exception or bypass the official process.
 
 **Student Book provenance:** Chapter 1 Activity C, pp. 12–13.
-**Teacher Guide provenance:** pending exact KM Teacher Guide artifact.
+**Teacher Guide provenance:** Chapter 1 Subbab C, Aktivitas 1.5, pp. 43–45.
+
+**Scope note:** This is a constrained preparatory micro-challenge, not a complete replacement for the source reflection activity. The Teacher Guide's full reflection criteria include identifying important ideas, strengths/weaknesses with reasons, connection to personal experience, change in viewpoint, and a real-life application. A follow-up reflection step should be added if this competency is promoted beyond micro-challenge status.
 
 **Originality statement:** Scenario and response options are independently authored.
 
@@ -199,6 +196,8 @@ D. Assume the two-day rule does not apply to science activities.
 ### KM01-D1 — Structure function
 
 **Activity:** D
+**Teacher Guide anchor:** Aktivitas 1.6 — identifying structural parts of an official circular letter
+**Teacher Guide pages:** 46–48
 **Cluster:** D–E — Inspect Official Communication
 **Skill:** understand
 **Cognitive level:** understand
@@ -226,7 +225,7 @@ D. State the sender's closing hope.
 **Explanation:** The recipient/address component establishes who the communication is directed to and where it is addressed. The other functions belong to other parts of the letter.
 
 **Student Book provenance:** Chapter 1 Activity D, pp. 14–18.
-**Teacher Guide provenance:** pending exact KM Teacher Guide artifact.
+**Teacher Guide provenance:** Chapter 1 Subbab D, Aktivitas 1.6, pp. 46–48.
 
 **Originality statement:** Original document fragment and question.
 
@@ -235,6 +234,8 @@ D. State the sender's closing hope.
 ### KM01-D2 — Language-use diagnosis
 
 **Activity:** D
+**Teacher Guide anchor:** Aktivitas 1.7 — analyzing language use in an official circular letter
+**Teacher Guide pages:** 46–49
 **Cluster:** D–E — Inspect Official Communication
 **Skill:** evaluate
 **Cognitive level:** evaluate
@@ -261,44 +262,46 @@ D. “Untuk informasi lebih lanjut, peserta hubungi panitia aja.”
 
 **Explanation:** A uses more formal and effective wording while preserving the intended meaning. B, C, and D retain conversational or unnecessarily informal expressions.
 
-**Student Book provenance:** Chapter 1 Activity D, pp. 14–18, with the chapter's language-use analysis anchor.
-**Teacher Guide provenance:** pending exact KM Teacher Guide artifact.
+**Student Book provenance:** Chapter 1 Activity D, pp. 14–18.
+**Teacher Guide provenance:** Chapter 1 Subbab D, Aktivitas 1.7, pp. 46–49.
 
 **Originality statement:** The sentence and all revisions are newly authored; they are not copied from the textbook.
 
-## 5. Batch coverage
+## 3. Batch coverage
 
-| ID | Activity | Cluster | Skill | Cognitive | Difficulty | Type |
-|---|---|---|---|---|---|---|
-| KM01-A1 | A | A–B | analyze | analyze | medium | mcq |
-| KM01-B1 | B | A–B | analyze | analyze | medium | mcq |
-| KM01-B2 | B | A–B | evaluate | evaluate | hard | mcq |
-| KM01-C1 | C | C | apply | apply | medium | mcq |
-| KM01-D1 | D | D–E | understand | understand | easy | mcq |
-| KM01-D2 | D | D–E | evaluate | evaluate | medium | mcq |
+| ID | Activity | TG Activity | SB pages | TG pages | Cluster | Cognitive | Type |
+|---|---|---|---:|---:|---|---|---|
+| KM01-A1 | A | 1.1 | 5–7 | 34–35 | A–B | analyze | mcq |
+| KM01-B1 | B | 1.4 | 8–11 | 38–42 | A–B | analyze | mcq |
+| KM01-B2 | B | 1.4 | 8–11 | 38–42 | A–B | evaluate | mcq |
+| KM01-C1 | C | 1.5 | 12–13 | 43–45 | C | apply | mcq |
+| KM01-D1 | D | 1.6 | 14–18 | 46–48 | D–E | understand | mcq |
+| KM01-D2 | D | 1.7 | 14–18 | 46–49 | D–E | evaluate | mcq |
 
-## 6. QA status
+## 4. QA status
 
-**Curriculum alignment:** PASS against the approved KM Chapter 1 A–D activity anchors.
+**Source identity:** PASS.
 
-**Student Book provenance:** PASS at activity/page-range level using the authoritative Chapter 1 table of contents.
+**Student Book provenance:** PASS.
 
-**Teacher Guide cross-validation:** PENDING — exact KM Teacher Guide artifact is not currently resolved in the repository search.
+**Teacher Guide provenance:** PASS for activity/page level.
 
 **Originality:** PASS initial authoring review.
 
 **Answer uniqueness:** PASS initial review.
 
-**Renderer candidate:** PASS for `mcq` contract; final payload validation still required.
+**Cognitive alignment:** PASS initial design review, with C1 scope note.
 
-**Canonical JSON:** BLOCKED until provenance requirements are complete.
+**Renderer candidate:** PASS for `mcq`; final payload validation still required.
+
+**Canonical JSON:** NOT YET PROMOTED.
 
 **Golden Dataset:** NOT AUTHORIZED.
 
-## 7. Next gate
+## 5. Next gate
 
-1. Resolve the exact KM Teacher Guide repository artifact, or record a formal gate decision that Teacher Guide validation is unavailable/not required for this batch.
-2. Convert the six corrected drafts to schema 1.1 JSON only after the source gate is satisfied.
-3. Run schema, answer-shape, duplicate-ID, pedagogical, provenance, and renderer QA.
-4. Create the batch quality-gate record.
-5. Do not promote to Golden Dataset until all gates pass.
+1. Materialize schema-1.1 JSON.
+2. Validate answer shape, IDs, source metadata, and renderer contract.
+3. Resolve C1 scope at final pedagogical gate.
+4. Create batch quality-gate record.
+5. Promote only after all final gates pass.
