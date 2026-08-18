@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "DRAFT_NOT_CANONICAL",
+  "chapter_id": "BI12-C01",
+  "questions": [
+    {
+      "id": "KM01-A1",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah pemberitahuan resmi sekolah menyatakan bahwa aula serbaguna tidak dapat digunakan pada Rabu sore karena pemeriksaan instalasi listrik. Panitia sedang menyiapkan kegiatan Kamis pagi. Tindakan mana yang paling langsung didukung oleh informasi tersebut?",
+      "options": [
+        "Memindahkan latihan Rabu sore ke lokasi lain.",
+        "Membatalkan kegiatan Kamis pagi karena aula pasti tidak dapat digunakan.",
+        "Meminta tim pemeriksa menunda pemeriksaan tanpa informasi tambahan.",
+        "Mengumumkan bahwa seluruh kegiatan sekolah dibatalkan selama sepekan."
+      ],
+      "answer": "Memindahkan latihan Rabu sore ke lokasi lain.",
+      "explanation": "Pemberitahuan hanya menetapkan bahwa aula tidak dapat digunakan pada Rabu sore. Memindahkan latihan pada waktu tersebut merupakan tindakan yang langsung didukung. Pilihan lain memperluas informasi melebihi yang dinyatakan.",
+      "source": {
+        "student_book": {"pages": "5-7", "section": "Bab 1, Subbab A, Aktivitas A"},
+        "teacher_guide": {"pages": "34-35", "section": "Bab 1, Aktivitas 1.1 — mengidentifikasi informasi eksplisit dari surat resmi yang disimak"}
+      },
+      "provenance": "Kompetensi evaluasi informasi eksplisit dari komunikasi resmi digunakan sebagai blueprint. Skenario, pilihan, dan penjelasan ditulis ulang secara orisinal.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["explicit_information", "official_communication", "evidence_based_action"]
+    },
+    {
+      "id": "KM01-B1",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah pusat pelatihan fiktif memberi tahu peserta: peserta yang telah menyelesaikan formulir pendaftaran harus membawa kode konfirmasi ke meja orientasi pada Senin pagi. Pernyataan mana yang merupakan kesimpulan implisit, bukan informasi yang dinyatakan langsung?",
+      "options": [
+        "Peserta yang telah menyelesaikan pendaftaran harus membawa kode konfirmasi.",
+        "Meja orientasi digunakan pada Senin pagi.",
+        "Kode konfirmasi kemungkinan diperlukan dalam proses orientasi peserta.",
+        "Formulir pendaftaran disebut dalam pemberitahuan."
+      ],
+      "answer": "Kode konfirmasi kemungkinan diperlukan dalam proses orientasi peserta.",
+      "explanation": "Pemberitahuan secara langsung menyebut peserta yang telah mendaftar, kode konfirmasi, meja orientasi, dan waktu. Kegunaan kode dalam proses orientasi merupakan inferensi yang wajar dari konteks, bukan pernyataan langsung.",
+      "source": {
+        "student_book": {"pages": "8-11", "section": "Bab 1, Subbab B, Aktivitas B"},
+        "teacher_guide": {"pages": "38-42", "section": "Bab 1, Aktivitas 1.4 — mengevaluasi makna tersurat dan tersirat dari dua teks surat resmi"}
+      },
+      "provenance": "Kompetensi membedakan makna eksplisit dan implisit digunakan sebagai blueprint. Teks pemberitahuan dan seluruh opsi ditulis secara orisinal.",
+      "mode": "learning",
+      "game_mechanic": "meaning_check",
+      "tags": ["explicit_vs_implicit", "official_communication", "inference"]
+    },
+    {
+      "id": "KM01-B2",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-B",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Perhatikan dua pemberitahuan resmi fiktif berikut. Pesan 1: perpustakaan tutup pukul 15.00 pada Jumat karena pemeliharaan; buku masih dapat dikembalikan melalui kotak pengembalian luar. Pesan 2: loket layanan siswa tutup pukul 15.00; permintaan daring tetap tersedia sampai pukul 20.00. Perbandingan mana yang paling didukung kedua pesan?",
+      "options": [
+        "Kedua layanan berhenti menerima semua bentuk permintaan pada pukul 15.00.",
+        "Keduanya menutup fasilitas fisik pada pukul 15.00, tetapi menyediakan alternatif berbeda setelah waktu tersebut.",
+        "Perpustakaan tetap buka lebih lama karena kotak pengembalian tersedia.",
+        "Layanan siswa menerima permintaan fisik sampai pukul 20.00."
+      ],
+      "answer": "Keduanya menutup fasilitas fisik pada pukul 15.00, tetapi menyediakan alternatif berbeda setelah waktu tersebut.",
+      "explanation": "Kedua pesan sama-sama menetapkan penutupan fasilitas fisik pukul 15.00. Alternatifnya berbeda: kotak pengembalian untuk perpustakaan dan layanan daring untuk loket siswa.",
+      "source": {
+        "student_book": {"pages": "8-11", "section": "Bab 1, Subbab B, Aktivitas B"},
+        "teacher_guide": {"pages": "38-42", "section": "Bab 1, Aktivitas 1.4 — mengevaluasi makna tersurat dan tersirat dari dua teks surat resmi"}
+      },
+      "provenance": "Kompetensi membandingkan dan mengevaluasi makna dua komunikasi resmi digunakan sebagai blueprint. Kedua komunikasi, pilihan, dan penjelasan dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "comparison_scan",
+      "tags": ["message_comparison", "evidence", "official_communication"]
+    },
+    {
+      "id": "KM01-C1",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Kantor karier sekolah memberi tahu bahwa konsultasi beasiswa harus dipesan melalui formulir pendaftaran sebelum konselor meninjau dokumen. Raka belum mengisi formulir tetapi ingin mendapat masukan pada sore itu. Apa langkah paling tepat berdasarkan informasi tersebut?",
+      "options": [
+        "Mengisi formulir terlebih dahulu, kemudian mengajukan konsultasi sesuai prosedur.",
+        "Mengirim draf langsung kepada konselor dan menganggap jadwal akan dibuat otomatis.",
+        "Meminta teman mendaftarkan konsultasi menggunakan nama teman tersebut.",
+        "Mengabaikan ketentuan pendaftaran karena draf sudah selesai."
+      ],
+      "answer": "Mengisi formulir terlebih dahulu, kemudian mengajukan konsultasi sesuai prosedur.",
+      "explanation": "Komunikasi menetapkan prosedur bahwa pendaftaran harus dilakukan sebelum dokumen ditinjau. Jawaban A mengikuti prosedur tersebut. Item ini merupakan tantangan persiapan menuju refleksi kontekstual, bukan representasi penuh seluruh dimensi refleksi Aktivitas 1.5.",
+      "source": {
+        "student_book": {"pages": "12-13", "section": "Bab 1, Subbab C, Aktivitas C"},
+        "teacher_guide": {"pages": "43-45", "section": "Bab 1, Aktivitas 1.5 — merefleksikan gagasan berdasarkan isi surat resmi"}
+      },
+      "provenance": "Kompetensi refleksi berbasis isi komunikasi resmi digunakan sebagai blueprint. Skenario dan pilihan dibuat orisinal; item sengaja dibatasi sebagai preparatory micro-challenge.",
+      "mode": "learning",
+      "game_mechanic": "scenario_decision",
+      "tags": ["contextual_interpretation", "reflection", "official_communication"]
+    },
+    {
+      "id": "KM01-D1",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-D",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question_type": "mcq",
+      "question": "Dalam surat undangan resmi fiktif dari pusat belajar masyarakat, terdapat bagian yang menyebut organisasi penerima dan alamat lengkapnya sebelum salam pembuka. Apa fungsi utama bagian tersebut?",
+      "options": [
+        "Menjelaskan dengan jelas pihak yang dituju dan alamat tujuan komunikasi.",
+        "Menjelaskan alasan pribadi pengirim ingin menghadiri kegiatan.",
+        "Merangkum seluruh jadwal kegiatan.",
+        "Menyampaikan harapan penutup dari pengirim."
+      ],
+      "answer": "Menjelaskan dengan jelas pihak yang dituju dan alamat tujuan komunikasi.",
+      "explanation": "Bagian penerima dan alamat berfungsi mengidentifikasi pihak yang dituju serta tujuan surat. Fungsi lainnya berada pada bagian surat yang berbeda.",
+      "source": {
+        "student_book": {"pages": "14-18", "section": "Bab 1, Subbab D, Aktivitas D"},
+        "teacher_guide": {"pages": "46-48", "section": "Bab 1, Aktivitas 1.6 — mengidentifikasi struktur surat resmi"}
+      },
+      "provenance": "Fungsi struktur surat resmi digunakan sebagai blueprint. Dokumen, konteks, dan seluruh opsi dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "document_inspection",
+      "tags": ["structure_function", "official_letter", "document_inspection"]
+    },
+    {
+      "id": "KM01-D2",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-D",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah draf komunikasi sekolah berbunyi: “Could you guys send the attendance confirmation ASAP so we can prepare the room?” Revisi mana yang paling sesuai untuk komunikasi formal?",
+      "options": [
+        "Please send the attendance confirmation as soon as possible so that we can prepare the room.",
+        "You guys need to send the attendance confirmation ASAP so we can get the room ready.",
+        "Send the attendance confirmation now, okay?",
+        "Kindly, you guys, send the attendance confirmation because we wanna prepare the room."
+      ],
+      "answer": "Please send the attendance confirmation as soon as possible so that we can prepare the room.",
+      "explanation": "Pilihan A mempertahankan maksud permintaan sekaligus menggunakan bentuk yang lebih formal dan jelas. Pilihan lain masih mempertahankan ungkapan percakapan yang tidak sesuai dengan konteks komunikasi resmi.",
+      "source": {
+        "student_book": {"pages": "14-18", "section": "Bab 1, Subbab D, Aktivitas D"},
+        "teacher_guide": {"pages": "46-49", "section": "Bab 1, Aktivitas 1.7 — menganalisis penggunaan bahasa pada surat resmi"}
+      },
+      "provenance": "Kompetensi analisis penggunaan bahasa pada surat resmi digunakan sebagai blueprint. Kalimat dan semua revisi dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "language_scan",
+      "tags": ["formal_register", "language_repair", "official_communication"]
+    }
+  ]
+}
