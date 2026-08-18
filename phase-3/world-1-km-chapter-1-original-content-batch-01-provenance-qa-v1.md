@@ -15,9 +15,9 @@ Validate the six corrected original drafts against the authoritative KM Standard
 - Corrected original content batch 01
 - `knowledge-base/bahasa-indonesia/v1/question-schema.json` schema 1.1
 - KM Standard Student Book source: `Buku Kurikulum/Kurikulum Merdeka/Indonesia_BS_KLS_XII_Rev_.md`
-- Exact KM Standard Teacher Guide: not resolved as a readable repository artifact
+- **KM Standard Teacher Guide resolved externally through the official SIBI catalog; it is not yet stored as a readable repository artifact.**
 
-The coverage matrix explicitly requires Student Book section verification and Teacher Guide cross-validation before question drafting, and states that question count is not fixed. The present batch therefore remains a controlled draft rather than a promoted bank.
+The coverage matrix requires Student Book section verification and Teacher Guide cross-validation before question drafting. The present batch therefore remains a controlled draft rather than a promoted bank.
 
 ## 3. Student Book provenance results
 
@@ -42,12 +42,12 @@ Matches Activity A's competency anchor: evaluating information from an official-
 **Result: PASS.**
 
 ### KM01-B1
-Matches Activity B's explicit/implicit message distinction. The challenge requires identifying a reasonable inference from two original official communications.
+Matches Activity B's explicit/implicit message distinction. The challenge requires identifying a reasonable inference from an original official communication.
 
 **Result: PASS.**
 
 ### KM01-B2
-Matches Activity B's comparison/evaluation demand. The challenge requires comparison using evidence from both original communications.
+Matches Activity B's comparison/evaluation demand. The challenge requires comparison using evidence from two original official communications.
 
 **Result: PASS.**
 
@@ -66,21 +66,38 @@ Matches Activity D's language-use analysis and supports the D–E cluster's stan
 
 **Result: PASS.**
 
-## 5. Teacher Guide gate
+## 5. Teacher Guide resolution
 
-The exact Bahasa Indonesia Kurikulum Merdeka Class XII Teacher Guide has not been resolved as a readable repository artifact. Existing `Indonesia_BG_TL_KLS_XII_Rev.md` references belong to the separate Tingkat Lanjut source family and are explicitly excluded.
+The previous repository-only search incorrectly concluded that the exact KM Standard Teacher Guide was unavailable. That conclusion is now corrected.
 
-Therefore no Teacher Guide page or indicator has been fabricated.
+The official SIBI catalog contains:
 
-**Teacher Guide cross-validation: BLOCKED.**
+**Panduan Guru Bahasa Indonesia untuk SMA/MA/SMK/MAK Kelas XII (Edisi Revisi)**
+
+- Publisher: Pusat Perbukuan
+- Authors: Alvian Kurniawan, Ismail Kusmayadi, Velayeti Nurfitriana Ansas
+- ISBN: 978-634-00-3115-7
+- Official catalog: `https://buku.kemendikdasmen.go.id/katalog/panduan-guru-bahasa-indonesia-untuk-smamasmkmak-kelas-xii-edisi-revisi`
+
+This metadata is independently confirmed by the official SIBI catalog. The Student Book in the repository is the corresponding revised 2025 edition by the same author group and is ISBN 978-634-00-3113-3.
+
+**Teacher Guide identity: RESOLVED / CONFIRMED.**
+
+However, the current accessible web representation does not expose the PDF's full page-level text in a form that can be safely mapped to each six-item activity. Therefore the following distinction is mandatory:
+
+- existence / identity of the correct Teacher Guide: **CONFIRMED**;
+- activity-specific Teacher Guide page/indicator cross-validation for KM01-A1 through KM01-D2: **UNVERIFIED**;
+- Tingkat Lanjut guide substitution: **REJECTED**.
+
+No Teacher Guide page number is guessed.
 
 ## 6. Schema gate decision
 
 Schema 1.1 requires `source.student_book.pages`, `source.student_book.section`, and a `source.teacher_guide` object. The current project rule also requires source cross-validation when the Teacher Guide contains a relevant indicator.
 
-Because the exact KM Teacher Guide is unavailable, this batch cannot honestly claim a completed schema-1.1 provenance gate.
+The Teacher Guide identity is now known, but activity-specific page/indicator validation remains unresolved. Therefore canonicalization still cannot honestly claim a complete provenance gate.
 
-**Schema canonicalization: BLOCKED.**
+**Schema canonicalization: BLOCKED pending activity-specific Teacher Guide validation.**
 
 ## 7. Other quality checks
 
@@ -98,16 +115,18 @@ Because the exact KM Teacher Guide is unavailable, this batch cannot honestly cl
 
 ## 8. Decision
 
-This is a **partial provenance/content QA pass**, not a final quality-gate pass.
+This remains a **partial provenance/content QA pass**, not a final quality-gate pass.
 
-The six items are suitable to retain as draft material. They are not eligible for canonical JSON or Golden Dataset promotion until the Teacher Guide gate is resolved or a project-authorized exception is recorded.
+The six items are suitable to retain as draft material. They are not eligible for canonical JSON or Golden Dataset promotion until activity-specific Teacher Guide validation is resolved or a project-authorized exception is recorded.
 
 ## 9. Next gate
 
-Resolve the Teacher Guide dependency through one of the following evidence-safe routes:
+Resolve activity-specific Teacher Guide validation through an evidence-safe route:
 
-1. locate the exact KM Standard Teacher Guide artifact in the repository;
-2. add the exact artifact to the repository and cross-validate it;
-3. obtain an explicit project gate decision that Teacher Guide validation is unavailable/not required for this batch, with the exception documented before canonicalization.
+1. obtain/read the official Teacher Guide PDF or a repository copy with reliable page text;
+2. map each item to the relevant Teacher Guide chapter/activity/indicator and printed page;
+3. update provenance metadata;
+4. materialize schema-1.1 JSON;
+5. run answer-shape, duplicate-ID, provenance, pedagogical, renderer, and batch-quality gates.
 
 No source substitution is permitted.
