@@ -1,16 +1,23 @@
 # World 1 — KM Standard Chapter 1 — Batch 02 E Challenge Ledger v1
 
-**Status:** DESIGN-READY / PRODUCTION BLOCKED ON EXACT TEACHER-GUIDE ANCHOR
+**Status:** PRODUCTION-READY FOR E1–E3 / E4 RUNTIME-GATED
 **Date:** 2026-08-18
 **Scope:** Subbab E — diagnose writing-convention problems
 
 ## Protocol state
 
-This artifact was created only after re-syncing the active Master Control, required work-session protocol, Detailed Competency → Challenge Design v1, and Batch 01 promotion record.
+This artifact was created and updated only after re-syncing the active Master Control, required work-session protocol, Detailed Competency → Challenge Design v1, and Batch 01 promotion record.
 
 ## Evidence
 
-Student Book Chapter 1 activity range for Subbab E is recorded as **pp. 19–28** in the existing source-reconciliation artifact.
+Student Book Chapter 1 Subbab E is recorded as **pp. 19–28** in the existing source-reconciliation baseline.
+
+Teacher Guide cross-validation is now resolved directly from `Indonesia_BG_KLS_XII_Rev_.md`:
+- **Subbab E:** *Mempresentasikan Kesalahan Kaidah Penulisan Contoh Surat Resmi*
+- **Teacher Guide pp. 50–53**
+- **Aktivitas 1.8:** *Mengidentifikasi Ketepatan Penulisan Surat Resmi*
+- **Aktivitas 1.9:** *Menganalisis Kesalahan Penulisan Surat Resmi*
+- The formative evidence explicitly covers capitalization/non-capitalization, abbreviations, bold/italic writing, and punctuation; learners identify correct/incorrect usage, give reasons, and propose whether correction is needed.
 
 The approved Detailed Competency → Challenge Design defines E as:
 - locate writing-convention problems in an original document;
@@ -24,10 +31,10 @@ Preferred challenge archetypes are document inspection, repair selection, bounde
 
 | ID | Competency evidence | Cognitive target | Archetype | Candidate interaction | Original document requirement | Status |
 |---|---|---|---|---|---|---|
-| KM02-E1 | Locate one writing-convention problem in a short official notice | analyze | document inspection / repair selection | mcq | fictional school notice with one deliberately planted convention problem | READY AFTER SOURCE GATE |
-| KM02-E2 | Classify the problem before repair | analyze | error classification | mcq | same competency family, different fictional document | READY AFTER SOURCE GATE |
-| KM02-E3 | Select the correction that preserves intended meaning and formal purpose | evaluate | repair selection | mcq | fictional official communication with competing repairs | READY AFTER SOURCE GATE |
-| KM02-E4 | Identify all relevant problems in a bounded excerpt | analyze/evaluate | multi-select diagnosis | multi_select | short fictional official communication containing 2–3 independently designed issues | READY AFTER RUNTIME TYPE CHECK |
+| KM02-E1 | Locate one writing-convention problem in a short official notice | analyze | document inspection / repair selection | mcq | fictional school notice with one deliberately planted capitalization problem | READY FOR DRAFT |
+| KM02-E2 | Classify the problem before repair | analyze | error classification | mcq | fictional official communication with a deliberately planted abbreviation problem | READY FOR DRAFT |
+| KM02-E3 | Select the correction that preserves intended meaning and formal purpose | evaluate | repair selection | mcq | fictional official communication with a punctuation/formatting problem and competing repairs | READY FOR DRAFT |
+| KM02-E4 | Identify all relevant problems in a bounded excerpt | analyze/evaluate | multi-select diagnosis | multi_select | short fictional official communication containing 2–3 independently designed issues | RUNTIME-GATED |
 
 ## Anti-redundancy rule
 
@@ -41,7 +48,7 @@ All eventual documents, names, dates, institutions, wording, errors, options, an
 
 **Student Book:** confirmed at Chapter 1 Subbab E, pp. 19–28.
 
-**Teacher Guide:** exact activity/page anchor for Subbab E is **not yet line-level verified from the repository artifact in this session**. It must be resolved before production wording is promoted. No guessed Teacher Guide page is recorded here.
+**Teacher Guide:** VERIFIED. Subbab E begins on **p. 50**. Table 1.15 identifies Activities 1.8 and 1.9; the formative section on **pp. 52–53** specifies the writing-convention evidence. The source explicitly names capitalization/non-capitalization, abbreviations, bold, italics, and punctuation, and requires reasons/correction analysis.
 
 ## Renderer gate
 
@@ -49,8 +56,8 @@ All eventual documents, names, dates, institutions, wording, errors, options, an
 
 ## Production boundary
 
-This ledger does not contain final question wording, final answer options, or canonical content. It is a controlled design artifact pending exact Teacher Guide cross-validation.
+E1–E3 may now proceed to original drafting and schema materialization. E4 remains separate until multi-select runtime is verified.
 
 ## Next action
 
-Resolve the exact Teacher Guide Subbab E activity/page anchor from `Indonesia_BG_KLS_XII_Rev_.md`. Then draft the smallest controlled original E batch and materialize it against schema 1.1.
+Draft the smallest controlled original E batch (E1–E3), materialize against schema 1.1, and run provenance/content/static QA before any browser gate.
