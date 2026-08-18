@@ -1,0 +1,15 @@
+{
+  "schema_version":"1.1",
+  "dataset":"World 1 KM Standard Chapter 1 Approved Content Batch 01 v1.1",
+  "status":"approved_world1_content",
+  "purpose":"Approved additive controlled World 1 content pool; not a replacement for Golden Dataset v1.",
+  "source_canonical":"phase-3/world-1-km-chapter-1-original-content-batch-01-canonical-v1.1.json",
+  "chapter_id":"BI12-C01",
+  "lanes":["A","B","C","D"],
+  "item_count":6,
+  "item_ids":["KM01-A1","KM01-B1","KM01-B2","KM01-C1","KM01-D1","KM01-D2"],
+  "rewards":{"xp_per_correct":100,"mission_completion_xp":100},
+  "golden_dataset_policy":"knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json remains unchanged; this approved pool is additive and versioned.",
+  "production_use":"approved_for_controlled_world1_content_expansion",
+  "mass_generation":"still_requires_separate_batch_generation_and_quality_gates"
+}
