@@ -41,7 +41,7 @@
       "cognitive_level": "analyze",
       "difficulty": "medium",
       "question_type": "mcq",
-      "question": "Sebuah surat resmi fiktif menuliskan: \"Kegiatan ini bekerja sama dengan Dinas Pendidikan dan Kebudayaan (DISDIKBUD).\" Pada penggunaan berikutnya, penulis menulis \"Peserta dapat menghubungi DISDIKBUD melalui nomor layanan yang tercantum.\" Masalah yang sedang diperiksa terutama berkaitan dengan ...",
+      "question": "Sebuah surat resmi fiktif menuliskan: \"Peserta dapat menghubungi DISDIKBUD melalui nomor layanan yang tercantum.\" Pada bagian sebelumnya, nama instansi hanya ditulis lengkap sebagai \"Dinas Pendidikan dan Kebudayaan\" tanpa memperkenalkan singkatan tersebut. Masalah yang sedang diperiksa terutama berkaitan dengan ...",
       "options": [
         "penggunaan singkatan yang belum diperkenalkan",
         "penggunaan huruf miring pada kata asing",
@@ -49,7 +49,7 @@
         "penggunaan huruf kapital pada awal kalimat"
       ],
       "answer": "penggunaan singkatan yang belum diperkenalkan",
-      "explanation": "Pada kalimat pertama, singkatan sudah diperkenalkan setelah bentuk lengkapnya. Pada kalimat berikutnya singkatan tersebut sudah dapat digunakan. Karena itu, masalah yang perlu diperiksa justru muncul jika sebuah singkatan digunakan tanpa lebih dahulu memperkenalkan bentuk lengkapnya. Item ini menguji kemampuan mengklasifikasikan jenis masalah sebelum melakukan perbaikan.",
+      "explanation": "Singkatan DISDIKBUD digunakan pada kalimat berikutnya tanpa terlebih dahulu diperkenalkan bersama bentuk lengkapnya. Karena itu, masalahnya berkaitan dengan penggunaan singkatan yang belum diperkenalkan. Item ini menguji kemampuan mengklasifikasikan masalah sebelum memilih perbaikan.",
       "source": {
         "student_book": {"pages": "19-28", "section": "Bab 1, Subbab E"},
         "teacher_guide": {"pages": "50-53", "section": "Bab 1, Subbab E; Aktivitas 1.8–1.9"}
