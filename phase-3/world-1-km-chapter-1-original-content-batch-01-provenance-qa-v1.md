@@ -1,132 +1,109 @@
-# World 1 — KM Standard Chapter 1 Original Content Batch 01 — Provenance QA v1
+# World 1 — KM Standard Chapter 1 Original Content Batch 01 — Provenance QA v2
 
 **Date:** 2026-08-18
-**Status:** PARTIAL PASS — CANONICALIZATION BLOCKED
+**Status:** PROVENANCE PASS — CANONICALIZATION / FINAL PEDAGOGICAL QA PENDING
 **Batch:** `world-1-km-chapter-1-original-content-question-draft-batch-01-corrected.md`
 
 ## 1. Gate purpose
 
-Validate the six corrected original drafts against the authoritative KM Standard Chapter 1 Student Book mapping and the project's provenance rules before any schema-1.1 canonicalization or Golden Dataset promotion.
+Validate the six corrected original drafts against the authoritative KM Standard Chapter 1 Student Book **and the correct Teacher Guide stored in the repository**, before schema-1.1 canonicalization or Golden Dataset promotion.
 
-## 2. Dependencies re-verified
+## 2. Source pair re-verified
 
-- Approved competency coverage matrix: `phase-3/world-1-km-chapter-1-competency-coverage-matrix-v1.md`
-- Detailed competency/challenge design v1
-- Corrected original content batch 01
-- `knowledge-base/bahasa-indonesia/v1/question-schema.json` schema 1.1
-- KM Standard Student Book source: `Buku Kurikulum/Kurikulum Merdeka/Indonesia_BS_KLS_XII_Rev_.md`
-- **KM Standard Teacher Guide resolved externally through the official SIBI catalog; it is not yet stored as a readable repository artifact.**
+Authoritative repository sources:
+- `Buku Kurikulum/Kurikulum Merdeka/Indonesia_BS_KLS_XII_Rev_.md`
+- `Buku Kurikulum/Kurikulum Merdeka/Indonesia_BG_KLS_XII_Rev_.md`
 
-The coverage matrix requires Student Book section verification and Teacher Guide cross-validation before question drafting. The present batch therefore remains a controlled draft rather than a promoted bank.
+Explicitly excluded:
+- `Indonesia_BS_TL_KLS_XII_Rev.md`
+- `Indonesia_BG_TL_KLS_XII_Rev.md`
+
+The earlier claim that the exact KM Teacher Guide was unavailable is corrected. The repository file `Indonesia_BG_KLS_XII_Rev_.md` is the correct revised-2025 Teacher Guide and contains Chapter 1-specific guidance, activity mappings, rubrics, differentiation notes, and formative assessment criteria.
 
 ## 3. Student Book provenance results
 
-The six items map to Chapter 1 activities A–D as follows:
-
-| ID | Activity | Student Book printed range | Provenance result |
+| ID | Activity | Student Book printed range | Result |
 |---|---|---:|---|
-| KM01-A1 | A | 5–7 | PASS at activity/range level |
-| KM01-B1 | B | 8–11 | PASS at activity/range level |
-| KM01-B2 | B | 8–11 | PASS at activity/range level |
-| KM01-C1 | C | 12–13 | PASS at activity/range level |
-| KM01-D1 | D | 14–18 | PASS at activity/range level |
-| KM01-D2 | D | 14–18 | PASS at activity/range level |
+| KM01-A1 | A | 5–7 | PASS |
+| KM01-B1 | B | 8–11 | PASS |
+| KM01-B2 | B | 8–11 | PASS |
+| KM01-C1 | C | 12–13 | PASS |
+| KM01-D1 | D | 14–18 | PASS |
+| KM01-D2 | D | 14–18 | PASS |
 
-No page number beyond the authoritative printed activity range has been invented.
+These ranges come from the authoritative Student Book Chapter 1 table of contents. No page number is guessed.
 
-## 4. Curriculum alignment
+## 4. Teacher Guide activity/page reconciliation
 
-### KM01-A1
-Matches Activity A's competency anchor: evaluating information from an official-letter recording. The challenge measures evidence-supported action selection rather than source-text recall.
+| ID | Teacher Guide activity | Teacher Guide printed pages | Result |
+|---|---|---:|---|
+| KM01-A1 | Aktivitas 1.1 — explicit information | 34–35 | PASS |
+| KM01-B1 | Aktivitas 1.4 — compare explicit/implicit meanings | 38–42 | PASS |
+| KM01-B2 | Aktivitas 1.4 — compare/evaluate explicit/implicit meanings | 38–42 | PASS |
+| KM01-C1 | Aktivitas 1.5 — reflection on writer's ideas | 43–45 | PASS WITH SCOPE NOTE |
+| KM01-D1 | Aktivitas 1.6 — identify official-letter structure | 46–48 | PASS |
+| KM01-D2 | Aktivitas 1.7 — analyze official-letter language use | 46–49 | PASS |
 
-**Result: PASS.**
+### A — KM01-A1
 
-### KM01-B1
-Matches Activity B's explicit/implicit message distinction. The challenge requires identifying a reasonable inference from an original official communication.
+Teacher Guide Subbab A is *Mengevaluasi Isi Rekaman Surat Resmi yang Disimak*. It defines Aktivitas 1.1 as explicit-information identification and provides a formative rubric for correctly identifying explicit information from a listened-to official letter.
 
-**Result: PASS.**
+**Result:** PASS. The original MCQ is a game micro-challenge derived from the competency; it does not reproduce the source task format.
 
-### KM01-B2
-Matches Activity B's comparison/evaluation demand. The challenge requires comparison using evidence from two original official communications.
+### B — KM01-B1 / KM01-B2
 
-**Result: PASS.**
+Teacher Guide Subbab B is *Mengevaluasi Pesan Tersurat dan Tersirat dari Dua Surat Resmi yang Berbeda*. Aktivitas 1.4 compares explicit and implicit meaning in two official letters and continues to evaluation through discussion. The guide explicitly warns that comparison alone is only analysis; evaluation requires reasoning about meaning, author purpose, and possible wording improvement.
 
-### KM01-C1
-Matches Activity C's reflection-on-official-letter-content demand. The scenario requires a practical response grounded in the communication.
+**B1 result:** PASS as a focused explicit/implicit prerequisite micro-challenge.
 
-**Result: PASS.**
+**B2 result:** PASS as the stronger evidence-based comparison/evaluation micro-challenge.
 
-### KM01-D1
-Matches Activity D's structural analysis demand. The challenge asks for the function of a structural component rather than memorization of a copied example.
+Neither item reproduces the source letters or their answers.
 
-**Result: PASS.**
+### C — KM01-C1
 
-### KM01-D2
-Matches Activity D's language-use analysis and supports the D–E cluster's standard-word/effective-sentence competency. The item is intentionally authored as a diagnostic repair task.
+Teacher Guide Subbab C is *Merefleksikan Gagasan Berdasarkan Isi Surat Resmi*. Aktivitas 1.5 is explicitly reflective and the guide lists five dimensions: important ideas, strengths/weaknesses with reasons, connection to personal experience/knowledge, change in personal view, and an idea to apply in real life. The source formative instrument is open response.
 
-**Result: PASS.**
+**Result:** PASS WITH SCOPE NOTE. KM01-C1 is a constrained preparatory decision challenge and should not be treated as the complete reflection competency. Final batch design must either pair it with a reflection follow-up or explicitly classify it as a preparatory micro-challenge.
 
-## 5. Teacher Guide resolution
+No renderer modification is authorized at this stage.
 
-The previous repository-only search incorrectly concluded that the exact KM Standard Teacher Guide was unavailable. That conclusion is now corrected.
+### D — KM01-D1
 
-The official SIBI catalog contains:
+Teacher Guide Subbab D covers structure and language in official letters. Aktivitas 1.6 asks learners to identify structural parts of an official circular letter; its formative rubric assesses structural identification.
 
-**Panduan Guru Bahasa Indonesia untuk SMA/MA/SMK/MAK Kelas XII (Edisi Revisi)**
+**Result:** PASS. D1 adds an original function-of-structure reasoning layer without reproducing a source letter.
 
-- Publisher: Pusat Perbukuan
-- Authors: Alvian Kurniawan, Ismail Kusmayadi, Velayeti Nurfitriana Ansas
-- ISBN: 978-634-00-3115-7
-- Official catalog: `https://buku.kemendikdasmen.go.id/katalog/panduan-guru-bahasa-indonesia-untuk-smamasmkmak-kelas-xii-edisi-revisi`
+### D — KM01-D2
 
-This metadata is independently confirmed by the official SIBI catalog. The Student Book in the repository is the corresponding revised 2025 edition by the same author group and is ISBN 978-634-00-3113-3.
+Aktivitas 1.7 analyzes language use in official letters. Its criteria explicitly cover formal language, clarity/accuracy, and standard language.
 
-**Teacher Guide identity: RESOLVED / CONFIRMED.**
+**Result:** PASS. D2 directly targets those criteria through an original language-repair challenge.
 
-However, the current accessible web representation does not expose the PDF's full page-level text in a form that can be safely mapped to each six-item activity. Therefore the following distinction is mandatory:
+## 5. Other quality checks
 
-- existence / identity of the correct Teacher Guide: **CONFIRMED**;
-- activity-specific Teacher Guide page/indicator cross-validation for KM01-A1 through KM01-D2: **UNVERIFIED**;
-- Tingkat Lanjut guide substitution: **REJECTED**.
+**Originality:** PASS initial review.
 
-No Teacher Guide page number is guessed.
+**Answer uniqueness:** PASS initial review.
 
-## 6. Schema gate decision
+**Cognitive alignment:** PASS initial design review, with the C1 scope note above.
 
-Schema 1.1 requires `source.student_book.pages`, `source.student_book.section`, and a `source.teacher_guide` object. The current project rule also requires source cross-validation when the Teacher Guide contains a relevant indicator.
+**Question type:** PASS candidate. All six use `mcq`.
 
-The Teacher Guide identity is now known, but activity-specific page/indicator validation remains unresolved. Therefore canonicalization still cannot honestly claim a complete provenance gate.
+**Duplicate IDs:** PASS. IDs are unique: `KM01-A1`, `KM01-B1`, `KM01-B2`, `KM01-C1`, `KM01-D1`, `KM01-D2`.
 
-**Schema canonicalization: BLOCKED pending activity-specific Teacher Guide validation.**
+## 6. Gate decision
 
-## 7. Other quality checks
+**Provenance gate:** PASS for all six items at source identity + Student Book activity/range + Teacher Guide activity/page level.
 
-**Originality:** PASS initial review. All six items use newly authored scenarios, names, communications, options, and explanations.
-
-**Answer uniqueness:** PASS initial review. One intended answer per MCQ under the supplied context.
-
-**Cognitive alignment:** PASS initial review against the detailed challenge-design baseline.
-
-**Question type:** PASS candidate. All six use `mcq`, avoiding the renderer-risk types identified in historical QA.
-
-**Duplicate IDs:** PASS within batch. IDs are unique: `KM01-A1`, `KM01-B1`, `KM01-B2`, `KM01-C1`, `KM01-D1`, `KM01-D2`.
+**Canonical JSON:** NOT YET PROMOTED. Schema-1.1 materialization and full payload validation remain to be executed.
 
 **Golden Dataset:** NO CHANGE.
 
-## 8. Decision
+## 7. Next gate
 
-This remains a **partial provenance/content QA pass**, not a final quality-gate pass.
-
-The six items are suitable to retain as draft material. They are not eligible for canonical JSON or Golden Dataset promotion until activity-specific Teacher Guide validation is resolved or a project-authorized exception is recorded.
-
-## 9. Next gate
-
-Resolve activity-specific Teacher Guide validation through an evidence-safe route:
-
-1. obtain/read the official Teacher Guide PDF or a repository copy with reliable page text;
-2. map each item to the relevant Teacher Guide chapter/activity/indicator and printed page;
-3. update provenance metadata;
-4. materialize schema-1.1 JSON;
-5. run answer-shape, duplicate-ID, provenance, pedagogical, renderer, and batch-quality gates.
-
-No source substitution is permitted.
+1. Update draft provenance blocks with the verified Teacher Guide activity/page anchors.
+2. Materialize schema-1.1 JSON.
+3. Run schema, answer-shape, duplicate-ID, provenance, pedagogical, renderer, and batch-quality QA.
+4. Resolve/record the C1 scope decision.
+5. Promote only if all final gates pass.
