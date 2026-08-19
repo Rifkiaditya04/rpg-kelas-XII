@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World 1 — KM Chapter 1 Integration Prototype v1</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#18202a;background:#e9edf2}body{margin:0}.wrap{max-width:1050px;margin:auto;padding:16px}.card{background:#fff;border-radius:18px;padding:20px;margin:12px 0;box-shadow:0 8px 28px #0001}.eyebrow{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;opacity:.65}.npc{display:grid;grid-template-columns:80px 1fr;gap:14px;align-items:center}.portrait{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;background:#e7edf4;font-size:2rem}.teach,.example,.note,.ok,.warn{padding:14px;border-radius:14px;margin-top:12px}.teach,.example{background:#f5f7f9}.note{background:#fff7df;border:1px solid #e6ce86}.ok{background:#e9f7ee;border:1px solid #9fd4ad}.warn{background:#fff0f0;border:1px solid #dda1a1}.btn{border:0;border-radius:12px;padding:11px 15px;background:#27364a;color:#fff;cursor:pointer}.btn.secondary{background:#e8edf2;color:#18202a}.hidden{display:none}.iframe-wrap{overflow:hidden;border-radius:16px;border:1px solid #d7dce2;background:#fff}.iframe-wrap iframe{display:block;width:100%;height:790px;border:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{padding:14px;border-radius:12px;background:#f1f4f7}.choice{display:block;width:100%;text-align:left;margin:8px 0;padding:12px;border:1px solid #cbd3dc;border-radius:10px;background:#fff;cursor:pointer}.choice.correct{border-color:#72b887;background:#e9f7ee}.choice.wrong{border-color:#d99090;background:#fff0f0}.state{font-family:ui-monospace,monospace;background:#f7f8fa;padding:14px;border-radius:12px;white-space:pre-wrap}@media(max-width:650px){.wrap{padding:10px}.card{padding:16px}.npc{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.iframe-wrap iframe{height:820px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="card">
+<div class="eyebrow">World 1 · Kurikulum Merdeka · Chapter 1</div>
+<h1>📚 Misi Pemeriksaan Komunikasi Resmi</h1>
+<p>Controlled integration prototype untuk membuktikan bahwa architecture World 1 yang sudah dipromosikan tetap dipakai, sementara teaching, challenge, learning evidence, dan remediation menggunakan content KM.</p>
+<div class="grid"><div class="stat"><strong id="xp">0</strong><br>XP</div><div class="stat"><strong id="missions">0</strong><br>Mission Complete</div><div class="stat"><strong id="accuracy">—</strong><br>Learning Accuracy</div></div>
+</section>
+
+<section id="brief" class="card">
+<div class="eyebrow">Explore → NPC / Context</div>
+<div class="npc"><div class="portrait" aria-hidden="true">👩‍🏫</div><div><h2>Bu Nara — Pembimbing Komunikasi</h2><p>“Sebelum informasi resmi diteruskan, kita perlu memeriksa apa yang benar-benar dikatakan, apa yang hanya dapat disimpulkan, dan apakah bentuk komunikasinya sesuai dengan tujuan.”</p></div></div>
+<button class="btn" id="learnBtn">Buka Pembekalan</button>
+</section>
+
+<section id="learn" class="card hidden">
+<div class="eyebrow">Learn / Pembekalan</div>
+<h2>Bagaimana memeriksa komunikasi resmi?</h2>
+<div class="teach"><strong>Yang sedang kamu pelajari</strong><ul><li>menentukan informasi yang relevan;</li><li>membedakan makna tersurat dan inferensi;</li><li>membandingkan pesan berdasarkan bukti;</li><li>menelaah struktur dan register komunikasi resmi.</li></ul></div>
+<div class="example"><strong>Contoh terbimbing</strong><p>Sebuah panitia menerima pemberitahuan bahwa ruang tertentu tidak dapat digunakan pada satu waktu tertentu karena pemeriksaan fasilitas. Fakta itu tidak otomatis berarti kegiatan pada waktu lain harus dibatalkan. Mulailah dari bukti yang benar-benar diberikan sebelum membuat keputusan.</p></div>
+<p>Setelah pembekalan, kamu akan memeriksa komunikasi resmi melalui challenge KM Chapter 1.</p>
+<button class="btn" id="challengeBtn">Mulai Challenge KM</button>
+</section>
+
+<section id="challenge" class="card hidden">
+<div class="eyebrow">Challenge → Feedback → Learning Evidence</div>
+<h2>KM Standard Chapter 1 · Batch 01</h2>
+<p>Challenge menggunakan renderer data-driven yang sudah ada dan dataset KM canonical. Tidak ada pertanyaan yang diduplikasi ke dalam halaman ini.</p>
+<div class="iframe-wrap"><iframe id="renderer" title="KM Chapter 1 renderer"></iframe></div>
+</section>
+
+<section id="training" class="card hidden">
+<div class="eyebrow">Learning Weakness → Training Hook</div>
+<h2>🎯 Pembekalan Lanjutan</h2>
+<p id="weakness"></p>
+<div id="trainingContent"></div>
+<div id="practiceArea"></div>
+</section>
+
+<section id="result" class="card hidden"></section>
+<section class="card"><div class="eyebrow">Learning Evidence</div><div id="evidence" class="state">Belum ada evidence.</div></section>
+</main>
+<script>
+const DATA='../../phase-3/world-1-km-chapter-1-original-content-batch-01-canonical-v1.1.json';
+const STORAGE='bi12-w01-km-c01-integration-v1';
+const state=JSON.parse(localStorage.getItem(STORAGE)||'null')||{xp:0,missions:0,learning:{}};
+const $=id=>document.getElementById(id);
+function save(){localStorage.setItem(STORAGE,JSON.stringify(state));renderState()}
+function renderState(){
+ $('xp').textContent=state.xp;
+ $('missions').textContent=state.missions;
+ const vals=Object.values(state.learning);const a=vals.reduce((s,v)=>s+v.correct,0),t=vals.reduce((s,v)=>s+v.attempts,0);$('accuracy').textContent=t?Math.round(a/t*100)+'%':'—';
+ $('evidence').textContent=Object.keys(state.learning).length?JSON.stringify(state.learning,null,2):'Belum ada evidence.';
+}
+function show(id){['brief','learn','challenge','training','result'].forEach(x=>$(x).classList.toggle('hidden',x!==id))}
+$('learnBtn').onclick=()=>{show('learn');$('learn').scrollIntoView({behavior:'smooth'})};
+$('challengeBtn').onclick=()=>{show('challenge');$('renderer').src='index.html?dataset='+encodeURIComponent(DATA)+'&mission=BI12-W01-KM-C01-M01&qa=1';$('challenge').scrollIntoView({behavior:'smooth'})};
+let trainingData=null,practiceIndex=0,practiceCorrect=0,practiceAnswered=false;
+async function loadTraining(){if(trainingData)return trainingData;const r=await fetch('../../phase-3/world-1-km-chapter-1-teaching-training-content-v1.json',{cache:'no-store'});if(!r.ok)throw new Error('Training content tidak dapat dimuat');trainingData=await r.json();return trainingData}
+function findTraining(entry){return trainingData.learning_bindings.find(x=>x.training_tag===entry.training_tag)||trainingData.learning_bindings[0]}
+async function openTraining(entry){
+ show('training');$('training').scrollIntoView({behavior:'smooth'});
+ try{const data=await loadTraining();const b=findTraining(entry);$('weakness').textContent=`Evidence menunjukkan kesulitan pada ${b.weakness_label}. Training Room mempertahankan XP dan Mission Complete, lalu memberikan contoh baru dan practice yang tidak mengulang item mission.`;$('trainingContent').innerHTML=`<div class="teach"><h3>📖 Pembekalan</h3><p>${b.training.explanation}</p></div><div class="example"><h3>🔎 Contoh Terbimbing</h3><p>${b.training.guided_example}</p></div>`;renderPractice(b.training.practice)}catch(e){$('trainingContent').innerHTML='<div class="warn">'+e.message+'</div>'}
+}
+function renderPractice(items){const item=items[practiceIndex];practiceAnswered=false;const area=$('practiceArea');area.innerHTML=`<div class="teach"><h3>✏️ Practice ${practiceIndex+1}/${items.length}</h3><p>${item.question}</p><div id="choices"></div><p id="feedback"></p></div>`;const choices=$('choices');item.options.forEach((text,i)=>{const b=document.createElement('button');b.className='choice';b.textContent=text;b.onclick=()=>answerPractice(item,text,b);choices.appendChild(b)});}
+function answerPractice(item,text,button){if(practiceAnswered)return;practiceAnswered=true;const buttons=[...document.querySelectorAll('.choice')];buttons.forEach(b=>{b.disabled=true;if(b.textContent===item.answer)b.classList.add('correct')});const ok=text===item.answer;if(ok)practiceCorrect++;else button.classList.add('wrong');$('feedback').className=ok?'ok':'note';$('feedback').textContent=ok?item.feedback:'Belum tepat. '+item.feedback;setTimeout(()=>{const entry=Object.values(state.learning).find(v=>v.recent_error_pattern!=='none');const binding=trainingData?.learning_bindings?.find(x=>x.training_tag===entry?.training_tag);if(binding&&practiceIndex<binding.training.practice.length-1){practiceIndex++;renderPractice(binding.training.practice)}else{$('practiceArea').innerHTML='<div class="ok"><strong>Practice selesai.</strong><p>Training Room tidak memberikan XP dan tidak menambah Mission Complete.</p><button class="btn secondary" onclick="location.reload()">Kembali ke Mission</button></div>'}},350)}
+window.addEventListener('message',async event=>{const d=event.data||{};if(d.type!=='MISSION_RENDERER_RESULT'||d.mission_id!=='BI12-W01-KM-C01-M01')return;const correct=Number(d.correct)||0,total=Number(d.total)||0,accuracy=Number(d.accuracy)||0;const existing=state.learning['BI12-W01-KM-C01-M01']||{attempts:0,correct:0};const trainingTag=accuracy<70?(correct<2?'evidence-and-inference':'official-communication-inspection'):'none';state.learning['BI12-W01-KM-C01-M01']={competency_ids:['BI12-C01-A','BI12-C01-B','BI12-C01-C','BI12-C01-D'],attempts:existing.attempts+total,correct:existing.correct+correct,accuracy:(existing.correct+correct)/(existing.attempts+total)*100,recent_error_pattern:accuracy<70?'below-mission-threshold':'none',training_tag:trainingTag,last_attempt:new Date().toISOString()};if(accuracy>=70&&!state.learning['BI12-W01-KM-C01-M01'].completed){state.xp+=Number(d.xp)||0;state.xp+=100;state.missions+=1;state.learning['BI12-W01-KM-C01-M01'].completed=true;save();$('result').className='card';$('result').innerHTML='<div class="ok"><h2>🏆 Mission Complete</h2><p>KM Chapter 1 berhasil melewati threshold mission.</p><div class="grid"><div class="stat"><strong>'+correct+'/'+total+'</strong><br>Benar</div><div class="stat"><strong>'+state.xp+'</strong><br>XP</div><div class="stat"><strong>'+accuracy+'%</strong><br>Akurasi</div></div></div>';}else{save();const entry=state.learning['BI12-W01-KM-C01-M01'];await openTraining(entry)}});
+renderState();
+</script>
+</body>
+</html>
