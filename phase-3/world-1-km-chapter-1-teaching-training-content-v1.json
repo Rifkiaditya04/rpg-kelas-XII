@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "status": "CONTROLLED_INTEGRATION_DRAFT",
+  "chapter_id": "BI12-C01",
+  "purpose": "Bind the retained World 1 teaching/remediation architecture to original Kurikulum Merdeka Chapter 1 content without modifying the Golden Dataset or replacing the existing RPG architecture.",
+  "architecture": "retained-world-1-rpg-layer-v1",
+  "source_basis": {
+    "teaching_spec": "phase-3/world-1-km-chapter-1-original-teaching-gameplay-content-spec-v1.md",
+    "challenge_design": "phase-3/world-1-km-chapter-1-detailed-competency-challenge-design-v1.md",
+    "canonical_batch": "phase-3/world-1-km-chapter-1-original-content-batch-01-canonical-v1.1.json"
+  },
+  "mission": {
+    "id": "BI12-W01-KM-C01-M01",
+    "title": "Misi Pemeriksaan Komunikasi Resmi",
+    "brief": "Kamu diminta membantu tim sekolah memeriksa beberapa komunikasi resmi sebelum informasi diteruskan kepada pihak lain.",
+    "npc": {
+      "name": "Bu Nara — Pembimbing Komunikasi",
+      "role": "editor-mentor",
+      "opening": "Sebelum sebuah informasi resmi diteruskan, jangan langsung bertindak hanya karena pesannya terlihat meyakinkan. Periksa apa yang benar-benar dikatakan, apa yang hanya dapat disimpulkan, dan apakah bentuk komunikasinya mendukung tujuan.",
+      "teach_points": [
+        "Mulai dari informasi yang benar-benar tersedia dalam komunikasi.",
+        "Bedakan informasi yang dinyatakan langsung dari kesimpulan yang masih membutuhkan inferensi.",
+        "Saat membandingkan dua pesan, gunakan kriteria yang sama dan kembali pada bukti masing-masing.",
+        "Saat memeriksa surat resmi, perhatikan struktur, pilihan bahasa, dan kejelasan kalimat sebelum komunikasi dikirim."
+      ],
+      "guided_example": {
+        "title": "Contoh Terbimbing — Pemeriksaan Pengumuman",
+        "scenario": "Sebuah panitia sekolah menerima pengumuman bahwa ruang serbaguna tidak dapat dipakai pada satu sore tertentu karena pemeriksaan fasilitas. Panitia juga memiliki kegiatan pada pagi berikutnya.",
+        "reasoning": "Pisahkan fakta yang dinyatakan dari dugaan. Informasi tentang satu waktu tidak otomatis membuktikan bahwa kegiatan pada waktu lain harus dibatalkan. Keputusan harus mengikuti bukti yang benar-benar diberikan."
+      }
+    }
+  },
+  "learning_bindings": [
+    {
+      "cluster": "A-B",
+      "competencies": ["BI12-C01-A", "BI12-C01-B"],
+      "canonical_ids": ["KM01-A1", "KM01-B1", "KM01-B2"],
+      "training_tag": "evidence-and-inference",
+      "weakness_label": "Membedakan bukti, informasi tersurat, dan inferensi",
+      "training": {
+        "explanation": "Saat membaca komunikasi resmi, pisahkan apa yang benar-benar disebutkan dari kesimpulan yang dibuat pembaca. Kesimpulan yang baik harus memiliki dukungan dari konteks komunikasi.",
+        "guided_example": "Sebuah pusat kegiatan memberi tahu bahwa pendaftaran tatap muka berakhir pukul 16.00, tetapi formulir daring masih tersedia sampai pukul 20.00. Jangan menyimpulkan bahwa semua layanan berhenti pukul 16.00; perhatikan jenis layanan dan waktunya.",
+        "practice": [
+          {
+            "id": "KM-TR-A1",
+            "question": "Sebuah pengumuman menyatakan bahwa loket fisik tutup pukul 15.00, sementara pengajuan daring tetap tersedia sampai pukul 19.00. Kesimpulan mana yang paling aman?",
+            "options": ["Pengajuan daring masih dapat dilakukan setelah loket fisik tutup.", "Semua bentuk pengajuan berhenti pukul 15.00.", "Loket fisik pasti buka kembali pukul 19.00.", "Pengajuan daring hanya boleh dilakukan sebelum pukul 15.00."],
+            "answer": "Pengajuan daring masih dapat dilakukan setelah loket fisik tutup.",
+            "feedback": "Kesimpulan tersebut langsung didukung oleh informasi tentang layanan daring dan waktunya."
+          },
+          {
+            "id": "KM-TR-A2",
+            "question": "Dua pemberitahuan sama-sama menyebut penutupan fasilitas fisik pada sore hari, tetapi hanya salah satunya menyediakan layanan daring. Apa yang harus dibandingkan terlebih dahulu?",
+            "options": ["Kriteria layanan yang tetap tersedia setelah penutupan.", "Jumlah kata pada kedua pemberitahuan.", "Siapa yang paling terkenal di antara pengirimnya.", "Warna dokumen yang digunakan."],
+            "answer": "Kriteria layanan yang tetap tersedia setelah penutupan.",
+            "feedback": "Perbandingan harus memakai dimensi yang relevan dengan tujuan komunikasi."
+          }
+        ]
+      }
+    },
+    {
+      "cluster": "C",
+      "competencies": ["BI12-C01-C"],
+      "canonical_ids": ["KM01-C1"],
+      "training_tag": "contextual-interpretation",
+      "weakness_label": "Menghubungkan isi komunikasi dengan keputusan kontekstual",
+      "training": {
+        "explanation": "Refleksi kontekstual berarti menghubungkan informasi yang tersedia dengan situasi nyata tanpa menambahkan asumsi yang tidak didukung.",
+        "guided_example": "Jika sebuah layanan mengharuskan pendaftaran sebelum dokumen ditinjau, langkah pertama harus mengikuti prosedur tersebut. Keinginan untuk segera mendapat masukan tidak menghapus ketentuan yang sudah dinyatakan.",
+        "practice": [
+          {
+            "id": "KM-TR-C1",
+            "question": "Sebuah kantor sekolah menyatakan bahwa dokumen hanya diperiksa setelah pemohon mengisi formulir. Apa tindakan yang paling sesuai?",
+            "options": ["Mengisi formulir sebelum meminta pemeriksaan dokumen.", "Mengirim dokumen tanpa formulir karena isinya sudah selesai.", "Meminta orang lain menggantikan proses pendaftaran.", "Mengabaikan prosedur karena pemeriksaan dianggap mendesak."],
+            "answer": "Mengisi formulir sebelum meminta pemeriksaan dokumen.",
+            "feedback": "Keputusan mengikuti urutan prosedur yang dinyatakan dalam komunikasi."
+          }
+        ]
+      }
+    },
+    {
+      "cluster": "D",
+      "competencies": ["BI12-C01-D"],
+      "canonical_ids": ["KM01-D1", "KM01-D2"],
+      "training_tag": "official-communication-inspection",
+      "weakness_label": "Menelaah struktur dan register komunikasi resmi",
+      "training": {
+        "explanation": "Pemeriksaan komunikasi resmi perlu melihat fungsi bagian dokumen dan kesesuaian bahasa dengan tujuan serta penerima.",
+        "guided_example": "Dalam sebuah surat undangan, identitas penerima membantu memastikan komunikasi ditujukan kepada pihak yang tepat. Dalam kalimat permintaan, bentuk yang sopan dan formal membantu menjaga kesesuaian dengan konteks resmi.",
+        "practice": [
+          {
+            "id": "KM-TR-D1",
+            "question": "Sebuah surat resmi akan dikirim kepada sebuah organisasi. Bagian yang paling membantu memastikan surat sampai kepada pihak yang dituju adalah ...",
+            "options": ["Identitas dan alamat penerima.", "Cerita pribadi pengirim.", "Daftar hobi pengirim.", "Catatan perjalanan pengirim."],
+            "answer": "Identitas dan alamat penerima.",
+            "feedback": "Bagian penerima berfungsi mengidentifikasi tujuan komunikasi."
+          },
+          {
+            "id": "KM-TR-D2",
+            "question": "Kalimat mana yang paling sesuai untuk permintaan dalam komunikasi sekolah yang formal?",
+            "options": ["Mohon kirimkan konfirmasi kehadiran sebelum Jumat agar ruangan dapat disiapkan.", "Kirim konfirmasinya sekarang ya, biar cepat beres.", "Kalian harus kirim ASAP, oke?", "Tolong banget kirim kalau sempat."],
+            "answer": "Mohon kirimkan konfirmasi kehadiran sebelum Jumat agar ruangan dapat disiapkan.",
+            "feedback": "Pilihan tersebut mempertahankan tujuan permintaan dengan register yang lebih sesuai untuk komunikasi resmi."
+          }
+        ]
+      }
+    }
+  ]
+}
