@@ -1,0 +1,27 @@
+{
+  "schema_version":"1.1",
+  "batch_status":"QA_ONLY_NOT_CANONICAL",
+  "dataset":"Renderer capability fixture — multi_select",
+  "purpose":"Technical capability test only. This is not academic content and must never enter the Golden Dataset or approved question pools.",
+  "rewards":{"xp_per_correct":100,"mission_completion_xp":100},
+  "questions":[
+    {
+      "id":"QA-MULTISELECT-001",
+      "chapter_id":"QA-ONLY",
+      "topic_id":"QA-ONLY",
+      "skill":"QA capability",
+      "cognitive_level":"QA capability",
+      "difficulty":"QA",
+      "question_type":"multi_select",
+      "question":"Pilih semua opsi yang sengaja ditandai sebagai jawaban benar untuk pengujian renderer.",
+      "options":["Benar A","Distraktor B","Benar C","Distraktor D"],
+      "answer":["Benar A","Benar C"],
+      "explanation":"Fixture teknis untuk memastikan renderer menerima lebih dari satu pilihan benar dan memeriksa kombinasi pilihan secara tepat.",
+      "source":{"student_book":{"pages":"QA-only","section":"QA capability fixture"},"teacher_guide":{"pages":"QA-only","section":"QA capability fixture"}},
+      "provenance":"Synthetic QA fixture; no textbook or curriculum claim; not production content.",
+      "mode":"qa",
+      "game_mechanic":"renderer_capability_test",
+      "tags":["qa-only","multi_select"]
+    }
+  ]
+}
