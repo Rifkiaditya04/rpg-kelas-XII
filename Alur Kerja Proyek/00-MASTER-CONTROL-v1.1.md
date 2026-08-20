@@ -99,4 +99,39 @@ No component may be marked PROMOTED solely because source code looks correct. Pr
 
 **World 1 Training Room v1: PROMOTED / APPROVED.**
 
-**Next: World 1 Kurikulum Merdeka Standard Chapter 1 Content Rebaseline v1 — USER REVIEW / APPROVAL.**
+**World 1 KM Chapter 1 Batch 01: PROMOTED / APPROVED.**
+
+**World 1 KM Chapter 1 Teaching / NPC / Remedial Rebinding: RUNTIME QA PASS.**
+
+**World 1 KM Chapter 1 integrated learning loop: RUNTIME QA PASS.**
+
+**World 1 KM Chapter 1 Batch 02 E1–E3: PROMOTED / APPROVED as additive/versioned content.**
+
+**Learning Evidence production boundary: raw JSON hidden in final student-facing UI; underlying evidence state retained.**
+
+**Approved KM Chapter 1 UI reference archived; 3D NPC presentation direction recorded without replacing the canonical character-design baseline.**
+
+## 10. Current next gate — 2026-08-20 continuation
+The previous KM integration browser gate is closed by user-verified evidence recorded in `Alur Kerja Proyek/PROJECT LOG/056-World-1-KM-Chapter-1-Integrated-Learning-Loop-QA-PASS.md`.
+
+Batch 02 E1–E3 is now promoted through `Alur Kerja Proyek/PROJECT LOG/057-World-1-KM-Chapter-1-Batch-02-E1-E3-Final-QA-and-Promotion.md`.
+
+**Next controlled gate: independent renderer capability verification for the proposed `multi_select` interaction for KM02-E4.**
+
+Rules for this gate:
+- do not draft or promote E4 content before the interaction capability is proven;
+- if `multi_select` is supported, create a small QA-only capability test and then resolve E4 provenance/content drafting;
+- if unsupported, create an implementation-gap proposal before changing renderer behavior;
+- do not modify Golden Dataset v1;
+- do not delete or rewrite approved historical prototypes;
+- keep final production UI work separate from controlled content/runtime QA.
+
+## 11. Production presentation boundary
+The approved KM UI reference is an archived presentation reference, not yet a final production UI implementation.
+
+Current controlled prototype may retain QA/debug instrumentation. Before final student-facing release:
+- raw Learning Evidence JSON must be hidden from normal presentation;
+- concise human-readable learning state may be shown where pedagogically useful;
+- the underlying evidence contract must remain intact;
+- the 3D NPC presentation direction may be implemented through the appropriate visual/gameplay gate;
+- final visual implementation still requires its own visual QA/promotion evidence.
