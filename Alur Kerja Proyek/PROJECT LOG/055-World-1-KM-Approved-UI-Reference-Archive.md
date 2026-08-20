@@ -15,9 +15,9 @@ The user explicitly confirmed that the supplied composite screenshot is also par
 
 Archived reference:
 
-`prototype/bahasa-indonesia/assets/reference/world-1-km-chapter-1-approved-ui-reference.jpg`
+`prototype/bahasa-indonesia/assets/reference/world-1-km-chapter-1-approved-ui-reference.svg`
 
-The archived image is a compressed reference copy of the user-supplied composite screenshot. It is intended as a visual reference/decision artifact, not as a production UI asset and not as a substitute for the existing canonical character-design files.
+The archive is a compressed visual reference copy of the user-supplied composite screenshot, embedded in an SVG wrapper so it can be stored as a repository text asset without changing the production UI. It is intended as a visual reference/decision artifact, not as a production UI asset and not as a substitute for the existing canonical character-design files.
 
 The reference captures the approved direction shown by the user, including:
 
@@ -74,4 +74,4 @@ No existing file was deleted, replaced, or restored. No Golden Dataset content w
 
 ## Commit
 
-The image archive and this log are part of the same documentation step. The image was committed first as a binary blob/tree update; this log records the decision and reference boundary.
+The reference archive and this log are committed on `main`. The reference image is stored as an SVG wrapper containing the compressed screenshot so it can be preserved in the repository without requiring binary contents API support.
