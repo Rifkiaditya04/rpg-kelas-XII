@@ -111,19 +111,27 @@ No component may be marked PROMOTED solely because source code looks correct. Pr
 
 **Approved KM Chapter 1 UI reference archived; 3D NPC presentation direction recorded without replacing the canonical character-design baseline.**
 
+**KM02-E4 multi_select renderer capability: RUNTIME QA PASS — user-verified hosted browser evidence.**
+
+**KM02-E4 original content: DRAFTED and schema/static draft checks PASS; not yet canonical or promoted.**
+
 ## 10. Current next gate — 2026-08-20 continuation
 The previous KM integration browser gate is closed by user-verified evidence recorded in `Alur Kerja Proyek/PROJECT LOG/056-World-1-KM-Chapter-1-Integrated-Learning-Loop-QA-PASS.md`.
 
-Batch 02 E1–E3 is now promoted through `Alur Kerja Proyek/PROJECT LOG/057-World-1-KM-Chapter-1-Batch-02-E1-E3-Final-QA-and-Promotion.md`.
+Batch 02 E1–E3 is promoted through `Alur Kerja Proyek/PROJECT LOG/057-World-1-KM-Chapter-1-Batch-02-E1-E3-Final-QA-and-Promotion.md`.
 
-**Next controlled gate: independent renderer capability verification for the proposed `multi_select` interaction for KM02-E4.**
+The independent `multi_select` renderer capability gate is now closed by user browser evidence recorded in `Alur Kerja Proyek/PROJECT LOG/058-World-1-KM-Chapter-1-Multi-Select-Renderer-Capability-QA.md`: the synthetic fixture accepted the intended two-selection combination and completed 1/1.
+
+KM02-E4 is now represented by a controlled original draft at `phase-3/world-1-km-chapter-1-original-content-batch-02-e4-draft-v1.0.json`. Draft QA is recorded in `phase-3/world-1-km-chapter-1-original-content-batch-02-e4-draft-qa-v1.md`.
+
+**Current next gate: KM02-E4 content/pedagogical/provenance review → schema/static QA → production-shaped browser regression.**
 
 Rules for this gate:
-- do not draft or promote E4 content before the interaction capability is proven;
-- if `multi_select` is supported, create a small QA-only capability test and then resolve E4 provenance/content drafting;
-- if unsupported, create an implementation-gap proposal before changing renderer behavior;
+- E4 remains DRAFT until content/pedagogical/provenance review passes;
+- do not promote E4 merely because the renderer capability is proven;
 - do not modify Golden Dataset v1;
 - do not delete or rewrite approved historical prototypes;
+- preserve additive/versioned promotion for new KM content;
 - keep final production UI work separate from controlled content/runtime QA.
 
 ## 11. Production presentation boundary
