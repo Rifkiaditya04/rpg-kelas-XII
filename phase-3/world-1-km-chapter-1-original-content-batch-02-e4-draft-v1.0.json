@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "DRAFT",
+  "dataset": "World 1 KM Standard Chapter 1 Original Content Batch 02 E4 v1.0",
+  "purpose": "Controlled original E4 draft after multi_select renderer capability PASS; not yet canonical or promoted.",
+  "chapter_id": "BI12-C01",
+  "lanes": ["E"],
+  "item_count": 1,
+  "item_ids": ["KM02-E4"],
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM02-E4",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-E",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question_type": "multi_select",
+      "question": "Perhatikan kutipan surat resmi fiktif berikut:\n\n\"Peserta wajib menyerahkan Formulir pendaftaran kepada petugas administrasi. Peserta yang memerlukan informasi tambahan dapat menghubungi TU pada jam layanan. Atas perhatian Bapak/Ibu kami ucapkan terima kasih.\"\n\nPilih semua diagnosis yang tepat terhadap kutipan tersebut.",
+      "options": [
+        "Kata \"Formulir\" sebaiknya ditulis dengan huruf awal kecil karena digunakan sebagai kata umum, bukan nama khusus.",
+        "Singkatan \"TU\" perlu diperkenalkan terlebih dahulu dengan bentuk lengkapnya sebelum digunakan sebagai singkatan.",
+        "Perlu tanda koma setelah frasa \"Bapak/Ibu\" pada kalimat penutup agar batas unsur kalimat lebih jelas.",
+        "Kata \"Bapak/Ibu\" seharusnya selalu ditulis dengan huruf awal kecil karena bukan nama orang tertentu.",
+        "Penggunaan singkatan \"TU\" sudah tepat tanpa penjelasan karena surat resmi selalu mengutamakan bentuk singkat."
+      ],
+      "answer": [
+        "Kata \"Formulir\" sebaiknya ditulis dengan huruf awal kecil karena digunakan sebagai kata umum, bukan nama khusus.",
+        "Singkatan \"TU\" perlu diperkenalkan terlebih dahulu dengan bentuk lengkapnya sebelum digunakan sebagai singkatan.",
+        "Perlu tanda koma setelah frasa \"Bapak/Ibu\" pada kalimat penutup agar batas unsur kalimat lebih jelas."
+      ],
+      "explanation": "Ketiga diagnosis yang dipilih benar karena kutipan sengaja memuat tiga masalah yang berbeda: kapitalisasi pada kata umum, penggunaan singkatan yang belum diperkenalkan, dan tanda baca pada kalimat penutup. Dua pilihan lain merupakan generalisasi yang tidak tepat: sapaan Bapak/Ibu tidak otomatis harus ditulis kecil, dan singkatan dalam komunikasi resmi tidak otomatis benar hanya karena lebih ringkas.",
+      "source": {
+        "student_book": {"pages": "19-28", "section": "Bab 1, Subbab E"},
+        "teacher_guide": {"pages": "50-53", "section": "Bab 1, Subbab E; Aktivitas 1.8-1.9"}
+      },
+      "provenance": "Blueprint diturunkan dari kompetensi Subbab E untuk mengidentifikasi dan menganalisis kesalahan kaidah penulisan pada komunikasi resmi, khususnya kapitalisasi, singkatan, dan tanda baca. Surat, opsi, kesalahan, jawaban, dan penjelasan dibuat baru untuk proyek dan tidak menyalin latihan/contoh sumber.",
+      "mode": "learning",
+      "game_mechanic": "bounded_multi_select_diagnosis",
+      "tags": ["capitalization", "abbreviation", "punctuation", "multi_select", "official_communication", "error_diagnosis"]
+    }
+  ]
+}
