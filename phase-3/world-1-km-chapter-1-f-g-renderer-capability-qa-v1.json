@@ -5,7 +5,7 @@
   "production_content": false,
   "rewards": {
     "xp_per_correct": 100,
-    "mission_completion_xp": 0
+    "mission_completion_xp": 100
   },
   "items": [
     {
@@ -30,10 +30,7 @@
         "Pembuka formal yang langsung menyatakan maksud surat"
       ],
       "explanation": "Fixture menguji apakah renderer dapat mengukur constrained production melalui pemilihan komponen yang mempertahankan penerima, tujuan, dan register formal. Kombinasi yang menambahkan bahasa santai atau cerita tidak relevan harus ditolak.",
-      "source": {
-        "student_book": {"pages": "QA-SYNTHETIC", "section": "not academic production"},
-        "teacher_guide": {"pages": "QA-SYNTHETIC", "section": "not academic production"}
-      },
+      "source": {"student_book": {"pages": "QA-SYNTHETIC", "section": "not academic production"}, "teacher_guide": {"pages": "QA-SYNTHETIC", "section": "not academic production"}},
       "provenance": {"type": "synthetic_renderer_fixture", "academic_source": false},
       "mode": "qa_only",
       "game_mechanic": "guided_letter_component_selection"
@@ -60,10 +57,7 @@
         "Menutup dengan nama/pengirim yang jelas dan sopan"
       ],
       "explanation": "Fixture menguji constrained email-response adaptation. Respons yang benar harus mempertahankan tujuan email, informasi yang diperlukan, dan register sesuai penerima; distractor yang mengubah register atau tujuan harus ditolak.",
-      "source": {
-        "student_book": {"pages": "QA-SYNTHETIC", "section": "not academic production"},
-        "teacher_guide": {"pages": "QA-SYNTHETIC", "section": "not academic production"}
-      },
+      "source": {"student_book": {"pages": "QA-SYNTHETIC", "section": "not academic production"}, "teacher_guide": {"pages": "QA-SYNTHETIC", "section": "not academic production"}},
       "provenance": {"type": "synthetic_renderer_fixture", "academic_source": false},
       "mode": "qa_only",
       "game_mechanic": "guided_email_response_selection"
