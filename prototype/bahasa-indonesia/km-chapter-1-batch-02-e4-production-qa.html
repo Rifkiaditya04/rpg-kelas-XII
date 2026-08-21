@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KM Chapter 1 — Original Batch 02 E4 Production-Shaped QA</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:1000px;margin:24px auto;padding:0 18px;background:#f7f7f7;color:#17202a}
+.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:18px;margin:14px 0;box-shadow:0 2px 8px #0000000d}
+button{padding:10px 16px;font-weight:700;border-radius:8px;border:1px solid #bbb;background:#fff;cursor:pointer}
+button.primary{background:#1f6feb;color:#fff;border-color:#1f6feb}
+.check{margin:10px 0;padding:12px;border:1px solid #ddd;border-radius:8px}.pass{border-color:#238636}.fail{border-color:#cf222e}.pending{border-color:#9a6700}.meta{color:#555}
+iframe{width:100%;min-height:760px;border:1px solid #bbb;border-radius:10px;background:#fff;margin-top:14px}
+code{background:#eee;padding:2px 5px;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>KM Chapter 1 — Original Batch 02 E4 Production-Shaped QA</h1>
+<p class="meta">QA-only entrypoint. Uses the reviewed E4 v1.1 draft and the actual KM renderer. Does not modify the Golden Dataset and is not production content.</p>
+<button id="run" class="primary">Run E4 production-shaped QA</button>
+<div id="status" class="meta">Belum dijalankan.</div>
+<div id="checks"></div>
+</div>
+<div class="card">
+<h2>Runtime</h2>
+<p>Setelah harness memuat, gunakan renderer di bawah. E4 adalah <code>multi_select</code>: pilih tepat tiga diagnosis yang benar, lalu submit.</p>
+<iframe id="app" title="Actual KM renderer"></iframe>
+</div>
+<script>
+const datasetUrl='../../phase-3/world-1-km-chapter-1-original-content-batch-02-e4-draft-v1.1.json';
+const expectedId='KM02-E4';
+const checks=[];
+function add(name,state,detail=''){checks.push({name,state,detail});renderChecks()}
+function renderChecks(){document.getElementById('checks').innerHTML=checks.map(c=>`<div class="check ${c.state.toLowerCase()}"><b>${c.name}</b><br>${c.state}<br><span>${c.detail}</span></div>`).join('')}
+async function run(){checks.length=0;renderChecks();document.getElementById('status').textContent='Menjalankan static/contract checks…';try{
+const r=await fetch(datasetUrl,{cache:'no-store'});if(!r.ok)throw Error('Dataset HTTP '+r.status);const data=await r.json();
+const items=Array.isArray(data.items)?data.items:(Array.isArray(data.questions)?data.questions:[]);
+add('DATA',items.length===1?'PASS':'FAIL',items.length+' item');
+const q=items[0];
+const idOk=!!q&&q.id===expectedId;add('IDS',idOk?'PASS':'FAIL',q?.id||'missing');
+const contract=!!q&&q.question_type==='multi_select'&&Array.isArray(q.options)&&q.options.length===5&&Array.isArray(q.answer)&&q.answer.length===3&&q.answer.every(a=>q.options.includes(a));
+add('CONTRACT',contract?'PASS':'FAIL','multi_select · 5 options · 3 canonical answers');
+const provenance=!!q&&q.source?.student_book?.pages&&q.source?.student_book?.section&&q.source?.teacher_guide?.pages&&q.source?.teacher_guide?.section;
+add('PROVENANCE',provenance?'PASS':'FAIL','Student Book + Teacher Guide fields present');
+if(!idOk||!contract||!provenance)throw Error('Production-shaped contract gate failed');
+const frame=document.getElementById('app');frame.src='km-batch-01-runtime.html?dataset='+encodeURIComponent(datasetUrl)+'&qa=1&mission=KM02-E4-E4&v='+Date.now();
+await new Promise((resolve,reject)=>{const t=setTimeout(()=>reject(Error('Actual renderer load timeout')),10000);frame.onload=()=>{clearTimeout(t);resolve()}});
+add('LOAD','PASS','Actual KM renderer loaded with E4 v1.1 draft dataset');
+document.getElementById('status').textContent='Loaded. Browser interaction must be exercised manually.';
+add('RUNTIME','PENDING','Pilih tepat 3 diagnosis canonical pada E4, submit, lalu catat feedback dan hasil. Wrong/single combinations should be rejected.');
+}catch(e){add('RUNTIME','FAIL',e.message);document.getElementById('status').textContent='FAIL — lihat detail'}}
+document.getElementById('run').onclick=run;
+</script>
+</body>
+</html>
