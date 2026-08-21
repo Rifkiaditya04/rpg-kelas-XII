@@ -180,3 +180,30 @@ Observed QA checks:
 QA record: `Alur Kerja Proyek/PROJECT LOG/061-World-1-KM-Chapter-1-KM02-E4-Production-Shaped-Browser-QA-PASS.md`.
 
 Interpretation: E4 v1.1 has now passed its production-shaped browser regression. This is runtime QA evidence only; it does not itself promote the content to canonical status.
+
+## 14. KM02-E4 final QA and additive promotion — 2026-08-21
+Final QA and promotion record: `Alur Kerja Proyek/PROJECT LOG/062-World-1-KM-Chapter-1-KM02-E4-Final-QA-and-Promotion.md`.
+
+**KM02-E4 v1.1: PROMOTED / APPROVED as additive/versioned World 1 content.**
+
+Canonical additive artifact:
+`phase-3/world-1-km-chapter-1-original-content-batch-02-e4-canonical-v1.1.json`
+
+Approved content manifest:
+`phase-3/world-1-km-chapter-1-approved-content-batch-02-e4-v1.1.json`
+
+Promotion evidence includes academic alignment, Teacher Guide cross-validation, pedagogical review, originality, provenance, schema/static QA, renderer capability QA, and user-verified production-shaped browser regression.
+
+Promotion commits:
+- Canonical E4: `06bc9ea5077832dd5d72a7d599a2a1b5c1d3bf1c`
+- Approved E4 manifest: `9b11eb6a7b04e33fe0dc560d85c64ed2213268f7`
+- Promotion record: `d7f3885a4b0c6733568a802e151de16791c6d798`
+
+Boundary retained:
+- Golden Dataset v1 remains immutable.
+- E1–E3 remain unchanged.
+- Historical E4 v1.0 and reviewed v1.1 draft remain preserved.
+- Renderer source remains unchanged during promotion.
+- This is controlled content/runtime promotion, not final visual/UI or full-release approval.
+
+**Current next gate: determine the next World 1 KM Chapter 1 scope from the active Challenge Ledger / Master Control; do not auto-generate E5 without re-sync and scope determination.**
