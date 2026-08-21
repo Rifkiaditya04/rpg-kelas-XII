@@ -128,11 +128,18 @@ The independent `multi_select` renderer capability gate is closed by user browse
 
 KM02-E4 v1.1 has passed the academic, pedagogical, provenance, originality, and schema/static review gates. Review is recorded in `Alur Kerja Proyek/PROJECT LOG/059-World-1-KM-Chapter-1-KM02-E4-Academic-Pedagogical-Provenance-Review.md`; static QA is recorded in `phase-3/world-1-km-chapter-1-original-content-batch-02-e4-draft-qa-v1.1.md`.
 
-**Current next gate: KM02-E4 production-shaped browser regression → final QA → separate promotion decision.**
+The production-shaped E4 QA entrypoint was created in `prototype/bahasa-indonesia/km-chapter-1-batch-02-e4-production-qa.html` and documented in `Alur Kerja Proyek/PROJECT LOG/060-World-1-KM-Chapter-1-KM02-E4-Production-Shaped-Browser-QA.md`.
+
+**KM02-E4 production-shaped browser regression: PASS — user-verified hosted browser evidence.**
+
+QA record: `Alur Kerja Proyek/PROJECT LOG/061-World-1-KM-Chapter-1-KM02-E4-Production-Shaped-Browser-QA-PASS.md`.
+
+Evidence: DATA 1 item PASS; ID KM02-E4 PASS; multi_select contract 5 options / 3 canonical answers PASS; Student Book + Teacher Guide provenance PASS; actual KM renderer load PASS; browser runtime completed with 1/1 correct, 100% accuracy, and 200 XP.
+
+**Current next gate: KM02-E4 final QA → separate additive promotion decision.**
 
 Rules for this gate:
-- E4 remains non-canonical until browser regression and promotion pass;
-- do not promote E4 merely because the renderer capability is proven;
+- E4 remains non-canonical until the promotion decision is documented;
 - do not modify Golden Dataset v1;
 - do not delete or rewrite approved historical prototypes;
 - preserve additive/versioned promotion for new KM content;
@@ -157,4 +164,19 @@ Documentation: `Alur Kerja Proyek/PROJECT LOG/060-World-1-KM-Chapter-1-KM02-E4-P
 
 The entrypoint uses the reviewed E4 v1.1 draft and the established actual KM renderer (`km-batch-01-runtime.html` + `km-batch-01-renderer-v1.js`) without modifying the renderer. Static checks cover dataset load, ID, multi-select contract, and provenance before the runtime iframe is loaded.
 
-**Runtime status remains PENDING until user-hosted browser interaction evidence is supplied.** Repository/tool inspection must not be represented as browser interaction evidence.
+The runtime gate was subsequently closed by user-verified hosted browser evidence. See PROJECT LOG 061.
+
+## 13. KM02-E4 production-shaped browser QA PASS — 2026-08-21
+User-verified hosted browser evidence closed the runtime gate for E4 v1.1.
+
+Observed QA checks:
+- DATA: PASS — 1 item.
+- IDS: PASS — KM02-E4.
+- CONTRACT: PASS — `multi_select`, 5 options, 3 canonical answers.
+- PROVENANCE: PASS — Student Book + Teacher Guide fields present.
+- LOAD: PASS — actual KM renderer loaded with E4 v1.1 draft dataset.
+- RUNTIME: PASS — canonical multi-select combination accepted; mission result 1/1 correct, 100% accuracy, 200 XP.
+
+QA record: `Alur Kerja Proyek/PROJECT LOG/061-World-1-KM-Chapter-1-KM02-E4-Production-Shaped-Browser-QA-PASS.md`.
+
+Interpretation: E4 v1.1 has now passed its production-shaped browser regression. This is runtime QA evidence only; it does not itself promote the content to canonical status.
