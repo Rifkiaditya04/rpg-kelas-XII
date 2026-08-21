@@ -147,3 +147,14 @@ Current controlled prototype may retain QA/debug instrumentation. Before final s
 - the underlying evidence contract must remain intact;
 - the 3D NPC presentation direction may be implemented through the appropriate visual/gameplay gate;
 - final visual implementation still requires its own visual QA/promotion evidence.
+
+## 12. KM02-E4 production-shaped QA entrypoint — 2026-08-21
+Production-shaped QA entrypoint created:
+`prototype/bahasa-indonesia/km-chapter-1-batch-02-e4-production-qa.html`
+
+Implementation commit: `c3cfd9db29b1c6683080ddcfe5af529d50873698`.
+Documentation: `Alur Kerja Proyek/PROJECT LOG/060-World-1-KM-Chapter-1-KM02-E4-Production-Shaped-Browser-QA.md`.
+
+The entrypoint uses the reviewed E4 v1.1 draft and the established actual KM renderer (`km-batch-01-runtime.html` + `km-batch-01-renderer-v1.js`) without modifying the renderer. Static checks cover dataset load, ID, multi-select contract, and provenance before the runtime iframe is loaded.
+
+**Runtime status remains PENDING until user-hosted browser interaction evidence is supplied.** Repository/tool inspection must not be represented as browser interaction evidence.
