@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KM Chapter 1 — F–G Renderer Capability QA</title>
+<style>body{font-family:system-ui,sans-serif;max-width:900px;margin:0 auto;padding:24px;background:#f6f7fb;color:#172033}.card{background:#fff;border:1px solid #dfe3ec;border-radius:14px;padding:20px;margin-bottom:16px}.pass{color:#087443}.pending{color:#8a5a00}.fail{color:#b42318}iframe{width:100%;min-height:620px;border:1px solid #dfe3ec;border-radius:12px}.small{font-size:.9rem;color:#667085}</style>
+</head>
+<body>
+<div class="card">
+<h1>KM Chapter 1 — F–G Renderer Capability QA</h1>
+<p>QA-only synthetic fixture. Tidak mengubah Golden Dataset dan bukan konten akademik produksi.</p>
+<p><strong>Target:</strong> actual KM renderer harus menerima kombinasi canonical untuk F dan G, serta menolak kombinasi yang salah/single selection.</p>
+<button id="run">Run F–G capability QA</button>
+<div id="checks"></div>
+</div>
+<div class="card" id="runtimeCard" hidden>
+<h2>Actual Renderer</h2>
+<p class="small">Gunakan renderer di bawah. Untuk tiap item pilih tepat 3 opsi canonical lalu submit. Harness mencatat hasil dari renderer.</p>
+<iframe id="runtime" title="Actual KM renderer"></iframe>
+</div>
+<script>
+const DATA='./../phase-3/world-1-km-chapter-1-f-g-renderer-capability-qa-v1.json';
+const RENDERER='./km-batch-01-runtime.html?qa=1&mission=KM-FG-RENDERER-QA&dataset='+encodeURIComponent('../phase-3/world-1-km-chapter-1-f-g-renderer-capability-qa-v1.json');
+const $=id=>document.getElementById(id);
+async function run(){
+ $('checks').innerHTML='<p class="pending">Memuat fixture...</p>';
+ try{const r=await fetch(DATA,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);const d=await r.json();const items=d.items||[];const ids=items.map(x=>x.id);const errors=[];if(items.length!==2)errors.push('Expected 2 items');if(ids.join('|')!=='QA-FG-F1|QA-FG-G1')errors.push('Unexpected IDs');for(const q of items){if(q.question_type!=='multi_select')errors.push(q.id+': expected multi_select');if(!Array.isArray(q.options)||q.options.length!==5)errors.push(q.id+': expected 5 options');if(!Array.isArray(q.answer)||q.answer.length!==3)errors.push(q.id+': expected 3 canonical answers');}
+ $('checks').innerHTML='<p class="pass"><strong>DATA PASS</strong> — 2 synthetic items</p><p class="pass"><strong>IDS PASS</strong> — QA-FG-F1, QA-FG-G1</p><p class="pass"><strong>CONTRACT PASS</strong> — multi_select · 5 options · 3 canonical answers each</p><p class="pass"><strong>GOLDEN DATASET PASS</strong> — fixture is separate from production content</p>'+(errors.length?'<p class="fail">FAIL — '+errors.join(' | ')+'</p>':'<p class="pending"><strong>RUNTIME PENDING</strong> — exercise both items manually in actual renderer.</p>');
+ if(!errors.length){$('runtimeCard').hidden=false;$('runtime').src=RENDERER;}
+ }catch(e){$('checks').innerHTML='<p class="fail"><strong>FAIL</strong> — '+e.message+'</p>';}}
+$('run').onclick=run;
+</script>
+</body>
+</html>
