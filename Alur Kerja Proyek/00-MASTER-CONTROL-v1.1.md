@@ -113,21 +113,25 @@ No component may be marked PROMOTED solely because source code looks correct. Pr
 
 **KM02-E4 multi_select renderer capability: RUNTIME QA PASS — user-verified hosted browser evidence.**
 
-**KM02-E4 original content: DRAFTED and schema/static draft checks PASS; not yet canonical or promoted.**
+**KM02-E4 original content v1.0: reviewed and superseded by additive reviewed draft v1.1; not canonical or promoted.**
 
-## 10. Current next gate — 2026-08-20 continuation
+**KM02-E4 academic/pedagogical/provenance review: PASS after controlled wording refinement.**
+
+**KM02-E4 v1.1 static/schema QA: PASS; not canonical or promoted.**
+
+## 10. Current next gate — 2026-08-21 continuation
 The previous KM integration browser gate is closed by user-verified evidence recorded in `Alur Kerja Proyek/PROJECT LOG/056-World-1-KM-Chapter-1-Integrated-Learning-Loop-QA-PASS.md`.
 
 Batch 02 E1–E3 is promoted through `Alur Kerja Proyek/PROJECT LOG/057-World-1-KM-Chapter-1-Batch-02-E1-E3-Final-QA-and-Promotion.md`.
 
-The independent `multi_select` renderer capability gate is now closed by user browser evidence recorded in `Alur Kerja Proyek/PROJECT LOG/058-World-1-KM-Chapter-1-Multi-Select-Renderer-Capability-QA.md`: the synthetic fixture accepted the intended two-selection combination and completed 1/1.
+The independent `multi_select` renderer capability gate is closed by user browser evidence recorded in `Alur Kerja Proyek/PROJECT LOG/058-World-1-KM-Chapter-1-Multi-Select-Renderer-Capability-QA.md`: the synthetic fixture accepted the intended two-selection combination and completed 1/1.
 
-KM02-E4 is now represented by a controlled original draft at `phase-3/world-1-km-chapter-1-original-content-batch-02-e4-draft-v1.0.json`. Draft QA is recorded in `phase-3/world-1-km-chapter-1-original-content-batch-02-e4-draft-qa-v1.md`.
+KM02-E4 v1.1 has passed the academic, pedagogical, provenance, originality, and schema/static review gates. Review is recorded in `Alur Kerja Proyek/PROJECT LOG/059-World-1-KM-Chapter-1-KM02-E4-Academic-Pedagogical-Provenance-Review.md`; static QA is recorded in `phase-3/world-1-km-chapter-1-original-content-batch-02-e4-draft-qa-v1.1.md`.
 
-**Current next gate: KM02-E4 content/pedagogical/provenance review → schema/static QA → production-shaped browser regression.**
+**Current next gate: KM02-E4 production-shaped browser regression → final QA → separate promotion decision.**
 
 Rules for this gate:
-- E4 remains DRAFT until content/pedagogical/provenance review passes;
+- E4 remains non-canonical until browser regression and promotion pass;
 - do not promote E4 merely because the renderer capability is proven;
 - do not modify Golden Dataset v1;
 - do not delete or rewrite approved historical prototypes;
