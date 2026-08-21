@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.1",
+  "dataset": "World 1 KM Standard Chapter 1 Approved Content Batch 02 E4 v1.1",
+  "status": "approved_world1_content",
+  "purpose": "Approved additive/versioned World 1 content pool for KM Chapter 1 E4 after documented final QA and promotion.",
+  "source_canonical": "phase-3/world-1-km-chapter-1-original-content-batch-02-e4-canonical-v1.1.json",
+  "chapter_id": "BI12-C01",
+  "lanes": ["E"],
+  "item_count": 1,
+  "item_ids": ["KM02-E4"],
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "golden_dataset_policy": "knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json remains unchanged; this approved pool is additive and versioned.",
+  "promotion_record": "Alur Kerja Proyek/PROJECT LOG/062-World-1-KM-Chapter-1-KM02-E4-Final-QA-and-Promotion.md",
+  "production_use": "approved_for_controlled_world1_content_expansion",
+  "mass_generation": "still_requires_separate batch generation and quality gates",
+  "interaction": "multi_select",
+  "runtime_evidence": "user-verified production-shaped browser QA: 1/1 correct, 100% accuracy, 200 XP"
+}
