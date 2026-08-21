@@ -1,0 +1,72 @@
+{
+  "dataset_id": "KM12-W01-FG-RENDERER-QA-V1",
+  "title": "KM Chapter 1 — Synthetic F–G Renderer Capability QA",
+  "qa_only": true,
+  "production_content": false,
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 0
+  },
+  "items": [
+    {
+      "id": "QA-FG-F1",
+      "chapter_id": "renderer_capability_test",
+      "topic_id": "official-letter-guided-reconstruction",
+      "skill": "guided production selection",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "multi_select",
+      "question": "Sebuah surat resmi fiktif ditujukan kepada kepala sekolah untuk meminta persetujuan kegiatan literasi. Pilih tepat 3 komponen yang harus dipertahankan agar rancangan surat memenuhi tujuan, penerima, dan register formal.",
+      "options": [
+        "Penerima: Yth. Kepala SMA Nusantara",
+        "Tujuan: permohonan persetujuan kegiatan literasi",
+        "Pembuka formal yang langsung menyatakan maksud surat",
+        "Bahasa percakapan santai agar terasa akrab",
+        "Cerita pribadi panjang yang tidak berkaitan dengan kegiatan"
+      ],
+      "answer": [
+        "Penerima: Yth. Kepala SMA Nusantara",
+        "Tujuan: permohonan persetujuan kegiatan literasi",
+        "Pembuka formal yang langsung menyatakan maksud surat"
+      ],
+      "explanation": "Fixture menguji apakah renderer dapat mengukur constrained production melalui pemilihan komponen yang mempertahankan penerima, tujuan, dan register formal. Kombinasi yang menambahkan bahasa santai atau cerita tidak relevan harus ditolak.",
+      "source": {
+        "student_book": {"pages": "QA-SYNTHETIC", "section": "not academic production"},
+        "teacher_guide": {"pages": "QA-SYNTHETIC", "section": "not academic production"}
+      },
+      "provenance": {"type": "synthetic_renderer_fixture", "academic_source": false},
+      "mode": "qa_only",
+      "game_mechanic": "guided_letter_component_selection"
+    },
+    {
+      "id": "QA-FG-G1",
+      "chapter_id": "renderer_capability_test",
+      "topic_id": "formal-email-response-adaptation",
+      "skill": "audience-purpose adaptation",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "multi_select",
+      "question": "Sebuah OSIS menerima email resmi dari perpustakaan sekolah yang meminta konfirmasi jadwal kunjungan. Pilih tepat 3 unsur respons yang menjaga tujuan, penerima, informasi penting, dan register formal.",
+      "options": [
+        "Menyapa penerima secara formal",
+        "Mengonfirmasi atau meminta penjelasan tentang jadwal kunjungan",
+        "Menutup dengan nama/pengirim yang jelas dan sopan",
+        "Membalas dengan slang dan emoji agar santai",
+        "Mengganti topik menjadi cerita pribadi"
+      ],
+      "answer": [
+        "Menyapa penerima secara formal",
+        "Mengonfirmasi atau meminta penjelasan tentang jadwal kunjungan",
+        "Menutup dengan nama/pengirim yang jelas dan sopan"
+      ],
+      "explanation": "Fixture menguji constrained email-response adaptation. Respons yang benar harus mempertahankan tujuan email, informasi yang diperlukan, dan register sesuai penerima; distractor yang mengubah register atau tujuan harus ditolak.",
+      "source": {
+        "student_book": {"pages": "QA-SYNTHETIC", "section": "not academic production"},
+        "teacher_guide": {"pages": "QA-SYNTHETIC", "section": "not academic production"}
+      },
+      "provenance": {"type": "synthetic_renderer_fixture", "academic_source": false},
+      "mode": "qa_only",
+      "game_mechanic": "guided_email_response_selection"
+    }
+  ]
+}
