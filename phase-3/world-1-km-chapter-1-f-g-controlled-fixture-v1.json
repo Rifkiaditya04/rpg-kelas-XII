@@ -1,0 +1,131 @@
+{
+  "fixture_id": "WORLD1-KM-CH1-FG-CONTROLLED-V1",
+  "qa_only": true,
+  "production_content": false,
+  "golden_dataset_change": false,
+  "interaction_type": "single_select",
+  "option_ordering_policy": "balanced_fixed_order_for_qa",
+  "answer_ordering_note": "Canonical answers are unchanged from the approved question design. Only option positions are reordered so the correct position is distributed across A/B/C/D rather than repeated as A.",
+  "items": [
+    {
+      "id": "F-Q01",
+      "skill_topic": "audience-and-purpose",
+      "prompt": "A student must request an internship-related document from a school office. What should be decided first when planning the formal message?",
+      "options": [
+        {"id":"A","text":"Add unrelated personal details."},
+        {"id":"B","text":"Determine the recipient and the purpose of the request."},
+        {"id":"C","text":"Make the message as long as possible."},
+        {"id":"D","text":"Begin with casual language to sound friendly."}
+      ],
+      "canonical_answer": "B",
+      "explanation": "The recipient and purpose establish what the message needs to communicate and how it should be framed.",
+      "provenance": {
+        "source_family": "Kurikulum Merdeka Chapter 1",
+        "source_role": "competency/concept grounding only",
+        "concept": "formal communication planning; recipient and purpose",
+        "source_expression_reused": false
+      }
+    },
+    {
+      "id": "F-Q02",
+      "skill_topic": "clarity-of-required-information",
+      "prompt": "A student needs a school document before a stated internship deadline. Which formulation makes the request clearest?",
+      "options": [
+        {"id":"A","text":"Omit the timing because the office can guess it."},
+        {"id":"B","text":"Replace the request with a general statement about internships."},
+        {"id":"C","text":"State the needed document and the required time clearly."},
+        {"id":"D","text":"Hint at the deadline without stating it."}
+      ],
+      "canonical_answer": "C",
+      "explanation": "Important information should be explicit enough for the recipient to act without guessing.",
+      "provenance": {
+        "source_family": "Kurikulum Merdeka Chapter 1",
+        "source_role": "competency/concept grounding only",
+        "concept": "clarity and completeness of formal communication",
+        "source_expression_reused": false
+      }
+    },
+    {
+      "id": "F-Q03",
+      "skill_topic": "formal-register",
+      "prompt": "A draft request to a school administration office contains a highly casual greeting and slang. What is the most appropriate revision?",
+      "options": [
+        {"id":"A","text":"Revise the wording so it matches a formal administrative context."},
+        {"id":"B","text":"Remove the purpose of the request instead."},
+        {"id":"C","text":"Add more slang to make the message warmer."},
+        {"id":"D","text":"Keep the slang because the recipient is a school employee."}
+      ],
+      "canonical_answer": "A",
+      "explanation": "Register should fit the relationship, purpose, and institutional context.",
+      "provenance": {
+        "source_family": "Kurikulum Merdeka Chapter 1",
+        "source_role": "competency/concept grounding only",
+        "concept": "appropriate register for formal communication",
+        "source_expression_reused": false
+      }
+    },
+    {
+      "id": "G-Q01",
+      "skill_topic": "complete-confirmation",
+      "prompt": "A school office asks a student to confirm attendance at a career preparation event. Which reply is most complete?",
+      "options": [
+        {"id":"A","text":"Send an emoji without text."},
+        {"id":"B","text":"Reply only that the message was read."},
+        {"id":"C","text":"Reply with an unrelated question."},
+        {"id":"D","text":"Confirm attendance and identify the event being confirmed."}
+      ],
+      "canonical_answer": "D",
+      "explanation": "The reply should make its purpose and the information being confirmed clear to the recipient.",
+      "provenance": {
+        "source_family": "Kurikulum Merdeka Chapter 1",
+        "source_role": "competency/concept grounding only",
+        "concept": "complete response to official communication",
+        "source_expression_reused": false
+      }
+    },
+    {
+      "id": "G-Q02",
+      "skill_topic": "appropriate-email-tone",
+      "prompt": "A student accepts an invitation from a school administration office. Which response is appropriate?",
+      "options": [
+        {"id":"A","text":"Use slang because email is a digital medium."},
+        {"id":"B","text":"Use concise, polite language suited to the institutional recipient."},
+        {"id":"C","text":"Write as if responding to a close friend."},
+        {"id":"D","text":"Use only abbreviations and omit the greeting."}
+      ],
+      "canonical_answer": "B",
+      "explanation": "The communication medium does not by itself determine the level of formality; recipient and purpose matter.",
+      "provenance": {
+        "source_family": "Kurikulum Merdeka Chapter 1",
+        "source_role": "competency/concept grounding only",
+        "concept": "context-appropriate tone in email communication",
+        "source_expression_reused": false
+      }
+    },
+    {
+      "id": "G-Q03",
+      "skill_topic": "information-completeness",
+      "prompt": "A school office needs confirmation that a student will attend a specific event on the stated date. Which response supplies the needed information?",
+      "options": [
+        {"id":"A","text":"Leave the response blank and rely on the subject line."},
+        {"id":"B","text":"Say only \"Thanks.\""},
+        {"id":"C","text":"Confirm attendance and refer clearly to the relevant event/date."},
+        {"id":"D","text":"Say only \"I understand.\""}
+      ],
+      "canonical_answer": "C",
+      "explanation": "A useful confirmation contains the information needed to resolve the request without another clarification cycle.",
+      "provenance": {
+        "source_family": "Kurikulum Merdeka Chapter 1",
+        "source_role": "competency/concept grounding only",
+        "concept": "information completeness in an official email response",
+        "source_expression_reused": false
+      }
+    }
+  ],
+  "qa_expectations": {
+    "item_count": 6,
+    "options_per_item": 4,
+    "canonical_distribution": {"A": 2, "B": 2, "C": 2, "D": 1},
+    "note": "Distribution is balanced enough for this 6-item controlled fixture; it is not intended as a permanent production randomization algorithm. Production presentation may randomize option order while preserving the canonical option identity/value."
+  }
+}
