@@ -207,3 +207,70 @@ Boundary retained:
 - This is controlled content/runtime promotion, not final visual/UI or full-release approval.
 
 **Current next gate: determine the next World 1 KM Chapter 1 scope from the active Challenge Ledger / Master Control; do not auto-generate E5 without re-sync and scope determination.**
+
+## 15. F–G Renderer Regression continuation — 2026-08-23
+
+This section supersedes the need for a separate Master Control v1.2 file. It records the F–G continuation after the KM02-E4 promotion while preserving the full history above.
+
+### 15.1 F–G preconditions and approved history
+- PROJECT LOG 063 established F–G as a renderer-capability/content-design gate, not a free-text renderer expansion.
+- PROJECT LOG 064 established the synthetic F–G constrained-production renderer capability lane.
+- PROJECT LOG 065 corrected the synthetic capability fixture reward configuration to include a 100 XP completion bonus; the corrected capability run was then documented as 2/2, 100%, 300 XP.
+- PROJECT LOG 066 closed the F–G renderer capability gate as PASS. Its separate generic completion-reward-threshold issue remains OPEN and must not be conflated with answer recognition.
+- PROJECT LOG 067–072 established detailed F–G content coverage, original teaching/dialogue, originality/provenance review, original question design, schema/answer QA, and the balanced controlled fixture.
+- PROJECT LOG 073 closed controlled fixture validation as PASS.
+- PROJECT LOG 074 defined renderer regression R1/R2/R3 and kept the gate RUNTIME QA PENDING.
+
+### 15.2 F–G controlled regression boundary
+- Controlled fixture: `phase-3/world-1-km-chapter-1-f-g-controlled-fixture-v1.json`.
+- Fixture remains QA-only; Golden Dataset v1 remains immutable.
+- Fixture canonical positions are A=1/B=2/C=2/D=1.
+- Regression adapter is mechanical QA infrastructure only; it must not be promoted as production content.
+- The adapter currently sets `xp_per_correct=100` and `mission_completion_xp=0` intentionally so this renderer answer-mapping regression does not exercise the separate completion-reward contract.
+- Therefore **6/6 = 600 XP in this adapter is intentional QA configuration, not the project's production mission reward contract**. The established production-shaped mission contract remains 100 XP per correct item plus 100 XP completion when the applicable mission completion gate is met.
+- A wrong-path 0/6 result with 0 XP in this adapter is likewise expected because completion reward is deliberately disabled in this isolated renderer regression.
+
+### 15.3 Browser evidence now supplied by user
+User has executed the hosted regression cases:
+- **R1:** canonical path → 6/6, 100% accuracy, 600 XP.
+- **R2:** non-canonical path → 0/6, 0% accuracy, 0 XP.
+- **R3:** after using the regression page's `Reload runtime`, canonical path → 6/6, 100% accuracy, 600 XP.
+
+These results confirm canonical answer recognition, non-canonical rejection, and replay isolation for the tested runtime path.
+
+### 15.4 Remaining renderer-regression conflict
+The written regression specification requires the exact option order supplied by the controlled fixture to remain deterministic. The actual renderer currently calls `shuffle(q.options)` before rendering option buttons. Therefore:
+
+- adapter preserves fixture order: CONFIRMED;
+- renderer receives preserved fixture values/order: CONFIRMED;
+- visible option order remains randomized: CONFIRMED;
+- deterministic visible option-order requirement: **CONFLICTING with current implementation**.
+
+This is not silently resolved by the R1/R2/R3 score results. The regression gate cannot be marked fully closed until this specification/implementation conflict is explicitly resolved or the specification is revised through the project's decision process.
+
+### 15.5 F–G language/content finding
+The F–G question-design artifact and controlled fixture are written in English, while the product's first subject and student-facing integration are Bahasa Indonesia. The F–G teaching/NPC artifact is written in Indonesian, so this is a content/localization inconsistency within the F–G workstream, not a renderer translation behavior.
+
+Classification: **CONFLICTING / CONTENT QA ISSUE**.
+
+No language rewrite is performed in this regression gate because changing the fixture/question text would mix content revision with renderer regression and would invalidate the controlled fixture as currently validated.
+
+Before production integration, F–G content language must be resolved through the content QA/revision gate and a new versioned fixture should be produced if the wording changes.
+
+### 15.6 Production boundaries
+- F–G production integration: NOT STARTED.
+- Golden Dataset v1: unchanged.
+- Approved KM02-E4 and E1–E3: unchanged.
+- Generic >=70% reward-threshold issue: OPEN and separate.
+- Final visual/UI promotion: separate.
+
+### 15.7 Current gate decision
+**F–G Renderer Regression v1: CONDITIONAL PASS / NOT CLOSED.**
+
+Evidence now closes the answer-mapping/runtime cases R1, R2, and R3 for the tested QA adapter. The gate remains open only for the documented deterministic-option-order conflict and the separate content-language correction required before production integration.
+
+### 15.8 Next mandatory work
+1. Resolve the option-order specification/implementation conflict through an explicit decision; do not silently modify production renderer behavior.
+2. Resolve F–G language inconsistency through content QA/revision, preserving the validated fixture history and producing a new versioned fixture if needed.
+3. Only after those decisions are documented, determine whether a new renderer regression run is required.
+4. Do not promote F–G into production until the revised content and regression gate are closed.
