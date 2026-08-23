@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KM Chapter 1 — F–G Renderer Regression v1</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:1000px;margin:0 auto;padding:24px;background:#f6f7fb;color:#172033}
+.card{background:#fff;border:1px solid #dfe3ec;border-radius:14px;padding:20px;margin-bottom:16px}
+.pass{color:#087443}.pending{color:#8a5a00}.fail{color:#b42318}.info{color:#344054}
+button{border:0;border-radius:10px;padding:10px 14px;background:#172033;color:#fff;cursor:pointer;margin:4px 4px 4px 0}
+button.secondary{background:#667085} iframe{width:100%;min-height:680px;border:1px solid #dfe3ec;border-radius:12px}
+.small{font-size:.9rem;color:#667085}.case{padding:12px;border:1px solid #eaecf0;border-radius:10px;margin:8px 0}
+code{background:#f2f4f7;padding:2px 5px;border-radius:5px}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>KM Chapter 1 — F–G Renderer Regression v1</h1>
+<p><strong>QA-only.</strong> Adapter-backed regression against the existing KM renderer. Tidak mengubah Golden Dataset dan tidak mempromosikan konten F–G.</p>
+<p class="small">Source fixture: <code>phase-3/world-1-km-chapter-1-f-g-controlled-fixture-v1.json</code><br>Adapter: <code>phase-3/world-1-km-chapter-1-f-g-renderer-regression-v1-adapter.json</code></p>
+<button id="run">Run static gate</button>
+<div id="checks"><p class="pending">Static gate belum dijalankan.</p></div>
+</div>
+
+<div class="card">
+<h2>Regression cases</h2>
+<div class="case"><strong>R1 — Canonical path</strong><br>Jawab semua 6 item dengan nilai canonical. Expected: <strong>6/6, 100%</strong>.</div>
+<div class="case"><strong>R2 — Non-canonical path</strong><br>Jawab semua 6 item dengan pilihan non-canonical. Expected: <strong>0/6, 0%</strong>, tanpa false positive.</div>
+<div class="case"><strong>R3 — Reload / replay isolation</strong><br>Reload lalu ulangi. Pastikan mapping jawaban tetap benar dan state hasil sebelumnya tidak merusak sesi baru.</div>
+<div id="runtimeResults" class="small">Belum ada hasil dari actual renderer.</div>
+</div>
+
+<div class="card" id="runtimeCard" hidden>
+<h2>Actual KM Renderer</h2>
+<p class="small">Renderer ini adalah <code>prototype/bahasa-indonesia/km-batch-01-runtime.html</code> yang ada di repository. Jangan mengubah renderer untuk gate ini.</p>
+<button class="secondary" id="reloadRuntime">Reload runtime</button>
+<iframe id="runtime" title="Actual KM renderer — F–G regression"></iframe>
+</div>
+
+<script>
+const FIXTURE='../../phase-3/world-1-km-chapter-1-f-g-controlled-fixture-v1.json';
+const ADAPTER='../../phase-3/world-1-km-chapter-1-f-g-renderer-regression-v1-adapter.json';
+const RENDERER='./km-batch-01-runtime.html?qa=1&mission=KM-FG-RENDERER-REGRESSION-V1&dataset='+encodeURIComponent(ADAPTER);
+const RENDERER_JS='./km-batch-01-renderer-v1.js';
+const $=id=>document.getElementById(id);
+let runCount=0;
+
+function esc(v){return String(v).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+async function getJson(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error(url+' HTTP '+r.status);return r.json();}
+
+async function run(){
+  runCount++;
+  $('checks').innerHTML='<p class="pending">Menjalankan static cross-check...</p>';
+  try{
+    const [fixture,adapter,rendererJs]=await Promise.all([getJson(FIXTURE),getJson(ADAPTER),fetch(RENDERER_JS,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('renderer JS HTTP '+r.status);return r.text();})]);
+    const errors=[]; const warnings=[];
+    const fi=fixture.items||[]; const ai=adapter.items||[];
+    if(!fixture.qa_only||fixture.production_content!==false||fixture.golden_dataset_change!==false)errors.push('source fixture flags are not QA-only safe');
+    if(adapter.qa_only!==true||adapter.production_content!==false||adapter.golden_dataset_change!==false)errors.push('adapter flags are not QA-only safe');
+    if(fi.length!==6||ai.length!==6)errors.push('expected 6 fixture/adapter items');
+    const byId=new Map(fi.map(x=>[x.id,x]));
+    for(const a of ai){
+      const f=byId.get(a.id); if(!f){errors.push(a.id+': missing from source fixture');continue;}
+      const fixtureOptions=f.options.map(x=>x.text);
+      if(a.question!==f.prompt)errors.push(a.id+': prompt changed by adapter');
+      if(JSON.stringify(a.options)!==JSON.stringify(fixtureOptions))errors.push(a.id+': option values/order changed by adapter');
+      const canonicalText=(f.options.find(x=>x.id===f.canonical_answer)||{}).text;
+      if(a.answer!==canonicalText)errors.push(a.id+': canonical answer value changed by adapter');
+      if(a.explanation!==f.explanation)errors.push(a.id+': explanation changed by adapter');
+      if(a.question_type!=='mcq')errors.push(a.id+': adapter question_type must be mcq');
+      if(a.qa_only!==undefined)warnings.push(a.id+': item-level qa_only flag not required; adapter-level flag is authoritative');
+    }
+    if(!rendererJs.includes('shuffle(q.options)'))warnings.push('renderer source no longer contains option shuffle; inspect manually');
+    else warnings.push('IMPLEMENTATION NOTE: actual renderer shuffles option buttons at render time. Therefore UI option order is not deterministic even though the adapter preserves the controlled fixture order.');
+    if(!rendererJs.includes('questions=shuffle(items)'))warnings.push('renderer question-order shuffle signature changed; inspect manually');
+    $('checks').innerHTML=(errors.length?'<p class="fail"><strong>STATIC GATE FAIL</strong> — '+errors.map(esc).join(' | ')+'</p>':'<p class="pass"><strong>STATIC GATE PASS</strong> — adapter mechanically preserves 6 fixture items, option values/order, canonical answer values, and explanations.</p>')+
+      '<p class="info"><strong>GOLDEN DATASET</strong> — adapter points to QA fixture only; no production dataset is loaded.</p>'+warnings.map(w=>'<p class="pending"><strong>NOTE</strong> — '+esc(w)+'</p>').join('');
+    if(!errors.length){$('runtimeCard').hidden=false;$('runtime').src=RENDERER;}
+  }catch(e){$('checks').innerHTML='<p class="fail"><strong>STATIC GATE ERROR</strong> — '+esc(e.message)+'</p>';}
+}
+
+$('run').onclick=run;
+$('reloadRuntime').onclick=()=>{$('runtime').src=RENDERER+'&replay='+Date.now();};
+window.addEventListener('message',event=>{
+  const d=event.data||{}; if(d.type!=='MISSION_RENDERER_RESULT')return;
+  const passR1=d.correct===6&&d.total===6&&d.accuracy===100;
+  const passR2=d.correct===0&&d.total===6&&d.accuracy===0;
+  $('runtimeResults').innerHTML='<p><strong>Renderer result:</strong> '+esc(JSON.stringify(d))+'</p>'+
+    '<p class="'+(passR1?'pass':'info')+'">R1 interpretation: '+(passR1?'MATCH — 6/6, 100%.':'NOT an R1 result.')+'</p>'+
+    '<p class="'+(passR2?'pass':'info')+'">R2 interpretation: '+(passR2?'MATCH — 0/6, 0%.':'NOT an R2 result.')+'</p>'+
+    '<p class="pending">R3 remains a manual reload/replay isolation check.</p>';
+});
+</script>
+</body>
+</html>
