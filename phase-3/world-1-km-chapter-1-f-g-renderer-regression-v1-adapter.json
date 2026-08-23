@@ -1,0 +1,143 @@
+{
+  "adapter_id": "WORLD1-KM-CH1-FG-RENDERER-REGRESSION-ADAPTER-V1",
+  "qa_only": true,
+  "production_content": false,
+  "golden_dataset_change": false,
+  "source_fixture": "phase-3/world-1-km-chapter-1-f-g-controlled-fixture-v1.json",
+  "source_fixture_sha": "5bc87ea00f1d45202ba63bb1b69cae5e318b9e6f",
+  "adapter_policy": "mechanical schema adapter only; preserves fixture prompt/options/canonical answer/explanation verbatim",
+  "provenance_note": "This adapter exists only to satisfy the existing KM renderer schema. It does not assert independently verified page numbers or Teacher Guide provenance. Those fields are explicitly marked QA-only/unverified and must not be promoted to production content.",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 0
+  },
+  "items": [
+    {
+      "id": "F-Q01",
+      "chapter_id": "KM-CH1",
+      "topic_id": "F-write-official-communication",
+      "skill": "audience-and-purpose",
+      "cognitive_level": "QA-only; source design level not encoded",
+      "difficulty": "QA-only; source design level not encoded",
+      "question_type": "mcq",
+      "question": "A student must request an internship-related document from a school office. What should be decided first when planning the formal message?",
+      "options": ["Add unrelated personal details.","Determine the recipient and the purpose of the request.","Make the message as long as possible.","Begin with casual language to sound friendly."],
+      "answer": "Determine the recipient and the purpose of the request.",
+      "explanation": "The recipient and purpose establish what the message needs to communicate and how it should be framed.",
+      "source": {
+        "student_book": {"pages": "QA-only; page not encoded in validated fixture", "section": "Kurikulum Merdeka Chapter 1 — competency/concept grounding only"},
+        "teacher_guide": {"pages": "QA-only; independently unverified", "section": "Teacher Guide provenance not independently verified for this adapter"}
+      },
+      "provenance": {"source_family":"Kurikulum Merdeka Chapter 1","source_role":"competency/concept grounding only","concept":"formal communication planning; recipient and purpose","source_expression_reused":false,"status":"QA-only/unverified page metadata"},
+      "mode": "qa_only",
+      "game_mechanic": "F–G Renderer Regression v1"
+    },
+    {
+      "id": "F-Q02",
+      "chapter_id": "KM-CH1",
+      "topic_id": "F-write-official-communication",
+      "skill": "clarity-of-required-information",
+      "cognitive_level": "QA-only; source design level not encoded",
+      "difficulty": "QA-only; source design level not encoded",
+      "question_type": "mcq",
+      "question": "A student needs a school document before a stated internship deadline. Which formulation makes the request clearest?",
+      "options": ["Omit the timing because the office can guess it.","Replace the request with a general statement about internships.","State the needed document and the required time clearly.","Hint at the deadline without stating it."],
+      "answer": "State the needed document and the required time clearly.",
+      "explanation": "Important information should be explicit enough for the recipient to act without guessing.",
+      "source": {
+        "student_book": {"pages": "QA-only; page not encoded in validated fixture", "section": "Kurikulum Merdeka Chapter 1 — competency/concept grounding only"},
+        "teacher_guide": {"pages": "QA-only; independently unverified", "section": "Teacher Guide provenance not independently verified for this adapter"}
+      },
+      "provenance": {"source_family":"Kurikulum Merdeka Chapter 1","source_role":"competency/concept grounding only","concept":"clarity and completeness of formal communication","source_expression_reused":false,"status":"QA-only/unverified page metadata"},
+      "mode": "qa_only",
+      "game_mechanic": "F–G Renderer Regression v1"
+    },
+    {
+      "id": "F-Q03",
+      "chapter_id": "KM-CH1",
+      "topic_id": "F-write-official-communication",
+      "skill": "formal-register",
+      "cognitive_level": "QA-only; source design level not encoded",
+      "difficulty": "QA-only; source design level not encoded",
+      "question_type": "mcq",
+      "question": "A draft request to a school administration office contains a highly casual greeting and slang. What is the most appropriate revision?",
+      "options": ["Revise the wording so it matches a formal administrative context.","Remove the purpose of the request instead.","Add more slang to make the message warmer.","Keep the slang because the recipient is a school employee."],
+      "answer": "Revise the wording so it matches a formal administrative context.",
+      "explanation": "Register should fit the relationship, purpose, and institutional context.",
+      "source": {
+        "student_book": {"pages": "QA-only; page not encoded in validated fixture", "section": "Kurikulum Merdeka Chapter 1 — competency/concept grounding only"},
+        "teacher_guide": {"pages": "QA-only; independently unverified", "section": "Teacher Guide provenance not independently verified for this adapter"}
+      },
+      "provenance": {"source_family":"Kurikulum Merdeka Chapter 1","source_role":"competency/concept grounding only","concept":"appropriate register for formal communication","source_expression_reused":false,"status":"QA-only/unverified page metadata"},
+      "mode": "qa_only",
+      "game_mechanic": "F–G Renderer Regression v1"
+    },
+    {
+      "id": "G-Q01",
+      "chapter_id": "KM-CH1",
+      "topic_id": "G-reply-official-email",
+      "skill": "complete-confirmation",
+      "cognitive_level": "QA-only; source design level not encoded",
+      "difficulty": "QA-only; source design level not encoded",
+      "question_type": "mcq",
+      "question": "A school office asks a student to confirm attendance at a career preparation event. Which reply is most complete?",
+      "options": ["Send an emoji without text.","Reply only that the message was read.","Reply with an unrelated question.","Confirm attendance and identify the event being confirmed."],
+      "answer": "Confirm attendance and identify the event being confirmed.",
+      "explanation": "The reply should make its purpose and the information being confirmed clear to the recipient.",
+      "source": {
+        "student_book": {"pages": "QA-only; page not encoded in validated fixture", "section": "Kurikulum Merdeka Chapter 1 — competency/concept grounding only"},
+        "teacher_guide": {"pages": "QA-only; independently unverified", "section": "Teacher Guide provenance not independently verified for this adapter"}
+      },
+      "provenance": {"source_family":"Kurikulum Merdeka Chapter 1","source_role":"competency/concept grounding only","concept":"complete response to official communication","source_expression_reused":false,"status":"QA-only/unverified page metadata"},
+      "mode": "qa_only",
+      "game_mechanic": "F–G Renderer Regression v1"
+    },
+    {
+      "id": "G-Q02",
+      "chapter_id": "KM-CH1",
+      "topic_id": "G-reply-official-email",
+      "skill": "appropriate-email-tone",
+      "cognitive_level": "QA-only; source design level not encoded",
+      "difficulty": "QA-only; source design level not encoded",
+      "question_type": "mcq",
+      "question": "A student accepts an invitation from a school administration office. Which response is appropriate?",
+      "options": ["Use slang because email is a digital medium.","Use concise, polite language suited to the institutional recipient.","Write as if responding to a close friend.","Use only abbreviations and omit the greeting."],
+      "answer": "Use concise, polite language suited to the institutional recipient.",
+      "explanation": "The communication medium does not by itself determine the level of formality; recipient and purpose matter.",
+      "source": {
+        "student_book": {"pages": "QA-only; page not encoded in validated fixture", "section": "Kurikulum Merdeka Chapter 1 — competency/concept grounding only"},
+        "teacher_guide": {"pages": "QA-only; independently unverified", "section": "Teacher Guide provenance not independently verified for this adapter"}
+      },
+      "provenance": {"source_family":"Kurikulum Merdeka Chapter 1","source_role":"competency/concept grounding only","concept":"context-appropriate tone in email communication","source_expression_reused":false,"status":"QA-only/unverified page metadata"},
+      "mode": "qa_only",
+      "game_mechanic": "F–G Renderer Regression v1"
+    },
+    {
+      "id": "G-Q03",
+      "chapter_id": "KM-CH1",
+      "topic_id": "G-reply-official-email",
+      "skill": "information-completeness",
+      "cognitive_level": "QA-only; source design level not encoded",
+      "difficulty": "QA-only; source design level not encoded",
+      "question_type": "mcq",
+      "question": "A school office needs confirmation that a student will attend a specific event on the stated date. Which response supplies the needed information?",
+      "options": ["Leave the response blank and rely on the subject line.","Say only \"Thanks.\"","Confirm attendance and refer clearly to the relevant event/date.","Say only \"I understand.\""],
+      "answer": "Confirm attendance and refer clearly to the relevant event/date.",
+      "explanation": "A useful confirmation contains the information needed to resolve the request without another clarification cycle.",
+      "source": {
+        "student_book": {"pages": "QA-only; page not encoded in validated fixture", "section": "Kurikulum Merdeka Chapter 1 — competency/concept grounding only"},
+        "teacher_guide": {"pages": "QA-only; independently unverified", "section": "Teacher Guide provenance not independently verified for this adapter"}
+      },
+      "provenance": {"source_family":"Kurikulum Merdeka Chapter 1","source_role":"competency/concept grounding only","concept":"information completeness in an official email response","source_expression_reused":false,"status":"QA-only/unverified page metadata"},
+      "mode": "qa_only",
+      "game_mechanic": "F–G Renderer Regression v1"
+    }
+  ],
+  "qa_expectations": {
+    "item_count": 6,
+    "options_per_item": 4,
+    "canonical_positions_in_source_fixture": {"A":1,"B":2,"C":2,"D":1},
+    "adapter_preserves_canonical_values": true,
+    "adapter_does_not_promote_content": true
+  }
+}
