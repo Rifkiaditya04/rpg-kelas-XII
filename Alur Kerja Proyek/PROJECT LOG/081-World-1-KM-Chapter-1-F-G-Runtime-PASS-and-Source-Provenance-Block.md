@@ -1,7 +1,7 @@
 # PROJECT LOG 081 — World 1 KM Chapter 1 F–G Runtime PASS and Source-Provenance Block
 
 **Date:** 2026-08-24
-**Status:** RUNTIME CASES PASS — PRODUCTION CONTENT STILL BLOCKED BY SOURCE-PROVENANCE EVIDENCE GAP
+**Status:** RUNTIME CASES PASS — PRODUCTION CONTENT STILL BLOCKED BY ITEM-LEVEL SOURCE/PROVENANCE REVIEW
 
 ## 1. Objective
 
@@ -53,26 +53,35 @@ The Student Book confirms Chapter 1 F and G as:
 - F: writing an official letter using standard words and effective sentences — pp. 29–33.
 - G: replying to an official-letter message using electronic mail — pp. 34–36.
 
-The correct Teacher Guide exists and its Chapter 1 guidance begins at printed page 34, but an exact independently verified Teacher Guide locator for the specific F/G item concepts has not yet been established in this session.
+The Teacher Guide cross-validation is now more precise:
+
+- F: Table 1.18 p.55; Activity 1.10 p.56; Activity 1.11 p.57; Activity 1.12 p.58.
+- G: Table 1.22 p.59; Activity 1.13 p.60–61.
+
+The Teacher Guide evidence confirms F as standard-word/effective-sentence repair plus official-letter writing, and G as writing a digital reply to an official request through electronic mail.
 
 ## 7. Evidence vs interpretation
 
 ### Evidence
-The current F–G fixture is Indonesian and uses broad concept labels such as audience/purpose, clarity, formal register, complete confirmation, email tone, and information completeness. The fixture records only a broad `Kurikulum Merdeka Chapter 1` source family and concept labels.
+The current Indonesian F–G fixture uses broad concept labels such as audience/purpose, clarity, formal register, complete confirmation, email tone, and information completeness. The fixture records only a broad `Kurikulum Merdeka Chapter 1` source family and concept labels.
+
+The source pair now confirms the F/G domain and specific activity anchors. An item-level provenance matrix was created:
+
+`phase-3/world-1-km-chapter-1-f-g-item-level-provenance-matrix-v1.md`
 
 ### Implementation
 The QA adapter and regression harness are QA-only. They do not alter Golden Dataset v1 or the production renderer.
 
 ### Interpretation
-The broad F/G source domain is confirmed, but item-level provenance is not sufficiently granular to claim production source verification. The runtime PASS cannot substitute for academic provenance.
+The broad F/G source domain is confirmed. However, the six current item formulations are not all equally direct representations of the specific F/G activities. F-Q03 has the strongest direct F concept grounding; G-Q01/G-Q03 are supported at the G activity/competency level; F-Q01/F-Q02/G-Q02 remain only partially confirmed at item-level specificity.
 
 Classification: **INSUFFICIENT EVIDENCE for production-content promotion.**
 
 ## 8. Root-cause / process finding
 
-The current F–G runtime gate was able to pass because it validates renderer behavior. The remaining problem is upstream content provenance: the six F–G items do not yet carry independently verified Student Book section/page and Teacher Guide validation locators required by the project's production content governance.
+The renderer gate is now healthy: R1/R2/R3 pass. The remaining issue is upstream content provenance/alignment. The six QA items were written as original derivative practice, but the project requires each eventual production item to have a traceable source concept/activity/section and Teacher Guide validation. Several current items need either stronger source mapping or a deliberate content revision decision.
 
-This is a **content/provenance gate issue**, not a renderer failure.
+This is a **content/provenance alignment issue**, not a renderer failure.
 
 ## 9. Copyright boundary
 
@@ -82,6 +91,7 @@ No source text is to be copied or superficially rewritten. The books provide con
 
 Created:
 - `phase-3/world-1-km-chapter-1-f-g-source-provenance-reconciliation-v1.md`
+- `phase-3/world-1-km-chapter-1-f-g-item-level-provenance-matrix-v1.md`
 - this Project Log.
 
 No renderer, Golden Dataset, production question pool, or existing QA fixture was modified.
@@ -94,7 +104,11 @@ Source/provenance reconciliation:
 Initial Project Log commit:
 `f588da688af2f3a12f8949e68a5250be56648d14`
 
-The present documentation update records the initial log commit explicitly; the final documentation update has its own Git commit SHA in repository history.
+Item-level provenance matrix:
+`1163c846670a2549279be514e9bb745eaa074755`
+
+Final documentation update to this Project Log:
+`2f3cca2d7f634262a73bebd3988848ceec891a4f`
 
 ## 12. Decision
 
@@ -102,16 +116,15 @@ The present documentation update records the initial log commit explicitly; the 
 
 **F–G Production Content: BLOCKED.**
 
-Do not promote the current six F–G items to production and do not generate additional F–G questions until the exact Student Book + Teacher Guide source extraction and item-level provenance matrix are completed.
+Do not promote the current six F–G items to production and do not generate additional F–G questions until the item-level source mapping decision is complete.
 
 ## 13. Next gate
 
-Complete:
-
-`standard KM Chapter 1 F/G Student Book + Teacher Guide deep source extraction`
-→ `item-level provenance/competency matrix`
-→ `user-approved content decision if revision is required`
-→ `versioned content/fixture if needed`
-→ `fresh renderer regression only if content changes materially`
+`item-level F/G source mapping decision`
+→ if required, `original content revision`
+→ `originality/provenance recheck`
+→ `versioned fixture if content changes`
+→ `fresh renderer regression only if material fixture changes`
+→ promotion decision.
 
 No new renderer work is authorized by this log.
