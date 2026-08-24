@@ -91,7 +91,10 @@ No renderer, Golden Dataset, production question pool, or existing QA fixture wa
 Source/provenance reconciliation:
 `86879968509fa25b1604b21b0442066d244e7d8a`
 
-Project Log commit: this record is committed as the next repository change.
+Initial Project Log commit:
+`f588da688af2f3a12f8949e68a5250be56648d14`
+
+The present documentation update records the initial log commit explicitly; the final documentation update has its own Git commit SHA in repository history.
 
 ## 12. Decision
 
