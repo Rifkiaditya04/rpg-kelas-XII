@@ -233,44 +233,43 @@ This section supersedes the need for a separate Master Control v1.2 file. It rec
 ### 15.3 Browser evidence now supplied by user
 User has executed the hosted regression cases:
 - **R1:** canonical path → 6/6, 100% accuracy, 600 XP.
-- **R2:** non-canonical path → 0/6, 0% accuracy, 0 XP.
-- **R3:** after using the regression page's `Reload runtime`, canonical path → 6/6, 100% accuracy, 600 XP.
+- **R2:** non-canonical path → 0/6, 0% accuracy, 0 QA XP.
+- **R3:** after using the regression page's `Reload runtime`, canonical path → 6/6, 100% accuracy, 600 QA XP.
 
 These results confirm canonical answer recognition, non-canonical rejection, and replay isolation for the tested runtime path.
 
-### 15.4 Remaining renderer-regression conflict
-The written regression specification requires the exact option order supplied by the controlled fixture to remain deterministic. The actual renderer currently calls `shuffle(q.options)` before rendering option buttons. Therefore:
+### 15.4 Remaining renderer-regression conflict — RESOLVED BY V1.2 POLICY
+The v1.2 regression specification explicitly states that fixture order is deterministic for QA data integrity while the actual approved renderer may shuffle visible options. Regression evaluates canonical answer identity/value rather than transient button position. User browser evidence confirms R1/R2/R3 behavior under this policy.
 
-- adapter preserves fixture order: CONFIRMED;
-- renderer receives preserved fixture values/order: CONFIRMED;
-- visible option order remains randomized: CONFIRMED;
-- deterministic visible option-order requirement: **CONFLICTING with current implementation**.
+Therefore the prior deterministic-visible-option-order conflict is **CLOSED for the F–G v1.2 regression scope**. No production renderer change was made.
 
-This is not silently resolved by the R1/R2/R3 score results. The regression gate cannot be marked fully closed until this specification/implementation conflict is explicitly resolved or the specification is revised through the project's decision process.
+### 15.5 F–G language/content finding — RESOLVED IN V1.2
+The v1.2 fixture is explicitly `id-ID`, and all six revised QA items are authored in Bahasa Indonesia. The revised source mapping is tied to the KM Chapter 1 F/G activities and preserves original wording. The prior v1.1 language inconsistency is therefore **CLOSED for the v1.2 QA scope**.
 
-### 15.5 F–G language/content finding
-The F–G question-design artifact and controlled fixture are written in English, while the product's first subject and student-facing integration are Bahasa Indonesia. The F–G teaching/NPC artifact is written in Indonesian, so this is a content/localization inconsistency within the F–G workstream, not a renderer translation behavior.
+### 15.6 V1.2 static gate and final browser regression — PASS
+User supplied fresh hosted evidence:
+- Static gate: **PASS** — 6 Indonesian items, QA-only flags, semantic canonical-answer mapping, adapter fidelity, and QA reward boundary verified.
+- R1: **PASS** — 6/6, 100%, 600 QA XP.
+- R2: **PASS** — 0/6, 0%, 0 QA XP, no false positive observed.
+- R3: **PASS** — after `Reload runtime`, canonical replay returned 6/6, 100%, 600 QA XP.
 
-Classification: **CONFLICTING / CONTENT QA ISSUE**.
+The v1.2 fixture and adapter remain QA-only; Golden Dataset and production renderer remain untouched.
 
-No language rewrite is performed in this regression gate because changing the fixture/question text would mix content revision with renderer regression and would invalidate the controlled fixture as currently validated.
+### 15.7 Final gate decision
+**F–G Renderer Regression v1.2-ID: CLOSED / PASS.**
 
-Before production integration, F–G content language must be resolved through the content QA/revision gate and a new versioned fixture should be produced if the wording changes.
+Closure record: `Alur Kerja Proyek/PROJECT LOG/085-World-1-KM-Chapter-1-F-G-v1.2-Renderer-Regression-CLOSED.md`.
+Commit: `cd404a7e9b69c30308df49865c36591e61112a8e`.
 
-### 15.6 Production boundaries
-- F–G production integration: NOT STARTED.
-- Golden Dataset v1: unchanged.
-- Approved KM02-E4 and E1–E3: unchanged.
-- Generic >=70% reward-threshold issue: OPEN and separate.
-- Final visual/UI promotion: separate.
+Scope of closure:
+- static gate PASS;
+- R1/R2/R3 PASS;
+- source-mapped Indonesian QA fixture verified;
+- QA reward boundary preserved;
+- Golden Dataset unchanged;
+- production renderer unchanged.
 
-### 15.7 Current gate decision
-**F–G Renderer Regression v1: CONDITIONAL PASS / NOT CLOSED.**
+This closure does **not** promote F–G into production content and does **not** close the separate generic >=70% reward-contract issue.
 
-Evidence now closes the answer-mapping/runtime cases R1, R2, and R3 for the tested QA adapter. The gate remains open only for the documented deterministic-option-order conflict and the separate content-language correction required before production integration.
-
-### 15.8 Next mandatory work
-1. Resolve the option-order specification/implementation conflict through an explicit decision; do not silently modify production renderer behavior.
-2. Resolve F–G language inconsistency through content QA/revision, preserving the validated fixture history and producing a new versioned fixture if needed.
-3. Only after those decisions are documented, determine whether a new renderer regression run is required.
-4. Do not promote F–G into production until the revised content and regression gate are closed.
+### 15.8 Next mandatory step
+Determine the next F–G production/content step from the active Master Control and Challenge Ledger. Any promotion must remain additive/versioned, retain the KM Student Book + Teacher Guide provenance boundary, and require its own documented promotion evidence and user approval where required.
