@@ -1,0 +1,115 @@
+{
+  "fixture_id": "WORLD1-KM-CH1-FG-CONTROLLED-V1.2-ID",
+  "qa_only": true,
+  "production_content": false,
+  "golden_dataset_change": false,
+  "language": "id-ID",
+  "revision_basis": "Approved item-level source-mapping revision; KM Chapter 1 F/G source anchors tightened; original wording preserved; no Golden Dataset promotion",
+  "interaction_type": "single_select",
+  "option_ordering_policy": "balanced_fixed_fixture_order; renderer may shuffle visible options",
+  "answer_evaluation_policy": "canonical answer identity/value, not visible button position",
+  "items": [
+    {
+      "id": "F-Q01",
+      "skill_topic": "kata-baku-dalam-surat-resmi",
+      "prompt": "Sebuah draf surat resmi memuat satu kata yang ditulis dengan bentuk tidak baku. Tindakan mana yang paling sesuai dengan materi penulisan surat resmi?",
+      "options": [
+        {"id":"A","text":"Memperbaiki kata tersebut menjadi bentuk baku yang sesuai konteks surat resmi."},
+        {"id":"B","text":"Membiarkan kata tersebut agar isi surat tetap sama persis."},
+        {"id":"C","text":"Menggantinya dengan singkatan yang lebih santai."},
+        {"id":"D","text":"Menambahkan kata lain tanpa memperbaiki bentuk kata tersebut."}
+      ],
+      "canonical_answer": "A",
+      "explanation": "Subbab F secara khusus membahas penggunaan kata baku dalam penulisan surat resmi; kata yang tidak baku perlu diperbaiki menjadi bentuk baku yang sesuai konteks.",
+      "source": {"student_book":{"pages":"29–33","section":"F. Menulis Surat Resmi dengan Memperhatikan Penggunaan Kata Baku dan Kalimat Efektif"},"teacher_guide":{"pages":"55–57","section":"Tabel 1.18 dan Tabel 1.19; Aktivitas 1.10 Memperbaiki Kata Tidak Baku Menjadi Baku"}},
+      "provenance": {"source_family":"Kurikulum Merdeka Kelas XII","source_role":"concept/competency grounding","concept":"kata baku dalam surat resmi","source_expression_reused":false,"status":"source-mapped; original QA wording"},
+      "mode":"qa_only","game_mechanic":"F–G Renderer Regression v1.2 ID"
+    },
+    {
+      "id": "F-Q02",
+      "skill_topic": "kalimat-efektif-dalam-surat-resmi",
+      "prompt": "Manakah rumusan yang paling efektif untuk menyampaikan permohonan dokumen dalam surat resmi?",
+      "options": [
+        {"id":"A","text":"Kami sebenarnya sangat ingin sekali meminta dokumen itu apabila Bapak/Ibu berkenan mungkin memberikannya."},
+        {"id":"B","text":"Kami memohon pengiriman dokumen tersebut sesuai kebutuhan yang telah disampaikan."},
+        {"id":"C","text":"Dokumen itu, ya, yang kami perlukan, pokoknya mohon dikirimkan saja."},
+        {"id":"D","text":"Kami ingin dokumen tersebut, tetapi tidak perlu dijelaskan dokumen yang dimaksud."}
+      ],
+      "canonical_answer": "B",
+      "explanation": "Subbab F membahas perbaikan kalimat tidak efektif dalam surat resmi; rumusan yang efektif menyampaikan maksud secara jelas dan tidak berlebihan.",
+      "source": {"student_book":{"pages":"29–33","section":"F. Menulis Surat Resmi dengan Memperhatikan Penggunaan Kata Baku dan Kalimat Efektif"},"teacher_guide":{"pages":"55–57","section":"Tabel 1.18 dan Tabel 1.20; Aktivitas 1.11 Memperbaiki Kalimat Tidak Efektif pada Surat Resmi"}},
+      "provenance": {"source_family":"Kurikulum Merdeka Kelas XII","source_role":"concept/competency grounding","concept":"kalimat efektif dalam surat resmi","source_expression_reused":false,"status":"source-mapped; original QA wording"},
+      "mode":"qa_only","game_mechanic":"F–G Renderer Regression v1.2 ID"
+    },
+    {
+      "id": "F-Q03",
+      "skill_topic": "menulis-surat-kuasa",
+      "prompt": "Seorang siswa mendapat tugas menulis surat kuasa sebagai surat resmi. Tindakan mana yang paling tepat?",
+      "options": [
+        {"id":"A","text":"Menulisnya seperti pesan singkat kepada teman agar cepat selesai."},
+        {"id":"B","text":"Mengutamakan panjang tulisan tanpa memperhatikan kejelasan maksud surat."},
+        {"id":"C","text":"Menyusun surat dengan bahasa resmi dan informasi yang diperlukan untuk menjelaskan pemberian kuasa."},
+        {"id":"D","text":"Menghilangkan tujuan pemberian kuasa agar surat lebih ringkas."}
+      ],
+      "canonical_answer": "C",
+      "explanation": "Aktivitas 1.12 berfokus pada menulis surat resmi berjenis surat kuasa; tulisan perlu disusun sebagai komunikasi resmi dengan maksud dan informasi yang jelas.",
+      "source": {"student_book":{"pages":"29–33","section":"F. Menulis Surat Resmi dengan Memperhatikan Penggunaan Kata Baku dan Kalimat Efektif"},"teacher_guide":{"pages":"55–58","section":"Tabel 1.18 dan Tabel 1.21; Aktivitas 1.12 Menulis Surat Resmi (Surat Kuasa)"}},
+      "provenance": {"source_family":"Kurikulum Merdeka Kelas XII","source_role":"concept/competency grounding","concept":"menulis surat resmi berjenis surat kuasa","source_expression_reused":false,"status":"source-mapped; original QA wording"},
+      "mode":"qa_only","game_mechanic":"F–G Renderer Regression v1.2 ID"
+    },
+    {
+      "id": "G-Q01",
+      "skill_topic": "membalas-surat-resmi-melalui-pos-elektronik",
+      "prompt": "Seorang siswa menerima surat permohonan melalui pos elektronik dan perlu memberikan balasan. Respons mana yang paling sesuai dengan tujuan Aktivitas 1.13?",
+      "options": [
+        {"id":"A","text":"Membalas dengan emoji tanpa menjelaskan tanggapan terhadap permohonan."},
+        {"id":"B","text":"Mengirim pesan baru yang tidak berkaitan dengan surat yang diterima."},
+        {"id":"C","text":"Menyalin seluruh surat yang diterima tanpa memberikan balasan."},
+        {"id":"D","text":"Menyusun balasan surat resmi dalam bentuk digital melalui layanan pos elektronik."}
+      ],
+      "canonical_answer": "D",
+      "explanation": "Subbab G dan Aktivitas 1.13 berfokus pada membalas surat permohonan dalam bentuk surat digital yang dikirim melalui layanan pos elektronik.",
+      "source": {"student_book":{"pages":"34–36","section":"G. Membalas Pesan Surat Resmi yang Diterima Menggunakan Layanan Pos Elektronik"},"teacher_guide":{"pages":"59–61","section":"Tabel 1.22 dan Tabel 1.23; Aktivitas 1.13 Membalas Surat Permohonan dalam Bentuk Surat Digital"}},
+      "provenance": {"source_family":"Kurikulum Merdeka Kelas XII","source_role":"concept/competency grounding","concept":"membalas surat permohonan melalui pos elektronik","source_expression_reused":false,"status":"source-mapped; original QA wording"},
+      "mode":"qa_only","game_mechanic":"F–G Renderer Regression v1.2 ID"
+    },
+    {
+      "id": "G-Q02",
+      "skill_topic": "pilihan-kata-dalam-balasan-surat-resmi",
+      "prompt": "Dalam balasan surat resmi melalui pos elektronik, pilihan kata seperti apa yang paling tepat?",
+      "options": [
+        {"id":"A","text":"Kata-kata slang yang biasa digunakan saat berbicara dengan teman dekat."},
+        {"id":"B","text":"Kata-kata yang tepat dan sesuai dengan konteks komunikasi resmi."},
+        {"id":"C","text":"Singkatan sebanyak mungkin agar balasan lebih pendek."},
+        {"id":"D","text":"Kata-kata yang sengaja dibuat tidak jelas agar penerima bertanya kembali."}
+      ],
+      "canonical_answer": "B",
+      "explanation": "Kriteria formatif Aktivitas 1.13 mencakup kemampuan menggunakan pilihan kata yang tepat dalam balasan surat resmi melalui pos elektronik.",
+      "source": {"student_book":{"pages":"34–36","section":"G. Membalas Pesan Surat Resmi yang Diterima Menggunakan Layanan Pos Elektronik"},"teacher_guide":{"pages":"59–61","section":"Tabel 1.22 dan Tabel 1.23; indikator pilihan kata yang tepat pada Aktivitas 1.13"}},
+      "provenance": {"source_family":"Kurikulum Merdeka Kelas XII","source_role":"competency grounding","concept":"pilihan kata yang tepat dalam balasan surat resmi melalui pos elektronik","source_expression_reused":false,"status":"source-mapped; original QA wording"},
+      "mode":"qa_only","game_mechanic":"F–G Renderer Regression v1.2 ID"
+    },
+    {
+      "id": "G-Q03",
+      "skill_topic": "kalimat-efektif-dalam-balasan-surat-resmi",
+      "prompt": "Dalam balasan surat resmi melalui pos elektronik, kalimat mana yang paling efektif untuk menyatakan bahwa siswa akan hadir pada kegiatan yang dimohonkan?",
+      "options": [
+        {"id":"A","text":"Saya sih, mungkin, kalau tidak ada hal lain, akan hadir untuk kegiatan itu."},
+        {"id":"B","text":"Kayaknya saya datang, ya, nanti dilihat lagi."},
+        {"id":"C","text":"Saya mengonfirmasi bahwa saya akan hadir pada kegiatan tersebut."},
+        {"id":"D","text":"Kegiatan tersebut akan saya hadirkan karena saya memang akan datang."}
+      ],
+      "canonical_answer": "C",
+      "explanation": "Kriteria formatif Aktivitas 1.13 mencakup kemampuan menggunakan kalimat efektif dalam menulis balasan surat resmi melalui pos elektronik.",
+      "source": {"student_book":{"pages":"34–36","section":"G. Membalas Pesan Surat Resmi yang Diterima Menggunakan Layanan Pos Elektronik"},"teacher_guide":{"pages":"59–61","section":"Tabel 1.22 dan Tabel 1.23; indikator kalimat efektif pada Aktivitas 1.13"}},
+      "provenance": {"source_family":"Kurikulum Merdeka Kelas XII","source_role":"competency grounding","concept":"kalimat efektif dalam balasan surat resmi melalui pos elektronik","source_expression_reused":false,"status":"source-mapped; original QA wording"},
+      "mode":"qa_only","game_mechanic":"F–G Renderer Regression v1.2 ID"
+    }
+  ],
+  "qa_expectations": {
+    "item_count": 6,
+    "options_per_item": 4,
+    "canonical_distribution": {"A":1,"B":2,"C":2,"D":1},
+    "note": "Fixture order is deterministic for QA data integrity. The actual renderer may shuffle visible options; regression evaluates canonical answer identity/value."
+  }
+}
