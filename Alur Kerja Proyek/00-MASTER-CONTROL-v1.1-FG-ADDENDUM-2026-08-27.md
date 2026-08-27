@@ -3,10 +3,10 @@
 This addendum belongs to the active Master Control continuation. It does not replace `00-MASTER-CONTROL.md` or `00-MASTER-CONTROL-v1.1.md`.
 
 ## Protocol status
-The mandatory work-session protocol was followed before implementation: re-sync repository; read the complete applicable Master Control chain; verify relevant F–G Project Logs and current artifacts; inspect source, fixture, adapter, hosted regression page, and renderer boundary; separate Evidence / Implementation / Interpretation; cross-validate before changing content.
+The mandatory work-session protocol was followed before implementation and verification: re-sync repository; read the applicable Master Control chain; verify relevant F–G Project Logs and current artifacts; inspect source, fixture, adapter, hosted regression page, and renderer boundary; separate Evidence / Implementation / Interpretation; cross-validate before changing or closing the gate.
 
 ## Approved decision
-User approved the item-level F–G source-mapping revision proposal. This approval authorizes a versioned QA-only content revision. It does not authorize Golden Dataset modification, production renderer modification, or production promotion.
+User approved the item-level F–G source-mapping revision proposal. This approval authorized a versioned QA-only content revision. It does not authorize Golden Dataset modification, production renderer modification, or production promotion.
 
 ## Source authority
 F–G is World 1 → Kurikulum Merdeka → Bahasa Indonesia → Chapter 1. The authoritative KM source pair remains:
@@ -42,12 +42,31 @@ All wording is newly authored. No book exercise, answer choice, or distinctive s
 - F–G production integration remains blocked until the new QA version passes its own static/runtime regression gates.
 - Previous v1.1-ID runtime evidence remains historical evidence and is not retroactively rewritten.
 
-## Evidence / interpretation
-Previous v1.1-ID R1/R2/R3 runtime evidence passed answer recognition, non-canonical rejection, and reload isolation. The remaining content-language/provenance issue required a new versioned fixture. The current v1.2 artifacts are implementation of the approved source-mapping revision, not yet runtime-approved.
+## Fresh v1.2 runtime evidence
+User executed the hosted v1.2-ID runtime and reported:
+- R1 canonical: 6/6, 100%, 600 QA XP.
+- R2 non-canonical: 0/6, 0%, 0 QA XP.
+- R3: after R2, user used **Reload runtime** and replayed all six canonical answers; result was 6/6, 100%, 600 QA XP.
+
+Therefore R1/R2/R3 are **PASS based on fresh user browser evidence**.
+
+## Static gate status
+The user report still states `Static gate belum dijalankan`. The hosted static gate is therefore **UNVERIFIED**, not PASS. Repository inspection confirms that the hosted page contains static assertions for QA-only flags, six-item shape, adapter fidelity, semantic canonical-answer mapping, reward boundary, and renderer shuffle notes, but this is not a substitute for explicit hosted execution evidence required by the protocol.
+
+## Decision
+**F–G Renderer Regression v1.2-ID: PARTIALLY CLOSED**
+
+Runtime R1/R2/R3: **PASS**.
+Hosted static-gate execution: **PENDING / UNVERIFIED**.
+Production promotion: **BLOCKED**.
+
+## Documentation
+Fresh runtime evidence and the gate decision are recorded in:
+`Alur Kerja Proyek/PROJECT LOG/084-World-1-KM-Chapter-1-F-G-v1.2-Runtime-Evidence.md`
+Commit: `b3cfbd230d6a9aa27e6f5d3ecc1965810789409e`.
 
 ## Next gate
-1. Run the v1.2 hosted static gate.
-2. If static gate passes, execute R1, R2, and R3 using the v1.2 page.
-3. Record fresh browser evidence.
-4. Perform final originality/provenance cross-check.
-5. Only then decide whether F–G Renderer Regression v1.2 can be CLOSED and whether a separate production-promotion proposal is appropriate.
+1. Run the v1.2 hosted **Run static gate** button and capture `STATIC GATE PASS`.
+2. If PASS, perform final originality/provenance cross-check against the KM Student Book + Teacher Guide.
+3. Record the final gate result.
+4. Only after that propose/approve any production promotion step.
