@@ -66,12 +66,54 @@ Originality/provenance audit result: **PASS**.
 
 The audit authorizes the next design step: a separate original F–G question-design draft. It does not promote questions to canonical/production status.
 
+## Production question design
+User approved the teaching/dialogue package and the approved item-level source mapping. The original F–G question-design candidate was materialized as:
+`phase-3/world-1-km-chapter-1-f-g-production-question-design-v1.2-id.md`
+
+Content QA cleared the design for machine-readable materialization. The design preserves original scenarios, options, distractors, explanations, and the balanced canonical distribution A=1/B=2/C=2/D=1.
+
+## Machine-readable production candidate — 2026-08-28
+Created additive, non-canonical candidate:
+`phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json`
+
+Commit: `30a7473fd524429799ad46d2d69a1ac2c77c7113`.
+
+Static/schema/provenance QA record:
+`phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id-qa.md`
+
+Commit: `b424ac22a46f8469583b7538555ed1e4412e3705`.
+
+QA decision: **STATIC/SCHEMA/PROVENANCE QA PASS.**
+
+Verified boundaries:
+- six items; stable IDs F-Q01..F-Q03 and G-Q01..G-Q03;
+- four options per item;
+- supported `mcq` interaction;
+- one exact canonical answer per item;
+- required renderer fields present;
+- Student Book + Teacher Guide source fields present;
+- KM source mapping and originality/provenance metadata present;
+- balanced canonical distribution A=1/B=2/C=2/D=1;
+- Golden Dataset unchanged;
+- production renderer unchanged;
+- production reward expectation remains 100 XP/correct + 100 completion XP with >=70% mission threshold, while the separate generic reward-contract implementation issue remains open.
+
+## Production-shaped browser QA entrypoint — 2026-08-28
+Created:
+`prototype/bahasa-indonesia/km-chapter-1-f-g-production-qa-v1.2-id.html`
+
+Commit: `441d3c8a2db29a899180ec8fc17106e82ffc3ac8`.
+
+The entrypoint performs static candidate checks before loading the established actual KM renderer with the candidate dataset. It does not modify the production renderer or Golden Dataset.
+
 ## Current gate
 **F–G Renderer Regression v1.2-ID: CLOSED / PASS.**
 **F–G Teaching / NPC Dialogue: APPROVED.**
 **F–G Originality / Provenance Audit: PASS.**
-**F–G Production Question Design: NEXT.**
-**F–G Production Promotion: BLOCKED pending question-design review, schema/answer QA, and production-shaped runtime evidence.**
+**F–G Production Question Design: QA PASS.**
+**F–G Machine-readable Production Candidate: STATIC/SCHEMA/PROVENANCE QA PASS.**
+**F–G Production-shaped Browser Regression: NEXT.**
+**F–G Production Promotion: BLOCKED pending user-verified runtime evidence and separate additive promotion decision.**
 
 ## Next gate
-Create the separate original F–G question-design draft using the approved teaching package and KM Chapter 1 source mappings. Use new fictional situations, wording, options, distractors, and explanations; do not copy guided-example answers into mission questions. Then run academic/pedagogical/provenance review before canonicalization or production promotion.
+Run the hosted production-shaped browser QA entrypoint with the actual KM renderer. Capture user-verified evidence for dataset load, canonical path, non-canonical path/no false positives, and reload/replay isolation. Only after runtime evidence passes may a separate additive promotion decision be considered. No automatic promotion, Golden Dataset mutation, or production renderer change is authorized by this gate.
