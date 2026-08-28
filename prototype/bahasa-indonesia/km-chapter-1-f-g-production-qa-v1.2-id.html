@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KM Chapter 1 — F–G Production QA v1.2 ID</title><style>body{font-family:system-ui,sans-serif;max-width:1000px;margin:32px auto;padding:0 16px}iframe{width:100%;height:760px;border:1px solid #ccc;border-radius:12px}.pass{font-weight:700}.small{color:#555}</style></head>
+<body>
+<h1>KM Chapter 1 — F–G Production QA v1.2 ID</h1>
+<p><strong>Production-shaped QA only.</strong> Candidate is additive/versioned. Golden Dataset and production renderer are untouched.</p>
+<div id="gate">Menjalankan static checks…</div>
+<p class="small">Dataset: <code>phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json</code></p>
+<div id="runtime"></div>
+<script>
+const DATA='../../phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json';
+const RENDERER='km-batch-01-runtime.html?dataset='+encodeURIComponent(DATA)+'&qa=1&mission=KM-CH1-FG-PRODUCTION-V1.2-ID';
+async function runGate(){
+ const out=[]; let data;
+ try{const r=await fetch(DATA,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);data=await r.json();out.push('DATA LOAD PASS');}catch(e){document.getElementById('gate').innerHTML='<strong>STATIC GATE FAIL</strong> — '+e.message;return;}
+ const qs=Array.isArray(data.questions)?data.questions:[];
+ const ids=new Set(); const supported=new Set(['mcq','multi_select','ordering','document_inspection','evidence_matching','dialogue_analysis']); let ok=true;
+ if(qs.length!==6){out.push('ITEM COUNT FAIL');ok=false}else out.push('6 ITEMS PASS');
+ const expected=['F-Q01','F-Q02','F-Q03','G-Q01','G-Q02','G-Q03'];
+ for(let i=0;i<qs.length;i++){const q=qs[i];if(q.id!==expected[i]){out.push(q.id+': ID/order FAIL');ok=false}if(ids.has(q.id)){out.push(q.id+': duplicate ID FAIL');ok=false}ids.add(q.id);for(const f of ['id','chapter_id','topic_id','skill','cognitive_level','difficulty','question_type','question','answer','explanation','source','provenance','mode','game_mechanic'])if(q[f]===undefined||q[f]===null||q[f]===''){out.push(q.id+': '+f+' FAIL');ok=false}if(!supported.has(q.question_type)){out.push(q.id+': unsupported type FAIL');ok=false}if(q.question_type==='mcq'&&(!Array.isArray(q.options)||q.options.length!==4)){out.push(q.id+': 4 options FAIL');ok=false}if(Array.isArray(q.answer)){out.push(q.id+': single answer FAIL');ok=false}if(!q.options.includes(q.answer)){out.push(q.id+': canonical answer not in options FAIL');ok=false}if(!q.source?.student_book?.pages||!q.source?.student_book?.section||!q.source?.teacher_guide?.pages||!q.source?.teacher_guide?.section){out.push(q.id+': provenance FAIL');ok=false}}
+ const dist={A:0,B:0,C:0,D:0};qs.forEach(q=>{const idx=q.options.indexOf(q.answer);if(idx>=0&&idx<4)dist[String.fromCharCode(65+idx)]++});
+ if(JSON.stringify(dist)!==JSON.stringify({A:1,B:2,C:2,D:1})){out.push('ANSWER DISTRIBUTION FAIL');ok=false}else out.push('ANSWER DISTRIBUTION PASS — A=1 B=2 C=2 D=1');
+ out.push(data.promotion?.golden_dataset_change===false?'GOLDEN DATASET UNCHANGED PASS':'GOLDEN DATASET BOUNDARY FAIL'); if(data.promotion?.golden_dataset_change!==false)ok=false;
+ out.push(data.promotion?.production_renderer_change===false?'RENDERER UNCHANGED PASS':'RENDERER BOUNDARY FAIL'); if(data.promotion?.production_renderer_change!==false)ok=false;
+ document.getElementById('gate').innerHTML='<strong>'+ (ok?'STATIC GATE PASS':'STATIC GATE FAIL')+'</strong><pre>'+out.join('\n')+'</pre>';
+ if(ok){const frame=document.createElement('iframe');frame.src=RENDERER;frame.title='Actual KM renderer — F–G production QA';document.getElementById('runtime').appendChild(frame)}
+}
+runGate();
+</script></body></html>
