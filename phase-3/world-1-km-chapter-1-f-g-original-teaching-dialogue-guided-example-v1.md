@@ -1,7 +1,10 @@
 # World 1 — KM Chapter 1 F–G Original Teaching / NPC Dialogue + Guided Example v1
 
 ## Status
-DRAFT — USER REVIEW GATE
+APPROVED — USER REVIEW GATE CLOSED
+
+## Approval
+User approved the complete F–G teaching/dialogue package on 2026-08-28. Approval closes the teaching-material review gate only; it does not itself promote production questions or alter the Golden Dataset.
 
 ## Protocol
 - Master Control + Master Control v1.1 re-synced before work.
@@ -18,7 +21,7 @@ This is original game-authored teaching content derived from approved competenci
 
 **Context:** The player is asked to prepare a formal written message for a fictional school/work-related situation. The NPC first asks the learner to decide who will read the message and what the message must accomplish.
 
-### NPC teaching dialogue — original draft
+### NPC teaching dialogue — approved
 **NPC:** "Sebelum menulis, jangan buru-buru memilih kalimat. Tentukan dulu siapa yang akan menerima pesanmu dan apa tujuan pesan itu."
 
 **NPC:** "Pesan resmi harus terasa jelas sejak awal. Pembaca perlu memahami maksudnya tanpa menebak-nebak."
@@ -59,7 +62,7 @@ This is original game-authored teaching content derived from approved competenci
 
 **Context:** The player receives an original fictional formal email inviting them to confirm attendance for a school career event.
 
-### NPC teaching dialogue — original draft
+### NPC teaching dialogue — approved
 **NPC:** "Balasan email resmi bukan sekadar menjawab 'ya' atau 'tidak'. Pastikan penerima tahu maksud balasanmu dan informasi apa yang sedang kamu konfirmasi."
 
 **NPC:** "Perhatikan siapa penerimanya, tujuan balasan, informasi yang wajib disebutkan, dan nada bahasa yang sesuai."
@@ -105,4 +108,4 @@ The NPC does not give the canonical mission answers in advance. The teaching sce
 - Provenance must be recorded later at concept/activity/section level, without copying source text.
 
 ## Next gate
-User review → originality/provenance audit → transform approved teaching material into a separate original question-design batch → schema/answer QA → renderer QA.
+User approval CLOSED → originality/provenance audit → transform approved teaching material into a separate original question-design batch → schema/answer QA → renderer QA.
