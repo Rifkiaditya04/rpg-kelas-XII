@@ -77,8 +77,22 @@ Production renderer: unchanged.
 
 This closure applies only to the v1.2 QA regression gate. It does not itself promote F–G into production content and does not close the separate generic >=70% reward-contract issue.
 
-## Files changed
-- This Project Log only for this closure event.
+## Post-closure continuation — 2026-08-28
+User approved the F–G Original Teaching / NPC Dialogue + Guided Example package after the renderer regression closure. The teaching artifact was updated from `DRAFT — USER REVIEW GATE` to `APPROVED — USER REVIEW GATE CLOSED` without changing its authored content.
+
+A source/originality review was then completed against the designated KM Student Book and Teacher Guide. Result: **PASS**. The audit confirmed that dialogue, fictional scenarios, guided choices, and explanations are original game-authored material and that the KM books are used only for concept/competency/topic grounding. F is mapped to Chapter 1 F / Activities 1.10–1.12; G is mapped to Chapter 1 G / Activity 1.13. No Tingkat Lanjut source is used for this KM lane and no unsupported citation detail was introduced.
+
+Master Control F–G addendum was updated to record the user approval, audit PASS, and the new next gate.
+
+## Files changed in continuation
+- `phase-3/world-1-km-chapter-1-f-g-original-teaching-dialogue-guided-example-v1.md`
+- `Alur Kerja Proyek/00-MASTER-CONTROL-v1.1-FG-ADDENDUM-2026-08-27.md`
+
+## Decision after continuation
+**F–G Teaching / NPC Dialogue: APPROVED.**
+**F–G Originality / Provenance Audit: PASS.**
+
+No production question was generated or promoted in this continuation. Golden Dataset and production renderer remain unchanged.
 
 ## Next gate
-Determine the next F–G content/promotion step through the active Master Control and Challenge Ledger. Do not silently promote the QA fixture into production. Any production promotion must remain additive/versioned and require its own documented promotion evidence and approval.
+Create a separate original F–G question-design draft using the approved teaching package and verified KM Chapter 1 source mappings. The draft must use new fictional situations, wording, options, distractors, and explanations, and must not copy guided-example answers. Run academic/pedagogical/provenance review before canonicalization or production promotion.
