@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.2",
+  "dataset": "World 1 KM Standard Chapter 1 F-G Canonical v1.2 ID",
+  "status": "approved_world1_content",
+  "purpose": "Additive/versioned canonical F-G content promoted after static QA and user-verified production-shaped browser regression.",
+  "chapter_id": "BI12-C01",
+  "lanes": ["F", "G"],
+  "language": "id-ID",
+  "item_count": 6,
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100, "completion_requires_percent": 100},
+  "golden_dataset_policy": "knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json remains unchanged; this artifact is additive/versioned.",
+  "promotion_record": "Alur Kerja Proyek/PROJECT LOG/092-World-1-KM-Chapter-1-F-G-Final-QA-and-Additive-Promotion-v1.2-ID.md",
+  "source_candidate": "phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json",
+  "production_use": "approved_for_controlled_world1_content_expansion",
+  "mass_generation": "still_requires separate batch generation and quality gates",
+  "runtime_regression": {"R1":"6/6, 100%, 700 XP","R2":"0/6, 0%, 0 XP","R3":"6/6, 100%, 700 XP"},
+  "question_ids": ["F-Q01","F-Q02","F-Q03","G-Q01","G-Q02","G-Q03"]
+}
