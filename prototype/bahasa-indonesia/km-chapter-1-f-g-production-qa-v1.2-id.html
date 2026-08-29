@@ -1,15 +1,19 @@
 <!doctype html>
 <html lang="id">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KM Chapter 1 — F–G Production QA v1.2 ID</title><style>body{font-family:system-ui,sans-serif;max-width:1000px;margin:32px auto;padding:0 16px}iframe{width:100%;height:760px;border:1px solid #ccc;border-radius:12px}.pass{font-weight:700}.small{color:#555}</style></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KM Chapter 1 — F–G Production QA v1.2 ID</title><style>body{font-family:system-ui,sans-serif;max-width:1000px;margin:32px auto;padding:0 16px}iframe{width:100%;height:760px;border:1px solid #ccc;border-radius:12px}.pass{font-weight:700}.small{color:#555}.controls{margin:12px 0;display:flex;gap:8px;flex-wrap:wrap}.button{border:0;border-radius:8px;padding:10px 14px;cursor:pointer;font:inherit}</style></head>
 <body>
 <h1>KM Chapter 1 — F–G Production QA v1.2 ID</h1>
 <p><strong>Production-shaped QA only.</strong> Candidate is additive/versioned. Golden Dataset and production renderer are untouched.</p>
 <div id="gate">Menjalankan static checks…</div>
 <p class="small">Dataset: <code>phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json</code></p>
+<div class="controls"><button class="button" id="reloadRuntime" type="button" disabled>Reload runtime</button></div>
 <div id="runtime"></div>
 <script>
 const DATA='../../phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json';
 const RENDERER='km-batch-01-runtime.html?dataset='+encodeURIComponent(DATA)+'&qa=1&mission=KM-CH1-FG-PRODUCTION-V1.2-ID';
+let runtimeFrame=null;
+function mountRuntime(){const host=document.getElementById('runtime');host.innerHTML='';runtimeFrame=document.createElement('iframe');runtimeFrame.src=RENDERER;runtimeFrame.title='Actual KM renderer — F–G production QA';host.appendChild(runtimeFrame);document.getElementById('reloadRuntime').disabled=false;}
+document.getElementById('reloadRuntime').onclick=()=>{if(runtimeFrame){runtimeFrame.src=RENDERER;}};
 async function runGate(){
  const out=[]; let data;
  try{const r=await fetch(DATA,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);data=await r.json();out.push('DATA LOAD PASS');}catch(e){document.getElementById('gate').innerHTML='<strong>STATIC GATE FAIL</strong> — '+e.message;return;}
@@ -23,7 +27,7 @@ async function runGate(){
  out.push(data.promotion?.golden_dataset_change===false?'GOLDEN DATASET UNCHANGED PASS':'GOLDEN DATASET BOUNDARY FAIL'); if(data.promotion?.golden_dataset_change!==false)ok=false;
  out.push(data.promotion?.production_renderer_change===false?'RENDERER UNCHANGED PASS':'RENDERER BOUNDARY FAIL'); if(data.promotion?.production_renderer_change!==false)ok=false;
  document.getElementById('gate').innerHTML='<strong>'+ (ok?'STATIC GATE PASS':'STATIC GATE FAIL')+'</strong><pre>'+out.join('\n')+'</pre>';
- if(ok){const frame=document.createElement('iframe');frame.src=RENDERER;frame.title='Actual KM renderer — F–G production QA';document.getElementById('runtime').appendChild(frame)}
+ if(ok)mountRuntime();
 }
 runGate();
 </script></body></html>
