@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.2",
+  "dataset": "World 1 KM Standard Chapter 1 Approved Content Batch 01 F-G v1.2 ID",
+  "status": "approved_world1_content",
+  "purpose": "Approved additive/versioned World 1 content manifest for F-G after final QA and promotion.",
+  "source_canonical": "phase-3/world-1-km-chapter-1-f-g-canonical-v1.2-id.json",
+  "chapter_id": "BI12-C01",
+  "lanes": ["F","G"],
+  "item_count": 6,
+  "item_ids": ["F-Q01","F-Q02","F-Q03","G-Q01","G-Q02","G-Q03"],
+  "rewards": {"xp_per_correct":100,"mission_completion_xp":100,"completion_requires_percent":100},
+  "golden_dataset_policy": "knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json remains unchanged; this approved pool is additive and versioned.",
+  "promotion_record": "Alur Kerja Proyek/PROJECT LOG/092-World-1-KM-Chapter-1-F-G-Final-QA-and-Additive-Promotion-v1.2-ID.md",
+  "production_use": "approved_for_controlled_world1_content_expansion"
+}
