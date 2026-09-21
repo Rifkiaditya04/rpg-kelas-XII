@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "World 1 KM Standard Chapter 2 Original Content - Misi 7 v1.0",
+  "purpose": "Approved additive World 1 content batch for Chapter 2 Mission 7.",
+  "chapter_id": "BI12-C02",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM02-E1",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-E",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sinta membaca sebuah teks prosedur berjudul 'Cara Cepat Mengatasi Insomnia dengan Relaksasi Otot Progresif'. Setelah mempraktikkannya, ia merasa tubuhnya lebih rileks, meskipun butuh waktu 30 menit, bukan 10 menit seperti janji artikel tersebut. Dalam kerangka refleksi 4F/4P, pada tahap apakah Sinta berada ketika ia menyadari ketidaksesuaian durasi tersebut?",
+      "options": [
+        "Tahap Perasaan (Feeling), karena ia merasa rileks.",
+        "Tahap Pembelajaran (Findings), karena ia menemukan fakta baru berdasarkan pengalamannya mempraktikkan prosedur tersebut.",
+        "Tahap Penerapan (Future), karena ia akan menggunakannya lagi besok.",
+        "Tahap Peristiwa (Fact), karena teks tersebut memang berjudul cara cepat."
+      ],
+      "answer": "Tahap Pembelajaran (Findings), karena ia menemukan fakta baru berdasarkan pengalamannya mempraktikkan prosedur tersebut.",
+      "explanation": "Menyadari bahwa durasi nyata (30 menit) berbeda dari klaim teks (10 menit) adalah bentuk penemuan atau pembelajaran (Findings) dari refleksi setelah melakukan praktik.",
+      "source": {
+        "student_book": {"pages": "74-76", "section": "Bab 2, Subbab E"},
+        "teacher_guide": {"pages": "98-102", "section": "Bab 2, Subbab E"}
+      },
+      "provenance": "Kompetensi merefleksi pengalaman membaca teks prosedur menggunakan kerangka 4F. Skenario insomnia dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "reflection_analysis",
+      "tags": ["teks_prosedur", "refleksi_4F", "gaya_hidup_sehat"]
+    },
+    {
+      "id": "KM02-E2",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-E",
+      "skill": "create",
+      "cognitive_level": "create",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Seorang atlet membaca prosedur 'Pemulihan Cedera Ringan dengan Metode RICE (Rest, Ice, Compression, Elevation)'. Ia memahami konsepnya dan memutuskan bahwa besok saat latihan lari, ia akan selalu membawa kantong es di tasnya. Berdasarkan model refleksi 4F/4P, tindakan atlet tersebut merupakan perwujudan dari tahap...",
+      "options": [
+        "Peristiwa (Fact)",
+        "Perasaan (Feeling)",
+        "Pembelajaran (Findings)",
+        "Penerapan (Future)"
+      ],
+      "answer": "Penerapan (Future)",
+      "explanation": "Tahap Penerapan (Future / Rencana ke depan) adalah saat seseorang memutuskan untuk melakukan tindakan nyata di masa depan berdasarkan pembelajaran yang didapat dari sebuah teks.",
+      "source": {
+        "student_book": {"pages": "74-76", "section": "Bab 2, Subbab E"},
+        "teacher_guide": {"pages": "98-102", "section": "Bab 2, Subbab E"}
+      },
+      "provenance": "Kompetensi merefleksi pengalaman membaca teks prosedur (tahap Penerapan). Skenario olahraga dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "future_planning",
+      "tags": ["teks_prosedur", "refleksi_4F", "gaya_hidup_aktif"]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "Misi 17: Analisis Kritis, Ejaan, dan Refleksi ALACT",
+  "purpose": "Approved additive World 1 content batch for controlled expansion.",
+  "chapter_id": "BI12-C05",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM05-D1",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-D",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Bacalah kalimat berikut: 'Untuk melestarikan kearifan lokal diperlukan kerjasama yang baik antar warga masyarakat.' Kesalahan penulisan yang terdapat pada kalimat tersebut adalah...",
+      "options": [
+        "Penulisan 'kerjasama' seharusnya dipisah (kerja sama) dan 'antar warga' seharusnya disambung (antarwarga).",
+        "Penulisan 'antar warga' seharusnya menggunakan tanda hubung (antar-warga).",
+        "Kata 'diperlukan' seharusnya dipisah menjadi 'di perlukan'.",
+        "Penulisan 'kerjasama' sudah benar, namun kata 'masyarakat' harus diawali huruf kapital."
+      ],
+      "answer": "Penulisan 'kerjasama' seharusnya dipisah (kerja sama) dan 'antar warga' seharusnya disambung (antarwarga).",
+      "explanation": "Menurut PUEBI, 'kerja sama' ditulis terpisah karena bukan bentuk terikat, sedangkan 'antar-' adalah bentuk terikat yang harus digabung dengan kata yang mengikutinya (antarwarga).",
+      "source": {
+        "student_book": {"pages": "212", "section": "Bab 5, Subbab D"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM05-E1",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-E",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Setelah membaca esai tentang kearifan lokal, Budi menyadari pentingnya menjaga alam dan mulai mencari cara-cara baru atau metode alternatif yang bisa ia lakukan untuk menumbuhkan kepedulian lingkungan di sekolahnya. Dalam model refleksi ALACT, tindakan Budi berada pada tahap...",
+      "options": [
+        "Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)",
+        "Tindakan/Aksi (Action)",
+        "Melihat Kembali (Looking Back)",
+        "Uji Coba (Trial)"
+      ],
+      "answer": "Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)",
+      "explanation": "Budi telah melewati tahap menyadari aspek penting (Awareness) dan kini memikirkan metode/solusi baru yang bisa diterapkan, yang sesuai dengan tahap Creating Alternative Methods of Action.",
+      "source": {
+        "student_book": {"pages": "215", "section": "Bab 5, Subbab E"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM05-E2",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-E",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Dalam model ALACT, tahap awal yang dilakukan pembaca yang berupa kegiatan membaca teks secara langsung dan memperoleh pengalaman atau pengetahuan darinya disebut tahap...",
+      "options": [
+        "Tindakan/Aksi (Action)",
+        "Kesadaran (Awareness)",
+        "Uji Coba (Trial)",
+        "Looking Back (Melihat Kembali)"
+      ],
+      "answer": "Tindakan/Aksi (Action)",
+      "explanation": "Tahap 1 (Action) adalah saat di mana seseorang melakukan sebuah tindakan langsung, dalam konteks literasi hal ini adalah kegiatan membaca teks itu sendiri untuk mendapatkan pengetahuan awal.",
+      "source": {
+        "student_book": {"pages": "214", "section": "Bab 5, Subbab E"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>World 2 — Premium RPG Gameplay (Bab 2)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #eef2f7;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --success: #059669;
+      --locked: #9ca3af;
+      --panel-bg: rgba(255, 255, 255, 0.95);
+      --glass-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+    * { box-sizing: border-box; }
+    body, html { margin: 0; padding: 0; height: 100vh; overflow: hidden; font-family: 'Inter', sans-serif; background: #000; }
+    
+    /* === WORLD & CAMERA === */
+    #viewport {
+      position: absolute; inset: 0;
+      overflow: hidden; background: #dfe6ee;
+      touch-action: none;
+    }
+    #world {
+      position: absolute; width: 1400px; height: 1000px;
+      left: 0; top: 0; transform-origin: 0 0;
+      will-change: transform;
+      background: #7bc9e8; /* Indoor / Gym theme */
+      background-image: radial-gradient(#ffffff 15%, transparent 15%), radial-gradient(#ffffff 15%, transparent 15%);
+      background-position: 0 0, 25px 25px;
+      background-size: 50px 50px;
+    }
+    
+    /* === PORTAL === */
+    .portal {
+      position: absolute; width: 120px; height: 120px;
+      border-radius: 50%; background: rgba(37, 99, 235, 0.2);
+      border: 4px dashed #2563eb;
+      animation: spin 10s linear infinite;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .portal-text {
+      position: absolute; top: -30px; font-weight: bold; color: #fff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5); white-space: nowrap;
+      animation: none !important;
+    }
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+
+    /* === ENTITIES === */
+    .entity { position: absolute; transform: translate(-50%, -100%); will-change: transform; }
+    
+    /* Player */
+    #player { width: 54px; height: 74px; z-index: 10; transition: filter 0.1s; }
+    #player .shadow {
+      position: absolute; left: 3px; bottom: -8px; width: 48px; height: 14px;
+      border-radius: 50%; background: rgba(23,32,51,0.25); filter: blur(2px); z-index: -1;
+    }
+    .avatar { position: relative; width: 100%; height: 100%; }
+    .avatar .head { position: absolute; width: 28px; height: 28px; border-radius: 50%; left: 13px; top: 3px; background: #f0bd91; border: 2px solid #7b4b35; }
+    .avatar .hair { position: absolute; width: 32px; height: 19px; left: 11px; top: 0; border-radius: 18px 18px 9px 9px; background: #2e2b2a; }
+    .avatar .body { position: absolute; width: 34px; height: 34px; left: 10px; top: 28px; border-radius: 8px 8px 5px 5px; background: #f7f7f4; border: 2px solid #39465b; }
+    .avatar .legs { position: absolute; left: 12px; top: 59px; width: 30px; height: 14px; border-left: 7px solid #27364c; border-right: 7px solid #27364c; }
+    #player.moving .avatar { animation: bob 0.28s infinite alternate; }
+    @keyframes bob { to { transform: translateY(-4px); } }
+
+    /* NPCs */
+    .npc { width: 46px; height: 68px; z-index: 5; cursor: pointer; }
+    .npc .avatar .head { background: #ffdfc4; border-color: #8c5a3d; }
+    .npc .avatar .body { background: #10b981; border-color: #047857; } /* Green shirt */
+    .npc .avatar .hair { background: #4a332a; }
+    .npc .shadow {
+      position: absolute; left: 3px; bottom: -8px; width: 40px; height: 12px;
+      border-radius: 50%; background: rgba(23,32,51,0.2); filter: blur(2px); z-index: -1;
+    }
+    .npc .name-tag {
+      position: absolute; top: -20px; left: 50%; transform: translateX(-50%);
+      background: rgba(0,0,0,0.6); color: #fff; font-size: 10px; padding: 2px 6px;
+      border-radius: 4px; font-weight: 600; white-space: nowrap; pointer-events: none;
+    }
+    .npc .status-icon {
+      position: absolute; top: -45px; left: 50%; transform: translateX(-50%);
+      font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+      animation: float 2s infinite ease-in-out;
+    }
+    @keyframes float { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, -5px); } }
+
+    /* === INTERACTION CUE === */
+    #interaction-cue {
+      position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%);
+      padding: 8px 14px; border-radius: 20px; background: rgba(0,0,0,0.8);
+      color: #fff; font-size: 13px; font-weight: 500; white-space: nowrap;
+      opacity: 0; pointer-events: none; transition: 0.2s ease; z-index: 20;
+    }
+    #interaction-cue.show { opacity: 1; top: 45%; }
+
+    /* === HUD === */
+    .hud {
+      position: absolute; left: 16px; top: 16px; z-index: 50;
+      display: flex; gap: 12px; pointer-events: none;
+    }
+    .hud-card {
+      background: var(--panel-bg); backdrop-filter: blur(10px);
+      padding: 10px 16px; border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600;
+    }
+    .hud-card span { color: var(--primary); font-size: 18px; }
+    
+    .hud-right { position: absolute; right: 16px; top: 16px; z-index: 50; pointer-events: auto; }
+    .btn-reset {
+      background: rgba(255,255,255,0.9); border: none; padding: 8px 12px;
+      border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .btn-reset:hover { background: #fff; }
+
+    /* === DIALOG PANEL === */
+    #dialog-overlay {
+      position: absolute; inset: 0; background: rgba(0,0,0,0.4);
+      z-index: 100; display: none; align-items: center; justify-content: center;
+      backdrop-filter: blur(4px);
+    }
+    #dialog-overlay.active { display: flex; }
+    .dialog-box {
+      background: #fafaf9; border-radius: 20px; width: 90%; max-width: 440px;
+      box-shadow: var(--glass-shadow); padding: 24px; position: relative;
+      animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @keyframes popIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .dialog-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+    .dialog-avatar { width: 70px; height: 70px; border-radius: 16px; background: #e5e7eb; display: flex; align-items: center; justify-content: center; font-size: 32px; }
+    .dialog-title { flex: 1; }
+    .dialog-title h2 { margin: 0; font-size: 18px; color: var(--text-main); }
+    .dialog-title p { margin: 4px 0 0; font-size: 13px; color: var(--text-muted); font-weight: 500; }
+    .dialog-body { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; font-size: 14px; line-height: 1.6; color: #4b5563; margin-bottom: 20px; }
+    .dialog-actions { display: flex; gap: 10px; }
+    .btn-action { flex: 1; padding: 12px; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; transition: 0.2s; }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-hover); }
+    .btn-secondary { background: #f3f4f6; color: #4b5563; }
+    .btn-secondary:hover { background: #e5e7eb; }
+    .btn-disabled { background: #e5e7eb; color: #9ca3af; cursor: not-allowed; }
+
+    /* === ANALOG === */
+    .analog {
+      position: absolute; z-index: 40; width: 120px; height: 120px; border-radius: 50%; display: none; pointer-events: none; transform: translate(-50%, -50%);
+      background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.4); box-shadow: 0 4px 16px rgba(0,0,0,0.1); backdrop-filter: blur(4px);
+    }
+    .analog.show { display: block; }
+    .analog-base { position: absolute; left: 50%; top: 50%; width: 50px; height: 50px; border-radius: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.2); }
+    .analog-knob { position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; border-radius: 50%; transform: translate(-50%, -50%); background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+
+    /* === MODAL === */
+    #mission-modal { position: fixed; inset: 0; background: #000; z-index: 9999; display: none; flex-direction: column; }
+    #mission-modal.active { display: flex; }
+    .modal-header { background: #111827; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #374151; }
+    .modal-header h3 { color: #f9fafb; margin: 0; font-size: 15px; font-weight: 500; }
+    .btn-close-modal { background: transparent; border: none; color: #ef4444; font-size: 14px; font-weight: 600; cursor: pointer; padding: 4px 8px; }
+    #mission-frame { flex: 1; width: 100%; border: none; background: #f3f4f6; }
+  </style>
+</head>
+<body>
+
+  <div id="viewport">
+    <div class="hud">
+      <div class="hud-card"><span id="hud-xp">⭐ 0</span> XP</div>
+      <div class="hud-card"><span id="hud-missions">🏆 0/7</span> Misi</div>
+      <div class="hud-card" style="color: #6b7280; font-size: 12px;">Bab 2: Teks Prosedur</div>
+    </div>
+    <div class="hud-right">
+      <button class="btn-reset" onclick="resetState()">Reset Bab 2</button>
+    </div>
+
+    <div id="world">
+      <!-- Portal back to World 1 -->
+      <div class="portal" style="left: 100px; top: 100px;" id="portal-w1">
+        <div class="portal-text">Ke Bab 1</div>
+      </div>
+      <!-- Portal to World 3 -->
+      <div class="portal" style="left: 1200px; top: 800px;" id="portal-w3">
+        <div class="portal-text">Ke Bab 3</div>
+      </div>
+
+      <div id="npcs-container"></div>
+
+      <div id="player" class="entity">
+        <div class="avatar"><div class="hair"></div><div class="head"></div><div class="body"></div><div class="legs"></div></div>
+        <div class="shadow"></div>
+      </div>
+      
+      <div id="interaction-cue">E / TAP — Interaksi</div>
+    </div>
+
+    <div id="analog" class="analog" aria-hidden="true"><div class="analog-base"></div><div id="analogKnob" class="analog-knob"></div></div>
+  </div>
+
+  <div id="dialog-overlay">
+    <div class="dialog-box">
+      <div class="dialog-header">
+        <div class="dialog-avatar" id="dialog-avatar-img">🧑‍🏫</div>
+        <div class="dialog-title">
+          <h2 id="dialog-npc-name">Nama NPC</h2>
+          <p id="dialog-npc-role">Peran NPC</p>
+        </div>
+      </div>
+      <div class="dialog-body" id="dialog-text"></div>
+      <div class="dialog-actions">
+        <button class="btn-action btn-secondary" onclick="closeDialog()">Tutup</button>
+        <button class="btn-action btn-primary" id="btn-start-mission">Mulai Misi</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="mission-modal">
+    <div class="modal-header">
+      <h3 id="modal-title">Menjalankan Misi...</h3>
+      <button class="btn-close-modal" onclick="closeMissionModal()">Batalkan Misi (Keluar)</button>
+    </div>
+    <iframe id="mission-frame" src="about:blank"></iframe>
+  </div>
+
+  <script>
+    const STATE_KEY = 'bi12-w02-rpg-gameplay-v1';
+    let state = { xp: 0, completed: {} };
+    
+    const DATASET_URL = '../../knowledge-base/bahasa-indonesia/v1/chapter-2-golden-dataset-v1.json';
+
+    const MISSIONS = [
+      { id: 'BI12-W02-KM-C02-M01', npcName: 'Dr. Surya', npcRole: 'Ahli Informasi (A)', avatar: '🧑‍⚕️', x: 400, y: 300, req: null,
+        dialogLocked: '', dialogOpen: 'Mari berlatih menemukan informasi eksplisit dari prosedur kesehatan.', dialogDone: 'Bagus sekali! Anda jeli menangkap informasi.' },
+      { id: 'BI12-W02-KM-C02-M02', npcName: 'Ns. Maya', npcRole: 'Praktisi Tanggap (B)', avatar: '👩‍⚕️', x: 700, y: 300, req: 'BI12-W02-KM-C02-M01',
+        dialogLocked: 'Selesaikan misi Dr. Surya terlebih dahulu.', dialogOpen: 'Dengarkan baik-baik prosedur darurat ini. Siap menanggapi?', dialogDone: 'Tanggapan Anda cepat dan tepat.' },
+      { id: 'BI12-W02-KM-C02-M03', npcName: 'Andi', npcRole: 'Koordinator Urutan (C)', avatar: '🧑‍🔧', x: 1000, y: 300, req: 'BI12-W02-KM-C02-M02',
+        dialogLocked: 'Bantu Ns. Maya sebelum beralih ke urutan instruksi.', dialogOpen: 'Prosedur tidak boleh terbalik-balik. Coba urutkan langkah ini.', dialogDone: 'Logika urutan Anda sangat sempurna.' },
+      { id: 'BI12-W02-KM-C02-M04', npcName: 'Rina', npcRole: 'Kritikus Bahasa (D)', avatar: '👩‍💼', x: 400, y: 600, req: 'BI12-W02-KM-C02-M03',
+        dialogLocked: 'Andi membutuhkan bantuanmu untuk mengurutkan instruksi.', dialogOpen: 'Bandingkan dua teks layanan publik ini. Mana yang bahasanya lebih tepat?', dialogDone: 'Analisis perbandingan bahasa Anda sangat tajam.' },
+      { id: 'BI12-W02-KM-C02-M05', npcName: 'Prof. Rudi', npcRole: 'Peneliti Fakta (E)', avatar: '👨‍🔬', x: 700, y: 600, req: 'BI12-W02-KM-C02-M04',
+        dialogLocked: 'Selesaikan tugas perbandingan dari Rina.', dialogOpen: 'Jangan asal percaya teks! Mari kita refleksikan kelogisan prosedur diet ini.', dialogDone: 'Pemikiran kritis Anda patut diacungi jempol.' },
+      { id: 'BI12-W02-KM-C02-M06', npcName: 'Budi', npcRole: 'Instruktur Peragaan (F)', avatar: '🕺', x: 1000, y: 600, req: 'BI12-W02-KM-C02-M05',
+        dialogLocked: 'Temui Prof. Rudi untuk berlatih berpikir kritis dulu.', dialogOpen: 'Sekarang saatnya Anda yang mendemonstrasikan prosedur. Tunjukkan cara yang benar!', dialogDone: 'Demonstrasi Anda sangat komunikatif dan jelas.' },
+      { id: 'BI12-W02-KM-C02-M07', npcName: 'Sinta', npcRole: 'Sutradara (G)', avatar: '🎬', x: 700, y: 800, req: 'BI12-W02-KM-C02-M06',
+        dialogLocked: 'Praktik demonstrasi Budi belum Anda selesaikan.', dialogOpen: 'Tantangan terakhir Bab 2: Produksi video tutorial Anda sendiri. Siap?', dialogDone: 'Luar biasa! Seluruh kompetensi Bab 2 telah Anda kuasai.' }
+    ];
+
+    function loadState() {
+      try { const saved = localStorage.getItem(STATE_KEY); if (saved) { const parsed = JSON.parse(saved); state.xp = parsed.xp || 0; state.completed = { ...parsed.completed }; } } catch(e) {}
+      updateHUD(); renderNPCs();
+    }
+    function saveState() { localStorage.setItem(STATE_KEY, JSON.stringify(state)); updateHUD(); renderNPCs(); }
+    function resetState() { if(confirm('Reset Bab 2?')) { localStorage.removeItem(STATE_KEY); location.reload(); } }
+
+    function updateHUD() {
+      document.getElementById('hud-xp').innerHTML = `⭐ ${state.xp}`;
+      const completedCount = Object.values(state.completed).filter(Boolean).length;
+      document.getElementById('hud-missions').innerHTML = `🏆 ${completedCount}/7`;
+    }
+
+    function renderNPCs() {
+      const container = document.getElementById('npcs-container');
+      container.innerHTML = '';
+      MISSIONS.forEach(m => {
+        const isCompleted = state.completed[m.id];
+        const isLocked = m.req && !state.completed[m.req];
+        let statusHtml = isCompleted ? '<div class="status-icon">✅</div>' : (!isLocked ? '<div class="status-icon">❗</div>' : '<div class="status-icon" style="filter:grayscale(1);opacity:0.5">🔒</div>');
+
+        const el = document.createElement('div');
+        el.className = 'entity npc';
+        el.style.left = m.x + 'px'; el.style.top = m.y + 'px';
+        el.innerHTML = `${statusHtml}<div class="name-tag">${m.npcName}</div><div class="avatar"><div class="hair"></div><div class="head"></div><div class="body"></div><div class="legs"></div></div><div class="shadow"></div>`;
+        container.appendChild(el);
+      });
+    }
+
+    // GAMEPLAY
+    const world = document.getElementById('world'), player = document.getElementById('player'), viewport = document.getElementById('viewport');
+    const interactionCue = document.getElementById('interaction-cue');
+    const keys = new Set();
+    const p = { x: 200, y: 200 }; // Spawn near portal
+    const speed = 3.5;
+    let isPaused = false, nearestMission = null, portalActive = null;
+
+    function checkProximity() {
+      nearestMission = null; portalActive = null;
+      let minDistance = 999;
+      
+      // Check NPCs
+      MISSIONS.forEach(m => {
+        const dist = Math.hypot(p.x - m.x, p.y - m.y);
+        if (dist < 80 && dist < minDistance) { minDistance = dist; nearestMission = m; }
+      });
+
+      // Check Portals
+      if(Math.hypot(p.x - 160, p.y - 160) < 80) {
+        portalActive = 'w1';
+      } else if (Math.hypot(p.x - 1260, p.y - 860) < 80) {
+        portalActive = 'w3';
+      }
+
+      if ((nearestMission || portalActive) && !isPaused) {
+        if (portalActive === 'w1') interactionCue.textContent = 'E / TAP — Ke Bab 1';
+        else if (portalActive === 'w3') interactionCue.textContent = 'E / TAP — Ke Bab 3';
+        else interactionCue.textContent = 'E / TAP — Interaksi';
+        interactionCue.classList.add('show');
+      } else {
+        interactionCue.classList.remove('show');
+      }
+    }
+
+    function updateCamera() {
+      p.x = Math.max(55, Math.min(1345, p.x));
+      p.y = Math.max(80, Math.min(920, p.y));
+      const vw = viewport.clientWidth, vh = viewport.clientHeight;
+      const scale = Math.max(0.72, Math.min(1.02, Math.min(vw / 980, vh / 650)));
+      const tx = vw / 2 - p.x * scale, ty = vh / 2 - p.y * scale;
+      
+      world.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+      player.style.left = p.x + 'px'; player.style.top = p.y + 'px';
+      checkProximity();
+    }
+
+    function frame() {
+      if (!isPaused) {
+        let dx = 0, dy = 0;
+        if(keys.has('ArrowLeft') || keys.has('a')) dx -= 1;
+        if(keys.has('ArrowRight') || keys.has('d')) dx += 1;
+        if(keys.has('ArrowUp') || keys.has('w')) dy -= 1;
+        if(keys.has('ArrowDown') || keys.has('s')) dy += 1;
+        
+        if(dx || dy) {
+          const n = Math.hypot(dx, dy);
+          p.x += (dx / n) * speed; p.y += (dy / n) * speed;
+          player.classList.add('moving');
+        } else { player.classList.remove('moving'); }
+        updateCamera();
+      }
+      requestAnimationFrame(frame);
+    }
+
+    window.addEventListener('keydown', e => {
+      if(isPaused) return;
+      if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','w','a','s','d'].includes(e.key)){ keys.add(e.key); }
+      if(e.key === 'e' || e.key === 'E') interact();
+    });
+    window.addEventListener('keyup', e => keys.delete(e.key));
+    viewport.addEventListener('resize', updateCamera);
+
+    // ANALOG
+    const analog = document.getElementById('analog'), knob = document.getElementById('analogKnob');
+    let analogPointer = null;
+    viewport.addEventListener('pointerdown', e => {
+      if (e.target.closest('button') || e.target.closest('#dialog-overlay')) return;
+      if ((nearestMission || portalActive) && Math.hypot(e.clientX - viewport.clientWidth/2, e.clientY - viewport.clientHeight/2) < 100) { interact(); return; }
+      analogPointer = e.pointerId;
+      analog.style.left = e.clientX + 'px'; analog.style.top = e.clientY + 'px';
+      analog.classList.add('show');
+      viewport.setPointerCapture(e.pointerId);
+    });
+    viewport.addEventListener('pointermove', e => {
+      if(e.pointerId !== analogPointer) return;
+      const dx = e.clientX - parseFloat(analog.style.left), dy = e.clientY - parseFloat(analog.style.top);
+      const mag = Math.hypot(dx, dy), max = 45;
+      const x = mag > max ? (dx/mag)*max : dx, y = mag > max ? (dy/mag)*max : dy;
+      knob.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+      ['w','a','s','d'].forEach(k => keys.delete(k));
+      if (mag > 10) {
+        if (Math.abs(x) > 10) keys.add(x < 0 ? 'a' : 'd');
+        if (Math.abs(y) > 10) keys.add(y < 0 ? 'w' : 's');
+      }
+    });
+    function endAnalog(e) { if(e.pointerId===analogPointer) { analogPointer=null; analog.classList.remove('show'); knob.style.transform='translate(-50%,-50%)'; ['w','a','s','d'].forEach(k=>keys.delete(k)); } }
+    viewport.addEventListener('pointerup', endAnalog);
+    viewport.addEventListener('pointercancel', endAnalog);
+
+    // INTERACTION
+    let activeNPC = null;
+    function interact() {
+      if(portalActive === 'w1') {
+        window.location.href = 'world-1-rpg-gameplay-v1.html';
+        return;
+      }
+      if(portalActive === 'w3') {
+        window.location.href = 'world-3-rpg-gameplay-v1.html';
+        return;
+      }
+      if(!nearestMission || isPaused) return;
+      isPaused = true; activeNPC = nearestMission;
+      interactionCue.classList.remove('show');
+      
+      document.getElementById('dialog-npc-name').textContent = activeNPC.npcName;
+      document.getElementById('dialog-npc-role').textContent = activeNPC.npcRole;
+      document.getElementById('dialog-avatar-img').textContent = activeNPC.avatar;
+      
+      const isCompleted = state.completed[activeNPC.id];
+      const isLocked = activeNPC.req && !state.completed[activeNPC.req];
+      const btn = document.getElementById('btn-start-mission');
+      
+      if (isLocked) {
+        document.getElementById('dialog-text').innerHTML = `<em>${activeNPC.dialogLocked}</em>`;
+        btn.textContent = 'Misi Terkunci'; btn.className = 'btn-action btn-disabled'; btn.disabled = true;
+      } else if (isCompleted) {
+        document.getElementById('dialog-text').innerHTML = activeNPC.dialogDone;
+        btn.textContent = 'Mainkan Ulang'; btn.className = 'btn-action btn-primary'; btn.disabled = false;
+      } else {
+        document.getElementById('dialog-text').innerHTML = activeNPC.dialogOpen;
+        btn.textContent = 'Mulai Misi'; btn.className = 'btn-action btn-primary'; btn.disabled = false;
+      }
+      
+      document.getElementById('dialog-overlay').classList.add('active');
+    }
+
+    function closeDialog() { document.getElementById('dialog-overlay').classList.remove('active'); activeNPC = null; setTimeout(() => { isPaused = false; }, 100); }
+
+    document.getElementById('btn-start-mission').onclick = () => {
+      document.getElementById('dialog-overlay').classList.remove('active');
+      document.getElementById('modal-title').textContent = `Misi: ${activeNPC.npcName}`;
+      // Note: We use dataset query param + passing a specific item ID? Or we let the renderer just load the whole JSON and play the specific mission ID?
+      // Since km-batch-01-runtime currently pulls the whole JSON, we might need a way to filter. But for now, we pass the dataset.
+      document.getElementById('mission-frame').src = `km-batch-01-runtime.html?dataset=${encodeURIComponent(DATASET_URL)}&missionId=${activeNPC.id}`;
+      document.getElementById('mission-modal').classList.add('active');
+    };
+
+    function closeMissionModal() { document.getElementById('mission-modal').classList.remove('active'); document.getElementById('mission-frame').src = 'about:blank'; closeDialog(); }
+
+    window.addEventListener('message', (e) => {
+      try {
+        if(typeof e.data === 'string' && e.data.includes('MISSION_RENDERER_RESULT')) {
+          const payload = JSON.parse(e.data);
+          if(payload.type === 'MISSION_RENDERER_RESULT') {
+            const accuracy = Number(payload.data.accuracy) || 0;
+            const earnedXp = Number(payload.data.xp) || 0;
+            if (accuracy >= 70) {
+              if (!state.completed[activeNPC.id]) {
+                state.completed[activeNPC.id] = true; state.xp += earnedXp; saveState();
+                alert(`Misi Berhasil (Akurasi: ${Math.round(accuracy)}%)!\nAnda mendapatkan ${earnedXp} XP.\nMisi selanjutnya telah terbuka!`);
+              } else { alert(`Misi Selesai (Replay).\nAkurasi: ${Math.round(accuracy)}%.\n(Tidak ada tambahan XP)`); }
+            } else { alert(`Penjelajahan gagal. Akurasi Anda ${Math.round(accuracy)}%. Coba lagi.`); }
+            closeMissionModal();
+          }
+        }
+      } catch(err) {}
+    });
+
+    loadState();
+    updateCamera();
+    requestAnimationFrame(frame);
+  </script>
+</body>
+</html>

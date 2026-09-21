@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World 1 — Premium RPG Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #4da8da;
+    --accent-glow: rgba(77, 168, 218, 0.6);
+    --success: #52c41a;
+    --glass-bg: rgba(15, 20, 30, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.1);
+  }
+  
+  body, html {
+    margin: 0; padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #e2e8f0;
+    background: radial-gradient(circle at 50% 0%, #1e293b 0%, #0b0f19 70%, #000000 100%);
+    background-attachment: fixed;
+  }
+
+  /* Overlay for readability */
+  .bg-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
+    z-index: -1;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  h1, h2, h3 { font-family: 'Cinzel', serif; margin: 0; }
+  
+  /* Glassmorphism Panel */
+  .glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  }
+
+  /* Header Section */
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 20px;
+  }
+  
+  .title-area h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+  }
+  .title-area p {
+    color: #94a3b8;
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* Stats Row */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .stat-box {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  }
+  .stat-value {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+  }
+  .stat-label {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+  }
+
+  /* Progress Bar */
+  .xp-container {
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+    margin-top: 15px;
+    overflow: hidden;
+    position: relative;
+  }
+  .xp-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    width: 0%;
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 10px var(--accent-glow);
+  }
+
+  /* Mission List */
+  .mission-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mission-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .mission-card:hover:not(.locked) {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .mission-card.active {
+    border-color: var(--accent);
+    box-shadow: 0 0 20px var(--accent-glow);
+  }
+
+  .mission-card.completed {
+    border-color: var(--success);
+  }
+
+  .mission-card.locked {
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
+
+  .mission-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    border: 1px solid var(--glass-border);
+  }
+
+  .mission-info h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  .mission-info p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  /* Buttons */
+  .btn {
+    background: linear-gradient(180deg, #2a3a5c, #1a253c);
+    border: 1px solid #475a85;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .btn:hover:not(:disabled) {
+    background: linear-gradient(180deg, #354a75, #22304d);
+    box-shadow: 0 0 15px rgba(53, 74, 117, 0.6);
+  }
+  .btn:disabled {
+    background: #1e293b;
+    border-color: #334155;
+    color: #64748b;
+    cursor: not-allowed;
+  }
+  .btn-primary {
+    background: linear-gradient(180deg, #3b82f6, #1d4ed8);
+    border-color: #60a5fa;
+  }
+  .btn-primary:hover {
+    background: linear-gradient(180deg, #60a5fa, #2563eb);
+    box-shadow: 0 0 15px var(--accent-glow);
+  }
+
+  .danger-link {
+    color: #ef4444;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Modal Renderer Overlay */
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+  .modal-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(180deg, rgba(15,20,30,1), rgba(15,20,30,0));
+  }
+  .modal-header h2 { color: #fff; }
+  .close-btn {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+  }
+  .close-btn:hover { background: rgba(255,255,255,0.1); }
+  
+  .modal-content {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-top: none;
+    background: #fff; /* White background for the iframe to ensure standard text visibility */
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+  }
+  .modal-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+</style>
+</head>
+<body>
+<div class="bg-overlay"></div>
+
+<div class="container">
+  <div class="glass-panel">
+    <div class="header-flex">
+      <div class="title-area">
+        <p>Kurikulum Merdeka · Bab 1</p>
+        <h1>Jelajah Komunikasi Resmi</h1>
+      </div>
+      <div>
+        <button id="resetBtn" class="danger-link">Reset Perjalanan</button>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-value" id="totalXp">0</div>
+        <div class="stat-label">Total XP</div>
+        <div class="xp-container"><div class="xp-bar" id="xpBar"></div></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="missionsCompleted">0/4</div>
+        <div class="stat-label">Pencapaian Misi</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="statusBadge" style="color:var(--accent)">Menjelajah</div>
+        <div class="stat-label">Status Penjelajah</div>
+      </div>
+    </div>
+
+    <div class="mission-list" id="missionList">
+      <!-- Missions rendered via JS -->
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Game Renderer -->
+<div class="modal-overlay" id="rendererModal">
+  <div class="modal-header">
+    <h2 id="modalTitle">Menjalankan Misi...</h2>
+    <button class="close-btn" onclick="closeModal()">Kembali ke Peta</button>
+  </div>
+  <div class="modal-content">
+    <iframe id="rendererFrame" title="Mission Renderer"></iframe>
+  </div>
+</div>
+
+<script>
+const MISSIONS = [
+  {
+    id: 'BI12-W01-M01',
+    title: 'Misi 1: Simpul Informasi',
+    desc: 'Menemukan makna tersurat dan tersirat (Kompetensi A-C)',
+    icon: '📜',
+    dataset: '../../phase-3/world-1-km-chapter-1-original-content-batch-01-canonical-v1.1.json'
+  },
+  {
+    id: 'BI12-W01-M02',
+    title: 'Misi 2: Koreksi Ejaan',
+    desc: 'Memperbaiki kesalahan kaidah penulisan (Kompetensi E)',
+    icon: '🔍',
+    dataset: '../../phase-3/world-1-km-chapter-1-original-content-batch-02-e4-canonical-v1.1.json'
+  },
+  {
+    id: 'BI12-W01-M03',
+    title: 'Misi 3: Bahasa Dinas',
+    desc: 'Tata bahasa dan kesopanan komunikasi resmi (Kompetensi F-G)',
+    icon: '🏛️',
+    dataset: '../../phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json'
+  },
+  {
+    id: 'BI12-W01-M04',
+    title: 'Misi 4: Sang Orator',
+    desc: 'Mengubah surat menjadi poster publikasi (Kompetensi H)',
+    icon: '📢',
+    dataset: '../../phase-3/world-1-km-chapter-1-h-production-content-candidate-v1.json'
+  }
+];
+
+const STORAGE_KEY = 'bi12-w01-rpg-progression-v1';
+let state = JSON.parse(localStorage.getItem(STORAGE_KEY)) || { xp: 0, completed: {} };
+let currentActiveMission = null;
+const MAX_XP = 2000; // Estimated total for full bar
+
+function saveState() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  renderUI();
+}
+
+function renderUI() {
+  const completedCount = Object.keys(state.completed).length;
+  
+  // Update Stats
+  document.getElementById('totalXp').textContent = state.xp;
+  document.getElementById('missionsCompleted').textContent = `${completedCount}/${MISSIONS.length}`;
+  
+  if (completedCount === MISSIONS.length) {
+    document.getElementById('statusBadge').textContent = 'Master';
+    document.getElementById('statusBadge').style.color = 'var(--success)';
+  } else {
+    document.getElementById('statusBadge').textContent = 'Menjelajah';
+    document.getElementById('statusBadge').style.color = 'var(--accent)';
+  }
+
+  // XP Bar Animation
+  const xpPercent = Math.min(100, (state.xp / MAX_XP) * 100);
+  document.getElementById('xpBar').style.width = `${xpPercent}%`;
+  
+  // Render Missions
+  const list = document.getElementById('missionList');
+  list.innerHTML = '';
+  
+  MISSIONS.forEach((m, index) => {
+    const isCompleted = !!state.completed[m.id];
+    const isAvailable = index === 0 ? true : !!state.completed[MISSIONS[index-1].id];
+    const isActive = isAvailable && !isCompleted;
+    
+    let stateClass = '';
+    if (isCompleted) stateClass = 'completed';
+    else if (isActive) stateClass = 'active';
+    else if (!isAvailable) stateClass = 'locked';
+    
+    let btnHTML = '';
+    if (isCompleted) {
+      btnHTML = `<button class="btn" onclick="playMission('${m.id}', '${m.title}')">Ulangi Misi</button>`;
+    } else if (isActive) {
+      btnHTML = `<button class="btn btn-primary" onclick="playMission('${m.id}', '${m.title}')">Mulai Penjelajahan</button>`;
+    } else {
+      btnHTML = `<button class="btn" disabled>Terkunci</button>`;
+    }
+
+    const card = document.createElement('div');
+    card.className = `mission-card ${stateClass}`;
+    card.innerHTML = `
+      <div class="mission-icon">${!isAvailable ? '🔒' : m.icon}</div>
+      <div class="mission-info">
+        <h3>${m.title}</h3>
+        <p>${m.desc}</p>
+        ${isCompleted ? '<p style="color:var(--success); margin-top:4px; font-size:0.8rem; font-weight:bold;">✦ Tuntas ✦</p>' : ''}
+      </div>
+      <div>${btnHTML}</div>
+    `;
+    list.appendChild(card);
+  });
+}
+
+function playMission(id, title) {
+  currentActiveMission = id;
+  const m = MISSIONS.find(x => x.id === id);
+  
+  document.getElementById('modalTitle').textContent = title;
+  const frame = document.getElementById('rendererFrame');
+  // Load standard renderer in QA mode so XP can be intercepted
+  frame.src = `km-batch-01-runtime.html?dataset=${encodeURIComponent(m.dataset)}&mission=${m.id}&qa=1`;
+  
+  document.getElementById('rendererModal').classList.add('show');
+  document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeModal() {
+  document.getElementById('rendererModal').classList.remove('show');
+  setTimeout(() => {
+    document.getElementById('rendererFrame').src = '';
+  }, 400); // clear after transition
+  document.body.style.overflow = 'auto';
+  currentActiveMission = null;
+}
+
+window.addEventListener('message', event => {
+  const d = event.data || {};
+  if (d.type !== 'MISSION_RENDERER_RESULT' || !currentActiveMission || d.mission_id !== currentActiveMission) return;
+  
+  const accuracy = Number(d.accuracy) || 0;
+  const earnedXp = Number(d.xp) || 0;
+  
+  // Aturan Master Control: threshold kelulusan misi adalah 70%
+  if (accuracy >= 70) {
+    if (!state.completed[currentActiveMission]) {
+      state.completed[currentActiveMission] = true;
+      state.xp += earnedXp;
+      saveState();
+      alert(`Misi Berhasil (Akurasi: ${Math.round(accuracy)}%)!\nAnda mendapatkan ${earnedXp} XP.`);
+    } else {
+      alert(`Misi Selesai (Replay).\n(Tidak ada tambahan XP)`);
+    }
+    closeModal();
+  } else {
+    alert(`Penjelajahan gagal. Akurasi Anda ${Math.round(accuracy)}%. Anda butuh minimal 70% untuk menguasai kompetensi ini. Silakan coba lagi.`);
+  }
+});
+
+document.getElementById('resetBtn').onclick = () => {
+  if (confirm('Anda akan menghapus seluruh rekaman XP dan pencapaian. Lanjutkan?')) {
+    state = { xp: 0, completed: {} };
+    saveState();
+    closeModal();
+  }
+};
+
+renderUI();
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "World 1 KM Standard Chapter 2 Original Content - Misi 5 v1.0",
+  "purpose": "Approved additive World 1 content batch for Chapter 2 Mission 5.",
+  "chapter_id": "BI12-C02",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM02-A1",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-A",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question_type": "mcq",
+      "question": "Rifki memutarkan rekaman panduan mencuci tangan yang benar untuk mencegah infeksi. Dalam rekaman tersebut disebutkan: 'Pertama, basahi tangan dengan air mengalir. Kedua, tuangkan sabun secukupnya. Ketiga, gosok telapak tangan hingga berbusa. Keempat, bilas dengan air mengalir hingga bersih.' Berdasarkan informasi eksplisit tersebut, apa yang harus dilakukan segera setelah menuangkan sabun?",
+      "options": [
+        "Membilas tangan dengan air mengalir hingga bersih.",
+        "Menggosok telapak tangan hingga berbusa.",
+        "Mematikan keran air agar hemat.",
+        "Mengeringkan tangan menggunakan handuk bersih."
+      ],
+      "answer": "Menggosok telapak tangan hingga berbusa.",
+      "explanation": "Dalam teks prosedur yang disimak, langkah setelah menuangkan sabun adalah menggosok telapak tangan hingga berbusa. Mengidentifikasi langkah secara berurutan adalah kompetensi dasar dalam menyimak teks prosedur.",
+      "source": {
+        "student_book": {"pages": "54-56", "section": "Bab 2, Subbab A"},
+        "teacher_guide": {"pages": "82-85", "section": "Bab 2, Subbab A"}
+      },
+      "provenance": "Kompetensi mengungkapkan informasi eksplisit teks prosedur digunakan sebagai blueprint. Skenario prosedur kesehatan dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["teks_prosedur", "informasi_eksplisit", "gaya_hidup_sehat"]
+    },
+    {
+      "id": "KM02-B1",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah siaran radio kesehatan membagikan tata cara peregangan pagi: '(1) Lakukan pendinginan selama 5 menit. (2) Berdirilah tegak dan tarik napas dalam. (3) Rentangkan kedua tangan ke atas. (4) Tahan posisi selama 10 detik.' Terdapat miskonsepsi urutan pada instruksi tersebut. Kesalahan apa yang paling fatal dari urutan tersebut?",
+      "options": [
+        "Langkah (1) seharusnya dilakukan di akhir, bukan sebagai langkah pertama sebelum pemanasan.",
+        "Langkah (3) membutuhkan alat bantu olahraga, sedangkan instruksi tidak menyebutkannya.",
+        "Langkah (4) tidak menyebutkan berapa kali gerakan harus diulang.",
+        "Langkah (2) seharusnya diganti dengan posisi duduk agar lebih rileks."
+      ],
+      "answer": "Langkah (1) seharusnya dilakukan di akhir, bukan sebagai langkah pertama sebelum pemanasan.",
+      "explanation": "Miskonsepsi utama dari prosedur tersebut adalah meletakkan instruksi 'pendinginan' (langkah 1) di awal prosedur. Teks prosedur harus memiliki urutan yang logis agar tujuan (peregangan) dapat dicapai dengan aman.",
+      "source": {
+        "student_book": {"pages": "57-60", "section": "Bab 2, Subbab B"},
+        "teacher_guide": {"pages": "87-90", "section": "Bab 2, Subbab B"}
+      },
+      "provenance": "Kompetensi mengidentifikasi miskonsepsi urutan teks prosedur. Skenario peregangan pagi dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "logic_sorting",
+      "tags": ["teks_prosedur", "miskonsepsi_urutan", "gaya_hidup_aktif"]
+    },
+    {
+      "id": "KM02-B2",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-B",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah video tutorial menjelaskan cara mengatur postur duduk saat menggunakan laptop untuk menghindari nyeri punggung. Instruksi menyebutkan untuk menyamakan pandangan mata sejajar dengan ujung atas layar. Jika seseorang menanggapi dengan meletakkan tumpukan buku tebal di bawah laptopnya, apa kesimpulan yang paling tepat dari tindakan tersebut?",
+      "options": [
+        "Tindakan tersebut adalah respons yang benar untuk menaikkan posisi layar agar sejajar dengan mata.",
+        "Tindakan tersebut salah karena menumpuk buku dapat merusak laptop.",
+        "Tindakan tersebut mengabaikan tujuan utama teks prosedur yaitu mengistirahatkan punggung.",
+        "Tindakan tersebut tidak ada hubungannya dengan instruksi dari video tutorial."
+      ],
+      "answer": "Tindakan tersebut adalah respons yang benar untuk menaikkan posisi layar agar sejajar dengan mata.",
+      "explanation": "Teks prosedur menuntut hasil agar layar sejajar dengan mata. Menumpuk buku adalah tanggapan langsung (aplikasi) yang tepat dan kreatif dari instruksi prosedur untuk mencapai kondisi fisik yang sehat (ergonomis).",
+      "source": {
+        "student_book": {"pages": "57-60", "section": "Bab 2, Subbab B"},
+        "teacher_guide": {"pages": "87-90", "section": "Bab 2, Subbab B"}
+      },
+      "provenance": "Kompetensi menanggapi informasi teks prosedur secara praktis. Skenario ergonomi ruang kerja dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "application_response",
+      "tags": ["teks_prosedur", "tanggapan_instruksi", "gaya_hidup_seimbang"]
+    }
+  ]
+}

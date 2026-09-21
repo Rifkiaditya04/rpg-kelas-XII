@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "World 1 KM Standard Chapter 2 Original Content - Misi 8 v1.0",
+  "purpose": "Approved additive World 1 content batch for Chapter 2 Mission 8.",
+  "chapter_id": "BI12-C02",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM02-F1",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-F",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Sebuah draf teks prosedur tentang 'Cara Mencuci Sayuran Segar' tersusun acak seperti berikut:\n(1) Keringkan sayuran dengan lap bersih atau tisu dapur.\n(2) Siapkan wadah bersih dan isi dengan air mengalir.\n(3) Masukkan sayuran dan gosok perlahan permukaan daunnya.\n(4) Buang bagian sayuran yang busuk atau layu.\nManakah urutan yang paling logis agar prosedur tersebut higienis dan runtut?",
+      "options": [
+        "(2) - (4) - (3) - (1)",
+        "(4) - (2) - (3) - (1)",
+        "(2) - (3) - (4) - (1)",
+        "(4) - (3) - (2) - (1)"
+      ],
+      "answer": "(4) - (2) - (3) - (1)",
+      "explanation": "Langkah pertama yang paling higienis adalah menyortir/membuang bagian busuk (4). Kemudian siapkan air (2), cuci/gosok perlahan (3), dan terakhir keringkan (1).",
+      "source": {
+        "student_book": {"pages": "77-81", "section": "Bab 2, Subbab F"},
+        "teacher_guide": {"pages": "102-106", "section": "Bab 2, Subbab F"}
+      },
+      "provenance": "Kompetensi mendemonstrasikan/menyusun prosedur secara runtut. Skenario mencuci sayuran higienis dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "logic_sorting",
+      "tags": ["teks_prosedur", "urutan_logis", "demonstrasi_prosedur"]
+    },
+    {
+      "id": "KM02-G1",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-G",
+      "skill": "create",
+      "cognitive_level": "create",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Kamu sedang memproduksi sebuah video tutorial tentang 'Cara Bersepeda di Jalan Raya dengan Aman'. Saat melakukan proses rekaman (shooting), kamu menyadari bahwa kamu lupa memasukkan langkah memakai helm pelindung di awal video, dan langsung merekam adegan mengayuh sepeda. Apa tindakan perbaikan (editing) terbaik agar video tutorial tersebut tetap memenuhi standar teks prosedur yang aman?",
+      "options": [
+        "Mengabaikannya karena penonton pasti sudah tahu bahwa naik sepeda harus memakai helm.",
+        "Merekam ulang adegan memakai helm, lalu menyelipkannya di bagian awal video saat proses penyuntingan (editing).",
+        "Menambahkan tulisan peringatan di akhir video yang menyuruh penonton memakai helm.",
+        "Mengganti seluruh konsep video menjadi cara memperbaiki rantai sepeda."
+      ],
+      "answer": "Merekam ulang adegan memakai helm, lalu menyelipkannya di bagian awal video saat proses penyuntingan (editing).",
+      "explanation": "Sebuah video tutorial (sebagai alih wahana dari teks prosedur) harus mengutamakan keselamatan. Langkah persiapan yang krusial (memakai helm) harus diletakkan di awal, sehingga merekam ulang dan menyunting adalah tindakan paling logis.",
+      "source": {
+        "student_book": {"pages": "82-87", "section": "Bab 2, Subbab G"},
+        "teacher_guide": {"pages": "106-111", "section": "Bab 2, Subbab G"}
+      },
+      "provenance": "Kompetensi memproduksi video tutorial dan mengutamakan K3 (Keselamatan dan Kesehatan Kerja). Skenario video sepeda dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "production_decision",
+      "tags": ["teks_prosedur", "produksi_video", "keselamatan_kerja"]
+    }
+  ]
+}

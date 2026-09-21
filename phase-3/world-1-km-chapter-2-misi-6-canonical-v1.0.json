@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "World 1 KM Standard Chapter 2 Original Content - Misi 6 v1.0",
+  "purpose": "Approved additive World 1 content batch for Chapter 2 Mission 6.",
+  "chapter_id": "BI12-C02",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM02-C1",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-C",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Perhatikan kutipan teks prosedur berikut: '(1) Selanjutnya, potong buah segar menjadi bagian kecil. (2) Masukkan potongan buah ke dalam blender. (3) Pastikan penutup blender terkunci rapat sebelum menekan tombol putar.' Pada kalimat manakah terdapat penggunaan konjungsi temporal (kata hubung penanda waktu) dan verba material (kata kerja fisik)?",
+      "options": [
+        "Kalimat (1) mengandung konjungsi temporal dan verba material.",
+        "Kalimat (2) mengandung konjungsi temporal dan verba material.",
+        "Kalimat (3) mengandung verba tingkah laku dan konjungsi temporal.",
+        "Kalimat (1) dan (3) hanya mengandung verba material tanpa konjungsi."
+      ],
+      "answer": "Kalimat (1) mengandung konjungsi temporal dan verba material.",
+      "explanation": "Pada kalimat (1), 'Selanjutnya' merupakan konjungsi temporal, dan 'potong' merupakan verba material (kata kerja tindakan). Mengetahui ciri kebahasaan ini krusial dalam menyusun teks prosedur yang benar.",
+      "source": {
+        "student_book": {"pages": "61-65", "section": "Bab 2, Subbab C"},
+        "teacher_guide": {"pages": "91-94", "section": "Bab 2, Subbab C"}
+      },
+      "provenance": "Kompetensi memahami instruksi dan ciri kebahasaan teks prosedur. Kalimat dan pengecoh dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "grammar_scan",
+      "tags": ["teks_prosedur", "konjungsi_temporal", "verba_material"]
+    },
+    {
+      "id": "KM02-D1",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-D",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Dua teks prosedur kesehatan dianalisis. Teks 1 membahas 'Cara Mengatur Pola Makan Diet Keto' yang diakhiri dengan peringatan untuk berkonsultasi ke dokter jika memiliki masalah ginjal. Teks 2 membahas 'Cara Diet Rendah Gula' yang tidak mencantumkan peringatan medis apa pun di bagian penutup, melainkan ajakan untuk berolahraga. Berdasarkan pola pengembangan tersebut, kesimpulan apa yang paling tepat mengenai perbedaan struktur kedua teks?",
+      "options": [
+        "Teks 1 memiliki struktur penutup berupa batasan (syarat medis), sedangkan Teks 2 memiliki penutup berupa saran tambahan.",
+        "Teks 1 tidak memiliki langkah-langkah yang jelas, sedangkan Teks 2 memiliki tujuan utama yang jelas.",
+        "Kedua teks memiliki penutup berupa kesimpulan akhir yang sama persis.",
+        "Teks 2 merupakan prosedur kompleks, sedangkan Teks 1 merupakan prosedur sederhana."
+      ],
+      "answer": "Teks 1 memiliki struktur penutup berupa batasan (syarat medis), sedangkan Teks 2 memiliki penutup berupa saran tambahan.",
+      "explanation": "Membandingkan dua teks prosedur berarti menemukan letak perbedaannya, baik dari segi tujuan, langkah, atau penutup. Penutup pada teks prosedur dapat berupa kesimpulan, saran, maupun batasan keselamatan (peringatan).",
+      "source": {
+        "student_book": {"pages": "66-73", "section": "Bab 2, Subbab D"},
+        "teacher_guide": {"pages": "94-98", "section": "Bab 2, Subbab D"}
+      },
+      "provenance": "Kompetensi membandingkan dua teks prosedur (pola pengembangan/struktur). Skenario perbandingan dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "comparison_scan",
+      "tags": ["teks_prosedur", "perbandingan_teks", "struktur_penutup"]
+    },
+    {
+      "id": "KM02-D2",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-D",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Seorang pembaca merasa Teks Prosedur A ('Cara Meditasi Selama 10 Menit') jauh lebih mudah diikuti daripada Teks Prosedur B ('Cara Meditasi'). Setelah dicek, Teks A menggunakan penomoran langkah (1, 2, 3), sedangkan Teks B ditulis dalam bentuk paragraf narasi tanpa angka penanda. Apa kelemahan utama dari pola pengembangan Teks B?",
+      "options": [
+        "Tidak adanya penanda urutan (angka/konjungsi) membuat pembaca kesulitan membedakan batas antarlangkah secara hierarkis.",
+        "Teks B pasti kehilangan tujuan utamanya karena ditulis secara narasi.",
+        "Paragraf narasi tidak boleh sama sekali digunakan dalam teks prosedur kompleks.",
+        "Teks B menggunakan kalimat imperatif yang terlalu banyak sehingga terkesan kasar."
+      ],
+      "answer": "Tidak adanya penanda urutan (angka/konjungsi) membuat pembaca kesulitan membedakan batas antarlangkah secara hierarkis.",
+      "explanation": "Meskipun teks prosedur dapat berbentuk narasi atau poin, ketiadaan penanda urutan yang jelas (seperti angka atau konjungsi temporal) akan mengaburkan batas antarlangkah, sehingga sulit diikuti.",
+      "source": {
+        "student_book": {"pages": "66-73", "section": "Bab 2, Subbab D"},
+        "teacher_guide": {"pages": "94-98", "section": "Bab 2, Subbab D"}
+      },
+      "provenance": "Kompetensi membandingkan dan menilai efektivitas pola pengembangan teks prosedur. Skenario masalah pemformatan dibuat orisinal.",
+      "mode": "learning",
+      "game_mechanic": "format_evaluation",
+      "tags": ["teks_prosedur", "pola_pengembangan", "evaluasi_kritis"]
+    }
+  ]
+}

@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>World 1 — Premium RPG Gameplay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #eef2f7;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --success: #059669;
+      --locked: #9ca3af;
+      --panel-bg: rgba(255, 255, 255, 0.95);
+      --glass-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+    * { box-sizing: border-box; }
+    body, html { margin: 0; padding: 0; height: 100vh; overflow: hidden; font-family: 'Inter', sans-serif; background: #000; }
+    
+    /* === WORLD & CAMERA === */
+    #viewport {
+      position: absolute; inset: 0;
+      overflow: hidden; background: #dfe6ee;
+      touch-action: none; /* Prevent scroll on touch */
+    }
+    #world {
+      position: absolute; width: 1200px; height: 900px;
+      left: 0; top: 0; transform-origin: 0 0;
+      will-change: transform;
+      background: #84cc82; /* Temporary grass color */
+      background-image: radial-gradient(#6ebd6b 20%, transparent 20%), radial-gradient(#6ebd6b 20%, transparent 20%);
+      background-position: 0 0, 20px 20px;
+      background-size: 40px 40px;
+    }
+    #environment { display: none; }
+    .room-overlay {
+      position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(16,24,39,0.15));
+    }
+    /* === PORTAL === */
+    .portal {
+      position: absolute; width: 120px; height: 120px;
+      border-radius: 50%; background: rgba(37, 99, 235, 0.2);
+      border: 4px dashed #2563eb;
+      animation: spin 10s linear infinite;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .portal-text {
+      position: absolute; top: -30px; font-weight: bold; color: #fff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5); white-space: nowrap;
+      animation: none !important;
+    }
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    
+    /* === ENTITIES === */
+    .entity {
+      position: absolute; transform: translate(-50%, -100%);
+      will-change: transform;
+    }
+    
+    /* Player */
+    #player { width: 54px; height: 74px; z-index: 10; transition: filter 0.1s; }
+    #player .shadow {
+      position: absolute; left: 3px; bottom: -8px; width: 48px; height: 14px;
+      border-radius: 50%; background: rgba(23,32,51,0.25); filter: blur(2px); z-index: -1;
+    }
+    /* Player Avatar CSS proxy */
+    .avatar { position: relative; width: 100%; height: 100%; }
+    .avatar .head { position: absolute; width: 28px; height: 28px; border-radius: 50%; left: 13px; top: 3px; background: #f0bd91; border: 2px solid #7b4b35; }
+    .avatar .hair { position: absolute; width: 32px; height: 19px; left: 11px; top: 0; border-radius: 18px 18px 9px 9px; background: #2e2b2a; }
+    .avatar .body { position: absolute; width: 34px; height: 34px; left: 10px; top: 28px; border-radius: 8px 8px 5px 5px; background: #f7f7f4; border: 2px solid #39465b; }
+    .avatar .legs { position: absolute; left: 12px; top: 59px; width: 30px; height: 14px; border-left: 7px solid #27364c; border-right: 7px solid #27364c; }
+    #player.moving .avatar { animation: bob 0.28s infinite alternate; }
+    @keyframes bob { to { transform: translateY(-4px); } }
+
+    /* NPCs */
+    .npc { width: 46px; height: 68px; z-index: 5; cursor: pointer; }
+    .npc .avatar .head { background: #ffdfc4; border-color: #8c5a3d; }
+    .npc .avatar .body { background: #3b82f6; border-color: #1e3a8a; } /* Blue shirt for NPC */
+    .npc .avatar .hair { background: #4a332a; }
+    .npc .shadow {
+      position: absolute; left: 3px; bottom: -8px; width: 40px; height: 12px;
+      border-radius: 50%; background: rgba(23,32,51,0.2); filter: blur(2px); z-index: -1;
+    }
+    .npc .name-tag {
+      position: absolute; top: -20px; left: 50%; transform: translateX(-50%);
+      background: rgba(0,0,0,0.6); color: #fff; font-size: 10px; padding: 2px 6px;
+      border-radius: 4px; font-weight: 600; white-space: nowrap; pointer-events: none;
+    }
+    .npc .status-icon {
+      position: absolute; top: -45px; left: 50%; transform: translateX(-50%);
+      font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+      animation: float 2s infinite ease-in-out;
+    }
+    @keyframes float { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, -5px); } }
+
+    /* === INTERACTION CUE === */
+    #interaction-cue {
+      position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%);
+      padding: 8px 14px; border-radius: 20px; background: rgba(0,0,0,0.8);
+      color: #fff; font-size: 13px; font-weight: 500; white-space: nowrap;
+      opacity: 0; pointer-events: none; transition: 0.2s ease; z-index: 20;
+    }
+    #interaction-cue.show { opacity: 1; top: 45%; }
+
+    /* === HUD === */
+    .hud {
+      position: absolute; left: 16px; top: 16px; z-index: 50;
+      display: flex; gap: 12px; pointer-events: none;
+    }
+    .hud-card {
+      background: var(--panel-bg); backdrop-filter: blur(10px);
+      padding: 10px 16px; border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600;
+    }
+    .hud-card span { color: var(--primary); font-size: 18px; }
+    
+    .hud-right {
+      position: absolute; right: 16px; top: 16px; z-index: 50; pointer-events: auto;
+    }
+    .btn-reset {
+      background: rgba(255,255,255,0.9); border: none; padding: 8px 12px;
+      border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .btn-reset:hover { background: #fff; }
+
+    /* === DIALOG PANEL (NPC UI) === */
+    #dialog-overlay {
+      position: absolute; inset: 0; background: rgba(0,0,0,0.4);
+      z-index: 100; display: none; align-items: center; justify-content: center;
+      backdrop-filter: blur(4px);
+    }
+    #dialog-overlay.active { display: flex; }
+    .dialog-box {
+      background: #fafaf9; border-radius: 20px; width: 90%; max-width: 440px;
+      box-shadow: var(--glass-shadow); padding: 24px; position: relative;
+      animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @keyframes popIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .dialog-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+    .dialog-avatar {
+      width: 70px; height: 70px; border-radius: 16px; background: #e5e7eb;
+      display: flex; align-items: center; justify-content: center; font-size: 32px;
+    }
+    .dialog-title { flex: 1; }
+    .dialog-title h2 { margin: 0; font-size: 18px; color: var(--text-main); }
+    .dialog-title p { margin: 4px 0 0; font-size: 13px; color: var(--text-muted); font-weight: 500; }
+    .dialog-body {
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 12px;
+      padding: 16px; font-size: 14px; line-height: 1.6; color: #4b5563; margin-bottom: 20px;
+    }
+    .dialog-actions { display: flex; gap: 10px; }
+    .btn-action {
+      flex: 1; padding: 12px; border-radius: 10px; font-size: 14px; font-weight: 600;
+      cursor: pointer; border: none; transition: 0.2s;
+    }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-hover); }
+    .btn-secondary { background: #f3f4f6; color: #4b5563; }
+    .btn-secondary:hover { background: #e5e7eb; }
+    .btn-disabled { background: #e5e7eb; color: #9ca3af; cursor: not-allowed; }
+
+    /* === ANALOG (TOUCH) === */
+    .analog {
+      position: absolute; z-index: 40; width: 120px; height: 120px; border-radius: 50%;
+      display: none; pointer-events: none; transform: translate(-50%, -50%);
+      background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.4);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1); backdrop-filter: blur(4px);
+    }
+    .analog.show { display: block; }
+    .analog-base {
+      position: absolute; left: 50%; top: 50%; width: 50px; height: 50px; border-radius: 50%;
+      transform: translate(-50%, -50%); background: rgba(0,0,0,0.2);
+    }
+    .analog-knob {
+      position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; border-radius: 50%;
+      transform: translate(-50%, -50%); background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* === RENDERER MODAL === */
+    #mission-modal {
+      position: fixed; inset: 0; background: #000; z-index: 9999;
+      display: none; flex-direction: column;
+    }
+    #mission-modal.active { display: flex; }
+    .modal-header {
+      background: #111827; padding: 12px 20px; display: flex;
+      justify-content: space-between; align-items: center; border-bottom: 1px solid #374151;
+    }
+    .modal-header h3 { color: #f9fafb; margin: 0; font-size: 15px; font-weight: 500; }
+    .btn-close-modal {
+      background: transparent; border: none; color: #ef4444; font-size: 14px;
+      font-weight: 600; cursor: pointer; padding: 4px 8px;
+    }
+    #mission-frame { flex: 1; width: 100%; border: none; background: #f3f4f6; }
+  </style>
+</head>
+<body>
+
+  <!-- VIEWPORT & WORLD -->
+  <div id="viewport">
+    
+    <!-- HUD -->
+    <div class="hud">
+      <div class="hud-card"><span id="hud-xp">⭐ 0</span> XP</div>
+      <div class="hud-card"><span id="hud-missions">🏆 0/4</span> Misi</div>
+    </div>
+    <div class="hud-right">
+      <button class="btn-reset" onclick="resetState()">Reset Progress</button>
+    </div>
+
+    <!-- GAME WORLD -->
+    <div id="world">
+      <!-- Background SVG (From visual prototype) -->
+      <img id="environment" src="../../phase-3/visuals/desain-fix.svg" alt="School Environment">
+      <div class="room-overlay"></div>
+      
+      <!-- NPCs will be injected here via JS -->
+      <div id="npcs-container"></div>
+      
+      <!-- Portal to World 2 -->
+      <div class="portal" style="left: 1000px; top: 100px;" id="portal-w2">
+        <div class="portal-text">Ke Bab 2</div>
+      </div>
+
+      <!-- PLAYER -->
+      <div id="player" class="entity">
+        <div class="avatar"><div class="hair"></div><div class="head"></div><div class="body"></div><div class="tie"></div><div class="legs"></div></div>
+        <div class="shadow"></div>
+      </div>
+      
+      <div id="interaction-cue">E / TAP — Interaksi</div>
+    </div>
+
+    <!-- VIRTUAL ANALOG -->
+    <div id="analog" class="analog" aria-hidden="true">
+      <div class="analog-base"></div>
+      <div id="analogKnob" class="analog-knob"></div>
+    </div>
+  </div>
+
+  <!-- DIALOG PANEL OVERLAY -->
+  <div id="dialog-overlay">
+    <div class="dialog-box">
+      <div class="dialog-header">
+        <div class="dialog-avatar" id="dialog-avatar-img">🧑‍🏫</div>
+        <div class="dialog-title">
+          <h2 id="dialog-npc-name">Nama NPC</h2>
+          <p id="dialog-npc-role">Peran NPC</p>
+        </div>
+      </div>
+      <div class="dialog-body" id="dialog-text">
+        Teks dialog akan muncul di sini.
+      </div>
+      <div class="dialog-actions">
+        <button class="btn-action btn-secondary" onclick="closeDialog()">Tutup</button>
+        <button class="btn-action btn-primary" id="btn-start-mission">Mulai Misi</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION RENDERER MODAL -->
+  <div id="mission-modal">
+    <div class="modal-header">
+      <h3 id="modal-title">Menjalankan Misi...</h3>
+      <button class="btn-close-modal" onclick="closeMissionModal()">Batalkan Misi (Keluar)</button>
+    </div>
+    <iframe id="mission-frame" src="about:blank"></iframe>
+  </div>
+
+  <script>
+    // === PROGRESSION STATE ===
+    const STATE_KEY = 'bi12-w01-rpg-gameplay-v1';
+    let state = {
+      xp: 0,
+      completed: {
+        'BI12-W01-KM-C01-M01': false,
+        'BI12-W01-KM-C01-M02': false,
+        'BI12-W01-KM-C01-M03': false,
+        'BI12-W01-KM-C01-M04': false
+      }
+    };
+
+    function loadState() {
+      try {
+        const saved = localStorage.getItem(STATE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          state.xp = parsed.xp || 0;
+          state.completed = { ...state.completed, ...parsed.completed };
+        }
+      } catch(e) { console.warn('Failed to load state', e); }
+      updateHUD();
+      renderNPCs();
+    }
+
+    function saveState() {
+      localStorage.setItem(STATE_KEY, JSON.stringify(state));
+      updateHUD();
+      renderNPCs();
+    }
+
+    function resetState() {
+      if(confirm('Yakin ingin mereset seluruh XP dan progress misi?')) {
+        localStorage.removeItem(STATE_KEY);
+        location.reload();
+      }
+    }
+
+    function updateHUD() {
+      document.getElementById('hud-xp').innerHTML = `⭐ ${state.xp}`;
+      const completedCount = Object.values(state.completed).filter(Boolean).length;
+      document.getElementById('hud-missions').innerHTML = `🏆 ${completedCount}/4`;
+    }
+
+    // === MISSIONS & NPCs DATA ===
+    const MISSIONS = [
+      {
+        id: 'BI12-W01-KM-C01-M01',
+        npcName: 'Rifki', npcRole: 'Pembimbing Komunikasi (Misi A-C)', avatar: '🧑🏻‍💼',
+        x: 450, y: 350,
+        req: null, // Unlocked by default
+        dialogLocked: '',
+        dialogOpen: 'Halo! Mari kita periksa pemahamanmu mengenai sistematika dan kebahasaan Surat Lamaran Kerja resmi.',
+        dialogDone: 'Luar biasa! Pemahamanmu mengenai komunikasi resmi sangat tajam.',
+        dataset: '../../knowledge-base/bahasa-indonesia/v1/golden-dataset-v1.json'
+      },
+      {
+        id: 'BI12-W01-KM-C01-M02',
+        npcName: 'Leli', npcRole: 'Pembimbing Literasi (Misi E)', avatar: '👩🏻‍🏫',
+        x: 820, y: 350,
+        req: 'BI12-W01-KM-C01-M01',
+        dialogLocked: 'Selesaikan misi dari Rifki terlebih dahulu sebelum kita membahas ekranisasi cerpen ke film.',
+        dialogOpen: 'Siap menelaah karya sastra? Kita akan menguji kemampuanmu dalam membedah ekranisasi.',
+        dialogDone: 'Hebat! Analisismu mengenai ekranisasi sangat mendalam.',
+        dataset: '../../phase-3/world-1-km-chapter-1-approved-content-batch-02-e4-v1.1.json'
+      },
+      {
+        id: 'BI12-W01-KM-C01-M03',
+        npcName: 'Raka', npcRole: 'Pembimbing Analisis (Misi F-G)', avatar: '🧑🏽‍💻',
+        x: 450, y: 650,
+        req: 'BI12-W01-KM-C01-M02',
+        dialogLocked: 'Bantu Leli terlebih dahulu sebelum berbicara denganku mengenai tata kalimat surat.',
+        dialogOpen: 'Kini saatnya mengasah ketelitian membaca cermat untuk membalas surat. Sudah siap?',
+        dialogDone: 'Kerja bagus. Kemampuanmu menulis balasan surat tidak diragukan.',
+        dataset: '../../phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json'
+      },
+      {
+        id: 'BI12-W01-KM-C01-M04',
+        npcName: 'Zaein', npcRole: 'Pembimbing Strategi (Misi H)', avatar: '👨🏻‍🏫',
+        x: 820, y: 650,
+        req: 'BI12-W01-KM-C01-M03',
+        dialogLocked: 'Raka masih menunggumu. Jangan terburu-buru meloncat ke tugas akhir.',
+        dialogOpen: 'Ini adalah tahap terakhir di Bab 1. Tunjukkan kemampuanmu dalam mempresentasikan laporan.',
+        dialogDone: 'Selamat! Kamu telah menguasai seluruh kompetensi di Bab 1.',
+        dataset: '../../phase-3/world-1-km-chapter-1-h-production-content-candidate-v1.0-id.json'
+      }
+    ];
+
+    let activeNPC = null;
+
+    function renderNPCs() {
+      const container = document.getElementById('npcs-container');
+      container.innerHTML = '';
+      MISSIONS.forEach(m => {
+        const isCompleted = state.completed[m.id];
+        const isLocked = m.req && !state.completed[m.req];
+        
+        let statusHtml = '';
+        if (isCompleted) statusHtml = '<div class="status-icon">✅</div>';
+        else if (!isLocked) statusHtml = '<div class="status-icon">❗</div>';
+        else statusHtml = '<div class="status-icon" style="filter:grayscale(1);opacity:0.5">🔒</div>';
+
+        const el = document.createElement('div');
+        el.className = 'entity npc';
+        el.style.left = m.x + 'px';
+        el.style.top = m.y + 'px';
+        el.dataset.id = m.id;
+        el.innerHTML = `
+          ${statusHtml}
+          <div class="name-tag">${m.npcName}</div>
+          <div class="avatar"><div class="hair"></div><div class="head"></div><div class="body"></div><div class="legs"></div></div>
+          <div class="shadow"></div>
+        `;
+        container.appendChild(el);
+      });
+    }
+
+    // === GAMEPLAY PHYSICS & INPUT ===
+    const world = document.getElementById('world'), player = document.getElementById('player'), viewport = document.getElementById('viewport');
+    const interactionCue = document.getElementById('interaction-cue');
+    const analog = document.getElementById('analog'), knob = document.getElementById('analogKnob');
+    
+    const keys = new Set();
+    const p = { x: 610, y: 455 };
+    const speed = 3.5;
+    let analogPointer = null;
+    let isPaused = false;
+    let nearestMission = null;
+    let portalActive = false;
+
+    function clamp() {
+      p.x = Math.max(55, Math.min(1145, p.x));
+      p.y = Math.max(80, Math.min(830, p.y));
+    }
+
+    function checkProximity() {
+      nearestMission = null; portalActive = false;
+      let minDistance = 999;
+      
+      MISSIONS.forEach(m => {
+        const dist = Math.hypot(p.x - m.x, p.y - m.y);
+        if (dist < 80 && dist < minDistance) {
+          minDistance = dist;
+          nearestMission = m;
+        }
+      });
+      
+      if(Math.hypot(p.x - 1060, p.y - 160) < 80) {
+        portalActive = true;
+      }
+
+      if ((nearestMission || portalActive) && !isPaused) {
+        interactionCue.textContent = portalActive ? 'E / TAP — Ke Bab 2' : 'E / TAP — Interaksi';
+        interactionCue.classList.add('show');
+      } else {
+        interactionCue.classList.remove('show');
+      }
+    }
+
+    function updateCamera() {
+      clamp();
+      const vw = viewport.clientWidth, vh = viewport.clientHeight;
+      const scale = Math.max(0.72, Math.min(1.02, Math.min(vw / 980, vh / 650)));
+      const tx = vw / 2 - p.x * scale, ty = vh / 2 - p.y * scale;
+      
+      world.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+      player.style.left = p.x + 'px';
+      player.style.top = p.y + 'px';
+      
+      checkProximity();
+    }
+
+    function frame() {
+      if (isPaused) return requestAnimationFrame(frame);
+
+      let dx = 0, dy = 0;
+      if(keys.has('ArrowLeft') || keys.has('a') || keys.has('AnalogLeft')) dx -= 1;
+      if(keys.has('ArrowRight') || keys.has('d') || keys.has('AnalogRight')) dx += 1;
+      if(keys.has('ArrowUp') || keys.has('w') || keys.has('AnalogUp')) dy -= 1;
+      if(keys.has('ArrowDown') || keys.has('s') || keys.has('AnalogDown')) dy += 1;
+      
+      if(dx || dy) {
+        const n = Math.hypot(dx, dy);
+        p.x += (dx / n) * speed;
+        p.y += (dy / n) * speed;
+        player.classList.add('moving');
+      } else {
+        player.classList.remove('moving');
+      }
+      
+      updateCamera();
+      requestAnimationFrame(frame);
+    }
+
+    // Keyboard inputs
+    window.addEventListener('keydown', e => {
+      if(isPaused) return;
+      if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','w','a','s','d'].includes(e.key)){
+        keys.add(e.key);
+      }
+      if(e.key === 'e' || e.key === 'E') {
+        interact();
+      }
+    });
+    window.addEventListener('keyup', e => keys.delete(e.key));
+
+    // Analog controls
+    function setAnalogPosition(x, y) { analog.style.left = x + 'px'; analog.style.top = y + 'px'; }
+    function setKnob(dx, dy) { knob.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px))`; }
+    function clearAnalog() {
+      analogPointer = null; analog.classList.remove('show'); setKnob(0, 0);
+      ['AnalogUp','AnalogDown','AnalogLeft','AnalogRight'].forEach(k => keys.delete(k));
+    }
+    
+    function handleAnalogMove(e) {
+      if (e.pointerId !== analogPointer) return;
+      const rect = viewport.getBoundingClientRect();
+      const cx = parseFloat(analog.style.left), cy = parseFloat(analog.style.top);
+      const x = e.clientX - rect.left, y = e.clientY - rect.top;
+      let dx = x - cx, dy = y - cy;
+      const max = 45, mag = Math.hypot(dx, dy);
+      if (mag > max) { dx = (dx / mag) * max; dy = (dy / mag) * max; }
+      setKnob(dx, dy);
+      
+      const nx = dx / max, ny = dy / max;
+      ['AnalogUp','AnalogDown','AnalogLeft','AnalogRight'].forEach(k => keys.delete(k));
+      if (Math.hypot(nx, ny) < 0.15) return;
+      
+      if (Math.abs(nx) > 0.15) keys.add(nx < 0 ? 'AnalogLeft' : 'AnalogRight');
+      if (Math.abs(ny) > 0.15) keys.add(ny < 0 ? 'AnalogUp' : 'AnalogDown');
+    }
+
+    viewport.addEventListener('pointerdown', e => {
+      if (e.pointerType === 'mouse' || e.target.closest('button') || e.target.closest('#dialog-overlay') || e.target.closest('.hud')) return;
+      if ((nearestMission || portalActive) && Math.hypot(e.clientX - viewport.clientWidth/2, e.clientY - viewport.clientHeight/2) < 100) {
+        interact();
+        return;
+      }
+      const rect = viewport.getBoundingClientRect();
+      analogPointer = e.pointerId;
+      setAnalogPosition(e.clientX - rect.left, e.clientY - rect.top);
+      analog.classList.add('show');
+      viewport.setPointerCapture(e.pointerId);
+      handleAnalogMove(e);
+    });
+    viewport.addEventListener('pointermove', handleAnalogMove);
+    viewport.addEventListener('pointerup', e => { if(e.pointerId === analogPointer) clearAnalog(); });
+    viewport.addEventListener('pointercancel', e => { if(e.pointerId === analogPointer) clearAnalog(); });
+    window.addEventListener('resize', updateCamera);
+
+    // === DIALOG & MISSION LOGIC ===
+    function interact() {
+      if(portalActive) {
+        window.location.href = 'world-2-rpg-gameplay-v1.html';
+        return;
+      }
+      if(!nearestMission || isPaused) return;
+      openDialog(nearestMission);
+    }
+
+    function openDialog(m) {
+      isPaused = true;
+      activeNPC = m;
+      interactionCue.classList.remove('show');
+      
+      document.getElementById('dialog-npc-name').textContent = m.npcName;
+      document.getElementById('dialog-npc-role').textContent = m.npcRole;
+      document.getElementById('dialog-avatar-img').textContent = m.avatar;
+      
+      const isCompleted = state.completed[m.id];
+      const isLocked = m.req && !state.completed[m.req];
+      const btn = document.getElementById('btn-start-mission');
+      
+      if (isLocked) {
+        document.getElementById('dialog-text').innerHTML = `<em>${m.dialogLocked}</em>`;
+        btn.textContent = 'Misi Terkunci';
+        btn.className = 'btn-action btn-disabled';
+        btn.disabled = true;
+      } else if (isCompleted) {
+        document.getElementById('dialog-text').innerHTML = m.dialogDone;
+        btn.textContent = 'Mainkan Ulang';
+        btn.className = 'btn-action btn-primary';
+        btn.disabled = false;
+      } else {
+        document.getElementById('dialog-text').innerHTML = m.dialogOpen;
+        btn.textContent = 'Mulai Misi';
+        btn.className = 'btn-action btn-primary';
+        btn.disabled = false;
+      }
+      
+      document.getElementById('dialog-overlay').classList.add('active');
+    }
+
+    function closeDialog() {
+      document.getElementById('dialog-overlay').classList.remove('active');
+      activeNPC = null;
+      // Slight delay before unpausing to prevent instant re-triggering
+      setTimeout(() => { isPaused = false; }, 100);
+    }
+
+    // Modal logic
+    document.getElementById('btn-start-mission').onclick = () => {
+      if(!activeNPC) return;
+      document.getElementById('dialog-overlay').classList.remove('active');
+      
+      const modal = document.getElementById('mission-modal');
+      const frame = document.getElementById('mission-frame');
+      
+      document.getElementById('modal-title').textContent = `Misi: ${activeNPC.npcName}`;
+      
+      // Load actual KM runtime. We pass dataset as query param.
+      // E.g. km-batch-01-runtime.html?dataset=...
+      frame.src = `km-batch-01-runtime.html?dataset=${encodeURIComponent(activeNPC.dataset)}`;
+      
+      modal.classList.add('active');
+    };
+
+    function closeMissionModal() {
+      document.getElementById('mission-modal').classList.remove('active');
+      document.getElementById('mission-frame').src = 'about:blank';
+      closeDialog();
+    }
+
+    // Listen for renderer messages
+    window.addEventListener('message', (e) => {
+      try {
+        if(typeof e.data === 'string' && e.data.includes('MISSION_RENDERER_RESULT')) {
+          const payload = JSON.parse(e.data);
+          if(payload.type === 'MISSION_RENDERER_RESULT') {
+            handleMissionResult(payload.data);
+          }
+        }
+      } catch(err) {
+        // ignore non-json messages
+      }
+    });
+
+    function handleMissionResult(d) {
+      if(!activeNPC) return;
+      const accuracy = Number(d.accuracy) || 0;
+      const earnedXp = Number(d.xp) || 0;
+      const missionId = activeNPC.id;
+      
+      if (accuracy >= 70) {
+        if (!state.completed[missionId]) {
+          state.completed[missionId] = true;
+          state.xp += earnedXp;
+          saveState();
+          alert(`Misi Berhasil (Akurasi: ${Math.round(accuracy)}%)!\nAnda mendapatkan ${earnedXp} XP.\n\nMisi selanjutnya telah terbuka!`);
+        } else {
+          alert(`Misi Selesai (Replay).\nAkurasi: ${Math.round(accuracy)}%.\n(Tidak ada tambahan XP)`);
+        }
+      } else {
+        alert(`Penjelajahan gagal. Akurasi Anda ${Math.round(accuracy)}%. Anda butuh minimal 70% untuk menguasai kompetensi ini. Silakan coba lagi.`);
+      }
+      
+      closeMissionModal();
+    }
+
+    // Initialization
+    loadState();
+    updateCamera();
+    requestAnimationFrame(frame);
+  </script>
+</body>
+</html>

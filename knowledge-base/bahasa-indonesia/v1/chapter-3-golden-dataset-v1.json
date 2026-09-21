@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.1",
+  "dataset": "Chapter 3 Golden Dataset v1",
+  "status": "approved_seed",
+  "purpose": "Seed set for Chapter 3: Menciptakan Lingkungan Sekolah Aman dan Nyaman (Novel)",
+  "items": [
+    {
+      "id": "BI12-W03-KM-C03-M01",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-T0A",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Saat menyimak pembacaan novel, pengarang menarasikan tokoh utama yang selalu merasa terasing di sekolah dengan nada kelam. Apa cara pandang pengarang terhadap permasalahan lingkungan sekolah tersebut?",
+      "options": [
+        "Pengarang mengkritik kurangnya empati dan inklusivitas di lingkungan sekolah",
+        "Pengarang mendukung pengasingan siswa agar lebih mandiri",
+        "Pengarang hanya sekadar bercerita tanpa ada maksud terselubung",
+        "Pengarang menyalahkan tokoh utama karena tidak bergaul"
+      ],
+      "answer": "Pengarang mengkritik kurangnya empati dan inklusivitas di lingkungan sekolah",
+      "explanation": "Cara pandang pengarang sering kali tercermin dari bagaimana ia membangun suasana dan konflik tokohnya. Nada kelam pada tokoh terasing menunjukkan kritik terhadap lingkungan yang tidak inklusif.",
+      "source": {
+        "student_book": { "pages": "102-106", "section": "A. Memahami Cara Pandang Pengarang terhadap Permasalahan dalam Novel yang Disimak" }
+      },
+      "provenance": "Materi Bab 3, Subbab A",
+      "game_mechanic": "audio_response",
+      "mode": "training",
+      "tags": ["novel", "cara-pandang-pengarang"]
+    },
+    {
+      "id": "BI12-W03-KM-C03-M02",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-T0B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "easy",
+      "question_type": "mcq",
+      "question": "Dalam kutipan novel: 'Budi selalu merapikan kembali buku-buku perpustakaan yang berserakan meski itu bukan tugasnya.' Metode pengungkapan watak tokoh Budi yang digunakan pengarang adalah...",
+      "options": [
+        "Metode dramatik (melalui tindakan tokoh)",
+        "Metode analitik (deskripsi langsung oleh pengarang)",
+        "Metode dialog (melalui ucapan tokoh lain)",
+        "Metode monolog batin"
+      ],
+      "answer": "Metode dramatik (melalui tindakan tokoh)",
+      "explanation": "Tindakan Budi merapikan buku adalah cara pengarang menunjukkan watak rajin dan peduli (metode dramatik), bukan dengan menyebutkannya secara langsung (analitik).",
+      "source": {
+        "student_book": { "pages": "107-113", "section": "B. Mengungkapkan Perwatakan Tokoh dalam Novel" }
+      },
+      "provenance": "Materi Bab 3, Subbab B",
+      "game_mechanic": "document_inspection",
+      "mode": "training",
+      "tags": ["novel", "perwatakan", "analisis"]
+    },
+    {
+      "id": "BI12-W03-KM-C03-M03",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-T0C",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Sebuah novel memiliki alur sorot balik (flesbek) yang terlalu sering muncul di tengah adegan menegangkan. Bagaimana penilaian yang tepat terhadap pengembangan alur tersebut?",
+      "options": [
+        "Pengembangan alur kurang efektif karena merusak intensitas dan ketegangan cerita",
+        "Pengembangan alur sangat baik karena pembaca mendapat informasi masa lalu",
+        "Alur sorot balik selalu membuat cerita lebih artistik dalam kondisi apa pun",
+        "Pengembangan alur sudah sesuai dengan pakem penulisan klasik"
+      ],
+      "answer": "Pengembangan alur kurang efektif karena merusak intensitas dan ketegangan cerita",
+      "explanation": "Alur maju-mundur harus ditempatkan dengan hati-hati. Jika ditempatkan di tengah klimaks tanpa alasan kuat, hal itu justru mengganggu ketegangan dramatik cerita.",
+      "source": {
+        "student_book": { "pages": "114-116", "section": "C. Memberikan Penilaian terhadap Pengembangan Alur pada Novel yang Dibaca" }
+      },
+      "provenance": "Materi Bab 3, Subbab C",
+      "game_mechanic": "document_inspection",
+      "mode": "exam",
+      "tags": ["novel", "alur", "evaluasi"]
+    },
+    {
+      "id": "BI12-W03-KM-C03-M04",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-T0D",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "multi_select",
+      "question": "Manakah dari pernyataan berikut yang merupakan pesan tersirat (amanat) tentang 'lingkungan sekolah aman dan nyaman' dalam sebuah novel?",
+      "options": [
+        "Saling menghargai perbedaan adalah kunci menghentikan perundungan",
+        "Guru harus menjadi pendengar yang baik bagi keluh kesah siswa",
+        "Gedung sekolah harus dicat warna cerah",
+        "Ujian sekolah dibatalkan setiap hari Jumat"
+      ],
+      "answer": [
+        "Saling menghargai perbedaan adalah kunci menghentikan perundungan",
+        "Guru harus menjadi pendengar yang baik bagi keluh kesah siswa"
+      ],
+      "explanation": "Pesan moral (amanat) novel biasanya menyentuh aspek kemanusiaan dan relasi sosial, seperti menghentikan perundungan dan peran empati, bukan sekadar aspek fisik gedung atau regulasi teknis.",
+      "source": {
+        "student_book": { "pages": "117-118", "section": "D. Mendiskusikan Pesan yang Terkandung dalam Novel" }
+      },
+      "provenance": "Materi Bab 3, Subbab D",
+      "game_mechanic": "dialogue_analysis",
+      "mode": "training",
+      "tags": ["novel", "amanat", "diskusi"]
+    },
+    {
+      "id": "BI12-W03-KM-C03-M05",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-T0E",
+      "skill": "create",
+      "cognitive_level": "create",
+      "difficulty": "medium",
+      "question_type": "ordering",
+      "question": "Urutkan tahapan penyusunan kerangka novel berikut secara logis: (A) Menentukan premis dan tema cerita, (B) Merancang penyelesaian konflik (resolusi), (C) Membuat profil watak tokoh-tokoh utama, (D) Menulis kerangka alur dari awal hingga klimaks.",
+      "options": [
+        "A → C → D → B",
+        "C → A → B → D",
+        "D → C → A → B",
+        "A → D → C → B"
+      ],
+      "answer": "A → C → D → B",
+      "explanation": "Penulisan kerangka idealnya dimulai dari gagasan utama (A), diikuti merancang siapa yang menjalankan cerita (C), menyusun kejadian cerita hingga puncak (D), dan diakhiri penyelesaian (B).",
+      "source": {
+        "student_book": { "pages": "119-121", "section": "E. Menulis Gagasan... Melalui Penyusunan Kerangka Novel" }
+      },
+      "provenance": "Materi Bab 3, Subbab E",
+      "game_mechanic": "procedural_ordering",
+      "mode": "exam",
+      "tags": ["novel", "kerangka-karangan"]
+    },
+    {
+      "id": "BI12-W03-KM-C03-M06",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-T0F",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Perhatikan dialog rumpang berikut: Budi menatap tajam [ ] Kau yang menyebarkan rumor itu [ ] bentaknya. Penggunaan tanda baca yang tepat untuk melengkapi dialog kreatif di atas adalah...",
+      "options": [
+        "(, \") (\" ,)",
+        "(. \") (\" .)",
+        "(. \") (? \")",
+        "(: \") (! \",)"
+      ],
+      "answer": "(. \") (? \")",
+      "explanation": "Kalimat deskripsi diakhiri titik lalu dilanjutkan tanda kutip buka dialog. Dialog yang bernada tanya/tuduhan diikuti tanda tanya sebelum kutip penutup. Budi menatap tajam. \"Kau yang menyebarkan rumor itu?\" bentaknya. (Atau bentuk baku kalimat langsung lainnya yang sesuai EBI).",
+      "source": {
+        "student_book": { "pages": "122-125", "section": "F. Menyajikan Novel secara Kreatif... Memperhatikan Penggunaan Tanda Baca" }
+      },
+      "provenance": "Materi Bab 3, Subbab F",
+      "game_mechanic": "error_hunt",
+      "mode": "exam",
+      "tags": ["novel", "tanda-baca", "ejaan"]
+    },
+    {
+      "id": "BI12-W03-KM-C03-M07",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-T0G",
+      "skill": "apply",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question_type": "mcq",
+      "question": "Ketika ingin memublikasikan naskah novel ke penerbit indie dalam bentuk buku cetak, tahapan persiapan desain apa yang membedakan buku cetak dengan format cerita digital (platform online)?",
+      "options": [
+        "Penentuan tata letak (layout) margin potong (bleed) dan desain kover beresolusi tinggi untuk dicetak",
+        "Membuat thumbnail berukuran 100x100 pixel saja",
+        "Menambahkan animasi GIF ke dalam halaman buku",
+        "Menghapus nomor halaman agar terlihat bersih"
+      ],
+      "answer": "Penentuan tata letak (layout) margin potong (bleed) dan desain kover beresolusi tinggi untuk dicetak",
+      "explanation": "Buku cetak fisik membutuhkan spesifikasi pracetak khusus seperti margin, _bleed_ (batas potong), dan resolusi warna CMYK/Tinggi, berbeda dengan platform _online_ murni.",
+      "source": {
+        "student_book": { "pages": "126-133", "section": "G. Memublikasikan Hasil Penulisan Novel ke dalam Bentuk Buku" }
+      },
+      "provenance": "Materi Bab 3, Subbab G",
+      "game_mechanic": "document_inspection",
+      "mode": "training",
+      "tags": ["novel", "publikasi", "buku"]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KM Chapter 1 — H Production QA v1</title><style>body{font-family:system-ui,sans-serif;max-width:1000px;margin:32px auto;padding:0 16px}iframe{width:100%;height:760px;border:1px solid #ccc;border-radius:12px}.pass{font-weight:700}.small{color:#555}.controls{margin:12px 0;display:flex;gap:8px;flex-wrap:wrap}.button{border:0;border-radius:8px;padding:10px 14px;cursor:pointer;font:inherit}</style></head>
+<body>
+<h1>KM Chapter 1 — H Production QA v1</h1>
+<p><strong>Production-shaped QA only.</strong> Candidate is additive/versioned. Golden Dataset and production renderer are untouched.</p>
+<div id="gate">Menjalankan static checks…</div>
+<p class="small">Dataset: <code>phase-3/world-1-km-chapter-1-h-production-content-candidate-v1.json</code></p>
+<div class="controls"><button class="button" id="reloadRuntime" type="button" disabled>Reload runtime</button></div>
+<div id="runtime"></div>
+<script>
+const DATA='../../phase-3/world-1-km-chapter-1-h-production-content-candidate-v1.json';
+const RENDERER='km-batch-01-runtime.html?dataset='+encodeURIComponent(DATA)+'&qa=1&mission=KM-CH1-H-PRODUCTION-V1';
+let runtimeFrame=null;
+function mountRuntime(){const host=document.getElementById('runtime');host.innerHTML='';runtimeFrame=document.createElement('iframe');runtimeFrame.src=RENDERER;runtimeFrame.title='Actual KM renderer — H production QA';host.appendChild(runtimeFrame);document.getElementById('reloadRuntime').disabled=false;}
+document.getElementById('reloadRuntime').onclick=()=>{if(runtimeFrame){runtimeFrame.src=RENDERER;}};
+async function runGate(){
+ const out=[]; let data;
+ try{const r=await fetch(DATA,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);data=await r.json();out.push('DATA LOAD PASS');}catch(e){document.getElementById('gate').innerHTML='<strong>STATIC GATE FAIL</strong> — '+e.message;return;}
+ const qs=Array.isArray(data.questions)?data.questions:[];
+ const ids=new Set(); const supported=new Set(['mcq','multi_select','ordering','document_inspection','evidence_matching','dialogue_analysis']); let ok=true;
+ if(qs.length!==3){out.push('ITEM COUNT FAIL');ok=false}else out.push('3 ITEMS PASS');
+ const expected=['H-Q01','H-Q02','H-Q03'];
+ for(let i=0;i<qs.length;i++){
+   const q=qs[i];
+   if(q.id!==expected[i]){out.push(q.id+': ID/order FAIL');ok=false}
+   if(ids.has(q.id)){out.push(q.id+': duplicate ID FAIL');ok=false}
+   ids.add(q.id);
+   for(const f of ['id','chapter_id','topic_id','skill','cognitive_level','difficulty','question_type','question','answer','explanation','source','provenance','mode','game_mechanic']) {
+     if(q[f]===undefined||q[f]===null||q[f]===''){out.push(q.id+': '+f+' FAIL');ok=false}
+   }
+   if(!supported.has(q.question_type)){out.push(q.id+': unsupported type FAIL');ok=false}
+   if(q.question_type==='multi_select' && !Array.isArray(q.answer)){out.push(q.id+': answer array FAIL');ok=false}
+   if(q.question_type==='mcq' && Array.isArray(q.answer)){out.push(q.id+': single answer FAIL');ok=false}
+   if(q.question_type==='mcq' && !q.options.includes(q.answer)){out.push(q.id+': canonical answer not in options FAIL');ok=false}
+   if(!q.source?.student_book?.pages||!q.source?.student_book?.section||!q.source?.teacher_guide?.pages||!q.source?.teacher_guide?.section){out.push(q.id+': provenance FAIL');ok=false}
+ }
+ out.push(data.promotion?.golden_dataset_change===false?'GOLDEN DATASET UNCHANGED PASS':'GOLDEN DATASET BOUNDARY FAIL'); if(data.promotion?.golden_dataset_change!==false)ok=false;
+ out.push(data.promotion?.production_renderer_change===false?'RENDERER UNCHANGED PASS':'RENDERER BOUNDARY FAIL'); if(data.promotion?.production_renderer_change!==false)ok=false;
+ document.getElementById('gate').innerHTML='<strong>'+ (ok?'STATIC GATE PASS':'STATIC GATE FAIL')+'</strong><pre>'+out.join('\n')+'</pre>';
+ if(ok)mountRuntime();
+}
+runGate();
+</script></body></html>

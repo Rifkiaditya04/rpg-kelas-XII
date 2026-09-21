@@ -1,0 +1,15 @@
+{
+  "schema_version":"1.1",
+  "dataset":"World 1 KM Standard Chapter 2 Approved Content - Misi 8 v1.0",
+  "status":"approved_world1_content",
+  "purpose":"Approved additive controlled World 1 content pool for Chapter 2.",
+  "source_canonical":"phase-3/world-1-km-chapter-2-misi-8-canonical-v1.0.json",
+  "chapter_id":"BI12-C02",
+  "lanes":["F","G"],
+  "item_count":2,
+  "item_ids":["KM02-F1","KM02-G1"],
+  "rewards":{"xp_per_correct":100,"mission_completion_xp":100},
+  "golden_dataset_policy":"This approved pool is additive and versioned for Chapter 2.",
+  "production_use":"approved_for_controlled_world1_content_expansion",
+  "mass_generation":"still_requires_separate_batch_generation_and_quality_gates"
+}

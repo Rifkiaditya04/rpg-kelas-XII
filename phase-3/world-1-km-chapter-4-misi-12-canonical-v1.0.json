@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "Misi 12: Identifikasi dan Evaluasi Gagasan AI",
+  "purpose": "Approved additive World 1 content batch for controlled expansion.",
+  "chapter_id": "BI12-C04",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM04-A1",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Bacalah penggalan paragraf berikut:\n'Selama masa pandemi, banyak orang mulai membiasakan diri berbelanja tanpa keluar rumah. Aplikasi pesan-antar makanan menjadi pilihan utama bagi mereka yang ingin tetap aman di rumah. Demikian pula dengan layanan belanja daring yang menyediakan kebutuhan rumah tangga hingga kesehatan. Semua perubahan ini menunjukkan bahwa masyarakat telah beralih ke pola hidup digital sebagai bentuk adaptasi terhadap kondisi krisis.'\nBerdasarkan letak gagasan utamanya, paragraf tersebut termasuk ke dalam jenis paragraf...",
+      "options": [
+        "Deduktif",
+        "Induktif",
+        "Campuran (Deduktif-Induktif)",
+        "Ineratif"
+      ],
+      "answer": "Induktif",
+      "explanation": "Gagasan utama paragraf ini terletak di kalimat terakhir ('Semua perubahan ini menunjukkan bahwa masyarakat telah beralih ke pola hidup digital...'), yang menyimpulkan rincian fakta dari kalimat-kalimat sebelumnya. Oleh karena itu, ini adalah paragraf induktif.",
+      "source": {
+        "student_book": {"pages": "143", "section": "Bab 4, Subbab A"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM04-A2",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Dalam Teks Eksplanasi Kompleks yang baik, argumen atau gagasan harus dievaluasi berdasarkan tiga aspek utama, yaitu...",
+      "options": [
+        "Kekuatan argumen, keakuratan informasi, dan relevansi",
+        "Jumlah kata, gaya bahasa, dan jumlah paragraf",
+        "Pernyataan umum, deretan penjelas, dan interpretasi",
+        "Tokoh, alur, dan amanat"
+      ],
+      "answer": "Kekuatan argumen, keakuratan informasi, dan relevansi",
+      "explanation": "Evaluasi gagasan bertujuan untuk menilai kualitas ide berdasarkan logika (kekuatan argumen), fakta ilmiah (keakuratan informasi), serta kaitannya dengan kehidupan masa kini (relevansi).",
+      "source": {
+        "student_book": {"pages": "147", "section": "Bab 4, Subbab B"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM04-A3",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah argumen mengenai Kecerdasan Artifisial (AI) dikategorikan memiliki 'kekuatan argumen yang kuat' jika...",
+      "options": [
+        "Gagasan tersebut didukung oleh data, fakta nyata, dan penjelasan yang jelas serta logis.",
+        "Gagasan tersebut memuat kalimat-kalimat panjang yang menggunakan istilah ilmiah asing.",
+        "Gagasan tersebut berisi klaim bombastis untuk menakut-nakuti pembaca tentang bahaya AI.",
+        "Gagasan tersebut hanya berupa opini tunggal tanpa penjelasan atau bukti pendukung."
+      ],
+      "answer": "Gagasan tersebut didukung oleh data, fakta nyata, dan penjelasan yang jelas serta logis.",
+      "explanation": "Kekuatan argumen bergantung pada bukti (evidence) yang valid, bukan sekadar panjang tulisan atau penggunaan istilah yang rumit tanpa dasar fakta.",
+      "source": {
+        "student_book": {"pages": "147", "section": "Bab 4, Subbab B"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    }
+  ]
+}

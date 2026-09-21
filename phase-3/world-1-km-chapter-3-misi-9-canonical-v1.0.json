@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "Misi 9: Sudut Pandang dan Perwatakan",
+  "purpose": "Approved additive World 1 content batch for controlled expansion.",
+  "chapter_id": "BI12-C03",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM03-A1",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Berdasarkan kutipan: 'Aku berjalan menyusuri gang sempit itu dengan hati berdebar. Malam terasa begitu sunyi.', sudut pandang apakah yang digunakan oleh pengarang?",
+      "options": [
+        "Sudut pandang orang pertama",
+        "Sudut pandang orang kedua",
+        "Sudut pandang orang ketiga serba tahu",
+        "Sudut pandang orang ketiga terbatas"
+      ],
+      "answer": "Sudut pandang orang pertama",
+      "explanation": "Penggunaan kata ganti 'Aku' menunjukkan bahwa pengarang menempatkan dirinya sebagai tokoh utama dalam cerita tersebut, yang merupakan ciri khas sudut pandang orang pertama.",
+      "source": {
+        "student_book": {"pages": "103", "section": "Bab 3, Subbab A"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM03-A2",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Pengarang hanya memahami cerita dan perasaan salah satu tokoh saja, namun ia tetap menggunakan kata ganti 'dia' atau 'ia' sebagai pencerita. Jenis sudut pandang ini disebut...",
+      "options": [
+        "Sudut pandang orang ketiga terbatas",
+        "Sudut pandang orang ketiga serba tahu",
+        "Sudut pandang orang pertama",
+        "Sudut pandang campuran"
+      ],
+      "answer": "Sudut pandang orang ketiga terbatas",
+      "explanation": "Berbeda dengan sudut pandang serba tahu di mana pengarang mengetahui isi hati semua tokoh, sudut pandang orang ketiga terbatas (limited) membatasi akses emosi hanya pada satu tokoh tertentu saja.",
+      "source": {
+        "student_book": {"pages": "103", "section": "Bab 3, Subbab A"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM03-B1",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Berdasarkan penggalan cerita karnaval Laskar Pelangi yang baru saja dibacakan, sikap Pak Harfan yang berseru, 'Karnaval ini satu-satunya cara menunjukkan kepada dunia bahwa sekolah kita masih eksis. Kita harus bangga!' menunjukkan perwatakan yang...",
+      "options": [
+        "Optimistis dan pantang menyerah",
+        "Ambisius namun meremehkan orang lain",
+        "Sinis dan mudah putus asa",
+        "Acuh tak acuh pada keadaan sekolah"
+      ],
+      "answer": "Optimistis dan pantang menyerah",
+      "explanation": "Pernyataan tersebut menunjukkan dorongan positif dari Pak Harfan untuk memotivasi para siswa agar berani tampil dan mempertahankan eksistensi sekolah mereka di tengah keterbatasan.",
+      "source": {
+        "student_book": {"pages": "110", "section": "Bab 3, Subbab B"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM03-B2",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Peran tokoh Mahar dalam penggalan cerita persiapan karnaval digambarkan sebagai...",
+      "options": [
+        "Seniman genius yang menyusun koreografi dan ide brilian karnaval",
+        "Anak pendiam yang hanya mengikuti instruksi dari Bu Mus",
+        "Ketua kelas yang bertugas mengatur perizinan dan logistik",
+        "Murid terpandai yang menghitung ritme tarian secara matematis"
+      ],
+      "answer": "Seniman genius yang menyusun koreografi dan ide brilian karnaval",
+      "explanation": "Dalam teks disebutkan secara spesifik bahwa 'Mahar muncul dengan ide brilian. Ia menyusun koreografi, musik, dan visualisasi...'. Lintang adalah murid terpandai yang menghitung ritme, bukan Mahar.",
+      "source": {
+        "student_book": {"pages": "110", "section": "Bab 3, Subbab B"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    }
+  ]
+}

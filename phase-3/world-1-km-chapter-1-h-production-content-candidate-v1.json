@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.2",
+  "batch_status": "PRODUCTION_CANDIDATE",
+  "dataset": "World 1 KM Standard Chapter 1 H Production Content Candidate v1.0 ID",
+  "purpose": "Machine-readable additive candidate materialized from the approved H question design; not canonical and not a Golden Dataset change.",
+  "chapter_id": "BI12-C01",
+  "lanes": ["H"],
+  "language": "id-ID",
+  "item_count": 3,
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "promotion": {
+    "status": "NOT_PROMOTED",
+    "promotion_type": "additive_versioned_candidate",
+    "golden_dataset_change": false,
+    "production_renderer_change": false
+  },
+  "questions": [
+    {
+      "id": "H-Q01",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-H",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "multi_select",
+      "question": "Perhatikan Surat Edaran berikut:\n\nPENGUMUMAN RESMI\nNomor: 123/OSIS-SMK/2026\nYth. Seluruh Siswa/i SMK Bintang Harapan,\n\nDalam rangka merayakan Bulan Bahasa 2026 dan meningkatkan minat baca di kalangan pelajar, OSIS SMK Bintang Harapan akan mengadakan Lomba Cipta Puisi dan Menulis Cerpen tingkat sekolah.\nKami mengundang seluruh perwakilan kelas untuk berpartisipasi. Kegiatan ini akan dilaksanakan pada:\nHari, Tanggal : Sabtu, 24 Oktober 2026\nWaktu : Pukul 08.00 WIB s.d. selesai\nTempat : Aula Utama SMK Bintang Harapan\n\nPendaftaran tidak dipungut biaya dan batas akhir pendaftaran adalah tanggal 20 Oktober 2026 di Ruang OSIS. Para pemenang akan mendapatkan sertifikat, piala, serta hadiah pembinaan.\nDemikian surat edaran ini disampaikan. Atas perhatian dan partisipasi rekan-rekan, kami ucapkan terima kasih.\n\nKalian ditugaskan membuat poster mading untuk menyosialisasikan surat edaran di atas kepada seluruh siswa. Dari pilihan berikut, manakah informasi inti yang *wajib* ditampilkan pada poster agar tujuan surat tercapai? (Pilih 3 jawaban benar)",
+      "options": [
+        "Nama acara (Lomba Cipta Puisi dan Menulis Cerpen) beserta hari dan tempat pelaksanaannya.",
+        "Nomor surat edaran (123/OSIS-SMK/2026) dan nama lengkap Ketua OSIS yang menandatangani.",
+        "Batas akhir pendaftaran lomba (20 Oktober 2026) dan lokasi pendaftaran.",
+        "Latar belakang kalimat \"Demikian surat edaran ini disampaikan\" secara utuh.",
+        "Keterangan bahwa pendaftaran lomba tidak dipungut biaya (gratis)."
+      ],
+      "answer": [
+        "Nama acara (Lomba Cipta Puisi dan Menulis Cerpen) beserta hari dan tempat pelaksanaannya.",
+        "Batas akhir pendaftaran lomba (20 Oktober 2026) dan lokasi pendaftaran.",
+        "Keterangan bahwa pendaftaran lomba tidak dipungut biaya (gratis)."
+      ],
+      "explanation": "Sebuah poster pengumuman harus informatif dan ringkas. Pembaca poster perlu segera mengetahui acara apa yang digelar, kapan pelaksanaannya, cara mendaftarnya (termasuk biayanya), serta batas waktu pendaftaran. Nomor surat dan kalimat penutup formal tidak relevan untuk dimasukkan ke dalam poster yang bersifat persuasif dan ringkas.",
+      "source": {"student_book":{"pages":"37","section":"H. Memublikasikan Poster Pengumuman Berdasarkan Surat Edaran yang Diperoleh"},"teacher_guide":{"pages":"61-63","section":"Subbab H, Aktivitas 1.14"}},
+      "provenance": {"source_family":"Kurikulum Merdeka Kelas XII","source_role":"concept/competency grounding","concept":"ekstraksi informasi untuk poster","source_expression_reused":false,"status":"source-mapped; original project wording"},
+      "mode":"learning",
+      "game_mechanic":"multi_select"
+    },
+    {
+      "id": "H-Q02",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-H",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Kalimat pada surat edaran berbunyi: \"Kami mengundang seluruh perwakilan kelas untuk berpartisipasi.\"\n\nKalimat ajakan manakah di bawah ini yang paling efektif dan menarik jika diaplikasikan sebagai teks headline utama pada poster tersebut?",
+      "options": [
+        "Tunjukkan Bakat Sastramu! Ayo Ikuti Lomba Bulan Bahasa 2026!",
+        "Kami selaku panitia mengundang perwakilan kelas.",
+        "Sesuai dengan surat edaran, perwakilan kelas diwajibkan untuk berpartisipasi.",
+        "Pengumuman mengenai lomba cipta puisi dan menulis cerpen tingkat sekolah."
+      ],
+      "answer": "Tunjukkan Bakat Sastramu! Ayo Ikuti Lomba Bulan Bahasa 2026!",
+      "explanation": "Teks headline poster harus bersifat persuasif (mengajak), singkat, dan langsung menarik minat target pembaca (siswa). Pilihan kalimat tersebut mengubah nada formal surat menjadi ajakan yang membangkitkan semangat sesuai karakteristik bahasa poster.",
+      "source": {"student_book":{"pages":"37","section":"H. Memublikasikan Poster Pengumuman Berdasarkan Surat Edaran yang Diperoleh"},"teacher_guide":{"pages":"61-63","section":"Subbab H, Aktivitas 1.14"}},
+      "provenance": {"source_family":"Kurikulum Merdeka Kelas XII","source_role":"concept/competency grounding","concept":"kalimat menarik untuk poster","source_expression_reused":false,"status":"source-mapped; original project wording"},
+      "mode":"learning",
+      "game_mechanic":"single_select"
+    },
+    {
+      "id": "H-Q03",
+      "chapter_id": "BI12-C01",
+      "topic_id": "BI12-C01-H",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Selain teks, poster juga membutuhkan elemen visual (gambar) yang selaras dengan pesan surat edaran tentang Lomba Cipta Puisi dan Menulis Cerpen. Pilihan elemen visual manakah yang paling mencerminkan isi dan tujuan dari surat edaran tersebut?",
+      "options": [
+        "Ilustrasi buku terbuka dengan pena bulu, ditemani warna-warna hangat untuk menggambarkan tema literasi dan kreativitas.",
+        "Foto lapangan olahraga yang luas dengan ikon piala besar dan warna dominan mencolok.",
+        "Gambar alat-alat kebersihan seperti sapu dan tempat sampah yang disusun rapi di sudut kelas.",
+        "Grafik data jumlah siswa dan ikon kalkulator untuk menunjukkan perhitungan biaya lomba."
+      ],
+      "answer": "Ilustrasi buku terbuka dengan pena bulu, ditemani warna-warna hangat untuk menggambarkan tema literasi dan kreativitas.",
+      "explanation": "Surat edaran tersebut bertujuan menyosialisasikan lomba sastra (Cipta Puisi dan Menulis Cerpen) dalam rangka Bulan Bahasa. Oleh karena itu, ilustrasi buku dan pena (literasi) adalah elemen visual yang paling tepat dan relevan dengan tema.",
+      "source": {"student_book":{"pages":"37","section":"H. Memublikasikan Poster Pengumuman Berdasarkan Surat Edaran yang Diperoleh"},"teacher_guide":{"pages":"61-63","section":"Subbab H, Aktivitas 1.14"}},
+      "provenance": {"source_family":"Kurikulum Merdeka Kelas XII","source_role":"concept/competency grounding","concept":"ide sesuai ilustrasi gambar","source_expression_reused":false,"status":"source-mapped; original project wording"},
+      "mode":"learning",
+      "game_mechanic":"single_select"
+    }
+  ]
+}

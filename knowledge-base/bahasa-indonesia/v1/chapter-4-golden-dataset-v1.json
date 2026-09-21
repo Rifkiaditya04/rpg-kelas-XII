@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.1",
+  "dataset": "Chapter 4 Golden Dataset v1",
+  "status": "approved_seed",
+  "purpose": "Seed set for Chapter 4: Menerapkan Kecerdasan Artifisial dalam Kehidupan Modern (Teks Eksplanasi Kompleks)",
+  "items": [
+    {
+      "id": "BI12-W04-KM-C04-M01",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-T0A",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah teks eksplanasi tentang kecerdasan artifisial (AI) menyebutkan: 'Algoritma deep learning bekerja layaknya jaringan saraf otak manusia dalam memproses informasi massal tanpa lelah.' Pemahaman implisit yang dapat ditarik dari kalimat tersebut adalah...",
+      "options": [
+        "AI memiliki potensi untuk menggantikan pekerjaan manusia yang bersifat repetitif dan mengolah data dalam jumlah besar",
+        "Algoritma AI memiliki sel otak biologis seperti manusia",
+        "AI mudah lelah jika disuruh bekerja terlalu lama",
+        "Manusia tidak lagi membutuhkan otak untuk berpikir"
+      ],
+      "answer": "AI memiliki potensi untuk menggantikan pekerjaan manusia yang bersifat repetitif dan mengolah data dalam jumlah besar",
+      "explanation": "Pemahaman implisit (tersirat) dari kata 'memproses informasi massal tanpa lelah' mengisyaratkan keunggulan sistem AI dibanding ketahanan fsik manusia dalam pekerjaan repetitif pengolahan data.",
+      "source": { "student_book": { "pages": "139-141", "section": "A. Memahami Informasi Teks Eksplanasi Kompleks secara Implisit" } },
+      "provenance": "Materi Bab 4, Subbab A",
+      "game_mechanic": "document_inspection",
+      "mode": "training",
+      "tags": ["teks-eksplanasi", "kecerdasan-artifisial", "informasi-implisit"]
+    },
+    {
+      "id": "BI12-W04-KM-C04-M02",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-T0B",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Penulis teks eksplanasi menyatakan, 'Kehadiran AI di bidang seni hanyalah sebuah alat bantu, bukan pengganti kreativitas roh manusia.' Evaluasi yang tepat terhadap pandangan tersebut adalah...",
+      "options": [
+        "Pandangan tersebut menekankan batasan teknologi dan menempatkan manusia sebagai pemegang kendali utama kreativitas",
+        "Penulis sangat membenci teknologi AI",
+        "Penulis meyakini bahwa seniman manusia sudah tidak berguna lagi",
+        "Pandangan tersebut membuktikan bahwa AI tidak bisa menggambar"
+      ],
+      "answer": "Pandangan tersebut menekankan batasan teknologi dan menempatkan manusia sebagai pemegang kendali utama kreativitas",
+      "explanation": "Pesan dari pernyataan tersebut adalah pembatasan peran AI (sebagai alat) demi menjaga kedudukan esensial (roh/kreativitas asli) manusia di ranah seni.",
+      "source": { "student_book": { "pages": "142-148", "section": "B. Mengevaluasi Gagasan, Pandangan, atau Pesan dalam Teks Eksplanasi Kompleks" } },
+      "provenance": "Materi Bab 4, Subbab B",
+      "game_mechanic": "dialogue_analysis",
+      "mode": "exam",
+      "tags": ["teks-eksplanasi", "evaluasi-gagasan"]
+    },
+    {
+      "id": "BI12-W04-KM-C04-M03",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-T0C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Seorang siswa membaca teks eksplanasi yang menyimpulkan: 'Karena robot pembersih debu bisa menghindari tembok, berarti robot memiliki perasaan takut menabrak.' Apa kecacatan logika berpikir (logical fallacy) dalam refleksi kesimpulan tersebut?",
+      "options": [
+        "Personifikasi berlebihan; menyamakan respons sensor terprogram dengan emosi manusia (antropomorfisme)",
+        "Logika tersebut sudah 100% benar",
+        "Kesalahan dalam mengukur ukuran ruangan",
+        "Kecacatan dalam daya hisap robot"
+      ],
+      "answer": "Personifikasi berlebihan; menyamakan respons sensor terprogram dengan emosi manusia (antropomorfisme)",
+      "explanation": "Refleksi logis dari teks eksplanasi sains/teknologi tidak boleh mencampuradukkan mekanika sensor algoritmik (menghindari hambatan) dengan perasaan biologis (takut).",
+      "source": { "student_book": { "pages": "149-152", "section": "C. Merefleksi Gagasan dan Pandangan Berdasarkan Kaidah Logika Berpikir" } },
+      "provenance": "Materi Bab 4, Subbab C",
+      "game_mechanic": "fact_check",
+      "mode": "training",
+      "tags": ["teks-eksplanasi", "logika-berpikir"]
+    },
+    {
+      "id": "BI12-W04-KM-C04-M04",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-T0D",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "ordering",
+      "question": "Urutkan struktur teks eksplanasi kompleks yang tepat mengenai fenomena 'Cara Kerja Machine Learning': (A) Penjelasan proses input data hingga hasil prediksi, (B) Pernyataan umum tentang apa itu Machine Learning, (C) Interpretasi/Ulasan penutup tentang dampak Machine Learning bagi masa depan.",
+      "options": [
+        "B → A → C",
+        "A → B → C",
+        "C → A → B",
+        "B → C → A"
+      ],
+      "answer": "B → A → C",
+      "explanation": "Struktur baku teks eksplanasi selalu dimulai dari Pernyataan Umum (B), Deretan Penjelas proses/sebab-akibat (A), dan diakhiri dengan Ulasan/Interpretasi (C).",
+      "source": { "student_book": { "pages": "153-158", "section": "D. Menganalisis Struktur Teks, Gaya Bahasa, dan Tujuan Teks Eksplanasi Kompleks" } },
+      "provenance": "Materi Bab 4, Subbab D",
+      "game_mechanic": "procedural_ordering",
+      "mode": "exam",
+      "tags": ["teks-eksplanasi", "struktur-teks"]
+    },
+    {
+      "id": "BI12-W04-KM-C04-M05",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-T0E",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Sebuah artikel eksplanasi mengklaim, '100% kecelakaan lalu lintas di masa depan akan hilang setelah penggunaan mobil otonom (AI),' dengan merujuk pada blog pribadi yang ditulis oleh penggemar fiksi ilmiah. Mengapa akurasi data tersebut bermasalah?",
+      "options": [
+        "Klaim bersifat absolut (100%) dan sumber rujukan tidak memiliki otoritas ilmiah",
+        "Kecelakaan lalu lintas tidak pernah terjadi",
+        "Blog pribadi selalu menyajikan data yang lebih baik daripada jurnal medis",
+        "Mobil otonom belum pernah diciptakan"
+      ],
+      "answer": "Klaim bersifat absolut (100%) dan sumber rujukan tidak memiliki otoritas ilmiah",
+      "explanation": "Akurasi data teks eksplanasi harus diuji dari objektivitas klaim (tidak melebih-lebihkan) dan validitas sumber (pakar atau lembaga berwenang, bukan opini fiksi semata).",
+      "source": { "student_book": { "pages": "159-160", "section": "E. Menganalisis Akurasi Data Teks Eksplanasi Kompleks yang Dibaca" } },
+      "provenance": "Materi Bab 4, Subbab E",
+      "game_mechanic": "fact_check",
+      "mode": "exam",
+      "tags": ["teks-eksplanasi", "akurasi-data", "evaluasi"]
+    },
+    {
+      "id": "BI12-W04-KM-C04-M06",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-T0F",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Saat mempresentasikan fenomena Deepfake (video manipulasi AI), pembicara harus mengelaborasi gagasan menggunakan media. Metode elaborasi mana yang paling persuasif dalam sebuah gelar wicara ilmiah?",
+      "options": [
+        "Menampilkan perbandingan video asli berdampingan dengan video hasil manipulasi AI sambil menjelaskan cara kerjanya",
+        "Hanya membacakan ulang teks eksplanasi dari selembar kertas",
+        "Menyanyikan lagu tentang teknologi",
+        "Marah-marah kepada penonton mengenai bahaya internet"
+      ],
+      "answer": "Menampilkan perbandingan video asli berdampingan dengan video hasil manipulasi AI sambil menjelaskan cara kerjanya",
+      "explanation": "Presentasi fenomena kompleks (eksplanasi) sangat terbantu oleh media komparatif visual, membuat penonton langsung paham efek sebab-akibat dari teknologi tersebut.",
+      "source": { "student_book": { "pages": "161-165", "section": "F. Mempresentasikan Teks Eksplanasi Kompleks Berdasarkan Hasil Elaborasi" } },
+      "provenance": "Materi Bab 4, Subbab F",
+      "game_mechanic": "speech_analysis",
+      "mode": "training",
+      "tags": ["teks-eksplanasi", "presentasi"]
+    },
+    {
+      "id": "BI12-W04-KM-C04-M07",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-T0G",
+      "skill": "create",
+      "cognitive_level": "create",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Saat menulis draf teks eksplanasi tentang 'Sebab AI Sering Bias', konjungsi apa yang paling tepat digunakan untuk menghubungkan dua kalimat ini: 'Sistem AI dilatih menggunakan data buatan manusia. [ ... ], jika manusia memiliki prasangka, AI akan menirunya.'",
+      "options": [
+        "Oleh karena itu",
+        "Akan tetapi",
+        "Meskipun demikian",
+        "Atau"
+      ],
+      "answer": "Oleh karena itu",
+      "explanation": "Teks eksplanasi sangat bergantung pada konjungsi kausalitas (sebab-akibat). 'Oleh karena itu' secara tepat menghubungkan sebab (data manusia) dengan akibat (bias pada AI).",
+      "source": { "student_book": { "pages": "166-181", "section": "G. Menulis Gagasan... dalam Teks Eksplanasi Kompleks dengan Memperhatikan Konjungsi" } },
+      "provenance": "Materi Bab 4, Subbab G",
+      "game_mechanic": "error_hunt",
+      "mode": "exam",
+      "tags": ["teks-eksplanasi", "konjungsi", "menulis"]
+    }
+  ]
+}

@@ -1,0 +1,635 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "Ujian Akhir: Bahasa Indonesia Kelas XII",
+  "purpose": "Final comprehensive exam covering Bab 1-5 of Buku Siswa BI XII KM. Soal dibuat baru (tidak identik dengan misi 1-17) namun menguji kompetensi yang sama.",
+  "chapter_id": "BI12-FINAL",
+  "rewards": {"xp_per_correct": 0, "mission_completion_xp": 0},
+  "questions": [
+    {
+      "id": "FINAL-C01-1",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C01-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Bacalah penggalan surat resmi berikut:\n'Dengan hormat, kami sampaikan bahwa pelaksanaan kegiatan Pentas Seni Tahunan yang semula dijadwalkan pada tanggal 10 Oktober 2025 ditunda hingga waktu yang belum ditentukan karena kondisi cuaca ekstrem.'\nInformasi eksplisit yang paling akurat berdasarkan surat tersebut adalah...",
+      "options": [
+        "Kegiatan Pentas Seni Tahunan ditunda dan jadwal baru belum ditetapkan.",
+        "Kegiatan Pentas Seni Tahunan dibatalkan selamanya karena cuaca.",
+        "Kegiatan Pentas Seni dipindahkan ke gedung lain akibat cuaca ekstrem.",
+        "Pihak sekolah belum mengetahui adanya kondisi cuaca ekstrem."
+      ],
+      "answer": "Kegiatan Pentas Seni Tahunan ditunda dan jadwal baru belum ditetapkan.",
+      "explanation": "Surat secara eksplisit menyatakan 'ditunda hingga waktu yang belum ditentukan', bukan dibatalkan atau dipindahkan.",
+      "source": {
+        "student_book": {"pages": "5-7", "section": "Bab 1, Subbab A"},
+        "teacher_guide": {"pages": "34-35", "section": "Bab 1, Aktivitas 1.1"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji kompetensi identifikasi informasi eksplisit dari surat resmi.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C01-2",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C01-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah undangan kepada orang tua/wali menyatakan: 'Bapak/Ibu diharapkan hadir pada Pertemuan Orang Tua yang akan dilaksanakan di Aula Sekolah hari Sabtu, pukul 09.00.' Makna tersirat yang dapat disimpulkan dari surat tersebut adalah...",
+      "options": [
+        "Kehadiran orang tua sangat penting dan diharapkan oleh pihak sekolah.",
+        "Pertemuan itu akan dihadiri oleh seluruh guru dan kepala sekolah.",
+        "Sekolah mengharuskan orang tua membawa dokumen tertentu.",
+        "Pertemuan tersebut berlangsung selama lebih dari dua jam."
+      ],
+      "answer": "Kehadiran orang tua sangat penting dan diharapkan oleh pihak sekolah.",
+      "explanation": "Penggunaan frasa 'diharapkan hadir' menyiratkan bahwa kehadiran orang tua dianggap penting meskipun tidak wajib secara hukum. Pilihan lain tidak didukung informasi dalam surat.",
+      "source": {
+        "student_book": {"pages": "8-11", "section": "Bab 1, Subbab B"},
+        "teacher_guide": {"pages": "38-42", "section": "Bab 1, Aktivitas 1.4"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji kompetensi membedakan makna tersurat dan tersirat.",
+      "mode": "assessment",
+      "game_mechanic": "meaning_check"
+    },
+    {
+      "id": "FINAL-C01-3",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C01-D",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Perhatikan penggalan surat berikut:\n'Kepada Yth.\nKepala SMA Budi Utama\nJl. Melati No. 22, Bandung'\nBagian surat ini berfungsi untuk...",
+      "options": [
+        "Mengidentifikasi secara jelas penerima surat beserta alamat yang dituju.",
+        "Menjelaskan tujuan dikirimkannya surat kepada pihak sekolah.",
+        "Memberikan konteks waktu dan tempat penulisan surat.",
+        "Menyatakan penutupan dari isi surat yang disampaikan."
+      ],
+      "answer": "Mengidentifikasi secara jelas penerima surat beserta alamat yang dituju.",
+      "explanation": "Bagian 'Kepada Yth.' beserta nama dan alamat adalah komponen alamat dalam surat resmi yang berfungsi mengidentifikasi penerima dan tujuan pengiriman surat.",
+      "source": {
+        "student_book": {"pages": "14-18", "section": "Bab 1, Subbab D"},
+        "teacher_guide": {"pages": "46-48", "section": "Bab 1, Aktivitas 1.6"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji fungsi struktur surat resmi.",
+      "mode": "assessment",
+      "game_mechanic": "document_inspection"
+    },
+    {
+      "id": "FINAL-C01-4",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C01-D",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Kalimat manakah yang menggunakan ragam bahasa paling tepat untuk surat resmi?",
+      "options": [
+        "Kami mohon kehadiran Bapak/Ibu pada acara yang dimaksud.",
+        "Tolong ya Pak/Bu, datang ke acaranya kita besok!",
+        "Harap hadir ASAP karena ini penting banget buat kita.",
+        "Mohon bisa hadir dong supaya acaranya rame dan seru."
+      ],
+      "answer": "Kami mohon kehadiran Bapak/Ibu pada acara yang dimaksud.",
+      "explanation": "Hanya pilihan A yang menggunakan ragam bahasa formal, baku, dan santun sesuai kaidah penulisan surat resmi. Pilihan lain mengandung bahasa percakapan atau singkatan tidak baku.",
+      "source": {
+        "student_book": {"pages": "14-18", "section": "Bab 1, Subbab D"},
+        "teacher_guide": {"pages": "46-49", "section": "Bab 1, Aktivitas 1.7"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji pemilihan bahasa formal untuk surat resmi.",
+      "mode": "assessment",
+      "game_mechanic": "language_scan"
+    },
+    {
+      "id": "FINAL-C01-5",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C01-B",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Surat A menyatakan bahwa perlombaan diadakan Sabtu pagi dan pendaftaran ditutup Jumat sore. Surat B menyatakan bahwa peserta wajib mendaftar satu hari sebelum kegiatan. Kesimpulan yang valid dari perbandingan dua surat tersebut adalah...",
+      "options": [
+        "Kedua surat sepakat bahwa pendaftaran harus dilakukan sebelum hari perlombaan berlangsung.",
+        "Surat A dan B bertentangan karena jadwal pendaftarannya berbeda.",
+        "Surat B lebih akurat karena mencantumkan batas waktu yang pasti.",
+        "Surat A mengizinkan pendaftaran pada hari perlombaan."
+      ],
+      "answer": "Kedua surat sepakat bahwa pendaftaran harus dilakukan sebelum hari perlombaan berlangsung.",
+      "explanation": "Meskipun diungkapkan berbeda (Surat A: Jumat sore; Surat B: satu hari sebelum), keduanya secara substansi menyampaikan pesan yang sama: pendaftaran harus sebelum hari H.",
+      "source": {
+        "student_book": {"pages": "8-11", "section": "Bab 1, Subbab B"},
+        "teacher_guide": {"pages": "38-42", "section": "Bab 1, Aktivitas 1.4"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji kompetensi membandingkan dua surat resmi.",
+      "mode": "assessment",
+      "game_mechanic": "comparison_scan"
+    },
+    {
+      "id": "FINAL-C02-1",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C02-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah prosedur mencuci tangan memiliki langkah-langkah acak. Urutan yang paling benar dan higienis adalah...",
+      "options": [
+        "Basahi tangan → sabuni → gosok sela jari → bilas → keringkan.",
+        "Sabuni tangan → basahi → gosok sela jari → bilas → keringkan.",
+        "Bilas tangan → sabuni → gosok → keringkan → basahi lagi.",
+        "Keringkan tangan → sabuni → basahi → gosok → bilas."
+      ],
+      "answer": "Basahi tangan → sabuni → gosok sela jari → bilas → keringkan.",
+      "explanation": "Prosedur yang benar mengikuti urutan logis: tangan harus dibasahi terlebih dahulu agar sabun dapat berbusa, kemudian digosok merata termasuk sela jari, dibilas bersih, dan dikeringkan.",
+      "source": {
+        "student_book": {"pages": "50-55", "section": "Bab 2, Subbab A"},
+        "teacher_guide": {"pages": "0", "section": "Bab 2"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji urutan prosedur kompleks yang logis.",
+      "mode": "assessment",
+      "game_mechanic": "sequence_check"
+    },
+    {
+      "id": "FINAL-C02-2",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C02-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Bacalah kalimat berikut: 'Kemudian, panaskan wajan di atas kompor sebelum menuangkan minyak.' Kata 'Kemudian' dalam teks prosedur merupakan contoh dari...",
+      "options": [
+        "Konjungsi temporal (penghubung waktu)",
+        "Konjungsi kausalitas (penghubung sebab-akibat)",
+        "Konjungsi korelatif (penghubung berpasangan)",
+        "Verba material (kata kerja tindakan)"
+      ],
+      "answer": "Konjungsi temporal (penghubung waktu)",
+      "explanation": "'Kemudian' berfungsi menghubungkan dua langkah secara berurutan dalam waktu. Inilah ciri khas konjungsi temporal yang banyak ditemukan dalam teks prosedur.",
+      "source": {
+        "student_book": {"pages": "60-65", "section": "Bab 2, Subbab B"},
+        "teacher_guide": {"pages": "0", "section": "Bab 2"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji identifikasi ciri kebahasaan teks prosedur.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C02-3",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C02-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Dalam teks prosedur gaya hidup sehat, penggunaan kata kerja seperti 'masak', 'potong', 'campurkan', dan 'aduk' termasuk dalam kategori...",
+      "options": [
+        "Verba material",
+        "Verba mental",
+        "Konjungsi temporal",
+        "Nomina abstrak"
+      ],
+      "answer": "Verba material",
+      "explanation": "Verba material adalah kata kerja yang menggambarkan tindakan fisik yang dapat diamati secara nyata. Ini merupakan ciri khas teks prosedur, yang membedakannya dari verba mental (proses berpikir/merasakan).",
+      "source": {
+        "student_book": {"pages": "65-70", "section": "Bab 2, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab 2"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji ciri kebahasaan khas teks prosedur.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C02-4",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C02-D",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Kamu menonton video memasak dan menemukan bahwa penyaji melewati langkah mencuci bahan makanan sebelum dipotong. Berdasarkan kerangka refleksi 4F, tindakan kamu yang paling tepat di tahap 'Finding' (Pembelajaran) adalah...",
+      "options": [
+        "Menyadari bahwa mencuci bahan sebelum dipotong merupakan langkah penting yang tidak boleh dilewatkan demi keamanan pangan.",
+        "Mengabaikan karena cara memasak yang penting adalah rasanya enak.",
+        "Meniru video tersebut sepenuhnya karena instruktur pasti lebih berpengalaman.",
+        "Berhenti menonton karena video tersebut tidak berkualitas."
+      ],
+      "answer": "Menyadari bahwa mencuci bahan sebelum dipotong merupakan langkah penting yang tidak boleh dilewatkan demi keamanan pangan.",
+      "explanation": "Tahap 'Finding' (Pembelajaran) dalam kerangka 4F mendorong kita untuk mengidentifikasi nilai-nilai atau prinsip penting yang dapat diambil dari pengalaman/kejadian yang kita amati.",
+      "source": {
+        "student_book": {"pages": "75-80", "section": "Bab 2, Subbab D"},
+        "teacher_guide": {"pages": "0", "section": "Bab 2"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji penerapan kerangka refleksi 4F.",
+      "mode": "assessment",
+      "game_mechanic": "scenario_decision"
+    },
+    {
+      "id": "FINAL-C02-5",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C02-A",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Prosedur olahraga X menyatakan: 'Pemanasan dilakukan 10 menit, lalu lakukan latihan inti selama 30 menit, dan pendinginan 5 menit.' Sebuah video menunjukkan seseorang langsung melakukan latihan inti tanpa pemanasan. Risiko paling logis dari tindakan tersebut adalah...",
+      "options": [
+        "Otot yang belum siap dapat mengalami kram atau cedera karena tiba-tiba dipaksa bekerja keras.",
+        "Olahraga menjadi lebih efisien karena langsung pada inti latihan.",
+        "Pendinginan akan lebih penting untuk menggantikan pemanasan yang dilewatkan.",
+        "Latihan inti akan terasa lebih ringan karena tubuh tidak kelelahan saat pemanasan."
+      ],
+      "answer": "Otot yang belum siap dapat mengalami kram atau cedera karena tiba-tiba dipaksa bekerja keras.",
+      "explanation": "Pemanasan berfungsi menyiapkan otot dan sistem kardiovaskular secara bertahap. Melewatkannya meningkatkan risiko cedera karena otot 'dingin' tiba-tiba bekerja pada intensitas tinggi.",
+      "source": {
+        "student_book": {"pages": "50-55", "section": "Bab 2, Subbab A"},
+        "teacher_guide": {"pages": "0", "section": "Bab 2"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji konsekuensi kesalahan prosedur.",
+      "mode": "assessment",
+      "game_mechanic": "scenario_decision"
+    },
+    {
+      "id": "FINAL-C03-1",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C03-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Bacalah penggalan cerita: 'Ibu selalu tahu ketika aku bohong. Tatapannya tajam menembusiku, seolah membaca setiap pikiran yang kupendam.' Sudut pandang yang digunakan adalah...",
+      "options": [
+        "Orang pertama",
+        "Orang kedua",
+        "Orang ketiga serba tahu",
+        "Orang ketiga terbatas"
+      ],
+      "answer": "Orang pertama",
+      "explanation": "Penggunaan kata 'aku', 'kupendam' menunjukkan pencerita adalah tokoh itu sendiri (orang pertama). Pencerita menceritakan kisah dari sudut pandangnya sendiri.",
+      "source": {
+        "student_book": {"pages": "103", "section": "Bab 3, Subbab A"},
+        "teacher_guide": {"pages": "0", "section": "Bab 3"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji identifikasi sudut pandang orang pertama.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C03-2",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C03-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Tokoh dalam cerita selalu membantu teman-temannya bahkan saat dirinya sendiri dalam kesulitan. Ia tak pernah mengeluh dan terus tersenyum meski hatinya hancur. Perwatakan tokoh ini paling tepat disebut...",
+      "options": [
+        "Rela berkorban dan penyabar",
+        "Ambisius dan egois",
+        "Penakut namun jujur",
+        "Keras kepala dan sombong"
+      ],
+      "answer": "Rela berkorban dan penyabar",
+      "explanation": "Tindakan menolong orang lain di saat kesulitan dan tidak mengeluh mencerminkan watak rela berkorban dan penyabar.",
+      "source": {
+        "student_book": {"pages": "110", "section": "Bab 3, Subbab B"},
+        "teacher_guide": {"pages": "0", "section": "Bab 3"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji identifikasi perwatakan tokoh.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C03-3",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C03-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Pengenalan latar, tokoh, dan situasi awal dalam sebuah cerita terjadi pada tahap alur yang disebut...",
+      "options": [
+        "Eksposisi",
+        "Klimaks",
+        "Resolusi",
+        "Konflik"
+      ],
+      "answer": "Eksposisi",
+      "explanation": "Eksposisi adalah tahap awal dalam alur cerita di mana pengarang memperkenalkan latar, tokoh, dan situasi dasar sebelum konflik muncul.",
+      "source": {
+        "student_book": {"pages": "113", "section": "Bab 3, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab 3"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji pemahaman tahapan alur cerita.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C03-4",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C03-D",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Dari sebuah cerita tentang seorang anak yang berjuang mempertahankan taman sekolah dari penebangan, pesan moral yang paling tepat untuk diambil adalah...",
+      "options": [
+        "Perjuangan menjaga lingkungan hidup adalah tanggung jawab semua orang, tak terkecuali anak-anak.",
+        "Anak-anak tidak seharusnya ikut campur dalam urusan orang dewasa.",
+        "Taman sekolah tidak sepenting ruang kelas.",
+        "Hanya orang dewasa yang memiliki hak untuk memutuskan nasib lingkungan."
+      ],
+      "answer": "Perjuangan menjaga lingkungan hidup adalah tanggung jawab semua orang, tak terkecuali anak-anak.",
+      "explanation": "Cerita tersebut menggambarkan kontribusi nyata seorang anak dalam menjaga lingkungan, yang menunjukkan bahwa kepedulian lingkungan adalah nilai universal lintas usia.",
+      "source": {
+        "student_book": {"pages": "120", "section": "Bab 3, Subbab D"},
+        "teacher_guide": {"pages": "0", "section": "Bab 3"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji ekstraksi pesan moral dari cerita.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C03-5",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C03-F",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Penulisan kalimat langsung yang benar sesuai PUEBI adalah...",
+      "options": [
+        "\"Aku tidak menyerah,\" bisik Raka dengan mata berkaca-kaca.",
+        "\"Aku tidak menyerah\" bisik Raka dengan mata berkaca-kaca.",
+        "Raka berbisik, \"aku tidak menyerah\" dengan mata berkaca-kaca.",
+        "Raka berbisik: aku tidak menyerah dengan mata berkaca-kaca."
+      ],
+      "answer": "\"Aku tidak menyerah,\" bisik Raka dengan mata berkaca-kaca.",
+      "explanation": "Dalam PUEBI: kutipan langsung diapit tanda petik dua, diawali huruf kapital, dan tanda baca akhir (koma) diletakkan di dalam tanda petik sebelum penjelasan pengiring.",
+      "source": {
+        "student_book": {"pages": "124", "section": "Bab 3, Subbab F"},
+        "teacher_guide": {"pages": "0", "section": "Bab 3"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji kaidah penulisan kalimat langsung.",
+      "mode": "assessment",
+      "game_mechanic": "language_scan"
+    },
+    {
+      "id": "FINAL-C04-1",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C04-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah paragraf diawali dengan pernyataan umum bahwa 'AI telah mengubah dunia pendidikan secara fundamental', dilanjutkan oleh beberapa fakta pendukung dan contoh. Jenis paragraf ini disebut...",
+      "options": [
+        "Deduktif",
+        "Induktif",
+        "Ineratif",
+        "Campuran"
+      ],
+      "answer": "Deduktif",
+      "explanation": "Paragraf deduktif menempatkan gagasan utama di kalimat pertama, kemudian diikuti oleh fakta-fakta atau rincian pendukung.",
+      "source": {
+        "student_book": {"pages": "143", "section": "Bab 4, Subbab A"},
+        "teacher_guide": {"pages": "0", "section": "Bab 4"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji identifikasi jenis paragraf deduktif.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C04-2",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C04-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Bagian Interpretasi (Penutup) dalam teks eksplanasi berfungsi untuk...",
+      "options": [
+        "Memberikan penegasan ulang, simpulan, atau pandangan penulis terhadap fenomena yang telah dijelaskan.",
+        "Memperkenalkan topik atau fenomena secara umum kepada pembaca.",
+        "Menguraikan sebab-akibat dan proses terjadinya fenomena secara runtut.",
+        "Memberikan contoh empiris dari fakta-fakta yang disebutkan sebelumnya."
+      ],
+      "answer": "Memberikan penegasan ulang, simpulan, atau pandangan penulis terhadap fenomena yang telah dijelaskan.",
+      "explanation": "Interpretasi adalah bagian penutup teks eksplanasi di mana penulis menegaskan kembali, menyimpulkan, atau memberikan pandangannya terhadap fenomena yang telah dijelaskan sebelumnya.",
+      "source": {
+        "student_book": {"pages": "154", "section": "Bab 4, Subbab D"},
+        "teacher_guide": {"pages": "0", "section": "Bab 4"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji fungsi bagian Interpretasi dalam teks eksplanasi.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C04-3",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C04-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Kalimat mana yang menunjukkan penggunaan konjungsi kausalitas yang tepat?",
+      "options": [
+        "Karena tidak diperbarui secara rutin, sistem keamanan data itu pun diretas.",
+        "Sistem keamanan data itu diretas, dan tidak diperbarui secara rutin.",
+        "Sistem keamanan data itu diretas ketika tidak diperbarui secara rutin.",
+        "Sistem keamanan data itu diretas, lalu tidak diperbarui secara rutin."
+      ],
+      "answer": "Karena tidak diperbarui secara rutin, sistem keamanan data itu pun diretas.",
+      "explanation": "'Karena' adalah konjungsi kausalitas yang secara eksplisit menyatakan hubungan sebab-akibat: penyebab (tidak diperbarui) mengakibatkan akibat (diretas).",
+      "source": {
+        "student_book": {"pages": "155", "section": "Bab 4, Subbab D"},
+        "teacher_guide": {"pages": "0", "section": "Bab 4"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji penggunaan konjungsi kausalitas.",
+      "mode": "assessment",
+      "game_mechanic": "language_scan"
+    },
+    {
+      "id": "FINAL-C04-4",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C04-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Dalam teks eksplanasi ilmiah tentang AI, penulis menulis: 'Algoritma AI bekerja seperti seorang detektif yang mengumpulkan petunjuk satu per satu sebelum menarik kesimpulan.' Gaya bahasa yang digunakan disebut...",
+      "options": [
+        "Analogi",
+        "Hiperbola",
+        "Personifikasi",
+        "Eufemisme"
+      ],
+      "answer": "Analogi",
+      "explanation": "Penulis menyederhanakan cara kerja algoritma AI yang abstrak dengan membandingkannya dengan cara kerja detektif yang lebih mudah dipahami pembaca umum. Ini adalah analogi.",
+      "source": {
+        "student_book": {"pages": "157", "section": "Bab 4, Subbab E"},
+        "teacher_guide": {"pages": "0", "section": "Bab 4"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji identifikasi gaya bahasa analogi.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C04-5",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C04-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Dalam model refleksi 5R, setelah pembaca melaporkan isi teks (Reporting) dan menanggapinya (Responding), langkah selanjutnya adalah menghubungkannya dengan pengalaman pribadi. Tahap ini disebut...",
+      "options": [
+        "Relating",
+        "Reasoning",
+        "Reconstructing",
+        "Reviewing"
+      ],
+      "answer": "Relating",
+      "explanation": "Setelah Reporting dan Responding, tahap ketiga dalam 5R adalah Relating, di mana pembaca menghubungkan gagasan dalam teks dengan pengetahuan atau pengalaman pribadi mereka.",
+      "source": {
+        "student_book": {"pages": "150", "section": "Bab 4, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab 4"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji urutan model refleksi 5R.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C05-1",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C05-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Kearifan lokal (*local wisdom*) suatu daerah pada umumnya diwariskan secara...",
+      "options": [
+        "Turun-temurun melalui cerita, tradisi, dan kebiasaan yang diikuti masyarakat.",
+        "Melalui buku teks ilmiah yang diterbitkan oleh pemerintah.",
+        "Ditetapkan oleh undang-undang dan peraturan pemerintah daerah.",
+        "Dikodifikasi dalam sistem hukum nasional yang berlaku merata."
+      ],
+      "answer": "Turun-temurun melalui cerita, tradisi, dan kebiasaan yang diikuti masyarakat.",
+      "explanation": "Kearifan lokal bersifat organik dan hidup dalam praktik budaya sehari-hari masyarakat, diwariskan dari generasi ke generasi melalui cerita rakyat, tradisi, dan kebiasaan.",
+      "source": {
+        "student_book": {"pages": "183-187", "section": "Bab 5, Pengantar & Subbab A"},
+        "teacher_guide": {"pages": "0", "section": "Bab 5"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji pemahaman konsep kearifan lokal.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C05-2",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C05-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Pernyataan 'Rendang telah tersebar luas karena dibawa para perantau Minangkabau sejak abad ke-13' adalah contoh...",
+      "options": [
+        "Fakta sejarah",
+        "Opini penulis",
+        "Asumsi pembaca",
+        "Simpulan tersirat"
+      ],
+      "answer": "Fakta sejarah",
+      "explanation": "Pernyataan tersebut didasarkan pada data sejarah yang dapat diverifikasi (catatan sejarah perdagangan Minangkabau). Fakta berbeda dari opini karena dapat dibuktikan secara objektif.",
+      "source": {
+        "student_book": {"pages": "197-199", "section": "Bab 5, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab 5"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji kemampuan membedakan fakta dan opini dalam esai.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "FINAL-C05-3",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C05-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Frasa korelatif yang tepat untuk kalimat berikut adalah: 'Budaya lokal harus dilestarikan, ___ di kota ___ di desa.'",
+      "options": [
+        "baik ... maupun",
+        "baik ... ataupun",
+        "bukan ... melainkan",
+        "antara ... dengan"
+      ],
+      "answer": "baik ... maupun",
+      "explanation": "Pasangan baku dari 'baik' adalah 'maupun', bukan 'ataupun'. Ini adalah aturan baku frasa korelatif dalam bahasa Indonesia yang benar.",
+      "source": {
+        "student_book": {"pages": "203", "section": "Bab 5, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab 5"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji penggunaan frasa korelatif baku.",
+      "mode": "assessment",
+      "game_mechanic": "language_scan"
+    },
+    {
+      "id": "FINAL-C05-4",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C05-D",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Bacalah kalimat: 'Melestarikan kearifan lokal memerlukan kerjasama antar komunitas dan pemerintah daerah.' Kesalahan penulisan yang tepat adalah...",
+      "options": [
+        "'kerjasama' seharusnya 'kerja sama' dan 'antar komunitas' seharusnya 'antarkomunitas'.",
+        "'kerjasama' sudah benar, namun 'antar komunitas' seharusnya 'antara komunitas'.",
+        "Tidak ada kesalahan dalam kalimat tersebut.",
+        "'pemerintah daerah' seharusnya ditulis dengan huruf kapital."
+      ],
+      "answer": "'kerjasama' seharusnya 'kerja sama' dan 'antar komunitas' seharusnya 'antarkomunitas'.",
+      "explanation": "Menurut PUEBI: 'kerja sama' ditulis terpisah (bukan bentuk terikat), sementara 'antar-' sebagai bentuk terikat harus digabung: 'antarkomunitas'.",
+      "source": {
+        "student_book": {"pages": "212", "section": "Bab 5, Subbab D"},
+        "teacher_guide": {"pages": "0", "section": "Bab 5"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji ketelitian penulisan ejaan dan kata terikat.",
+      "mode": "assessment",
+      "game_mechanic": "language_scan"
+    },
+    {
+      "id": "FINAL-C05-5",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C05-E",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Setelah mempelajari esai tentang tradisi sasi dan kearifan masyarakat Jawa dalam membaca tanda alam, seorang siswa menulis di jurnalnya: 'Kedua tradisi ini berbeda dalam cara dan bentuknya, namun sama-sama menunjukkan bahwa nenek moyang kita adalah penjaga alam yang bijak.' Dalam model refleksi ALACT, tulisan jurnal tersebut termasuk ke dalam tahap...",
+      "options": [
+        "Kesadaran akan Aspek-aspek Penting (Awareness of Essential Aspect)",
+        "Tindakan/Aksi (Action)",
+        "Uji Coba (Trial)",
+        "Melihat Kembali (Looking Back)"
+      ],
+      "answer": "Kesadaran akan Aspek-aspek Penting (Awareness of Essential Aspect)",
+      "explanation": "Pada tahap Awareness, siswa mulai menyadari dan memaknai hal-hal penting dari pengalaman membacanya, seperti nilai luhur yang tersembunyi di balik dua tradisi yang berbeda itu.",
+      "source": {
+        "student_book": {"pages": "214-215", "section": "Bab 5, Subbab E"},
+        "teacher_guide": {"pages": "0", "section": "Bab 5"}
+      },
+      "provenance": "Soal original Ujian Akhir — menguji identifikasi tahap ALACT berdasarkan contoh nyata.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan"
+    }
+  ]
+}

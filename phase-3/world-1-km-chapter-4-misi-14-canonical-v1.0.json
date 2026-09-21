@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "Misi 14: Ciri Kebahasaan dan Gaya Bahasa Eksplanasi",
+  "purpose": "Approved additive World 1 content batch for controlled expansion.",
+  "chapter_id": "BI12-C04",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM04-C1",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Bacalah kalimat berikut: 'Oleh karena itu, masyarakat menjadi lebih bergantung pada teknologi kecerdasan buatan dalam bekerja dan berinteraksi.'\nKalimat di atas menunjukkan salah satu ciri kebahasaan teks eksplanasi kompleks, yaitu penggunaan...",
+      "options": [
+        "Konjungsi kausalitas",
+        "Kalimat pasif",
+        "Perbandingan atau analogi",
+        "Pernyataan retoris"
+      ],
+      "answer": "Konjungsi kausalitas",
+      "explanation": "Frasa 'Oleh karena itu' adalah konjungsi kausalitas (sebab-akibat) yang menghubungkan dampak atau akibat logis dari suatu rentetan penjelasan sebelumnya, yang merupakan ciri khas teks eksplanasi.",
+      "source": {
+        "student_book": {"pages": "155", "section": "Bab 4, Subbab D"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM04-C2",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Untuk menjelaskan cara kerja AI yang abstrak kepada pembaca umum, penulis sering kali menggunakan gaya bahasa berupa...",
+      "options": [
+        "Perbandingan atau analogi",
+        "Sindiran tajam (Sarkasme)",
+        "Gaya bahasa hiperbola (melebih-lebihkan)",
+        "Gaya bahasa santai dan prokem"
+      ],
+      "answer": "Perbandingan atau analogi",
+      "explanation": "Dalam teks eksplanasi yang membahas hal teknis, pengarang sering menyederhanakan konsep rumit menggunakan analogi, misalnya 'AI bekerja seperti otak manusia', agar lebih mudah dipahami oleh pembaca.",
+      "source": {
+        "student_book": {"pages": "157", "section": "Bab 4, Subbab E"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM04-C3",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Dalam teks eksplanasi ilmiah seperti kecerdasan buatan, mengapa penulis harus menggunakan gaya bahasa yang 'Objektif dan Informatif' alih-alih emosional?",
+      "options": [
+        "Agar penulis dapat menyajikan data, fakta, dan proses secara langsung dan akurat tanpa dipengaruhi opini pribadi.",
+        "Agar tulisan menjadi lebih panjang dan terlihat seperti karya tulis mahasiswa.",
+        "Agar pembaca merasa takut dan mewaspadai perkembangan teknologi AI.",
+        "Karena aturan dalam sastra melarang adanya unsur emosi dalam menulis kalimat."
+      ],
+      "answer": "Agar penulis dapat menyajikan data, fakta, dan proses secara langsung dan akurat tanpa dipengaruhi opini pribadi.",
+      "explanation": "Tujuan utama teks eksplanasi kompleks adalah memberi pemahaman (informatif) tentang bagaimana/mengapa fenomena terjadi. Oleh karena itu, penulis harus menjaga netralitas dan objektivitas agar informasi yang disajikan akurat dan rasional, tidak condong pada bias pribadi.",
+      "source": {
+        "student_book": {"pages": "157", "section": "Bab 4, Subbab E"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    }
+  ]
+}

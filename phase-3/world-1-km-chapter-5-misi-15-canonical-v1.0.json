@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "Misi 15: Eksplorasi Kearifan Lokal",
+  "purpose": "Approved additive World 1 content batch for controlled expansion.",
+  "chapter_id": "BI12-C05",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM05-A1",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Tradisi 'sasi' pada masyarakat Raja Ampat, Papua, merupakan kearifan lokal yang menetapkan zona larangan tangkap (no take zone) selama periode tertentu. Berdasarkan informasi dalam esai, tujuan utama pelarangan ini adalah...",
+      "options": [
+        "Memberikan kesempatan bagi biota laut untuk berkembang biak agar tidak punah.",
+        "Meningkatkan harga jual hasil laut di pasar internasional.",
+        "Menghindari masuknya wisatawan asing ke wilayah tersebut.",
+        "Membuktikan bahwa masyarakat memiliki kekuatan hukum adat yang mengikat."
+      ],
+      "answer": "Memberikan kesempatan bagi biota laut untuk berkembang biak agar tidak punah.",
+      "explanation": "Tujuan sasi secara nyata adalah tindakan konservasi tradisional untuk menjaga kelestarian ekosistem sehingga hasil alam dapat dimanfaatkan secara berkelanjutan.",
+      "source": {
+        "student_book": {"pages": "189", "section": "Bab 5, Subbab A"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM05-A2",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Esai merupakan bentuk tulisan yang mengungkapkan dan membahas persoalan yang menarik perhatian penulisnya secara ringkas. Salah satu sifat dari teks esai yang membedakannya dari artikel ilmiah murni adalah...",
+      "options": [
+        "Esai memuat gagasan, pandangan subjektif, dan apresiasi penulis terhadap topik yang dibahas.",
+        "Esai hanya boleh memuat tabel, grafik statistik, dan rumus perhitungan matematika.",
+        "Esai tidak memerlukan fakta, melainkan murni fiksi atau khayalan penulis.",
+        "Esai harus selalu menceritakan kronologi sejarah secara urut tanpa menyisipkan pendapat pribadi."
+      ],
+      "answer": "Esai memuat gagasan, pandangan subjektif, dan apresiasi penulis terhadap topik yang dibahas.",
+      "explanation": "Esai adalah karya yang memadukan fakta objektif dengan pandangan, opini, atau gagasan subjektif penulisnya dalam menanggapi sebuah isu atau topik secara menarik.",
+      "source": {
+        "student_book": {"pages": "183", "section": "Bab 5, Pengantar"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM05-B1",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Masyarakat adat Tau Taa Vana di Tojo Una Una meyakini bahwa 'hutan dapat menjadi sumber penyakit apabila tidak dilestarikan, sekaligus sumber pengobatan jika dieksplorasi dengan bijak.' Makna tersirat dari pandangan kearifan lokal ini adalah...",
+      "options": [
+        "Hubungan timbal balik yang erat di mana manusia harus menjaga alam agar alam melindungi dan menghidupi manusia.",
+        "Masyarakat dilarang keras memasuki hutan untuk alasan apa pun karena berbahaya.",
+        "Pemerintah harus mengambil alih pengelolaan hutan sepenuhnya dari masyarakat adat.",
+        "Masyarakat hanya diperbolehkan mengambil tanaman obat dan dilarang memakan hasil buruan."
+      ],
+      "answer": "Hubungan timbal balik yang erat di mana manusia harus menjaga alam agar alam melindungi dan menghidupi manusia.",
+      "explanation": "Keyakinan tersebut mengajarkan sikap hormat dan kehati-hatian manusia dalam berinteraksi dengan alam, menciptakan keseimbangan di mana alam dirawat sehingga dapat terus menyediakan kebutuhan hidup manusia.",
+      "source": {
+        "student_book": {"pages": "207", "section": "Bab 5, Subbab B"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World 1 — KM Chapter 1 Complete Progression v2</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#18202a;background:#e9edf2}body{margin:0}.wrap{max-width:1050px;margin:auto;padding:16px}.card{background:#fff;border-radius:18px;padding:20px;margin:12px 0;box-shadow:0 8px 28px #0001}.eyebrow{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;opacity:.65}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}.stat{padding:14px;border-radius:12px;background:#f1f4f7;text-align:center}.stat strong{font-size:1.4rem;display:block;margin-bottom:4px}.btn{border:0;border-radius:12px;padding:11px 15px;background:#27364a;color:#fff;cursor:pointer;font:inherit;width:100%}.btn.secondary{background:#e8edf2;color:#18202a}.btn:disabled{opacity:0.5;cursor:not-allowed}.mission-list{display:grid;gap:12px}.mission-item{border:1px solid #d7dce2;border-radius:12px;padding:16px;display:grid;grid-template-columns:1fr auto;align-items:center;background:#fff}.mission-item.locked{background:#f8f9fa;opacity:0.6}.mission-item.completed{border-color:#72b887;background:#e9f7ee}.iframe-wrap{overflow:hidden;border-radius:16px;border:1px solid #d7dce2;background:#fff;margin-top:20px;display:none}.iframe-wrap iframe{display:block;width:100%;height:800px;border:0}.header-flex{display:flex;justify-content:space-between;align-items:center}.danger-btn{background:#dda1a1;color:#601212;border:none;padding:6px 12px;border-radius:8px;cursor:pointer;font-size:0.8rem}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="card">
+<div class="header-flex">
+  <div>
+    <div class="eyebrow">World 1 · Kurikulum Merdeka · Chapter 1</div>
+    <h1>🗺️ Mission Hub: Chapter 1 Complete</h1>
+  </div>
+  <button id="resetBtn" class="danger-btn">Reset Progress</button>
+</div>
+<p>Selesaikan misi secara berurutan. XP bersifat kumulatif lintas misi.</p>
+<div class="grid">
+  <div class="stat"><strong id="totalXp">0</strong>Total XP</div>
+  <div class="stat"><strong id="missionsCompleted">0/4</strong>Misi Selesai</div>
+  <div class="stat"><strong id="statusBadge">Active</strong>Status</div>
+</div>
+
+<div class="mission-list" id="missionList">
+  <!-- Missions will be rendered here via JS -->
+</div>
+
+<div id="rendererWrap" class="iframe-wrap">
+  <iframe id="rendererFrame" title="Mission Renderer"></iframe>
+</div>
+</section>
+</main>
+<script>
+const MISSIONS = [
+  {
+    id: 'BI12-W01-M01',
+    title: 'Misi 1: Mencari Informasi (A-C)',
+    dataset: '../../phase-3/world-1-km-chapter-1-original-content-batch-01-canonical-v1.1.json'
+  },
+  {
+    id: 'BI12-W01-M02',
+    title: 'Misi 2: Kesalahan Kaidah Surat (E)',
+    dataset: '../../phase-3/world-1-km-chapter-1-original-content-batch-02-e4-canonical-v1.1.json'
+  },
+  {
+    id: 'BI12-W01-M03',
+    title: 'Misi 3: Bahasa Surat Resmi (F-G)',
+    dataset: '../../phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json'
+  },
+  {
+    id: 'BI12-W01-M04',
+    title: 'Misi 4: Publikasi Poster (H)',
+    dataset: '../../phase-3/world-1-km-chapter-1-h-production-content-candidate-v1.json'
+  }
+];
+
+const STORAGE_KEY = 'bi12-w01-integrated-progression-v2';
+let state = JSON.parse(localStorage.getItem(STORAGE_KEY)) || { xp: 0, completed: {} };
+let currentActiveMission = null;
+
+function saveState() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  renderUI();
+}
+
+function renderUI() {
+  document.getElementById('totalXp').textContent = state.xp;
+  const completedCount = Object.keys(state.completed).length;
+  document.getElementById('missionsCompleted').textContent = `${completedCount}/${MISSIONS.length}`;
+  document.getElementById('statusBadge').textContent = completedCount === MISSIONS.length ? 'Mastered!' : 'In Progress';
+  
+  const list = document.getElementById('missionList');
+  list.innerHTML = '';
+  
+  let isLocked = false;
+  
+  MISSIONS.forEach((m, index) => {
+    const isCompleted = !!state.completed[m.id];
+    
+    // First mission is always unlocked. Subsequent missions unlock if previous is completed.
+    const isAvailable = index === 0 ? true : !!state.completed[MISSIONS[index-1].id];
+    
+    const div = document.createElement('div');
+    div.className = `mission-item ${isCompleted ? 'completed' : ''} ${!isAvailable ? 'locked' : ''}`;
+    
+    let actionBtn = '';
+    if (isCompleted) {
+      actionBtn = `<button class="btn secondary" onclick="playMission('${m.id}')">Replay (No XP)</button>`;
+    } else if (isAvailable) {
+      actionBtn = `<button class="btn" onclick="playMission('${m.id}')">Start Mission</button>`;
+    } else {
+      actionBtn = `<button class="btn secondary" disabled>Locked</button>`;
+    }
+    
+    div.innerHTML = `
+      <div>
+        <strong>${m.title}</strong>
+        <p style="margin:4px 0 0;font-size:0.85rem;color:#555;">${isCompleted ? '✅ Selesai' : (isAvailable ? '▶️ Tersedia' : '🔒 Terkunci')}</p>
+      </div>
+      <div>${actionBtn}</div>
+    `;
+    list.appendChild(div);
+  });
+}
+
+function playMission(id) {
+  currentActiveMission = id;
+  const m = MISSIONS.find(x => x.id === id);
+  const wrap = document.getElementById('rendererWrap');
+  const frame = document.getElementById('rendererFrame');
+  
+  wrap.style.display = 'block';
+  frame.src = `km-batch-01-runtime.html?dataset=${encodeURIComponent(m.dataset)}&mission=${m.id}&qa=1`;
+  wrap.scrollIntoView({ behavior: 'smooth' });
+}
+
+window.addEventListener('message', event => {
+  const d = event.data || {};
+  if (d.type !== 'MISSION_RENDERER_RESULT' || !currentActiveMission || d.mission_id !== currentActiveMission) return;
+  
+  const accuracy = Number(d.accuracy) || 0;
+  const earnedXp = Number(d.xp) || 0;
+  
+  // Rule: must be 100% correct to pass (stringent rule from F-G logs applied generally here for progression)
+  if (accuracy >= 100) {
+    if (!state.completed[currentActiveMission]) {
+      state.completed[currentActiveMission] = true;
+      state.xp += earnedXp;
+      saveState();
+      alert('Selamat! Misi berhasil diselesaikan. Misi berikutnya telah terbuka.');
+    } else {
+      alert('Misi selesai (Replay). Tidak ada tambahan XP.');
+    }
+    document.getElementById('rendererWrap').style.display = 'none';
+    document.getElementById('rendererFrame').src = '';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    alert('Akurasi harus 100% untuk membuka misi berikutnya. Silakan coba lagi.');
+  }
+});
+
+document.getElementById('resetBtn').onclick = () => {
+  if (confirm('Yakin ingin mereset seluruh progress? XP dan status kelulusan akan dihapus.')) {
+    state = { xp: 0, completed: {} };
+    saveState();
+    document.getElementById('rendererWrap').style.display = 'none';
+    document.getElementById('rendererFrame').src = '';
+  }
+};
+
+renderUI();
+</script>
+</body>
+</html>

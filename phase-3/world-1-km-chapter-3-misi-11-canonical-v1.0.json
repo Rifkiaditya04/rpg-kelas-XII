@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "Misi 11: Kaidah Bahasa dan Tanda Baca Sastra",
+  "purpose": "Approved additive World 1 content batch for controlled expansion.",
+  "chapter_id": "BI12-C03",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM03-F1",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-F",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Penulisan kalimat langsung yang paling tepat sesuai dengan kaidah kebahasaan adalah...",
+      "options": [
+        "Guru BK berkata, \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi.\"",
+        "Guru BK berkata: \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\".",
+        "Guru BK berkata, \"jika kamu diam, kamu ikut membiarkan kekerasan terjadi\".",
+        "\"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\", kata Guru BK."
+      ],
+      "answer": "Guru BK berkata, \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi.\"",
+      "explanation": "Dalam penulisan kalimat langsung, kutipan diapit tanda petik dua (\"...\"), diawali huruf kapital, dan tanda baca akhir (seperti titik) diletakkan di dalam tanda petik.",
+      "source": {
+        "student_book": {"pages": "124", "section": "Bab 3, Subbab F"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM03-F2",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-F",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Bacalah kalimat berikut: 'Mamak menasihati Maul agar ia tetap kuat dan menyadari bahwa pukulan yang tidak mematikannya justru akan menguatkannya.'\nKalimat di atas merupakan contoh dari...",
+      "options": [
+        "Kalimat tidak langsung",
+        "Kalimat langsung",
+        "Kalimat majemuk setara",
+        "Kalimat retoris"
+      ],
+      "answer": "Kalimat tidak langsung",
+      "explanation": "Kalimat tersebut adalah kalimat tidak langsung karena mengutip ucapan Mamak yang disampaikan kembali menggunakan bahasa pencerita tanpa menggunakan tanda petik.",
+      "source": {
+        "student_book": {"pages": "124", "section": "Bab 3, Subbab F"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM03-F3",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-F",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Jika seorang penulis memiliki poin kerangka cerita (Pemicu Konflik) berbunyi: 'Dita direkam diam-diam saat menyanyi dan videonya menjadi bahan ejekan teman-teman sekolah.'\nLangkah paling tepat untuk mengembangkan poin tersebut menjadi adegan novel yang hidup adalah dengan...",
+      "options": [
+        "Menambahkan deskripsi latar, dialog tokoh, dan ekspresi emosi tokoh agar pembaca dapat merasakan suasana kejadian tersebut.",
+        "Mengulangi kalimat poin tersebut berkali-kali di setiap paragraf agar pembaca tidak lupa inti masalahnya.",
+        "Langsung melompat ke bagian klimaks untuk menghemat jumlah halaman buku.",
+        "Mengganti tokoh Dita dengan tokoh lain agar konflik terasa lebih segar."
+      ],
+      "answer": "Menambahkan deskripsi latar, dialog tokoh, dan ekspresi emosi tokoh agar pembaca dapat merasakan suasana kejadian tersebut.",
+      "explanation": "Mengembangkan kerangka cerita (outlining) menjadi draf novel mengharuskan penulis menambahkan deskripsi rinci, gerak-gerik, emosi, dan dialog untuk membangun adegan yang nyata (show, don't tell).",
+      "source": {
+        "student_book": {"pages": "123", "section": "Bab 3, Subbab F"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    }
+  ]
+}

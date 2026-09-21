@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "Misi 16: Fakta, Opini, dan Kebahasaan Esai",
+  "purpose": "Approved additive World 1 content batch for controlled expansion.",
+  "chapter_id": "BI12-C05",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM05-C1",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Bacalah pernyataan berikut: 'Setiap masyarakat memiliki budaya dan setiap budaya pasti ada masyarakat yang memilikinya. Setiap kelompok masyarakat memiliki budaya yang bersifat khas.' Dalam penulisan esai, pernyataan tersebut tergolong sebagai...",
+      "options": [
+        "Asumsi",
+        "Fakta absolut",
+        "Data empiris",
+        "Kritik sosial"
+      ],
+      "answer": "Asumsi",
+      "explanation": "Pernyataan tersebut berupa anggapan dasar atau teori sementara (asumsi) penulis mengenai hubungan antara masyarakat dan budaya yang menjadi landasan argumennya.",
+      "source": {
+        "student_book": {"pages": "197", "section": "Bab 5, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM05-C2",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Dalam menulis esai, penggunaan konjungsi korelatif harus tepat (idiomatis). Pasangan kata penghubung (korelatif) manakah di bawah ini yang digunakan dengan tepat sesuai kaidah bahasa Indonesia?",
+      "options": [
+        "Baik di kota maupun di desa.",
+        "Bukan sekadar tren, tetapi sudah menjadi budaya.",
+        "Antara budaya lokal dengan budaya asing.",
+        "Baik di pedalaman ataupun di pesisir."
+      ],
+      "answer": "Baik di kota maupun di desa.",
+      "explanation": "Pasangan baku untuk 'baik' adalah 'maupun'. Penggunaan 'bukan... tetapi' keliru (seharusnya 'bukan... melainkan'), 'antara... dengan' keliru (seharusnya 'antara... dan'), dan 'baik... ataupun' keliru (seharusnya 'maupun').",
+      "source": {
+        "student_book": {"pages": "203", "section": "Bab 5, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM05-C3",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "question_type": "mcq",
+      "question": "Masyarakat kini sering menonton acara dialog televisi yang membahas permasalahan budaya. Apa padanan kata baku bahasa Indonesia yang tepat untuk istilah asing 'talk show'?",
+      "options": [
+        "Gelar wicara",
+        "Siniar",
+        "Wawancara eksklusif",
+        "Diskusi panel"
+      ],
+      "answer": "Gelar wicara",
+      "explanation": "Dalam Kamus Besar Bahasa Indonesia (KBBI), padanan istilah asing 'talk show' adalah 'gelar wicara'. (Sementara 'siniar' adalah padanan untuk 'podcast').",
+      "source": {
+        "student_book": {"pages": "201", "section": "Bab 5, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    }
+  ]
+}

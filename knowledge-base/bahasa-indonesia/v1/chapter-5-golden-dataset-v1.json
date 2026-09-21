@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.1",
+  "dataset": "Chapter 5 Golden Dataset v1",
+  "status": "approved_seed",
+  "purpose": "Seed set for Chapter 5: Mengungkapkan Kekaguman tentang Kearifan Lokal (Teks Esai)",
+  "items": [
+    {
+      "id": "BI12-W05-KM-C05-M01",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-T0A",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Saat menyimak esai tentang 'Tradisi Sasi di Maluku', narator memaparkan dengan nada takjub bagaimana larangan memanen sumber daya alam pada periode tertentu berhasil menyelamatkan ekosistem lokal. Apa inti pesan dari pembacaan esai tersebut?",
+      "options": [
+        "Kearifan lokal memiliki peran ekologis yang sangat vital dan patut dikagumi oleh masyarakat modern",
+        "Masyarakat Maluku sangat tertinggal dalam eksploitasi alam",
+        "Aturan adat adalah hal yang sangat merepotkan warga",
+        "Pemerintah harus mengambil alih pengelolaan laut"
+      ],
+      "answer": "Kearifan lokal memiliki peran ekologis yang sangat vital dan patut dikagumi oleh masyarakat modern",
+      "explanation": "Esai tersebut ditulis dengan tujuan apresiasi (kekaguman). Fokusnya adalah pada kebijaksanaan adat yang selaras dengan konservasi lingkungan.",
+      "source": { "student_book": { "pages": "187-190", "section": "A. Menyimak Pembacaan Teks Esai tentang Kearifan Lokal" } },
+      "provenance": "Materi Bab 5, Subbab A",
+      "game_mechanic": "audio_response",
+      "mode": "training",
+      "tags": ["esai", "kearifan-lokal", "menyimak"]
+    },
+    {
+      "id": "BI12-W05-KM-C05-M02",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-T0B",
+      "skill": "analyze",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "question_type": "mcq",
+      "question": "Setelah mendengarkan esai tentang Tarian Caci, Anda diminta mengungkapkan kembali filosofi tarian tersebut secara ringkas. Pilihan mana yang paling mewakili rekonstruksi informasi yang benar tanpa mengubah pesan aslinya?",
+      "options": [
+        "Tarian Caci bukan sekadar adu kekuatan fsik, melainkan simbol kejantanan, sportivitas, dan pengampunan masyarakat Manggarai",
+        "Tarian Caci adalah tarian berdarah yang bertujuan menyakiti lawan",
+        "Tarian Caci hanya dilakukan untuk menarik perhatian wisatawan asing",
+        "Tarian Caci adalah tarian modern yang diimpor dari luar negeri"
+      ],
+      "answer": "Tarian Caci bukan sekadar adu kekuatan fsik, melainkan simbol kejantanan, sportivitas, dan pengampunan masyarakat Manggarai",
+      "explanation": "Mengungkapkan kembali berarti menyaring detail sambil mempertahankan esensi nilai kearifan lokal (filosofi pengampunan dan sportivitas).",
+      "source": { "student_book": { "pages": "191-195", "section": "B. Mengungkapkan Kembali Informasi yang Diperoleh dari Teks Esai yang Disimak" } },
+      "provenance": "Materi Bab 5, Subbab B",
+      "game_mechanic": "document_inspection",
+      "mode": "training",
+      "tags": ["esai", "rekonstruksi-informasi"]
+    },
+    {
+      "id": "BI12-W05-KM-C05-M03",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-T0C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question_type": "multi_select",
+      "question": "Bacalah kutipan esai berikut: 'Rendang dinobatkan sebagai salah satu makanan terenak di dunia oleh survei internasional pada tahun 2011 (1). Menurutku, bumbu rempahnya sangat mencerminkan kompleksitas budaya Minangkabau (2).' Tentukan mana yang fakta dan opini/asumsi!",
+      "options": [
+        "Kalimat 1 adalah fakta",
+        "Kalimat 1 adalah opini",
+        "Kalimat 2 adalah asumsi penulis (opini)",
+        "Kalimat 2 adalah fakta sejarah"
+      ],
+      "answer": [
+        "Kalimat 1 adalah fakta",
+        "Kalimat 2 adalah asumsi penulis (opini)"
+      ],
+      "explanation": "Kalimat (1) adalah fakta karena menyebutkan survei tahun 2011 yang dapat dibuktikan. Kalimat (2) adalah opini penulis (ditandai dengan 'Menurutku' dan interpretasi pribadi atas budaya).",
+      "source": { "student_book": { "pages": "196-203", "section": "C. Mengidentifikasi Fakta, Opini, dan Asumsi Penulis dalam Teks Esai" } },
+      "provenance": "Materi Bab 5, Subbab C",
+      "game_mechanic": "fact_check",
+      "mode": "exam",
+      "tags": ["esai", "fakta-opini"]
+    },
+    {
+      "id": "BI12-W05-KM-C05-M04",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-T0D",
+      "skill": "compare",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Terdapat dua esai tentang kesenian Kuda Lumping. Esai A menyoroti nilai mistis dan spiritual tarian. Esai B menyoroti potensi ekonominya bagi seniman lokal. Bagaimana perbandingan gagasan utama dari kedua esai tersebut?",
+      "options": [
+        "Esai A berfokus pada pelestarian tradisi transendental, sedangkan Esai B berfokus pada pragmatisme dan komodifikasi seni",
+        "Esai A dan Esai B membicarakan hal yang persis sama",
+        "Esai A menolak Kuda Lumping, Esai B menerimanya",
+        "Esai B lebih unggul karena membicarakan uang"
+      ],
+      "answer": "Esai A berfokus pada pelestarian tradisi transendental, sedangkan Esai B berfokus pada pragmatisme dan komodifikasi seni",
+      "explanation": "Satu objek budaya dapat dilihat dari kacamata yang berbeda oleh penulis esai (perspektif subjektif). Mengidentifikasi perbedaan sudut pandang ini adalah inti perbandingan esai.",
+      "source": { "student_book": { "pages": "204-213", "section": "D. Membandingkan Gagasan, Pandangan, dan Pesan dari Teks Esai" } },
+      "provenance": "Materi Bab 5, Subbab D",
+      "game_mechanic": "document_inspection",
+      "mode": "exam",
+      "tags": ["esai", "perbandingan", "perspektif"]
+    },
+    {
+      "id": "BI12-W05-KM-C05-M05",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-T0E",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Seorang penulis esai mengritik anak muda yang meninggalkan tradisi lokal karena dianggap kuno, sambil menyatakan: 'Identitas sejati kita hanya ada di masa lalu.' Sebagai pembaca kritis, refleksi yang paling tepat terhadap pandangan tersebut adalah...",
+      "options": [
+        "Pandangan tersebut terlalu romantis dan kaku; identitas budaya sebenarnya bersifat dinamis dan bisa beradaptasi dengan modernitas",
+        "Setuju sepenuhnya, anak muda harus kembali hidup seperti di abad ke-18",
+        "Penulis pastilah seorang sejarawan yang membenci internet",
+        "Kritik tersebut tidak valid karena semua tradisi itu buruk"
+      ],
+      "answer": "Pandangan tersebut terlalu romantis dan kaku; identitas budaya sebenarnya bersifat dinamis dan bisa beradaptasi dengan modernitas",
+      "explanation": "Merefleksi esai berarti kita boleh tidak setuju dengan asumsi penulis. Budaya bukanlah artefak mati, melainkan terus berkembang; ini merupakan refleksi yang moderat.",
+      "source": { "student_book": { "pages": "214-217", "section": "E. Merefleksi Gagasan dan Pandangan dari Teks Esai yang Dibaca" } },
+      "provenance": "Materi Bab 5, Subbab E",
+      "game_mechanic": "dialogue_analysis",
+      "mode": "training",
+      "tags": ["esai", "refleksi", "kritis"]
+    },
+    {
+      "id": "BI12-W05-KM-C05-M06",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-T0F",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Saat mempresentasikan esai tentang kekaguman terhadap arsitektur Rumah Gadang, elemen retoris apa yang paling ampuh digunakan pada bagian pembuka untuk menarik emosi pendengar?",
+      "options": [
+        "Menceritakan memori masa kecil yang personal saat berlindung di dalam Rumah Gadang di tengah badai",
+        "Membaca spesifikasi teknis ukuran kayu Rumah Gadang",
+        "Meminta penonton untuk segera pulang ke Padang",
+        "Menyebutkan tahun pembangunan rumah tanpa konteks"
+      ],
+      "answer": "Menceritakan memori masa kecil yang personal saat berlindung di dalam Rumah Gadang di tengah badai",
+      "explanation": "Esai sangat kental dengan nada subjektif dan personal. Membuka presentasi dengan anekdot/memori emosional lebih kuat dibanding data statistik kering.",
+      "source": { "student_book": { "pages": "218-220", "section": "F. Mempresentasikan Gagasan, Pandangan, dan Pesan Teks Esai" } },
+      "provenance": "Materi Bab 5, Subbab F",
+      "game_mechanic": "speech_analysis",
+      "mode": "exam",
+      "tags": ["esai", "presentasi", "retorika"]
+    },
+    {
+      "id": "BI12-W05-KM-C05-M07",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-T0G",
+      "skill": "create",
+      "cognitive_level": "create",
+      "difficulty": "medium",
+      "question_type": "ordering",
+      "question": "Urutkan tahapan yang disarankan dalam menulis esai reflektif tentang kearifan lokal: (A) Melakukan riset atau observasi langsung tentang tradisi tersebut, (B) Menentukan tesis atau sudut pandang pribadi yang ingin ditekankan, (C) Memilih topik kearifan lokal yang menarik perhatianmu, (D) Menyusun kerangka argumen dan mulai menulis draf.",
+      "options": [
+        "C → A → B → D",
+        "A → B → C → D",
+        "C → B → A → D",
+        "D → C → B → A"
+      ],
+      "answer": "C → A → B → D",
+      "explanation": "Proses menulis dimulai dari pemilihan topik, mencari tahu lebih dalam (observasi), menemukan sudut pandang pribadi/tesis (karakteristik utama esai), baru menyusun argumen tulisan.",
+      "source": { "student_book": { "pages": "221-239", "section": "G. Menulis Teks Esai" } },
+      "provenance": "Materi Bab 5, Subbab G",
+      "game_mechanic": "procedural_ordering",
+      "mode": "training",
+      "tags": ["esai", "menulis", "tahapan"]
+    }
+  ]
+}

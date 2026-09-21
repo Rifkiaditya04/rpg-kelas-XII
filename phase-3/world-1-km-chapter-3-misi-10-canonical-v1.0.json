@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "Misi 10: Analisis Alur dan Pesan Moral",
+  "purpose": "Approved additive World 1 content batch for controlled expansion.",
+  "chapter_id": "BI12-C03",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM03-C1",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Pada cerita Laskar Pelangi, adegan di mana SD Muhammadiyah Gantong nyaris ditutup karena jumlah siswa kurang dari 10 orang, namun kemudian diselamatkan oleh kedatangan Harun, merupakan bagian alur tahap...",
+      "options": [
+        "Konflik (Conflict)",
+        "Eksposisi (Exposition)",
+        "Klimaks (Climax)",
+        "Resolusi (Resolution)"
+      ],
+      "answer": "Konflik (Conflict)",
+      "explanation": "Masalah utama mulai muncul (inciting incident/konflik awal) ketika sekolah terancam ditutup karena kekurangan siswa, yang memicu rangkaian peristiwa selanjutnya.",
+      "source": {
+        "student_book": {"pages": "113", "section": "Bab 3, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM03-C2",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Bagian akhir cerita di mana ketegangan telah menurun dan tokoh-tokoh menemukan penyelesaian dari masalah mereka disebut dengan tahap...",
+      "options": [
+        "Resolusi (Resolution)",
+        "Klimaks (Climax)",
+        "Eksposisi (Exposition)",
+        "Rising Action"
+      ],
+      "answer": "Resolusi (Resolution)",
+      "explanation": "Resolusi adalah tahap penyelesaian masalah di akhir cerita di mana keadaan kembali stabil atau mencapai titik keseimbangan baru.",
+      "source": {
+        "student_book": {"pages": "113", "section": "Bab 3, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM03-D1",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-D",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Pesan moral (amanat) yang paling menonjol dari kemenangan SD Muhammadiyah dalam lomba karnaval meskipun mereka menggunakan peralatan sederhana dan daun-daunan adalah...",
+      "options": [
+        "Kreativitas dan kerja keras dapat mengalahkan keterbatasan materi.",
+        "Kekayaan adalah kunci utama memenangkan sebuah perlombaan.",
+        "Penampilan luar tidak penting sama sekali dalam seni.",
+        "Sekolah negeri selalu kalah dari sekolah swasta kecil."
+      ],
+      "answer": "Kreativitas dan kerja keras dapat mengalahkan keterbatasan materi.",
+      "explanation": "Ide Mahar menggunakan daun-daun dan koreografi yang unik membuktikan bahwa meskipun miskin materi, kreativitas dan determinasi tinggi membawa mereka pada kemenangan.",
+      "source": {
+        "student_book": {"pages": "120", "section": "Bab 3, Subbab D"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    }
+  ]
+}

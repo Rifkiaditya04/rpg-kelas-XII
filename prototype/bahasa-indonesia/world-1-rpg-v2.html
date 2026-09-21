@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Bahasa Indonesia Kelas XII - Visual Novel</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap');
+    
+    :root {
+      --bg-cream: #f8f6f0; --text-dark: #0f172a; --primary: #2563eb; 
+      --primary-hover: #1e40af; --primary-glow: rgba(37,99,235,0.4);
+      --gold: #f59e0b; --gold-light: #fbbf24; --success: #10b981;
+      --shadow-sm: 0 4px 6px rgba(0,0,0,0.1); --shadow-lg: 0 10px 25px rgba(0,0,0,0.2);
+      --glass-bg: rgba(255,255,255,0.12); --glass-border: rgba(255,255,255,0.25);
+    }
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Outfit', sans-serif; }
+    body, html { height: 100vh; overflow: hidden; background: #000; }
+    
+    /* BACKGROUND WITH CROSS-FADE */
+    #vn-background {
+      position: absolute; inset: 0; 
+      background-size: cover; background-position: center;
+      transition: opacity 0.6s ease-in-out;
+      z-index: 1;
+    }
+    #vn-background::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 40%, transparent 100%);
+      z-index: 2; pointer-events: none;
+    }
+    
+    /* HUD — GLASSMORPHISM */
+    .hud { position: absolute; left: 24px; top: 24px; z-index: 50; display: flex; gap: 12px; }
+    .hud-card {
+      background: rgba(15, 23, 42, 0.55); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border); border-radius: 16px;
+      padding: 10px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.1);
+      color: #fff; font-weight: 700; font-size: 13px; letter-spacing: 0.5px;
+      transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease;
+    }
+    .hud-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+    .hud-card span { font-size: 22px; color: var(--gold-light); margin-bottom: 2px; }
+    .hud-card .stat-label { color: rgba(255,255,255,0.7); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+    @keyframes hudPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.15)} }
+    .hud-card.pulse span { animation: hudPulse 0.5s cubic-bezier(0.34,1.56,0.64,1); }
+
+    .hud-right { position: absolute; right: 24px; top: 24px; z-index: 50; display: flex; gap: 8px; }
+    .btn-reset {
+      background: rgba(15,23,42,0.55); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border); padding: 8px 16px; border-radius: 10px;
+      cursor: pointer; font-weight: 600; color: #fff; font-size: 13px;
+      transition: all 0.25s ease;
+    }
+    .btn-reset:hover { background: rgba(15,23,42,0.75); transform: translateY(-1px); }
+    
+    /* DIALOG SYSTEM */
+    #vn-container {
+      position: absolute; inset: 0; z-index: 10;
+      display: flex; flex-direction: column; justify-content: flex-end; align-items: center;
+      padding-bottom: 32px;
+    }
+    
+    .dialog-box {
+      width: 92%; max-width: 1000px;
+      background: linear-gradient(135deg, rgba(248,246,240,0.97) 0%, rgba(255,255,255,0.95) 100%);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border-radius: 20px; padding: 28px 32px;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.8);
+      position: relative; z-index: 20;
+      border: 2px solid transparent;
+      background-clip: padding-box;
+      animation: dialogSlideUp 0.45s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .dialog-box::before {
+      content: ''; position: absolute; inset: -2px; border-radius: 22px; z-index: -1;
+      background: linear-gradient(135deg, var(--gold-light), var(--primary), var(--gold-light));
+      background-size: 200% 200%;
+      animation: borderShimmer 4s ease-in-out infinite;
+    }
+    @keyframes borderShimmer { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+    @keyframes dialogSlideUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+    
+    /* AVATAR NPC */
+    .vn-character-layer {
+      position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+      height: 85vh; z-index: 15; pointer-events: none;
+      animation: avatarBreathing 4s ease-in-out infinite;
+    }
+    .vn-character-layer img {
+      height: 100%; object-fit: contain;
+      transition: opacity 0.4s ease;
+    }
+    .vn-character-layer.entering img {
+      animation: avatarEnter 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards;
+    }
+    @keyframes avatarBreathing { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(-6px)} }
+    @keyframes avatarEnter { from{opacity:0;transform:translateX(-50%) translateY(40px) scale(0.95)} to{opacity:1;transform:translateX(-50%) translateY(0) scale(1)} }
+    
+    .dialog-content { display: flex; flex-direction: column; justify-content: center; }
+    .dialog-title { font-size: 26px; font-weight: 800; color: var(--text-dark); margin-bottom: 2px; }
+    .dialog-subtitle { font-size: 12px; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 14px; }
+    .dialog-text {
+      font-size: 17px; color: #475569; line-height: 1.7; margin-bottom: 20px;
+      font-style: italic; min-height: 52px;
+    }
+    .dialog-text .typewriter-cursor {
+      display: inline-block; width: 2px; height: 1em; background: var(--primary);
+      margin-left: 2px; vertical-align: text-bottom;
+      animation: cursorBlink 0.7s step-end infinite;
+    }
+    @keyframes cursorBlink { 0%,100%{opacity:1} 50%{opacity:0} }
+    
+    /* 3D ANIMATED BUTTONS */
+    .btn-action {
+      background: linear-gradient(180deg, #3b82f6 0%, var(--primary) 100%);
+      color: #fff; border: none; padding: 13px 26px;
+      border-radius: 14px; font-size: 15px; font-weight: 700; cursor: pointer;
+      align-self: flex-start; position: relative;
+      box-shadow: 0 4px 0 #1e3a8a, 0 6px 12px rgba(30,64,175,0.35);
+      transform: translateY(0);
+      transition: all 0.15s cubic-bezier(0.34,1.56,0.64,1);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+    .btn-action:hover {
+      background: linear-gradient(180deg, #60a5fa 0%, #3b82f6 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 7px 0 #1e3a8a, 0 10px 20px rgba(30,64,175,0.4);
+    }
+    .btn-action:active {
+      transform: translateY(3px);
+      box-shadow: 0 1px 0 #1e3a8a, 0 2px 4px rgba(30,64,175,0.3);
+      transition-duration: 0.06s;
+    }
+    .btn-action.secondary {
+      background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+      color: var(--text-dark); border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 0 #cbd5e1, 0 6px 12px rgba(0,0,0,0.1);
+      text-shadow: none;
+    }
+    .btn-action.secondary:hover {
+      background: linear-gradient(180deg, #ffffff 0%, #e2e8f0 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 7px 0 #cbd5e1, 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .btn-action.secondary:active {
+      transform: translateY(3px);
+      box-shadow: 0 1px 0 #cbd5e1, 0 2px 4px rgba(0,0,0,0.08);
+    }
+    .action-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    
+    /* MODALS */
+    #mission-modal, #reward-modal, #dev-modal {
+      position: absolute; inset: 0; z-index: 100;
+      background: rgba(0,0,0,0.8); display: none;
+      align-items: center; justify-content: center; flex-direction: column;
+    }
+    #mission-modal.active, #reward-modal.active, #dev-modal.active { display: flex; }
+    
+    #mission-frame { width: 100%; height: 100%; border: none; background: #fff; }
+    .modal-header {
+      width: 100%; padding: 16px 24px; background: var(--text-dark); color: #fff;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .btn-close-modal {
+      background: linear-gradient(180deg, #f87171 0%, #ef4444 100%); color: white;
+      border: none; padding: 8px 16px; border-radius: 10px; cursor: pointer; font-weight: bold;
+      box-shadow: 0 3px 0 #b91c1c; transition: all 0.15s ease;
+    }
+    .btn-close-modal:hover { transform: translateY(-2px); box-shadow: 0 5px 0 #b91c1c; }
+    .btn-close-modal:active { transform: translateY(2px); box-shadow: 0 1px 0 #b91c1c; }
+    
+    /* REWARD MODAL — PREMIUM */
+    .reward-box {
+      background: linear-gradient(135deg, #fffbeb 0%, var(--bg-cream) 50%, #eff6ff 100%);
+      border-radius: 24px; padding: 40px; text-align: center; max-width: 420px;
+      border: 2px solid rgba(245,158,11,0.3);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      animation: rewardBounce 0.6s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    @keyframes rewardBounce { 0%{opacity:0;transform:scale(0.7)} 60%{transform:scale(1.05)} 100%{opacity:1;transform:scale(1)} }
+    .reward-icon { font-size: 80px; margin-bottom: 16px; animation: trophySpin 1s ease-out; }
+    @keyframes trophySpin { 0%{transform:rotateY(0deg) scale(0.5);opacity:0} 50%{transform:rotateY(180deg) scale(1.1)} 100%{transform:rotateY(360deg) scale(1);opacity:1} }
+    .stat-row { display: flex; gap: 16px; justify-content: center; margin: 24px 0; }
+    .stat-box {
+      background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+      border: 2px solid #e2e8f0; padding: 16px; border-radius: 14px; min-width: 120px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .stat-value { font-size: 28px; font-weight: 800; color: var(--text-dark); }
+    
+    /* CONFETTI */
+    #confetti-container { position: absolute; inset: 0; z-index: 101; pointer-events: none; overflow: hidden; }
+    .confetti-piece {
+      position: absolute; width: 10px; height: 10px; top: -10px;
+      animation: confettiFall linear forwards;
+    }
+    @keyframes confettiFall {
+      0%{transform:translateY(0) rotate(0deg) scale(1);opacity:1}
+      100%{transform:translateY(100vh) rotate(720deg) scale(0.3);opacity:0}
+    }
+    
+    /* UTILS */
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <div id="vn-background"></div>
+  
+  <div class="hud">
+    <div class="hud-card"><span id="hud-xp">⭐ 0</span><div class="stat-label">Total XP</div></div>
+    <div class="hud-card"><span id="hud-missions">🏆 0/4</span><div class="stat-label">Mission Complete</div></div>
+  </div>
+  <div class="hud-right">
+    <button class="btn-reset" onclick="openDevModal()" style="margin-right: 8px; background: #fbbf24; border-color: #f59e0b;">Dev Mode</button>
+    <button class="btn-reset" onclick="resetState()">Reset Progress</button>
+  </div>
+
+  <!-- VN SYSTEM -->
+  <div id="vn-container">
+    <div class="vn-character-layer">
+      <img id="npc-avatar" src="../../phase-3/visuals/Desain referensi fix/avatar-rifki.png" alt="Avatar">
+    </div>
+    
+    <div class="dialog-box">
+      <div class="dialog-content">
+        <div class="dialog-title" id="npc-name">Rifki</div>
+        <div class="dialog-subtitle" id="npc-role">Pembimbing Utama</div>
+        <div class="dialog-text" id="npc-dialog">Memuat narasi...</div>
+        <div class="action-group" id="action-buttons">
+          <!-- Buttons dynamically injected here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION MODAL -->
+  <div id="mission-modal">
+    <div class="modal-header">
+      <h3 id="modal-title">Menjalankan Misi...</h3>
+      <button class="btn-close-modal" onclick="closeMissionModal()">Batalkan Misi</button>
+    </div>
+    <iframe id="mission-frame" src="about:blank"></iframe>
+  </div>
+
+  <!-- REWARD MODAL -->
+  <div id="reward-modal">
+    <div id="confetti-container"></div>
+    <div class="reward-box">
+      <div class="reward-icon">🏆</div>
+      <h2 id="reward-title" style="font-size: 24px; color: var(--text-dark);">Mission Complete!</h2>
+      <div class="stat-row">
+        <div class="stat-box">
+          <div class="stat-value" id="reward-accuracy">100%</div>
+          <div class="stat-label">Akurasi</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value" id="reward-xp-gain">+0</div>
+          <div class="stat-label">XP Didapat</div>
+        </div>
+      </div>
+      <button class="btn-action" onclick="closeRewardModal()" style="width: 100%;">Lanjut Cerita</button>
+    </div>
+  </div>
+
+  <!-- DEV MODAL -->
+  <div id="dev-modal">
+    <div class="reward-box" style="max-width: 600px; width: 90%;">
+      <h2 style="font-size: 24px; margin-bottom: 8px; color: var(--text-dark);">Mission Selector</h2>
+      <p style="margin-bottom: 16px; font-size: 14px; color: #64748b;">Pilih misi untuk dilompati. Misi sebelumnya otomatis selesai.</p>
+      <div id="dev-mission-list" style="display: flex; flex-direction: column; gap: 8px; max-height: 50vh; overflow-y: auto; margin-bottom: 24px;">
+        <!-- Injected via JS -->
+      </div>
+      <button class="btn-action secondary" onclick="closeDevModal()" style="width: 100%;">Tutup</button>
+    </div>
+  </div>
+
+  <script>
+    const STATE_KEY = 'bi12-w01-rpg-v2-ui';
+    let state = { xp: 0, completed: {}, tutorialStep: 0, activeSubject: null, isBriefing: false };
+    let isPracticeMode = false;
+    let currentBriefingStep = 0; // Menelusuri halaman dialog cerita
+    
+    // Mission Database
+    const MISSIONS = [
+      { id: 'BI12-W01-KM-C01-M01', npcName: 'Rifki', npcRole: 'Pembimbing Komunikasi', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-rifki.png', dataset: '../../phase-3/world-1-km-chapter-1-original-content-batch-01-canonical-v1.1.json', label: 'Misi 1: Komunikasi Resmi', pembekalanText: '“Pada misi ini kita mempelajari surat resmi. Kamu diharapkan mampu memahami informasi eksplisit secara akurat dan tidak terjebak dengan makna rancu. Jika nilaimu kurang dari 70%, kamu harus mengikuti sesi remedial.”' },
+      { id: 'BI12-W01-KM-C01-M02', npcName: 'Leli', npcRole: 'Pembimbing Literasi', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-leli.png', dataset: '../../phase-3/world-1-km-chapter-1-original-content-batch-02-e4-canonical-v1.1.json', label: 'Misi 2: Literasi Sastra', pembekalanText: '“Misi selanjutnya akan mengasah kepekaanmu. Kamu diharapkan mampu menyimpulkan makna tersirat (implisit) dari sebuah pemberitahuan resmi. Ingat, target kelulusan adalah 70%.”' },
+      { id: 'BI12-W01-KM-C01-M03', npcName: 'Raka', npcRole: 'Pembimbing Analisis', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-raka.png', dataset: '../../phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json', label: 'Misi 3: Analisis Teks', pembekalanText: '“Sekarang kita membandingkan dua teks surat resmi. Kamu harus bisa mengevaluasi perbedaan tujuan dan maknanya secara spesifik. Pastikan akurasimu minimal 70%.”' },
+      { id: 'BI12-W01-KM-C01-M04', npcName: 'Zaein', npcRole: 'Pembimbing Strategi', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', dataset: '../../phase-3/world-1-km-chapter-1-h-production-content-candidate-v1.json', label: 'Misi 4: Strategi Final', pembekalanText: '“Ujian akhir Bab 1! Di sini kamu diuji atas pemahaman struktur dan penggunaan bahasa baku (formal) dalam penulisan surat resmi. Tunjukkan kemampuan terbaikmu!”' },
+      { id: 'BI12-W01-KM-C02-M05', npcName: 'Rifki', npcRole: 'Pembimbing Utama', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-rifki.png', dataset: '../../phase-3/world-1-km-chapter-2-misi-5-canonical-v1.0.json', label: 'Misi 5: Observasi Prosedur Dasar', pembekalanText: '“Selamat datang di Bab 2! Kita akan mempelajari Teks Prosedur Kompleks (Gaya Hidup Sehat). Kamu diharapkan mampu menangkap urutan langkah eksplisit dan mendeteksi kesalahan berisiko pada instruksi acak. Target kelulusan 70%.”' },
+      { id: 'BI12-W01-KM-C02-M06', npcName: 'Leli', npcRole: 'Pembimbing Analisis', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-leli.png', dataset: '../../phase-3/world-1-km-chapter-2-misi-6-canonical-v1.0.json', label: 'Misi 6: Analisis Komparatif', pembekalanText: '“Mari kita pertajam kemampuan analisamu. Kamu harus bisa membandingkan dua teks prosedur dan menemukan ciri kebahasaannya, seperti kata kerja (verba material) dan kata hubung waktu (konjungsi temporal).”' },
+      { id: 'BI12-W01-KM-C02-M07', npcName: 'Raka', npcRole: 'Pembimbing Kritis', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-raka.png', dataset: '../../phase-3/world-1-km-chapter-2-misi-7-canonical-v1.0.json', label: 'Misi 7: Refleksi Kritis', pembekalanText: '“Misi ini melatih pola pikir kritismu. Terapkan kerangka 4F (Peristiwa, Perasaan, Pembelajaran, Penerapan) untuk mengekstrak makna atau konsekuensi dari sebuah prosedur yang kamu baca.”' },
+      { id: 'BI12-W01-KM-C02-M08', npcName: 'Zaein', npcRole: 'Kepala Program', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', dataset: '../../phase-3/world-1-km-chapter-2-misi-8-canonical-v1.0.json', label: 'Misi 8: Ujian Praktik Akhir', pembekalanText: '“Misi terakhir Bab 2! Kamu diuji menyusun prosedur acak menjadi runtut dan higienis, serta mengambil keputusan penyuntingan (K3) pada video tutorial secara logis.”' },
+      { 
+        id: 'BI12-W01-KM-C03-M09', 
+        npcName: 'Rifki', 
+        npcRole: 'Pembimbing Sastra', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-rifki.png', 
+        dataset: '../../phase-3/world-1-km-chapter-3-misi-9-canonical-v1.0.json', 
+        label: 'Misi 9: Sudut Pandang dan Perwatakan', 
+        pembekalanText: [
+          '“Selamat datang di Bab 3! Materi kita kali ini adalah Sastra (Novel). Sebuah karya fiksi selalu dibangun melalui sudut pandang pengarangnya serta perwatakan tokoh-tokoh di dalamnya.”',
+          '“Mari kita baca penggalan cerita ini: \'Karnaval ini satu-satunya cara menunjukkan kepada dunia bahwa sekolah kita masih eksis. Kita harus bangga!\' seru Pak Harfan berapi-api.”',
+          '“Pidato itu membakar semangat kami. Mahar pun ditunjuk memimpin... Akhirnya Mahar muncul dengan ide brilian menyusun koreografi, musik, dan visualisasi.”',
+          '“Nah, pada sesi latihan ini, kamu harus dapat mengidentifikasi sudut pandang pencerita dan perwatakan dari penggalan cerita di atas. Ingat, target kelulusan adalah 70%!”'
+        ] 
+      },
+      { 
+        id: 'BI12-W01-KM-C03-M10', 
+        npcName: 'Leli', 
+        npcRole: 'Pembimbing Analisis', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-leli.png', 
+        dataset: '../../phase-3/world-1-km-chapter-3-misi-10-canonical-v1.0.json', 
+        label: 'Misi 10: Analisis Alur dan Pesan Moral', 
+        pembekalanText: [
+          '“Luar biasa! Setelah memahami watak tokoh, sekarang kita akan membedah Alur (Plot) dan Pesan Moral dari cerita tersebut.”',
+          '“Alur cerita umumnya memiliki pola: Eksposisi (pengenalan), Konflik (masalah muncul), Rising Action (konflik memanas), Klimaks (puncak ketegangan), hingga Resolusi (penyelesaian).”',
+          '“Selain alur, pengarang selalu menyisipkan nilai-nilai kehidupan (Pesan Moral) baik melalui dialog maupun tingkah laku tokohnya.”',
+          '“Uji pemahamanmu! Identifikasi tahapan alur yang tepat dari cerita Laskar Pelangi sebelumnya dan temukan pesan moral yang paling kuat dari keberhasilan mereka.”'
+        ] 
+      },
+      { 
+        id: 'BI12-W01-KM-C03-M11', 
+        npcName: 'Zaein', 
+        npcRole: 'Kepala Program Sastra', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', 
+        dataset: '../../phase-3/world-1-km-chapter-3-misi-11-canonical-v1.0.json', 
+        label: 'Misi 11: Kaidah Bahasa & Penulisan Sastra', 
+        pembekalanText: [
+          '“Kerja bagus! Ini adalah misi terakhir untuk Bab 3. Kamu telah mengasah intuisi sastramu, sekarang giliran teknis penulisannya.”',
+          '“Seorang penulis novel yang baik harus mampu mengembangkan kerangka cerita menjadi adegan yang nyata (Show, Don\'t Tell), serta menggunakan tanda baca yang tepat.”',
+          '“Ingat aturan penulisan kalimat langsung: Kutipan diapit tanda petik, dan tanda baca penutup diletakkan DI DALAM tanda petik. Misalnya: Budi berkata, \'Aku siap maju.\'”',
+          '“Mari kita uji ketelitianmu dalam membedakan kalimat langsung dan tidak langsung, serta strategimu dalam menyusun paragraf cerita. Target 70%!”'
+        ] 
+      },
+      { 
+        id: 'BI12-W01-KM-C04-M12', 
+        npcName: 'Rifki', 
+        npcRole: 'Pembimbing Teknologi', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-rifki.png', 
+        dataset: '../../phase-3/world-1-km-chapter-4-misi-12-canonical-v1.0.json', 
+        label: 'Misi 12: Evaluasi Gagasan AI', 
+        pembekalanText: [
+          '“Selamat datang di Bab 4! Fokus kita kali ini adalah Teks Eksplanasi Kompleks dengan tema Kecerdasan Artifisial (AI).”',
+          '“Teks eksplanasi bertujuan menjelaskan proses terjadinya suatu fenomena. Gagasan utamanya bisa berada di awal paragraf (Deduktif), di akhir (Induktif), atau keduanya (Campuran).”',
+          '“Selain mengenali letak gagasan, kamu juga dituntut untuk mengevaluasinya. Sebuah argumen dikatakan kuat jika didukung oleh data, fakta nyata, dan penjelasan yang masuk akal.”',
+          '“Mari uji pemahamanmu dengan mengidentifikasi jenis paragraf dan mengevaluasi argumen terkait penggunaan AI. Ingat, targetmu minimal 70%!”'
+        ] 
+      },
+      { 
+        id: 'BI12-W01-KM-C04-M13', 
+        npcName: 'Leli', 
+        npcRole: 'Pembimbing Analisis', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-leli.png', 
+        dataset: '../../phase-3/world-1-km-chapter-4-misi-13-canonical-v1.0.json', 
+        label: 'Misi 13: Struktur Teks & Model 5R', 
+        pembekalanText: [
+          '“Luar biasa! Setelah memahami gagasan, mari kita bedah struktur bangunan teks eksplanasi ini.”',
+          '“Secara struktur, teks eksplanasi dimulai dengan Pernyataan Umum (pengenalan), dilanjutkan Deretan Penjelas (sebab-akibat), dan diakhiri Interpretasi (penegasan ulang/simpulan).”',
+          '“Untuk memahami isi bacaan secara kritis, gunakan Model Refleksi 5R: Reporting, Responding, Relating, Reasoning, dan Reconstructing.”',
+          '“Misi ini akan menguji ingatanmu mengenai tahapan model 5R dan pemahaman struktur teks eksplanasi. Jangan menyerah, tetap capai angka 70%!”'
+        ] 
+      },
+      { 
+        id: 'BI12-W01-KM-C04-M14', 
+        npcName: 'Zaein', 
+        npcRole: 'Penguji Akhir Bab 4', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', 
+        dataset: '../../phase-3/world-1-km-chapter-4-misi-14-canonical-v1.0.json', 
+        label: 'Misi 14: Kebahasaan & Gaya Bahasa', 
+        pembekalanText: [
+          '“Misi terakhir di Bab 4! Saatnya menguji pemahaman teknis dan gaya penulisan.”',
+          '“Dalam teks eksplanasi teknologi (seperti AI), penulis biasanya menggunakan ragam bahasa objektif, istilah teknis, konjungsi kausalitas (sebab-akibat), dan kalimat pasif.”',
+          '“Sering kali, untuk menjelaskan konsep rumit seperti AI, penulis menggunakan Analogi. Misalnya, mengibaratkan AI sebagai otak tiruan agar masyarakat awam mudah mengerti.”',
+          '“Buktikan keahlian kebahasaanmu di misi ini dan pastikan kamu memahami alasan di balik penggunaan gaya bahasa objektif. Semoga berhasil!”'
+        ] 
+      },
+      { 
+        id: 'BI12-W01-KM-C05-M15', 
+        npcName: 'Rifki', 
+        npcRole: 'Pembimbing Budaya', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-rifki.png', 
+        dataset: '../../phase-3/world-1-km-chapter-5-misi-15-canonical-v1.0.json', 
+        label: 'Misi 15: Eksplorasi Kearifan Lokal', 
+        pembekalanText: [
+          '“Selamat datang di Bab 5! Materi kita sekarang adalah Teks Esai, dengan tema besar Kearifan Lokal di Nusantara.”',
+          '“Esai adalah tulisan yang memadukan fakta dengan pandangan subjektif penulisnya. Kita akan membaca esai tentang tradisi sasi di Raja Ampat dan kearifan masyarakat adat Tau Taa Vana.”',
+          '“Masyarakat adat kita sangat memuliakan alam. Mereka tidak mengeksploitasi hutan maupun laut secara rakus, melainkan menjaganya agar dapat terus berkesinambungan.”',
+          '“Pada misi pertama Bab 5 ini, uji kepekaanmu dalam menemukan ide pokok dan memahami pandangan tersirat penulis mengenai pelestarian alam.”'
+        ] 
+      },
+      { 
+        id: 'BI12-W01-KM-C05-M16', 
+        npcName: 'Leli', 
+        npcRole: 'Pembimbing Analisis', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-leli.png', 
+        dataset: '../../phase-3/world-1-km-chapter-5-misi-16-canonical-v1.0.json', 
+        label: 'Misi 16: Fakta, Opini, dan Kebahasaan Esai', 
+        pembekalanText: [
+          '“Luar biasa! Setelah menyelami makna esai, sekarang kita bedah muatan dan kebahasaannya.”',
+          '“Sebuah esai memuat Fakta (kejadian nyata), Opini (pendapat/penilaian subjektif), dan Asumsi (anggapan sementara yang belum terbukti). Kamu harus bisa membedakan ketiganya!”',
+          '“Selain itu, ada banyak istilah asing yang masuk ke bahasa kita. Misalnya \'talk show\' padanannya adalah \'gelar wicara\'. Jangan lupa juga tentang pasangan baku (korelatif) seperti \'baik ... maupun ...\'.”',
+          '“Mari kita uji ketelitianmu membedakan fakta dan opini, serta penggunaan kosakata dan tata bahasa yang tepat. Berjuanglah mencapai target 70%!”'
+        ] 
+      },
+      { 
+        id: 'BI12-W01-KM-C05-M17', 
+        npcName: 'Zaein', 
+        npcRole: 'Penguji Akhir Bab 5', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', 
+        dataset: '../../phase-3/world-1-km-chapter-5-misi-17-canonical-v1.0.json', 
+        label: 'Misi 17: Analisis Kritis, Ejaan, dan Refleksi', 
+        pembekalanText: [
+          '“Misi puncak untuk Bab 5 dan bisa jadi yang terakhir di tahap pelatihan Bahasa Indonesia ini!”',
+          '“Kamu akan membandingkan gagasan dua teks esai, sekaligus mendeteksi kesalahan ejaan yang fatal (seperti penulisan \'kerja sama\' atau awalan \'antar-\').”',
+          '“Lebih dari itu, kamu akan dikenalkan dengan model refleksi ALACT. Mulai dari Aksi (Action) membaca, melihat kembali (Looking Back), hingga menyusun uji coba tindakan baru (Trial).”',
+          '“Buktikan semua keterampilan yang telah kamu asah di misi terakhir ini. Jadikan nilaimu yang terbaik!”'
+        ] 
+      },
+      { 
+        id: 'BI12-W01-KM-FINAL', 
+        npcName: 'Zaein', 
+        npcRole: 'Kepala Program', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', 
+        dataset: '../../phase-3/world-1-km-final-exam-canonical-v1.0.json', 
+        label: 'Misi 18: Ujian Akhir Bahasa Indonesia',
+        isFinalExam: true,
+        pembekalanText: [
+          '“Selamat! Kamu telah berhasil melewati seluruh 17 misi di mata pelajaran Bahasa Indonesia ini. Ini adalah pencapaian yang sungguh luar biasa!”',
+          '“Sekarang saatnya kita tutup perjalanan ini dengan Ujian Akhir. Ujian ini berisi 25 soal yang merangkum seluruh materi dari Bab 1 hingga Bab 5.”',
+          '“Berbeda dari misi biasa, ujian ini tidak ada batas nilai minimal dan tidak menambah XP. Tujuannya murni untuk mengukur seberapa jauh pemahaman kamu sudah berkembang.”',
+          '“Jawab setiap soal dengan sepenuh hati. Apapun nilaimu, kamu sudah menunjukkan dedikasi yang luar biasa. Ayo, tunjukkan yang terbaik!”'
+        ] 
+      }
+    ];
+
+    function loadState() {
+      try { 
+        const saved = localStorage.getItem(STATE_KEY); 
+        if (saved) { 
+          const parsed = JSON.parse(saved); 
+          state.xp = parsed.xp || 0; 
+          state.completed = { ...parsed.completed }; 
+          state.tutorialStep = parsed.tutorialStep || 0;
+          state.activeSubject = parsed.activeSubject || null;
+          state.isBriefing = parsed.isBriefing || false;
+        } 
+      } catch(e) {}
+      updateHUD();
+      determineScene();
+    }
+    
+    function saveState() { localStorage.setItem(STATE_KEY, JSON.stringify(state)); updateHUD(); }
+    function resetState() { if(confirm('Yakin ingin mereset progres?')) { localStorage.removeItem(STATE_KEY); location.reload(); } }
+    
+    function openDevModal() {
+      const listContainer = document.getElementById('dev-mission-list');
+      listContainer.innerHTML = '';
+      MISSIONS.forEach((m, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'btn-action secondary';
+        btn.style.width = '100%';
+        btn.style.textAlign = 'left';
+        btn.style.padding = '10px 16px';
+        btn.innerText = m.label;
+        btn.onclick = () => jumpToMission(idx);
+        listContainer.appendChild(btn);
+      });
+      document.getElementById('dev-modal').classList.add('active');
+    }
+
+    function closeDevModal() {
+      document.getElementById('dev-modal').classList.remove('active');
+    }
+
+    function jumpToMission(targetIndex) {
+      if(!confirm(`Lompat ke ${MISSIONS[targetIndex].label}? Ini akan menganggap misi sebelumnya telah selesai 100%.`)) return;
+      
+      state.completed = {};
+      state.xp = 0;
+      for (let i = 0; i < targetIndex; i++) {
+          state.completed[MISSIONS[i].id] = { accuracy: 100, xp: 100 };
+          state.xp += 100;
+      }
+      state.tutorialStep = 3; 
+      state.activeSubject = 'BI';
+      state.isBriefing = false;
+      currentBriefingStep = 0;
+      saveState();
+      closeDevModal();
+      determineScene();
+    }
+
+    function updateHUD() {
+      document.getElementById('hud-xp').innerHTML = `⭐ ${state.xp}`;
+      document.getElementById('hud-missions').innerHTML = `🏆 ${Object.keys(state.completed).length}/${MISSIONS.length}`;
+    }
+
+    // SCENE ROUTING (Visual Novel Logic)
+    function determineScene() {
+      // 1. TUTORIAL & ONBOARDING STATE
+      if (state.tutorialStep === 0) {
+        setDialog(
+          'Safira', 'Pemandu Digital', '../../phase-3/visuals/Desain referensi fix/avatar-safira.png', '../../phase-3/visuals/Desain referensi fix/map-sma-sekolah.jpg',
+          '“Selamat datang di SMA Nusantara! Game edukasi ini dirancang khusus sebagai jembatan interaktif dalam pembelajaranmu. Melalui simulasi ini, kamu tidak hanya membaca teori, tapi mempraktikkannya langsung dalam skenario nyata yang menyenangkan.”',
+          [{ text: 'Lanjutkan', class: 'btn-action', action: () => { state.tutorialStep = 1; saveState(); determineScene(); } }]
+        );
+        return;
+      }
+      else if (state.tutorialStep === 1) {
+        setDialog(
+          'Safira', 'Pemandu Digital', '../../phase-3/visuals/Desain referensi fix/avatar-safira.png', '../../phase-3/visuals/Desain referensi fix/map-sma-sekolah.jpg',
+          '“Untuk memulai perjalananmu, mata pelajaran apa yang ingin kamu jelajahi hari ini? (Di tahap Latihan ini, semua mata pelajaran bebas dipilih tanpa batas).”',
+          [
+            { text: 'Bahasa Indonesia', class: 'btn-action', action: () => { state.activeSubject = 'BI'; state.tutorialStep = 2; saveState(); determineScene(); } },
+            { text: 'Matematika', class: 'btn-action secondary', action: () => { state.activeSubject = 'MAT'; state.tutorialStep = 2; saveState(); determineScene(); } },
+            { text: 'Sosiologi', class: 'btn-action secondary', action: () => { state.activeSubject = 'SOS'; state.tutorialStep = 2; saveState(); determineScene(); } }
+          ]
+        );
+        return;
+      }
+      else if (state.tutorialStep === 2) {
+        let subjectName = state.activeSubject === 'BI' ? 'Bahasa Indonesia' : (state.activeSubject === 'MAT' ? 'Matematika' : 'Sosiologi');
+        let npc = state.activeSubject === 'BI' ? 'Rifki' : 'Safira';
+        let avatar = state.activeSubject === 'BI' ? 'avatar-rifki.png' : 'avatar-safira.png';
+        
+        if (!state.isBriefing) {
+          setDialog(
+            npc, 'Pembimbing ' + subjectName, `../../phase-3/visuals/Desain referensi fix/${avatar}`, '../../phase-3/visuals/Desain referensi fix/map-perpustakaan.jpg',
+            `“Pilihan yang luar biasa! Di kelas ${subjectName}, kita menerapkan prinsip Kurikulum Merdeka. Sebelum mulai uji coba latihan, mari kita masuk ke tahap Pembekalan terlebih dahulu.”`,
+            [{ text: 'Buka Pembekalan', class: 'btn-action', action: () => { state.isBriefing = true; saveState(); determineScene(); } }]
+          );
+        } else {
+          setDialog(
+            npc, 'Pembimbing ' + subjectName, `../../phase-3/visuals/Desain referensi fix/${avatar}`, '../../phase-3/visuals/Desain referensi fix/map-perpustakaan.jpg',
+            `“Ini adalah sesi Pembekalan dan Contoh Terbimbing. Pada kelas ini, kamu diharapkan mampu memahami materi inti sebelum praktik. Mari kita uji pemahamanmu dengan sesi Latihan simulasi bebas risiko ini.”`,
+            [{ text: 'Mulai Latihan Soal', class: 'btn-action', action: () => startMission(0, true) }]
+          );
+        }
+        return;
+      }
+      else if (state.tutorialStep === 3) {
+        let subjectName = state.activeSubject === 'BI' ? 'Bahasa Indonesia' : (state.activeSubject === 'MAT' ? 'Matematika' : 'Sosiologi');
+        let npc = state.activeSubject === 'BI' ? 'Rifki' : 'Safira';
+        let avatar = state.activeSubject === 'BI' ? 'avatar-rifki.png' : 'avatar-safira.png';
+
+        setDialog(
+          npc, 'Pembimbing ' + subjectName, `../../phase-3/visuals/Desain referensi fix/${avatar}`, '../../phase-3/visuals/Desain referensi fix/map-perpustakaan.jpg',
+          `“Latihan selesai! Ingat, di sesi latihan ini tidak ada perolehan XP atau persentase akurasi yang dicatat. Apakah kamu ingin benar-benar melanjutkan materi ${subjectName} (mengunci mapel lain), atau mencoba mata pelajaran lain terlebih dahulu?”`,
+          [
+            { text: `Ya, Lanjut ${subjectName}`, class: 'btn-action', action: () => { state.tutorialStep = 4; saveState(); determineScene(); } },
+            { text: 'Tidak, Coba Pelajaran Lain', class: 'btn-action secondary', action: () => { state.activeSubject = null; state.tutorialStep = 1; saveState(); determineScene(); } }
+          ]
+        );
+        return;
+      }
+
+      // 2. MAIN GAME STATE (Tutorial Selesai)
+      const completedCount = Object.keys(state.completed).length;
+      
+      if (completedCount < MISSIONS.length) {
+        const nextMissionIdx = completedCount; 
+        const nextM = MISSIONS[nextMissionIdx];
+        
+        if (!state.isBriefing) {
+          setDialog(
+            nextM.npcName, nextM.npcRole, nextM.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-kelas.jpg',
+            `“Halo, senang melihatmu kembali! Saat ini kamu berada di ${nextM.label}. Sebelum memulai, mari kita pelajari materinya terlebih dahulu.”`,
+            [
+              { text: `Buka Pembekalan`, class: 'btn-action', action: () => { state.isBriefing = true; currentBriefingStep = 0; saveState(); determineScene(); } },
+              { text: 'Ulangi Misi Lama', class: 'btn-action secondary', action: () => showReplayMenu() }
+            ]
+          );
+        } else {
+          if (Array.isArray(nextM.pembekalanText)) {
+            const isLast = currentBriefingStep >= nextM.pembekalanText.length - 1;
+            const buttons = [];
+            if (!isLast) {
+              buttons.push({ text: `Lanjutkan`, class: 'btn-action', action: () => { currentBriefingStep++; determineScene(); } });
+            } else {
+              buttons.push({ text: `Mulai Latihan Soal`, class: 'btn-action', action: () => startMission(nextMissionIdx, false) });
+            }
+            setDialog(
+              nextM.npcName, nextM.npcRole, nextM.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-kelas.jpg',
+              nextM.pembekalanText[currentBriefingStep],
+              buttons
+            );
+          } else {
+            setDialog(
+              nextM.npcName, nextM.npcRole, nextM.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-kelas.jpg',
+              nextM.pembekalanText,
+              [
+                { text: `Mulai Latihan Soal`, class: 'btn-action', action: () => startMission(nextMissionIdx, false) }
+              ]
+            );
+          }
+        }
+      } 
+      else {
+        // Cek apakah ujian akhir sudah pernah dikerjakan
+        const finalExamDone = state.completed['BI12-W01-KM-FINAL'];
+        const finalExamIdx = MISSIONS.findIndex(m => m.id === 'BI12-W01-KM-FINAL');
+        
+        if (!finalExamDone) {
+          // Semua misi 1-17 selesai, tapi ujian akhir belum dikerjakan
+          if (!state.isBriefing) {
+            setDialog(
+              'Zaein', 'Kepala Program', '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
+              '“Wow, kamu sudah menyelesaikan semua 17 misi! Kamu benar-benar luar biasa. Sebagai penutup perjalanan di Bahasa Indonesia ini, ada satu tantangan terakhir yang menantimu... Ujian Akhir!”',
+              [
+                { text: 'Siap, Mulai Ujian Akhir!', class: 'btn-action', action: () => { state.isBriefing = true; currentBriefingStep = 0; saveState(); determineScene(); } },
+                { text: 'Perbaiki Nilai Misi Dulu', class: 'btn-action secondary', action: () => showReplayMenu() }
+              ]
+            );
+          } else {
+            // Tampilkan pembekalan ujian akhir multi-step
+            const finalM = MISSIONS[finalExamIdx];
+            if (Array.isArray(finalM.pembekalanText)) {
+              const isLast = currentBriefingStep >= finalM.pembekalanText.length - 1;
+              const buttons = isLast
+                ? [{ text: 'Mulai Ujian Akhir', class: 'btn-action', action: () => startMission(finalExamIdx, false) }]
+                : [{ text: 'Lanjutkan', class: 'btn-action', action: () => { currentBriefingStep++; determineScene(); } }];
+              setDialog(
+                finalM.npcName, finalM.npcRole, finalM.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
+                finalM.pembekalanText[currentBriefingStep],
+                buttons
+              );
+            }
+          }
+        } else {
+          // Ujian Akhir juga sudah selesai
+          const finalScore = Math.round(state.completed['BI12-W01-KM-FINAL'].accuracy);
+          setDialog(
+            'Zaein', 'Kepala Program', '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
+            `“Selamat! Kamu telah menuntaskan seluruh program Bahasa Indonesia, termasuk Ujian Akhir dengan nilai ${finalScore}%. Perjalananmu di sini sungguh mengesankan. Saatnya menjelajah mata pelajaran lain!”`,
+            [
+              { text: 'Ulang Ujian Akhir', class: 'btn-action secondary', action: () => startMission(finalExamIdx, false) },
+              { text: 'Perbaiki Nilai Misi', class: 'btn-action secondary', action: () => showReplayMenu() },
+              { text: 'Pilih Mata Pelajaran Lain', class: 'btn-action', action: () => { state.activeSubject = null; state.tutorialStep = 1; saveState(); determineScene(); } }
+            ]
+          );
+        }
+      }
+    }
+
+    let typewriterTimer = null;
+    let lastAvatarSrc = '';
+
+    function setDialog(name, role, avatarImg, bgImg, text, buttons) {
+      document.getElementById('npc-name').textContent = name;
+      document.getElementById('npc-role').textContent = role;
+      document.getElementById('vn-background').style.backgroundImage = `url('${bgImg}')`;
+      
+      // Avatar animation: trigger enter animation if NPC changed
+      const avatarEl = document.getElementById('npc-avatar');
+      const charLayer = document.querySelector('.vn-character-layer');
+      if (avatarImg !== lastAvatarSrc) {
+        lastAvatarSrc = avatarImg;
+        charLayer.classList.remove('entering');
+        void charLayer.offsetWidth; // force reflow
+        charLayer.classList.add('entering');
+        avatarEl.src = avatarImg;
+        setTimeout(() => charLayer.classList.remove('entering'), 700);
+      }
+      
+      // Typewriter effect
+      const dialogEl = document.getElementById('npc-dialog');
+      if (typewriterTimer) { clearInterval(typewriterTimer); typewriterTimer = null; }
+      dialogEl.innerHTML = '<span class="typewriter-cursor"></span>';
+      
+      const btnContainer = document.getElementById('action-buttons');
+      btnContainer.innerHTML = '';
+      btnContainer.style.opacity = '0';
+      
+      let charIdx = 0;
+      const speed = 18; // ms per character
+      typewriterTimer = setInterval(() => {
+        if (charIdx < text.length) {
+          dialogEl.textContent = text.substring(0, charIdx + 1);
+          // Re-append cursor
+          const cursor = document.createElement('span');
+          cursor.className = 'typewriter-cursor';
+          dialogEl.appendChild(cursor);
+          charIdx++;
+        } else {
+          clearInterval(typewriterTimer);
+          typewriterTimer = null;
+          dialogEl.textContent = text; // Remove cursor when done
+          // Show buttons with fade-in
+          btnContainer.style.transition = 'opacity 0.35s ease';
+          btnContainer.style.opacity = '1';
+        }
+      }, speed);
+      
+      // Allow click to skip typewriter
+      const skipHandler = () => {
+        if (typewriterTimer) {
+          clearInterval(typewriterTimer);
+          typewriterTimer = null;
+          dialogEl.textContent = text;
+          btnContainer.style.transition = 'opacity 0.2s ease';
+          btnContainer.style.opacity = '1';
+        }
+        dialogEl.removeEventListener('click', skipHandler);
+        document.querySelector('.dialog-box').removeEventListener('click', skipHandler);
+      };
+      dialogEl.addEventListener('click', skipHandler);
+      document.querySelector('.dialog-box').addEventListener('click', skipHandler);
+      
+      // Inject buttons (hidden initially, shown after typewriter)
+      buttons.forEach(b => {
+        const btn = document.createElement('button');
+        btn.className = b.class;
+        btn.textContent = b.text;
+        btn.onclick = b.action;
+        btnContainer.appendChild(btn);
+      });
+    }
+
+    function showReplayMenu() {
+      const buttons = [];
+      let allPerfect = true;
+      let completedAny = false;
+      
+      MISSIONS.forEach((m, idx) => {
+        if(state.completed[m.id]) {
+          completedAny = true;
+          const acc = Math.round(state.completed[m.id].accuracy);
+          if (acc < 100) allPerfect = false;
+          buttons.push({ text: `Ulang: ${m.label} (Akurasi: ${acc}%)`, class: 'btn-action secondary', action: () => startMission(idx, false) });
+        }
+      });
+      
+      buttons.push({ text: 'Kembali ke Hub Utama', class: 'btn-action', action: () => { state.activeSubject = null; state.tutorialStep = 1; saveState(); determineScene(); } });
+      
+      let msg = '“Hai! Ini daftar misimu. Pilih misi mana yang masih ingin kamu perbaiki nilainya. Aku siap mendampingimu lagi!”';
+      if (completedAny && allPerfect) {
+         msg = '“Wah, sempurna! Semua nilaimu sudah mencapai 100%. Kamu tidak perlu mengulang misi jika tidak mau. Kamu bisa kembali melihat menu mata pelajaran lain.”';
+      }
+      
+      setDialog('Safira', 'Pemandu Digital', '../../phase-3/visuals/Desain referensi fix/avatar-safira.png', '../../phase-3/visuals/Desain referensi fix/map-sma-sekolah.jpg', msg, buttons);
+    }
+
+    // MISSION EXECUTION
+    let currentMissionObj = null;
+    function startMission(index, isPractice = false) {
+      isPracticeMode = isPractice;
+      currentMissionObj = MISSIONS[index];
+      const titlePrefix = isPractice ? '[LATIHAN] ' : 'Misi Utama: ';
+      document.getElementById('modal-title').textContent = titlePrefix + currentMissionObj.label;
+      document.getElementById('mission-frame').src = `km-batch-01-runtime.html?dataset=${encodeURIComponent(currentMissionObj.dataset)}&missionId=${currentMissionObj.id}`;
+      document.getElementById('mission-modal').classList.add('active');
+    }
+    
+    function closeMissionModal() {
+      document.getElementById('mission-modal').classList.remove('active');
+      document.getElementById('mission-frame').src = 'about:blank';
+    }
+
+    function showRemedialDialog(missionObj, acc) {
+      const idx = MISSIONS.findIndex(m => m.id === missionObj.id);
+      setDialog(
+        missionObj.npcName, missionObj.npcRole, missionObj.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-kelas.jpg',
+        `“Nilaimu ${Math.round(acc)}%, masih di bawah standar ketuntasan 70%. Sepertinya ada beberapa konsep yang terlewat. Mari kita lakukan Pembekalan Lanjutan (Remedial). Jangan khawatir, nilai remedial tidak akan menambah atau mengurangi total XP-mu, tapi kamu harus mencapai 70% untuk bisa melanjutkan cerita!”`,
+        [
+          { text: `Mulai Remedial`, class: 'btn-action', action: () => startMission(idx, false) },
+          { text: `Istirahat Sebentar`, class: 'btn-action secondary', action: () => determineScene() }
+        ]
+      );
+    }
+
+    // EVENT LISTENER FROM IFRAME (Renderer QA)
+    window.addEventListener('message', (e) => {
+      if (e.data && (e.data.type === 'MISSION_COMPLETE' || e.data.type === 'MISSION_RENDERER_RESULT')) {
+        const acc = e.data.payload ? e.data.payload.accuracy : e.data.accuracy;
+        const missionObj = currentMissionObj; // simpan referensi karena closeMissionModal akan meresetnya
+        currentMissionObj = null;
+        closeMissionModal();
+        
+        if (isPracticeMode) {
+          // MODE LATIHAN (TIDAK ADA XP)
+          document.getElementById('reward-title').textContent = 'Latihan Selesai!';
+          document.getElementById('reward-accuracy').textContent = '-';
+          document.getElementById('reward-xp-gain').textContent = 'Latihan (0)';
+          
+          state.tutorialStep = 3;
+          state.isBriefing = false; // Reset briefing state
+          currentBriefingStep = 0;
+          saveState();
+          document.getElementById('reward-modal').classList.add('active');
+          spawnConfetti();
+        } else {
+          // DETEKSI UJIAN AKHIR
+          if (missionObj.isFinalExam) {
+            // Ujian Akhir: tidak ada KKM, tidak ada XP, catat skor saja
+            state.completed[missionObj.id] = { accuracy: acc, xp: 0 };
+            state.isBriefing = false;
+            currentBriefingStep = 0;
+            saveState();
+            
+            document.getElementById('reward-title').textContent = 'Ujian Akhir Selesai!';
+            document.getElementById('reward-accuracy').textContent = Math.round(acc) + '%';
+            document.getElementById('reward-xp-gain').textContent = 'Tidak Berlaku';
+            document.getElementById('reward-modal').classList.add('active');
+            spawnConfetti();
+            return;
+          }
+
+          // MODE MISI NYATA
+          if (acc < 70) {
+            showRemedialDialog(missionObj, acc);
+            return;
+          }
+
+          // Anti-farming check
+          let xpEarned = 0;
+          if (!state.completed[missionObj.id]) {
+            xpEarned = Math.round(acc * 10);
+            state.xp += xpEarned;
+            state.completed[missionObj.id] = { accuracy: acc, xp: xpEarned };
+            state.isBriefing = false; // reset briefing flow untuk misi berikutnya
+            currentBriefingStep = 0;
+            saveState();
+            document.getElementById('reward-xp-gain').textContent = '+' + xpEarned;
+          } else {
+            // Sudah pernah lulus, replay misi
+            document.getElementById('reward-xp-gain').textContent = '+0 (Replay)';
+            // Opsional: perbarui akurasi tertinggi tanpa tambah xp
+            if (acc > state.completed[missionObj.id].accuracy) {
+               state.completed[missionObj.id].accuracy = acc;
+               saveState();
+            }
+          }
+          
+          document.getElementById('reward-title').textContent = 'Mission Complete!';
+          document.getElementById('reward-accuracy').textContent = Math.round(acc) + '%';
+          document.getElementById('reward-modal').classList.add('active');
+          spawnConfetti();
+        }
+      }
+    });
+
+    // CONFETTI SYSTEM
+    function spawnConfetti() {
+      const container = document.getElementById('confetti-container');
+      container.innerHTML = '';
+      const colors = ['#fbbf24','#3b82f6','#10b981','#ef4444','#a855f7','#f97316','#ec4899'];
+      for (let i = 0; i < 60; i++) {
+        const piece = document.createElement('div');
+        piece.className = 'confetti-piece';
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const size = Math.random() * 8 + 6;
+        const left = Math.random() * 100;
+        const dur = Math.random() * 2 + 2;
+        const delay = Math.random() * 1.5;
+        const shapes = ['50%','0%','30% 70% 70% 30% / 30% 30% 70% 70%'];
+        piece.style.cssText = `left:${left}%;width:${size}px;height:${size}px;background:${color};border-radius:${shapes[Math.floor(Math.random()*shapes.length)]};animation-duration:${dur}s;animation-delay:${delay}s;`;
+        container.appendChild(piece);
+      }
+    }
+
+    function clearConfetti() {
+      const container = document.getElementById('confetti-container');
+      if (container) container.innerHTML = '';
+    }
+
+    // Override reward modal show to trigger confetti
+    const origRewardShow = (el) => { el.classList.add('active'); spawnConfetti(); };
+
+    function closeRewardModal() {
+      document.getElementById('reward-modal').classList.remove('active');
+      clearConfetti();
+      determineScene(); // Refresh scene logically
+    }
+
+    // INIT
+    window.onload = loadState;
+  </script>
+</body>
+</html>

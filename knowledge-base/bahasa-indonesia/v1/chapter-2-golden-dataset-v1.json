@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.1",
+  "dataset": "Chapter 2 Golden Dataset v1",
+  "status": "approved_seed",
+  "purpose": "Seed set for Chapter 2: Teks Prosedur Kompleks",
+  "items": [
+    {
+      "id": "BI12-W02-KM-C02-M01",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-T0A",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question_type": "mcq",
+      "question": "Ketika membaca sebuah teks prosedur kompleks tentang cara membuat akun di portal resmi, ditemukan kalimat: 'Pastikan Anda menggunakan kata sandi yang memuat huruf besar, angka, dan simbol.' Informasi eksplisit apa yang dapat ditangkap dari kalimat tersebut?",
+      "options": [
+        "Kata sandi harus terdiri dari kombinasi huruf besar, angka, dan simbol",
+        "Kata sandi bebas dibuat sesuai selera",
+        "Pengguna tidak diwajibkan menggunakan simbol",
+        "Huruf besar hanya digunakan di awal kalimat sandi"
+      ],
+      "answer": "Kata sandi harus terdiri dari kombinasi huruf besar, angka, dan simbol",
+      "explanation": "Informasi eksplisit adalah informasi yang tertulis secara langsung di dalam teks. Kalimat tersebut dengan jelas mensyaratkan kombinasi tersebut.",
+      "source": {
+        "student_book": {
+          "pages": "54-56",
+          "section": "A. Mengungkapkan Kembali Informasi secara Eksplisit dari Teks Prosedur Kompleks"
+        }
+      },
+      "provenance": "Materi Bab 2, Subbab A",
+      "game_mechanic": "document_inspection",
+      "mode": "training",
+      "tags": ["teks-prosedur", "informasi-eksplisit"]
+    },
+    {
+      "id": "BI12-W02-KM-C02-M02",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-T0B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Saat menyimak sebuah panduan lisan tentang pertolongan pertama, sang narator berkata dengan nada cepat dan tegas: 'Segera hubungi ambulans jika korban tidak bernapas!' Bagaimana cara kita menanggapi informasi tersebut?",
+      "options": [
+        "Mengenali bahwa itu adalah langkah krusial yang memerlukan tindakan darurat",
+        "Menunggu sampai panduan selesai baru menghubungi ambulans",
+        "Mengabaikan intonasi narator",
+        "Menghubungi polisi terlebih dahulu"
+      ],
+      "answer": "Mengenali bahwa itu adalah langkah krusial yang memerlukan tindakan darurat",
+      "explanation": "Menanggapi informasi yang disimak berarti memperhatikan isi pesan sekaligus intonasi pembicara untuk menentukan tingkat urgensi langkah prosedur.",
+      "source": {
+        "student_book": {
+          "pages": "57-60",
+          "section": "B. Mengidentifikasi dan Menanggapi Informasi dari Teks Prosedur Kompleks yang Disimak"
+        }
+      },
+      "provenance": "Materi Bab 2, Subbab B",
+      "game_mechanic": "audio_response",
+      "mode": "training",
+      "tags": ["teks-prosedur", "menyimak", "tanggapan"]
+    },
+    {
+      "id": "BI12-W02-KM-C02-M03",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-T0C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "ordering",
+      "question": "Urutkan langkah-langkah berikut berdasarkan logika teks prosedur pembuatan rekening bank: (A) Mengisi formulir pendaftaran, (B) Menyiapkan kartu identitas asli, (C) Menandatangani buku tabungan, (D) Menyerahkan berkas ke petugas.",
+      "options": [
+        "B → A → D → C",
+        "A → B → C → D",
+        "B → D → A → C",
+        "D → C → A → B"
+      ],
+      "answer": "B → A → D → C",
+      "explanation": "Langkah logis dimulai dari persiapan syarat (B), pengisian data (A), penyerahan (D), hingga finalisasi rekening (C).",
+      "source": {
+        "student_book": {
+          "pages": "61-65",
+          "section": "C. Memahami dan Melakukan Instruksi pada Teks Prosedur Kompleks yang Dibaca"
+        }
+      },
+      "provenance": "Materi Bab 2, Subbab C",
+      "game_mechanic": "procedural_ordering",
+      "mode": "exam",
+      "tags": ["teks-prosedur", "instruksi", "urutan"]
+    },
+    {
+      "id": "BI12-W02-KM-C02-M04",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-T0D",
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Terdapat dua teks prosedur tentang perpanjangan SIM. Teks 1 menggunakan bahasa yang formal dan ringkas. Teks 2 menggunakan gaya bahasa santai seperti di majalah remaja. Dalam konteks pelayanan publik, manakah yang lebih tepat dan mengapa?",
+      "options": [
+        "Teks 1, karena prosedur publik membutuhkan kejelasan, kepastian, dan bahasa formal yang baku",
+        "Teks 2, karena lebih menarik dibaca oleh semua kalangan",
+        "Teks 1 dan Teks 2 sama-sama buruk",
+        "Teks 2, karena menghindari birokrasi yang kaku"
+      ],
+      "answer": "Teks 1, karena prosedur publik membutuhkan kejelasan, kepastian, dan bahasa formal yang baku",
+      "explanation": "Teks prosedur yang berkaitan dengan administrasi resmi harus mengutamakan bahasa formal (baku) agar tidak menimbulkan ambiguitas atau salah tafsir.",
+      "source": {
+        "student_book": {
+          "pages": "66-73",
+          "section": "D. Membandingkan Dua Teks Prosedur Kompleks yang Dibaca"
+        }
+      },
+      "provenance": "Materi Bab 2, Subbab D",
+      "game_mechanic": "document_inspection",
+      "mode": "exam",
+      "tags": ["teks-prosedur", "perbandingan", "kebahasaan"]
+    },
+    {
+      "id": "BI12-W02-KM-C02-M05",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-T0E",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah prosedur diet tertulis: 'Anda bisa langsing dalam 3 hari hanya dengan meminum air garam.' Sebagai pembaca kritis, bagaimana cara merefleksikan gagasan ini?",
+      "options": [
+        "Mempertanyakan dasar ilmiah dan logika kesehatan dari prosedur tersebut",
+        "Langsung mencoba prosedur tersebut keesokan harinya",
+        "Membagikan teks prosedur tersebut ke semua teman",
+        "Percaya sepenuhnya karena tertulis dalam bentuk langkah-langkah"
+      ],
+      "answer": "Mempertanyakan dasar ilmiah dan logika kesehatan dari prosedur tersebut",
+      "explanation": "Merefleksikan teks berarti kita tidak menelan mentah-mentah instruksi yang ada, melainkan mengkritisi kelogisan dan keamanan dari prosedur tersebut.",
+      "source": {
+        "student_book": {
+          "pages": "74-76",
+          "section": "E. Merefleksi Gagasan dan Pandangan dari Teks Prosedur yang Dibaca"
+        }
+      },
+      "provenance": "Materi Bab 2, Subbab E",
+      "game_mechanic": "fact_check",
+      "mode": "training",
+      "tags": ["teks-prosedur", "refleksi", "kritis"]
+    },
+    {
+      "id": "BI12-W02-KM-C02-M06",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-T0F",
+      "skill": "create",
+      "cognitive_level": "apply",
+      "difficulty": "hard",
+      "question_type": "multi_select",
+      "question": "Saat Anda diminta mendemonstrasikan prosedur evakuasi gempa di depan kelas, elemen apa saja yang WAJIB diperhatikan agar demonstrasi tersebut efektif?",
+      "options": [
+        "Kejelasan artikulasi suara",
+        "Penggunaan peragaan tubuh (gesture) yang tepat",
+        "Menyampaikan langkah-langkah secara acak",
+        "Penekanan intonasi pada langkah berbahaya"
+      ],
+      "answer": [
+        "Kejelasan artikulasi suara",
+        "Penggunaan peragaan tubuh (gesture) yang tepat",
+        "Penekanan intonasi pada langkah berbahaya"
+      ],
+      "explanation": "Demonstrasi yang efektif membutuhkan penyampaian suara yang jelas, gestur yang mendukung, serta penekanan pada peringatan penting. Langkah acak akan merusak prosedur.",
+      "source": {
+        "student_book": {
+          "pages": "77-81",
+          "section": "F. Mendemonstrasikan Cara Melakukan atau Membuat Sesuatu secara Runtut"
+        }
+      },
+      "provenance": "Materi Bab 2, Subbab F",
+      "game_mechanic": "speech_analysis",
+      "mode": "exam",
+      "tags": ["teks-prosedur", "demonstrasi", "komunikasi"]
+    },
+    {
+      "id": "BI12-W02-KM-C02-M07",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-T0G",
+      "skill": "create",
+      "cognitive_level": "create",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Anda akan memproduksi video tutorial memasak. Untuk memastikan penonton tidak kebingungan saat melihat proses pemotongan bahan, teknik produksi apa yang paling esensial?",
+      "options": [
+        "Mengambil gambar dengan sudut pandang jarak dekat (close-up) saat proses pemotongan",
+        "Menambahkan musik dengan volume sangat keras",
+        "Menggunakan transisi layar hitam selama 10 detik",
+        "Merebut perhatian dengan efek ledakan visual"
+      ],
+      "answer": "Mengambil gambar dengan sudut pandang jarak dekat (close-up) saat proses pemotongan",
+      "explanation": "Dalam video tutorial (prosedural), kejelasan tindakan visual sangat krusial. Sudut pandang jarak dekat membantu penonton meniru detail tindakan.",
+      "source": {
+        "student_book": {
+          "pages": "82-97",
+          "section": "G. Memproduksi Video Tutorial Cara Melakukan atau Membuat Sesuatu Sesuai Prosedur"
+        }
+      },
+      "provenance": "Materi Bab 2, Subbab G",
+      "game_mechanic": "video_production",
+      "mode": "training",
+      "tags": ["teks-prosedur", "video-tutorial", "multimedia"]
+    }
+  ]
+}

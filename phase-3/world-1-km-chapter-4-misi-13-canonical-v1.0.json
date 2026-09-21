@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "Misi 13: Struktur Teks dan Model 5R",
+  "purpose": "Approved additive World 1 content batch for controlled expansion.",
+  "chapter_id": "BI12-C04",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "KM04-B1",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Secara umum, struktur teks eksplanasi kompleks terdiri atas tiga bagian utama, yaitu...",
+      "options": [
+        "Pernyataan Umum, Deretan Penjelas, dan Interpretasi",
+        "Tesis, Argumentasi, dan Penegasan Ulang",
+        "Orientasi, Komplikasi, dan Resolusi",
+        "Abstraksi, Orientasi, dan Koda"
+      ],
+      "answer": "Pernyataan Umum, Deretan Penjelas, dan Interpretasi",
+      "explanation": "Teks eksplanasi memiliki struktur khusus yang bertujuan menjelaskan suatu fenomena: Pernyataan umum (pengenalan topik), deretan penjelas (urutan sebab-akibat), dan interpretasi (simpulan atau penegasan ulang dampak fenomena).",
+      "source": {
+        "student_book": {"pages": "154", "section": "Bab 4, Subbab D"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM04-B2",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Dalam model refleksi 5R, tahapan di mana pembaca menghubungkan gagasan dalam teks dengan pengalaman pribadi atau fenomena sosial yang pernah mereka alami disebut tahap...",
+      "options": [
+        "Relating (Mengaitkan)",
+        "Responding (Menanggapi)",
+        "Reasoning (Menalar)",
+        "Reporting (Melaporkan)"
+      ],
+      "answer": "Relating (Mengaitkan)",
+      "explanation": "Tahap Relating bertujuan untuk menunjukkan sejauh mana pembaca menginternalisasi teks dengan cara mencari hubungannya dengan pengetahuan atau pengalaman masa lalu pembaca tersebut.",
+      "source": {
+        "student_book": {"pages": "150", "section": "Bab 4, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    },
+    {
+      "id": "KM04-B3",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Tahap terakhir dalam model refleksi 5R adalah 'Reconstructing' (Membangun Kembali). Apa yang dilakukan pembaca pada tahap ini?",
+      "options": [
+        "Mengembangkan pemahaman baru, memberikan saran, atau menyusun ulang gagasan berdasarkan hasil refleksi.",
+        "Menyebutkan kembali isi teks secara objektif tanpa menambahkan opini pribadi.",
+        "Menilai secara logis apakah argumen penulis kuat dan akurat.",
+        "Memberikan kesan emosional pertama terhadap bacaan (setuju/tidak setuju)."
+      ],
+      "answer": "Mengembangkan pemahaman baru, memberikan saran, atau menyusun ulang gagasan berdasarkan hasil refleksi.",
+      "explanation": "Reconstructing (Membangun kembali) adalah puncak refleksi di mana pembaca berhasil meramu isi teks dengan pikirannya sendiri untuk menciptakan sebuah gagasan, saran, atau perspektif baru yang lebih komprehensif.",
+      "source": {
+        "student_book": {"pages": "151", "section": "Bab 4, Subbab C"},
+        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
+      },
+      "provenance": "Generated content following KM standard",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan"
+    }
+  ]
+}
