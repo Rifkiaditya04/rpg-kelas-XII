@@ -16,18 +16,19 @@
     }
     
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Outfit', sans-serif; }
-    body, html { height: 100vh; overflow: hidden; background: #000; }
+    body, html { height: 100vh; overflow: hidden; background: #0f172a; }
     
     /* BACKGROUND WITH CROSS-FADE */
     #vn-background {
       position: absolute; inset: 0; 
       background-size: cover; background-position: center;
+      background-color: #0f172a;
       transition: opacity 0.6s ease-in-out;
       z-index: 1;
     }
     #vn-background::after {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 40%, transparent 100%);
+      background: linear-gradient(to top, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.4) 50%, rgba(15,23,42,0.2) 100%);
       z-index: 2; pointer-events: none;
     }
     
@@ -56,15 +57,38 @@
     }
     .btn-reset:hover { background: rgba(15,23,42,0.75); transform: translateY(-1px); }
     
-    /* DIALOG SYSTEM */
+    /* MAIN LAYOUT — NPC LEFT, PANEL RIGHT */
     #vn-container {
       position: absolute; inset: 0; z-index: 10;
-      display: flex; flex-direction: column; justify-content: flex-end; align-items: center;
-      padding-bottom: 32px;
+      display: flex; flex-direction: row; align-items: stretch;
+      padding: 0;
     }
     
+    /* NPC CHARACTER — LEFT SIDE (35% width) */
+    .vn-character-layer {
+      position: relative; flex-shrink: 0;
+      width: 35%; z-index: 15; pointer-events: none;
+      display: flex; align-items: flex-end; justify-content: center;
+      overflow: hidden;
+    }
+    .vn-character-layer img {
+      width: 100%; height: 100%; object-fit: cover; object-position: top center;
+      transition: opacity 0.4s ease;
+    }
+    .vn-character-layer.entering img {
+      animation: avatarEnter 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards;
+    }
+    @keyframes avatarEnter { from{opacity:0;transform: translateY(40px) scale(0.95)} to{opacity:1;transform: translateY(0) scale(1)} }
+    
+    /* RIGHT PANEL AREA (65% width) */
+    .right-panel {
+      flex: 1; min-width: 0;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 24px 32px 32px 0;
+    }
+    
+    /* DIALOG BOX */
     .dialog-box {
-      width: 92%; max-width: 1000px;
       background: linear-gradient(135deg, rgba(248,246,240,0.97) 0%, rgba(255,255,255,0.95) 100%);
       backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
       border-radius: 20px; padding: 28px 32px;
@@ -83,28 +107,12 @@
     @keyframes borderShimmer { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
     @keyframes dialogSlideUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
     
-    /* AVATAR NPC */
-    .vn-character-layer {
-      position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
-      height: 85vh; z-index: 15; pointer-events: none;
-      animation: avatarBreathing 4s ease-in-out infinite;
-    }
-    .vn-character-layer img {
-      height: 100%; object-fit: contain;
-      transition: opacity 0.4s ease;
-    }
-    .vn-character-layer.entering img {
-      animation: avatarEnter 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards;
-    }
-    @keyframes avatarBreathing { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(-6px)} }
-    @keyframes avatarEnter { from{opacity:0;transform:translateX(-50%) translateY(40px) scale(0.95)} to{opacity:1;transform:translateX(-50%) translateY(0) scale(1)} }
-    
     .dialog-content { display: flex; flex-direction: column; justify-content: center; }
     .dialog-title { font-size: 26px; font-weight: 800; color: var(--text-dark); margin-bottom: 2px; }
     .dialog-subtitle { font-size: 12px; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 14px; }
     .dialog-text {
-      font-size: 17px; color: #475569; line-height: 1.7; margin-bottom: 20px;
-      font-style: italic; min-height: 52px;
+      font-size: 17px; color: #1e293b; line-height: 1.7; margin-bottom: 20px;
+      font-weight: 600; min-height: 52px;
     }
     .dialog-text .typewriter-cursor {
       display: inline-block; width: 2px; height: 1em; background: var(--primary);
@@ -152,14 +160,30 @@
     .action-group { display: flex; gap: 12px; flex-wrap: wrap; }
     
     /* MODALS */
-    #mission-modal, #reward-modal, #dev-modal {
+    #reward-modal, #dev-modal {
       position: absolute; inset: 0; z-index: 100;
       background: rgba(0,0,0,0.8); display: none;
       align-items: center; justify-content: center; flex-direction: column;
     }
-    #mission-modal.active, #reward-modal.active, #dev-modal.active { display: flex; }
+    #reward-modal.active, #dev-modal.active { display: flex; }
     
-    #mission-frame { width: 100%; height: 100%; border: none; background: #fff; }
+    /* INLINE MISSION PANEL */
+    #inline-mission-panel {
+      display: none; flex-direction: column;
+      flex: 1; min-height: 0;
+      border-radius: 20px; overflow: hidden;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+      border: 2px solid rgba(255,255,255,0.15);
+      animation: dialogSlideUp 0.45s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    #inline-mission-panel.active { display: flex; }
+    #inline-mission-panel .mission-header {
+      padding: 14px 24px; background: var(--text-dark);
+      display: flex; justify-content: space-between; align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1); flex-shrink: 0;
+    }
+    #inline-mission-panel .mission-header h3 { color: #fff; font-size: 16px; font-weight: 700; }
+    #mission-frame { width: 100%; flex: 1; border: none; background: #fff; border-radius: 0 0 18px 18px; }
     .modal-header {
       width: 100%; padding: 16px 24px; background: var(--text-dark); color: #fff;
       display: flex; justify-content: space-between; align-items: center;
@@ -221,29 +245,31 @@
 
   <!-- VN SYSTEM -->
   <div id="vn-container">
+    <!-- NPC CHARACTER — LEFT -->
     <div class="vn-character-layer">
-      <img id="npc-avatar" src="../../phase-3/visuals/Desain referensi fix/avatar-rifki.png" alt="Avatar">
+      <img id="npc-avatar" src="../../phase-3/visuals/Desain referensi fix/npc-rifki.jpg" alt="Avatar">
     </div>
     
-    <div class="dialog-box">
-      <div class="dialog-content">
-        <div class="dialog-title" id="npc-name">Rifki</div>
-        <div class="dialog-subtitle" id="npc-role">Pembimbing Utama</div>
-        <div class="dialog-text" id="npc-dialog">Memuat narasi...</div>
-        <div class="action-group" id="action-buttons">
-          <!-- Buttons dynamically injected here -->
+    <!-- RIGHT PANEL: DIALOG or MISSION -->
+    <div class="right-panel">
+      <div class="dialog-box" id="vn-dialog-box">
+        <div class="dialog-content">
+          <div class="dialog-title" id="npc-name">Rifki</div>
+          <div class="dialog-subtitle" id="npc-role">Pembimbing Utama</div>
+          <div class="dialog-text" id="npc-dialog">Memuat narasi...</div>
+          <div class="action-group" id="action-buttons"></div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- MISSION MODAL -->
-  <div id="mission-modal">
-    <div class="modal-header">
-      <h3 id="modal-title">Menjalankan Misi...</h3>
-      <button class="btn-close-modal" onclick="closeMissionModal()">Batalkan Misi</button>
+      <!-- INLINE MISSION PANEL -->
+      <div id="inline-mission-panel">
+        <div class="mission-header">
+          <h3 id="modal-title">Menjalankan Misi...</h3>
+          <button class="btn-close-modal" onclick="closeMissionModal()">Batalkan Misi</button>
+        </div>
+        <iframe id="mission-frame" src="about:blank"></iframe>
+      </div>
     </div>
-    <iframe id="mission-frame" src="about:blank"></iframe>
   </div>
 
   <!-- REWARD MODAL -->
@@ -286,19 +312,19 @@
     
     // Mission Database
     const MISSIONS = [
-      { id: 'BI12-W01-KM-C01-M01', npcName: 'Rifki', npcRole: 'Pembimbing Komunikasi', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-rifki.png', dataset: '../../phase-3/world-1-km-chapter-1-original-content-batch-01-canonical-v1.1.json', label: 'Misi 1: Komunikasi Resmi', pembekalanText: '“Pada misi ini kita mempelajari surat resmi. Kamu diharapkan mampu memahami informasi eksplisit secara akurat dan tidak terjebak dengan makna rancu. Jika nilaimu kurang dari 70%, kamu harus mengikuti sesi remedial.”' },
-      { id: 'BI12-W01-KM-C01-M02', npcName: 'Leli', npcRole: 'Pembimbing Literasi', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-leli.png', dataset: '../../phase-3/world-1-km-chapter-1-original-content-batch-02-e4-canonical-v1.1.json', label: 'Misi 2: Literasi Sastra', pembekalanText: '“Misi selanjutnya akan mengasah kepekaanmu. Kamu diharapkan mampu menyimpulkan makna tersirat (implisit) dari sebuah pemberitahuan resmi. Ingat, target kelulusan adalah 70%.”' },
-      { id: 'BI12-W01-KM-C01-M03', npcName: 'Raka', npcRole: 'Pembimbing Analisis', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-raka.png', dataset: '../../phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json', label: 'Misi 3: Analisis Teks', pembekalanText: '“Sekarang kita membandingkan dua teks surat resmi. Kamu harus bisa mengevaluasi perbedaan tujuan dan maknanya secara spesifik. Pastikan akurasimu minimal 70%.”' },
-      { id: 'BI12-W01-KM-C01-M04', npcName: 'Zaein', npcRole: 'Pembimbing Strategi', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', dataset: '../../phase-3/world-1-km-chapter-1-h-production-content-candidate-v1.json', label: 'Misi 4: Strategi Final', pembekalanText: '“Ujian akhir Bab 1! Di sini kamu diuji atas pemahaman struktur dan penggunaan bahasa baku (formal) dalam penulisan surat resmi. Tunjukkan kemampuan terbaikmu!”' },
-      { id: 'BI12-W01-KM-C02-M05', npcName: 'Rifki', npcRole: 'Pembimbing Utama', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-rifki.png', dataset: '../../phase-3/world-1-km-chapter-2-misi-5-canonical-v1.0.json', label: 'Misi 5: Observasi Prosedur Dasar', pembekalanText: '“Selamat datang di Bab 2! Kita akan mempelajari Teks Prosedur Kompleks (Gaya Hidup Sehat). Kamu diharapkan mampu menangkap urutan langkah eksplisit dan mendeteksi kesalahan berisiko pada instruksi acak. Target kelulusan 70%.”' },
-      { id: 'BI12-W01-KM-C02-M06', npcName: 'Leli', npcRole: 'Pembimbing Analisis', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-leli.png', dataset: '../../phase-3/world-1-km-chapter-2-misi-6-canonical-v1.0.json', label: 'Misi 6: Analisis Komparatif', pembekalanText: '“Mari kita pertajam kemampuan analisamu. Kamu harus bisa membandingkan dua teks prosedur dan menemukan ciri kebahasaannya, seperti kata kerja (verba material) dan kata hubung waktu (konjungsi temporal).”' },
-      { id: 'BI12-W01-KM-C02-M07', npcName: 'Raka', npcRole: 'Pembimbing Kritis', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-raka.png', dataset: '../../phase-3/world-1-km-chapter-2-misi-7-canonical-v1.0.json', label: 'Misi 7: Refleksi Kritis', pembekalanText: '“Misi ini melatih pola pikir kritismu. Terapkan kerangka 4F (Peristiwa, Perasaan, Pembelajaran, Penerapan) untuk mengekstrak makna atau konsekuensi dari sebuah prosedur yang kamu baca.”' },
-      { id: 'BI12-W01-KM-C02-M08', npcName: 'Zaein', npcRole: 'Kepala Program', avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', dataset: '../../phase-3/world-1-km-chapter-2-misi-8-canonical-v1.0.json', label: 'Misi 8: Ujian Praktik Akhir', pembekalanText: '“Misi terakhir Bab 2! Kamu diuji menyusun prosedur acak menjadi runtut dan higienis, serta mengambil keputusan penyuntingan (K3) pada video tutorial secara logis.”' },
+      { id: 'BI12-W01-KM-C01-M01', npcName: 'Rifki', npcRole: 'Pembimbing Komunikasi', avatar: '../../phase-3/visuals/Desain referensi fix/npc-rifki.jpg', dataset: '../../phase-3/world-1-km-chapter-1-original-content-batch-01-canonical-v1.1.json', label: 'Misi 1: Komunikasi Resmi', pembekalanText: '“Pada misi ini kita mempelajari surat resmi. Kamu diharapkan mampu memahami informasi eksplisit secara akurat dan tidak terjebak dengan makna rancu. Jika nilaimu kurang dari 70%, kamu harus mengikuti sesi remedial.”' },
+      { id: 'BI12-W01-KM-C01-M02', npcName: 'Leli', npcRole: 'Pembimbing Literasi', avatar: '../../phase-3/visuals/Desain referensi fix/npc-leli.jpg', dataset: '../../phase-3/world-1-km-chapter-1-original-content-batch-02-e4-canonical-v1.1.json', label: 'Misi 2: Literasi Sastra', pembekalanText: '“Misi selanjutnya akan mengasah kepekaanmu. Kamu diharapkan mampu menyimpulkan makna tersirat (implisit) dari sebuah pemberitahuan resmi. Ingat, target kelulusan adalah 70%.”' },
+      { id: 'BI12-W01-KM-C01-M03', npcName: 'Raka', npcRole: 'Pembimbing Analisis', avatar: '../../phase-3/visuals/Desain referensi fix/npc-raka.jpg', dataset: '../../phase-3/world-1-km-chapter-1-f-g-production-content-candidate-v1.2-id.json', label: 'Misi 3: Analisis Teks', pembekalanText: '“Sekarang kita membandingkan dua teks surat resmi. Kamu harus bisa mengevaluasi perbedaan tujuan dan maknanya secara spesifik. Pastikan akurasimu minimal 70%.”' },
+      { id: 'BI12-W01-KM-C01-M04', npcName: 'Zaein', npcRole: 'Pembimbing Strategi', avatar: '../../phase-3/visuals/Desain referensi fix/npc-zaein.jpg', dataset: '../../phase-3/world-1-km-chapter-1-h-production-content-candidate-v1.json', label: 'Misi 4: Strategi Final', pembekalanText: '“Ujian akhir Bab 1! Di sini kamu diuji atas pemahaman struktur dan penggunaan bahasa baku (formal) dalam penulisan surat resmi. Tunjukkan kemampuan terbaikmu!”' },
+      { id: 'BI12-W01-KM-C02-M05', npcName: 'Rifki', npcRole: 'Pembimbing Utama', avatar: '../../phase-3/visuals/Desain referensi fix/npc-rifki.jpg', dataset: '../../phase-3/world-1-km-chapter-2-misi-5-canonical-v1.0.json', label: 'Misi 5: Observasi Prosedur Dasar', pembekalanText: '“Selamat datang di Bab 2! Kita akan mempelajari Teks Prosedur Kompleks (Gaya Hidup Sehat). Kamu diharapkan mampu menangkap urutan langkah eksplisit dan mendeteksi kesalahan berisiko pada instruksi acak. Target kelulusan 70%.”' },
+      { id: 'BI12-W01-KM-C02-M06', npcName: 'Leli', npcRole: 'Pembimbing Analisis', avatar: '../../phase-3/visuals/Desain referensi fix/npc-leli.jpg', dataset: '../../phase-3/world-1-km-chapter-2-misi-6-canonical-v1.0.json', label: 'Misi 6: Analisis Komparatif', pembekalanText: '“Mari kita pertajam kemampuan analisamu. Kamu harus bisa membandingkan dua teks prosedur dan menemukan ciri kebahasaannya, seperti kata kerja (verba material) dan kata hubung waktu (konjungsi temporal).”' },
+      { id: 'BI12-W01-KM-C02-M07', npcName: 'Raka', npcRole: 'Pembimbing Kritis', avatar: '../../phase-3/visuals/Desain referensi fix/npc-raka.jpg', dataset: '../../phase-3/world-1-km-chapter-2-misi-7-canonical-v1.0.json', label: 'Misi 7: Refleksi Kritis', pembekalanText: '“Misi ini melatih pola pikir kritismu. Terapkan kerangka 4F (Peristiwa, Perasaan, Pembelajaran, Penerapan) untuk mengekstrak makna atau konsekuensi dari sebuah prosedur yang kamu baca.”' },
+      { id: 'BI12-W01-KM-C02-M08', npcName: 'Zaein', npcRole: 'Kepala Program', avatar: '../../phase-3/visuals/Desain referensi fix/npc-zaein.jpg', dataset: '../../phase-3/world-1-km-chapter-2-misi-8-canonical-v1.0.json', label: 'Misi 8: Ujian Praktik Akhir', pembekalanText: '“Misi terakhir Bab 2! Kamu diuji menyusun prosedur acak menjadi runtut dan higienis, serta mengambil keputusan penyuntingan (K3) pada video tutorial secara logis.”' },
       { 
         id: 'BI12-W01-KM-C03-M09', 
         npcName: 'Rifki', 
         npcRole: 'Pembimbing Sastra', 
-        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-rifki.png', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/npc-rifki.jpg', 
         dataset: '../../phase-3/world-1-km-chapter-3-misi-9-canonical-v1.0.json', 
         label: 'Misi 9: Sudut Pandang dan Perwatakan', 
         pembekalanText: [
@@ -312,7 +338,7 @@
         id: 'BI12-W01-KM-C03-M10', 
         npcName: 'Leli', 
         npcRole: 'Pembimbing Analisis', 
-        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-leli.png', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/npc-leli.jpg', 
         dataset: '../../phase-3/world-1-km-chapter-3-misi-10-canonical-v1.0.json', 
         label: 'Misi 10: Analisis Alur dan Pesan Moral', 
         pembekalanText: [
@@ -326,7 +352,7 @@
         id: 'BI12-W01-KM-C03-M11', 
         npcName: 'Zaein', 
         npcRole: 'Kepala Program Sastra', 
-        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/npc-zaein.jpg', 
         dataset: '../../phase-3/world-1-km-chapter-3-misi-11-canonical-v1.0.json', 
         label: 'Misi 11: Kaidah Bahasa & Penulisan Sastra', 
         pembekalanText: [
@@ -340,7 +366,7 @@
         id: 'BI12-W01-KM-C04-M12', 
         npcName: 'Rifki', 
         npcRole: 'Pembimbing Teknologi', 
-        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-rifki.png', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/npc-rifki.jpg', 
         dataset: '../../phase-3/world-1-km-chapter-4-misi-12-canonical-v1.0.json', 
         label: 'Misi 12: Evaluasi Gagasan AI', 
         pembekalanText: [
@@ -354,7 +380,7 @@
         id: 'BI12-W01-KM-C04-M13', 
         npcName: 'Leli', 
         npcRole: 'Pembimbing Analisis', 
-        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-leli.png', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/npc-leli.jpg', 
         dataset: '../../phase-3/world-1-km-chapter-4-misi-13-canonical-v1.0.json', 
         label: 'Misi 13: Struktur Teks & Model 5R', 
         pembekalanText: [
@@ -368,7 +394,7 @@
         id: 'BI12-W01-KM-C04-M14', 
         npcName: 'Zaein', 
         npcRole: 'Penguji Akhir Bab 4', 
-        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/npc-zaein.jpg', 
         dataset: '../../phase-3/world-1-km-chapter-4-misi-14-canonical-v1.0.json', 
         label: 'Misi 14: Kebahasaan & Gaya Bahasa', 
         pembekalanText: [
@@ -382,7 +408,7 @@
         id: 'BI12-W01-KM-C05-M15', 
         npcName: 'Rifki', 
         npcRole: 'Pembimbing Budaya', 
-        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-rifki.png', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/npc-rifki.jpg', 
         dataset: '../../phase-3/world-1-km-chapter-5-misi-15-canonical-v1.0.json', 
         label: 'Misi 15: Eksplorasi Kearifan Lokal', 
         pembekalanText: [
@@ -396,7 +422,7 @@
         id: 'BI12-W01-KM-C05-M16', 
         npcName: 'Leli', 
         npcRole: 'Pembimbing Analisis', 
-        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-leli.png', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/npc-leli.jpg', 
         dataset: '../../phase-3/world-1-km-chapter-5-misi-16-canonical-v1.0.json', 
         label: 'Misi 16: Fakta, Opini, dan Kebahasaan Esai', 
         pembekalanText: [
@@ -410,7 +436,7 @@
         id: 'BI12-W01-KM-C05-M17', 
         npcName: 'Zaein', 
         npcRole: 'Penguji Akhir Bab 5', 
-        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/npc-zaein.jpg', 
         dataset: '../../phase-3/world-1-km-chapter-5-misi-17-canonical-v1.0.json', 
         label: 'Misi 17: Analisis Kritis, Ejaan, dan Refleksi', 
         pembekalanText: [
@@ -424,7 +450,7 @@
         id: 'BI12-W01-KM-FINAL', 
         npcName: 'Zaein', 
         npcRole: 'Kepala Program', 
-        avatar: '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', 
+        avatar: '../../phase-3/visuals/Desain referensi fix/npc-zaein.jpg', 
         dataset: '../../phase-3/world-1-km-final-exam-canonical-v1.0.json', 
         label: 'Misi 18: Ujian Akhir Bahasa Indonesia',
         isFinalExam: true,
@@ -504,7 +530,7 @@
       // 1. TUTORIAL & ONBOARDING STATE
       if (state.tutorialStep === 0) {
         setDialog(
-          'Safira', 'Pemandu Digital', '../../phase-3/visuals/Desain referensi fix/avatar-safira.png', '../../phase-3/visuals/Desain referensi fix/map-sma-sekolah.jpg',
+          'Safira', 'Pemandu Digital', '../../phase-3/visuals/Desain referensi fix/npc-safira.jpg', '../../phase-3/visuals/Desain referensi fix/map-sma-sekolah.jpg',
           '“Selamat datang di SMA Nusantara! Game edukasi ini dirancang khusus sebagai jembatan interaktif dalam pembelajaranmu. Melalui simulasi ini, kamu tidak hanya membaca teori, tapi mempraktikkannya langsung dalam skenario nyata yang menyenangkan.”',
           [{ text: 'Lanjutkan', class: 'btn-action', action: () => { state.tutorialStep = 1; saveState(); determineScene(); } }]
         );
@@ -512,7 +538,7 @@
       }
       else if (state.tutorialStep === 1) {
         setDialog(
-          'Safira', 'Pemandu Digital', '../../phase-3/visuals/Desain referensi fix/avatar-safira.png', '../../phase-3/visuals/Desain referensi fix/map-sma-sekolah.jpg',
+          'Safira', 'Pemandu Digital', '../../phase-3/visuals/Desain referensi fix/npc-safira.jpg', '../../phase-3/visuals/Desain referensi fix/map-sma-sekolah.jpg',
           '“Untuk memulai perjalananmu, mata pelajaran apa yang ingin kamu jelajahi hari ini? (Di tahap Latihan ini, semua mata pelajaran bebas dipilih tanpa batas).”',
           [
             { text: 'Bahasa Indonesia', class: 'btn-action', action: () => { state.activeSubject = 'BI'; state.tutorialStep = 2; saveState(); determineScene(); } },
@@ -525,7 +551,7 @@
       else if (state.tutorialStep === 2) {
         let subjectName = state.activeSubject === 'BI' ? 'Bahasa Indonesia' : (state.activeSubject === 'MAT' ? 'Matematika' : 'Sosiologi');
         let npc = state.activeSubject === 'BI' ? 'Rifki' : 'Safira';
-        let avatar = state.activeSubject === 'BI' ? 'avatar-rifki.png' : 'avatar-safira.png';
+        let avatar = state.activeSubject === 'BI' ? 'npc-rifki.jpg' : 'npc-safira.jpg';
         
         if (!state.isBriefing) {
           setDialog(
@@ -545,7 +571,7 @@
       else if (state.tutorialStep === 3) {
         let subjectName = state.activeSubject === 'BI' ? 'Bahasa Indonesia' : (state.activeSubject === 'MAT' ? 'Matematika' : 'Sosiologi');
         let npc = state.activeSubject === 'BI' ? 'Rifki' : 'Safira';
-        let avatar = state.activeSubject === 'BI' ? 'avatar-rifki.png' : 'avatar-safira.png';
+        let avatar = state.activeSubject === 'BI' ? 'npc-rifki.jpg' : 'npc-safira.jpg';
 
         setDialog(
           npc, 'Pembimbing ' + subjectName, `../../phase-3/visuals/Desain referensi fix/${avatar}`, '../../phase-3/visuals/Desain referensi fix/map-perpustakaan.jpg',
@@ -608,7 +634,7 @@
           // Semua misi 1-17 selesai, tapi ujian akhir belum dikerjakan
           if (!state.isBriefing) {
             setDialog(
-              'Zaein', 'Kepala Program', '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
+              'Zaein', 'Kepala Program', '../../phase-3/visuals/Desain referensi fix/npc-zaein.jpg', '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
               '“Wow, kamu sudah menyelesaikan semua 17 misi! Kamu benar-benar luar biasa. Sebagai penutup perjalanan di Bahasa Indonesia ini, ada satu tantangan terakhir yang menantimu... Ujian Akhir!”',
               [
                 { text: 'Siap, Mulai Ujian Akhir!', class: 'btn-action', action: () => { state.isBriefing = true; currentBriefingStep = 0; saveState(); determineScene(); } },
@@ -634,7 +660,7 @@
           // Ujian Akhir juga sudah selesai
           const finalScore = Math.round(state.completed['BI12-W01-KM-FINAL'].accuracy);
           setDialog(
-            'Zaein', 'Kepala Program', '../../phase-3/visuals/Desain referensi fix/avatar-zein.png', '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
+            'Zaein', 'Kepala Program', '../../phase-3/visuals/Desain referensi fix/npc-zaein.jpg', '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
             `“Selamat! Kamu telah menuntaskan seluruh program Bahasa Indonesia, termasuk Ujian Akhir dengan nilai ${finalScore}%. Perjalananmu di sini sungguh mengesankan. Saatnya menjelajah mata pelajaran lain!”`,
             [
               { text: 'Ulang Ujian Akhir', class: 'btn-action secondary', action: () => startMission(finalExamIdx, false) },
@@ -741,7 +767,7 @@
          msg = '“Wah, sempurna! Semua nilaimu sudah mencapai 100%. Kamu tidak perlu mengulang misi jika tidak mau. Kamu bisa kembali melihat menu mata pelajaran lain.”';
       }
       
-      setDialog('Safira', 'Pemandu Digital', '../../phase-3/visuals/Desain referensi fix/avatar-safira.png', '../../phase-3/visuals/Desain referensi fix/map-sma-sekolah.jpg', msg, buttons);
+      setDialog('Safira', 'Pemandu Digital', '../../phase-3/visuals/Desain referensi fix/npc-safira.jpg', '../../phase-3/visuals/Desain referensi fix/map-sma-sekolah.jpg', msg, buttons);
     }
 
     // MISSION EXECUTION
@@ -752,11 +778,14 @@
       const titlePrefix = isPractice ? '[LATIHAN] ' : 'Misi Utama: ';
       document.getElementById('modal-title').textContent = titlePrefix + currentMissionObj.label;
       document.getElementById('mission-frame').src = `km-batch-01-runtime.html?dataset=${encodeURIComponent(currentMissionObj.dataset)}&missionId=${currentMissionObj.id}`;
-      document.getElementById('mission-modal').classList.add('active');
+      // Show inline panel, hide dialog
+      document.getElementById('vn-dialog-box').style.display = 'none';
+      document.getElementById('inline-mission-panel').classList.add('active');
     }
     
     function closeMissionModal() {
-      document.getElementById('mission-modal').classList.remove('active');
+      document.getElementById('inline-mission-panel').classList.remove('active');
+      document.getElementById('vn-dialog-box').style.display = '';
       document.getElementById('mission-frame').src = 'about:blank';
     }
 
