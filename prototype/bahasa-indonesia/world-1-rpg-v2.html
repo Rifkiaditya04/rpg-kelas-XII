@@ -154,6 +154,7 @@
       box-shadow: 0 1px 0 #cbd5e1, 0 2px 4px rgba(0,0,0,0.08);
     }
     .action-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    #action-buttons { max-height: 40vh; overflow-y: auto; padding-right: 8px; }
     
     /* MODALS */
     #reward-modal, #dev-modal {
@@ -517,16 +518,22 @@
     }
 
     function jumpToMission(targetIndex) {
-      if(!confirm(`Lompat ke ${MISSIONS[targetIndex].label}? Ini akan menganggap misi sebelumnya telah selesai 100%.`)) return;
+      if(!confirm(`Lompat ke ${MISSIONS[targetIndex].label}? Ini akan menganggap misi sebelumnya (di mata pelajaran yang sama) telah selesai 100%.`)) return;
       
-      state.completed = {};
-      state.xp = 0;
-      for (let i = 0; i < targetIndex; i++) {
-          state.completed[MISSIONS[i].id] = { accuracy: 100, xp: 100 };
-          state.xp += 100;
+      const targetM = MISSIONS[targetIndex];
+      const subject = targetM.id.split('12-')[0]; // e.g. 'BI', 'MAT'
+      const subjectMissions = MISSIONS.filter(m => m.id.startsWith(subject));
+      const targetSubIdx = subjectMissions.findIndex(m => m.id === targetM.id);
+      
+      for (let i = 0; i < targetSubIdx; i++) {
+          const m = subjectMissions[i];
+          if (!state.completed[m.id]) {
+             state.completed[m.id] = { accuracy: 100, xp: 100 };
+             state.xp += 100;
+          }
       }
-      state.tutorialStep = 3; 
-      state.activeSubject = 'BI';
+      state.tutorialStep = 4; 
+      state.activeSubject = subject;
       state.isBriefing = false;
       currentBriefingStep = 0;
       saveState();
@@ -577,7 +584,10 @@
           setDialog(
             npc, 'Pembimbing ' + subjectName, `../../phase-3/visuals/Desain referensi fix/${avatar}`, '../../phase-3/visuals/Desain referensi fix/map-perpustakaan.jpg',
             `“Ini adalah sesi Pembekalan dan Contoh Terbimbing. Pada kelas ini, kamu diharapkan mampu memahami materi inti sebelum praktik. Mari kita uji pemahamanmu dengan sesi Latihan simulasi bebas risiko ini.”`,
-            [{ text: 'Mulai Latihan Soal', class: 'btn-action', action: () => startMission(0, true) }]
+            [{ text: 'Mulai Latihan Soal', class: 'btn-action', action: () => {
+                 const firstIdx = MISSIONS.findIndex(m => m.id.startsWith(state.activeSubject));
+                 startMission(firstIdx !== -1 ? firstIdx : 0, true);
+            } }]
           );
         }
         return;
@@ -599,11 +609,17 @@
       }
 
       // 2. MAIN GAME STATE (Tutorial Selesai)
-      const completedCount = Object.keys(state.completed).length;
+      if (!state.activeSubject) return;
+      const subjectMissions = MISSIONS.filter(m => m.id.startsWith(state.activeSubject));
+      const uncompletedNormal = subjectMissions.filter(m => !m.isFinalExam && !state.completed[m.id]);
+      const finalExam = subjectMissions.find(m => m.isFinalExam);
+      const finalExamDone = finalExam ? state.completed[finalExam.id] : false;
       
-      if (completedCount < MISSIONS.length) {
-        const nextMissionIdx = completedCount; 
-        const nextM = MISSIONS[nextMissionIdx];
+      let mapSubjectName = state.activeSubject === 'BI' ? 'Bahasa Indonesia' : (state.activeSubject === 'MAT' ? 'Matematika' : 'Sosiologi');
+      
+      if (uncompletedNormal.length > 0) {
+        const nextM = uncompletedNormal[0];
+        const nextMissionIdx = MISSIONS.findIndex(m => m.id === nextM.id);
         
         if (!state.isBriefing) {
           setDialog(
@@ -623,59 +639,41 @@
             } else {
               buttons.push({ text: `Mulai Latihan Soal`, class: 'btn-action', action: () => startMission(nextMissionIdx, false) });
             }
-            setDialog(
-              nextM.npcName, nextM.npcRole, nextM.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-kelas.jpg',
-              nextM.pembekalanText[currentBriefingStep],
-              buttons
-            );
+            setDialog(nextM.npcName, nextM.npcRole, nextM.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-kelas.jpg', nextM.pembekalanText[currentBriefingStep], buttons);
           } else {
-            setDialog(
-              nextM.npcName, nextM.npcRole, nextM.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-kelas.jpg',
-              nextM.pembekalanText,
-              [
-                { text: `Mulai Latihan Soal`, class: 'btn-action', action: () => startMission(nextMissionIdx, false) }
-              ]
-            );
+            setDialog(nextM.npcName, nextM.npcRole, nextM.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-kelas.jpg', nextM.pembekalanText, [{ text: `Mulai Latihan Soal`, class: 'btn-action', action: () => startMission(nextMissionIdx, false) }]);
           }
         }
       } 
-      else {
-        // Cek apakah ujian akhir sudah pernah dikerjakan
-        const finalExamDone = state.completed['BI12-W01-KM-FINAL'];
-        const finalExamIdx = MISSIONS.findIndex(m => m.id === 'BI12-W01-KM-FINAL');
-        
+      else if (finalExam) {
+        const finalExamIdx = MISSIONS.findIndex(m => m.id === finalExam.id);
         if (!finalExamDone) {
-          // Semua misi 1-17 selesai, tapi ujian akhir belum dikerjakan
           if (!state.isBriefing) {
+            let totalMissionsStr = (subjectMissions.length - 1) + " misi";
             setDialog(
-              'Zaein', 'Kepala Program', '../../phase-3/visuals/Desain referensi fix/npc-zaein.png', '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
-              '“Wow, kamu sudah menyelesaikan semua 17 misi! Kamu benar-benar luar biasa. Sebagai penutup perjalanan di Bahasa Indonesia ini, ada satu tantangan terakhir yang menantimu... Ujian Akhir!”',
+              finalExam.npcName, finalExam.npcRole, finalExam.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
+              `“Wow, kamu sudah menyelesaikan semua ${totalMissionsStr}! Kamu benar-benar luar biasa. Sebagai penutup perjalanan di ${mapSubjectName} ini, ada satu tantangan terakhir yang menantimu... Ujian Akhir!”`,
               [
                 { text: 'Siap, Mulai Ujian Akhir!', class: 'btn-action', action: () => { state.isBriefing = true; currentBriefingStep = 0; saveState(); determineScene(); } },
                 { text: 'Perbaiki Nilai Misi Dulu', class: 'btn-action secondary', action: () => showReplayMenu() }
               ]
             );
           } else {
-            // Tampilkan pembekalan ujian akhir multi-step
-            const finalM = MISSIONS[finalExamIdx];
-            if (Array.isArray(finalM.pembekalanText)) {
-              const isLast = currentBriefingStep >= finalM.pembekalanText.length - 1;
+            if (Array.isArray(finalExam.pembekalanText)) {
+              const isLast = currentBriefingStep >= finalExam.pembekalanText.length - 1;
               const buttons = isLast
                 ? [{ text: 'Mulai Ujian Akhir', class: 'btn-action', action: () => startMission(finalExamIdx, false) }]
                 : [{ text: 'Lanjutkan', class: 'btn-action', action: () => { currentBriefingStep++; determineScene(); } }];
-              setDialog(
-                finalM.npcName, finalM.npcRole, finalM.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
-                finalM.pembekalanText[currentBriefingStep],
-                buttons
-              );
+              setDialog(finalExam.npcName, finalExam.npcRole, finalExam.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg', finalExam.pembekalanText[currentBriefingStep], buttons);
+            } else {
+              setDialog(finalExam.npcName, finalExam.npcRole, finalExam.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg', finalExam.pembekalanText, [{ text: 'Mulai Ujian Akhir', class: 'btn-action', action: () => startMission(finalExamIdx, false) }]);
             }
           }
         } else {
-          // Ujian Akhir juga sudah selesai
-          const finalScore = Math.round(state.completed['BI12-W01-KM-FINAL'].accuracy);
+          const finalScore = Math.round(state.completed[finalExam.id].accuracy);
           setDialog(
-            'Zaein', 'Kepala Program', '../../phase-3/visuals/Desain referensi fix/npc-zaein.png', '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
-            `“Selamat! Kamu telah menuntaskan seluruh program Bahasa Indonesia, termasuk Ujian Akhir dengan nilai ${finalScore}%. Perjalananmu di sini sungguh mengesankan. Saatnya menjelajah mata pelajaran lain!”`,
+            finalExam.npcName, finalExam.npcRole, finalExam.avatar, '../../phase-3/visuals/Desain referensi fix/map-ruang-guru.jpg',
+            `“Selamat! Kamu telah menuntaskan seluruh program ${mapSubjectName}, termasuk Ujian Akhir dengan nilai ${finalScore}%. Perjalananmu di sini sungguh mengesankan. Saatnya menjelajah mata pelajaran lain!”`,
             [
               { text: 'Ulang Ujian Akhir', class: 'btn-action secondary', action: () => startMission(finalExamIdx, false) },
               { text: 'Perbaiki Nilai Misi', class: 'btn-action secondary', action: () => showReplayMenu() },
@@ -683,6 +681,15 @@
             ]
           );
         }
+      } else {
+         setDialog(
+            'Safira', 'Pemandu Digital', '../../phase-3/visuals/Desain referensi fix/npc-safira.png', '../../phase-3/visuals/Desain referensi fix/map-sma-sekolah.jpg',
+            `“Kamu telah menyelesaikan semua misi yang tersedia untuk ${mapSubjectName}. Luar biasa! Pilih mata pelajaran lain untuk melanjutkan petualanganmu.”`,
+            [
+              { text: 'Perbaiki Nilai Misi', class: 'btn-action secondary', action: () => showReplayMenu() },
+              { text: 'Pilih Mata Pelajaran Lain', class: 'btn-action', action: () => { state.activeSubject = null; state.tutorialStep = 1; saveState(); determineScene(); } }
+            ]
+          );
       }
     }
 
@@ -764,12 +771,14 @@
       const buttons = [];
       let allPerfect = true;
       let completedAny = false;
+      const subjectMissions = MISSIONS.filter(m => m.id.startsWith(state.activeSubject));
       
-      MISSIONS.forEach((m, idx) => {
+      subjectMissions.forEach((m) => {
         if(state.completed[m.id]) {
           completedAny = true;
           const acc = Math.round(state.completed[m.id].accuracy);
           if (acc < 100) allPerfect = false;
+          const idx = MISSIONS.findIndex(x => x.id === m.id);
           buttons.push({ text: `Ulang: ${m.label} (Akurasi: ${acc}%)`, class: 'btn-action secondary', action: () => startMission(idx, false) });
         }
       });
