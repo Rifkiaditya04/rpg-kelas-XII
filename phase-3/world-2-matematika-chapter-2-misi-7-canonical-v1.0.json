@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 2 Matematika Wajib Chapter 2 - Misi 7 (Parameter Investasi & Pinjaman)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk evaluasi parameter kritis (Suku Bunga & Periode). Boss Chapter 2.",
+    "chapter_id": "MAT12-C02",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "MAT-C02-C-EASY",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-C",
+            "skill": "understand",
+            "question": "Fina ingin menyimpan dana pensiunnya. Ia menyadari bahwa inflasi setiap tahun memotong daya beli uangnya. Berdasarkan parameter investasi, jenis tingkat pengembalian bunga apakah yang paling tepat diperhatikan Fina untuk memastikan daya belinya tetap tumbuh?",
+            "options": [
+                "Suku Bunga Nominal",
+                "Suku Bunga Riil (Real Interest Rate)",
+                "Suku Bunga Efektif",
+                "Suku Bunga Dasar Kredit"
+            ],
+            "answer": "Suku Bunga Riil (Real Interest Rate)",
+            "explanation": "Suku bunga riil adalah suku bunga investasi setelah disesuaikan dengan tingkat inflasi. Ini adalah parameter kunci bagi penabung jangka panjang untuk memastikan bahwa nilai intrinsik uang (daya beli) tidak tergerus.",
+            "source": {
+                "student_book": { "pages": "71-75", "section": "Bab 2, Parameter Investasi" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 2, Parameter Ekonomi" }
+            },
+            "provenance": "Soal orisinal literasi parameter investasi (Kurikulum Merdeka) untuk memahami konsep bunga dan inflasi.",
+            "mode": "learning",
+            "game_mechanic": "evidence_scan",
+            "tags": ["parameter_investasi", "inflasi", "kontekstual"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Parameter Investasi",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "MAT-C02-C-MED",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-C",
+            "skill": "apply",
+            "question": "Sebuah investasi diproyeksikan akan melipatgandakan modal awal dalam waktu T tahun. Jika sistem menggunakan pemajemukan kontinu (continuous compounding) dengan suku bunga r per tahun, maka persamaan parameter yang tepat untuk mencari T adalah...",
+            "options": [
+                "T = ln(2) / r",
+                "T = 2 / ln(r)",
+                "T = (1+r)^2",
+                "T = r / ln(2)"
+            ],
+            "answer": "T = ln(2) / r",
+            "explanation": "Rumus bunga majemuk kontinu adalah Mn = M * e^(rt). Agar modal berlipat ganda, Mn = 2M. Maka 2M = M * e^(rt) -> 2 = e^(rt). Dengan menarik logaritma natural (ln) di kedua sisi: ln(2) = rt, sehingga t (atau T) = ln(2) / r. Ini juga menjadi dasar 'Aturan 72' dalam ekonomi praktis.",
+            "source": {
+                "student_book": { "pages": "71-75", "section": "Bab 2, Parameter Eksponensial" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 2, Eksponensial Lanjut" }
+            },
+            "provenance": "Soal orisinal drill K13 untuk mengukur keterampilan manipulasi logaritma natural (ln) pada persamaan parameter kontinu.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["parameter_waktu", "logaritma", "fundamental_k13"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Pemajemukan Kontinu (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "MAT-C02-C-HARD",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-C",
+            "skill": "evaluate",
+            "question": "Bank A memberikan skema pinjaman dengan bunga 'Floating Rate' di mana suku bunga bergantung pada indeks pasar. Setelah 2 tahun mencicil KPR, indeks pasar melesat dan bank A menaikkan suku bunga secara drastis. Jika nasabah tidak mampu membayar cicilan yang baru, opsi perbankan restrukturisasi mana yang secara matematis akan mencegah kredit macet sekaligus menjaga nilai cicilan tetap sama seperti sebelumnya (meski merugikan nasabah di sisi lain)?",
+            "options": [
+                "Menambah besaran angsuran pokok bulanan tanpa mengubah tenor.",
+                "Memperpanjang tenor (periode pembayaran) dengan suku bunga baru.",
+                "Melunasi sisa pokok pinjaman secara langsung (cash).",
+                "Meminta bank untuk memutihkan seluruh bunga bank sejak tahun pertama."
+            ],
+            "answer": "Memperpanjang tenor (periode pembayaran) dengan suku bunga baru.",
+            "explanation": "Dalam struktur anuitas, jika suku bunga (i) dinaikkan tetapi cicilan (A) ingin dipertahankan tetap, satu-satunya variabel kompensasi yang bisa disesuaikan adalah memperpanjang waktu/tenor (n). Ini menyebabkan total hutang membengkak dalam jangka panjang, namun secara cash flow jangka pendek akan menjaga nilai cicilan per bulan tidak naik.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Literasi Keuangan" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Analisis Resiko Suku Bunga" }
+            },
+            "provenance": "Soal orisinal TKA tingkat tinggi yang menggabungkan logika parameter n dan i dalam rumus anuitas dengan realitas krisis ekonomi.",
+            "mode": "tka_preview",
+            "game_mechanic": "meaning_check",
+            "tags": ["parameter_kredit", "floating_rate", "literasi_finansial", "tka_bonus"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Evaluasi Risiko Kredit (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+  "mission_id": "MAT-CH1-M1",
+  "mission_name": "Anomali Barisan Geometri",
+  "version": 2,
+  "status": "active",
+  "mission_type": "guided_learning",
+  "question_count": 5,
+  "learning_curve_policy": {
+    "minimum_easy": 1,
+    "maximum_hard_ratio": 0.4,
+    "require_warmup": true
+  },
+  "selection_rule": {
+    "difficulty_distribution": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 1
+    },
+    "competency_weights": [
+      {
+        "competency_id": "MAT12-C01-A1",
+        "weight": 0.4
+      },
+      {
+        "competency_id": "MAT12-C01-A2",
+        "weight": 0.4
+      },
+      {
+        "competency_id": "MAT12-C01-C",
+        "weight": 0.2
+      }
+    ],
+    "fallback": {
+      "if_easy_unavailable": "content_gap",
+      "if_medium_unavailable": "use_easy",
+      "if_hard_unavailable": "use_medium",
+      "if_pool_below_minimum": "block_mission"
+    }
+  },
+  "constraints": {
+    "no_duplicate_in_session": true,
+    "cooldown_sessions": 3,
+    "wrong_answer_cooldown_sessions": 1,
+    "prerequisites_required": true
+  },
+  "story": {
+    "scene": "Bank Sentral",
+    "npc": "Arch-Accountant",
+    "enemy": "Debt Collector",
+    "objective": "Menghitung nilai masa depan untuk mengalahkan suku bunga majemuk"
+  }
+}

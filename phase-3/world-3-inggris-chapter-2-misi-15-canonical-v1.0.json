@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 3 Bahasa Inggris Wajib Chapter 2 - Misi 15 (Argumentative Text)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk teks Argumentatif (World 3).",
+    "chapter_id": "ENG12-C02",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "ENG-C02-B-EASY",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-B",
+            "skill": "understand",
+            "question": "Read the thesis statement:\n'Transitioning to a cashless society through E-Money is highly beneficial because it increases transaction speed, reduces the risk of physical theft, and allows for easier financial tracking.'\nWhich of the following is NOT an argument presented in the thesis above?",
+            "options": [
+                "It makes transactions faster.",
+                "It protects you from digital hackers.",
+                "It minimizes the chance of losing physical cash.",
+                "It helps you monitor your spending history."
+            ],
+            "answer": "It protects you from digital hackers.",
+            "explanation": "The thesis mentions transaction speed, reducing physical theft, and financial tracking. It does NOT mention protection from digital hackers (in fact, cashless systems might be more vulnerable to cybercrime).",
+            "source": {
+                "student_book": { "pages": "57-96", "section": "Unit 2, Argumentative Text: E-Money" },
+                "teacher_guide": { "pages": "N/A", "section": "Unit 2, Thesis Identification" }
+            },
+            "provenance": "Soal orisinal literasi argumentatif (Kurikulum Merdeka) untuk mengidentifikasi poin argumen dalam teks E-Money.",
+            "mode": "learning",
+            "game_mechanic": "evidence_scan",
+            "tags": ["argumentative_text", "thesis", "kontekstual"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Argumentative Text",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "ENG-C02-B-MED",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-B",
+            "skill": "apply",
+            "question": "Which of the following conjunctions is most appropriately used to connect two contrasting arguments in an analytical exposition?",
+            "options": [
+                "Furthermore",
+                "Therefore",
+                "Nevertheless",
+                "Consequently"
+            ],
+            "answer": "Nevertheless",
+            "explanation": "'Nevertheless' is a contrastive conjunction used to introduce a statement that contrasts with or seems to contradict something that has just been said. 'Furthermore' adds information, while 'Therefore' and 'Consequently' show cause-and-effect.",
+            "source": {
+                "student_book": { "pages": "97-146", "section": "Unit 3, Language Features" },
+                "teacher_guide": { "pages": "N/A", "section": "Unit 3, Contrastive Conjunctions" }
+            },
+            "provenance": "Soal orisinal drill grammar untuk melatih penggunaan konjungsi kontras yang penting dalam penyusunan esai/argumen tingkat lanjut.",
+            "mode": "learning",
+            "game_mechanic": "language_scan",
+            "tags": ["argumentative_text", "conjunctions", "fundamental_k13"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Contrastive Conjunctions (Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "ENG-C02-B-HARD",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-B",
+            "skill": "evaluate",
+            "question": "Analyze the following argument:\n'E-Money is the perfect financial system because everyone I know uses it, and I have never experienced a single glitch. Anyone who prefers cash is simply outdated.'\nWhat is the primary logical fallacy present in this argument?",
+            "options": [
+                "Ad hominem (attacking the opponent's character instead of the issue).",
+                "Hasty generalization (drawing a broad conclusion based on anecdotal, limited evidence).",
+                "Slippery slope (assuming a minor action will lead to major, extreme consequences).",
+                "Circular reasoning (using the conclusion as a premise to prove itself)."
+            ],
+            "answer": "Hasty generalization (drawing a broad conclusion based on anecdotal, limited evidence).",
+            "explanation": "The speaker concludes that E-Money is a 'perfect system' solely based on their personal experience ('everyone I know' and 'I have never experienced'). This is a textbook 'hasty generalization' because personal anecdotes do not represent the entire population's reality.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Logical Fallacies" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Critical Evaluation of Arguments" }
+            },
+            "provenance": "Soal orisinal literasi kritis (TKA Bonus) yang menguji pemahaman mahasiswa tentang kecacatan logika (Logical Fallacy) di dalam sebuah teks argumentatif.",
+            "mode": "tka_preview",
+            "game_mechanic": "meaning_check",
+            "tags": ["argumentative_text", "logical_fallacy", "critical_thinking", "tka_bonus"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Logical Fallacy Evaluation (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

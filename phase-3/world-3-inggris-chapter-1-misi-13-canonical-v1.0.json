@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 3 Bahasa Inggris Wajib Chapter 1 - Misi 13 (News Item & Narrative)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk teks naratif dan jurnalistik. Boss Chapter 1.",
+    "chapter_id": "ENG12-C01",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "ENG-C01-C-EASY",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-C",
+            "skill": "understand",
+            "question": "Read the short narrative summary:\n'Once, in a small village, lived a boy named Killion who dreamed of bringing electricity to his dark town. Despite everyone mocking him, he studied windmills from an old library book. After months of scavenging parts and failing repeatedly, his makeshift turbine finally lit up a single bulb, changing the village forever.'\nWhat is the main moral value of the story?",
+            "options": [
+                "Electricity is dangerous for small villages.",
+                "Perseverance and education can make the impossible possible.",
+                "You should not read old books from the library.",
+                "Mocking others is a good way to motivate them."
+            ],
+            "answer": "Perseverance and education can make the impossible possible.",
+            "explanation": "The narrative highlights Killion's determination (perseverance) despite being mocked and failing, and his use of a book (education) to finally achieve his goal and help his village.",
+            "source": {
+                "student_book": { "pages": "1-54", "section": "Unit 1, Narrative Text (Kurikulum Merdeka)" },
+                "teacher_guide": { "pages": "N/A", "section": "Unit 1, Moral Values" }
+            },
+            "provenance": "Soal orisinal berdasarkan silabus Kurikulum Merdeka (Unit 1: The Story of a Friendly Future / The boy who harnessed the wind) untuk memahami pesan moral fiksi sejarah.",
+            "mode": "learning",
+            "game_mechanic": "meaning_check",
+            "tags": ["narrative_text", "moral_value", "kontekstual"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Narrative Values",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "ENG-C01-C-MED",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-C",
+            "skill": "apply",
+            "question": "A news item text typically starts with a 'Newsworthy Event' paragraph. What is the primary characteristic of this paragraph?",
+            "options": [
+                "It provides quotes from witnesses and experts.",
+                "It tells a summary of the main event in a brief and concise way.",
+                "It explains the background causes of the event in chronological order.",
+                "It gives the writer's personal opinion about the news."
+            ],
+            "answer": "It tells a summary of the main event in a brief and concise way.",
+            "explanation": "The generic structure of a News Item begins with the Newsworthy Event (or Main Event), which is a brief summary of the most important happening. Details and background come later in the 'Background Events' section.",
+            "source": {
+                "student_book": { "pages": "61-80", "section": "Chapter 5, News Item" },
+                "teacher_guide": { "pages": "N/A", "section": "Chapter 5, Text Structure" }
+            },
+            "provenance": "Soal orisinal drill K13 untuk mengenali fungsi dari bagian struktur generik teks jurnalistik.",
+            "mode": "learning",
+            "game_mechanic": "evidence_scan",
+            "tags": ["news_item", "generic_structure", "fundamental_k13"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "News Item Structure",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "ENG-C01-C-HARD",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-C",
+            "skill": "evaluate",
+            "question": "Read the excerpts from two different news outlets regarding the same event:\nOutlet A: 'The city council's bold new zoning laws aim to drastically reduce urban sprawl and promote green spaces, despite minor complaints from developers.'\nOutlet B: 'Small business owners face crippling restrictions under the city council's aggressive zoning overhaul, which prioritizes empty parks over economic growth.'\nBy comparing both texts, what can a critical reader conclude?",
+            "options": [
+                "The new zoning laws will definitely destroy the city's economy.",
+                "News reports can frame the exact same factual event using different biases.",
+                "Outlet A is telling the truth while Outlet B is spreading fake news.",
+                "The city council intentionally wants to ruin small businesses."
+            ],
+            "answer": "News reports can frame the exact same factual event using different biases.",
+            "explanation": "Both texts report on the same event (new zoning laws) but use highly charged vocabulary to frame it differently (Outlet A favors the environmental aspect; Outlet B favors the economic aspect). A critical reader evaluates this as evidence of media framing and bias, not absolute truth vs lie.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Analytical Reading" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Evaluating Bias" }
+            },
+            "provenance": "Soal orisinal literasi jurnalistik TKA yang menuntut evaluasi kritis terhadap framing media dan bias penulis, sesuai standar kompetensi analitis perguruan tinggi.",
+            "mode": "tka_preview",
+            "game_mechanic": "meaning_check",
+            "tags": ["news_item", "media_bias", "critical_reading", "tka_bonus"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Critical Discourse Analysis (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

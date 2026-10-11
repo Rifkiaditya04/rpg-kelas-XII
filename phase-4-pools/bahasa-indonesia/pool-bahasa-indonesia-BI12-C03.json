@@ -1,0 +1,580 @@
+﻿{
+    "track":  "wajib",
+    "questions":  [
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-C-2314",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Pada cerita Laskar Pelangi, adegan di mana SD Muhammadiyah Gantong nyaris ditutup karena jumlah siswa kurang dari 10 orang, namun kemudian diselamatkan oleh kedatangan Harun, merupakan bagian alur tahap...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Konflik (Conflict)"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Eksposisi (Exposition)"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Klimaks (Climax)"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Resolusi (Resolution)"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Masalah utama mulai muncul (inciting incident/konflik awal) ketika sekolah terancam ditutup karena kekurangan siswa, yang memicu rangkaian peristiwa selanjutnya.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-C-5033",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Bagian akhir cerita di mana ketegangan telah menurun dan tokoh-tokoh menemukan penyelesaian dari masalah mereka disebut dengan tahap...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Resolusi (Resolution)"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Klimaks (Climax)"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Eksposisi (Exposition)"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Rising Action"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Resolusi adalah tahap penyelesaian masalah di akhir cerita di mana keadaan kembali stabil atau mencapai titik keseimbangan baru.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-D-6601",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Pesan moral (amanat) yang paling menonjol dari kemenangan SD Muhammadiyah dalam lomba karnaval meskipun mereka menggunakan peralatan sederhana dan daun-daunan adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Kreativitas dan kerja keras dapat mengalahkan keterbatasan materi."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Kekayaan adalah kunci utama memenangkan sebuah perlombaan."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Penampilan luar tidak penting sama sekali dalam seni."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Sekolah negeri selalu kalah dari sekolah swasta kecil."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-D",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Ide Mahar menggunakan daun-daun dan koreografi yang unik membuktikan bahwa meskipun miskin materi, kreativitas dan determinasi tinggi membawa mereka pada kemenangan.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-F-2538",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Penulisan kalimat langsung yang paling tepat sesuai dengan kaidah kebahasaan adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Guru BK berkata, \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi.\""
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Guru BK berkata: \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\"."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Guru BK berkata, \"jika kamu diam, kamu ikut membiarkan kekerasan terjadi\"."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "\"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\", kata Guru BK."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-F",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Dalam penulisan kalimat langsung, kutipan diapit tanda petik dua (\"...\"), diawali huruf kapital, dan tanda baca akhir (seperti titik) diletakkan di dalam tanda petik.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-F-5886",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Bacalah kalimat berikut: \u0027Mamak menasihati Maul agar ia tetap kuat dan menyadari bahwa pukulan yang tidak mematikannya justru akan menguatkannya.\u0027\nKalimat di atas merupakan contoh dari...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Kalimat tidak langsung"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Kalimat langsung"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Kalimat majemuk setara"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Kalimat retoris"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-F",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Kalimat tersebut adalah kalimat tidak langsung karena mengutip ucapan Mamak yang disampaikan kembali menggunakan bahasa pencerita tanpa menggunakan tanda petik.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-F-1167",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Jika seorang penulis memiliki poin kerangka cerita (Pemicu Konflik) berbunyi: \u0027Dita direkam diam-diam saat menyanyi dan videonya menjadi bahan ejekan teman-teman sekolah.\u0027\nLangkah paling tepat untuk mengembangkan poin tersebut menjadi adegan novel yang hidup adalah dengan...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Menambahkan deskripsi latar, dialog tokoh, dan ekspresi emosi tokoh agar pembaca dapat merasakan suasana kejadian tersebut."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Mengulangi kalimat poin tersebut berkali-kali di setiap paragraf agar pembaca tidak lupa inti masalahnya."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Langsung melompat ke bagian klimaks untuk menghemat jumlah halaman buku."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Mengganti tokoh Dita dengan tokoh lain agar konflik terasa lebih segar."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-F",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Mengembangkan kerangka cerita (outlining) menjadi draf novel mengharuskan penulis menambahkan deskripsi rinci, gerak-gerik, emosi, dan dialog untuk membangun adegan yang nyata (show, don\u0027t tell).",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "BI12-C03-K13-9100",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Dalam penulisan novel sesuai standar apresiasi sastra K13, majas metafora sering digunakan untuk memperindah deskripsi. Manakah kalimat berikut yang menggunakan majas metafora?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Perpustakaan itu adalah gudang ilmu bagi para siswa."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Angin malam membisikkan lagu sendu di telinganya."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Wajahnya bersinar bagaikan rembulan purnama."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Dia berlari secepat kilat menyusuri lorong sekolah."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-K13",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Metafora adalah kiasan yang membandingkan dua hal secara langsung tanpa kata pembanding (seperti, bagaikan). \u0027Perpustakaan = gudang ilmu\u0027 adalah metafora.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C03-TKA-9052",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Bacalah penggalan novel berikut: \u0027Rifki menatap kertas pendaftarannya dengan ragu. Di satu sisi, ia sangat ingin mengambil jurusan seni yang diimpikannya, namun bayangan wajah ayahnya yang berharap ia menjadi insinyur membuat dadanya sesak.\u0027 Konflik utama yang dialami tokoh Rifki adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Konflik batin antara keinginan pribadi dan harapan orang tua."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Konflik fisik dengan ayahnya mengenai pilihan jurusan."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Konflik sosial dengan lingkungan sekolah yang tidak mendukung seni."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Konflik ide dari ketidakmampuannya mengisi formulir pendaftaran."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-TKA",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Rifki mengalami konflik internal (batin) karena harus memilih antara impian pribadinya (seni) dan ekspektasi/harapan ayahnya (insinyur).",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-A-8222",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Berdasarkan kutipan: \u0027Aku berjalan menyusuri gang sempit itu dengan hati berdebar. Malam terasa begitu sunyi.\u0027, sudut pandang apakah yang digunakan oleh pengarang?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Sudut pandang orang pertama"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Sudut pandang orang kedua"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Sudut pandang orang ketiga serba tahu"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Sudut pandang orang ketiga terbatas"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-A",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Penggunaan kata ganti \u0027Aku\u0027 menunjukkan bahwa pengarang menempatkan dirinya sebagai tokoh utama dalam cerita tersebut, yang merupakan ciri khas sudut pandang orang pertama.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-A-4832",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Pengarang hanya memahami cerita dan perasaan salah satu tokoh saja, namun ia tetap menggunakan kata ganti \u0027dia\u0027 atau \u0027ia\u0027 sebagai pencerita. Jenis sudut pandang ini disebut...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Sudut pandang orang ketiga terbatas"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Sudut pandang orang ketiga serba tahu"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Sudut pandang orang pertama"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Sudut pandang campuran"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-A",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Berbeda dengan sudut pandang serba tahu di mana pengarang mengetahui isi hati semua tokoh, sudut pandang orang ketiga terbatas (limited) membatasi akses emosi hanya pada satu tokoh tertentu saja.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-B-2094",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Berdasarkan penggalan cerita karnaval Laskar Pelangi yang baru saja dibacakan, sikap Pak Harfan yang berseru, \u0027Karnaval ini satu-satunya cara menunjukkan kepada dunia bahwa sekolah kita masih eksis. Kita harus bangga!\u0027 menunjukkan perwatakan yang...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Optimistis dan pantang menyerah"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Ambisius namun meremehkan orang lain"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Sinis dan mudah putus asa"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Acuh tak acuh pada keadaan sekolah"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Pernyataan tersebut menunjukkan dorongan positif dari Pak Harfan untuk memotivasi para siswa agar berani tampil dan mempertahankan eksistensi sekolah mereka di tengah keterbatasan.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-B-2065",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Peran tokoh Mahar dalam penggalan cerita persiapan karnaval digambarkan sebagai...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Seniman genius yang menyusun koreografi dan ide brilian karnaval"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Anak pendiam yang hanya mengikuti instruksi dari Bu Mus"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Ketua kelas yang bertugas mengatur perizinan dan logistik"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Murid terpandai yang menghitung ritme tarian secara matematis"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Dalam teks disebutkan secara spesifik bahwa \u0027Mahar muncul dengan ide brilian. Ia menyusun koreografi, musik, dan visualisasi...\u0027. Lintang adalah murid terpandai yang menghitung ritme, bukan Mahar.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      }
+                  ],
+    "curriculum":  [
+                       "K13",
+                       "Merdeka"
+                   ],
+    "grade":  12,
+    "competencies":  [
+                         {
+                             "name":  "Kompetensi BI12-C03-D",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C03-D"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C03-A",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C03-A"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C03-K13",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C03-K13"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C03-F",
+                             "question_count":  3,
+                             "competency_id":  "BI12-C03-F"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C03-C",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C03-C"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C03-B",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C03-B"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C03-TKA",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C03-TKA"
+                         }
+                     ],
+    "subject":  "bahasa-indonesia",
+    "chapter":  "BI12-C03",
+    "status":  "active",
+    "content_version":  1,
+    "pool_id":  "POOL-BAHASA-INDONESIA-BI12-C03"
+}

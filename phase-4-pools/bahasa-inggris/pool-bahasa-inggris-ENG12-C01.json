@@ -1,0 +1,428 @@
+﻿{
+    "track":  "wajib",
+    "questions":  [
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "ENG12-C01-A-8226",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Receptionist: \u0027Good morning, Sir. May I help you with your baggage?\u0027\nGuest: \u0027Yes, please. I have two heavy suitcases in the trunk.\u0027\nThe receptionist\u0027s utterance expresses...",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Asking for help"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Offering a service"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Refusing an offer"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Giving an instruction"
+                                          }
+                                      ],
+                          "primary_competency":  "ENG12-C01-A",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "The phrase \u0027May I help you\u0027 is a standard formal expression used to offer assistance or a service to someone else.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "ENG12-C01-A-3915",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "\u0027If you want to pass the final exam with flying colors, you ________ study harder starting today.\u0027\nChoose the most appropriate modal to complete the conditional sentence with an advice.",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "would"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "should"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "could"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "might"
+                                          }
+                                      ],
+                          "primary_competency":  "ENG12-C01-A",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "This is a Conditional Sentence type 1 pattern used to give advice (If + simple present, subject + should/ought to/had better + V1). \u0027Should\u0027 is the most appropriate modal for giving strong advice.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "ENG12-C01-A-5634",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Read the dialogue.\nSarah: \u0027I failed my driving test again.\u0027\nMark: \u0027If you hadn\u0027t been so nervous about the parallel parking, you wouldn\u0027t have hit the cone.\u0027\nWhat can we infer from Mark\u0027s statement?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Sarah is not nervous anymore about driving."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Sarah hit the cone because she was nervous."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Mark thinks parallel parking is the hardest part."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Sarah passed the test despite hitting the cone."
+                                          }
+                                      ],
+                          "primary_competency":  "ENG12-C01-A",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Mark uses a Type 3 Conditional (\u0027If you hadn\u0027t been... you wouldn\u0027t have...\u0027), which describes a past unreal situation. The reality is the opposite of the \u0027if\u0027 clause: she WAS nervous, and as a result, she DID hit the cone.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "ENG12-C01-B-9156",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "A picture in a magazine shows a group of volunteers planting trees in a barren area. Below the picture, it says: \u0027Local heroes taking real action against climate change in West Java.\u0027\nWhat is the main function of the text below the picture?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "To give a detailed explanation of climate change."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "To provide context and brief information about the picture."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "To persuade readers to donate money for trees."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "To tell a fictional story about West Java."
+                                          }
+                                      ],
+                          "primary_competency":  "ENG12-C01-B",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "The text is a \u0027caption\u0027. The primary social function of a caption is to provide context, description, or brief information explaining what is happening in a picture or photograph.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "ENG12-C01-B-2031",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Read this excerpt from an application letter:\n\u0027I am writing to express my interest in the Web Developer position listed on your company website. With a Bachelor\u0027s degree in Computer Science and three years of experience in front-end development, I am confident in my ability to contribute effectively to your team.\u0027\nWhich part of an application letter is this excerpt?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Salutation"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Opening paragraph"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Closing paragraph"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Signature"
+                                          }
+                                      ],
+                          "primary_competency":  "ENG12-C01-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "The excerpt clearly states the purpose of the letter (applying for a specific position) and briefly summarizes the applicant\u0027s core qualifications, which is the standard structure for the opening paragraph (body) of an application letter.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "ENG12-C01-B-4416",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Excerpt from an application letter:\n\u0027While my previous roles were primarily in graphic design, I have spent the last 18 months independently managing social media campaigns for local NGOs, increasing their engagement by 40%. Therefore, I believe my transition into digital marketing will bring a fresh, visual-first perspective to your agency.\u0027\nWhat is the applicant implicitly trying to achieve in this paragraph?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "To apologize for not having a formal degree in digital marketing."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "To reframe a potential weakness (lack of direct agency experience) into a unique strength."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "To complain about their previous graphic design job."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "To demand a higher salary due to their NGO experience."
+                                          }
+                                      ],
+                          "primary_competency":  "ENG12-C01-B",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "The applicant acknowledges a non-traditional background (graphic design instead of digital marketing) but immediately bridges it with relevant independent experience (NGOs) and frames it as a unique advantage (\u0027visual-first perspective\u0027). This is a strategic move to overcome a perceived lack of experience.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "ENG12-C01-C-7107",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Read the short narrative summary:\n\u0027Once, in a small village, lived a boy named Killion who dreamed of bringing electricity to his dark town. Despite everyone mocking him, he studied windmills from an old library book. After months of scavenging parts and failing repeatedly, his makeshift turbine finally lit up a single bulb, changing the village forever.\u0027\nWhat is the main moral value of the story?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Electricity is dangerous for small villages."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Perseverance and education can make the impossible possible."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "You should not read old books from the library."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Mocking others is a good way to motivate them."
+                                          }
+                                      ],
+                          "primary_competency":  "ENG12-C01-C",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "The narrative highlights Killion\u0027s determination (perseverance) despite being mocked and failing, and his use of a book (education) to finally achieve his goal and help his village.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "ENG12-C01-C-9385",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "A news item text typically starts with a \u0027Newsworthy Event\u0027 paragraph. What is the primary characteristic of this paragraph?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "It provides quotes from witnesses and experts."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "It tells a summary of the main event in a brief and concise way."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "It explains the background causes of the event in chronological order."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "It gives the writer\u0027s personal opinion about the news."
+                                          }
+                                      ],
+                          "primary_competency":  "ENG12-C01-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "The generic structure of a News Item begins with the Newsworthy Event (or Main Event), which is a brief summary of the most important happening. Details and background come later in the \u0027Background Events\u0027 section.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "ENG12-C01-C-4782",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Read the excerpts from two different news outlets regarding the same event:\nOutlet A: \u0027The city council\u0027s bold new zoning laws aim to drastically reduce urban sprawl and promote green spaces, despite minor complaints from developers.\u0027\nOutlet B: \u0027Small business owners face crippling restrictions under the city council\u0027s aggressive zoning overhaul, which prioritizes empty parks over economic growth.\u0027\nBy comparing both texts, what can a critical reader conclude?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "The new zoning laws will definitely destroy the city\u0027s economy."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "News reports can frame the exact same factual event using different biases."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Outlet A is telling the truth while Outlet B is spreading fake news."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "The city council intentionally wants to ruin small businesses."
+                                          }
+                                      ],
+                          "primary_competency":  "ENG12-C01-C",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Both texts report on the same event (new zoning laws) but use highly charged vocabulary to frame it differently (Outlet A favors the environmental aspect; Outlet B favors the economic aspect). A critical reader evaluates this as evidence of media framing and bias, not absolute truth vs lie.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      }
+                  ],
+    "curriculum":  [
+                       "K13",
+                       "Merdeka"
+                   ],
+    "grade":  12,
+    "competencies":  [
+                         {
+                             "name":  "Kompetensi ENG12-C01-C",
+                             "question_count":  3,
+                             "competency_id":  "ENG12-C01-C"
+                         },
+                         {
+                             "name":  "Kompetensi ENG12-C01-A",
+                             "question_count":  3,
+                             "competency_id":  "ENG12-C01-A"
+                         },
+                         {
+                             "name":  "Kompetensi ENG12-C01-B",
+                             "question_count":  3,
+                             "competency_id":  "ENG12-C01-B"
+                         }
+                     ],
+    "subject":  "bahasa-inggris",
+    "chapter":  "ENG12-C01",
+    "status":  "active",
+    "content_version":  1,
+    "pool_id":  "POOL-BAHASA-INGGRIS-ENG12-C01"
+}

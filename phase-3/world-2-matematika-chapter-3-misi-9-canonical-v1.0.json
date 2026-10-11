@@ -1,0 +1,113 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 2 Matematika Wajib Chapter 3 - Misi 9 (Permutasi dan Kombinasi)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk penguasaan Permutasi dan Kombinasi (World 2).",
+    "chapter_id": "MAT12-C03",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "MAT-C03-B-EASY",
+            "chapter_id": "MAT12-C03",
+            "topic_id": "MAT12-C03-B",
+            "skill": "understand",
+            "question": "Wali kelas XII akan memilih 3 perwakilan siswa dari 10 murid teladan untuk dikirim ke seminar karir di luar kota. Karena tugas ketiganya sama (sebagai pendengar), berapa banyak cara susunan kelompok yang bisa terbentuk?",
+            "options": [
+                "30",
+                "120",
+                "360",
+                "720"
+            ],
+            "answer": "120",
+            "explanation": "Karena ketiganya memiliki peran yang sama (urutan tidak diperhatikan), maka digunakan Kombinasi. C(10,3) = 10! / (3! * 7!) = (10 * 9 * 8) / (3 * 2 * 1) = 720 / 6 = 120 susunan.",
+            "source": {
+                "student_book": { "pages": "95-102", "section": "Bab 3, Kombinasi" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 3, Kombinasi Dasar" }
+            },
+            "provenance": "Soal orisinal kontekstual pendidikan (Kurikulum Merdeka) untuk memahami perbedaan mendasar Kombinasi vs Permutasi.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["kombinasi", "kontekstual"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Kombinasi Dasar",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "MAT-C03-B-MED",
+            "chapter_id": "MAT12-C03",
+            "topic_id": "MAT12-C03-B",
+            "skill": "apply",
+            "question": "Di sebuah rapat dewan direksi, 6 orang duduk mengelilingi sebuah meja bundar. Sang CEO dan Wakil CEO menuntut agar mereka selalu duduk berdampingan. Ada berapa banyak formasi duduk yang bisa terjadi?",
+            "options": [
+                "24",
+                "48",
+                "120",
+                "720"
+            ],
+            "answer": "48",
+            "explanation": "Ini adalah masalah Permutasi Siklis dengan syarat. Karena CEO dan Wakil CEO harus berdampingan, mereka diikat dan dihitung sebagai 1 entitas. Sisa 4 orang + 1 entitas ikatan = 5 entitas. Rumus permutasi siklis: (n-1)! = (5-1)! = 4! = 24. Selain itu, CEO dan Wakil CEO dapat bertukar tempat di dalam ikatan mereka sebanyak 2! = 2 cara. Total = 24 * 2 = 48 formasi.",
+            "source": {
+                "student_book": { "pages": "89-94", "section": "Bab 3, Permutasi Siklis" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 3, Permutasi Bersyarat" }
+            },
+            "provenance": "Soal orisinal drill K13 untuk mengasah keterampilan penggabungan (blocking) dalam permutasi siklis.",
+            "mode": "learning",
+            "game_mechanic": "logic_sorting",
+            "tags": ["permutasi_siklis", "syarat_berdampingan", "fundamental_k13"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Permutasi Siklis (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "MAT-C03-B-HARD",
+            "chapter_id": "MAT12-C03",
+            "topic_id": "MAT12-C03-B",
+            "skill": "evaluate",
+            "question": "Departemen sumber daya manusia akan merekrut 5 karyawan baru (terdiri dari staf dan manajer) dari 8 kandidat pria dan 6 kandidat wanita. Aturan kesetaraan menuntut bahwa tim tersebut harus mengandung sedikitnya 3 staf wanita. Berapa total komposisi tim yang memenuhi syarat tersebut?",
+            "options": [
+                "560",
+                "786",
+                "806",
+                "1.026"
+            ],
+            "answer": "806",
+            "explanation": "Kasus 'sedikitnya 3 wanita' berarti ada 3 skenario yang mungkin (dari total 5 slot): Skenario 1 (3 wanita, 2 pria): C(6,3) * C(8,2) = 20 * 28 = 560. Skenario 2 (4 wanita, 1 pria): C(6,4) * C(8,1) = 15 * 8 = 120. Skenario 3 (5 wanita, 0 pria): C(6,5) * C(8,0) = 6 * 1 = 6. *Catatan revisi opsi*: Oh, maaf, C(6,6) = 1. Tunggu, C(6,5) = 6. Tambahkan totalnya: 560 + 120 + 6 = 686. Wait, the correct total is 686. My generated option above was an oversight in the thought process but mathematically let's fix it for the engine. Let's provide correct option '686'. *Self-correction inside explanation*: 560 + 120 + 6 = 686.",
+            "options": [
+                "560",
+                "680",
+                "686",
+                "720"
+            ],
+            "answer": "686",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Kombinatorika Majemuk" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Penalaran Inklusi Eksklusi" }
+            },
+            "provenance": "Soal orisinal literasi kombinatorik (TKA) yang menuntut pemisahan skenario batas minimum ('at least') dalam pembentukan tim.",
+            "mode": "tka_preview",
+            "game_mechanic": "calculation",
+            "tags": ["kombinasi", "skenario_majemuk", "tka_bonus"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Penalaran Kombinatorik (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

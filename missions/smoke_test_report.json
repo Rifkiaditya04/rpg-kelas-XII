@@ -1,0 +1,166 @@
+{
+  "test_run": "Engine Integration Smoke Test",
+  "timestamp": "2026-10-11T09:43:28.179Z",
+  "status": "PASS",
+  "missions_tested": [
+    {
+      "mission_id": "BID-CH1-M1",
+      "mission_name": "Menyelamatkan Surat Lamaran",
+      "subject": "bahasa-indonesia",
+      "mission_type": "guided_learning",
+      "required_questions": 5,
+      "selected_questions": 5,
+      "difficulty_counts": {
+        "easy": 2,
+        "medium": 2,
+        "hard": 1
+      },
+      "rounds_played": [
+        {
+          "round": 1,
+          "question_id": "BI12-C01-D-7672",
+          "competency": "BI12-C01-D",
+          "difficulty": "easy",
+          "xp": 10
+        },
+        {
+          "round": 2,
+          "question_id": "BI12-C01-EJAAN-2381",
+          "competency": "BI12-C01-EJAAN",
+          "difficulty": "easy",
+          "xp": 10
+        },
+        {
+          "round": 3,
+          "question_id": "BI12-C01-B-7434",
+          "competency": "BI12-C01-B",
+          "difficulty": "medium",
+          "xp": 10
+        },
+        {
+          "round": 4,
+          "question_id": "BI12-C01-D-7240",
+          "competency": "BI12-C01-D",
+          "difficulty": "medium",
+          "xp": 10
+        },
+        {
+          "round": 5,
+          "question_id": "BI12-C01-TKA-4242",
+          "competency": "BI12-C01-TKA",
+          "difficulty": "hard",
+          "xp": 20
+        }
+      ],
+      "total_xp_earned": 60,
+      "warmup_verified": true,
+      "status": "PASS"
+    },
+    {
+      "mission_id": "MAT-CH1-M1",
+      "mission_name": "Anomali Barisan Geometri",
+      "subject": "matematika",
+      "mission_type": "guided_learning",
+      "required_questions": 5,
+      "selected_questions": 5,
+      "difficulty_counts": {
+        "easy": 2,
+        "medium": 2,
+        "hard": 1
+      },
+      "rounds_played": [
+        {
+          "round": 1,
+          "question_id": "MAT12-C01-C-2349",
+          "competency": "MAT12-C01-C",
+          "difficulty": "easy",
+          "xp": 10
+        },
+        {
+          "round": 2,
+          "question_id": "MAT12-C01-A2-1451",
+          "competency": "MAT12-C01-A2",
+          "difficulty": "easy",
+          "xp": 10
+        },
+        {
+          "round": 3,
+          "question_id": "MAT12-C01-A1-8329",
+          "competency": "MAT12-C01-A1",
+          "difficulty": "medium",
+          "xp": 10
+        },
+        {
+          "round": 4,
+          "question_id": "MAT12-C01-A2-7331",
+          "competency": "MAT12-C01-A2",
+          "difficulty": "medium",
+          "xp": 10
+        },
+        {
+          "round": 5,
+          "question_id": "MAT12-C01-C-8913",
+          "competency": "MAT12-C01-C",
+          "difficulty": "hard",
+          "xp": 20
+        }
+      ],
+      "total_xp_earned": 60,
+      "warmup_verified": true,
+      "status": "PASS"
+    },
+    {
+      "mission_id": "ENG-CH1-M1",
+      "mission_name": "The Syntax Negotiator",
+      "subject": "bahasa-inggris",
+      "mission_type": "guided_learning",
+      "required_questions": 5,
+      "selected_questions": 5,
+      "difficulty_counts": {
+        "easy": 2,
+        "medium": 2,
+        "hard": 1
+      },
+      "rounds_played": [
+        {
+          "round": 1,
+          "question_id": "ENG12-C01-B-9156",
+          "competency": "ENG12-C01-B",
+          "difficulty": "easy",
+          "xp": 10
+        },
+        {
+          "round": 2,
+          "question_id": "ENG12-C01-A-8226",
+          "competency": "ENG12-C01-A",
+          "difficulty": "easy",
+          "xp": 10
+        },
+        {
+          "round": 3,
+          "question_id": "ENG12-C01-B-2031",
+          "competency": "ENG12-C01-B",
+          "difficulty": "medium",
+          "xp": 10
+        },
+        {
+          "round": 4,
+          "question_id": "ENG12-C01-A-3915",
+          "competency": "ENG12-C01-A",
+          "difficulty": "medium",
+          "xp": 10
+        },
+        {
+          "round": 5,
+          "question_id": "ENG12-C01-B-4416",
+          "competency": "ENG12-C01-B",
+          "difficulty": "hard",
+          "xp": 20
+        }
+      ],
+      "total_xp_earned": 60,
+      "warmup_verified": true,
+      "status": "PASS"
+    }
+  ]
+}

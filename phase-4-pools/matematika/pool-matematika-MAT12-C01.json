@@ -1,0 +1,565 @@
+﻿{
+    "track":  "wajib",
+    "questions":  [
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "MAT12-C01-A1-1232",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Seorang petani menyusun bibit tomat di ladang dengan pola tertentu. Baris pertama berisi 10 bibit, baris kedua 14 bibit, dan baris ketiga 18 bibit. Jika pola ini berlanjut, berapakah jumlah bibit pada baris ke-6?",
+                          "answer":  "C",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "22"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "26"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "30"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "34"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-A1",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Ini adalah barisan aritmetika dengan suku pertama (a) = 10 dan beda (b) = 4. Rumus suku ke-n adalah Un = a + (n-1)b. Maka U6 = 10 + (6-1)4 = 10 + 20 = 30.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "MAT12-C01-A1-8329",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Suku ke-4 dari suatu barisan aritmetika adalah 17, sedangkan suku ke-9 adalah 37. Nilai dari suku ke-15 adalah...",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "57"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "61"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "65"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "73"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-A1",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Diketahui U4 = a + 3b = 17 dan U9 = a + 8b = 37. Eliminasi: 5b = 20 -\u003e b = 4. Substitusi b = 4 ke U4: a + 12 = 17 -\u003e a = 5. Suku ke-15: U15 = a + 14b = 5 + 14(4) = 5 + 56 = 61.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "MAT12-C01-A1-4212",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Perusahaan perakitan ponsel menargetkan produksi awal sebanyak 5.000 unit pada bulan pertama. Setiap bulan, karena efisiensi, target produksi dinaikkan dengan jumlah yang tetap. Jika pada bulan ke-6 perusahaan mampu merakit 6.500 unit, namun pada bulan ke-8 terjadi kendala pasokan sehingga produksi berkurang 400 unit dari target seharusnya, berapa banyak unit yang berhasil dirakit pada bulan ke-8 tersebut?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "6.700"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "7.100"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "6.800"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "6.400"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-A1",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Target produksi membentuk barisan aritmetika. a = 5.000. U6 = 6.500. a + 5b = 6.500 -\u003e 5.000 + 5b = 6.500 -\u003e 5b = 1.500 -\u003e b = 300. Target produksi bulan ke-8 (U8) = a + 7b = 5.000 + 7(300) = 5.000 + 2.100 = 7.100 unit. Karena berkurang 400 unit, maka produksi aktual = 7.100 - 400 = 6.700 unit.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "MAT12-C01-A2-1451",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Seorang ilmuwan sedang meneliti pertumbuhan koloni bakteri di laboratorium. Pada pukul 08:00, terdapat 100 bakteri. Bakteri tersebut membelah diri menjadi dua setiap satu jam. Berapakah jumlah bakteri pada pukul 12:00?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "800"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "1.600"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "3.200"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "6.400"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-A2",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Ini adalah barisan geometri dengan suku awal (pukul 08:00) a = 100 dan rasio r = 2. Dari 08:00 ke 12:00 terdapat 4 jam pembelahan, yang berarti mencari nilai pada periode ke-5 (U5). U5 = a * r^4 = 100 * 2^4 = 100 * 16 = 1.600 bakteri.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "MAT12-C01-A2-7331",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Diketahui suku ke-2 dari suatu barisan geometri adalah 12, dan suku ke-5 adalah 96. Jika semua suku bernilai positif, maka suku ke-7 dari barisan tersebut adalah...",
+                          "answer":  "C",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "192"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "256"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "384"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "768"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-A2",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Rumus suku ke-n barisan geometri: Un = a * r^(n-1). Diketahui U2 = a*r = 12, dan U5 = a*r^4 = 96. Bagi U5 dengan U2: (a*r^4)/(a*r) = 96/12 -\u003e r^3 = 8, maka r = 2. Substitusi ke U2: a(2) = 12 -\u003e a = 6. Suku ke-7: U7 = a * r^6 = 6 * (2^6) = 6 * 64 = 384.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "MAT12-C01-A2-3014",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Nilai jual sebuah mesin cetak industri menyusut sebesar 20% dari nilai tahun sebelumnya. Jika pada akhir tahun ke-3 nilai mesin tersebut adalah Rp 2.560.000,00, berapakah harga beli awal mesin tersebut (pada tahun ke-0)?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Rp 4.000.000,00"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Rp 5.000.000,00"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Rp 6.000.000,00"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Rp 5.120.000,00"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-A2",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Penyusutan 20% berarti nilai tersisa 80% (r = 0,8) setiap tahunnya. Ini adalah barisan geometri. Harga akhir tahun ke-3 (U3) = Harga awal (a) * (0,8)^3. Maka 2.560.000 = a * 0,512. Harga awal (a) = 2.560.000 / 0,512 = 5.000.000.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "MAT12-C01-B-6665",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Siska menabung sisa uang jajannya di celengan setiap akhir bulan. Pada bulan pertama ia menabung Rp 10.000,00, bulan kedua Rp 12.000,00, bulan ketiga Rp 14.000,00, dan seterusnya. Berapa total tabungan Siska setelah 10 bulan menabung?",
+                          "answer":  "C",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Rp 100.000,00"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Rp 150.000,00"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Rp 190.000,00"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Rp 200.000,00"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-B",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Ini adalah deret aritmetika dengan a = 10.000 dan b = 2.000. Rumus jumlah n suku pertama: Sn = n/2 * (2a + (n-1)b). S10 = 10/2 * (2(10.000) + 9(2.000)) = 5 * (20.000 + 18.000) = 5 * 38.000 = 190.000.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "MAT12-C01-B-1893",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Diketahui suatu deret geometri tak hingga memiliki jumlah S = 24. Jika suku pertama deret tersebut adalah 8, maka rasio dari deret tersebut adalah...",
+                          "answer":  "C",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "1/2"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "1/3"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "2/3"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "3/4"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Rumus jumlah deret geometri tak hingga adalah S = a / (1 - r). Diketahui S = 24 dan a = 8. Maka 24 = 8 / (1 - r). 1 - r = 8 / 24. 1 - r = 1/3. Maka r = 1 - 1/3 = 2/3.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "MAT12-C01-B-7955",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Sebuah bola dijatuhkan dari ketinggian 10 meter. Setiap kali memantul, bola tersebut mencapai ketinggian 3/4 dari ketinggian sebelumnya. Lintasan bola terus berlanjut hingga bola akhirnya berhenti. Total panjang lintasan keseluruhan yang ditempuh bola tersebut dari awal dijatuhkan hingga berhenti adalah...",
+                          "answer":  "C",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "40 meter"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "60 meter"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "70 meter"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "80 meter"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-B",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Total lintasan terdiri dari lintasan turun dan naik. Ketinggian awal (jatuh pertama) = 10m. Setelah itu, lintasan membentuk deret tak hingga. S_turun = a / (1-r) = 10 / (1 - 3/4) = 10 / (1/4) = 40m. S_naik (dimulai dari pantulan pertama = 10*3/4 = 7.5m) = 7.5 / (1 - 3/4) = 7.5 / (1/4) = 30m. Total lintasan = 40 + 30 = 70 meter. Alternatif rumus cepat lintasan pantulan: a * ((r_bawah + r_atas) / (r_bawah - r_atas)) = 10 * ((4+3)/(4-3)) = 10 * 7 = 70.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "MAT12-C01-C-2349",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Andi meminjam modal di koperasi sebesar Rp 2.000.000,00 dengan suku bunga tunggal 5% per tahun. Jika Andi berencana melunasi pinjaman beserta bunganya tepat pada akhir tahun ke-2, berapakah total uang yang harus ia bayarkan?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Rp 2.100.000,00"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Rp 2.200.000,00"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Rp 2.300.000,00"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Rp 2.400.000,00"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-C",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Bunga tunggal tidak mengalami efek bunga berbunga (compounding). Bunga per tahun = 5% x 2.000.000 = 100.000. Total bunga selama 2 tahun = 2 x 100.000 = 200.000. Total yang harus dibayar = Pokok + Bunga = 2.000.000 + 200.000 = 2.200.000.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "MAT12-C01-C-3970",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Budi menyimpan uang di bank sebesar Rp 5.000.000,00 dengan suku bunga tunggal 8% per tahun. Setelah beberapa waktu, total saldo Budi menjadi Rp 5.600.000,00. Berapa lama Budi menabung uang tersebut?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "1 tahun"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "1,5 tahun"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "2 tahun"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "2,5 tahun"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Bunga total yang didapat = 5.600.000 - 5.000.000 = 600.000. Rumus Bunga Tunggal: I = P * r * t (Bunga = Modal * suku bunga * waktu). 600.000 = 5.000.000 * (8/100) * t. 600.000 = 400.000 * t. t = 600.000 / 400.000 = 1,5 tahun.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "MAT12-C01-C-8913",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Cika ditawari dua jenis instrumen investasi. Investasi A memberikan bunga tunggal 12% per tahun. Investasi B memberikan bunga tunggal 1% per bulan. Cika menginvestasikan modal yang sama (Rp 10.000.000,00) di kedua instrumen tersebut. Setelah tepat 3 tahun, pernyataan mana yang paling tepat menggambarkan perbedaan hasil investasi Cika?",
+                          "answer":  "C",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Investasi A menghasilkan Rp 360.000,00 lebih banyak dibandingkan Investasi B."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Investasi B menghasilkan Rp 360.000,00 lebih banyak dibandingkan Investasi A."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Kedua investasi menghasilkan jumlah akhir yang sama persis secara proporsional."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Investasi A menghasilkan Rp 1.200.000,00 lebih banyak dibandingkan Investasi B."
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C01-C",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Mari kita bedah. Investasi A: 12% per tahun, ditabung selama 3 tahun. Bunga A = 10.000.000 * 12% * 3 = 3.600.000. Investasi B: 1% per bulan = 12% per tahun secara ekuivalen untuk bunga tunggal (bukan majemuk). Dalam 3 tahun (36 bulan), Bunga B = 10.000.000 * 1% * 36 = 3.600.000. Karena ini adalah sistem bunga tunggal di mana pokok tidak berbunga lagi, ekuivalensi 12% per tahun dan 1% per bulan memberikan hasil absolut yang identik.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      }
+                  ],
+    "curriculum":  [
+                       "K13",
+                       "Merdeka"
+                   ],
+    "grade":  12,
+    "competencies":  [
+                         {
+                             "name":  "Kompetensi MAT12-C01-A2",
+                             "question_count":  3,
+                             "competency_id":  "MAT12-C01-A2"
+                         },
+                         {
+                             "name":  "Kompetensi MAT12-C01-C",
+                             "question_count":  3,
+                             "competency_id":  "MAT12-C01-C"
+                         },
+                         {
+                             "name":  "Kompetensi MAT12-C01-A1",
+                             "question_count":  3,
+                             "competency_id":  "MAT12-C01-A1"
+                         },
+                         {
+                             "name":  "Kompetensi MAT12-C01-B",
+                             "question_count":  3,
+                             "competency_id":  "MAT12-C01-B"
+                         }
+                     ],
+    "subject":  "matematika",
+    "chapter":  "MAT12-C01",
+    "status":  "active",
+    "content_version":  1,
+    "pool_id":  "POOL-MATEMATIKA-MAT12-C01"
+}

@@ -1,0 +1,1212 @@
+﻿{
+    "track":  "wajib",
+    "questions":  [
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C01-A-3133",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Bacalah penggalan surat resmi berikut:\n\u0027Dengan hormat, kami sampaikan bahwa pelaksanaan kegiatan Pentas Seni Tahunan yang semula dijadwalkan pada tanggal 10 Oktober 2025 ditunda hingga waktu yang belum ditentukan karena kondisi cuaca ekstrem.\u0027\nInformasi eksplisit yang paling akurat berdasarkan surat tersebut adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Kegiatan Pentas Seni Tahunan ditunda dan jadwal baru belum ditetapkan."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Kegiatan Pentas Seni Tahunan dibatalkan selamanya karena cuaca."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Kegiatan Pentas Seni dipindahkan ke gedung lain akibat cuaca ekstrem."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Pihak sekolah belum mengetahui adanya kondisi cuaca ekstrem."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-A",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Surat secara eksplisit menyatakan \u0027ditunda hingga waktu yang belum ditentukan\u0027, bukan dibatalkan atau dipindahkan.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C01-B-1460",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Sebuah undangan kepada orang tua/wali menyatakan: \u0027Bapak/Ibu diharapkan hadir pada Pertemuan Orang Tua yang akan dilaksanakan di Aula Sekolah hari Sabtu, pukul 09.00.\u0027 Makna tersirat yang dapat disimpulkan dari surat tersebut adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Kehadiran orang tua sangat penting dan diharapkan oleh pihak sekolah."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Pertemuan itu akan dihadiri oleh seluruh guru dan kepala sekolah."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Sekolah mengharuskan orang tua membawa dokumen tertentu."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Pertemuan tersebut berlangsung selama lebih dari dua jam."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Penggunaan frasa \u0027diharapkan hadir\u0027 menyiratkan bahwa kehadiran orang tua dianggap penting meskipun tidak wajib secara hukum. Pilihan lain tidak didukung informasi dalam surat.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C01-D-5432",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Perhatikan penggalan surat berikut:\n\u0027Kepada Yth.\nKepala SMA Budi Utama\nJl. Melati No. 22, Bandung\u0027\nBagian surat ini berfungsi untuk...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Mengidentifikasi secara jelas penerima surat beserta alamat yang dituju."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Menjelaskan tujuan dikirimkannya surat kepada pihak sekolah."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Memberikan konteks waktu dan tempat penulisan surat."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Menyatakan penutupan dari isi surat yang disampaikan."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-D",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Bagian \u0027Kepada Yth.\u0027 beserta nama dan alamat adalah komponen alamat dalam surat resmi yang berfungsi mengidentifikasi penerima dan tujuan pengiriman surat.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C01-D-5585",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Kalimat manakah yang menggunakan ragam bahasa paling tepat untuk surat resmi?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Kami mohon kehadiran Bapak/Ibu pada acara yang dimaksud."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Tolong ya Pak/Bu, datang ke acaranya kita besok!"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Harap hadir ASAP karena ini penting banget buat kita."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Mohon bisa hadir dong supaya acaranya rame dan seru."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-D",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Hanya pilihan A yang menggunakan ragam bahasa formal, baku, dan santun sesuai kaidah penulisan surat resmi. Pilihan lain mengandung bahasa percakapan atau singkatan tidak baku.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C01-B-3796",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Surat A menyatakan bahwa perlombaan diadakan Sabtu pagi dan pendaftaran ditutup Jumat sore. Surat B menyatakan bahwa peserta wajib mendaftar satu hari sebelum kegiatan. Kesimpulan yang valid dari perbandingan dua surat tersebut adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Kedua surat sepakat bahwa pendaftaran harus dilakukan sebelum hari perlombaan berlangsung."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Surat A dan B bertentangan karena jadwal pendaftarannya berbeda."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Surat B lebih akurat karena mencantumkan batas waktu yang pasti."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Surat A mengizinkan pendaftaran pada hari perlombaan."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-B",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Meskipun diungkapkan berbeda (Surat A: Jumat sore; Surat B: satu hari sebelum), keduanya secara substansi menyampaikan pesan yang sama: pendaftaran harus sebelum hari H.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C02-A-1281",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Sebuah prosedur mencuci tangan memiliki langkah-langkah acak. Urutan yang paling benar dan higienis adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Basahi tangan → sabuni → gosok sela jari → bilas → keringkan."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Sabuni tangan → basahi → gosok sela jari → bilas → keringkan."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Bilas tangan → sabuni → gosok → keringkan → basahi lagi."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Keringkan tangan → sabuni → basahi → gosok → bilas."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-A",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Prosedur yang benar mengikuti urutan logis: tangan harus dibasahi terlebih dahulu agar sabun dapat berbusa, kemudian digosok merata termasuk sela jari, dibilas bersih, dan dikeringkan.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C02-B-2032",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Bacalah kalimat berikut: \u0027Kemudian, panaskan wajan di atas kompor sebelum menuangkan minyak.\u0027 Kata \u0027Kemudian\u0027 dalam teks prosedur merupakan contoh dari...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Konjungsi temporal (penghubung waktu)"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Konjungsi kausalitas (penghubung sebab-akibat)"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Konjungsi korelatif (penghubung berpasangan)"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Verba material (kata kerja tindakan)"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "\u0027Kemudian\u0027 berfungsi menghubungkan dua langkah secara berurutan dalam waktu. Inilah ciri khas konjungsi temporal yang banyak ditemukan dalam teks prosedur.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C02-C-5726",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Dalam teks prosedur gaya hidup sehat, penggunaan kata kerja seperti \u0027masak\u0027, \u0027potong\u0027, \u0027campurkan\u0027, dan \u0027aduk\u0027 termasuk dalam kategori...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Verba material"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Verba mental"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Konjungsi temporal"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Nomina abstrak"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Verba material adalah kata kerja yang menggambarkan tindakan fisik yang dapat diamati secara nyata. Ini merupakan ciri khas teks prosedur, yang membedakannya dari verba mental (proses berpikir/merasakan).",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C02-D-4283",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Kamu menonton video memasak dan menemukan bahwa penyaji melewati langkah mencuci bahan makanan sebelum dipotong. Berdasarkan kerangka refleksi 4F, tindakan kamu yang paling tepat di tahap \u0027Finding\u0027 (Pembelajaran) adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Menyadari bahwa mencuci bahan sebelum dipotong merupakan langkah penting yang tidak boleh dilewatkan demi keamanan pangan."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Mengabaikan karena cara memasak yang penting adalah rasanya enak."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Meniru video tersebut sepenuhnya karena instruktur pasti lebih berpengalaman."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Berhenti menonton karena video tersebut tidak berkualitas."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-D",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Tahap \u0027Finding\u0027 (Pembelajaran) dalam kerangka 4F mendorong kita untuk mengidentifikasi nilai-nilai atau prinsip penting yang dapat diambil dari pengalaman/kejadian yang kita amati.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C02-A-8426",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Prosedur olahraga X menyatakan: \u0027Pemanasan dilakukan 10 menit, lalu lakukan latihan inti selama 30 menit, dan pendinginan 5 menit.\u0027 Sebuah video menunjukkan seseorang langsung melakukan latihan inti tanpa pemanasan. Risiko paling logis dari tindakan tersebut adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Otot yang belum siap dapat mengalami kram atau cedera karena tiba-tiba dipaksa bekerja keras."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Olahraga menjadi lebih efisien karena langsung pada inti latihan."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Pendinginan akan lebih penting untuk menggantikan pemanasan yang dilewatkan."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Latihan inti akan terasa lebih ringan karena tubuh tidak kelelahan saat pemanasan."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-A",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Pemanasan berfungsi menyiapkan otot dan sistem kardiovaskular secara bertahap. Melewatkannya meningkatkan risiko cedera karena otot \u0027dingin\u0027 tiba-tiba bekerja pada intensitas tinggi.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-A-9115",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Bacalah penggalan cerita: \u0027Ibu selalu tahu ketika aku bohong. Tatapannya tajam menembusiku, seolah membaca setiap pikiran yang kupendam.\u0027 Sudut pandang yang digunakan adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Orang pertama"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Orang kedua"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Orang ketiga serba tahu"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Orang ketiga terbatas"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-A",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Penggunaan kata \u0027aku\u0027, \u0027kupendam\u0027 menunjukkan pencerita adalah tokoh itu sendiri (orang pertama). Pencerita menceritakan kisah dari sudut pandangnya sendiri.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-B-1441",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Tokoh dalam cerita selalu membantu teman-temannya bahkan saat dirinya sendiri dalam kesulitan. Ia tak pernah mengeluh dan terus tersenyum meski hatinya hancur. Perwatakan tokoh ini paling tepat disebut...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Rela berkorban dan penyabar"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Ambisius dan egois"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Penakut namun jujur"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Keras kepala dan sombong"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Tindakan menolong orang lain di saat kesulitan dan tidak mengeluh mencerminkan watak rela berkorban dan penyabar.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-C-1179",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Pengenalan latar, tokoh, dan situasi awal dalam sebuah cerita terjadi pada tahap alur yang disebut...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Eksposisi"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Klimaks"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Resolusi"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Konflik"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Eksposisi adalah tahap awal dalam alur cerita di mana pengarang memperkenalkan latar, tokoh, dan situasi dasar sebelum konflik muncul.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C03-D-2649",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Dari sebuah cerita tentang seorang anak yang berjuang mempertahankan taman sekolah dari penebangan, pesan moral yang paling tepat untuk diambil adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Perjuangan menjaga lingkungan hidup adalah tanggung jawab semua orang, tak terkecuali anak-anak."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Anak-anak tidak seharusnya ikut campur dalam urusan orang dewasa."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Taman sekolah tidak sepenting ruang kelas."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Hanya orang dewasa yang memiliki hak untuk memutuskan nasib lingkungan."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-D",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Cerita tersebut menggambarkan kontribusi nyata seorang anak dalam menjaga lingkungan, yang menunjukkan bahwa kepedulian lingkungan adalah nilai universal lintas usia.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C03-F-3881",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Penulisan kalimat langsung yang benar sesuai PUEBI adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "\"Aku tidak menyerah,\" bisik Raka dengan mata berkaca-kaca."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "\"Aku tidak menyerah\" bisik Raka dengan mata berkaca-kaca."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Raka berbisik, \"aku tidak menyerah\" dengan mata berkaca-kaca."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Raka berbisik: aku tidak menyerah dengan mata berkaca-kaca."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C03-F",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Dalam PUEBI: kutipan langsung diapit tanda petik dua, diawali huruf kapital, dan tanda baca akhir (koma) diletakkan di dalam tanda petik sebelum penjelasan pengiring.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C04-A-7095",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Sebuah paragraf diawali dengan pernyataan umum bahwa \u0027AI telah mengubah dunia pendidikan secara fundamental\u0027, dilanjutkan oleh beberapa fakta pendukung dan contoh. Jenis paragraf ini disebut...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Deduktif"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Induktif"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Ineratif"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Campuran"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C04-A",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Paragraf deduktif menempatkan gagasan utama di kalimat pertama, kemudian diikuti oleh fakta-fakta atau rincian pendukung.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C04-B-5412",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Bagian Interpretasi (Penutup) dalam teks eksplanasi berfungsi untuk...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Memberikan penegasan ulang, simpulan, atau pandangan penulis terhadap fenomena yang telah dijelaskan."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Memperkenalkan topik atau fenomena secara umum kepada pembaca."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Menguraikan sebab-akibat dan proses terjadinya fenomena secara runtut."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Memberikan contoh empiris dari fakta-fakta yang disebutkan sebelumnya."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C04-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Interpretasi adalah bagian penutup teks eksplanasi di mana penulis menegaskan kembali, menyimpulkan, atau memberikan pandangannya terhadap fenomena yang telah dijelaskan sebelumnya.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C04-C-5490",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Kalimat mana yang menunjukkan penggunaan konjungsi kausalitas yang tepat?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Karena tidak diperbarui secara rutin, sistem keamanan data itu pun diretas."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Sistem keamanan data itu diretas, dan tidak diperbarui secara rutin."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Sistem keamanan data itu diretas ketika tidak diperbarui secara rutin."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Sistem keamanan data itu diretas, lalu tidak diperbarui secara rutin."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C04-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "\u0027Karena\u0027 adalah konjungsi kausalitas yang secara eksplisit menyatakan hubungan sebab-akibat: penyebab (tidak diperbarui) mengakibatkan akibat (diretas).",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C04-C-9028",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Dalam teks eksplanasi ilmiah tentang AI, penulis menulis: \u0027Algoritma AI bekerja seperti seorang detektif yang mengumpulkan petunjuk satu per satu sebelum menarik kesimpulan.\u0027 Gaya bahasa yang digunakan disebut...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Analogi"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Hiperbola"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Personifikasi"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Eufemisme"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C04-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Penulis menyederhanakan cara kerja algoritma AI yang abstrak dengan membandingkannya dengan cara kerja detektif yang lebih mudah dipahami pembaca umum. Ini adalah analogi.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C04-B-8085",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Dalam model refleksi 5R, setelah pembaca melaporkan isi teks (Reporting) dan menanggapinya (Responding), langkah selanjutnya adalah menghubungkannya dengan pengalaman pribadi. Tahap ini disebut...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Relating"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Reasoning"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Reconstructing"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Reviewing"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C04-B",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Setelah Reporting dan Responding, tahap ketiga dalam 5R adalah Relating, di mana pembaca menghubungkan gagasan dalam teks dengan pengetahuan atau pengalaman pribadi mereka.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C05-A-2706",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Kearifan lokal (*local wisdom*) suatu daerah pada umumnya diwariskan secara...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Turun-temurun melalui cerita, tradisi, dan kebiasaan yang diikuti masyarakat."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Melalui buku teks ilmiah yang diterbitkan oleh pemerintah."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Ditetapkan oleh undang-undang dan peraturan pemerintah daerah."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Dikodifikasi dalam sistem hukum nasional yang berlaku merata."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C05-A",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Kearifan lokal bersifat organik dan hidup dalam praktik budaya sehari-hari masyarakat, diwariskan dari generasi ke generasi melalui cerita rakyat, tradisi, dan kebiasaan.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C05-C-3774",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Pernyataan \u0027Rendang telah tersebar luas karena dibawa para perantau Minangkabau sejak abad ke-13\u0027 adalah contoh...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Fakta sejarah"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Opini penulis"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Asumsi pembaca"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Simpulan tersirat"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C05-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Pernyataan tersebut didasarkan pada data sejarah yang dapat diverifikasi (catatan sejarah perdagangan Minangkabau). Fakta berbeda dari opini karena dapat dibuktikan secara objektif.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "BI12-C05-C-6502",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Frasa korelatif yang tepat untuk kalimat berikut adalah: \u0027Budaya lokal harus dilestarikan, ___ di kota ___ di desa.\u0027",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "baik ... maupun"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "baik ... ataupun"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "bukan ... melainkan"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "antara ... dengan"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C05-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Pasangan baku dari \u0027baik\u0027 adalah \u0027maupun\u0027, bukan \u0027ataupun\u0027. Ini adalah aturan baku frasa korelatif dalam bahasa Indonesia yang benar.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C05-D-2241",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Bacalah kalimat: \u0027Melestarikan kearifan lokal memerlukan kerjasama antar komunitas dan pemerintah daerah.\u0027 Kesalahan penulisan yang tepat adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "\u0027kerjasama\u0027 seharusnya \u0027kerja sama\u0027 dan \u0027antar komunitas\u0027 seharusnya \u0027antarkomunitas\u0027."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "\u0027kerjasama\u0027 sudah benar, namun \u0027antar komunitas\u0027 seharusnya \u0027antara komunitas\u0027."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Tidak ada kesalahan dalam kalimat tersebut."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "\u0027pemerintah daerah\u0027 seharusnya ditulis dengan huruf kapital."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C05-D",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Menurut PUEBI: \u0027kerja sama\u0027 ditulis terpisah (bukan bentuk terikat), sementara \u0027antar-\u0027 sebagai bentuk terikat harus digabung: \u0027antarkomunitas\u0027.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C05-E-2233",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Setelah mempelajari esai tentang tradisi sasi dan kearifan masyarakat Jawa dalam membaca tanda alam, seorang siswa menulis di jurnalnya: \u0027Kedua tradisi ini berbeda dalam cara dan bentuknya, namun sama-sama menunjukkan bahwa nenek moyang kita adalah penjaga alam yang bijak.\u0027 Dalam model refleksi ALACT, tulisan jurnal tersebut termasuk ke dalam tahap...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Kesadaran akan Aspek-aspek Penting (Awareness of Essential Aspect)"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Tindakan/Aksi (Action)"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Uji Coba (Trial)"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Melihat Kembali (Looking Back)"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C05-E",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Pada tahap Awareness, siswa mulai menyadari dan memaknai hal-hal penting dari pengalaman membacanya, seperti nilai luhur yang tersembunyi di balik dua tradisi yang berbeda itu.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      }
+                  ],
+    "curriculum":  [
+                       "K13",
+                       "Merdeka"
+                   ],
+    "grade":  12,
+    "competencies":  [
+                         {
+                             "name":  "Kompetensi BI12-C04-A",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C04-A"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C04-C",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C04-C"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C01-B",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C01-B"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C05-A",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C05-A"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C05-D",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C05-D"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C03-B",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C03-B"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-B",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C02-B"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C04-B",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C04-B"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-C",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C02-C"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C05-C",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C05-C"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-A",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C02-A"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C05-E",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C05-E"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-D",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C02-D"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C03-C",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C03-C"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C03-A",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C03-A"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C03-F",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C03-F"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C03-D",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C03-D"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C01-A",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C01-A"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C01-D",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C01-D"
+                         }
+                     ],
+    "subject":  "bahasa-indonesia",
+    "chapter":  "BI12-FINAL",
+    "status":  "active",
+    "content_version":  1,
+    "pool_id":  "POOL-BAHASA-INDONESIA-BI12-FINAL"
+}

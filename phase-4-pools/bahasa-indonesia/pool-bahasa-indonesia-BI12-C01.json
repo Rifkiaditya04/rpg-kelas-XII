@@ -1,0 +1,633 @@
+﻿{
+    "track":  "wajib",
+    "questions":  [
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C01-A-4776",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Sebuah pemberitahuan resmi sekolah menyatakan bahwa aula serbaguna tidak dapat digunakan pada Rabu sore karena pemeriksaan instalasi listrik. Panitia sedang menyiapkan kegiatan Kamis pagi. Tindakan mana yang paling langsung didukung oleh informasi tersebut?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Memindahkan latihan Rabu sore ke lokasi lain."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Membatalkan kegiatan Kamis pagi karena aula pasti tidak dapat digunakan."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Meminta tim pemeriksa menunda pemeriksaan tanpa informasi tambahan."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Mengumumkan bahwa seluruh kegiatan sekolah dibatalkan selama sepekan."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-A",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Pemberitahuan hanya menetapkan bahwa aula tidak dapat digunakan pada Rabu sore. Memindahkan latihan pada waktu tersebut merupakan tindakan yang langsung didukung. Pilihan lain memperluas informasi melebihi yang dinyatakan.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C01-B-7434",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Sebuah pusat pelatihan fiktif memberi tahu peserta: peserta yang telah menyelesaikan formulir pendaftaran harus membawa kode konfirmasi ke meja orientasi pada Senin pagi. Pernyataan mana yang merupakan kesimpulan implisit, bukan informasi yang dinyatakan langsung?",
+                          "answer":  "C",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Peserta yang telah menyelesaikan pendaftaran harus membawa kode konfirmasi."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Meja orientasi digunakan pada Senin pagi."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Kode konfirmasi kemungkinan diperlukan dalam proses orientasi peserta."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Formulir pendaftaran disebut dalam pemberitahuan."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Pemberitahuan secara langsung menyebut peserta yang telah mendaftar, kode konfirmasi, meja orientasi, dan waktu. Kegunaan kode dalam proses orientasi merupakan inferensi yang wajar dari konteks, bukan pernyataan langsung.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C01-B-7241",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Perhatikan dua pemberitahuan resmi fiktif berikut. Pesan 1: perpustakaan tutup pukul 15.00 pada Jumat karena pemeliharaan; buku masih dapat dikembalikan melalui kotak pengembalian luar. Pesan 2: loket layanan siswa tutup pukul 15.00; permintaan daring tetap tersedia sampai pukul 20.00. Perbandingan mana yang paling didukung kedua pesan?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Kedua layanan berhenti menerima semua bentuk permintaan pada pukul 15.00."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Keduanya menutup fasilitas fisik pada pukul 15.00, tetapi menyediakan alternatif berbeda setelah waktu tersebut."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Perpustakaan tetap buka lebih lama karena kotak pengembalian tersedia."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Layanan siswa menerima permintaan fisik sampai pukul 20.00."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-B",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Kedua pesan sama-sama menetapkan penutupan fasilitas fisik pukul 15.00. Alternatifnya berbeda: kotak pengembalian untuk perpustakaan dan layanan daring untuk loket siswa.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "BI12-C01-C-9027",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Kantor karier sekolah memberi tahu bahwa konsultasi beasiswa harus dipesan melalui formulir pendaftaran sebelum konselor meninjau dokumen. Raka belum mengisi formulir tetapi ingin mendapat masukan pada sore itu. Apa langkah paling tepat berdasarkan informasi tersebut?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Mengisi formulir terlebih dahulu, kemudian mengajukan konsultasi sesuai prosedur."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Mengirim draf langsung kepada konselor dan menganggap jadwal akan dibuat otomatis."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Meminta teman mendaftarkan konsultasi menggunakan nama teman tersebut."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Mengabaikan ketentuan pendaftaran karena draf sudah selesai."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Komunikasi menetapkan prosedur bahwa pendaftaran harus dilakukan sebelum dokumen ditinjau. Pilihan untuk mengisi formulir terlebih dahulu mengikuti prosedur tersebut. Item ini merupakan tantangan persiapan menuju refleksi kontekstual, bukan representasi penuh seluruh dimensi refleksi Aktivitas 1.5.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "BI12-C01-D-7672",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Dalam surat undangan resmi fiktif dari pusat belajar masyarakat, terdapat bagian yang menyebut organisasi penerima dan alamat lengkapnya sebelum salam pembuka. Apa fungsi utama bagian tersebut?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Menjelaskan dengan jelas pihak yang dituju dan alamat tujuan komunikasi."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Menjelaskan alasan pribadi pengirim ingin menghadiri kegiatan."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Merangkum seluruh jadwal kegiatan."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Menyampaikan harapan penutup dari pengirim."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-D",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Bagian penerima dan alamat berfungsi mengidentifikasi pihak yang dituju serta tujuan surat. Fungsi lainnya berada pada bagian surat yang berbeda.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C01-D-7240",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Sebuah draf komunikasi sekolah berbunyi: “Could you guys send the attendance confirmation ASAP so we can prepare the room?” Revisi mana yang paling sesuai untuk komunikasi formal?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Please send the attendance confirmation as soon as possible so that we can prepare the room."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "You guys need to send the attendance confirmation ASAP so we can get the room ready."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Send the attendance confirmation now, okay?"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Kindly, you guys, send the attendance confirmation because we wanna prepare the room."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-D",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Revisi tersebut mempertahankan maksud permintaan sekaligus menggunakan bentuk yang lebih formal dan jelas. Pilihan lain masih mempertahankan ungkapan percakapan yang tidak sesuai dengan konteks komunikasi resmi.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "BI12-C01-EJAAN-2381",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Sesuai dengan kaidah kebahasaan Kurikulum 2013 (berdasarkan PUEBI), manakah penulisan alamat tujuan surat resmi yang paling tepat dan baku?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Kepada Yth. Bapak Direktur PT Maju Jaya, Jln. Jendral Sudirman No. 12, Jakarta"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Yth. Direktur PT Maju Jaya, Jalan Jenderal Sudirman 12, Jakarta"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Yth. Bapak Direktur PT. Maju Jaya, Jl. Jend. Sudirman No 12, Jakarta."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Kepada Yth. Direktur PT Maju Jaya, Jalan Jenderal Sudirman No. 12 Jakarta"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-EJAAN",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Menurut PUEBI dan tata kalimat baku K13, kata \u0027Kepada\u0027 sebelum \u0027Yth.\u0027 berlebihan (mubazir). Sapaan \u0027Bapak/Ibu\u0027 tidak dipakai bila diikuti jabatan. \u0027PT\u0027 tidak diikuti titik. Jalan sebaiknya tidak disingkat, dan tidak diakhiri titik.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "BI12-C01-KALIMAT-7518",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Perhatikan kalimat penutup surat berikut: \u0027Atas perhatiannya, kami ucapkan banyak-banyak terima kasih.\u0027 Perbaikan kalimat tersebut agar efektif dan baku sesuai standar K13 adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Atas perhatian Bapak/Ibu, kami mengucapkan terima kasih."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Atas perhatiannya, kami menghaturkan terima kasih."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Atas perhatian Bapak/Ibu, kami ucapkan beribu terima kasih."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Atas perhatiannya Bapak/Ibu, diucapkan terima kasih banyak."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-KALIMAT",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Penggunaan \u0027-nya\u0027 pada \u0027perhatiannya\u0027 tidak efektif karena tidak ada rujukan persona yang jelas, seharusnya langsung sapaan \u0027Bapak/Ibu/Saudara\u0027. Frasa \u0027banyak-banyak terima kasih\u0027 adalah mubazir, cukup \u0027mengucapkan terima kasih\u0027.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C01-TKA-4242",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Surat Edaran Dinas berbunyi: \u0027Seluruh SMA wajib melaksanakan simulasi mitigasi bencana paling lambat minggu pertama bulan depan. Sekolah yang telah melaksanakan simulasi mandiri dalam 3 bulan terakhir cukup menyerahkan laporan.\u0027 Jika SMA Nusantara berada di wilayah tersebut dan baru melakukan simulasi bulan lalu, langkah birokrasi apa yang mematuhi instruksi secara efisien?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Menyusun laporan kegiatan simulasi bulan lalu dan menyerahkannya sebelum tenggat waktu."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Mengadakan simulasi ulang agar dokumentasi sesuai dengan tanggal surat."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Mengabaikan surat karena sekolah merasa esensi kewajiban sudah terpenuhi."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Membuat surat balasan keberatan untuk meminta pengecualian."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-TKA",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Klausa kondisional dalam surat jelas menyatakan pengecualian: jika sudah simulasi \u003c 3 bulan, cukup lapor. Melaksanakan simulasi ulang membuang sumber daya, sementara mengabaikan surat adalah pelanggaran birokrasi.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C01-E-6015",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Perhatikan potongan pemberitahuan resmi fiktif berikut: \"Peserta wajib mengumpulkan formulir kepada Kepala laboratorium sebelum pukul 15.00.\" Jika maksud penulis adalah menyebut jabatan secara umum, perbaikan yang paling tepat adalah ...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Peserta wajib mengumpulkan formulir kepada kepala laboratorium sebelum pukul 15.00."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Peserta wajib mengumpulkan formulir kepada Kepala Laboratorium sebelum pukul 15.00."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Peserta wajib mengumpulkan formulir kepada kepala Laboratorium sebelum pukul 15.00."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Peserta wajib mengumpulkan formulir kepada KEPALA LABORATORIUM sebelum pukul 15.00."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-E",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Dalam konteks ini, frasa tersebut menyebut jabatan secara umum, bukan nama jabatan yang diikuti nama orang atau nama resmi tertentu. Karena itu, huruf awal pada kata kepala dan laboratorium ditulis kecil.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C01-E-5482",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Sebuah surat resmi fiktif menuliskan: \"Peserta dapat menghubungi DISDIKBUD melalui nomor layanan yang tercantum.\" Pada bagian sebelumnya, nama instansi hanya ditulis lengkap sebagai \"Dinas Pendidikan dan Kebudayaan\" tanpa memperkenalkan singkatan tersebut. Masalah yang sedang diperiksa terutama berkaitan dengan ...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "penggunaan singkatan yang belum diperkenalkan"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "penggunaan huruf miring pada kata asing"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "penggunaan tanda koma setelah subjek"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "penggunaan huruf kapital pada awal kalimat"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-E",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Singkatan DISDIKBUD digunakan pada kalimat berikutnya tanpa terlebih dahulu diperkenalkan bersama bentuk lengkapnya. Karena itu, masalahnya berkaitan dengan penggunaan singkatan yang belum diperkenalkan. Item ini menguji kemampuan mengklasifikasikan masalah sebelum memilih perbaikan.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C01-E-1564",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Sebuah pengumuman resmi fiktif diakhiri dengan kalimat: \"Atas perhatian Bapak/Ibu kami ucapkan terima kasih.\" Revisi mana yang paling tepat untuk memperjelas hubungan unsur kalimat dan mempertahankan nada formal?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Atas perhatian Bapak/Ibu, kami ucapkan terima kasih."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Atas perhatian, Bapak/Ibu kami ucapkan terima kasih."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Atas perhatian Bapak/Ibu kami, ucapkan terima kasih."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Atas perhatian Bapak/Ibu kami ucapkan, terima kasih."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-E",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Koma setelah frasa pembuka membantu memisahkan keterangan awal dari klausa utama sehingga hubungan unsur kalimat lebih jelas. Pilihan lain menempatkan koma pada posisi yang memutus unsur kalimat secara tidak tepat.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C01-E-4304",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Perhatikan kutipan surat resmi fiktif berikut:\n\n\"Peserta wajib menyerahkan Formulir pendaftaran kepada petugas administrasi. Peserta yang memerlukan informasi tambahan dapat menghubungi TU pada jam layanan. Atas perhatian Bapak/Ibu kami ucapkan terima kasih.\"\n\nPilih semua diagnosis yang tepat terhadap kutipan tersebut.",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Kata \"Formulir\" sebaiknya ditulis dengan huruf awal kecil karena digunakan sebagai kata umum, bukan nama khusus."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Singkatan \"TU\" sebaiknya diperkenalkan dengan bentuk lengkapnya pada penyebutan pertama sebelum digunakan sebagai singkatan."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Perlu tanda koma setelah frasa \"Bapak/Ibu\" pada kalimat penutup agar batas unsur kalimat lebih jelas."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Kata \"Bapak/Ibu\" seharusnya selalu ditulis dengan huruf awal kecil karena bukan nama orang tertentu."
+                                          },
+                                          {
+                                              "id":  "E",
+                                              "text":  "Penggunaan singkatan \"TU\" sudah tepat tanpa penjelasan karena surat resmi selalu mengutamakan bentuk singkat."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C01-E",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Ketiga diagnosis yang dipilih benar karena kutipan sengaja memuat tiga masalah yang berbeda: kapitalisasi pada kata umum, penggunaan singkatan yang belum diperkenalkan, dan tanda baca pada kalimat penutup. Dua pilihan lain merupakan generalisasi yang tidak tepat: sapaan Bapak/Ibu tidak otomatis harus ditulis kecil, dan singkatan dalam komunikasi resmi tidak otomatis benar hanya karena lebih ringkas.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      }
+                  ],
+    "curriculum":  [
+                       "K13",
+                       "Merdeka"
+                   ],
+    "grade":  12,
+    "competencies":  [
+                         {
+                             "name":  "Kompetensi BI12-C01-C",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C01-C"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C01-B",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C01-B"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C01-TKA",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C01-TKA"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C01-KALIMAT",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C01-KALIMAT"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C01-D",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C01-D"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C01-A",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C01-A"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C01-EJAAN",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C01-EJAAN"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C01-E",
+                             "question_count":  4,
+                             "competency_id":  "BI12-C01-E"
+                         }
+                     ],
+    "subject":  "bahasa-indonesia",
+    "chapter":  "BI12-C01",
+    "status":  "active",
+    "content_version":  1,
+    "pool_id":  "POOL-BAHASA-INDONESIA-BI12-C01"
+}

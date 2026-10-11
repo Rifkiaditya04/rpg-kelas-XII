@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 3 Bahasa Inggris Wajib Chapter 2 - Misi 14 (Procedure Text)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk teks prosedur (World 3).",
+    "chapter_id": "ENG12-C02",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "ENG-C02-A-EASY",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-A",
+            "skill": "understand",
+            "question": "Read the text:\n'How to use the E-Money Card at the Toll Gate:\n1. Ensure your card has enough balance.\n2. Tap the card on the reader machine.\n3. Wait until the gate opens automatically.\n4. Drive through the gate safely.'\nWhat is the first thing you must do before tapping the card?",
+            "options": [
+                "Wait for the gate to open.",
+                "Check that you have sufficient balance.",
+                "Drive through the gate.",
+                "Buy a new E-Money card."
+            ],
+            "answer": "Check that you have sufficient balance.",
+            "explanation": "According to the first step in the procedure text, the user must 'Ensure your card has enough balance' before proceeding to tap the card.",
+            "source": {
+                "student_book": { "pages": "57-96", "section": "Unit 2, E-Money Context" },
+                "teacher_guide": { "pages": "N/A", "section": "Unit 2, Contextual Reading" }
+            },
+            "provenance": "Soal orisinal pemahaman urutan teks prosedur sederhana (Kurikulum Merdeka).",
+            "mode": "learning",
+            "game_mechanic": "evidence_scan",
+            "tags": ["procedure_text", "e_money", "kontekstual"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Procedure Text",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "ENG-C02-A-MED",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-A",
+            "skill": "apply",
+            "question": "In a manual titled 'How to Use Photoshop for Beginners', one of the steps says: 'Next, the brightness level can be adjusted by clicking the Image menu.'\nWhich language feature is predominantly used in that specific sentence?",
+            "options": [
+                "Imperative verb",
+                "Passive voice",
+                "Simple past tense",
+                "Conditional clause"
+            ],
+            "answer": "Passive voice",
+            "explanation": "The phrase 'can be adjusted' is a form of passive voice (modal + be + V3). While procedure texts heavily use imperative verbs (e.g., 'Click the Image menu'), manuals and formal instructions often utilize the passive voice to maintain an objective tone.",
+            "source": {
+                "student_book": { "pages": "135-148", "section": "Chapter 10, How to Use Photoshop" },
+                "teacher_guide": { "pages": "N/A", "section": "Chapter 10, Language Features" }
+            },
+            "provenance": "Soal orisinal drill K13 untuk mengenali fitur kebahasaan (Passive Voice) di dalam manual instruksional.",
+            "mode": "learning",
+            "game_mechanic": "language_scan",
+            "tags": ["procedure_text", "passive_voice", "fundamental_k13"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Language Features of Procedure (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "ENG-C02-A-HARD",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-A",
+            "skill": "evaluate",
+            "question": "Read the troubleshooting instruction:\n'If the software crashes during installation, do not restart your computer immediately. First, forcefully close the installer using Task Manager. If you restart the computer without closing the corrupted installer, it may cause a critical boot failure.'\nWhat is the logical implication if a user ignores the warning and restarts their computer right away?",
+            "options": [
+                "The software will successfully install itself after the restart.",
+                "The Task Manager will automatically delete the corrupted files.",
+                "The computer's operating system might become unable to start up properly.",
+                "The installer will resume from where it left off."
+            ],
+            "answer": "The computer's operating system might become unable to start up properly.",
+            "explanation": "The text explicitly states that restarting without closing the installer may cause a 'critical boot failure'. 'Boot failure' implies that the computer's operating system might fail to start up properly.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Analytical Reading" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Cause and Effect Implication" }
+            },
+            "provenance": "Soal orisinal literasi TKA yang menguji kemampuan siswa memprediksi konsekuensi logis dari sebuah pelanggaran instruksi.",
+            "mode": "tka_preview",
+            "game_mechanic": "meaning_check",
+            "tags": ["procedure_text", "logical_implication", "tka_bonus"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Troubleshooting Analysis (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

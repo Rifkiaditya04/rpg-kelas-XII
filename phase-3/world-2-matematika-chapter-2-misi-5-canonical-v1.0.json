@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 2 Matematika Wajib Chapter 2 - Misi 5 (Bunga Majemuk)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk penguasaan Bunga Majemuk (World 2).",
+    "chapter_id": "MAT12-C02",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "MAT-C02-A-EASY",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-A",
+            "skill": "understand",
+            "question": "Beni menabung uang sebesar Rp 10.000.000,00 di sebuah bank swasta. Bank tersebut memberikan suku bunga majemuk 10% per tahun. Jika uang tersebut tidak pernah diambil, berapakah jumlah tabungan Beni pada akhir tahun ke-2?",
+            "options": [
+                "Rp 11.000.000,00",
+                "Rp 12.000.000,00",
+                "Rp 12.100.000,00",
+                "Rp 12.200.000,00"
+            ],
+            "answer": "Rp 12.100.000,00",
+            "explanation": "Pada bunga majemuk, bunga turut berbunga. Tahun 1: 10.000.000 x 10% = 1.000.000. Saldo = 11.000.000. Tahun 2: 11.000.000 x 10% = 1.100.000. Saldo akhir = 11.000.000 + 1.100.000 = 12.100.000. Rumus: Mn = M(1+i)^n = 10.000.000(1,1)^2 = 10.000.000(1,21) = 12.100.000.",
+            "source": {
+                "student_book": { "pages": "40-44", "section": "Bab 2, Bunga Majemuk" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 2, Investasi Bunga Majemuk" }
+            },
+            "provenance": "Soal orisinal kontekstual finansial pelajar (Kurikulum Merdeka) untuk memahami efek penggandaan (compounding).",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["bunga_majemuk", "finansial", "kontekstual"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Investasi Bunga Majemuk",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "MAT-C02-A-MED",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-A",
+            "skill": "apply",
+            "question": "Pak Ali mendepositokan uangnya dengan sistem bunga majemuk 5% per tahun. Setelah 3 tahun, total saldo deposito tersebut menjadi Rp 9.261.000,00. Berapakah besar modal awal yang didepositokan Pak Ali? (Gunakan (1,05)^3 = 1,1576)",
+            "options": [
+                "Rp 7.500.000,00",
+                "Rp 8.000.000,00",
+                "Rp 8.500.000,00",
+                "Rp 9.000.000,00"
+            ],
+            "answer": "Rp 8.000.000,00",
+            "explanation": "Rumus: Mn = M(1+i)^n. Diketahui Mn = 9.261.000, i = 0,05, n = 3. Maka, 9.261.000 = M * (1,05)^3. M = 9.261.000 / 1,1576 = 8.000.000.",
+            "source": {
+                "student_book": { "pages": "40-44", "section": "Bab 2, Bunga Majemuk" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 2, Investasi Bunga Majemuk" }
+            },
+            "provenance": "Soal orisinal drill K13 untuk menguji pemahaman manipulasi aljabar dalam menentukan nilai pokok (present value).",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["bunga_majemuk", "present_value", "fundamental_k13"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Perhitungan Modal Awal (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "MAT-C02-A-HARD",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-A",
+            "skill": "evaluate",
+            "question": "Sebuah bank menawarkan dua opsi deposito berbunga majemuk dengan durasi total 1 tahun. Opsi P: Bunga 12% per tahun (dihitung tahunan). Opsi Q: Bunga 12% per tahun (dihitung triwulanan). Jika seseorang mendepositokan Rp 100.000.000,00, manakah kesimpulan yang benar mengenai hasil akhir kedua opsi tersebut?",
+            "options": [
+                "Opsi P memberikan hasil lebih besar karena bunganya utuh 12% sekaligus.",
+                "Opsi Q memberikan hasil lebih besar karena perhitungan bunga (compounding) dilakukan lebih sering.",
+                "Kedua opsi memberikan hasil yang sama karena total suku bunga setahun tetap 12%.",
+                "Opsi P dan Q tidak dapat dibandingkan tanpa mengetahui tingkat inflasi ekonomi."
+            ],
+            "answer": "Opsi Q memberikan hasil lebih besar karena perhitungan bunga (compounding) dilakukan lebih sering.",
+            "explanation": "Opsi P: M(1+0,12)^1 = 1,12M. Opsi Q: Bunga per triwulan = 12% / 4 = 3%. Dihitung 4 kali setahun. M(1+0,03)^4 = M(1,03)^4 = 1,1255M. Karena efek bunga berbunga, perhitungan yang lebih sering (triwulanan) dengan nominal persentase tahunan yang sama akan menghasilkan nilai akhir yang lebih besar (Effective Annual Rate lebih tinggi).",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Frekuensi Pemajemukan" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Analisis Komparatif" }
+            },
+            "provenance": "Soal orisinal literasi numerasi finansial (TKA) yang menuntut pemahaman konseptual kuat tentang 'compounding frequency'.",
+            "mode": "tka_preview",
+            "game_mechanic": "calculation",
+            "tags": ["bunga_majemuk", "compounding_frequency", "tka_bonus"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Analisis Efek Frekuensi Bunga (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

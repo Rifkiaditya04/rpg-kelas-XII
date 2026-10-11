@@ -1,0 +1,28 @@
+{
+  "player_id": "PLAYER-001",
+  "level": 12,
+  "xp": 180,
+  "gold": 155,
+  "mastery": {
+    "BI12-C01-D": 0.575,
+    "BI12-C01-EJAAN": 0.575,
+    "BI12-C01-A": 0.6,
+    "BI12-C01-B": 0.7
+  },
+  "cooldowns": {
+    "BI12-C01-D-7672": 3,
+    "BI12-C01-EJAAN-2381": 3,
+    "BI12-C01-A-4776": 3,
+    "BI12-C01-B-7434": 3,
+    "BI12-C01-B-7241": 3
+  },
+  "achievements": [
+    "FIRST_MISSION_COMPLETE",
+    "PERFECT_ACCURACY",
+    "COMBO_STRIKER"
+  ],
+  "completed_missions": [
+    "BID-CH1-M1"
+  ],
+  "last_updated": "2026-10-11T09:44:29.828Z"
+}

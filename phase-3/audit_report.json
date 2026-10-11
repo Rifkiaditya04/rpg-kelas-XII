@@ -1,0 +1,30 @@
+﻿{
+    "issues":  [
+
+               ],
+    "total_questions":  169,
+    "total_files":  82,
+    "missing_difficulty":  0,
+    "subjects":  {
+                     "Misi 11:":  5,
+                     "Misi 13:":  3,
+                     "Misi 10:":  3,
+                     "Misi 14:":  4,
+                     "Unknown":  9,
+                     "Misi 16:":  3,
+                     "Ujian Akhir:":  25,
+                     "Renderer capability":  1,
+                     "World 2":  42,
+                     "World 3":  24,
+                     "World 1":  36,
+                     "Misi 15:":  3,
+                     "Misi 9:":  4,
+                     "Misi 12:":  3,
+                     "Misi 17:":  4
+                 },
+    "missing_fields_count":  {
+
+                             },
+    "missing_explanation":  0,
+    "missing_competency":  0
+}

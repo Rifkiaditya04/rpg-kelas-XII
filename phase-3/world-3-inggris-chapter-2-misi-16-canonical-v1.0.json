@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 3 Bahasa Inggris Wajib Chapter 2 - Misi 16 (Hortatory Exposition)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk teks Eksposisi Hortatori (World 3).",
+    "chapter_id": "ENG12-C02",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "ENG-C02-C-EASY",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-C",
+            "skill": "understand",
+            "question": "Read the concluding paragraph:\n'Based on the rising cases of cyberbullying and online harassment, it is crucial that schools implement strict Netiquette guidelines. Therefore, we should all start practicing empathy before typing a comment on social media.'\nWhat is the generic structure of this paragraph in a Hortatory Exposition text?",
+            "options": [
+                "Thesis",
+                "Arguments",
+                "Recommendation",
+                "Reiteration"
+            ],
+            "answer": "Recommendation",
+            "explanation": "A Hortatory Exposition text always ends with a 'Recommendation', which tells the reader what should or should not be done based on the given arguments. Words like 'it is crucial that...' and 'we should all start...' clearly indicate a recommendation.",
+            "source": {
+                "student_book": { "pages": "97-146", "section": "Unit 3, Hortatory Exposition: Netiquette" },
+                "teacher_guide": { "pages": "N/A", "section": "Unit 3, Generic Structure" }
+            },
+            "provenance": "Soal orisinal pemahaman struktur akhir teks eksposisi hortatori (Kurikulum Merdeka).",
+            "mode": "learning",
+            "game_mechanic": "evidence_scan",
+            "tags": ["hortatory_exposition", "recommendation", "kontekstual"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Hortatory Exposition",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "ENG-C02-C-MED",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-C",
+            "skill": "apply",
+            "question": "'Cyberbullying is an aggressive behavior. It happens repeatedly online. It has severe psychological impacts.'\nCombine the three sentences into one cohesive sentence using appropriate relative pronouns and conjunctions.",
+            "options": [
+                "Cyberbullying is an aggressive behavior which happens repeatedly online and has severe psychological impacts.",
+                "Cyberbullying is an aggressive behavior who happens repeatedly online so it has severe psychological impacts.",
+                "Because cyberbullying is an aggressive behavior it happens repeatedly online but has severe psychological impacts.",
+                "Although cyberbullying happens repeatedly online, it is an aggressive behavior which has severe psychological impacts."
+            ],
+            "answer": "Cyberbullying is an aggressive behavior which happens repeatedly online and has severe psychological impacts.",
+            "explanation": "The relative pronoun 'which' accurately replaces 'It' to refer to 'aggressive behavior' (a non-human noun). The conjunction 'and' logically connects the ongoing action with its impacts without altering the original meaning.",
+            "source": {
+                "student_book": { "pages": "97-146", "section": "Unit 3, Complex Sentences" },
+                "teacher_guide": { "pages": "N/A", "section": "Unit 3, Language Features" }
+            },
+            "provenance": "Soal orisinal drill grammar (K13) untuk menguji kemampuan sintaksis dalam menyusun kalimat majemuk bertingkat (Complex Sentences).",
+            "mode": "learning",
+            "game_mechanic": "language_scan",
+            "tags": ["relative_pronouns", "complex_sentences", "fundamental_k13"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Complex Sentences (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "ENG-C02-C-HARD",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-C",
+            "skill": "evaluate",
+            "question": "Read the statement from a debate on Netiquette:\n'Regulating Netiquette is fundamentally useless. Trolls will always exist, and anonymity empowers them to bypass any artificial rules set by forum moderators.'\nWhich of the following counter-arguments most effectively weakens the statement above?",
+            "options": [
+                "Trolls are mostly teenagers who will eventually outgrow their bad behavior.",
+                "Anonymity is a human right, so we must accept that trolling is part of free speech.",
+                "Platforms that enforce strict identity verification and community guidelines have seen a 70% drop in harassment cases.",
+                "Moderators should just ban all anonymous users to solve the problem permanently."
+            ],
+            "answer": "Platforms that enforce strict identity verification and community guidelines have seen a 70% drop in harassment cases.",
+            "explanation": "The original statement claims that rules are 'useless' because anonymity empowers trolls to bypass them. The counter-argument directly attacks this premise by providing statistical evidence that enforcing rules (community guidelines) and removing anonymity (identity verification) practically reduces harassment, thus proving the rules are NOT useless.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Argument Refutation" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Analytical Reading" }
+            },
+            "provenance": "Soal orisinal literasi logika analitis (TKA Bonus) yang menuntut siswa mengevaluasi 'kekuatan argumen' dan mematahkan premis lawan secara berbasis data.",
+            "mode": "tka_preview",
+            "game_mechanic": "meaning_check",
+            "tags": ["hortatory_exposition", "counter_argument", "critical_thinking", "tka_bonus"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Argument Refutation (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

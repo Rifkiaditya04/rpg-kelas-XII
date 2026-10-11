@@ -1,0 +1,451 @@
+﻿{
+    "version":  1,
+    "subjects":  [
+                     {
+                         "subject":  "Matematika",
+                         "chapters":  [
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "Kombinasi Dasar",
+                                                                       "competency_id":  "MAT12-C03-B"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Aturan Perkalian",
+                                                                       "competency_id":  "MAT12-C03-A"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "MAT12-C03",
+                                              "chapter_name":  "Bab MAT12-C03"
+                                          },
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "Barisan Geometri",
+                                                                       "competency_id":  "MAT12-C01-A2"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Bunga Tunggal",
+                                                                       "competency_id":  "MAT12-C01-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Barisan Aritmetika",
+                                                                       "competency_id":  "MAT12-C01-A1"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Deret Aritmetika",
+                                                                       "competency_id":  "MAT12-C01-B"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "MAT12-C01",
+                                              "chapter_name":  "Bab MAT12-C01"
+                                          },
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "Peluang Sederhana",
+                                                                       "competency_id":  "MAT12-C04-A"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "MAT12-C04",
+                                              "chapter_name":  "Bab MAT12-C04"
+                                          },
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "Parameter Investasi",
+                                                                       "competency_id":  "MAT12-C02-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Investasi Bunga Majemuk",
+                                                                       "competency_id":  "MAT12-C02-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Anuitas Dasar",
+                                                                       "competency_id":  "MAT12-C02-B"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "MAT12-C02",
+                                              "chapter_name":  "Bab MAT12-C02"
+                                          }
+                                      ],
+                         "grade":  12
+                     },
+                     {
+                         "subject":  "Bahasa Indonesia",
+                         "chapters":  [
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "BI12-C05-B",
+                                                                       "competency_id":  "BI12-C05-B"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C05-E",
+                                                                       "competency_id":  "BI12-C05-E"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C05-C",
+                                                                       "competency_id":  "BI12-C05-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C05-D",
+                                                                       "competency_id":  "BI12-C05-D"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C05-A",
+                                                                       "competency_id":  "BI12-C05-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Opini dan Fakta (K13)",
+                                                                       "competency_id":  "BI12-C05-K13"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "BI12-C05",
+                                              "chapter_name":  "Bab BI12-C05"
+                                          },
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "BI12-C02-B",
+                                                                       "competency_id":  "BI12-C02-B"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C02-G",
+                                                                       "competency_id":  "BI12-C02-G"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kebahasaan Teks Prosedur (K13)",
+                                                                       "competency_id":  "BI12-C02-K13"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C02-E",
+                                                                       "competency_id":  "BI12-C02-E"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C02-C",
+                                                                       "competency_id":  "BI12-C02-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Logika Prosedural (TKA)",
+                                                                       "competency_id":  "BI12-C02-TKA"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C02-F",
+                                                                       "competency_id":  "BI12-C02-F"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C02-D",
+                                                                       "competency_id":  "BI12-C02-D"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C02-A",
+                                                                       "competency_id":  "BI12-C02-A"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "BI12-C02",
+                                              "chapter_name":  "Bab BI12-C02"
+                                          },
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "BI12-C01-C",
+                                                                       "competency_id":  "BI12-C01-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C01-B",
+                                                                       "competency_id":  "BI12-C01-B"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Literasi Analitis Surat Resmi (TKA)",
+                                                                       "competency_id":  "BI12-C01-TKA"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kalimat Efektif (K13)",
+                                                                       "competency_id":  "BI12-C01-KALIMAT"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C01-D",
+                                                                       "competency_id":  "BI12-C01-D"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C01-A",
+                                                                       "competency_id":  "BI12-C01-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Penulisan Surat Baku (K13)",
+                                                                       "competency_id":  "BI12-C01-EJAAN"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C01-E",
+                                                                       "competency_id":  "BI12-C01-E"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "BI12-C01",
+                                              "chapter_name":  "Bab BI12-C01"
+                                          },
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "BI12-C03-D",
+                                                                       "competency_id":  "BI12-C03-D"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C03-A",
+                                                                       "competency_id":  "BI12-C03-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Gaya Bahasa Novel (K13)",
+                                                                       "competency_id":  "BI12-C03-K13"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C03-F",
+                                                                       "competency_id":  "BI12-C03-F"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C03-C",
+                                                                       "competency_id":  "BI12-C03-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C03-B",
+                                                                       "competency_id":  "BI12-C03-B"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Analisis Fiksi (TKA)",
+                                                                       "competency_id":  "BI12-C03-TKA"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "BI12-C03",
+                                              "chapter_name":  "Bab BI12-C03"
+                                          },
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "BI12-C04-A",
+                                                                       "competency_id":  "BI12-C04-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kebahasaan Eksplanasi (K13)",
+                                                                       "competency_id":  "BI12-C04-K13"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C04-C",
+                                                                       "competency_id":  "BI12-C04-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C04-B",
+                                                                       "competency_id":  "BI12-C04-B"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "BI12-C04",
+                                              "chapter_name":  "Bab BI12-C04"
+                                          },
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "BI12-C04-A",
+                                                                       "competency_id":  "BI12-C04-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C04-C",
+                                                                       "competency_id":  "BI12-C04-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C01-B",
+                                                                       "competency_id":  "BI12-C01-B"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C05-A",
+                                                                       "competency_id":  "BI12-C05-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C05-D",
+                                                                       "competency_id":  "BI12-C05-D"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C03-B",
+                                                                       "competency_id":  "BI12-C03-B"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C02-B",
+                                                                       "competency_id":  "BI12-C02-B"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C04-B",
+                                                                       "competency_id":  "BI12-C04-B"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C02-C",
+                                                                       "competency_id":  "BI12-C02-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C05-C",
+                                                                       "competency_id":  "BI12-C05-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C02-A",
+                                                                       "competency_id":  "BI12-C02-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C05-E",
+                                                                       "competency_id":  "BI12-C05-E"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C02-D",
+                                                                       "competency_id":  "BI12-C02-D"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C03-C",
+                                                                       "competency_id":  "BI12-C03-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C03-A",
+                                                                       "competency_id":  "BI12-C03-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C03-F",
+                                                                       "competency_id":  "BI12-C03-F"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C03-D",
+                                                                       "competency_id":  "BI12-C03-D"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C01-A",
+                                                                       "competency_id":  "BI12-C01-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "BI12-C01-D",
+                                                                       "competency_id":  "BI12-C01-D"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "BI12-FINAL",
+                                              "chapter_name":  "Bab BI12-FINAL"
+                                          }
+                                      ],
+                         "grade":  12
+                     },
+                     {
+                         "subject":  "Unknown",
+                         "chapters":  [
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "Kompetensi BI12-C01-C",
+                                                                       "competency_id":  "BI12-C01-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kompetensi BI12-C01-B",
+                                                                       "competency_id":  "BI12-C01-B"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kompetensi BI12-C01-A",
+                                                                       "competency_id":  "BI12-C01-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kompetensi BI12-C01-G",
+                                                                       "competency_id":  "BI12-C01-G"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kompetensi BI12-C01-D",
+                                                                       "competency_id":  "BI12-C01-D"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kompetensi BI12-C01-H",
+                                                                       "competency_id":  "BI12-C01-H"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kompetensi BI12-C01-F",
+                                                                       "competency_id":  "BI12-C01-F"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kompetensi BI12-C01-E",
+                                                                       "competency_id":  "BI12-C01-E"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "BI12-C01",
+                                              "chapter_name":  "Bab BI12-C01"
+                                          },
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "Kompetensi QA-ONLY",
+                                                                       "competency_id":  "QA-ONLY"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "QA-ONLY",
+                                              "chapter_name":  "Bab QA-ONLY"
+                                          },
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "Kompetensi MAT12-C01-A",
+                                                                       "competency_id":  "MAT12-C01-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kompetensi MAT12-C01-C",
+                                                                       "competency_id":  "MAT12-C01-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Kompetensi MAT12-C01-B",
+                                                                       "competency_id":  "MAT12-C01-B"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "MAT12-C01",
+                                              "chapter_name":  "Bab MAT12-C01"
+                                          }
+                                      ],
+                         "grade":  12
+                     },
+                     {
+                         "subject":  "Bahasa Inggris",
+                         "chapters":  [
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "Narrative Values",
+                                                                       "competency_id":  "ENG12-C01-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Offering Services",
+                                                                       "competency_id":  "ENG12-C01-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Captions",
+                                                                       "competency_id":  "ENG12-C01-B"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "ENG12-C01",
+                                              "chapter_name":  "Bab ENG12-C01"
+                                          },
+                                          {
+                                              "competencies":  [
+                                                                   {
+                                                                       "name":  "Discussion Text Characteristics",
+                                                                       "competency_id":  "ENG12-C02-D"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Argumentative Text",
+                                                                       "competency_id":  "ENG12-C02-B"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Procedure Text",
+                                                                       "competency_id":  "ENG12-C02-A"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Hortatory Exposition",
+                                                                       "competency_id":  "ENG12-C02-C"
+                                                                   },
+                                                                   {
+                                                                       "name":  "Reading Comprehension",
+                                                                       "competency_id":  "ENG12-C02-BOSS"
+                                                                   }
+                                                               ],
+                                              "chapter_id":  "ENG12-C02",
+                                              "chapter_name":  "Bab ENG12-C02"
+                                          }
+                                      ],
+                         "grade":  12
+                     }
+                 ]
+}

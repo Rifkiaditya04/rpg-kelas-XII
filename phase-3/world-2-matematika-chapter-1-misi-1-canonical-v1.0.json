@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 2 Matematika Wajib Chapter 1 - Misi 1 (Barisan Aritmetika)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk pengenalan Barisan Aritmetika (World 2).",
+    "chapter_id": "MAT12-C01",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "MAT-C01-A1-EASY",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-A1",
+            "skill": "understand",
+            "question": "Seorang petani menyusun bibit tomat di ladang dengan pola tertentu. Baris pertama berisi 10 bibit, baris kedua 14 bibit, dan baris ketiga 18 bibit. Jika pola ini berlanjut, berapakah jumlah bibit pada baris ke-6?",
+            "options": [
+                "22",
+                "26",
+                "30",
+                "34"
+            ],
+            "answer": "30",
+            "explanation": "Ini adalah barisan aritmetika dengan suku pertama (a) = 10 dan beda (b) = 4. Rumus suku ke-n adalah Un = a + (n-1)b. Maka U6 = 10 + (6-1)4 = 10 + 20 = 30.",
+            "source": {
+                "student_book": { "pages": "3-10", "section": "Bab 1, Barisan Aritmetika" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 1, Barisan Aritmetika" }
+            },
+            "provenance": "Soal orisinal bertema kontekstual agrikultur untuk melatih pemahaman dasar rumus Un.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["barisan_aritmetika", "kontekstual"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Barisan Aritmetika",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "MAT-C01-A1-MED",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-A1",
+            "skill": "apply",
+            "question": "Suku ke-4 dari suatu barisan aritmetika adalah 17, sedangkan suku ke-9 adalah 37. Nilai dari suku ke-15 adalah...",
+            "options": [
+                "57",
+                "61",
+                "65",
+                "73"
+            ],
+            "answer": "61",
+            "explanation": "Diketahui U4 = a + 3b = 17 dan U9 = a + 8b = 37. Eliminasi: 5b = 20 -> b = 4. Substitusi b = 4 ke U4: a + 12 = 17 -> a = 5. Suku ke-15: U15 = a + 14b = 5 + 14(4) = 5 + 56 = 61.",
+            "source": {
+                "student_book": { "pages": "3-10", "section": "Bab 1, Barisan Aritmetika" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 1, Barisan Aritmetika" }
+            },
+            "provenance": "Soal orisinal drill K13 untuk menguji keterampilan eliminasi linear dua variabel dalam barisan.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["barisan_aritmetika", "sistem_persamaan", "fundamental_k13"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Barisan Aritmetika (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "MAT-C01-A1-HARD",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-A1",
+            "skill": "evaluate",
+            "question": "Perusahaan perakitan ponsel menargetkan produksi awal sebanyak 5.000 unit pada bulan pertama. Setiap bulan, karena efisiensi, target produksi dinaikkan dengan jumlah yang tetap. Jika pada bulan ke-6 perusahaan mampu merakit 6.500 unit, namun pada bulan ke-8 terjadi kendala pasokan sehingga produksi berkurang 400 unit dari target seharusnya, berapa banyak unit yang berhasil dirakit pada bulan ke-8 tersebut?",
+            "options": [
+                "6.700",
+                "7.100",
+                "6.800",
+                "6.400"
+            ],
+            "answer": "6.700",
+            "explanation": "Target produksi membentuk barisan aritmetika. a = 5.000. U6 = 6.500. a + 5b = 6.500 -> 5.000 + 5b = 6.500 -> 5b = 1.500 -> b = 300. Target produksi bulan ke-8 (U8) = a + 7b = 5.000 + 7(300) = 5.000 + 2.100 = 7.100 unit. Karena berkurang 400 unit, maka produksi aktual = 7.100 - 400 = 6.700 unit.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Barisan Aritmetika" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Evaluasi Target Produksi" }
+            },
+            "provenance": "Soal orisinal literasi numerasi tingkat tinggi (TKA Bonus) yang menggabungkan barisan aritmetika dengan intervensi kasus eksternal.",
+            "mode": "tka_preview",
+            "game_mechanic": "calculation",
+            "tags": ["barisan_aritmetika", "literasi_numerasi", "tka_bonus"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Penalaran Kuantitatif (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

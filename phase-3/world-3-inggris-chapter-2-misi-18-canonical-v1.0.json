@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 3 Bahasa Inggris Wajib Chapter 2 - Misi 18 (Final Boss Exam)",
+    "purpose": "Bank soal fondasi (Layer 1) Evaluasi Akhir Bahasa Inggris (World 3 Boss).",
+    "chapter_id": "ENG12-C02",
+    "rewards": {
+        "xp_per_correct": 150,
+        "mission_completion_xp": 250
+    },
+    "questions": [
+        {
+            "id": "ENG-C02-BOSS-EASY",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-BOSS",
+            "skill": "understand",
+            "question": "Read the text:\n'Many people struggle with time management. The Pomodoro Technique is one effective method to handle this. It involves working in focused 25-minute intervals, followed by a 5-minute break. This simple routine helps prevent mental fatigue and keeps motivation high throughout the day.'\nWhat is the main topic of the passage?",
+            "options": [
+                "The history of mental fatigue.",
+                "Why people struggle with time.",
+                "A method for managing time effectively.",
+                "The benefits of taking 5-minute breaks."
+            ],
+            "answer": "A method for managing time effectively.",
+            "explanation": "The entire passage revolves around introducing and explaining the 'Pomodoro Technique' as a solution for time management.",
+            "source": {
+                "student_book": { "pages": "General", "section": "Review" },
+                "teacher_guide": { "pages": "N/A", "section": "Reading Comprehension" }
+            },
+            "provenance": "Soal pemahaman main idea komprehensif (Kurikulum Merdeka).",
+            "mode": "learning",
+            "game_mechanic": "evidence_scan",
+            "tags": ["reading_comprehension", "main_idea", "kontekstual"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Reading Comprehension",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "ENG-C02-BOSS-MED",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-BOSS",
+            "skill": "apply",
+            "question": "'The ancient artifact ________ from the museum during the blackout last night, despite the heavy security presence.'\nChoose the correct passive voice structure to complete the sentence.",
+            "options": [
+                "was stealing",
+                "was stolen",
+                "has stolen",
+                "is stolen"
+            ],
+            "answer": "was stolen",
+            "explanation": "The event happened in the past ('last night'), so we need the simple past passive voice: 'was/were + Verb 3'. 'The ancient artifact' is singular, so 'was stolen' is correct.",
+            "source": {
+                "student_book": { "pages": "General", "section": "Grammar Review" },
+                "teacher_guide": { "pages": "N/A", "section": "Passive Voice" }
+            },
+            "provenance": "Soal drill grammar evaluasi akhir K13 (Passive Voice Tense).",
+            "mode": "learning",
+            "game_mechanic": "language_scan",
+            "tags": ["passive_voice", "grammar_review", "fundamental_k13"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Passive Voice (Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "ENG-C02-BOSS-HARD",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-BOSS",
+            "skill": "evaluate",
+            "question": "Read the academic excerpt:\n'While the implementation of Universal Basic Income (UBI) is often touted as a utopian cure for poverty, historical economic models suggest that injecting unchecked capital into the bottom tier of a consumer market invariably triggers hyperinflation, effectively nullifying the newly acquired purchasing power of the poor.'\nWhat is the author's tone toward Universal Basic Income?",
+            "options": [
+                "Enthusiastic and supportive.",
+                "Skeptical and cautionary.",
+                "Neutral and objective.",
+                "Confused and uncertain."
+            ],
+            "answer": "Skeptical and cautionary.",
+            "explanation": "The author uses words like 'often touted as a utopian cure' (suggesting it's overly idealistic) and warns that it 'invariably triggers hyperinflation' and 'nullifies purchasing power'. This clearly shows a skeptical and cautionary tone regarding the effectiveness of UBI.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Author Tone Analysis" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Academic Reading" }
+            },
+            "provenance": "Soal orisinal literasi akademik TKA yang menguji analisis 'Tone of the Author' pada teks ekonomi yang kompleks.",
+            "mode": "tka_preview",
+            "game_mechanic": "meaning_check",
+            "tags": ["author_tone", "academic_reading", "tka_bonus"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Tone Analysis (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

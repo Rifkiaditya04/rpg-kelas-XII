@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "World 2 KM Standard Chapter 1 Original Content - Misi 2 v1.0",
+  "purpose": "Approved additive World 2 content batch for Chapter 1 Mission 2.",
+  "chapter_id": "MAT12-C01",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "MAT12-W02-M02-Q01",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah lintasan katrol pada mesin uap membentuk kurva lingkaran x² + y² = 13. Sebuah sabuk transmisi menyinggung katrol tersebut di titik (2, 3). Persamaan garis singgung yang dibentuk oleh sabuk transmisi tersebut adalah...",
+      "options": [
+        "2x + 3y = 13",
+        "3x + 2y = 13",
+        "x + y = 13",
+        "2x - 3y = 13"
+      ],
+      "answer": "2x + 3y = 13",
+      "explanation": "Persamaan garis singgung lingkaran x² + y² = r² pada titik (x1, y1) adalah x1.x + y1.y = r². Diketahui titik (2, 3) dan r² = 13. Maka: 2x + 3y = 13.",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Garis Singgung"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Garis Singgung"}
+      },
+      "provenance": "Persamaan garis singgung pada titik lingkaran pusat (0,0).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["garis_singgung", "titik_singgung"]
+    },
+    {
+      "id": "MAT12-W02-M02-Q02",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Radar memantau satelit yang bergerak dalam orbit stasioner berbentuk (x - 1)² + (y + 3)² = 10. Jika satelit melepaskan modul pada titik singgung T(4, -2), persamaan lintasan lepas landas (garis singgung) modul tersebut adalah...",
+      "options": [
+        "3x + y = 10",
+        "3x - y = 10",
+        "3x + y - 10 = 0",
+        "x + 3y = 10"
+      ],
+      "answer": "3x + y - 10 = 0",
+      "explanation": "Persamaan garis singgung lingkaran (x-a)² + (y-b)² = r² di titik (x1,y1) adalah (x1-a)(x-a) + (y1-b)(y-b) = r². Substitusi (4,-2) ke (x-1)² + (y+3)² = 10. Maka (4-1)(x-1) + (-2+3)(y+3) = 10 → 3(x-1) + 1(y+3) = 10 → 3x - 3 + y + 3 = 10 → 3x + y = 10 atau 3x + y - 10 = 0.",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Garis Singgung"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Garis Singgung"}
+      },
+      "provenance": "Persamaan garis singgung pada titik lingkaran pusat (a,b).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["garis_singgung", "pusat_bebas"]
+    },
+    {
+      "id": "MAT12-W02-M02-Q03",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah sinar laser ditembakkan menyinggung lensa bundar yang dirumuskan x² + y² = 20. Jika gradien tembakan sinar laser (garis singgung) tersebut adalah 2, manakah dari opsi berikut yang BUKAN persamaan garis tembakan laser?",
+      "options": [
+        "y = 2x - 10",
+        "y = 2x + 10",
+        "y = 2x - 20",
+        "y = 2x + 10 dan y = 2x - 10"
+      ],
+      "answer": "y = 2x - 20",
+      "explanation": "Persamaan garis singgung dengan gradien m pada x² + y² = r² adalah y = mx ± r√(1 + m²). Diketahui m = 2, r² = 20. r√(1 + m²) = √20 × √(1 + 4) = √20 × √5 = √100 = 10. Jadi, persamaannya y = 2x ± 10. Garis y = 2x - 20 adalah yang BUKAN.",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Garis Singgung"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Garis Singgung"}
+      },
+      "provenance": "Persamaan garis singgung lingkaran dengan gradien tertentu.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["garis_singgung", "gradien"]
+    },
+    {
+      "id": "MAT12-W02-M02-Q04",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Seorang teknisi harus memasang rel yang tegak lurus terhadap kabel penyangga. Kabel penyangga dirumuskan dengan y - 2x = 5. Jika rel tersebut harus menyinggung kincir air x² + y² = 5, persamaan garis untuk rel tersebut adalah...",
+      "options": [
+        "y = -½x ± 2.5",
+        "y = -½x ± 5",
+        "y = 2x ± 5",
+        "y = -2x ± 5"
+      ],
+      "answer": "y = -½x ± 2.5",
+      "explanation": "Garis penyangga: y = 2x + 5, maka m1 = 2. Karena tegak lurus, m2 = -1/m1 = -1/2. Persamaan garis singgung dengan m = -1/2 dan r = √5 adalah y = -½x ± √5.√(1 + (-1/2)²). √5.√(1 + 1/4) = √5.√(5/4) = √25/2 = 5/2 = 2.5. Maka y = -½x ± 2.5.",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Garis Singgung"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Garis Singgung"}
+      },
+      "provenance": "Persamaan garis singgung tegak lurus.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["garis_singgung", "gradien", "tegak_lurus"]
+    }
+  ]
+}

@@ -574,3 +574,10 @@ Pengguna menyetujui dan alur diimplementasikan.
 Mata pelajaran Bahasa Indonesia (World 1) telah SELESAI sepenuhnya. Opsi berikutnya yang telah disepakati:
 1. **Pindah ke Mata Pelajaran Lain** (Matematika / Sosiologi) — membangun konten World 2 atau World 3.
 2. **Implementasi Visual Polish** (yang sempat ditunda) — 3D animated buttons, custom NPC backgrounds, dan humanisasi dialog NPC.
+
+## 23. Future Visual Overhaul: RPG Novel Edition (2026-10-07)
+A comprehensive Game Design Document (GDD) for a massive visual and mechanical overhaul has been drafted and APPROVED by the user.
+- **Document:** `Alur Kerja Proyek/01-GDD-ACADEMIC-ASCENSION-RPG.md`
+- **Concept:** Transitions the educational engine into a "Visual Novel x JRPG Battle" hybrid to natively solve the Kurikulum Wajib vs. Tingkat Lanjut vs. TKA progression gates.
+- **Implementation Gate:** This overhaul is **DEFERRED** until the current Phase 3 (Content/JSON generation) is largely complete for core subjects (Math, Sociology, etc.). It will become the primary blueprint for the "Phase 4: Visual & Engine Overhaul" milestone.
+- **Strict Rule for AI:** Any future developer agents working on the engine UI must strictly consult `01-GDD-ACADEMIC-ASCENSION-RPG.md` before writing CSS or HTML changes for the game interface.

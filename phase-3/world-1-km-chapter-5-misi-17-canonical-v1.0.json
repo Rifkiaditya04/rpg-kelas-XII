@@ -1,85 +1,170 @@
-{
-  "schema_version": "1.1",
-  "batch_status": "CANONICAL_APPROVED",
-  "dataset": "Misi 17: Analisis Kritis, Ejaan, dan Refleksi ALACT",
-  "purpose": "Approved additive World 1 content batch for controlled expansion.",
-  "chapter_id": "BI12-C05",
-  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
-  "questions": [
-    {
-      "id": "KM05-D1",
-      "chapter_id": "BI12-C05",
-      "topic_id": "BI12-C05-D",
-      "skill": "evaluate",
-      "cognitive_level": "evaluate",
-      "difficulty": "hard",
-      "question_type": "mcq",
-      "question": "Bacalah kalimat berikut: 'Untuk melestarikan kearifan lokal diperlukan kerjasama yang baik antar warga masyarakat.' Kesalahan penulisan yang terdapat pada kalimat tersebut adalah...",
-      "options": [
-        "Penulisan 'kerjasama' seharusnya dipisah (kerja sama) dan 'antar warga' seharusnya disambung (antarwarga).",
-        "Penulisan 'antar warga' seharusnya menggunakan tanda hubung (antar-warga).",
-        "Kata 'diperlukan' seharusnya dipisah menjadi 'di perlukan'.",
-        "Penulisan 'kerjasama' sudah benar, namun kata 'masyarakat' harus diawali huruf kapital."
-      ],
-      "answer": "Penulisan 'kerjasama' seharusnya dipisah (kerja sama) dan 'antar warga' seharusnya disambung (antarwarga).",
-      "explanation": "Menurut PUEBI, 'kerja sama' ditulis terpisah karena bukan bentuk terikat, sedangkan 'antar-' adalah bentuk terikat yang harus digabung dengan kata yang mengikutinya (antarwarga).",
-      "source": {
-        "student_book": {"pages": "212", "section": "Bab 5, Subbab D"},
-        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
-      },
-      "provenance": "Generated content following KM standard",
-      "mode": "learning",
-      "game_mechanic": "evidence_scan"
-    },
-    {
-      "id": "KM05-E1",
-      "chapter_id": "BI12-C05",
-      "topic_id": "BI12-C05-E",
-      "skill": "analyze",
-      "cognitive_level": "analyze",
-      "difficulty": "medium",
-      "question_type": "mcq",
-      "question": "Setelah membaca esai tentang kearifan lokal, Budi menyadari pentingnya menjaga alam dan mulai mencari cara-cara baru atau metode alternatif yang bisa ia lakukan untuk menumbuhkan kepedulian lingkungan di sekolahnya. Dalam model refleksi ALACT, tindakan Budi berada pada tahap...",
-      "options": [
-        "Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)",
-        "Tindakan/Aksi (Action)",
-        "Melihat Kembali (Looking Back)",
-        "Uji Coba (Trial)"
-      ],
-      "answer": "Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)",
-      "explanation": "Budi telah melewati tahap menyadari aspek penting (Awareness) dan kini memikirkan metode/solusi baru yang bisa diterapkan, yang sesuai dengan tahap Creating Alternative Methods of Action.",
-      "source": {
-        "student_book": {"pages": "215", "section": "Bab 5, Subbab E"},
-        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
-      },
-      "provenance": "Generated content following KM standard",
-      "mode": "learning",
-      "game_mechanic": "evidence_scan"
-    },
-    {
-      "id": "KM05-E2",
-      "chapter_id": "BI12-C05",
-      "topic_id": "BI12-C05-E",
-      "skill": "analyze",
-      "cognitive_level": "analyze",
-      "difficulty": "medium",
-      "question_type": "mcq",
-      "question": "Dalam model ALACT, tahap awal yang dilakukan pembaca yang berupa kegiatan membaca teks secara langsung dan memperoleh pengalaman atau pengetahuan darinya disebut tahap...",
-      "options": [
-        "Tindakan/Aksi (Action)",
-        "Kesadaran (Awareness)",
-        "Uji Coba (Trial)",
-        "Looking Back (Melihat Kembali)"
-      ],
-      "answer": "Tindakan/Aksi (Action)",
-      "explanation": "Tahap 1 (Action) adalah saat di mana seseorang melakukan sebuah tindakan langsung, dalam konteks literasi hal ini adalah kegiatan membaca teks itu sendiri untuk mendapatkan pengetahuan awal.",
-      "source": {
-        "student_book": {"pages": "214", "section": "Bab 5, Subbab E"},
-        "teacher_guide": {"pages": "0", "section": "Bab N/A"}
-      },
-      "provenance": "Generated content following KM standard",
-      "mode": "learning",
-      "game_mechanic": "evidence_scan"
-    }
-  ]
+﻿{
+    "schema_version":  "1.1",
+    "batch_status":  "CANONICAL_APPROVED",
+    "dataset":  "Misi 17: Analisis Kritis, Ejaan, dan Refleksi ALACT",
+    "purpose":  "Approved additive World 1 content batch for controlled expansion.",
+    "chapter_id":  "BI12-C05",
+    "rewards":  {
+                    "xp_per_correct":  100,
+                    "mission_completion_xp":  100
+                },
+    "questions":  [
+                      {
+                          "id":  "KM05-D1",
+                          "chapter_id":  "BI12-C05",
+                          "topic_id":  "BI12-C05-D",
+                          "skill":  "evaluate",
+                          "question":  "Bacalah kalimat berikut: \u0027Untuk melestarikan kearifan lokal diperlukan kerjasama yang baik antar warga masyarakat.\u0027 Kesalahan penulisan yang terdapat pada kalimat tersebut adalah...",
+                          "options":  [
+                                          "Penulisan \u0027kerjasama\u0027 seharusnya dipisah (kerja sama) dan \u0027antar warga\u0027 seharusnya disambung (antarwarga).",
+                                          "Penulisan \u0027antar warga\u0027 seharusnya menggunakan tanda hubung (antar-warga).",
+                                          "Kata \u0027diperlukan\u0027 seharusnya dipisah menjadi \u0027di perlukan\u0027.",
+                                          "Penulisan \u0027kerjasama\u0027 sudah benar, namun kata \u0027masyarakat\u0027 harus diawali huruf kapital."
+                                      ],
+                          "answer":  "Penulisan \u0027kerjasama\u0027 seharusnya dipisah (kerja sama) dan \u0027antar warga\u0027 seharusnya disambung (antarwarga).",
+                          "explanation":  "Menurut PUEBI, \u0027kerja sama\u0027 ditulis terpisah karena bukan bentuk terikat, sedangkan \u0027antar-\u0027 adalah bentuk terikat yang harus digabung dengan kata yang mengikutinya (antarwarga).",
+                          "source":  {
+                                         "student_book":  {
+                                                              "pages":  "212",
+                                                              "section":  "Bab 5, Subbab D"
+                                                          },
+                                         "teacher_guide":  {
+                                                               "pages":  "0",
+                                                               "section":  "Bab N/A"
+                                                           }
+                                     },
+                          "provenance":  "Generated content following KM standard",
+                          "mode":  "learning",
+                          "game_mechanic":  "evidence_scan",
+                          "subject":  "Bahasa Indonesia",
+                          "track":  "wajib",
+                          "curriculum_source":  [
+                                                    "Kurikulum Merdeka"
+                                                ],
+                          "topic":  "BI12-C05-D",
+                          "difficulty":  "hard",
+                          "cognitive_level":  "evaluate",
+                          "question_type":  "contextual",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "id":  "KM05-E1",
+                          "chapter_id":  "BI12-C05",
+                          "topic_id":  "BI12-C05-E",
+                          "skill":  "analyze",
+                          "question":  "Setelah membaca esai tentang kearifan lokal, Budi menyadari pentingnya menjaga alam dan mulai mencari cara-cara baru atau metode alternatif yang bisa ia lakukan untuk menumbuhkan kepedulian lingkungan di sekolahnya. Dalam model refleksi ALACT, tindakan Budi berada pada tahap...",
+                          "options":  [
+                                          "Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)",
+                                          "Tindakan/Aksi (Action)",
+                                          "Melihat Kembali (Looking Back)",
+                                          "Uji Coba (Trial)"
+                                      ],
+                          "answer":  "Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)",
+                          "explanation":  "Budi telah melewati tahap menyadari aspek penting (Awareness) dan kini memikirkan metode/solusi baru yang bisa diterapkan, yang sesuai dengan tahap Creating Alternative Methods of Action.",
+                          "source":  {
+                                         "student_book":  {
+                                                              "pages":  "215",
+                                                              "section":  "Bab 5, Subbab E"
+                                                          },
+                                         "teacher_guide":  {
+                                                               "pages":  "0",
+                                                               "section":  "Bab N/A"
+                                                           }
+                                     },
+                          "provenance":  "Generated content following KM standard",
+                          "mode":  "learning",
+                          "game_mechanic":  "evidence_scan",
+                          "subject":  "Bahasa Indonesia",
+                          "track":  "wajib",
+                          "curriculum_source":  [
+                                                    "Kurikulum Merdeka"
+                                                ],
+                          "topic":  "BI12-C05-E",
+                          "difficulty":  "medium",
+                          "cognitive_level":  "analyze",
+                          "question_type":  "contextual",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "id":  "KM05-E2",
+                          "chapter_id":  "BI12-C05",
+                          "topic_id":  "BI12-C05-E",
+                          "skill":  "analyze",
+                          "question":  "Dalam model ALACT, tahap awal yang dilakukan pembaca yang berupa kegiatan membaca teks secara langsung dan memperoleh pengalaman atau pengetahuan darinya disebut tahap...",
+                          "options":  [
+                                          "Tindakan/Aksi (Action)",
+                                          "Kesadaran (Awareness)",
+                                          "Uji Coba (Trial)",
+                                          "Looking Back (Melihat Kembali)"
+                                      ],
+                          "answer":  "Tindakan/Aksi (Action)",
+                          "explanation":  "Tahap 1 (Action) adalah saat di mana seseorang melakukan sebuah tindakan langsung, dalam konteks literasi hal ini adalah kegiatan membaca teks itu sendiri untuk mendapatkan pengetahuan awal.",
+                          "source":  {
+                                         "student_book":  {
+                                                              "pages":  "214",
+                                                              "section":  "Bab 5, Subbab E"
+                                                          },
+                                         "teacher_guide":  {
+                                                               "pages":  "0",
+                                                               "section":  "Bab N/A"
+                                                           }
+                                     },
+                          "provenance":  "Generated content following KM standard",
+                          "mode":  "learning",
+                          "game_mechanic":  "evidence_scan",
+                          "subject":  "Bahasa Indonesia",
+                          "track":  "wajib",
+                          "curriculum_source":  [
+                                                    "Kurikulum Merdeka"
+                                                ],
+                          "topic":  "BI12-C05-E",
+                          "difficulty":  "medium",
+                          "cognitive_level":  "analyze",
+                          "question_type":  "contextual",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "difficulty":  "easy",
+                          "subject":  "Bahasa Indonesia",
+                          "question":  "Dalam penulisan esai, sangat penting membedakan opini dari fakta. Manakah dari pernyataan berikut yang merupakan sebuah opini yang sering ditemukan dalam esai kearifan lokal?",
+                          "explanation":  "Kata \u0027sangat indah\u0027 dan \u0027sarat makna\u0027 bersifat subjektif dan tidak dapat diukur secara eksak, sehingga merupakan opini penulis esai.",
+                          "game_mechanic":  "evidence_scan",
+                          "provenance":  "Integrasi Hibrida K13: Identifikasi opini dalam esai.",
+                          "source":  {
+                                         "teacher_guide":  {
+                                                               "section":  "K13 - Teks Esai",
+                                                               "pages":  "N/A"
+                                                           },
+                                         "student_book":  {
+                                                              "section":  "K13 - Opini vs Fakta",
+                                                              "pages":  "N/A"
+                                                          }
+                                     },
+                          "chapter_id":  "BI12-C05",
+                          "question_type":  "konseptual",
+                          "mode":  "learning",
+                          "skill":  "analyze",
+                          "cognitive_level":  "analyze",
+                          "answer":  "Masyarakat desa X memiliki tradisi yang sangat indah dan sarat makna.",
+                          "estimated_time_seconds":  60,
+                          "curriculum_source":  [
+                                                    "K13"
+                                                ],
+                          "tags":  [
+                                       "esai",
+                                       "opini_fakta",
+                                       "fundamental_k13"
+                                   ],
+                          "topic_id":  "BI12-C05-K13",
+                          "topic":  "Opini dan Fakta (K13)",
+                          "track":  "wajib",
+                          "options":  [
+                                          "Masyarakat desa X memiliki tradisi yang sangat indah dan sarat makna.",
+                                          "Tradisi Y dilaksanakan setiap tanggal 1 Suro pada penanggalan Jawa.",
+                                          "Desa Z terletak di kaki Gunung Merapi, berjarak 20 km dari pusat kota.",
+                                          "Jumlah penduduk desa A yang masih membuat kerajinan tradisional adalah 50 orang."
+                                      ],
+                          "id":  "K13-C05-ESAI-01"
+                      }
+                  ]
 }

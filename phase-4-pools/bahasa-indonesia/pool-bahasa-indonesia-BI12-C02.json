@@ -1,0 +1,590 @@
+﻿{
+    "track":  "wajib",
+    "questions":  [
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "BI12-C02-A-7568",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Rifki memutarkan rekaman panduan mencuci tangan yang benar untuk mencegah infeksi. Dalam rekaman tersebut disebutkan: \u0027Pertama, basahi tangan dengan air mengalir. Kedua, tuangkan sabun secukupnya. Ketiga, gosok telapak tangan hingga berbusa. Keempat, bilas dengan air mengalir hingga bersih.\u0027 Berdasarkan informasi eksplisit tersebut, apa yang harus dilakukan segera setelah menuangkan sabun?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Membilas tangan dengan air mengalir hingga bersih."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Menggosok telapak tangan hingga berbusa."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Mematikan keran air agar hemat."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Mengeringkan tangan menggunakan handuk bersih."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-A",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Dalam teks prosedur yang disimak, langkah setelah menuangkan sabun adalah menggosok telapak tangan hingga berbusa. Mengidentifikasi langkah secara berurutan adalah kompetensi dasar dalam menyimak teks prosedur.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C02-B-7978",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Sebuah siaran radio kesehatan membagikan tata cara peregangan pagi: \u0027(1) Lakukan pendinginan selama 5 menit. (2) Berdirilah tegak dan tarik napas dalam. (3) Rentangkan kedua tangan ke atas. (4) Tahan posisi selama 10 detik.\u0027 Terdapat miskonsepsi urutan pada instruksi tersebut. Kesalahan apa yang paling fatal dari urutan tersebut?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Langkah (1) seharusnya dilakukan di akhir, bukan sebagai langkah pertama sebelum pemanasan."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Langkah (3) membutuhkan alat bantu olahraga, sedangkan instruksi tidak menyebutkannya."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Langkah (4) tidak menyebutkan berapa kali gerakan harus diulang."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Langkah (2) seharusnya diganti dengan posisi duduk agar lebih rileks."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Miskonsepsi utama dari prosedur tersebut adalah meletakkan instruksi \u0027pendinginan\u0027 (langkah 1) di awal prosedur. Teks prosedur harus memiliki urutan yang logis agar tujuan (peregangan) dapat dicapai dengan aman.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C02-B-1679",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Sebuah video tutorial menjelaskan cara mengatur postur duduk saat menggunakan laptop untuk menghindari nyeri punggung. Instruksi menyebutkan untuk menyamakan pandangan mata sejajar dengan ujung atas layar. Jika seseorang menanggapi dengan meletakkan tumpukan buku tebal di bawah laptopnya, apa kesimpulan yang paling tepat dari tindakan tersebut?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Tindakan tersebut adalah respons yang benar untuk menaikkan posisi layar agar sejajar dengan mata."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Tindakan tersebut salah karena menumpuk buku dapat merusak laptop."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Tindakan tersebut mengabaikan tujuan utama teks prosedur yaitu mengistirahatkan punggung."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Tindakan tersebut tidak ada hubungannya dengan instruksi dari video tutorial."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Teks prosedur menuntut hasil agar layar sejajar dengan mata. Menumpuk buku adalah tanggapan langsung (aplikasi) yang tepat dan kreatif dari instruksi prosedur untuk mencapai kondisi fisik yang sehat (ergonomis).",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "BI12-C02-C-4340",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Perhatikan kutipan teks prosedur berikut: \u0027(1) Selanjutnya, potong buah segar menjadi bagian kecil. (2) Masukkan potongan buah ke dalam blender. (3) Pastikan penutup blender terkunci rapat sebelum menekan tombol putar.\u0027 Pada kalimat manakah terdapat penggunaan konjungsi temporal (kata hubung penanda waktu) dan verba material (kata kerja fisik)?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Kalimat (1) mengandung konjungsi temporal dan verba material."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Kalimat (2) mengandung konjungsi temporal dan verba material."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Kalimat (3) mengandung verba tingkah laku dan konjungsi temporal."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Kalimat (1) dan (3) hanya mengandung verba material tanpa konjungsi."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Pada kalimat (1), \u0027Selanjutnya\u0027 merupakan konjungsi temporal, dan \u0027potong\u0027 merupakan verba material (kata kerja tindakan). Mengetahui ciri kebahasaan ini krusial dalam menyusun teks prosedur yang benar.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C02-D-6612",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Dua teks prosedur kesehatan dianalisis. Teks 1 membahas \u0027Cara Mengatur Pola Makan Diet Keto\u0027 yang diakhiri dengan peringatan untuk berkonsultasi ke dokter jika memiliki masalah ginjal. Teks 2 membahas \u0027Cara Diet Rendah Gula\u0027 yang tidak mencantumkan peringatan medis apa pun di bagian penutup, melainkan ajakan untuk berolahraga. Berdasarkan pola pengembangan tersebut, kesimpulan apa yang paling tepat mengenai perbedaan struktur kedua teks?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Teks 1 memiliki struktur penutup berupa batasan (syarat medis), sedangkan Teks 2 memiliki penutup berupa saran tambahan."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Teks 1 tidak memiliki langkah-langkah yang jelas, sedangkan Teks 2 memiliki tujuan utama yang jelas."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Kedua teks memiliki penutup berupa kesimpulan akhir yang sama persis."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Teks 2 merupakan prosedur kompleks, sedangkan Teks 1 merupakan prosedur sederhana."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-D",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Membandingkan dua teks prosedur berarti menemukan letak perbedaannya, baik dari segi tujuan, langkah, atau penutup. Penutup pada teks prosedur dapat berupa kesimpulan, saran, maupun batasan keselamatan (peringatan).",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C02-D-2415",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Seorang pembaca merasa Teks Prosedur A (\u0027Cara Meditasi Selama 10 Menit\u0027) jauh lebih mudah diikuti daripada Teks Prosedur B (\u0027Cara Meditasi\u0027). Setelah dicek, Teks A menggunakan penomoran langkah (1, 2, 3), sedangkan Teks B ditulis dalam bentuk paragraf narasi tanpa angka penanda. Apa kelemahan utama dari pola pengembangan Teks B?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Tidak adanya penanda urutan (angka/konjungsi) membuat pembaca kesulitan membedakan batas antarlangkah secara hierarkis."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Teks B pasti kehilangan tujuan utamanya karena ditulis secara narasi."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Paragraf narasi tidak boleh sama sekali digunakan dalam teks prosedur kompleks."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Teks B menggunakan kalimat imperatif yang terlalu banyak sehingga terkesan kasar."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-D",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Meskipun teks prosedur dapat berbentuk narasi atau poin, ketiadaan penanda urutan yang jelas (seperti angka atau konjungsi temporal) akan mengaburkan batas antarlangkah, sehingga sulit diikuti.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C02-E-3850",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Sinta membaca sebuah teks prosedur berjudul \u0027Cara Cepat Mengatasi Insomnia dengan Relaksasi Otot Progresif\u0027. Setelah mempraktikkannya, ia merasa tubuhnya lebih rileks, meskipun butuh waktu 30 menit, bukan 10 menit seperti janji artikel tersebut. Dalam kerangka refleksi 4F/4P, pada tahap apakah Sinta berada ketika ia menyadari ketidaksesuaian durasi tersebut?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Tahap Perasaan (Feeling), karena ia merasa rileks."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Tahap Pembelajaran (Findings), karena ia menemukan fakta baru berdasarkan pengalamannya mempraktikkan prosedur tersebut."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Tahap Penerapan (Future), karena ia akan menggunakannya lagi besok."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Tahap Peristiwa (Fact), karena teks tersebut memang berjudul cara cepat."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-E",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Menyadari bahwa durasi nyata (30 menit) berbeda dari klaim teks (10 menit) adalah bentuk penemuan atau pembelajaran (Findings) dari refleksi setelah melakukan praktik.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "create",
+                          "question_id":  "BI12-C02-E-4673",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Seorang atlet membaca prosedur \u0027Pemulihan Cedera Ringan dengan Metode RICE (Rest, Ice, Compression, Elevation)\u0027. Ia memahami konsepnya dan memutuskan bahwa besok saat latihan lari, ia akan selalu membawa kantong es di tasnya. Berdasarkan model refleksi 4F/4P, tindakan atlet tersebut merupakan perwujudan dari tahap...",
+                          "answer":  "D",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Peristiwa (Fact)"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Perasaan (Feeling)"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Pembelajaran (Findings)"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Penerapan (Future)"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-E",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Tahap Penerapan (Future / Rencana ke depan) adalah saat seseorang memutuskan untuk melakukan tindakan nyata di masa depan berdasarkan pembelajaran yang didapat dari sebuah teks.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "BI12-C02-F-9368",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Sebuah draf teks prosedur tentang \u0027Cara Mencuci Sayuran Segar\u0027 tersusun acak seperti berikut:\n(1) Keringkan sayuran dengan lap bersih atau tisu dapur.\n(2) Siapkan wadah bersih dan isi dengan air mengalir.\n(3) Masukkan sayuran dan gosok perlahan permukaan daunnya.\n(4) Buang bagian sayuran yang busuk atau layu.\nManakah urutan yang paling logis agar prosedur tersebut higienis dan runtut?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "(2) - (4) - (3) - (1)"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "(4) - (2) - (3) - (1)"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "(2) - (3) - (4) - (1)"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "(4) - (3) - (2) - (1)"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-F",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Langkah pertama yang paling higienis adalah menyortir/membuang bagian busuk (4). Kemudian siapkan air (2), cuci/gosok perlahan (3), dan terakhir keringkan (1).",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "create",
+                          "question_id":  "BI12-C02-G-6595",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Kamu sedang memproduksi sebuah video tutorial tentang \u0027Cara Bersepeda di Jalan Raya dengan Aman\u0027. Saat melakukan proses rekaman (shooting), kamu menyadari bahwa kamu lupa memasukkan langkah memakai helm pelindung di awal video, dan langsung merekam adegan mengayuh sepeda. Apa tindakan perbaikan (editing) terbaik agar video tutorial tersebut tetap memenuhi standar teks prosedur yang aman?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Mengabaikannya karena penonton pasti sudah tahu bahwa naik sepeda harus memakai helm."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Merekam ulang adegan memakai helm, lalu menyelipkannya di bagian awal video saat proses penyuntingan (editing)."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Menambahkan tulisan peringatan di akhir video yang menyuruh penonton memakai helm."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Mengganti seluruh konsep video menjadi cara memperbaiki rantai sepeda."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-G",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Sebuah video tutorial (sebagai alih wahana dari teks prosedur) harus mengutamakan keselamatan. Langkah persiapan yang krusial (memakai helm) harus diletakkan di awal, sehingga merekam ulang dan menyunting adalah tindakan paling logis.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "analyze",
+                          "question_id":  "BI12-C02-K13-7359",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Menurut kaidah kebahasaan Kurikulum 2013, teks prosedur kompleks ditandai dengan penggunaan verba imperatif. Manakah dari kalimat berikut yang menggunakan verba imperatif secara tepat?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Pastikan Anda telah mengisi formulir dengan data yang valid."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Pendaftar diharapkan membawa dokumen asli saat verifikasi."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Oleh karena itu, langkah ini sangat penting untuk dilakukan."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Sebaiknya kita mencuci tangan sebelum proses dimulai."
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-K13",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Verba imperatif adalah kata kerja perintah (biasanya berakhiran -kan, -i, atau partikel -lah). Kata \u0027Pastikan\u0027 adalah bentuk imperatif yang langsung memberi instruksi/perintah.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "BI12-C02-TKA-3473",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Cermati teks prosedur acak berikut: (1) Angkat dan tiriskan mi. (2) Rebus air hingga mendidih. (3) Masukkan bumbu ke dalam mangkuk. (4) Masukkan mi ke dalam air mendidih selama 3 menit. (5) Tuangkan mi beserta kuahnya ke dalam mangkuk. Urutan yang paling logis adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "(2)-(4)-(1)-(3)-(5)"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "(2)-(4)-(3)-(1)-(5)"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "(3)-(2)-(4)-(5)-(1)"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "(2)-(3)-(4)-(1)-(5)"
+                                          }
+                                      ],
+                          "primary_competency":  "BI12-C02-TKA",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Urutan logis memasak mi: merebus air (2), memasukkan mi (4), mengangkat mi (1), menyiapkan bumbu (3) bisa bersamaan tapi setelah mi siap, lalu menuangkan semuanya (5).",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      }
+                  ],
+    "curriculum":  [
+                       "K13",
+                       "Merdeka"
+                   ],
+    "grade":  12,
+    "competencies":  [
+                         {
+                             "name":  "Kompetensi BI12-C02-B",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C02-B"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-G",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C02-G"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-K13",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C02-K13"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-E",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C02-E"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-C",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C02-C"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-TKA",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C02-TKA"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-F",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C02-F"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-D",
+                             "question_count":  2,
+                             "competency_id":  "BI12-C02-D"
+                         },
+                         {
+                             "name":  "Kompetensi BI12-C02-A",
+                             "question_count":  1,
+                             "competency_id":  "BI12-C02-A"
+                         }
+                     ],
+    "subject":  "bahasa-indonesia",
+    "chapter":  "BI12-C02",
+    "status":  "active",
+    "content_version":  1,
+    "pool_id":  "POOL-BAHASA-INDONESIA-BI12-C02"
+}

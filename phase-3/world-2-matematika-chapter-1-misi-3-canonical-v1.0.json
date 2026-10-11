@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 2 Matematika Wajib Chapter 1 - Misi 3 (Deret Aritmetika & Geometri)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk pengenalan Deret (World 2).",
+    "chapter_id": "MAT12-C01",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "MAT-C01-B-EASY",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-B",
+            "skill": "understand",
+            "question": "Siska menabung sisa uang jajannya di celengan setiap akhir bulan. Pada bulan pertama ia menabung Rp 10.000,00, bulan kedua Rp 12.000,00, bulan ketiga Rp 14.000,00, dan seterusnya. Berapa total tabungan Siska setelah 10 bulan menabung?",
+            "options": [
+                "Rp 100.000,00",
+                "Rp 150.000,00",
+                "Rp 190.000,00",
+                "Rp 200.000,00"
+            ],
+            "answer": "Rp 190.000,00",
+            "explanation": "Ini adalah deret aritmetika dengan a = 10.000 dan b = 2.000. Rumus jumlah n suku pertama: Sn = n/2 * (2a + (n-1)b). S10 = 10/2 * (2(10.000) + 9(2.000)) = 5 * (20.000 + 18.000) = 5 * 38.000 = 190.000.",
+            "source": {
+                "student_book": { "pages": "19-27", "section": "Bab 1, Deret Aritmetika" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 1, Deret Aritmetika" }
+            },
+            "provenance": "Soal orisinal kontekstual finansial pelajar (Kurikulum Merdeka) untuk memahami konsep Sn.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["deret_aritmetika", "kontekstual"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Deret Aritmetika",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "MAT-C01-B-MED",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-B",
+            "skill": "apply",
+            "question": "Diketahui suatu deret geometri tak hingga memiliki jumlah S = 24. Jika suku pertama deret tersebut adalah 8, maka rasio dari deret tersebut adalah...",
+            "options": [
+                "1/2",
+                "1/3",
+                "2/3",
+                "3/4"
+            ],
+            "answer": "2/3",
+            "explanation": "Rumus jumlah deret geometri tak hingga adalah S = a / (1 - r). Diketahui S = 24 dan a = 8. Maka 24 = 8 / (1 - r). 1 - r = 8 / 24. 1 - r = 1/3. Maka r = 1 - 1/3 = 2/3.",
+            "source": {
+                "student_book": { "pages": "28-29", "section": "Bab 1, Deret Geometri Tak Hingga" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 1, Deret Geometri Tak Hingga" }
+            },
+            "provenance": "Soal orisinal drill K13 untuk mengasah manipulasi aljabar pecahan pada deret tak hingga.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["deret_tak_hingga", "aljabar", "fundamental_k13"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Deret Geometri Tak Hingga (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "MAT-C01-B-HARD",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-B",
+            "skill": "evaluate",
+            "question": "Sebuah bola dijatuhkan dari ketinggian 10 meter. Setiap kali memantul, bola tersebut mencapai ketinggian 3/4 dari ketinggian sebelumnya. Lintasan bola terus berlanjut hingga bola akhirnya berhenti. Total panjang lintasan keseluruhan yang ditempuh bola tersebut dari awal dijatuhkan hingga berhenti adalah...",
+            "options": [
+                "40 meter",
+                "60 meter",
+                "70 meter",
+                "80 meter"
+            ],
+            "answer": "70 meter",
+            "explanation": "Total lintasan terdiri dari lintasan turun dan naik. Ketinggian awal (jatuh pertama) = 10m. Setelah itu, lintasan membentuk deret tak hingga. S_turun = a / (1-r) = 10 / (1 - 3/4) = 10 / (1/4) = 40m. S_naik (dimulai dari pantulan pertama = 10*3/4 = 7.5m) = 7.5 / (1 - 3/4) = 7.5 / (1/4) = 30m. Total lintasan = 40 + 30 = 70 meter. Alternatif rumus cepat lintasan pantulan: a * ((r_bawah + r_atas) / (r_bawah - r_atas)) = 10 * ((4+3)/(4-3)) = 10 * 7 = 70.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Fisika & Matematika" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Aplikasi Deret" }
+            },
+            "provenance": "Soal orisinal TKA tingkat tinggi yang mengintegrasikan logika gerak fisika (naik-turun) dengan limit tak terhingga.",
+            "mode": "tka_preview",
+            "game_mechanic": "calculation",
+            "tags": ["deret_tak_hingga", "lintasan_pantul", "tka_bonus"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Penalaran Deret Fisis (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

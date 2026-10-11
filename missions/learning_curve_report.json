@@ -1,0 +1,81 @@
+﻿{
+    "pass_count":  3,
+    "timestamp":  "2026-10-11T15.58.51Z",
+    "layer":  "Pedagogical Validation (Learning Curve \u0026 Scaffolding)",
+    "total_recipes":  3,
+    "fail_count":  0,
+    "content_gaps":  [
+
+                     ],
+    "evaluations":  [
+                        {
+                            "pedagogical_issues":  [
+
+                                                   ],
+                            "difficulty_distribution":  {
+                                                            "easy":  2,
+                                                            "medium":  2,
+                                                            "hard":  1
+                                                        },
+                            "mission_type":  "guided_learning",
+                            "question_count":  5,
+                            "status":  "PASS",
+                            "mission_id":  "BID-CH1-M1",
+                            "mission_name":  "Menyelamatkan Surat Lamaran",
+                            "metrics":  {
+                                            "pool_medium_available":  6,
+                                            "warmup_satisfaction":  true,
+                                            "easy_ratio":  0.4,
+                                            "pool_easy_available":  2,
+                                            "pool_hard_available":  4,
+                                            "hard_ratio":  0.2
+                                        }
+                        },
+                        {
+                            "pedagogical_issues":  [
+
+                                                   ],
+                            "difficulty_distribution":  {
+                                                            "easy":  2,
+                                                            "medium":  2,
+                                                            "hard":  1
+                                                        },
+                            "mission_type":  "guided_learning",
+                            "question_count":  5,
+                            "status":  "PASS",
+                            "mission_id":  "ENG-CH1-M1",
+                            "mission_name":  "The Syntax Negotiator",
+                            "metrics":  {
+                                            "pool_medium_available":  2,
+                                            "warmup_satisfaction":  true,
+                                            "easy_ratio":  0.4,
+                                            "pool_easy_available":  2,
+                                            "pool_hard_available":  2,
+                                            "hard_ratio":  0.2
+                                        }
+                        },
+                        {
+                            "pedagogical_issues":  [
+
+                                                   ],
+                            "difficulty_distribution":  {
+                                                            "easy":  2,
+                                                            "medium":  2,
+                                                            "hard":  1
+                                                        },
+                            "mission_type":  "guided_learning",
+                            "question_count":  5,
+                            "status":  "PASS",
+                            "mission_id":  "MAT-CH1-M1",
+                            "mission_name":  "Anomali Barisan Geometri",
+                            "metrics":  {
+                                            "pool_medium_available":  3,
+                                            "warmup_satisfaction":  true,
+                                            "easy_ratio":  0.4,
+                                            "pool_easy_available":  3,
+                                            "pool_hard_available":  3,
+                                            "hard_ratio":  0.2
+                                        }
+                        }
+                    ]
+}

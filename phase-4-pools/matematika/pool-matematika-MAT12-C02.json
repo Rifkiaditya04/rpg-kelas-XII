@@ -1,0 +1,428 @@
+﻿{
+    "track":  "wajib",
+    "questions":  [
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "MAT12-C02-A-2231",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Beni menabung uang sebesar Rp 10.000.000,00 di sebuah bank swasta. Bank tersebut memberikan suku bunga majemuk 10% per tahun. Jika uang tersebut tidak pernah diambil, berapakah jumlah tabungan Beni pada akhir tahun ke-2?",
+                          "answer":  "C",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Rp 11.000.000,00"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Rp 12.000.000,00"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Rp 12.100.000,00"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Rp 12.200.000,00"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C02-A",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Pada bunga majemuk, bunga turut berbunga. Tahun 1: 10.000.000 x 10% = 1.000.000. Saldo = 11.000.000. Tahun 2: 11.000.000 x 10% = 1.100.000. Saldo akhir = 11.000.000 + 1.100.000 = 12.100.000. Rumus: Mn = M(1+i)^n = 10.000.000(1,1)^2 = 10.000.000(1,21) = 12.100.000.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "MAT12-C02-A-4365",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Pak Ali mendepositokan uangnya dengan sistem bunga majemuk 5% per tahun. Setelah 3 tahun, total saldo deposito tersebut menjadi Rp 9.261.000,00. Berapakah besar modal awal yang didepositokan Pak Ali? (Gunakan (1,05)^3 = 1,1576)",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Rp 7.500.000,00"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Rp 8.000.000,00"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Rp 8.500.000,00"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Rp 9.000.000,00"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C02-A",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Rumus: Mn = M(1+i)^n. Diketahui Mn = 9.261.000, i = 0,05, n = 3. Maka, 9.261.000 = M * (1,05)^3. M = 9.261.000 / 1,1576 = 8.000.000.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "MAT12-C02-A-1560",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Sebuah bank menawarkan dua opsi deposito berbunga majemuk dengan durasi total 1 tahun. Opsi P: Bunga 12% per tahun (dihitung tahunan). Opsi Q: Bunga 12% per tahun (dihitung triwulanan). Jika seseorang mendepositokan Rp 100.000.000,00, manakah kesimpulan yang benar mengenai hasil akhir kedua opsi tersebut?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Opsi P memberikan hasil lebih besar karena bunganya utuh 12% sekaligus."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Opsi Q memberikan hasil lebih besar karena perhitungan bunga (compounding) dilakukan lebih sering."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Kedua opsi memberikan hasil yang sama karena total suku bunga setahun tetap 12%."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Opsi P dan Q tidak dapat dibandingkan tanpa mengetahui tingkat inflasi ekonomi."
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C02-A",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Opsi P: M(1+0,12)^1 = 1,12M. Opsi Q: Bunga per triwulan = 12% / 4 = 3%. Dihitung 4 kali setahun. M(1+0,03)^4 = M(1,03)^4 = 1,1255M. Karena efek bunga berbunga, perhitungan yang lebih sering (triwulanan) dengan nominal persentase tahunan yang sama akan menghasilkan nilai akhir yang lebih besar (Effective Annual Rate lebih tinggi).",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "MAT12-C02-B-9666",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Siska mengambil kredit motor dengan sistem pembayaran anuitas bulanan sebesar Rp 800.000,00. Pada angsuran bulan pertama, diketahui beban bunga dari pihak leasing adalah Rp 150.000,00. Berapakah nilai angsuran pokok yang dibayar Siska pada bulan pertama tersebut?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Rp 150.000,00"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Rp 650.000,00"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Rp 800.000,00"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Rp 950.000,00"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C02-B",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Prinsip dasar anuitas adalah nilai pembayaran yang tetap setiap periode, terdiri atas angsuran pokok dan bunga. Anuitas (A) = Angsuran Pokok (a) + Bunga (b). 800.000 = a + 150.000. Maka angsuran pokok a = 800.000 - 150.000 = 650.000.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "MAT12-C02-B-9627",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Sebuah pinjaman dilunasi dengan sistem anuitas bulanan. Diketahui nilai angsuran pokok bulan ke-3 adalah Rp 300.000,00 dan suku bunga yang ditetapkan adalah 2% per bulan. Berapakah nilai angsuran pokok pada bulan ke-4?",
+                          "answer":  "C",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Rp 294.000,00"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Rp 300.000,00"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Rp 306.000,00"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Rp 310.000,00"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C02-B",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Sifat unik dari angsuran pokok pada sistem anuitas adalah besarnya selalu membentuk barisan geometri dengan rasio r = (1 + i). Angsuran pokok bulan ke-n (an) = a1 * (1+i)^(n-1), yang berarti angsuran bulan depan adalah angsuran bulan ini dikalikan (1+i). a4 = a3 * (1 + 0,02) = 300.000 * 1,02 = 306.000.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "MAT12-C02-B-4900",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Pak Budi mencicil KPR dengan skema anuitas tahunan selama 10 tahun. Pada tahun pertama, proporsi bunga sangat besar dibandingkan angsuran pokok. Di tahun ke-8, Pak Budi berencana melunasi seluruh sisa utangnya secara tunai. Apa konsekuensi logis dari tindakan pelunasan dipercepat ini terhadap beban total Pak Budi dibandingkan jika ia membayar normal hingga tahun ke-10?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Beban total menjadi jauh lebih ringan karena bunga tahun ke-9 dan ke-10 yang besar akan dihapus."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Beban total berkurang sedikit karena sebagian besar porsi bunga KPR sudah dibayarkan di tahun-tahun awal (1-5)."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Beban total akan sama persis, karena anuitas menjamin nilai bunga selalu sama di setiap tahun."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Beban total justru bertambah karena ada penalti penutupan prematur dari bank komersial."
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C02-B",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Karakteristik anuitas adalah pada awal periode, porsi cicilan dialokasikan sebagian besar untuk membayar bunga (karena sisa pokok/utang masih besar). Memasuki tahun-tahun akhir (seperti tahun ke-8), porsi bunga sudah sangat kecil dan cicilan didominasi oleh angsuran pokok. Melunasi lebih awal di akhir periode hanya akan memotong sisa bunga yang porsinya sudah sangat sedikit.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "MAT12-C02-C-6659",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Fina ingin menyimpan dana pensiunnya. Ia menyadari bahwa inflasi setiap tahun memotong daya beli uangnya. Berdasarkan parameter investasi, jenis tingkat pengembalian bunga apakah yang paling tepat diperhatikan Fina untuk memastikan daya belinya tetap tumbuh?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Suku Bunga Nominal"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Suku Bunga Riil (Real Interest Rate)"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Suku Bunga Efektif"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Suku Bunga Dasar Kredit"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C02-C",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Suku bunga riil adalah suku bunga investasi setelah disesuaikan dengan tingkat inflasi. Ini adalah parameter kunci bagi penabung jangka panjang untuk memastikan bahwa nilai intrinsik uang (daya beli) tidak tergerus.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "MAT12-C02-C-4590",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Sebuah investasi diproyeksikan akan melipatgandakan modal awal dalam waktu T tahun. Jika sistem menggunakan pemajemukan kontinu (continuous compounding) dengan suku bunga r per tahun, maka persamaan parameter yang tepat untuk mencari T adalah...",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "T = ln(2) / r"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "T = 2 / ln(r)"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "T = (1+r)^2"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "T = r / ln(2)"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C02-C",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Rumus bunga majemuk kontinu adalah Mn = M * e^(rt). Agar modal berlipat ganda, Mn = 2M. Maka 2M = M * e^(rt) -\u003e 2 = e^(rt). Dengan menarik logaritma natural (ln) di kedua sisi: ln(2) = rt, sehingga t (atau T) = ln(2) / r. Ini juga menjadi dasar \u0027Aturan 72\u0027 dalam ekonomi praktis.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "MAT12-C02-C-8006",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Bank A memberikan skema pinjaman dengan bunga \u0027Floating Rate\u0027 di mana suku bunga bergantung pada indeks pasar. Setelah 2 tahun mencicil KPR, indeks pasar melesat dan bank A menaikkan suku bunga secara drastis. Jika nasabah tidak mampu membayar cicilan yang baru, opsi perbankan restrukturisasi mana yang secara matematis akan mencegah kredit macet sekaligus menjaga nilai cicilan tetap sama seperti sebelumnya (meski merugikan nasabah di sisi lain)?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Menambah besaran angsuran pokok bulanan tanpa mengubah tenor."
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Memperpanjang tenor (periode pembayaran) dengan suku bunga baru."
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Melunasi sisa pokok pinjaman secara langsung (cash)."
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Meminta bank untuk memutihkan seluruh bunga bank sejak tahun pertama."
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C02-C",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Dalam struktur anuitas, jika suku bunga (i) dinaikkan tetapi cicilan (A) ingin dipertahankan tetap, satu-satunya variabel kompensasi yang bisa disesuaikan adalah memperpanjang waktu/tenor (n). Ini menyebabkan total hutang membengkak dalam jangka panjang, namun secara cash flow jangka pendek akan menjaga nilai cicilan per bulan tidak naik.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      }
+                  ],
+    "curriculum":  [
+                       "K13",
+                       "Merdeka"
+                   ],
+    "grade":  12,
+    "competencies":  [
+                         {
+                             "name":  "Kompetensi MAT12-C02-C",
+                             "question_count":  3,
+                             "competency_id":  "MAT12-C02-C"
+                         },
+                         {
+                             "name":  "Kompetensi MAT12-C02-A",
+                             "question_count":  3,
+                             "competency_id":  "MAT12-C02-A"
+                         },
+                         {
+                             "name":  "Kompetensi MAT12-C02-B",
+                             "question_count":  3,
+                             "competency_id":  "MAT12-C02-B"
+                         }
+                     ],
+    "subject":  "matematika",
+    "chapter":  "MAT12-C02",
+    "status":  "active",
+    "content_version":  1,
+    "pool_id":  "POOL-MATEMATIKA-MAT12-C02"
+}

@@ -1,0 +1,60 @@
+{
+  "mission_id": "BID-CH1-M1",
+  "mission_name": "Menyelamatkan Surat Lamaran",
+  "version": 2,
+  "status": "active",
+  "mission_type": "guided_learning",
+  "question_count": 5,
+  "learning_curve_policy": {
+    "minimum_easy": 1,
+    "maximum_hard_ratio": 0.4,
+    "require_warmup": true
+  },
+  "selection_rule": {
+    "difficulty_distribution": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 1
+    },
+    "competency_weights": [
+      {
+        "competency_id": "BI12-C01-D",
+        "weight": 0.25
+      },
+      {
+        "competency_id": "BI12-C01-EJAAN",
+        "weight": 0.15
+      },
+      {
+        "competency_id": "BI12-C01-A",
+        "weight": 0.25
+      },
+      {
+        "competency_id": "BI12-C01-B",
+        "weight": 0.2
+      },
+      {
+        "competency_id": "BI12-C01-TKA",
+        "weight": 0.15
+      }
+    ],
+    "fallback": {
+      "if_easy_unavailable": "content_gap",
+      "if_medium_unavailable": "use_easy",
+      "if_hard_unavailable": "use_medium",
+      "if_pool_below_minimum": "block_mission"
+    }
+  },
+  "constraints": {
+    "no_duplicate_in_session": true,
+    "cooldown_sessions": 3,
+    "wrong_answer_cooldown_sessions": 1,
+    "prerequisites_required": true
+  },
+  "story": {
+    "scene": "Kantor penerimaan kerja",
+    "npc": "HR Manager",
+    "enemy": "The Form Guardian",
+    "objective": "Menyelamatkan surat lamaran dari kekacauan struktur dan kaidah bahasa"
+  }
+}

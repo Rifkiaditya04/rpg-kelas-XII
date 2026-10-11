@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 2 Matematika Wajib Chapter 1 - Misi 2 (Barisan Geometri)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk pengenalan Barisan Geometri (World 2).",
+    "chapter_id": "MAT12-C01",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "MAT-C01-A2-EASY",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-A2",
+            "skill": "understand",
+            "question": "Seorang ilmuwan sedang meneliti pertumbuhan koloni bakteri di laboratorium. Pada pukul 08:00, terdapat 100 bakteri. Bakteri tersebut membelah diri menjadi dua setiap satu jam. Berapakah jumlah bakteri pada pukul 12:00?",
+            "options": [
+                "800",
+                "1.600",
+                "3.200",
+                "6.400"
+            ],
+            "answer": "1.600",
+            "explanation": "Ini adalah barisan geometri dengan suku awal (pukul 08:00) a = 100 dan rasio r = 2. Dari 08:00 ke 12:00 terdapat 4 jam pembelahan, yang berarti mencari nilai pada periode ke-5 (U5). U5 = a * r^4 = 100 * 2^4 = 100 * 16 = 1.600 bakteri.",
+            "source": {
+                "student_book": { "pages": "11-18", "section": "Bab 1, Barisan Geometri" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 1, Barisan Geometri" }
+            },
+            "provenance": "Soal orisinal kontekstual biologi (Kurikulum Merdeka) untuk memahami rasio konstan.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["barisan_geometri", "kontekstual"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Barisan Geometri",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "MAT-C01-A2-MED",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-A2",
+            "skill": "apply",
+            "question": "Diketahui suku ke-2 dari suatu barisan geometri adalah 12, dan suku ke-5 adalah 96. Jika semua suku bernilai positif, maka suku ke-7 dari barisan tersebut adalah...",
+            "options": [
+                "192",
+                "256",
+                "384",
+                "768"
+            ],
+            "answer": "384",
+            "explanation": "Rumus suku ke-n barisan geometri: Un = a * r^(n-1). Diketahui U2 = a*r = 12, dan U5 = a*r^4 = 96. Bagi U5 dengan U2: (a*r^4)/(a*r) = 96/12 -> r^3 = 8, maka r = 2. Substitusi ke U2: a(2) = 12 -> a = 6. Suku ke-7: U7 = a * r^6 = 6 * (2^6) = 6 * 64 = 384.",
+            "source": {
+                "student_book": { "pages": "11-18", "section": "Bab 1, Barisan Geometri" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 1, Barisan Geometri" }
+            },
+            "provenance": "Soal orisinal drill K13 untuk mengasah keterampilan aljabar eksponensial dalam barisan.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["barisan_geometri", "eksponensial", "fundamental_k13"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Barisan Geometri (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "MAT-C01-A2-HARD",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-A2",
+            "skill": "evaluate",
+            "question": "Nilai jual sebuah mesin cetak industri menyusut sebesar 20% dari nilai tahun sebelumnya. Jika pada akhir tahun ke-3 nilai mesin tersebut adalah Rp 2.560.000,00, berapakah harga beli awal mesin tersebut (pada tahun ke-0)?",
+            "options": [
+                "Rp 4.000.000,00",
+                "Rp 5.000.000,00",
+                "Rp 6.000.000,00",
+                "Rp 5.120.000,00"
+            ],
+            "answer": "Rp 5.000.000,00",
+            "explanation": "Penyusutan 20% berarti nilai tersisa 80% (r = 0,8) setiap tahunnya. Ini adalah barisan geometri. Harga akhir tahun ke-3 (U3) = Harga awal (a) * (0,8)^3. Maka 2.560.000 = a * 0,512. Harga awal (a) = 2.560.000 / 0,512 = 5.000.000.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Peluruhan Geometri" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Penalaran Nilai Ekonomi" }
+            },
+            "provenance": "Soal orisinal literasi numerasi TKA yang mengintegrasikan konsep peluruhan geometri dengan studi kasus depresiasi aset.",
+            "mode": "tka_preview",
+            "game_mechanic": "calculation",
+            "tags": ["peluruhan_geometri", "depresiasi", "tka_bonus"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Penalaran Peluruhan Geometri (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

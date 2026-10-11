@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 3 Bahasa Inggris Wajib Chapter 1 - Misi 11 (Expressions & Conditionals)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk penguasaan Grammar & Expressions Dasar (World 3).",
+    "chapter_id": "ENG12-C01",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "ENG-C01-A-EASY",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-A",
+            "skill": "understand",
+            "question": "Receptionist: 'Good morning, Sir. May I help you with your baggage?'\nGuest: 'Yes, please. I have two heavy suitcases in the trunk.'\nThe receptionist's utterance expresses...",
+            "options": [
+                "Asking for help",
+                "Offering a service",
+                "Refusing an offer",
+                "Giving an instruction"
+            ],
+            "answer": "Offering a service",
+            "explanation": "The phrase 'May I help you' is a standard formal expression used to offer assistance or a service to someone else.",
+            "source": {
+                "student_book": { "pages": "1-14", "section": "Chapter 1, May I Help You?" },
+                "teacher_guide": { "pages": "N/A", "section": "Chapter 1, Offering Services" }
+            },
+            "provenance": "Soal orisinal pemahaman konteks dialog pelayanan (K13).",
+            "mode": "learning",
+            "game_mechanic": "meaning_check",
+            "tags": ["offering_help", "dialogue", "kontekstual"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Offering Services",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "ENG-C01-A-MED",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-A",
+            "skill": "apply",
+            "question": "'If you want to pass the final exam with flying colors, you ________ study harder starting today.'\nChoose the most appropriate modal to complete the conditional sentence with an advice.",
+            "options": [
+                "would",
+                "should",
+                "could",
+                "might"
+            ],
+            "answer": "should",
+            "explanation": "This is a Conditional Sentence type 1 pattern used to give advice (If + simple present, subject + should/ought to/had better + V1). 'Should' is the most appropriate modal for giving strong advice.",
+            "source": {
+                "student_book": { "pages": "15-30", "section": "Chapter 2, Conditional followed by advice" },
+                "teacher_guide": { "pages": "N/A", "section": "Chapter 2, Grammar Focus" }
+            },
+            "provenance": "Soal orisinal drill grammar K13 untuk menguji struktur 'If Clause + Suggestion'.",
+            "mode": "learning",
+            "game_mechanic": "language_scan",
+            "tags": ["conditional_sentence", "advice", "fundamental_k13"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Conditionals (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "ENG-C01-A-HARD",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-A",
+            "skill": "evaluate",
+            "question": "Read the dialogue.\nSarah: 'I failed my driving test again.'\nMark: 'If you hadn't been so nervous about the parallel parking, you wouldn't have hit the cone.'\nWhat can we infer from Mark's statement?",
+            "options": [
+                "Sarah is not nervous anymore about driving.",
+                "Sarah hit the cone because she was nervous.",
+                "Mark thinks parallel parking is the hardest part.",
+                "Sarah passed the test despite hitting the cone."
+            ],
+            "answer": "Sarah hit the cone because she was nervous.",
+            "explanation": "Mark uses a Type 3 Conditional ('If you hadn't been... you wouldn't have...'), which describes a past unreal situation. The reality is the opposite of the 'if' clause: she WAS nervous, and as a result, she DID hit the cone.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Meaning Inference" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Advanced Conditionals" }
+            },
+            "provenance": "Soal orisinal literasi bahasa TKA yang menguji penarikan kesimpulan (inference) dari struktur tata bahasa tingkat lanjut (Conditional Type 3).",
+            "mode": "tka_preview",
+            "game_mechanic": "meaning_check",
+            "tags": ["conditional_type_3", "inference", "tka_bonus"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Inference from Conditionals (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 2 Matematika Wajib Chapter 2 - Misi 6 (Anuitas)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk penguasaan konsep Anuitas (World 2).",
+    "chapter_id": "MAT12-C02",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "MAT-C02-B-EASY",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-B",
+            "skill": "understand",
+            "question": "Siska mengambil kredit motor dengan sistem pembayaran anuitas bulanan sebesar Rp 800.000,00. Pada angsuran bulan pertama, diketahui beban bunga dari pihak leasing adalah Rp 150.000,00. Berapakah nilai angsuran pokok yang dibayar Siska pada bulan pertama tersebut?",
+            "options": [
+                "Rp 150.000,00",
+                "Rp 650.000,00",
+                "Rp 800.000,00",
+                "Rp 950.000,00"
+            ],
+            "answer": "Rp 650.000,00",
+            "explanation": "Prinsip dasar anuitas adalah nilai pembayaran yang tetap setiap periode, terdiri atas angsuran pokok dan bunga. Anuitas (A) = Angsuran Pokok (a) + Bunga (b). 800.000 = a + 150.000. Maka angsuran pokok a = 800.000 - 150.000 = 650.000.",
+            "source": {
+                "student_book": { "pages": "45-54", "section": "Bab 2, Investasi Anuitas" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 2, Pinjaman dengan Anuitas" }
+            },
+            "provenance": "Soal orisinal kontekstual finansial kredit (Kurikulum Merdeka) untuk memahami komponen pembentuk anuitas.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["anuitas", "angsuran", "kontekstual"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Anuitas Dasar",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "MAT-C02-B-MED",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-B",
+            "skill": "apply",
+            "question": "Sebuah pinjaman dilunasi dengan sistem anuitas bulanan. Diketahui nilai angsuran pokok bulan ke-3 adalah Rp 300.000,00 dan suku bunga yang ditetapkan adalah 2% per bulan. Berapakah nilai angsuran pokok pada bulan ke-4?",
+            "options": [
+                "Rp 294.000,00",
+                "Rp 300.000,00",
+                "Rp 306.000,00",
+                "Rp 310.000,00"
+            ],
+            "answer": "Rp 306.000,00",
+            "explanation": "Sifat unik dari angsuran pokok pada sistem anuitas adalah besarnya selalu membentuk barisan geometri dengan rasio r = (1 + i). Angsuran pokok bulan ke-n (an) = a1 * (1+i)^(n-1), yang berarti angsuran bulan depan adalah angsuran bulan ini dikalikan (1+i). a4 = a3 * (1 + 0,02) = 300.000 * 1,02 = 306.000.",
+            "source": {
+                "student_book": { "pages": "59-70", "section": "Bab 2, Pinjaman dengan Anuitas" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 2, Sifat Angsuran Pokok" }
+            },
+            "provenance": "Soal orisinal drill K13 untuk menguji pemahaman deret geometri dalam struktur anuitas.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["anuitas", "barisan_geometri", "fundamental_k13"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Sifat Angsuran Pokok (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "MAT-C02-B-HARD",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-B",
+            "skill": "evaluate",
+            "question": "Pak Budi mencicil KPR dengan skema anuitas tahunan selama 10 tahun. Pada tahun pertama, proporsi bunga sangat besar dibandingkan angsuran pokok. Di tahun ke-8, Pak Budi berencana melunasi seluruh sisa utangnya secara tunai. Apa konsekuensi logis dari tindakan pelunasan dipercepat ini terhadap beban total Pak Budi dibandingkan jika ia membayar normal hingga tahun ke-10?",
+            "options": [
+                "Beban total menjadi jauh lebih ringan karena bunga tahun ke-9 dan ke-10 yang besar akan dihapus.",
+                "Beban total berkurang sedikit karena sebagian besar porsi bunga KPR sudah dibayarkan di tahun-tahun awal (1-5).",
+                "Beban total akan sama persis, karena anuitas menjamin nilai bunga selalu sama di setiap tahun.",
+                "Beban total justru bertambah karena ada penalti penutupan prematur dari bank komersial."
+            ],
+            "answer": "Beban total berkurang sedikit karena sebagian besar porsi bunga KPR sudah dibayarkan di tahun-tahun awal (1-5).",
+            "explanation": "Karakteristik anuitas adalah pada awal periode, porsi cicilan dialokasikan sebagian besar untuk membayar bunga (karena sisa pokok/utang masih besar). Memasuki tahun-tahun akhir (seperti tahun ke-8), porsi bunga sudah sangat kecil dan cicilan didominasi oleh angsuran pokok. Melunasi lebih awal di akhir periode hanya akan memotong sisa bunga yang porsinya sudah sangat sedikit.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Literasi KPR" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Evaluasi Skema Anuitas" }
+            },
+            "provenance": "Soal orisinal penalaran tingkat tinggi (TKA Bonus) yang menggabungkan prinsip matematis anuitas non-linear dengan realitas literasi KPR.",
+            "mode": "tka_preview",
+            "game_mechanic": "calculation",
+            "tags": ["anuitas", "kpr", "literasi_finansial", "tka_bonus"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Penalaran Grafik Anuitas (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

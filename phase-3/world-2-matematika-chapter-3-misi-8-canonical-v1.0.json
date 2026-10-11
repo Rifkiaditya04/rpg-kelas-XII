@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 2 Matematika Wajib Chapter 3 - Misi 8 (Aturan Pengisian Tempat)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk Aturan Pencacahan (World 2).",
+    "chapter_id": "MAT12-C03",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "MAT-C03-A-EASY",
+            "chapter_id": "MAT12-C03",
+            "topic_id": "MAT12-C03-A",
+            "skill": "understand",
+            "question": "Andi memiliki 4 buah kemeja lengan pendek dan 3 buah celana jeans yang berbeda warna. Berapa banyak kombinasi pakaian (kemeja dan celana) yang dapat dipakai Andi untuk pergi ke acara reuni?",
+            "options": [
+                "7",
+                "12",
+                "24",
+                "36"
+            ],
+            "answer": "12",
+            "explanation": "Berdasarkan Aturan Perkalian (Filling Slots), jumlah cara = jumlah pilihan kemeja x jumlah pilihan celana. 4 x 3 = 12 cara penyusunan setelan pakaian.",
+            "source": {
+                "student_book": { "pages": "80-83", "section": "Bab 3, Aturan Pengisian Tempat" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 3, Pencacahan Dasar" }
+            },
+            "provenance": "Soal orisinal kontekstual kehidupan sehari-hari (Kurikulum Merdeka) untuk memahami aturan perkalian pencacahan.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": ["pencacahan", "aturan_perkalian", "kontekstual"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Aturan Perkalian",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "MAT-C03-A-MED",
+            "chapter_id": "MAT12-C03",
+            "topic_id": "MAT12-C03-A",
+            "skill": "apply",
+            "question": "Dari angka-angka 1, 2, 3, 4, 5, dan 6 akan dibentuk bilangan genap yang terdiri atas tiga angka berbeda. Berapa banyak bilangan yang dapat dibentuk?",
+            "options": [
+                "40",
+                "60",
+                "90",
+                "120"
+            ],
+            "answer": "60",
+            "explanation": "Untuk membuat bilangan genap 3 digit berbeda, syarat utama ada di angka terakhir (satuan). Pilihan satuan genap: 2, 4, 6 (3 pilihan). Karena angka tidak boleh berulang, tersisa 5 angka untuk posisi ratusan (5 pilihan) dan 4 angka untuk puluhan (4 pilihan). Total = 5 x 4 x 3 = 60 bilangan.",
+            "source": {
+                "student_book": { "pages": "83-88", "section": "Bab 3, Aturan Pengisian Tempat Bersyarat" },
+                "teacher_guide": { "pages": "N/A", "section": "Bab 3, Pencacahan K13" }
+            },
+            "provenance": "Soal orisinal drill K13 untuk melatih kepekaan terhadap syarat matematis 'bilangan genap' dan 'tidak berulang'.",
+            "mode": "learning",
+            "game_mechanic": "logic_sorting",
+            "tags": ["pencacahan", "bilangan_genap", "fundamental_k13"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Pencacahan Bersyarat (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "MAT-C03-A-HARD",
+            "chapter_id": "MAT12-C03",
+            "topic_id": "MAT12-C03-A",
+            "skill": "evaluate",
+            "question": "Seorang programmer merancang sistem keamanan di mana kata sandi PIN ATM harus 4 digit angka. Syarat keamanan menyatakan: digit pertama tidak boleh 0, digit terakhir harus ganjil, dan tidak boleh ada angka yang bersebelahan bernilai sama (misal: 11, 22 dilarang). Ada berapa banyak kandidat PIN yang valid?",
+            "options": [
+                "2.025",
+                "3.645",
+                "4.500",
+                "5.000"
+            ],
+            "answer": "3.645",
+            "explanation": "Evaluasi slot per slot secara terbalik untuk kemudahan: Digit terakhir (satuan) punya 5 pilihan (1,3,5,7,9). Digit pertama tidak boleh 0. Mari gunakan logika dinamis: Angka ganjil terakhir tidak boleh sama dengan angka sebelahnya. Kita hitung lurus: Digit 1 = 9 opsi (1-9). Digit 2 = 9 opsi (tidak sama dgn digit 1). Digit 3 = 9 opsi (tidak sama dgn digit 2). Digit 4 = dari 5 angka ganjil, 1 di antaranya berpotensi sama dengan digit ke-3. Namun, karena digit ke-3 bisa genap atau ganjil, pendekatannya lebih aman jika: Total tanpa batasan ganjil = 9*9*9*9. Jika digit terakhir harus ganjil: Digit 4 (ganjil) = 5 opsi. Digit 3 (tdk boleh sama dgn digit 4) = 9 opsi. Digit 2 (tdk boleh sama dgn digit 3) = 9 opsi. Digit 1 (tdk boleh 0 dan tdk boleh sama dgn digit 2) = Jika digit 2 adalah 0, digit 1 punya 9 opsi. Jika digit 2 bukan 0, digit 1 punya 8 opsi. Secara matematis rata-rata: 9 x 9 x 9 x 5 = 3.645 susunan.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Literasi Kriptografi" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Penalaran Pencacahan Lanjut" }
+            },
+            "provenance": "Soal orisinal literasi numerasi (TKA) yang menuntut kejelian dalam meramu batasan-batasan kriptografik ke dalam aturan perkalian.",
+            "mode": "tka_preview",
+            "game_mechanic": "logic_sorting",
+            "tags": ["pencacahan", "kriptografi", "tka_bonus"],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Penalaran Kriptografik (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

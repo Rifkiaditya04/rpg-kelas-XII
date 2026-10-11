@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "World 2 KM Standard Chapter 1 Original Content - Misi 1 v1.0",
+  "purpose": "Approved additive World 2 content batch for Chapter 1 Mission 1.",
+  "chapter_id": "MAT12-C01",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "MAT12-W02-M01-Q01",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-A",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question_type": "mcq",
+      "question": "Sebuah stasiun pemancar sinyal (BTS) diletakkan tepat pada koordinat (0,0) di sebuah peta. Jangkauan maksimal dari BTS tersebut membentuk lingkaran dengan radius 5 kilometer. Jika dinyatakan dalam bentuk persamaan, manakah yang merepresentasikan batas jangkauan sinyal BTS tersebut?",
+      "options": [
+        "x² + y² = 5",
+        "x² + y² = 10",
+        "x² + y² = 25",
+        "x² - y² = 25"
+      ],
+      "answer": "x² + y² = 25",
+      "explanation": "Persamaan lingkaran dengan pusat (0,0) dan jari-jari r adalah x² + y² = r². Karena jari-jari (r) adalah 5, maka x² + y² = 5² atau x² + y² = 25.",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Lingkaran"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Lingkaran"}
+      },
+      "provenance": "Materi Persamaan Lingkaran dari Buku Guru Matematika Kelas XII Tingkat Lanjut.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["persamaan_lingkaran", "pusat_origin"]
+    },
+    {
+      "id": "MAT12-W02-M01-Q02",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Pusat pengendali navigasi memantau sebuah kapal karam yang berpusat di koordinat (3, -2) dengan radius evakuasi aman sejauh 4 mil laut. Persamaan lingkaran yang merepresentasikan zona aman di sekitar kapal tersebut adalah...",
+      "options": [
+        "(x - 3)² + (y + 2)² = 16",
+        "(x + 3)² + (y - 2)² = 16",
+        "(x - 3)² + (y + 2)² = 4",
+        "x² + y² - 6x + 4y - 12 = 0"
+      ],
+      "answer": "(x - 3)² + (y + 2)² = 16",
+      "explanation": "Persamaan lingkaran dengan pusat (a, b) adalah (x - a)² + (y - b)² = r². Diketahui a = 3, b = -2, dan r = 4. Maka: (x - 3)² + (y - (-2))² = 4² → (x - 3)² + (y + 2)² = 16.",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Lingkaran"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Lingkaran"}
+      },
+      "provenance": "Materi Persamaan Lingkaran dari Buku Guru Matematika Kelas XII Tingkat Lanjut.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["persamaan_lingkaran", "pusat_bebas"]
+    },
+    {
+      "id": "MAT12-W02-M01-Q03",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Sistem keamanan mendeteksi objek asing pada koordinat (4, 3) di zona observasi. Batas wilayah observasi direpresentasikan oleh persamaan x² + y² = 25. Bagaimana kedudukan objek asing tersebut terhadap wilayah observasi?",
+      "options": [
+        "Objek asing berada tepat pada batas wilayah observasi.",
+        "Objek asing berada di luar wilayah observasi.",
+        "Objek asing berada di dalam wilayah observasi.",
+        "Kedudukan objek tidak dapat ditentukan."
+      ],
+      "answer": "Objek asing berada tepat pada batas wilayah observasi.",
+      "explanation": "Kedudukan titik (x1, y1) terhadap lingkaran x² + y² = r² dapat ditentukan dengan mensubstitusi nilai x1 dan y1. Jika x1² + y1² = r², titik tersebut berada pada lingkaran. Jika (4)² + (3)² = 16 + 9 = 25. Karena nilainya tepat 25, objek berada PADA batas wilayah (lingkaran).",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Lingkaran"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Lingkaran"}
+      },
+      "provenance": "Materi Kedudukan Titik terhadap Lingkaran.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["kedudukan_titik", "persamaan_lingkaran"]
+    },
+    {
+      "id": "MAT12-W02-M01-Q04",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Sebuah jalan lurus baru sedang direncanakan membelah suatu wilayah dengan persamaan garis y = x + 1. Di wilayah tersebut terdapat cagar alam berbentuk lingkaran dengan persamaan x² + y² = 9. Apakah jalan lurus tersebut memotong zona cagar alam?",
+      "options": [
+        "Ya, jalan memotong cagar alam di dua titik.",
+        "Ya, jalan menyinggung batas cagar alam tepat di satu titik.",
+        "Tidak, jalan berada di luar zona cagar alam.",
+        "Tidak dapat dipastikan tanpa menggambarkan koordinat."
+      ],
+      "answer": "Ya, jalan memotong cagar alam di dua titik.",
+      "explanation": "Substitusi garis y = x + 1 ke lingkaran: x² + (x + 1)² = 9 → x² + x² + 2x + 1 = 9 → 2x² + 2x - 8 = 0 → x² + x - 4 = 0. Cek diskriminan (D = b² - 4ac): D = 1² - 4(1)(-4) = 1 + 16 = 17. Karena D > 0, garis tersebut memotong lingkaran di dua titik.",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Lingkaran"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Lingkaran"}
+      },
+      "provenance": "Materi Kedudukan Garis terhadap Lingkaran.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["kedudukan_garis", "diskriminan"]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "action": "archive_and_remove",
+    "reason": "prototype_or_duplicate_artifact",
+    "source_path": "phase-4-pools/unknown",
+    "archive_path": "archive/removed-2026-10-10/unknown",
+    "deleted_permanently": true,
+    "note": "Executed permanent deletion before archive practice was established. Future cleanups will use non-destructive archiving."
+  },
+  {
+    "action": "archive_and_remove",
+    "reason": "pilot_prototype_duplicate",
+    "source_path": "phase-4-pools/bahasa-indonesia/pool-bid-k12-bab-1.json",
+    "archive_path": "archive/removed-2026-10-10/bahasa-indonesia/pool-bid-k12-bab-1.json",
+    "deleted_permanently": true,
+    "note": "Executed permanent deletion before archive practice was established."
+  }
+]

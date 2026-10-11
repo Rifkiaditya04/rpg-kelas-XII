@@ -1,0 +1,106 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CANONICAL_APPROVED",
+    "dataset": "World 3 Bahasa Inggris Wajib Chapter 2 - Misi 17 (Discussion Text)",
+    "purpose": "Bank soal fondasi (Layer 1) untuk teks Diskusi (World 3).",
+    "chapter_id": "ENG12-C02",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "ENG-C02-D-EASY",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-D",
+            "skill": "understand",
+            "question": "Read the paragraph:\n'The issue of whether fossil fuel companies should be completely banned from operations is highly debated. Environmentalists argue that an immediate ban is the only way to stop global warming. On the other hand, economists point out that a sudden ban would cause massive job losses and trigger a global economic collapse.'\nWhat makes this paragraph part of a 'Discussion Text' rather than an 'Argumentative Text'?",
+            "options": [
+                "It gives a strong recommendation at the end.",
+                "It presents two different/opposing viewpoints on a single issue.",
+                "It only focuses on the environmental aspect.",
+                "It uses past tense to describe a historical event."
+            ],
+            "answer": "It presents two different/opposing viewpoints on a single issue.",
+            "explanation": "A Discussion Text explores an issue by presenting multiple sides of an argument (pros and cons), unlike an Argumentative Text which strongly advocates for only one side.",
+            "source": {
+                "student_book": { "pages": "149-208", "section": "Unit 4, Discussion Text: Carbon Footprints" },
+                "teacher_guide": { "pages": "N/A", "section": "Unit 4, Text Structure" }
+            },
+            "provenance": "Soal orisinal pemahaman karakteristik teks diskusi (Kurikulum Merdeka) tentang jejak karbon.",
+            "mode": "learning",
+            "game_mechanic": "evidence_scan",
+            "tags": ["discussion_text", "pros_cons", "kontekstual"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["Kurikulum Merdeka"],
+            "topic": "Discussion Text Characteristics",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "ENG-C02-D-MED",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-D",
+            "skill": "apply",
+            "question": "Choose the correct connective word to complete the sentence:\n'Electric vehicles (EVs) produce zero tailpipe emissions, making them excellent for urban air quality. __________, the production of EV batteries requires intensive mining that severely damages local ecosystems.'",
+            "options": [
+                "Furthermore",
+                "In addition",
+                "However",
+                "Consequently"
+            ],
+            "answer": "However",
+            "explanation": "The first sentence presents a positive point (zero emissions), while the second sentence presents a negative point (damaging ecosystems). To connect contrasting ideas in a discussion text, we use contrastive conjunctions like 'However', 'On the other hand', or 'Nevertheless'.",
+            "source": {
+                "student_book": { "pages": "149-208", "section": "Unit 4, Language Features" },
+                "teacher_guide": { "pages": "N/A", "section": "Unit 4, Connective Words" }
+            },
+            "provenance": "Soal orisinal drill grammar (K13) untuk memilih konjungsi pertentangan (contrastive) yang tepat.",
+            "mode": "learning",
+            "game_mechanic": "language_scan",
+            "tags": ["discussion_text", "conjunctions", "fundamental_k13"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["K13"],
+            "topic": "Contrastive Conjunctions (Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "ENG-C02-D-HARD",
+            "chapter_id": "ENG12-C02",
+            "topic_id": "ENG12-C02-D",
+            "skill": "evaluate",
+            "question": "Based on the debate regarding 'Carbon Footprint Taxes', Proponents say it forces factories to innovate green tech, while Opponents say it makes everyday goods too expensive for poor families. Which concluding statement best synthesizes both arguments neutrally without taking a biased side?",
+            "options": [
+                "Carbon taxes are terrible because they only hurt the poor, so factories should innovate for free.",
+                "Therefore, carbon taxes must be applied strictly to save the earth, regardless of the economic cost.",
+                "In conclusion, while a carbon tax encourages environmental innovation, it must be implemented carefully with subsidies to protect vulnerable economic groups.",
+                "To sum up, carbon taxes are a myth created by governments to steal money from both factories and poor families."
+            ],
+            "answer": "In conclusion, while a carbon tax encourages environmental innovation, it must be implemented carefully with subsidies to protect vulnerable economic groups.",
+            "explanation": "A good conclusion in a Discussion Text synthesizes the pros and cons objectively. This option acknowledges the positive side (environmental innovation) while addressing the negative side (economic cost to the poor) by proposing a middle-ground solution (subsidies), maintaining neutrality.",
+            "source": {
+                "student_book": { "pages": "N/A", "section": "TKA - Argument Synthesis" },
+                "teacher_guide": { "pages": "N/A", "section": "TKA - Analytical Conclusion" }
+            },
+            "provenance": "Soal orisinal penalaran literasi TKA (Sintesis Argumen) yang menguji kemampuan merumuskan resolusi netral dari dua perspektif ekstrem.",
+            "mode": "tka_preview",
+            "game_mechanic": "meaning_check",
+            "tags": ["discussion_text", "synthesis", "tka_bonus"],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": ["TKA"],
+            "topic": "Argument Synthesis (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

@@ -1,0 +1,154 @@
+﻿{
+    "track":  "wajib",
+    "questions":  [
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "understand",
+                          "question_id":  "MAT12-C04-A-4671",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Dalam rangka festival sekolah, sebuah permainan roda putar memiliki 8 sektor yang sama besar. Sektor tersebut diberi warna: 2 merah, 3 kuning, 1 hijau, dan 2 biru. Berapa peluang jarum menunjuk ke warna kuning saat roda berhenti?",
+                          "answer":  "C",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "1/8"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "1/4"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "3/8"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "1/2"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C04-A",
+                          "difficulty_label":  "easy",
+                          "gameplay":  {
+                                           "correct_damage":  50,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "light"
+                                       },
+                          "explanation":  "Ruang sampel (total sektor) n(S) = 8. Titik sampel warna kuning n(A) = 3. Maka Peluang P(A) = n(A) / n(S) = 3/8.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  60
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "apply",
+                          "question_id":  "MAT12-C04-A-2968",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "",
+                                                "stimulus_type":  "",
+                                                "suitable":  false
+                                            },
+                          "question":  "Sebuah kotak berisi 5 bola merah dan 3 bola putih. Jika 2 bola diambil secara acak satu per satu **tanpa pengembalian**, berapakah peluang terambilnya bola merah pada pengambilan pertama dan bola putih pada pengambilan kedua?",
+                          "answer":  "A",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "15/56"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "15/64"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "5/8"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "3/7"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C04-A",
+                          "difficulty_label":  "medium",
+                          "gameplay":  {
+                                           "correct_damage":  100,
+                                           "base_xp":  10,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "medium"
+                                       },
+                          "explanation":  "Peluang bola merah pertama: P(M) = 5/8. Karena bola tidak dikembalikan, sisa bola di dalam kotak menjadi 7. Peluang bola putih pada pengambilan kedua: P(P|M) = 3/7. Peluang kejadian majemuk tak bebas (bersyarat): P = 5/8 * 3/7 = 15/56.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  90
+                      },
+                      {
+                          "secondary_competencies":  [
+
+                                                     ],
+                          "cognitive_level":  "evaluate",
+                          "question_id":  "MAT12-C04-A-2976",
+                          "question_role":  "practice",
+                          "tka_alignment":  {
+                                                "competency":  "literacy",
+                                                "stimulus_type":  "contextual",
+                                                "suitable":  true
+                                            },
+                          "question":  "Dalam seleksi penerimaan mahasiswa kedokteran, diketahui probabilitas seorang siswa SMA lulus Tes Tulis adalah 0,4. Jika ia lulus Tes Tulis, probabilitas lulus Tes Wawancara adalah 0,8. Namun, jika ia gagal Tes Tulis, ia masih memiliki peluang 0,1 untuk diterima melalui jalur Mandiri Khusus. Berapa total peluang siswa tersebut diterima di fakultas kedokteran tersebut melalui kedua jalur yang ada?",
+                          "answer":  "B",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "0,32"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "0,38"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "0,50"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "0,90"
+                                          }
+                                      ],
+                          "primary_competency":  "MAT12-C04-A",
+                          "difficulty_label":  "hard",
+                          "gameplay":  {
+                                           "correct_damage":  150,
+                                           "base_xp":  20,
+                                           "wrong_penalty":  5,
+                                           "attack_type":  "heavy"
+                                       },
+                          "explanation":  "Ada dua jalur (diagram pohon probabilitas mutlak). Jalur 1 (Lulus Tulis \u0026 Lulus Wawancara): 0,4 x 0,8 = 0,32. Jalur 2 (Gagal Tulis \u0026 Lulus Jalur Mandiri): Peluang Gagal Tulis = 1 - 0,4 = 0,6. Maka, 0,6 x 0,1 = 0,06. Karena kedua jalur ini saling lepas, peluang total = 0,32 + 0,06 = 0,38.",
+                          "question_type":  "single_select",
+                          "estimated_time_seconds":  120
+                      }
+                  ],
+    "curriculum":  [
+                       "K13",
+                       "Merdeka"
+                   ],
+    "grade":  12,
+    "competencies":  [
+                         {
+                             "name":  "Kompetensi MAT12-C04-A",
+                             "question_count":  3,
+                             "competency_id":  "MAT12-C04-A"
+                         }
+                     ],
+    "subject":  "matematika",
+    "chapter":  "MAT12-C04",
+    "status":  "active",
+    "content_version":  1,
+    "pool_id":  "POOL-MATEMATIKA-MAT12-C04"
+}

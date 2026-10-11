@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_APPROVED",
+  "dataset": "World 2 KM Standard Chapter 1 Original Content - Misi 3 v1.0",
+  "purpose": "Approved additive World 2 content batch for Chapter 1 Mission 3.",
+  "chapter_id": "MAT12-C01",
+  "rewards": {"xp_per_correct": 100, "mission_completion_xp": 100},
+  "questions": [
+    {
+      "id": "MAT12-W02-M03-Q01",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-C",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question_type": "mcq",
+      "question": "Seorang arsitek mendesain atap lengkung stadion yang berbentuk elips dengan persamaan (x²/25) + (y²/9) = 1. Panjang bentang atap paling lebar (sumbu mayor) dari stadion tersebut adalah...",
+      "options": [
+        "5",
+        "9",
+        "10",
+        "25"
+      ],
+      "answer": "10",
+      "explanation": "Persamaan elips berpusat di (0,0) adalah (x²/a²) + (y²/b²) = 1. Dari (x²/25) + (y²/9) = 1, diperoleh a² = 25 (sehingga a = 5) dan b² = 9. Panjang sumbu mayor = 2a = 2(5) = 10.",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Elips"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Elips"}
+      },
+      "provenance": "Materi Persamaan Elips (Sumbu Mayor).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["elips", "sumbu_mayor"]
+    },
+    {
+      "id": "MAT12-W02-M03-Q02",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Orbit sebuah komet mengelilingi matahari berbentuk elips dengan persamaan 16x² + 25y² = 400. Titik koordinat matahari berada pada salah satu titik fokus elips tersebut. Koordinat titik fokus elips tersebut adalah...",
+      "options": [
+        "(±3, 0)",
+        "(0, ±3)",
+        "(±4, 0)",
+        "(0, ±5)"
+      ],
+      "answer": "(±3, 0)",
+      "explanation": "Bagi persamaan 16x² + 25y² = 400 dengan 400 sehingga menjadi (x²/25) + (y²/16) = 1. Didapat a² = 25, b² = 16. Fokus elips mendatar berada pada (±c, 0) dengan c² = a² - b². c² = 25 - 16 = 9, sehingga c = 3. Maka fokusnya di (±3, 0).",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Elips"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Elips"}
+      },
+      "provenance": "Materi Titik Fokus Elips.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["elips", "titik_fokus"]
+    },
+    {
+      "id": "MAT12-W02-M03-Q03",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question_type": "mcq",
+      "question": "Cermin lengkung pada wahana bermain dirancang mengikuti persamaan (x-2)²/16 + (y+1)²/4 = 1. Titik pusat koordinat cermin lengkung tersebut berada di...",
+      "options": [
+        "(2, 1)",
+        "(-2, -1)",
+        "(-2, 1)",
+        "(2, -1)"
+      ],
+      "answer": "(2, -1)",
+      "explanation": "Bentuk umum elips adalah (x-p)²/a² + (y-q)²/b² = 1 di mana pusatnya adalah (p, q). Dari persamaan (x-2)²/16 + (y+1)²/4 = 1, diperoleh p = 2 dan q = -1. Jadi pusatnya (2, -1).",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Elips"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Elips"}
+      },
+      "provenance": "Titik Pusat Elips pusat (p,q).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["elips", "pusat_elips"]
+    },
+    {
+      "id": "MAT12-W02-M03-Q04",
+      "chapter_id": "MAT12-C01",
+      "topic_id": "MAT12-C01-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question_type": "mcq",
+      "question": "Sebuah taman rekreasi berbentuk elips dengan persamaan 9x² + 4y² - 18x + 16y - 11 = 0. Panjang garis bentang terjauh (sumbu mayor) dari taman tersebut membentang sejajar dengan sumbu Y. Berapa panjang lintasan terjauh tersebut?",
+      "options": [
+        "4 satuan",
+        "6 satuan",
+        "9 satuan",
+        "12 satuan"
+      ],
+      "answer": "6 satuan",
+      "explanation": "Kelompokkan variabel: 9(x²-2x) + 4(y²+4y) = 11. Kuadrat sempurna: 9(x-1)² - 9 + 4(y+2)² - 16 = 11 → 9(x-1)² + 4(y+2)² = 36. Bagi dengan 36: (x-1)²/4 + (y+2)²/9 = 1. Didapat a²=4 dan b²=9. Karena b > a, sumbu mayor sejajar sumbu Y, panjang = 2b = 2(3) = 6.",
+      "source": {
+        "student_book": {"pages": "TBD", "section": "Bab 1, Elips"},
+        "teacher_guide": {"pages": "TBD", "section": "Bab 1, Elips"}
+      },
+      "provenance": "Materi Persamaan Elips Umum ke Bentuk Standar.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": ["elips", "kuadrat_sempurna", "sumbu_mayor"]
+    }
+  ]
+}

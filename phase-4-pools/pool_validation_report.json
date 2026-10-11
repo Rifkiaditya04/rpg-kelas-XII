@@ -1,0 +1,46 @@
+﻿{
+    "global_status":  "PASS",
+    "timestamp":  "2026-10-10T19.07.24Z",
+    "validation_id":  "VAL-2026-10-10-001",
+    "subjects":  {
+                     "matematika":  {
+                                        "valid_schema":  30,
+                                        "duplicate_id":  0,
+                                        "errors":  [
+
+                                                   ],
+                                        "duplicate_question":  0,
+                                        "tka_suitable":  10,
+                                        "status":  "PASS",
+                                        "missing_competency":  0,
+                                        "total_questions":  30,
+                                        "invalid_schema":  0
+                                    },
+                     "bahasa-inggris":  {
+                                            "valid_schema":  24,
+                                            "duplicate_id":  0,
+                                            "errors":  [
+
+                                                       ],
+                                            "duplicate_question":  0,
+                                            "tka_suitable":  8,
+                                            "status":  "PASS",
+                                            "missing_competency":  0,
+                                            "total_questions":  24,
+                                            "invalid_schema":  0
+                                        },
+                     "bahasa-indonesia":  {
+                                              "valid_schema":  82,
+                                              "duplicate_id":  0,
+                                              "errors":  [
+
+                                                         ],
+                                              "duplicate_question":  0,
+                                              "tka_suitable":  23,
+                                              "status":  "PASS",
+                                              "missing_competency":  0,
+                                              "total_questions":  82,
+                                              "invalid_schema":  0
+                                          }
+                 }
+}
