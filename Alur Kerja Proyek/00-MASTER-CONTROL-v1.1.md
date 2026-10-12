@@ -585,13 +585,14 @@ A comprehensive Game Design Document (GDD) for a massive visual and mechanical o
 ## 24. UI / UX Overhaul Activation & Vertical Slice Milestone (2026-10-11)
 Berdasarkan persetujuan resmi dari Pengguna setelah tuntasnya verifikasi data (Tahap 6–7 PASS) dan pengujian arsitektur Game Engine (Tahap 8 PASS), proyek secara resmi memasuki **Tahap 9: Desain UI & Vertical Slice Prototype (RPG Novel Edition)**.
 
-- **Status Milestone:** VERIFIED PASS 🟢 (Live QA Browser Gate Passed 2026-10-12).
-- **Acuan Utama:** `Alur Kerja Proyek/01-GDD-ACADEMIC-ASCENSION-RPG.md`, `Alur Kerja Proyek/PROJECT LOG/101-UI-Vertical-Slice-Scope-Determination.md`, dan `Alur Kerja Proyek/PROJECT LOG/102-UI-Vertical-Slice-Live-QA-PASS.md`.
+- **Status Milestone:** VERIFIED PASS 🟢 (Post-Audit Realignment & Browser QA Passed 2026-10-12).
+- **Acuan Utama:** `Alur Kerja Proyek/01-GDD-ACADEMIC-ASCENSION-RPG.md`, `Alur Kerja Proyek/PROJECT-OPERATING-RULES-AI-TECH-VISUAL.md`, `Alur Kerja Proyek/PROJECT LOG/101-UI-Vertical-Slice-Scope-Determination.md`, dan `Alur Kerja Proyek/PROJECT LOG/102-UI-Vertical-Slice-Live-QA-PASS.md`.
 - **Lingkup Terverifikasi:**
-  1. *Constellation Map (Peta Bintang):* 4 Lapisan Progresi (Core Foundation, Academic Profile, Specialization, TKA Arena) terbukti tampil dan interaktif.
-  2. *Visual Novel Dialogue UI:* Briefing interaktif bersama NPC Mentor (Rifki & Safira) dan modal pop-up Catatan Konsep terbukti berjalan.
-  3. *JRPG Turn-Based Battle UI:* Evaluasi melawan Algebra Golem dengan HP/MP bar, menu komando 100% Bahasa Indonesia, indikator Bloom (Pemanasan/Tantangan/Penalaran), floating damage (-195 DMG), screen shake, dan battle log terbukti sukses.
-  4. *Mastery Diagnostics Screen:* Evaluasi mandiri akurasi Easy/Medium/Hard dan backdoor VIP cheat code terintegrasi.
+  1. *Layar 0 (Onboarding Prologue):* Kata sambutan pembuka oleh Mentor Rifki di kampus Nusantara Academy, memperkenalkan narasi *The Fog of Ignorance* dan misi pengumpulan *Knowledge Crystals*.
+  2. *Layar 1 (Constellation Map):* Peta 4 Lapisan Progresi dengan garis rasi bintang SVG dinamis dan node-tree terhubung.
+  3. *Layar 2 (Visual Novel Briefing):* Pre-mission briefing bersama mentor dan modal intisari rumus tanpa membocorkan jawaban.
+  4. *Layar 3 (JRPG Turn-Based Battle):* Sprite bos mandiri Gemini (*Algebra Golem* dan *The Text Guardian*), 4 perintah 100% Bahasa Indonesia (`JAWAB/SERANG`, `KEMAMPUAN`, `BARANG/TAS`, `ANALISIS/CATATAN`), sub-menu skill & item shop, floating damage `0 DMG (MELESET!)` jika salah, penalti tepat 5 HP, dan aura merah pada soal penalaran (Hard).
+  5. *Layar 4 (Mastery Diagnostics):* Diagnosa Bloom Easy/Medium/Hard pedagogis, kalkulasi rewards, dan sistem bypass VIP Keluarga (`AKSES_KELUARGA_VIP`).
 - **Mandat Kepatuhan:** Berjalan 100% pada teknologi web murni (HTML5, Vanilla CSS, Vanilla JS) tanpa dependensi server, siap untuk pengemasan APK Android.
 - **Berkas Prototipe:** `prototype/academic-ascension-rpg-v1.html` (kartu akses cepat di `index.html`).
 

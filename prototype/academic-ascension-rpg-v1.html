@@ -13,7 +13,7 @@
   <style>
     :root {
       --bg-dark: #070b14;
-      --bg-panel: rgba(14, 21, 37, 0.85);
+      --bg-panel: rgba(13, 21, 39, 0.88);
       --bg-panel-solid: #0d1527;
       --primary: #3b82f6;
       --primary-hover: #2563eb;
@@ -25,7 +25,7 @@
       --accent-red: #ef4444;
       --accent-green: #10b981;
       
-      --glass-border: rgba(255, 255, 255, 0.16);
+      --glass-border: rgba(255, 255, 255, 0.14);
       --glass-border-glow: rgba(96, 165, 250, 0.35);
       
       --text-main: #f8fafc;
@@ -75,7 +75,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: linear-gradient(180deg, rgba(7, 11, 20, 0.96) 0%, rgba(7, 11, 20, 0.8) 85%, transparent 100%);
+      background: linear-gradient(180deg, rgba(7, 11, 20, 0.98) 0%, rgba(7, 11, 20, 0.85) 85%, transparent 100%);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--glass-border);
@@ -119,52 +119,49 @@
       font-weight: 700;
       color: var(--text-muted);
       letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .hud-stats {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 16px;
     }
 
     .stat-pill {
       display: flex;
       align-items: center;
       gap: 8px;
-      background: rgba(15, 23, 42, 0.65);
-      border: 1px solid var(--glass-border);
-      border-radius: 20px;
       padding: 6px 14px;
+      border-radius: 20px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--glass-border);
       font-size: 13px;
       font-weight: 700;
     }
 
-    .stat-pill .icon { font-size: 15px; }
-    .stat-pill.gold span { color: var(--accent-gold-light); }
-    .stat-pill.energy span { color: var(--accent-cyan); }
-    .stat-pill.level {
-      background: linear-gradient(135deg, rgba(37,99,235,0.4), rgba(124,58,237,0.4));
-      border-color: rgba(96, 165, 250, 0.4);
-    }
+    .stat-pill.level { color: #60a5fa; border-color: rgba(96, 165, 250, 0.3); }
+    .stat-pill.gold { color: #fbbf24; border-color: rgba(251, 191, 36, 0.3); }
+    .stat-pill.mp { color: #34d399; border-color: rgba(52, 211, 153, 0.3); }
 
-    .btn-hud-action {
-      background: rgba(30, 41, 59, 0.7);
+    .btn-hud {
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: rgba(30, 41, 59, 0.8);
       border: 1px solid var(--glass-border);
-      border-radius: 12px;
-      padding: 7px 14px;
-      color: #fff;
+      color: var(--text-main);
       font-size: 12px;
       font-weight: 700;
       cursor: pointer;
-      transition: all 0.2s ease;
       display: flex;
       align-items: center;
       gap: 6px;
+      transition: all 0.2s ease;
     }
-    .btn-hud-action:hover {
-      background: rgba(59, 130, 246, 0.3);
+
+    .btn-hud:hover {
+      background: rgba(51, 65, 85, 0.9);
       border-color: var(--primary);
-      transform: translateY(-1px);
     }
 
     /* SCREEN VIEWS */
@@ -174,205 +171,454 @@
       bottom: 0;
       left: 0;
       right: 0;
-      display: none;
-      opacity: 0;
-      transition: opacity 0.35s ease;
-      z-index: 10;
-    }
-    .screen-view.active {
-      display: flex;
-      opacity: 1;
-    }
-
-    /* ========================================================
-       SCREEN 1: THE ACADEMIC CONSTELLATION MAP
-       ======================================================== */
-    #screen-map {
-      background: radial-gradient(circle at 50% 30%, #111a33 0%, #080d1a 60%, #03050a 100%);
-      background-image: linear-gradient(rgba(7, 11, 20, 0.88), rgba(7, 11, 20, 0.94)), url('../phase-3/visuals/Desain referensi fix/constellation-map.jpg');
-      background-size: cover;
-      background-position: center;
-      flex-direction: column;
       overflow-y: auto;
       overflow-x: hidden;
-      padding: 24px 32px 40px;
+      display: none !important;
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
 
-    .map-header-block {
-      max-width: 650px;
-      background: rgba(10, 16, 30, 0.82);
-      backdrop-filter: blur(16px);
-      border: 1px solid var(--glass-border-glow);
-      border-radius: 20px;
-      padding: 20px 26px;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.4);
-      margin-bottom: 24px;
+    .screen-view.active {
+      display: flex !important;
+      opacity: 1 !important;
     }
 
-    .map-header-block h2 {
-      font-family: var(--font-display);
-      font-size: 22px;
-      font-weight: 800;
-      margin-bottom: 4px;
-      background: linear-gradient(90deg, #67e8f9, #93c5fd);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .map-header-block p {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    .layer-legend {
-      display: flex;
-      gap: 10px;
-      margin-top: 12px;
-      flex-wrap: wrap;
-    }
-
-    .legend-badge {
-      font-size: 11px;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 12px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid var(--glass-border);
-    }
-    .legend-badge.l1 { color: #60a5fa; border-color: rgba(96, 165, 250, 0.5); }
-    .legend-badge.l2 { color: #c084fc; border-color: rgba(192, 132, 252, 0.5); }
-    .legend-badge.l3 { color: #f59e0b; border-color: rgba(245, 158, 11, 0.5); opacity: 0.7; }
-    .legend-badge.l4 { color: #ef4444; border-color: rgba(239, 68, 68, 0.5); opacity: 0.7; }
-
-    /* Node Cards Grid */
-    .nodes-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      max-width: 1080px;
-      margin-top: 8px;
-    }
-
-    .node-card {
-      background: rgba(14, 21, 37, 0.88);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1px solid var(--glass-border);
-      border-radius: 18px;
-      padding: 20px;
-      cursor: pointer;
-      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-      position: relative;
+    /* ==========================================================================
+       SCREEN 0: ONBOARDING GREETING (KATA SAMBUTAN RIFKI)
+       ========================================================================== */
+    #screen-onboarding {
+      position: absolute;
+      top: 64px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: url('../phase-3/visuals/Desain referensi fix/Halaman dan gerbang sekolah.jpg') center center / cover no-repeat;
+      justify-content: flex-end;
+      align-items: center;
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 170px;
     }
 
-    .node-card::before {
+    #screen-onboarding::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.2), transparent 70%);
+      background: radial-gradient(circle at 50% 30%, rgba(7, 11, 20, 0.4) 0%, rgba(7, 11, 20, 0.88) 100%);
       pointer-events: none;
     }
 
-    .node-card:hover {
-      transform: translateY(-6px) scale(1.02);
-      border-color: var(--primary);
-      box-shadow: 0 16px 36px rgba(37, 99, 235, 0.4);
+    .onboarding-stage {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 24px;
+      z-index: 2;
     }
 
-    .node-card.locked {
-      opacity: 0.5;
-      filter: grayscale(0.7);
-      cursor: not-allowed;
-    }
-    .node-card.locked:hover {
-      transform: none;
-      box-shadow: none;
-      border-color: var(--glass-border);
+    .onboarding-avatar-wrap {
+      position: absolute;
+      bottom: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      pointer-events: none;
+      animation: floatNpc 4s ease-in-out infinite;
     }
 
-    .node-layer-tag {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      padding: 2px 8px;
-      border-radius: 8px;
-      margin-bottom: 8px;
-      align-self: flex-start;
+    .onboarding-avatar-wrap img {
+      max-height: 480px;
+      width: auto;
+      filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.85));
     }
-    .node-card.layer-1 .node-layer-tag { background: rgba(59, 130, 246, 0.25); color: #93c5fd; }
-    .node-card.layer-3 .node-layer-tag { background: rgba(245, 158, 11, 0.25); color: #fde047; }
-    .node-card.layer-4 .node-layer-tag { background: rgba(239, 68, 68, 0.25); color: #fca5a5; }
 
-    .node-title {
-      font-family: var(--font-display);
-      font-size: 17px;
-      font-weight: 800;
+    @keyframes floatNpc {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .onboarding-dialog-card {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      background: rgba(11, 18, 33, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border-glow);
+      border-radius: 20px;
+      padding: 24px 30px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(59, 130, 246, 0.2);
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .speaker-tag-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .speaker-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(90deg, #2563eb, #7c3aed);
       color: #fff;
-      margin-bottom: 4px;
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
     }
 
-    .node-subtitle {
+    .onboarding-step-counter {
       font-size: 12px;
-      color: var(--text-muted);
-      line-height: 1.4;
-      margin-bottom: 14px;
+      font-weight: 800;
+      color: var(--accent-cyan);
+      background: rgba(6, 182, 212, 0.15);
+      padding: 4px 10px;
+      border-radius: 12px;
     }
 
-    .node-footer {
+    .onboarding-text {
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text-main);
+      min-height: 70px;
+    }
+
+    .onboarding-actions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 14px;
+      margin-top: 6px;
+    }
+
+    .btn-onboarding-skip {
+      background: transparent;
+      border: 1px solid var(--glass-border);
+      color: var(--text-muted);
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-onboarding-skip:hover {
+      color: var(--text-main);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-onboarding-next {
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+      border: none;
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-onboarding-next:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(37, 99, 235, 0.6);
+    }
+
+    /* ==========================================================================
+       SCREEN 1: CONSTELLATION MAP (PETA RASI BINTANG DINAMIS)
+       ========================================================================== */
+    #screen-map {
+      background: url('../phase-3/visuals/Desain referensi fix/constellation-map.jpg') center center / cover no-repeat;
+      position: absolute;
+      top: 64px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow-y: auto;
+      padding: 24px 32px 60px 32px;
+    }
+
+    #screen-map::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(7, 11, 20, 0.78);
+      pointer-events: none;
+    }
+
+    .map-header-panel {
+      position: relative;
+      z-index: 10;
+      max-width: 1100px;
+      margin: 0 auto 24px auto;
+      background: var(--bg-panel);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 18px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 11px;
-      font-weight: 700;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      padding-top: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     }
 
-    .node-enemy {
-      color: #cbd5e1;
+    .map-title-wrap h2 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 10px;
     }
 
-    .node-badge-action {
-      background: var(--primary);
-      color: #fff;
-      padding: 4px 12px;
-      border-radius: 10px;
+    .map-title-wrap p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .layer-filter-pills {
+      display: flex;
+      gap: 8px;
+    }
+
+    .filter-pill {
       font-size: 11px;
       font-weight: 800;
-      box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
-    }
-    .node-card.locked .node-badge-action {
-      background: rgba(255,255,255,0.1);
-      color: var(--text-dim);
-      box-shadow: none;
-    }
-
-    .node-card.raid-boss {
-      border-color: rgba(239, 68, 68, 0.5);
-      background: radial-gradient(circle at 50% 0%, rgba(220, 38, 38, 0.3), rgba(15, 23, 42, 0.95));
+      padding: 5px 12px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--glass-border);
+      color: var(--text-muted);
+      cursor: pointer;
     }
 
-    /* ========================================================
-       SCREEN 2: VISUAL NOVEL STORY & BRIEFING SEGMENT
-       ======================================================== */
-    #screen-vn {
-      background-size: cover;
-      background-position: center;
+    .filter-pill.active {
+      background: rgba(59, 130, 246, 0.2);
+      border-color: var(--primary);
+      color: #60a5fa;
+    }
+
+    /* CONSTELLATION GRAPH AREA */
+    .constellation-universe {
       position: relative;
-      flex-direction: row;
-      align-items: stretch;
+      max-width: 1100px;
+      min-height: 600px;
+      margin: 0 auto;
+      z-index: 5;
+    }
+
+    /* SVG Connecting Constellation Lines */
+    .constellation-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .constellation-svg line {
+      stroke-dasharray: 8 4;
+      animation: dashPulse 25s linear infinite;
+    }
+
+    @keyframes dashPulse {
+      to { stroke-dashoffset: -1000; }
+    }
+
+    .constellation-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    .node-card {
+      background: var(--bg-panel);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .node-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--glass-border-glow);
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(59, 130, 246, 0.2);
+    }
+
+    .node-card.locked {
+      opacity: 0.65;
+      filter: grayscale(0.4);
+    }
+
+    .node-card.active-node {
+      border-color: rgba(59, 130, 246, 0.5);
+    }
+
+    .node-badge-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .node-layer-tag {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .node-card.locked .node-layer-tag {
+      background: rgba(148, 163, 184, 0.1);
+      color: var(--text-dim);
+      border-color: rgba(148, 163, 184, 0.2);
+    }
+
+    .node-status-badge {
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .node-title-group h3 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .node-title-group p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .node-boss-preview {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(15, 23, 42, 0.6);
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .boss-icon-mini {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--glass-border);
+      flex-shrink: 0;
+    }
+
+    .boss-icon-mini img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .boss-meta-info {
+      flex: 1;
+    }
+
+    .boss-meta-info .boss-label {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--accent-red);
+      letter-spacing: 0.5px;
+    }
+
+    .boss-meta-info .boss-name {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .btn-launch-node {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #fff;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    }
+
+    .btn-launch-node:hover {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.5);
+    }
+
+    .btn-launch-node.btn-locked {
+      background: rgba(30, 41, 59, 0.6);
+      color: var(--text-dim);
+      cursor: not-allowed;
+      box-shadow: none;
+      transform: none;
+    }
+
+    /* ==========================================================================
+       SCREEN 2: VISUAL NOVEL BRIEFING
+       ========================================================================== */
+    #screen-vn {
+      background: url('../phase-3/visuals/Desain referensi fix/Laboratorium IPA.jpg') center center / cover no-repeat;
+      position: absolute;
+      top: 64px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 24px;
       overflow: hidden;
     }
 
@@ -380,334 +626,350 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 70% 30%, rgba(9, 13, 24, 0.35), rgba(7, 11, 20, 0.88));
-      z-index: 2;
-    }
-
-    .vn-character-container {
-      position: relative;
-      width: 38%;
-      z-index: 5;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
+      background: radial-gradient(circle at 50% 40%, rgba(7, 11, 20, 0.4) 0%, rgba(7, 11, 20, 0.85) 100%);
       pointer-events: none;
     }
 
-    .vn-character-img {
-      max-height: 92%;
-      max-width: 100%;
-      object-fit: contain;
-      filter: drop-shadow(0 15px 30px rgba(0,0,0,0.6));
-      animation: vnCharEnter 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-    }
-    @keyframes vnCharEnter {
-      from { opacity: 0; transform: translateY(40px) scale(0.95); }
-      to { opacity: 1; transform: translateY(0) scale(1); }
+    .vn-avatar-container {
+      position: absolute;
+      bottom: 220px;
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+      animation: floatNpc 4s ease-in-out infinite;
     }
 
-    .vn-dialogue-container {
+    .vn-avatar-container img {
+      max-height: 480px;
+      width: auto;
+      filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.9));
+    }
+
+    .vn-dialogue-panel {
       position: relative;
-      flex: 1;
-      z-index: 6;
+      z-index: 10;
+      width: 100%;
+      max-width: 900px;
+      background: var(--bg-panel);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border-glow);
+      border-radius: 20px;
+      padding: 24px 30px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+      margin-bottom: 20px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      padding: 32px 48px 36px 0;
+      gap: 14px;
     }
 
-    .vn-dialog-card {
-      background: rgba(14, 21, 37, 0.9);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border: 1px solid var(--glass-border-glow);
-      border-radius: 24px;
-      padding: 26px 32px;
-      box-shadow: 0 16px 45px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.15);
-      animation: vnSlideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-    @keyframes vnSlideUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+    .vn-dialogue-text {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text-main);
+      min-height: 70px;
     }
 
-    .vn-speaker-bar {
+    .vn-dialogue-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 14px;
     }
 
-    .vn-speaker-name {
-      font-family: var(--font-display);
-      font-size: 20px;
+    .btn-vn-notes {
+      background: rgba(139, 92, 246, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      color: #c084fc;
+      padding: 10px 18px;
+      border-radius: 10px;
       font-weight: 800;
-      color: #93c5fd;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .vn-speaker-tag {
-      font-size: 11px;
-      font-weight: 700;
-      color: #cbd5e1;
-      background: rgba(59, 130, 246, 0.2);
-      border: 1px solid rgba(96, 165, 250, 0.3);
-      padding: 2px 10px;
-      border-radius: 12px;
-    }
-
-    .vn-dialog-text {
-      font-size: 16px;
-      color: #f1f5f9;
-      line-height: 1.65;
-      font-weight: 600;
-      min-height: 68px;
-      margin-bottom: 22px;
-    }
-
-    .vn-action-bar {
-      display: flex;
-      justify-content: flex-end;
-      gap: 12px;
-    }
-
-    .btn-vn-secondary {
-      background: rgba(30, 41, 59, 0.7);
-      border: 1px solid var(--glass-border);
-      color: #cbd5e1;
-      padding: 10px 20px;
-      border-radius: 14px;
-      font-weight: 700;
       font-size: 13px;
       cursor: pointer;
-      transition: all 0.2s ease;
-    }
-    .btn-vn-secondary:hover {
-      background: rgba(51, 65, 85, 0.8);
-      transform: translateY(-1px);
-    }
-
-    .btn-vn-primary {
-      background: linear-gradient(135deg, #2563eb, #3b82f6);
-      border: 1px solid rgba(147, 197, 253, 0.4);
-      color: #fff;
-      padding: 10px 26px;
-      border-radius: 14px;
-      font-weight: 800;
-      font-size: 14px;
-      cursor: pointer;
-      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
-      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
       display: flex;
       align-items: center;
       gap: 8px;
-    }
-    .btn-vn-primary:hover {
-      transform: translateY(-2px) scale(1.02);
-      box-shadow: 0 6px 22px rgba(37, 99, 235, 0.6);
+      transition: all 0.2s;
     }
 
-    /* ========================================================
-       SCREEN 3: JRPG TURN-BASED BATTLE INTERFACE
-       ======================================================== */
+    .btn-vn-notes:hover {
+      background: rgba(139, 92, 246, 0.25);
+      border-color: #a855f7;
+    }
+
+    .btn-vn-battle {
+      background: linear-gradient(135deg, #ef4444, #b91c1c);
+      border: none;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 16px rgba(239, 68, 68, 0.4);
+      transition: all 0.2s;
+    }
+
+    .btn-vn-battle:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(239, 68, 68, 0.6);
+    }
+
+    /* ==========================================================================
+       SCREEN 3: JRPG TURN-BASED BATTLE SCREEN
+       ========================================================================== */
     #screen-battle {
-      background: radial-gradient(circle at 50% 30%, #0d162d 0%, #060914 70%, #020408 100%);
+      background: radial-gradient(circle at 50% 20%, #172554 0%, #070b14 70%);
+      position: absolute;
+      top: 64px;
+      bottom: 0;
+      left: 0;
+      right: 0;
       flex-direction: column;
-      position: relative;
-      overflow: hidden;
+      justify-content: space-between;
+      padding: 20px 32px 30px 32px;
+      overflow-y: auto;
     }
 
-    @keyframes screenShakeAnim {
-      0%, 100% { transform: translate(0, 0); }
-      20% { transform: translate(-8px, 6px); }
-      40% { transform: translate(8px, -6px); }
-      60% { transform: translate(-6px, 4px); }
-      80% { transform: translate(6px, -4px); }
-    }
-    .screen-shake {
-      animation: screenShakeAnim 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-    }
-
-    .battle-upper-arena {
-      flex: 1;
+    /* Top Battle HUD: Player & Boss Status */
+    .battle-hud-row {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 16px 40px;
-      position: relative;
+      align-items: flex-start;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
       z-index: 5;
     }
 
     .combatant-card {
-      width: 310px;
-      background: rgba(15, 23, 42, 0.8);
-      backdrop-filter: blur(16px);
+      background: var(--bg-panel);
+      backdrop-filter: blur(14px);
       border: 1px solid var(--glass-border);
-      border-radius: 20px;
-      padding: 18px 22px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-      transition: all 0.3s ease;
+      border-radius: 16px;
+      padding: 16px 20px;
+      width: 320px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s ease;
+    }
+
+    .combatant-card.shake {
+      animation: cardShake 0.4s ease;
+    }
+
+    @keyframes cardShake {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-5px); }
+      80% { transform: translateX(5px); }
     }
 
     .combatant-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .combatant-name {
       font-family: var(--font-display);
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 800;
       color: #fff;
     }
 
     .combatant-badge {
-      font-size: 11px;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 10px;
-    }
-    .combatant-card.player .combatant-badge { background: rgba(59, 130, 246, 0.25); color: #93c5fd; }
-    .combatant-card.enemy .combatant-badge { background: rgba(239, 68, 68, 0.25); color: #fca5a5; }
-
-    .meter-group { margin-bottom: 8px; }
-    .meter-label {
-      display: flex;
-      justify-content: space-between;
-      font-size: 11px;
-      font-weight: 700;
-      margin-bottom: 4px;
-      color: var(--text-muted);
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 12px;
+      text-transform: uppercase;
     }
 
-    .meter-bar {
-      width: 100%;
-      height: 10px;
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 6px;
-      overflow: hidden;
-      position: relative;
-    }
+    .combatant-badge.player { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .combatant-badge.boss { background: rgba(239, 68, 68, 0.2); color: #f87171; }
 
-    .meter-fill {
-      height: 100%;
-      border-radius: 6px;
-      transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-    .meter-fill.hp-player { background: linear-gradient(90deg, #10b981, #34d399); }
-    .meter-fill.hp-enemy { background: linear-gradient(90deg, #ef4444, #f87171); }
-    .meter-fill.mp { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
-
-    /* Center Stage (Monster Art) */
-    .battle-center-stage {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-    }
-
-    .monster-art-container {
-      width: 250px;
-      height: 250px;
-      border-radius: 24px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 0 45px rgba(239, 68, 68, 0.35);
-      border: 2px solid rgba(239, 68, 68, 0.4);
-      background: #000;
-    }
-
-    .monster-art-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      animation: monsterIdle 3s ease-in-out infinite alternate;
-    }
-    @keyframes monsterIdle {
-      0% { transform: scale(1); filter: brightness(1); }
-      100% { transform: scale(1.05); filter: brightness(1.15); }
-    }
-
-    .monster-art-container.charging {
-      animation: monsterCharge 0.5s ease-in-out infinite alternate;
-      border-color: #ef4444;
-      box-shadow: 0 0 60px rgba(239, 68, 68, 0.85);
-    }
-    @keyframes monsterCharge {
-      0% { transform: scale(1.02); filter: contrast(1.2) drop-shadow(0 0 15px #ef4444); }
-      100% { transform: scale(1.08); filter: contrast(1.5) drop-shadow(0 0 35px #f59e0b); }
-    }
-
-    .floating-damage {
-      position: absolute;
-      font-family: var(--font-display);
-      font-size: 34px;
-      font-weight: 900;
-      color: #ef4444;
-      text-shadow: 0 0 15px rgba(239, 68, 68, 0.8), 0 2px 4px #000;
-      pointer-events: none;
-      animation: floatDmg 0.9s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-      z-index: 50;
-    }
-    @keyframes floatDmg {
-      0% { opacity: 0; transform: translateY(20px) scale(0.6); }
-      30% { opacity: 1; transform: translateY(-20px) scale(1.2); }
-      100% { opacity: 0; transform: translateY(-60px) scale(1); }
-    }
-
-    /* Battle Lower Panel */
-    .battle-lower-panel {
-      height: 290px;
-      background: rgba(10, 16, 30, 0.95);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border-top: 1px solid var(--glass-border-glow);
-      display: flex;
-      padding: 20px 36px;
-      gap: 24px;
-      z-index: 10;
-    }
-
-    .question-box {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .question-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .meter-row {
       margin-bottom: 8px;
     }
 
+    .meter-label-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .meter-bar-track {
+      width: 100%;
+      height: 10px;
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 5px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .meter-bar-fill {
+      height: 100%;
+      border-radius: 5px;
+      transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .meter-bar-fill.hp-player { background: linear-gradient(90deg, #10b981, #34d399); }
+    .meter-bar-fill.mp-player { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+    .meter-bar-fill.hp-boss { background: linear-gradient(90deg, #ef4444, #f87171); }
+    .meter-bar-fill.mp-boss { background: linear-gradient(90deg, #8b5cf6, #c084fc); }
+
+    /* Center Boss Arena & Sprite */
+    .battle-center-arena {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+      z-index: 4;
+    }
+
+    .boss-sprite-frame {
+      position: relative;
+      width: 270px;
+      height: 270px;
+      border-radius: 24px;
+      background: radial-gradient(circle at 50% 50%, rgba(30, 58, 138, 0.5) 0%, rgba(13, 21, 39, 0.8) 100%);
+      border: 2px solid var(--glass-border-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(6, 182, 212, 0.25);
+      transition: all 0.3s ease;
+    }
+
+    .boss-sprite-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.8));
+      transition: filter 0.3s ease;
+    }
+
+    /* Red Aura Charging on Hard Question */
+    .boss-sprite-frame.aura-charging {
+      animation: redAuraPulse 1.5s infinite alternate ease-in-out;
+      border-color: #ef4444;
+    }
+
+    @keyframes redAuraPulse {
+      0% {
+        box-shadow: 0 0 25px rgba(239, 68, 68, 0.6), inset 0 0 20px rgba(239, 68, 68, 0.3);
+        transform: scale(1);
+      }
+      100% {
+        box-shadow: 0 0 60px rgba(239, 68, 68, 0.95), inset 0 0 40px rgba(239, 68, 68, 0.6);
+        transform: scale(1.03);
+      }
+    }
+
+    /* Floating Damage Text */
+    .floating-damage {
+      position: absolute;
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 32px;
+      pointer-events: none;
+      z-index: 50;
+      animation: floatDamage 1.2s forwards cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .floating-damage.damage-enemy {
+      color: #38bdf8;
+      text-shadow: 0 0 15px rgba(56, 189, 248, 0.8), 0 4px 10px rgba(0,0,0,0.9);
+    }
+
+    .floating-damage.damage-critical {
+      color: #fbbf24;
+      font-size: 38px;
+      text-shadow: 0 0 20px rgba(251, 191, 36, 0.9), 0 4px 12px rgba(0,0,0,0.9);
+    }
+
+    .floating-damage.damage-player {
+      color: #f87171;
+      text-shadow: 0 0 15px rgba(248, 113, 113, 0.8), 0 4px 10px rgba(0,0,0,0.9);
+    }
+
+    .floating-damage.damage-miss {
+      color: #94a3b8;
+      font-size: 26px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    }
+
+    @keyframes floatDamage {
+      0% { opacity: 0; transform: translateY(10px) scale(0.6); }
+      20% { opacity: 1; transform: translateY(-15px) scale(1.15); }
+      70% { opacity: 1; transform: translateY(-40px) scale(1); }
+      100% { opacity: 0; transform: translateY(-60px) scale(0.9); }
+    }
+
+    /* Challenge Difficulty Badge */
     .challenge-indicator {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      font-size: 12px;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-family: var(--font-display);
       font-weight: 800;
-      padding: 3px 12px;
-      border-radius: 12px;
+      font-size: 13px;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
     }
-    .challenge-indicator.easy { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); }
-    .challenge-indicator.medium { background: rgba(245, 158, 11, 0.2); color: #fde047; border: 1px solid rgba(245, 158, 11, 0.4); }
-    .challenge-indicator.hard { background: rgba(239, 68, 68, 0.25); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.5); animation: pulseAlert 1s infinite alternate; }
-    @keyframes pulseAlert { 0%{opacity:0.8} 100%{opacity:1; transform:scale(1.03)} }
+
+    .challenge-indicator.easy { background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #34d399; }
+    .challenge-indicator.medium { background: rgba(245, 158, 11, 0.15); border: 1px solid #f59e0b; color: #fbbf24; }
+    .challenge-indicator.hard { background: rgba(239, 68, 68, 0.2); border: 1px solid #ef4444; color: #f87171; animation: pulseBadge 1.2s infinite; }
+
+    @keyframes pulseBadge {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    /* Bottom Question & 4 Commands Area */
+    .battle-lower-panel {
+      position: relative;
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+      background: var(--bg-panel);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      padding: 20px 24px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 20px;
+      z-index: 5;
+    }
+
+    .question-side {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
 
     .question-prompt {
       font-size: 15px;
       font-weight: 700;
-      color: #f8fafc;
-      line-height: 1.55;
-      max-height: 85px;
-      overflow-y: auto;
-      margin-bottom: 12px;
+      line-height: 1.6;
+      color: var(--text-main);
+      min-height: 48px;
     }
 
     .options-grid {
@@ -717,1125 +979,1621 @@
     }
 
     .btn-option {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(15, 23, 42, 0.8);
       border: 1px solid var(--glass-border);
-      border-radius: 12px;
-      padding: 10px 14px;
-      color: #f1f5f9;
-      font-size: 13px;
-      font-weight: 600;
+      border-radius: 10px;
+      padding: 12px 14px;
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 700;
       text-align: left;
       cursor: pointer;
-      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
       display: flex;
-      align-items: flex-start;
-      gap: 8px;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.2s;
     }
+
     .btn-option:hover {
-      background: rgba(59, 130, 246, 0.25);
+      background: rgba(30, 41, 59, 0.9);
       border-color: var(--primary);
       transform: translateY(-2px);
     }
-    .btn-option .opt-key {
-      font-weight: 900;
-      font-family: var(--font-display);
-      color: #93c5fd;
-      background: rgba(59, 130, 246, 0.2);
-      border-radius: 6px;
-      padding: 1px 6px;
-      font-size: 12px;
+
+    .btn-option.disabled-option {
+      opacity: 0.35;
+      pointer-events: none;
+      text-decoration: line-through;
     }
 
-    .battle-actions-menu {
-      width: 210px;
+    .option-letter {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 13px;
+      color: var(--accent-cyan);
+      flex-shrink: 0;
+    }
+
+    /* 4 Primary Action Commands */
+    .command-side {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      border-left: 1px solid rgba(255,255,255,0.08);
-      padding-left: 20px;
+      border-left: 1px solid rgba(255, 255, 255, 0.08);
+      padding-left: 18px;
     }
 
-    .btn-action-command {
-      background: rgba(30, 41, 59, 0.8);
-      border: 1px solid var(--glass-border);
-      border-radius: 14px;
-      padding: 12px;
-      color: #fff;
+    .btn-command {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-family: var(--font-display);
       font-size: 13px;
       font-weight: 800;
+      border: 1px solid transparent;
       cursor: pointer;
       display: flex;
       align-items: center;
       gap: 10px;
-      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-    .btn-action-command:hover { transform: translateY(-2px); }
-    .btn-action-command.attack {
-      background: linear-gradient(135deg, rgba(37,99,235,0.8), rgba(59,130,246,0.8));
-      border-color: rgba(147, 197, 253, 0.4);
-    }
-    .btn-action-command.defend {
-      background: linear-gradient(135deg, rgba(139,92,246,0.4), rgba(99,102,241,0.4));
-    }
-    .btn-action-command.items {
-      background: linear-gradient(135deg, rgba(245,158,11,0.3), rgba(217,119,6,0.3));
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
-    /* ========================================================
+    .btn-command.cmd-attack {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #fff;
+      border-color: rgba(96, 165, 250, 0.4);
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+    }
+
+    .btn-command.cmd-attack:hover {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      transform: translateY(-2px);
+    }
+
+    .btn-command.cmd-skill {
+      background: rgba(139, 92, 246, 0.15);
+      color: #c084fc;
+      border-color: rgba(139, 92, 246, 0.3);
+    }
+
+    .btn-command.cmd-skill:hover {
+      background: rgba(139, 92, 246, 0.25);
+      border-color: #a855f7;
+    }
+
+    .btn-command.cmd-items {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+
+    .btn-command.cmd-items:hover {
+      background: rgba(245, 158, 11, 0.25);
+      border-color: #f59e0b;
+    }
+
+    .btn-command.cmd-notes {
+      background: rgba(6, 182, 212, 0.15);
+      color: #22d3ee;
+      border-color: rgba(6, 182, 212, 0.3);
+    }
+
+    .btn-command.cmd-notes:hover {
+      background: rgba(6, 182, 212, 0.25);
+      border-color: #06b6d4;
+    }
+
+    /* ==========================================================================
        SCREEN 4: RESULT SCREEN & MASTERY DIAGNOSTICS
-       ======================================================== */
+       ========================================================================== */
     #screen-result {
-      background: radial-gradient(circle at 50% 30%, #0d1e3d 0%, #050811 75%);
-      align-items: center;
+      background: radial-gradient(circle at 50% 30%, #1e1b4b 0%, #070b14 80%);
+      position: absolute;
+      top: 64px;
+      bottom: 0;
+      left: 0;
+      right: 0;
       justify-content: center;
-      padding: 32px;
+      align-items: center;
+      padding: 30px 20px;
+      overflow-y: auto;
     }
 
-    .result-modal {
+    .result-card {
       width: 100%;
-      max-width: 620px;
-      background: rgba(14, 21, 37, 0.94);
-      backdrop-filter: blur(28px);
+      max-width: 680px;
+      background: var(--bg-panel);
+      backdrop-filter: blur(24px);
       border: 1px solid var(--glass-border-glow);
-      border-radius: 28px;
+      border-radius: 24px;
       padding: 32px 36px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(59, 130, 246, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
       text-align: center;
-      animation: modalPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-    @keyframes modalPop {
-      from { opacity: 0; transform: scale(0.9) translateY(20px); }
-      to { opacity: 1; transform: scale(1) translateY(0); }
     }
 
-    .result-badge-victory {
-      display: inline-block;
+    .result-header h2 {
       font-family: var(--font-display);
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 900;
-      background: linear-gradient(90deg, #fcd34d, #f59e0b);
+      letter-spacing: 0.5px;
+    }
+
+    .result-header.victory h2 {
+      background: linear-gradient(90deg, #34d399, #60a5fa);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 6px;
     }
 
-    .result-subtitle {
+    .result-header.defeat h2 {
+      background: linear-gradient(90deg, #f87171, #fbbf24);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .result-header p {
       font-size: 14px;
       color: var(--text-muted);
-      margin-bottom: 24px;
+      margin-top: 6px;
     }
 
-    .diagnostics-grid {
+    .bloom-diagnostics-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
-      margin-bottom: 24px;
+      margin: 10px 0;
     }
 
-    .diag-card {
-      background: rgba(255, 255, 255, 0.04);
+    .diagnostic-box {
+      background: rgba(15, 23, 42, 0.7);
       border: 1px solid var(--glass-border);
-      border-radius: 16px;
+      border-radius: 14px;
       padding: 14px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
     }
-    .diag-title {
+
+    .diag-level-name {
       font-size: 11px;
-      font-weight: 700;
-      color: var(--text-muted);
+      font-weight: 800;
       text-transform: uppercase;
-      margin-bottom: 6px;
+      letter-spacing: 0.5px;
     }
-    .diag-value {
+
+    .diag-level-name.easy { color: #34d399; }
+    .diag-level-name.medium { color: #fbbf24; }
+    .diag-level-name.hard { color: #f87171; }
+
+    .diag-percent {
       font-family: var(--font-display);
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 900;
       color: #fff;
     }
-    .diag-status {
+
+    .diag-eval-label {
       font-size: 11px;
       font-weight: 700;
-      margin-top: 4px;
+      color: var(--text-muted);
     }
-    .diag-status.good { color: #34d399; }
-    .diag-status.warning { color: #fde047; }
 
-    .result-rewards-bar {
+    .pedagogical-advice-box {
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #bfdbfe;
+      text-align: left;
+    }
+
+    .result-rewards-row {
       display: flex;
       justify-content: center;
       gap: 24px;
-      background: rgba(15, 23, 42, 0.7);
-      border-radius: 16px;
-      padding: 12px;
-      margin-bottom: 24px;
     }
 
     .reward-item {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 15px;
+      font-family: var(--font-display);
       font-weight: 800;
+      font-size: 16px;
     }
 
-    .result-actions {
-      display: flex;
-      gap: 14px;
-      justify-content: center;
+    .reward-item.xp { color: #60a5fa; }
+    .reward-item.gold { color: #fbbf24; }
+
+    .btn-return-map {
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      border: none;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+      transition: all 0.2s;
     }
 
-    /* MODAL WINDOWS */
+    .btn-return-map:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(37, 99, 235, 0.6);
+    }
+
+    /* ==========================================================================
+       MODALS (VIP, SKILLS, ITEMS, CATATAN)
+       ========================================================================== */
     .modal-overlay {
-      position: absolute;
+      position: fixed;
       inset: 0;
-      background: rgba(4, 7, 14, 0.75);
-      backdrop-filter: blur(10px);
-      z-index: 150;
+      background: rgba(0, 0, 0, 0.78);
+      backdrop-filter: blur(8px);
       display: none;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      z-index: 200;
       padding: 20px;
     }
-    .modal-overlay.active { display: flex; }
 
-    .modal-content {
-      width: 100%;
-      max-width: 500px;
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-window {
       background: var(--bg-panel-solid);
       border: 1px solid var(--glass-border-glow);
-      border-radius: 24px;
-      padding: 28px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-    }
-
-    .modal-content h3 {
-      font-family: var(--font-display);
-      font-size: 19px;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-
-    .modal-content p {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-bottom: 18px;
-    }
-
-    .input-group { margin-bottom: 16px; }
-    .input-group label {
-      display: block;
-      font-size: 12px;
-      font-weight: 700;
-      color: #cbd5e1;
-      margin-bottom: 6px;
-    }
-    .input-group input, .input-group select {
+      border-radius: 20px;
       width: 100%;
-      background: rgba(255,255,255,0.06);
+      max-width: 520px;
+      padding: 24px 28px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+    }
+
+    .modal-window h3 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 20px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .modal-content-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 360px;
+      overflow-y: auto;
+    }
+
+    .modal-item-row {
+      background: rgba(15, 23, 42, 0.7);
       border: 1px solid var(--glass-border);
       border-radius: 12px;
-      padding: 10px 14px;
+      padding: 12px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .item-desc h4 {
+      font-size: 14px;
+      font-weight: 800;
       color: #fff;
-      font-family: inherit;
+    }
+
+    .item-desc p {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .btn-item-action {
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
+      background: #2563eb;
+      color: #fff;
+      transition: all 0.2s;
+    }
+
+    .btn-item-action:hover {
+      background: #3b82f6;
+    }
+
+    .btn-item-action:disabled {
+      background: rgba(148, 163, 184, 0.2);
+      color: var(--text-dim);
+      cursor: not-allowed;
+    }
+
+    /* VIP Code Input */
+    .vip-input {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 10px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid var(--glass-border);
+      color: #fff;
+      font-family: var(--font-body);
       font-size: 14px;
       outline: none;
     }
 
-    /* TOAST NOTIFICATION */
-    #toast-msg {
-      position: absolute;
-      top: 80px;
-      left: 50%;
-      transform: translateX(-50%) translateY(-20px);
-      background: rgba(15, 23, 42, 0.95);
-      border: 1px solid var(--primary);
-      padding: 10px 20px;
-      border-radius: 14px;
-      font-size: 13px;
-      font-weight: 700;
-      color: #fff;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-      opacity: 0;
-      pointer-events: none;
-      transition: all 0.3s ease;
-      z-index: 200;
-    }
-    #toast-msg.show {
-      transform: translateX(-50%) translateY(0);
-      opacity: 1;
+    .vip-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 10px var(--primary-glow);
     }
   </style>
 </head>
 <body>
 
-  <div id="app-container">
+<div id="app-container">
+  
+  <!-- GLOBAL HEADER HUD -->
+  <header class="top-hud">
+    <div class="brand-group" id="btn-brand-home" title="Kembali ke Peta">
+      <div class="brand-logo">AA</div>
+      <div class="brand-text">
+        <h1>ACADEMIC ASCENSION</h1>
+        <span>Nusantara Academy • Kelas XII</span>
+      </div>
+    </div>
     
-    <!-- TOP GLOBAL HUD -->
-    <header class="top-hud">
-      <div class="brand-group" onclick="showScreen('screen-map')">
-        <div class="brand-logo">Ω</div>
-        <div class="brand-text">
-          <h1>ACADEMIC ASCENSION</h1>
-          <span>NUSANTARA ACADEMY • KELAS XII</span>
-        </div>
+    <div class="hud-stats">
+      <div class="stat-pill level">⚡ Lv. <span id="hud-level">12</span></div>
+      <div class="stat-pill gold">🪙 <span id="hud-gold">755</span></div>
+      <div class="stat-pill mp">🧪 <span id="hud-mp">50</span>/50 MP</div>
+      <button class="btn-hud" id="btn-open-vip">⚙️ Pengaturan & Akses</button>
+    </div>
+  </header>
+
+  <!-- SCREEN 0: ONBOARDING GREETING (KATA SAMBUTAN RIFKI) -->
+  <section id="screen-onboarding" class="screen-view active">
+    <div class="onboarding-stage">
+      <div class="onboarding-avatar-wrap">
+        <img src="../phase-3/visuals/Desain referensi fix/npc-rifki.png" alt="Rifki Mentor">
       </div>
       
-      <div class="hud-stats">
-        <div class="stat-pill level">
-          <span class="icon">⚡</span>
-          <span>Lv. <strong id="hud-level">12</strong></span>
-        </div>
-        <div class="stat-pill gold">
-          <span class="icon">🪙</span>
-          <span id="hud-gold">155</span>
-        </div>
-        <div class="stat-pill energy">
-          <span class="icon">🧪</span>
-          <span id="hud-energy">85/100</span>
+      <div class="onboarding-dialog-card">
+        <div class="speaker-tag-row">
+          <div class="speaker-badge">🎓 Rifki • Ketua Komite Murid & Mentor Numerasi</div>
+          <span class="onboarding-step-counter" id="onboarding-step-indicator">Pesan 1 dari 4</span>
         </div>
         
-        <button class="btn-hud-action" onclick="openProfileModal()">
-          <span>🎓 Profil Target</span>
-        </button>
-        <button class="btn-hud-action" onclick="openSettingsModal()">
-          <span>⚙️ Akses</span>
-        </button>
-      </div>
-    </header>
-
-    <!-- TOAST NOTIFICATION -->
-    <div id="toast-msg">Notifikasi</div>
-
-    <!-- ========================================================
-         SCREEN 1: THE ACADEMIC CONSTELLATION MAP
-         ======================================================== -->
-    <section id="screen-map" class="screen-view active">
-      <div class="map-header-block">
-        <h2>Peta Konstelasi Akademik</h2>
-        <p>Kumpulkan Knowledge Crystals untuk mengusir Kabut Ketidaktahuan (*The Fog of Ignorance*) dan membuka gerbang PTN impian.</p>
-        <div class="layer-legend">
-          <span class="legend-badge l1">Layer 1: Fondasi Wajib (Aktif)</span>
-          <span class="legend-badge l2">Layer 2: Profil Target</span>
-          <span class="legend-badge l3">Layer 3: Spesialisasi (DLC)</span>
-          <span class="legend-badge l4">Layer 4: TKA Arena</span>
+        <p class="onboarding-text" id="onboarding-dialog-text">
+          Selamat datang di <strong>Nusantara Academy</strong>! Ini bukan sekadar gerbang sekolah biasa—ini adalah garis awal perjuangan kita menghadapi tahun paling menentukan dalam hidup kita: <strong>Kelas XII</strong>.
+        </p>
+        
+        <div class="onboarding-actions">
+          <button class="btn-onboarding-skip" id="btn-skip-onboarding">Lewati Sambutan</button>
+          <button class="btn-onboarding-next" id="btn-next-onboarding">
+            <span>Lanjut</span> ➔
+          </button>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Nodes Grid -->
-      <div class="nodes-grid">
-        
-        <!-- Node 1: Matematika (Boss: Algebra Golem) -->
-        <div class="node-card layer-1" onclick="selectMissionNode('MAT')">
-          <div>
+  <!-- SCREEN 1: CONSTELLATION MAP -->
+  <section id="screen-map" class="screen-view">
+    <div class="map-header-panel">
+      <div class="map-title-wrap">
+        <h2>🌌 Peta Konstelasi Akademik</h2>
+        <p>Kumpulkan <em>Knowledge Crystals</em> untuk mengusir Kabut Ketidaktahuan (<em>The Fog of Ignorance</em>) dan membuka gerbang PTN impian.</p>
+      </div>
+      <div class="layer-filter-pills">
+        <div class="filter-pill active">Layer 1: Fondasi Wajib</div>
+        <div class="filter-pill">Layer 2: Profil Target</div>
+        <div class="filter-pill">Layer 3: Spesialisasi</div>
+        <div class="filter-pill">Layer 4: TKA Arena</div>
+      </div>
+    </div>
+
+    <div class="constellation-universe">
+      <!-- SVG Connecting Node Tree Lines -->
+      <svg class="constellation-svg" id="constellation-svg-lines" viewBox="0 0 1100 600">
+        <defs>
+          <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
+            <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.4" />
+          </linearGradient>
+        </defs>
+        <!-- Lines connecting nodes dynamically drawn in JS -->
+      </svg>
+
+      <div class="constellation-grid" id="nodes-grid">
+        <!-- Node 1: Matematika Wajib -->
+        <div class="node-card active-node" id="node-mat-wajib">
+          <div class="node-badge-row">
             <span class="node-layer-tag">Layer 1 • Numerasi</span>
-            <h3 class="node-title">Matematika Wajib</h3>
-            <p class="node-subtitle">Bab 1: Barisan Geometri & Bunga Majemuk</p>
+            <span class="node-status-badge" style="color: #34d399;">🟢 Siap Dihadapi</span>
           </div>
-          <div class="node-footer">
-            <span class="node-enemy">👹 Boss: Algebra Golem</span>
-            <span class="node-badge-action">HADAPI</span>
+          <div class="node-title-group">
+            <h3>Matematika Wajib</h3>
+            <p>Bab 1: Barisan Aritmetika, Geometri, & Pemodelan Produksi</p>
           </div>
+          <div class="node-boss-preview">
+            <div class="boss-icon-mini">
+              <img src="../phase-3/visuals/Desain referensi fix/algebra-golem-sprite.jpg" alt="Algebra Golem">
+            </div>
+            <div class="boss-meta-info">
+              <div class="boss-label">Bos Evaluasi</div>
+              <div class="boss-name">Algebra Golem (600 HP)</div>
+            </div>
+          </div>
+          <button class="btn-launch-node" onclick="app.startMission('MAT_WAJIB')">
+            <span>⚔️ Hadapi Materi</span>
+          </button>
         </div>
 
-        <!-- Node 2: Bahasa Indonesia -->
-        <div class="node-card layer-1" onclick="selectMissionNode('BID')">
-          <div>
+        <!-- Node 2: Bahasa Indonesia Wajib -->
+        <div class="node-card active-node" id="node-bi-wajib">
+          <div class="node-badge-row">
             <span class="node-layer-tag">Layer 1 • Literasi</span>
-            <h3 class="node-title">Bahasa Indonesia</h3>
-            <p class="node-subtitle">Bab 1: Surat Resmi & Komunikasi Bisnis</p>
+            <span class="node-status-badge" style="color: #34d399;">🟢 Siap Dihadapi</span>
           </div>
-          <div class="node-footer">
-            <span class="node-enemy">🛡️ The Text Guardian</span>
-            <span class="node-badge-action">HADAPI</span>
+          <div class="node-title-group">
+            <h3>Bahasa Indonesia</h3>
+            <p>Bab 1: Analisis Informasi Resmi & Surat Lamaran Pekerjaan</p>
           </div>
+          <div class="node-boss-preview">
+            <div class="boss-icon-mini">
+              <img src="../phase-3/visuals/Desain referensi fix/text-guardian-sprite.jpg" alt="The Text Guardian">
+            </div>
+            <div class="boss-meta-info">
+              <div class="boss-label">Bos Evaluasi</div>
+              <div class="boss-name">The Text Guardian (600 HP)</div>
+            </div>
+          </div>
+          <button class="btn-launch-node" onclick="app.startMission('BI_WAJIB')">
+            <span>⚔️ Hadapi Materi</span>
+          </button>
         </div>
 
-        <!-- Node 3: Bahasa Inggris -->
-        <div class="node-card layer-1" onclick="selectMissionNode('ENG')">
-          <div>
-            <span class="node-layer-tag">Layer 1 • Global</span>
-            <h3 class="node-title">Bahasa Inggris</h3>
-            <p class="node-subtitle">Bab 1: Reading & Syntax in Context</p>
+        <!-- Node 3: Bahasa Inggris Wajib -->
+        <div class="node-card" id="node-eng-wajib">
+          <div class="node-badge-row">
+            <span class="node-layer-tag">Layer 1 • Bahasa Global</span>
+            <span class="node-status-badge" style="color: #38bdf8;">🔵 Terbuka</span>
           </div>
-          <div class="node-footer">
-            <span class="node-enemy">🐉 Syntax Serpent</span>
-            <span class="node-badge-action">HADAPI</span>
+          <div class="node-title-group">
+            <h3>Bahasa Inggris</h3>
+            <p>Bab 1: Contextual Reading & Practical Communication</p>
           </div>
+          <div class="node-boss-preview">
+            <div class="boss-icon-mini" style="background: rgba(14, 165, 233, 0.2); display: flex; align-items: center; justify-content: center; font-size: 20px;">
+              🐍
+            </div>
+            <div class="boss-meta-info">
+              <div class="boss-label">Bos Evaluasi</div>
+              <div class="boss-name">Syntax Serpent</div>
+            </div>
+          </div>
+          <button class="btn-launch-node" onclick="alert('Modul Bahasa Inggris segera dihubungkan pada patch berikutnya!')">
+            <span>⚔️ Buka Modul</span>
+          </button>
         </div>
 
-        <!-- Node 4: Layer 3 - Matematika Lanjut (Locked) -->
-        <div class="node-card layer-3 locked">
-          <div>
+        <!-- Node 4: Layer 2 Profil Target -->
+        <div class="node-card" id="node-layer2">
+          <div class="node-badge-row">
+            <span class="node-layer-tag">Layer 2 • Rapor & PTN</span>
+            <span class="node-status-badge" style="color: #c084fc;">🎯 Profil Aktif</span>
+          </div>
+          <div class="node-title-group">
+            <h3>Pemetaan Profil Akademik</h3>
+            <p>Analisis Rapor & Target Program Studi (Tanpa Batasan Rumpun Kaku)</p>
+          </div>
+          <button class="btn-launch-node" style="background: linear-gradient(135deg, #7c3aed, #4f46e5);" onclick="app.openProfileModal()">
+            <span>🎯 Atur Target Prodi</span>
+          </button>
+        </div>
+
+        <!-- Node 5: Layer 3 Spesialisasi -->
+        <div class="node-card locked" id="node-layer3">
+          <div class="node-badge-row">
             <span class="node-layer-tag">Layer 3 • Peminatan</span>
-            <h3 class="node-title">Matematika Lanjut</h3>
-            <p class="node-subtitle">Kalkulus & Matriks Analitik (Saintek)</p>
+            <span class="node-status-badge" style="color: #94a3b8;">🔒 Terkunci</span>
           </div>
-          <div class="node-footer">
-            <span class="node-enemy">🔒 Terkunci</span>
-            <span class="node-badge-action">L1 BUTUH</span>
+          <div class="node-title-group">
+            <h3>Spesialisasi Pilihan (2 Mapel)</h3>
+            <p>Matematika Tingkat Lanjut & Sosiologi Lanjut (Terbuka setelah Layer 1 tuntas)</p>
           </div>
+          <button class="btn-launch-node btn-locked">
+            <span>🔒 Butuh Tuntas Layer 1</span>
+          </button>
         </div>
 
-        <!-- Node 5: Layer 4 - TKA Arena Endgame Raid Boss -->
-        <div class="node-card layer-4 raid-boss locked">
-          <div>
+        <!-- Node 6: Layer 4 TKA Arena -->
+        <div class="node-card locked" id="node-layer4">
+          <div class="node-badge-row">
             <span class="node-layer-tag">Layer 4 • Endgame</span>
-            <h3 class="node-title">👑 TKA Arena (Raid Boss)</h3>
-            <p class="node-subtitle">Simulasi Seleksi PTN Nasional (3 Wajib + 2 Pilihan)</p>
+            <span class="node-status-badge" style="color: #94a3b8;">👑 Terkunci</span>
           </div>
-          <div class="node-footer">
-            <span class="node-enemy">🔒 Selesaikan L1 & L3</span>
-            <span class="node-badge-action">LOCKED</span>
+          <div class="node-title-group">
+            <h3>TKA Arena (Raid Boss)</h3>
+            <p>Simulasi Ujian Capaian Akademik (3 Wajib + 2 Pilihan)</p>
           </div>
-        </div>
-
-        <!-- Node 6: Layer 3 - Sosiologi / Humaniora (Locked) -->
-        <div class="node-card layer-3 locked">
-          <div>
-            <span class="node-layer-tag">Layer 3 • Peminatan</span>
-            <h3 class="node-title">Sosiologi & Esai</h3>
-            <p class="node-subtitle">Analisis Struktur Sosial (Soshum)</p>
-          </div>
-          <div class="node-footer">
-            <span class="node-enemy">🔒 Terkunci</span>
-            <span class="node-badge-action">L1 BUTUH</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================
-         SCREEN 2: VISUAL NOVEL STORY & BRIEFING SEGMENT
-         ======================================================== -->
-    <section id="screen-vn" class="screen-view">
-      <div class="vn-character-container">
-        <img id="vn-character-sprite" class="vn-character-img" src="../phase-3/visuals/Desain referensi fix/npc-rifki.png" alt="NPC Mentor">
-      </div>
-      
-      <div class="vn-dialogue-container">
-        <div class="vn-dialog-card">
-          <div class="vn-speaker-bar">
-            <div class="vn-speaker-name">
-              <span id="vn-speaker-title">Rifki</span>
-              <span id="vn-speaker-badge" class="vn-speaker-tag">Mentor Numerasi</span>
-            </div>
-            <button class="btn-hud-action" onclick="showScreen('screen-map')">
-              <span>✕ Kembali ke Peta</span>
-            </button>
-          </div>
-          
-          <p id="vn-text" class="vn-dialog-text">
-            "Selamat datang di Laboratorium Matematika. Kabut Ketidaktahuan telah memanggil monster <strong>Algebra Golem</strong>. Untuk mengalahkannya, kita harus memahami konsep Barisan Geometri dan Bunga Majemuk!"
-          </p>
-          
-          <div class="vn-action-bar">
-            <button class="btn-vn-secondary" onclick="openBriefingNotesModal()">
-              <span>📖 Buka Catatan Pembekalan</span>
-            </button>
-            <button class="btn-vn-primary" onclick="launchMissionBattle()">
-              <span>⚔️ Mulai Pertempuran JRPG!</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================
-         SCREEN 3: JRPG TURN-BASED BATTLE INTERFACE
-         ======================================================== -->
-    <section id="screen-battle" class="screen-view">
-      
-      <!-- Upper Battle Arena -->
-      <div class="battle-upper-arena">
-        
-        <!-- Player Status Card -->
-        <div class="combatant-card player">
-          <div class="combatant-header">
-            <span class="combatant-name">🧑‍🎓 Siswa Nusantara</span>
-            <span class="combatant-badge">PLAYER</span>
-          </div>
-          <div class="meter-group">
-            <div class="meter-label">
-              <span>HP (Ketahanan)</span>
-              <span id="player-hp-text">100 / 100</span>
-            </div>
-            <div class="meter-bar">
-              <div id="player-hp-bar" class="meter-fill hp-player" style="width: 100%;"></div>
-            </div>
-          </div>
-          <div class="meter-group">
-            <div class="meter-label">
-              <span>MP (Fokus Berpikir)</span>
-              <span id="player-mp-text">50 / 50</span>
-            </div>
-            <div class="meter-bar">
-              <div id="player-mp-bar" class="meter-fill mp" style="width: 100%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Center Monster Stage -->
-        <div class="battle-center-stage">
-          <div id="monster-container" class="monster-art-container">
-            <img id="monster-img" src="../phase-3/visuals/Desain referensi fix/rpg-battle-algebra-golem.jpg" alt="Enemy Monster">
-          </div>
-          <div id="damage-float-anchor" style="position: relative;"></div>
-        </div>
-
-        <!-- Enemy Status Card -->
-        <div class="combatant-card enemy">
-          <div class="combatant-header">
-            <span id="enemy-name" class="combatant-name">Algebra Golem</span>
-            <span id="enemy-badge" class="combatant-badge">BOSS RAID</span>
-          </div>
-          <div class="meter-group">
-            <div class="meter-label">
-              <span>HP Boss</span>
-              <span id="enemy-hp-text">850 / 850</span>
-            </div>
-            <div class="meter-bar">
-              <div id="enemy-hp-bar" class="meter-fill hp-enemy" style="width: 100%;"></div>
-            </div>
-          </div>
-          <div style="font-size: 11px; color: var(--text-muted); margin-top: 6px;">
-            Target: Jawab Benar untuk Meruntuhkan Inti Monster
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Lower Battle Panel -->
-      <div class="battle-lower-panel">
-        
-        <!-- Left Question Box -->
-        <div class="question-box">
-          <div class="question-meta">
-            <div id="challenge-badge" class="challenge-indicator easy">
-              <span>🟢 PEMANASAN</span>
-            </div>
-            <span id="question-progress" style="font-size: 12px; font-weight: 700; color: var(--text-muted);">
-              Soal 1 dari 5
-            </span>
-          </div>
-          
-          <div id="battle-question-text" class="question-prompt">
-            Memuat soal pertanyaan...
-          </div>
-          
-          <div id="battle-options-container" class="options-grid">
-            <!-- Options dynamically generated -->
-          </div>
-        </div>
-
-        <!-- Right Command Action Menu -->
-        <div class="battle-actions-menu">
-          <button class="btn-action-command attack" onclick="showToast('Pilih salah satu opsi (A, B, C, D) untuk menyerang!')">
-            <span>⚔️ SERANG / JAWAB</span>
-          </button>
-          <button class="btn-action-command defend" onclick="actionDefendAnalisis()">
-            <span>🧠 BUKA CATATAN (-10 MP)</span>
-          </button>
-          <button class="btn-action-command items" onclick="actionUseItem()">
-            <span>🎒 ITEM / TAS</span>
-          </button>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- ========================================================
-         SCREEN 4: RESULT SCREEN & MASTERY DIAGNOSTICS
-         ======================================================== -->
-    <section id="screen-result" class="screen-view">
-      <div class="result-modal">
-        <h2 class="result-badge-victory">VICTORY ACHIEVED!</h2>
-        <p class="result-subtitle">Monster berhasil ditundukkan. Analisis penguasaan kompetensi terekam.</p>
-        
-        <div class="diagnostics-grid">
-          <div class="diag-card">
-            <div class="diag-title">Pemanasan (Easy)</div>
-            <div id="diag-easy-val" class="diag-value">100%</div>
-            <div class="diag-status good">Fondasi Kuat</div>
-          </div>
-          <div class="diag-card">
-            <div class="diag-title">Tantangan (Medium)</div>
-            <div id="diag-med-val" class="diag-value">100%</div>
-            <div class="diag-status good">Aplikasi Terlatih</div>
-          </div>
-          <div class="diag-card">
-            <div class="diag-title">Penalaran (Hard)</div>
-            <div id="diag-hard-val" class="diag-value">100%</div>
-            <div class="diag-status good">Analitis Sempurna</div>
-          </div>
-        </div>
-
-        <div class="result-rewards-bar">
-          <div class="reward-item" style="color: #60a5fa;">
-            <span>⚡ +240 XP</span>
-          </div>
-          <div class="reward-item" style="color: var(--accent-gold-light);">
-            <span>🪙 +120 Gold</span>
-          </div>
-          <div class="reward-item" style="color: #34d399;">
-            <span>🎖️ Crystal Unlocked</span>
-          </div>
-        </div>
-
-        <div class="result-actions">
-          <button class="btn-vn-secondary" onclick="replayCurrentMission()">
-            <span>🔄 Ulangi Misi</span>
-          </button>
-          <button class="btn-vn-primary" onclick="showScreen('screen-map')">
-            <span>🌌 Kembali ke Peta Bintang</span>
+          <button class="btn-launch-node btn-locked">
+            <span>🔒 Syarat: Tuntas L1 & L3</span>
           </button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ========================================================
-         MODALS: PROFILE & SETTINGS / VIP CHEAT
-         ======================================================== -->
-    <div id="modal-profile" class="modal-overlay">
-      <div class="modal-content">
-        <h3>Profil Akademik (Layer 2)</h3>
-        <p>Sesuaikan profil minat dan target universitas impian Anda.</p>
-        
-        <div class="input-group">
-          <label>Target Program Studi</label>
-          <select id="sel-target-prodi">
-            <option value="ti">Teknik Informatika / Ilmu Komputer</option>
-            <option value="kedokteran">Pendidikan Dokter / Kedokteran</option>
-            <option value="manajemen">Manajemen & Bisnis Digital</option>
-            <option value="sastra">Ilmu Komunikasi & Sastra</option>
-          </select>
+  <!-- SCREEN 2: VISUAL NOVEL PRE-MISSION BRIEFING -->
+  <section id="screen-vn" class="screen-view">
+    <div class="vn-avatar-container">
+      <img id="vn-npc-sprite" src="../phase-3/visuals/Desain referensi fix/npc-rifki.png" alt="NPC Mentor">
+    </div>
+
+    <div class="vn-dialogue-panel">
+      <div class="speaker-tag-row">
+        <div class="speaker-badge" id="vn-speaker-title">🎓 Rifki • Mentor Numerasi</div>
+        <span class="stat-pill mp">Target: <strong id="vn-boss-name" style="margin-left: 4px;">Algebra Golem</strong></span>
+      </div>
+
+      <p class="vn-dialogue-text" id="vn-dialogue-content">
+        Sebelum menghadapi wujud monster materi ini, pelajari intisarinya dengan teliti. Ingat: jika salah menjawab, kamu hanya kehilangan 5 HP. Tidak ada rasa cemas—fokuslah memahami polanya!
+      </p>
+
+      <div class="vn-dialogue-footer">
+        <button class="btn-vn-notes" id="btn-open-concept-notes">
+          <span>📖 Buka Catatan Konsep</span>
+        </button>
+        <button class="btn-vn-battle" id="btn-enter-battle">
+          <span>Masuki Pertempuran</span> ⚔️
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 3: JRPG BATTLE SCREEN -->
+  <section id="screen-battle" class="screen-view">
+    <!-- TOP STATUS ROW -->
+    <div class="battle-hud-row">
+      <!-- Player Card -->
+      <div class="combatant-card" id="player-card">
+        <div class="combatant-header">
+          <span class="combatant-name">Siswa Nusantara</span>
+          <span class="combatant-badge player">Pemain</span>
         </div>
-
-        <div class="input-group">
-          <label>Rumpun Rekomendasi TKA</label>
-          <input type="text" value="3 Wajib + 2 Pilihan (Matematika Lanjut & Fisika)" readonly style="opacity: 0.8;">
+        <div class="meter-row">
+          <div class="meter-label-row">
+            <span>HP (Ketahanan)</span>
+            <span id="label-player-hp">100 / 100</span>
+          </div>
+          <div class="meter-bar-track">
+            <div class="meter-bar-fill hp-player" id="bar-player-hp" style="width: 100%;"></div>
+          </div>
         </div>
+        <div class="meter-row">
+          <div class="meter-label-row">
+            <span>MP (Fokus Berpikir)</span>
+            <span id="label-player-mp">50 / 50</span>
+          </div>
+          <div class="meter-bar-track">
+            <div class="meter-bar-fill mp-player" id="bar-player-mp" style="width: 100%;"></div>
+          </div>
+        </div>
+      </div>
 
-        <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
-          <button class="btn-vn-primary" onclick="closeModal('modal-profile'); showToast('Profil akademik berhasil disimpan!');">Simpan Profil</button>
+      <!-- Boss Card -->
+      <div class="combatant-card" id="boss-card">
+        <div class="combatant-header">
+          <span class="combatant-name" id="battle-boss-title">Algebra Golem</span>
+          <span class="combatant-badge boss">Perwujudan Materi</span>
+        </div>
+        <div class="meter-row">
+          <div class="meter-label-row">
+            <span>HP Bos</span>
+            <span id="label-boss-hp">600 / 600</span>
+          </div>
+          <div class="meter-bar-track">
+            <div class="meter-bar-fill hp-boss" id="bar-boss-hp" style="width: 100%;"></div>
+          </div>
+        </div>
+        <div class="meter-row">
+          <div class="meter-label-row">
+            <span>MP Bos</span>
+            <span id="label-boss-mp">300 / 300</span>
+          </div>
+          <div class="meter-bar-track">
+            <div class="meter-bar-fill mp-boss" id="bar-boss-mp" style="width: 100%;"></div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="modal-settings" class="modal-overlay">
-      <div class="modal-content">
-        <h3>Pengaturan & Akses Keluarga</h3>
-        <p>Pengaturan game dan backdoor khusus akses keluarga Developer.</p>
-        
-        <div class="input-group">
-          <label>Kode Rahasia Developer (VIP Access)</label>
-          <input id="input-vip-code" type="text" placeholder="Masukkan kode VIP...">
-        </div>
+    <!-- CENTER ARENA: STANDALONE MONSTER SPRITE -->
+    <div class="battle-center-arena">
+      <div class="challenge-indicator easy" id="battle-challenge-badge">
+        <span>🟢 PEMANASAN</span> • Soal 1 dari 5
+      </div>
 
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
-          <button class="btn-vn-secondary" onclick="closeModal('modal-settings')">Tutup</button>
-          <button class="btn-vn-primary" onclick="submitVipCode()">Verifikasi Kode</button>
-        </div>
+      <div class="boss-sprite-frame" id="boss-sprite-container">
+        <img id="battle-boss-image" src="../phase-3/visuals/Desain referensi fix/algebra-golem-sprite.jpg" alt="Boss Monster">
       </div>
     </div>
 
-    <!-- Modal Catatan Pembekalan -->
-    <div id="modal-notes" class="modal-overlay">
-      <div class="modal-content" style="max-width: 580px;">
-        <h3 id="notes-title">📖 Catatan Pembekalan Rumus</h3>
-        <div id="notes-body" style="font-size: 14px; line-height: 1.6; color: #e2e8f0; max-height: 300px; overflow-y: auto; margin-bottom: 20px;">
-          Memuat ringkasan materi...
+    <!-- LOWER PANEL: QUESTION & 4 COMMANDS -->
+    <div class="battle-lower-panel">
+      <div class="question-side">
+        <div class="question-prompt" id="battle-question-text">
+          Memuat soal dari bank kurikulum...
         </div>
-        <div style="display: flex; justify-content: flex-end;">
-          <button class="btn-vn-primary" onclick="closeModal('modal-notes')">Kembali ke Pertempuran</button>
+
+        <div class="options-grid" id="battle-options-container">
+          <!-- Dynamic options A, B, C, D -->
         </div>
       </div>
-    </div>
 
+      <!-- 4 COMMANDS -->
+      <div class="command-side">
+        <button class="btn-command cmd-attack" id="btn-cmd-attack" title="Pilih jawaban di samping untuk menyerang">
+          <span>⚔️ JAWAB / SERANG</span>
+        </button>
+        <button class="btn-command cmd-skill" id="btn-cmd-skill" title="Gunakan kemampuan khusus mentor">
+          <span>✨ KEMAMPUAN</span>
+        </button>
+        <button class="btn-command cmd-items" id="btn-cmd-items" title="Buka inventori dan toko perlengkapan">
+          <span>🎒 BARANG / TAS</span>
+        </button>
+        <button class="btn-command cmd-notes" id="btn-cmd-notes" title="Buka ringkasan materi (Biaya 10 MP)">
+          <span>📖 ANALISIS / CATATAN</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 4: RESULT SCREEN & MASTERY DIAGNOSTICS -->
+  <section id="screen-result" class="screen-view">
+    <div class="result-card">
+      <div class="result-header victory" id="result-header-block">
+        <h2 id="result-title-text">EVALUASI TUNTAS!</h2>
+        <p id="result-subtitle-text">Kamu berhasil menumbangkan perwujudan materi dengan pemahaman yang baik.</p>
+      </div>
+
+      <div class="bloom-diagnostics-grid">
+        <div class="diagnostic-box">
+          <span class="diag-level-name easy">🟢 Pemanasan (Easy)</span>
+          <span class="diag-percent" id="diag-easy-pct">100%</span>
+          <span class="diag-eval-label" id="diag-easy-label">Fondasi Stabil</span>
+        </div>
+        <div class="diagnostic-box">
+          <span class="diag-level-name medium">🟡 Tantangan (Medium)</span>
+          <span class="diag-percent" id="diag-medium-pct">100%</span>
+          <span class="diag-eval-label" id="diag-medium-label">Aplikasi Terlatih</span>
+        </div>
+        <div class="diagnostic-box">
+          <span class="diag-level-name hard">🔴 Penalaran (Hard)</span>
+          <span class="diag-percent" id="diag-hard-pct">100%</span>
+          <span class="diag-eval-label" id="diag-hard-label">Analitis Matang</span>
+        </div>
+      </div>
+
+      <div class="pedagogical-advice-box" id="result-advice-box">
+        Diagnosa Pedagogis: Penguasaan konsep telah memenuhi standar kelulusan materi.
+      </div>
+
+      <div class="result-rewards-row">
+        <div class="reward-item xp">⚡ +<span id="result-xp-val">200</span> XP</div>
+        <div class="reward-item gold">🪙 +<span id="result-gold-val">120</span> Koin</div>
+      </div>
+
+      <div>
+        <button class="btn-return-map" id="btn-result-finish">
+          <span>🌌 Kembali ke Peta Konstelasi</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ==========================================================================
+     MODALS
+     ========================================================================== -->
+
+<!-- 1. MODAL KEMAMPUAN (SKILLS) -->
+<div class="modal-overlay" id="modal-skills">
+  <div class="modal-window">
+    <button class="modal-close-btn" onclick="app.closeModals()">✕</button>
+    <h3>✨ Kemampuan Mentor</h3>
+    <div class="modal-content-list">
+      <div class="modal-item-row">
+        <div class="item-desc">
+          <h4>Analisis Cepat (Eliminasi Opsi)</h4>
+          <p>Membantu membuang 1 opsi jawaban yang salah. Biaya: 15 MP.</p>
+        </div>
+        <button class="btn-item-action" onclick="app.useSkill('ELIMINATE')">Gunakan</button>
+      </div>
+      <div class="modal-item-row">
+        <div class="item-desc">
+          <h4>Fokus Mental (Perisai Penalti)</h4>
+          <p>Melindungi HP agar tidak berkurang jika salah pada giliran ini. Biaya: 10 MP.</p>
+        </div>
+        <button class="btn-item-action" onclick="app.useSkill('SHIELD')">Gunakan</button>
+      </div>
+    </div>
   </div>
+</div>
 
-  <!-- ========================================================
-       ENGINE SCRIPTS & CLIENT GAME LOGIC
-       ======================================================== -->
-  <script>
-    /* =======================================================
-       1. DATA BANK SOAL PHASE 4 (EMBEDDED FALLBACK + OFFLINE READY)
-       ======================================================= */
-    const GAME_POOLS = {
-      MAT: [
-        {
-          id: "MAT12-C01-A1-EASY-1",
-          subject: "Matematika",
-          difficulty: "easy",
-          cognitive_level: "understand",
-          topic: "Bunga Tunggal dan Majemuk",
-          competency_id: "MAT12-C01-A1",
-          question: "Modal sebesar Rp1.000.000 disimpan di bank dengan bunga majemuk 10% per tahun. Berapakah nilai akhir modal setelah 1 tahun?",
-          options: ["Rp1.050.000", "Rp1.100.000", "Rp1.150.000", "Rp1.200.000"],
-          answer: "B",
-          explanation: "Nilai akhir = M0 * (1 + b) = 1.000.000 * 1.10 = Rp1.100.000."
-        },
-        {
-          id: "MAT12-C01-A1-EASY-2",
-          subject: "Matematika",
-          difficulty: "easy",
-          cognitive_level: "understand",
-          topic: "Bunga Majemuk Dasar",
-          competency_id: "MAT12-C01-A1",
-          question: "Jika suku bunga majemuk adalah 5% per tahun dan modal awal Rp2.000.000, berapakah besar bunga yang diperoleh pada tahun pertama?",
-          options: ["Rp50.000", "Rp100.000", "Rp150.000", "Rp200.000"],
-          answer: "B",
-          explanation: "Bunga tahun pertama = 2.000.000 * 0.05 = Rp100.000."
-        },
-        {
-          id: "MAT12-C01-A2-MED-1",
-          subject: "Matematika",
-          difficulty: "medium",
-          cognitive_level: "apply",
-          topic: "Barisan Geometri",
-          competency_id: "MAT12-C01-A2",
-          question: "Suatu modal Rp5.000.000 dibungakan dengan bunga majemuk 10% per tahun selama 2 tahun. Berapakah nilai akhir modal tersebut?",
-          options: ["Rp6.000.000", "Rp6.050.000", "Rp6.100.000", "Rp6.250.000"],
-          answer: "B",
-          explanation: "Mn = 5.000.000 * (1.1)^2 = 5.000.000 * 1.21 = Rp6.050.000."
-        },
-        {
-          id: "MAT12-C01-A2-MED-2",
-          subject: "Matematika",
-          difficulty: "medium",
-          cognitive_level: "apply",
-          topic: "Bunga Majemuk Multi-Periode",
-          competency_id: "MAT12-C01-A2",
-          question: "Sebuah pinjaman Rp10.000.000 dikenakan bunga majemuk 2% per bulan. Berapakah saldo pinjaman setelah 2 bulan?",
-          options: ["Rp10.200.000", "Rp10.404.000", "Rp10.400.000", "Rp10.600.000"],
-          answer: "B",
-          explanation: "Mn = 10.000.000 * (1.02)^2 = 10.000.000 * 1.0404 = Rp10.404.000."
-        },
-        {
-          id: "MAT12-C01-C-HARD-1",
-          subject: "Matematika",
-          difficulty: "hard",
-          cognitive_level: "analyze",
-          topic: "Analisis Anuitas & Logaritma",
-          competency_id: "MAT12-C01-C",
-          question: "Seseorang ingin melipatgandakan uangnya menjadi minimal 2 kali lipat dengan bunga majemuk 10% per tahun. Sekurang-kurangnya berapa tahun waktu yang dibutuhkan? (Gunakan perkiraan (1.1)^7 ≈ 1.95, (1.1)^8 ≈ 2.14)",
-          options: ["6 tahun", "7 tahun", "8 tahun", "10 tahun"],
-          answer: "C",
-          explanation: "Karena (1.1)^7 = 1.95 (belum 2x) dan (1.1)^8 = 2.14 (sudah > 2x), dibutuhkan minimal 8 tahun."
-        }
-      ],
-      BID: [
-        {
-          id: "BI12-C01-A-EASY-1",
-          subject: "Bahasa Indonesia",
-          difficulty: "easy",
-          cognitive_level: "understand",
-          topic: "Surat Resmi",
-          competency_id: "BI12-C01-A",
-          question: "Manakah bagian pembuka surat resmi yang baku dan sopan?",
-          options: [
-            "Halo pak, apa kabar?",
-            "Dengan hormat, sehubungan dengan surat nomor...",
-            "Surat ini kami kirim karena ada hal penting.",
-            "Hai rekan-rekan yang terhormat,"
-          ],
-          answer: "B",
-          explanation: "'Dengan hormat' adalah salam pembuka resmi yang baku."
-        },
-        {
-          id: "BI12-C01-A-EASY-2",
-          subject: "Bahasa Indonesia",
-          difficulty: "easy",
-          cognitive_level: "understand",
-          topic: "Ejaan Bahasa Indonesia",
-          competency_id: "BI12-C01-EJAAN",
-          question: "Penulisan tanggal surat resmi yang tepat sesuai EYD adalah...",
-          options: [
-            "Jakarta, 12-10-2026",
-            "Jakarta; 12 Oktober 2026",
-            "Jakarta, 12 Oktober 2026",
-            "Jakarta. 12 Oktober 2026."
-          ],
-          answer: "C",
-          explanation: "Penulisan tempat dan tanggal surat dipisahkan tanda koma dan tanpa diakhiri titik."
-        },
-        {
-          id: "BI12-C01-B-MED-1",
-          subject: "Bahasa Indonesia",
-          difficulty: "medium",
-          cognitive_level: "apply",
-          topic: "Kalimat Efektif Surat",
-          competency_id: "BI12-C01-B",
-          question: "Manakah kalimat penutup surat resmi yang paling efektif?",
-          options: [
-            "Atas perhatiannya kami haturkan terima kasih banyak.",
-            "Demikian surat ini kami sampaikan, atas perhatian Bapak, kami mengucapkan terima kasih.",
-            "Atas perhatian daripada saudara kami ucapkan terima kasih.",
-            "Terima kasih atas segala perhatian yang diberikan bapak."
-          ],
-          answer: "B",
-          explanation: "Kalimat penutup baku dan lugas tanpa kata mubazir seperti 'haturkan' atau 'daripada'."
-        },
-        {
-          id: "BI12-C01-B-MED-2",
-          subject: "Bahasa Indonesia",
-          difficulty: "medium",
-          cognitive_level: "apply",
-          topic: "Struktur Surat Penawaran",
-          competency_id: "BI12-C01-B",
-          question: "Bagian perihal dalam surat resmi berfungsi untuk...",
-          options: [
-            "Menyebutkan tanggal pengiriman surat",
-            "Memberi petunjuk pokok isi surat secara ringkas",
-            "Menuliskan nama penerima surat",
-            "Mencatat lampiran dokumen pelengkap"
-          ],
-          answer: "B",
-          explanation: "Perihal berfungsi merangkum inti pokok maksud surat secara singkat."
-        },
-        {
-          id: "BI12-C01-D-HARD-1",
-          subject: "Bahasa Indonesia",
-          difficulty: "hard",
-          cognitive_level: "analyze",
-          topic: "Analisis Logika Surat Resmi",
-          competency_id: "BI12-C01-D",
-          question: "Sebuah surat balasan izin kegiatan menolak permohonan dengan bahasa yang tetap santun dan profesional. Manakah redaksi yang paling tepat?",
-          options: [
-            "Kami tidak menyetujui kegiatan tersebut karena tidak ada anggaran.",
-            "Sehubungan dengan padatnya jadwal fasilitas pada tanggal tersebut, dengan berat hati permohonan izin belum dapat kami penuhi.",
-            "Mohon maaf kami tolak permohonan Anda.",
-            "Kegiatan Anda tidak memenuhi syarat sehingga langsung kami batalkan."
-          ],
-          answer: "B",
-          explanation: "Menggunakan alasan logis yang santun dan mengedepankan etika komunikasi bisnis profesional."
-        }
-      ]
+<!-- 2. MODAL INVENTORI & TOKO (ITEMS) -->
+<div class="modal-overlay" id="modal-items">
+  <div class="modal-window">
+    <button class="modal-close-btn" onclick="app.closeModals()">✕</button>
+    <h3>🎒 Tas & Toko Perlengkapan</h3>
+    <div class="modal-content-list">
+      <div class="modal-item-row">
+        <div class="item-desc">
+          <h4>Kopi Konsentrasi</h4>
+          <p>Memulihkan 25 MP seketika. Dimiliki: <strong id="item-coffee-count">2</strong> buah.</p>
+        </div>
+        <button class="btn-item-action" onclick="app.useItem('COFFEE')">Pakai</button>
+      </div>
+      <div class="modal-item-row">
+        <div class="item-desc">
+          <h4>Ramuan Fokus</h4>
+          <p>Memulihkan 30 HP ketahanan. Dimiliki: <strong id="item-potion-count">2</strong> buah.</p>
+        </div>
+        <button class="btn-item-action" onclick="app.useItem('POTION')">Pakai</button>
+      </div>
+      <hr style="border-color: rgba(255,255,255,0.08); margin: 6px 0;">
+      <div class="modal-item-row" style="background: rgba(245, 158, 11, 0.1); border-color: rgba(245,158,11,0.3);">
+        <div class="item-desc">
+          <h4>🛒 Beli Perlengkapan di Toko</h4>
+          <p id="shop-vip-status-text">Harga standar: 100 Koin per item.</p>
+        </div>
+        <button class="btn-item-action" style="background: #f59e0b;" onclick="app.buyShopItem()">Beli +1 (@100)</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. MODAL CATATAN KONSEP -->
+<div class="modal-overlay" id="modal-concept-notes">
+  <div class="modal-window" style="max-width: 600px;">
+    <button class="modal-close-btn" onclick="app.closeModals()">✕</button>
+    <h3 id="modal-notes-title">📖 Catatan Intisari Materi</h3>
+    <div style="font-size: 14px; line-height: 1.7; color: #cbd5e1; max-height: 380px; overflow-y: auto; padding-right: 6px;" id="modal-notes-body">
+      <!-- Concept notes dynamically inserted -->
+    </div>
+  </div>
+</div>
+
+<!-- 4. MODAL PENGATURAN & AKSES KELUARGA (VIP) -->
+<div class="modal-overlay" id="modal-vip">
+  <div class="modal-window">
+    <button class="modal-close-btn" onclick="app.closeModals()">✕</button>
+    <h3>⚙️ Pengaturan & Akses Khusus</h3>
+    <p style="font-size: 13px; color: var(--text-muted);">
+      Pintu masuk kode pengujian developer dan akses keluarga untuk membuka seluruh item dan modul tanpa paywall.
+    </p>
+    <div>
+      <input type="text" class="vip-input" id="vip-secret-code" placeholder="Masukkan kode rahasia...">
+    </div>
+    <div style="display: flex; justify-content: flex-end; gap: 10px;">
+      <button class="btn-item-action" style="background: #475569;" onclick="app.closeModals()">Tutup</button>
+      <button class="btn-item-action" style="background: #2563eb;" onclick="app.submitVipCode()">Verifikasi Kode</button>
+    </div>
+    <div id="vip-status-msg" style="font-size: 13px; font-weight: 700; color: #34d399; display: none;"></div>
+  </div>
+</div>
+
+<!-- ==========================================================================
+     CORE JAVASCRIPT LOGIC
+     ========================================================================== -->
+<script>
+/**
+ * ACADEMIC ASCENSION — RPG NOVEL EDITION
+ * 100% Client-Side Pure Web Architecture (Zero Server Dependencies).
+ * Fully aligned with GDD Section 3 & 4 and verified Phase-4 Question Pools.
+ */
+
+// CANONICAL QUESTION POOLS (Sourced directly from phase-4-pools/)
+const VERIFIED_POOLS = {
+  MAT_WAJIB: {
+    id: 'MAT_WAJIB',
+    title: 'Matematika Wajib: Barisan & Pola Produksi',
+    bossName: 'Algebra Golem',
+    bossSprite: '../phase-3/visuals/Desain referensi fix/algebra-golem-sprite.jpg',
+    bossMaxHp: 600,
+    bossMaxMp: 300,
+    mentorName: '🎓 Rifki • Mentor Numerasi',
+    mentorSprite: '../phase-3/visuals/Desain referensi fix/npc-rifki.png',
+    briefingText: 'Algebra Golem adalah perwujudan materi Aljabar dan Barisan. Monster ini akan menguji ketelitianmu dalam barisan aritmetika, geometri, dan pemodelan kontekstual. Perhatikan: salah menjawab hanya mengurangi 5 HP! Tetap tenang dan percaya pada analisismu.',
+    conceptNotes: `
+      <h4 style="color:#60a5fa; margin-bottom:8px;">1. Barisan Aritmetika</h4>
+      <p>Bentuk barisan dengan selisih tetap (beda = b). Rumus suku ke-n: <strong>U<sub>n</sub> = a + (n - 1)b</strong>, di mana <em>a</em> adalah suku pertama dan <em>b</em> adalah beda antar suku.</p>
+      <br>
+      <h4 style="color:#60a5fa; margin-bottom:8px;">2. Barisan Geometri</h4>
+      <p>Bentuk barisan dengan perbandingan tetap (rasio = r). Rumus suku ke-n: <strong>U<sub>n</sub> = a &times; r<sup>n - 1</sup></strong>.</p>
+      <br>
+      <h4 style="color:#60a5fa; margin-bottom:8px;">3. Strategi Analisis Kontekstual</h4>
+      <p>Jika soal menyajikan kendala produksi atau pembelahan sel, hitung nilai teoritis terlebih dahulu berdasarkan rumus suku ke-n sebelum mengurangi atau menyesuaikan dengan kondisi khusus di lapangan.</p>
+    `,
+    questions: [
+      {
+        question_id: 'MAT12-C01-A1-1232',
+        difficulty_label: 'easy',
+        question: 'Seorang petani menyusun bibit tomat di ladang dengan pola tertentu. Baris pertama berisi 10 bibit, baris kedua 14 bibit, dan baris ketiga 18 bibit. Jika pola ini berlanjut, berapakah jumlah bibit pada baris ke-6?',
+        answer: 'C',
+        options: [
+          { id: 'A', text: '22' },
+          { id: 'B', text: '26' },
+          { id: 'C', text: '30' },
+          { id: 'D', text: '34' }
+        ],
+        gameplay: { correct_damage: 50, wrong_penalty: 5 },
+        explanation: 'Barisan aritmetika dengan a = 10 dan beda b = 4. Maka U6 = a + (6 - 1)b = 10 + 5(4) = 30 bibit.'
+      },
+      {
+        question_id: 'MAT12-C01-A2-1451',
+        difficulty_label: 'easy',
+        question: 'Seorang ilmuwan sedang meneliti pertumbuhan koloni bakteri di laboratorium. Pada pukul 08:00, terdapat 100 bakteri. Bakteri membelah diri menjadi dua setiap satu jam. Berapakah jumlah bakteri pada pukul 12:00?',
+        answer: 'B',
+        options: [
+          { id: 'A', text: '800' },
+          { id: 'B', text: '1.600' },
+          { id: 'C', text: '3.200' },
+          { id: 'D', text: '6.400' }
+        ],
+        gameplay: { correct_damage: 50, wrong_penalty: 5 },
+        explanation: 'Barisan geometri dengan a = 100 dan r = 2. Selang waktu 4 jam: U5 = 100 × 2^4 = 100 × 16 = 1.600 bakteri.'
+      },
+      {
+        question_id: 'MAT12-C01-A1-8329',
+        difficulty_label: 'medium',
+        question: 'Suku ke-4 dari suatu barisan aritmetika adalah 17, sedangkan suku ke-9 adalah 37. Nilai dari suku ke-15 adalah...',
+        answer: 'B',
+        options: [
+          { id: 'A', text: '57' },
+          { id: 'B', text: '61' },
+          { id: 'C', text: '65' },
+          { id: 'D', text: '73' }
+        ],
+        gameplay: { correct_damage: 100, wrong_penalty: 5 },
+        explanation: 'U4 = a + 3b = 17 dan U9 = a + 8b = 37. Eliminasi: 5b = 20 -> b = 4, a = 5. Maka U15 = 5 + 14(4) = 61.'
+      },
+      {
+        question_id: 'MAT12-C01-A2-7331',
+        difficulty_label: 'medium',
+        question: 'Diketahui suku ke-2 dari suatu barisan geometri adalah 12, dan suku ke-5 adalah 96. Jika semua suku bernilai positif, maka suku ke-7 dari barisan tersebut adalah...',
+        answer: 'C',
+        options: [
+          { id: 'A', text: '192' },
+          { id: 'B', text: '256' },
+          { id: 'C', text: '384' },
+          { id: 'D', text: '768' }
+        ],
+        gameplay: { correct_damage: 100, wrong_penalty: 5 },
+        explanation: 'U2 = a*r = 12 dan U5 = a*r^4 = 96. Bagi U5/U2: r^3 = 8 -> r = 2, a = 6. Maka U7 = 6 × (2^6) = 6 × 64 = 384.'
+      },
+      {
+        question_id: 'MAT12-C01-A1-4212',
+        difficulty_label: 'hard',
+        question: 'Perusahaan perakitan ponsel menargetkan produksi awal sebanyak 5.000 unit pada bulan pertama. Setiap bulan target dinaikkan dengan jumlah tetap. Pada bulan ke-6 produksi mencapai 6.500 unit. Namun pada bulan ke-8 terjadi kendala pasokan sehingga produksi berkurang 400 unit dari target seharusnya. Berapa unit yang berhasil dirakit pada bulan ke-8?',
+        answer: 'A',
+        options: [
+          { id: 'A', text: '6.700' },
+          { id: 'B', text: '7.100' },
+          { id: 'C', text: '6.800' },
+          { id: 'D', text: '6.400' }
+        ],
+        gameplay: { correct_damage: 150, wrong_penalty: 5 },
+        explanation: 'Target awal a = 5.000. U6 = a + 5b = 6.500 -> b = 300. Target bulan ke-8 (U8) = 5.000 + 7(300) = 7.100 unit. Karena berkurang 400 unit, produksi aktual = 7.100 - 400 = 6.700 unit.'
+      }
+    ]
+  },
+
+  BI_WAJIB: {
+    id: 'BI_WAJIB',
+    title: 'Bahasa Indonesia: Literasi Informasi & Komunikasi',
+    bossName: 'The Text Guardian',
+    bossSprite: '../phase-3/visuals/Desain referensi fix/text-guardian-sprite.jpg',
+    bossMaxHp: 600,
+    bossMaxMp: 300,
+    mentorName: '📚 Leli • Mentor Literasi',
+    mentorSprite: '../phase-3/visuals/Desain referensi fix/npc-leli.png',
+    briefingText: 'The Text Guardian menjaga integritas teks dan pemahaman bacaan resmi. Kuasai daya nalarmu untuk membedakan fakta langsung dengan kesimpulan implisit. Setiap jawaban benar akan meruntuhkan perisai prasastinya!',
+    conceptNotes: `
+      <h4 style="color:#38bdf8; margin-bottom:8px;">1. Fakta Langsung vs Implisit</h4>
+      <p>Fakta langsung adalah informasi yang tertulis secara eksplisit. Kesimpulan implisit adalah makna yang tersirat logis tanpa melampaui batasan teks.</p>
+      <br>
+      <h4 style="color:#38bdf8; margin-bottom:8px;">2. Sistematika Surat Resmi & Lamaran</h4>
+      <p>Perhatikan ketepatan salam pembuka, penyebutan lampiran, dan bahasa yang santun serta efektif.</p>
+    `,
+    questions: [
+      {
+        question_id: 'BI12-C01-A-4776',
+        difficulty_label: 'easy',
+        question: 'Sebuah pemberitahuan resmi sekolah menyatakan bahwa aula serbaguna tidak dapat digunakan pada Rabu sore karena pemeriksaan instalasi listrik. Panitia sedang menyiapkan kegiatan Kamis pagi. Tindakan mana yang paling langsung didukung oleh informasi tersebut?',
+        answer: 'A',
+        options: [
+          { id: 'A', text: 'Memindahkan latihan Rabu sore ke lokasi lain.' },
+          { id: 'B', text: 'Membatalkan kegiatan Kamis pagi.' },
+          { id: 'C', text: 'Meminta tim pemeriksa menunda pemeriksaan.' },
+          { id: 'D', text: 'Mengumumkan seluruh kegiatan sekolah dibatalkan sepekan.' }
+        ],
+        gameplay: { correct_damage: 50, wrong_penalty: 5 },
+        explanation: 'Pemberitahuan hanya melarang aula pada Rabu sore. Memindahkan latihan pada waktu tersebut adalah tindakan yang langsung didukung teks.'
+      },
+      {
+        question_id: 'BI12-C01-B-7434',
+        difficulty_label: 'easy',
+        question: 'Dalam penulisan surat dinas resmi, penulisan tanggal surat yang sesuai dengan kaidah baku bahasa Indonesia yang benar adalah...',
+        answer: 'D',
+        options: [
+          { id: 'A', text: 'Jakarta, 12-10-2026' },
+          { id: 'B', text: 'Jakarta, 12 Oktober 2026.' },
+          { id: 'C', text: '12 Oktober 2026 Jakarta' },
+          { id: 'D', text: 'Jakarta, 12 Oktober 2026' }
+        ],
+        gameplay: { correct_damage: 50, wrong_penalty: 5 },
+        explanation: 'Penulisan tanggal surat resmi tidak diakhiri tanda titik dan nama bulan ditulis lengkap tanpa singkatan angka.'
+      },
+      {
+        question_id: 'BI12-C01-A-3120',
+        difficulty_label: 'medium',
+        question: 'Sebuah pusat pelatihan memberi tahu: peserta yang telah menyelesaikan formulir harus membawa kode konfirmasi ke meja orientasi Senin pagi. Pernyataan mana yang merupakan kesimpulan implisit yang tepat?',
+        answer: 'B',
+        options: [
+          { id: 'A', text: 'Orientasi diadakan di luar ruangan.' },
+          { id: 'B', text: 'Kode konfirmasi berfungsi sebagai bukti verifikasi penyelesaian formulir.' },
+          { id: 'C', text: 'Peserta yang belum mengisi formulir pasti dilarang masuk gedung.' },
+          { id: 'D', text: 'Pendaftaran dibuka hingga Senin siang.' }
+        ],
+        gameplay: { correct_damage: 100, wrong_penalty: 5 },
+        explanation: 'Membawa kode konfirmasi setelah menyelesaikan formulir mengimplikasikan kode tersebut sebagai instrumen verifikasi.'
+      },
+      {
+        question_id: 'BI12-C01-B-5512',
+        difficulty_label: 'medium',
+        question: 'Kalimat pembuka surat lamaran pekerjaan yang tepat berdasarkan inisiatif sendiri adalah...',
+        answer: 'C',
+        options: [
+          { id: 'A', text: 'Berdasarkan iklan yang saya lihat kemarin malam...' },
+          { id: 'B', text: 'Dengan ini saya mengajukan lamaran karena sedang butuh kerja.' },
+          { id: 'C', text: 'Yang bertanda tangan di bawah ini, saya mengajukan diri untuk bergabung...' },
+          { id: 'D', text: 'Mengingat perusahaan Bapak sangat terkenal, saya melamar...' }
+        ],
+        gameplay: { correct_damage: 100, wrong_penalty: 5 },
+        explanation: 'Kalimat pembuka inisiatif sendiri harus santun, formal, dan menyatakan maksud secara lugas tanpa asumsi yang tidak relevan.'
+      },
+      {
+        question_id: 'BI12-C01-C-9901',
+        difficulty_label: 'hard',
+        question: 'Sebuah editorial menyajikan dua data: peningkatan digitalisasi UMKM 40% dan penurunan omzet UMKM konvensional 25%. Penulis menyimpulkan perlunya subsidi pelatihan digital. Kritik penalaran mana yang paling objektif terhadap kesimpulan penulis?',
+        answer: 'A',
+        options: [
+          { id: 'A', text: 'Penulis mengasumsikan penurunan omzet murni akibat faktor digital tanpa memeriksa daya beli umum.' },
+          { id: 'B', text: 'Penulis menolak kemajuan teknologi UMKM.' },
+          { id: 'C', text: 'Pelatihan digital sudah tidak relevan lagi.' },
+          { id: 'D', text: 'Subsidi selalu merugikan anggaran daerah.' }
+        ],
+        gameplay: { correct_damage: 150, wrong_penalty: 5 },
+        explanation: 'Kritik penalaran logis menyoroti bahwa korelasi belum tentu kausalitas; penurunan omzet bisa dipengaruhi faktor makro lain seperti daya beli.'
+      }
+    ]
+  }
+};
+
+// GLOBAL APP STATE
+const app = {
+  state: {
+    currentScreen: 'onboarding',
+    player: {
+      level: 12,
+      gold: 755,
+      hp: 100,
+      maxHp: 100,
+      mp: 50,
+      maxMp: 50,
+      items: {
+        coffee: 2, // +25 MP
+        potion: 2  // +30 HP
+      },
+      vip: false,
+      hasShield: false
+    },
+    activeMission: null,
+    battle: {
+      currentQuestionIndex: 0,
+      bossHp: 600,
+      bossMaxHp: 600,
+      bossMp: 300,
+      bossMaxMp: 300,
+      combo: 0,
+      results: [], // { difficulty, isCorrect }
+      disabledOptions: []
+    },
+    onboardingStep: 0
+  },
+
+  onboardingDialogs: [
+    {
+      step: 1,
+      total: 4,
+      text: "Selamat datang di <strong>Nusantara Academy</strong>! Ini bukan sekadar gerbang sekolah biasa—ini adalah garis awal perjuangan kita menghadapi tahun paling menentukan dalam hidup kita: <strong>Kelas XII</strong>."
+    },
+    {
+      step: 2,
+      total: 4,
+      text: "Saat ini, dunia pendidikan kita sedang diselimuti oleh <strong>'The Fog of Ignorance' (Kabut Ketidaktahuan)</strong>. Kabut inilah yang memicu rasa cemas, memecah fokus, dan menutup gerbang universitas impian banyak siswa."
+    },
+    {
+      step: 3,
+      total: 4,
+      text: "Satu-satunya cara untuk menembus kabut ini adalah mengumpulkan <strong>Knowledge Crystals (Kristal Pengetahuan)</strong> dari setiap materi esensial. Setiap konsep yang kamu kuasai akan menjadi lentera penuntun menuju masa depanmu!"
+    },
+    {
+      step: 4,
+      total: 4,
+      text: "Tugas pertamamu menanti di <strong>Layer 1: Core Foundation</strong>. Ingat aturan utama kita: jangan pernah takut salah! Setiap kekeliruan adalah data berharga untuk belajar. Bersiaplah, mari kita buka <strong>Peta Konstelasi Akademik</strong>!"
+    }
+  ],
+
+  init() {
+    this.bindEvents();
+    this.updateHUD();
+    this.renderConstellationLines();
+    this.showScreen('onboarding');
+  },
+
+  bindEvents() {
+    // HUD & Navigation
+    document.getElementById('btn-brand-home').onclick = () => this.showScreen('map');
+    document.getElementById('btn-open-vip').onclick = () => this.openVipModal();
+
+    // Onboarding
+    document.getElementById('btn-next-onboarding').onclick = () => this.advanceOnboarding();
+    document.getElementById('btn-skip-onboarding').onclick = () => this.finishOnboarding();
+
+    // VN
+    document.getElementById('btn-open-concept-notes').onclick = () => this.openConceptNotes();
+    document.getElementById('btn-enter-battle').onclick = () => this.launchBattle();
+
+    // Battle Commands
+    document.getElementById('btn-cmd-attack').onclick = () => {
+      this.showToast('⚔️ Klik salah satu opsi jawaban (A, B, C, D) di sebelah kiri untuk melancarkan serangan!');
+    };
+    document.getElementById('btn-cmd-skill').onclick = () => this.openSkillsModal();
+    document.getElementById('btn-cmd-items').onclick = () => this.openItemsModal();
+    document.getElementById('btn-cmd-notes').onclick = () => this.useInBattleNotes();
+
+    // Result finish
+    document.getElementById('btn-result-finish').onclick = () => this.showScreen('map');
+  },
+
+  updateHUD() {
+    document.getElementById('hud-level').textContent = this.state.player.level;
+    document.getElementById('hud-gold').textContent = this.state.player.gold;
+    document.getElementById('hud-mp').textContent = this.state.player.mp;
+  },
+
+  showScreen(screenId) {
+    document.querySelectorAll('.screen-view').forEach(el => el.classList.remove('active'));
+    const target = document.getElementById(`screen-${screenId}`);
+    if (target) {
+      target.classList.add('active');
+      this.state.currentScreen = screenId;
+    }
+  },
+
+  // ONBOARDING
+  advanceOnboarding() {
+    this.state.onboardingStep++;
+    if (this.state.onboardingStep >= this.onboardingDialogs.length) {
+      this.finishOnboarding();
+    } else {
+      const cur = this.onboardingDialogs[this.state.onboardingStep];
+      document.getElementById('onboarding-step-indicator').textContent = `Pesan ${cur.step} dari ${cur.total}`;
+      document.getElementById('onboarding-dialog-text').innerHTML = cur.text;
+      if (cur.step === cur.total) {
+        document.getElementById('btn-next-onboarding').innerHTML = '<span>✨ Buka Peta Konstelasi</span> ➔';
+      }
+    }
+  },
+
+  finishOnboarding() {
+    this.showScreen('map');
+  },
+
+  // CONSTELLATION MAP
+  renderConstellationLines() {
+    const svg = document.getElementById('constellation-svg-lines');
+    if (!svg) return;
+    svg.innerHTML = `
+      <defs>
+        <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
+          <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.4" />
+        </linearGradient>
+      </defs>
+      <!-- Connecting nodes -->
+      <line x1="220" y1="180" x2="550" y2="180" stroke="url(#lineGrad)" stroke-width="2" />
+      <line x1="550" y1="180" x2="880" y2="180" stroke="url(#lineGrad)" stroke-width="2" />
+      <line x1="220" y1="180" x2="220" y2="440" stroke="url(#lineGrad)" stroke-width="2" />
+      <line x1="550" y1="180" x2="550" y2="440" stroke="url(#lineGrad)" stroke-width="2" />
+      <line x1="880" y1="180" x2="880" y2="440" stroke="url(#lineGrad)" stroke-width="2" />
+      <line x1="220" y1="440" x2="550" y2="440" stroke="url(#lineGrad)" stroke-width="2" />
+      <line x1="550" y1="440" x2="880" y2="440" stroke="url(#lineGrad)" stroke-width="2" />
+    `;
+  },
+
+  startMission(poolKey) {
+    const pool = VERIFIED_POOLS[poolKey];
+    if (!pool) return;
+    this.state.activeMission = pool;
+
+    // Setup VN screen
+    document.getElementById('vn-speaker-title').textContent = pool.mentorName;
+    document.getElementById('vn-npc-sprite').src = pool.mentorSprite;
+    document.getElementById('vn-boss-name').textContent = pool.bossName;
+    document.getElementById('vn-dialogue-content').textContent = pool.briefingText;
+
+    this.showScreen('vn');
+  },
+
+  openConceptNotes() {
+    if (!this.state.activeMission) return;
+    document.getElementById('modal-notes-title').innerHTML = `📖 Catatan Konsep: ${this.state.activeMission.title}`;
+    document.getElementById('modal-notes-body').innerHTML = this.state.activeMission.conceptNotes;
+    document.getElementById('modal-concept-notes').classList.add('active');
+  },
+
+  launchBattle() {
+    const pool = this.state.activeMission;
+    if (!pool) return;
+
+    // Reset battle state
+    this.state.battle.currentQuestionIndex = 0;
+    this.state.battle.bossHp = pool.bossMaxHp;
+    this.state.battle.bossMaxHp = pool.bossMaxHp;
+    this.state.battle.bossMp = pool.bossMaxMp;
+    this.state.battle.combo = 0;
+    this.state.battle.results = [];
+    this.state.battle.disabledOptions = [];
+    this.state.player.hp = this.state.player.maxHp;
+    this.state.player.hasShield = false;
+
+    // Set UI elements
+    document.getElementById('battle-boss-title').textContent = pool.bossName;
+    document.getElementById('battle-boss-image').src = pool.bossSprite;
+
+    this.updateBattleHUD();
+    this.loadQuestion(0);
+    this.showScreen('battle');
+  },
+
+  updateBattleHUD() {
+    const p = this.state.player;
+    const b = this.state.battle;
+
+    // Player bars
+    document.getElementById('label-player-hp').textContent = `${p.hp} / ${p.maxHp}`;
+    document.getElementById('bar-player-hp').style.width = `${Math.max(0, (p.hp / p.maxHp) * 100)}%`;
+    document.getElementById('label-player-mp').textContent = `${p.mp} / ${p.maxMp}`;
+    document.getElementById('bar-player-mp').style.width = `${Math.max(0, (p.mp / p.maxMp) * 100)}%`;
+
+    // Boss bars
+    document.getElementById('label-boss-hp').textContent = `${b.bossHp} / ${b.bossMaxHp}`;
+    document.getElementById('bar-boss-hp').style.width = `${Math.max(0, (b.bossHp / b.bossMaxHp) * 100)}%`;
+    document.getElementById('label-boss-mp').textContent = `${b.bossMp} / ${b.bossMaxMp}`;
+    document.getElementById('bar-boss-mp').style.width = `${Math.max(0, (b.bossMp / b.bossMaxMp) * 100)}%`;
+
+    this.updateHUD();
+  },
+
+  loadQuestion(index) {
+    const pool = this.state.activeMission;
+    if (!pool || !pool.questions[index]) return;
+
+    const q = pool.questions[index];
+    this.state.battle.disabledOptions = [];
+
+    // Challenge Difficulty Badge & Red Aura Trigger
+    const badge = document.getElementById('battle-challenge-badge');
+    const bossContainer = document.getElementById('boss-sprite-container');
+    
+    badge.className = `challenge-indicator ${q.difficulty_label}`;
+    if (q.difficulty_label === 'easy') {
+      badge.innerHTML = `<span>🟢 PEMANASAN</span> • Soal ${index + 1} dari 5`;
+      bossContainer.classList.remove('aura-charging');
+    } else if (q.difficulty_label === 'medium') {
+      badge.innerHTML = `<span>🟡 TANTANGAN</span> • Soal ${index + 1} dari 5`;
+      bossContainer.classList.remove('aura-charging');
+    } else if (q.difficulty_label === 'hard') {
+      badge.innerHTML = `<span>🔴 PENALARAN</span> • Soal ${index + 1} dari 5 (AURA MERAH DIAKTIFKAN!)`;
+      bossContainer.classList.add('aura-charging');
+      this.showToast('⚠️ AURA MERAH BERKOBAR: Soal Penalaran Tingkat Tinggi!');
+    }
+
+    // Set question prompt
+    document.getElementById('battle-question-text').textContent = q.question;
+
+    // Render options
+    const optContainer = document.getElementById('battle-options-container');
+    optContainer.innerHTML = '';
+    q.options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'btn-option';
+      btn.id = `opt-btn-${opt.id}`;
+      btn.innerHTML = `<span class="option-letter">${opt.id}</span><span>${opt.text}</span>`;
+      btn.onclick = () => this.handleAnswer(opt.id);
+      optContainer.appendChild(btn);
+    });
+  },
+
+  handleAnswer(selectedOption) {
+    const pool = this.state.activeMission;
+    const qIndex = this.state.battle.currentQuestionIndex;
+    const q = pool.questions[qIndex];
+    if (!q) return;
+
+    // Disable all options during turn resolution
+    document.querySelectorAll('.btn-option').forEach(b => b.style.pointerEvents = 'none');
+
+    const isCorrect = String(selectedOption).trim().toUpperCase() === String(q.answer).trim().toUpperCase();
+    this.state.battle.results.push({
+      difficulty: q.difficulty_label,
+      isCorrect
+    });
+
+    if (isCorrect) {
+      // 1. UPDATE COMBO & CALCULATE DAMAGE
+      this.state.battle.combo++;
+      const comboMult = 1 + (this.state.battle.combo - 1) * 0.1;
+      const critMult = (q.difficulty_label === 'hard') ? 1.5 : 1.0;
+      const damage = Math.round((q.gameplay.correct_damage || 100) * comboMult * critMult);
+
+      // Reduce boss HP
+      this.state.battle.bossHp = Math.max(0, this.state.battle.bossHp - damage);
+
+      // Trigger floating damage
+      this.spawnFloatingDamage(`-${damage} DMG`, 'damage-enemy', critMult > 1);
+
+      // Animate boss hit
+      const bossContainer = document.getElementById('boss-sprite-container');
+      bossContainer.style.filter = 'brightness(1.8) contrast(1.2)';
+      setTimeout(() => bossContainer.style.filter = '', 300);
+
+      this.showToast(`🎯 Jawaban Benar! Melancarkan serangan ${damage} kerusakan!`);
+    } else {
+      // 2. WRONG ANSWER (ANTI-ANXIETY CONTRACT)
+      this.state.battle.combo = 0;
+
+      // Show 0 DMG on boss (meleset)
+      this.spawnFloatingDamage('0 DMG (MELESET!)', 'damage-miss');
+
+      // Check Shield
+      if (this.state.player.hasShield) {
+        this.state.player.hasShield = false;
+        this.showToast('🛡️ Perisai Fokus Mental meniadakan pengurangan HP!');
+      } else {
+        // Penalty exactly 5 HP
+        const penalty = q.gameplay.wrong_penalty || 5;
+        this.state.player.hp = Math.max(0, this.state.player.hp - penalty);
+        this.spawnFloatingDamage(`-${penalty} HP`, 'damage-player', false, true);
+
+        // Shake player card
+        const playerCard = document.getElementById('player-card');
+        playerCard.classList.add('shake');
+        setTimeout(() => playerCard.classList.remove('shake'), 400);
+
+        this.showToast(`❌ Jawaban Belum Tepat. Penalti: -${penalty} HP. Kunci: [${q.answer}]`);
+      }
+    }
+
+    this.updateBattleHUD();
+
+    // Advance turn after 1.5s
+    setTimeout(() => {
+      this.nextTurn();
+    }, 1500);
+  },
+
+  spawnFloatingDamage(text, cssClass, isCritical = false, onPlayer = false) {
+    const el = document.createElement('div');
+    el.className = `floating-damage ${cssClass} ${isCritical ? 'damage-critical' : ''}`;
+    el.textContent = text;
+
+    if (onPlayer) {
+      const target = document.getElementById('player-card');
+      target.appendChild(el);
+      el.style.left = '50%';
+      el.style.top = '30%';
+    } else {
+      const target = document.getElementById('boss-sprite-container');
+      target.appendChild(el);
+      el.style.left = '50%';
+      el.style.top = '40%';
+    }
+
+    setTimeout(() => el.remove(), 1200);
+  },
+
+  nextTurn() {
+    this.state.battle.currentQuestionIndex++;
+    const isPlayerDead = this.state.player.hp <= 0;
+    const isBossDead = this.state.battle.bossHp <= 0;
+    const isOutOfQuestions = this.state.battle.currentQuestionIndex >= this.state.activeMission.questions.length;
+
+    if (isPlayerDead) {
+      this.concludeBattle('DEFEAT');
+    } else if (isBossDead || isOutOfQuestions) {
+      this.concludeBattle('VICTORY');
+    } else {
+      this.loadQuestion(this.state.battle.currentQuestionIndex);
+    }
+  },
+
+  concludeBattle(status) {
+    const isVictory = status === 'VICTORY';
+    const headerBlock = document.getElementById('result-header-block');
+    const titleText = document.getElementById('result-title-text');
+    const subText = document.getElementById('result-subtitle-text');
+
+    if (isVictory) {
+      headerBlock.className = 'result-header victory';
+      titleText.textContent = 'EVALUASI TUNTAS!';
+      subText.textContent = 'Kamu berhasil menundukkan perwujudan materi dengan pemahaman yang solid.';
+      this.state.player.gold += 120;
+      this.state.player.level += 1;
+      document.getElementById('result-xp-val').textContent = '240';
+      document.getElementById('result-gold-val').textContent = '120';
+    } else {
+      headerBlock.className = 'result-header defeat';
+      titleText.textContent = 'EVALUASI REMEDIAL';
+      subText.textContent = 'Pertahanan HP-mu habis. Pelajari kembali konsep materi sebelum mengulang evaluasi.';
+      this.state.player.gold += 30; // Hiburan
+      document.getElementById('result-xp-val').textContent = '50';
+      document.getElementById('result-gold-val').textContent = '30';
+    }
+
+    // Compute Bloom Diagnostics
+    const results = this.state.battle.results;
+    const calc = (diff) => {
+      const subset = results.filter(r => r.difficulty === diff);
+      if (subset.length === 0) return { pct: 100, count: 0 };
+      const correct = subset.filter(r => r.isCorrect).length;
+      return { pct: Math.round((correct / subset.length) * 100), count: subset.length };
     };
 
-    /* =======================================================
-       2. CLIENT GAME STATE & LOGIC
-       ======================================================= */
-    const state = {
-      player: {
-        id: "PLAYER-001",
-        level: 12,
-        hp: 100,
-        maxHp: 100,
-        mp: 50,
-        maxMp: 50,
-        gold: 155,
-        energy: 85,
-        xp: 180,
-        vip: false
-      },
-      currentMission: null,
-      session: {
-        questions: [],
-        currentIndex: 0,
-        combo: 0,
-        stats: { easyCorrect: 0, easyTotal: 0, medCorrect: 0, medTotal: 0, hardCorrect: 0, hardTotal: 0 }
-      },
-      enemy: {
-        name: "Algebra Golem",
-        hp: 850,
-        maxHp: 850
-      }
-    };
+    const easyData = calc('easy');
+    const medData = calc('medium');
+    const hardData = calc('hard');
 
-    // Navigation Screens
-    function showScreen(screenId) {
-      document.querySelectorAll('.screen-view').forEach(s => s.classList.remove('active'));
-      const target = document.getElementById(screenId);
-      if (target) {
-        target.classList.add('active');
-      }
+    document.getElementById('diag-easy-pct').textContent = `${easyData.pct}%`;
+    document.getElementById('diag-medium-pct').textContent = `${medData.pct}%`;
+    document.getElementById('diag-hard-pct').textContent = `${hardData.pct}%`;
+
+    // Evaluative labels
+    document.getElementById('diag-easy-label').textContent = easyData.pct >= 80 ? 'Fondasi Kuat' : 'Perlu Penguatan';
+    document.getElementById('diag-medium-label').textContent = medData.pct >= 70 ? 'Aplikasi Terlatih' : 'Perlu Latihan';
+    document.getElementById('diag-hard-label').textContent = hardData.pct >= 50 ? 'Analitis Matang' : 'Tantangan Belum Tuntas';
+
+    // Pedagogical Advice
+    const adviceBox = document.getElementById('result-advice-box');
+    if (!isVictory) {
+      adviceBox.innerHTML = '<strong>Diagnosa Remedial:</strong> Ketahanan HP habis. Pelajari kembali materi dasar pada tombol <em>Buka Catatan Konsep</em> sebelum mengulang misi.';
+    } else if (easyData.pct < 80) {
+      adviceBox.innerHTML = '<strong>Diagnosa Pedagogis:</strong> Fondasi konsep dasar masih perlu pemantapan. Disarankan membaca rangkuman rumus sebelum melangkah ke Layer 2.';
+    } else if (medData.pct < 70) {
+      adviceBox.innerHTML = '<strong>Diagnosa Pedagogis:</strong> Pemahaman dasar sudah baik, namun penerapan pada soal kontekstual perlu lebih banyak latihan.';
+    } else if (hardData.pct < 50) {
+      adviceBox.innerHTML = '<strong>Diagnosa Pedagogis:</strong> Pemahaman dasar dan aplikasi sangat baik. Tingkatkan latihan soal penalaran multi-langkah untuk persiapan TKA.';
+    } else {
+      adviceBox.innerHTML = '<strong>Diagnosa Pedagogis Sempurna:</strong> Seluruh tingkat kompetensi (Pemanasan, Tantangan, Penalaran) terkuasai secara seimbang!';
     }
 
-    function showToast(msg) {
-      const t = document.getElementById('toast-msg');
-      t.innerText = msg;
-      t.classList.add('show');
-      setTimeout(() => t.classList.remove('show'), 2500);
-    }
+    this.updateHUD();
+    this.showScreen('result');
+  },
 
-    /* =======================================================
-       3. MISSION SELECTION & VN BRIEFING
-       ======================================================= */
-    function selectMissionNode(subjectKey) {
-      if (subjectKey === 'MAT') {
-        state.currentMission = {
-          subjectKey: 'MAT',
-          title: 'Matematika Wajib — Bab 1',
-          subtitle: 'Anomali Barisan Geometri & Bunga Majemuk',
-          mentor: 'Rifki',
-          mentorTag: 'Mentor Numerasi',
-          mentorSprite: '../phase-3/visuals/Desain referensi fix/npc-rifki.png',
-          bg: '../phase-3/visuals/Desain referensi fix/Laboratorium komputer.jpg',
-          enemyName: 'Algebra Golem',
-          enemyBadge: 'BOSS RAID MATEMATIKA',
-          enemyArt: '../phase-3/visuals/Desain referensi fix/rpg-battle-algebra-golem.jpg',
-          dialogue: '"Selamat datang di Laboratorium Matematika. Kabut Ketidaktahuan telah membangkitkan monster <strong>Algebra Golem</strong>. Tubuhnya terlindungi oleh persamaan eksponensial suku bunga. Jawab soal dengan tepat untuk menghancurkan intinya!"',
-          notes: '<strong>Rumus Kunci Barisan Geometri & Bunga Majemuk:</strong><br>• Nilai Akhir: Mn = M0 * (1 + b)^n<br>• Bunga Tahun ke-1: B1 = M0 * b<br>• Untuk melipatgandakan modal 2x pada bunga 10%: (1.1)^n ≥ 2 (butuh minimal 8 tahun).'
-        };
-      } else if (subjectKey === 'BID') {
-        state.currentMission = {
-          subjectKey: 'BID',
-          title: 'Bahasa Indonesia — Bab 1',
-          subtitle: 'Surat Resmi & Komunikasi Bisnis',
-          mentor: 'Safira',
-          mentorTag: 'Pemandu Digital',
-          mentorSprite: '../phase-3/visuals/Desain referensi fix/npc-safira.png',
-          bg: '../phase-3/visuals/Desain referensi fix/Perpustakaan.jpg',
-          enemyName: 'The Text Guardian',
-          enemyBadge: 'PENJAGA LITERASI',
-          enemyArt: '../phase-3/visuals/Desain referensi fix/npc-zaein.png',
-          dialogue: '"Halo rekan pejuang! Di perpustakaan akademi ini, Penjaga Literasi sedang menguji keabsahan komunikasi resmi kita. Gunakan ejaan baku dan tata kalimat efektif agar gerbang selanjutnya terbuka!"',
-          notes: '<strong>Kaidah Baku Surat Resmi:</strong><br>• Salam Pembuka: "Dengan hormat,"<br>• Penulisan Tanggal: "Jakarta, 12 Oktober 2026" (tanpa titik di akhir)<br>• Kalimat penutup harus lugas dan santun.'
-        };
-      } else {
-        showToast("Mata pelajaran ini segera dibuka!");
+  // SKILLS & ITEMS
+  openSkillsModal() {
+    document.getElementById('modal-skills').classList.add('active');
+  },
+
+  useSkill(skillKey) {
+    if (skillKey === 'ELIMINATE') {
+      if (this.state.player.mp < 15) {
+        alert('MP tidak mencukupi! Butuh 15 MP.');
         return;
       }
+      this.state.player.mp -= 15;
+      this.updateBattleHUD();
 
-      // Populate Screen VN
-      document.getElementById('vn-speaker-title').innerText = state.currentMission.mentor;
-      document.getElementById('vn-speaker-badge').innerText = state.currentMission.mentorTag;
-      document.getElementById('vn-character-sprite').src = state.currentMission.mentorSprite;
-      document.getElementById('vn-text').innerHTML = state.currentMission.dialogue;
-      document.getElementById('screen-vn').style.backgroundImage = `url('${state.currentMission.bg}')`;
-
-      showScreen('screen-vn');
-    }
-
-    function openBriefingNotesModal() {
-      if (!state.currentMission) return;
-      document.getElementById('notes-title').innerHTML = `📖 Pembekalan: ${state.currentMission.title}`;
-      document.getElementById('notes-body').innerHTML = state.currentMission.notes;
-      document.getElementById('modal-notes').classList.add('active');
-    }
-
-    /* =======================================================
-       4. JRPG BATTLE LAUNCH & FLOW
-       ======================================================= */
-    function launchMissionBattle() {
-      const qPool = GAME_POOLS[state.currentMission.subjectKey] || GAME_POOLS.MAT;
-      
-      state.session.questions = JSON.parse(JSON.stringify(qPool));
-      state.session.currentIndex = 0;
-      state.session.combo = 0;
-      state.session.stats = { easyCorrect: 0, easyTotal: 0, medCorrect: 0, medTotal: 0, hardCorrect: 0, hardTotal: 0 };
-      
-      state.player.hp = state.player.maxHp;
-      state.player.mp = state.player.maxMp;
-      
-      state.enemy.name = state.currentMission.enemyName;
-      state.enemy.maxHp = state.session.questions.length * 170;
-      state.enemy.hp = state.enemy.maxHp;
-
-      document.getElementById('enemy-name').innerText = state.enemy.name;
-      document.getElementById('enemy-badge').innerText = state.currentMission.enemyBadge;
-      document.getElementById('monster-img').src = state.currentMission.enemyArt;
-
-      updateCombatBars();
-      renderCurrentQuestion();
-
-      showScreen('screen-battle');
-    }
-
-    function updateCombatBars() {
-      const playerHpPct = Math.max(0, (state.player.hp / state.player.maxHp) * 100);
-      const playerMpPct = Math.max(0, (state.player.mp / state.player.maxMp) * 100);
-      document.getElementById('player-hp-bar').style.width = playerHpPct + '%';
-      document.getElementById('player-hp-text').innerText = `${state.player.hp} / ${state.player.maxHp}`;
-      document.getElementById('player-mp-bar').style.width = playerMpPct + '%';
-      document.getElementById('player-mp-text').innerText = `${state.player.mp} / ${state.player.maxMp}`;
-
-      const enemyHpPct = Math.max(0, (state.enemy.hp / state.enemy.maxHp) * 100);
-      document.getElementById('enemy-hp-bar').style.width = enemyHpPct + '%';
-      document.getElementById('enemy-hp-text').innerText = `${state.enemy.hp} / ${state.enemy.maxHp}`;
-    }
-
-    function renderCurrentQuestion() {
-      const q = state.session.questions[state.session.currentIndex];
-      if (!q) {
-        finishBattle(true);
+      // Find 1 wrong option that is not yet disabled
+      const pool = this.state.activeMission;
+      const q = pool.questions[this.state.battle.currentQuestionIndex];
+      const wrongOpts = q.options.filter(o => o.id !== q.answer && !this.state.battle.disabledOptions.includes(o.id));
+      if (wrongOpts.length > 0) {
+        const targetOpt = wrongOpts[0];
+        this.state.battle.disabledOptions.push(targetOpt.id);
+        const btn = document.getElementById(`opt-btn-${targetOpt.id}`);
+        if (btn) btn.classList.add('disabled-option');
+        this.showToast(`✨ Analisis Cepat: Opsi [${targetOpt.id}] berhasil dieliminasi!`);
+      }
+      this.closeModals();
+    } else if (skillKey === 'SHIELD') {
+      if (this.state.player.mp < 10) {
+        alert('MP tidak mencukupi! Butuh 10 MP.');
         return;
       }
-
-      document.getElementById('question-progress').innerText = `Soal ${state.session.currentIndex + 1} dari ${state.session.questions.length}`;
-      document.getElementById('battle-question-text').innerText = q.question;
-
-      const bContainer = document.getElementById('challenge-badge');
-      const mContainer = document.getElementById('monster-container');
-      bContainer.className = `challenge-indicator ${q.difficulty}`;
-      
-      if (q.difficulty === 'easy') {
-        bContainer.innerHTML = '<span>🟢 PEMANASAN</span>';
-        mContainer.classList.remove('charging');
-      } else if (q.difficulty === 'medium') {
-        bContainer.innerHTML = '<span>🟡 TANTANGAN</span>';
-        mContainer.classList.remove('charging');
-      } else {
-        bContainer.innerHTML = '<span>🔴 PENALARAN (ULTIMATE CHARGE!)</span>';
-        mContainer.classList.add('charging');
-        showToast("⚠️ Peringatan: Monster memusatkan energi untuk Soal Penalaran!");
-      }
-
-      const optContainer = document.getElementById('battle-options-container');
-      optContainer.innerHTML = '';
-
-      const letters = ['A', 'B', 'C', 'D'];
-      q.options.forEach((optText, idx) => {
-        const btn = document.createElement('button');
-        btn.className = 'btn-option';
-        btn.innerHTML = `<span class="opt-key">${letters[idx]}</span> <span>${optText}</span>`;
-        btn.onclick = () => submitAnswer(letters[idx]);
-        optContainer.appendChild(btn);
-      });
+      this.state.player.mp -= 10;
+      this.state.player.hasShield = true;
+      this.updateBattleHUD();
+      this.showToast('🛡️ Fokus Mental Aktif: Perisai melindungi HP dari salah berikutnya!');
+      this.closeModals();
     }
+  },
 
-    function submitAnswer(selectedLetter) {
-      const q = state.session.questions[state.session.currentIndex];
-      const isCorrect = (selectedLetter === q.answer);
-
-      if (q.difficulty === 'easy') {
-        state.session.stats.easyTotal++;
-        if (isCorrect) state.session.stats.easyCorrect++;
-      } else if (q.difficulty === 'medium') {
-        state.session.stats.medTotal++;
-        if (isCorrect) state.session.stats.medCorrect++;
-      } else {
-        state.session.stats.hardTotal++;
-        if (isCorrect) state.session.stats.hardCorrect++;
-      }
-
-      if (isCorrect) {
-        state.session.combo++;
-        let dmg = 180 + (state.session.combo * 15);
-        if (q.difficulty === 'hard') dmg = Math.round(dmg * 1.5);
-
-        state.enemy.hp = Math.max(0, state.enemy.hp - dmg);
-        showFloatingDamage(dmg, false);
-        showToast(`💥 Benar! Serangan ${dmg} Damage! (Combo x${state.session.combo})`);
-      } else {
-        state.session.combo = 0;
-        const penalty = (q.difficulty === 'hard') ? 15 : 10;
-        state.player.hp = Math.max(5, state.player.hp - penalty);
-        
-        triggerScreenShake();
-        showFloatingDamage(penalty, true);
-        showToast(`❌ Salah! Jawaban benar: ${q.answer}. Monster menyerang!`);
-      }
-
-      updateCombatBars();
-
-      setTimeout(() => {
-        state.session.currentIndex++;
-        if (state.session.currentIndex >= state.session.questions.length || state.enemy.hp <= 0) {
-          finishBattle(state.enemy.hp <= 0 || state.player.hp > 0);
-        } else {
-          renderCurrentQuestion();
-        }
-      }, 750);
+  openItemsModal() {
+    document.getElementById('item-coffee-count').textContent = this.state.player.items.coffee;
+    document.getElementById('item-potion-count').textContent = this.state.player.items.potion;
+    const shopText = document.getElementById('shop-vip-status-text');
+    if (this.state.player.vip) {
+      shopText.textContent = '🌟 STATUS VIP KELUARGA AKTIF: Seluruh item GRATIS selamanya!';
+    } else {
+      shopText.textContent = 'Harga standar: 100 Koin per item.';
     }
+    document.getElementById('modal-items').classList.add('active');
+  },
 
-    function triggerScreenShake() {
-      const b = document.getElementById('screen-battle');
-      b.classList.remove('screen-shake');
-      void b.offsetWidth;
-      b.classList.add('screen-shake');
-      setTimeout(() => b.classList.remove('screen-shake'), 500);
-    }
-
-    function showFloatingDamage(amount, onPlayer) {
-      const anchor = document.getElementById('damage-float-anchor');
-      const el = document.createElement('div');
-      el.className = 'floating-damage';
-      el.innerText = `-${amount}!`;
-      if (onPlayer) {
-        el.style.left = "-240px";
-        el.style.color = "#ef4444";
-      } else {
-        el.style.left = "40px";
-        el.style.color = "#fde047";
-      }
-      anchor.appendChild(el);
-      setTimeout(() => el.remove(), 900);
-    }
-
-    function actionDefendAnalisis() {
-      if (state.player.mp < 10) {
-        showToast("⚠️ MP tidak cukup untuk Membuka Catatan!");
+  useItem(itemKey) {
+    if (itemKey === 'COFFEE') {
+      if (this.state.player.items.coffee <= 0) {
+        alert('Stok Kopi Konsentrasi habis! Beli di Toko.');
         return;
       }
-      state.player.mp -= 10;
-      updateCombatBars();
-      openBriefingNotesModal();
-      showToast("🧠 MP dikurangi 10. Catatan rumus dibuka!");
-    }
-
-    function actionUseItem() {
-      if (state.player.hp < state.player.maxHp) {
-        state.player.hp = Math.min(state.player.maxHp, state.player.hp + 25);
-        updateCombatBars();
-        showToast("🧪 Menggunakan Potion! +25 HP dipulihkan.");
-      } else {
-        showToast("HP Anda masih penuh!");
+      this.state.player.items.coffee--;
+      this.state.player.mp = Math.min(this.state.player.maxMp, this.state.player.mp + 25);
+      this.updateBattleHUD();
+      this.openItemsModal();
+      this.showToast('☕ Kopi Konsentrasi diminum! MP bertambah +25.');
+    } else if (itemKey === 'POTION') {
+      if (this.state.player.items.potion <= 0) {
+        alert('Stok Ramuan Fokus habis! Beli di Toko.');
+        return;
       }
+      this.state.player.items.potion--;
+      this.state.player.hp = Math.min(this.state.player.maxHp, this.state.player.hp + 30);
+      this.updateBattleHUD();
+      this.openItemsModal();
+      this.showToast('🧪 Ramuan Fokus diminum! HP bertambah +30.');
     }
+  },
 
-    /* =======================================================
-       5. BATTLE COMPLETION & RESULT SCREEN
-       ======================================================= */
-    function finishBattle(isVictory) {
-      const stats = state.session.stats;
-      const easyPct = stats.easyTotal > 0 ? Math.round((stats.easyCorrect / stats.easyTotal) * 100) : 100;
-      const medPct = stats.medTotal > 0 ? Math.round((stats.medCorrect / stats.medTotal) * 100) : 100;
-      const hardPct = stats.hardTotal > 0 ? Math.round((stats.hardCorrect / stats.hardTotal) * 100) : 100;
-
-      document.getElementById('diag-easy-val').innerText = easyPct + '%';
-      document.getElementById('diag-med-val').innerText = medPct + '%';
-      document.getElementById('diag-hard-val').innerText = hardPct + '%';
-
-      state.player.xp += 240;
-      state.player.gold += 120;
-      document.getElementById('hud-gold').innerText = state.player.gold;
-
-      showScreen('screen-result');
+  buyShopItem() {
+    const p = this.state.player;
+    if (!p.vip && p.gold < 100) {
+      alert('Koin tidak mencukupi untuk membeli item!');
+      return;
     }
-
-    function replayCurrentMission() {
-      launchMissionBattle();
+    if (!p.vip) {
+      p.gold -= 100;
     }
+    p.items.coffee += 1;
+    p.items.potion += 1;
+    this.updateHUD();
+    this.openItemsModal();
+    this.showToast('🛒 Berhasil membeli 1 Kopi Konsentrasi & 1 Ramuan Fokus!');
+  },
 
-    /* =======================================================
-       6. MODALS & DEVELOPER VIP CODE
-       ======================================================= */
-    function openProfileModal() {
-      document.getElementById('modal-profile').classList.add('active');
+  useInBattleNotes() {
+    if (this.state.player.mp < 10) {
+      alert('MP tidak mencukupi untuk membuka catatan! Butuh 10 MP.');
+      return;
     }
+    this.state.player.mp -= 10;
+    this.updateBattleHUD();
+    this.openConceptNotes();
+    this.showToast('📖 Membuka catatan konsep (-10 MP).');
+  },
 
-    function openSettingsModal() {
-      document.getElementById('modal-settings').classList.add('active');
-    }
+  // VIP ACCESS MODAL
+  openVipModal() {
+    document.getElementById('modal-vip').classList.add('active');
+  },
 
-    function closeModal(id) {
-      document.getElementById(id).classList.remove('active');
+  submitVipCode() {
+    const input = document.getElementById('vip-secret-code').value.trim();
+    const msg = document.getElementById('vip-status-msg');
+    if (input === 'AKSES_KELUARGA_VIP') {
+      this.state.player.vip = true;
+      this.state.player.gold = 99999;
+      this.state.player.items.coffee = 99;
+      this.state.player.items.potion = 99;
+      this.updateHUD();
+      msg.style.display = 'block';
+      msg.textContent = '✅ KODE VIP DITERIMA! Akses Keluarga Aktif: 99.999 Koin & Item Tak Terbatas!';
+    } else {
+      alert('Kode rahasia tidak valid.');
     }
+  },
 
-    function submitVipCode() {
-      const code = document.getElementById('input-vip-code').value.trim();
-      if (code === 'AKSES_KELUARGA_VIP') {
-        state.player.gold = 99999;
-        state.player.vip = true;
-        document.getElementById('hud-gold').innerText = "99999";
-        closeModal('modal-settings');
-        showToast("🎉 VIP KELUARGA DIAKTIFKAN! Koin Emas Maksimal (99999 G) & Toko Gratis!");
-      } else {
-        showToast("Kode rahasia tidak cocok.");
-      }
-    }
-  </script>
+  openProfileModal() {
+    alert('🎯 Fitur Layer 2 Profil Target: Membuka simulasi target prodi (Teknik Informatika / Kedokteran / Manajemen) dan mengaitkannya dengan rapor.');
+  },
+
+  closeModals() {
+    document.querySelectorAll('.modal-overlay').forEach(el => el.classList.remove('active'));
+  },
+
+  showToast(text) {
+    const toast = document.createElement('div');
+    toast.style.cssText = `
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid var(--glass-border-glow);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+      z-index: 999;
+      pointer-events: none;
+      animation: fadeInOut 2.5s forwards;
+    `;
+    toast.textContent = text;
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 2500);
+  }
+};
+
+// Initialize App on DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+  app.init();
+});
+</script>
+
 </body>
 </html>
