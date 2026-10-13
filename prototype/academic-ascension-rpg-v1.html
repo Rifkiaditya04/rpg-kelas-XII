@@ -13,7 +13,7 @@
   <style>
     :root {
       --bg-dark: #070b14;
-      --bg-panel: rgba(13, 21, 39, 0.88);
+      --bg-panel: rgba(13, 21, 39, 0.90);
       --bg-panel-solid: #0d1527;
       --primary: #3b82f6;
       --primary-hover: #2563eb;
@@ -26,7 +26,7 @@
       --accent-green: #10b981;
       
       --glass-border: rgba(255, 255, 255, 0.14);
-      --glass-border-glow: rgba(96, 165, 250, 0.35);
+      --glass-border-glow: rgba(96, 165, 250, 0.45);
       
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
@@ -64,7 +64,9 @@
       flex-direction: column;
     }
 
-    /* TOP GLOBAL HUD */
+    /* ==========================================================================
+       GLOBAL TOP HUD (CLEANED: NO LEVEL BOX)
+       ========================================================================== */
     .top-hud {
       position: absolute;
       top: 0;
@@ -132,22 +134,21 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      padding: 6px 14px;
+      padding: 6px 16px;
       border-radius: 20px;
-      background: rgba(15, 23, 42, 0.8);
+      background: rgba(15, 23, 42, 0.85);
       border: 1px solid var(--glass-border);
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 800;
     }
 
-    .stat-pill.level { color: #60a5fa; border-color: rgba(96, 165, 250, 0.3); }
-    .stat-pill.gold { color: #fbbf24; border-color: rgba(251, 191, 36, 0.3); }
-    .stat-pill.mp { color: #34d399; border-color: rgba(52, 211, 153, 0.3); }
+    .stat-pill.gold { color: #fbbf24; border-color: rgba(251, 191, 36, 0.35); }
+    .stat-pill.mp { color: #34d399; border-color: rgba(52, 211, 153, 0.35); }
 
     .btn-hud {
       padding: 6px 14px;
       border-radius: 8px;
-      background: rgba(30, 41, 59, 0.8);
+      background: rgba(30, 41, 59, 0.85);
       border: 1px solid var(--glass-border);
       color: var(--text-main);
       font-size: 12px;
@@ -160,11 +161,11 @@
     }
 
     .btn-hud:hover {
-      background: rgba(51, 65, 85, 0.9);
+      background: rgba(51, 65, 85, 0.95);
       border-color: var(--primary);
     }
 
-    /* SCREEN VIEWS */
+    /* SCREEN VIEWS BASE */
     .screen-view {
       position: absolute;
       top: 64px;
@@ -184,7 +185,7 @@
     }
 
     /* ==========================================================================
-       SCREEN 0: ONBOARDING GREETING (KATA SAMBUTAN RIFKI)
+       SCREEN 0: ONBOARDING GREETING (FUTURISTIC NUSANTARA ACADEMY)
        ========================================================================== */
     #screen-onboarding {
       position: absolute;
@@ -192,7 +193,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: url('../phase-3/visuals/Desain referensi fix/Halaman dan gerbang sekolah.jpg') center center / cover no-repeat;
+      background: url('../phase-3/visuals/Desain referensi fix/tech-campus-bg.jpg') center center / cover no-repeat;
       justify-content: flex-end;
       align-items: center;
       overflow: hidden;
@@ -202,7 +203,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 50% 30%, rgba(7, 11, 20, 0.4) 0%, rgba(7, 11, 20, 0.88) 100%);
+      background: radial-gradient(circle at 50% 30%, rgba(7, 11, 20, 0.2) 0%, rgba(7, 11, 20, 0.85) 100%);
       pointer-events: none;
     }
 
@@ -220,7 +221,7 @@
 
     .onboarding-avatar-wrap {
       position: absolute;
-      bottom: 230px;
+      bottom: 240px;
       display: flex;
       justify-content: center;
       align-items: flex-end;
@@ -231,7 +232,8 @@
     .onboarding-avatar-wrap img {
       max-height: 480px;
       width: auto;
-      filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.85));
+      border-radius: 16px;
+      filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 20px rgba(6, 182, 212, 0.3));
     }
 
     @keyframes floatNpc {
@@ -243,13 +245,13 @@
       position: relative;
       width: 100%;
       max-width: 900px;
-      background: rgba(11, 18, 33, 0.92);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      background: rgba(11, 18, 33, 0.94);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
       border: 1px solid var(--glass-border-glow);
       border-radius: 20px;
       padding: 24px 30px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(59, 130, 246, 0.2);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75), 0 0 30px rgba(6, 182, 212, 0.25);
       margin-bottom: 20px;
       display: flex;
       flex-direction: column;
@@ -266,15 +268,15 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: linear-gradient(90deg, #2563eb, #7c3aed);
+      background: linear-gradient(90deg, #2563eb, #06b6d4);
       color: #fff;
-      padding: 6px 16px;
+      padding: 6px 18px;
       border-radius: 30px;
       font-family: var(--font-display);
       font-weight: 800;
       font-size: 14px;
       letter-spacing: 0.5px;
-      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+      box-shadow: 0 4px 14px rgba(6, 182, 212, 0.4);
     }
 
     .onboarding-step-counter {
@@ -282,7 +284,8 @@
       font-weight: 800;
       color: var(--accent-cyan);
       background: rgba(6, 182, 212, 0.15);
-      padding: 4px 10px;
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      padding: 4px 12px;
       border-radius: 12px;
     }
 
@@ -336,14 +339,14 @@
 
     .btn-onboarding-next:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 22px rgba(37, 99, 235, 0.6);
+      box-shadow: 0 6px 22px rgba(6, 182, 212, 0.6);
     }
 
     /* ==========================================================================
-       SCREEN 1: CONSTELLATION MAP (PETA RASI BINTANG DINAMIS)
+       SCREEN 1: CONSTELLATION MAP (DEEP CYBER-ASTRAL BACKGROUND)
        ========================================================================== */
     #screen-map {
-      background: url('../phase-3/visuals/Desain referensi fix/constellation-map.jpg') center center / cover no-repeat;
+      background: url('../phase-3/visuals/Desain referensi fix/cyber-constellation-bg.jpg') center center / cover no-repeat;
       position: absolute;
       top: 64px;
       bottom: 0;
@@ -351,24 +354,27 @@
       right: 0;
       overflow-y: auto;
       padding: 24px 32px 60px 32px;
+      flex-direction: column;
+      align-items: center;
     }
 
     #screen-map::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: rgba(7, 11, 20, 0.78);
+      background: rgba(7, 11, 20, 0.68);
       pointer-events: none;
     }
 
     .map-header-panel {
       position: relative;
       z-index: 10;
+      width: 100%;
       max-width: 1100px;
       margin: 0 auto 24px auto;
       background: var(--bg-panel);
       backdrop-filter: blur(14px);
-      border: 1px solid var(--glass-border);
+      border: 1px solid var(--glass-border-glow);
       border-radius: 16px;
       padding: 18px 24px;
       display: flex;
@@ -410,21 +416,21 @@
     }
 
     .filter-pill.active {
-      background: rgba(59, 130, 246, 0.2);
+      background: rgba(59, 130, 246, 0.25);
       border-color: var(--primary);
       color: #60a5fa;
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
     }
 
-    /* CONSTELLATION GRAPH AREA */
     .constellation-universe {
       position: relative;
+      width: 100%;
       max-width: 1100px;
       min-height: 600px;
       margin: 0 auto;
       z-index: 5;
     }
 
-    /* SVG Connecting Constellation Lines */
     .constellation-svg {
       position: absolute;
       inset: 0;
@@ -472,7 +478,7 @@
     .node-card:hover {
       transform: translateY(-4px);
       border-color: var(--glass-border-glow);
-      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(59, 130, 246, 0.2);
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(59, 130, 246, 0.25);
     }
 
     .node-card.locked {
@@ -481,7 +487,7 @@
     }
 
     .node-card.active-node {
-      border-color: rgba(59, 130, 246, 0.5);
+      border-color: rgba(6, 182, 212, 0.5);
     }
 
     .node-badge-row {
@@ -497,9 +503,9 @@
       letter-spacing: 0.5px;
       padding: 4px 8px;
       border-radius: 6px;
-      background: rgba(59, 130, 246, 0.15);
-      color: #60a5fa;
-      border: 1px solid rgba(59, 130, 246, 0.3);
+      background: rgba(6, 182, 212, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(6, 182, 212, 0.3);
     }
 
     .node-card.locked .node-layer-tag {
@@ -577,7 +583,7 @@
       padding: 12px;
       border-radius: 10px;
       border: none;
-      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
       color: #fff;
       font-family: var(--font-display);
       font-weight: 800;
@@ -588,13 +594,13 @@
       justify-content: center;
       gap: 8px;
       transition: all 0.2s;
-      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
     }
 
     .btn-launch-node:hover {
-      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      background: linear-gradient(135deg, #3b82f6, #0891b2);
       transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.5);
+      box-shadow: 0 6px 18px rgba(6, 182, 212, 0.5);
     }
 
     .btn-launch-node.btn-locked {
@@ -606,10 +612,10 @@
     }
 
     /* ==========================================================================
-       SCREEN 2: VISUAL NOVEL BRIEFING
+       SCREEN 2: VISUAL NOVEL TACTICAL BRIEFING (HIGH-TECH HOLO CHAMBER)
        ========================================================================== */
     #screen-vn {
-      background: url('../phase-3/visuals/Desain referensi fix/Laboratorium IPA.jpg') center center / cover no-repeat;
+      background: url('../phase-3/visuals/Desain referensi fix/briefing-room-bg.jpg') center center / cover no-repeat;
       position: absolute;
       top: 64px;
       bottom: 0;
@@ -626,13 +632,13 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 50% 40%, rgba(7, 11, 20, 0.4) 0%, rgba(7, 11, 20, 0.85) 100%);
+      background: radial-gradient(circle at 50% 40%, rgba(7, 11, 20, 0.3) 0%, rgba(7, 11, 20, 0.88) 100%);
       pointer-events: none;
     }
 
     .vn-avatar-container {
       position: absolute;
-      bottom: 220px;
+      bottom: 230px;
       display: flex;
       justify-content: center;
       pointer-events: none;
@@ -642,7 +648,8 @@
     .vn-avatar-container img {
       max-height: 480px;
       width: auto;
-      filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.9));
+      border-radius: 16px;
+      filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 25px rgba(6, 182, 212, 0.35));
     }
 
     .vn-dialogue-panel {
@@ -651,11 +658,11 @@
       width: 100%;
       max-width: 900px;
       background: var(--bg-panel);
-      backdrop-filter: blur(20px);
+      backdrop-filter: blur(24px);
       border: 1px solid var(--glass-border-glow);
       border-radius: 20px;
       padding: 24px 30px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75), 0 0 30px rgba(6, 182, 212, 0.2);
       margin-bottom: 20px;
       display: flex;
       flex-direction: column;
@@ -677,7 +684,7 @@
 
     .btn-vn-notes {
       background: rgba(139, 92, 246, 0.15);
-      border: 1px solid rgba(139, 92, 246, 0.3);
+      border: 1px solid rgba(139, 92, 246, 0.35);
       color: #c084fc;
       padding: 10px 18px;
       border-radius: 10px;
@@ -708,20 +715,20 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      box-shadow: 0 4px 16px rgba(239, 68, 68, 0.4);
+      box-shadow: 0 4px 16px rgba(239, 68, 68, 0.45);
       transition: all 0.2s;
     }
 
     .btn-vn-battle:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(239, 68, 68, 0.6);
+      box-shadow: 0 6px 24px rgba(239, 68, 68, 0.65);
     }
 
     /* ==========================================================================
-       SCREEN 3: JRPG TURN-BASED BATTLE SCREEN
+       SCREEN 3: JRPG BATTLE STANDOFF ARENA (2-SIDED REAL ENCOUNTER)
        ========================================================================== */
     #screen-battle {
-      background: radial-gradient(circle at 50% 20%, #172554 0%, #070b14 70%);
+      background: url('../phase-3/visuals/Desain referensi fix/cyber-battle-arena.jpg') center bottom / cover no-repeat;
       position: absolute;
       top: 64px;
       bottom: 0;
@@ -729,11 +736,19 @@
       right: 0;
       flex-direction: column;
       justify-content: space-between;
-      padding: 20px 32px 30px 32px;
+      padding: 16px 32px 24px 32px;
       overflow-y: auto;
     }
 
-    /* Top Battle HUD: Player & Boss Status */
+    #screen-battle::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(7, 11, 20, 0.15) 0%, rgba(7, 11, 20, 0.75) 100%);
+      pointer-events: none;
+    }
+
+    /* Top Battle Status HUD */
     .battle-hud-row {
       display: flex;
       justify-content: space-between;
@@ -742,17 +757,17 @@
       max-width: 1100px;
       margin: 0 auto;
       width: 100%;
-      z-index: 5;
+      z-index: 10;
     }
 
     .combatant-card {
       background: var(--bg-panel);
-      backdrop-filter: blur(14px);
-      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border-glow);
       border-radius: 16px;
-      padding: 16px 20px;
+      padding: 14px 20px;
       width: 320px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
       transition: transform 0.2s ease;
     }
 
@@ -772,7 +787,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .combatant-name {
@@ -790,11 +805,11 @@
       text-transform: uppercase;
     }
 
-    .combatant-badge.player { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
-    .combatant-badge.boss { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+    .combatant-badge.player { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+    .combatant-badge.boss { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
 
     .meter-row {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .meter-label-row {
@@ -803,12 +818,12 @@
       font-size: 11px;
       font-weight: 700;
       color: var(--text-muted);
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
     .meter-bar-track {
       width: 100%;
-      height: 10px;
+      height: 9px;
       background: rgba(15, 23, 42, 0.9);
       border-radius: 5px;
       overflow: hidden;
@@ -826,55 +841,156 @@
     .meter-bar-fill.hp-boss { background: linear-gradient(90deg, #ef4444, #f87171); }
     .meter-bar-fill.mp-boss { background: linear-gradient(90deg, #8b5cf6, #c084fc); }
 
-    /* Center Boss Arena & Sprite */
-    .battle-center-arena {
+    /* ==========================================================================
+       REAL BATTLE STANDOFF ARENA STAGE (STUDENT VS BOSS IN PERSPECTIVE)
+       ========================================================================== */
+    .battle-standoff-stage {
+      position: relative;
+      max-width: 1000px;
+      width: 100%;
+      margin: 10px auto;
+      height: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0 40px;
+      z-index: 10;
+    }
+
+    /* Player Side (Left) */
+    .standoff-player-wrap {
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      margin: 10px 0;
-      z-index: 4;
+      transition: transform 0.3s ease;
     }
 
-    .boss-sprite-frame {
+    .player-combat-sprite {
+      height: 250px;
+      width: auto;
+      filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 15px rgba(6, 182, 212, 0.4));
+      border-radius: 12px;
+      animation: idleBreathe 3s ease-in-out infinite;
+    }
+
+    .holo-pedestal {
+      width: 180px;
+      height: 24px;
+      border-radius: 50%;
+      margin-top: -12px;
+      filter: blur(1px);
+    }
+
+    .holo-pedestal.player-pedestal {
+      background: radial-gradient(ellipse at center, rgba(6, 182, 212, 0.8) 0%, rgba(37, 99, 235, 0.3) 60%, transparent 100%);
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.6);
+    }
+
+    .holo-pedestal.boss-pedestal {
+      background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.8) 0%, rgba(99, 102, 241, 0.3) 60%, transparent 100%);
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.7);
+    }
+
+    .holo-pedestal.boss-pedestal.hard-pedestal {
+      background: radial-gradient(ellipse at center, rgba(239, 68, 68, 0.9) 0%, rgba(185, 28, 28, 0.4) 60%, transparent 100%);
+      box-shadow: 0 0 35px rgba(239, 68, 68, 0.9);
+    }
+
+    /* Boss Side (Right) */
+    .standoff-boss-wrap {
       position: relative;
-      width: 270px;
-      height: 270px;
-      border-radius: 24px;
-      background: radial-gradient(circle at 50% 50%, rgba(30, 58, 138, 0.5) 0%, rgba(13, 21, 39, 0.8) 100%);
-      border: 2px solid var(--glass-border-glow);
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      box-shadow: 0 0 40px rgba(6, 182, 212, 0.25);
       transition: all 0.3s ease;
     }
 
-    .boss-sprite-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.8));
-      transition: filter 0.3s ease;
+    .boss-combat-sprite {
+      height: 270px;
+      width: auto;
+      border-radius: 16px;
+      filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 20px rgba(6, 182, 212, 0.5));
+      animation: idleFloatBoss 3.5s ease-in-out infinite;
     }
 
     /* Red Aura Charging on Hard Question */
-    .boss-sprite-frame.aura-charging {
-      animation: redAuraPulse 1.5s infinite alternate ease-in-out;
-      border-color: #ef4444;
+    .standoff-boss-wrap.aura-charging .boss-combat-sprite {
+      filter: drop-shadow(0 0 30px rgba(239, 68, 68, 0.9)) drop-shadow(0 0 50px rgba(239, 68, 68, 0.6)) brightness(1.15);
+      animation: bossRagePulse 1.2s infinite alternate ease-in-out;
     }
 
-    @keyframes redAuraPulse {
-      0% {
-        box-shadow: 0 0 25px rgba(239, 68, 68, 0.6), inset 0 0 20px rgba(239, 68, 68, 0.3);
-        transform: scale(1);
-      }
-      100% {
-        box-shadow: 0 0 60px rgba(239, 68, 68, 0.95), inset 0 0 40px rgba(239, 68, 68, 0.6);
-        transform: scale(1.03);
-      }
+    @keyframes idleBreathe {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-4px) scale(1.01); }
+    }
+
+    @keyframes idleFloatBoss {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    @keyframes bossRagePulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.05) translateY(-6px); }
+    }
+
+    /* Dynamic Attack Animations */
+    .player-attack-lunge {
+      animation: lungeForward 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes lungeForward {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(80px) scale(1.05); }
+      100% { transform: translateX(0); }
+    }
+
+    .boss-hit-reaction {
+      animation: bossHitShake 0.4s ease;
+    }
+
+    @keyframes bossHitShake {
+      0%, 100% { transform: translateX(0); filter: brightness(1); }
+      20% { transform: translateX(18px); filter: brightness(2) contrast(1.3); }
+      40% { transform: translateX(-15px); }
+      60% { transform: translateX(10px); }
+      80% { transform: translateX(-5px); }
+    }
+
+    /* Center Badge & Arena Overlay */
+    .arena-center-info {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      z-index: 15;
+    }
+
+    .challenge-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    .challenge-indicator.easy { background: rgba(16, 185, 129, 0.2); border: 1px solid #10b981; color: #34d399; }
+    .challenge-indicator.medium { background: rgba(245, 158, 11, 0.2); border: 1px solid #f59e0b; color: #fbbf24; }
+    .challenge-indicator.hard { background: rgba(239, 68, 68, 0.25); border: 1px solid #ef4444; color: #f87171; animation: pulseBadge 1.2s infinite; }
+
+    @keyframes pulseBadge {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
     }
 
     /* Floating Damage Text */
@@ -882,7 +998,7 @@
       position: absolute;
       font-family: var(--font-display);
       font-weight: 900;
-      font-size: 32px;
+      font-size: 34px;
       pointer-events: none;
       z-index: 50;
       animation: floatDamage 1.2s forwards cubic-bezier(0.16, 1, 0.3, 1);
@@ -890,18 +1006,18 @@
 
     .floating-damage.damage-enemy {
       color: #38bdf8;
-      text-shadow: 0 0 15px rgba(56, 189, 248, 0.8), 0 4px 10px rgba(0,0,0,0.9);
+      text-shadow: 0 0 18px rgba(56, 189, 248, 0.9), 0 4px 10px rgba(0,0,0,0.9);
     }
 
     .floating-damage.damage-critical {
       color: #fbbf24;
-      font-size: 38px;
-      text-shadow: 0 0 20px rgba(251, 191, 36, 0.9), 0 4px 12px rgba(0,0,0,0.9);
+      font-size: 40px;
+      text-shadow: 0 0 25px rgba(251, 191, 36, 0.95), 0 4px 12px rgba(0,0,0,0.9);
     }
 
     .floating-damage.damage-player {
       color: #f87171;
-      text-shadow: 0 0 15px rgba(248, 113, 113, 0.8), 0 4px 10px rgba(0,0,0,0.9);
+      text-shadow: 0 0 15px rgba(248, 113, 113, 0.9), 0 4px 10px rgba(0,0,0,0.9);
     }
 
     .floating-damage.damage-miss {
@@ -917,30 +1033,9 @@
       100% { opacity: 0; transform: translateY(-60px) scale(0.9); }
     }
 
-    /* Challenge Difficulty Badge */
-    .challenge-indicator {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
-      border-radius: 30px;
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 13px;
-      margin-bottom: 8px;
-      letter-spacing: 0.5px;
-    }
-
-    .challenge-indicator.easy { background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #34d399; }
-    .challenge-indicator.medium { background: rgba(245, 158, 11, 0.15); border: 1px solid #f59e0b; color: #fbbf24; }
-    .challenge-indicator.hard { background: rgba(239, 68, 68, 0.2); border: 1px solid #ef4444; color: #f87171; animation: pulseBadge 1.2s infinite; }
-
-    @keyframes pulseBadge {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-    }
-
-    /* Bottom Question & 4 Commands Area */
+    /* ==========================================================================
+       LOWER PANEL: QUESTION & 4 COMMANDS (100% BAHASA INDONESIA)
+       ========================================================================== */
     .battle-lower-panel {
       position: relative;
       max-width: 1100px;
@@ -948,20 +1043,20 @@
       width: 100%;
       background: var(--bg-panel);
       backdrop-filter: blur(20px);
-      border: 1px solid var(--glass-border);
+      border: 1px solid var(--glass-border-glow);
       border-radius: 20px;
-      padding: 20px 24px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+      padding: 18px 24px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
       display: grid;
       grid-template-columns: 1fr 280px;
       gap: 20px;
-      z-index: 5;
+      z-index: 10;
     }
 
     .question-side {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
     }
 
     .question-prompt {
@@ -979,7 +1074,7 @@
     }
 
     .btn-option {
-      background: rgba(15, 23, 42, 0.8);
+      background: rgba(15, 23, 42, 0.85);
       border: 1px solid var(--glass-border);
       border-radius: 10px;
       padding: 12px 14px;
@@ -996,9 +1091,10 @@
     }
 
     .btn-option:hover {
-      background: rgba(30, 41, 59, 0.9);
-      border-color: var(--primary);
+      background: rgba(30, 41, 59, 0.95);
+      border-color: var(--accent-cyan);
       transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(6, 182, 212, 0.3);
     }
 
     .btn-option.disabled-option {
@@ -1049,21 +1145,21 @@
     }
 
     .btn-command.cmd-attack {
-      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
       color: #fff;
-      border-color: rgba(96, 165, 250, 0.4);
-      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+      border-color: rgba(6, 182, 212, 0.4);
+      box-shadow: 0 4px 14px rgba(6, 182, 212, 0.35);
     }
 
     .btn-command.cmd-attack:hover {
-      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      background: linear-gradient(135deg, #3b82f6, #0891b2);
       transform: translateY(-2px);
     }
 
     .btn-command.cmd-skill {
       background: rgba(139, 92, 246, 0.15);
       color: #c084fc;
-      border-color: rgba(139, 92, 246, 0.3);
+      border-color: rgba(139, 92, 246, 0.35);
     }
 
     .btn-command.cmd-skill:hover {
@@ -1074,7 +1170,7 @@
     .btn-command.cmd-items {
       background: rgba(245, 158, 11, 0.15);
       color: #fbbf24;
-      border-color: rgba(245, 158, 11, 0.3);
+      border-color: rgba(245, 158, 11, 0.35);
     }
 
     .btn-command.cmd-items:hover {
@@ -1085,7 +1181,7 @@
     .btn-command.cmd-notes {
       background: rgba(6, 182, 212, 0.15);
       color: #22d3ee;
-      border-color: rgba(6, 182, 212, 0.3);
+      border-color: rgba(6, 182, 212, 0.35);
     }
 
     .btn-command.cmd-notes:hover {
@@ -1097,7 +1193,7 @@
        SCREEN 4: RESULT SCREEN & MASTERY DIAGNOSTICS
        ========================================================================== */
     #screen-result {
-      background: radial-gradient(circle at 50% 30%, #1e1b4b 0%, #070b14 80%);
+      background: radial-gradient(circle at 50% 30%, #1e1b4b 0%, #070b14 85%);
       position: absolute;
       top: 64px;
       bottom: 0;
@@ -1117,7 +1213,7 @@
       border: 1px solid var(--glass-border-glow);
       border-radius: 24px;
       padding: 32px 36px;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(59, 130, 246, 0.2);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(59, 130, 246, 0.25);
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -1132,7 +1228,7 @@
     }
 
     .result-header.victory h2 {
-      background: linear-gradient(90deg, #34d399, #60a5fa);
+      background: linear-gradient(90deg, #34d399, #38bdf8);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -1157,7 +1253,7 @@
     }
 
     .diagnostic-box {
-      background: rgba(15, 23, 42, 0.7);
+      background: rgba(15, 23, 42, 0.75);
       border: 1px solid var(--glass-border);
       border-radius: 14px;
       padding: 14px 10px;
@@ -1191,13 +1287,13 @@
     }
 
     .pedagogical-advice-box {
-      background: rgba(59, 130, 246, 0.1);
-      border: 1px solid rgba(59, 130, 246, 0.25);
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.25);
       border-radius: 12px;
       padding: 14px 18px;
       font-size: 13px;
       line-height: 1.6;
-      color: #bfdbfe;
+      color: #bae6fd;
       text-align: left;
     }
 
@@ -1220,7 +1316,7 @@
     .reward-item.gold { color: #fbbf24; }
 
     .btn-return-map {
-      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
       border: none;
       color: #fff;
       padding: 14px 28px;
@@ -1229,13 +1325,13 @@
       font-weight: 800;
       font-size: 15px;
       cursor: pointer;
-      box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+      box-shadow: 0 4px 16px rgba(6, 182, 212, 0.4);
       transition: all 0.2s;
     }
 
     .btn-return-map:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(37, 99, 235, 0.6);
+      box-shadow: 0 6px 24px rgba(6, 182, 212, 0.6);
     }
 
     /* ==========================================================================
@@ -1264,7 +1360,7 @@
       width: 100%;
       max-width: 520px;
       padding: 24px 28px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -1302,7 +1398,7 @@
     }
 
     .modal-item-row {
-      background: rgba(15, 23, 42, 0.7);
+      background: rgba(15, 23, 42, 0.75);
       border: 1px solid var(--glass-border);
       border-radius: 12px;
       padding: 12px 14px;
@@ -1340,13 +1436,6 @@
       background: #3b82f6;
     }
 
-    .btn-item-action:disabled {
-      background: rgba(148, 163, 184, 0.2);
-      color: var(--text-dim);
-      cursor: not-allowed;
-    }
-
-    /* VIP Code Input */
     .vip-input {
       width: 100%;
       padding: 12px 16px;
@@ -1360,8 +1449,8 @@
     }
 
     .vip-input:focus {
-      border-color: var(--primary);
-      box-shadow: 0 0 10px var(--primary-glow);
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(6, 182, 212, 0.4);
     }
   </style>
 </head>
@@ -1369,7 +1458,7 @@
 
 <div id="app-container">
   
-  <!-- GLOBAL HEADER HUD -->
+  <!-- GLOBAL HEADER HUD (CLEANED: NO LEVEL BOX) -->
   <header class="top-hud">
     <div class="brand-group" id="btn-brand-home" title="Kembali ke Peta">
       <div class="brand-logo">AA</div>
@@ -1380,18 +1469,17 @@
     </div>
     
     <div class="hud-stats">
-      <div class="stat-pill level">⚡ Lv. <span id="hud-level">12</span></div>
-      <div class="stat-pill gold">🪙 <span id="hud-gold">755</span></div>
+      <div class="stat-pill gold">🪙 <span id="hud-gold">755</span> Koin</div>
       <div class="stat-pill mp">🧪 <span id="hud-mp">50</span>/50 MP</div>
       <button class="btn-hud" id="btn-open-vip">⚙️ Pengaturan & Akses</button>
     </div>
   </header>
 
-  <!-- SCREEN 0: ONBOARDING GREETING (KATA SAMBUTAN RIFKI) -->
+  <!-- SCREEN 0: ONBOARDING GREETING (FUTURISTIC NUSANTARA ACADEMY) -->
   <section id="screen-onboarding" class="screen-view active">
     <div class="onboarding-stage">
       <div class="onboarding-avatar-wrap">
-        <img src="../phase-3/visuals/Desain referensi fix/npc-rifki.png" alt="Rifki Mentor">
+        <img src="../phase-3/visuals/Desain referensi fix/rifki-scifi-mentor.jpg" alt="Rifki Mentor Nusantara Academy">
       </div>
       
       <div class="onboarding-dialog-card">
@@ -1434,8 +1522,8 @@
       <svg class="constellation-svg" id="constellation-svg-lines" viewBox="0 0 1100 600">
         <defs>
           <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
-            <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.4" />
+            <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#818cf8" stop-opacity="0.5" />
           </linearGradient>
         </defs>
         <!-- Lines connecting nodes dynamically drawn in JS -->
@@ -1562,10 +1650,10 @@
     </div>
   </section>
 
-  <!-- SCREEN 2: VISUAL NOVEL PRE-MISSION BRIEFING -->
+  <!-- SCREEN 2: VISUAL NOVEL TACTICAL BRIEFING -->
   <section id="screen-vn" class="screen-view">
     <div class="vn-avatar-container">
-      <img id="vn-npc-sprite" src="../phase-3/visuals/Desain referensi fix/npc-rifki.png" alt="NPC Mentor">
+      <img id="vn-npc-sprite" src="../phase-3/visuals/Desain referensi fix/rifki-scifi-mentor.jpg" alt="NPC Mentor">
     </div>
 
     <div class="vn-dialogue-panel">
@@ -1575,7 +1663,7 @@
       </div>
 
       <p class="vn-dialogue-text" id="vn-dialogue-content">
-        Sebelum menghadapi wujud monster materi ini, pelajari intisarinya dengan teliti. Ingat: jika salah menjawab, kamu hanya kehilangan 5 HP. Tidak ada rasa cemas—fokuslah memahami polanya!
+        Sebelum menghadapi perwujudan materi di arena simulasi, pelajari intisarinya dengan teliti. Ingat: jika salah menjawab, kamu hanya kehilangan 5 HP. Tidak ada rasa cemas—fokuslah memahami polanya!
       </p>
 
       <div class="vn-dialogue-footer">
@@ -1589,9 +1677,9 @@
     </div>
   </section>
 
-  <!-- SCREEN 3: JRPG BATTLE SCREEN -->
+  <!-- SCREEN 3: JRPG BATTLE STANDOFF ARENA (REAL 2-SIDED ENCOUNTER) -->
   <section id="screen-battle" class="screen-view">
-    <!-- TOP STATUS ROW -->
+    <!-- TOP STATUS ROW (NO LEVEL) -->
     <div class="battle-hud-row">
       <!-- Player Card -->
       <div class="combatant-card" id="player-card">
@@ -1646,18 +1734,29 @@
       </div>
     </div>
 
-    <!-- CENTER ARENA: STANDALONE MONSTER SPRITE -->
-    <div class="battle-center-arena">
-      <div class="challenge-indicator easy" id="battle-challenge-badge">
-        <span>🟢 PEMANASAN</span> • Soal 1 dari 5
+    <!-- REAL BATTLE STANDOFF ARENA (STUDENT VS BOSS IN CYBERSPACE) -->
+    <div class="battle-standoff-stage" id="battle-stage-area">
+      <!-- Center Challenge Badge -->
+      <div class="arena-center-info">
+        <div class="challenge-indicator easy" id="battle-challenge-badge">
+          <span>🟢 PEMANASAN</span> • Soal 1 dari 5
+        </div>
       </div>
 
-      <div class="boss-sprite-frame" id="boss-sprite-container">
-        <img id="battle-boss-image" src="../phase-3/visuals/Desain referensi fix/algebra-golem-sprite.jpg" alt="Boss Monster">
+      <!-- Left Side: Player Hero Standoff -->
+      <div class="standoff-player-wrap" id="player-combat-wrap">
+        <img class="player-combat-sprite" src="../phase-3/visuals/Desain referensi fix/student-hero-combat.jpg" alt="Siswa Nusantara">
+        <div class="holo-pedestal player-pedestal"></div>
+      </div>
+
+      <!-- Right Side: Boss Monster Standoff -->
+      <div class="standoff-boss-wrap" id="boss-combat-wrap">
+        <img class="boss-combat-sprite" id="battle-boss-image" src="../phase-3/visuals/Desain referensi fix/algebra-golem-sprite.jpg" alt="Boss Monster">
+        <div class="holo-pedestal boss-pedestal" id="boss-pedestal-light"></div>
       </div>
     </div>
 
-    <!-- LOWER PANEL: QUESTION & 4 COMMANDS -->
+    <!-- LOWER PANEL: QUESTION & 4 COMMANDS (100% BAHASA INDONESIA) -->
     <div class="battle-lower-panel">
       <div class="question-side">
         <div class="question-prompt" id="battle-question-text">
@@ -1842,8 +1941,8 @@ const VERIFIED_POOLS = {
     bossMaxHp: 600,
     bossMaxMp: 300,
     mentorName: '🎓 Rifki • Mentor Numerasi',
-    mentorSprite: '../phase-3/visuals/Desain referensi fix/npc-rifki.png',
-    briefingText: 'Algebra Golem adalah perwujudan materi Aljabar dan Barisan. Monster ini akan menguji ketelitianmu dalam barisan aritmetika, geometri, dan pemodelan kontekstual. Perhatikan: salah menjawab hanya mengurangi 5 HP! Tetap tenang dan percaya pada analisismu.',
+    mentorSprite: '../phase-3/visuals/Desain referensi fix/rifki-scifi-mentor.jpg',
+    briefingText: 'Algebra Golem adalah perwujudan materi Aljabar dan Barisan di arena simulasi siber. Monster ini akan menguji ketelitianmu dalam barisan aritmetika, geometri, dan pemodelan kontekstual. Perhatikan: salah menjawab hanya mengurangi 5 HP! Tetap tenang dan percaya pada analisismu.',
     conceptNotes: `
       <h4 style="color:#60a5fa; margin-bottom:8px;">1. Barisan Aritmetika</h4>
       <p>Bentuk barisan dengan selisih tetap (beda = b). Rumus suku ke-n: <strong>U<sub>n</sub> = a + (n - 1)b</strong>, di mana <em>a</em> adalah suku pertama dan <em>b</em> adalah beda antar suku.</p>
@@ -1936,8 +2035,8 @@ const VERIFIED_POOLS = {
     bossMaxHp: 600,
     bossMaxMp: 300,
     mentorName: '📚 Leli • Mentor Literasi',
-    mentorSprite: '../phase-3/visuals/Desain referensi fix/npc-leli.png',
-    briefingText: 'The Text Guardian menjaga integritas teks dan pemahaman bacaan resmi. Kuasai daya nalarmu untuk membedakan fakta langsung dengan kesimpulan implisit. Setiap jawaban benar akan meruntuhkan perisai prasastinya!',
+    mentorSprite: '../phase-3/visuals/Desain referensi fix/rifki-scifi-mentor.jpg',
+    briefingText: 'The Text Guardian menjaga integritas teks dan pemahaman bacaan resmi. Kuasai daya nalarmu untuk membedakan fakta langsung dengan kesimpulan implisit di arena simulasi literasi!',
     conceptNotes: `
       <h4 style="color:#38bdf8; margin-bottom:8px;">1. Fakta Langsung vs Implisit</h4>
       <p>Fakta langsung adalah informasi yang tertulis secara eksplisit. Kesimpulan implisit adalah makna yang tersirat logis tanpa melampaui batasan teks.</p>
@@ -2020,12 +2119,11 @@ const VERIFIED_POOLS = {
   }
 };
 
-// GLOBAL APP STATE
+// GLOBAL APP STATE (CLEANED: NO LEVEL)
 const app = {
   state: {
     currentScreen: 'onboarding',
     player: {
-      level: 12,
       gold: 755,
       hp: 100,
       maxHp: 100,
@@ -2046,7 +2144,7 @@ const app = {
       bossMp: 300,
       bossMaxMp: 300,
       combo: 0,
-      results: [], // { difficulty, isCorrect }
+      results: [],
       disabledOptions: []
     },
     onboardingStep: 0
@@ -2056,7 +2154,7 @@ const app = {
     {
       step: 1,
       total: 4,
-      text: "Selamat datang di <strong>Nusantara Academy</strong>! Ini bukan sekadar gerbang sekolah biasa—ini adalah garis awal perjuangan kita menghadapi tahun paling menentukan dalam hidup kita: <strong>Kelas XII</strong>."
+      text: "Selamat datang di <strong>Nusantara Academy</strong>! Ini bukan sekadar kampus biasa—ini adalah garis awal perjuangan kita menghadapi tahun paling menentukan dalam hidup kita: <strong>Kelas XII</strong>."
     },
     {
       step: 2,
@@ -2108,7 +2206,6 @@ const app = {
   },
 
   updateHUD() {
-    document.getElementById('hud-level').textContent = this.state.player.level;
     document.getElementById('hud-gold').textContent = this.state.player.gold;
     document.getElementById('hud-mp').textContent = this.state.player.mp;
   },
@@ -2148,8 +2245,8 @@ const app = {
     svg.innerHTML = `
       <defs>
         <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
-          <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.4" />
+          <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
+          <stop offset="100%" stop-color="#818cf8" stop-opacity="0.5" />
         </linearGradient>
       </defs>
       <!-- Connecting nodes -->
@@ -2236,18 +2333,22 @@ const app = {
 
     // Challenge Difficulty Badge & Red Aura Trigger
     const badge = document.getElementById('battle-challenge-badge');
-    const bossContainer = document.getElementById('boss-sprite-container');
+    const bossWrap = document.getElementById('boss-combat-wrap');
+    const pedestalLight = document.getElementById('boss-pedestal-light');
     
     badge.className = `challenge-indicator ${q.difficulty_label}`;
     if (q.difficulty_label === 'easy') {
       badge.innerHTML = `<span>🟢 PEMANASAN</span> • Soal ${index + 1} dari 5`;
-      bossContainer.classList.remove('aura-charging');
+      bossWrap.classList.remove('aura-charging');
+      pedestalLight.classList.remove('hard-pedestal');
     } else if (q.difficulty_label === 'medium') {
       badge.innerHTML = `<span>🟡 TANTANGAN</span> • Soal ${index + 1} dari 5`;
-      bossContainer.classList.remove('aura-charging');
+      bossWrap.classList.remove('aura-charging');
+      pedestalLight.classList.remove('hard-pedestal');
     } else if (q.difficulty_label === 'hard') {
       badge.innerHTML = `<span>🔴 PENALARAN</span> • Soal ${index + 1} dari 5 (AURA MERAH DIAKTIFKAN!)`;
-      bossContainer.classList.add('aura-charging');
+      bossWrap.classList.add('aura-charging');
+      pedestalLight.classList.add('hard-pedestal');
       this.showToast('⚠️ AURA MERAH BERKOBAR: Soal Penalaran Tingkat Tinggi!');
     }
 
@@ -2282,6 +2383,9 @@ const app = {
       isCorrect
     });
 
+    const playerWrap = document.getElementById('player-combat-wrap');
+    const bossWrap = document.getElementById('boss-combat-wrap');
+
     if (isCorrect) {
       // 1. UPDATE COMBO & CALCULATE DAMAGE
       this.state.battle.combo++;
@@ -2292,21 +2396,24 @@ const app = {
       // Reduce boss HP
       this.state.battle.bossHp = Math.max(0, this.state.battle.bossHp - damage);
 
-      // Trigger floating damage
-      this.spawnFloatingDamage(`-${damage} DMG`, 'damage-enemy', critMult > 1);
+      // Lunge attack animation for player
+      playerWrap.classList.add('player-attack-lunge');
+      setTimeout(() => playerWrap.classList.remove('player-attack-lunge'), 500);
 
-      // Animate boss hit
-      const bossContainer = document.getElementById('boss-sprite-container');
-      bossContainer.style.filter = 'brightness(1.8) contrast(1.2)';
-      setTimeout(() => bossContainer.style.filter = '', 300);
+      // Hit reaction animation for boss
+      setTimeout(() => {
+        bossWrap.classList.add('boss-hit-reaction');
+        this.spawnFloatingDamage(`-${damage} DMG`, 'damage-enemy', critMult > 1, false);
+        setTimeout(() => bossWrap.classList.remove('boss-hit-reaction'), 400);
+      }, 200);
 
-      this.showToast(`🎯 Jawaban Benar! Melancarkan serangan ${damage} kerusakan!`);
+      this.showToast(`🎯 Jawaban Benar! Serangan melancarkan ${damage} kerusakan!`);
     } else {
       // 2. WRONG ANSWER (ANTI-ANXIETY CONTRACT)
       this.state.battle.combo = 0;
 
       // Show 0 DMG on boss (meleset)
-      this.spawnFloatingDamage('0 DMG (MELESET!)', 'damage-miss');
+      this.spawnFloatingDamage('0 DMG (MELESET!)', 'damage-miss', false, false);
 
       // Check Shield
       if (this.state.player.hasShield) {
@@ -2318,7 +2425,7 @@ const app = {
         this.state.player.hp = Math.max(0, this.state.player.hp - penalty);
         this.spawnFloatingDamage(`-${penalty} HP`, 'damage-player', false, true);
 
-        // Shake player card
+        // Shake player card and wrap
         const playerCard = document.getElementById('player-card');
         playerCard.classList.add('shake');
         setTimeout(() => playerCard.classList.remove('shake'), 400);
@@ -2329,10 +2436,10 @@ const app = {
 
     this.updateBattleHUD();
 
-    // Advance turn after 1.5s
+    // Advance turn after 1.6s
     setTimeout(() => {
       this.nextTurn();
-    }, 1500);
+    }, 1600);
   },
 
   spawnFloatingDamage(text, cssClass, isCritical = false, onPlayer = false) {
@@ -2341,15 +2448,15 @@ const app = {
     el.textContent = text;
 
     if (onPlayer) {
-      const target = document.getElementById('player-card');
+      const target = document.getElementById('player-combat-wrap');
+      target.appendChild(el);
+      el.style.left = '50%';
+      el.style.top = '20%';
+    } else {
+      const target = document.getElementById('boss-combat-wrap');
       target.appendChild(el);
       el.style.left = '50%';
       el.style.top = '30%';
-    } else {
-      const target = document.getElementById('boss-sprite-container');
-      target.appendChild(el);
-      el.style.left = '50%';
-      el.style.top = '40%';
     }
 
     setTimeout(() => el.remove(), 1200);
@@ -2381,14 +2488,13 @@ const app = {
       titleText.textContent = 'EVALUASI TUNTAS!';
       subText.textContent = 'Kamu berhasil menundukkan perwujudan materi dengan pemahaman yang solid.';
       this.state.player.gold += 120;
-      this.state.player.level += 1;
       document.getElementById('result-xp-val').textContent = '240';
       document.getElementById('result-gold-val').textContent = '120';
     } else {
       headerBlock.className = 'result-header defeat';
       titleText.textContent = 'EVALUASI REMEDIAL';
       subText.textContent = 'Pertahanan HP-mu habis. Pelajari kembali konsep materi sebelum mengulang evaluasi.';
-      this.state.player.gold += 30; // Hiburan
+      this.state.player.gold += 30;
       document.getElementById('result-xp-val').textContent = '50';
       document.getElementById('result-gold-val').textContent = '30';
     }
