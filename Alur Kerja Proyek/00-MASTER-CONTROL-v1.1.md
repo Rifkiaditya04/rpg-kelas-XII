@@ -605,4 +605,17 @@ Berdasarkan arahan resmi User pada 13 Oktober 2026, estetika visual dan panggung
   3. *Eliminasi Level Grinding:* Kotak `Lv.` dihapus sepenuhnya dari HUD dan kartu bos untuk menegakkan filosofi asesmen formatif non-punitive berbasis taksonomi Bloom.
   4. *Integritas Mekanik Utuh:* Mempertahankan 4 perintah 100% Bahasa Indonesia, penalti anti-kecemasan 5 HP, modal interaktif kemampuan/barang, dan backdoor VIP Keluarga (`AKSES_KELUARGA_VIP`).
 
+## 26. Character Assets Alpha Transparency Overhaul (2026-10-14)
+Berdasarkan telaah visual pada panggung arena pertempuran dan ruang briefing, ditemukan batas kanvas persegi panjang hitam akibat penggunaan berkas JPEG (24-bit RGB) tanpa kanal alfa. Sesuai mandat Tugas Tahap 1:
+- **Status Milestone:** VERIFIED PASS 🟢 (Project Log 104).
+- **Pilar Pembaruan Aset:**
+  1. *4 Berkas PNG RGBA Murni:* Dihasilkan 4 berkas PNG 32-bit dengan kanal alfa sejati di `phase-3/visuals/Desain referensi fix/`:
+     - `student-hero-combat.png` (Siswa kelas XII dengan seragam siber, stylus energi digital utuh, menghadap KANAN).
+     - `algebra-golem-sprite.png` (Golem kristal siber aljabar, kedua kaki dan cakar utuh tanpa platform batu retak, menghadap KIRI).
+     - `text-guardian-sprite.png` (Sphinx prajurit mekanis bersayap bulu naskah dan tongkat pena emas tanpa dungeon/pedestal batu, menghadap KIRI).
+     - `rifki-scifi-mentor.png` (Mentor Rifki berseragam siber dan tablet hologram transparan tanpa latar ruangan gelap).
+  2. *Uji Tepi Perimeter 1px:* 100% piksel pada batas kanvas terluar memiliki `alpha = 0`, menjamin ketiadaan artefak kotak hitam.
+  3. *Integritas Kode:* Kode HTML/CSS/JS/JSON dikunci dan tidak mengalami perubahan pada fase pembuatan aset ini. Berkas JPG lama dipertahankan berdampingan.
+
+
 
