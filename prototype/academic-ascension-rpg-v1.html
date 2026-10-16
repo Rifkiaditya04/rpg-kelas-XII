@@ -1738,51 +1738,7 @@
       }
     }
 
-    /* Ultra Narrow Mobile <= 340px (e.g. 320x640) */
-    @media (max-width: 340px) {
-      .top-hud {
-        padding: 4px 6px;
-      }
-      .brand-text h1 {
-        font-size: 10px;
-      }
-      .stat-pill {
-        padding: 2px 5px;
-        font-size: 9px;
-      }
-      .battle-standoff-stage {
-        height: 145px;
-      }
-      .player-combat-sprite {
-        height: 110px;
-      }
-      .boss-combat-sprite {
-        height: 120px;
-      }
-      .holo-pedestal {
-        width: 85px;
-        height: 10px;
-      }
-      .arena-center-info {
-        top: -12px;
-      }
-      .challenge-indicator {
-        font-size: 8.5px;
-        padding: 2px 6px;
-      }
-      .combatant-card {
-        padding: 6px 8px;
-      }
-      .question-prompt {
-        font-size: 12px;
-      }
-      .btn-option {
-        padding: 7px 8px;
-        font-size: 11px;
-      }
-    }
-
-    /* Short Screen Height <= 720px (e.g. 500x705, 320x640) */
+    /* Short Screen Height <= 720px (e.g. 500x705) */
     @media (max-height: 720px) {
       .battle-standoff-stage {
         height: 155px;
@@ -1813,6 +1769,52 @@
       }
       .btn-command {
         padding: 6px 4px;
+      }
+    }
+
+    /* Ultra Narrow Mobile <= 340px (e.g. 320x640) */
+    @media (max-width: 340px), (max-width: 340px) and (max-height: 720px) {
+      .top-hud {
+        padding: 4px 6px;
+      }
+      .brand-text h1 {
+        font-size: 10px;
+      }
+      .stat-pill {
+        padding: 2px 5px;
+        font-size: 9px;
+      }
+      .battle-standoff-stage {
+        height: 145px;
+        margin: 3px auto;
+      }
+      .player-combat-sprite {
+        height: 110px;
+      }
+      .boss-combat-sprite {
+        height: 120px;
+      }
+      .holo-pedestal {
+        width: 85px;
+        height: 10px;
+        margin-top: -5px;
+      }
+      .arena-center-info {
+        top: -12px;
+      }
+      .challenge-indicator {
+        font-size: 8.5px;
+        padding: 2px 6px;
+      }
+      .combatant-card {
+        padding: 6px 8px;
+      }
+      .question-prompt {
+        font-size: 12px;
+      }
+      .btn-option {
+        padding: 7px 8px;
+        font-size: 11px;
       }
     }
   </style>
@@ -2754,16 +2756,33 @@ const app = {
     const bossActor = document.getElementById('boss-actor-box');
     const playerCard = document.getElementById('player-card');
 
-    // Responsively calculate the exact lunge distance between Player and Boss
-    let lungeDistance = 150;
+    // Responsively and safely calculate the exact lunge distance between Player and Boss
+    let lungeDistance = 0;
     if (playerActor && bossActor) {
       const pRect = playerActor.getBoundingClientRect();
       const bRect = bossActor.getBoundingClientRect();
-      // Distance from player right to boss left, minus a comfortable gap
-      const gap = window.innerWidth <= 480 ? 16 : 32;
-      const actualDistance = (bRect.left - pRect.right) - gap;
-      // Clamp distance safely so sprites never clip offscreen or overlap bizarrely
-      lungeDistance = Math.max(40, Math.min(window.innerWidth * 0.6, actualDistance));
+      const stage = document.querySelector('.battle-standoff-stage');
+      const stageWidth = stage ? stage.getBoundingClientRect().width : window.innerWidth;
+
+      // Jarak horizontal murni antara batas kanan pemain dan batas kiri boss
+      const rawClearance = bRect.left - pRect.right;
+
+      // Celah aman responsif berdasarkan proporsi lebar karakter dan layar
+      // Pada layar mobile kecil minimal 14px, pada desktop hingga 28px
+      const baseGap = window.innerWidth <= 480 ? 14 : 28;
+      const safeGap = Math.max(10, Math.min(baseGap, (pRect.width + bRect.width) * 0.1));
+
+      // Jarak tempuh maksimal aman yang tidak akan pernah menembus safe gap
+      const maxSafeDistance = rawClearance - safeGap;
+
+      if (maxSafeDistance > 4) {
+        // Batasi gerakan agar proporsional dan tidak melebihi 45% lebar arena panggung
+        const maxTravel = stageWidth * 0.45;
+        lungeDistance = Math.round(Math.min(maxSafeDistance, maxTravel));
+      } else {
+        // Jika celah sangat sempit, nol, atau negatif, tahan di tempat tanpa memaksa perpindahan
+        lungeDistance = 0;
+      }
     }
 
     if (isCorrect) {

@@ -51,10 +51,14 @@ Pemeriksaan otomatis dijalankan menggunakan harness headless Chrome CDP pada ber
 2. `desktop_player_lunge_correct.png` (Pemain menerjang tepat di depan Boss, pedestal statis)
 3. `desktop_boss_counterattack_wrong.png` (Boss menyerang balik, penalti -5 HP terpicu)
 4. `desktop_text_guardian_arena.png` (The Text Guardian menghadap kiri)
-5. `mobile_500x705_arena.png` (Tablet / phablet view)
-6. `mobile_360x800_arena.png` (Mobile standar bersih tanpa overflow)
-7. `mobile_320x640_arena.png` (Mobile ultra-compact tanpa badge overlap)
-8. `vn_briefing_screen_1792137514726.png` (Briefing mentor tanpa kotak hitam)
+5. `desktop_958x944_arena.png` (Desktop windowed view)
+6. `desktop_vn_briefing_mentor.png` (Briefing mentor Rifki transparan tanpa kotak hitam)
+7. `mobile_500x705_arena.png` (Tablet / phablet view)
+8. `mobile_430x932_arena.png` (iPhone Pro Max view)
+9. `mobile_390x844_arena.png` (iPhone standar view)
+10. `mobile_390x844_text_guardian.png` (The Text Guardian mobile view)
+11. `mobile_360x800_arena.png` (Android standar bersih tanpa overflow)
+12. `mobile_320x640_arena.png` (Mobile ultra-compact tanpa badge overlap)
 
 Seluruh berkas tangkapan layar disimpan di `prototype/qa-screenshots/` dan dilengkapi viewer interaktif di `prototype/qa-screenshots/index.html`.
 
