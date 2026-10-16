@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bukti QA Tahap 2B — Academic Ascension RPG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070b14;
+      --card-bg: rgba(15, 23, 42, 0.85);
+      --border: rgba(56, 189, 248, 0.25);
+      --border-glow: rgba(56, 189, 248, 0.5);
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --cyan: #38bdf8;
+      --green: #34d399;
+      --red: #f87171;
+      --gold: #fbbf24;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-display: 'Orbitron', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(124, 58, 237, 0.15) 0%, transparent 40%);
+      color: var(--text);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      padding: 30px 20px 60px 20px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 36px;
+      margin-bottom: 36px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .brand-title h1 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      letter-spacing: 1px;
+      background: linear-gradient(90deg, var(--cyan), #c084fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+
+    .brand-title p {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .badge-pass {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid var(--green);
+      color: var(--green);
+      font-weight: 800;
+      border-radius: 30px;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 18px;
+      color: var(--cyan);
+      letter-spacing: 0.5px;
+      margin: 40px 0 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, var(--border), transparent);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      transition: transform 0.2s, border-color 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--cyan);
+      box-shadow: 0 16px 40px rgba(56, 189, 248, 0.2);
+    }
+
+    .card-img-wrap {
+      background: #000;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      min-height: 220px;
+    }
+
+    .card-img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .card-img-wrap:hover img {
+      transform: scale(1.02);
+    }
+
+    .img-zoom-hint {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(0,0,0,0.75);
+      border: 1px solid var(--border);
+      color: #fff;
+      padding: 4px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 20px;
+      pointer-events: none;
+    }
+
+    .card-body {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .card-tag {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--cyan);
+      margin-bottom: 4px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .card-desc {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .btn-action {
+      flex: 1;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action.primary {
+      background: linear-gradient(135deg, #2563eb, #38bdf8);
+      color: #fff;
+      border: none;
+    }
+
+    .btn-action.primary:hover {
+      background: linear-gradient(135deg, #1d4ed8, #0284c7);
+      box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);
+    }
+
+    .btn-action.secondary {
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .btn-action.secondary:hover {
+      background: rgba(51, 65, 85, 0.9);
+      border-color: var(--cyan);
+    }
+
+    /* Modal Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      padding: 30px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 95%;
+      max-height: 85vh;
+      border-radius: 12px;
+      box-shadow: 0 10px 50px rgba(0,0,0,0.9);
+      border: 1px solid var(--border);
+    }
+
+    .lightbox-caption {
+      margin-top: 16px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 24px;
+      right: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  
+  <header>
+    <div class="brand-title">
+      <h1>BUKTI QA TAHAP 2B: ACADEMIC ASCENSION RPG</h1>
+      <p>Validasi Responsif Mobile, Orientasi Boss Menghadap Pemain, & Animasi Turn-Based RPG Dinamis</p>
+    </div>
+    <div class="badge-pass">
+      <span>🟢</span> STATUS: VERIFIED PASS (100%)
+    </div>
+  </header>
+
+  <!-- SECTION 1: PERTEMPURAN & ANIMASI RPG -->
+  <div class="section-title">⚔️ 1. Pertempuran & Animasi RPG Turn-Based (Desktop 1440 × 900)</div>
+  <div class="grid">
+    
+    <!-- 1. Standoff 1440x900 -->
+    <div class="card">
+      <div class="card-img-wrap" onclick="openLightbox('desktop_1440x900_arena.png', 'Desktop 1440x900 Arena: Siswa (Kiri) & Algebra Golem (Kanan)')">
+        <img src="desktop_1440x900_arena.png" alt="Desktop 1440x900 Arena">
+        <span class="img-zoom-hint">🔍 Klik untuk Zoom</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="card-tag">Standoff 2 Sisi Sejati</div>
+          <div class="card-title">Arena Desktop 1440 × 900</div>
+          <div class="card-desc">Siswa Nusantara berdiri di sisi KIRI menghadap ke KANAN. Algebra Golem berdiri di sisi KANAN menghadap ke KIRI dengan gada kristal siap tempur. Pedestal hologram terpisah dan statis.</div>
+        </div>
+        <div class="card-actions">
+          <a class="btn-action primary" href="desktop_1440x900_arena.png" target="_blank">Buka Gambar Asli ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Player Lunge Correct -->
+    <div class="card">
+      <div class="card-img-wrap" onclick="openLightbox('desktop_player_lunge_correct.png', 'Jawaban Benar: Siswa Menerjang Mendekati Boss, Pedestal Tetap Diam di Kiri')">
+        <img src="desktop_player_lunge_correct.png" alt="Player Lunge Correct">
+        <span class="img-zoom-hint">🔍 Klik untuk Zoom</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="card-tag" style="color: var(--green);">Jawaban Benar (Hit Contact)</div>
+          <div class="card-title">Animasi Terjangan Siswa Nusantara</div>
+          <div class="card-desc">Pemain menerjang melintasi arena hingga berada di depan batas tubuh Bos. Pedestal hologram pemain TETAP statis di posisi kiri. Bos mengalami getaran kilatan benturan dan damage -50 DMG.</div>
+        </div>
+        <div class="card-actions">
+          <a class="btn-action primary" href="desktop_player_lunge_correct.png" target="_blank">Buka Gambar Asli ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Boss Counterattack Wrong -->
+    <div class="card">
+      <div class="card-img-wrap" onclick="openLightbox('desktop_boss_counterattack_wrong.png', 'Jawaban Salah: Boss Menerjang Balik ke Siswa, Recoil & Penalti -5 HP')">
+        <img src="desktop_boss_counterattack_wrong.png" alt="Boss Counterattack Wrong">
+        <span class="img-zoom-hint">🔍 Klik untuk Zoom</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="card-tag" style="color: var(--red);">Jawaban Salah (Boss Counter)</div>
+          <div class="card-title">Serangan Balik Algebra Golem</div>
+          <div class="card-desc">Pemain tidak bergerak maju. Bos menerjang maju ke arah pemain. Pemain menerima efek recoil/sentakan dan floating damage -5 HP (aturan anti-kecemasan). Pedestal Bos tetap diam di kanan.</div>
+        </div>
+        <div class="card-actions">
+          <a class="btn-action primary" href="desktop_boss_counterattack_wrong.png" target="_blank">Buka Gambar Asli ↗</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION 2: MATRIKS VIEWPORT MOBILE -->
+  <div class="section-title">📱 2. Matriks Uji Layar Mobile (Responsif & Zero Overflow)</div>
+  <div class="grid">
+    
+    <!-- 4. 430x932 -->
+    <div class="card">
+      <div class="card-img-wrap" onclick="openLightbox('mobile_430x932_arena.png', 'Mobile 430x932 (iPhone Pro Max): Header, 2 HUD Cards, & Action Grid')">
+        <img src="mobile_430x932_arena.png" alt="Mobile 430x932">
+        <span class="img-zoom-hint">🔍 Klik untuk Zoom</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="card-tag">Viewport 430 × 932</div>
+          <div class="card-title">iPhone Pro Max / Android Flagship</div>
+          <div class="card-desc">Header memuat logo, nama game, koin, MP, dan tombol Akses tanpa overflow. Kartu status HP/MP berdampingan rapi. Panel soal dan tombol perintah proporsional.</div>
+        </div>
+        <div class="card-actions">
+          <a class="btn-action primary" href="mobile_430x932_arena.png" target="_blank">Buka Gambar Asli ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. 390x844 -->
+    <div class="card">
+      <div class="card-img-wrap" onclick="openLightbox('mobile_390x844_arena.png', 'Mobile 390x844 (iPhone 12/13/14): Komposisi Standoff Bersih')">
+        <img src="mobile_390x844_arena.png" alt="Mobile 390x844">
+        <span class="img-zoom-hint">🔍 Klik untuk Zoom</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="card-tag">Viewport 390 × 844</div>
+          <div class="card-title">iPhone Standar</div>
+          <div class="card-desc">Badge tantangan melayang rapi di atas arena tanpa menutupi senjata. Pilihan jawaban A, B, C, D nyaman untuk tap jari.</div>
+        </div>
+        <div class="card-actions">
+          <a class="btn-action primary" href="mobile_390x844_arena.png" target="_blank">Buka Gambar Asli ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. 360x800 -->
+    <div class="card">
+      <div class="card-img-wrap" onclick="openLightbox('mobile_360x800_arena.png', 'Mobile 360x800 (Android Standar): Seimbang & Responsif')">
+        <img src="mobile_360x800_arena.png" alt="Mobile 360x800">
+        <span class="img-zoom-hint">🔍 Klik untuk Zoom</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="card-tag">Viewport 360 × 800</div>
+          <div class="card-title">Android Standar (Samsung, Xiaomi, dll)</div>
+          <div class="card-desc">Tinggi panggung 170px memberikan ruang lega untuk soal dan 4 tombol komando. Karakter saling berhadapan proporsional.</div>
+        </div>
+        <div class="card-actions">
+          <a class="btn-action primary" href="mobile_360x800_arena.png" target="_blank">Buka Gambar Asli ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. 320x640 -->
+    <div class="card">
+      <div class="card-img-wrap" onclick="openLightbox('mobile_320x640_arena.png', 'Mobile 320x640 (Ultra-Narrow): Zero Clipping Pada Layar Sangat Sempit')">
+        <img src="mobile_320x640_arena.png" alt="Mobile 320x640">
+        <span class="img-zoom-hint">🔍 Klik untuk Zoom</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="card-tag">Viewport 320 × 640</div>
+          <div class="card-title">Ultra-Narrow Mobile</div>
+          <div class="card-desc">Layar paling sempit: badge tantangan 1 baris, tombol perintah 2x2, karakter 110-120px dengan pedestal seimbang tanpa tumpang tindih.</div>
+        </div>
+        <div class="card-actions">
+          <a class="btn-action primary" href="mobile_320x640_arena.png" target="_blank">Buka Gambar Asli ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. 500x705 -->
+    <div class="card">
+      <div class="card-img-wrap" onclick="openLightbox('mobile_500x705_arena.png', 'Mobile 500x705 (Layar Pendek / Foldable): Kontrol Tetap Terlihat')">
+        <img src="mobile_500x705_arena.png" alt="Mobile 500x705">
+        <span class="img-zoom-hint">🔍 Klik untuk Zoom</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="card-tag">Viewport 500 × 705</div>
+          <div class="card-title">Layar Pendek / Foldable</div>
+          <div class="card-desc">Optimalisasi tinggi layar pendek: tombol Pengaturan & Akses tidak patah baris, panggung arena tetap pas tanpa mendorong tombol keluar layar.</div>
+        </div>
+        <div class="card-actions">
+          <a class="btn-action primary" href="mobile_500x705_arena.png" target="_blank">Buka Gambar Asli ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. 958x944 -->
+    <div class="card">
+      <div class="card-img-wrap" onclick="openLightbox('desktop_958x944_arena.png', 'Desktop 958x944 (Windowed Desktop): Komposisi Tengah Seimbang')">
+        <img src="desktop_958x944_arena.png" alt="Desktop 958x944">
+        <span class="img-zoom-hint">🔍 Klik untuk Zoom</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="card-tag">Viewport 958 × 944</div>
+          <div class="card-title">Desktop Windowed</div>
+          <div class="card-desc">Ukuran jendela desktop moderat: layout panggung tetap mempertahankan estetika 2 sisi dengan panel bawah yang kokoh.</div>
+        </div>
+        <div class="card-actions">
+          <a class="btn-action primary" href="desktop_958x944_arena.png" target="_blank">Buka Gambar Asli ↗</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION 3: THE TEXT GUARDIAN (MISI 2) -->
+  <div class="section-title">📚 3. Orientasi The Text Guardian (Misi 2 — Literasi)</div>
+  <div class="grid">
+    
+    <!-- 10. Text Guardian Desktop -->
+    <div class="card">
+      <div class="card-img-wrap" onclick="openLightbox('desktop_text_guardian_arena.png', 'The Text Guardian Desktop: Menghadap Kiri ke Arah Siswa')">
+        <img src="desktop_text_guardian_arena.png" alt="Text Guardian Desktop">
+        <span class="img-zoom-hint">🔍 Klik untuk Zoom</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="card-tag">Misi 2 • Desktop 1440 × 900</div>
+          <div class="card-title">The Text Guardian Menghadap Kiri</div>
+          <div class="card-desc">Sphinx prajurit mekanis berorientasi 3/4 ke KIRI menuju Siswa Nusantara, tombak pena emas diarahkan ke pemain, teks naskah terbaca unmirrored.</div>
+        </div>
+        <div class="card-actions">
+          <a class="btn-action primary" href="desktop_text_guardian_arena.png" target="_blank">Buka Gambar Asli ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. Text Guardian Mobile -->
+    <div class="card">
+      <div class="card-img-wrap" onclick="openLightbox('mobile_390x844_text_guardian.png', 'The Text Guardian Mobile (390x844): Proporsional & Berhadapan')">
+        <img src="mobile_390x844_text_guardian.png" alt="Text Guardian Mobile">
+        <span class="img-zoom-hint">🔍 Klik untuk Zoom</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="card-tag">Misi 2 • Mobile 390 × 844</div>
+          <div class="card-title">The Text Guardian Layar Ponsel</div>
+          <div class="card-desc">Tampilan kompak di iPhone standar: sayap bulu dan naskah melayang tidak memotong batas layar, orientasi jelas berhadapan dengan siswa.</div>
+        </div>
+        <div class="card-actions">
+          <a class="btn-action primary" href="mobile_390x844_text_guardian.png" target="_blank">Buka Gambar Asli ↗</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- LIGHTBOX MODAL -->
+<div class="lightbox" id="modal-lightbox" onclick="closeLightbox()">
+  <div class="lightbox-close">&times;</div>
+  <img id="lightbox-img" src="" alt="Zoomed view">
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<script>
+  function openLightbox(src, caption) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-caption').textContent = caption;
+    document.getElementById('modal-lightbox').classList.add('active');
+  }
+
+  function closeLightbox() {
+    document.getElementById('modal-lightbox').classList.remove('active');
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
+
+</body>
+</html>

@@ -617,5 +617,12 @@ Berdasarkan telaah visual pada panggung arena pertempuran dan ruang briefing, di
   2. *Uji Tepi Perimeter 1px:* 100% piksel pada batas kanvas terluar memiliki `alpha = 0`, menjamin ketiadaan artefak kotak hitam.
   3. *Integritas Kode:* Kode HTML/CSS/JS/JSON dikunci dan tidak mengalami perubahan pada fase pembuatan aset ini. Berkas JPG lama dipertahankan berdampingan.
 
-
-
+## 27. Responsive Mobile, Boss Natural Orientation, & Dynamic Battle Animations (2026-10-16)
+Berdasarkan arahan resmi User pada 16 Oktober 2026 untuk Tahap 2 dan Tahap 2B:
+- **Status Milestone:** VERIFIED PASS 🟢 (Project Log 105).
+- **Pilar Pembaruan:**
+  1. *Integrasi Transparan Penuh:* Seluruh karakter dalam `prototype/academic-ascension-rpg-v1.html` menggunakan aset PNG RGBA murni berkanal alfa lembut tanpa artefak kotak hitam.
+  2. *Optimasi Responsif Mobile:* Breakpoints CSS berjenjang (900px, 768px, 480px, 340px) menstabilkan layout mobile, header anti-wrap (`⚙️ Akses`), kartu petarung berdampingan rapi, dan badge tantangan diposisikan di atas tanpa menimpa sprite karakter pada layar 320px/360px.
+  3. *Orientasi Alami Boss (Non-Mirrored):* Dihasilkan dan diintegrasikan 2 kandidat aset Boss menghadap ke kiri (`candidate-algebra-golem-facing-left.png` dan `candidate-text-guardian-facing-left.png`) tanpa mirror horizontal CSS, menjaga integritas simbol matematika dan teks sastra tegak alami. Aset kanonikal tetap utuh di disk.
+  4. *Animasi Dinamis Lunge & Counterattack:* Piringan hologram pedestal diisolasi di luar `.sprite-actor-box` sehingga tetap 100% statis di lantai arena. Jawaban benar memicu pemain meluncur dinamis ke hadapan Boss (-50 DMG); jawaban salah memicu Boss meluncur menyerang balik ke arah pemain (penalti tepat -5 HP). Kedua karakter kembali mulus ke posisi idle.
+  5. *Bukti Visual QA Lengkap:* 11 tangkapan layar pengujian browser headless tersimpan di `prototype/qa-screenshots/` beserta gallery viewer interaktif di `prototype/qa-screenshots/index.html`.
