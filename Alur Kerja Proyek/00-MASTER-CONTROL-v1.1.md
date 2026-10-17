@@ -628,7 +628,7 @@ Berdasarkan arahan resmi User pada 16 Oktober 2026 untuk Tahap 2 dan Tahap 2B:
   5. *Bukti Visual QA Lengkap:* 12 tangkapan layar pengujian browser headless (termasuk `desktop_vn_briefing_mentor.png`) tersimpan di `prototype/qa-screenshots/` beserta gallery viewer interaktif di `prototype/qa-screenshots/index.html` (Kalibrasi Presisi Tahap 2B.1).
 
 ## 28. Audit Final Visual Refresh, Inventarisasi Fitur Game, & Pembakuan Backlog RPG (2026-10-17)
-Berdasarkan audit komprehensif pada 17 Oktober 2026 atas baseline commit `85efee0`:
+Berdasarkan audit komprehensif pada 17 Oktober 2026 atas baseline commit [`85efee0`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/85efee065ae54a7933676b42111f533b25df2dd3):
 - **Status Milestone:** VERIFIED PASS 🟢 (Project Log 106).
 - **Konsolidasi Perubahan Visual & Pertempuran:** Seluruh implementasi tema siber masa depan, aset PNG transparan, orientasi Boss menghadap kiri, animasi pertempuran lunge & counterattack simetris, perhitungan celah aman dinamis, dan responsivitas mobile lintas-viewport (termasuk 320 × 640) telah divalidasi 100% dan didokumentasikan di `Alur Kerja Proyek/CHANGELOG-VISUAL-REFRESH.md`.
 - **Pembakuan Backlog Resmi Fitur RPG:** Ditetapkan dokumen kanonikal tunggal `Alur Kerja Proyek/OFFICIAL-RPG-FEATURE-BACKLOG.md` yang memetakan status, gap, dan kriteria penerimaan teruji untuk 12 area fitur game (RPG-FEAT-001 s.d. RPG-FEAT-012).

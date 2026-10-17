@@ -15,7 +15,7 @@
 
 ## 1. Latar Belakang & Mandat Tugas
 
-Menindaklanjuti penyelesaian kalibrasi presisi pada Tahap 2B.1 (commit `85efee06b29d10e53ef711a1964d8479e0a0f8bf`), dilakukan audit komprehensif terhadap seluruh riwayat perubahan visual, status fitur game yang sudah ada, inkonsistensi teknis, serta kebutuhan dan ide fitur tertunda.
+Menindaklanjuti penyelesaian kalibrasi presisi pada Tahap 2B.1 (commit [`85efee065ae54a7933676b42111f533b25df2dd3`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/85efee065ae54a7933676b42111f533b25df2dd3)), dilakukan audit komprehensif terhadap seluruh riwayat perubahan visual, status fitur game yang sudah ada, inkonsistensi teknis, serta kebutuhan dan ide fitur tertunda.
 
 Tujuan audit ini adalah membakukan seluruh temuan dan backlog ke dalam dokumen kanonikal repositori, sehingga proyek dapat beralih secara terfokus ke **Fase Produksi Konten (Bank Soal)** tanpa risiko hilangnya pengetahuan sistem atau perubahan kode yang tidak disengaja.
 
@@ -28,7 +28,7 @@ Tujuan audit ini adalah membakukan seluruh temuan dan backlog ke dalam dokumen k
 
 ## 2. Ringkasan Bukti Audit Perubahan Visual (Tahap 2 & 2B.1)
 
-Pemeriksaan riwayat commit (`71c44c8` → `2d02cf4` → `d4ee062` → `85efee0`) memastikan seluruh perubahan visual telah teruji dan terdokumentasi di `Alur Kerja Proyek/CHANGELOG-VISUAL-REFRESH.md`:
+Pemeriksaan riwayat commit ([`71c44c8`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/71c44c8cf2471a5962c18fc2012b497fc49b7059) → [`2d02cf4`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/2d02cf44671e8865d247ad7270290094d38cd53c) → [`d4ee062`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/d4ee062492ead4742d8608cfe769abf4e03675b1) → [`85efee0`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/85efee065ae54a7933676b42111f533b25df2dd3)) memastikan seluruh perubahan visual telah teruji dan terdokumentasi di `Alur Kerja Proyek/CHANGELOG-VISUAL-REFRESH.md`:
 1. **Estetika Siber Nusantara Academy:** Penggantian foto sekolah konvensional dengan pemandangan kampus teknologi, peta kosmos siber, ruang taktis 3D, dan arena grid digital.
 2. **Kanal Alfa Murni 4 Aset Karakter:** Dihasilkan 4 berkas PNG 32-bit (`student-hero-combat.png`, `algebra-golem-sprite.png`, `text-guardian-sprite.png`, `rifki-scifi-mentor.png`) dengan 100% piksel tepi bernilai `alpha = 0` (zero black box artifacts).
 3. **Orientasi Alami Boss (Non-Mirrored):** Penggunaan aset kandidat hadap kiri asli (`candidate-algebra-golem-facing-left.png` dan `candidate-text-guardian-facing-left.png`) tanpa mirror horizontal CSS, menjaga simbol matematika dan teks sastra tetap tegak.
@@ -36,7 +36,7 @@ Pemeriksaan riwayat commit (`71c44c8` → `2d02cf4` → `d4ee062` → `85efee0`)
 5. **Animasi Menerjang & Serangan Balik Terkalibrasi:**
    - Jawaban benar: Siswa menerjang ke depan Boss (-50 DMG); kembali ke idle pada 680ms.
    - Jawaban salah: Boss menerjang balik ke arah Siswa (-5 HP penalti anti-anxiety); kembali ke idle pada 680ms.
-   - Jarak serang dihitung dinamis via `getBoundingClientRect()` dengan safe clearance `safeGap` (14–28px) tanpa batas keras `Math.max(40, ...)`, terbukti 100% simetris (terukur `446px` pada desktop 1440×900).
+   - Jarak serang dihitung dinamis via `getBoundingClientRect()` dengan safe clearance `safeGap` yang berkisar antara 10–28 piksel (dihitung dinamis via `Math.max(10, Math.min(baseGap, (pRect.width + bRect.width) * 0.1))` dengan `baseGap` 14px pada mobile dan 28px pada desktop, bergantung pada ukuran karakter dan viewport) tanpa batas keras `Math.max(40, ...)`, terbukti 100% simetris (terukur `446px` pada desktop 1440×900).
 6. **Kaskade CSS Media Query Teruji:** Aturan ultra-narrow `<= 340px` berhasil mengatasi penimpaan aturan `<= 720px (Height)`. Pada viewport 320 × 640: panggung 125px, siswa 110px, boss 120px, pedestal 85px.
 7. **Bukti QA Lengkap:** 12 screenshot tersimpan di `prototype/qa-screenshots/` termasuk `desktop_vn_briefing_mentor.png` dan viewer `index.html`.
 
@@ -87,7 +87,7 @@ Berdasarkan audit mendalam terhadap `prototype/academic-ascension-rpg-v1.html` d
 ## 4. Berkas Dokumentasi yang Dihasilkan / Diperbarui
 
 1. **`Alur Kerja Proyek/CHANGELOG-VISUAL-REFRESH.md`** *(Berkas Baru)*:
-   Catatan perubahan terverifikasi lengkap dari commit `71c44c8` hingga `85efee0`.
+   Catatan perubahan terverifikasi lengkap dari commit [`71c44c8`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/71c44c8cf2471a5962c18fc2012b497fc49b7059) hingga [`85efee0`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/85efee065ae54a7933676b42111f533b25df2dd3).
 2. **`Alur Kerja Proyek/OFFICIAL-RPG-FEATURE-BACKLOG.md`** *(Berkas Baru)*:
    Backlog kanonikal resmi untuk 12 fitur game (`RPG-FEAT-001` s.d. `RPG-FEAT-012`) dengan format tabel standar (ID, Nama, Tujuan, Kondisi, Bukti, Status, Gap, Kriteria Penerimaan, Keputusan Terbuka, Dependensi, Tahap, Regression Risk).
 3. **`Alur Kerja Proyek/00-MASTER-CONTROL-v1.1.md`** *(Diperbarui)*:

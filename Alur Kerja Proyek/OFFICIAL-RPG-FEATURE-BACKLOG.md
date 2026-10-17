@@ -4,7 +4,7 @@
 **Dokumen:** `Alur Kerja Proyek/OFFICIAL-RPG-FEATURE-BACKLOG.md`  
 **Status:** CANONICAL FEATURE BACKLOG & AUDIT INVENTORY 🟢  
 **Branch Acuan:** `visual-refresh`  
-**Audit Baseline:** Commit `85efee06b29d10e53ef711a1964d8479e0a0f8bf`  
+**Audit Baseline:** Commit [`85efee065ae54a7933676b42111f533b25df2dd3`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/85efee065ae54a7933676b42111f533b25df2dd3)
 **Repositori:** `https://github.com/Rifkiaditya04/rpg-kelas-XII`  
 
 ---

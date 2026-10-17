@@ -4,7 +4,7 @@
 **Dokumen:** `Alur Kerja Proyek/CHANGELOG-VISUAL-REFRESH.md`  
 **Status:** VERIFIED AUDIT RECORD 🟢  
 **Branch:** `visual-refresh`  
-**Audit Baseline:** Commit `85efee06b29d10e53ef711a1964d8479e0a0f8bf`  
+**Audit Baseline:** Commit [`85efee065ae54a7933676b42111f533b25df2dd3`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/85efee065ae54a7933676b42111f533b25df2dd3)
 **Repositori:** `https://github.com/Rifkiaditya04/rpg-kelas-XII`  
 
 ---
@@ -21,10 +21,11 @@ Dokumen ini mencatat seluruh perubahan faktual berdasarkan riwayat commit, diff 
 
 | Commit SHA | Tanggal | Tipe | Pesan Commit & Ruang Lingkup Utama |
 | :--- | :---: | :---: | :--- |
-| [`71c44c8`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/71c44c8) | 13 Okt 2026 | `feat(visual)` | Implementasi estetika siber masa depan (*Nusantara Academy Cyber Theme*) dan arena pertarungan standoff 2 sisi pada `prototype/academic-ascension-rpg-v1.html`. |
-| [`2d02cf4`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/2d02cf4) | 14 Okt 2026 | `feat(assets)` | Pembuatan 4 aset karakter transparan PNG RGBA murni (Project Log 104) di `phase-3/visuals/Desain referensi fix/`. |
-| [`d4ee062`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/d4ee062) | 16 Okt 2026 | `feat(prototype)` | Integrasi aset PNG transparan, aset kandidat Boss menghadap kiri, layout responsif mobile multi-tier, animasi lunge & counterattack dinamis, dan 11 screenshot QA (Project Log 105). |
-| [`85efee0`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/85efee0) | 16 Okt 2026 | `fix(prototype)` | **Tahap 2B.1:** Kalibrasi jarak serang aman (eliminasi batas keras 40px), penyelarasan kaskade media query 320×640 vs 720px, penambahan bukti screenshot briefing mentor `desktop_vn_briefing_mentor.png`, dan update galeri QA. |
+| [`71c44c8`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/71c44c8cf2471a5962c18fc2012b497fc49b7059) | 13 Okt 2026 | `feat(visual)` | Implementasi estetika siber masa depan (*Nusantara Academy Cyber Theme*) dan arena pertarungan standoff 2 sisi pada `prototype/academic-ascension-rpg-v1.html`. |
+| [`2d02cf4`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/2d02cf44671e8865d247ad7270290094d38cd53c) | 14 Okt 2026 | `feat(assets)` | Pembuatan 4 aset karakter transparan PNG RGBA murni (Project Log 104) di `phase-3/visuals/Desain referensi fix/`. |
+| [`d4ee062`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/d4ee062492ead4742d8608cfe769abf4e03675b1) | 16 Okt 2026 | `feat(prototype)` | Integrasi aset PNG transparan, aset kandidat Boss menghadap kiri, layout responsif mobile multi-tier, animasi lunge & counterattack dinamis, dan 11 screenshot QA (Project Log 105). |
+| [`85efee0`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/85efee065ae54a7933676b42111f533b25df2dd3) | 16 Okt 2026 | `fix(prototype)` | **Tahap 2B.1:** Kalibrasi jarak serang aman (eliminasi batas keras 40px), penyelarasan kaskade media query 320×640 vs 720px, penambahan bukti screenshot briefing mentor `desktop_vn_briefing_mentor.png`, dan update galeri QA. |
+| [`35605aa`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/35605aa5d94104ac12aff5386363f9b56067d12c) | 17 Okt 2026 | `docs(project)` | Pembakuan dokumentasi changelog visual refresh, backlog resmi fitur RPG, penambahan Bagian 28 Master Control v1.1, dan Project Log 106. |
 
 ---
 
@@ -82,12 +83,14 @@ Dokumen ini mencatat seluruh perubahan faktual berdasarkan riwayat commit, diff 
     - Siswa tidak bergerak maju. Boss meluncur maju melintasi arena menyerang ke arah Siswa.
     - Pada puncak serangan (280ms), memicu recoil Siswa (`player-hit-recoil`), getar kartu pemain (`shake`), dan penalti `-5 HP`.
     - Boss kembali mulus ke posisi idle di atas pedestal pada 680ms.
-  - **Kalibrasi Jarak Serang Aman (Commit `85efee0`):**
+  - **Kalibrasi Jarak Serang Aman (Commit [`85efee0`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/85efee065ae54a7933676b42111f533b25df2dd3)):**
     - Menghapus batas minimum keras `Math.max(40, ...)` yang sebelumnya berisiko memaksakan gerakan menembus tubuh lawan pada ruang sempit.
     - Menggunakan perhitungan runtime `getBoundingClientRect()`:
       `rawClearance = bRect.left - pRect.right`
+      `baseGap = window.innerWidth <= 480 ? 14 : 28`
       `safeGap = Math.max(10, Math.min(baseGap, (pRect.width + bRect.width) * 0.1))`
       `maxSafeDistance = rawClearance - safeGap`
+    - **Rentang Jarak Aman Dinamis:** Nilai akhir `safeGap` secara akurat berkisar antara **10–28 piksel**, bergantung pada ukuran elemen karakter (`(pRect.width + bRect.width) * 0.1`) dan lebar viewport (`baseGap` bernilai 14 piksel pada mobile `<= 480px` dan 28 piksel pada desktop). Batas bawah aman mutlak adalah 10 piksel via `Math.max(10, ...)`.
     - Jika `maxSafeDistance > 4`, jarak di-clamp maksimal 45% lebar panggung (`stageWidth * 0.45`). Jika celah sempit/negatif, jarak serang bernilai `0` (tidak ada gerakan paksa).
     - Jarak serang Siswa dan Boss terbukti **100% simetris** (terukur `446px` pada desktop 1440×900).
 - **Status:** **Telah Diuji di Browser (Verified Pass 🟢)**.
@@ -100,7 +103,7 @@ Dokumen ini mencatat seluruh perubahan faktual berdasarkan riwayat commit, diff 
     - `<= 768px`: Subtitle disembunyikan, kartu status `flex: 1; min-width: 0;` (berdampingan rapi).
     - `<= 480px`: Label teks `Koin`/`MP` disembunyikan (hanya emoji + angka), tinggi panggung 170px, badge tantangan di `top: -10px`.
     - `<= 720px (Height)`: Kompresi panggung menjadi 155px untuk layar pendek (misal foldable/tablet 500×705).
-    - `<= 340px (Ultra-Narrow, Commit `85efee0`)`: Ditempatkan setelah query height dan diperkuat dengan `@media (max-width: 340px), (max-width: 340px) and (max-height: 720px)`.
+    - `<= 340px (Ultra-Narrow, Commit [`85efee0`](https://github.com/Rifkiaditya04/rpg-kelas-XII/commit/85efee065ae54a7933676b42111f533b25df2dd3))`: Ditempatkan setelah query height dan diperkuat dengan `@media (max-width: 340px), (max-width: 340px) and (max-height: 720px)`.
   - Hasil computed style terbukti:
     - Viewport 320 × 640: Panggung = 125px, Pemain = 110px, Boss = 120px, Pedestal = 85px (nilai ultra-narrow tidak lagi tertimpa).
     - Viewport 360 × 800: Panggung = 170px, Pemain = 135px, Boss = 145px, Pedestal = 105px.
