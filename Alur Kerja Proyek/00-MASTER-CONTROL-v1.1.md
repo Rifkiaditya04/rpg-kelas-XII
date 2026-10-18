@@ -1,4 +1,4 @@
-# KELAS 12 — THE FINAL MISSION
+﻿# KELAS 12 — THE FINAL MISSION
 ## MASTER CONTROL — v1.1 CONTINUATION
 
 > **MASTER CONTROL v1.1 adalah LANJUTAN RESMI dari `Alur Kerja Proyek/00-MASTER-CONTROL.md`.**
@@ -501,7 +501,7 @@ Alasan penundaan:
 - Menghindari pengulangan kerja (*rework*) desain visual apabila arsitektur soal mengalami perubahan di bab-bab selanjutnya.
 
 **Langkah Kerja Selanjutnya (Next Mandatory Step):**
-Misi 5, 6, 7, dan 8 (Bab 2 - Teks Prosedur Kompleks) telah dihubungkan secara fungsional ke *Visual Novel Engine*. Namun, berdasar pada aturan *Promotion gate discipline* (Seksi 8), misi tersebut belum dapat dinyatakan *PROMOTED* tanpa bukti pengujian *Live Browser*. 
+Misi 5, 6, 7, dan 8 (Bab 2 - Teks Prosedur Kompleks) telah dihubungkan secara fungsional ke *Visual Novel Engine*. Namun, berdasar pada aturan *Promotion gate discipline* (Seksi 8), misi tersebut belum dapat dinyatakan *PROMOTED* tanpa bukti pengujian *Live Browser*.
 Maka langkah kerja selanjutnya adalah: **Menjalankan dan Merekam Hasil Runtime QA Browser untuk Bab 2 (Misi 5-8)**.
 
 ## 19. Bab 2 (Misi 5-8) Runtime QA PASS & Promotion (2026-09-18)
@@ -639,11 +639,12 @@ Berdasarkan audit komprehensif pada 17 Oktober 2026 atas baseline commit [`85efe
   2. Catatan Perubahan: `Alur Kerja Proyek/CHANGELOG-VISUAL-REFRESH.md`
   3. Project Log: `Alur Kerja Proyek/PROJECT LOG/106-Visual-Refresh-Final-Audit-Game-Feature-Inventory-and-Official-Backlog.md`
 
-## 29. Audit Komprehensif Bank Soal Bahasa Indonesia Kelas XII (2026-10-17)
-Berdasarkan audit komprehensif pada 17 Oktober 2026 atas 91 item kanonikal Bahasa Indonesia (Bab 1–5 dan Ujian Akhir):
-- **Status Milestone:** VERIFIED AUDIT COMPLETE 🟢 (Project Log 107).
-- **Status Promosi Konten:** BLOCKED 🛑 (Tertahan pending penulisan ulang hak cipta novel Bab 3 dan pemetaan metadata Buku Guru).
-- **Temuan Data Lineage:** 82 item di `phase-4-pools/bahasa-indonesia/` terbukti merupakan klon cermin terdegradasi dari `phase-3/` tanpa metadata kurikulum; `knowledge-base/bahasa-indonesia/v1/` adalah arsip seed Tingkat Lanjut.
+## 29. Audit Komprehensif Bank Soal Bahasa Indonesia Kelas XII (2026-10-17 s.d. 2026-10-18)
+Berdasarkan audit komprehensif dan pemeriksaan korektif (*corrective audit pass*) pada 17–18 Oktober 2026 atas 91 item kanonikal Bahasa Indonesia (Bab 1–5 dan Ujian Akhir):
+- **Status Milestone:** CORRECTIVE AUDIT PASS / AUDIT VERIFIED IN PROGRESS 🟡 (Project Log 107).
+- **Status Promosi Konten:** BLOCKED 🛑 (Tertahan pending penulisan ulang hak cipta novel Bab 3, pemetaan metadata Buku Guru, dan review pedagogis individual).
+- **Rekonsiliasi Data Lineage:** 88 item aktif dimuat runtime Visual Novel (`world-1-rpg-v2.html`), 3 item unreferenced di berkas Phase 3 (`batch-02-e1-e3`); 82 item di `phase-4-pools/bahasa-indonesia/` terbukti merupakan klon cermin terdegradasi dari `phase-3/` tanpa metadata kurikulum (5 item dikonsumsi hardcoded oleh JRPG `academic-ascension-rpg-v1.html`); `knowledge-base/bahasa-indonesia/v1/` (38 item) adalah arsip seed Tingkat Lanjut.
+- **Koreksi Matriks & Metodologi:** Matriks kompetensi Bab 1–5 dikoreksi dari pencatatan ID fiktif dan kekeliruan pencatatan subbab (Bab 1 Aktivitas D, Bab 2 Aktivitas B dan D terbukti memiliki butir soal latihan). Ditegaskan pemisahan antara verifikasi mekanis (34 item terverifikasi format) dengan review kualitas akademik individual (belum tersertifikasi pedagogis).
 - **Tautan Otoritatif:**
-  1. Laporan Audit Komprehensif: `Alur Kerja Proyek/AUDIT-BANK-SOAL-BAHASA-INDONESIA-KELAS-XII.md`
+  1. Laporan Audit Korektif: `Alur Kerja Proyek/AUDIT-BANK-SOAL-BAHASA-INDONESIA-KELAS-XII.md`
   2. Project Log: `Alur Kerja Proyek/PROJECT LOG/107-Audit-Komprehensif-Bank-Soal-Bahasa-Indonesia-Kelas-XII.md`
