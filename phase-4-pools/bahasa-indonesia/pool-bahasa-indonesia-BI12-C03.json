@@ -1,11 +1,11 @@
-﻿{
+{
     "track":  "wajib",
     "questions":  [
                       {
                           "secondary_competencies":  [
 
                                                      ],
-                          "cognitive_level":  "analyze",
+                          "cognitive_level":  "evaluate",
                           "question_id":  "BI12-C03-C-2314",
                           "question_role":  "practice",
                           "tka_alignment":  {
@@ -13,24 +13,24 @@
                                                 "stimulus_type":  "",
                                                 "suitable":  false
                                             },
-                          "question":  "Pada cerita Laskar Pelangi, adegan di mana SD Muhammadiyah Gantong nyaris ditutup karena jumlah siswa kurang dari 10 orang, namun kemudian diselamatkan oleh kedatangan Harun, merupakan bagian alur tahap...",
+                          "question":  "Perhatikan kutipan cerita berikut: 'Ketegangan bermula saat Nadia meletakkan novelnya dengan dentuman keras di atas meja, terganggu oleh tawa kelompok Bagas yang sedang mendiskusikan tugas poster digital. Teguran tajam Nadia dibalas Bagas dengan nada defensif, memicu adu mulut yang membuat beberapa siswa lain ikut bersuara. Ketika seorang siswa mengusulkan agar kedua kelompok menggunakan ruang secara bergiliran, masing-masing pihak menolak karena merasa kebutuhannya belum dipertimbangkan. Perselisihan itu akhirnya berujung pada aksi saling memboikot pemakaian ruang baca. Rencana gotong-royong penataan selasar yang semula dijadwalkan selesai dalam sepekan pun terhenti total karena para siswa menolak hadir bersamaan di ruangan tersebut.' Penilaian yang paling tepat terhadap kelogisan pengembangan alur dalam kutipan cerita tersebut adalah...",
                           "answer":  "A",
                           "options":  [
                                           {
                                               "id":  "A",
-                                              "text":  "Konflik (Conflict)"
+                                              "text":  "Alur berkembang secara logis karena gangguan suara memicu teguran, respons defensif memperluas konflik, lalu penolakan berbagi ruang berdampak langsung pada kegiatan bersama."
                                           },
                                           {
                                               "id":  "B",
-                                              "text":  "Eksposisi (Exposition)"
+                                              "text":  "Alur berkembang secara kurang proporsional karena perselisihan antartokoh diekskalasikan secara berlebihan sehingga mengaburkan persoalan utama mengenai ketiadaan tata ruang."
                                           },
                                           {
                                               "id":  "C",
-                                              "text":  "Klimaks (Climax)"
+                                              "text":  "Alur berkembang secara berulang karena ketegangan antartokoh hanya berputar pada adu mulut tanpa memperlihatkan perubahan sikap yang mendorong cerita bergerak maju."
                                           },
                                           {
                                               "id":  "D",
-                                              "text":  "Resolusi (Resolution)"
+                                              "text":  "Alur berkembang secara tergesa-gesa karena aksi saling memboikot seharusnya dihadirkan sebagai akhir krisis, bukan sebagai pemicu awal berhentinya kegiatan bersama."
                                           }
                                       ],
                           "primary_competency":  "BI12-C03-C",
@@ -41,7 +41,7 @@
                                            "wrong_penalty":  5,
                                            "attack_type":  "medium"
                                        },
-                          "explanation":  "Masalah utama mulai muncul (inciting incident/konflik awal) ketika sekolah terancam ditutup karena kekurangan siswa, yang memicu rangkaian peristiwa selanjutnya.",
+                          "explanation":  "Pengembangan alur memiliki rantai kausalitas yang utuh dan runtut: gangguan suara memicu teguran, respons defensif memperluas konflik ke siswa lain, penolakan kompromi giliran ruang berujung pada boikot, dan berdampak langsung pada terhentinya proyek penataan bersama.",
                           "question_type":  "single_select",
                           "estimated_time_seconds":  90
                       },
@@ -101,24 +101,24 @@
                                                 "stimulus_type":  "",
                                                 "suitable":  false
                                             },
-                          "question":  "Pesan moral (amanat) yang paling menonjol dari kemenangan SD Muhammadiyah dalam lomba karnaval meskipun mereka menggunakan peralatan sederhana dan daun-daunan adalah...",
+                          "question":  "Perhatikan kutipan cerita berikut: 'Memasuki hari ketujuh masa uji coba, selasar ruang baca memperlihatkan suasana yang berbeda. Nadia dapat menuntaskan bacaannya di zona mandiri dekat jendela, sementara kelompok Bagas leluasa merancang tata letak poster digital di meja tengah dengan nada suara terkendali. Di dekat pintu keluar, kotak saran kayu terisi catatan: usulan penambahan stopkontak dari kelompok diskusi dan permohonan penyesuaian arah lampu dari pembaca mandiri. Pada rapat evaluasi di akhir masa uji coba, kedua pihak bersama-sama menyetujui pemindahan meja ke dekat stopkontak dan pengajuan lampu baca tambahan, lalu menyepakati jadwal piket kebersihan bersama.' Amanat tersirat yang paling kuat didukung oleh rangkaian peristiwa dalam penggalan cerita tersebut adalah...",
                           "answer":  "A",
                           "options":  [
                                           {
                                               "id":  "A",
-                                              "text":  "Kreativitas dan kerja keras dapat mengalahkan keterbatasan materi."
+                                              "text":  "Keberhasilan pengelolaan ruang bersama terwujud melalui kesediaan saling menyesuaikan kebiasaan dan komitmen menindaklanjuti masukan para pengguna ruang."
                                           },
                                           {
                                               "id":  "B",
-                                              "text":  "Kekayaan adalah kunci utama memenangkan sebuah perlombaan."
+                                              "text":  "Keteraturan fasilitas belajar dapat terpelihara apabila kelompok yang membutuhkan ketenangan diberikan wewenang lebih dalam menentukan tata tertib ruangan."
                                           },
                                           {
                                               "id":  "C",
-                                              "text":  "Penampilan luar tidak penting sama sekali dalam seni."
+                                              "text":  "Penataan fisik meja belajar merupakan faktor utama yang dengan sendirinya menjamin kelancaran interaksi antar-pengguna fasilitas sekolah."
                                           },
                                           {
                                               "id":  "D",
-                                              "text":  "Sekolah negeri selalu kalah dari sekolah swasta kecil."
+                                              "text":  "Ketertiban lingkungan belajar bersama idealnya dikendalikan melalui pengawasan berkala guru pembina agar kesepakatan siswa tetap dipatuhi."
                                           }
                                       ],
                           "primary_competency":  "BI12-C03-D",
@@ -129,7 +129,7 @@
                                            "wrong_penalty":  5,
                                            "attack_type":  "medium"
                                        },
-                          "explanation":  "Ide Mahar menggunakan daun-daun dan koreografi yang unik membuktikan bahwa meskipun miskin materi, kreativitas dan determinasi tinggi membawa mereka pada kemenangan.",
+                          "explanation":  "Amanat tersirat disimpulkan dari tindakan nyata para tokoh: adaptasi kebiasaan volume suara dan penataan meja, keterbukaan menelaah catatan kotak saran, serta komitmen menyusun jadwal piket bersama oleh kedua perwakilan kelompok.",
                           "question_type":  "single_select",
                           "estimated_time_seconds":  90
                       },
@@ -453,24 +453,24 @@
                                                 "stimulus_type":  "",
                                                 "suitable":  false
                                             },
-                          "question":  "Berdasarkan penggalan cerita karnaval Laskar Pelangi yang baru saja dibacakan, sikap Pak Harfan yang berseru, \u0027Karnaval ini satu-satunya cara menunjukkan kepada dunia bahwa sekolah kita masih eksis. Kita harus bangga!\u0027 menunjukkan perwatakan yang...",
+                          "question":  "Perhatikan kutipan cerita berikut: 'Di tengah perdebatan yang kian memanas antara kelompok pembaca mandiri dan kelompok diskusi tugas, Pak Danar melangkah ke tengah ruangan. Tanpa mengetuk meja atau menuntut siapa yang harus meminta maaf terlebih dahulu, ia membagikan selembar kertas kepada masing-masing perwakilan. Di papan tulis kecil, ia hanya menuliskan dua kolom: Kebutuhan Utama Kegiatan dan Kekhawatiran yang Dirasakan. Ia meminta kedua belah pihak mencatat poin-poin tersebut secara bergantian sebelum forum musyawarah bersama dibuka kembali.' Berdasarkan kutipan tersebut, perwatakan Pak Danar yang paling kuat tercermin melalui tindakannya adalah...",
                           "answer":  "A",
                           "options":  [
                                           {
                                               "id":  "A",
-                                              "text":  "Optimistis dan pantang menyerah"
+                                              "text":  "Bijaksana dan terstruktur dalam mengurai pokok permasalahan sebelum membuka ruang kesepakatan bersama."
                                           },
                                           {
                                               "id":  "B",
-                                              "text":  "Ambisius namun meremehkan orang lain"
+                                              "text":  "Ragu-ragu dan cenderung menunda keputusan tegas karena belum memiliki aturan resmi mengenai tata tertib ruangan."
                                           },
                                           {
                                               "id":  "C",
-                                              "text":  "Sinis dan mudah putus asa"
+                                              "text":  "Tertutup dan berupaya menggantikan proses musyawarah langsung dengan prosedur administratif tertulis."
                                           },
                                           {
                                               "id":  "D",
-                                              "text":  "Acuh tak acuh pada keadaan sekolah"
+                                              "text":  "Kompromistis dan mengutamakan ketenangan sesaat tanpa menyelidiki latar belakang keresahan para siswa."
                                           }
                                       ],
                           "primary_competency":  "BI12-C03-B",
@@ -481,7 +481,7 @@
                                            "wrong_penalty":  5,
                                            "attack_type":  "medium"
                                        },
-                          "explanation":  "Pernyataan tersebut menunjukkan dorongan positif dari Pak Harfan untuk memotivasi para siswa agar berani tampil dan mempertahankan eksistensi sekolah mereka di tengah keterbatasan.",
+                          "explanation":  "Sikap Pak Danar yang tidak menjatuhkan sanksi sepihak, membagikan kertas, dan memetakan dua kolom (kebutuhan dan kekhawatiran) sebelum musyawarah dibuka kembali mencerminkan perwatakan yang bijaksana, tenang, dan terstruktur dalam memfasilitasi resolusi konflik.",
                           "question_type":  "single_select",
                           "estimated_time_seconds":  90
                       },
@@ -497,24 +497,24 @@
                                                 "stimulus_type":  "",
                                                 "suitable":  false
                                             },
-                          "question":  "Peran tokoh Mahar dalam penggalan cerita persiapan karnaval digambarkan sebagai...",
+                          "question":  "Perhatikan kutipan cerita berikut: 'Selama tiga hari berturut-turut, Sinta duduk di sudut selasar membawa lembar pengamatan. Ia mencatat jam-jam puncak keterisian ruang baca, jenis kegiatan di setiap meja, serta dinamika suara yang memicu keluhan. Saat forum penataan dimulai, ia tidak mengajukan sangkaan pribadi, melainkan memaparkan data: keramaian selalu memuncak pada pukul dua siang ketika kelompok tugas poster digital masuk bersamaan dengan waktu belajar mandiri. Berdasarkan catatan itu, Sinta mengusulkan penataan zona meja, draf kesepakatan batas nada suara, dan penyesuaian jadwal kelompok.' Watak Sinta yang paling kuat tergambar melalui caranya menyusun usulan penataan ruang baca adalah...",
                           "answer":  "A",
                           "options":  [
                                           {
                                               "id":  "A",
-                                              "text":  "Seniman genius yang menyusun koreografi dan ide brilian karnaval"
+                                              "text":  "Cermat dan objektif dalam merumuskan pemecahan masalah berdasarkan data pengamatan yang terukur."
                                           },
                                           {
                                               "id":  "B",
-                                              "text":  "Anak pendiam yang hanya mengikuti instruksi dari Bu Mus"
+                                              "text":  "Kurang luwes dan cenderung membatasi ruang gerak teman-temannya semata-mata demi keteraturan jadwal."
                                           },
                                           {
                                               "id":  "C",
-                                              "text":  "Ketua kelas yang bertugas mengatur perizinan dan logistik"
+                                              "text":  "Pasif dan berhati-hati karena memilih mencatat dari kejauhan alih-alih melibatkan diri dalam dinamika kelompok."
                                           },
                                           {
                                               "id":  "D",
-                                              "text":  "Murid terpandai yang menghitung ritme tarian secara matematis"
+                                              "text":  "Cepat berpuas diri karena menganggap data catatan tiga hari sudah cukup mewakili seluruh kebiasaan siswa."
                                           }
                                       ],
                           "primary_competency":  "BI12-C03-B",
@@ -525,7 +525,7 @@
                                            "wrong_penalty":  5,
                                            "attack_type":  "medium"
                                        },
-                          "explanation":  "Dalam teks disebutkan secara spesifik bahwa \u0027Mahar muncul dengan ide brilian. Ia menyusun koreografi, musik, dan visualisasi...\u0027. Lintang adalah murid terpandai yang menghitung ritme, bukan Mahar.",
+                          "explanation":  "Karakter cermat dan objektif terbukti secara eksplisit dari tindakan Sinta melakukan observasi sistematis selama tiga hari dan mendasarkan usulannya pada data faktual jam sibuk alih-alih sangkaan pribadi.",
                           "question_type":  "single_select",
                           "estimated_time_seconds":  90
                       }

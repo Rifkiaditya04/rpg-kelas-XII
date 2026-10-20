@@ -1,4 +1,4 @@
-﻿{
+{
     "schema_version":  "1.1",
     "batch_status":  "CANONICAL_APPROVED",
     "dataset":  "Misi 10: Analisis Alur dan Pesan Moral",
@@ -13,27 +13,27 @@
                           "id":  "KM03-C1",
                           "chapter_id":  "BI12-C03",
                           "topic_id":  "BI12-C03-C",
-                          "skill":  "analyze",
-                          "question":  "Pada cerita Laskar Pelangi, adegan di mana SD Muhammadiyah Gantong nyaris ditutup karena jumlah siswa kurang dari 10 orang, namun kemudian diselamatkan oleh kedatangan Harun, merupakan bagian alur tahap...",
+                          "skill":  "evaluate",
+                          "question":  "Perhatikan kutipan cerita berikut: 'Ketegangan bermula saat Nadia meletakkan novelnya dengan dentuman keras di atas meja, terganggu oleh tawa kelompok Bagas yang sedang mendiskusikan tugas poster digital. Teguran tajam Nadia dibalas Bagas dengan nada defensif, memicu adu mulut yang membuat beberapa siswa lain ikut bersuara. Ketika seorang siswa mengusulkan agar kedua kelompok menggunakan ruang secara bergiliran, masing-masing pihak menolak karena merasa kebutuhannya belum dipertimbangkan. Perselisihan itu akhirnya berujung pada aksi saling memboikot pemakaian ruang baca. Rencana gotong-royong penataan selasar yang semula dijadwalkan selesai dalam sepekan pun terhenti total karena para siswa menolak hadir bersamaan di ruangan tersebut.' Penilaian yang paling tepat terhadap kelogisan pengembangan alur dalam kutipan cerita tersebut adalah...",
                           "options":  [
-                                          "Konflik (Conflict)",
-                                          "Eksposisi (Exposition)",
-                                          "Klimaks (Climax)",
-                                          "Resolusi (Resolution)"
+                                          "Alur berkembang secara logis karena gangguan suara memicu teguran, respons defensif memperluas konflik, lalu penolakan berbagi ruang berdampak langsung pada kegiatan bersama.",
+                                          "Alur berkembang secara kurang proporsional karena perselisihan antartokoh diekskalasikan secara berlebihan sehingga mengaburkan persoalan utama mengenai ketiadaan tata ruang.",
+                                          "Alur berkembang secara berulang karena ketegangan antartokoh hanya berputar pada adu mulut tanpa memperlihatkan perubahan sikap yang mendorong cerita bergerak maju.",
+                                          "Alur berkembang secara tergesa-gesa karena aksi saling memboikot seharusnya dihadirkan sebagai akhir krisis, bukan sebagai pemicu awal berhentinya kegiatan bersama."
                                       ],
-                          "answer":  "Konflik (Conflict)",
-                          "explanation":  "Masalah utama mulai muncul (inciting incident/konflik awal) ketika sekolah terancam ditutup karena kekurangan siswa, yang memicu rangkaian peristiwa selanjutnya.",
+                          "answer":  "Alur berkembang secara logis karena gangguan suara memicu teguran, respons defensif memperluas konflik, lalu penolakan berbagi ruang berdampak langsung pada kegiatan bersama.",
+                          "explanation":  "Pengembangan alur memiliki rantai kausalitas yang utuh dan runtut: gangguan suara memicu teguran, respons defensif memperluas konflik ke siswa lain, penolakan kompromi giliran ruang berujung pada boikot, dan berdampak langsung pada terhentinya proyek penataan bersama.",
                           "source":  {
                                          "student_book":  {
-                                                              "pages":  "113",
+                                                              "pages":  "114-116",
                                                               "section":  "Bab 3, Subbab C"
                                                           },
                                          "teacher_guide":  {
-                                                               "pages":  "0",
-                                                               "section":  "Bab N/A"
+                                                               "pages":  "142-147",
+                                                               "section":  "Bab 3, Subbab C"
                                                            }
                                      },
-                          "provenance":  "Generated content following KM standard",
+                          "provenance":  "Skenario fiksi sekolah orisinal mandiri disusun berdasarkan target kompetensi Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3 (Decision 009).",
                           "mode":  "learning",
                           "game_mechanic":  "evidence_scan",
                           "subject":  "Bahasa Indonesia",
@@ -43,7 +43,7 @@
                                                 ],
                           "topic":  "BI12-C03-C",
                           "difficulty":  "medium",
-                          "cognitive_level":  "analyze",
+                          "cognitive_level":  "evaluate",
                           "question_type":  "contextual",
                           "estimated_time_seconds":  90
                       },
@@ -90,26 +90,26 @@
                           "chapter_id":  "BI12-C03",
                           "topic_id":  "BI12-C03-D",
                           "skill":  "analyze",
-                          "question":  "Pesan moral (amanat) yang paling menonjol dari kemenangan SD Muhammadiyah dalam lomba karnaval meskipun mereka menggunakan peralatan sederhana dan daun-daunan adalah...",
+                          "question":  "Perhatikan kutipan cerita berikut: 'Memasuki hari ketujuh masa uji coba, selasar ruang baca memperlihatkan suasana yang berbeda. Nadia dapat menuntaskan bacaannya di zona mandiri dekat jendela, sementara kelompok Bagas leluasa merancang tata letak poster digital di meja tengah dengan nada suara terkendali. Di dekat pintu keluar, kotak saran kayu terisi catatan: usulan penambahan stopkontak dari kelompok diskusi dan permohonan penyesuaian arah lampu dari pembaca mandiri. Pada rapat evaluasi di akhir masa uji coba, kedua pihak bersama-sama menyetujui pemindahan meja ke dekat stopkontak dan pengajuan lampu baca tambahan, lalu menyepakati jadwal piket kebersihan bersama.' Amanat tersirat yang paling kuat didukung oleh rangkaian peristiwa dalam penggalan cerita tersebut adalah...",
                           "options":  [
-                                          "Kreativitas dan kerja keras dapat mengalahkan keterbatasan materi.",
-                                          "Kekayaan adalah kunci utama memenangkan sebuah perlombaan.",
-                                          "Penampilan luar tidak penting sama sekali dalam seni.",
-                                          "Sekolah negeri selalu kalah dari sekolah swasta kecil."
+                                          "Keberhasilan pengelolaan ruang bersama terwujud melalui kesediaan saling menyesuaikan kebiasaan dan komitmen menindaklanjuti masukan para pengguna ruang.",
+                                          "Keteraturan fasilitas belajar dapat terpelihara apabila kelompok yang membutuhkan ketenangan diberikan wewenang lebih dalam menentukan tata tertib ruangan.",
+                                          "Penataan fisik meja belajar merupakan faktor utama yang dengan sendirinya menjamin kelancaran interaksi antar-pengguna fasilitas sekolah.",
+                                          "Ketertiban lingkungan belajar bersama idealnya dikendalikan melalui pengawasan berkala guru pembina agar kesepakatan siswa tetap dipatuhi."
                                       ],
-                          "answer":  "Kreativitas dan kerja keras dapat mengalahkan keterbatasan materi.",
-                          "explanation":  "Ide Mahar menggunakan daun-daun dan koreografi yang unik membuktikan bahwa meskipun miskin materi, kreativitas dan determinasi tinggi membawa mereka pada kemenangan.",
+                          "answer":  "Keberhasilan pengelolaan ruang bersama terwujud melalui kesediaan saling menyesuaikan kebiasaan dan komitmen menindaklanjuti masukan para pengguna ruang.",
+                          "explanation":  "Amanat tersirat disimpulkan dari tindakan nyata para tokoh: adaptasi kebiasaan volume suara dan penataan meja, keterbukaan menelaah catatan kotak saran, serta komitmen menyusun jadwal piket bersama oleh kedua perwakilan kelompok.",
                           "source":  {
                                          "student_book":  {
-                                                              "pages":  "120",
+                                                              "pages":  "117-118",
                                                               "section":  "Bab 3, Subbab D"
                                                           },
                                          "teacher_guide":  {
-                                                               "pages":  "0",
-                                                               "section":  "Bab N/A"
+                                                               "pages":  "148-150",
+                                                               "section":  "Bab 3, Subbab D"
                                                            }
                                      },
-                          "provenance":  "Generated content following KM standard",
+                          "provenance":  "Skenario fiksi sekolah orisinal mandiri disusun berdasarkan target kompetensi Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3 (Decision 009).",
                           "mode":  "learning",
                           "game_mechanic":  "evidence_scan",
                           "subject":  "Bahasa Indonesia",

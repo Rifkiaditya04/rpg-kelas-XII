@@ -8,8 +8,8 @@ For the Visual Novel Game, the interactive questions (Bank Soal) are best suited
 ### Mission Mapping
 We will create 3 Missions for Chapter 3:
 - **Misi 9 (Subbab A & B): Sudut Pandang dan Perwatakan**
-  - Focus: Identifying POV (Orang Pertama, Orang Ketiga, dsb.) and analyzing character traits from Laskar Pelangi excerpts.
+  - Focus: Identifying POV (Orang Pertama, Orang Ketiga, dsb.) and analyzing character traits from original school fiction excerpts (Ruang Baca Bersama).
 - **Misi 10 (Subbab C & D): Alur Cerita dan Pesan Moral**
-  - Focus: Evaluating plot development and concluding the moral message.
+  - Focus: Evaluating plot development and concluding the moral message from original school fiction excerpts (Ruang Baca Bersama).
 - **Misi 11 (Subbab F): Kaidah Bahasa & Tanda Baca Sastra**
   - Focus: Using correct punctuation and descriptive language in story writing.

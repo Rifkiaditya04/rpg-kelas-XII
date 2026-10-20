@@ -1,4 +1,4 @@
-﻿{
+{
     "schema_version":  "1.1",
     "batch_status":  "CANONICAL_APPROVED",
     "dataset":  "Misi 9: Sudut Pandang dan Perwatakan",
@@ -90,26 +90,26 @@
                           "chapter_id":  "BI12-C03",
                           "topic_id":  "BI12-C03-B",
                           "skill":  "analyze",
-                          "question":  "Berdasarkan penggalan cerita karnaval Laskar Pelangi yang baru saja dibacakan, sikap Pak Harfan yang berseru, \u0027Karnaval ini satu-satunya cara menunjukkan kepada dunia bahwa sekolah kita masih eksis. Kita harus bangga!\u0027 menunjukkan perwatakan yang...",
+                          "question":  "Perhatikan kutipan cerita berikut: 'Di tengah perdebatan yang kian memanas antara kelompok pembaca mandiri dan kelompok diskusi tugas, Pak Danar melangkah ke tengah ruangan. Tanpa mengetuk meja atau menuntut siapa yang harus meminta maaf terlebih dahulu, ia membagikan selembar kertas kepada masing-masing perwakilan. Di papan tulis kecil, ia hanya menuliskan dua kolom: Kebutuhan Utama Kegiatan dan Kekhawatiran yang Dirasakan. Ia meminta kedua belah pihak mencatat poin-poin tersebut secara bergantian sebelum forum musyawarah bersama dibuka kembali.' Berdasarkan kutipan tersebut, perwatakan Pak Danar yang paling kuat tercermin melalui tindakannya adalah...",
                           "options":  [
-                                          "Optimistis dan pantang menyerah",
-                                          "Ambisius namun meremehkan orang lain",
-                                          "Sinis dan mudah putus asa",
-                                          "Acuh tak acuh pada keadaan sekolah"
+                                          "Bijaksana dan terstruktur dalam mengurai pokok permasalahan sebelum membuka ruang kesepakatan bersama.",
+                                          "Ragu-ragu dan cenderung menunda keputusan tegas karena belum memiliki aturan resmi mengenai tata tertib ruangan.",
+                                          "Tertutup dan berupaya menggantikan proses musyawarah langsung dengan prosedur administratif tertulis.",
+                                          "Kompromistis dan mengutamakan ketenangan sesaat tanpa menyelidiki latar belakang keresahan para siswa."
                                       ],
-                          "answer":  "Optimistis dan pantang menyerah",
-                          "explanation":  "Pernyataan tersebut menunjukkan dorongan positif dari Pak Harfan untuk memotivasi para siswa agar berani tampil dan mempertahankan eksistensi sekolah mereka di tengah keterbatasan.",
+                          "answer":  "Bijaksana dan terstruktur dalam mengurai pokok permasalahan sebelum membuka ruang kesepakatan bersama.",
+                          "explanation":  "Sikap Pak Danar yang tidak menjatuhkan sanksi sepihak, membagikan kertas, dan memetakan dua kolom (kebutuhan dan kekhawatiran) sebelum musyawarah dibuka kembali mencerminkan perwatakan yang bijaksana, tenang, dan terstruktur dalam memfasilitasi resolusi konflik.",
                           "source":  {
                                          "student_book":  {
-                                                              "pages":  "110",
+                                                              "pages":  "107-113",
                                                               "section":  "Bab 3, Subbab B"
                                                           },
                                          "teacher_guide":  {
-                                                               "pages":  "0",
-                                                               "section":  "Bab N/A"
+                                                               "pages":  "139-141",
+                                                               "section":  "Bab 3, Subbab B"
                                                            }
                                      },
-                          "provenance":  "Generated content following KM standard",
+                          "provenance":  "Skenario fiksi sekolah orisinal mandiri disusun berdasarkan target kompetensi Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3 (Decision 009).",
                           "mode":  "learning",
                           "game_mechanic":  "evidence_scan",
                           "subject":  "Bahasa Indonesia",
@@ -128,26 +128,26 @@
                           "chapter_id":  "BI12-C03",
                           "topic_id":  "BI12-C03-B",
                           "skill":  "analyze",
-                          "question":  "Peran tokoh Mahar dalam penggalan cerita persiapan karnaval digambarkan sebagai...",
+                          "question":  "Perhatikan kutipan cerita berikut: 'Selama tiga hari berturut-turut, Sinta duduk di sudut selasar membawa lembar pengamatan. Ia mencatat jam-jam puncak keterisian ruang baca, jenis kegiatan di setiap meja, serta dinamika suara yang memicu keluhan. Saat forum penataan dimulai, ia tidak mengajukan sangkaan pribadi, melainkan memaparkan data: keramaian selalu memuncak pada pukul dua siang ketika kelompok tugas poster digital masuk bersamaan dengan waktu belajar mandiri. Berdasarkan catatan itu, Sinta mengusulkan penataan zona meja, draf kesepakatan batas nada suara, dan penyesuaian jadwal kelompok.' Watak Sinta yang paling kuat tergambar melalui caranya menyusun usulan penataan ruang baca adalah...",
                           "options":  [
-                                          "Seniman genius yang menyusun koreografi dan ide brilian karnaval",
-                                          "Anak pendiam yang hanya mengikuti instruksi dari Bu Mus",
-                                          "Ketua kelas yang bertugas mengatur perizinan dan logistik",
-                                          "Murid terpandai yang menghitung ritme tarian secara matematis"
+                                          "Cermat dan objektif dalam merumuskan pemecahan masalah berdasarkan data pengamatan yang terukur.",
+                                          "Kurang luwes dan cenderung membatasi ruang gerak teman-temannya semata-mata demi keteraturan jadwal.",
+                                          "Pasif dan berhati-hati karena memilih mencatat dari kejauhan alih-alih melibatkan diri dalam dinamika kelompok.",
+                                          "Cepat berpuas diri karena menganggap data catatan tiga hari sudah cukup mewakili seluruh kebiasaan siswa."
                                       ],
-                          "answer":  "Seniman genius yang menyusun koreografi dan ide brilian karnaval",
-                          "explanation":  "Dalam teks disebutkan secara spesifik bahwa \u0027Mahar muncul dengan ide brilian. Ia menyusun koreografi, musik, dan visualisasi...\u0027. Lintang adalah murid terpandai yang menghitung ritme, bukan Mahar.",
+                          "answer":  "Cermat dan objektif dalam merumuskan pemecahan masalah berdasarkan data pengamatan yang terukur.",
+                          "explanation":  "Karakter cermat dan objektif terbukti secara eksplisit dari tindakan Sinta melakukan observasi sistematis selama tiga hari dan mendasarkan usulannya pada data faktual jam sibuk alih-alih sangkaan pribadi.",
                           "source":  {
                                          "student_book":  {
-                                                              "pages":  "110",
+                                                              "pages":  "107-113",
                                                               "section":  "Bab 3, Subbab B"
                                                           },
                                          "teacher_guide":  {
-                                                               "pages":  "0",
-                                                               "section":  "Bab N/A"
+                                                               "pages":  "139-141",
+                                                               "section":  "Bab 3, Subbab B"
                                                            }
                                      },
-                          "provenance":  "Generated content following KM standard",
+                          "provenance":  "Skenario fiksi sekolah orisinal mandiri disusun berdasarkan target kompetensi Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3 (Decision 009).",
                           "mode":  "learning",
                           "game_mechanic":  "evidence_scan",
                           "subject":  "Bahasa Indonesia",
