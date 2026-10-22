@@ -1119,6 +1119,45 @@
       min-height: 48px;
     }
 
+    .battle-media-wrap {
+      width: 100%;
+      margin: 4px 0 8px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .quiz-media-img {
+      max-width: 100%;
+      max-height: 220px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--glass-border);
+      background: rgba(15, 23, 42, 0.6);
+      object-fit: contain;
+      display: block;
+    }
+
+    .quiz-media-caption {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-style: italic;
+      text-align: center;
+    }
+
+    .quiz-media-fallback {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 8px;
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px dashed var(--accent-amber);
+      color: var(--accent-amber);
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
     .options-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1632,6 +1671,16 @@
         min-height: auto;
         line-height: 1.45;
       }
+      .quiz-media-img {
+        max-height: 160px;
+      }
+      .quiz-media-caption {
+        font-size: 11px;
+      }
+      .quiz-media-fallback {
+        font-size: 11px;
+        padding: 8px 10px;
+      }
       .options-grid {
         grid-template-columns: 1fr;
         gap: 8px;
@@ -2132,6 +2181,8 @@
           Memuat soal dari bank kurikulum...
         </div>
 
+        <div id="battle-question-media" class="battle-media-wrap" style="display: none;"></div>
+
         <div class="options-grid" id="battle-options-container">
           <!-- Dynamic options A, B, C, D -->
         </div>
@@ -2380,18 +2431,24 @@ const VERIFIED_POOLS = {
         explanation: 'U2 = a*r = 12 dan U5 = a*r^4 = 96. Bagi U5/U2: r^3 = 8 -> r = 2, a = 6. Maka U7 = 6 × (2^6) = 6 × 64 = 384.'
       },
       {
-        question_id: 'MAT12-C01-A1-4212',
+        question_id: 'MAT12-C01-B-7955',
         difficulty_label: 'hard',
-        question: 'Perusahaan perakitan ponsel menargetkan produksi awal sebanyak 5.000 unit pada bulan pertama. Setiap bulan target dinaikkan dengan jumlah tetap. Pada bulan ke-6 produksi mencapai 6.500 unit. Namun pada bulan ke-8 terjadi kendala pasokan sehingga produksi berkurang 400 unit dari target seharusnya. Berapa unit yang berhasil dirakit pada bulan ke-8?',
-        answer: 'A',
+        media: {
+          type: 'image',
+          src: 'matematika/ch1/bandul-redaman-deret.svg',
+          alt: 'Diagram skematik ayunan bandul teredam yang menunjukkan panjang tiga lintasan busur berturut-turut: 50 cm pada ayunan pertama, 40 cm pada ayunan kedua, dan 32 cm pada ayunan ketiga hingga bandul berhenti.',
+          caption: 'Pengamatan panjang lintasan tiga ayunan pertama bandul teredam (50 cm, 40 cm, 32 cm, ...)'
+        },
+        question: 'Perhatikan diagram hasil pengamatan ayunan sebuah bandul mekanik teredam. Berdasarkan pola panjang lintasan pada tiga ayunan pertama yang tertera pada diagram, dengan asumsi rasio yang teramati berlanjut pada lintasan-lintasan berikutnya sebagai model matematis, tentukan model barisan yang sesuai dan hitunglah estimasi total panjang lintasan yang ditempuh ujung bandul tersebut hingga geraknya berhenti!',
+        answer: 'C',
         options: [
-          { id: 'A', text: '6.700' },
-          { id: 'B', text: '7.100' },
-          { id: 'C', text: '6.800' },
-          { id: 'D', text: '6.400' }
+          { id: 'A', text: 'Model aritmetika, total 150 cm.' },
+          { id: 'B', text: 'Model geometri, total 200 cm.' },
+          { id: 'C', text: 'Model geometri, total 250 cm.' },
+          { id: 'D', text: 'Model geometri, total 300 cm.' }
         ],
         gameplay: { correct_damage: 150, wrong_penalty: 5 },
-        explanation: 'Target awal a = 5.000. U6 = a + 5b = 6.500 -> b = 300. Target bulan ke-8 (U8) = 5.000 + 7(300) = 7.100 unit. Karena berkurang 400 unit, produksi aktual = 7.100 - 400 = 6.700 unit.'
+        explanation: 'Langkah Analisis: 1) Identifikasi Model: U1 = 50 cm, U2 = 40 cm, U3 = 32 cm. Uji beda: 40 - 50 = -10, 32 - 40 = -8 (bukan aritmetika karena data ketiga tidak cocok). Uji rasio: 40/50 = 32/40 = 4/5 (geometri konvergen r = 4/5). 2) Total lintasan: S_inf = 50 / (1 - 4/5) = 250 cm (Model geometri, total 250 cm). 3) Distraktor: A salah menggunakan beda dua data pertama dan mengabaikan data ketiga; B salah menghilangkan lintasan pertama dari jumlah deret; D salah menghitung dua kali lintasan pertama.'
       }
     ]
   },
@@ -2723,6 +2780,36 @@ const app = {
 
     // Set question prompt
     document.getElementById('battle-question-text').textContent = q.question;
+
+    // Render media container safely via DOM
+    const mediaContainer = document.getElementById('battle-question-media');
+    if (mediaContainer) {
+      mediaContainer.innerHTML = '';
+      if (q.media && q.media.type === 'image' && q.media.src) {
+        mediaContainer.style.display = 'flex';
+        const img = document.createElement('img');
+        img.className = 'quiz-media-img';
+        img.src = `assets/${q.media.src}`;
+        img.alt = q.media.alt || 'Ilustrasi soal';
+        img.onerror = () => {
+          mediaContainer.innerHTML = '';
+          const fallbackBox = document.createElement('div');
+          fallbackBox.className = 'quiz-media-fallback';
+          fallbackBox.textContent = `[Gambar tidak dapat dimuat: ${q.media.alt || 'Deskripsi visual tersedia pada teks pertanyaan'}]`;
+          mediaContainer.appendChild(fallbackBox);
+        };
+        mediaContainer.appendChild(img);
+
+        if (q.media.caption) {
+          const cap = document.createElement('div');
+          cap.className = 'quiz-media-caption';
+          cap.textContent = q.media.caption;
+          mediaContainer.appendChild(cap);
+        }
+      } else {
+        mediaContainer.style.display = 'none';
+      }
+    }
 
     // Render options
     const optContainer = document.getElementById('battle-options-container');

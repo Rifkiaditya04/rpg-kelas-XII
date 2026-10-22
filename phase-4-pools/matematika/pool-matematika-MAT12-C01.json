@@ -1,4 +1,4 @@
-﻿{
+{
     "track":  "wajib",
     "questions":  [
                       {
@@ -357,32 +357,38 @@
                           "secondary_competencies":  [
 
                                                      ],
-                          "cognitive_level":  "evaluate",
+                          "cognitive_level":  "analyze",
                           "question_id":  "MAT12-C01-B-7955",
                           "question_role":  "practice",
+                          "media":  {
+                                        "type":  "image",
+                                        "src":  "matematika/ch1/bandul-redaman-deret.svg",
+                                        "alt":  "Diagram skematik ayunan bandul teredam yang menunjukkan panjang tiga lintasan busur berturut-turut: 50 cm pada ayunan pertama, 40 cm pada ayunan kedua, dan 32 cm pada ayunan ketiga hingga bandul berhenti.",
+                                        "caption":  "Pengamatan panjang lintasan tiga ayunan pertama bandul teredam (50 cm, 40 cm, 32 cm, ...)"
+                                    },
                           "tka_alignment":  {
                                                 "competency":  "literacy",
                                                 "stimulus_type":  "contextual",
                                                 "suitable":  true
                                             },
-                          "question":  "Sebuah bola dijatuhkan dari ketinggian 10 meter. Setiap kali memantul, bola tersebut mencapai ketinggian 3/4 dari ketinggian sebelumnya. Lintasan bola terus berlanjut hingga bola akhirnya berhenti. Total panjang lintasan keseluruhan yang ditempuh bola tersebut dari awal dijatuhkan hingga berhenti adalah...",
+                          "question":  "Perhatikan diagram hasil pengamatan ayunan sebuah bandul mekanik teredam. Berdasarkan pola panjang lintasan pada tiga ayunan pertama yang tertera pada diagram, dengan asumsi rasio yang teramati berlanjut pada lintasan-lintasan berikutnya sebagai model matematis, tentukan model barisan yang sesuai dan hitunglah estimasi total panjang lintasan yang ditempuh ujung bandul tersebut hingga geraknya berhenti!",
                           "answer":  "C",
                           "options":  [
                                           {
                                               "id":  "A",
-                                              "text":  "40 meter"
+                                              "text":  "Model aritmetika, total 150 cm."
                                           },
                                           {
                                               "id":  "B",
-                                              "text":  "60 meter"
+                                              "text":  "Model geometri, total 200 cm."
                                           },
                                           {
                                               "id":  "C",
-                                              "text":  "70 meter"
+                                              "text":  "Model geometri, total 250 cm."
                                           },
                                           {
                                               "id":  "D",
-                                              "text":  "80 meter"
+                                              "text":  "Model geometri, total 300 cm."
                                           }
                                       ],
                           "primary_competency":  "MAT12-C01-B",
@@ -393,9 +399,29 @@
                                            "wrong_penalty":  5,
                                            "attack_type":  "heavy"
                                        },
-                          "explanation":  "Total lintasan terdiri dari lintasan turun dan naik. Ketinggian awal (jatuh pertama) = 10m. Setelah itu, lintasan membentuk deret tak hingga. S_turun = a / (1-r) = 10 / (1 - 3/4) = 10 / (1/4) = 40m. S_naik (dimulai dari pantulan pertama = 10*3/4 = 7.5m) = 7.5 / (1 - 3/4) = 7.5 / (1/4) = 30m. Total lintasan = 40 + 30 = 70 meter. Alternatif rumus cepat lintasan pantulan: a * ((r_bawah + r_atas) / (r_bawah - r_atas)) = 10 * ((4+3)/(4-3)) = 10 * 7 = 70.",
+                          "explanation":  "Langkah Analisis:\n1. Identifikasi Model Barisan:\n   Panjang lintasan tiga ayunan pertama pada diagram: U1 = 50 cm, U2 = 40 cm, U3 = 32 cm.\n   - Uji Aritmetika: 40 - 50 = -10 cm, sedangkan 32 - 40 = -8 cm. Karena selisih data ketiga tidak cocok (-8 != -10), deret aritmetika gugur.\n   - Uji Geometri: U2 / U1 = 40 / 50 = 4/5 = 0,8 dan U3 / U2 = 32 / 40 = 4/5 = 0,8. Rasio konsisten r = 4/5 = 0,8.\n   Dengan asumsi rasio redaman berlanjut sebagai model matematis, dan karena nilai mutlak |r| < 1, pola lintasan membentuk deret geometri tak hingga konvergen.\n\n2. Perhitungan Estimasi Total Lintasan:\n   Suku pertama (pelepasan awal) a = 50 cm, rasio r = 4/5.\n   S_inf = a / (1 - r) = 50 / (1 - 4/5) = 50 / (1/5) = 50 * 5 = 250 cm.\n   Model yang tepat adalah model geometri dengan total 250 cm.\n\n3. Pembahasan Opsi & Distraktor:\n   - A (Salah): Menggunakan beda dari dua data pertama (b = 40 - 50 = -10 cm) dan mengabaikan data ketiga yang tidak cocok, lalu menjumlahkan hingga berhenti pada suku ke-6: S6 = (6/2)(50 + 0) = 150 cm.\n   - B (Salah): Menggunakan model geometri r = 4/5 tetapi menghilangkan lintasan pertama (50 cm) dari jumlah deret, sehingga hanya menghitung mulai ayunan kedua: S = 40 / (1 - 4/5) = 200 cm.\n   - C (BENAR): Model geometri konvergen dengan suku pertama a = 50 cm dan rasio r = 4/5: S_inf = 50 / (1 - 4/5) = 250 cm.\n   - D (Salah): Menggunakan model geometri namun menghitung dua kali lintasan pertama (seperti kerancuan rumus pantulan bola): S = S_inf + a = 250 + 50 = 300 cm.",
                           "question_type":  "single_select",
-                          "estimated_time_seconds":  120
+                          "estimated_time_seconds":  120,
+                          "source":  {
+                                         "student_book":  {
+                                                              "pages":  "28-29",
+                                                              "section":  "Bab 1, Deret Geometri Tak Hingga"
+                                                          },
+                                         "teacher_guide":  {
+                                                               "pages":  "78-80",
+                                                               "section":  "Bab 1, Panduan Pembelajaran Deret Geometri Tak Hingga"
+                                                           }
+                                     },
+                          "provenance":  "Soal orisinal pemodelan redaman osilasi mekanik (Kurikulum Merdeka) untuk menguji penerapan deret geometri tak hingga konvergen; konsep matematis merujuk pada Buku Siswa hlm. 28–29.",
+                          "source_basis":  {
+                                               "curriculum_framework":  "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                                               "competency_target":  "MAT12-C01-B: Menentukan dan memodelkan jumlah deret geometri tak hingga konvergen",
+                                               "concept_reference":  {
+                                                                         "student_book":  "Buku Siswa Matematika Kelas XII hlm. 28-29 (Subbab Deret Geometri Tak Hingga)",
+                                                                         "teacher_guide":  "Buku Panduan Guru Matematika Kelas XII hlm. 78-80"
+                                                                     },
+                                               "authoring_statement":  "Konteks ayunan bandul teredam, data pengamatan lintasan (50 cm, 40 cm, 32 cm), redaksi pertanyaan, opsi A-D, pembahasan, dan diagram visual SVG disusun secara mandiri oleh proyek sebagai pemodelan fisis orisinal. Konteks bukan merupakan kutipan, adaptasi langsung, atau karya turunan dari soal latihan buku teks."
+                                           }
                       },
                       {
                           "secondary_competencies":  [
