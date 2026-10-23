@@ -1,0 +1,169 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CONTROLLED_REVISION_DRAFT",
+    "dataset": "World 2 Matematika Wajib Chapter 1 - Misi 4 (Bunga Tunggal) v1.1",
+    "purpose": "Resolved canonical QA dataset produced deterministically from canonical base v1.0 plus v1.1 revision overlay (MAT12-W02-CH01-M04-V1.1-REV).",
+    "chapter_id": "MAT12-C01",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "MAT-C01-C-EASY",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-C",
+            "skill": "apply",
+            "question": "Untuk membiayai pengadaan modul mikrokontroler dan sensor pada proyek teknologi pertanian pintar sekolah, tim ekstrakurikuler sains memperoleh dana talangan pembinaan sebesar Rp 3.000.000,00 dengan ketentuan suku bunga tunggal 6% per tahun. Jika pihak sekolah menyepakati pelunasan dana bantuan beserta seluruh bunganya secara penuh tepat pada akhir tahun ke-2, berapakah total dana pelunasan yang harus diserahkan oleh tim tersebut?",
+            "options": [
+                "Rp 3.180.000,00",
+                "Rp 3.360.000,00",
+                "Rp 3.540.000,00",
+                "Rp 3.720.000,00"
+            ],
+            "answer": "Rp 3.360.000,00",
+            "explanation": "Langkah Penyelesaian:\n1. Pemodelan Bunga Tunggal:\n   Modal pinjaman (M) = Rp3.000.000,00\n   Suku bunga tunggal (p) = 6% per tahun\n   Jangka waktu pinjaman (n) = 2 tahun\n\n2. Menghitung Total Bunga (B):\n   B = M * p% * n\n   B = 3.000.000 * 0,06 * 2\n   B = 3.000.000 * 0,12 = Rp360.000,00.\n   (Atau bunga per tahun = 6% * 3.000.000 = Rp180.000,00, sehingga untuk 2 tahun = 2 * 180.000 = Rp360.000,00).\n\n3. Menghitung Total Pelunasan:\n   Total = Modal Pokok + Total Bunga\n   Total = Rp3.000.000,00 + Rp360.000,00 = Rp3.360.000,00.\n\n4. Pembahasan Distraktor:\n   - Rp 3.180.000,00 (Salah): Hanya menghitung bunga untuk 1 tahun (3.000.000 + 180.000) dan lupa mengalikan dengan durasi 2 tahun.\n   - Rp 3.360.000,00 (BENAR): Total dana pelunasan pokok ditambah bunga 2 tahun (3.000.000 + 360.000 = 3.360.000).\n   - Rp 3.540.000,00 (Salah): Keliru menghitung akumulasi bunga untuk 3 tahun (3.000.000 + 3 * 180.000 = 3.540.000).\n   - Rp 3.720.000,00 (Salah): Keliru menghitung akumulasi bunga untuk 4 tahun (3.000.000 + 4 * 180.000 = 3.720.000).",
+            "source": {
+                "student_book": {
+                    "pages": "30-32",
+                    "section": "Bab 1, Bunga Tunggal"
+                },
+                "teacher_guide": {
+                    "pages": "81-83",
+                    "section": "Bab 1, Panduan Pembelajaran Bunga Tunggal"
+                }
+            },
+            "provenance": "Soal orisinal literasi finansial terapan proyek sains sekolah (Kurikulum Merdeka) untuk menguji penerapan rumus bunga tunggal linear dan pelunasan total; konsep dasar matematis merujuk pada Buku Siswa hlm. 30–32.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": [
+                "bunga_tunggal",
+                "finansial",
+                "kontekstual"
+            ],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": [
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Bunga Tunggal",
+            "difficulty": "easy",
+            "cognitive_level": "apply",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60,
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C01-C: Menghitung bunga tunggal dan total pelunasan pinjaman berbasis model matematika linear",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 30-32 (Subbab Bunga Tunggal dan Rumus B = M * p% * n)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 81-83 (Pengalaman Belajar dan Penurunan Rumus Bunga Tunggal)"
+                },
+                "authoring_statement": "Skenario pengadaan modul sensor proyek pertanian pintar sekolah, parameter pinjaman (Rp3.000.000,00, bunga 6% per tahun, durasi 2 tahun), opsi pilihan, dan analisis pembahasannya dirancang secara mandiri oleh proyek sebagai instrumen asesmen independen yang tidak menyalin atau mengadaptasi langsung contoh koperasi pada buku teks."
+            }
+        },
+        {
+            "id": "MAT-C01-C-MED",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-C",
+            "skill": "apply",
+            "question": "Budi menyimpan uang di bank sebesar Rp 5.000.000,00 dengan suku bunga tunggal 8% per tahun. Setelah beberapa waktu, total saldo Budi menjadi Rp 5.600.000,00. Berapa lama Budi menabung uang tersebut?",
+            "options": [
+                "1 tahun",
+                "1,5 tahun",
+                "2 tahun",
+                "2,5 tahun"
+            ],
+            "answer": "1,5 tahun",
+            "explanation": "Langkah Penyelesaian:\n1. Menentukan Akumulasi Bunga yang Diperoleh:\n   Bunga total (B) = Saldo akhir - Saldo awal\n   B = Rp5.600.000,00 - Rp5.000.000,00 = Rp600.000,00.\n\n2. Menghitung Pertambahan Bunga per Tahun:\n   Bunga per tahun = Modal awal * suku bunga\n   Bunga per tahun = Rp5.000.000,00 * 8% = Rp400.000,00/tahun.\n\n3. Menentukan Lama Menabung (t):\n   Rumus bunga tunggal: B = M * p% * t\n   600.000 = 5.000.000 * 0,08 * t\n   600.000 = 400.000 * t\n   t = 600.000 / 400.000 = 1,5 tahun (atau 1 tahun 6 bulan).\n\n4. Pembahasan Distraktor:\n   - 1 tahun (Salah): Mengasumsikan bunga yang terkumpul hanya bunga 1 periode tahunan penuh (Rp400.000,00), yang menghasilkan saldo Rp5.400.000,00.\n   - 1,5 tahun (BENAR): Waktu yang dibutuhkan agar bunga mencapai Rp600.000,00 dengan pertambahan linear Rp400.000,00 per tahun adalah t = 600.000 / 400.000 = 1,5 tahun.\n   - 2 tahun (Salah): Mengasumsikan akumulasi bunga 2 tahun penuh (2 * Rp400.000,00 = Rp800.000,00), yang menghasilkan saldo Rp5.800.000,00.\n   - 2,5 tahun (Salah): Mengasumsikan akumulasi bunga 2,5 tahun (2,5 * Rp400.000,00 = Rp1.000.000,00), yang menghasilkan saldo Rp6.000.000,00.",
+            "source": {
+                "student_book": {
+                    "pages": "30-32",
+                    "section": "Bab 1, Bunga Tunggal"
+                },
+                "teacher_guide": {
+                    "pages": "81-83",
+                    "section": "Bab 1, Panduan Pembelajaran Bunga Tunggal"
+                }
+            },
+            "provenance": "Soal literasi finansial terapan (Kurikulum Merdeka) untuk menguji kemampuan memanipulasi variabel waktu secara linear dalam persamaan bunga tunggal; konsep dasar matematis merujuk pada Buku Siswa hlm. 30–32.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": [
+                "bunga_tunggal",
+                "aljabar",
+                "literasi_finansial"
+            ],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": [
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Durasi Bunga Tunggal",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90,
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C01-C: Menentukan durasi/periode waktu simpanan berdasarkan formula invers bunga tunggal",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 30-32 (Subbab Bunga Tunggal dan Manipulasi Variabel Rumus B = M * p% * n)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 81-83 (Panduan Pembelajaran Bunga Tunggal dan Analisis Pola Linear)"
+                },
+                "authoring_statement": "Skenario tabungan perbankan Budi, parameter simpanan (modal Rp5.000.000,00, suku bunga 8% per tahun, saldo akhir Rp5.600.000,00), opsi pilihan, dan analisis dekonstruksi distraktornya disusun secara mandiri oleh proyek sebagai instrumen pemodelan aljabar finansial."
+            }
+        },
+        {
+            "id": "MAT-C01-C-HARD",
+            "chapter_id": "MAT12-C01",
+            "topic_id": "MAT12-C01-C",
+            "skill": "analyze",
+            "question": "Cika menganalisis dua tawaran instrumen investasi berbasis bunga tunggal untuk mengalokasikan modal sebesar Rp 10.000.000,00 selama jangka waktu 3 tahun. Pihak penyedia mengklaim bahwa Investasi A (bunga tunggal 12% per tahun) dan Investasi B (bunga tunggal 1% per bulan) memberikan hasil berbeda karena satuan periode bunganya berbeda. Berdasarkan analisis matematis terhadap kedua instrumen tersebut, manakah pernyataan yang paling tepat menggambarkan perbandingan hasil investasi Cika?",
+            "options": [
+                "Investasi A menghasilkan Rp 2.400.000,00 lebih banyak dibandingkan Investasi B.",
+                "Investasi B menghasilkan Rp 2.400.000,00 lebih banyak dibandingkan Investasi A.",
+                "Kedua investasi menghasilkan jumlah akhir yang sama persis secara proporsional.",
+                "Investasi A menghasilkan Rp 3.300.000,00 lebih banyak dibandingkan Investasi B."
+            ],
+            "answer": "Kedua investasi menghasilkan jumlah akhir yang sama persis secara proporsional.",
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Model Investasi A (Suku Bunga Tahunan):\n   Modal pokok (M) = Rp10.000.000,00\n   Suku bunga tunggal (p_A) = 12% per tahun\n   Durasi (t_A) = 3 tahun\n   Bunga total A (B_A) = M * p_A * t_A\n   B_A = 10.000.000 * 0,12 * 3 = Rp3.600.000,00.\n   Saldo akhir Investasi A = Rp10.000.000,00 + Rp3.600.000,00 = Rp13.600.000,00.\n\n2. Analisis Model Investasi B (Suku Bunga Bulanan):\n   Modal pokok (M) = Rp10.000.000,00\n   Suku bunga tunggal (p_B) = 1% per bulan\n   Durasi 3 tahun disetarakan ke satuan bulan: t_B = 3 * 12 = 36 bulan\n   Bunga total B (B_B) = M * p_B * t_B\n   B_B = 10.000.000 * 0,01 * 36 = Rp3.600.000,00.\n   Saldo akhir Investasi B = Rp10.000.000,00 + Rp3.600.000,00 = Rp13.600.000,00.\n\n3. Kesimpulan Komparatif:\n   Pada sistem bunga tunggal (non-compounding), akumulasi bunga bertambah secara linier terhadap waktu. Suku bunga 1% per bulan ekuivalen penuh dengan 12% per tahun (1% * 12 = 12% per tahun). Dalam rentang waktu yang sama (3 tahun = 36 bulan), kedua instrumen menghasilkan akumulasi bunga yang persis sama (Rp3.600.000,00) dan saldo akhir yang identik (Rp13.600.000,00). Klaim bahwa perbedaan satuan periode menghasilkan keuntungan yang berbeda adalah keliru pada bunga tunggal.\n\n4. Pembahasan Distraktor:\n   - Investasi A menghasilkan Rp 2.400.000,00 lebih banyak... (Salah): Muncul jika peserta didik menghitung bunga Investasi A selama 3 tahun penuh (Rp3.600.000,00), tetapi keliru menghitung Investasi B hanya selama 1 tahun / 12 bulan (Rp1.200.000,00), sehingga selisihnya 3.600.000 - 1.200.000 = Rp2.400.000,00.\n   - Investasi B menghasilkan Rp 2.400.000,00 lebih banyak... (Salah): Muncul jika peserta didik menghitung bunga Investasi B selama 36 bulan (Rp3.600.000,00), tetapi mengira suku bunga 12% pada Investasi A berlaku untuk total seluruh 3 tahun tanpa dikalikan durasi t=3 (Rp1.200.000,00), sehingga selisihnya 3.600.000 - 1.200.000 = Rp2.400.000,00.\n   - Kedua investasi menghasilkan jumlah akhir yang sama persis secara proporsional. (BENAR): Kedua investasi menghasilkan bunga yang sama persis yaitu Rp3.600.000,00, sehingga jumlah akhir keduanya identik sebesar Rp13.600.000,00 (selisih = Rp0,00).\n   - Investasi A menghasilkan Rp 3.300.000,00 lebih banyak... (Salah): Terjadi kesalahan fatal konversi waktu di mana durasi 3 tahun langsung dimasukkan sebagai n = 3 pada suku bunga bulanan tanpa dikali 12 (10.000.000 * 1% * 3 = Rp300.000,00), sehingga selisihnya 3.600.000 - 300.000 = Rp3.300.000,00.",
+            "source": {
+                "student_book": {
+                    "pages": "38-39",
+                    "section": "Bab 2, Subbab Suku Bunga Tunggal (Konversi Satuan Waktu)"
+                },
+                "teacher_guide": {
+                    "pages": "84-85",
+                    "section": "Bab 1, Proyek Sumatif Simulasi Perbandingan Investasi"
+                }
+            },
+            "provenance": "Soal analisis komparatif literasi finansial tingkat tinggi (Kurikulum Merdeka) untuk menguji kemampuan menganalisis klaim ekuivalensi suku bunga nominal antarsatuan waktu pada bunga tunggal; konsep konversi waktu merujuk pada Buku Siswa hlm. 38–39.",
+            "mode": "tka_preview",
+            "game_mechanic": "calculation",
+            "tags": [
+                "bunga_tunggal",
+                "analisis_komparatif",
+                "literasi_finansial"
+            ],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": [
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Analisis Bunga Komparatif",
+            "difficulty": "hard",
+            "cognitive_level": "analyze",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120,
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C01-C: Menganalisis klaim dan membandingkan hasil investasi bunga tunggal dengan konversi periode waktu (tahunan vs bulanan)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 38-39 (Bab 2 Masalah B: Konversi Suku Bunga Tahunan ke Bulanan) dan hlm. 30-32 (Bab 1 Subbab Bunga Tunggal)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 84-85 (Proyek Sumatif Investasi Cerdas dan Analisis Komparatif Instrumen Keuangan)"
+                },
+                "authoring_statement": "Skenario analisis klaim komparatif instrumen Cika (Investasi A 12%/tahun vs Investasi B 1%/bulan selama 3 tahun), dekonstruksi opsi numerik berbasis miskonsepsi nyata, dan analisis pembongkaran ilusi bunga disusun secara mandiri oleh proyek sebagai instrumen asesmen analitis orisinal."
+            }
+        }
+    ]
+}
