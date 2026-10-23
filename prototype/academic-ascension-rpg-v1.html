@@ -2419,16 +2419,16 @@ const VERIFIED_POOLS = {
       {
         question_id: 'MAT12-C01-A2-7331',
         difficulty_label: 'medium',
-        question: 'Diketahui suku ke-2 dari suatu barisan geometri adalah 12, dan suku ke-5 adalah 96. Jika semua suku bernilai positif, maka suku ke-7 dari barisan tersebut adalah...',
+        question: 'Dalam simulasi komputasi transmisi data telekomunikasi, tim pengembang menguji algoritma penguatan sinyal bertingkat melalui serangkaian penguat virtual. Indeks penguatan sinyal dalam simulasi tersebut diprogram meningkat dengan faktor pengali tetap mengikuti pola barisan geometri pada setiap tingkatan penguat. Hasil log simulasi mencatat bahwa penguat tingkat ke-2 memiliki indeks penguatan sebesar 18 unit indeks, sedangkan penguat tingkat ke-5 mencapai 486 unit indeks. Berdasarkan model simulasi yang stabil tersebut, berapakah indeks penguatan sinyal pada penguat tingkat ke-6?',
         answer: 'C',
         options: [
-          { id: 'A', text: '192' },
-          { id: 'B', text: '256' },
-          { id: 'C', text: '384' },
-          { id: 'D', text: '768' }
+          { id: 'A', text: '642 unit indeks' },
+          { id: 'B', text: '972 unit indeks' },
+          { id: 'C', text: '1.458 unit indeks' },
+          { id: 'D', text: '4.374 unit indeks' }
         ],
         gameplay: { correct_damage: 100, wrong_penalty: 5 },
-        explanation: 'U2 = a*r = 12 dan U5 = a*r^4 = 96. Bagi U5/U2: r^3 = 8 -> r = 2, a = 6. Maka U7 = 6 × (2^6) = 6 × 64 = 384.'
+        explanation: 'U2 = a*r = 18 unit indeks dan U5 = a*r^4 = 486 unit indeks. Eliminasi: r^3 = 27 -> r = 3, a = 6 unit indeks. Indeks penguatan tingkat ke-6: U6 = U5 * r = 486 * 3 = 1.458 unit indeks. Distraktor: 642 unit indeks (asumsi aritmetika b=156), 972 unit indeks (rasio biner r=2), 4.374 unit indeks (tingkat ke-7).'
       },
       {
         question_id: 'MAT12-C01-B-7955',

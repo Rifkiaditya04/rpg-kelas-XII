@@ -197,7 +197,7 @@
                           "secondary_competencies":  [
 
                                                      ],
-                          "cognitive_level":  "understand",
+                          "cognitive_level":  "apply",
                           "question_id":  "MAT12-C01-A2-1451",
                           "question_role":  "practice",
                           "tka_alignment":  {
@@ -233,9 +233,29 @@
                                            "wrong_penalty":  5,
                                            "attack_type":  "light"
                                        },
-                          "explanation":  "Ini adalah barisan geometri dengan suku awal (pukul 08:00) a = 100 dan rasio r = 2. Dari 08:00 ke 12:00 terdapat 4 jam pembelahan, yang berarti mencari nilai pada periode ke-5 (U5). U5 = a * r^4 = 100 * 2^4 = 100 * 16 = 1.600 bakteri.",
+                          "explanation":  "Langkah Penyelesaian:\n1. Pemodelan Pertumbuhan Geometri:\n   Suku awal (pukul 08:00): a = 100 bakteri. Rasio penggandaan: r = 2 setiap jam.\n   Rentang waktu dari pukul 08:00 hingga 12:00 adalah 4 jam, sehingga terjadi tepat 4 periode pembelahan (mencari suku ke-5 / U5).\n2. Perhitungan:\n   U5 = a * r^4 = 100 * (2^4) = 100 * 16 = 1.600 bakteri.\n3. Pembahasan Distraktor:\n   - 800 (Salah): Mengasumsikan hanya 3 periode pembelahan (100 * 2^3 = 800).\n   - 1.600 (BENAR): Tepat 4 periode pembelahan (100 * 2^4 = 1.600).\n   - 3.200 (Salah): Mengasumsikan 5 periode pembelahan (100 * 2^5 = 3.200).\n   - 6.400 (Salah): Mengasumsikan 6 periode pembelahan (100 * 2^6 = 6.400).",
                           "question_type":  "single_select",
-                          "estimated_time_seconds":  60
+                          "estimated_time_seconds":  60,
+                          "source":  {
+                                         "student_book":  {
+                                                              "pages":  "11-18",
+                                                              "section":  "Bab 1, Barisan Geometri"
+                                                          },
+                                         "teacher_guide":  {
+                                                               "pages":  "63-70",
+                                                               "section":  "Bab 1, Panduan Pembelajaran Barisan Geometri"
+                                                           }
+                                     },
+                          "provenance":  "Soal orisinal kontekstual biologi (Kurikulum Merdeka) untuk memahami pertumbuhan eksponensial barisan geometri dengan rasio konstan; konsep matematis merujuk pada Buku Siswa hlm. 11–18.",
+                          "source_basis":  {
+                                               "curriculum_framework":  "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                                               "competency_target":  "MAT12-C01-A2: Memodelkan dan menyelesaikan masalah pertumbuhan menggunakan konsep barisan geometri",
+                                               "concept_reference":  {
+                                                                         "student_book":  "Buku Siswa Matematika Kelas XII hlm. 11-18 (Subbab Barisan Geometri dan Aktivitas Eksplorasi Rasio Tetap)",
+                                                                         "teacher_guide":  "Buku Panduan Guru Matematika Kelas XII hlm. 63-70 (Pengalaman Belajar dan Panduan Pembelajaran Barisan Geometri)"
+                                                                     },
+                                               "authoring_statement":  "Konteks penelitian koloni bakteri di laboratorium, interval waktu 4 jam (08:00–12:00), faktor penggandaan biner, opsi pilihan, dan pembahasannya disusun secara mandiri oleh proyek sebagai pengenalan konsep pertumbuhan geometri."
+                                           }
                       },
                       {
                           "secondary_competencies":  [
@@ -249,24 +269,24 @@
                                                 "stimulus_type":  "",
                                                 "suitable":  false
                                             },
-                          "question":  "Diketahui suku ke-2 dari suatu barisan geometri adalah 12, dan suku ke-5 adalah 96. Jika semua suku bernilai positif, maka suku ke-7 dari barisan tersebut adalah...",
+                          "question":  "Dalam simulasi komputasi transmisi data telekomunikasi, tim pengembang menguji algoritma penguatan sinyal bertingkat melalui serangkaian penguat virtual. Indeks penguatan sinyal dalam simulasi tersebut diprogram meningkat dengan faktor pengali tetap mengikuti pola barisan geometri pada setiap tingkatan penguat. Hasil log simulasi mencatat bahwa penguat tingkat ke-2 memiliki indeks penguatan sebesar 18 unit indeks, sedangkan penguat tingkat ke-5 mencapai 486 unit indeks. Berdasarkan model simulasi yang stabil tersebut, berapakah indeks penguatan sinyal pada penguat tingkat ke-6?",
                           "answer":  "C",
                           "options":  [
                                           {
                                               "id":  "A",
-                                              "text":  "192"
+                                              "text":  "642 unit indeks"
                                           },
                                           {
                                               "id":  "B",
-                                              "text":  "256"
+                                              "text":  "972 unit indeks"
                                           },
                                           {
                                               "id":  "C",
-                                              "text":  "384"
+                                              "text":  "1.458 unit indeks"
                                           },
                                           {
                                               "id":  "D",
-                                              "text":  "768"
+                                              "text":  "4.374 unit indeks"
                                           }
                                       ],
                           "primary_competency":  "MAT12-C01-A2",
@@ -277,15 +297,35 @@
                                            "wrong_penalty":  5,
                                            "attack_type":  "medium"
                                        },
-                          "explanation":  "Rumus suku ke-n barisan geometri: Un = a * r^(n-1). Diketahui U2 = a*r = 12, dan U5 = a*r^4 = 96. Bagi U5 dengan U2: (a*r^4)/(a*r) = 96/12 -\u003e r^3 = 8, maka r = 2. Substitusi ke U2: a(2) = 12 -\u003e a = 6. Suku ke-7: U7 = a * r^6 = 6 * (2^6) = 6 * 64 = 384.",
+                          "explanation":  "Langkah Penyelesaian:\n1. Pemodelan Barisan Geometri:\n   Misalkan indeks penguatan sinyal pada penguat tingkat ke-n adalah Un = a * r^(n - 1), dengan a = indeks penguatan tingkat pertama dan r = faktor pengali (rasio) tetap antartingkat.\n   - Penguat tingkat ke-2: U2 = a * r = 18 unit indeks\n   - Penguat tingkat ke-5: U5 = a * r^4 = 486 unit indeks\n\n2. Menentukan Rasio (r) dan Suku Pertama (a):\n   Bagi persamaan U5 dengan U2:\n   (a * r^4) / (a * r) = 486 / 18\n   r^3 = 27 -> r = 3.\n   Substitusi r = 3 ke U2:\n   a * 3 = 18 -> a = 6 unit indeks.\n\n3. Menghitung Indeks Penguatan Tingkat ke-6 (U6):\n   U6 = a * r^5 = 6 * (3^5) = 6 * 243 = 1.458 unit indeks.\n   (Atau via relasi suku berdekatan: U6 = U5 * r = 486 * 3 = 1.458 unit indeks).\n\n4. Pembahasan Distraktor:\n   - 642 unit indeks (Salah): Mengasumsikan barisan aritmetika dengan beda linier tetap b = (486 - 18) / (5 - 2) = 156 unit indeks, sehingga U6 = 486 + 156 = 642 unit indeks.\n   - 972 unit indeks (Salah): Mengasumsikan rasio penggandaan biner r = 2, sehingga U6 = 486 * 2 = 972 unit indeks.\n   - 1.458 unit indeks (BENAR): Indeks penguatan sinyal pada penguat tingkat ke-6 adalah U6 = 486 * 3 = 1.458 unit indeks.\n   - 4.374 unit indeks (Salah): Menghitung penguat tingkat ke-7 (off-by-one atas): U7 = 1.458 * 3 = 4.374 unit indeks.",
                           "question_type":  "single_select",
-                          "estimated_time_seconds":  90
+                          "estimated_time_seconds":  90,
+                          "source":  {
+                                         "student_book":  {
+                                                              "pages":  "11-18",
+                                                              "section":  "Bab 1, Barisan Geometri"
+                                                          },
+                                         "teacher_guide":  {
+                                                               "pages":  "63-70",
+                                                               "section":  "Bab 1, Panduan Pembelajaran Barisan Geometri"
+                                                           }
+                                     },
+                          "provenance":  "Soal pemodelan simulasi komputasi penguatan sinyal telekomunikasi untuk menguji penerapan barisan geometri melalui sistem eliminasi rasio (Kurikulum Merdeka); konsep matematis mengacu pada Buku Siswa hlm. 11–18.",
+                          "source_basis":  {
+                                               "curriculum_framework":  "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                                               "competency_target":  "MAT12-C01-A2: Menentukan rasio dan suku ke-n barisan geometri melalui penyelesaian relasi antarsuku",
+                                               "concept_reference":  {
+                                                                         "student_book":  "Buku Siswa Matematika Kelas XII hlm. 11-18 (Latihan 1.2 dan Subbab Barisan Geometri)",
+                                                                         "teacher_guide":  "Buku Panduan Guru Matematika Kelas XII hlm. 63-70 (Aktivitas Pembelajaran Barisan Geometri dan Penemuan Rumus Un)"
+                                                                     },
+                                               "authoring_statement":  "Skenario simulasi penguatan sinyal digital, indeks penguatan bertingkat (U2 = 18 unit indeks, U5 = 486 unit indeks, U6 = 1.458 unit indeks), opsi pilihan, dan analisis pembahasannya dirancang mandiri oleh proyek sebagai pemodelan komputasi orisinal."
+                                           }
                       },
                       {
                           "secondary_competencies":  [
 
                                                      ],
-                          "cognitive_level":  "evaluate",
+                          "cognitive_level":  "apply",
                           "question_id":  "MAT12-C01-A2-3014",
                           "question_role":  "practice",
                           "tka_alignment":  {
@@ -321,9 +361,29 @@
                                            "wrong_penalty":  5,
                                            "attack_type":  "heavy"
                                        },
-                          "explanation":  "Penyusutan 20% berarti nilai tersisa 80% (r = 0,8) setiap tahunnya. Ini adalah barisan geometri. Harga akhir tahun ke-3 (U3) = Harga awal (a) * (0,8)^3. Maka 2.560.000 = a * 0,512. Harga awal (a) = 2.560.000 / 0,512 = 5.000.000.",
+                          "explanation":  "Langkah Penyelesaian:\n1. Pemodelan Peluruhan Geometri:\n   Penyusutan nilai sebesar 20% per tahun berarti nilai mesin yang tersisa setiap tahun adalah 100% - 20% = 80% = 0,8 dari tahun sebelumnya (rasio peluruhan r = 0,8).\n   Jika nilai awal pada tahun ke-0 adalah V0, maka nilai pada akhir tahun ke-n memenuhi persamaan geometri: Vn = V0 * (0,8)^n.\n\n2. Menghitung Nilai Beli Awal (V0):\n   Diketahui nilai pada akhir tahun ke-3 (V3) = Rp2.560.000,00.\n   V3 = V0 * (0,8)^3\n   2.560.000 = V0 * 0,512\n   V0 = 2.560.000 / 0,512 = Rp5.000.000,00.\n\n3. Pembahasan Distraktor:\n   - Rp 4.000.000,00 (Salah): Mengasumsikan penyusutan hanya terjadi selama 2 tahun: 2.560.000 / (0,8)^2 = 2.560.000 / 0,64 = 4.000.000.\n   - Rp 5.000.000,00 (BENAR): Harga beli awal mesin pada tahun ke-0 adalah Rp5.000.000,00.\n   - Rp 6.000.000,00 (Salah): Penaksiran kasar tanpa dasar perhitungan dekomposisi eksponensial.\n   - Rp 5.120.000,00 (Salah): Salah operasi dengan mengalikan nilai sisa dengan 2 (2.560.000 * 2 = 5.120.000) karena melihat faktor desimal 0,512.",
                           "question_type":  "single_select",
-                          "estimated_time_seconds":  120
+                          "estimated_time_seconds":  120,
+                          "source":  {
+                                         "student_book":  {
+                                                              "pages":  "11-18",
+                                                              "section":  "Bab 1, Barisan Geometri dan Peluruhan Nilai"
+                                                          },
+                                         "teacher_guide":  {
+                                                               "pages":  "63-70",
+                                                               "section":  "Bab 1, Panduan Pembelajaran Barisan Geometri dan Masalah Nyata"
+                                                           }
+                                     },
+                          "provenance":  "Soal pemodelan kontekstual peluruhan nilai aset (depresiasi industri) untuk menguji penerapan terbalik konsep barisan geometri; konsep matematis merujuk pada Buku Siswa hlm. 11–18.",
+                          "source_basis":  {
+                                               "curriculum_framework":  "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                                               "competency_target":  "MAT12-C01-A2: Menerapkan konsep barisan geometri dalam menyelesaikan masalah peluruhan nilai aset (depresiasi)",
+                                               "concept_reference":  {
+                                                                         "student_book":  "Buku Siswa Matematika Kelas XII hlm. 11-18 (Subbab Barisan Geometri dan Penerapan Rasio Pengali)",
+                                                                         "teacher_guide":  "Buku Panduan Guru Matematika Kelas XII hlm. 63-70 (Aktivitas Kontekstual Masalah Nyata dan Pengalaman Belajar)"
+                                                                     },
+                                               "authoring_statement":  "Skenario industri percetakan, parameter depresiasi tahunan 20%, nilai sisa tahun ke-3 (Rp2.560.000,00), opsi pilihan, dan analisis kalkulasi balik disusun secara mandiri oleh proyek sebagai pemodelan peluruhan geometri terapan."
+                                           }
                       },
                       {
                           "secondary_competencies":  [
