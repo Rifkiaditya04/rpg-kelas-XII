@@ -1,0 +1,171 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CONTROLLED_REVISION_DRAFT",
+    "dataset": "World 2 Matematika Wajib Chapter 2 - Misi 5 (Bunga Majemuk) v1.1",
+    "purpose": "Resolved canonical QA dataset produced deterministically from canonical base v1.0 plus v1.1 revision overlay (MAT12-W02-CH02-M05-V1.1-REV).",
+    "chapter_id": "MAT12-C02",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "MAT-C02-A-EASY",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-A",
+            "skill": "apply",
+            "question": "Beni menabung uang sebesar Rp 10.000.000,00 di sebuah bank swasta. Bank tersebut memberikan suku bunga majemuk 10% per tahun. Jika uang tersebut tidak pernah diambil, berapakah jumlah tabungan Beni pada akhir tahun ke-2?",
+            "options": [
+                "Rp 11.000.000,00",
+                "Rp 12.000.000,00",
+                "Rp 12.100.000,00",
+                "Rp 12.200.000,00"
+            ],
+            "answer": "Rp 12.100.000,00",
+            "explanation": "Langkah Penyelesaian:\n1. Pemodelan Bunga Majemuk:\n   Modal pokok (M) = Rp10.000.000,00\n   Suku bunga majemuk (i) = 10% per tahun = 0,10\n   Jangka waktu (n) = 2 tahun\n\n2. Menghitung Saldo Akhir (M2):\n   Mn = M * (1 + i)^n\n   M2 = 10.000.000 * (1 + 0,10)^2\n   M2 = 10.000.000 * (1,1)^2\n   M2 = 10.000.000 * 1,21 = Rp12.100.000,00.\n   (Atau bertahap: Tahun 1 = 10.000.000 + 10% = Rp11.000.000; Tahun 2 = 11.000.000 + 10% * 11.000.000 = 11.000.000 + 1.100.000 = Rp12.100.000,00).\n\n3. Pembahasan Distraktor:\n   - Rp 11.000.000,00 (Salah): Hanya menghitung saldo pada akhir tahun ke-1 (10.000.000 * 1,1).\n   - Rp 12.000.000,00 (Salah): Keliru menggunakan sistem bunga tunggal (10.000.000 + 2 * 1.000.000 = 12.000.000) tanpa memperhitungkan akumulasi bunga berbunga.\n   - Rp 12.100.000,00 (BENAR): Hasil akumulasi bunga majemuk selama 2 tahun penuh (10.000.000 * 1,21 = 12.100.000).\n   - Rp 12.200.000,00 (Salah): Kesalahan aritmetika saat menghitung faktor kuadrat (1,1)^2 yang keliru dianggap 1,22 (alih-alih 1,21), menghasilkan 10.000.000 * 1,22 = Rp12.200.000,00.",
+            "source": {
+                "student_book": {
+                    "pages": "40-44",
+                    "section": "Bab 2, Subbab B: Investasi Bunga Majemuk"
+                },
+                "teacher_guide": {
+                    "pages": "122-125",
+                    "section": "Bab 2, Panduan Pembelajaran Investasi Bunga Majemuk"
+                }
+            },
+            "provenance": "Soal kontekstual finansial pelajar (Kurikulum Merdeka) untuk melatih penerapan formula akumulasi bunga majemuk; konsep dasar matematis mengacu pada Buku Siswa hlm. 40–44.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": [
+                "bunga_majemuk",
+                "finansial",
+                "kontekstual"
+            ],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": [
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Investasi Bunga Majemuk",
+            "difficulty": "easy",
+            "cognitive_level": "apply",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60,
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C02-A: Menghitung nilai akhir investasi/tabungan dengan skema bunga majemuk tahunan",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 40-44 (Subbab B: Investasi Bunga Majemuk dan Rumus Mn = M(1+i)^n)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 122-125 (Tabel 2.4 Pengalaman Belajar Materi Investasi Bunga Majemuk)"
+                },
+                "authoring_statement": "Skenario tabungan Beni, parameter modal (Rp10.000.000,00), suku bunga (10%/tahun, 2 tahun), opsi jawaban, dan dekonstruksi distraktor matematis disusun secara mandiri oleh proyek sebagai instrumen asesmen formatif orisinal."
+            }
+        },
+        {
+            "id": "MAT-C02-A-MED",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-A",
+            "skill": "apply",
+            "question": "Pak Ali mendepositokan uangnya dengan sistem bunga majemuk 5% per tahun. Setelah 3 tahun, total saldo deposito tersebut menjadi Rp 9.261.000,00. Berapakah besar modal awal yang didepositokan Pak Ali? (Gunakan (1,05)^3 = 1,157625)",
+            "options": [
+                "Rp 7.500.000,00",
+                "Rp 8.000.000,00",
+                "Rp 8.500.000,00",
+                "Rp 9.000.000,00"
+            ],
+            "answer": "Rp 8.000.000,00",
+            "explanation": "Langkah Penyelesaian:\n1. Pemodelan Nilai Sekarang (Present Value):\n   Saldo akhir deposito (M3) = Rp9.261.000,00\n   Suku bunga majemuk (i) = 5% per tahun = 0,05\n   Jangka waktu (n) = 3 tahun\n\n2. Menghitung Modal Awal (M):\n   Mn = M * (1 + i)^n\n   9.261.000 = M * (1 + 0,05)^3\n   9.261.000 = M * (1,05)^3\n   Nilai eksak (1,05)^3 = 1,157625\n   M = 9.261.000 / 1,157625 = Rp8.000.000,00.\n   (Atau dalam bentuk pecahan: 1,05 = 21/20 -> (21/20)^3 = 9.261 / 8.000. Maka M = 9.261.000 * (8.000 / 9.261) = Rp8.000.000,00).\n\n3. Pembahasan Distraktor:\n   - Rp 7.500.000,00 (Salah): Estimasi kasar keliru membagi dengan faktor pembagi yang terlalu besar (sekitar 1,235).\n   - Rp 8.000.000,00 (BENAR): Modal awal tepat dihitung dengan M = 9.261.000 / 1,157625 = Rp8.000.000,00.\n   - Rp 8.500.000,00 (Salah): Keliru menggunakan pendekatan diskon bunga tunggal sederhana 3 tahun (9.261.000 * (1 - 0,15) atau membagi dengan 1,09).\n   - Rp 9.000.000,00 (Salah): Hanya mengurangkan estimasi bunga 1 tahun pertama tanpa memperhitungkan periode 3 tahun.",
+            "source": {
+                "student_book": {
+                    "pages": "40-44",
+                    "section": "Bab 2, Subbab B: Investasi Bunga Majemuk"
+                },
+                "teacher_guide": {
+                    "pages": "122-125",
+                    "section": "Bab 2, Panduan Pembelajaran Investasi Bunga Majemuk"
+                }
+            },
+            "provenance": "Soal pemodelan nilai sekarang (present value) bunga majemuk (Kurikulum Merdeka) untuk menguji penentuan modal awal; konsep matematis merujuk pada Buku Siswa hlm. 40–44.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": [
+                "bunga_majemuk",
+                "present_value",
+                "nilai_sekarang",
+                "kontekstual"
+            ],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": [
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Perhitungan Modal Awal Bunga Majemuk",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90,
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C02-A: Menentukan nilai modal awal (present value) berdasarkan nilai akhir bunga majemuk dan jangka waktu",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 40-44 (Latihan dan Subbab B: Investasi Bunga Majemuk)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 122-125 (Aktivitas Mencoba dan Penentuan Nilai Awal)"
+                },
+                "authoring_statement": "Skenario deposito Pak Ali, parameter nilai akhir (Rp9.261.000,00), suku bunga (5%/tahun, 3 tahun), faktor pengali eksak (1,157625), dan dekonstruksi distraktor disusun mandiri oleh proyek tanpa menyalin soal buku teks."
+            }
+        },
+        {
+            "id": "MAT-C02-A-HARD",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-A",
+            "skill": "analyze",
+            "question": "Sebuah bank menawarkan dua opsi deposito berbunga majemuk dengan durasi total 1 tahun untuk modal Rp 100.000.000,00. Opsi P memberikan suku bunga nominal 12% per tahun dengan pemajemukan tahunan (1 kali setahun). Opsi Q memberikan suku bunga nominal 12% per tahun dengan pemajemukan triwulanan (4 kali setahun, 3% per triwulan). Berdasarkan analisis matematis nilai akhir kedua investasi tersebut, manakah kesimpulan yang paling tepat?",
+            "options": [
+                "Opsi P memberikan hasil lebih besar karena bunganya utuh 12% sekaligus.",
+                "Opsi Q memberikan hasil lebih besar karena perhitungan bunga (compounding) dilakukan lebih sering.",
+                "Kedua opsi memberikan hasil yang sama karena total suku bunga setahun tetap 12%.",
+                "Opsi P dan Q tidak dapat dibandingkan tanpa mengetahui tingkat inflasi ekonomi."
+            ],
+            "answer": "Opsi Q memberikan hasil lebih besar karena perhitungan bunga (compounding) dilakukan lebih sering.",
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Opsi P (Pemajemukan Tahunan):\n   Suku bunga per periode = 12% = 0,12\n   Frekuensi pemajemukan (m) = 1 kali setahun, durasi (n) = 1 tahun\n   Nilai akhir MP = 100.000.000 * (1 + 0,12)^1 = Rp112.000.000,00.\n\n2. Analisis Opsi Q (Pemajemukan Triwulanan):\n   Suku bunga nominal tahunan = 12%\n   Frekuensi pemajemukan (m) = 4 kali setahun (triwulanan)\n   Suku bunga per triwulan (i) = 12% / 4 = 3% = 0,03\n   Total periode dalam 1 tahun (n) = 1 * 4 = 4 periode\n   Nilai akhir MQ = 100.000.000 * (1 + 0,03)^4 = 100.000.000 * (1,03)^4\n   (1,03)^4 = 1,12550881\n   MQ = 100.000.000 * 1,12550881 = Rp112.550.881,00.\n\n3. Kesimpulan Komparatif:\n   MQ > MP dengan selisih keuntungan Rp550.881,00. Pemajemukan yang lebih sering (triwulanan) menghasilkan Effective Annual Rate (EAR) yang lebih tinggi (12,55% vs 12%) akibat akumulasi bunga berbunga di setiap akhir triwulan.\n\n4. Pembahasan Distraktor:\n   - Opsi A (Salah): Miskonsepsi bahwa penerimaan bunga sekaligus di akhir tahun lebih besar daripada akumulasi bertahap.\n   - Opsi B (BENAR): Opsi Q memberikan nilai akhir lebih besar karena pemajemukan bertahap menghasilkan bunga atas bunga yang telah terbentuk di triwulan sebelumnya.\n   - Opsi C (Salah): Miskonsepsi mengabaikan efek bunga berbunga dan menganggap nominal persentase tahunan yang sama selalu menghasilkan nominal uang yang identik.\n   - Opsi D (Salah): Klaim keliru; kedua opsi berada dalam mata uang dan periode waktu yang sama sehingga nilai akhir riil keduanya dapat dibandingkan secara pasti tanpa memerlukan data inflasi.",
+            "source": {
+                "student_book": {
+                    "pages": "40-44",
+                    "section": "Bab 2, Subbab B: Investasi Bunga Majemuk"
+                },
+                "teacher_guide": {
+                    "pages": "122-125",
+                    "section": "Bab 2, Panduan Pembelajaran Investasi Bunga Majemuk"
+                }
+            },
+            "provenance": "Soal penalaran komparatif frekuensi pemajemukan bunga majemuk (Kurikulum Merdeka) untuk menganalisis Effective Annual Rate; konsep matematis merujuk pada Buku Siswa hlm. 40–44.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": [
+                "bunga_majemuk",
+                "compounding_frequency",
+                "analisis_komparatif",
+                "literasi_finansial"
+            ],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": [
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Analisis Efek Frekuensi Pemajemukan",
+            "difficulty": "hard",
+            "cognitive_level": "analyze",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120,
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C02-A: Menganalisis dan membandingkan dampak frekuensi pemajemukan (compounding frequency) terhadap nilai akhir investasi",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 40-44 (Subbab B: Investasi Bunga Majemuk dan Konsep Bunga Berbunga)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 122-125 (Aktivitas Eksplorasi Perhitungan Suku Bunga Majemuk)"
+                },
+                "authoring_statement": "Skenario perbandingan deposito tahunan vs triwulanan modal Rp100.000.000,00, pembuktian Effective Annual Rate, dan analisis pembongkaran miskonsepsi nominal disusun secara mandiri oleh proyek sebagai instrumen penalaran finansial analitis orisinal."
+            }
+        }
+    ]
+}

@@ -1,0 +1,173 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CONTROLLED_REVISION_DRAFT",
+    "dataset": "World 2 Matematika Wajib Chapter 2 - Misi 6 (Anuitas) v1.1",
+    "purpose": "Resolved canonical QA dataset produced deterministically from canonical base v1.0 plus v1.1 revision overlay (MAT12-W02-CH02-M06-V1.1-REV).",
+    "chapter_id": "MAT12-C02",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "MAT-C02-B-EASY",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-B",
+            "skill": "apply",
+            "question": "Siska mengambil kredit motor dengan sistem pembayaran anuitas bulanan sebesar Rp 800.000,00. Pada angsuran bulan pertama, diketahui beban bunga dari pihak leasing adalah Rp 150.000,00. Berapakah nilai angsuran pokok yang dibayar Siska pada bulan pertama tersebut?",
+            "options": [
+                "Rp 150.000,00",
+                "Rp 650.000,00",
+                "Rp 800.000,00",
+                "Rp 950.000,00"
+            ],
+            "answer": "Rp 650.000,00",
+            "explanation": "Langkah Penyelesaian:\n1. Prinsip Dekomposisi Anuitas:\n   Anuitas (A) merupakan jumlah pembayaran berkala tetap yang terdiri atas dua komponen: angsuran pokok (an) dan porsi bunga (bn).\n   Rumus relasi linier: A = an + bn.\n\n2. Menghitung Angsuran Pokok Bulan Pertama (a1):\n   A = a1 + b1\n   800.000 = a1 + 150.000\n   a1 = 800.000 - 150.000 = Rp650.000,00.\n\n3. Pembahasan Distraktor:\n   - Rp 150.000,00 (Salah): Nilai porsi bunga itu sendiri (b1), bukan angsuran pokok.\n   - Rp 650.000,00 (BENAR): Angsuran pokok bulan pertama diperoleh dari A - b1 = 800.000 - 150.000 = Rp650.000,00.\n   - Rp 800.000,00 (Salah): Nilai total anuitas (A), mengabaikan adanya porsi bunga yang harus dipisahkan.\n   - Rp 950.000,00 (Salah): Kesalahan operasi di mana anuitas justru ditambah dengan porsi bunga (800.000 + 150.000 = Rp950.000,00).",
+            "source": {
+                "student_book": {
+                    "pages": "59-70",
+                    "section": "Bab 2, Subbab E: Pinjaman dengan Anuitas"
+                },
+                "teacher_guide": {
+                    "pages": "133-136",
+                    "section": "Bab 2, Panduan Pembelajaran Pinjaman dengan Anuitas"
+                }
+            },
+            "provenance": "Soal kontekstual finansial kredit konsumen (Kurikulum Merdeka) untuk memahami dekomposisi komponen anuitas; konsep matematis merujuk pada Buku Siswa hlm. 59–70.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": [
+                "anuitas",
+                "angsuran_pokok",
+                "dekomposisi_anuitas",
+                "kontekstual"
+            ],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": [
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Dekomposisi Anuitas Dasar",
+            "difficulty": "easy",
+            "cognitive_level": "apply",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60,
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C02-B: Memahami dan menghitung dekomposisi komponen anuitas (angsuran pokok dan bunga)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 59-70 (Subbab E: Pinjaman dengan Anuitas dan Rumus A = an + bn)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 133-136 (Tabel 2.7 Pengalaman Belajar Materi Pinjaman dengan Anuitas)"
+                },
+                "authoring_statement": "Skenario kredit motor Siska, parameter anuitas (Rp800.000,00), porsi bunga pertama (Rp150.000,00), dan dekonstruksi opsi jawaban disusun secara mandiri oleh proyek sebagai instrumen asesmen anuitas orisinal."
+            }
+        },
+        {
+            "id": "MAT-C02-B-MED",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-B",
+            "skill": "apply",
+            "question": "Sebuah pinjaman dilunasi dengan sistem anuitas bulanan. Diketahui nilai angsuran pokok bulan ke-3 adalah Rp 300.000,00 dan suku bunga yang ditetapkan adalah 2% per bulan. Berapakah nilai angsuran pokok pada bulan ke-4?",
+            "options": [
+                "Rp 294.000,00",
+                "Rp 300.000,00",
+                "Rp 306.000,00",
+                "Rp 312.120,00"
+            ],
+            "answer": "Rp 306.000,00",
+            "explanation": "Langkah Penyelesaian:\n1. Sifat Fundamental Barisan Angsuran Pokok:\n   Pada sistem pinjaman anuitas, besarnya angsuran pokok antarperiode bertumbuh secara eksponensial mengikuti barisan geometri dengan rasio r = (1 + i).\n   Hubungan dua periode berturutan: a_(n+1) = a_n * (1 + i).\n\n2. Menghitung Angsuran Pokok Bulan ke-4 (a4):\n   a4 = a3 * (1 + i)\n   a4 = 300.000 * (1 + 0,02)\n   a4 = 300.000 * 1,02 = Rp306.000,00.\n\n3. Pembahasan Distraktor:\n   - Rp 294.000,00 (Salah): Keliru mengurangkan bunga dari pokok (300.000 * (1 - 0,02) = 294.000), mengira pokok mengecil (tertukar dengan sifat porsi bunga).\n   - Rp 300.000,00 (Salah): Menganggap angsuran pokok bernilai tetap setiap bulan (mengacaukan anuitas total yang tetap dengan angsuran pokok).\n   - Rp 306.000,00 (BENAR): Angsuran pokok bulan ke-4 bertambah sebesar 2% dari bulan ke-3 (300.000 * 1,02 = Rp306.000,00).\n   - Rp 312.120,00 (Salah): Kesalahan langkah indeks di mana peserta didik menghitung angsuran pokok bulan ke-5 (a5 = a3 * (1,02)^2 = 300.000 * 1,0404 = Rp312.120,00).",
+            "source": {
+                "student_book": {
+                    "pages": "59-70",
+                    "section": "Bab 2, Subbab E: Pinjaman dengan Anuitas"
+                },
+                "teacher_guide": {
+                    "pages": "133-136",
+                    "section": "Bab 2, Panduan Pembelajaran Pinjaman dengan Anuitas (Tabel 2.7 Sifat Angsuran Pokok)"
+                }
+            },
+            "provenance": "Soal konseptual hubungan deret geometri pada angsuran pokok anuitas (Kurikulum Merdeka); konsep matematis merujuk pada Buku Siswa hlm. 59–70.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": [
+                "anuitas",
+                "angsuran_pokok",
+                "barisan_geometri",
+                "konseptual"
+            ],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": [
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Sifat Barisan Geometri Angsuran Pokok Anuitas",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90,
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C02-B: Menganalisis dan menghitung pertumbuhan nilai angsuran pokok anuitas berbasis pola barisan geometri",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 59-70 (Subbab E: Pinjaman dengan Anuitas dan Penurunan an+1 = an(1+i))",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 133-136 (Tabel 2.7 Pengalaman Belajar Materi Pinjaman dengan Anuitas)"
+                },
+                "authoring_statement": "Skenario pelunasan pinjaman anuitas, parameter a3 (Rp300.000,00) dan bunga (2%/bulan), pembaruan distraktor terkalibrasi a5 (Rp312.120,00), dan pembahasannya disusun mandiri oleh proyek sebagai instrumen asesmen konseptual anuitas."
+            }
+        },
+        {
+            "id": "MAT-C02-B-HARD",
+            "chapter_id": "MAT12-C02",
+            "topic_id": "MAT12-C02-B",
+            "skill": "analyze",
+            "question": "Pak Budi mencicil KPR dengan skema anuitas tahunan selama 10 tahun. Pada tahun pertama, proporsi bunga sangat besar dibandingkan angsuran pokok. Di tahun ke-8, Pak Budi berencana melunasi seluruh sisa utangnya secara tunai. Apa konsekuensi logis dari tindakan pelunasan dipercepat ini terhadap beban total Pak Budi dibandingkan jika ia membayar normal hingga tahun ke-10?",
+            "options": [
+                "Beban total menjadi jauh lebih ringan karena bunga tahun ke-9 dan ke-10 yang besar akan dihapus.",
+                "Pelunasan lebih awal dapat menghindari bunga pada sisa periode pinjaman, tetapi besarnya penghematan bergantung pada saldo pokok tersisa, suku bunga, dan ketentuan kontrak pinjaman.",
+                "Beban total akan sama persis, karena anuitas menjamin nilai bunga selalu sama di setiap tahun.",
+                "Beban total justru bertambah karena ada penalti penutupan prematur dari bank komersial."
+            ],
+            "answer": "Pelunasan lebih awal dapat menghindari bunga pada sisa periode pinjaman, tetapi besarnya penghematan bergantung pada saldo pokok tersisa, suku bunga, dan ketentuan kontrak pinjaman.",
+            "explanation": "Langkah Penyelesaian:\n1. Prinsip Matematis Pelunasan Dipercepat:\n   Dalam sistem pinjaman anuitas, bunga periodik dihitung berdasarkan saldo pokok utang yang tersisa pada periode berjalan (b_k = S_(k-1) * i). Ketika nasabah melakukan pelunasan pokok secara penuh lebih awal (pada akhir tahun ke-8), pinjaman berakhir sehingga nasabah tidak lagi menanggung beban bunga untuk periode yang belum berjalan (tahun ke-9 dan ke-10).\n\n2. Keterbatasan Penentuan Besaran Penghematan dari Stem:\n   Stem soal tidak memuat parameter numerik spesifik seperti nominal saldo utang awal, tingkat suku bunga, jadwal amortisasi eksak, maupun ketentuan biaya penalti pelunasan. Oleh karena itu, besarnya penghematan finansial riil tidak dapat dipastikan apakah bernilai besar atau kecil, melainkan secara matematis bergantung langsung pada saldo pokok tersisa, suku bunga yang berlaku, dan ketentuan klausul kontrak pinjaman.\n\n3. Pembahasan Distraktor:\n   - Opsi A (Salah): Mengklaim bunga tahun ke-9 dan ke-10 bernilai besar serta menyimpulkan penghematan pasti membuat beban jauh lebih ringan tanpa didukung parameter numerik stem; secara teori anuitas, porsi bunga justru menurun di akhir periode.\n   - Opsi B (BENAR): Menyatakan prinsip yang tepat bahwa pelunasan awal meniadakan bunga sisa periode berjalan, dengan catatan penghematan riil bergantung pada saldo pokok tersisa, suku bunga, dan ketentuan kontrak pinjaman.\n   - Opsi C (Salah): Mengasumsikan nilai bunga selalu sama di setiap tahun; anuitas memang menjaga total pembayaran periodik tetap konstan, tetapi komposisi bunga selalu menurun dan angsuran pokok selalu meningkat.\n   - Opsi D (Salah): Menyimpulkan beban pasti bertambah akibat penalti komersial, padahal keberadaan dan besaran penalti pelunasan tidak disebutkan di dalam stem.",
+            "source": {
+                "student_book": {
+                    "pages": "59-70",
+                    "section": "Bab 2, Subbab E: Pinjaman dengan Anuitas (Tabel Amortisasi)"
+                },
+                "teacher_guide": {
+                    "pages": "133-136",
+                    "section": "Bab 2, Panduan Pembelajaran Pinjaman dengan Anuitas"
+                }
+            },
+            "provenance": "Soal penalaran analitis amortisasi KPR anuitas (Kurikulum Merdeka) untuk mengevaluasi dampak pelunasan dipercepat; konsep matematis merujuk pada Buku Siswa hlm. 59–70.",
+            "mode": "learning",
+            "game_mechanic": "calculation",
+            "tags": [
+                "anuitas",
+                "kpr",
+                "amortisasi",
+                "literasi_finansial",
+                "penalaran"
+            ],
+            "subject": "Matematika",
+            "track": "wajib",
+            "curriculum_source": [
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Analisis Struktur Amortisasi dan Pelunasan Anuitas KPR",
+            "difficulty": "hard",
+            "cognitive_level": "analyze",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120,
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C02-B: Menganalisis dinamika komposisi angsuran pokok dan bunga dalam tabel amortisasi pinjaman anuitas jangka panjang",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 59-70 (Subbab E: Pinjaman dengan Anuitas dan Simulasi Tabel Amortisasi)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 133-136 (Aktivitas Eksplorasi Pelunasan Pinjaman Anuitas)"
+                },
+                "authoring_statement": "Skenario analisis pelunasan KPR Pak Budi pada tahun ke-8, analisis pembongkaran ilusi penghematan bunga anuitas di akhir tenor, dan dekonstruksi distraktor disusun mandiri oleh proyek sebagai instrumen asesmen penalaran finansial orisinal."
+            }
+        }
+    ]
+}

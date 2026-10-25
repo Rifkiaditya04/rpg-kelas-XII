@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "MAT12-W02-CH02-M07-V1.1-REV",
+  "base_batch": "phase-3/world-2-matematika-chapter-2-misi-7-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 2 Misi 7 (Parameter Investasi & Pinjaman): calibrating cognitive levels to understand (C2) and analyze (C4), articulating continuous compounding T = ln(2)/r as an analytical mathematical enrichment supporting Rule of 72, clarifying floating rate restructuring mechanisms in HARD, completing verified Teacher Guide references to pp. 137–138, purging legacy K13/TKA tags, and establishing Decision 009 source_basis compliance.",
+  "revisions": [
+    {
+      "id": "MAT-C02-C-EASY",
+      "change_type": "metadata_and_distractor_revision",
+      "reason": "Pelengkapan rujukan Panduan Guru hlm. 137–138, penegasan dekonstruksi pembeda suku bunga riil terhadap nominal/efektif/dasar kredit, dan penambahan source_basis Decision 009.",
+      "before_question": "Fina ingin menyimpan dana pensiunnya. Ia menyadari bahwa inflasi setiap tahun memotong daya beli uangnya. Berdasarkan parameter investasi, jenis tingkat pengembalian bunga apakah yang paling tepat diperhatikan Fina untuk memastikan daya belinya tetap tumbuh?",
+      "after_question": "Fina ingin menyimpan dana pensiunnya. Ia menyadari bahwa inflasi setiap tahun memotong daya beli uangnya. Berdasarkan parameter investasi, jenis tingkat pengembalian bunga apakah yang paling tepat diperhatikan Fina untuk memastikan daya belinya tetap tumbuh?",
+      "answer": "Suku Bunga Riil (Real Interest Rate)",
+      "replacement_options": [
+        "Suku Bunga Nominal",
+        "Suku Bunga Riil (Real Interest Rate)",
+        "Suku Bunga Efektif",
+        "Suku Bunga Dasar Kredit"
+      ],
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "explanation": "Langkah Penyelesaian:\n1. Konsep Parameter Investasi Finansial:\n   Dalam perencanaan keuangan jangka panjang, pertambahan nominal uang tidak selalu menjamin pertumbuhan kekayaan jika terjadi kenaikan harga barang dan jasa (inflasi).\n   Persamaan Fisher: Suku Bunga Riil ≈ Suku Bunga Nominal - Laju Inflasi.\n\n2. Analisis Kebutuhan Dana Pensiun:\n   Untuk memastikan nilai intrinsik uang (daya beli / purchasing power) tidak tergerus seiring berjalannya waktu, investor harus memperhatikan Suku Bunga Riil (Real Interest Rate) agar hasil imbal hasil bersih melampaui tingkat inflasi tahunan.\n\n3. Pembahasan Distraktor:\n   - Suku Bunga Nominal (Salah): Hanya menunjukkan persentase angka imbal hasil tertulis tanpa memperhitungkan erosi daya beli akibat inflasi.\n   - Suku Bunga Riil (BENAR): Merupakan tingkat pengembalian aktual setelah disesuaikan dengan inflasi, menjamin pertumbuhan daya beli modal investasi.\n   - Suku Bunga Efektif (Salah): Menunjukkan suku bunga yang memperhitungkan frekuensi pemajemukan (compounding), namun belum memperhitungkan inflasi ekonomi makro.\n   - Suku Bunga Dasar Kredit (Salah): Suku bunga acuan dasar bank untuk menyalurkan pinjaman/kredit, bukan parameter imbal hasil investasi dana pensiun.",
+      "source": {
+        "student_book": {
+          "pages": "71-75",
+          "section": "Bab 2, Subbab F: Parameter Investasi dan Pinjaman"
+        },
+        "teacher_guide": {
+          "pages": "137-138",
+          "section": "Bab 2, Panduan Pembelajaran Parameter Investasi dan Pinjaman"
+        }
+      },
+      "provenance": "Soal literasi finansial parameter investasi (Kurikulum Merdeka) untuk memahami perbedaan suku bunga riil terhadap inflasi; konsep dasar merujuk pada Buku Siswa hlm. 71–75.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+        "competency_target": "MAT12-C02-C: Mengidentifikasi parameter kritis dalam investasi finansial (suku bunga nominal, suku bunga riil, dan inflasi)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Matematika Kelas XII hlm. 71-75 (Subbab F: Parameter Investasi dan Pinjaman)"
+          ,"teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 137-138 (Tabel 2.8 Pengalaman Belajar Parameter Investasi dan Pinjaman)"
+        },
+        "authoring_statement": "Skenario perencanaan dana pensiun Fina, pembedaan parameter suku bunga riil terhadap inflasi, dan analisis istilah perbankan disusun mandiri oleh proyek sebagai instrumen literasi finansial orisinal."
+      }
+    },
+    {
+      "id": "MAT-C02-C-MED",
+      "change_type": "metadata_and_distractor_revision",
+      "reason": "Penetapan status pemodelan kontinu T = ln(2)/r sebagai pengayaan analitis matematis terapan (enrichment) yang melandasi Aturan 72, penghapusan label K13 drill, pelengkapan Panduan Guru hlm. 137–138, dan penambahan source_basis Decision 009.",
+      "before_question": "Sebuah investasi diproyeksikan akan melipatgandakan modal awal dalam waktu T tahun. Jika sistem menggunakan pemajemukan kontinu (continuous compounding) dengan suku bunga r per tahun, maka persamaan parameter yang tepat untuk mencari T adalah...",
+      "after_question": "Sebuah investasi diproyeksikan akan melipatgandakan modal awal dalam waktu T tahun. Jika sistem menggunakan pemajemukan kontinu (continuous compounding) dengan suku bunga r per tahun, maka persamaan parameter yang tepat untuk mencari T adalah...",
+      "answer": "T = ln(2) / r",
+      "replacement_options": [
+        "T = ln(2) / r",
+        "T = 2 / ln(r)",
+        "T = (1+r)^2",
+        "T = r / ln(2)"
+      ],
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Pemodelan Matematis Pemajemukan Kontinu:\n   Model akumulasi modal pada pemajemukan kontinu dinyatakan dengan persamaan eksponensial natural: M(t) = M0 * e^(rt), di mana M0 adalah modal awal, r adalah suku bunga nominal per tahun, dan t adalah waktu dalam tahun.\n\n2. Menentukan Waktu Pelipatgandaan (Doubling Time) T:\n   Kondisi modal berlipat ganda tercapai saat M(T) = 2 * M0.\n   2 * M0 = M0 * e^(rT)\n   2 = e^(rT)\n   Terapkan logaritma natural (ln) pada kedua ruas:\n   ln(2) = ln(e^(rT))\n   ln(2) = rT * ln(e)\n   Karena ln(e) = 1, maka: ln(2) = rT -> T = ln(2) / r.\n   (Catatan Pengayaan: Mengingat ln(2) ≈ 0,6931, formula ini merupakan landasan matematis formal dari Aturan 72 / Rule of 72 dalam literasi finansial praktis: T ≈ 72 / (100r)).\n\n3. Pembahasan Distraktor:\n   - T = ln(2) / r (BENAR): Hasil penurunan aljabar eksak dari persamaan eksponensial pemajemukan kontinu e^(rT) = 2.\n   - T = 2 / ln(r) (Salah): Terbalik dalam menempatkan variabel dan keliru menarik logaritma dari suku bunga alih-alih faktor pelipatan 2.\n   - T = (1+r)^2 (Salah): Mengacaukan model eksponensial kontinu dengan polinomial kuadratik bunga tunggal/majemuk 2 tahun.\n   - T = r / ln(2) (Salah): Terbalik dalam aljabar pemindahan ruas (rT = ln 2 -> T = ln 2 / r, bukan r / ln 2).",
+      "source": {
+        "student_book": {
+          "pages": "71-75",
+          "section": "Bab 2, Subbab F: Parameter Investasi dan Pinjaman (Pengayaan Eksponensial)"
+        },
+        "teacher_guide": {
+          "pages": "137-138",
+          "section": "Bab 2, Panduan Pembelajaran Parameter Investasi dan Pinjaman"
+        }
+      },
+      "provenance": "Soal pemodelan parameter waktu eksponensial pemajemukan kontinu (Pengayaan Matematika Terapan); konsep dasar parameter waktu merujuk pada Buku Siswa hlm. 71–75.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+        "competency_target": "MAT12-C02-C: Menurunkan dan menentukan parameter waktu pelipatgandaan modal menggunakan konsep persamaan eksponensial dan logaritma",
+        "concept_reference": {
+          "student_book": "Buku Siswa Matematika Kelas XII hlm. 71-75 (Subbab F: Parameter Investasi dan Penurunan Parameter Waktu)",
+          "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 137-138 (Aktivitas Eksplorasi Hubungan Waktu dan Suku Bunga)"
+        },
+        "authoring_statement": "Model pemajemukan kontinu (M = M0 * e^rt) dan penarikan logaritma natural T = ln(2)/r dirancang mandiri oleh proyek sebagai instrumen pengayaan pemodelan analitis (enrichment) yang melandasi Aturan 72, dengan membersihkan seluruh residu label K13 drill."
+      }
+    },
+    {
+      "id": "MAT-C02-C-HARD",
+      "change_type": "metadata_and_distractor_revision",
+      "reason": "Penyelarasan level kognitif ke analyze (C4) sesuai tuntutan analisis relasi variabel anuitas, penghapusan label TKA liar, penautan rujukan Buku Siswa hlm. 71–80 dan Panduan Guru hlm. 137–138, serta penambahan source_basis Decision 009.",
+      "before_question": "Bank A memberikan skema pinjaman dengan bunga 'Floating Rate' di mana suku bunga bergantung pada indeks pasar. Setelah 2 tahun mencicil KPR, indeks pasar melesat dan bank A menaikkan suku bunga secara drastis. Jika nasabah tidak mampu membayar cicilan yang baru, opsi perbankan restrukturisasi mana yang secara matematis akan mencegah kredit macet sekaligus menjaga nilai cicilan tetap sama seperti sebelumnya (meski merugikan nasabah di sisi lain)?",
+      "after_question": "Bank A memberikan skema pinjaman dengan bunga 'Floating Rate' di mana suku bunga bergantung pada indeks pasar. Setelah 2 tahun mencicil KPR, indeks pasar melesat dan bank A menaikkan suku bunga secara drastis. Jika nasabah tidak mampu membayar cicilan yang baru, opsi perbankan restrukturisasi mana yang secara matematis berpotensi menekan kembali nilai cicilan bulanan agar terjangkau mendekati besaran sebelumnya (meski merugikan nasabah di sisi lain)?",
+      "answer": "Memperpanjang tenor (periode pembayaran) dengan suku bunga baru.",
+      "replacement_options": [
+        "Menambah besaran angsuran pokok bulanan tanpa mengubah tenor.",
+        "Memperpanjang tenor (periode pembayaran) dengan suku bunga baru.",
+        "Melunasi sisa pokok pinjaman secara langsung (cash).",
+        "Meminta bank untuk memutihkan seluruh bunga bank sejak tahun pertama."
+      ],
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "explanation": "Langkah Penyelesaian:\n1. Hubungan Parameter Anuitas dan Dinamika Cicilan:\n   Besaran cicilan periodik anuitas dinyatakan dengan A = S * [i / (1 - (1 + i)^(-n))], di mana S adalah saldo sisa pokok pinjaman, i adalah suku bunga per periode, dan n adalah sisa jangka waktu pembayaran (tenor).\n   Ketika suku bunga mengambang melonjak (i naik drastis), nilai faktor pengali anuitas meningkat sehingga besaran cicilan bulanan (A) melambung tinggi.\n\n2. Analisis Mekanisme Restrukturisasi Tenor (Rescheduling) dan Sifat Kondisional:\n   - Pengaruh Tenor: Memperpanjang sisa tenor pembayaran (n diperbesar) akan memperbesar nilai penyebut [1 - (1 + i)^(-n)], sehingga faktor pengali anuitas mengecil dan nominal cicilan bulanan (A) dapat diturunkan kembali mendekati kemampuan bayar nasabah guna mencegah kredit macet (default).\n   - Batasan Matematis: Penurunan cicilan melalui perpanjangan tenor memiliki batas asimtotik matematis lim_(n->inf) A = S * i. Artinya, perpanjangan tenor dapat menurunkan cicilan pada tingkat bunga dan saldo tertentu, namun TIDAK SELALU MENJAMIN cicilan tepat kembali ke nilai semula (terutama jika beban bunga baru S * i_baru sudah melampaui total cicilan lama A_lama). Tanpa data numerik saldo dan batas tenor, strategi perpanjangan tenor dipahami secara kondisional sebagai instrumen restrukturisasi perbankan yang paling rasional untuk meredam lonjakan cicilan.\n\n3. Pembahasan Distraktor:\n   - Opsi A (Salah): Menambah angsuran pokok bulanan tanpa mengubah tenor justru akan semakin memperbesar beban cicilan bulanan yang harus dibayar nasabah.\n   - Opsi B (BENAR): Memperpanjang tenor (n) secara matematis menyebarkan kewajiban sisa pokok ke periode yang lebih panjang sehingga nominal cicilan bulanan dapat ditekan turun mendekati kemampuan bayar nasabah.\n   - Opsi C (Salah): Melunasi sisa pokok secara tunai (cash) tidak realistis bagi nasabah yang sedang mengalami kesulitan likuiditas keuangan.\n   - Opsi D (Salah): Pemutihan seluruh bunga pinjaman komersial bukan kebijakan operasional restrukturisasi kredit yang realistis dalam industri perbankan.",
+      "source": {
+        "student_book": {
+          "pages": "71-80",
+          "section": "Bab 2, Subbab F: Parameter Investasi dan Pinjaman"
+        },
+        "teacher_guide": {
+          "pages": "137-138",
+          "section": "Bab 2, Panduan Pembelajaran Parameter Investasi dan Pinjaman"
+        }
+      },
+      "provenance": "Soal penalaran analitis evaluasi parameter anuitas kredit perbankan (Kurikulum Merdeka) untuk menganalisis dampak penyesuaian tenor; konsep matematis merujuk pada Buku Siswa hlm. 71–80.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+        "competency_target": "MAT12-C02-C: Menganalisis hubungan parameter suku bunga (i), tenor (n), dan angsuran (A) dalam konteks restrukturisasi pinjaman",
+        "concept_reference": {
+          "student_book": "Buku Siswa Matematika Kelas XII hlm. 71-80 (Subbab F: Parameter Investasi dan Pinjaman, Masalah Kritis Tenor dan Bunga)",
+          "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 137-138 (Aktivitas Eksplorasi Risiko dan Mitigasi Parameter Kredit)"
+        },
+        "authoring_statement": "Skenario mitigasi lonjakan suku bunga mengambang KPR Bank A melalui restrukturisasi tenor, analisis relasi variabel anuitas A = f(i, n), dan dekonstruksi opsi perbankan disusun mandiri oleh proyek sebagai instrumen asesmen penalaran analitis orisinal."
+      }
+    }
+  ]
+}
