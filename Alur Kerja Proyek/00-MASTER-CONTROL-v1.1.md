@@ -1,4 +1,4 @@
-﻿# KELAS 12 — THE FINAL MISSION
+# KELAS 12 — THE FINAL MISSION
 ## MASTER CONTROL — v1.1 CONTINUATION
 
 > **MASTER CONTROL v1.1 adalah LANJUTAN RESMI dari `Alur Kerja Proyek/00-MASTER-CONTROL.md`.**
@@ -649,3 +649,19 @@ Berdasarkan audit komprehensif dan rekonsiliasi Tahap 2 (*Reconciliation Pass 2,
 - **Tautan Otoritatif:**
   1. Laporan Audit Rekonsiliasi Pass 2.2: `Alur Kerja Proyek/AUDIT-BANK-SOAL-BAHASA-INDONESIA-KELAS-XII.md`
   2. Project Log: `Alur Kerja Proyek/PROJECT LOG/107-Audit-Komprehensif-Bank-Soal-Bahasa-Indonesia-Kelas-XII.md`
+
+## 30. Pembakuan SOP Produksi Bank Soal Batch v2.0 (2026-10-23)
+Berdasarkan evaluasi alur kerja perakitan bank soal kelas XII dan keberhasilan pilot Misi 1, Misi 2, dan Misi 4 Matematika Bab 1, ditetapkan Prosedur Operasional Standar (SOP) Batch v2.0 untuk menggantikan siklus mikro per-misi menjadi alur kerja batch 3–5 misi per kelompok:
+- **Status Milestone:** APPROVED OPERATIONAL PROCEDURE 🟢.
+- **Dokumen Acuan Tunggal:** `Alur Kerja Proyek/SOP-PRODUKSI-BANK-SOAL-BATCH-v2.0.md`.
+- **Ruang Lingkup:** Berlaku untuk seluruh mata pelajaran, bab, misi, dan bank soal dalam repositori `rpg-kelas-XII`.
+- **Lima Tahap Terintegrasi:**
+  1. *Tahap 1 — Pemetaan Satu Kali per Bab:* Inventarisasi komprehensif aset Phase 3, Phase 4 pool, simulator/recipe, dan runtime HTML; verifikasi langsung halaman Buku Siswa & Buku Panduan Guru Kurikulum Merdeka lokal; analisis hak cipta (Decision 009); penyusunan Master Source Map kanonikal per bab yang dapat digunakan kembali.
+  2. *Tahap 2 — Audit Baca-Saja Batch (3–5 Misi):* Audit 100% read-only terhadap kebenaran materi, kunci, pembahasan, distraktor, Bloom (`skill`/`cognitive_level`), `difficulty`, `provenance`, dan `source_basis`; penetapan keputusan `KEEP`, `REVISE`, atau `HOLD`; penyusunan Matriks Temuan Audit ringkas tanpa mengubah berkas repositori.
+  3. *Tahap 3 — Implementasi Batch Setelah Persetujuan:* Dijalankan hanya setelah persetujuan eksplisit pengguna; penerapan pola Base-Plus-Overlay v1.1 (kanonikal v1.0 dikunci mutlak); penulisan overlay `qa_pending` dan kanonikal v1.1 `CONTROLLED_REVISION_DRAFT` terpisah per misi; sinkronisasi pool Phase 4 terpadu; perubahan runtime HTML dibatasi hanya untuk soal aktif ronde pertempuran.
+  4. *Tahap 4 — Gerbang QA Batch:* Validasi tunggal menyeluruh mencakup 9 pilar (JSON/skema, rekonsiliasi overlay vs v1.0 -> v1.1, kunci & perhitungan matematis, sinkronisasi Phase 3 & 4, kepatuhan Decision 009, integritas v1.0 zero-regression, `validate_recipes.ps1` & `smokeTest.js` backend, `git diff --check`, dan uji browser bila runtime berubah).
+  5. *Tahap 5 — Commit Lokal & Promosi Terkendali:* Default implementasi lokal; staging selektif ketat dan commit lokal hanya atas perintah eksplisit pengguna; push remote terpisah; dilarang menggunakan perintah destruktif Git.
+- **Empat Mode Operasi Wajib:** Setiap sesi kerja berikutnya wajib mendeklarasikan salah satu mode operasional resmi: `READ-ONLY AUDIT`, `LOCAL BATCH IMPLEMENTATION`, `QA AND VERIFICATION`, atau `LOCAL COMMIT`.
+- **Tautan Otoritatif:**
+  1. SOP Batch v2.0: `Alur Kerja Proyek/SOP-PRODUKSI-BANK-SOAL-BATCH-v2.0.md`
+  2. Kebijakan Hak Cipta: `Alur Kerja Proyek/PROJECT LOG/decisions/009-content-source-and-copyright-safe-pipeline.md`
