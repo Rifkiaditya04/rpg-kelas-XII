@@ -1,291 +1,398 @@
-﻿{
-    "track":  "wajib",
-    "questions":  [
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "understand",
-                          "question_id":  "MAT12-C03-A-8832",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Andi memiliki 4 buah kemeja lengan pendek dan 3 buah celana jeans yang berbeda warna. Berapa banyak kombinasi pakaian (kemeja dan celana) yang dapat dipakai Andi untuk pergi ke acara reuni?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "7"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "12"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "24"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "36"
-                                          }
-                                      ],
-                          "primary_competency":  "MAT12-C03-A",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "Berdasarkan Aturan Perkalian (Filling Slots), jumlah cara = jumlah pilihan kemeja x jumlah pilihan celana. 4 x 3 = 12 cara penyusunan setelan pakaian.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "MAT12-C03-A-2195",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Dari angka-angka 1, 2, 3, 4, 5, dan 6 akan dibentuk bilangan genap yang terdiri atas tiga angka berbeda. Berapa banyak bilangan yang dapat dibentuk?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "40"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "60"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "90"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "120"
-                                          }
-                                      ],
-                          "primary_competency":  "MAT12-C03-A",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Untuk membuat bilangan genap 3 digit berbeda, syarat utama ada di angka terakhir (satuan). Pilihan satuan genap: 2, 4, 6 (3 pilihan). Karena angka tidak boleh berulang, tersisa 5 angka untuk posisi ratusan (5 pilihan) dan 4 angka untuk puluhan (4 pilihan). Total = 5 x 4 x 3 = 60 bilangan.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "MAT12-C03-A-3957",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Seorang programmer merancang sistem keamanan di mana kata sandi PIN ATM harus 4 digit angka. Syarat keamanan menyatakan: digit pertama tidak boleh 0, digit terakhir harus ganjil, dan tidak boleh ada angka yang bersebelahan bernilai sama (misal: 11, 22 dilarang). Ada berapa banyak kandidat PIN yang valid?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "2.025"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "3.645"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "4.500"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "5.000"
-                                          }
-                                      ],
-                          "primary_competency":  "MAT12-C03-A",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "Evaluasi slot per slot secara terbalik untuk kemudahan: Digit terakhir (satuan) punya 5 pilihan (1,3,5,7,9). Digit pertama tidak boleh 0. Mari gunakan logika dinamis: Angka ganjil terakhir tidak boleh sama dengan angka sebelahnya. Kita hitung lurus: Digit 1 = 9 opsi (1-9). Digit 2 = 9 opsi (tidak sama dgn digit 1). Digit 3 = 9 opsi (tidak sama dgn digit 2). Digit 4 = dari 5 angka ganjil, 1 di antaranya berpotensi sama dengan digit ke-3. Namun, karena digit ke-3 bisa genap atau ganjil, pendekatannya lebih aman jika: Total tanpa batasan ganjil = 9*9*9*9. Jika digit terakhir harus ganjil: Digit 4 (ganjil) = 5 opsi. Digit 3 (tdk boleh sama dgn digit 4) = 9 opsi. Digit 2 (tdk boleh sama dgn digit 3) = 9 opsi. Digit 1 (tdk boleh 0 dan tdk boleh sama dgn digit 2) = Jika digit 2 adalah 0, digit 1 punya 9 opsi. Jika digit 2 bukan 0, digit 1 punya 8 opsi. Secara matematis rata-rata: 9 x 9 x 9 x 5 = 3.645 susunan.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "understand",
-                          "question_id":  "MAT12-C03-B-9282",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Wali kelas XII akan memilih 3 perwakilan siswa dari 10 murid teladan untuk dikirim ke seminar karir di luar kota. Karena tugas ketiganya sama (sebagai pendengar), berapa banyak cara susunan kelompok yang bisa terbentuk?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "30"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "120"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "360"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "720"
-                                          }
-                                      ],
-                          "primary_competency":  "MAT12-C03-B",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "Karena ketiganya memiliki peran yang sama (urutan tidak diperhatikan), maka digunakan Kombinasi. C(10,3) = 10! / (3! * 7!) = (10 * 9 * 8) / (3 * 2 * 1) = 720 / 6 = 120 susunan.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "MAT12-C03-B-9477",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Di sebuah rapat dewan direksi, 6 orang duduk mengelilingi sebuah meja bundar. Sang CEO dan Wakil CEO menuntut agar mereka selalu duduk berdampingan. Ada berapa banyak formasi duduk yang bisa terjadi?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "24"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "48"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "120"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "720"
-                                          }
-                                      ],
-                          "primary_competency":  "MAT12-C03-B",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Ini adalah masalah Permutasi Siklis dengan syarat. Karena CEO dan Wakil CEO harus berdampingan, mereka diikat dan dihitung sebagai 1 entitas. Sisa 4 orang + 1 entitas ikatan = 5 entitas. Rumus permutasi siklis: (n-1)! = (5-1)! = 4! = 24. Selain itu, CEO dan Wakil CEO dapat bertukar tempat di dalam ikatan mereka sebanyak 2! = 2 cara. Total = 24 * 2 = 48 formasi.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "MAT12-C03-B-9519",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Departemen sumber daya manusia akan merekrut 5 karyawan baru (terdiri dari staf dan manajer) dari 8 kandidat pria dan 6 kandidat wanita. Aturan kesetaraan menuntut bahwa tim tersebut harus mengandung sedikitnya 3 staf wanita. Berapa total komposisi tim yang memenuhi syarat tersebut?",
-                          "answer":  "C",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "560"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "680"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "686"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "720"
-                                          }
-                                      ],
-                          "primary_competency":  "MAT12-C03-B",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "Kasus \u0027sedikitnya 3 wanita\u0027 berarti ada 3 skenario yang mungkin (dari total 5 slot): Skenario 1 (3 wanita, 2 pria): C(6,3) * C(8,2) = 20 * 28 = 560. Skenario 2 (4 wanita, 1 pria): C(6,4) * C(8,1) = 15 * 8 = 120. Skenario 3 (5 wanita, 0 pria): C(6,5) * C(8,0) = 6 * 1 = 6. *Catatan revisi opsi*: Oh, maaf, C(6,6) = 1. Tunggu, C(6,5) = 6. Tambahkan totalnya: 560 + 120 + 6 = 686. Wait, the correct total is 686. My generated option above was an oversight in the thought process but mathematically let\u0027s fix it for the engine. Let\u0027s provide correct option \u0027686\u0027. *Self-correction inside explanation*: 560 + 120 + 6 = 686.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      }
-                  ],
-    "curriculum":  [
-                       "K13",
-                       "Merdeka"
-                   ],
-    "grade":  12,
-    "competencies":  [
-                         {
-                             "name":  "Kompetensi MAT12-C03-A",
-                             "question_count":  3,
-                             "competency_id":  "MAT12-C03-A"
-                         },
-                         {
-                             "name":  "Kompetensi MAT12-C03-B",
-                             "question_count":  3,
-                             "competency_id":  "MAT12-C03-B"
-                         }
-                     ],
-    "subject":  "matematika",
-    "chapter":  "MAT12-C03",
-    "status":  "active",
-    "content_version":  1,
-    "pool_id":  "POOL-MATEMATIKA-MAT12-C03"
+{
+    "track": "wajib",
+    "questions": [
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "understand",
+            "question_id": "MAT12-C03-A-8832",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "",
+                "stimulus_type": "",
+                "suitable": false
+            },
+            "question": "Andi memiliki 4 buah kemeja lengan pendek dan 3 buah celana jeans yang berbeda warna. Berapa banyak kombinasi pakaian (kemeja dan celana) yang dapat dipakai Andi untuk pergi ke acara reuni?",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "7"
+                },
+                {
+                    "id": "B",
+                    "text": "12"
+                },
+                {
+                    "id": "C",
+                    "text": "24"
+                },
+                {
+                    "id": "D",
+                    "text": "36"
+                }
+            ],
+            "primary_competency": "MAT12-C03-A",
+            "difficulty_label": "easy",
+            "gameplay": {
+                "correct_damage": 50,
+                "base_xp": 10,
+                "wrong_penalty": 5,
+                "attack_type": "light"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Identifikasi Kaidah Pencacahan:\n   Andi memilih satu kemeja DAN satu celana untuk dipasangkan bersamaan sebagai satu setelan pakaian utuh. Peristiwa ini berlangsung secara simultan (kejadian majemuk berpasangan), sehingga berlaku Aturan Perkalian (Filling Slots).\n\n2. Perhitungan Jumlah Kombinasi:\n   Banyak pilihan kemeja (k1) = 4\n   Banyak pilihan celana (k2) = 3\n   Total kombinasi setelan = k1 x k2 = 4 x 3 = 12 cara.\n\n3. Pembahasan Distraktor:\n   - 7 (Salah): Kesalahan menggunakan aturan penjumlahan (4 + 3 = 7), yang hanya berlaku jika Andi memilih kemeja ATAU celana secara terpisah (saling meniadakan).\n   - 12 (BENAR): Hasil penerapan aturan perkalian yang tepat untuk dua komponen berpasangan (4 x 3 = 12).\n   - 24 (Salah): Kesalahan menambahkan faktor pengali ekstra tanpa dasar matematis (4 x 3 x 2 = 24).\n   - 36 (Salah): Kesalahan mengkuadratkan total kombinasi pakaian atau salah menerapkan operasi kuadrat.",
+            "question_type": "single_select",
+            "estimated_time_seconds": 60,
+            "source": {
+                "student_book": {
+                    "pages": "83-86",
+                    "section": "Bab 3, Subbab A: Aturan Pengisian Tempat (Aturan Perkalian)"
+                },
+                "teacher_guide": {
+                    "pages": "178-182",
+                    "section": "Bab 3, Panduan Pembelajaran Aturan Pengisian Tempat"
+                }
+            },
+            "provenance": "Soal orisinal kontekstual kehidupan sehari-hari (Kurikulum Merdeka) untuk memahami aturan perkalian pencacahan; konsep dasar merujuk pada Buku Siswa hlm. 83–86.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C03-A: Memahami dan menerapkan aturan perkalian (kaidah pencacahan) untuk menentukan banyaknya kemungkinan kombinasi pasangan objek",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 83-86 (Subbab A: Aturan Pengisian Tempat)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 178-182 (Pengalaman Belajar dan Aktivitas Aturan Perkalian)"
+                },
+                "authoring_statement": "Skenario pemilihan setelan pakaian Andi, opsi pasangan kemeja-celana, dan analisis miskonsepsi aturan penjumlahan vs perkalian disusun mandiri oleh proyek sebagai instrumen asesmen formatif orisinal."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "apply",
+            "question_id": "MAT12-C03-A-2195",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "",
+                "stimulus_type": "",
+                "suitable": false
+            },
+            "question": "Dari angka-angka 1, 2, 3, 4, 5, dan 6 akan dibentuk bilangan genap yang terdiri atas tiga angka berbeda. Berapa banyak bilangan yang dapat dibentuk?",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "40"
+                },
+                {
+                    "id": "B",
+                    "text": "60"
+                },
+                {
+                    "id": "C",
+                    "text": "108"
+                },
+                {
+                    "id": "D",
+                    "text": "120"
+                }
+            ],
+            "primary_competency": "MAT12-C03-A",
+            "difficulty_label": "medium",
+            "gameplay": {
+                "correct_damage": 100,
+                "base_xp": 10,
+                "wrong_penalty": 5,
+                "attack_type": "medium"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Syarat Pembentukan Bilangan:\n   - Bilangan terdiri atas 3 digit berbeda: Ratusan, Puluhan, Satuan.\n   - Angka penyusun tersedia: {1, 2, 3, 4, 5, 6} (total 6 angka).\n   - Syarat 'bilangan genap' ditentukan oleh digit terakhir (satuan): angka genap yang tersedia adalah {2, 4, 6} -> ada 3 pilihan untuk posisi satuan.\n\n2. Pengisian Slot Bersyarat (Tanpa Pengulangan):\n   - Slot Satuan: 3 pilihan ({2, 4, 6}).\n   - Slot Ratusan: Dari 6 angka yang tersedia, 1 angka telah digunakan pada satuan, sehingga tersisa 6 - 1 = 5 pilihan.\n   - Slot Puluhan: Dari 6 angka yang tersedia, 2 angka telah digunakan (pada satuan dan ratusan), sehingga tersisa 6 - 2 = 4 pilihan.\n   - Total bilangan genap yang dapat dibentuk = 3 x 5 x 4 = 60 bilangan.\n\n3. Pembahasan Distraktor:\n   - 40 (Salah): Keliru menganggap hanya ada dua pilihan digit genap untuk posisi satuan sehingga perhitungannya menjadi 2 x 5 x 4 = 40. Padahal digit genap yang tersedia adalah 2, 4, dan 6 (tiga pilihan satuan), sehingga karena ketiga digit harus berbeda, jumlah yang benar adalah 3 x 5 x 4 = 60.\n   - 60 (BENAR): Hasil perkalian slot bersyarat yang tepat (3 x 5 x 4 = 60).\n   - 108 (Salah): Miskonsepsi memperbolehkan pengulangan digit pada seluruh posisi (6 x 6 x 3 = 108), padahal dengan syarat digit berbeda jumlah yang benar adalah 3 x 5 x 4 = 60.\n   - 120 (Salah): Mengabaikan syarat genap dan menghitung seluruh permutasi 3 digit berbeda dari 6 angka (P(6,3) = 6 x 5 x 4 = 120).",
+            "question_type": "single_select",
+            "estimated_time_seconds": 90,
+            "source": {
+                "student_book": {
+                    "pages": "87-90",
+                    "section": "Bab 3, Subbab A: Aturan Pengisian Tempat Bersyarat"
+                },
+                "teacher_guide": {
+                    "pages": "182-185",
+                    "section": "Bab 3, Panduan Pembelajaran Aturan Pengisian Tempat Bersyarat"
+                }
+            },
+            "provenance": "Soal konseptual penalaran bilangan bersyarat (Kurikulum Merdeka) untuk melatih ketelitian penentuan prioritas slot pembatas; konsep dasar merujuk pada Buku Siswa hlm. 87–90.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C03-A: Menyelesaikan masalah penyusunan bilangan dengan batasan nilai (genap) dan angka berbeda (tanpa pengulangan)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 87-90 (Subbab A: Aturan Pengisian Tempat Bersyarat)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 182-185 (Aktivitas Pembelajaran Pembentukan Bilangan)"
+                },
+                "authoring_statement": "Kombinasi himpunan angka {1..6}, batasan bilangan genap 3 digit tanpa perulangan, dan analisis distraktor disusun mandiri oleh proyek sesuai capaian pembelajaran Fase F."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "evaluate",
+            "question_id": "MAT12-C03-A-3957",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "literacy",
+                "stimulus_type": "contextual",
+                "suitable": true
+            },
+            "question": "Seorang programmer merancang sistem keamanan di mana kata sandi PIN ATM harus 4 digit angka. Syarat keamanan menyatakan: digit pertama tidak boleh 0, digit terakhir harus ganjil, dan tidak boleh ada angka yang bersebelahan bernilai sama (misal: 11, 22 dilarang). Ada berapa banyak kandidat PIN yang valid?",
+            "answer": "A",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "3.280"
+                },
+                {
+                    "id": "B",
+                    "text": "3.645"
+                },
+                {
+                    "id": "C",
+                    "text": "2.916"
+                },
+                {
+                    "id": "D",
+                    "text": "4.500"
+                }
+            ],
+            "primary_competency": "MAT12-C03-A",
+            "difficulty_label": "hard",
+            "gameplay": {
+                "correct_damage": 150,
+                "base_xp": 20,
+                "wrong_penalty": 5,
+                "attack_type": "heavy"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Syarat PIN 4 Digit (d1 d2 d3 d4):\n   - d1 in {1, 2, ..., 9} (9 pilihan, d1 != 0).\n   - d2 in {0, 1, ..., 9} dengan d2 != d1 (9 pilihan).\n   - d3 in {0, 1, ..., 9} dengan d3 != d2 (9 pilihan).\n   - Total susunan 3 digit pertama (d1 d2 d3) = 9 x 9 x 9 = 729 susunan.\n\n2. Ketergantungan Paritas Digit Terakhir (d4):\n   - d4 harus ganjil: himpunan angka ganjil adalah {1, 3, 5, 7, 9} (5 pilihan).\n   - Syarat digit bersebelahan: d4 != d3.\n   - Kasus A (d3 bernilai GANJIL): Karena d3 ganjil, satu angka ganjil telah terpakai oleh d3, sehingga d4 hanya memiliki 5 - 1 = 4 pilihan ganjil.\n   - Kasus B (d3 bernilai GENAP): Karena d3 genap ({0, 2, 4, 6, 8}), d3 bukan angka ganjil, sehingga seluruh 5 angka ganjil berbeda dari d3 -> d4 memiliki 5 pilihan ganjil penuh.\n\n3. Menghitung Banyaknya Kasus Berdasarkan Paritas d3:\n   - Dari 729 susunan 3 digit pertama (d1 d2 d3):\n     * Banyak susunan dengan digit ketiga (d3) GANJIL = 365 susunan.\n     * Banyak susunan dengan digit ketiga (d3) GENAP = 364 susunan.\n   - Total PIN valid (N):\n     N = (Banyak d3 ganjil x 4) + (Banyak d3 genap x 5)\n     N = (365 x 4) + (364 x 5)\n     N = 1.460 + 1.820 = 3.280 kombinasi.\n\n4. Pembahasan Distraktor:\n   - 3.280 (BENAR): Hasil perhitungan eksak dengan mempartisi paritas digit ke-3 terhadap digit satuan (1.460 + 1.820 = 3.280).\n   - 3.645 (Salah): Miskonsepsi naif mengalikan 9 x 9 x 9 x 5 = 3.645 dengan mengasumsikan digit ke-4 selalu memiliki 5 pilihan ganjil untuk semua kasus tanpa memperhitungkan benturan saat d3 bernilai ganjil.\n   - 2.916 (Salah): Miskonsepsi mengasumsikan digit ke-4 selalu hanya memiliki 4 pilihan ganjil untuk seluruh kasus (9 x 9 x 9 x 4 = 2.916).\n   - 4.500 (Salah): Mengabaikan batasan larangan digit bersebelahan sama dan hanya menghitung kombinasi umum 9 x 10 x 10 x 5 / 10.",
+            "question_type": "single_select",
+            "estimated_time_seconds": 120,
+            "source": {
+                "student_book": {
+                    "pages": "87-90",
+                    "section": "Bab 3, Subbab A: Aturan Pengisian Tempat Bersyarat"
+                },
+                "teacher_guide": {
+                    "pages": "182-185",
+                    "section": "Bab 3, Panduan Pembelajaran Pengisian Tempat dan Penalaran Logis"
+                }
+            },
+            "provenance": "Soal orisinal literasi numerasi keamanan digital (Kurikulum Merdeka) untuk menguji ketelitian penalaran pencacahan bersyarat dan partisi paritas; konsep dasar merujuk pada Buku Siswa hlm. 87–90.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C03-A: Menyelesaikan masalah kontekstual kriptografi PIN dengan batasan digit bersebelahan dan kondisi paritas digit akhir",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 87-90 (Subbab A: Aturan Pengisian Tempat Bersyarat)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 182-185 (Pengembangan Soal Penalaran Kombinatorika)"
+                },
+                "authoring_statement": "Skenario autentikasi PIN ATM 4 digit, syarat digit bersebelahan tidak sama, dan metode pembuktian partisi paritas (365 ganjil vs 364 genap) dirancang mandiri oleh proyek sebagai instrumen penalaran matematika tingkat tinggi."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "understand",
+            "question_id": "MAT12-C03-B-9282",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "",
+                "stimulus_type": "",
+                "suitable": false
+            },
+            "question": "Wali kelas XII akan memilih 3 perwakilan siswa dari 10 murid teladan untuk dikirim ke seminar karir di luar kota. Karena tugas ketiganya sama (sebagai pendengar), berapa banyak cara susunan kelompok yang bisa terbentuk?",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "30"
+                },
+                {
+                    "id": "B",
+                    "text": "120"
+                },
+                {
+                    "id": "C",
+                    "text": "360"
+                },
+                {
+                    "id": "D",
+                    "text": "720"
+                }
+            ],
+            "primary_competency": "MAT12-C03-B",
+            "difficulty_label": "easy",
+            "gameplay": {
+                "correct_damage": 50,
+                "base_xp": 10,
+                "wrong_penalty": 5,
+                "attack_type": "light"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Peran dan Urutan:\n   Tiga perwakilan yang dipilih memiliki tugas yang sama (sebagai pendengar seminar). Pemilihan siswa A, B, C sama saja dengan B, A, C (urutan tidak diperhatikan). Oleh karena itu, permasalahan ini diselesaikan dengan konsep Kombinasi.\n\n2. Perhitungan Rumus Kombinasi:\n   Banyak siswa total (n) = 10\n   Banyak siswa yang dipilih (r) = 3\n   C(n, r) = n! / (r! * (n - r)!)\n   C(10, 3) = 10! / (3! * 7!)\n   C(10, 3) = (10 * 9 * 8) / (3 * 2 * 1) = 720 / 6 = 120 cara.\n\n3. Pembahasan Distraktor:\n   - 30 (Salah): Miskonsepsi perkalian sederhana antara jumlah siswa dan perwakilan (10 * 3 = 30).\n   - 120 (BENAR): Hasil kombinasi pemilihan 3 siswa dari 10 siswa yang tepat (C(10,3) = 120).\n   - 360 (Salah): Kesalahan faktorial saat menyederhanakan pecahan (720 / 2 = 360).\n   - 720 (Salah): Menggunakan rumus Permutasi P(10,3) = 10 * 9 * 8 = 720, yang keliru menganggap urutan perwakilan diperhatikan (misal ada hierarki jabatan).",
+            "question_type": "single_select",
+            "estimated_time_seconds": 60,
+            "source": {
+                "student_book": {
+                    "pages": "102-106",
+                    "section": "Bab 3, Subbab C: Kombinasi"
+                },
+                "teacher_guide": {
+                    "pages": "199-205",
+                    "section": "Bab 3, Panduan Pembelajaran Kombinasi"
+                }
+            },
+            "provenance": "Soal orisinal kontekstual pendidikan (Kurikulum Merdeka) untuk memahami perbedaan mendasar Kombinasi vs Permutasi; konsep dasar merujuk pada Buku Siswa hlm. 102–106.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C03-B: Membedakan situasi kombinasi dari permutasi dan menghitung kombinasi r objek dari n objek",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 102-106 (Subbab C: Kombinasi dan Rumus C(n,r))",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 199-205 (Aktivitas Pembelajaran Konsep Kombinasi)"
+                },
+                "authoring_statement": "Skenario pemilihan perwakilan seminar karir murid teladan, analisis pembeda kombinasi terhadap permutasi, dan dekonstruksi distraktor salah disusun mandiri oleh proyek."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "apply",
+            "question_id": "MAT12-C03-B-9477",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "",
+                "stimulus_type": "",
+                "suitable": false
+            },
+            "question": "Di sebuah rapat dewan direksi, 6 orang duduk mengelilingi sebuah meja bundar. Sang CEO dan Wakil CEO menuntut agar mereka selalu duduk berdampingan. Ada berapa banyak formasi duduk yang bisa terjadi?",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "24"
+                },
+                {
+                    "id": "B",
+                    "text": "48"
+                },
+                {
+                    "id": "C",
+                    "text": "120"
+                },
+                {
+                    "id": "D",
+                    "text": "720"
+                }
+            ],
+            "primary_competency": "MAT12-C03-B",
+            "difficulty_label": "medium",
+            "gameplay": {
+                "correct_damage": 100,
+                "base_xp": 10,
+                "wrong_penalty": 5,
+                "attack_type": "medium"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Pemodelan Permutasi Siklis dengan Syarat Berdampingan:\n   - Terdapat 6 orang yang duduk melingkar di meja bundar.\n   - Syarat khusus: CEO dan Wakil CEO harus selalu berdampingan. Keduanya dikelompokkan menjadi 1 kesatuan (blok ikatan).\n   - Jumlah entitas yang disusun melingkar: 4 direktur lainnya + 1 blok (CEO & W-CEO) = 5 entitas.\n\n2. Perhitungan Formasi Melingkar:\n   - Banyak cara menyusun 5 entitas secara melingkar = (5 - 1)! = 4! = 4 x 3 x 2 x 1 = 24 cara.\n   - Di dalam blok ikatan, posisi CEO dan Wakil CEO dapat bertukar tempat sebanyak 2! = 2 x 1 = 2 cara.\n   - Total formasi duduk = 24 x 2 = 48 formasi.\n\n3. Pembahasan Distraktor:\n   - 24 (Salah): Lupa mengalikan dengan permutasi internal di dalam blok CEO dan Wakil CEO (2!).\n   - 48 (BENAR): Hasil perkalian permutasi siklis 5 entitas dengan permutasi internal blok (24 x 2 = 48).\n   - 120 (Salah): Mengabaikan syarat berdampingan dan langsung menghitung permutasi siklis 6 orang bebas ((6 - 1)! = 5! = 120).\n   - 720 (Salah): Miskonsepsi menganggap susunan linear biasa tanpa memperhatikan sifat melingkar (meja bundar) sehingga menghitung 6! = 720.",
+            "question_type": "single_select",
+            "estimated_time_seconds": 90,
+            "source": {
+                "student_book": {
+                    "pages": "97-100",
+                    "section": "Bab 3, Subbab B: Permutasi Siklis"
+                },
+                "teacher_guide": {
+                    "pages": "192-196",
+                    "section": "Bab 3, Panduan Pembelajaran Permutasi Siklis"
+                }
+            },
+            "provenance": "Soal orisinal penerapan permutasi siklis bersyarat (Kurikulum Merdeka) untuk menguji penggabungan elemen ikatan; konsep dasar merujuk pada Buku Siswa hlm. 97–100.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C03-B: Menyelesaikan masalah penyusunan melingkar (permutasi siklis) dengan batasan elemen yang harus selalu berdampingan",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 97-100 (Subbab B: Permutasi Siklis Rumus Ps = (n-1)!)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 192-196 (Aktivitas Pembelajaran Permutasi Melingkar)"
+                },
+                "authoring_statement": "Skenario rapat meja bundar dewan direksi, teknik pengelompokan blok berdampingan, dan analisis jebakan permutasi linear vs siklis dirancang mandiri oleh proyek."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "evaluate",
+            "question_id": "MAT12-C03-B-9519",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "literacy",
+                "stimulus_type": "contextual",
+                "suitable": true
+            },
+            "question": "Departemen sumber daya manusia akan merekrut 5 karyawan baru (terdiri dari staf dan manajer) dari 8 kandidat pria dan 6 kandidat wanita. Aturan kesetaraan menuntut bahwa tim tersebut harus mengandung sedikitnya 3 staf wanita. Berapa total komposisi tim yang memenuhi syarat tersebut?",
+            "answer": "C",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "560"
+                },
+                {
+                    "id": "B",
+                    "text": "680"
+                },
+                {
+                    "id": "C",
+                    "text": "686"
+                },
+                {
+                    "id": "D",
+                    "text": "2.002"
+                }
+            ],
+            "primary_competency": "MAT12-C03-B",
+            "difficulty_label": "hard",
+            "gameplay": {
+                "correct_damage": 150,
+                "base_xp": 20,
+                "wrong_penalty": 5,
+                "attack_type": "heavy"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Kebutuhan dan Batasan Tim:\n   - Total kandidat yang dibutuhkan = 5 orang.\n   - Kandidat tersedia: 8 pria dan 6 wanita (total 14 kandidat).\n   - Syarat khusus: tim harus memuat 'sedikitnya 3 wanita', artinya banyak wanita dalam tim bisa 3, 4, atau 5 orang.\n\n2. Perhitungan Kasus per Kasus:\n   - Kasus 1 (Terpilih tepat 3 wanita dan 2 pria):\n     C(6, 3) x C(8, 2) = 20 x 28 = 560 komposisi.\n   - Kasus 2 (Terpilih tepat 4 wanita dan 1 pria):\n     C(6, 4) x C(8, 1) = 15 x 8 = 120 komposisi.\n   - Kasus 3 (Terpilih tepat 5 wanita dan 0 pria):\n     C(6, 5) x C(8, 0) = 6 x 1 = 6 komposisi.\n\n3. Penjumlahan Kasus Saling Lepas:\n   Total komposisi yang memenuhi syarat = 560 + 120 + 6 = 686 komposisi.\n\n4. Pembahasan Distraktor:\n   - 560 (Salah): Hanya menghitung kasus tepat tiga perempuan (C(6,3) x C(8,2) = 560), mengabaikan kemungkinan empat atau lima perempuan.\n   - 680 (Salah): Hanya menjumlahkan kasus tiga dan empat perempuan (560 + 120 = 680), sehingga kasus lima perempuan terlewat.\n   - 686 (BENAR): Menjumlahkan ketiga kasus yang memenuhi syarat minimal tiga perempuan (560 + 120 + 6 = 686).\n   - 2.002 (Salah): Berasal dari C(14,5) = 2.002, yaitu memilih sembarang lima dari 14 calon tanpa menerapkan syarat minimal tiga perempuan.",
+            "question_type": "single_select",
+            "estimated_time_seconds": 120,
+            "source": {
+                "student_book": {
+                    "pages": "113-116",
+                    "section": "Bab 3, Subbab D: Penerapan Permutasi dan Kombinasi"
+                },
+                "teacher_guide": {
+                    "pages": "206-210",
+                    "section": "Bab 3, Panduan Pembelajaran Penerapan Kombinasi Multikasus"
+                }
+            },
+            "provenance": "Soal kontekstual rekrutmen SDM (Kurikulum Merdeka) untuk menguji kemampuan pemecahan masalah kombinasi majemuk dengan batasan inklusi minimum; konsep dasar merujuk pada Buku Siswa hlm. 113–116.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+                "competency_target": "MAT12-C03-B: Memecahkan masalah pembentukan kelompok bersyarat batas minimum ('sedikitnya') melalui partisi kasus kombinasi",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Matematika Kelas XII hlm. 113-116 (Subbab D: Penerapan Kombinasi pada Masalah Nyata)",
+                    "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 206-210 (Pengayaan Masalah Kombinatorika Majemuk)"
+                },
+                "authoring_statement": "Skenario rekrutmen SDM dengan aturan representasi gender, pembagian 3 skenario kombinasi eksak, dan penyusunan distraktor bertingkat dirancang mandiri oleh proyek."
+            }
+        }
+    ],
+    "curriculum": [
+        "Kurikulum Merdeka"
+    ],
+    "grade": 12,
+    "competencies": [
+        {
+            "name": "Kompetensi MAT12-C03-A",
+            "question_count": 3,
+            "competency_id": "MAT12-C03-A"
+        },
+        {
+            "name": "Kompetensi MAT12-C03-B",
+            "question_count": 3,
+            "competency_id": "MAT12-C03-B"
+        }
+    ],
+    "subject": "matematika",
+    "chapter": "MAT12-C03",
+    "status": "active",
+    "content_version": 2,
+    "pool_id": "POOL-MATEMATIKA-MAT12-C03"
 }

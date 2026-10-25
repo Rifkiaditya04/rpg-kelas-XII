@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "MAT12-W02-CH03-M09-V1.1-REV",
+  "base_batch": "phase-3/world-2-matematika-chapter-3-misi-9-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 3 Misi 9 (Permutasi dan Kombinasi): eliminating duplicate JSON keys and draft monologues in HARD, standardizing verified 4-option structure for team recruitment, aligning curriculum metadata to Kurikulum Merdeka, providing verified Teacher Guide references (pp. 192–210), and establishing Decision 009 source_basis compliance.",
+  "revisions": [
+    {
+      "id": "MAT-C03-B-EASY",
+      "change_type": "metadata_and_distractor_revision",
+      "reason": "Pelengkapan rujukan Buku Panduan Guru hlm. 199–205, penegasan dekonstruksi pembeda kombinasi C(10,3) terhadap permutasi P(10,3), dan penambahan source_basis Decision 009.",
+      "before_question": "Wali kelas XII akan memilih 3 perwakilan siswa dari 10 murid teladan untuk dikirim ke seminar karir di luar kota. Karena tugas ketiganya sama (sebagai pendengar), berapa banyak cara susunan kelompok yang bisa terbentuk?",
+      "after_question": "Wali kelas XII akan memilih 3 perwakilan siswa dari 10 murid teladan untuk dikirim ke seminar karir di luar kota. Karena tugas ketiganya sama (sebagai pendengar), berapa banyak cara susunan kelompok yang bisa terbentuk?",
+      "answer": "120",
+      "replacement_options": [
+        "30",
+        "120",
+        "360",
+        "720"
+      ],
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Peran dan Urutan:\n   Tiga perwakilan yang dipilih memiliki tugas yang sama (sebagai pendengar seminar). Pemilihan siswa A, B, C sama saja dengan B, A, C (urutan tidak diperhatikan). Oleh karena itu, permasalahan ini diselesaikan dengan konsep Kombinasi.\n\n2. Perhitungan Rumus Kombinasi:\n   Banyak siswa total (n) = 10\n   Banyak siswa yang dipilih (r) = 3\n   C(n, r) = n! / (r! * (n - r)!)\n   C(10, 3) = 10! / (3! * 7!)\n   C(10, 3) = (10 * 9 * 8) / (3 * 2 * 1) = 720 / 6 = 120 cara.\n\n3. Pembahasan Distraktor:\n   - 30 (Salah): Miskonsepsi perkalian sederhana antara jumlah siswa dan perwakilan (10 * 3 = 30).\n   - 120 (BENAR): Hasil kombinasi pemilihan 3 siswa dari 10 siswa yang tepat (C(10,3) = 120).\n   - 360 (Salah): Kesalahan faktorial saat menyederhanakan pecahan (720 / 2 = 360).\n   - 720 (Salah): Menggunakan rumus Permutasi P(10,3) = 10 * 9 * 8 = 720, yang keliru menganggap urutan perwakilan diperhatikan (misal ada hierarki jabatan).",
+      "source": {
+        "student_book": {
+          "pages": "102-106",
+          "section": "Bab 3, Subbab C: Kombinasi"
+        },
+        "teacher_guide": {
+          "pages": "199-205",
+          "section": "Bab 3, Panduan Pembelajaran Kombinasi"
+        }
+      },
+      "provenance": "Soal orisinal kontekstual pendidikan (Kurikulum Merdeka) untuk memahami perbedaan mendasar Kombinasi vs Permutasi; konsep dasar merujuk pada Buku Siswa hlm. 102–106.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+        "competency_target": "MAT12-C03-B: Membedakan situasi kombinasi dari permutasi dan menghitung kombinasi r objek dari n objek",
+        "concept_reference": {
+          "student_book": "Buku Siswa Matematika Kelas XII hlm. 102-106 (Subbab C: Kombinasi dan Rumus C(n,r))",
+          "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 199-205 (Aktivitas Pembelajaran Konsep Kombinasi)"
+        },
+        "authoring_statement": "Skenario pemilihan perwakilan seminar karir murid teladan, analisis pembeda kombinasi terhadap permutasi, dan dekonstruksi distraktor salah disusun mandiri oleh proyek."
+      }
+    },
+    {
+      "id": "MAT-C03-B-MED",
+      "change_type": "curriculum_and_distractor_revision",
+      "reason": "Penyelarasan label kurikulum dari K13 ke Kurikulum Merdeka, pelengkapan Panduan Guru hlm. 192–196, perincian dekonstruksi distraktor permutasi siklis bersyarat (blok ikatan), dan penambahan source_basis Decision 009.",
+      "before_question": "Di sebuah rapat dewan direksi, 6 orang duduk mengelilingi sebuah meja bundar. Sang CEO dan Wakil CEO menuntut agar mereka selalu duduk berdampingan. Ada berapa banyak formasi duduk yang bisa terjadi?",
+      "after_question": "Di sebuah rapat dewan direksi, 6 orang duduk mengelilingi sebuah meja bundar. Sang CEO dan Wakil CEO menuntut agar mereka selalu duduk berdampingan. Ada berapa banyak formasi duduk yang bisa terjadi?",
+      "answer": "48",
+      "replacement_options": [
+        "24",
+        "48",
+        "120",
+        "720"
+      ],
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Pemodelan Permutasi Siklis dengan Syarat Berdampingan:\n   - Terdapat 6 orang yang duduk melingkar di meja bundar.\n   - Syarat khusus: CEO dan Wakil CEO harus selalu berdampingan. Keduanya dikelompokkan menjadi 1 kesatuan (blok ikatan).\n   - Jumlah entitas yang disusun melingkar: 4 direktur lainnya + 1 blok (CEO & W-CEO) = 5 entitas.\n\n2. Perhitungan Formasi Melingkar:\n   - Banyak cara menyusun 5 entitas secara melingkar = (5 - 1)! = 4! = 4 x 3 x 2 x 1 = 24 cara.\n   - Di dalam blok ikatan, posisi CEO dan Wakil CEO dapat bertukar tempat sebanyak 2! = 2 x 1 = 2 cara.\n   - Total formasi duduk = 24 x 2 = 48 formasi.\n\n3. Pembahasan Distraktor:\n   - 24 (Salah): Lupa mengalikan dengan permutasi internal di dalam blok CEO dan Wakil CEO (2!).\n   - 48 (BENAR): Hasil perkalian permutasi siklis 5 entitas dengan permutasi internal blok (24 x 2 = 48).\n   - 120 (Salah): Mengabaikan syarat berdampingan dan langsung menghitung permutasi siklis 6 orang bebas ((6 - 1)! = 5! = 120).\n   - 720 (Salah): Miskonsepsi menganggap susunan linear biasa tanpa memperhatikan sifat melingkar (meja bundar) sehingga menghitung 6! = 720.",
+      "source": {
+        "student_book": {
+          "pages": "97-100",
+          "section": "Bab 3, Subbab B: Permutasi Siklis"
+        },
+        "teacher_guide": {
+          "pages": "192-196",
+          "section": "Bab 3, Panduan Pembelajaran Permutasi Siklis"
+        }
+      },
+      "provenance": "Soal orisinal penerapan permutasi siklis bersyarat (Kurikulum Merdeka) untuk menguji penggabungan elemen ikatan; konsep dasar merujuk pada Buku Siswa hlm. 97–100.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+        "competency_target": "MAT12-C03-B: Menyelesaikan masalah penyusunan melingkar (permutasi siklis) dengan batasan elemen yang harus selalu berdampingan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Matematika Kelas XII hlm. 97-100 (Subbab B: Permutasi Siklis Rumus Ps = (n-1)!)",
+          "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 192-196 (Aktivitas Pembelajaran Permutasi Melingkar)"
+        },
+        "authoring_statement": "Skenario rapat meja bundar dewan direksi, teknik pengelompokan blok berdampingan, dan analisis jebakan permutasi linear vs siklis dirancang mandiri oleh proyek."
+      }
+    },
+    {
+      "id": "MAT-C03-B-HARD",
+      "change_type": "structural_cleanup_and_distractor_revision",
+      "reason": "Pembersihan total monolog percakapan draf pada pembahasan, penyelesaian masalah duplikasi key JSON pada objek v1.0, penataan 4 opsi bersih dan terstandarisasi, pelengkapan Panduan Guru hlm. 206–210, dan penambahan source_basis Decision 009.",
+      "before_question": "Departemen sumber daya manusia akan merekrut 5 karyawan baru (terdiri dari staf dan manajer) dari 8 kandidat pria dan 6 kandidat wanita. Aturan kesetaraan menuntut bahwa tim tersebut harus mengandung sedikitnya 3 staf wanita. Berapa total komposisi tim yang memenuhi syarat tersebut?",
+      "after_question": "Departemen sumber daya manusia akan merekrut 5 karyawan baru (terdiri dari staf dan manajer) dari 8 kandidat pria dan 6 kandidat wanita. Aturan kesetaraan menuntut bahwa tim tersebut harus mengandung sedikitnya 3 staf wanita. Berapa total komposisi tim yang memenuhi syarat tersebut?",
+      "answer": "686",
+      "replacement_options": [
+        "560",
+        "680",
+        "686",
+        "2.002"
+      ],
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Kebutuhan dan Batasan Tim:\n   - Total kandidat yang dibutuhkan = 5 orang.\n   - Kandidat tersedia: 8 pria dan 6 wanita (total 14 kandidat).\n   - Syarat khusus: tim harus memuat 'sedikitnya 3 wanita', artinya banyak wanita dalam tim bisa 3, 4, atau 5 orang.\n\n2. Perhitungan Kasus per Kasus:\n   - Kasus 1 (Terpilih tepat 3 wanita dan 2 pria):\n     C(6, 3) x C(8, 2) = 20 x 28 = 560 komposisi.\n   - Kasus 2 (Terpilih tepat 4 wanita dan 1 pria):\n     C(6, 4) x C(8, 1) = 15 x 8 = 120 komposisi.\n   - Kasus 3 (Terpilih tepat 5 wanita dan 0 pria):\n     C(6, 5) x C(8, 0) = 6 x 1 = 6 komposisi.\n\n3. Penjumlahan Kasus Saling Lepas:\n   Total komposisi yang memenuhi syarat = 560 + 120 + 6 = 686 komposisi.\n\n4. Pembahasan Distraktor:\n   - 560 (Salah): Hanya menghitung kasus tepat tiga perempuan (C(6,3) x C(8,2) = 560), mengabaikan kemungkinan empat atau lima perempuan.\n   - 680 (Salah): Hanya menjumlahkan kasus tiga dan empat perempuan (560 + 120 = 680), sehingga kasus lima perempuan terlewat.\n   - 686 (BENAR): Menjumlahkan ketiga kasus yang memenuhi syarat minimal tiga perempuan (560 + 120 + 6 = 686).\n   - 2.002 (Salah): Berasal dari C(14,5) = 2.002, yaitu memilih sembarang lima dari 14 calon tanpa menerapkan syarat minimal tiga perempuan.",
+      "source": {
+        "student_book": {
+          "pages": "113-116",
+          "section": "Bab 3, Subbab D: Penerapan Permutasi dan Kombinasi"
+        },
+        "teacher_guide": {
+          "pages": "206-210",
+          "section": "Bab 3, Panduan Pembelajaran Penerapan Kombinasi Multikasus"
+        }
+      },
+      "provenance": "Soal kontekstual rekrutmen SDM (Kurikulum Merdeka) untuk menguji kemampuan pemecahan masalah kombinasi majemuk dengan batasan inklusi minimum; konsep dasar merujuk pada Buku Siswa hlm. 113–116.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+        "competency_target": "MAT12-C03-B: Memecahkan masalah pembentukan kelompok bersyarat batas minimum ('sedikitnya') melalui partisi kasus kombinasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Matematika Kelas XII hlm. 113-116 (Subbab D: Penerapan Kombinasi pada Masalah Nyata)",
+          "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 206-210 (Pengayaan Masalah Kombinatorika Majemuk)"
+        },
+        "authoring_statement": "Skenario rekrutmen SDM dengan aturan representasi gender, pembagian 3 skenario kombinasi eksak, dan penyusunan distraktor bertingkat dirancang mandiri oleh proyek."
+      }
+    }
+  ]
+}

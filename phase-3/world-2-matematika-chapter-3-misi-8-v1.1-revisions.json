@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "MAT12-W02-CH03-M08-V1.1-REV",
+  "base_batch": "phase-3/world-2-matematika-chapter-3-misi-8-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 3 Misi 8 (Aturan Pengisian Tempat): rectifying critical mathematical error in HARD (ATM PIN password) to exact parity partition total 3.280, aligning curriculum metadata to Kurikulum Merdeka, providing verified Teacher Guide references (pp. 178–185), and establishing Decision 009 source_basis compliance.",
+  "revisions": [
+    {
+      "id": "MAT-C03-A-EASY",
+      "change_type": "metadata_and_distractor_revision",
+      "reason": "Pelengkapan rujukan Buku Panduan Guru hlm. 178–182, penambahan dekonstruksi komparatif aturan penjumlahan vs perkalian pada pembahasan, dan penambahan source_basis Decision 009.",
+      "before_question": "Andi memiliki 4 buah kemeja lengan pendek dan 3 buah celana jeans yang berbeda warna. Berapa banyak kombinasi pakaian (kemeja dan celana) yang dapat dipakai Andi untuk pergi ke acara reuni?",
+      "after_question": "Andi memiliki 4 buah kemeja lengan pendek dan 3 buah celana jeans yang berbeda warna. Berapa banyak kombinasi pakaian (kemeja dan celana) yang dapat dipakai Andi untuk pergi ke acara reuni?",
+      "answer": "12",
+      "replacement_options": [
+        "7",
+        "12",
+        "24",
+        "36"
+      ],
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "explanation": "Langkah Penyelesaian:\n1. Identifikasi Kaidah Pencacahan:\n   Andi memilih satu kemeja DAN satu celana untuk dipasangkan bersamaan sebagai satu setelan pakaian utuh. Peristiwa ini berlangsung secara simultan (kejadian majemuk berpasangan), sehingga berlaku Aturan Perkalian (Filling Slots).\n\n2. Perhitungan Jumlah Kombinasi:\n   Banyak pilihan kemeja (k1) = 4\n   Banyak pilihan celana (k2) = 3\n   Total kombinasi setelan = k1 x k2 = 4 x 3 = 12 cara.\n\n3. Pembahasan Distraktor:\n   - 7 (Salah): Kesalahan menggunakan aturan penjumlahan (4 + 3 = 7), yang hanya berlaku jika Andi memilih kemeja ATAU celana secara terpisah (saling meniadakan).\n   - 12 (BENAR): Hasil penerapan aturan perkalian yang tepat untuk dua komponen berpasangan (4 x 3 = 12).\n   - 24 (Salah): Kesalahan menambahkan faktor pengali ekstra tanpa dasar matematis (4 x 3 x 2 = 24).\n   - 36 (Salah): Kesalahan mengkuadratkan total kombinasi pakaian atau salah menerapkan operasi kuadrat.",
+      "source": {
+        "student_book": {
+          "pages": "83-86",
+          "section": "Bab 3, Subbab A: Aturan Pengisian Tempat (Aturan Perkalian)"
+        },
+        "teacher_guide": {
+          "pages": "178-182",
+          "section": "Bab 3, Panduan Pembelajaran Aturan Pengisian Tempat"
+        }
+      },
+      "provenance": "Soal orisinal kontekstual kehidupan sehari-hari (Kurikulum Merdeka) untuk memahami aturan perkalian pencacahan; konsep dasar merujuk pada Buku Siswa hlm. 83–86.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+        "competency_target": "MAT12-C03-A: Memahami dan menerapkan aturan perkalian (kaidah pencacahan) untuk menentukan banyaknya kemungkinan kombinasi pasangan objek",
+        "concept_reference": {
+          "student_book": "Buku Siswa Matematika Kelas XII hlm. 83-86 (Subbab A: Aturan Pengisian Tempat)",
+          "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 178-182 (Pengalaman Belajar dan Aktivitas Aturan Perkalian)"
+        },
+        "authoring_statement": "Skenario pemilihan setelan pakaian Andi, opsi pasangan kemeja-celana, dan analisis miskonsepsi aturan penjumlahan vs perkalian disusun mandiri oleh proyek sebagai instrumen asesmen formatif orisinal."
+      }
+    },
+    {
+      "id": "MAT-C03-A-MED",
+      "change_type": "curriculum_and_distractor_revision",
+      "reason": "Penyelarasan label kurikulum dari K13 ke Kurikulum Merdeka, pelengkapan Panduan Guru hlm. 182–185, penajaman dekonstruksi distraktor bilangan genap tanpa pengulangan, dan penambahan source_basis Decision 009.",
+      "before_question": "Dari angka-angka 1, 2, 3, 4, 5, dan 6 akan dibentuk bilangan genap yang terdiri atas tiga angka berbeda. Berapa banyak bilangan yang dapat dibentuk?",
+      "after_question": "Dari angka-angka 1, 2, 3, 4, 5, dan 6 akan dibentuk bilangan genap yang terdiri atas tiga angka berbeda. Berapa banyak bilangan yang dapat dibentuk?",
+      "answer": "60",
+      "replacement_options": [
+        "40",
+        "60",
+        "108",
+        "120"
+      ],
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Syarat Pembentukan Bilangan:\n   - Bilangan terdiri atas 3 digit berbeda: Ratusan, Puluhan, Satuan.\n   - Angka penyusun tersedia: {1, 2, 3, 4, 5, 6} (total 6 angka).\n   - Syarat 'bilangan genap' ditentukan oleh digit terakhir (satuan): angka genap yang tersedia adalah {2, 4, 6} -> ada 3 pilihan untuk posisi satuan.\n\n2. Pengisian Slot Bersyarat (Tanpa Pengulangan):\n   - Slot Satuan: 3 pilihan ({2, 4, 6}).\n   - Slot Ratusan: Dari 6 angka yang tersedia, 1 angka telah digunakan pada satuan, sehingga tersisa 6 - 1 = 5 pilihan.\n   - Slot Puluhan: Dari 6 angka yang tersedia, 2 angka telah digunakan (pada satuan dan ratusan), sehingga tersisa 6 - 2 = 4 pilihan.\n   - Total bilangan genap yang dapat dibentuk = 3 x 5 x 4 = 60 bilangan.\n\n3. Pembahasan Distraktor:\n   - 40 (Salah): Keliru menganggap hanya ada dua pilihan digit genap untuk posisi satuan sehingga perhitungannya menjadi 2 x 5 x 4 = 40. Padahal digit genap yang tersedia adalah 2, 4, dan 6 (tiga pilihan satuan), sehingga karena ketiga digit harus berbeda, jumlah yang benar adalah 3 x 5 x 4 = 60.\n   - 60 (BENAR): Hasil perkalian slot bersyarat yang tepat (3 x 5 x 4 = 60).\n   - 108 (Salah): Miskonsepsi memperbolehkan pengulangan digit pada seluruh posisi (6 x 6 x 3 = 108), padahal dengan syarat digit berbeda jumlah yang benar adalah 3 x 5 x 4 = 60.\n   - 120 (Salah): Mengabaikan syarat genap dan menghitung seluruh permutasi 3 digit berbeda dari 6 angka (P(6,3) = 6 x 5 x 4 = 120).",
+      "source": {
+        "student_book": {
+          "pages": "87-90",
+          "section": "Bab 3, Subbab A: Aturan Pengisian Tempat Bersyarat"
+        },
+        "teacher_guide": {
+          "pages": "182-185",
+          "section": "Bab 3, Panduan Pembelajaran Aturan Pengisian Tempat Bersyarat"
+        }
+      },
+      "provenance": "Soal konseptual penalaran bilangan bersyarat (Kurikulum Merdeka) untuk melatih ketelitian penentuan prioritas slot pembatas; konsep dasar merujuk pada Buku Siswa hlm. 87–90.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+        "competency_target": "MAT12-C03-A: Menyelesaikan masalah penyusunan bilangan dengan batasan nilai (genap) dan angka berbeda (tanpa pengulangan)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Matematika Kelas XII hlm. 87-90 (Subbab A: Aturan Pengisian Tempat Bersyarat)",
+          "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 182-185 (Aktivitas Pembelajaran Pembentukan Bilangan)"
+        },
+        "authoring_statement": "Kombinasi himpunan angka {1..6}, batasan bilangan genap 3 digit tanpa perulangan, dan analisis distraktor disusun mandiri oleh proyek sesuai capaian pembelajaran Fase F."
+      }
+    },
+    {
+      "id": "MAT-C03-A-HARD",
+      "change_type": "critical_math_and_option_correction",
+      "reason": "Koreksi matematis kritis atas kesalahan kunci v1.0 (3.645 naif diganti ke hasil eksak partisi paritas 3.280), penyesuaian kandidat opsi jawaban, perombakan menyeluruh langkah penyelesaian berbasis partisi paritas (365 ganjil x 4 + 364 genap x 5 = 3.280), dan penambahan source_basis Decision 009.",
+      "before_question": "Seorang programmer merancang sistem keamanan di mana kata sandi PIN ATM harus 4 digit angka. Syarat keamanan menyatakan: digit pertama tidak boleh 0, digit terakhir harus ganjil, dan tidak boleh ada angka yang bersebelahan bernilai sama (misal: 11, 22 dilarang). Ada berapa banyak kandidat PIN yang valid?",
+      "after_question": "Seorang programmer merancang sistem keamanan di mana kata sandi PIN ATM harus 4 digit angka. Syarat keamanan menyatakan: digit pertama tidak boleh 0, digit terakhir harus ganjil, dan tidak boleh ada angka yang bersebelahan bernilai sama (misal: 11, 22 dilarang). Ada berapa banyak kandidat PIN yang valid?",
+      "answer": "3.280",
+      "replacement_options": [
+        "3.280",
+        "3.645",
+        "2.916",
+        "4.500"
+      ],
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Syarat PIN 4 Digit (d1 d2 d3 d4):\n   - d1 in {1, 2, ..., 9} (9 pilihan, d1 != 0).\n   - d2 in {0, 1, ..., 9} dengan d2 != d1 (9 pilihan).\n   - d3 in {0, 1, ..., 9} dengan d3 != d2 (9 pilihan).\n   - Total susunan 3 digit pertama (d1 d2 d3) = 9 x 9 x 9 = 729 susunan.\n\n2. Ketergantungan Paritas Digit Terakhir (d4):\n   - d4 harus ganjil: himpunan angka ganjil adalah {1, 3, 5, 7, 9} (5 pilihan).\n   - Syarat digit bersebelahan: d4 != d3.\n   - Kasus A (d3 bernilai GANJIL): Karena d3 ganjil, satu angka ganjil telah terpakai oleh d3, sehingga d4 hanya memiliki 5 - 1 = 4 pilihan ganjil.\n   - Kasus B (d3 bernilai GENAP): Karena d3 genap ({0, 2, 4, 6, 8}), d3 bukan angka ganjil, sehingga seluruh 5 angka ganjil berbeda dari d3 -> d4 memiliki 5 pilihan ganjil penuh.\n\n3. Menghitung Banyaknya Kasus Berdasarkan Paritas d3:\n   - Dari 729 susunan 3 digit pertama (d1 d2 d3):\n     * Banyak susunan dengan digit ketiga (d3) GANJIL = 365 susunan.\n     * Banyak susunan dengan digit ketiga (d3) GENAP = 364 susunan.\n   - Total PIN valid (N):\n     N = (Banyak d3 ganjil x 4) + (Banyak d3 genap x 5)\n     N = (365 x 4) + (364 x 5)\n     N = 1.460 + 1.820 = 3.280 kombinasi.\n\n4. Pembahasan Distraktor:\n   - 3.280 (BENAR): Hasil perhitungan eksak dengan mempartisi paritas digit ke-3 terhadap digit satuan (1.460 + 1.820 = 3.280).\n   - 3.645 (Salah): Miskonsepsi naif mengalikan 9 x 9 x 9 x 5 = 3.645 dengan mengasumsikan digit ke-4 selalu memiliki 5 pilihan ganjil untuk semua kasus tanpa memperhitungkan benturan saat d3 bernilai ganjil.\n   - 2.916 (Salah): Miskonsepsi mengasumsikan digit ke-4 selalu hanya memiliki 4 pilihan ganjil untuk seluruh kasus (9 x 9 x 9 x 4 = 2.916).\n   - 4.500 (Salah): Mengabaikan batasan larangan digit bersebelahan sama dan hanya menghitung kombinasi umum 9 x 10 x 10 x 5 / 10.",
+      "source": {
+        "student_book": {
+          "pages": "87-90",
+          "section": "Bab 3, Subbab A: Aturan Pengisian Tempat Bersyarat"
+        },
+        "teacher_guide": {
+          "pages": "182-185",
+          "section": "Bab 3, Panduan Pembelajaran Pengisian Tempat dan Penalaran Logis"
+        }
+      },
+      "provenance": "Soal orisinal literasi numerasi keamanan digital (Kurikulum Merdeka) untuk menguji ketelitian penalaran pencacahan bersyarat dan partisi paritas; konsep dasar merujuk pada Buku Siswa hlm. 87–90.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi Revisi 2025)",
+        "competency_target": "MAT12-C03-A: Menyelesaikan masalah kontekstual kriptografi PIN dengan batasan digit bersebelahan dan kondisi paritas digit akhir",
+        "concept_reference": {
+          "student_book": "Buku Siswa Matematika Kelas XII hlm. 87-90 (Subbab A: Aturan Pengisian Tempat Bersyarat)",
+          "teacher_guide": "Buku Panduan Guru Matematika Kelas XII hlm. 182-185 (Pengembangan Soal Penalaran Kombinatorika)"
+        },
+        "authoring_statement": "Skenario autentikasi PIN ATM 4 digit, syarat digit bersebelahan tidak sama, dan metode pembuktian partisi paritas (365 ganjil vs 364 genap) dirancang mandiri oleh proyek sebagai instrumen penalaran matematika tingkat tinggi."
+      }
+    }
+  ]
+}
