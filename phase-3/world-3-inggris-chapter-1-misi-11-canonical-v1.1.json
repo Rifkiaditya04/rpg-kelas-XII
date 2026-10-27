@@ -1,0 +1,174 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CONTROLLED_REVISION_DRAFT",
+    "dataset": "World 3 Bahasa Inggris Wajib Chapter 1 - Misi 11 (Expressions & Conditionals) v1.1",
+    "purpose": "Resolved canonical QA dataset produced deterministically from canonical base v1.0 plus v1.1 revision overlay (ENG12-W03-CH01-M11-V1.1-REV).",
+    "chapter_id": "ENG12-C01",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "ENG-C01-A-EASY",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-A",
+            "skill": "understand",
+            "question": "Receptionist: 'Good morning, Sir. May I help you with your baggage?'\nGuest: 'Yes, please. I have two heavy suitcases in the trunk.'\nThe receptionist's utterance expresses...",
+            "options": [
+                "Asking for help",
+                "Offering a service",
+                "Refusing an offer",
+                "Giving an instruction"
+            ],
+            "answer": "Offering a service",
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Fungsi Wacana Interpersonal:\n   Ungkapan 'May I help you with...' adalah formula formal yang baku digunakan oleh staf pelayanan (resepsionis, pramusaji, petugas tiket) untuk menawarkan bantuan atau jasa kepada pelanggan.\n\n2. Pembahasan Kunci Jawaban:\n   - Offering a service (BENAR): Resepsionis berinisiatif menyediakan bantuan penanganan bagasi tamu hotel.\n\n3. Pembahasan Distraktor:\n   - Asking for help (Salah): Arah bantuan terbalik; pembicara adalah pihak yang menawarkan diri untuk membantu, bukan pihak yang meminta pertolongan (asking for help biasanya menggunakan 'Could you help me?').\n   - Refusing an offer (Salah): Dialog tidak menunjukkan penolakan tawaran; tamu justru menerima tawaran dengan mengatakan 'Yes, please'.\n   - Giving an instruction (Salah): Resepsionis tidak sedang memberikan instruksi atau perintah prosedural kepada tamu, melainkan mengajukan tawaran bantuan yang bersifat opsional.",
+            "source": {
+                "student_book": {
+                    "pages": "1-14",
+                    "section": "Chapter 1: May I Help You?"
+                },
+                "teacher_guide": {
+                    "pages": "1-18",
+                    "section": "Chapter 1: Offering Services and Interpersonal Interaction"
+                }
+            },
+            "provenance": "Soal orisinal pemahaman konteks dialog pelayanan formal; konsep dasar merujuk pada Buku Siswa K13 hlm. 1–14 dan selaras dengan Capaian Pembelajaran Kurikulum Merdeka Fase F Elemen Menyimak-Berbicara.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Kelas XII)",
+                "competency_target": "ENG12-C01-A: Mengidentifikasi fungsi sosial, struktur teks, dan unsur kebahasaan ungkapan menawarkan jasa/bantuan (offering services/help)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 1-14 (Chapter 1: May I Help You?)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 1-18 (Panduan Pembelajaran Offering Services)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Skenario dialog resepsionis hotel dan tamu, pilihan fungsi wacana, serta dekonstruksi miskonsepsi disusun mandiri oleh proyek sebagai instrumen asesmen formatif orisinal tanpa menyalin kalimat buku teks."
+            },
+            "mode": "learning",
+            "game_mechanic": "meaning_check",
+            "tags": [
+                "offering_help",
+                "dialogue",
+                "kontekstual"
+            ],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": [
+                "K13",
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Offering Services",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "ENG-C01-A-MED",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-A",
+            "skill": "apply",
+            "question": "'If you want to pass the final exam with flying colors, you ________ study harder starting today.'\nChoose the most appropriate modal to express advice.",
+            "options": [
+                "would",
+                "should",
+                "will",
+                "might"
+            ],
+            "answer": "should",
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Pola Kalimat dan Tujuan Komunikatif:\n   Stem kalimat menguji pengisian rumpang dengan instruksi spesifik: 'Choose the most appropriate modal to express advice.' Kalimat mensyaratkan modal yang secara fungsional mengekspresikan anjuran atau rekomendasi normatif terarah ('study harder starting today') sebagai respons terhadap kondisi yang diharapkan ('pass the final exam with flying colors').\n\n2. Pembahasan Kunci Jawaban:\n   - should (BENAR): Merupakan modal bantu standar dalam bahasa Inggris yang secara tepat berfungsi menyatakan anjuran, saran, atau rekomendasi normatif (advice/recommendation).\n\n3. Pembahasan Distraktor:\n   - would (Kurang Tepat): Modal 'would' lazim digunakan untuk menyatakan konsekuensi hipotetis dalam pola kondisional tertentu (misalnya situasi imajiner/pengandaian), sehingga kurang tepat untuk memenuhi fungsi penyampaian nasihat yang secara spesifik diminta oleh instruksi soal.\n   - will (Kurang Tepat): Modal 'will' berfokus pada prediksi masa depan atau kepastian konsekuensi logis (future prediction / factual certainty), bukan tindak tutur pemberian nasihat (advice).\n   - might (Kurang Tepat): Modal 'might' menyatakan kemungkinan lemah atau hasil tentatif (weak possibility / tentative outcome), sehingga kurang sesuai sebagai anjuran tindakan terarah untuk mencapai kelulusan ujian.",
+            "source": {
+                "student_book": {
+                    "pages": "15-30",
+                    "section": "Chapter 2: Why Don't You Visit Seattle? (Conditionals + Suggestion)"
+                },
+                "teacher_guide": {
+                    "pages": "19-34",
+                    "section": "Chapter 2: Grammar Focus: If Clause followed by imperative/suggestion"
+                }
+            },
+            "provenance": "Soal orisinal penerapan struktur Conditional Clause diikuti saran/anjuran; konsep dasar merujuk pada Buku Siswa K13 hlm. 15–30.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Kelas XII)",
+                "competency_target": "ENG12-C01-A: Menerapkan fungsi sosial, struktur teks, dan unsur kebahasaan pengandaian diikuti saran/anjuran (if clause + suggestion)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 15-30 (Chapter 2: Conditionals followed by advice)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 19-34 (Grammar Focus: If Clause followed by suggestion)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Konteks kalimat pengandaian kelulusan ujian, pembatasan opsi modal untuk menjamin keunikan kunci tunggal, dan pembahasan diferensiasi modalitas disusun mandiri oleh proyek."
+            },
+            "mode": "learning",
+            "game_mechanic": "language_scan",
+            "tags": [
+                "conditional_sentence",
+                "advice",
+                "fundamental_k13"
+            ],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": [
+                "K13",
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Conditionals (K13 Drill)",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "ENG-C01-A-HARD",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-A",
+            "skill": "analyze",
+            "question": "Read the dialogue.\nSarah: 'I failed my driving test again.'\nMark: 'If you hadn't been so nervous about the parallel parking, you wouldn't have hit the cone.'\nWhat can we infer from Mark's statement?",
+            "options": [
+                "Sarah is not nervous anymore about driving.",
+                "Sarah hit the cone because she was nervous.",
+                "Mark thinks parallel parking is the hardest part.",
+                "Sarah passed the test despite hitting the cone."
+            ],
+            "answer": "Sarah hit the cone because she was nervous.",
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Tata Bahasa Kontrafaktual:\n   Pernyataan Mark menggunakan Conditional Type 3 ('If + past perfect [hadn't been], S + would + have + V3 [wouldn't have hit]'). Struktur ini menyatakan situasi pengandaian kontrafaktual masa lampau (past unreal), di mana fakta nyata di dunia nyata adalah kebalikan dari klausanya.\n\n2. Penarikan Kesimpulan (Inference):\n   - Klausa 'If you hadn't been so nervous' mengimplikasikan fakta nyata: Sarah sebenarnya gugup (Sarah was nervous).\n   - Klausa 'you wouldn't have hit the cone' mengimplikasikan fakta nyata: Sarah menabrak kerucut pembatas (Sarah did hit the cone).\n   - Hubungan kausalitas implisit: Kegugupan Sarah menjadi penyebab dia menabrak kerucut pembatas saat ujian parkir paralel.\n\n3. Pembahasan Distraktor:\n   - Sarah is not nervous anymore about driving (Salah): Pernyataan Mark membahas kondisi psikologis Sarah saat ujian berlangsung di masa lampau, bukan kondisi Sarah saat ini.\n   - Sarah hit the cone because she was nervous (BENAR): Kesimpulan deduktif faktual yang tepat dari struktur pengandaian tipe 3.\n   - Mark thinks parallel parking is the hardest part (Salah): Kesimpulan spekulatif eksternal yang tidak dinyatakan atau diimplikasikan oleh Mark.\n   - Sarah passed the test despite hitting the cone (Salah): Bertentangan langsung dengan premis dialog awal Sarah ('I failed my driving test again').",
+            "source": {
+                "student_book": {
+                    "pages": "101-135",
+                    "section": "TKA Kerangka Asesmen: Pemahaman Inferensial Wacana"
+                },
+                "teacher_guide": {
+                    "pages": "222-240",
+                    "section": "TKA Aspek Bahasa: Penalaran Struktur Gramatikal Kompleks"
+                }
+            },
+            "provenance": "Soal orisinal literasi penalaran inferensial wacana berbasis tata bahasa kontrafaktual lampau; konsep merujuk pada Kerangka Asesmen TKA.",
+            "source_basis": {
+                "curriculum_framework": "Kerangka Asesmen TKA (Salinan Peraturan Kepala BSKAP Nomor 045/H/AN/2025)",
+                "competency_target": "TKA Bahasa Inggris Wajib: Tingkat Kompetensi 2 (Pemahaman Inferensial) — Menyimpulkan makna tersirat, hubungan kausalitas, dan fakta nyata dari struktur kalimat pengandaian kontrafaktual",
+                "concept_reference": {
+                    "student_book": "Salinan Peraturan Kepala BSKAP No. 045/H/AN/2025 hlm. 101-135 (TKA Bahasa Inggris Wajib - Muatan Aspek Bahasa)",
+                    "teacher_guide": "Salinan Peraturan Kepala BSKAP No. 045/H/AN/2025 hlm. 222-240 (Aspek Bahasa: Conditionals and Inferred Meaning)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Skenario dialog ujian mengemudi Mark dan Sarah, analisis deduktif kontrafaktual lampau, dan opsi kesimpulan inferensial disusun mandiri oleh proyek sebagai instrumen penalaran gramatikal tingkat tinggi."
+            },
+            "mode": "tka_preview",
+            "game_mechanic": "meaning_check",
+            "tags": [
+                "conditional_type_3",
+                "inference",
+                "tka_bonus"
+            ],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": [
+                "TKA"
+            ],
+            "topic": "Inference from Conditionals (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "analyze",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

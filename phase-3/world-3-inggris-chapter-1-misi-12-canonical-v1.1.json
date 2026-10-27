@@ -1,0 +1,174 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CONTROLLED_REVISION_DRAFT",
+    "dataset": "World 3 Bahasa Inggris Wajib Chapter 1 - Misi 12 (Job Application & Captions) v1.1",
+    "purpose": "Resolved canonical QA dataset produced deterministically from canonical base v1.0 plus v1.1 revision overlay (ENG12-W03-CH01-M12-V1.1-REV).",
+    "chapter_id": "ENG12-C01",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "ENG-C01-B-EASY",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-B",
+            "skill": "understand",
+            "question": "A picture in a magazine shows a group of volunteers planting trees in a barren area. Below the picture, it says: 'Local heroes taking real action against climate change in West Java.'\nWhat is the main function of the text below the picture?",
+            "options": [
+                "To give a detailed explanation of climate change.",
+                "To provide context and brief information about the picture.",
+                "To persuade readers to donate money for trees.",
+                "To tell a fictional story about West Java."
+            ],
+            "answer": "To provide context and brief information about the picture.",
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Fungsi Teks Penyerta Gambar (Caption):\n   Teks di bawah foto dalam majalah merupakan 'caption'. Fungsi sosial utama caption adalah melabuhkan makna visual (anchoring meaning), memberikan konteks ringkas mengenai siapa/apa yang ada di foto, di mana peristiwa terjadi, serta pesan inti dari foto tersebut.\n\n2. Pembahasan Kunci Jawaban:\n   - To provide context and brief information about the picture (BENAR): Menjelaskan esensi foto (siapa: sukarelawan, apa: aksi iklim penanaman pohon, di mana: Jawa Barat) secara padat dan informatif.\n\n3. Pembahasan Distraktor:\n   - To give a detailed explanation of climate change (Salah): Caption bersifat ringkas dan padat (brief), bukan artikel ilmiah/eksposisi mendalam yang memaparkan mekanisme perubahan iklim secara detail.\n   - To persuade readers to donate money for trees (Salah): Teks caption bersifat jurnalistik informatif, tidak memuat klausa ajakan atau permohonan donasi dana (persuasive appeal).\n   - To tell a fictional story about West Java (Salah): Teks mencatat aksi nyata para sukarelawan (faktual), bukan cerita rekaan imajinatif (fictional narrative).",
+            "source": {
+                "student_book": {
+                    "pages": "31-42",
+                    "section": "Chapter 3: Creating Captions"
+                },
+                "teacher_guide": {
+                    "pages": "35-48",
+                    "section": "Chapter 3: Social Function and Language Features of Captions"
+                }
+            },
+            "provenance": "Soal orisinal identifikasi fungsi sosial teks caption foto; konsep dasar merujuk pada Buku Siswa K13 hlm. 31–42 dan selaras dengan Capaian Pembelajaran Kurikulum Merdeka Fase F Elemen Membaca-Memirsa teks multimodal.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Kelas XII)",
+                "competency_target": "ENG12-C01-B: Mengidentifikasi fungsi sosial, struktur teks, dan unsur kebahasaan teks penyerta gambar (caption)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 31-42 (Chapter 3: Creating Captions)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 35-48 (Panduan Pembelajaran Caption)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Deskripsi foto sukarelawan lingkungan di Jawa Barat dan analisis fungsi caption disusun mandiri oleh proyek sebagai instrumen literasi visual orisinal."
+            },
+            "mode": "learning",
+            "game_mechanic": "evidence_scan",
+            "tags": [
+                "caption",
+                "social_function",
+                "kontekstual"
+            ],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": [
+                "K13",
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Captions",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "ENG-C01-B-MED",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-B",
+            "skill": "apply",
+            "question": "Read this excerpt from an application letter:\n'I am writing to express my interest in the Web Developer position listed on your company website. With a Bachelor's degree in Computer Science and three years of experience in front-end development, I am confident in my ability to contribute effectively to your team.'\nWhich part of an application letter is this excerpt?",
+            "options": [
+                "Body paragraph detailing technical project achievements",
+                "Opening paragraph stating the position applied for",
+                "Closing paragraph requesting an interview",
+                "Complimentary close addressing the employer"
+            ],
+            "answer": "Opening paragraph stating the position applied for",
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Generik Surat Lamaran Kerja (Application Letter):\n   Struktur baku tubuh surat lamaran kerja terdiri atas:\n   - Opening paragraph: Menyatakan tujuan penulisan surat, posisi yang dilamar, dan ringkasan singkat kualifikasi utama.\n   - Body / Middle paragraph: Menjabarkan secara rinci portofolio pengalaman kerja, pencapaian proyek, dan keterampilan spesifik.\n   - Closing paragraph: Menyatakan ketersediaan wawancara, mencantumkan kontak, dan menyampaikan apresiasi.\n   - Complimentary close: Salam penutup formal (e.g., 'Sincerely,').\n\n2. Pembahasan Kunci Jawaban:\n   - Opening paragraph stating the position applied for (BENAR): Kutipan secara eksplisit menyatakan intensi melamar posisi Web Developer ('I am writing to express my interest in the Web Developer position...') yang merupakan fungsi mutlak dari paragraf pembuka.\n\n3. Pembahasan Distraktor:\n   - Body paragraph detailing technical project achievements (Salah): Paragraf isi mendalam berfokus menguraikan rincian proyek teknologi dan tanggung jawab teknis terdahulu, bukan pembukaan pernyataan minat posisi.\n   - Closing paragraph requesting an interview (Salah): Paragraf penutup berisi permohonan wawancara dan tindak lanjut (action request), bukan pernyataan kualifikasi awal pembuka.\n   - Complimentary close addressing the employer (Salah): Merupakan frasa salam penutup baku di akhir surat sebelum tanda tangan, bukan badan paragraf naratif.",
+            "source": {
+                "student_book": {
+                    "pages": "43-60",
+                    "section": "Chapter 4: Do You Know How to Apply for a Job?"
+                },
+                "teacher_guide": {
+                    "pages": "49-66",
+                    "section": "Chapter 4: Generic Structure of Application Letter"
+                }
+            },
+            "provenance": "Soal orisinal penerapan struktur generik surat lamaran kerja; materi berstatus ENRICHMENT kesiapan karir pasca-sekolah menengah pada Kurikulum Merdeka Fase F dengan rujukan teknis K13 Bab 4.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Pengayaan Literasi Karir)",
+                "competency_target": "ENG12-C01-B: Menganalisis fungsi sosial dan struktur generik teks khusus dalam bentuk surat lamaran kerja (application letter)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 43-60 (Chapter 4: Application Letter)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 49-66 (Panduan Struktur Generik Surat Lamaran)"
+                },
+                "support_category": "ENRICHMENT",
+                "authoring_statement": "Kutipan surat lamaran kerja posisi Web Developer, perancangan opsi bagian tubuh surat yang seimbang, dan pembahasan pembeda struktur disusun mandiri oleh proyek."
+            },
+            "mode": "learning",
+            "game_mechanic": "language_scan",
+            "tags": [
+                "application_letter",
+                "generic_structure",
+                "fundamental_k13"
+            ],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": [
+                "K13",
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Application Letter Structure",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "ENG-C01-B-HARD",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-B",
+            "skill": "evaluate",
+            "question": "An applicant writes in her cover letter:\n\"Although I have not worked in a multinational firm before, my leadership in national student organizations has honed my cross-cultural communication and rapid problem-solving skills.\"\nWhat is the applicant's primary communicative strategy in this sentence?",
+            "options": [
+                "To apologize for lacking formal experience in a multinational firm.",
+                "To reframe a perceived limitation by highlighting transferable strengths.",
+                "To present student leadership titles as direct proof of corporate management readiness.",
+                "To divert the recruiter's focus away from workplace qualifications toward extracurricular activities."
+            ],
+            "answer": "To reframe a perceived limitation by highlighting transferable strengths.",
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Retorika dan Strategi Komunikatif:\n   Kalimat pelamar terdiri atas dua klausa yang dihubungkan oleh konjungsi konsesif 'Although':\n   - Klausa dependen konsesif ('Although I have not worked in a multinational firm before'): Pelamar secara terbuka mengakui ketiadaan pengalaman kerja langsung di perusahaan multinasional.\n   - Klausa independen penyeimbang ('my leadership in national student organizations has honed my cross-cultural communication and rapid problem-solving skills'): Pelamar menghubungkan pengalaman kepemimpinan organisasinya dengan keterampilan konkret yang dapat dialihkan (transferable skills) dan relevan untuk konteks multinasional.\n   Pola komunikasi ini adalah bentuk klasik dari 'reframing' (membingkai ulang celah pengalaman bukan sebagai kelemahan, melainkan sebagai peluang menonjolkan kekuatan kompetensi yang dapat ditransfer).\n\n2. Pembahasan Kunci Jawaban:\n   - To reframe a perceived limitation by highlighting transferable strengths (BENAR): Secara tepat menangkap tujuan pragmatik pelamar, yaitu mengubah persepsi atas keterbatasan pengalaman formal menjadi penegasan atas kekuatan keterampilan kepemimpinan yang dapat diterapkan di lingkungan kerja baru.\n\n3. Pembahasan Distraktor:\n   - To apologize for lacking formal experience in a multinational firm (Salah): Pelamar menggunakan klausa konsesif bukan untuk meminta maaf atau mengekspresikan penyesalan/inferioritas, melainkan sebagai pengantar strategis sebelum menegaskan kompetensinya.\n   - To present student leadership titles as direct proof of corporate management readiness (Salah): Pelamar tidak mendasarkan argumennya pada gelar/jabatan organisasi semata atau mengklaim kepemimpinan mahasiswa setara dengan manajemen korporasi, melainkan menyoroti pengembangan keterampilan fungsional spesifik (komunikasi lintas budaya dan pemecahan masalah cepat).\n   - To divert the recruiter's focus away from workplace qualifications toward extracurricular activities (Salah): Pelamar tidak bermaksud mengalihkan perhatian atau menolak relevansi syarat kerja multinasional, melainkan secara konstruktif menjembatani kebutuhan lintas budaya perusahaan dengan kompetensi nyata yang telah ia asah.",
+            "source": {
+                "student_book": {
+                    "pages": "114-135",
+                    "section": "TKA Kerangka Asesmen: Evaluasi Kritis Intensi dan Sikap Penulis"
+                },
+                "teacher_guide": {
+                    "pages": "49-66",
+                    "section": "K13 Chapter 4: Pragmatics and Tone in Formal Letters"
+                }
+            },
+            "provenance": "Soal orisinal literasi analitis evaluasi intensi strategis teks formal karir; konsep merujuk pada standar TKA Evaluasi dan Apresiasi.",
+            "source_basis": {
+                "curriculum_framework": "Kerangka Asesmen TKA (Salinan Peraturan Kepala BSKAP Nomor 045/H/AN/2025)",
+                "competency_target": "TKA Bahasa Inggris Wajib: Tingkat Kompetensi 3 (Evaluasi dan Apresiasi) — Mengevaluasi tujuan tersirat, strategi retoris, dan intensi komunikatif penulis dalam teks faktual formal",
+                "concept_reference": {
+                    "student_book": "Salinan Peraturan Kepala BSKAP No. 045/H/AN/2025 hlm. 114-135 (TKA Bahasa Inggris Wajib - Evaluasi Wacana)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII (K13) hlm. 49-66 (Writing Formal Application Letters)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Kutipan surat lamaran kerja tentang kepemimpinan organisasi mahasiswa dan perusahaan multinasional, opsi interpretasi pragmatik retorika, dan analisis penarikan intensi tersirat disusun mandiri oleh proyek sebagai instrumen evaluasi literasi wacana formal."
+            },
+            "mode": "tka_preview",
+            "game_mechanic": "meaning_check",
+            "tags": [
+                "application_letter",
+                "author_intent",
+                "tka_bonus"
+            ],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": [
+                "TKA"
+            ],
+            "topic": "Author's Intent (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

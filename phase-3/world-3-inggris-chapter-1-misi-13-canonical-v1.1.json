@@ -1,0 +1,173 @@
+{
+    "schema_version": "1.1",
+    "batch_status": "CONTROLLED_REVISION_DRAFT",
+    "dataset": "World 3 Bahasa Inggris Wajib Chapter 1 - Misi 13 (News Item & Narrative) v1.1",
+    "purpose": "Resolved canonical QA dataset produced deterministically from canonical base v1.0 plus v1.1 revision overlay (ENG12-W03-CH01-M13-V1.1-REV).",
+    "chapter_id": "ENG12-C01",
+    "rewards": {
+        "xp_per_correct": 100,
+        "mission_completion_xp": 100
+    },
+    "questions": [
+        {
+            "id": "ENG-C01-C-EASY",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-C",
+            "skill": "understand",
+            "question": "Read the narrative excerpt:\n'Tariq lived in an arid coastal valley where groundwater was brackish and unfit for drinking during the dry season. While other villagers traveled miles to purchase expensive bottled water, Tariq studied basic distillation principles from an old farming manual. Using salvaged glass windowpanes and bamboo troughs, he built a solar water still that evaporated the salty water and collected clean condensation droplets. His first two prototypes leaked and produced very little water, leading some neighbors to doubt his efforts. Refusing to give up, Tariq carefully resealed the frames and adjusted the tilt of the glass. By the third week, his improved setup reliably supplied safe drinking water for his family and neighbors.'\nWhat is the primary moral lesson conveyed by Tariq's story?",
+            "options": [
+                "Communities should rely on external aid rather than developing local initiatives.",
+                "Perseverance and applying knowledge can overcome difficult real-world challenges.",
+                "Initial experimental failures indicate that a new practical concept should be abandoned.",
+                "Mastering theoretical principles from books is sufficient to resolve community issues without testing and refinement."
+            ],
+            "answer": "Perseverance and applying knowledge can overcome difficult real-world challenges.",
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Pesan Moral Teks Naratif (Moral Value):\n   Teks mengisahkan inisiatif Tariq dalam mengatasi kelangkaan air minum tawar di lembah pesisir berair payau melalui studi mandiri prinsip distilasi surya dan kegigihan menyempurnakan alat saat mengalami kebocoran dan keraguan sosial. Keberhasilan akhir membuktikan bahwa ketekunan dan penerapan pengetahuan praktis mampu memecahkan masalah nyata.\n\n2. Pembahasan Kunci Jawaban:\n   - Perseverance and applying knowledge can overcome difficult real-world challenges (BENAR): Menangkap secara utuh pesan moral cerita bahwa tekad pantang menyerah dan aplikasi ilmu pengetahuan mampu menyelesaikan masalah krusial di lingkungan masyarakat.\n\n3. Pembahasan Distraktor:\n   - Communities should rely on external aid rather than developing local initiatives (Salah): Narasi justru memuji inisiatif mandiri Tariq yang menciptakan solusi lokal berbiaya terjangkau daripada sekadar bergantung pada pembelian air kemasan dari luar.\n   - Initial experimental failures indicate that a new practical concept should be abandoned (Salah): Kegagalan dua prototipe awal Tariq terbukti merupakan proses pembelajaran dan penyempurnaan desain, bukan alasan untuk menghentikan ide.\n   - Mastering theoretical principles from books is sufficient to resolve community issues without testing and refinement (Salah): Pemahaman teori dari buku manual terbukti memerlukan pengujian langsung di lapangan, penambalan kebocoran, dan penyesuaian kemiringan kaca agar menghasilkan air bersih.",
+            "source": {
+                "student_book": {
+                    "pages": "1-54",
+                    "section": "Unit 1: Narrative Text: The Story of a Friendly Future"
+                },
+                "teacher_guide": {
+                    "pages": "33-88",
+                    "section": "Unit 1: Understanding Narrative Themes and Moral Values"
+                }
+            },
+            "provenance": "Stimulus naratif fiksi mandiri yang menguji pemahaman pesan moral pemecahan masalah lingkungan; selaras dengan tema inovasi hijau Unit 1 Kurikulum Merdeka Fase F.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+                "competency_target": "ENG12-C01-C: Memahami ide pokok, resolusi konflik, dan pesan moral dalam teks naratif bertema inovasi solusi lingkungan",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 1-54 (Unit 1: The Story of a Friendly Future)",
+                    "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 33-88 (Teaching Narrative Texts)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Karakter Tariq, latar lembah pesisir kering, prototipe penyulingan air tenaga surya dari kaca bekas dan bambu, serta seluruh opsi distraktor dirancang mandiri oleh proyek sebagai karya fiksi orisinal tanpa menyalin teks atau biografi tokoh pihak ketiga."
+            },
+            "mode": "learning",
+            "game_mechanic": "meaning_check",
+            "tags": [
+                "narrative_text",
+                "moral_value",
+                "kontekstual"
+            ],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": [
+                "Kurikulum Merdeka"
+            ],
+            "topic": "Narrative Values",
+            "difficulty": "easy",
+            "cognitive_level": "understand",
+            "question_type": "contextual",
+            "estimated_time_seconds": 60
+        },
+        {
+            "id": "ENG-C01-C-MED",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-C",
+            "skill": "apply",
+            "question": "A news item text typically starts with a 'Newsworthy Event' paragraph. What is the primary characteristic of this paragraph?",
+            "options": [
+                "It provides quotes from witnesses and experts.",
+                "It tells a summary of the main event in a brief and concise way.",
+                "It explains the background causes of the event in chronological order.",
+                "It gives the writer's personal opinion about the news."
+            ],
+            "answer": "It tells a summary of the main event in a brief and concise way.",
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Generik Teks Berita (News Item Text):\n   Struktur teks berita jurnalistik standar terdiri atas:\n   - Newsworthy Event (Headline / Main Event): Paragraf pembuka yang menyajikan rangkuman peristiwa utama secara singkat, padat, dan faktual (menjawab unsur 5W+1H inti: apa, siapa, di mana, kapan).\n   - Background Events (Elaboration): Bagian tubuh yang menguraikan latar belakang, kronologi kejadian, konteks penyebab, dan detail peristiwa secara runtut.\n   - Sources of Information (Quotes): Bagian yang memuat komentar, kesaksian, atau pernyataan resmi dari saksi mata, korban, ahli, atau pejabat berwenang.\n\n2. Pembahasan Kunci Jawaban:\n   - It tells a summary of the main event in a brief and concise way (BENAR): Karakteristik definitif dari paragraf Newsworthy Event adalah meringkas pokok kejadian penting secara singkat dan padat.\n\n3. Pembahasan Distraktor:\n   - It provides quotes from witnesses and experts (Salah): Merupakan fungsi dari bagian 'Sources' (kutipan saksi/ahli), bukan paragraf pembuka Newsworthy Event.\n   - It explains the background causes of the event in chronological order (Salah): Merupakan fungsi dari bagian 'Background Events / Elaboration' yang menjabarkan urutan kronologis sebab-akibat.\n   - It gives the writer's personal opinion about the news (Salah): Teks berita jurnalistik wajib menjaga prinsip objektivitas dan kenetralan fakta; opini pribadi jurnalis tidak boleh disajikan sebagai berita utama.",
+            "source": {
+                "student_book": {
+                    "pages": "61-80",
+                    "section": "Chapter 5: Who was Involved? (News Item)"
+                },
+                "teacher_guide": {
+                    "pages": "67-82",
+                    "section": "Chapter 5: Generic Structure and Social Function of News Items"
+                }
+            },
+            "provenance": "Soal orisinal penerapan struktur generik teks berita (News Item); konsep merujuk pada Buku Siswa K13 hlm. 61–80 dan TKA Muatan Teks Informasi.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & TKA Bahasa Inggris Wajib",
+                "competency_target": "ENG12-C01-C: Menganalisis fungsi sosial, struktur teks, dan karakteristik bagian Newsworthy Event dalam teks berita (news item)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 61-80 (Chapter 5: News Item)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 67-82 (Panduan Pembelajaran Teks Berita)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Pertanyaan konseptual struktur teks jurnalistik, opsi bagian teks berita, dan pembahasan komparatif disusun mandiri oleh proyek sesuai standar kompetensi membaca teks informasi."
+            },
+            "mode": "learning",
+            "game_mechanic": "evidence_scan",
+            "tags": [
+                "news_item",
+                "generic_structure",
+                "fundamental_k13"
+            ],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": [
+                "K13"
+            ],
+            "topic": "News Item Structure",
+            "difficulty": "medium",
+            "cognitive_level": "apply",
+            "question_type": "konseptual",
+            "estimated_time_seconds": 90
+        },
+        {
+            "id": "ENG-C01-C-HARD",
+            "chapter_id": "ENG12-C01",
+            "topic_id": "ENG12-C01-C",
+            "skill": "evaluate",
+            "question": "Read the excerpts from two different news outlets regarding the same event:\nOutlet A: 'The city council's bold new zoning laws aim to drastically reduce urban sprawl and promote green spaces, despite minor complaints from developers.'\nOutlet B: 'Small business owners face crippling restrictions under the city council's aggressive zoning overhaul, which prioritizes empty parks over economic growth.'\nBy comparing both texts, what can a critical reader conclude?",
+            "options": [
+                "The new zoning laws will definitely destroy the city's economy.",
+                "News reports can frame the exact same factual event using different biases.",
+                "Outlet A is telling the truth while Outlet B is spreading fake news.",
+                "The city council intentionally wants to ruin small businesses."
+            ],
+            "answer": "News reports can frame the exact same factual event using different biases.",
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Wacana Kritis (Critical Discourse Analysis):\n   Kedua kutipan memberitakan kebijakan yang sama (peraturan zonasi kota baru oleh dewan kota), namun menggunakan pilihan kata bermuatan emosional (loaded words) yang sangat kontras:\n   - Outlet A membingkai secara positif/ramah lingkungan: menyebut kebijakan sebagai 'bold new zoning laws', mereduksi penolakan sebagai 'minor complaints', dan menekankan 'promote green spaces'.\n   - Outlet B membingkai secara negatif/kritis ekonomi: menyebut kebijakan sebagai 'aggressive zoning overhaul', dampaknya sebagai 'crippling restrictions', dan meremehkan taman sebagai 'empty parks'.\n\n2. Pembahasan Kunci Jawaban:\n   - News reports can frame the exact same factual event using different biases (BENAR): Pembaca kritis menyimpulkan bahwa media massa dapat membingkai fakta yang sama dari sudut pandang (framing) dan keberpihakan/bias leksikal yang berbeda.\n\n3. Pembahasan Distraktor:\n   - The new zoning laws will definitely destroy the city's economy (Salah): Mengadopsi narasi bias Outlet B secara mentah tanpa sikap kritis objektif.\n   - Outlet A is telling the truth while Outlet B is spreading fake news (Salah): Terjebak dalam dikotomi keliru hitam-putih; kedua teks melaporkan fakta kebijakan yang sama, perbedaannya terletak pada sudut pandang dan tone bahasa, bukan pemalsuan fakta.\n   - The city council intentionally wants to ruin small businesses (Salah): Kesimpulan ekstrem yang mengatribusikan niat jahat tanpa bukti wacana yang memadai.",
+            "source": {
+                "student_book": {
+                    "pages": "N/A",
+                    "section": "Kerangka Asesmen TKA SMA/SMK: Bagian 3 Bahasa Inggris Wajib (Evaluasi dan Apresiasi)"
+                },
+                "teacher_guide": {
+                    "pages": "N/A",
+                    "section": "Pedoman Penilaian Literasi Membaca dan Evaluasi Wacana Kritis"
+                }
+            },
+            "provenance": "Soal orisinal literasi wacana jurnalistik tingkat tinggi untuk mengevaluasi framing media dan bias leksikal; konsep merujuk pada standar TKA Tingkat Kompetensi 3.",
+            "source_basis": {
+                "curriculum_framework": "Kerangka Asesmen Tes Kemampuan Akademik (Peraturan Kepala BSKAP Nomor 045/H/AN/2025)",
+                "competency_target": "TKA Bahasa Inggris Wajib: Tingkat Kompetensi 3 (Evaluasi dan Apresiasi) — Menanggapi secara kritis argumen, objektivitas, dan sudut pandang wacana informasi",
+                "concept_reference": {
+                    "student_book": "Dokumen Kerangka Asesmen TKA Jenjang SMA/MA/SMK/MAK (Bagian 3: Bahasa Inggris Wajib - Evaluasi dan Apresiasi)",
+                    "teacher_guide": "N/A (Panduan asesmen literasi membaca wacana kritis berbasis Kerangka Asesmen TKA Wajib)"
+                },
+                "support_category": "INDIRECT",
+                "authoring_statement": "Dua kutipan berita rekaan dengan diksi kontras (bold vs aggressive, minor complaints vs crippling restrictions) disusun mandiri oleh proyek sebagai instrumen asesmen wacana kritis orisinal tanpa menyalin artikel berita komersial."
+            },
+            "mode": "tka_preview",
+            "game_mechanic": "meaning_check",
+            "tags": [
+                "news_item",
+                "media_bias",
+                "critical_reading",
+                "tka_bonus"
+            ],
+            "subject": "Bahasa Inggris",
+            "track": "wajib",
+            "curriculum_source": [
+                "TKA"
+            ],
+            "topic": "Critical Discourse Analysis (TKA)",
+            "difficulty": "hard",
+            "cognitive_level": "evaluate",
+            "question_type": "penalaran",
+            "estimated_time_seconds": 120
+        }
+    ]
+}

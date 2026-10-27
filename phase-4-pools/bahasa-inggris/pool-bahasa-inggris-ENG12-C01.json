@@ -1,428 +1,599 @@
-﻿{
-    "track":  "wajib",
-    "questions":  [
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "understand",
-                          "question_id":  "ENG12-C01-A-8226",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Receptionist: \u0027Good morning, Sir. May I help you with your baggage?\u0027\nGuest: \u0027Yes, please. I have two heavy suitcases in the trunk.\u0027\nThe receptionist\u0027s utterance expresses...",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Asking for help"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Offering a service"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Refusing an offer"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Giving an instruction"
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C01-A",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "The phrase \u0027May I help you\u0027 is a standard formal expression used to offer assistance or a service to someone else.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "ENG12-C01-A-3915",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "\u0027If you want to pass the final exam with flying colors, you ________ study harder starting today.\u0027\nChoose the most appropriate modal to complete the conditional sentence with an advice.",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "would"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "should"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "could"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "might"
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C01-A",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "This is a Conditional Sentence type 1 pattern used to give advice (If + simple present, subject + should/ought to/had better + V1). \u0027Should\u0027 is the most appropriate modal for giving strong advice.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "ENG12-C01-A-5634",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Read the dialogue.\nSarah: \u0027I failed my driving test again.\u0027\nMark: \u0027If you hadn\u0027t been so nervous about the parallel parking, you wouldn\u0027t have hit the cone.\u0027\nWhat can we infer from Mark\u0027s statement?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Sarah is not nervous anymore about driving."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Sarah hit the cone because she was nervous."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Mark thinks parallel parking is the hardest part."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Sarah passed the test despite hitting the cone."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C01-A",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "Mark uses a Type 3 Conditional (\u0027If you hadn\u0027t been... you wouldn\u0027t have...\u0027), which describes a past unreal situation. The reality is the opposite of the \u0027if\u0027 clause: she WAS nervous, and as a result, she DID hit the cone.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "understand",
-                          "question_id":  "ENG12-C01-B-9156",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "A picture in a magazine shows a group of volunteers planting trees in a barren area. Below the picture, it says: \u0027Local heroes taking real action against climate change in West Java.\u0027\nWhat is the main function of the text below the picture?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "To give a detailed explanation of climate change."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "To provide context and brief information about the picture."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "To persuade readers to donate money for trees."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "To tell a fictional story about West Java."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C01-B",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "The text is a \u0027caption\u0027. The primary social function of a caption is to provide context, description, or brief information explaining what is happening in a picture or photograph.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "ENG12-C01-B-2031",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Read this excerpt from an application letter:\n\u0027I am writing to express my interest in the Web Developer position listed on your company website. With a Bachelor\u0027s degree in Computer Science and three years of experience in front-end development, I am confident in my ability to contribute effectively to your team.\u0027\nWhich part of an application letter is this excerpt?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Salutation"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Opening paragraph"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Closing paragraph"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Signature"
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C01-B",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "The excerpt clearly states the purpose of the letter (applying for a specific position) and briefly summarizes the applicant\u0027s core qualifications, which is the standard structure for the opening paragraph (body) of an application letter.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "ENG12-C01-B-4416",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Excerpt from an application letter:\n\u0027While my previous roles were primarily in graphic design, I have spent the last 18 months independently managing social media campaigns for local NGOs, increasing their engagement by 40%. Therefore, I believe my transition into digital marketing will bring a fresh, visual-first perspective to your agency.\u0027\nWhat is the applicant implicitly trying to achieve in this paragraph?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "To apologize for not having a formal degree in digital marketing."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "To reframe a potential weakness (lack of direct agency experience) into a unique strength."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "To complain about their previous graphic design job."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "To demand a higher salary due to their NGO experience."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C01-B",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "The applicant acknowledges a non-traditional background (graphic design instead of digital marketing) but immediately bridges it with relevant independent experience (NGOs) and frames it as a unique advantage (\u0027visual-first perspective\u0027). This is a strategic move to overcome a perceived lack of experience.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "understand",
-                          "question_id":  "ENG12-C01-C-7107",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Read the short narrative summary:\n\u0027Once, in a small village, lived a boy named Killion who dreamed of bringing electricity to his dark town. Despite everyone mocking him, he studied windmills from an old library book. After months of scavenging parts and failing repeatedly, his makeshift turbine finally lit up a single bulb, changing the village forever.\u0027\nWhat is the main moral value of the story?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Electricity is dangerous for small villages."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Perseverance and education can make the impossible possible."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "You should not read old books from the library."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Mocking others is a good way to motivate them."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C01-C",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "The narrative highlights Killion\u0027s determination (perseverance) despite being mocked and failing, and his use of a book (education) to finally achieve his goal and help his village.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "ENG12-C01-C-9385",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "A news item text typically starts with a \u0027Newsworthy Event\u0027 paragraph. What is the primary characteristic of this paragraph?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "It provides quotes from witnesses and experts."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "It tells a summary of the main event in a brief and concise way."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "It explains the background causes of the event in chronological order."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "It gives the writer\u0027s personal opinion about the news."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C01-C",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "The generic structure of a News Item begins with the Newsworthy Event (or Main Event), which is a brief summary of the most important happening. Details and background come later in the \u0027Background Events\u0027 section.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "ENG12-C01-C-4782",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Read the excerpts from two different news outlets regarding the same event:\nOutlet A: \u0027The city council\u0027s bold new zoning laws aim to drastically reduce urban sprawl and promote green spaces, despite minor complaints from developers.\u0027\nOutlet B: \u0027Small business owners face crippling restrictions under the city council\u0027s aggressive zoning overhaul, which prioritizes empty parks over economic growth.\u0027\nBy comparing both texts, what can a critical reader conclude?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "The new zoning laws will definitely destroy the city\u0027s economy."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "News reports can frame the exact same factual event using different biases."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Outlet A is telling the truth while Outlet B is spreading fake news."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "The city council intentionally wants to ruin small businesses."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C01-C",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "Both texts report on the same event (new zoning laws) but use highly charged vocabulary to frame it differently (Outlet A favors the environmental aspect; Outlet B favors the economic aspect). A critical reader evaluates this as evidence of media framing and bias, not absolute truth vs lie.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      }
-                  ],
-    "curriculum":  [
-                       "K13",
-                       "Merdeka"
-                   ],
-    "grade":  12,
-    "competencies":  [
-                         {
-                             "name":  "Kompetensi ENG12-C01-C",
-                             "question_count":  3,
-                             "competency_id":  "ENG12-C01-C"
-                         },
-                         {
-                             "name":  "Kompetensi ENG12-C01-A",
-                             "question_count":  3,
-                             "competency_id":  "ENG12-C01-A"
-                         },
-                         {
-                             "name":  "Kompetensi ENG12-C01-B",
-                             "question_count":  3,
-                             "competency_id":  "ENG12-C01-B"
-                         }
-                     ],
-    "subject":  "bahasa-inggris",
-    "chapter":  "ENG12-C01",
-    "status":  "active",
-    "content_version":  1,
-    "pool_id":  "POOL-BAHASA-INGGRIS-ENG12-C01"
+{
+    "track": "wajib",
+    "questions": [
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "understand",
+            "question_id": "ENG12-C01-A-8226",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "",
+                "stimulus_type": "",
+                "suitable": false
+            },
+            "question": "Receptionist: 'Good morning, Sir. May I help you with your baggage?'\nGuest: 'Yes, please. I have two heavy suitcases in the trunk.'\nThe receptionist's utterance expresses...",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "Asking for help"
+                },
+                {
+                    "id": "B",
+                    "text": "Offering a service"
+                },
+                {
+                    "id": "C",
+                    "text": "Refusing an offer"
+                },
+                {
+                    "id": "D",
+                    "text": "Giving an instruction"
+                }
+            ],
+            "primary_competency": "ENG12-C01-A",
+            "difficulty_label": "easy",
+            "gameplay": {
+                "correct_damage": 50,
+                "base_xp": 10,
+                "wrong_penalty": 5,
+                "attack_type": "light"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Fungsi Wacana Interpersonal:\n   Ungkapan 'May I help you with...' adalah formula formal yang baku digunakan oleh staf pelayanan (resepsionis, pramusaji, petugas tiket) untuk menawarkan bantuan atau jasa kepada pelanggan.\n\n2. Pembahasan Kunci Jawaban:\n   - Offering a service (BENAR): Resepsionis berinisiatif menyediakan bantuan penanganan bagasi tamu hotel.\n\n3. Pembahasan Distraktor:\n   - Asking for help (Salah): Arah bantuan terbalik; pembicara adalah pihak yang menawarkan diri untuk membantu, bukan pihak yang meminta pertolongan (asking for help biasanya menggunakan 'Could you help me?').\n   - Refusing an offer (Salah): Dialog tidak menunjukkan penolakan tawaran; tamu justru menerima tawaran dengan mengatakan 'Yes, please'.\n   - Giving an instruction (Salah): Resepsionis tidak sedang memberikan instruksi atau perintah prosedural kepada tamu, melainkan mengajukan tawaran bantuan yang bersifat opsional.",
+            "question_type": "single_select",
+            "estimated_time_seconds": 60,
+            "source": {
+                "student_book": {
+                    "pages": "1-14",
+                    "section": "Chapter 1: May I Help You?"
+                },
+                "teacher_guide": {
+                    "pages": "1-18",
+                    "section": "Chapter 1: Offering Services and Interpersonal Interaction"
+                }
+            },
+            "provenance": "Soal orisinal pemahaman konteks dialog pelayanan formal; konsep dasar merujuk pada Buku Siswa K13 hlm. 1–14 dan selaras dengan Capaian Pembelajaran Kurikulum Merdeka Fase F Elemen Menyimak-Berbicara.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Kelas XII)",
+                "competency_target": "ENG12-C01-A: Mengidentifikasi fungsi sosial, struktur teks, dan unsur kebahasaan ungkapan menawarkan jasa/bantuan (offering services/help)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 1-14 (Chapter 1: May I Help You?)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 1-18 (Panduan Pembelajaran Offering Services)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Skenario dialog resepsionis hotel dan tamu, pilihan fungsi wacana, serta dekonstruksi miskonsepsi disusun mandiri oleh proyek sebagai instrumen asesmen formatif orisinal tanpa menyalin kalimat buku teks."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "apply",
+            "question_id": "ENG12-C01-A-3915",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "",
+                "stimulus_type": "",
+                "suitable": false
+            },
+            "question": "'If you want to pass the final exam with flying colors, you ________ study harder starting today.'\nChoose the most appropriate modal to express advice.",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "would"
+                },
+                {
+                    "id": "B",
+                    "text": "should"
+                },
+                {
+                    "id": "C",
+                    "text": "will"
+                },
+                {
+                    "id": "D",
+                    "text": "might"
+                }
+            ],
+            "primary_competency": "ENG12-C01-A",
+            "difficulty_label": "medium",
+            "gameplay": {
+                "correct_damage": 100,
+                "base_xp": 10,
+                "wrong_penalty": 5,
+                "attack_type": "medium"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Pola Kalimat dan Tujuan Komunikatif:\n   Stem kalimat menguji pengisian rumpang dengan instruksi spesifik: 'Choose the most appropriate modal to express advice.' Kalimat mensyaratkan modal yang secara fungsional mengekspresikan anjuran atau rekomendasi normatif terarah ('study harder starting today') sebagai respons terhadap kondisi yang diharapkan ('pass the final exam with flying colors').\n\n2. Pembahasan Kunci Jawaban:\n   - should (BENAR): Merupakan modal bantu standar dalam bahasa Inggris yang secara tepat berfungsi menyatakan anjuran, saran, atau rekomendasi normatif (advice/recommendation).\n\n3. Pembahasan Distraktor:\n   - would (Kurang Tepat): Modal 'would' lazim digunakan untuk menyatakan konsekuensi hipotetis dalam pola kondisional tertentu (misalnya situasi imajiner/pengandaian), sehingga kurang tepat untuk memenuhi fungsi penyampaian nasihat yang secara spesifik diminta oleh instruksi soal.\n   - will (Kurang Tepat): Modal 'will' berfokus pada prediksi masa depan atau kepastian konsekuensi logis (future prediction / factual certainty), bukan tindak tutur pemberian nasihat (advice).\n   - might (Kurang Tepat): Modal 'might' menyatakan kemungkinan lemah atau hasil tentatif (weak possibility / tentative outcome), sehingga kurang sesuai sebagai anjuran tindakan terarah untuk mencapai kelulusan ujian.",
+            "question_type": "single_select",
+            "estimated_time_seconds": 90,
+            "source": {
+                "student_book": {
+                    "pages": "15-30",
+                    "section": "Chapter 2: Why Don't You Visit Seattle? (Conditionals + Suggestion)"
+                },
+                "teacher_guide": {
+                    "pages": "19-34",
+                    "section": "Chapter 2: Grammar Focus: If Clause followed by imperative/suggestion"
+                }
+            },
+            "provenance": "Soal orisinal penerapan struktur Conditional Clause diikuti saran/anjuran; konsep dasar merujuk pada Buku Siswa K13 hlm. 15–30.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Kelas XII)",
+                "competency_target": "ENG12-C01-A: Menerapkan fungsi sosial, struktur teks, dan unsur kebahasaan pengandaian diikuti saran/anjuran (if clause + suggestion)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 15-30 (Chapter 2: Conditionals followed by advice)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 19-34 (Grammar Focus: If Clause followed by suggestion)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Konteks kalimat pengandaian kelulusan ujian, pembatasan opsi modal untuk menjamin keunikan kunci tunggal, dan pembahasan diferensiasi modalitas disusun mandiri oleh proyek."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "analyze",
+            "question_id": "ENG12-C01-A-5634",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "literacy",
+                "stimulus_type": "contextual",
+                "suitable": true
+            },
+            "question": "Read the dialogue.\nSarah: 'I failed my driving test again.'\nMark: 'If you hadn't been so nervous about the parallel parking, you wouldn't have hit the cone.'\nWhat can we infer from Mark's statement?",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "Sarah is not nervous anymore about driving."
+                },
+                {
+                    "id": "B",
+                    "text": "Sarah hit the cone because she was nervous."
+                },
+                {
+                    "id": "C",
+                    "text": "Mark thinks parallel parking is the hardest part."
+                },
+                {
+                    "id": "D",
+                    "text": "Sarah passed the test despite hitting the cone."
+                }
+            ],
+            "primary_competency": "ENG12-C01-A",
+            "difficulty_label": "hard",
+            "gameplay": {
+                "correct_damage": 150,
+                "base_xp": 20,
+                "wrong_penalty": 5,
+                "attack_type": "heavy"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Tata Bahasa Kontrafaktual:\n   Pernyataan Mark menggunakan Conditional Type 3 ('If + past perfect [hadn't been], S + would + have + V3 [wouldn't have hit]'). Struktur ini menyatakan situasi pengandaian kontrafaktual masa lampau (past unreal), di mana fakta nyata di dunia nyata adalah kebalikan dari klausanya.\n\n2. Penarikan Kesimpulan (Inference):\n   - Klausa 'If you hadn't been so nervous' mengimplikasikan fakta nyata: Sarah sebenarnya gugup (Sarah was nervous).\n   - Klausa 'you wouldn't have hit the cone' mengimplikasikan fakta nyata: Sarah menabrak kerucut pembatas (Sarah did hit the cone).\n   - Hubungan kausalitas implisit: Kegugupan Sarah menjadi penyebab dia menabrak kerucut pembatas saat ujian parkir paralel.\n\n3. Pembahasan Distraktor:\n   - Sarah is not nervous anymore about driving (Salah): Pernyataan Mark membahas kondisi psikologis Sarah saat ujian berlangsung di masa lampau, bukan kondisi Sarah saat ini.\n   - Sarah hit the cone because she was nervous (BENAR): Kesimpulan deduktif faktual yang tepat dari struktur pengandaian tipe 3.\n   - Mark thinks parallel parking is the hardest part (Salah): Kesimpulan spekulatif eksternal yang tidak dinyatakan atau diimplikasikan oleh Mark.\n   - Sarah passed the test despite hitting the cone (Salah): Bertentangan langsung dengan premis dialog awal Sarah ('I failed my driving test again').",
+            "question_type": "single_select",
+            "estimated_time_seconds": 120,
+            "source": {
+                "student_book": {
+                    "pages": "101-135",
+                    "section": "TKA Kerangka Asesmen: Pemahaman Inferensial Wacana"
+                },
+                "teacher_guide": {
+                    "pages": "222-240",
+                    "section": "TKA Aspek Bahasa: Penalaran Struktur Gramatikal Kompleks"
+                }
+            },
+            "provenance": "Soal orisinal literasi penalaran inferensial wacana berbasis tata bahasa kontrafaktual lampau; konsep merujuk pada Kerangka Asesmen TKA.",
+            "source_basis": {
+                "curriculum_framework": "Kerangka Asesmen TKA (Salinan Peraturan Kepala BSKAP Nomor 045/H/AN/2025)",
+                "competency_target": "TKA Bahasa Inggris Wajib: Tingkat Kompetensi 2 (Pemahaman Inferensial) — Menyimpulkan makna tersirat, hubungan kausalitas, dan fakta nyata dari struktur kalimat pengandaian kontrafaktual",
+                "concept_reference": {
+                    "student_book": "Salinan Peraturan Kepala BSKAP No. 045/H/AN/2025 hlm. 101-135 (TKA Bahasa Inggris Wajib - Muatan Aspek Bahasa)",
+                    "teacher_guide": "Salinan Peraturan Kepala BSKAP No. 045/H/AN/2025 hlm. 222-240 (Aspek Bahasa: Conditionals and Inferred Meaning)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Skenario dialog ujian mengemudi Mark dan Sarah, analisis deduktif kontrafaktual lampau, dan opsi kesimpulan inferensial disusun mandiri oleh proyek sebagai instrumen penalaran gramatikal tingkat tinggi."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "understand",
+            "question_id": "ENG12-C01-B-9156",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "",
+                "stimulus_type": "",
+                "suitable": false
+            },
+            "question": "A picture in a magazine shows a group of volunteers planting trees in a barren area. Below the picture, it says: 'Local heroes taking real action against climate change in West Java.'\nWhat is the main function of the text below the picture?",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "To give a detailed explanation of climate change."
+                },
+                {
+                    "id": "B",
+                    "text": "To provide context and brief information about the picture."
+                },
+                {
+                    "id": "C",
+                    "text": "To persuade readers to donate money for trees."
+                },
+                {
+                    "id": "D",
+                    "text": "To tell a fictional story about West Java."
+                }
+            ],
+            "primary_competency": "ENG12-C01-B",
+            "difficulty_label": "easy",
+            "gameplay": {
+                "correct_damage": 50,
+                "base_xp": 10,
+                "wrong_penalty": 5,
+                "attack_type": "light"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Fungsi Teks Penyerta Gambar (Caption):\n   Teks di bawah foto dalam majalah merupakan 'caption'. Fungsi sosial utama caption adalah melabuhkan makna visual (anchoring meaning), memberikan konteks ringkas mengenai siapa/apa yang ada di foto, di mana peristiwa terjadi, serta pesan inti dari foto tersebut.\n\n2. Pembahasan Kunci Jawaban:\n   - To provide context and brief information about the picture (BENAR): Menjelaskan esensi foto (siapa: sukarelawan, apa: aksi iklim penanaman pohon, di mana: Jawa Barat) secara padat dan informatif.\n\n3. Pembahasan Distraktor:\n   - To give a detailed explanation of climate change (Salah): Caption bersifat ringkas dan padat (brief), bukan artikel ilmiah/eksposisi mendalam yang memaparkan mekanisme perubahan iklim secara detail.\n   - To persuade readers to donate money for trees (Salah): Teks caption bersifat jurnalistik informatif, tidak memuat klausa ajakan atau permohonan donasi dana (persuasive appeal).\n   - To tell a fictional story about West Java (Salah): Teks mencatat aksi nyata para sukarelawan (faktual), bukan cerita rekaan imajinatif (fictional narrative).",
+            "question_type": "single_select",
+            "estimated_time_seconds": 60,
+            "source": {
+                "student_book": {
+                    "pages": "31-42",
+                    "section": "Chapter 3: Creating Captions"
+                },
+                "teacher_guide": {
+                    "pages": "35-48",
+                    "section": "Chapter 3: Social Function and Language Features of Captions"
+                }
+            },
+            "provenance": "Soal orisinal identifikasi fungsi sosial teks caption foto; konsep dasar merujuk pada Buku Siswa K13 hlm. 31–42 dan selaras dengan Capaian Pembelajaran Kurikulum Merdeka Fase F Elemen Membaca-Memirsa teks multimodal.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Kelas XII)",
+                "competency_target": "ENG12-C01-B: Mengidentifikasi fungsi sosial, struktur teks, dan unsur kebahasaan teks penyerta gambar (caption)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 31-42 (Chapter 3: Creating Captions)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 35-48 (Panduan Pembelajaran Caption)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Deskripsi foto sukarelawan lingkungan di Jawa Barat dan analisis fungsi caption disusun mandiri oleh proyek sebagai instrumen literasi visual orisinal."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "apply",
+            "question_id": "ENG12-C01-B-2031",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "",
+                "stimulus_type": "",
+                "suitable": false
+            },
+            "question": "Read this excerpt from an application letter:\n'I am writing to express my interest in the Web Developer position listed on your company website. With a Bachelor's degree in Computer Science and three years of experience in front-end development, I am confident in my ability to contribute effectively to your team.'\nWhich part of an application letter is this excerpt?",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "Body paragraph detailing technical project achievements"
+                },
+                {
+                    "id": "B",
+                    "text": "Opening paragraph stating the position applied for"
+                },
+                {
+                    "id": "C",
+                    "text": "Closing paragraph requesting an interview"
+                },
+                {
+                    "id": "D",
+                    "text": "Complimentary close addressing the employer"
+                }
+            ],
+            "primary_competency": "ENG12-C01-B",
+            "difficulty_label": "medium",
+            "gameplay": {
+                "correct_damage": 100,
+                "base_xp": 10,
+                "wrong_penalty": 5,
+                "attack_type": "medium"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Generik Surat Lamaran Kerja (Application Letter):\n   Struktur baku tubuh surat lamaran kerja terdiri atas:\n   - Opening paragraph: Menyatakan tujuan penulisan surat, posisi yang dilamar, dan ringkasan singkat kualifikasi utama.\n   - Body / Middle paragraph: Menjabarkan secara rinci portofolio pengalaman kerja, pencapaian proyek, dan keterampilan spesifik.\n   - Closing paragraph: Menyatakan ketersediaan wawancara, mencantumkan kontak, dan menyampaikan apresiasi.\n   - Complimentary close: Salam penutup formal (e.g., 'Sincerely,').\n\n2. Pembahasan Kunci Jawaban:\n   - Opening paragraph stating the position applied for (BENAR): Kutipan secara eksplisit menyatakan intensi melamar posisi Web Developer ('I am writing to express my interest in the Web Developer position...') yang merupakan fungsi mutlak dari paragraf pembuka.\n\n3. Pembahasan Distraktor:\n   - Body paragraph detailing technical project achievements (Salah): Paragraf isi mendalam berfokus menguraikan rincian proyek teknologi dan tanggung jawab teknis terdahulu, bukan pembukaan pernyataan minat posisi.\n   - Closing paragraph requesting an interview (Salah): Paragraf penutup berisi permohonan wawancara dan tindak lanjut (action request), bukan pernyataan kualifikasi awal pembuka.\n   - Complimentary close addressing the employer (Salah): Merupakan frasa salam penutup baku di akhir surat sebelum tanda tangan, bukan badan paragraf naratif.",
+            "question_type": "single_select",
+            "estimated_time_seconds": 90,
+            "source": {
+                "student_book": {
+                    "pages": "43-60",
+                    "section": "Chapter 4: Do You Know How to Apply for a Job?"
+                },
+                "teacher_guide": {
+                    "pages": "49-66",
+                    "section": "Chapter 4: Generic Structure of Application Letter"
+                }
+            },
+            "provenance": "Soal orisinal penerapan struktur generik surat lamaran kerja; materi berstatus ENRICHMENT kesiapan karir pasca-sekolah menengah pada Kurikulum Merdeka Fase F dengan rujukan teknis K13 Bab 4.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Pengayaan Literasi Karir)",
+                "competency_target": "ENG12-C01-B: Menganalisis fungsi sosial dan struktur generik teks khusus dalam bentuk surat lamaran kerja (application letter)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 43-60 (Chapter 4: Application Letter)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 49-66 (Panduan Struktur Generik Surat Lamaran)"
+                },
+                "support_category": "ENRICHMENT",
+                "authoring_statement": "Kutipan surat lamaran kerja posisi Web Developer, perancangan opsi bagian tubuh surat yang seimbang, dan pembahasan pembeda struktur disusun mandiri oleh proyek."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "evaluate",
+            "question_id": "ENG12-C01-B-4416",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "literacy",
+                "stimulus_type": "contextual",
+                "suitable": true
+            },
+            "question": "An applicant writes in her cover letter:\n\"Although I have not worked in a multinational firm before, my leadership in national student organizations has honed my cross-cultural communication and rapid problem-solving skills.\"\nWhat is the applicant's primary communicative strategy in this sentence?",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "To apologize for lacking formal experience in a multinational firm."
+                },
+                {
+                    "id": "B",
+                    "text": "To reframe a perceived limitation by highlighting transferable strengths."
+                },
+                {
+                    "id": "C",
+                    "text": "To present student leadership titles as direct proof of corporate management readiness."
+                },
+                {
+                    "id": "D",
+                    "text": "To divert the recruiter's focus away from workplace qualifications toward extracurricular activities."
+                }
+            ],
+            "primary_competency": "ENG12-C01-B",
+            "difficulty_label": "hard",
+            "gameplay": {
+                "correct_damage": 150,
+                "base_xp": 20,
+                "wrong_penalty": 5,
+                "attack_type": "heavy"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Retorika dan Strategi Komunikatif:\n   Kalimat pelamar terdiri atas dua klausa yang dihubungkan oleh konjungsi konsesif 'Although':\n   - Klausa dependen konsesif ('Although I have not worked in a multinational firm before'): Pelamar secara terbuka mengakui ketiadaan pengalaman kerja langsung di perusahaan multinasional.\n   - Klausa independen penyeimbang ('my leadership in national student organizations has honed my cross-cultural communication and rapid problem-solving skills'): Pelamar menghubungkan pengalaman kepemimpinan organisasinya dengan keterampilan konkret yang dapat dialihkan (transferable skills) dan relevan untuk konteks multinasional.\n   Pola komunikasi ini adalah bentuk klasik dari 'reframing' (membingkai ulang celah pengalaman bukan sebagai kelemahan, melainkan sebagai peluang menonjolkan kekuatan kompetensi yang dapat ditransfer).\n\n2. Pembahasan Kunci Jawaban:\n   - To reframe a perceived limitation by highlighting transferable strengths (BENAR): Secara tepat menangkap tujuan pragmatik pelamar, yaitu mengubah persepsi atas keterbatasan pengalaman formal menjadi penegasan atas kekuatan keterampilan kepemimpinan yang dapat diterapkan di lingkungan kerja baru.\n\n3. Pembahasan Distraktor:\n   - To apologize for lacking formal experience in a multinational firm (Salah): Pelamar menggunakan klausa konsesif bukan untuk meminta maaf atau mengekspresikan penyesalan/inferioritas, melainkan sebagai pengantar strategis sebelum menegaskan kompetensinya.\n   - To present student leadership titles as direct proof of corporate management readiness (Salah): Pelamar tidak mendasarkan argumennya pada gelar/jabatan organisasi semata atau mengklaim kepemimpinan mahasiswa setara dengan manajemen korporasi, melainkan menyoroti pengembangan keterampilan fungsional spesifik (komunikasi lintas budaya dan pemecahan masalah cepat).\n   - To divert the recruiter's focus away from workplace qualifications toward extracurricular activities (Salah): Pelamar tidak bermaksud mengalihkan perhatian atau menolak relevansi syarat kerja multinasional, melainkan secara konstruktif menjembatani kebutuhan lintas budaya perusahaan dengan kompetensi nyata yang telah ia asah.",
+            "question_type": "single_select",
+            "estimated_time_seconds": 120,
+            "source": {
+                "student_book": {
+                    "pages": "114-135",
+                    "section": "TKA Kerangka Asesmen: Evaluasi Kritis Intensi dan Sikap Penulis"
+                },
+                "teacher_guide": {
+                    "pages": "49-66",
+                    "section": "K13 Chapter 4: Pragmatics and Tone in Formal Letters"
+                }
+            },
+            "provenance": "Soal orisinal literasi analitis evaluasi intensi strategis teks formal karir; konsep merujuk pada standar TKA Evaluasi dan Apresiasi.",
+            "source_basis": {
+                "curriculum_framework": "Kerangka Asesmen TKA (Salinan Peraturan Kepala BSKAP Nomor 045/H/AN/2025)",
+                "competency_target": "TKA Bahasa Inggris Wajib: Tingkat Kompetensi 3 (Evaluasi dan Apresiasi) — Mengevaluasi tujuan tersirat, strategi retoris, dan intensi komunikatif penulis dalam teks faktual formal",
+                "concept_reference": {
+                    "student_book": "Salinan Peraturan Kepala BSKAP No. 045/H/AN/2025 hlm. 114-135 (TKA Bahasa Inggris Wajib - Evaluasi Wacana)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII (K13) hlm. 49-66 (Writing Formal Application Letters)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Kutipan surat lamaran kerja tentang kepemimpinan organisasi mahasiswa dan perusahaan multinasional, opsi interpretasi pragmatik retorika, dan analisis penarikan intensi tersirat disusun mandiri oleh proyek sebagai instrumen evaluasi literasi wacana formal."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "understand",
+            "question_id": "ENG12-C01-C-7107",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "",
+                "stimulus_type": "",
+                "suitable": false
+            },
+            "question": "Read the narrative excerpt:\n'Tariq lived in an arid coastal valley where groundwater was brackish and unfit for drinking during the dry season. While other villagers traveled miles to purchase expensive bottled water, Tariq studied basic distillation principles from an old farming manual. Using salvaged glass windowpanes and bamboo troughs, he built a solar water still that evaporated the salty water and collected clean condensation droplets. His first two prototypes leaked and produced very little water, leading some neighbors to doubt his efforts. Refusing to give up, Tariq carefully resealed the frames and adjusted the tilt of the glass. By the third week, his improved setup reliably supplied safe drinking water for his family and neighbors.'\nWhat is the primary moral lesson conveyed by Tariq's story?",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "Communities should rely on external aid rather than developing local initiatives."
+                },
+                {
+                    "id": "B",
+                    "text": "Perseverance and applying knowledge can overcome difficult real-world challenges."
+                },
+                {
+                    "id": "C",
+                    "text": "Initial experimental failures indicate that a new practical concept should be abandoned."
+                },
+                {
+                    "id": "D",
+                    "text": "Mastering theoretical principles from books is sufficient to resolve community issues without testing and refinement."
+                }
+            ],
+            "primary_competency": "ENG12-C01-C",
+            "difficulty_label": "easy",
+            "gameplay": {
+                "correct_damage": 50,
+                "base_xp": 10,
+                "wrong_penalty": 5,
+                "attack_type": "light"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Pesan Moral Teks Naratif (Moral Value):\n   Teks mengisahkan inisiatif Tariq dalam mengatasi kelangkaan air minum tawar di lembah pesisir berair payau melalui studi mandiri prinsip distilasi surya dan kegigihan menyempurnakan alat saat mengalami kebocoran dan keraguan sosial. Keberhasilan akhir membuktikan bahwa ketekunan dan penerapan pengetahuan praktis mampu memecahkan masalah nyata.\n\n2. Pembahasan Kunci Jawaban:\n   - Perseverance and applying knowledge can overcome difficult real-world challenges (BENAR): Menangkap secara utuh pesan moral cerita bahwa tekad pantang menyerah dan aplikasi ilmu pengetahuan mampu menyelesaikan masalah krusial di lingkungan masyarakat.\n\n3. Pembahasan Distraktor:\n   - Communities should rely on external aid rather than developing local initiatives (Salah): Narasi justru memuji inisiatif mandiri Tariq yang menciptakan solusi lokal berbiaya terjangkau daripada sekadar bergantung pada pembelian air kemasan dari luar.\n   - Initial experimental failures indicate that a new practical concept should be abandoned (Salah): Kegagalan dua prototipe awal Tariq terbukti merupakan proses pembelajaran dan penyempurnaan desain, bukan alasan untuk menghentikan ide.\n   - Mastering theoretical principles from books is sufficient to resolve community issues without testing and refinement (Salah): Pemahaman teori dari buku manual terbukti memerlukan pengujian langsung di lapangan, penambalan kebocoran, dan penyesuaian kemiringan kaca agar menghasilkan air bersih.",
+            "question_type": "single_select",
+            "estimated_time_seconds": 60,
+            "source": {
+                "student_book": {
+                    "pages": "1-54",
+                    "section": "Unit 1: Narrative Text: The Story of a Friendly Future"
+                },
+                "teacher_guide": {
+                    "pages": "33-88",
+                    "section": "Unit 1: Understanding Narrative Themes and Moral Values"
+                }
+            },
+            "provenance": "Stimulus naratif fiksi mandiri yang menguji pemahaman pesan moral pemecahan masalah lingkungan; selaras dengan tema inovasi hijau Unit 1 Kurikulum Merdeka Fase F.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+                "competency_target": "ENG12-C01-C: Memahami ide pokok, resolusi konflik, dan pesan moral dalam teks naratif bertema inovasi solusi lingkungan",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 1-54 (Unit 1: The Story of a Friendly Future)",
+                    "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 33-88 (Teaching Narrative Texts)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Karakter Tariq, latar lembah pesisir kering, prototipe penyulingan air tenaga surya dari kaca bekas dan bambu, serta seluruh opsi distraktor dirancang mandiri oleh proyek sebagai karya fiksi orisinal tanpa menyalin teks atau biografi tokoh pihak ketiga."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "apply",
+            "question_id": "ENG12-C01-C-9385",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "",
+                "stimulus_type": "",
+                "suitable": false
+            },
+            "question": "A news item text typically starts with a 'Newsworthy Event' paragraph. What is the primary characteristic of this paragraph?",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "It provides quotes from witnesses and experts."
+                },
+                {
+                    "id": "B",
+                    "text": "It tells a summary of the main event in a brief and concise way."
+                },
+                {
+                    "id": "C",
+                    "text": "It explains the background causes of the event in chronological order."
+                },
+                {
+                    "id": "D",
+                    "text": "It gives the writer's personal opinion about the news."
+                }
+            ],
+            "primary_competency": "ENG12-C01-C",
+            "difficulty_label": "medium",
+            "gameplay": {
+                "correct_damage": 100,
+                "base_xp": 10,
+                "wrong_penalty": 5,
+                "attack_type": "medium"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Generik Teks Berita (News Item Text):\n   Struktur teks berita jurnalistik standar terdiri atas:\n   - Newsworthy Event (Headline / Main Event): Paragraf pembuka yang menyajikan rangkuman peristiwa utama secara singkat, padat, dan faktual (menjawab unsur 5W+1H inti: apa, siapa, di mana, kapan).\n   - Background Events (Elaboration): Bagian tubuh yang menguraikan latar belakang, kronologi kejadian, konteks penyebab, dan detail peristiwa secara runtut.\n   - Sources of Information (Quotes): Bagian yang memuat komentar, kesaksian, atau pernyataan resmi dari saksi mata, korban, ahli, atau pejabat berwenang.\n\n2. Pembahasan Kunci Jawaban:\n   - It tells a summary of the main event in a brief and concise way (BENAR): Karakteristik definitif dari paragraf Newsworthy Event adalah meringkas pokok kejadian penting secara singkat dan padat.\n\n3. Pembahasan Distraktor:\n   - It provides quotes from witnesses and experts (Salah): Merupakan fungsi dari bagian 'Sources' (kutipan saksi/ahli), bukan paragraf pembuka Newsworthy Event.\n   - It explains the background causes of the event in chronological order (Salah): Merupakan fungsi dari bagian 'Background Events / Elaboration' yang menjabarkan urutan kronologis sebab-akibat.\n   - It gives the writer's personal opinion about the news (Salah): Teks berita jurnalistik wajib menjaga prinsip objektivitas dan kenetralan fakta; opini pribadi jurnalis tidak boleh disajikan sebagai berita utama.",
+            "question_type": "single_select",
+            "estimated_time_seconds": 90,
+            "source": {
+                "student_book": {
+                    "pages": "61-80",
+                    "section": "Chapter 5: Who was Involved? (News Item)"
+                },
+                "teacher_guide": {
+                    "pages": "67-82",
+                    "section": "Chapter 5: Generic Structure and Social Function of News Items"
+                }
+            },
+            "provenance": "Soal orisinal penerapan struktur generik teks berita (News Item); konsep merujuk pada Buku Siswa K13 hlm. 61–80 dan TKA Muatan Teks Informasi.",
+            "source_basis": {
+                "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & TKA Bahasa Inggris Wajib",
+                "competency_target": "ENG12-C01-C: Menganalisis fungsi sosial, struktur teks, dan karakteristik bagian Newsworthy Event dalam teks berita (news item)",
+                "concept_reference": {
+                    "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 61-80 (Chapter 5: News Item)",
+                    "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 67-82 (Panduan Pembelajaran Teks Berita)"
+                },
+                "support_category": "DIRECT",
+                "authoring_statement": "Pertanyaan konseptual struktur teks jurnalistik, opsi bagian teks berita, dan pembahasan komparatif disusun mandiri oleh proyek sesuai standar kompetensi membaca teks informasi."
+            }
+        },
+        {
+            "secondary_competencies": [],
+            "cognitive_level": "evaluate",
+            "question_id": "ENG12-C01-C-4782",
+            "question_role": "practice",
+            "tka_alignment": {
+                "competency": "literacy",
+                "stimulus_type": "contextual",
+                "suitable": true
+            },
+            "question": "Read the excerpts from two different news outlets regarding the same event:\nOutlet A: 'The city council's bold new zoning laws aim to drastically reduce urban sprawl and promote green spaces, despite minor complaints from developers.'\nOutlet B: 'Small business owners face crippling restrictions under the city council's aggressive zoning overhaul, which prioritizes empty parks over economic growth.'\nBy comparing both texts, what can a critical reader conclude?",
+            "answer": "B",
+            "options": [
+                {
+                    "id": "A",
+                    "text": "The new zoning laws will definitely destroy the city's economy."
+                },
+                {
+                    "id": "B",
+                    "text": "News reports can frame the exact same factual event using different biases."
+                },
+                {
+                    "id": "C",
+                    "text": "Outlet A is telling the truth while Outlet B is spreading fake news."
+                },
+                {
+                    "id": "D",
+                    "text": "The city council intentionally wants to ruin small businesses."
+                }
+            ],
+            "primary_competency": "ENG12-C01-C",
+            "difficulty_label": "hard",
+            "gameplay": {
+                "correct_damage": 150,
+                "base_xp": 20,
+                "wrong_penalty": 5,
+                "attack_type": "heavy"
+            },
+            "explanation": "Langkah Penyelesaian:\n1. Analisis Wacana Kritis (Critical Discourse Analysis):\n   Kedua kutipan memberitakan kebijakan yang sama (peraturan zonasi kota baru oleh dewan kota), namun menggunakan pilihan kata bermuatan emosional (loaded words) yang sangat kontras:\n   - Outlet A membingkai secara positif/ramah lingkungan: menyebut kebijakan sebagai 'bold new zoning laws', mereduksi penolakan sebagai 'minor complaints', dan menekankan 'promote green spaces'.\n   - Outlet B membingkai secara negatif/kritis ekonomi: menyebut kebijakan sebagai 'aggressive zoning overhaul', dampaknya sebagai 'crippling restrictions', dan meremehkan taman sebagai 'empty parks'.\n\n2. Pembahasan Kunci Jawaban:\n   - News reports can frame the exact same factual event using different biases (BENAR): Pembaca kritis menyimpulkan bahwa media massa dapat membingkai fakta yang sama dari sudut pandang (framing) dan keberpihakan/bias leksikal yang berbeda.\n\n3. Pembahasan Distraktor:\n   - The new zoning laws will definitely destroy the city's economy (Salah): Mengadopsi narasi bias Outlet B secara mentah tanpa sikap kritis objektif.\n   - Outlet A is telling the truth while Outlet B is spreading fake news (Salah): Terjebak dalam dikotomi keliru hitam-putih; kedua teks melaporkan fakta kebijakan yang sama, perbedaannya terletak pada sudut pandang dan tone bahasa, bukan pemalsuan fakta.\n   - The city council intentionally wants to ruin small businesses (Salah): Kesimpulan ekstrem yang mengatribusikan niat jahat tanpa bukti wacana yang memadai.",
+            "question_type": "single_select",
+            "estimated_time_seconds": 120,
+            "source": {
+                "student_book": {
+                    "pages": "N/A",
+                    "section": "Kerangka Asesmen TKA SMA/SMK: Bagian 3 Bahasa Inggris Wajib (Evaluasi dan Apresiasi)"
+                },
+                "teacher_guide": {
+                    "pages": "N/A",
+                    "section": "Pedoman Penilaian Literasi Membaca dan Evaluasi Wacana Kritis"
+                }
+            },
+            "provenance": "Soal orisinal literasi wacana jurnalistik tingkat tinggi untuk mengevaluasi framing media dan bias leksikal; konsep merujuk pada standar TKA Tingkat Kompetensi 3.",
+            "source_basis": {
+                "curriculum_framework": "Kerangka Asesmen Tes Kemampuan Akademik (Peraturan Kepala BSKAP Nomor 045/H/AN/2025)",
+                "competency_target": "TKA Bahasa Inggris Wajib: Tingkat Kompetensi 3 (Evaluasi dan Apresiasi) — Menanggapi secara kritis argumen, objektivitas, dan sudut pandang wacana informasi",
+                "concept_reference": {
+                    "student_book": "Dokumen Kerangka Asesmen TKA Jenjang SMA/MA/SMK/MAK (Bagian 3: Bahasa Inggris Wajib - Evaluasi dan Apresiasi)",
+                    "teacher_guide": "N/A (Panduan asesmen literasi membaca wacana kritis berbasis Kerangka Asesmen TKA Wajib)"
+                },
+                "support_category": "INDIRECT",
+                "authoring_statement": "Dua kutipan berita rekaan dengan diksi kontras (bold vs aggressive, minor complaints vs crippling restrictions) disusun mandiri oleh proyek sebagai instrumen asesmen wacana kritis orisinal tanpa menyalin artikel berita komersial."
+            }
+        }
+    ],
+    "curriculum": [
+        "K13",
+        "Kurikulum Merdeka"
+    ],
+    "grade": 12,
+    "competencies": [
+        {
+            "name": "Kompetensi ENG12-C01-C",
+            "question_count": 3,
+            "competency_id": "ENG12-C01-C"
+        },
+        {
+            "name": "Kompetensi ENG12-C01-A",
+            "question_count": 3,
+            "competency_id": "ENG12-C01-A"
+        },
+        {
+            "name": "Kompetensi ENG12-C01-B",
+            "question_count": 3,
+            "competency_id": "ENG12-C01-B"
+        }
+    ],
+    "subject": "bahasa-inggris",
+    "chapter": "ENG12-C01",
+    "status": "active",
+    "content_version": 2,
+    "pool_id": "POOL-BAHASA-INGGRIS-ENG12-C01"
 }
