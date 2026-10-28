@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "ENG12-W03-CH02-M15-V1.1-REV",
+  "base_batch": "phase-3/world-3-inggris-chapter-2-misi-15-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 2 Misi 15 (Argumentative Text: E-Money): enriching thesis identification distractor rationales with direct paraphrase matching, refining linking expression terminology and distractor functions, eliminating ad-hominem interference in the Hasty Generalization stimulus for single-fallacy precision, and adding Decision 009 source_basis metadata without unverified markdown pagination.",
+  "revisions": [
+    {
+      "id": "ENG-C02-B-EASY",
+      "change_type": "distractor_and_source_basis_revision",
+      "reason": "Penyempurnaan opsi C menjadi 'It reduces the risk of physical cash being stolen' dan penegasan bahwa opsi A, C, dan D merupakan parafrase langsung dari tiga alasan dalam tesis pada pertanyaan negasi NOT.",
+      "before_question": "Read the thesis statement:\n'Transitioning to a cashless society through E-Money is highly beneficial because it increases transaction speed, reduces the risk of physical theft, and allows for easier financial tracking.'\nWhich of the following is NOT an argument presented in the thesis above?",
+      "after_question": "Read the thesis statement:\n'Transitioning to a cashless society through E-Money is highly beneficial because it increases transaction speed, reduces the risk of physical theft, and allows for easier financial tracking.'\nWhich of the following is NOT an argument presented in the thesis above?",
+      "answer": "It protects you from digital hackers.",
+      "replacement_options": [
+        "It makes transactions faster.",
+        "It protects you from digital hackers.",
+        "It reduces the risk of physical cash being stolen.",
+        "It helps you monitor your spending history."
+      ],
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Tesis Argumentatif:\n   Tesis menyajikan tiga alasan pendukung spesifik:\n   - Alasan 1: 'increases transaction speed' (meningkatkan kecepatan transaksi)\n   - Alasan 2: 'reduces the risk of physical theft' (mengurangi risiko pencurian fisik)\n   - Alasan 3: 'allows for easier financial tracking' (mempermudah pelacakan keuangan)\n   Soal menanyakan opsi yang BUKAN merupakan argumen yang dipaparkan dalam tesis (tipe negasi NOT).\n\n2. Pembahasan Kunci Jawaban:\n   - It protects you from digital hackers (BENAR sebagai jawaban): Perlindungan dari peretas digital sama sekali TIDAK disebutkan dalam tesis di atas.\n\n3. Pembahasan Distraktor:\n   Opsi A, C, dan D merupakan parafrase langsung dari tiga alasan yang disebutkan dalam tesis:\n   - It makes transactions faster (Salah): Merupakan parafrase langsung dari alasan pertama ('increases transaction speed').\n   - It reduces the risk of physical cash being stolen (Salah): Merupakan parafrase langsung dari alasan kedua ('reduces the risk of physical theft').\n   - It helps you monitor your spending history (Salah): Merupakan parafrase langsung dari alasan ketiga ('allows for easier financial tracking').",
+      "source": {
+        "student_book": {
+          "pages": "56-96",
+          "section": "Unit 2: Argumentative Text - E-Money (Reading & Comprehension)"
+        },
+        "teacher_guide": {
+          "pages": "94-140",
+          "section": "Unit 2: Identifying Thesis and Arguments"
+        }
+      },
+      "provenance": "Soal orisinal literasi argumentatif (Kurikulum Merdeka) untuk mengidentifikasi butir argumen tersurat dalam teks wacana E-Money.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-B: Mengidentifikasi gagasan utama dan perincian argumen pendukung dalam teks argumentatif (Argumentative Text)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 56-96 (Unit 2: Argumentative Text - E-Money)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 94-140 (Unit 2: Identifying Thesis and Arguments)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Pernyataan tesis, variasi opsi parafrase argumen langsung, dan opsi pengecualian disusun orisinal oleh proyek untuk menguji ketelitian membaca analitis siswa."
+      }
+    },
+    {
+      "id": "ENG-C02-B-MED",
+      "change_type": "stem_terminology_and_distractor_revision",
+      "reason": "Penyempurnaan terminologi stem menjadi 'linking expression' / ungkapan penghubung wacana, pendalaman analisis fungsional adverbia konjungtif adversatif, dan penambahan source_basis terverifikasi.",
+      "before_question": "Which of the following conjunctions is most appropriately used to connect two contrasting arguments in an analytical exposition?",
+      "after_question": "Which of the following linking expressions is most appropriately used to connect two contrasting arguments in an exposition text?",
+      "answer": "Nevertheless",
+      "replacement_options": [
+        "Furthermore",
+        "Therefore",
+        "Nevertheless",
+        "Consequently"
+      ],
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Fungsi Wacana dan Hubungan Logis:\n   Dalam teks eksposisi akademik, kohesi antargagasan dibangun melalui ungkapan penghubung wacana (linking expressions / conjunctive adverbs). Soal menanyakan ungkapan yang berfungsi menghubungkan dua argumen yang menyatakan pertentangan atau konsesi (contrasting argument).\n\n2. Pembahasan Kunci Jawaban:\n   - Nevertheless (BENAR): Merupakan conjunctive adverb / linking expression yang secara fungsional menyatakan kontras atau konsesi (adversative/concession), digunakan untuk memperkenalkan pernyataan atau argumen yang berlawanan dengan premis sebelumnya.\n\n3. Pembahasan Distraktor:\n   - Furthermore (Salah): Menyatakan hubungan penambahan informasi atau penguatan argumen (additive relation), bukan pertentangan.\n   - Therefore (Salah): Menyatakan kesimpulan logis atau inferensi (inferential/conclusive relation), menunjukkan simpulan dari premis-premis sebelumnya.\n   - Consequently (Salah): Menyatakan hubungan sebab-akibat (causative/consequential relation), menunjukkan dampak langsung dari suatu kondisi.",
+      "source": {
+        "student_book": {
+          "pages": "56-96",
+          "section": "Unit 2: Language Features - Connectives & Transition Words"
+        },
+        "teacher_guide": {
+          "pages": "94-140",
+          "section": "Unit 2: Cohesion and Transition in Arguments"
+        }
+      },
+      "provenance": "Soal orisinal drill penerapan ungkapan penghubung wacana (linking expressions) yang penting dalam penyusunan esai/argumen.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII) & Kurikulum 2013",
+        "competency_target": "ENG12-C02-B: Menerapkan ungkapan penghubung wacana (linking expressions / transition words) untuk membangun kohesi dalam teks argumentasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 56-96 (Unit 2: Language Features - Connectives & Transition Words)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 94-140 (Unit 2: Cohesion and Transition in Arguments)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Butir soal pilihan ungkapan penghubung transisional dan rasionalisasi fungsi logis disusun mandiri untuk mengevaluasi pemahaman kohesi wacana argumentatif."
+      }
+    },
+    {
+      "id": "ENG-C02-B-HARD",
+      "change_type": "stem_disambiguation_and_source_basis_revision",
+      "reason": "Penyempurnaan stimulus untuk mengeliminasi kontaminasi Ad Hominem (menghapus klausa cercaan 'outdated' terhadap pengguna uang tunai), memfokuskan penalaran pada Hasty Generalization murni dari sampel terbatas, dan penambahan source_basis terverifikasi TKA tanpa nomor halaman markdown semu.",
+      "before_question": "Analyze the following argument:\n'E-Money is the perfect financial system because everyone I know uses it, and I have never experienced a single glitch. Anyone who prefers cash is simply outdated.'\nWhat is the primary logical fallacy present in this argument?",
+      "after_question": "Analyze the following argument:\n'E-Money is clearly the ideal and flawless payment system for our entire nation because everyone in my social circle uses it effortlessly, and I have never experienced a single transaction glitch.'\nWhat is the primary logical fallacy present in this argument?",
+      "answer": "Hasty generalization (drawing a broad conclusion based on anecdotal, limited evidence).",
+      "replacement_options": [
+        "Ad hominem (attacking an opponent's personal traits instead of their argument).",
+        "Hasty generalization (drawing a broad conclusion based on anecdotal, limited evidence).",
+        "Slippery slope (assuming that an initial event will trigger a catastrophic chain reaction).",
+        "Circular reasoning (restating the initial claim in different words as proof of itself)."
+      ],
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Argumen dan Cacat Penalaran:\n   - Premis: Penutur mendasarkan pendapatnya semata-mata pada pengamatan lingkungan terdekat ('everyone in my social circle') dan pengalaman subjektif pribadi ('I have never experienced a single transaction glitch').\n   - Kesimpulan: Penutur menarik klaim menyeluruh bahwa uang elektronik adalah sistem pembayaran ideal dan tanpa cacat bagi seluruh warga negara ('ideal and flawless payment system for our entire nation').\n   - Cacat Logika: Menarik kesimpulan umum yang berlaku universal bagi seluruh populasi berdasarkan sampel anekdotal yang sangat terbatas dan tidak representatif.\n\n2. Pembahasan Kunci Jawaban:\n   - Hasty generalization (BENAR): Secara definisi, sesat pikir ini terjadi ketika suatu kesimpulan luas ditarik dari bukti anekdotal yang sempit dan tidak mewakili keberagaman kondisi populasi sesungguhnya.\n\n3. Pembahasan Distraktor:\n   - Ad hominem (Salah): Argumen tidak menyerang karakter atau kepribadian lawan debat, melainkan melakukan lompatan induktif yang keliru dari data personal.\n   - Slippery slope (Salah): Tidak terdapat asumsi berantai bahwa satu tindakan kecil akan memicu rentetan bencana ekstrem yang tidak terhindarkan.\n   - Circular reasoning (Salah): Penutur tidak sedang mengulang klaimnya sebagai bukti (begging the question); ia menyajikan bukti faktual personal, namun bukti tersebut tidak memadai untuk menopang kesimpulan nasional yang diambil.",
+      "source": {
+        "student_book": {
+          "pages": "56-96",
+          "section": "Unit 2: Argumentative Text - Critical Reading of Arguments"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Kerangka Asesmen TKA - Domain Bahasa Inggris Wajib: Level 3 Evaluasi dan Apresiasi"
+        }
+      },
+      "provenance": "Soal orisinal literasi kritis (TKA) yang menguji pemahaman siswa tentang kecacatan logika (Logical Fallacy: Hasty Generalization) di dalam sebuah teks argumentatif.",
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen TKA 2026 & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-B: Mengevaluasi kekuatan argumen dan mengidentifikasi kecacatan logika (logical fallacy) dalam wacana argumentatif",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 56-96 (Unit 2: Argumentative Text - Critical Reading of Arguments)",
+          "teacher_guide": "Kerangka Asesmen TKA (Peraturan BSKAP Nomor 045/H/AN/2025) - Domain Bahasa Inggris Wajib: Level 3 Evaluasi dan Apresiasi"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Argumen analitis, eliminasi kontaminasi ad hominem, dan pembedahan sesat pikir disusun orisinal oleh proyek untuk menjamin ketepatan evaluasi nalar kritis siswa."
+      }
+    }
+  ]
+}

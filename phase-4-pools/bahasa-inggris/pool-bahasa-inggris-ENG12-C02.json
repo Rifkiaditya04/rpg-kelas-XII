@@ -1,702 +1,861 @@
-﻿{
-    "track":  "wajib",
-    "questions":  [
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "understand",
-                          "question_id":  "ENG12-C02-A-5571",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Read the text:\n\u0027How to use the E-Money Card at the Toll Gate:\n1. Ensure your card has enough balance.\n2. Tap the card on the reader machine.\n3. Wait until the gate opens automatically.\n4. Drive through the gate safely.\u0027\nWhat is the first thing you must do before tapping the card?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Wait for the gate to open."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Check that you have sufficient balance."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Drive through the gate."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Buy a new E-Money card."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-A",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "According to the first step in the procedure text, the user must \u0027Ensure your card has enough balance\u0027 before proceeding to tap the card.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "ENG12-C02-A-9366",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "In a manual titled \u0027How to Use Photoshop for Beginners\u0027, one of the steps says: \u0027Next, the brightness level can be adjusted by clicking the Image menu.\u0027\nWhich language feature is predominantly used in that specific sentence?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Imperative verb"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Passive voice"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Simple past tense"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Conditional clause"
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-A",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "The phrase \u0027can be adjusted\u0027 is a form of passive voice (modal + be + V3). While procedure texts heavily use imperative verbs (e.g., \u0027Click the Image menu\u0027), manuals and formal instructions often utilize the passive voice to maintain an objective tone.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "ENG12-C02-A-3387",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Read the troubleshooting instruction:\n\u0027If the software crashes during installation, do not restart your computer immediately. First, forcefully close the installer using Task Manager. If you restart the computer without closing the corrupted installer, it may cause a critical boot failure.\u0027\nWhat is the logical implication if a user ignores the warning and restarts their computer right away?",
-                          "answer":  "C",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "The software will successfully install itself after the restart."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "The Task Manager will automatically delete the corrupted files."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "The computer\u0027s operating system might become unable to start up properly."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "The installer will resume from where it left off."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-A",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "The text explicitly states that restarting without closing the installer may cause a \u0027critical boot failure\u0027. \u0027Boot failure\u0027 implies that the computer\u0027s operating system might fail to start up properly.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "understand",
-                          "question_id":  "ENG12-C02-B-8808",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Read the thesis statement:\n\u0027Transitioning to a cashless society through E-Money is highly beneficial because it increases transaction speed, reduces the risk of physical theft, and allows for easier financial tracking.\u0027\nWhich of the following is NOT an argument presented in the thesis above?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "It makes transactions faster."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "It protects you from digital hackers."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "It minimizes the chance of losing physical cash."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "It helps you monitor your spending history."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-B",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "The thesis mentions transaction speed, reducing physical theft, and financial tracking. It does NOT mention protection from digital hackers (in fact, cashless systems might be more vulnerable to cybercrime).",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "ENG12-C02-B-1137",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Which of the following conjunctions is most appropriately used to connect two contrasting arguments in an analytical exposition?",
-                          "answer":  "C",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Furthermore"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Therefore"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Nevertheless"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Consequently"
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-B",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "\u0027Nevertheless\u0027 is a contrastive conjunction used to introduce a statement that contrasts with or seems to contradict something that has just been said. \u0027Furthermore\u0027 adds information, while \u0027Therefore\u0027 and \u0027Consequently\u0027 show cause-and-effect.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "ENG12-C02-B-8167",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Analyze the following argument:\n\u0027E-Money is the perfect financial system because everyone I know uses it, and I have never experienced a single glitch. Anyone who prefers cash is simply outdated.\u0027\nWhat is the primary logical fallacy present in this argument?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Ad hominem (attacking the opponent\u0027s character instead of the issue)."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Hasty generalization (drawing a broad conclusion based on anecdotal, limited evidence)."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Slippery slope (assuming a minor action will lead to major, extreme consequences)."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Circular reasoning (using the conclusion as a premise to prove itself)."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-B",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "The speaker concludes that E-Money is a \u0027perfect system\u0027 solely based on their personal experience (\u0027everyone I know\u0027 and \u0027I have never experienced\u0027). This is a textbook \u0027hasty generalization\u0027 because personal anecdotes do not represent the entire population\u0027s reality.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "understand",
-                          "question_id":  "ENG12-C02-C-8354",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Read the concluding paragraph:\n\u0027Based on the rising cases of cyberbullying and online harassment, it is crucial that schools implement strict Netiquette guidelines. Therefore, we should all start practicing empathy before typing a comment on social media.\u0027\nWhat is the generic structure of this paragraph in a Hortatory Exposition text?",
-                          "answer":  "C",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Thesis"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Arguments"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Recommendation"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Reiteration"
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-C",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "A Hortatory Exposition text always ends with a \u0027Recommendation\u0027, which tells the reader what should or should not be done based on the given arguments. Words like \u0027it is crucial that...\u0027 and \u0027we should all start...\u0027 clearly indicate a recommendation.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "ENG12-C02-C-1113",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "\u0027Cyberbullying is an aggressive behavior. It happens repeatedly online. It has severe psychological impacts.\u0027\nCombine the three sentences into one cohesive sentence using appropriate relative pronouns and conjunctions.",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Cyberbullying is an aggressive behavior which happens repeatedly online and has severe psychological impacts."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Cyberbullying is an aggressive behavior who happens repeatedly online so it has severe psychological impacts."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Because cyberbullying is an aggressive behavior it happens repeatedly online but has severe psychological impacts."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Although cyberbullying happens repeatedly online, it is an aggressive behavior which has severe psychological impacts."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-C",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "The relative pronoun \u0027which\u0027 accurately replaces \u0027It\u0027 to refer to \u0027aggressive behavior\u0027 (a non-human noun). The conjunction \u0027and\u0027 logically connects the ongoing action with its impacts without altering the original meaning.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "ENG12-C02-C-1707",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Read the statement from a debate on Netiquette:\n\u0027Regulating Netiquette is fundamentally useless. Trolls will always exist, and anonymity empowers them to bypass any artificial rules set by forum moderators.\u0027\nWhich of the following counter-arguments most effectively weakens the statement above?",
-                          "answer":  "C",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Trolls are mostly teenagers who will eventually outgrow their bad behavior."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Anonymity is a human right, so we must accept that trolling is part of free speech."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Platforms that enforce strict identity verification and community guidelines have seen a 70% drop in harassment cases."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Moderators should just ban all anonymous users to solve the problem permanently."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-C",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "The original statement claims that rules are \u0027useless\u0027 because anonymity empowers trolls to bypass them. The counter-argument directly attacks this premise by providing statistical evidence that enforcing rules (community guidelines) and removing anonymity (identity verification) practically reduces harassment, thus proving the rules are NOT useless.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "understand",
-                          "question_id":  "ENG12-C02-D-8030",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Read the paragraph:\n\u0027The issue of whether fossil fuel companies should be completely banned from operations is highly debated. Environmentalists argue that an immediate ban is the only way to stop global warming. On the other hand, economists point out that a sudden ban would cause massive job losses and trigger a global economic collapse.\u0027\nWhat makes this paragraph part of a \u0027Discussion Text\u0027 rather than an \u0027Argumentative Text\u0027?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "It gives a strong recommendation at the end."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "It presents two different/opposing viewpoints on a single issue."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "It only focuses on the environmental aspect."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "It uses past tense to describe a historical event."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-D",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "A Discussion Text explores an issue by presenting multiple sides of an argument (pros and cons), unlike an Argumentative Text which strongly advocates for only one side.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "ENG12-C02-D-1527",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Choose the correct connective word to complete the sentence:\n\u0027Electric vehicles (EVs) produce zero tailpipe emissions, making them excellent for urban air quality. __________, the production of EV batteries requires intensive mining that severely damages local ecosystems.\u0027",
-                          "answer":  "C",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Furthermore"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "In addition"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "However"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Consequently"
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-D",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "The first sentence presents a positive point (zero emissions), while the second sentence presents a negative point (damaging ecosystems). To connect contrasting ideas in a discussion text, we use contrastive conjunctions like \u0027However\u0027, \u0027On the other hand\u0027, or \u0027Nevertheless\u0027.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "ENG12-C02-D-3226",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Based on the debate regarding \u0027Carbon Footprint Taxes\u0027, Proponents say it forces factories to innovate green tech, while Opponents say it makes everyday goods too expensive for poor families. Which concluding statement best synthesizes both arguments neutrally without taking a biased side?",
-                          "answer":  "C",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Carbon taxes are terrible because they only hurt the poor, so factories should innovate for free."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Therefore, carbon taxes must be applied strictly to save the earth, regardless of the economic cost."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "In conclusion, while a carbon tax encourages environmental innovation, it must be implemented carefully with subsidies to protect vulnerable economic groups."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "To sum up, carbon taxes are a myth created by governments to steal money from both factories and poor families."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-D",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "A good conclusion in a Discussion Text synthesizes the pros and cons objectively. This option acknowledges the positive side (environmental innovation) while addressing the negative side (economic cost to the poor) by proposing a middle-ground solution (subsidies), maintaining neutrality.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "understand",
-                          "question_id":  "ENG12-C02-BOSS-2406",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Read the text:\n\u0027Many people struggle with time management. The Pomodoro Technique is one effective method to handle this. It involves working in focused 25-minute intervals, followed by a 5-minute break. This simple routine helps prevent mental fatigue and keeps motivation high throughout the day.\u0027\nWhat is the main topic of the passage?",
-                          "answer":  "C",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "The history of mental fatigue."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Why people struggle with time."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "A method for managing time effectively."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "The benefits of taking 5-minute breaks."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-BOSS",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "The entire passage revolves around introducing and explaining the \u0027Pomodoro Technique\u0027 as a solution for time management.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "ENG12-C02-BOSS-2763",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "\u0027The ancient artifact ________ from the museum during the blackout last night, despite the heavy security presence.\u0027\nChoose the correct passive voice structure to complete the sentence.",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "was stealing"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "was stolen"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "has stolen"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "is stolen"
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-BOSS",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "The event happened in the past (\u0027last night\u0027), so we need the simple past passive voice: \u0027was/were + Verb 3\u0027. \u0027The ancient artifact\u0027 is singular, so \u0027was stolen\u0027 is correct.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "ENG12-C02-BOSS-3305",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Read the academic excerpt:\n\u0027While the implementation of Universal Basic Income (UBI) is often touted as a utopian cure for poverty, historical economic models suggest that injecting unchecked capital into the bottom tier of a consumer market invariably triggers hyperinflation, effectively nullifying the newly acquired purchasing power of the poor.\u0027\nWhat is the author\u0027s tone toward Universal Basic Income?",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Enthusiastic and supportive."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Skeptical and cautionary."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Neutral and objective."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Confused and uncertain."
-                                          }
-                                      ],
-                          "primary_competency":  "ENG12-C02-BOSS",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "The author uses words like \u0027often touted as a utopian cure\u0027 (suggesting it\u0027s overly idealistic) and warns that it \u0027invariably triggers hyperinflation\u0027 and \u0027nullifies purchasing power\u0027. This clearly shows a skeptical and cautionary tone regarding the effectiveness of UBI.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      }
-                  ],
-    "curriculum":  [
-                       "K13",
-                       "Merdeka"
-                   ],
-    "grade":  12,
-    "competencies":  [
-                         {
-                             "name":  "Kompetensi ENG12-C02-BOSS",
-                             "question_count":  3,
-                             "competency_id":  "ENG12-C02-BOSS"
-                         },
-                         {
-                             "name":  "Kompetensi ENG12-C02-C",
-                             "question_count":  3,
-                             "competency_id":  "ENG12-C02-C"
-                         },
-                         {
-                             "name":  "Kompetensi ENG12-C02-A",
-                             "question_count":  3,
-                             "competency_id":  "ENG12-C02-A"
-                         },
-                         {
-                             "name":  "Kompetensi ENG12-C02-B",
-                             "question_count":  3,
-                             "competency_id":  "ENG12-C02-B"
-                         },
-                         {
-                             "name":  "Kompetensi ENG12-C02-D",
-                             "question_count":  3,
-                             "competency_id":  "ENG12-C02-D"
-                         }
-                     ],
-    "subject":  "bahasa-inggris",
-    "chapter":  "ENG12-C02",
-    "status":  "active",
-    "content_version":  1,
-    "pool_id":  "POOL-BAHASA-INGGRIS-ENG12-C02"
+{
+  "track": "wajib",
+  "questions": [
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "ENG12-C02-A-5571",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Read the text:\n'How to use the E-Money Card at the Toll Gate:\n1. Ensure your card has enough balance.\n2. Tap the card on the reader machine.\n3. Wait until the gate opens automatically.\n4. Drive through the gate safely.'\nWhat is the first thing you must do before tapping the card?",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wait for the gate to open."
+        },
+        {
+          "id": "B",
+          "text": "Check that you have sufficient balance."
+        },
+        {
+          "id": "C",
+          "text": "Drive through the gate."
+        },
+        {
+          "id": "D",
+          "text": "Buy a new E-Money card."
+        }
+      ],
+      "primary_competency": "ENG12-C02-A",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Urutan Prosedur:\n   Teks menyajikan empat langkah kronologis berurutan:\n   Langkah 1: 'Ensure your card has enough balance' (Memastikan saldo mencukupi).\n   Langkah 2: 'Tap the card on the reader machine' (Menempelkan kartu pada mesin pembaca).\n   Langkah 3: 'Wait until the gate opens automatically' (Menunggu gerbang terbuka otomatis).\n   Langkah 4: 'Drive through the gate safely' (Melintas melewati gerbang dengan aman).\n   Pertanyaan menanyakan tindakan yang harus dilakukan SEBELUM menempelkan kartu (before tapping the card / sebelum Langkah 2).\n\n2. Pembahasan Kunci Jawaban:\n   - Check that you have sufficient balance (BENAR): Parafrase langsung dari Langkah 1 ('Ensure your card has enough balance') yang merupakan prasyarat mutlak sebelum menempelkan kartu ke mesin sensor.\n\n3. Pembahasan Distraktor:\n   - Wait for the gate to open (Salah): Merupakan Langkah 3 yang dilakukan SETELAH kartu ditempelkan (Langkah 2), bukan sebelum menempelkan kartu.\n   - Drive through the gate (Salah): Merupakan Langkah 4 (tindakan terakhir) setelah gerbang terbuka secara otomatis.\n   - Buy a new E-Money card (Salah): Membeli kartu baru tidak tercantum dalam prosedur dan tidak diperlukan jika kartu yang ada masih dapat digunakan serta memiliki saldo cukup.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "56-96",
+          "section": "Unit 2: Argumentative Text - E-Money (Thematic Digital Payment Context)"
+        },
+        "teacher_guide": {
+          "pages": "94-140",
+          "section": "Unit 2: Contextual Digital Literacy & Financial Technology"
+        }
+      },
+      "provenance": "Soal orisinal pemahaman urutan teks prosedur bertema transaksi uang elektronik (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII) & Kerangka Asesmen TKA 2026",
+        "competency_target": "ENG12-C02-A: Mengidentifikasi urutan langkah dan informasi tersurat dalam teks prosedur terkait transaksi digital (Procedure Text)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 56-96 (Unit 2: E-Money Contextual Theme)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 94-140 (Unit 2: Literacy & Digital Finance Themes)"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Teks prosedur penggunaan kartu E-Money di gerbang tol, opsi jawaban, dan analisis kronologis disusun mandiri oleh proyek sebagai instrumen uji pemahaman wacana prosedural kontekstual tanpa menyalin naskah berhak cipta."
+      }
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "ENG12-C02-A-9366",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "In a manual titled 'How to Use Photoshop for Beginners', one of the steps says: 'Next, the brightness level can be adjusted by clicking the Image menu.'\nWhich language feature is predominantly used in that specific sentence?",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "Imperative verb"
+        },
+        {
+          "id": "B",
+          "text": "Passive voice"
+        },
+        {
+          "id": "C",
+          "text": "Simple past tense"
+        },
+        {
+          "id": "D",
+          "text": "Conditional clause"
+        }
+      ],
+      "primary_competency": "ENG12-C02-A",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Kebahasaan:\n   Klausa utama pada kalimat adalah: 'the brightness level can be adjusted by clicking the Image menu'. Predikat kalimat menggunakan konstruksi modal passive: modal auxiliary ('can') + auxiliary be ('be') + past participle / V3 ('adjusted'). Bentuk pasif ini lazim digunakan dalam manual instruksional dan prosedur formal untuk menekankan objek dan tindakan secara objektif/impersonal.\n\n2. Pembahasan Kunci Jawaban:\n   - Passive voice (BENAR): Pola 'can be adjusted' secara sintaksis merupakan bentuk kalimat pasif (modal + be + past participle), dengan subjek gramatikal 'the brightness level' menerima tindakan penyesuaian.\n\n3. Pembahasan Distraktor:\n   - Imperative verb (Salah): Teks prosedur memang lazim menggunakan kalimat perintah (misal: 'Click the Image menu'), namun pada kalimat target yang diuji, kata kerja berakhiran -ing ('clicking') berfungsi sebagai gerund dalam frasa preposisional ('by clicking...'), bukan kata kerja imperatif di awal klausa mandiri.\n   - Simple past tense (Salah): Bentuk 'adjusted' di sini adalah past participle (V3) yang merupakan bagian dari konstruksi pasif modal bersama 'can be', bukan kata kerja past tense (V2) yang menyatakan peristiwa lampau.\n   - Conditional clause (Salah): Kalimat tidak memuat konjungsi pengandaian (seperti 'if' atau 'unless') maupun struktur klausa kondisional bersyarat.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "135-148",
+          "section": "Chapter 10: How to Use Photoshop?"
+        },
+        "teacher_guide": {
+          "pages": "125-136",
+          "section": "Chapter 10: Technology Manual & Passive Voice Features"
+        }
+      },
+      "provenance": "Soal orisinal drill K13 untuk mengenali fitur kebahasaan kalimat pasif (Passive Voice) di dalam manual instruksional teknologi.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kerangka Asesmen TKA 2026",
+        "competency_target": "ENG12-C02-A: Menganalisis unsur kebahasaan kalimat pasif (passive voice) dalam manual teknologi dan teks prosedur",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 135-148 (Chapter 10: How to Use Photoshop?)",
+          "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 125-136 (Bab 10: Manual Penggunaan Teknologi & Passive Voice)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Konteks kalimat manual instruksi Photoshop dan dekonstruksi fitur kebahasaan pasif vs imperatif disusun mandiri oleh tim pengembang sebagai bahan drill tata bahasa fungsional."
+      }
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "analyze",
+      "question_id": "ENG12-C02-A-3387",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "literacy",
+        "stimulus_type": "contextual",
+        "suitable": true
+      },
+      "question": "A user was installing a graphic design application when the setup wizard stopped responding. The installation log showed:\n- Core program files: Copied successfully.\n- Runtime dependency registration: Pending.\nThe user restarted the computer before the setup was completed and did not rerun the installer. After the reboot, the application's main interface opened without issues, but clicking the export button triggered an error.\nWhich statement best explains this symptom based on the installation status?",
+      "answer": "C",
+      "options": [
+        {
+          "id": "A",
+          "text": "The operating system automatically completed the pending dependency registration during the reboot."
+        },
+        {
+          "id": "B",
+          "text": "The export feature failed because the user selected an unsupported output format."
+        },
+        {
+          "id": "C",
+          "text": "The application can launch because its core files are present, but the export feature fails because its required dependencies were not registered."
+        },
+        {
+          "id": "D",
+          "text": "The core program files were corrupted by the restart, preventing the export feature from functioning."
+        }
+      ],
+      "primary_competency": "ENG12-C02-A",
+      "difficulty_label": "hard",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Informasi Stimulus (Status Instalasi vs Gejala Aplikasi):\n   Stimulus menyajikan dua kelompok fakta teknis yang harus dihubungkan secara analitis:\n   a. Status Log Instalasi:\n      - Berkas program utama ('Core program files'): Berhasil disalin secara lengkap ('Copied successfully').\n      - Pendaftaran dependensi runtime ('Runtime dependency registration'): Masih berstatus tertunda ('Pending').\n   b. Gejala Pascarestart:\n      - Pengguna me-restart komputer sebelum setup tuntas dan tidak menjalankan ulang penginstal.\n      - Antarmuka utama aplikasi dapat dibuka normal tanpa masalah ('opened without issues').\n      - Menekan tombol ekspor langsung memicu pesan galat ('triggered an error').\n\n2. Pembahasan Kunci Jawaban:\n   - The application can launch because its core files are present, but the export feature fails because its required dependencies were not registered (BENAR): Merupakan penjelasan terbaik yang memadukan seluruh bukti log instalasi dan gejala aplikasi secara kausal. Berkas aplikasi utama yang telah tersalin lengkap memungkinkan antarmuka utama aplikasi terbuka normal. Sebaliknya, proses instalasi yang terhenti sebelum dependensi runtime didaftarkan menyebabkan komponen pustaka pendukung untuk fungsi khusus (fitur ekspor) belum tersedia di sistem, sehingga fitur tersebut gagal saat dieksekusi.\n\n3. Pembahasan Distraktor:\n   - The operating system automatically completed the pending dependency registration during the reboot (Salah): Ditolak oleh bukti skenario; me-restart komputer saat proses setup belum selesai memutus alur instalasi. Sistem operasi tidak secara otomatis menyelesaikan pendaftaran pustaka dependensi aplikasi pihak ketiga, terbukti dari kegagalan fungsi ekspor saat dijalankan.\n   - The export feature failed because the user selected an unsupported output format (Salah): Meskipun format berkas yang tidak didukung secara umum dapat menyebabkan kegagalan ekspor pada perangkat lunak grafis, dugaan ini tidak didukung oleh bukti spesifik dalam skenario. Pertanyaan secara eksplisit meminta penjelasan 'based on the installation status' (berdasarkan status instalasi), di mana log menunjukkan pendaftaran dependensi runtime masih berstatus tertunda. Menghubungkan kegagalan dengan format berkas mengabaikan bukti langsung dari proses instalasi yang tidak tuntas.\n   - The core program files were corrupted by the restart, preventing the export feature from functioning (Salah): Log instalasi secara tegas mencatat bahwa berkas utama sudah disalin dengan sukses sebelum restart, dan antarmuka utama dapat terbuka normal. Galat spesifik pada fitur ekspor disebabkan oleh dependensi runtime yang belum terdaftar, bukan oleh kerusakan berkas utama.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "135-148",
+          "section": "Chapter 10: Technical Instructions & Troubleshooting Procedures"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Kerangka Asesmen TKA - Domain Bahasa Inggris Wajib: Level 2 Pemahaman Inferensial"
+        }
+      },
+      "provenance": "Soal orisinal literasi teknis TKA yang menguji kemampuan analisis siswa dalam menghubungkan data status instalasi dengan gejala malafungsi perangkat lunak (diagnostic reasoning).",
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen TKA 2026 & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-A: Menganalisis hubungan sebab-akibat antara status log instalasi perangkat lunak dengan gejala malafungsi aplikasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 135-148 (Chapter 10: Technical Instructions)",
+          "teacher_guide": "Kerangka Asesmen TKA (Peraturan BSKAP Nomor 045/H/AN/2025) - Domain Bahasa Inggris Wajib: Level 2 Pemahaman Inferensial"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Skenario simulasi log instalasi perangkat lunak, perumusan relasi kausal berkas utama vs dependensi runtime, dan analisis opsi diagnostik disusun mandiri oleh tim pengembang sebagai instrumen penalaran teknis."
+      }
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "ENG12-C02-B-8808",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Read the thesis statement:\n'Transitioning to a cashless society through E-Money is highly beneficial because it increases transaction speed, reduces the risk of physical theft, and allows for easier financial tracking.'\nWhich of the following is NOT an argument presented in the thesis above?",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "It makes transactions faster."
+        },
+        {
+          "id": "B",
+          "text": "It protects you from digital hackers."
+        },
+        {
+          "id": "C",
+          "text": "It reduces the risk of physical cash being stolen."
+        },
+        {
+          "id": "D",
+          "text": "It helps you monitor your spending history."
+        }
+      ],
+      "primary_competency": "ENG12-C02-B",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Tesis Argumentatif:\n   Tesis menyajikan tiga alasan pendukung spesifik:\n   - Alasan 1: 'increases transaction speed' (meningkatkan kecepatan transaksi)\n   - Alasan 2: 'reduces the risk of physical theft' (mengurangi risiko pencurian fisik)\n   - Alasan 3: 'allows for easier financial tracking' (mempermudah pelacakan keuangan)\n   Soal menanyakan opsi yang BUKAN merupakan argumen yang dipaparkan dalam tesis (tipe negasi NOT).\n\n2. Pembahasan Kunci Jawaban:\n   - It protects you from digital hackers (BENAR sebagai jawaban): Perlindungan dari peretas digital sama sekali TIDAK disebutkan dalam tesis di atas.\n\n3. Pembahasan Distraktor:\n   Opsi A, C, dan D merupakan parafrase langsung dari tiga alasan yang disebutkan dalam tesis:\n   - It makes transactions faster (Salah): Merupakan parafrase langsung dari alasan pertama ('increases transaction speed').\n   - It reduces the risk of physical cash being stolen (Salah): Merupakan parafrase langsung dari alasan kedua ('reduces the risk of physical theft').\n   - It helps you monitor your spending history (Salah): Merupakan parafrase langsung dari alasan ketiga ('allows for easier financial tracking').",
+      "question_type": "single_select",
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "56-96",
+          "section": "Unit 2: Argumentative Text - E-Money (Reading & Comprehension)"
+        },
+        "teacher_guide": {
+          "pages": "94-140",
+          "section": "Unit 2: Identifying Thesis and Arguments"
+        }
+      },
+      "provenance": "Soal orisinal literasi argumentatif (Kurikulum Merdeka) untuk mengidentifikasi butir argumen tersurat dalam teks wacana E-Money.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-B: Mengidentifikasi gagasan utama dan perincian argumen pendukung dalam teks argumentatif (Argumentative Text)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 56-96 (Unit 2: Argumentative Text - E-Money)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 94-140 (Unit 2: Identifying Thesis and Arguments)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Pernyataan tesis, variasi opsi parafrase argumen langsung, dan opsi pengecualian disusun orisinal oleh proyek untuk menguji ketelitian membaca analitis siswa."
+      }
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "ENG12-C02-B-1137",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Which of the following linking expressions is most appropriately used to connect two contrasting arguments in an exposition text?",
+      "answer": "C",
+      "options": [
+        {
+          "id": "A",
+          "text": "Furthermore"
+        },
+        {
+          "id": "B",
+          "text": "Therefore"
+        },
+        {
+          "id": "C",
+          "text": "Nevertheless"
+        },
+        {
+          "id": "D",
+          "text": "Consequently"
+        }
+      ],
+      "primary_competency": "ENG12-C02-B",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Fungsi Wacana dan Hubungan Logis:\n   Dalam teks eksposisi akademik, kohesi antargagasan dibangun melalui ungkapan penghubung wacana (linking expressions / conjunctive adverbs). Soal menanyakan ungkapan yang berfungsi menghubungkan dua argumen yang menyatakan pertentangan atau konsesi (contrasting argument).\n\n2. Pembahasan Kunci Jawaban:\n   - Nevertheless (BENAR): Merupakan conjunctive adverb / linking expression yang secara fungsional menyatakan kontras atau konsesi (adversative/concession), digunakan untuk memperkenalkan pernyataan atau argumen yang berlawanan dengan premis sebelumnya.\n\n3. Pembahasan Distraktor:\n   - Furthermore (Salah): Menyatakan hubungan penambahan informasi atau penguatan argumen (additive relation), bukan pertentangan.\n   - Therefore (Salah): Menyatakan kesimpulan logis atau inferensi (inferential/conclusive relation), menunjukkan simpulan dari premis-premis sebelumnya.\n   - Consequently (Salah): Menyatakan hubungan sebab-akibat (causative/consequential relation), menunjukkan dampak langsung dari suatu kondisi.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "56-96",
+          "section": "Unit 2: Language Features - Connectives & Transition Words"
+        },
+        "teacher_guide": {
+          "pages": "94-140",
+          "section": "Unit 2: Cohesion and Transition in Arguments"
+        }
+      },
+      "provenance": "Soal orisinal drill penerapan ungkapan penghubung wacana (linking expressions) yang penting dalam penyusunan esai/argumen.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII) & Kurikulum 2013",
+        "competency_target": "ENG12-C02-B: Menerapkan ungkapan penghubung wacana (linking expressions / transition words) untuk membangun kohesi dalam teks argumentasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 56-96 (Unit 2: Language Features - Connectives & Transition Words)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 94-140 (Unit 2: Cohesion and Transition in Arguments)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Butir soal pilihan ungkapan penghubung transisional dan rasionalisasi fungsi logis disusun mandiri untuk mengevaluasi pemahaman kohesi wacana argumentatif."
+      }
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "evaluate",
+      "question_id": "ENG12-C02-B-8167",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "literacy",
+        "stimulus_type": "contextual",
+        "suitable": true
+      },
+      "question": "Analyze the following argument:\n'E-Money is clearly the ideal and flawless payment system for our entire nation because everyone in my social circle uses it effortlessly, and I have never experienced a single transaction glitch.'\nWhat is the primary logical fallacy present in this argument?",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ad hominem (attacking an opponent's personal traits instead of their argument)."
+        },
+        {
+          "id": "B",
+          "text": "Hasty generalization (drawing a broad conclusion based on anecdotal, limited evidence)."
+        },
+        {
+          "id": "C",
+          "text": "Slippery slope (assuming that an initial event will trigger a catastrophic chain reaction)."
+        },
+        {
+          "id": "D",
+          "text": "Circular reasoning (restating the initial claim in different words as proof of itself)."
+        }
+      ],
+      "primary_competency": "ENG12-C02-B",
+      "difficulty_label": "hard",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Argumen dan Cacat Penalaran:\n   - Premis: Penutur mendasarkan pendapatnya semata-mata pada pengamatan lingkungan terdekat ('everyone in my social circle') dan pengalaman subjektif pribadi ('I have never experienced a single transaction glitch').\n   - Kesimpulan: Penutur menarik klaim menyeluruh bahwa uang elektronik adalah sistem pembayaran ideal dan tanpa cacat bagi seluruh warga negara ('ideal and flawless payment system for our entire nation').\n   - Cacat Logika: Menarik kesimpulan umum yang berlaku universal bagi seluruh populasi berdasarkan sampel anekdotal yang sangat terbatas dan tidak representatif.\n\n2. Pembahasan Kunci Jawaban:\n   - Hasty generalization (BENAR): Secara definisi, sesat pikir ini terjadi ketika suatu kesimpulan luas ditarik dari bukti anekdotal yang sempit dan tidak mewakili keberagaman kondisi populasi sesungguhnya.\n\n3. Pembahasan Distraktor:\n   - Ad hominem (Salah): Argumen tidak menyerang karakter atau kepribadian lawan debat, melainkan melakukan lompatan induktif yang keliru dari data personal.\n   - Slippery slope (Salah): Tidak terdapat asumsi berantai bahwa satu tindakan kecil akan memicu rentetan bencana ekstrem yang tidak terhindarkan.\n   - Circular reasoning (Salah): Penutur tidak sedang mengulang klaimnya sebagai bukti (begging the question); ia menyajikan bukti faktual personal, namun bukti tersebut tidak memadai untuk menopang kesimpulan nasional yang diambil.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "56-96",
+          "section": "Unit 2: Argumentative Text - Critical Reading of Arguments"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Kerangka Asesmen TKA - Domain Bahasa Inggris Wajib: Level 3 Evaluasi dan Apresiasi"
+        }
+      },
+      "provenance": "Soal orisinal literasi kritis (TKA) yang menguji pemahaman siswa tentang kecacatan logika (Logical Fallacy: Hasty Generalization) di dalam sebuah teks argumentatif.",
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen TKA 2026 & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-B: Mengevaluasi kekuatan argumen dan mengidentifikasi kecacatan logika (logical fallacy) dalam wacana argumentatif",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 56-96 (Unit 2: Argumentative Text - Critical Reading of Arguments)",
+          "teacher_guide": "Kerangka Asesmen TKA (Peraturan BSKAP Nomor 045/H/AN/2025) - Domain Bahasa Inggris Wajib: Level 3 Evaluasi dan Apresiasi"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Argumen analitis, eliminasi kontaminasi ad hominem, dan pembedahan sesat pikir disusun orisinal oleh proyek untuk menjamin ketepatan evaluasi nalar kritis siswa."
+      }
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "ENG12-C02-C-8354",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Read the concluding paragraph:\n'Based on the rising cases of cyberbullying and online harassment, it is crucial that schools implement strict Netiquette guidelines. Therefore, we should all start practicing empathy before typing a comment on social media.'\nWhat is the generic structure of this paragraph in a Hortatory Exposition text?",
+      "answer": "C",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thesis"
+        },
+        {
+          "id": "B",
+          "text": "Arguments"
+        },
+        {
+          "id": "C",
+          "text": "Recommendation"
+        },
+        {
+          "id": "D",
+          "text": "Reiteration"
+        }
+      ],
+      "primary_competency": "ENG12-C02-C",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Teks Eksposisi Hortatori:\n   Teks Hortatory Exposition bertujuan meyakinkan pembaca bahwa suatu tindakan seharusnya atau tidak seharusnya diambil (should or should not happen). Struktur generiknya terdiri dari:\n   - Thesis: Pengenalan isu dan posisi penulis.\n   - Arguments: Pemaparan alasan dan bukti pendukung posisi penulis.\n   - Recommendation: Usulan atau ajakan tindakan nyata yang harus dilakukan berdasarkan argumen yang telah dipaparkan.\n\n2. Pembahasan Kunci Jawaban:\n   - Recommendation (BENAR): Paragraf tersebut secara eksplisit mengusulkan tindakan konkret yang harus diambil oleh pihak sekolah ('crucial that schools implement strict Netiquette guidelines') dan mengajak pembaca mempraktikkan empati ('we should all start practicing empathy...'). Fungsi komunikatif ini adalah ciri khas bagian Rekomendasi pada teks eksposisi hortatori.\n\n3. Pembahasan Distraktor:\n   - Thesis (Salah): Tesis berada di awal teks untuk memperkenalkan isu utama dan sudut pandang penulis, bukan di paragraf kesimpulan penutup yang mengusulkan solusi.\n   - Arguments (Salah): Paragraf argumen memuat elaborasi fakta, bukti, atau alasan analitis pendukung, bukan rangkuman seruan tindakan.\n   - Reiteration (Salah): Reiteration merupakan bagian penutup pada teks Analytical Exposition yang berfungsi menegaskan kembali posisi tesis penulis tanpa mengajukan anjuran/rekomendasi tindakan, berbeda dengan paragraf stimulus yang secara aktif mendesak tindakan perbaikan.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "98-146",
+          "section": "Unit 3: Hortatory Exposition - Netiquette (Generic Structures)"
+        },
+        "teacher_guide": {
+          "pages": "142-192",
+          "section": "Unit 3: Generic Structures of Hortatory Exposition"
+        }
+      },
+      "provenance": "Soal orisinal pemahaman struktur generik rekomendasi pada teks eksposisi hortatori (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-C: Mengidentifikasi struktur generik teks eksposisi hortatori (Hortatory Exposition: Thesis, Arguments, Recommendation)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 98-146 (Unit 3: Hortatory Exposition - Netiquette)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 142-192 (Unit 3: Generic Structures of Hortatory Exposition)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Konteks netiket digital sekolah, paragraf penutup berstruktur anjuran moral/kebijakan, dan opsi klasifikasi struktur teks disusun mandiri oleh tim pengembang."
+      }
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "ENG12-C02-C-1113",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "'Cyberbullying is an aggressive behavior. It happens repeatedly online. It has severe psychological impacts.'\nCombine the three sentences into one cohesive sentence using appropriate relative pronouns and conjunctions.",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cyberbullying is an aggressive behavior which happens repeatedly online and has severe psychological impacts."
+        },
+        {
+          "id": "B",
+          "text": "Cyberbullying is an aggressive behavior who happens repeatedly online so it has severe psychological impacts."
+        },
+        {
+          "id": "C",
+          "text": "Because cyberbullying is an aggressive behavior it happens repeatedly online but has severe psychological impacts."
+        },
+        {
+          "id": "D",
+          "text": "Although cyberbullying happens repeatedly online, it is an aggressive behavior which has severe psychological impacts."
+        }
+      ],
+      "primary_competency": "ENG12-C02-C",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Penggabungan Kalimat Majemuk (Complex-Compound Sentence):\n   Tiga proposisi awal:\n   (1) Cyberbullying is an aggressive behavior.\n   (2) It happens repeatedly online.\n   (3) It has severe psychological impacts.\n   Tujuan sintaktis: Menggabungkan ketiga klausa secara utuh dan kohesif dengan anteseden yang tepat ('an aggressive behavior' sebagai konsep/perilaku abstrak non-insani) serta menjaga hubungan logis setara antara kejadian berulang dan dampak psikologisnya tanpa mengubah relasi makna aslinya.\n\n2. Pembahasan Kunci Jawaban:\n   - Opsi A (BENAR): Merupakan satu-satunya jawaban terbaik. Menggunakan relative pronoun 'which' yang tepat merujuk anteseden non-insani 'an aggressive behavior', diikuti klausa relatif dengan predikat majemuk setara ('happens repeatedly online and has severe psychological impacts') menggunakan konjungsi koordinatif 'and' yang menjaga keutuhan relasi makna asli ketiga proposisi.\n\n3. Pembahasan Distraktor:\n   - Opsi B (Salah): Penggunaan relative pronoun 'who' keliru secara gramatikal karena 'who' hanya digunakan untuk merujuk manusia, bukan konsep/perilaku abstrak ('aggressive behavior'). Selain itu, penggunaan 'so it has' menghasilkan struktur klausa yang rancu dan tidak padu.\n   - Opsi C (Salah): Hubungan logis antarklausa terdistorsi secara semantik; klausa 'Because cyberbullying is an aggressive behavior' mengesankan bahwa sifat agresif adalah penyebab terjadinya peristiwa online, dan konjungsi 'but' mengimplikasikan pertentangan yang tidak berdasar (dampak psikologis parah bukanlah kontradiksi dari perilaku agresif). Kalimat ini juga cacat tanda baca (tanpa tanda koma setelah klausa subordinat).\n   - Opsi D (Salah): Konstruksi kalimat majemuk ini secara tata bahasa (gramatikal) sebenarnya dapat dibentuk, namun penggunaan konjungsi 'Although' tidak tepat secara semantik karena keberadaan cyberbullying yang berulang secara online dan sifatnya sebagai perilaku agresif tidak memiliki hubungan konsesif (pertentangan yang dapat dimaklumi) yang wajar. Penggunaan 'Although' merusak keterpaduan logika wacana asli.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "98-146",
+          "section": "Unit 3: Language Features - Relative Clauses & Connectors"
+        },
+        "teacher_guide": {
+          "pages": "142-192",
+          "section": "Unit 3: Syntactic Synthesis & Clause Combining"
+        }
+      },
+      "provenance": "Soal orisinal drill sintaksis untuk menguji kemampuan menyusun kalimat majemuk bertingkat (Complex Sentences) dengan pronomina relatif.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-C: Menggabungkan klausa menggunakan pronomina relatif (relative pronouns) dan konjungsi dalam kalimat majemuk bertingkat (complex sentences)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 98-146 (Unit 3: Language Features - Relative Clauses & Connectors)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 142-192 (Unit 3: Syntactic Synthesis & Clause Combining)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Tiga kalimat stimulus mengenai cyberbullying, variasi konstruksi pronomina relatif, dan distorsi semantik disusun mandiri sebagai instrumen evaluasi sintaksis."
+      }
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "evaluate",
+      "question_id": "ENG12-C02-C-1707",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "literacy",
+        "stimulus_type": "contextual",
+        "suitable": true
+      },
+      "question": "Read the statement from a debate on Netiquette:\n'Regulating Netiquette is fundamentally useless. Trolls will always exist, and anonymity empowers them to bypass any artificial rules set by forum moderators.'\nWhich of the following counter-arguments most effectively weakens the statement above?",
+      "answer": "C",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trolls are mostly teenagers who will eventually outgrow their disruptive behavior."
+        },
+        {
+          "id": "B",
+          "text": "Anonymity is a human right, so online communities should simply accept trolling as unavoidable free speech."
+        },
+        {
+          "id": "C",
+          "text": "Even in anonymous forums, moderators can respond to user reports, remove abusive posts, and restrict accounts that repeatedly violate clear community guidelines."
+        },
+        {
+          "id": "D",
+          "text": "Platform moderators should simply eliminate the problem by permanently shutting down all public comment sections."
+        }
+      ],
+      "primary_competency": "ENG12-C02-C",
+      "difficulty_label": "hard",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Argumen dan Premis Lawan:\n   - Klaim Lawan: Regulasi netiket pada dasarnya tidak berguna ('fundamentally useless').\n   - Alasan Lawan: Troll akan selalu ada, dan anonimitas memberdayakan mereka untuk menerobos aturan buatan moderator.\n   - Target Sanggahan: Melemahkan argumen tersebut dengan menunjukkan mekanisme penegakan yang membuktikan bahwa aturan tetap berfungsi meredam perilaku menyimpang meskipun dalam lingkungan anonim.\n\n2. Pembahasan Kunci Jawaban:\n   - Opsi C (BENAR): Menanggapi langsung inti klaim lawan. Dengan memaparkan mekanisme operasional nyata—bahwa moderator tetap dapat merespons laporan pengguna, menghapus konten pelecehan, dan membatasi akun pelanggar berulang berdasarkan pedoman komunitas—argumen ini membuktikan bahwa regulasi etika tidak sia-sia, bahkan di dalam forum yang mengizinkan anonimitas, tanpa memerlukan klaim statistik empiris yang belum terverifikasi.\n\n3. Pembahasan Distraktor:\n   - Opsi A (Salah): Spekulasi mengenai usia pelaku trolling tidak menjawab atau melemahkan klaim bahwa aturan netiket saat ini tidak berguna.\n   - Opsi B (Salah): Opsi ini justru mendukung kepasrahan terhadap perilaku toksik atas nama kebebasan anonimitas, sehingga memperkuat pandangan lawan alih-alih menyanggahnya.\n   - Opsi D (Salah): Menutup seluruh kolom komentar adalah tindakan ekstrem yang menghindari masalah (menyerah pada trolling), bukan sanggahan yang membuktikan bahwa aturan netiket dapat ditegakkan secara efektif.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "98-146",
+          "section": "Unit 3: Hortatory Exposition - Netiquette in Digital Communication"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Kerangka Asesmen TKA - Domain Bahasa Inggris Wajib: Level 3 Evaluasi dan Apresiasi"
+        }
+      },
+      "provenance": "Soal orisinal literasi logika analitis (TKA) yang menuntut siswa mengevaluasi kekuatan argumen dan mematahkan premis lawan secara logis.",
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen TKA 2026 & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-C: Mengevaluasi dan mematahkan argumen lawan (counter-argument refutation) dalam wacana debat hortatori bertema etika digital",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 98-146 (Unit 3: Hortatory Exposition - Netiquette in Digital Communication)",
+          "teacher_guide": "Kerangka Asesmen TKA (Peraturan BSKAP Nomor 045/H/AN/2025) - Domain Bahasa Inggris Wajib: Level 3 Evaluasi dan Apresiasi"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Skenario debat netiket, perumusan argumen tandingan berbasis efektivitas mekanisme moderasi tanpa statistik fabrikasi, dan dekonstruksi kesalahan penalaran disusun orisinal oleh proyek."
+      }
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "ENG12-C02-D-8030",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Read the paragraph:\n'The issue of whether fossil fuel companies should be completely banned from operations is highly debated. Environmentalists argue that an immediate ban is the only way to stop global warming. On the other hand, economists point out that a sudden ban would cause massive job losses and trigger a global economic collapse.'\nWhat makes this paragraph part of a 'Discussion Text' rather than an 'Argumentative Text'?",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "It gives a strong recommendation at the end."
+        },
+        {
+          "id": "B",
+          "text": "It presents two different/opposing viewpoints on a single issue."
+        },
+        {
+          "id": "C",
+          "text": "It only focuses on the environmental aspect."
+        },
+        {
+          "id": "D",
+          "text": "It uses past tense to describe a historical event."
+        }
+      ],
+      "primary_competency": "ENG12-C02-D",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "explanation": "A Discussion Text explores an issue by presenting multiple sides of an argument (pros and cons), unlike an Argumentative Text which strongly advocates for only one side.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 60
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "ENG12-C02-D-1527",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Choose the correct connective word to complete the sentence:\n'Electric vehicles (EVs) produce zero tailpipe emissions, making them excellent for urban air quality. __________, the production of EV batteries requires intensive mining that severely damages local ecosystems.'",
+      "answer": "C",
+      "options": [
+        {
+          "id": "A",
+          "text": "Furthermore"
+        },
+        {
+          "id": "B",
+          "text": "In addition"
+        },
+        {
+          "id": "C",
+          "text": "However"
+        },
+        {
+          "id": "D",
+          "text": "Consequently"
+        }
+      ],
+      "primary_competency": "ENG12-C02-D",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "The first sentence presents a positive point (zero emissions), while the second sentence presents a negative point (damaging ecosystems). To connect contrasting ideas in a discussion text, we use contrastive conjunctions like 'However', 'On the other hand', or 'Nevertheless'.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "evaluate",
+      "question_id": "ENG12-C02-D-3226",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "literacy",
+        "stimulus_type": "contextual",
+        "suitable": true
+      },
+      "question": "Based on the debate regarding 'Carbon Footprint Taxes', Proponents say it forces factories to innovate green tech, while Opponents say it makes everyday goods too expensive for poor families. Which concluding statement best synthesizes both arguments neutrally without taking a biased side?",
+      "answer": "C",
+      "options": [
+        {
+          "id": "A",
+          "text": "Carbon taxes are terrible because they only hurt the poor, so factories should innovate for free."
+        },
+        {
+          "id": "B",
+          "text": "Therefore, carbon taxes must be applied strictly to save the earth, regardless of the economic cost."
+        },
+        {
+          "id": "C",
+          "text": "In conclusion, while a carbon tax encourages environmental innovation, it must be implemented carefully with subsidies to protect vulnerable economic groups."
+        },
+        {
+          "id": "D",
+          "text": "To sum up, carbon taxes are a myth created by governments to steal money from both factories and poor families."
+        }
+      ],
+      "primary_competency": "ENG12-C02-D",
+      "difficulty_label": "hard",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "explanation": "A good conclusion in a Discussion Text synthesizes the pros and cons objectively. This option acknowledges the positive side (environmental innovation) while addressing the negative side (economic cost to the poor) by proposing a middle-ground solution (subsidies), maintaining neutrality.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 120
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "ENG12-C02-BOSS-2406",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Read the text:\n'Many people struggle with time management. The Pomodoro Technique is one effective method to handle this. It involves working in focused 25-minute intervals, followed by a 5-minute break. This simple routine helps prevent mental fatigue and keeps motivation high throughout the day.'\nWhat is the main topic of the passage?",
+      "answer": "C",
+      "options": [
+        {
+          "id": "A",
+          "text": "The history of mental fatigue."
+        },
+        {
+          "id": "B",
+          "text": "Why people struggle with time."
+        },
+        {
+          "id": "C",
+          "text": "A method for managing time effectively."
+        },
+        {
+          "id": "D",
+          "text": "The benefits of taking 5-minute breaks."
+        }
+      ],
+      "primary_competency": "ENG12-C02-BOSS",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "explanation": "The entire passage revolves around introducing and explaining the 'Pomodoro Technique' as a solution for time management.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 60
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "ENG12-C02-BOSS-2763",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "'The ancient artifact ________ from the museum during the blackout last night, despite the heavy security presence.'\nChoose the correct passive voice structure to complete the sentence.",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "was stealing"
+        },
+        {
+          "id": "B",
+          "text": "was stolen"
+        },
+        {
+          "id": "C",
+          "text": "has stolen"
+        },
+        {
+          "id": "D",
+          "text": "is stolen"
+        }
+      ],
+      "primary_competency": "ENG12-C02-BOSS",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "The event happened in the past ('last night'), so we need the simple past passive voice: 'was/were + Verb 3'. 'The ancient artifact' is singular, so 'was stolen' is correct.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "evaluate",
+      "question_id": "ENG12-C02-BOSS-3305",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "literacy",
+        "stimulus_type": "contextual",
+        "suitable": true
+      },
+      "question": "Read the academic excerpt:\n'While the implementation of Universal Basic Income (UBI) is often touted as a utopian cure for poverty, historical economic models suggest that injecting unchecked capital into the bottom tier of a consumer market invariably triggers hyperinflation, effectively nullifying the newly acquired purchasing power of the poor.'\nWhat is the author's tone toward Universal Basic Income?",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "Enthusiastic and supportive."
+        },
+        {
+          "id": "B",
+          "text": "Skeptical and cautionary."
+        },
+        {
+          "id": "C",
+          "text": "Neutral and objective."
+        },
+        {
+          "id": "D",
+          "text": "Confused and uncertain."
+        }
+      ],
+      "primary_competency": "ENG12-C02-BOSS",
+      "difficulty_label": "hard",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "explanation": "The author uses words like 'often touted as a utopian cure' (suggesting it's overly idealistic) and warns that it 'invariably triggers hyperinflation' and 'nullifies purchasing power'. This clearly shows a skeptical and cautionary tone regarding the effectiveness of UBI.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 120
+    }
+  ],
+  "curriculum": [
+    "K13",
+    "Merdeka"
+  ],
+  "grade": 12,
+  "competencies": [
+    {
+      "name": "Kompetensi ENG12-C02-BOSS",
+      "question_count": 3,
+      "competency_id": "ENG12-C02-BOSS"
+    },
+    {
+      "name": "Kompetensi ENG12-C02-C",
+      "question_count": 3,
+      "competency_id": "ENG12-C02-C"
+    },
+    {
+      "name": "Kompetensi ENG12-C02-A",
+      "question_count": 3,
+      "competency_id": "ENG12-C02-A"
+    },
+    {
+      "name": "Kompetensi ENG12-C02-B",
+      "question_count": 3,
+      "competency_id": "ENG12-C02-B"
+    },
+    {
+      "name": "Kompetensi ENG12-C02-D",
+      "question_count": 3,
+      "competency_id": "ENG12-C02-D"
+    }
+  ],
+  "subject": "bahasa-inggris",
+  "chapter": "ENG12-C02",
+  "status": "active",
+  "content_version": 1,
+  "pool_id": "POOL-BAHASA-INGGRIS-ENG12-C02"
 }

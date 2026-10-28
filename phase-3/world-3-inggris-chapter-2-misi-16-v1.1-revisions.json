@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "ENG12-W03-CH02-M16-V1.1-REV",
+  "base_batch": "phase-3/world-3-inggris-chapter-2-misi-16-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 2 Misi 16 (Hortatory Exposition: Netiquette): clarifying communicative function of Recommendation vs Reiteration, detailing syntactic and semantic distractor rationale acknowledging grammatical validity of Option D while clarifying lack of genuine concessive relation, replacing empirical claims with realistic mechanism-based counter-argument in Option C, and adding Decision 009 source_basis metadata without unverified markdown pagination.",
+  "revisions": [
+    {
+      "id": "ENG-C02-C-EASY",
+      "change_type": "distractor_and_source_basis_revision",
+      "reason": "Penyempurnaan analisis fungsi komunikatif Rekomendasi hortatori vs Replikasi analitis dan penambahan metadata source_basis terverifikasi Unit 3 Life Today.",
+      "before_question": "Read the concluding paragraph:\n'Based on the rising cases of cyberbullying and online harassment, it is crucial that schools implement strict Netiquette guidelines. Therefore, we should all start practicing empathy before typing a comment on social media.'\nWhat is the generic structure of this paragraph in a Hortatory Exposition text?",
+      "after_question": "Read the concluding paragraph:\n'Based on the rising cases of cyberbullying and online harassment, it is crucial that schools implement strict Netiquette guidelines. Therefore, we should all start practicing empathy before typing a comment on social media.'\nWhat is the generic structure of this paragraph in a Hortatory Exposition text?",
+      "answer": "Recommendation",
+      "replacement_options": [
+        "Thesis",
+        "Arguments",
+        "Recommendation",
+        "Reiteration"
+      ],
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Teks Eksposisi Hortatori:\n   Teks Hortatory Exposition bertujuan meyakinkan pembaca bahwa suatu tindakan seharusnya atau tidak seharusnya diambil (should or should not happen). Struktur generiknya terdiri dari:\n   - Thesis: Pengenalan isu dan posisi penulis.\n   - Arguments: Pemaparan alasan dan bukti pendukung posisi penulis.\n   - Recommendation: Usulan atau ajakan tindakan nyata yang harus dilakukan berdasarkan argumen yang telah dipaparkan.\n\n2. Pembahasan Kunci Jawaban:\n   - Recommendation (BENAR): Paragraf tersebut secara eksplisit mengusulkan tindakan konkret yang harus diambil oleh pihak sekolah ('crucial that schools implement strict Netiquette guidelines') dan mengajak pembaca mempraktikkan empati ('we should all start practicing empathy...'). Fungsi komunikatif ini adalah ciri khas bagian Rekomendasi pada teks eksposisi hortatori.\n\n3. Pembahasan Distraktor:\n   - Thesis (Salah): Tesis berada di awal teks untuk memperkenalkan isu utama dan sudut pandang penulis, bukan di paragraf kesimpulan penutup yang mengusulkan solusi.\n   - Arguments (Salah): Paragraf argumen memuat elaborasi fakta, bukti, atau alasan analitis pendukung, bukan rangkuman seruan tindakan.\n   - Reiteration (Salah): Reiteration merupakan bagian penutup pada teks Analytical Exposition yang berfungsi menegaskan kembali posisi tesis penulis tanpa mengajukan anjuran/rekomendasi tindakan, berbeda dengan paragraf stimulus yang secara aktif mendesak tindakan perbaikan.",
+      "source": {
+        "student_book": {
+          "pages": "98-146",
+          "section": "Unit 3: Hortatory Exposition - Netiquette (Generic Structures)"
+        },
+        "teacher_guide": {
+          "pages": "142-192",
+          "section": "Unit 3: Generic Structures of Hortatory Exposition"
+        }
+      },
+      "provenance": "Soal orisinal pemahaman struktur generik rekomendasi pada teks eksposisi hortatori (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-C: Mengidentifikasi struktur generik teks eksposisi hortatori (Hortatory Exposition: Thesis, Arguments, Recommendation)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 98-146 (Unit 3: Hortatory Exposition - Netiquette)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 142-192 (Unit 3: Generic Structures of Hortatory Exposition)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Konteks netiket digital sekolah, paragraf penutup berstruktur anjuran moral/kebijakan, dan opsi klasifikasi struktur teks disusun mandiri oleh tim pengembang."
+      }
+    },
+    {
+      "id": "ENG-C02-C-MED",
+      "change_type": "distractor_and_source_basis_revision",
+      "reason": "Penyempurnaan analisis sintaksis pemilihan relative pronoun dan relasi semantik antarklausa, termasuk pengakuan validitas gramatikal opsi D seraya memperjelas ketidakcocokan hubungan konsesif 'Although', serta penambahan source_basis terverifikasi Unit 3 Life Today.",
+      "before_question": "'Cyberbullying is an aggressive behavior. It happens repeatedly online. It has severe psychological impacts.'\nCombine the three sentences into one cohesive sentence using appropriate relative pronouns and conjunctions.",
+      "after_question": "'Cyberbullying is an aggressive behavior. It happens repeatedly online. It has severe psychological impacts.'\nCombine the three sentences into one cohesive sentence using appropriate relative pronouns and conjunctions.",
+      "answer": "Cyberbullying is an aggressive behavior which happens repeatedly online and has severe psychological impacts.",
+      "replacement_options": [
+        "Cyberbullying is an aggressive behavior which happens repeatedly online and has severe psychological impacts.",
+        "Cyberbullying is an aggressive behavior who happens repeatedly online so it has severe psychological impacts.",
+        "Because cyberbullying is an aggressive behavior it happens repeatedly online but has severe psychological impacts.",
+        "Although cyberbullying happens repeatedly online, it is an aggressive behavior which has severe psychological impacts."
+      ],
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Penggabungan Kalimat Majemuk (Complex-Compound Sentence):\n   Tiga proposisi awal:\n   (1) Cyberbullying is an aggressive behavior.\n   (2) It happens repeatedly online.\n   (3) It has severe psychological impacts.\n   Tujuan sintaktis: Menggabungkan ketiga klausa secara utuh dan kohesif dengan anteseden yang tepat ('an aggressive behavior' sebagai konsep/perilaku abstrak non-insani) serta menjaga hubungan logis setara antara kejadian berulang dan dampak psikologisnya tanpa mengubah relasi makna aslinya.\n\n2. Pembahasan Kunci Jawaban:\n   - Opsi A (BENAR): Merupakan satu-satunya jawaban terbaik. Menggunakan relative pronoun 'which' yang tepat merujuk anteseden non-insani 'an aggressive behavior', diikuti klausa relatif dengan predikat majemuk setara ('happens repeatedly online and has severe psychological impacts') menggunakan konjungsi koordinatif 'and' yang menjaga keutuhan relasi makna asli ketiga proposisi.\n\n3. Pembahasan Distraktor:\n   - Opsi B (Salah): Penggunaan relative pronoun 'who' keliru secara gramatikal karena 'who' hanya digunakan untuk merujuk manusia, bukan konsep/perilaku abstrak ('aggressive behavior'). Selain itu, penggunaan 'so it has' menghasilkan struktur klausa yang rancu dan tidak padu.\n   - Opsi C (Salah): Hubungan logis antarklausa terdistorsi secara semantik; klausa 'Because cyberbullying is an aggressive behavior' mengesankan bahwa sifat agresif adalah penyebab terjadinya peristiwa online, dan konjungsi 'but' mengimplikasikan pertentangan yang tidak berdasar (dampak psikologis parah bukanlah kontradiksi dari perilaku agresif). Kalimat ini juga cacat tanda baca (tanpa tanda koma setelah klausa subordinat).\n   - Opsi D (Salah): Konstruksi kalimat majemuk ini secara tata bahasa (gramatikal) sebenarnya dapat dibentuk, namun penggunaan konjungsi 'Although' tidak tepat secara semantik karena keberadaan cyberbullying yang berulang secara online dan sifatnya sebagai perilaku agresif tidak memiliki hubungan konsesif (pertentangan yang dapat dimaklumi) yang wajar. Penggunaan 'Although' merusak keterpaduan logika wacana asli.",
+      "source": {
+        "student_book": {
+          "pages": "98-146",
+          "section": "Unit 3: Language Features - Relative Clauses & Connectors"
+        },
+        "teacher_guide": {
+          "pages": "142-192",
+          "section": "Unit 3: Syntactic Synthesis & Clause Combining"
+        }
+      },
+      "provenance": "Soal orisinal drill sintaksis untuk menguji kemampuan menyusun kalimat majemuk bertingkat (Complex Sentences) dengan pronomina relatif.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-C: Menggabungkan klausa menggunakan pronomina relatif (relative pronouns) dan konjungsi dalam kalimat majemuk bertingkat (complex sentences)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 98-146 (Unit 3: Language Features - Relative Clauses & Connectors)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 142-192 (Unit 3: Syntactic Synthesis & Clause Combining)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Tiga kalimat stimulus mengenai cyberbullying, variasi konstruksi pronomina relatif, dan distorsi semantik disusun mandiri sebagai instrumen evaluasi sintaksis."
+      }
+    },
+    {
+      "id": "ENG-C02-C-HARD",
+      "change_type": "option_refinement_and_source_basis_revision",
+      "reason": "Penyempurnaan opsi C menjadi argumen berbasis mekanisme penegakan moderasi nyata tanpa klaim empiris tanpa sumber (seperti 'consistently demonstrate' atau persentase), perbaikan rasionalisasi sanggahan logis, dan penambahan source_basis terverifikasi TKA tanpa nomor halaman markdown semu.",
+      "before_question": "Read the statement from a debate on Netiquette:\n'Regulating Netiquette is fundamentally useless. Trolls will always exist, and anonymity empowers them to bypass any artificial rules set by forum moderators.'\nWhich of the following counter-arguments most effectively weakens the statement above?",
+      "after_question": "Read the statement from a debate on Netiquette:\n'Regulating Netiquette is fundamentally useless. Trolls will always exist, and anonymity empowers them to bypass any artificial rules set by forum moderators.'\nWhich of the following counter-arguments most effectively weakens the statement above?",
+      "answer": "Even in anonymous forums, moderators can respond to user reports, remove abusive posts, and restrict accounts that repeatedly violate clear community guidelines.",
+      "replacement_options": [
+        "Trolls are mostly teenagers who will eventually outgrow their disruptive behavior.",
+        "Anonymity is a human right, so online communities should simply accept trolling as unavoidable free speech.",
+        "Even in anonymous forums, moderators can respond to user reports, remove abusive posts, and restrict accounts that repeatedly violate clear community guidelines.",
+        "Platform moderators should simply eliminate the problem by permanently shutting down all public comment sections."
+      ],
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Argumen dan Premis Lawan:\n   - Klaim Lawan: Regulasi netiket pada dasarnya tidak berguna ('fundamentally useless').\n   - Alasan Lawan: Troll akan selalu ada, dan anonimitas memberdayakan mereka untuk menerobos aturan buatan moderator.\n   - Target Sanggahan: Melemahkan argumen tersebut dengan menunjukkan mekanisme penegakan yang membuktikan bahwa aturan tetap berfungsi meredam perilaku menyimpang meskipun dalam lingkungan anonim.\n\n2. Pembahasan Kunci Jawaban:\n   - Opsi C (BENAR): Menanggapi langsung inti klaim lawan. Dengan memaparkan mekanisme operasional nyata—bahwa moderator tetap dapat merespons laporan pengguna, menghapus konten pelecehan, dan membatasi akun pelanggar berulang berdasarkan pedoman komunitas—argumen ini membuktikan bahwa regulasi etika tidak sia-sia, bahkan di dalam forum yang mengizinkan anonimitas, tanpa memerlukan klaim statistik empiris yang belum terverifikasi.\n\n3. Pembahasan Distraktor:\n   - Opsi A (Salah): Spekulasi mengenai usia pelaku trolling tidak menjawab atau melemahkan klaim bahwa aturan netiket saat ini tidak berguna.\n   - Opsi B (Salah): Opsi ini justru mendukung kepasrahan terhadap perilaku toksik atas nama kebebasan anonimitas, sehingga memperkuat pandangan lawan alih-alih menyanggahnya.\n   - Opsi D (Salah): Menutup seluruh kolom komentar adalah tindakan ekstrem yang menghindari masalah (menyerah pada trolling), bukan sanggahan yang membuktikan bahwa aturan netiket dapat ditegakkan secara efektif.",
+      "source": {
+        "student_book": {
+          "pages": "98-146",
+          "section": "Unit 3: Hortatory Exposition - Netiquette in Digital Communication"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Kerangka Asesmen TKA - Domain Bahasa Inggris Wajib: Level 3 Evaluasi dan Apresiasi"
+        }
+      },
+      "provenance": "Soal orisinal literasi logika analitis (TKA) yang menuntut siswa mengevaluasi kekuatan argumen dan mematahkan premis lawan secara logis.",
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen TKA 2026 & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-C: Mengevaluasi dan mematahkan argumen lawan (counter-argument refutation) dalam wacana debat hortatori bertema etika digital",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 98-146 (Unit 3: Hortatory Exposition - Netiquette in Digital Communication)",
+          "teacher_guide": "Kerangka Asesmen TKA (Peraturan BSKAP Nomor 045/H/AN/2025) - Domain Bahasa Inggris Wajib: Level 3 Evaluasi dan Apresiasi"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Skenario debat netiket, perumusan argumen tandingan berbasis efektivitas mekanisme moderasi tanpa statistik fabrikasi, dan dekonstruksi kesalahan penalaran disusun orisinal oleh proyek."
+      }
+    }
+  ]
+}

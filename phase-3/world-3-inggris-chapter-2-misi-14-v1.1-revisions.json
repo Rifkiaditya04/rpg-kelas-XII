@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "ENG12-W03-CH02-M14-V1.1-REV",
+  "base_batch": "phase-3/world-3-inggris-chapter-2-misi-14-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 2 Misi 14 (Procedure Text): enriching distractor rationales, clarifying modal passive structure, updating troubleshooting causal inference to a scenario-based diagnostic simulation connecting installation status to application symptoms, aligning cognitive level to Bloom C4 (Analyze) / TKA Level 2 Inferensial, and adding Decision 009 source_basis metadata.",
+  "revisions": [
+    {
+      "id": "ENG-C02-A-EASY",
+      "change_type": "distractor_and_source_basis_revision",
+      "reason": "Penyempurnaan rasionalisasi distraktor urutan kronologis prosedur penggunaan kartu E-Money di gerbang tol dan penambahan metadata source_basis terverifikasi sesuai Decision 009.",
+      "before_question": "Read the text:\n'How to use the E-Money Card at the Toll Gate:\n1. Ensure your card has enough balance.\n2. Tap the card on the reader machine.\n3. Wait until the gate opens automatically.\n4. Drive through the gate safely.'\nWhat is the first thing you must do before tapping the card?",
+      "after_question": "Read the text:\n'How to use the E-Money Card at the Toll Gate:\n1. Ensure your card has enough balance.\n2. Tap the card on the reader machine.\n3. Wait until the gate opens automatically.\n4. Drive through the gate safely.'\nWhat is the first thing you must do before tapping the card?",
+      "answer": "Check that you have sufficient balance.",
+      "replacement_options": [
+        "Wait for the gate to open.",
+        "Check that you have sufficient balance.",
+        "Drive through the gate.",
+        "Buy a new E-Money card."
+      ],
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Urutan Prosedur:\n   Teks menyajikan empat langkah kronologis berurutan:\n   Langkah 1: 'Ensure your card has enough balance' (Memastikan saldo mencukupi).\n   Langkah 2: 'Tap the card on the reader machine' (Menempelkan kartu pada mesin pembaca).\n   Langkah 3: 'Wait until the gate opens automatically' (Menunggu gerbang terbuka otomatis).\n   Langkah 4: 'Drive through the gate safely' (Melintas melewati gerbang dengan aman).\n   Pertanyaan menanyakan tindakan yang harus dilakukan SEBELUM menempelkan kartu (before tapping the card / sebelum Langkah 2).\n\n2. Pembahasan Kunci Jawaban:\n   - Check that you have sufficient balance (BENAR): Parafrase langsung dari Langkah 1 ('Ensure your card has enough balance') yang merupakan prasyarat mutlak sebelum menempelkan kartu ke mesin sensor.\n\n3. Pembahasan Distraktor:\n   - Wait for the gate to open (Salah): Merupakan Langkah 3 yang dilakukan SETELAH kartu ditempelkan (Langkah 2), bukan sebelum menempelkan kartu.\n   - Drive through the gate (Salah): Merupakan Langkah 4 (tindakan terakhir) setelah gerbang terbuka secara otomatis.\n   - Buy a new E-Money card (Salah): Membeli kartu baru tidak tercantum dalam prosedur dan tidak diperlukan jika kartu yang ada masih dapat digunakan serta memiliki saldo cukup.",
+      "source": {
+        "student_book": {
+          "pages": "56-96",
+          "section": "Unit 2: Argumentative Text - E-Money (Thematic Digital Payment Context)"
+        },
+        "teacher_guide": {
+          "pages": "94-140",
+          "section": "Unit 2: Contextual Digital Literacy & Financial Technology"
+        }
+      },
+      "provenance": "Soal orisinal pemahaman urutan teks prosedur bertema transaksi uang elektronik (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII) & Kerangka Asesmen TKA 2026",
+        "competency_target": "ENG12-C02-A: Mengidentifikasi urutan langkah dan informasi tersurat dalam teks prosedur terkait transaksi digital (Procedure Text)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 56-96 (Unit 2: E-Money Contextual Theme)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 94-140 (Unit 2: Literacy & Digital Finance Themes)"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Teks prosedur penggunaan kartu E-Money di gerbang tol, opsi jawaban, dan analisis kronologis disusun mandiri oleh proyek sebagai instrumen uji pemahaman wacana prosedural kontekstual tanpa menyalin naskah berhak cipta."
+      }
+    },
+    {
+      "id": "ENG-C02-A-MED",
+      "change_type": "distractor_and_source_basis_revision",
+      "reason": "Penyempurnaan analisis sintaksis modal passive, pembedaan jelas terhadap gerund 'clicking' vs imperatif, dan penambahan metadata source_basis terverifikasi K13 Bab 10.",
+      "before_question": "In a manual titled 'How to Use Photoshop for Beginners', one of the steps says: 'Next, the brightness level can be adjusted by clicking the Image menu.'\nWhich language feature is predominantly used in that specific sentence?",
+      "after_question": "In a manual titled 'How to Use Photoshop for Beginners', one of the steps says: 'Next, the brightness level can be adjusted by clicking the Image menu.'\nWhich language feature is predominantly used in that specific sentence?",
+      "answer": "Passive voice",
+      "replacement_options": [
+        "Imperative verb",
+        "Passive voice",
+        "Simple past tense",
+        "Conditional clause"
+      ],
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Kebahasaan:\n   Klausa utama pada kalimat adalah: 'the brightness level can be adjusted by clicking the Image menu'. Predikat kalimat menggunakan konstruksi modal passive: modal auxiliary ('can') + auxiliary be ('be') + past participle / V3 ('adjusted'). Bentuk pasif ini lazim digunakan dalam manual instruksional dan prosedur formal untuk menekankan objek dan tindakan secara objektif/impersonal.\n\n2. Pembahasan Kunci Jawaban:\n   - Passive voice (BENAR): Pola 'can be adjusted' secara sintaksis merupakan bentuk kalimat pasif (modal + be + past participle), dengan subjek gramatikal 'the brightness level' menerima tindakan penyesuaian.\n\n3. Pembahasan Distraktor:\n   - Imperative verb (Salah): Teks prosedur memang lazim menggunakan kalimat perintah (misal: 'Click the Image menu'), namun pada kalimat target yang diuji, kata kerja berakhiran -ing ('clicking') berfungsi sebagai gerund dalam frasa preposisional ('by clicking...'), bukan kata kerja imperatif di awal klausa mandiri.\n   - Simple past tense (Salah): Bentuk 'adjusted' di sini adalah past participle (V3) yang merupakan bagian dari konstruksi pasif modal bersama 'can be', bukan kata kerja past tense (V2) yang menyatakan peristiwa lampau.\n   - Conditional clause (Salah): Kalimat tidak memuat konjungsi pengandaian (seperti 'if' atau 'unless') maupun struktur klausa kondisional bersyarat.",
+      "source": {
+        "student_book": {
+          "pages": "135-148",
+          "section": "Chapter 10: How to Use Photoshop?"
+        },
+        "teacher_guide": {
+          "pages": "125-136",
+          "section": "Chapter 10: Technology Manual & Passive Voice Features"
+        }
+      },
+      "provenance": "Soal orisinal drill K13 untuk mengenali fitur kebahasaan kalimat pasif (Passive Voice) di dalam manual instruksional teknologi.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kerangka Asesmen TKA 2026",
+        "competency_target": "ENG12-C02-A: Menganalisis unsur kebahasaan kalimat pasif (passive voice) dalam manual teknologi dan teks prosedur",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 135-148 (Chapter 10: How to Use Photoshop?)",
+          "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII hlm. 125-136 (Bab 10: Manual Penggunaan Teknologi & Passive Voice)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Konteks kalimat manual instruksi Photoshop dan dekonstruksi fitur kebahasaan pasif vs imperatif disusun mandiri oleh tim pengembang sebagai bahan drill tata bahasa fungsional."
+      }
+    },
+    {
+      "id": "ENG-C02-A-HARD",
+      "change_type": "stem_and_cognitive_level_alignment_revision",
+      "reason": "Penyempurnaan stimulus menjadi skenario simulasi diagnostik pemecahan masalah instalasi (menghubungkan status log berkas utama vs dependensi runtime dengan gejala pincang aplikasi pascarestart), penyelarasan cognitive_level menjadi 'analyze' (Bloom C4 / TKA Level 2 Inferensial), penyempurnaan distraktor B menjadi hipotesis format berkas yang realistis namun tidak didukung bukti status instalasi, serta pemutakhiran rujukan source_basis resmi TKA.",
+      "before_question": "Read the troubleshooting instruction:\n'If the software crashes during installation, do not restart your computer immediately. First, forcefully close the installer using Task Manager. If you restart the computer without closing the corrupted installer, it may cause a critical boot failure.'\nWhat is the logical implication if a user ignores the warning and restarts their computer right away?",
+      "after_question": "A user was installing a graphic design application when the setup wizard stopped responding. The installation log showed:\n- Core program files: Copied successfully.\n- Runtime dependency registration: Pending.\nThe user restarted the computer before the setup was completed and did not rerun the installer. After the reboot, the application's main interface opened without issues, but clicking the export button triggered an error.\nWhich statement best explains this symptom based on the installation status?",
+      "answer": "The application can launch because its core files are present, but the export feature fails because its required dependencies were not registered.",
+      "replacement_options": [
+        "The operating system automatically completed the pending dependency registration during the reboot.",
+        "The export feature failed because the user selected an unsupported output format.",
+        "The application can launch because its core files are present, but the export feature fails because its required dependencies were not registered.",
+        "The core program files were corrupted by the restart, preventing the export feature from functioning."
+      ],
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Informasi Stimulus (Status Instalasi vs Gejala Aplikasi):\n   Stimulus menyajikan dua kelompok fakta teknis yang harus dihubungkan secara analitis:\n   a. Status Log Instalasi:\n      - Berkas program utama ('Core program files'): Berhasil disalin secara lengkap ('Copied successfully').\n      - Pendaftaran dependensi runtime ('Runtime dependency registration'): Masih berstatus tertunda ('Pending').\n   b. Gejala Pascarestart:\n      - Pengguna me-restart komputer sebelum setup tuntas dan tidak menjalankan ulang penginstal.\n      - Antarmuka utama aplikasi dapat dibuka normal tanpa masalah ('opened without issues').\n      - Menekan tombol ekspor langsung memicu pesan galat ('triggered an error').\n\n2. Pembahasan Kunci Jawaban:\n   - The application can launch because its core files are present, but the export feature fails because its required dependencies were not registered (BENAR): Merupakan penjelasan terbaik yang memadukan seluruh bukti log instalasi dan gejala aplikasi secara kausal. Berkas aplikasi utama yang telah tersalin lengkap memungkinkan antarmuka utama aplikasi terbuka normal. Sebaliknya, proses instalasi yang terhenti sebelum dependensi runtime didaftarkan menyebabkan komponen pustaka pendukung untuk fungsi khusus (fitur ekspor) belum tersedia di sistem, sehingga fitur tersebut gagal saat dieksekusi.\n\n3. Pembahasan Distraktor:\n   - The operating system automatically completed the pending dependency registration during the reboot (Salah): Ditolak oleh bukti skenario; me-restart komputer saat proses setup belum selesai memutus alur instalasi. Sistem operasi tidak secara otomatis menyelesaikan pendaftaran pustaka dependensi aplikasi pihak ketiga, terbukti dari kegagalan fungsi ekspor saat dijalankan.\n   - The export feature failed because the user selected an unsupported output format (Salah): Meskipun format berkas yang tidak didukung secara umum dapat menyebabkan kegagalan ekspor pada perangkat lunak grafis, dugaan ini tidak didukung oleh bukti spesifik dalam skenario. Pertanyaan secara eksplisit meminta penjelasan 'based on the installation status' (berdasarkan status instalasi), di mana log menunjukkan pendaftaran dependensi runtime masih berstatus tertunda. Menghubungkan kegagalan dengan format berkas mengabaikan bukti langsung dari proses instalasi yang tidak tuntas.\n   - The core program files were corrupted by the restart, preventing the export feature from functioning (Salah): Log instalasi secara tegas mencatat bahwa berkas utama sudah disalin dengan sukses sebelum restart, dan antarmuka utama dapat terbuka normal. Galat spesifik pada fitur ekspor disebabkan oleh dependensi runtime yang belum terdaftar, bukan oleh kerusakan berkas utama.",
+      "source": {
+        "student_book": {
+          "pages": "135-148",
+          "section": "Chapter 10: Technical Instructions & Troubleshooting Procedures"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Kerangka Asesmen TKA - Domain Bahasa Inggris Wajib: Level 2 Pemahaman Inferensial"
+        }
+      },
+      "provenance": "Soal orisinal literasi teknis TKA yang menguji kemampuan analisis siswa dalam menghubungkan data status instalasi dengan gejala malafungsi perangkat lunak (diagnostic reasoning).",
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen TKA 2026 & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-A: Menganalisis hubungan sebab-akibat antara status log instalasi perangkat lunak dengan gejala malafungsi aplikasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 135-148 (Chapter 10: Technical Instructions)",
+          "teacher_guide": "Kerangka Asesmen TKA (Peraturan BSKAP Nomor 045/H/AN/2025) - Domain Bahasa Inggris Wajib: Level 2 Pemahaman Inferensial"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Skenario simulasi log instalasi perangkat lunak, perumusan relasi kausal berkas utama vs dependensi runtime, dan analisis opsi diagnostik disusun mandiri oleh tim pengembang sebagai instrumen penalaran teknis."
+      }
+    }
+  ]
+}
