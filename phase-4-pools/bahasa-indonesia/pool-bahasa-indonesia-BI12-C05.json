@@ -1,487 +1,467 @@
-﻿{
-    "track":  "wajib",
-    "questions":  [
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C05-A-2253",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Tradisi \u0027sasi\u0027 pada masyarakat Raja Ampat, Papua, merupakan kearifan lokal yang menetapkan zona larangan tangkap (no take zone) selama periode tertentu. Berdasarkan informasi dalam esai, tujuan utama pelarangan ini adalah...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Memberikan kesempatan bagi biota laut untuk berkembang biak agar tidak punah."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Meningkatkan harga jual hasil laut di pasar internasional."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Menghindari masuknya wisatawan asing ke wilayah tersebut."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Membuktikan bahwa masyarakat memiliki kekuatan hukum adat yang mengikat."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C05-A",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Tujuan sasi secara nyata adalah tindakan konservasi tradisional untuk menjaga kelestarian ekosistem sehingga hasil alam dapat dimanfaatkan secara berkelanjutan.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C05-A-3134",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Esai merupakan bentuk tulisan yang mengungkapkan dan membahas persoalan yang menarik perhatian penulisnya secara ringkas. Salah satu sifat dari teks esai yang membedakannya dari artikel ilmiah murni adalah...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Esai memuat gagasan, pandangan subjektif, dan apresiasi penulis terhadap topik yang dibahas."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Esai hanya boleh memuat tabel, grafik statistik, dan rumus perhitungan matematika."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Esai tidak memerlukan fakta, melainkan murni fiksi atau khayalan penulis."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Esai harus selalu menceritakan kronologi sejarah secara urut tanpa menyisipkan pendapat pribadi."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C05-A",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Esai adalah karya yang memadukan fakta objektif dengan pandangan, opini, atau gagasan subjektif penulisnya dalam menanggapi sebuah isu atau topik secara menarik.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C05-B-2993",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Masyarakat adat Tau Taa Vana di Tojo Una Una meyakini bahwa \u0027hutan dapat menjadi sumber penyakit apabila tidak dilestarikan, sekaligus sumber pengobatan jika dieksplorasi dengan bijak.\u0027 Makna tersirat dari pandangan kearifan lokal ini adalah...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Hubungan timbal balik yang erat di mana manusia harus menjaga alam agar alam melindungi dan menghidupi manusia."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Masyarakat dilarang keras memasuki hutan untuk alasan apa pun karena berbahaya."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Pemerintah harus mengambil alih pengelolaan hutan sepenuhnya dari masyarakat adat."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Masyarakat hanya diperbolehkan mengambil tanaman obat dan dilarang memakan hasil buruan."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C05-B",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Keyakinan tersebut mengajarkan sikap hormat dan kehati-hatian manusia dalam berinteraksi dengan alam, menciptakan keseimbangan di mana alam dirawat sehingga dapat terus menyediakan kebutuhan hidup manusia.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C05-C-3211",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Bacalah pernyataan berikut: \u0027Setiap masyarakat memiliki budaya dan setiap budaya pasti ada masyarakat yang memilikinya. Setiap kelompok masyarakat memiliki budaya yang bersifat khas.\u0027 Dalam penulisan esai, pernyataan tersebut tergolong sebagai...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Asumsi"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Fakta absolut"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Data empiris"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Kritik sosial"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C05-C",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Pernyataan tersebut berupa anggapan dasar atau teori sementara (asumsi) penulis mengenai hubungan antara masyarakat dan budaya yang menjadi landasan argumennya.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "BI12-C05-C-1275",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Dalam menulis esai, penggunaan konjungsi korelatif harus tepat (idiomatis). Pasangan kata penghubung (korelatif) manakah di bawah ini yang digunakan dengan tepat sesuai kaidah bahasa Indonesia?",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Baik di kota maupun di desa."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Bukan sekadar tren, tetapi sudah menjadi budaya."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Antara budaya lokal dengan budaya asing."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Baik di pedalaman ataupun di pesisir."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C05-C",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Pasangan baku untuk \u0027baik\u0027 adalah \u0027maupun\u0027. Penggunaan \u0027bukan... tetapi\u0027 keliru (seharusnya \u0027bukan... melainkan\u0027), \u0027antara... dengan\u0027 keliru (seharusnya \u0027antara... dan\u0027), dan \u0027baik... ataupun\u0027 keliru (seharusnya \u0027maupun\u0027).",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "BI12-C05-C-9031",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Masyarakat kini sering menonton acara dialog televisi yang membahas permasalahan budaya. Apa padanan kata baku bahasa Indonesia yang tepat untuk istilah asing \u0027talk show\u0027?",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Gelar wicara"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Siniar"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Wawancara eksklusif"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Diskusi panel"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C05-C",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "Dalam Kamus Besar Bahasa Indonesia (KBBI), padanan istilah asing \u0027talk show\u0027 adalah \u0027gelar wicara\u0027. (Sementara \u0027siniar\u0027 adalah padanan untuk \u0027podcast\u0027).",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "BI12-C05-D-6439",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Bacalah kalimat berikut: \u0027Untuk melestarikan kearifan lokal diperlukan kerjasama yang baik antar warga masyarakat.\u0027 Kesalahan penulisan yang terdapat pada kalimat tersebut adalah...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Penulisan \u0027kerjasama\u0027 seharusnya dipisah (kerja sama) dan \u0027antar warga\u0027 seharusnya disambung (antarwarga)."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Penulisan \u0027antar warga\u0027 seharusnya menggunakan tanda hubung (antar-warga)."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Kata \u0027diperlukan\u0027 seharusnya dipisah menjadi \u0027di perlukan\u0027."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Penulisan \u0027kerjasama\u0027 sudah benar, namun kata \u0027masyarakat\u0027 harus diawali huruf kapital."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C05-D",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "Menurut PUEBI, \u0027kerja sama\u0027 ditulis terpisah karena bukan bentuk terikat, sedangkan \u0027antar-\u0027 adalah bentuk terikat yang harus digabung dengan kata yang mengikutinya (antarwarga).",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C05-E-6013",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Setelah membaca esai tentang kearifan lokal, Budi menyadari pentingnya menjaga alam dan mulai mencari cara-cara baru atau metode alternatif yang bisa ia lakukan untuk menumbuhkan kepedulian lingkungan di sekolahnya. Dalam model refleksi ALACT, tindakan Budi berada pada tahap...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Tindakan/Aksi (Action)"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Melihat Kembali (Looking Back)"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Uji Coba (Trial)"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C05-E",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Budi telah melewati tahap menyadari aspek penting (Awareness) dan kini memikirkan metode/solusi baru yang bisa diterapkan, yang sesuai dengan tahap Creating Alternative Methods of Action.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C05-E-2353",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Dalam model ALACT, tahap awal yang dilakukan pembaca yang berupa kegiatan membaca teks secara langsung dan memperoleh pengalaman atau pengetahuan darinya disebut tahap...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Tindakan/Aksi (Action)"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Kesadaran (Awareness)"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Uji Coba (Trial)"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Looking Back (Melihat Kembali)"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C05-E",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Tahap 1 (Action) adalah saat di mana seseorang melakukan sebuah tindakan langsung, dalam konteks literasi hal ini adalah kegiatan membaca teks itu sendiri untuk mendapatkan pengetahuan awal.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C05-K13-8904",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Dalam penulisan esai, sangat penting membedakan opini dari fakta. Manakah dari pernyataan berikut yang merupakan sebuah opini yang sering ditemukan dalam esai kearifan lokal?",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Masyarakat desa X memiliki tradisi yang sangat indah dan sarat makna."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Tradisi Y dilaksanakan setiap tanggal 1 Suro pada penanggalan Jawa."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Desa Z terletak di kaki Gunung Merapi, berjarak 20 km dari pusat kota."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Jumlah penduduk desa A yang masih membuat kerajinan tradisional adalah 50 orang."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C05-K13",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "Kata \u0027sangat indah\u0027 dan \u0027sarat makna\u0027 bersifat subjektif dan tidak dapat diukur secara eksak, sehingga merupakan opini penulis esai.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      }
-                  ],
-    "curriculum":  [
-                       "K13",
-                       "Merdeka"
-                   ],
-    "grade":  12,
-    "competencies":  [
-                         {
-                             "name":  "Kompetensi BI12-C05-B",
-                             "question_count":  1,
-                             "competency_id":  "BI12-C05-B"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C05-E",
-                             "question_count":  2,
-                             "competency_id":  "BI12-C05-E"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C05-C",
-                             "question_count":  3,
-                             "competency_id":  "BI12-C05-C"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C05-D",
-                             "question_count":  1,
-                             "competency_id":  "BI12-C05-D"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C05-A",
-                             "question_count":  2,
-                             "competency_id":  "BI12-C05-A"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C05-K13",
-                             "question_count":  1,
-                             "competency_id":  "BI12-C05-K13"
-                         }
-                     ],
-    "subject":  "bahasa-indonesia",
-    "chapter":  "BI12-C05",
-    "status":  "active",
-    "content_version":  1,
-    "pool_id":  "POOL-BAHASA-INDONESIA-BI12-C05"
+{
+  "track": "wajib",
+  "questions": [
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C05-A-2253",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Tradisi 'sasi' pada masyarakat Raja Ampat, Papua, merupakan kearifan lokal yang menetapkan zona larangan tangkap (no take zone) selama periode tertentu. Berdasarkan informasi dalam esai, tujuan utama pelarangan ini adalah...",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "Meningkatkan harga jual hasil laut di pasar internasional."
+        },
+        {
+          "id": "B",
+          "text": "Memberikan kesempatan bagi biota laut untuk berkembang biak agar tidak punah."
+        },
+        {
+          "id": "C",
+          "text": "Menghindari masuknya wisatawan asing ke wilayah tersebut."
+        },
+        {
+          "id": "D",
+          "text": "Membuktikan bahwa masyarakat memiliki kekuatan hukum adat yang mengikat."
+        }
+      ],
+      "primary_competency": "BI12-C05-A",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Tradisi Kearifan Lokal Sasi (Subbab A): Sasi merupakan adat masyarakat Maluku dan Papua (termasuk Raja Ampat) yang melarang pengambilan sumber daya alam tertentu (zona larangan tangkap / no take zone) selama kurun waktu tertentu demi menjaga keberlanjutan ekosistem.\n2. Pembahasan Kunci Jawaban: Pilihan 'Memberikan kesempatan bagi biota laut untuk berkembang biak agar tidak punah' (BENAR) secara tepat menjelaskan esensi ekologis dan biologis dari tradisi sasi, yaitu pemulihan populasi biota laut agar tidak mengalami kepunahan akibat eksploitasi berlebih.\n3. Pembahasan Distraktor:\n- 'Meningkatkan harga jual hasil laut di pasar internasional' (Salah), orientasi sasi adalah keberlanjutan subsistensi dan kelestarian ekologi alam, bukan spekulasi komersial pasar global.\n- 'Menghindari masuknya wisatawan asing ke wilayah tersebut' (Salah), sasi mengatur pemanfaatan biota laut oleh nelayan/warga, bukan penolakan terhadap aktivitas pariwisata.\n- 'Membuktikan bahwa masyarakat memiliki kekuatan hukum adat yang mengikat' (Salah), kekuatan hukum adat merupakan instrumen penegakannya, bukan tujuan ekologis utama dari pelarangan tangkap.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C05-A-3134",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Esai merupakan bentuk tulisan yang mengungkapkan dan membahas persoalan yang menarik perhatian penulisnya secara ringkas. Salah satu sifat dari teks esai yang membedakannya dari artikel ilmiah murni adalah...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Esai memuat gagasan, pandangan subjektif, dan apresiasi penulis terhadap topik yang dibahas."
+        },
+        {
+          "id": "B",
+          "text": "Esai hanya boleh memuat tabel, grafik statistik, dan rumus perhitungan matematika."
+        },
+        {
+          "id": "C",
+          "text": "Esai tidak memerlukan fakta, melainkan murni fiksi atau khayalan penulis."
+        },
+        {
+          "id": "D",
+          "text": "Esai harus selalu menceritakan kronologi sejarah secara urut tanpa menyisipkan pendapat pribadi."
+        }
+      ],
+      "primary_competency": "BI12-C05-A",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Karakteristik Teks Esai (Subbab A & B): Esai adalah tulisan prosa ringkas yang membahas suatu persoalan dari sudut pandang pribadi (subjektif) penulisnya, memadukan fakta objektif dengan apresiasi, opini, dan refleksi mendalam.\n2. Pembahasan Kunci Jawaban: Pilihan 'Esai memuat gagasan, pandangan subjektif, dan apresiasi penulis terhadap topik yang dibahas' (BENAR) secara tepat mendefinisikan ciri pembeda utama esai dibanding artikel ilmiah formal murni yang menuntut netralitas objektif mutlak tanpa keterlibatan impresi personal.\n3. Pembahasan Distraktor:\n- 'Esai hanya boleh memuat tabel, grafik statistik, dan rumus perhitungan matematika' (Salah), ini merupakan karakteristik laporan teknis atau monograf sains kuantitatif, bukan esai humaniora/sastra.\n- 'Esai tidak memerlukan fakta, melainkan murni fiksi atau khayalan penulis' (Salah), esai berpijak pada fenomena faktual nyata dan bukan karya fiksi murni seperti cerpen atau dongeng.\n- 'Esai harus selalu menceritakan kronologi sejarah secara urut tanpa menyisipkan pendapat pribadi' (Salah), teks kronologis murni adalah teks rekon atau historiografi faktual, sedangkan esai justru menonjolkan pendapat pribadi penulis.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "analyze",
+      "question_id": "BI12-C05-B-2993",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Masyarakat adat Tau Taa Vana di Tojo Una Una meyakini bahwa 'hutan dapat menjadi sumber penyakit apabila tidak dilestarikan, sekaligus sumber pengobatan jika dieksplorasi dengan bijak.' Makna tersirat dari pandangan kearifan lokal ini adalah...",
+      "answer": "C",
+      "options": [
+        {
+          "id": "A",
+          "text": "Masyarakat dilarang keras memasuki hutan untuk alasan apa pun karena berbahaya."
+        },
+        {
+          "id": "B",
+          "text": "Pemerintah harus mengambil alih pengelolaan hutan sepenuhnya dari masyarakat adat."
+        },
+        {
+          "id": "C",
+          "text": "Hubungan timbal balik yang erat di mana manusia harus menjaga alam agar alam melindungi dan menghidupi manusia."
+        },
+        {
+          "id": "D",
+          "text": "Masyarakat hanya diperbolehkan mengambil tanaman obat dan dilarang memakan hasil buruan."
+        }
+      ],
+      "primary_competency": "BI12-C05-B",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Filosofi Resiprositas Alam (Subbab B): Ungkapan masyarakat Tau Taa Vana merefleksikan prinsip resiprositas (hubungan timbal balik setara). Hutan yang dirusak akan mendatangkan bencana/penyakit, sedangkan hutan yang dirawat dengan kearifan lokal akan memberikan manfaat obat dan penghidupan lestari.\n2. Pembahasan Kunci Jawaban: Pilihan 'Hubungan timbal balik yang erat di mana manusia harus menjaga alam agar alam melindungi dan menghidupi manusia' (BENAR) secara tepat menangkap makna tersirat filosofi ekologis tersebut, yakni simbiosis mutualisme antara komunitas adat dan alam sekitarnya.\n3. Pembahasan Distraktor:\n- 'Masyarakat dilarang keras memasuki hutan untuk alasan apa pun karena berbahaya' (Salah), masyarakat adat hidup berdampingan secara harmonis dengan hutan melalui eksplorasi bijak, bukan mengisolasi diri dari hutan.\n- 'Pemerintah harus mengambil alih pengelolaan hutan sepenuhnya dari masyarakat adat' (Salah), kearifan lokal justru bertumpu pada kemandirian adat dan kedaulatan komunitas lokal dalam menjaga hutannya.\n- 'Masyarakat hanya diperbolehkan mengambil tanaman obat dan dilarang memakan hasil buruan' (Salah), ini adalah penyempitan teknis yang keliru dan tidak mencerminkan filosofi holistik hubungan timbal balik.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "analyze",
+      "question_id": "BI12-C05-C-3211",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Bacalah pernyataan berikut: 'Setiap masyarakat memiliki budaya dan setiap budaya pasti ada masyarakat yang memilikinya. Setiap kelompok masyarakat memiliki budaya yang bersifat khas.' Dalam penulisan esai, pernyataan tersebut tergolong sebagai...",
+      "answer": "D",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fakta absolut"
+        },
+        {
+          "id": "B",
+          "text": "Data empiris"
+        },
+        {
+          "id": "C",
+          "text": "Kritik sosial"
+        },
+        {
+          "id": "D",
+          "text": "Asumsi"
+        }
+      ],
+      "primary_competency": "BI12-C05-C",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Fakta, Opini, dan Asumsi (Subbab C): Fakta adalah hal yang nyata dan dapat dibuktikan secara empiris; opini adalah pendapat atau sikap pribadi; sedangkan asumsi adalah anggapan dasar, dugaan awal, atau premis teoretis yang dianggap benar oleh penulis sebelum dibuktikan secara faktual.\n2. Pembahasan Kunci Jawaban: Pilihan 'Asumsi' (BENAR) karena pernyataan 'Setiap masyarakat memiliki budaya dan setiap budaya pasti ada masyarakat yang memilikinya...' merupakan premis anggapan dasar (postulat sosiologis) yang dijadikan titik tolak argumen esai penulis.\n3. Pembahasan Distraktor:\n- 'Fakta absolut' (Salah), pernyataan tersebut berupa generalisasi konseptual abstrak, bukan fakta terukur konkret seperti data sensus penduduk.\n- 'Data empiris' (Salah), tidak memuat angka, observasi lapangan, atau bukti kuantitatif empiris.\n- 'Kritik sosial' (Salah), kalimat tersebut tidak berisi kecaman, penilaian negatif, atau koreksi atas kepincangan sosial.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "BI12-C05-C-1275",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Dalam menulis esai, penggunaan konjungsi korelatif harus tepat (idiomatis). Pasangan kata penghubung (korelatif) manakah di bawah ini yang digunakan dengan tepat sesuai kaidah bahasa Indonesia?",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bukan sekadar tren, tetapi sudah menjadi budaya."
+        },
+        {
+          "id": "B",
+          "text": "Baik di kota maupun di desa."
+        },
+        {
+          "id": "C",
+          "text": "Antara budaya lokal dengan budaya asing."
+        },
+        {
+          "id": "D",
+          "text": "Baik di pedalaman ataupun di pesisir."
+        }
+      ],
+      "primary_competency": "BI12-C05-C",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Konjungsi Korelatif Idiomatis (Subbab C): Konjungsi korelatif adalah pasangan kata hubung tetap yang menghubungkan dua unsur gramatikal sederajat. Kaidah tata bahasa baku bahasa Indonesia menetapkan pasangan tetap idiomatis: 'baik... maupun...', 'bukan... melainkan...', 'tidak... tetapi...', dan 'antara... dan...'.\n2. Pembahasan Kunci Jawaban: Pilihan 'Baik di kota maupun di desa' (BENAR) menggunakan pasangan korelatif baku yang tepat antara kata 'baik' dan 'maupun'.\n3. Pembahasan Distraktor:\n- 'Bukan sekadar tren, tetapi sudah menjadi budaya' (Salah), pasangan kata 'bukan' seharusnya berpasangan dengan 'melainkan', sedangkan 'tetapi' berpasangan dengan 'tidak'.\n- 'Antara budaya lokal dengan budaya asing' (Salah), kata penghubung 'antara' harus berpasangan dengan 'dan' (antara... dan...), bukan 'dengan'.\n- 'Baik di pedalaman ataupun di pesisir' (Salah), kata 'baik' tidak boleh dipasangkan dengan 'ataupun', melainkan harus dengan 'maupun'.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C05-C-9031",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Masyarakat kini sering menonton acara dialog televisi yang membahas permasalahan budaya. Apa padanan kata baku bahasa Indonesia yang tepat untuk istilah asing 'talk show'?",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gelar wicara"
+        },
+        {
+          "id": "B",
+          "text": "Siniar"
+        },
+        {
+          "id": "C",
+          "text": "Wawancara eksklusif"
+        },
+        {
+          "id": "D",
+          "text": "Diskusi panel"
+        }
+      ],
+      "primary_competency": "BI12-C05-C",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Padanan Istilah Asing dalam Esai (Subbab C): Dalam menulis esai bahasa Indonesia, penulis dianjurkan mengutamakan padanan kata baku bahasa Indonesia yang telah disahkan KBBI dan Badan Pengembangan dan Pembinaan Bahasa untuk memperkaya kosakata nasional.\n2. Pembahasan Kunci Jawaban: Pilihan 'Gelar wicara' (BENAR) merupakan padanan leksikal baku resmi dalam KBBI untuk istilah bahasa Inggris 'talk show' (acara temu bincang/dialog interaktif di media).\n3. Pembahasan Distraktor:\n- 'Siniar' (Salah), merupakan padanan baku bahasa Indonesia untuk istilah 'podcast', bukan 'talk show'.\n- 'Wawancara eksklusif' (Salah), merupakan padanan untuk istilah 'exclusive interview' (tanya-jawab satu arah secara mendalam).\n- 'Diskusi panel' (Salah), merupakan padanan untuk istilah 'panel discussion' yang melibatkan sekelompok pakar di hadapan audiens.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 60
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "evaluate",
+      "question_id": "BI12-C05-D-6439",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "literacy",
+        "stimulus_type": "contextual",
+        "suitable": true
+      },
+      "question": "Bacalah kalimat berikut: 'Untuk melestarikan kearifan lokal diperlukan kerjasama yang baik antar warga masyarakat.' Kesalahan penulisan yang terdapat pada kalimat tersebut adalah...",
+      "answer": "C",
+      "options": [
+        {
+          "id": "A",
+          "text": "Penulisan 'antar warga' seharusnya menggunakan tanda hubung (antar-warga)."
+        },
+        {
+          "id": "B",
+          "text": "Kata 'diperlukan' seharusnya dipisah menjadi 'di perlukan'."
+        },
+        {
+          "id": "C",
+          "text": "Penulisan 'kerjasama' seharusnya dipisah (kerja sama) dan 'antar warga' seharusnya disambung (antarwarga)."
+        },
+        {
+          "id": "D",
+          "text": "Penulisan 'kerjasama' sudah benar, namun kata 'masyarakat' harus diawali huruf kapital."
+        }
+      ],
+      "primary_competency": "BI12-C05-D",
+      "difficulty_label": "hard",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kaidah Ejaan Kata Majemuk dan Bentuk Terikat (Subbab D): Berdasarkan PUEBI/EYD, kata majemuk (gabungan kata) yang belum bersenyawa padu ditulis terpisah ('kerja sama', bukan 'kerjasama'). Sebaliknya, unsur terikat seperti 'antar-', 'pasca-', 'sub-', 'multi-' harus ditulis serangkai/menyatu dengan kata dasar yang mengikutinya ('antarwarga', bukan 'antar warga').\n2. Pembahasan Kunci Jawaban: Pilihan 'Penulisan 'kerjasama' seharusnya dipisah (kerja sama) dan 'antar warga' seharusnya disambung (antarwarga)' (BENAR) secara tepat mengevaluasi kedua kesalahan ortografis dalam kalimat draf esai tersebut.\n3. Pembahasan Distraktor:\n- 'Penulisan 'antar warga' seharusnya menggunakan tanda hubung (antar-warga)' (Salah), tanda hubung hanya digunakan jika bentuk terikat diikuti kata yang berhuruf kapital awal (misal: 'antar-SMA') atau kata berbahasa asing.\n- 'Kata 'diperlukan' seharusnya dipisah menjadi 'di perlukan'' (Salah), 'di-' di sini berfungsi sebagai awalan pembentuk verba pasif sehingga wajib ditulis serangkai, bukan kata depan penunjuk tempat.\n- 'Penulisan 'kerjasama' sudah benar, namun kata 'masyarakat' harus diawali huruf kapital' (Salah), 'kerja sama' wajib dipisah dan kata 'masyarakat' adalah nomina umum yang tidak memerlukan huruf kapital di tengah kalimat.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 120
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "BI12-C05-E-6013",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Setelah membaca esai tentang kearifan lokal, Budi menyadari pentingnya menjaga alam dan mulai mencari cara-cara baru atau metode alternatif yang bisa ia lakukan untuk menumbuhkan kepedulian lingkungan di sekolahnya. Dalam model refleksi ALACT, tindakan Budi berada pada tahap...",
+      "answer": "D",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tindakan/Aksi (Action)"
+        },
+        {
+          "id": "B",
+          "text": "Melihat Kembali (Looking Back)"
+        },
+        {
+          "id": "C",
+          "text": "Uji Coba (Trial)"
+        },
+        {
+          "id": "D",
+          "text": "Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)"
+        }
+      ],
+      "primary_competency": "BI12-C05-E",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Model Refleksi ALACT (Subbab E): Model refleksi ALACT terdiri atas 5 tahap berurutan: (1) Action (Aksi/Tindakan membaca), (2) Looking back on action (Melihat kembali tindakan), (3) Awareness of essential aspects (Kesadaran akan aspek esensial), (4) Creating alternative methods of action (Menciptakan metode tindakan alternatif), dan (5) Trial (Uji coba metode baru).\n2. Pembahasan Kunci Jawaban: Pilihan 'Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)' (BENAR) secara tepat mendeskripsikan aktivitas Budi yang mencari ide-ide baru atau cara alternatif dalam mewujudkan kepedulian lingkungan di sekolah setelah menyadari nilai kearifan lokal.\n3. Pembahasan Distraktor:\n- 'Tindakan/Aksi (Action)' (Salah), tahap ini merupakan tindakan awal saat pembaca menyimak atau membaca teks esai.\n- 'Melihat Kembali (Looking Back)' (Salah), tahap ini berupa peninjauan kembali apa yang dirasakan dan dipikirkan selama proses membaca teks.\n- 'Uji Coba (Trial)' (Salah), tahap ini berupa implementasi nyata mempraktikkan metode baru tersebut dalam tindakan nyata di lapangan.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C05-E-2353",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Dalam model ALACT, tahap awal yang dilakukan pembaca yang berupa kegiatan membaca teks secara langsung dan memperoleh pengalaman atau pengetahuan darinya disebut tahap...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tindakan/Aksi (Action)"
+        },
+        {
+          "id": "B",
+          "text": "Kesadaran (Awareness)"
+        },
+        {
+          "id": "C",
+          "text": "Uji Coba (Trial)"
+        },
+        {
+          "id": "D",
+          "text": "Looking Back (Melihat Kembali)"
+        }
+      ],
+      "primary_competency": "BI12-C05-E",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Tahap Awal Model ALACT (Subbab E): Model refleksi pembelajaran membaca ALACT dimulai dengan tahapan pertama yang menjadi pijakan pengalaman konkret pembaca.\n2. Pembahasan Kunci Jawaban: Pilihan 'Tindakan/Aksi (Action)' (BENAR) adalah tahap ke-1 di mana peserta didik melakukan tindakan nyata berupa membaca teks esai secara langsung, mencermati diksi, dan menyerap informasi awal sebelum melakukan refleksi kritis.\n3. Pembahasan Distraktor:\n- 'Kesadaran (Awareness)' (Salah), merupakan tahap ke-3 (Awareness of essential aspects) di mana pembaca menyadari aspek-aspek mendasar yang menjadi fokus perhatian.\n- 'Uji Coba (Trial)' (Salah), merupakan tahap ke-5 (Trial) di mana pembaca menguji coba metode tindakan baru yang telah dirumuskan.\n- 'Looking Back (Melihat Kembali)' (Salah), merupakan tahap ke-2 di mana pembaca menengok kembali apa yang telah dilakukan pada tahap aksi.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "BI12-C05-K13-8904",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Dalam penulisan esai, sangat penting membedakan opini dari fakta. Manakah dari pernyataan berikut yang merupakan sebuah opini yang sering ditemukan dalam esai kearifan lokal?",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tradisi Y dilaksanakan setiap tanggal 1 Suro pada penanggalan Jawa."
+        },
+        {
+          "id": "B",
+          "text": "Masyarakat desa X memiliki tradisi yang sangat indah dan sarat makna."
+        },
+        {
+          "id": "C",
+          "text": "Desa Z terletak di kaki Gunung Merapi, berjarak 20 km dari pusat kota."
+        },
+        {
+          "id": "D",
+          "text": "Jumlah penduduk desa A yang masih membuat kerajinan tradisional adalah 50 orang."
+        }
+      ],
+      "primary_competency": "BI12-C05-K13",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Membedakan Fakta dan Opini dalam Kritik Sastra dan Esai (K13 KD 3.12/4.12): Fakta memuat data obyektif, verifikatif, dan terukur secara empiris. Sebaliknya, opini memuat penilaian subjektif, kesan apresiatif, atau kata-kata sifat berbobot nilai personal yang tidak memiliki ukuran kuantitatif mutlak.\n2. Pembahasan Kunci Jawaban: Pilihan 'Masyarakat desa X memiliki tradisi yang sangat indah dan sarat makna' (BENAR) merupakan kalimat opini karena menggunakan frasa adjektival subjektif 'sangat indah' dan 'sarat makna' yang kebenarannya bergantung pada sudut pandang penikmatnya.\n3. Pembahasan Distraktor:\n- 'Tradisi Y dilaksanakan setiap tanggal 1 Suro pada penanggalan Jawa' (Salah), merupakan fakta waktu kalender yang dapat diverifikasi secara objektif.\n- 'Desa Z terletak di kaki Gunung Merapi, berjarak 20 km dari pusat kota' (Salah), merupakan fakta spasial geografis yang terukur secara spasial kuantitatif.\n- 'Jumlah penduduk desa A yang masih membuat kerajinan tradisional adalah 50 orang' (Salah), merupakan fakta demografis terhitung secara numerik.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 60
+    }
+  ],
+  "curriculum": [
+    "K13",
+    "Merdeka"
+  ],
+  "grade": 12,
+  "competencies": [
+    {
+      "name": "Kompetensi BI12-C05-B",
+      "question_count": 1,
+      "competency_id": "BI12-C05-B"
+    },
+    {
+      "name": "Kompetensi BI12-C05-E",
+      "question_count": 2,
+      "competency_id": "BI12-C05-E"
+    },
+    {
+      "name": "Kompetensi BI12-C05-C",
+      "question_count": 3,
+      "competency_id": "BI12-C05-C"
+    },
+    {
+      "name": "Kompetensi BI12-C05-D",
+      "question_count": 1,
+      "competency_id": "BI12-C05-D"
+    },
+    {
+      "name": "Kompetensi BI12-C05-A",
+      "question_count": 2,
+      "competency_id": "BI12-C05-A"
+    },
+    {
+      "name": "Kompetensi BI12-C05-K13",
+      "question_count": 1,
+      "competency_id": "BI12-C05-K13"
+    }
+  ],
+  "subject": "bahasa-indonesia",
+  "chapter": "BI12-C05",
+  "status": "active",
+  "content_version": 1,
+  "pool_id": "POOL-BAHASA-INDONESIA-BI12-C05"
 }

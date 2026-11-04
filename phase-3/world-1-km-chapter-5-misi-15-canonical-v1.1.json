@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_V1.1_RECONCILED",
+  "dataset": "World 1 KM Standard Chapter 5 Original Content - Misi 15 v1.0",
+  "purpose": "Canonical v1.1 reconciled dataset for World 1 Bahasa Indonesia Chapter 5 Misi 15 with calibrated Bloom levels and natural option order.",
+  "chapter_id": "BI12-C05",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "KM05-A1",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-A",
+      "skill": "memahami",
+      "question": "Tradisi 'sasi' pada masyarakat Raja Ampat, Papua, merupakan kearifan lokal yang menetapkan zona larangan tangkap (no take zone) selama periode tertentu. Berdasarkan informasi dalam esai, tujuan utama pelarangan ini adalah...",
+      "options": [
+        "Meningkatkan harga jual hasil laut di pasar internasional.",
+        "Memberikan kesempatan bagi biota laut untuk berkembang biak agar tidak punah.",
+        "Menghindari masuknya wisatawan asing ke wilayah tersebut.",
+        "Membuktikan bahwa masyarakat memiliki kekuatan hukum adat yang mengikat."
+      ],
+      "answer": "Memberikan kesempatan bagi biota laut untuk berkembang biak agar tidak punah.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Tradisi Kearifan Lokal Sasi (Subbab A): Sasi merupakan adat masyarakat Maluku dan Papua (termasuk Raja Ampat) yang melarang pengambilan sumber daya alam tertentu (zona larangan tangkap / no take zone) selama kurun waktu tertentu demi menjaga keberlanjutan ekosistem.\n2. Pembahasan Kunci Jawaban: Pilihan 'Memberikan kesempatan bagi biota laut untuk berkembang biak agar tidak punah' (BENAR) secara tepat menjelaskan esensi ekologis dan biologis dari tradisi sasi, yaitu pemulihan populasi biota laut agar tidak mengalami kepunahan akibat eksploitasi berlebih.\n3. Pembahasan Distraktor:\n- 'Meningkatkan harga jual hasil laut di pasar internasional' (Salah), orientasi sasi adalah keberlanjutan subsistensi dan kelestarian ekologi alam, bukan spekulasi komersial pasar global.\n- 'Menghindari masuknya wisatawan asing ke wilayah tersebut' (Salah), sasi mengatur pemanfaatan biota laut oleh nelayan/warga, bukan penolakan terhadap aktivitas pariwisata.\n- 'Membuktikan bahwa masyarakat memiliki kekuatan hukum adat yang mengikat' (Salah), kekuatan hukum adat merupakan instrumen penegakannya, bukan tujuan ekologis utama dari pelarangan tangkap.",
+      "source": {
+        "book": "Cerdas Cergas Berbahasa dan Bersastra Indonesia SMA/SMK Kelas XII Edisi Revisi 2025",
+        "chapter": "Bab 5: Mengungkapkan Kekaguman tentang Kearifan Lokal",
+        "curriculum": "Kurikulum Merdeka",
+        "student_book": {
+          "pages": "186-193"
+        },
+        "teacher_guide": {
+          "pages": "243-247"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Revisi 2025 hlm. 186-193 (Subbab A: Menyimak Pembacaan Teks Esai tentang Kearifan Lokal) & Buku Panduan Guru hlm. 243-247 (Tabel 5.3 & 5.4).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C05-A",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka",
+        "competency_target": "Menyimak dan memahami informasi faktual serta nilai konservasi dalam teks esai kearifan lokal",
+        "concept_reference": "Tradisi Sasi Raja Ampat sebagai zona larangan tangkap untuk pemulihan ekosistem laut",
+        "support_category": "Penalaran Literasi Membaca Esai",
+        "authoring_statement": "Stimulus teks esai orisinal berbasis kearifan lokal Nusantara tanpa pelanggaran hak cipta sesuai Decision 009."
+      }
+    },
+    {
+      "id": "KM05-A2",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-A",
+      "skill": "memahami",
+      "question": "Esai merupakan bentuk tulisan yang mengungkapkan dan membahas persoalan yang menarik perhatian penulisnya secara ringkas. Salah satu sifat dari teks esai yang membedakannya dari artikel ilmiah murni adalah...",
+      "options": [
+        "Esai memuat gagasan, pandangan subjektif, dan apresiasi penulis terhadap topik yang dibahas.",
+        "Esai hanya boleh memuat tabel, grafik statistik, dan rumus perhitungan matematika.",
+        "Esai tidak memerlukan fakta, melainkan murni fiksi atau khayalan penulis.",
+        "Esai harus selalu menceritakan kronologi sejarah secara urut tanpa menyisipkan pendapat pribadi."
+      ],
+      "answer": "Esai memuat gagasan, pandangan subjektif, dan apresiasi penulis terhadap topik yang dibahas.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Karakteristik Teks Esai (Subbab A & B): Esai adalah tulisan prosa ringkas yang membahas suatu persoalan dari sudut pandang pribadi (subjektif) penulisnya, memadukan fakta objektif dengan apresiasi, opini, dan refleksi mendalam.\n2. Pembahasan Kunci Jawaban: Pilihan 'Esai memuat gagasan, pandangan subjektif, dan apresiasi penulis terhadap topik yang dibahas' (BENAR) secara tepat mendefinisikan ciri pembeda utama esai dibanding artikel ilmiah formal murni yang menuntut netralitas objektif mutlak tanpa keterlibatan impresi personal.\n3. Pembahasan Distraktor:\n- 'Esai hanya boleh memuat tabel, grafik statistik, dan rumus perhitungan matematika' (Salah), ini merupakan karakteristik laporan teknis atau monograf sains kuantitatif, bukan esai humaniora/sastra.\n- 'Esai tidak memerlukan fakta, melainkan murni fiksi atau khayalan penulis' (Salah), esai berpijak pada fenomena faktual nyata dan bukan karya fiksi murni seperti cerpen atau dongeng.\n- 'Esai harus selalu menceritakan kronologi sejarah secara urut tanpa menyisipkan pendapat pribadi' (Salah), teks kronologis murni adalah teks rekon atau historiografi faktual, sedangkan esai justru menonjolkan pendapat pribadi penulis.",
+      "source": {
+        "book": "Cerdas Cergas Berbahasa dan Bersastra Indonesia SMA/SMK Kelas XII Edisi Revisi 2025",
+        "chapter": "Bab 5: Mengungkapkan Kekaguman tentang Kearifan Lokal",
+        "curriculum": "Kurikulum Merdeka",
+        "student_book": {
+          "pages": "183-186"
+        },
+        "teacher_guide": {
+          "pages": "243-247"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Revisi 2025 hlm. 183-186 (Konsep dan Karakteristik Teks Esai) & Buku Panduan Guru hlm. 243-247 (Panduan Pembelajaran Subbab A).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C05-A",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka",
+        "competency_target": "Memahami hakikat dan ciri khas teks esai sebagai tulisan apresiatif personal berbasis fakta",
+        "concept_reference": "Perpaduan fakta objektif dengan pandangan subjektif sebagai karakteristik distingtif teks esai",
+        "support_category": "Pemahaman Genre Teks Esai",
+        "authoring_statement": "Konsep karakteristik esai dirumuskan langsung dari teori sastra Buku Siswa tanpa pelanggaran hak cipta."
+      }
+    },
+    {
+      "id": "KM05-B1",
+      "chapter_id": "BI12-C05",
+      "topic_id": "BI12-C05-B",
+      "skill": "menganalisis",
+      "question": "Masyarakat adat Tau Taa Vana di Tojo Una Una meyakini bahwa 'hutan dapat menjadi sumber penyakit apabila tidak dilestarikan, sekaligus sumber pengobatan jika dieksplorasi dengan bijak.' Makna tersirat dari pandangan kearifan lokal ini adalah...",
+      "options": [
+        "Masyarakat dilarang keras memasuki hutan untuk alasan apa pun karena berbahaya.",
+        "Pemerintah harus mengambil alih pengelolaan hutan sepenuhnya dari masyarakat adat.",
+        "Hubungan timbal balik yang erat di mana manusia harus menjaga alam agar alam melindungi dan menghidupi manusia.",
+        "Masyarakat hanya diperbolehkan mengambil tanaman obat dan dilarang memakan hasil buruan."
+      ],
+      "answer": "Hubungan timbal balik yang erat di mana manusia harus menjaga alam agar alam melindungi dan menghidupi manusia.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Filosofi Resiprositas Alam (Subbab B): Ungkapan masyarakat Tau Taa Vana merefleksikan prinsip resiprositas (hubungan timbal balik setara). Hutan yang dirusak akan mendatangkan bencana/penyakit, sedangkan hutan yang dirawat dengan kearifan lokal akan memberikan manfaat obat dan penghidupan lestari.\n2. Pembahasan Kunci Jawaban: Pilihan 'Hubungan timbal balik yang erat di mana manusia harus menjaga alam agar alam melindungi dan menghidupi manusia' (BENAR) secara tepat menangkap makna tersirat filosofi ekologis tersebut, yakni simbiosis mutualisme antara komunitas adat dan alam sekitarnya.\n3. Pembahasan Distraktor:\n- 'Masyarakat dilarang keras memasuki hutan untuk alasan apa pun karena berbahaya' (Salah), masyarakat adat hidup berdampingan secara harmonis dengan hutan melalui eksplorasi bijak, bukan mengisolasi diri dari hutan.\n- 'Pemerintah harus mengambil alih pengelolaan hutan sepenuhnya dari masyarakat adat' (Salah), kearifan lokal justru bertumpu pada kemandirian adat dan kedaulatan komunitas lokal dalam menjaga hutannya.\n- 'Masyarakat hanya diperbolehkan mengambil tanaman obat dan dilarang memakan hasil buruan' (Salah), ini adalah penyempitan teknis yang keliru dan tidak mencerminkan filosofi holistik hubungan timbal balik.",
+      "source": {
+        "book": "Cerdas Cergas Berbahasa dan Bersastra Indonesia SMA/SMK Kelas XII Edisi Revisi 2025",
+        "chapter": "Bab 5: Mengungkapkan Kekaguman tentang Kearifan Lokal",
+        "curriculum": "Kurikulum Merdeka",
+        "student_book": {
+          "pages": "193-197"
+        },
+        "teacher_guide": {
+          "pages": "247-251"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Revisi 2025 hlm. 193-197 (Subbab B: Mengungkapkan Kembali Informasi Teks Esai) & hlm. 207 (Teks Kearifan Lokal Tau Taa Vana); Buku Panduan Guru hlm. 247-251.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C05-B",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka",
+        "competency_target": "Menganalisis makna tersirat dan nilai filosofis ekologis dalam esai kearifan lokal",
+        "concept_reference": "Pandangan hidup masyarakat Tau Taa Vana Tojo Una-Una mengenai hubungan resiprokal manusia dan hutan",
+        "support_category": "Analisis Makna Tersirat & Nilai Budaya",
+        "authoring_statement": "Skenario teks orisinal mengangkat kekayaan antropologis Tojo Una-Una Sulawesi Tengah sesuai Decision 009."
+      }
+    }
+  ]
+}

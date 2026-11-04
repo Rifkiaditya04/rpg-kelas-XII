@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "BI12-W01-CH05-M17-V1.1-REV",
+  "base_batch": "phase-3/world-1-km-chapter-5-misi-17-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 5 Misi 17 (Subbab D & E, serta Jembatan K13: Evaluasi Ejaan Kata Majemuk dan Bentuk Terikat, Model Refleksi ALACT, dan Opini Subjektif Esai): upgrading explanations to standard 3-step pedagogical structure with distractor deconstruction, calibrating Bloom cognitive levels (C5 Evaluate for orthographic editing, C3 Apply for ALACT alternative action creation, C2 Understand for ALACT initial action stage, C3 Apply for K13 subjective opinion detection), resolving teacher guide page locators to verified BG pages 255-265, varying answer key distribution naturally (KM05-D1: C, KM05-E1: D, KM05-E2: A, K13-C05-ESAI-01: B), and adding Decision 009 compliant source_basis metadata.",
+  "revisions": [
+    {
+      "id": "KM05-D1",
+      "skill": "mengevaluasi",
+      "before_question": "Bacalah kalimat berikut: 'Untuk melestarikan kearifan lokal diperlukan kerjasama yang baik antar warga masyarakat.' Kesalahan penulisan yang terdapat pada kalimat tersebut adalah...",
+      "after_question": "Bacalah kalimat berikut: 'Untuk melestarikan kearifan lokal diperlukan kerjasama yang baik antar warga masyarakat.' Kesalahan penulisan yang terdapat pada kalimat tersebut adalah...",
+      "replacement_options": [
+        "Penulisan 'antar warga' seharusnya menggunakan tanda hubung (antar-warga).",
+        "Kata 'diperlukan' seharusnya dipisah menjadi 'di perlukan'.",
+        "Penulisan 'kerjasama' seharusnya dipisah (kerja sama) dan 'antar warga' seharusnya disambung (antarwarga).",
+        "Penulisan 'kerjasama' sudah benar, namun kata 'masyarakat' harus diawali huruf kapital."
+      ],
+      "answer": "Penulisan 'kerjasama' seharusnya dipisah (kerja sama) dan 'antar warga' seharusnya disambung (antarwarga).",
+      "cognitive_level": "evaluate",
+      "difficulty": "hard",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kaidah Ejaan Kata Majemuk dan Bentuk Terikat (Subbab D): Berdasarkan PUEBI/EYD, kata majemuk (gabungan kata) yang belum bersenyawa padu ditulis terpisah ('kerja sama', bukan 'kerjasama'). Sebaliknya, unsur terikat seperti 'antar-', 'pasca-', 'sub-', 'multi-' harus ditulis serangkai/menyatu dengan kata dasar yang mengikutinya ('antarwarga', bukan 'antar warga').\n2. Pembahasan Kunci Jawaban: Pilihan 'Penulisan 'kerjasama' seharusnya dipisah (kerja sama) dan 'antar warga' seharusnya disambung (antarwarga)' (BENAR) secara tepat mengevaluasi kedua kesalahan ortografis dalam kalimat draf esai tersebut.\n3. Pembahasan Distraktor:\n- 'Penulisan 'antar warga' seharusnya menggunakan tanda hubung (antar-warga)' (Salah), tanda hubung hanya digunakan jika bentuk terikat diikuti kata yang berhuruf kapital awal (misal: 'antar-SMA') atau kata berbahasa asing.\n- 'Kata 'diperlukan' seharusnya dipisah menjadi 'di perlukan'' (Salah), 'di-' di sini berfungsi sebagai awalan pembentuk verba pasif sehingga wajib ditulis serangkai, bukan kata depan penunjuk tempat.\n- 'Penulisan 'kerjasama' sudah benar, namun kata 'masyarakat' harus diawali huruf kapital' (Salah), 'kerja sama' wajib dipisah dan kata 'masyarakat' adalah nomina umum yang tidak memerlukan huruf kapital di tengah kalimat.",
+      "source": {
+        "book": "Cerdas Cergas Berbahasa dan Bersastra Indonesia SMA/SMK Kelas XII Edisi Revisi 2025",
+        "chapter": "Bab 5: Mengungkapkan Kekaguman tentang Kearifan Lokal",
+        "curriculum": "Kurikulum Merdeka",
+        "student_book": {
+          "pages": "209-212"
+        },
+        "teacher_guide": {
+          "pages": "255-261"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Revisi 2025 hlm. 209-212 (Subbab D: Menulis dan Menyunting Teks Esai Sesuai Ejaan PUEBI/EYD) & Buku Panduan Guru hlm. 255-261 (Tabel 5.12).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka",
+        "competency_target": "Mengevaluasi dan menyunting kesalahan penulisan gabungan kata terpisah dan bentuk terikat serangkai",
+        "concept_reference": "Kaidah ortografis EYD Edisi V tentang kata majemuk (kerja sama) dan bentuk terikat (antarwarga)",
+        "support_category": "Penyuntingan Mekanika dan Ortografi Ejaan",
+        "authoring_statement": "Kalimat latihan penyuntingan orisinal disusun menguji presisi penerapan EYD V."
+      }
+    },
+    {
+      "id": "KM05-E1",
+      "skill": "menerapkan",
+      "before_question": "Setelah membaca esai tentang kearifan lokal, Budi menyadari pentingnya menjaga alam dan mulai mencari cara-cara baru atau metode alternatif yang bisa ia lakukan untuk menumbuhkan kepedulian lingkungan di sekolahnya. Dalam model refleksi ALACT, tindakan Budi berada pada tahap...",
+      "after_question": "Setelah membaca esai tentang kearifan lokal, Budi menyadari pentingnya menjaga alam dan mulai mencari cara-cara baru atau metode alternatif yang bisa ia lakukan untuk menumbuhkan kepedulian lingkungan di sekolahnya. Dalam model refleksi ALACT, tindakan Budi berada pada tahap...",
+      "replacement_options": [
+        "Tindakan/Aksi (Action)",
+        "Melihat Kembali (Looking Back)",
+        "Uji Coba (Trial)",
+        "Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)"
+      ],
+      "answer": "Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Model Refleksi ALACT (Subbab E): Model refleksi ALACT terdiri atas 5 tahap berurutan: (1) Action (Aksi/Tindakan membaca), (2) Looking back on action (Melihat kembali tindakan), (3) Awareness of essential aspects (Kesadaran akan aspek esensial), (4) Creating alternative methods of action (Menciptakan metode tindakan alternatif), dan (5) Trial (Uji coba metode baru).\n2. Pembahasan Kunci Jawaban: Pilihan 'Menciptakan Metode Tindakan Alternatif (Creating Alternative Methods of Action)' (BENAR) secara tepat mendeskripsikan aktivitas Budi yang mencari ide-ide baru atau cara alternatif dalam mewujudkan kepedulian lingkungan di sekolah setelah menyadari nilai kearifan lokal.\n3. Pembahasan Distraktor:\n- 'Tindakan/Aksi (Action)' (Salah), tahap ini merupakan tindakan awal saat pembaca menyimak atau membaca teks esai.\n- 'Melihat Kembali (Looking Back)' (Salah), tahap ini berupa peninjauan kembali apa yang dirasakan dan dipikirkan selama proses membaca teks.\n- 'Uji Coba (Trial)' (Salah), tahap ini berupa implementasi nyata mempraktikkan metode baru tersebut dalam tindakan nyata di lapangan.",
+      "source": {
+        "book": "Cerdas Cergas Berbahasa dan Bersastra Indonesia SMA/SMK Kelas XII Edisi Revisi 2025",
+        "chapter": "Bab 5: Mengungkapkan Kekaguman tentang Kearifan Lokal",
+        "curriculum": "Kurikulum Merdeka",
+        "student_book": {
+          "pages": "213-217"
+        },
+        "teacher_guide": {
+          "pages": "261-265"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Revisi 2025 hlm. 213-217 (Subbab E: Merefleksi Gagasan Berdasarkan Model ALACT) & Buku Panduan Guru hlm. 261-265 (Tabel 5.14 & 5.15).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka",
+        "competency_target": "Menerapkan pemahaman tahapan model refleksi kritis ALACT dalam merespons isi teks esai",
+        "concept_reference": "Tahap ke-4 ALACT (Creating alternative methods of action) dalam pembelajaran reflektif",
+        "support_category": "Penerapan Model Refleksi Kritis",
+        "authoring_statement": "Studi kasus kontekstual penerapan model ALACT Korthagen dirancang orisinal untuk siswa SMA."
+      }
+    },
+    {
+      "id": "KM05-E2",
+      "skill": "memahami",
+      "before_question": "Dalam model ALACT, tahap awal yang dilakukan pembaca yang berupa kegiatan membaca teks secara langsung dan memperoleh pengalaman atau pengetahuan darinya disebut tahap...",
+      "after_question": "Dalam model ALACT, tahap awal yang dilakukan pembaca yang berupa kegiatan membaca teks secara langsung dan memperoleh pengalaman atau pengetahuan darinya disebut tahap...",
+      "replacement_options": [
+        "Tindakan/Aksi (Action)",
+        "Kesadaran (Awareness)",
+        "Uji Coba (Trial)",
+        "Looking Back (Melihat Kembali)"
+      ],
+      "answer": "Tindakan/Aksi (Action)",
+      "cognitive_level": "understand",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Tahap Awal Model ALACT (Subbab E): Model refleksi pembelajaran membaca ALACT dimulai dengan tahapan pertama yang menjadi pijakan pengalaman konkret pembaca.\n2. Pembahasan Kunci Jawaban: Pilihan 'Tindakan/Aksi (Action)' (BENAR) adalah tahap ke-1 di mana peserta didik melakukan tindakan nyata berupa membaca teks esai secara langsung, mencermati diksi, dan menyerap informasi awal sebelum melakukan refleksi kritis.\n3. Pembahasan Distraktor:\n- 'Kesadaran (Awareness)' (Salah), merupakan tahap ke-3 (Awareness of essential aspects) di mana pembaca menyadari aspek-aspek mendasar yang menjadi fokus perhatian.\n- 'Uji Coba (Trial)' (Salah), merupakan tahap ke-5 (Trial) di mana pembaca menguji coba metode tindakan baru yang telah dirumuskan.\n- 'Looking Back (Melihat Kembali)' (Salah), merupakan tahap ke-2 di mana pembaca menengok kembali apa yang telah dilakukan pada tahap aksi.",
+      "source": {
+        "book": "Cerdas Cergas Berbahasa dan Bersastra Indonesia SMA/SMK Kelas XII Edisi Revisi 2025",
+        "chapter": "Bab 5: Mengungkapkan Kekaguman tentang Kearifan Lokal",
+        "curriculum": "Kurikulum Merdeka",
+        "student_book": {
+          "pages": "213-217"
+        },
+        "teacher_guide": {
+          "pages": "261-265"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Revisi 2025 hlm. 213-217 (Subbab E: Model ALACT dalam Menanggapi Bacaan) & Buku Panduan Guru hlm. 261-265.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka",
+        "competency_target": "Memahami karakteristik tahap aksi (Action) sebagai pijakan pengalaman awal model ALACT",
+        "concept_reference": "Definisi dan operasionalisasi tahap ke-1 (Action) model refleksi ALACT",
+        "support_category": "Pemahaman Konsep Model Refleksi",
+        "authoring_statement": "Materi konseptual ALACT disarikan langsung dari rujukan resmi pedagogi Buku Siswa Bab 5."
+      }
+    },
+    {
+      "id": "K13-C05-ESAI-01",
+      "skill": "menerapkan",
+      "before_question": "Dalam penulisan esai, sangat penting membedakan opini dari fakta. Manakah dari pernyataan berikut yang merupakan sebuah opini yang sering ditemukan dalam esai kearifan lokal?",
+      "after_question": "Dalam penulisan esai, sangat penting membedakan opini dari fakta. Manakah dari pernyataan berikut yang merupakan sebuah opini yang sering ditemukan dalam esai kearifan lokal?",
+      "replacement_options": [
+        "Tradisi Y dilaksanakan setiap tanggal 1 Suro pada penanggalan Jawa.",
+        "Masyarakat desa X memiliki tradisi yang sangat indah dan sarat makna.",
+        "Desa Z terletak di kaki Gunung Merapi, berjarak 20 km dari pusat kota.",
+        "Jumlah penduduk desa A yang masih membuat kerajinan tradisional adalah 50 orang."
+      ],
+      "answer": "Masyarakat desa X memiliki tradisi yang sangat indah dan sarat makna.",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Membedakan Fakta dan Opini dalam Kritik Sastra dan Esai (K13 KD 3.12/4.12): Fakta memuat data obyektif, verifikatif, dan terukur secara empiris. Sebaliknya, opini memuat penilaian subjektif, kesan apresiatif, atau kata-kata sifat berbobot nilai personal yang tidak memiliki ukuran kuantitatif mutlak.\n2. Pembahasan Kunci Jawaban: Pilihan 'Masyarakat desa X memiliki tradisi yang sangat indah dan sarat makna' (BENAR) merupakan kalimat opini karena menggunakan frasa adjektival subjektif 'sangat indah' dan 'sarat makna' yang kebenarannya bergantung pada sudut pandang penikmatnya.\n3. Pembahasan Distraktor:\n- 'Tradisi Y dilaksanakan setiap tanggal 1 Suro pada penanggalan Jawa' (Salah), merupakan fakta waktu kalender yang dapat diverifikasi secara objektif.\n- 'Desa Z terletak di kaki Gunung Merapi, berjarak 20 km dari pusat kota' (Salah), merupakan fakta spasial geografis yang terukur secara spasial kuantitatif.\n- 'Jumlah penduduk desa A yang masih membuat kerajinan tradisional adalah 50 orang' (Salah), merupakan fakta demografis terhitung secara numerik.",
+      "source": {
+        "book": "Bahasa Indonesia SMA/MA/SMK/MAK Kelas XII (Kurikulum 2013 Revisi)",
+        "chapter": "Bab 6: Menilai Karya Melalui Kritik dan Esai",
+        "curriculum": "Kurikulum 2013 Revisi",
+        "student_book": {
+          "pages": "N/A"
+        },
+        "teacher_guide": {
+          "pages": "N/A"
+        }
+      },
+      "provenance": "Kurikulum 2013 Revisi Jenjang SMA Kelas XII: Permendikbud No. 37 Tahun 2018 (Kompetensi Dasar 3.12: Mengevaluasi informasi, baik fakta maupun opini, dalam sebuah artikel/esai kritik yang dibaca).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum 2013 Revisi",
+        "competency_target": "Menerapkan pemilahan kalimat opini apresiatif subjektif dari fakta terukur dalam konteks esai",
+        "concept_reference": "Perbedaan kalimat fakta empiris dan kalimat opini bernilai emotif-apresiatif dalam esai",
+        "support_category": "Penerapan Analisis Opini vs Fakta",
+        "authoring_statement": "Soal jembatan kurikulum dirancang independen memenuhi tuntutan standar KD 3.12 K13 Revisi."
+      }
+    }
+  ]
+}

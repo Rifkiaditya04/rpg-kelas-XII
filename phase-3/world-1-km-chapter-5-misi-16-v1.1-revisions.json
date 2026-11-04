@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "BI12-W01-CH05-M16-V1.1-REV",
+  "base_batch": "phase-3/world-1-km-chapter-5-misi-16-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 5 Misi 16 (Subbab C: Mengidentifikasi Fakta, Opini, dan Asumsi Penulis serta Kaidah Kebahasaan Esai): upgrading explanations to standard 3-step pedagogical structure with distractor deconstruction, calibrating Bloom cognitive levels (C4 Analyze for assumption identification, C3 Apply for correlative conjunctions, C2 Understand for standard KBBI loanword equivalents), resolving teacher guide page locators to verified BG pages 251-255, varying answer key distribution naturally (KM05-C1: D, KM05-C2: B, KM05-C3: A), and adding Decision 009 compliant source_basis metadata.",
+  "revisions": [
+    {
+      "id": "KM05-C1",
+      "skill": "menganalisis",
+      "before_question": "Bacalah pernyataan berikut: 'Setiap masyarakat memiliki budaya dan setiap budaya pasti ada masyarakat yang memilikinya. Setiap kelompok masyarakat memiliki budaya yang bersifat khas.' Dalam penulisan esai, pernyataan tersebut tergolong sebagai...",
+      "after_question": "Bacalah pernyataan berikut: 'Setiap masyarakat memiliki budaya dan setiap budaya pasti ada masyarakat yang memilikinya. Setiap kelompok masyarakat memiliki budaya yang bersifat khas.' Dalam penulisan esai, pernyataan tersebut tergolong sebagai...",
+      "replacement_options": [
+        "Fakta absolut",
+        "Data empiris",
+        "Kritik sosial",
+        "Asumsi"
+      ],
+      "answer": "Asumsi",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Fakta, Opini, dan Asumsi (Subbab C): Fakta adalah hal yang nyata dan dapat dibuktikan secara empiris; opini adalah pendapat atau sikap pribadi; sedangkan asumsi adalah anggapan dasar, dugaan awal, atau premis teoretis yang dianggap benar oleh penulis sebelum dibuktikan secara faktual.\n2. Pembahasan Kunci Jawaban: Pilihan 'Asumsi' (BENAR) karena pernyataan 'Setiap masyarakat memiliki budaya dan setiap budaya pasti ada masyarakat yang memilikinya...' merupakan premis anggapan dasar (postulat sosiologis) yang dijadikan titik tolak argumen esai penulis.\n3. Pembahasan Distraktor:\n- 'Fakta absolut' (Salah), pernyataan tersebut berupa generalisasi konseptual abstrak, bukan fakta terukur konkret seperti data sensus penduduk.\n- 'Data empiris' (Salah), tidak memuat angka, observasi lapangan, atau bukti kuantitatif empiris.\n- 'Kritik sosial' (Salah), kalimat tersebut tidak berisi kecaman, penilaian negatif, atau koreksi atas kepincangan sosial.",
+      "source": {
+        "book": "Cerdas Cergas Berbahasa dan Bersastra Indonesia SMA/SMK Kelas XII Edisi Revisi 2025",
+        "chapter": "Bab 5: Mengungkapkan Kekaguman tentang Kearifan Lokal",
+        "curriculum": "Kurikulum Merdeka",
+        "student_book": {
+          "pages": "197-200"
+        },
+        "teacher_guide": {
+          "pages": "251-255"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Revisi 2025 hlm. 197-200 (Subbab C: Menemukan Fakta, Opini, dan Asumsi dalam Teks Esai) & Buku Panduan Guru hlm. 251-255 (Tabel 5.7 & 5.8).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka",
+        "competency_target": "Menganalisis dan membedakan fakta, opini, serta asumsi dalam argumen esai",
+        "concept_reference": "Definisi dan karakteristik asumsi sebagai anggapan dasar dalam struktur penalaran esai",
+        "support_category": "Analisis Logika dan Epistemologi Kalimat Esai",
+        "authoring_statement": "Butir soal orisinal menguji keterampilan berpikir kritis memilah asumsi dari fakta empiris."
+      }
+    },
+    {
+      "id": "KM05-C2",
+      "skill": "menerapkan",
+      "before_question": "Dalam menulis esai, penggunaan konjungsi korelatif harus tepat (idiomatis). Pasangan kata penghubung (korelatif) manakah di bawah ini yang digunakan dengan tepat sesuai kaidah bahasa Indonesia?",
+      "after_question": "Dalam menulis esai, penggunaan konjungsi korelatif harus tepat (idiomatis). Pasangan kata penghubung (korelatif) manakah di bawah ini yang digunakan dengan tepat sesuai kaidah bahasa Indonesia?",
+      "replacement_options": [
+        "Bukan sekadar tren, tetapi sudah menjadi budaya.",
+        "Baik di kota maupun di desa.",
+        "Antara budaya lokal dengan budaya asing.",
+        "Baik di pedalaman ataupun di pesisir."
+      ],
+      "answer": "Baik di kota maupun di desa.",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Konjungsi Korelatif Idiomatis (Subbab C): Konjungsi korelatif adalah pasangan kata hubung tetap yang menghubungkan dua unsur gramatikal sederajat. Kaidah tata bahasa baku bahasa Indonesia menetapkan pasangan tetap idiomatis: 'baik... maupun...', 'bukan... melainkan...', 'tidak... tetapi...', dan 'antara... dan...'.\n2. Pembahasan Kunci Jawaban: Pilihan 'Baik di kota maupun di desa' (BENAR) menggunakan pasangan korelatif baku yang tepat antara kata 'baik' dan 'maupun'.\n3. Pembahasan Distraktor:\n- 'Bukan sekadar tren, tetapi sudah menjadi budaya' (Salah), pasangan kata 'bukan' seharusnya berpasangan dengan 'melainkan', sedangkan 'tetapi' berpasangan dengan 'tidak'.\n- 'Antara budaya lokal dengan budaya asing' (Salah), kata penghubung 'antara' harus berpasangan dengan 'dan' (antara... dan...), bukan 'dengan'.\n- 'Baik di pedalaman ataupun di pesisir' (Salah), kata 'baik' tidak boleh dipasangkan dengan 'ataupun', melainkan harus dengan 'maupun'.",
+      "source": {
+        "book": "Cerdas Cergas Berbahasa dan Bersastra Indonesia SMA/SMK Kelas XII Edisi Revisi 2025",
+        "chapter": "Bab 5: Mengungkapkan Kekaguman tentang Kearifan Lokal",
+        "curriculum": "Kurikulum Merdeka",
+        "student_book": {
+          "pages": "201-203"
+        },
+        "teacher_guide": {
+          "pages": "251-255"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Revisi 2025 hlm. 201-203 (Kaidah Bahasa: Konjungsi Korelatif) & Buku Panduan Guru hlm. 251-255.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka",
+        "competency_target": "Menerapkan penggunaan konjungsi korelatif berpasangan tetap secara idiomatis dan baku",
+        "concept_reference": "Pasangan konjungsi korelatif baku bahasa Indonesia (baik... maupun, bukan... melainkan, dsb.)",
+        "support_category": "Penerapan Tata Bahasa & Sintaksis",
+        "authoring_statement": "Soal kaidah kebahasaan disusun sesuai Tata Bahasa Baku Bahasa Indonesia Edisi IV."
+      }
+    },
+    {
+      "id": "KM05-C3",
+      "skill": "memahami",
+      "before_question": "Masyarakat kini sering menonton acara dialog televisi yang membahas permasalahan budaya. Apa padanan kata baku bahasa Indonesia yang tepat untuk istilah asing 'talk show'?",
+      "after_question": "Masyarakat kini sering menonton acara dialog televisi yang membahas permasalahan budaya. Apa padanan kata baku bahasa Indonesia yang tepat untuk istilah asing 'talk show'?",
+      "replacement_options": [
+        "Gelar wicara",
+        "Siniar",
+        "Wawancara eksklusif",
+        "Diskusi panel"
+      ],
+      "answer": "Gelar wicara",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Padanan Istilah Asing dalam Esai (Subbab C): Dalam menulis esai bahasa Indonesia, penulis dianjurkan mengutamakan padanan kata baku bahasa Indonesia yang telah disahkan KBBI dan Badan Pengembangan dan Pembinaan Bahasa untuk memperkaya kosakata nasional.\n2. Pembahasan Kunci Jawaban: Pilihan 'Gelar wicara' (BENAR) merupakan padanan leksikal baku resmi dalam KBBI untuk istilah bahasa Inggris 'talk show' (acara temu bincang/dialog interaktif di media).\n3. Pembahasan Distraktor:\n- 'Siniar' (Salah), merupakan padanan baku bahasa Indonesia untuk istilah 'podcast', bukan 'talk show'.\n- 'Wawancara eksklusif' (Salah), merupakan padanan untuk istilah 'exclusive interview' (tanya-jawab satu arah secara mendalam).\n- 'Diskusi panel' (Salah), merupakan padanan untuk istilah 'panel discussion' yang melibatkan sekelompok pakar di hadapan audiens.",
+      "source": {
+        "book": "Cerdas Cergas Berbahasa dan Bersastra Indonesia SMA/SMK Kelas XII Edisi Revisi 2025",
+        "chapter": "Bab 5: Mengungkapkan Kekaguman tentang Kearifan Lokal",
+        "curriculum": "Kurikulum Merdeka",
+        "student_book": {
+          "pages": "200-201"
+        },
+        "teacher_guide": {
+          "pages": "251-255"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Revisi 2025 hlm. 200-201 (Kaidah Bahasa: Penggunaan Kosakata dan Istilah Baku) & Buku Panduan Guru hlm. 251-255.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka",
+        "competency_target": "Memahami dan memilih padanan kata baku bahasa Indonesia resmi KBBI untuk istilah asing",
+        "concept_reference": "Padanan kata serapan bahasa asing ke dalam bahasa Indonesia baku (talk show -> gelar wicara)",
+        "support_category": "Penguasaan Kosakata dan Leksikologi",
+        "authoring_statement": "Padanan kosakata bersumber resmi dari Kamus Besar Bahasa Indonesia (KBBI VI Daring)."
+      }
+    }
+  ]
+}
