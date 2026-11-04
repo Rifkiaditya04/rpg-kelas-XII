@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "BI12-W01-CH02-M06-V1.1-REV",
+  "base_batch": "phase-3/world-1-km-chapter-2-misi-6-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 2 Misi 6 (Subbab C & D: Ciri Kebahasaan Konjungsi Temporal/Verba Material, Pembandingan Struktur Penutup, dan Evaluasi Format Teks Prosedur): upgrading explanations to standard 3-step pedagogical structure with distractor deconstruction, resolving teacher guide page locators to verified BG pages 90-98, and adding Decision 009 compliant source_basis metadata.",
+  "revisions": [
+    {
+      "id": "KM02-C1",
+      "change_type": "pedagogical_and_source_basis_revision",
+      "reason": "Penyempurnaan pembahasan menjadi struktur 3 langkah pedagogis (Analisis Kaidah Kebahasaan, Pembahasan Kunci, Dekonstruksi Distraktor), penyelarasan locator Buku Siswa (hlm. 60-65) dan Buku Guru (hlm. 90-94), serta penambahan metadata source_basis terverifikasi Kurikulum Merdeka Subbab C.",
+      "before_question": "Perhatikan kutipan teks prosedur berikut: '(1) Selanjutnya, potong buah segar menjadi bagian kecil. (2) Masukkan potongan buah ke dalam blender. (3) Pastikan penutup blender terkunci rapat sebelum menekan tombol putar.' Pada kalimat manakah terdapat penggunaan konjungsi temporal (kata hubung penanda waktu) dan verba material (kata kerja fisik)?",
+      "after_question": "Perhatikan kutipan teks prosedur berikut: '(1) Selanjutnya, potong buah segar menjadi bagian kecil. (2) Masukkan potongan buah ke dalam blender. (3) Pastikan penutup blender terkunci rapat sebelum menekan tombol putar.' Pada kalimat manakah terdapat penggunaan konjungsi temporal (kata hubung penanda waktu) dan verba material (kata kerja fisik)?",
+      "answer": "Kalimat (1) mengandung konjungsi temporal dan verba material.",
+      "replacement_options": [
+        "Kalimat (1) mengandung konjungsi temporal dan verba material.",
+        "Kalimat (2) mengandung konjungsi temporal dan verba material.",
+        "Kalimat (3) mengandung verba tingkah laku dan konjungsi temporal.",
+        "Kalimat (1) dan (3) hanya mengandung verba material tanpa konjungsi."
+      ],
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Kaidah Kebahasaan Teks Prosedur Kompleks:\n   - Konjungsi temporal adalah kata penghubung antarlangkah atau antarklausa yang menandai urutan waktu terjadinya suatu tindakan, misalnya: 'kemudian', 'selanjutnya', 'setelah itu', 'lalu'.\n   - Verba material adalah kata kerja tindakan berwujud fisik yang memperlihatkan subjek melakukan suatu perbuatan nyata pada suatu benda atau objek, misalnya: 'potong', 'memotong', 'mengiris', 'memasukkan'.\n   - Verba tingkah laku mengacu pada tindakan mental atau respons psikologis/sikap, bukan gerakan fisik langsung.\n\n2. Pembahasan Kunci Jawaban:\n   - Kalimat (1) mengandung konjungsi temporal dan verba material (BENAR): Pada kalimat (1) ('Selanjutnya, potong buah segar menjadi bagian kecil'), kata 'Selanjutnya' berfungsi sebagai konjungsi temporal penanda urutan waktu langkah, dan kata 'potong' merupakan verba material yang menyatakan tindakan fisik memperkecil ukuran buah.\n\n3. Pembahasan Distraktor:\n   - Kalimat (2) mengandung konjungsi temporal dan verba material (Salah): Kalimat (2) ('Masukkan potongan buah ke dalam blender') hanya memuat verba material ('Masukkan'), tanpa diawali atau disertai kata hubung konjungsi temporal penanda urutan waktu.\n   - Kalimat (3) mengandung verba tingkah laku dan konjungsi temporal (Salah): Kata 'sebelum' adalah konjungsi temporal intrakalimat subordinatif, tetapi 'Pastikan' adalah verba relasional/modalitas perintah, dan 'menekan' adalah verba material (tindakan fisik menekan tombol), bukan verba tingkah laku mental.\n   - Kalimat (1) dan (3) hanya mengandung verba material tanpa konjungsi (Salah): Pernyataan ini keliru karena kalimat (1) secara nyata memuat konjungsi temporal 'Selanjutnya' di awal kalimat.",
+      "source": {
+        "student_book": {
+          "pages": "60-65",
+          "section": "Bab 2, Subbab C: Memahami dan Melakukan Instruksi pada Teks Prosedur yang Dibaca"
+        },
+        "teacher_guide": {
+          "pages": "90-94",
+          "section": "Bab 2, Subbab C: Ciri Kebahasaan Teks Prosedur (Verba Material & Konjungsi Temporal)"
+        }
+      },
+      "provenance": "Soal orisinal analisis kebahasaan konjungsi temporal dan verba material teks prosedur (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C02-C: Memahami ciri dan kaidah kebahasaan teks prosedur kompleks (konjungsi temporal dan verba material)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 60-65 (Subbab C: Aspek Kebahasaan Teks Prosedur)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 90-94 (Subbab C: Panduan Pembelajaran Aktivitas 2.4 & 2.5)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Kutipan langkah pengolahan jus buah sehat, analisis ciri kebahasaan konjungsi temporal dan verba material, serta dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi linguistik teks prosedur."
+      }
+    },
+    {
+      "id": "KM02-D1",
+      "change_type": "pedagogical_and_source_basis_revision",
+      "reason": "Penyempurnaan pembahasan menjadi struktur 3 langkah pedagogis (Analisis Pembandingan Struktur Penutup, Pembahasan Kunci, Dekonstruksi Distraktor), penyelarasan locator Buku Siswa (hlm. 65-73) dan Buku Guru (hlm. 94-98), serta penambahan metadata source_basis terverifikasi Kurikulum Merdeka Subbab D.",
+      "before_question": "Dua teks prosedur kesehatan dianalisis. Teks 1 membahas 'Cara Mengatur Pola Makan Diet Keto' yang diakhiri dengan peringatan untuk berkonsultasi ke dokter jika memiliki masalah ginjal. Teks 2 membahas 'Cara Diet Rendah Gula' yang tidak mencantumkan peringatan medis apa pun di bagian penutup, melainkan ajakan untuk berolahraga. Berdasarkan pola pengembangan tersebut, kesimpulan apa yang paling tepat mengenai perbedaan struktur kedua teks?",
+      "after_question": "Dua teks prosedur kesehatan dianalisis. Teks 1 membahas 'Cara Mengatur Pola Makan Diet Keto' yang diakhiri dengan peringatan untuk berkonsultasi ke dokter jika memiliki masalah ginjal. Teks 2 membahas 'Cara Diet Rendah Gula' yang tidak mencantumkan peringatan medis apa pun di bagian penutup, melainkan ajakan untuk berolahraga. Berdasarkan pola pengembangan tersebut, kesimpulan apa yang paling tepat mengenai perbedaan struktur kedua teks?",
+      "answer": "Teks 1 memiliki struktur penutup berupa batasan (syarat medis), sedangkan Teks 2 memiliki penutup berupa saran tambahan.",
+      "replacement_options": [
+        "Teks 1 memiliki struktur penutup berupa batasan (syarat medis), sedangkan Teks 2 memiliki penutup berupa saran tambahan.",
+        "Teks 1 tidak memiliki langkah-langkah yang jelas, sedangkan Teks 2 memiliki tujuan utama yang jelas.",
+        "Kedua teks memiliki penutup berupa kesimpulan akhir yang sama persis.",
+        "Teks 2 merupakan prosedur kompleks, sedangkan Teks 1 merupakan prosedur sederhana."
+      ],
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Pembandingan Struktur Penutup Teks Prosedur Kompleks:\n   Struktur teks prosedur secara umum terdiri atas: (1) Tujuan/Pernyataan Umum, (2) Alat dan Bahan (opsional), (3) Langkah-langkah/Tahapan, dan (4) Penutup/Penegasan Ulang. Bagian penutup bersifat fleksibel dan dapat dikembangkan dalam berbagai corak fungsional: berupa batasan keamanan/peringatan keselamatan (disclaimer/safety condition), saran komplementer, maupun harapan hasil.\n\n2. Pembahasan Kunci Jawaban:\n   - Teks 1 memiliki struktur penutup berupa batasan (syarat medis), sedangkan Teks 2 memiliki penutup berupa saran tambahan (BENAR): Penutup Teks 1 mengemukakan batasan medis berupa syarat konsultasi dokter bagi penderita gangguan ginjal (safety limitation), sedangkan penutup Teks 2 menyajikan anjuran positif pelengkap gaya hidup yaitu ajakan berolahraga (additional recommendation).\n\n3. Pembahasan Distraktor:\n   - Teks 1 tidak memiliki langkah-langkah yang jelas, sedangkan Teks 2 memiliki tujuan utama yang jelas (Salah): Stimulus memaparkan kedua teks sebagai teks prosedur yang membahas tata cara pola makan; perbedaan yang dianalisis terletak pada bagian penutup, bukan ketiadaan langkah pada Teks 1.\n   - Kedua teks memiliki penutup berupa kesimpulan akhir yang sama persis (Salah): Kedua teks secara tegas memiliki penutup yang bertolak belakang fungsinya (peringatan medis bersyarat vs ajakan olahraga).\n   - Teks 2 merupakan prosedur kompleks, sedangkan Teks 1 merupakan prosedur sederhana (Salah): Keduanya sama-sama merupakan teks prosedur kompleks bertema kesehatan; klasifikasi kesederhanaan teks tidak didasarkan semata-mata pada ketiadaan peringatan medis.",
+      "source": {
+        "student_book": {
+          "pages": "65-73",
+          "section": "Bab 2, Subbab D: Membandingkan Dua Teks Prosedur Kompleks yang Dibaca"
+        },
+        "teacher_guide": {
+          "pages": "94-98",
+          "section": "Bab 2, Subbab D: Panduan Pembelajaran Aktivitas 2.6 (Tabel 2.9)"
+        }
+      },
+      "provenance": "Soal orisinal analisis perbandingan struktur penutup teks prosedur kesehatan (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C02-D: Membandingkan dua teks prosedur kompleks berdasarkan struktur, pola pengembangan, dan tujuan fungsional",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 65-73 (Subbab D: Membandingkan Dua Teks Prosedur Kompleks)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 94-98 (Subbab D: Panduan Pembelajaran Aktivitas 2.6 & 2.7)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Studi komparasi teks prosedur diet keto dan diet rendah gula, analisis perbandingan struktur penutup instruksi, dan dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi perbandingan teks."
+      }
+    },
+    {
+      "id": "KM02-D2",
+      "change_type": "pedagogical_and_source_basis_revision",
+      "reason": "Penyempurnaan pembahasan menjadi struktur 3 langkah pedagogis (Analisis Format Penyajian Teks, Pembahasan Kunci, Dekonstruksi Distraktor), penyelarasan locator Buku Siswa (hlm. 65-73) dan Buku Guru (hlm. 94-98), serta penambahan metadata source_basis terverifikasi Kurikulum Merdeka Subbab D.",
+      "before_question": "Seorang pembaca merasa Teks Prosedur A ('Cara Meditasi Selama 10 Menit') jauh lebih mudah diikuti daripada Teks Prosedur B ('Cara Meditasi'). Setelah dicek, Teks A menggunakan penomoran langkah (1, 2, 3), sedangkan Teks B ditulis dalam bentuk paragraf narasi tanpa angka penanda. Apa kelemahan utama dari pola pengembangan Teks B?",
+      "after_question": "Seorang pembaca merasa Teks Prosedur A ('Cara Meditasi Selama 10 Menit') jauh lebih mudah diikuti daripada Teks Prosedur B ('Cara Meditasi'). Setelah dicek, Teks A menggunakan penomoran langkah (1, 2, 3), sedangkan Teks B ditulis dalam bentuk paragraf narasi tanpa angka penanda. Apa kelemahan utama dari pola pengembangan Teks B?",
+      "answer": "Tidak adanya penanda urutan (angka/konjungsi) membuat pembaca kesulitan membedakan batas antarlangkah secara hierarkis.",
+      "replacement_options": [
+        "Tidak adanya penanda urutan (angka/konjungsi) membuat pembaca kesulitan membedakan batas antarlangkah secara hierarkis.",
+        "Teks B pasti kehilangan tujuan utamanya karena ditulis secara narasi.",
+        "Paragraf narasi tidak boleh sama sekali digunakan dalam teks prosedur kompleks.",
+        "Teks B menggunakan kalimat imperatif yang terlalu banyak sehingga terkesan kasar."
+      ],
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Format Penyajian Teks Prosedur (Daftar Numerik vs Narasi Paragraf):\n   Teks prosedur dapat disajikan dalam bentuk daftar berurutan (bulleted/numbered list) maupun bentuk prosa paragraf naratif. Kelemahan mendasar format paragraf naratif tanpa penomoran atau konjungsi urutan yang mencolok adalah pembaca dituntut memindai teks lebih keras guna menemukan awal dan akhir setiap instruksi, sehingga rentan terlewat atau tertukar saat dipraktikkan.\n\n2. Pembahasan Kunci Jawaban:\n   - Tidak adanya penanda urutan (angka/konjungsi) membuat pembaca kesulitan membedakan batas antarlangkah secara hierarkis (BENAR): Kejelasan demarcasi batas antarlangkah secara visual dan logis sangat krusial dalam teks prosedur; ketiadaan penanda numerik atau tipografis pada Teks B menyamarkan batas instruksi sehingga pembaca kesulitan mengeksekusi tahapan secara berurutan.\n\n3. Pembahasan Distraktor:\n   - Teks B pasti kehilangan tujuan utamanya karena ditulis secara narasi (Salah): Format narasi tidak otomatis menghilangkan tujuan teks prosedur; teks naratif tetap dapat menyampaikan tujuan yang jelas di bagian pengantar.\n   - Paragraf narasi tidak boleh sama sekali digunakan dalam teks prosedur kompleks (Salah): Teks prosedur diperbolehkan ditulis dalam bentuk narasi (prosa berkesinambungan), asalkan runtut dan menggunakan konjungsi urutan waktu secara memadai.\n   - Teks B menggunakan kalimat imperatif yang terlalu banyak sehingga terkesan kasar (Salah): Stimulus tidak menyebutkan pilihan diksi atau nada imperatif yang kasar; masalah utama yang dikeluhkan pembaca adalah keterbacaan struktur langkah, bukan kesopanan bahasa.",
+      "source": {
+        "student_book": {
+          "pages": "65-73",
+          "section": "Bab 2, Subbab D: Membandingkan Dua Teks Prosedur Kompleks yang Dibaca"
+        },
+        "teacher_guide": {
+          "pages": "94-98",
+          "section": "Bab 2, Subbab D: Panduan Pembelajaran Aktivitas 2.6 (Format Teks Prosedur)"
+        }
+      },
+      "provenance": "Soal orisinal evaluasi efektivitas format penyajian bernomor vs narasi pada teks prosedur (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C02-D: Mengevaluasi format dan pola penyajian teks prosedur kompleks (format daftar bernomor vs prosa naratif)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 65-73 (Subbab D: Format Penyajian Teks Prosedur)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 94-98 (Subbab D: Panduan Keterbacaan dan Format Teks)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Kasus evaluasi keterbacaan teks meditasi bernomor vs naratif, analisis kelemahan format penyajian prosa tanpa pembatas urutan, dan dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi format teks."
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "BI12-W01-CH02-M07-V1.1-REV",
+  "base_batch": "phase-3/world-1-km-chapter-2-misi-7-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 2 Misi 7 (Subbab E: Merefleksi Gagasan dan Pandangan Teks Prosedur Model 4F/4P): upgrading explanations to standard 3-step pedagogical structure with distractor deconstruction, resolving teacher guide page locators to verified BG pages 98-102, calibrating KM02-E2 cognitive level to apply, confirming KM02-E1/E2 canonical integrity, and adding Decision 009 compliant source_basis metadata.",
+  "revisions": [
+    {
+      "id": "KM02-E1",
+      "change_type": "pedagogical_and_source_basis_revision",
+      "reason": "Penyempurnaan pembahasan menjadi struktur 3 langkah pedagogis (Analisis Model Refleksi 4F/4P Tahap Findings, Pembahasan Kunci, Dekonstruksi Distraktor), penyelarasan locator Buku Siswa (hlm. 73-76) dan Buku Guru (hlm. 98-102), penegasan integritas ID kanonikal Bab 2 Misi 7, serta penambahan metadata source_basis terverifikasi Kurikulum Merdeka Subbab E.",
+      "before_question": "Sinta membaca sebuah teks prosedur berjudul 'Cara Cepat Mengatasi Insomnia dengan Relaksasi Otot Progresif'. Setelah mempraktikkannya, ia merasa tubuhnya lebih rileks, meskipun butuh waktu 30 menit, bukan 10 menit seperti janji artikel tersebut. Dalam kerangka refleksi 4F/4P, pada tahap apakah Sinta berada ketika ia menyadari ketidaksesuaian durasi tersebut?",
+      "after_question": "Sinta membaca sebuah teks prosedur berjudul 'Cara Cepat Mengatasi Insomnia dengan Relaksasi Otot Progresif'. Setelah mempraktikkannya, ia merasa tubuhnya lebih rileks, meskipun butuh waktu 30 menit, bukan 10 menit seperti janji artikel tersebut. Dalam kerangka refleksi 4F/4P, pada tahap apakah Sinta berada ketika ia menyadari ketidaksesuaian durasi tersebut?",
+      "answer": "Tahap Pembelajaran (Findings), karena ia menemukan fakta baru berdasarkan pengalamannya mempraktikkan prosedur tersebut.",
+      "replacement_options": [
+        "Tahap Perasaan (Feeling), karena ia merasa rileks.",
+        "Tahap Pembelajaran (Findings), karena ia menemukan fakta baru berdasarkan pengalamannya mempraktikkan prosedur tersebut.",
+        "Tahap Penerapan (Future), karena ia akan menggunakannya lagi besok.",
+        "Tahap Peristiwa (Fact), karena teks tersebut memang berjudul cara cepat."
+      ],
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Model Refleksi 4F / 4P dalam Pembelajaran Kurikulum Merdeka:\n   Model refleksi 4F/4P (dikembangkan oleh Dr. Roger Greenaway) terdiri atas empat komponen berurutan:\n   a. Facts (Peristiwa): Menjelaskan peristiwa nyata apa yang dilakukan/dialami secara objektif.\n   b. Feelings (Perasaan): Mengungkapkan perasaan emosional atau sensasi afektif yang timbul selama/setelah proses.\n   c. Findings (Pembelajaran): Mengidentifikasi pelajaran, wawasan baru, pemahaman kritis, atau realisasi perbedaan antara teori/klaim teks dengan kenyataan lapangan.\n   d. Future (Penerapan): Merumuskan rencana tindakan nyata atau perbaikan yang akan dilakukan di masa mendatang.\n\n2. Pembahasan Kunci Jawaban:\n   - Tahap Pembelajaran (Findings), karena ia menemukan fakta baru berdasarkan pengalamannya mempraktikkan prosedur tersebut (BENAR): Ketika Sinta menyadari bahwa relaksasi membutuhkan durasi 30 menit dan tidak instan 10 menit sebagaimana klaim judul, ia sedang merealisasikan wawasan baru (insight/evaluasi kritis) dari hasil uji coba praktisnya; proses kognitif kritis ini berada pada tahap Findings (Pembelajaran).\n\n3. Pembahasan Distraktor:\n   - Tahap Perasaan (Feeling), karena ia merasa rileks (Salah): Merasa lebih rileks memang merupakan sensasi afektif/fisik (Feeling), namun fokus spesifik pertanyaan adalah saat ia menyadari ketidaksesuaian durasi waktu, yang merupakan wawasan kognitif (Findings).\n   - Tahap Penerapan (Future), karena ia akan menggunakannya lagi besok (Salah): Penerapan (Future) adalah komitmen rencana tindakan di waktu mendatang; stimulus belum memaparkan rencana perlakuan Sinta di masa depan.\n   - Tahap Peristiwa (Fact), karena teks tersebut memang berjudul cara cepat (Salah): Judul teks dan tindakan membaca adalah latar peristiwa (Fact), bukan analisis ketidaksesuaian durasi yang diperoleh pascapraktik.",
+      "source": {
+        "student_book": {
+          "pages": "73-76",
+          "section": "Bab 2, Subbab E: Merefleksi Gagasan dan Pandangan dari Teks Prosedur yang Dibaca"
+        },
+        "teacher_guide": {
+          "pages": "98-102",
+          "section": "Bab 2, Subbab E: Panduan Pembelajaran Aktivitas 2.8 (Model Refleksi 4F/4P)"
+        }
+      },
+      "provenance": "Soal orisinal evaluasi refleksi model 4F/4P tahap Findings pada teks prosedur relaksasi otot (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C02-E: Merefleksikan gagasan dan pandangan teks prosedur menggunakan kerangka refleksi model 4F/4P (Tahap Findings)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 73-76 (Subbab E: Refleksi Model 4F/4P)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 98-102 (Subbab E: Panduan Pembelajaran Formatif Aktivitas 2.8)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Kasus refleksi relaksasi progresif penanganan insomnia, analisis tahapan model refleksi 4F/4P (Findings vs Feeling), dan dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi metakognisi literasi."
+      }
+    },
+    {
+      "id": "KM02-E2",
+      "change_type": "pedagogical_cognitive_calibration_and_source_basis_revision",
+      "reason": "Kalibrasi tingkat kognitif dari create (C6) menjadi apply (C3) berdasarkan tuntutan berpikir aktual di mana peserta didik menerapkan pemahaman kerangka konsep model refleksi 4F/4P untuk menentukan klasifikasi tindakan konkret atlet (peserta didik tidak merancang atau memproduksi rencana aksi baru dari nol, melainkan menerapkan konsep pada opsi jawaban yang tersedia), penyelarasan locator Buku Siswa (hlm. 73-76) dan Buku Guru (hlm. 98-102), penegasan integritas ID kanonikal Bab 2 Misi 7, serta penambahan metadata source_basis terverifikasi Kurikulum Merdeka Subbab E.",
+      "before_question": "Seorang atlet membaca prosedur 'Pemulihan Cedera Ringan dengan Metode RICE (Rest, Ice, Compression, Elevation)'. Ia memahami konsepnya dan memutuskan bahwa besok saat latihan lari, ia akan selalu membawa kantong es di tasnya. Berdasarkan model refleksi 4F/4P, tindakan atlet tersebut merupakan perwujudan dari tahap...",
+      "after_question": "Seorang atlet membaca prosedur 'Pemulihan Cedera Ringan dengan Metode RICE (Rest, Ice, Compression, Elevation)'. Ia memahami konsepnya dan memutuskan bahwa besok saat latihan lari, ia akan selalu membawa kantong es di tasnya. Berdasarkan model refleksi 4F/4P, tindakan atlet tersebut merupakan perwujudan dari tahap...",
+      "answer": "Penerapan (Future)",
+      "replacement_options": [
+        "Peristiwa (Fact)",
+        "Perasaan (Feeling)",
+        "Pembelajaran (Findings)",
+        "Penerapan (Future)"
+      ],
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "hard",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Penerapan Model Refleksi 4F / 4P (Komponen Penerapan / Future):\n   Dalam model refleksi 4F/4P (Facts, Feelings, Findings, Future), tahapan Future (Penerapan atau Rencana Aksi) adalah tahapan di mana seseorang menerapkan konsep atau pembelajaran yang telah dipelajarinya menjadi komitmen tindakan nyata dalam kehidupan sehari-hari pada masa mendatang. Menerapkan konsep ini pada kasus seorang atlet yang memutuskan membawa kantong es untuk latihan lari besok menguji kemampuan menghubungkan teori refleksi dengan tindakan praktis.\n\n2. Pembahasan Kunci Jawaban:\n   - Penerapan (Future) (BENAR): Keputusan atlet untuk selalu membawa kantong es di tasnya saat latihan lari mulai besok merupakan wujud penerapan konsep tindakan konkret di masa depan (Future) yang dilandasi oleh pemahaman atas prosedur pemulihan cedera RICE.\n\n3. Pembahasan Distraktor:\n   - Peristiwa (Fact) (Salah): Peristiwa (Fact) mengacu pada rekonstruksi data atau kejadian objektif yang telah berlangsung saat membaca teks, bukan komitmen tindakan di masa yang akan datang.\n   - Perasaan (Feeling) (Salah): Perasaan (Feeling) mengacu pada suasana hati, motivasi, kekhawatiran, atau respons afektif internal, bukan keputusan logis membawa perlengkapan.\n   - Pembelajaran (Findings) (Salah): Pembelajaran (Findings) adalah pemahaman konsep RICE yang diperoleh atlet, sedangkan tindakan membawa kantong es esok hari adalah wujud aplikasi praktis dari pembelajaran tersebut (tahap Future).",
+      "source": {
+        "student_book": {
+          "pages": "73-76",
+          "section": "Bab 2, Subbab E: Merefleksi Gagasan dan Pandangan dari Teks Prosedur yang Dibaca"
+        },
+        "teacher_guide": {
+          "pages": "98-102",
+          "section": "Bab 2, Subbab E: Panduan Pembelajaran Aktivitas 2.8 (Model Refleksi 4F/4P)"
+        }
+      },
+      "provenance": "Soal orisinal penerapan tahapan refleksi Future pada teks prosedur pertolongan pertama cedera (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C02-E: Menerapkan kerangka refleksi model 4F/4P (Tahap Future) dalam menganalisis komitmen tindakan nyata berbasis teks prosedur",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 73-76 (Subbab E: Refleksi Model 4F/4P)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 98-102 (Subbab E: Panduan Pembelajaran Formatif Aktivitas 2.8)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Kasus penerapan metode RICE pada atlet lari, analisis perwujudan tahap aksi nyata (Future) dalam model 4F/4P, dan dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi penerapan konsep refleksi teks prosedur."
+      }
+    }
+  ]
+}

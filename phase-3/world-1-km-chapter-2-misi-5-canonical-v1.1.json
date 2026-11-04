@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_V1.1_RECONCILED",
+  "dataset": "World 1 KM Standard Chapter 2 Original Content - Misi 5 v1.0",
+  "purpose": "Canonical v1.1 reconciled dataset for World 1 Bahasa Indonesia Chapter 2 Misi 5.",
+  "chapter_id": "BI12-C02",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "KM02-A1",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-A",
+      "skill": "understand",
+      "question": "Rifki memutarkan rekaman panduan mencuci tangan yang benar untuk mencegah infeksi. Dalam rekaman tersebut disebutkan: 'Pertama, basahi tangan dengan air mengalir. Kedua, tuangkan sabun secukupnya. Ketiga, gosok telapak tangan hingga berbusa. Keempat, bilas dengan air mengalir hingga bersih.' Berdasarkan informasi eksplisit tersebut, apa yang harus dilakukan segera setelah menuangkan sabun?",
+      "options": [
+        "Membilas tangan dengan air mengalir hingga bersih.",
+        "Menggosok telapak tangan hingga berbusa.",
+        "Mematikan keran air agar hemat.",
+        "Mengeringkan tangan menggunakan handuk bersih."
+      ],
+      "answer": "Menggosok telapak tangan hingga berbusa.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Menyimak Informasi Eksplisit Teks Prosedur:\n   Teks prosedur menyajikan serangkaian instruksi atau tahapan yang disusun secara kronologis dan berurutan. Keterampilan menyimak teks prosedur tingkat dasar menuntut kemampuan menangkap dan mengungkapkan kembali fakta atau rincian langkah secara eksplisit persis sebagaimana dituturkan dalam rekaman/stimulus tanpa menyisipkan asumsi di luar teks.\n\n2. Pembahasan Kunci Jawaban:\n   - Menggosok telapak tangan hingga berbusa (BENAR): Berdasarkan transkrip rekaman yang disimak: langkah kedua adalah 'tuangkan sabun secukupnya', dan langkah ketiga yang langsung mengikutinya adalah 'gosok telapak tangan hingga berbusa'. Dengan demikian, tindakan yang harus dilakukan segera setelah menuangkan sabun adalah menggosok telapak tangan hingga berbusa.\n\n3. Pembahasan Distraktor:\n   - Membilas tangan dengan air mengalir hingga bersih (Salah): Tindakan membilas merupakan langkah keempat yang dilakukan setelah menggosok telapak tangan, bukan tindakan segera setelah menuangkan sabun.\n   - Mematikan keran air agar hemat (Salah): Informasi mematikan keran air tidak disebutkan dalam teks prosedur rekaman yang disimak; opsi ini merupakan asumsi eksternal di luar stimulus teks.\n   - Mengeringkan tangan menggunakan handuk bersih (Salah): Mengeringkan tangan merupakan tindakan pascapembilasan yang lazim dalam protokol kebersihan, tetapi tidak tercantum dalam rekaman teks prosedur empat langkah pada stimulus.",
+      "source": {
+        "student_book": {
+          "pages": "53-56",
+          "section": "Bab 2, Subbab A: Mengungkapkan Kembali Informasi secara Eksplisit dari Teks Prosedur Kompleks"
+        },
+        "teacher_guide": {
+          "pages": "82-86",
+          "section": "Bab 2, Subbab A: Panduan Pembelajaran Aktivitas 2.1 & 2.2"
+        }
+      },
+      "provenance": "Soal orisinal pemahaman informasi eksplisit simakan prosedur kebersihan tangan (Kurikulum Merdeka).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": [
+        "teks_prosedur",
+        "informasi_eksplisit",
+        "gaya_hidup_sehat"
+      ],
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C02-A",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 60,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C02-A: Mengungkapkan kembali informasi secara eksplisit dari teks prosedur kompleks yang disimak",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 53-56 (Subbab A: Mengungkapkan Kembali Informasi secara Eksplisit dari Teks Prosedur Kompleks)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 82-86 (Subbab A: Panduan Pembelajaran Aktivitas 2.1 & 2.2)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Skenario prosedur cuci tangan pencegahan infeksi, formulasi butir soal pemahaman informasi eksplisit simakan, dan dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi literasi menyimak teks prosedur."
+      }
+    },
+    {
+      "id": "KM02-B1",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-B",
+      "skill": "analyze",
+      "question": "Sebuah siaran radio kesehatan membagikan tata cara peregangan pagi: '(1) Lakukan pendinginan selama 5 menit. (2) Berdirilah tegak dan tarik napas dalam. (3) Rentangkan kedua tangan ke atas. (4) Tahan posisi selama 10 detik.' Terdapat miskonsepsi urutan pada instruksi tersebut. Kesalahan apa yang paling fatal dari urutan tersebut?",
+      "options": [
+        "Langkah (1) seharusnya dilakukan di akhir, bukan sebagai langkah pertama sebelum pemanasan.",
+        "Langkah (3) membutuhkan alat bantu olahraga, sedangkan instruksi tidak menyebutkannya.",
+        "Langkah (4) tidak menyebutkan berapa kali gerakan harus diulang.",
+        "Langkah (2) seharusnya diganti dengan posisi duduk agar lebih rileks."
+      ],
+      "answer": "Langkah (1) seharusnya dilakukan di akhir, bukan sebagai langkah pertama sebelum pemanasan.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Logika Kronologis Teks Prosedur Kesehatan:\n   Teks prosedur memiliki struktur instruksi yang hierarkis dan logis agar tujuan keselamatan dan kesehatan tercapai. Dalam aktivitas fisik atau olahraga, urutan fisiologis baku adalah pemanasan (stretching/peregangan dinamis), latihan inti, lalu diakhiri dengan pendinginan (cooling down). Menempatkan pendinginan sebelum melakukan gerakan tubuh merupakan cacat logika operasional yang berisiko cedera.\n\n2. Pembahasan Kunci Jawaban:\n   - Langkah (1) seharusnya dilakukan di akhir, bukan sebagai langkah pertama sebelum pemanasan (BENAR): 'Pendinginan' bertujuan menurunkan detak jantung dan merilekskan otot setelah melakukan aktivitas fisik, sehingga menempatkan pendinginan pada langkah pertama sebelum tubuh bergerak adalah miskonsepsi urutan yang fatal dalam teks prosedur kesehatan.\n\n3. Pembahasan Distraktor:\n   - Langkah (3) membutuhkan alat bantu olahraga, sedangkan instruksi tidak menyebutkannya (Salah): Gerakan merentangkan kedua tangan ke atas adalah peregangan bebas (calisthenics/stretching) tanpa membutuhkan alat bantu olahraga apa pun.\n   - Langkah (4) tidak menyebutkan berapa kali gerakan harus diulang (Salah): Menahan posisi selama 10 detik adalah instruksi durasi statis yang sudah cukup jelas; ketiadaan frekuensi repetisi bukan kesalahan fatal urutan prosedur.\n   - Langkah (2) seharusnya diganti dengan posisi duduk agar lebih rileks (Salah): Posisi berdiri tegak sambil menarik napas dalam adalah posisi awal peregangan pagi yang absah dan lazim, sehingga bukan kesalahan fatal.",
+      "source": {
+        "student_book": {
+          "pages": "56-60",
+          "section": "Bab 2, Subbab B: Mengidentifikasi dan Menanggapi Informasi dari Teks Prosedur Kompleks yang Disimak"
+        },
+        "teacher_guide": {
+          "pages": "86-90",
+          "section": "Bab 2, Subbab B: Panduan Pembelajaran Aktivitas 2.3 & Analisis Miskonsepsi Urutan"
+        }
+      },
+      "provenance": "Soal orisinal analisis kritis miskonsepsi urutan teks prosedur peregangan pagi (Kurikulum Merdeka).",
+      "mode": "learning",
+      "game_mechanic": "logic_sorting",
+      "tags": [
+        "teks_prosedur",
+        "miskonsepsi_urutan",
+        "gaya_hidup_aktif"
+      ],
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C02-B",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C02-B: Mengidentifikasi dan menanggapi informasi dari teks prosedur kompleks yang disimak serta mengkritisi kesalahan/miskonsepsi urutan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 56-60 (Subbab B: Mengidentifikasi dan Menanggapi Informasi dari Teks Prosedur Kompleks)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 86-90 (Subbab B: Panduan Miskonsepsi/Materi Sensitif Teks Prosedur)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Skenario siaran radio peregangan pagi, analisis kekeliruan posisi pendinginan dalam urutan gerak, dan dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi penalaran kritis teks prosedur."
+      }
+    },
+    {
+      "id": "KM02-B2",
+      "chapter_id": "BI12-C02",
+      "topic_id": "BI12-C02-B",
+      "skill": "evaluate",
+      "question": "Sebuah video tutorial menjelaskan cara mengatur postur duduk saat menggunakan laptop untuk menghindari nyeri punggung. Instruksi menyebutkan untuk menyamakan pandangan mata sejajar dengan ujung atas layar. Jika seseorang menanggapi dengan meletakkan tumpukan buku tebal di bawah laptopnya, apa kesimpulan yang paling tepat dari tindakan tersebut?",
+      "options": [
+        "Tindakan tersebut adalah respons yang benar untuk menaikkan posisi layar agar sejajar dengan mata.",
+        "Tindakan tersebut salah karena menumpuk buku dapat merusak laptop.",
+        "Tindakan tersebut mengabaikan tujuan utama teks prosedur yaitu mengistirahatkan punggung.",
+        "Tindakan tersebut tidak ada hubungannya dengan instruksi dari video tutorial."
+      ],
+      "answer": "Tindakan tersebut adalah respons yang benar untuk menaikkan posisi layar agar sejajar dengan mata.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Evaluasi Tanggapan Praktis terhadap Teks Prosedur:\n   Merespons dan menanggapi teks prosedur tidak hanya berhenti pada pemahaman tekstual, melainkan bagaimana pembaca/pemirsa menerapkan prinsip instruksi ke dalam situasi nyata dengan sarana yang tersedia di sekitarnya. Teks menuntut tercapainya luaran fungsional (ketinggian layar sejajar mata guna menjaga postur ergonomis tulang belakang).\n\n2. Pembahasan Kunci Jawaban:\n   - Tindakan tersebut adalah respons yang benar untuk menaikkan posisi layar agar sejajar dengan mata (BENAR): Menempatkan tumpukan buku tebal di bawah laptop merupakan improvisasi praktis yang tepat dan rasional untuk meninggikan posisi monitor laptop sehingga sejajar dengan garis pandang horizontal mata pengguna, sesuai tujuan ergonomis yang diinstruksikan dalam video tutorial.\n\n3. Pembahasan Distraktor:\n   - Tindakan tersebut salah karena menumpuk buku dapat merusak laptop (Salah): Meletakkan laptop di atas permukaan buku tebal yang datar dan stabil tidak merusak laptop secara otomatis; klaim kerusakan laptop terlalu berlebihan dan mengabaikan tujuan penyesuaian ketinggian layar.\n   - Tindakan tersebut mengabaikan tujuan utama teks prosedur yaitu mengistirahatkan punggung (Salah): Tindakan tersebut justru secara langsung mendukung tujuan menjaga postur punggung yang tegak agar tidak membungkuk saat menatap layar.\n   - Tindakan tersebut tidak ada hubungannya dengan instruksi dari video tutorial (Salah): Tindakan meninggikan laptop berhubungan langsung secara kausal dengan instruksi menyetarakan garis pandang mata dengan ujung atas layar.",
+      "source": {
+        "student_book": {
+          "pages": "56-60",
+          "section": "Bab 2, Subbab B: Mengidentifikasi dan Menanggapi Informasi dari Teks Prosedur Kompleks yang Disimak"
+        },
+        "teacher_guide": {
+          "pages": "86-90",
+          "section": "Bab 2, Subbab B: Panduan Pembelajaran Aktivitas 2.3 & Tanggapan Terhadap Teks Prosedur"
+        }
+      },
+      "provenance": "Soal orisinal evaluasi tanggapan aplikatif atas video tutorial ergonomi layar kerja (Kurikulum Merdeka).",
+      "mode": "learning",
+      "game_mechanic": "application_response",
+      "tags": [
+        "teks_prosedur",
+        "tanggapan_instruksi",
+        "gaya_hidup_seimbang"
+      ],
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C02-B",
+      "difficulty": "medium",
+      "cognitive_level": "evaluate",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C02-B: Mengidentifikasi dan menanggapi informasi dari teks prosedur kompleks yang disimak serta menghubungkannya dengan konteks nyata",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 56-60 (Subbab B: Tanggapan terhadap Informasi Teks Prosedur)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 86-90 (Subbab B: Panduan Menanggapi Informasi Teks Prosedur)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Konteks penyesuaian ergonomi layar laptop menggunakan buku tebal, evaluasi kesesuaian tindakan praktis dengan instruksi, dan dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi penerapan teks prosedur."
+      }
+    }
+  ]
+}

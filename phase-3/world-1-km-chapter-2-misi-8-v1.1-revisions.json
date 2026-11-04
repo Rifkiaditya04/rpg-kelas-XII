@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "BI12-W01-CH02-M08-V1.1-REV",
+  "base_batch": "phase-3/world-1-km-chapter-2-misi-8-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 2 Misi 8 (Subbab F & G: Demonstrasi Runtut Higienis, Produksi Video Tutorial, serta Jembatan K13 Verba Imperatif dan TKA Pemahaman Tekstual): upgrading explanations to standard 3-step pedagogical structure with distractor deconstruction, resolving teacher guide page locators to verified BG pages 102-112 and external curriculum frameworks, calibrating KM02-G1 to evaluate, calibrating TKA-C02-BONUS-01 to analyze, aligning K13 to KD 3.2 SMA aspects of language, aligning TKA to official Pemahaman Tekstual competency, and adding Decision 009 compliant source_basis metadata.",
+  "revisions": [
+    {
+      "id": "KM02-F1",
+      "change_type": "pedagogical_and_source_basis_revision",
+      "reason": "Penyempurnaan pembahasan menjadi struktur 3 langkah pedagogis (Analisis Rekonstruksi Prosedur Higienis, Pembahasan Kunci, Dekonstruksi Distraktor), konfirmasi tingkat kognitif apply (C3) di mana peserta didik menerapkan prosedur higienis penanganan bahan pangan pada draf langkah acak, penyelarasan locator Buku Siswa (hlm. 76-80) dan Buku Guru (hlm. 102-107), serta penambahan metadata source_basis terverifikasi Kurikulum Merdeka Subbab F.",
+      "before_question": "Sebuah draf teks prosedur tentang 'Cara Mencuci Sayuran Segar' tersusun acak seperti berikut:\n(1) Keringkan sayuran dengan lap bersih atau tisu dapur.\n(2) Siapkan wadah bersih dan isi dengan air mengalir.\n(3) Masukkan sayuran dan gosok perlahan permukaan daunnya.\n(4) Buang bagian sayuran yang busuk atau layu.\nManakah urutan yang paling logis agar prosedur tersebut higienis dan runtut?",
+      "after_question": "Sebuah draf teks prosedur tentang 'Cara Mencuci Sayuran Segar' tersusun acak seperti berikut:\n(1) Keringkan sayuran dengan lap bersih atau tisu dapur.\n(2) Siapkan wadah bersih dan isi dengan air mengalir.\n(3) Masukkan sayuran dan gosok perlahan permukaan daunnya.\n(4) Buang bagian sayuran yang busuk atau layu.\nManakah urutan yang paling logis agar prosedur tersebut higienis dan runtut?",
+      "answer": "(4) - (2) - (3) - (1)",
+      "replacement_options": [
+        "(2) - (4) - (3) - (1)",
+        "(4) - (2) - (3) - (1)",
+        "(2) - (3) - (4) - (1)",
+        "(4) - (3) - (2) - (1)"
+      ],
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "hard",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Rekonstruksi Prosedur Runtut Higienis:\n   Menyusun draf instruksi prosedur acak memerlukan penalaran sebab-akibat dan kaidah higienitas kerja. Dalam penanganan bahan pangan segar, langkah awal yang mutlak adalah pemilahan/sortasi bahan (menyingkirkan bagian yang membusuk agar tidak mengontaminasi air pencuci), penyiapan wadah dan air bersih, proses pencucian fisik, kemudian penirisan/pengeringan sebelum diolah atau disimpan.\n\n2. Pembahasan Kunci Jawaban:\n   - (4) - (2) - (3) - (1) (BENAR): Urutan logis higienis yang tepat adalah:\n     (4) Buang bagian sayuran yang busuk atau layu (tahap sortasi bahan),\n     (2) Siapkan wadah bersih dan isi dengan air mengalir (penyiapan media cuci yang higienis),\n     (3) Masukkan sayuran dan gosok perlahan permukaan daunnya (eksekusi pencucian kotoran fisik),\n     (1) Keringkan sayuran dengan lap bersih atau tisu dapur (tahap penuntasan/pengeringan agar sayuran tidak lekas busuk).\n\n3. Pembahasan Distraktor:\n   - (2) - (4) - (3) - (1) (Salah): Membuang bagian busuk (4) setelah menyiapkan air (2) berisiko mengotori wadah dan menunda proses pemilihan bahan yang seharusnya dilakukan di meja persiapan sebelum air dialirkan.\n   - (2) - (3) - (4) - (1) (Salah): Memasukkan sayuran ke dalam air (3) sebelum membuang bagian busuk (4) merupakan kesalahan fatal higienitas karena bakteri dan pembusukan pada bagian yang layu akan mencemari seluruh air pencuci.\n   - (4) - (3) - (2) - (1) (Salah): Menggosok sayuran (3) sebelum menyiapkan wadah berisi air (2) melanggar logika operasional urutan kerja.",
+      "source": {
+        "student_book": {
+          "pages": "76-80",
+          "section": "Bab 2, Subbab F: Mendemonstrasikan Cara Melakukan atau Membuat Sesuatu secara Runtut"
+        },
+        "teacher_guide": {
+          "pages": "102-107",
+          "section": "Bab 2, Subbab F: Panduan Pembelajaran Aktivitas 2.9 & 2.10 (Mendemonstrasikan Prosedur)"
+        }
+      },
+      "provenance": "Soal orisinal penerapan urutan runtut dan higienis teks prosedur penanganan sayuran (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C02-F: Mendemonstrasikan dan menyusun cara melakukan sesuatu secara runtut, logis, dan memperhatikan keselamatan/higienitas kerja",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 76-80 (Subbab F: Mendemonstrasikan Cara Melakukan Sesuatu secara Runtut)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 102-107 (Subbab F: Panduan Formatif Aktivitas 2.9 & 2.10)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Draf urutan acak prosedur pencucian sayuran higienis, analisis sekuensial tahapan persiapan dan pembersihan, serta dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi demonstrasi operasional teks prosedur."
+      }
+    },
+    {
+      "id": "KM02-G1",
+      "change_type": "pedagogical_cognitive_calibration_and_source_basis_revision",
+      "reason": "Kalibrasi tingkat kognitif dari create (C6) menjadi evaluate (C5) berdasarkan tuntutan berpikir aktual di mana peserta didik mengevaluasi 4 alternatif tindakan perbaikan editing linimasa video dan memilih opsi terbaik berdasarkan standar keselamatan kerja (K3) serta kaidah alih wahana video tutorial, penyempurnaan pembahasan 3 langkah, penyelarasan locator Buku Siswa (hlm. 80-85) dan Buku Guru (hlm. 107-112), serta penambahan metadata source_basis Kurikulum Merdeka Subbab G.",
+      "before_question": "Kamu sedang memproduksi sebuah video tutorial tentang 'Cara Bersepeda di Jalan Raya dengan Aman'. Saat melakukan proses rekaman (shooting), kamu menyadari bahwa kamu lupa memasukkan langkah memakai helm pelindung di awal video, dan langsung merekam adegan mengayuh sepeda. Apa tindakan perbaikan (editing) terbaik agar video tutorial tersebut tetap memenuhi standar teks prosedur yang aman?",
+      "after_question": "Kamu sedang memproduksi sebuah video tutorial tentang 'Cara Bersepeda di Jalan Raya dengan Aman'. Saat melakukan proses rekaman (shooting), kamu menyadari bahwa kamu lupa memasukkan langkah memakai helm pelindung di awal video, dan langsung merekam adegan mengayuh sepeda. Apa tindakan perbaikan (editing) terbaik agar video tutorial tersebut tetap memenuhi standar teks prosedur yang aman?",
+      "answer": "Merekam ulang adegan memakai helm, lalu menyelipkannya di bagian awal video saat proses penyuntingan (editing).",
+      "replacement_options": [
+        "Mengabaikannya karena penonton pasti sudah tahu bahwa naik sepeda harus memakai helm.",
+        "Merekam ulang adegan memakai helm, lalu menyelipkannya di bagian awal video saat proses penyuntingan (editing).",
+        "Menambahkan tulisan peringatan di akhir video yang menyuruh penonton memakai helm.",
+        "Mengganti seluruh konsep video menjadi cara memperbaiki rantai sepeda."
+      ],
+      "skill": "evaluate",
+      "cognitive_level": "evaluate",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Evaluasi Alternatif Solusi Alih Wahana Video Tutorial Prosedur:\n   Dalam memproduksi video tutorial (sebagai alih wahana audio-visual dari teks prosedur), kreator melewati tiga tahapan: praproduksi (penulisan skrip/skenario), produksi (pengambilan gambar/shooting), dan pascaproduksi (penyuntingan/editing dan reviu). Teks prosedur keselamatan berkendara menuntut agar prosedur K3 (alat pelindung diri seperti helm) ditayangkan pada bagian persiapan sebelum aktivitas utama dimulai. Menghadapi kendala pengambilan gambar yang melewatkan prosedur vital, kreator harus mengevaluasi alternatif tindakan perbaikan pascaproduksi yang paling efisien, etis, dan aman.\n\n2. Pembahasan Kunci Jawaban:\n   - Merekam ulang adegan memakai helm, lalu menyelipkannya di bagian awal video saat proses penyuntingan (editing) (BENAR): Pengambilan gambar susulan (pick-up shot / retake) untuk adegan memakai helm dan menyisipkannya pada urutan awal linimasa video saat proses editing pascaproduksi merupakan alternatif solusi yang paling tepat secara teknis perfilman dan disiplin prosedur keselamatan.\n\n3. Pembahasan Distraktor:\n   - Mengabaikannya karena penonton pasti sudah tahu bahwa naik sepeda harus memakai helm (Salah): Mengabaikan alat keselamatan vital melanggar standar penyusunan teks prosedur keselamatan dan berisiko memberikan contoh berbahaya bagi penonton.\n   - Menambahkan tulisan peringatan di akhir video yang menyuruh penonton memakai helm (Salah): Menaruh peringatan alat keselamatan di akhir video merupakan miskonsepsi kronologis, karena helm harus dikenakan sebelum mulai mengayuh sepeda, bukan setelah perjalanan selesai.\n   - Mengganti seluruh konsep video menjadi cara memperbaiki rantai sepeda (Salah): Mengganti konsep tema video adalah respons destruktif yang tidak proporsional untuk memecahkan masalah kelupaan satu adegan shooting.",
+      "source": {
+        "student_book": {
+          "pages": "80-85",
+          "section": "Bab 2, Subbab G: Memproduksi Video Tutorial Cara Melakukan atau Membuat Sesuatu Sesuai Prosedur"
+        },
+        "teacher_guide": {
+          "pages": "107-112",
+          "section": "Bab 2, Subbab G: Panduan Pembelajaran Aktivitas 2.11 (Produksi Video Tutorial)"
+        }
+      },
+      "provenance": "Soal orisinal evaluasi solusi teknis alih wahana video tutorial prosedur keselamatan bersepeda (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C02-G: Mengevaluasi tahapan produksi video tutorial prosedur kompleks dengan memperhatikan kaidah pascaproduksi dan standar keselamatan kerja",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 80-85 (Subbab G: Memproduksi Video Tutorial)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 107-112 (Subbab G: Panduan Aktivitas 2.11 & Rubrik Produksi Video)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Skenario evaluasi proses syuting dan pascaproduksi video tutorial keselamatan bersepeda, analisis penilaian alternatif solusi penyuntingan linimasa, dan dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi media prosedur."
+      }
+    },
+    {
+      "id": "K13-C02-PROSEDUR-01",
+      "change_type": "pedagogical_and_k13_syllabus_alignment_revision",
+      "reason": "Penyelarasan target kompetensi ke KD 3.2 Kurikulum 2013 Revisi (Menganalisis struktur dan aspek kebahasaan teks prosedur — fokus verba imperatif) sesuai Permendikbud No. 37 Tahun 2018 jenjang SMA Kelas XI, mengoreksi rujukan lama yang sebelumnya keliru merujuk ke KD 3.19 (pernyataan umum/tahapan pada spektrum SMK), penyempurnaan pembahasan 3 langkah, serta penambahan metadata source_basis terverifikasi.",
+      "before_question": "Menurut kaidah kebahasaan Kurikulum 2013, teks prosedur kompleks ditandai dengan penggunaan verba imperatif. Manakah dari kalimat berikut yang menggunakan verba imperatif secara tepat?",
+      "after_question": "Menurut kaidah kebahasaan Kurikulum 2013, teks prosedur kompleks ditandai dengan penggunaan verba imperatif. Manakah dari kalimat berikut yang menggunakan verba imperatif secara tepat?",
+      "answer": "Pastikan Anda telah mengisi formulir dengan data yang valid.",
+      "replacement_options": [
+        "Pastikan Anda telah mengisi formulir dengan data yang valid.",
+        "Pendaftar diharapkan membawa dokumen asli saat verifikasi.",
+        "Oleh karena itu, langkah ini sangat penting untuk dilakukan.",
+        "Sebaiknya kita mencuci tangan sebelum proses dimulai."
+      ],
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Kaidah Kebahasaan Verba Imperatif dalam Teks Prosedur K13 (KD 3.2):\n   Dalam Kurikulum 2013 jenjang SMA (Permendikbud No. 37 Tahun 2018, KD 3.2), kompetensi kebahasaan teks prosedur berfokus pada analisis struktur dan kaidah kebahasaan, khususnya penggunaan kalimat dan verba imperatif (kata kerja perintah, keharusan, atau instruktif langsung). Ciri morfologis verba imperatif dalam bahasa Indonesia umumnya ditandai dengan sufiks -kan (misal: 'pastikan', 'masukkan'), -i (misal: 'hindari', 'lengkapi'), atau partikel penegas -lah (misal: 'cucilah', 'tunggulah'). Kompetensi aspek kebahasaan ini pada silabus SMA diatur dalam KD 3.2 (setara dengan KD 3.20 pada spektrum SMK/MAK), berbeda dengan KD 3.19 yang berfokus pada informasi pernyataan umum dan tahapan kerja.\n\n2. Pembahasan Kunci Jawaban:\n   - Pastikan Anda telah mengisi formulir dengan data yang valid (BENAR): Kata 'Pastikan' merupakan bentuk verba imperatif berakhiran -kan yang memberikan perintah/instruksi secara lugas dan langsung kepada pembaca/pengguna formulir.\n\n3. Pembahasan Distraktor:\n   - Pendaftar diharapkan membawa dokumen asli saat verifikasi (Salah): Kalimat ini menggunakan verba pasif 'diharapkan', yang membentuk kalimat imbauan pasif (deklaratif persuasif halus), bukan kalimat dengan verba imperatif langsung.\n   - Oleh karena itu, langkah ini sangat penting untuk dilakukan (Salah): Kalimat ini merupakan kalimat pernyataan deklaratif yang diawali konjungsi kausalitas antarkalimat ('Oleh karena itu'), tanpa memuat verba imperatif.\n   - Sebaiknya kita mencuci tangan sebelum proses dimulai (Salah): Kata 'Sebaiknya' menandai kalimat saran/anjuran (modalitas optatif/saran), bukan bentuk perintah imperatif baku.",
+      "source": {
+        "student_book": {
+          "pages": "17-25",
+          "section": "Buku Siswa Bahasa Indonesia Kelas XI SMA/MA/SMK/MAK K13 Revisi: Bab 1 Menyusun Teks Prosedur (Subbab C: Menganalisis Kebahasaan - Verba Imperatif)"
+        },
+        "teacher_guide": {
+          "pages": "22-30",
+          "section": "Buku Guru Bahasa Indonesia Kelas XI SMA/MA/SMK/MAK K13 Revisi: Bab 1 Pembelajaran Aspek Kebahasaan Teks Prosedur"
+        }
+      },
+      "provenance": "Soal orisinal analisis kaidah kebahasaan verba imperatif teks prosedur kompleks (Jembatan Kurikulum 2013 SMA KD 3.2).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum 2013 Revisi (Permendikbud No. 37 Tahun 2018 - SMA Kelas XI)",
+        "competency_target": "KD 3.2: Menganalisis struktur dan aspek kebahasaan teks prosedur (fokus kaidah leksikogramatikal verba imperatif)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Indonesia Kelas XI SMA/MA/SMK/MAK Kurikulum 2013 Edisi Revisi 2017 (Kemendikbud) hlm. 17-25 (Menganalisis Struktur dan Kebahasaan Teks Prosedur)",
+          "teacher_guide": "Buku Guru Bahasa Indonesia Kelas XI SMA/MA/SMK/MAK Kurikulum 2013 Edisi Revisi 2017 (Kemendikbud) hlm. 22-30 (Pembelajaran Kebahasaan Teks Prosedur)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Konteks kalimat instruksi formulir dan analisis komparatif verba imperatif vs kalimat pasif/saran disusun mandiri oleh tim pengembang sebagai instrumen jembatan kurikuler yang selaras dengan KD 3.2 Kurikulum 2013 SMA."
+      }
+    },
+    {
+      "id": "TKA-C02-BONUS-01",
+      "change_type": "pedagogical_cognitive_calibration_and_source_basis_revision",
+      "reason": "Kalibrasi tingkat kognitif dari evaluate (C5) menjadi analyze (C4) berdasarkan tuntutan berpikir aktual di mana peserta didik mengurai hubungan, dependensi waktu, dan urutan logis antartahapan acak prosedur memasak mi (peserta didik tidak mengevaluasi alternatif berdasarkan kriteria eksternal melainkan menganalisis dan merekonstruksi alur dependensi proses), penyelarasan terminologi resmi TKA ke sub-elemen Pemahaman Tekstual, penegasan materi pengayaan orisinal yang selaras dengan indikator membaca TKA (support_category: CONCEPT_DERIVED), serta penyempurnaan pembahasan 3 langkah.",
+      "before_question": "Cermati teks prosedur acak berikut: (1) Angkat dan tiriskan mi. (2) Rebus air hingga mendidih. (3) Masukkan bumbu ke dalam mangkuk. (4) Masukkan mi ke dalam air mendidih selama 3 menit. (5) Tuangkan mi beserta kuahnya ke dalam mangkuk. Urutan yang paling logis adalah...",
+      "after_question": "Cermati teks prosedur acak berikut: (1) Angkat dan tiriskan mi. (2) Rebus air hingga mendidih. (3) Masukkan bumbu ke dalam mangkuk. (4) Masukkan mi ke dalam air mendidih selama 3 menit. (5) Tuangkan mi beserta kuahnya ke dalam mangkuk. Urutan yang paling logis adalah...",
+      "answer": "(2)-(4)-(1)-(3)-(5)",
+      "replacement_options": [
+        "(2)-(4)-(1)-(3)-(5)",
+        "(2)-(4)-(3)-(1)-(5)",
+        "(3)-(2)-(4)-(5)-(1)",
+        "(2)-(3)-(4)-(1)-(5)"
+      ],
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Keterampilan Mengurai Dependensi Urutan Logis (Pemahaman Tekstual TKA):\n   Berdasarkan Kerangka Asesmen Tes Kemampuan Akademik (Pusmendik / Kemendikdasmen) untuk mata pelajaran Bahasa Indonesia, salah satu level kompetensi utama yang diuji adalah Pemahaman Tekstual, yaitu kemampuan memahami rincian informasi eksplisit serta mengelompokkan, menyusun ulang, dan menyajikan kembali informasi dari teks. Rekonstruksi urutan instruksi acak menuntut peserta didik mengurai (menganalisis) keterkaitan dependensi waktu dan hubungan logis antartahapan kerja eksplisit secara sistematis agar menghasilkan alur proses yang runtut.\n\n2. Pembahasan Kunci Jawaban:\n   - (2)-(4)-(1)-(3)-(5) (BENAR): Alur sekuensial yang logis dan runtut adalah:\n     (2) Rebus air hingga mendidih (menyiapkan media pemanas),\n     (4) Masukkan mi ke dalam air mendidih selama 3 menit (proses memasak mi mentah),\n     (1) Angkat dan tiriskan mi (memisahkan mi matang dari air rebusan awal),\n     (3) Masukkan bumbu ke dalam mangkuk (mempersiapkan bumbu pelengkap saat mi selesai dimasak),\n     (5) Tuangkan mi beserta kuahnya ke dalam mangkuk (menyatukan sajian akhir dengan air kuah bersih/bumbu).\n     Pola urutan (2)-(4)-(1)-(3)-(5) konsisten dengan kunci baku Phase 3 dan Phase 4.\n\n3. Pembahasan Distraktor:\n   - (2)-(4)-(3)-(1)-(5) (Salah): Memasukkan bumbu ke dalam mangkuk (3) sebelum mi ditiriskan (1) mengabaikan efisiensi waktu dapur, tetapi yang lebih krusial pola A adalah urutan standar yang menuntaskan pengolahan mi di panci sebelum berpindah ke wadah saji mangkuk.\n   - (3)-(2)-(4)-(5)-(1) (Salah): Menuangkan mi (5) sebelum mi diangkat dan ditiriskan (1) bertentangan langsung dengan logika kronologis memasak.\n   - (2)-(3)-(4)-(1)-(5) (Salah): Memasukkan bumbu ke mangkuk sebelum mi dimasak (2-3-4) memecah fokus persiapan kompor dan berisiko bumbu mengering di mangkuk terbuka sebelum mi matang.",
+      "source": {
+        "student_book": {
+          "pages": "Kerangka Asesmen TKA Pusmendik",
+          "section": "Domain Literasi Membaca - Sub-elemen Pemahaman Tekstual (Teks Prosedur)"
+        },
+        "teacher_guide": {
+          "pages": "Panduan Asesmen Pusmendik",
+          "section": "Penyusunan Butir Soal Literasi Membaca: Mengorganisasikan Informasi Eksplisit"
+        }
+      },
+      "provenance": "Soal orisinal pengayaan literasi membaca yang selaras dengan indikator Pemahaman Tekstual TKA (Jembatan TKA).",
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen Tes Kemampuan Akademik Jenjang SMA/MA/SMK/MAK (Pusmendik / Kemendikdasmen)",
+        "competency_target": "Pemahaman Tekstual: Mengelompokkan dan menyusun ulang informasi eksplisit dari teks prosedur secara kronologis dan runtut",
+        "concept_reference": {
+          "student_book": "Kerangka Asesmen Tes Kemampuan Akademik Mata Pelajaran Wajib (Pusmendik Kemendikdasmen) - Elemen Teks Informasi (Prosedur)",
+          "teacher_guide": "Panduan Asesmen dan Kisi-Kisi TKA Tingkat Menengah - Indikator Pemahaman Tekstual"
+        },
+        "support_category": "CONCEPT_DERIVED",
+        "authoring_statement": "Skenario urutan acak memasak mi, rekonstruksi keterkaitan langkah kerja logis, dan dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai materi pengayaan yang selaras dengan indikator Pemahaman Tekstual TKA, bukan merupakan kutipan dari soal resmi TKA."
+      }
+    }
+  ]
+}
