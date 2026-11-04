@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_V1.1_RECONCILED",
+  "dataset": "World 3 Bahasa Inggris Wajib Chapter 2 - Misi 18 (Final Boss Exam)",
+  "purpose": "Canonical v1.1 reconciled dataset for World 3 Bahasa Inggris Chapter 2 Misi 18 (Final Boss Exam).",
+  "chapter_id": "ENG12-C02",
+  "rewards": {
+    "xp_per_correct": 150,
+    "mission_completion_xp": 250
+  },
+  "questions": [
+    {
+      "id": "ENG-C02-BOSS-EASY",
+      "chapter_id": "ENG12-C02",
+      "topic_id": "ENG12-C02-BOSS",
+      "skill": "understand",
+      "question": "Read the text:\n'Many people struggle with time management. The Pomodoro Technique is one effective method to handle this. It involves working in focused 25-minute intervals, followed by a 5-minute break. This simple routine helps prevent mental fatigue and keeps motivation high throughout the day.'\nWhat is the main topic of the passage?",
+      "options": [
+        "The history of mental fatigue.",
+        "Why people struggle with time.",
+        "A method for managing time effectively.",
+        "The benefits of taking 5-minute breaks."
+      ],
+      "answer": "A method for managing time effectively.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Hierarki Gagasan dalam Teks Informasi:\n   Untuk menentukan topik utama (main topic / controlling idea) dari sebuah teks pendek, peserta harus membedakan antara gagasan payung menyeluruh, latar belakang masalah pengantar, dan detail teknis pendukung:\n   - Kalimat 1: Pengantar masalah umum ('Many people struggle with time management').\n   - Kalimat 2: Gagasan topik utama pengenalan solusi ('The Pomodoro Technique is one effective method to handle this').\n   - Kalimat 3: Detail operasional cara kerja teknik ('focused 25-minute intervals, followed by a 5-minute break').\n   - Kalimat 4: Manfaat dari penerapan rutinitas tersebut ('helps prevent mental fatigue and keeps motivation high').\n   Seluruh paragraf berpusat pada penjelasan Teknik Pomodoro sebagai salah satu metode untuk mengelola waktu dengan efektif.\n\n2. Pembahasan Kunci Jawaban:\n   - A method for managing time effectively (BENAR): Merupakan parafrase akurat yang merangkum keseluruhan isi paragraf. Teks memperkenalkan dan menjelaskan metode pengelolaan waktu (Teknik Pomodoro) untuk mengatasi permasalahan kesulitan manajemen waktu.\n\n3. Pembahasan Distraktor:\n   - The history of mental fatigue (Salah): Paragraf sama sekali tidak membahas asal-usul atau sejarah kelelahan mental; kata 'mental fatigue' hanya disebut sepintas pada kalimat terakhir sebagai salah satu dampak negatif yang dapat dicegah oleh teknik ini.\n   - Why people struggle with time (Salah): Paragraf hanya menyebutkan bahwa banyak orang kesulitan mengelola waktu sebagai kalimat pengantar latar belakang, tanpa menguraikan faktor-faktor penyebab mengapa mereka mengalami kesulitan tersebut.\n   - The benefits of taking 5-minute breaks (Salah): Terlalu sempit (too narrow / supporting detail); jeda istirahat 5 menit hanyalah satu langkah operasional pendukung dari prosedur Pomodoro, bukan topik payung yang memayungi seluruh isi bacaan.",
+      "source": {
+        "student_book": {
+          "pages": "xv-xx",
+          "section": "Scope and Sequence: Reading Comprehension Skills"
+        },
+        "teacher_guide": {
+          "pages": "11-12",
+          "section": "Panduan Umum: Capaian Pembelajaran Fase F (Elemen Membaca dan Memirsa)"
+        }
+      },
+      "provenance": "Soal orisinal literasi membaca fungsional bertema manajemen waktu (Teknik Pomodoro) yang disusun mandiri oleh proyek untuk evaluasi komprehensif Boss Exam (Kurikulum Merdeka).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": [
+        "reading_comprehension",
+        "main_idea",
+        "kontekstual"
+      ],
+      "subject": "Bahasa Inggris",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "Reading Comprehension",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 60,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-BOSS: Mengidentifikasi ide pokok/topik utama (main idea / main topic) dan membedakannya dari informasi pendukung dalam teks informasi fungsional (Capaian Pembelajaran Fase F - Elemen Membaca dan Memirsa)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. xv-xx (Scope and Sequence: Reading Comprehension Skills)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 11-12 (Panduan Umum: Capaian Pembelajaran Fase F - Elemen Membaca dan Memirsa)"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Teks informasi Teknik Pomodoro, pertanyaan identifikasi topik utama, dan dekonstruksi distraktor bertingkat disusun mandiri oleh proyek sebagai instrumen evaluasi literasi membaca fungsional (Capaian Pembelajaran Fase F) tanpa menyalin naskah berhak cipta."
+      }
+    },
+    {
+      "id": "ENG-C02-BOSS-MED",
+      "chapter_id": "ENG12-C02",
+      "topic_id": "ENG12-C02-BOSS",
+      "skill": "apply",
+      "question": "'The ancient artifact ________ from the museum during the blackout last night, despite the heavy security presence.'\nChoose the correct passive voice structure to complete the sentence.",
+      "options": [
+        "was stealing",
+        "was stolen",
+        "has stolen",
+        "is stolen"
+      ],
+      "answer": "was stolen",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Kebutuhan Sintaksis dan Peran Semantik Kalimat:\n   - Subjek kalimat adalah 'The ancient artifact' (benda mati/artefak kuno). Artefak tidak dapat melakukan tindakan mencuri, melainkan menjadi sasaran/penerima tindakan (semantic patient / receiver of the action), sehingga kalimat mutlak membutuhkan konstruksi kalimat pasif (passive voice).\n   - Penanda waktu (adverb of time) dalam kalimat adalah 'last night' (tadi malam), yang secara definitif menunjukkan peristiwa lampau yang telah selesai (definite past time). Oleh karena itu, predikat harus menggunakan pola Simple Past Tense pasif.\n   - Pola gramatikal Simple Past Passive adalah: Subject + was/were + Past Participle (Verb 3). Karena subjek 'The ancient artifact' berbentuk tunggal (singular), maka auxiliary verb yang tepat adalah 'was', diikuti oleh past participle 'stolen'.\n\n2. Pembahasan Kunci Jawaban:\n   - was stolen (BENAR): Memenuhi seluruh kaidah gramatikal Simple Past Passive untuk subjek tunggal (was + Verb 3 'stolen') yang berpadu selaras dengan keterangan waktu lampau 'last night'.\n\n3. Pembahasan Distraktor:\n   - was stealing (Salah): Merupakan bentuk aktif Past Continuous (was + Verb-ing). Secara semantik, struktur ini keliru karena menyatakan bahwa artefak tersebut sedang aktif mencuri sesuatu pada saat listrik padam.\n   - has stolen (Salah): Merupakan bentuk aktif Present Perfect Tense (has + Verb 3). Selain keliru karena bermakna aktif, Present Perfect Tense secara gramatikal tidak boleh digunakan bersama keterangan waktu lampau spesifik yang sudah selesai seperti 'last night'.\n   - is stolen (Salah): Merupakan bentuk pasif Simple Present Tense (is + Verb 3). Bentuk ini salah karena peristiwa pencurian terjadi pada masa lampau ('last night'), bukan menyatakan kebiasaan atau fakta umum saat ini.",
+      "source": {
+        "student_book": {
+          "pages": "135-148",
+          "section": "Chapter 10: Language Features - Passive Voice"
+        },
+        "teacher_guide": {
+          "pages": "125-136",
+          "section": "Bab 10: Passive Voice Structure & Exercises"
+        }
+      },
+      "provenance": "Soal drill tata bahasa evaluasi akhir K13 (Simple Past Passive Voice) yang menguji pemahaman bentuk pasif dengan penanda waktu lampau.",
+      "mode": "learning",
+      "game_mechanic": "language_scan",
+      "tags": [
+        "passive_voice",
+        "grammar_review",
+        "fundamental_k13"
+      ],
+      "subject": "Bahasa Inggris",
+      "track": "wajib",
+      "curriculum_source": [
+        "K13"
+      ],
+      "topic": "Passive Voice (Drill)",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question_type": "konseptual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-BOSS: Menerapkan pola kalimat pasif lampau (simple past passive: was/were + V3) secara tepat dengan memperhatikan peran semantik subjek dan penanda waktu definitif",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 135-148 (Chapter 10: How to Use Photoshop? - Passive Voice)",
+          "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII (K13) hlm. 125-136 (Bab 10: Manual Penggunaan Teknologi & Passive Voice)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Kalimat pengujian pencurian artefak di museum, pemilihan konstruksi pasif 'was stolen' dengan adverbia 'last night', dan dekonstruksi distraktor aktif/present disusun mandiri oleh tim pengembang sebagai instrumen drill tata bahasa."
+      }
+    },
+    {
+      "id": "ENG-C02-BOSS-HARD",
+      "chapter_id": "ENG12-C02",
+      "topic_id": "ENG12-C02-BOSS",
+      "skill": "evaluate",
+      "question": "Read the academic excerpt:\n'While the implementation of Universal Basic Income (UBI) is often touted as a utopian cure for poverty, historical economic models suggest that injecting unchecked capital into the bottom tier of a consumer market invariably triggers hyperinflation, effectively nullifying the newly acquired purchasing power of the poor.'\nWhat is the author's tone toward Universal Basic Income?",
+      "options": [
+        "Enthusiastic and supportive.",
+        "Skeptical and cautionary.",
+        "Neutral and objective.",
+        "Confused and uncertain."
+      ],
+      "answer": "Skeptical and cautionary.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Diksi dan Sikap Tersirat Penulis (Author's Tone):\n   Untuk mengevaluasi nada penulis (author's tone) dalam kutipan teks akademik, peserta harus menelaah konotasi kata dan pilihan leksikal (diction) yang digunakan penulis dalam mengekspresikan gagasannya terhadap konsep Penghasilan Dasar Universal (Universal Basic Income / UBI):\n   - Frasa 'often touted as a utopian cure for poverty': Pemilihan kata 'touted' (digembar-gemborkan) dan 'utopian' (angan-angan idealis yang tidak realistis) mencerminkan sikap tidak mudah percaya dan keraguan mendalam (skeptical) terhadap klaim umum bahwa UBI adalah solusi mujarab bagi kemiskinan.\n   - Frasa 'injecting unchecked capital... invariably triggers hyperinflation, effectively nullifying the newly acquired purchasing power': Penggunaan istilah 'unchecked' (tak terkendali), 'invariably triggers' (pasti/selalu memicu), dan 'nullifying' (meniadakan/membatalkan) menyampaikan peringatan kehati-hatian yang keras (cautionary) mengenai dampak bahaya inflasi ekstrem yang justru merugikan masyarakat miskin.\n   Kombinasi kedua elemen diksi tersebut secara tegas membentuk nada bersikap skeptis dan penuh kewaspadaan (skeptical and cautionary).\n\n2. Pembahasan Kunci Jawaban:\n   - Skeptical and cautionary (BENAR): Nada penulis secara tepat dikarakterisasi sebagai skeptis (meragukan klaim keampuhan UBI) dan penuh kewaspadaan/peringatan (menyoroti risiko nyata hiperinflasi berdasarkan model ekonomi historis).\n\n3. Pembahasan Distraktor:\n   - Enthusiastic and supportive (Salah): Bertentangan langsung dengan isi teks; penulis sama sekali tidak antusias atau mendukung, melainkan menyajikan kritik keras terhadap kelemahan fundamental UBI.\n   - Neutral and objective (Salah): Teks tidak ditulis secara netral dingin seperti laporan statistik bebas nilai; penulis secara sengaja menggunakan kata-kata bermuatan evaluatif tajam ('utopian', 'unchecked', 'invariably', 'nullifying') yang secara aktif membimbing pembaca untuk mewaspadai bahaya program tersebut.\n   - Confused and uncertain (Salah): Penulis berargumen dengan tingkat kepastian dan keyakinan logis yang sangat tinggi berbasis bukti historis ('historical economic models suggest... invariably triggers'), tanpa menunjukkan keraguan, kebingungan konsep, atau keraguan retoris.\n\nCatatan Akademik:\nSoal ini berfokus menguji kemampuan analisis dan interpretasi peserta didik terhadap nada dan sikap tersirat penulis (author's tone) melalui pilihan diksi evaluatif pada teks. Penjelasan ini tidak memvalidasi kebenaran faktual secara ekonomi mengenai apakah kebijakan Universal Basic Income pasti menyebabkan hiperinflasi di dunia nyata, melainkan merekonstruksi sikap kritis dan peringatan yang dibangun oleh penulis stimulus.",
+      "source": {
+        "student_book": {
+          "pages": "N/A",
+          "section": "Advanced Academic Literacy - Tone & Bias Evaluation"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Kerangka Asesmen TKA - Domain Bahasa Inggris Wajib: Evaluasi dan Apresiasi"
+        }
+      },
+      "provenance": "Soal orisinal literasi akademik tingkat lanjut TKA (Author's Tone) yang menguji evaluasi sikap kritis penulis pada wacana ekonomi simulasi.",
+      "mode": "tka_preview",
+      "game_mechanic": "meaning_check",
+      "tags": [
+        "author_tone",
+        "academic_reading",
+        "tka_bonus"
+      ],
+      "subject": "Bahasa Inggris",
+      "track": "wajib",
+      "curriculum_source": [
+        "TKA"
+      ],
+      "topic": "Tone Analysis (TKA)",
+      "difficulty": "hard",
+      "cognitive_level": "evaluate",
+      "question_type": "penalaran",
+      "estimated_time_seconds": 120,
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen TKA 2026 & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-BOSS: Mengevaluasi nada, sikap, dan keberpihakan tersirat penulis (author's tone) melalui analisis diksi bermuatan nilai dalam wacana akademik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris Kelas XII (Fase F: Advanced Academic Reading & Critical Literacy)",
+          "teacher_guide": "Kerangka Asesmen TKA (Peraturan BSKAP Nomor 045/H/AN/2025) - Domain Bahasa Inggris Wajib: Evaluasi dan Apresiasi"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Kutipan teks simulasi akademik perdebatan UBI, penentuan nada skeptis-waspada berbasis diksi evaluatif, dan analisis distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi penalaran kritis tanpa menyalin naskah artikel ilmiah berhak cipta."
+      }
+    }
+  ]
+}

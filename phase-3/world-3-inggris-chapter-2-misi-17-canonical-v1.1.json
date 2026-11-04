@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_V1.1_RECONCILED",
+  "dataset": "World 3 Bahasa Inggris Wajib Chapter 2 - Misi 17 (Discussion Text)",
+  "purpose": "Canonical v1.1 reconciled dataset for World 3 Bahasa Inggris Chapter 2 Misi 17 (Discussion Text).",
+  "chapter_id": "ENG12-C02",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "ENG-C02-D-EASY",
+      "chapter_id": "ENG12-C02",
+      "topic_id": "ENG12-C02-D",
+      "skill": "understand",
+      "question": "Read the paragraph:\n'The issue of whether fossil fuel companies should be completely banned from operations is highly debated. Environmentalists argue that an immediate ban is the only way to stop global warming. On the other hand, economists point out that a sudden ban would cause massive job losses and trigger a global economic collapse.'\nWhich feature most clearly identifies this paragraph as a discussion text?",
+      "options": [
+        "It gives a strong recommendation at the end.",
+        "It presents two different/opposing viewpoints on a single issue.",
+        "It only focuses on the environmental aspect.",
+        "It uses past tense to describe a historical event."
+      ],
+      "answer": "It presents two different/opposing viewpoints on a single issue.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Karakteristik Genre Teks Diskusi:\n   Teks Diskusi (Discussion Text) adalah teks yang menyajikan wacana tentang suatu isu kontroversial dengan memaparkan lebih dari satu sudut pandang yang berbeda atau berlawanan (dua sisi argumen: pandangan pro dan kontra) secara berimbang sebelum sampai pada evaluasi atau rekomendasi di akhir teks. Paragraf pembuka pada teks diskusi lazimnya memperkenalkan isu dan memetakan adanya dua kutub pandangan yang diperdebatkan.\n\n2. Pembahasan Kunci Jawaban:\n   - It presents two different/opposing viewpoints on a single issue (BENAR): Paragraf stimulus secara eksplisit memperlihatkan dua sudut pandang berlawanan mengenai isu pelarangan perusahaan bahan bakar fosil:\n     a. Sudut pandang pro-pelarangan dari pegiat lingkungan ('Environmentalists argue that an immediate ban is the only way to stop global warming').\n     b. Sudut pandang kontra-pelarangan dari pakar ekonomi ('On the other hand, economists point out that a sudden ban would cause massive job losses and trigger a global economic collapse').\n     Penyajian dua perspektif berlawanan terhadap satu isu tunggal ini merupakan ciri paling jelas yang mengidentifikasi paragraf tersebut sebagai teks diskusi.\n\n3. Pembahasan Distraktor:\n   - It gives a strong recommendation at the end (Salah): Paragraf tersebut sama sekali tidak memuat rekomendasi atau seruan tindakan di akhir; teks hanya menyajikan pemetaan dua sudut pandang tanpa memihak atau menganjurkan langkah tertentu.\n   - It only focuses on the environmental aspect (Salah): Bertentangan langsung dengan isi teks; paragraf tidak hanya membahas aspek lingkungan, melainkan juga menyertakan dampak ekonomi makro dan ketenagakerjaan.\n   - It uses past tense to describe a historical event (Salah): Seluruh klausa utama dalam paragraf menggunakan bentuk present tense ('is debated', 'argue', 'point out') untuk membahas perdebatan kontemporer yang sedang berlangsung, bukan teks recount/historis bermasa lampau.",
+      "source": {
+        "student_book": {
+          "pages": "160-172",
+          "section": "Unit 4: Discussion Text - Schematic Structures & Opposing Viewpoints"
+        },
+        "teacher_guide": {
+          "pages": "194-220",
+          "section": "Unit 4: Discussion Text - Reading & Text Structure"
+        }
+      },
+      "provenance": "Soal orisinal pemahaman karakteristik teks diskusi bertema perdebatan bahan bakar fosil (Kurikulum Merdeka).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "tags": [
+        "discussion_text",
+        "pros_cons",
+        "kontekstual"
+      ],
+      "subject": "Bahasa Inggris",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "Discussion Text Characteristics",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 60,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-D: Mengidentifikasi karakteristik dan struktur teks diskusi (Discussion Text: issue, opposing viewpoints)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 160-172 (Unit 4: Discussion Text - Schematic Structures & Opposing Viewpoints)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 194-220 (Unit 4: Discussion Text - Reading & Text Structure)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Konteks perdebatan pelarangan operasional perusahaan bahan bakar fosil antara pegiat lingkungan dan ekonom, formulasi pertanyaan ciri teks diskusi, dan dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi literasi genre teks."
+      }
+    },
+    {
+      "id": "ENG-C02-D-MED",
+      "chapter_id": "ENG12-C02",
+      "topic_id": "ENG12-C02-D",
+      "skill": "apply",
+      "question": "Choose the correct connective word to complete the sentence:\n'Electric vehicles (EVs) produce zero tailpipe emissions, making them excellent for urban air quality. __________, the production of EV batteries requires intensive mining that severely damages local ecosystems.'",
+      "options": [
+        "Furthermore",
+        "In addition",
+        "However",
+        "Consequently"
+      ],
+      "answer": "However",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Hubungan Logis Antarkalimat:\n   - Kalimat pertama menyajikan poin positif (manfaat lingkungan): kendaraan listrik menghasilkan nol emisi knalpot sehingga sangat baik untuk kualitas udara perkotaan ('produce zero tailpipe emissions, making them excellent for urban air quality').\n   - Kalimat kedua menyajikan poin negatif (dampak lingkungan yang merugikan): produksi baterai kendaraan listrik memerlukan penambangan intensif yang merusak ekosistem lokal ('the production of EV batteries requires intensive mining that severely damages local ecosystems').\n   - Hubungan logis antara kedua ide yang bertolak belakang ini adalah hubungan pertentangan/kontras (contrast), sehingga transisi antarkalimat wajib menggunakan konjungsi kontras (contrastive connective).\n\n2. Pembahasan Kunci Jawaban:\n   - However (BENAR): 'However' adalah adverbia transisi yang berfungsi menyatakan pertentangan atau kontras antarkalimat. Kata ini menghubungkan keunggulan emisi bersih pada kalimat pertama dengan kerugian lingkungan pada rantai produksi baterai di kalimat kedua secara berimbang.\n\n3. Pembahasan Distraktor:\n   - Furthermore (Salah): 'Furthermore' adalah konjungsi aditif (penambahan) yang digunakan untuk memperkuat atau menambahkan poin sejalan yang mendukung argumen sebelumnya (misalnya menambahkan kelebihan lain dari kendaraan listrik), bukan untuk memperkenalkan fakta kontras yang bertentangan.\n   - In addition (Salah): Sama halnya dengan 'Furthermore', 'In addition' berfungsi menambahkan gagasan searah (aditif) dan tidak dapat digunakan untuk mengawali kalimat yang menyajikan kelemahan atau sisi sebaliknya.\n   - Consequently (Salah): 'Consequently' adalah konjungsi sebab-akibat (cause-and-effect / result) yang menyatakan hasil atau konsekuensi logis dari peristiwa sebelumnya. Kerusakan ekosistem akibat penambangan bahan baku baterai bukanlah akibat langsung dari ketiadaan emisi knalpot pada saat kendaraan dioperasikan; stimulus tidak menunjukkan hubungan kausalitas, melainkan pertentangan antara dua fakta berbeda.",
+      "source": {
+        "student_book": {
+          "pages": "172-174",
+          "section": "Unit 4: Language Features of Discussion Text (Contrastive Conjunctions)"
+        },
+        "teacher_guide": {
+          "pages": "209-220",
+          "section": "Unit 4: Language Features & Connectives"
+        }
+      },
+      "provenance": "Soal orisinal penerapan kata hubung pertentangan (contrastive connectives) dalam teks diskusi bertema teknologi ramah lingkungan (Kurikulum Merdeka).",
+      "mode": "learning",
+      "game_mechanic": "language_scan",
+      "tags": [
+        "discussion_text",
+        "conjunctions",
+        "fundamental_k13"
+      ],
+      "subject": "Bahasa Inggris",
+      "track": "wajib",
+      "curriculum_source": [
+        "K13"
+      ],
+      "topic": "Contrastive Conjunctions (Drill)",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question_type": "konseptual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII) & Kurikulum 2013",
+        "competency_target": "ENG12-C02-D: Menerapkan konjungsi dan kata transisi pertentangan (contrastive connectives) secara akurat dalam wacana teks diskusi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 172-174 (Unit 4: Language Features - Contrastive Conjunctions)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 209-220 (Unit 4: Language Features & Connectives)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Kalimat stimulus mengenai pro dan kontra kendaraan listrik, pemilihan kata transisi bertentangan 'However', dan dekonstruksi distraktor aditif/kausal disusun mandiri oleh tim pengembang sebagai bahan drill tata bahasa wacana fungsional."
+      }
+    },
+    {
+      "id": "ENG-C02-D-HARD",
+      "chapter_id": "ENG12-C02",
+      "topic_id": "ENG12-C02-D",
+      "skill": "evaluate",
+      "question": "Based on the debate regarding 'Carbon Footprint Taxes', Proponents say it forces factories to innovate green tech, while Opponents say it makes everyday goods too expensive for poor families. Which concluding statement best synthesizes both arguments neutrally without taking a biased side?",
+      "options": [
+        "Carbon taxes are terrible because they only hurt the poor, so factories should innovate for free.",
+        "Therefore, carbon taxes must be applied strictly to save the earth, regardless of the economic cost.",
+        "In conclusion, while a carbon tax encourages environmental innovation, it must be implemented carefully with subsidies to protect vulnerable economic groups.",
+        "To sum up, carbon taxes are a myth created by governments to steal money from both factories and poor families."
+      ],
+      "answer": "In conclusion, while a carbon tax encourages environmental innovation, it must be implemented carefully with subsidies to protect vulnerable economic groups.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Wacana Debat dan Tuntutan Sintesis:\n   Stimulus menyajikan dua argumen yang saling berhadapan mengenai kebijakan Pajak Jejak Karbon ('Carbon Footprint Taxes'):\n   - Pihak Pro (Proponents): Pajak mendesak pabrik berinovasi menciptakan teknologi ramah lingkungan ('forces factories to innovate green tech').\n   - Pihak Kontra (Opponents): Pajak menaikkan harga kebutuhan pokok sehingga memberatkan keluarga berpendapatan rendah ('makes everyday goods too expensive for poor families').\n   Pertanyaan meminta peserta memilih kalimat kesimpulan yang paling tepat dalam mensintesis kedua argumen secara objektif tanpa memihak (sintesis netral). Kesimpulan teks diskusi yang bermutu wajib mengintegrasikan nilai positif dari pihak pro sekaligus mengakomodasi kekhawatiran yang diajukan pihak kontra dengan solusi jalan tengah (middle-ground resolution).\n\n2. Pembahasan Kunci Jawaban:\n   - In conclusion, while a carbon tax encourages environmental innovation, it must be implemented carefully with subsidies to protect vulnerable economic groups (BENAR): Opsi ini secara cermat dan adil merangkum kedua perspektif:\n     a. Mengakui manfaat dorongan inovasi lingkungan ('while a carbon tax encourages environmental innovation').\n     b. Memperhatikan perlindungan kelompok masyarakat rentan melalui instrumen subsidi ('implemented carefully with subsidies to protect vulnerable economic groups').\n     Dengan memadukan kedua kepentingan dalam sebuah resolusi kebijakan yang berimbang, kalimat ini menyajikan sintesis yang netral, konstruktif, dan tidak berpihak secara sepihak.\n\n3. Pembahasan Distraktor:\n   - Carbon taxes are terrible because they only hurt the poor, so factories should innovate for free (Salah): Menunjukkan bias emosional ekstrem anti-pajak ('terrible') yang hanya memvalidasi kekhawatiran pihak kontra seraya menuntut pabrik berinovasi tanpa biaya yang tidak realistis, mengabaikan argumen lingkungan dari pihak pro.\n   - Therefore, carbon taxes must be applied strictly to save the earth, regardless of the economic cost (Salah): Menunjukkan bias sepihak yang kaku pro-pajak dengan mengabaikan total beban ekonomi masyarakat ('regardless of the economic cost'), bertentangan dengan prinsip kesimpulan berimbang dalam teks diskusi.\n   - To sum up, carbon taxes are a myth created by governments to steal money from both factories and poor families (Salah): Mengajukan argumen spekulatif dan konspiratif bernada menyerang ('myth created... to steal money') yang sama sekali tidak berakar pada bukti analitis yang disajikan pada stimulus perdebatan.",
+      "source": {
+        "student_book": {
+          "pages": "149-208",
+          "section": "Unit 4: Discussion Text - Environmental Policy Debate"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Kerangka Asesmen TKA - Domain Bahasa Inggris Wajib: Evaluasi dan Apresiasi"
+        }
+      },
+      "provenance": "Soal orisinal literasi analitis TKA yang menguji kemampuan siswa mengevaluasi dan merumuskan sintesis netral dari dua argumen kontradiktif (neutral argument synthesis).",
+      "mode": "tka_preview",
+      "game_mechanic": "meaning_check",
+      "tags": [
+        "discussion_text",
+        "synthesis",
+        "tka_bonus"
+      ],
+      "subject": "Bahasa Inggris",
+      "track": "wajib",
+      "curriculum_source": [
+        "TKA"
+      ],
+      "topic": "Argument Synthesis (TKA)",
+      "difficulty": "hard",
+      "cognitive_level": "evaluate",
+      "question_type": "penalaran",
+      "estimated_time_seconds": 120,
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen TKA 2026 & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-D: Mengevaluasi dan merumuskan sintesis argumen yang netral dan berimbang dalam wacana teks diskusi isu kebijakan lingkungan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 149-208 (Unit 4: Discussion Text - Environmental Issues)",
+          "teacher_guide": "Kerangka Asesmen TKA (Peraturan BSKAP Nomor 045/H/AN/2025) - Domain Bahasa Inggris Wajib: Evaluasi dan Apresiasi"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Skenario perdebatan pajak jejak karbon antara inovasi teknologi dan perlindungan ekonomi rentan, perumusan kesimpulan sintesis netral, serta analisis distraktor bias disusun mandiri oleh tim pengembang sebagai instrumen penalaran kritis."
+      }
+    }
+  ]
+}

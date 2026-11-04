@@ -578,7 +578,7 @@
         "stimulus_type": "",
         "suitable": false
       },
-      "question": "Read the paragraph:\n'The issue of whether fossil fuel companies should be completely banned from operations is highly debated. Environmentalists argue that an immediate ban is the only way to stop global warming. On the other hand, economists point out that a sudden ban would cause massive job losses and trigger a global economic collapse.'\nWhat makes this paragraph part of a 'Discussion Text' rather than an 'Argumentative Text'?",
+      "question": "Read the paragraph:\n'The issue of whether fossil fuel companies should be completely banned from operations is highly debated. Environmentalists argue that an immediate ban is the only way to stop global warming. On the other hand, economists point out that a sudden ban would cause massive job losses and trigger a global economic collapse.'\nWhich feature most clearly identifies this paragraph as a discussion text?",
       "answer": "B",
       "options": [
         {
@@ -606,9 +606,30 @@
         "wrong_penalty": 5,
         "attack_type": "light"
       },
-      "explanation": "A Discussion Text explores an issue by presenting multiple sides of an argument (pros and cons), unlike an Argumentative Text which strongly advocates for only one side.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Karakteristik Genre Teks Diskusi:\n   Teks Diskusi (Discussion Text) adalah teks yang menyajikan wacana tentang suatu isu kontroversial dengan memaparkan lebih dari satu sudut pandang yang berbeda atau berlawanan (dua sisi argumen: pandangan pro dan kontra) secara berimbang sebelum sampai pada evaluasi atau rekomendasi di akhir teks. Paragraf pembuka pada teks diskusi lazimnya memperkenalkan isu dan memetakan adanya dua kutub pandangan yang diperdebatkan.\n\n2. Pembahasan Kunci Jawaban:\n   - It presents two different/opposing viewpoints on a single issue (BENAR): Paragraf stimulus secara eksplisit memperlihatkan dua sudut pandang berlawanan mengenai isu pelarangan perusahaan bahan bakar fosil:\n     a. Sudut pandang pro-pelarangan dari pegiat lingkungan ('Environmentalists argue that an immediate ban is the only way to stop global warming').\n     b. Sudut pandang kontra-pelarangan dari pakar ekonomi ('On the other hand, economists point out that a sudden ban would cause massive job losses and trigger a global economic collapse').\n     Penyajian dua perspektif berlawanan terhadap satu isu tunggal ini merupakan ciri paling jelas yang mengidentifikasi paragraf tersebut sebagai teks diskusi.\n\n3. Pembahasan Distraktor:\n   - It gives a strong recommendation at the end (Salah): Paragraf tersebut sama sekali tidak memuat rekomendasi atau seruan tindakan di akhir; teks hanya menyajikan pemetaan dua sudut pandang tanpa memihak atau menganjurkan langkah tertentu.\n   - It only focuses on the environmental aspect (Salah): Bertentangan langsung dengan isi teks; paragraf tidak hanya membahas aspek lingkungan, melainkan juga menyertakan dampak ekonomi makro dan ketenagakerjaan.\n   - It uses past tense to describe a historical event (Salah): Seluruh klausa utama dalam paragraf menggunakan bentuk present tense ('is debated', 'argue', 'point out') untuk membahas perdebatan kontemporer yang sedang berlangsung, bukan teks recount/historis bermasa lampau.",
       "question_type": "single_select",
-      "estimated_time_seconds": 60
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "160-172",
+          "section": "Unit 4: Discussion Text - Schematic Structures & Opposing Viewpoints"
+        },
+        "teacher_guide": {
+          "pages": "194-220",
+          "section": "Unit 4: Discussion Text - Reading & Text Structure"
+        }
+      },
+      "provenance": "Soal orisinal pemahaman karakteristik teks diskusi bertema perdebatan bahan bakar fosil (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-D: Mengidentifikasi karakteristik dan struktur teks diskusi (Discussion Text: issue, opposing viewpoints)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 160-172 (Unit 4: Discussion Text - Schematic Structures & Opposing Viewpoints)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 194-220 (Unit 4: Discussion Text - Reading & Text Structure)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Konteks perdebatan pelarangan operasional perusahaan bahan bakar fosil antara pegiat lingkungan dan ekonom, formulasi pertanyaan ciri teks diskusi, dan dekonstruksi distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi literasi genre teks."
+      }
     },
     {
       "secondary_competencies": [],
@@ -648,9 +669,30 @@
         "wrong_penalty": 5,
         "attack_type": "medium"
       },
-      "explanation": "The first sentence presents a positive point (zero emissions), while the second sentence presents a negative point (damaging ecosystems). To connect contrasting ideas in a discussion text, we use contrastive conjunctions like 'However', 'On the other hand', or 'Nevertheless'.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Hubungan Logis Antarkalimat:\n   - Kalimat pertama menyajikan poin positif (manfaat lingkungan): kendaraan listrik menghasilkan nol emisi knalpot sehingga sangat baik untuk kualitas udara perkotaan ('produce zero tailpipe emissions, making them excellent for urban air quality').\n   - Kalimat kedua menyajikan poin negatif (dampak lingkungan yang merugikan): produksi baterai kendaraan listrik memerlukan penambangan intensif yang merusak ekosistem lokal ('the production of EV batteries requires intensive mining that severely damages local ecosystems').\n   - Hubungan logis antara kedua ide yang bertolak belakang ini adalah hubungan pertentangan/kontras (contrast), sehingga transisi antarkalimat wajib menggunakan konjungsi kontras (contrastive connective).\n\n2. Pembahasan Kunci Jawaban:\n   - However (BENAR): 'However' adalah adverbia transisi yang berfungsi menyatakan pertentangan atau kontras antarkalimat. Kata ini menghubungkan keunggulan emisi bersih pada kalimat pertama dengan kerugian lingkungan pada rantai produksi baterai di kalimat kedua secara berimbang.\n\n3. Pembahasan Distraktor:\n   - Furthermore (Salah): 'Furthermore' adalah konjungsi aditif (penambahan) yang digunakan untuk memperkuat atau menambahkan poin sejalan yang mendukung argumen sebelumnya (misalnya menambahkan kelebihan lain dari kendaraan listrik), bukan untuk memperkenalkan fakta kontras yang bertentangan.\n   - In addition (Salah): Sama halnya dengan 'Furthermore', 'In addition' berfungsi menambahkan gagasan searah (aditif) dan tidak dapat digunakan untuk mengawali kalimat yang menyajikan kelemahan atau sisi sebaliknya.\n   - Consequently (Salah): 'Consequently' adalah konjungsi sebab-akibat (cause-and-effect / result) yang menyatakan hasil atau konsekuensi logis dari peristiwa sebelumnya. Kerusakan ekosistem akibat penambangan bahan baku baterai bukanlah akibat langsung dari ketiadaan emisi knalpot pada saat kendaraan dioperasikan; stimulus tidak menunjukkan hubungan kausalitas, melainkan pertentangan antara dua fakta berbeda.",
       "question_type": "single_select",
-      "estimated_time_seconds": 90
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "172-174",
+          "section": "Unit 4: Language Features of Discussion Text (Contrastive Conjunctions)"
+        },
+        "teacher_guide": {
+          "pages": "209-220",
+          "section": "Unit 4: Language Features & Connectives"
+        }
+      },
+      "provenance": "Soal orisinal penerapan kata hubung pertentangan (contrastive connectives) dalam teks diskusi bertema teknologi ramah lingkungan (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII) & Kurikulum 2013",
+        "competency_target": "ENG12-C02-D: Menerapkan konjungsi dan kata transisi pertentangan (contrastive connectives) secara akurat dalam wacana teks diskusi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 172-174 (Unit 4: Language Features - Contrastive Conjunctions)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 209-220 (Unit 4: Language Features & Connectives)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Kalimat stimulus mengenai pro dan kontra kendaraan listrik, pemilihan kata transisi bertentangan 'However', dan dekonstruksi distraktor aditif/kausal disusun mandiri oleh tim pengembang sebagai bahan drill tata bahasa wacana fungsional."
+      }
     },
     {
       "secondary_competencies": [],
@@ -690,9 +732,30 @@
         "wrong_penalty": 5,
         "attack_type": "heavy"
       },
-      "explanation": "A good conclusion in a Discussion Text synthesizes the pros and cons objectively. This option acknowledges the positive side (environmental innovation) while addressing the negative side (economic cost to the poor) by proposing a middle-ground solution (subsidies), maintaining neutrality.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Struktur Wacana Debat dan Tuntutan Sintesis:\n   Stimulus menyajikan dua argumen yang saling berhadapan mengenai kebijakan Pajak Jejak Karbon ('Carbon Footprint Taxes'):\n   - Pihak Pro (Proponents): Pajak mendesak pabrik berinovasi menciptakan teknologi ramah lingkungan ('forces factories to innovate green tech').\n   - Pihak Kontra (Opponents): Pajak menaikkan harga kebutuhan pokok sehingga memberatkan keluarga berpendapatan rendah ('makes everyday goods too expensive for poor families').\n   Pertanyaan meminta peserta memilih kalimat kesimpulan yang paling tepat dalam mensintesis kedua argumen secara objektif tanpa memihak (sintesis netral). Kesimpulan teks diskusi yang bermutu wajib mengintegrasikan nilai positif dari pihak pro sekaligus mengakomodasi kekhawatiran yang diajukan pihak kontra dengan solusi jalan tengah (middle-ground resolution).\n\n2. Pembahasan Kunci Jawaban:\n   - In conclusion, while a carbon tax encourages environmental innovation, it must be implemented carefully with subsidies to protect vulnerable economic groups (BENAR): Opsi ini secara cermat dan adil merangkum kedua perspektif:\n     a. Mengakui manfaat dorongan inovasi lingkungan ('while a carbon tax encourages environmental innovation').\n     b. Memperhatikan perlindungan kelompok masyarakat rentan melalui instrumen subsidi ('implemented carefully with subsidies to protect vulnerable economic groups').\n     Dengan memadukan kedua kepentingan dalam sebuah resolusi kebijakan yang berimbang, kalimat ini menyajikan sintesis yang netral, konstruktif, dan tidak berpihak secara sepihak.\n\n3. Pembahasan Distraktor:\n   - Carbon taxes are terrible because they only hurt the poor, so factories should innovate for free (Salah): Menunjukkan bias emosional ekstrem anti-pajak ('terrible') yang hanya memvalidasi kekhawatiran pihak kontra seraya menuntut pabrik berinovasi tanpa biaya yang tidak realistis, mengabaikan argumen lingkungan dari pihak pro.\n   - Therefore, carbon taxes must be applied strictly to save the earth, regardless of the economic cost (Salah): Menunjukkan bias sepihak yang kaku pro-pajak dengan mengabaikan total beban ekonomi masyarakat ('regardless of the economic cost'), bertentangan dengan prinsip kesimpulan berimbang dalam teks diskusi.\n   - To sum up, carbon taxes are a myth created by governments to steal money from both factories and poor families (Salah): Mengajukan argumen spekulatif dan konspiratif bernada menyerang ('myth created... to steal money') yang sama sekali tidak berakar pada bukti analitis yang disajikan pada stimulus perdebatan.",
       "question_type": "single_select",
-      "estimated_time_seconds": 120
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "149-208",
+          "section": "Unit 4: Discussion Text - Environmental Policy Debate"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Kerangka Asesmen TKA - Domain Bahasa Inggris Wajib: Evaluasi dan Apresiasi"
+        }
+      },
+      "provenance": "Soal orisinal literasi analitis TKA yang menguji kemampuan siswa mengevaluasi dan merumuskan sintesis netral dari dua argumen kontradiktif (neutral argument synthesis).",
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen TKA 2026 & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-D: Mengevaluasi dan merumuskan sintesis argumen yang netral dan berimbang dalam wacana teks diskusi isu kebijakan lingkungan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. 149-208 (Unit 4: Discussion Text - Environmental Issues)",
+          "teacher_guide": "Kerangka Asesmen TKA (Peraturan BSKAP Nomor 045/H/AN/2025) - Domain Bahasa Inggris Wajib: Evaluasi dan Apresiasi"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Skenario perdebatan pajak jejak karbon antara inovasi teknologi dan perlindungan ekonomi rentan, perumusan kesimpulan sintesis netral, serta analisis distraktor bias disusun mandiri oleh tim pengembang sebagai instrumen penalaran kritis."
+      }
     },
     {
       "secondary_competencies": [],
@@ -732,9 +795,30 @@
         "wrong_penalty": 5,
         "attack_type": "light"
       },
-      "explanation": "The entire passage revolves around introducing and explaining the 'Pomodoro Technique' as a solution for time management.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Hierarki Gagasan dalam Teks Informasi:\n   Untuk menentukan topik utama (main topic / controlling idea) dari sebuah teks pendek, peserta harus membedakan antara gagasan payung menyeluruh, latar belakang masalah pengantar, dan detail teknis pendukung:\n   - Kalimat 1: Pengantar masalah umum ('Many people struggle with time management').\n   - Kalimat 2: Gagasan topik utama pengenalan solusi ('The Pomodoro Technique is one effective method to handle this').\n   - Kalimat 3: Detail operasional cara kerja teknik ('focused 25-minute intervals, followed by a 5-minute break').\n   - Kalimat 4: Manfaat dari penerapan rutinitas tersebut ('helps prevent mental fatigue and keeps motivation high').\n   Seluruh paragraf berpusat pada penjelasan Teknik Pomodoro sebagai salah satu metode untuk mengelola waktu dengan efektif.\n\n2. Pembahasan Kunci Jawaban:\n   - A method for managing time effectively (BENAR): Merupakan parafrase akurat yang merangkum keseluruhan isi paragraf. Teks memperkenalkan dan menjelaskan metode pengelolaan waktu (Teknik Pomodoro) untuk mengatasi permasalahan kesulitan manajemen waktu.\n\n3. Pembahasan Distraktor:\n   - The history of mental fatigue (Salah): Paragraf sama sekali tidak membahas asal-usul atau sejarah kelelahan mental; kata 'mental fatigue' hanya disebut sepintas pada kalimat terakhir sebagai salah satu dampak negatif yang dapat dicegah oleh teknik ini.\n   - Why people struggle with time (Salah): Paragraf hanya menyebutkan bahwa banyak orang kesulitan mengelola waktu sebagai kalimat pengantar latar belakang, tanpa menguraikan faktor-faktor penyebab mengapa mereka mengalami kesulitan tersebut.\n   - The benefits of taking 5-minute breaks (Salah): Terlalu sempit (too narrow / supporting detail); jeda istirahat 5 menit hanyalah satu langkah operasional pendukung dari prosedur Pomodoro, bukan topik payung yang memayungi seluruh isi bacaan.",
       "question_type": "single_select",
-      "estimated_time_seconds": 60
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "xv-xx",
+          "section": "Scope and Sequence: Reading Comprehension Skills"
+        },
+        "teacher_guide": {
+          "pages": "11-12",
+          "section": "Panduan Umum: Capaian Pembelajaran Fase F (Elemen Membaca dan Memirsa)"
+        }
+      },
+      "provenance": "Soal orisinal literasi membaca fungsional bertema manajemen waktu (Teknik Pomodoro) yang disusun mandiri oleh proyek untuk evaluasi komprehensif Boss Exam (Kurikulum Merdeka).",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-BOSS: Mengidentifikasi ide pokok/topik utama (main idea / main topic) dan membedakannya dari informasi pendukung dalam teks informasi fungsional (Capaian Pembelajaran Fase F - Elemen Membaca dan Memirsa)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris: Life Today Kelas XII hlm. xv-xx (Scope and Sequence: Reading Comprehension Skills)",
+          "teacher_guide": "Buku Panduan Guru Bahasa Inggris: Life Today Kelas XII hlm. 11-12 (Panduan Umum: Capaian Pembelajaran Fase F - Elemen Membaca dan Memirsa)"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Teks informasi Teknik Pomodoro, pertanyaan identifikasi topik utama, dan dekonstruksi distraktor bertingkat disusun mandiri oleh proyek sebagai instrumen evaluasi literasi membaca fungsional (Capaian Pembelajaran Fase F) tanpa menyalin naskah berhak cipta."
+      }
     },
     {
       "secondary_competencies": [],
@@ -774,9 +858,30 @@
         "wrong_penalty": 5,
         "attack_type": "medium"
       },
-      "explanation": "The event happened in the past ('last night'), so we need the simple past passive voice: 'was/were + Verb 3'. 'The ancient artifact' is singular, so 'was stolen' is correct.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Kebutuhan Sintaksis dan Peran Semantik Kalimat:\n   - Subjek kalimat adalah 'The ancient artifact' (benda mati/artefak kuno). Artefak tidak dapat melakukan tindakan mencuri, melainkan menjadi sasaran/penerima tindakan (semantic patient / receiver of the action), sehingga kalimat mutlak membutuhkan konstruksi kalimat pasif (passive voice).\n   - Penanda waktu (adverb of time) dalam kalimat adalah 'last night' (tadi malam), yang secara definitif menunjukkan peristiwa lampau yang telah selesai (definite past time). Oleh karena itu, predikat harus menggunakan pola Simple Past Tense pasif.\n   - Pola gramatikal Simple Past Passive adalah: Subject + was/were + Past Participle (Verb 3). Karena subjek 'The ancient artifact' berbentuk tunggal (singular), maka auxiliary verb yang tepat adalah 'was', diikuti oleh past participle 'stolen'.\n\n2. Pembahasan Kunci Jawaban:\n   - was stolen (BENAR): Memenuhi seluruh kaidah gramatikal Simple Past Passive untuk subjek tunggal (was + Verb 3 'stolen') yang berpadu selaras dengan keterangan waktu lampau 'last night'.\n\n3. Pembahasan Distraktor:\n   - was stealing (Salah): Merupakan bentuk aktif Past Continuous (was + Verb-ing). Secara semantik, struktur ini keliru karena menyatakan bahwa artefak tersebut sedang aktif mencuri sesuatu pada saat listrik padam.\n   - has stolen (Salah): Merupakan bentuk aktif Present Perfect Tense (has + Verb 3). Selain keliru karena bermakna aktif, Present Perfect Tense secara gramatikal tidak boleh digunakan bersama keterangan waktu lampau spesifik yang sudah selesai seperti 'last night'.\n   - is stolen (Salah): Merupakan bentuk pasif Simple Present Tense (is + Verb 3). Bentuk ini salah karena peristiwa pencurian terjadi pada masa lampau ('last night'), bukan menyatakan kebiasaan atau fakta umum saat ini.",
       "question_type": "single_select",
-      "estimated_time_seconds": 90
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "135-148",
+          "section": "Chapter 10: Language Features - Passive Voice"
+        },
+        "teacher_guide": {
+          "pages": "125-136",
+          "section": "Bab 10: Passive Voice Structure & Exercises"
+        }
+      },
+      "provenance": "Soal drill tata bahasa evaluasi akhir K13 (Simple Past Passive Voice) yang menguji pemahaman bentuk pasif dengan penanda waktu lampau.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum 2013 (Revisi 2018) & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-BOSS: Menerapkan pola kalimat pasif lampau (simple past passive: was/were + V3) secara tepat dengan memperhatikan peran semantik subjek dan penanda waktu definitif",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris Kelas XII (K13) hlm. 135-148 (Chapter 10: How to Use Photoshop? - Passive Voice)",
+          "teacher_guide": "Buku Guru Bahasa Inggris Kelas XII (K13) hlm. 125-136 (Bab 10: Manual Penggunaan Teknologi & Passive Voice)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Kalimat pengujian pencurian artefak di museum, pemilihan konstruksi pasif 'was stolen' dengan adverbia 'last night', dan dekonstruksi distraktor aktif/present disusun mandiri oleh tim pengembang sebagai instrumen drill tata bahasa."
+      }
     },
     {
       "secondary_competencies": [],
@@ -816,9 +921,30 @@
         "wrong_penalty": 5,
         "attack_type": "heavy"
       },
-      "explanation": "The author uses words like 'often touted as a utopian cure' (suggesting it's overly idealistic) and warns that it 'invariably triggers hyperinflation' and 'nullifies purchasing power'. This clearly shows a skeptical and cautionary tone regarding the effectiveness of UBI.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Diksi dan Sikap Tersirat Penulis (Author's Tone):\n   Untuk mengevaluasi nada penulis (author's tone) dalam kutipan teks akademik, peserta harus menelaah konotasi kata dan pilihan leksikal (diction) yang digunakan penulis dalam mengekspresikan gagasannya terhadap konsep Penghasilan Dasar Universal (Universal Basic Income / UBI):\n   - Frasa 'often touted as a utopian cure for poverty': Pemilihan kata 'touted' (digembar-gemborkan) dan 'utopian' (angan-angan idealis yang tidak realistis) mencerminkan sikap tidak mudah percaya dan keraguan mendalam (skeptical) terhadap klaim umum bahwa UBI adalah solusi mujarab bagi kemiskinan.\n   - Frasa 'injecting unchecked capital... invariably triggers hyperinflation, effectively nullifying the newly acquired purchasing power': Penggunaan istilah 'unchecked' (tak terkendali), 'invariably triggers' (pasti/selalu memicu), dan 'nullifying' (meniadakan/membatalkan) menyampaikan peringatan kehati-hatian yang keras (cautionary) mengenai dampak bahaya inflasi ekstrem yang justru merugikan masyarakat miskin.\n   Kombinasi kedua elemen diksi tersebut secara tegas membentuk nada bersikap skeptis dan penuh kewaspadaan (skeptical and cautionary).\n\n2. Pembahasan Kunci Jawaban:\n   - Skeptical and cautionary (BENAR): Nada penulis secara tepat dikarakterisasi sebagai skeptis (meragukan klaim keampuhan UBI) dan penuh kewaspadaan/peringatan (menyoroti risiko nyata hiperinflasi berdasarkan model ekonomi historis).\n\n3. Pembahasan Distraktor:\n   - Enthusiastic and supportive (Salah): Bertentangan langsung dengan isi teks; penulis sama sekali tidak antusias atau mendukung, melainkan menyajikan kritik keras terhadap kelemahan fundamental UBI.\n   - Neutral and objective (Salah): Teks tidak ditulis secara netral dingin seperti laporan statistik bebas nilai; penulis secara sengaja menggunakan kata-kata bermuatan evaluatif tajam ('utopian', 'unchecked', 'invariably', 'nullifying') yang secara aktif membimbing pembaca untuk mewaspadai bahaya program tersebut.\n   - Confused and uncertain (Salah): Penulis berargumen dengan tingkat kepastian dan keyakinan logis yang sangat tinggi berbasis bukti historis ('historical economic models suggest... invariably triggers'), tanpa menunjukkan keraguan, kebingungan konsep, atau keraguan retoris.\n\nCatatan Akademik:\nSoal ini berfokus menguji kemampuan analisis dan interpretasi peserta didik terhadap nada dan sikap tersirat penulis (author's tone) melalui pilihan diksi evaluatif pada teks. Penjelasan ini tidak memvalidasi kebenaran faktual secara ekonomi mengenai apakah kebijakan Universal Basic Income pasti menyebabkan hiperinflasi di dunia nyata, melainkan merekonstruksi sikap kritis dan peringatan yang dibangun oleh penulis stimulus.",
       "question_type": "single_select",
-      "estimated_time_seconds": 120
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "N/A",
+          "section": "Advanced Academic Literacy - Tone & Bias Evaluation"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Kerangka Asesmen TKA - Domain Bahasa Inggris Wajib: Evaluasi dan Apresiasi"
+        }
+      },
+      "provenance": "Soal orisinal literasi akademik tingkat lanjut TKA (Author's Tone) yang menguji evaluasi sikap kritis penulis pada wacana ekonomi simulasi.",
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen TKA 2026 & Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "ENG12-C02-BOSS: Mengevaluasi nada, sikap, dan keberpihakan tersirat penulis (author's tone) melalui analisis diksi bermuatan nilai dalam wacana akademik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Inggris Kelas XII (Fase F: Advanced Academic Reading & Critical Literacy)",
+          "teacher_guide": "Kerangka Asesmen TKA (Peraturan BSKAP Nomor 045/H/AN/2025) - Domain Bahasa Inggris Wajib: Evaluasi dan Apresiasi"
+        },
+        "support_category": "INDIRECT",
+        "authoring_statement": "Kutipan teks simulasi akademik perdebatan UBI, penentuan nada skeptis-waspada berbasis diksi evaluatif, dan analisis distraktor disusun mandiri oleh tim pengembang sebagai instrumen evaluasi penalaran kritis tanpa menyalin naskah artikel ilmiah berhak cipta."
+      }
     }
   ],
   "curriculum": [
