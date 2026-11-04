@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_V1.1_RECONCILED",
+  "dataset": "World 1 KM Standard Chapter 4 Original Content - Misi 12 v1.0",
+  "purpose": "Canonical v1.1 reconciled dataset for World 1 Bahasa Indonesia Chapter 4 Misi 12.",
+  "chapter_id": "BI12-C04",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "KM04-A1",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-A",
+      "skill": "analyze",
+      "question": "Bacalah penggalan paragraf berikut:\n'Selama masa pandemi, banyak orang mulai membiasakan diri berbelanja tanpa keluar rumah. Aplikasi pesan-antar makanan menjadi pilihan utama bagi mereka yang ingin tetap aman di rumah. Demikian pula dengan layanan belanja daring yang menyediakan kebutuhan rumah tangga hingga kesehatan. Semua perubahan ini menunjukkan bahwa masyarakat telah beralih ke pola hidup digital sebagai bentuk adaptasi terhadap kondisi krisis.'\nBerdasarkan letak gagasan utamanya, paragraf tersebut termasuk ke dalam jenis paragraf...",
+      "options": [
+        "Deduktif",
+        "Induktif",
+        "Campuran (Deduktif-Induktif)",
+        "Ineratif"
+      ],
+      "answer": "Induktif",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Pola Penalaran Paragraf Eksplanasi:\n   Berdasarkan posisi letak gagasan utama (ide pokok), paragraf dibedakan menjadi: deduktif (gagasan utama di awal), induktif (gagasan utama di akhir sebagai simpulan), campuran/deduktif-induktif (gagasan utama di awal dan ditegaskan kembali di akhir), serta ineratif (gagasan utama di tengah). Paragraf induktif bergerak dari pemaparan rincian-rincian peristiwa atau bukti-bukti khusus menuju pernyataan umum yang bersifat inferensial/menyimpulkan.\n\n2. Pembahasan Kunci Jawaban:\n   - Induktif (BENAR): Tiga kalimat awal menyajikan rincian fakta khusus: kebiasaan belanja dari rumah, aplikasi pesan-antar makanan, dan belanja kebutuhan daring. Kalimat terakhir ('Semua perubahan ini menunjukkan bahwa masyarakat telah beralih ke pola hidup digital sebagai bentuk adaptasi terhadap kondisi krisis') memadukan seluruh rincian tersebut ke dalam satu simpulan umum. Karena gagasan utama berada di akhir paragraf, paragraf ini berpola induktif.\n\n3. Pembahasan Distraktor:\n   - Deduktif (Salah): Paragraf deduktif menempatkan pernyataan umum/topik di awal paragraf lalu diikuti uraian rincian penjelasan khusus; kalimat pertama teks stimulus bukan simpulan umum melainkan rincian fakta masa pandemi.\n   - Campuran (Deduktif-Induktif) (Salah): Paragraf campuran mengharuskan kalimat pertama dan kalimat terakhir sama-sama memuat gagasan utama yang saling menegaskan; pada teks stimulus, gagasan utama hanya muncul di kalimat penutup.\n   - Ineratif (Salah): Paragraf ineratif diawali kalimat penjelas, diikuti gagasan utama di tengah paragraf, dan ditutup kembali oleh kalimat penjelas; pola ini tidak sesuai dengan struktur teks stimulus.",
+      "source": {
+        "student_book": {
+          "pages": "142-144",
+          "section": "Bab 4, Subbab A: Memahami Informasi Teks Eksplanasi Kompleks secara Implisit"
+        },
+        "teacher_guide": {
+          "pages": "177-187",
+          "section": "Bab 4, Subbab A: Panduan Pembelajaran Aktivitas 4.1 & 4.2"
+        }
+      },
+      "provenance": "Soal analisis pola penalaran paragraf teks eksplanasi kompleks berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 4.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C04-A",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C04-A: Memahami dan menganalisis informasi serta pola penalaran paragraf teks eksplanasi secara implisit",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 142-144 (Subbab A: Memahami Informasi Teks Eksplanasi Kompleks secara Implisit)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 177-187 (Subbab A: Panduan Pembelajaran Aktivitas 4.1 & 4.2)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal analisis penalaran induktif bertema pola hidup digital disusun mandiri sesuai kurikulum acuan."
+      }
+    },
+    {
+      "id": "KM04-A2",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-A",
+      "skill": "understand",
+      "question": "Dalam Teks Eksplanasi Kompleks yang baik, argumen atau gagasan harus dievaluasi berdasarkan tiga aspek utama, yaitu...",
+      "options": [
+        "Kekuatan argumen, keakuratan informasi, dan relevansi",
+        "Jumlah kata, gaya bahasa, dan jumlah paragraf",
+        "Pernyataan umum, deretan penjelas, dan interpretasi",
+        "Tokoh, alur, dan amanat"
+      ],
+      "answer": "Kekuatan argumen, keakuratan informasi, dan relevansi",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kriteria Evaluasi Argumen Teks Eksplanasi:\n   Mengevaluasi teks eksplanasi ilmiah menuntut penilaian kritis terhadap mutu penalaran penulis. Berdasarkan Buku Siswa Kurikulum Merdeka hlm. 147, terdapat tiga tolok ukur pokok dalam mengevaluasi gagasan atau argumen:\n   a. Kekuatan argumen: sejauh mana argumen dibangun secara logis, rasional, dan didukung oleh premis yang kokoh.\n   b. Keakuratan informasi: kebenaran data, fakta empiris, dan rujukan ilmiah yang disajikan.\n   c. Relevansi: keterkaitan langsung antara argumen dengan fenomena/permasalahan modern yang sedang dibahas.\n\n2. Pembahasan Kunci Jawaban:\n   - Kekuatan argumen, keakuratan informasi, dan relevansi (BENAR): Ketiga aspek ini merupakan pilar resmi penilaian kritis teks eksplanasi untuk memastikan bahwa uraian ilmiah tidak hanya masuk akal, tetapi juga valid secara faktual dan kontekstual dengan topik bahasan.\n\n3. Pembahasan Distraktor:\n   - Jumlah kata, gaya bahasa, dan jumlah paragraf (Salah): Merupakan unsur fisik mekanis teks yang tidak mencerminkan validitas isi gagasan atau mutu penalaran ilmiah penulis.\n   - Pernyataan umum, deretan penjelas, dan interpretasi (Salah): Merupakan bagian-bagian dari struktur makro teks eksplanasi, bukan kriteria evaluasi keabsahan argumen.\n   - Tokoh, alur, dan amanat (Salah): Merupakan unsur intrinsik karya sastra prosa fiksi/cerpen/novel, bukan unsur telaah teks eksplanasi ilmiah nonsastra.",
+      "source": {
+        "student_book": {
+          "pages": "144-149",
+          "section": "Bab 4, Subbab B: Mengevaluasi Gagasan, Pandangan, atau Pesan dalam Teks Eksplanasi Kompleks"
+        },
+        "teacher_guide": {
+          "pages": "187-193",
+          "section": "Bab 4, Subbab B: Panduan Pembelajaran Aktivitas 4.3, 4.4, & 4.5"
+        }
+      },
+      "provenance": "Soal pemahaman kriteria evaluasi argumen teks eksplanasi berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 4.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C04-A",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C04-B: Mengevaluasi gagasan, pandangan, atau pesan dalam teks eksplanasi kompleks berdasarkan kriteria kelogisan dan validitas",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 144-149 (Subbab B: Mengevaluasi Gagasan, Pandangan, atau Pesan dalam Teks Eksplanasi Kompleks)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 187-193 (Subbab B: Panduan Pembelajaran Aktivitas 4.3, 4.4, & 4.5)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal telaah tiga kriteria pokok evaluasi argumen teks eksplanasi disusun mandiri merujuk Buku Siswa hlm. 147."
+      }
+    },
+    {
+      "id": "KM04-A3",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-A",
+      "skill": "understand",
+      "question": "Sebuah argumen mengenai Kecerdasan Artifisial (AI) dikategorikan memiliki 'kekuatan argumen yang kuat' jika...",
+      "options": [
+        "Gagasan tersebut didukung oleh data, fakta nyata, dan penjelasan yang jelas serta logis.",
+        "Gagasan tersebut memuat kalimat-kalimat panjang yang menggunakan istilah ilmiah asing.",
+        "Gagasan tersebut berisi klaim bombastis untuk menakut-nakuti pembaca tentang bahaya AI.",
+        "Gagasan tersebut hanya berupa opini tunggal tanpa penjelasan atau bukti pendukung."
+      ],
+      "answer": "Gagasan tersebut didukung oleh data, fakta nyata, dan penjelasan yang jelas serta logis.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kekuatan Argumen dalam Penjelasan Ilmiah:\n   Dalam teks eksplanasi kompleks tentang teknologi modern seperti kecerdasan artifisial (AI), kekuatan sebuah argumen tidak ditentukan oleh nada bicara yang persuasif atau jargon yang rumit, melainkan oleh rasionalitas hubungan kausal dan keterdukungan bukti (evidence-based reasoning). Sebuah argumen bernilai kuat apabila klaim yang diajukan disertai data statistik yang kredibel, fakta empiris terverifikasi, dan alur penalaran yang runtut tanpa sesat pikir (logical fallacies).\n\n2. Pembahasan Kunci Jawaban:\n   - Gagasan tersebut didukung oleh data, fakta nyata, dan penjelasan yang jelas serta logis (BENAR): Definisi argumen yang kuat mensyaratkan adanya premis pendukung berupa fakta riil, data objektif, serta eksplanasi yang masuk akal sehingga mampu meyakinkan pembaca atas kebenaran penjelasan fenomena tersebut.\n\n3. Pembahasan Distraktor:\n   - Gagasan tersebut memuat kalimat-kalimat panjang yang menggunakan istilah ilmiah asing (Salah): Kompleksitas kalimat atau keberadaan istilah asing tidak menjamin kebenaran substansi ide; tulisan bertele-tele tanpa bukti justru mengaburkan esensi argumen.\n   - Gagasan tersebut berisi klaim bombastis untuk menakut-nakuti pembaca tentang bahaya AI (Salah): Pendekatan sensasional atau menakut-nakuti (appeal to fear) adalah bentuk bias emosional dan sesat pikir, bukan ciri argumen ilmiah yang kuat.\n   - Gagasan tersebut hanya berupa opini tunggal tanpa penjelasan atau bukti pendukung (Salah): Opini tanpa bukti pendukung dikategorikan sebagai klaim lemah (unsubstantiated claim) yang tidak memenuhi syarat kekuatan argumen teks eksplanasi.",
+      "source": {
+        "student_book": {
+          "pages": "144-149",
+          "section": "Bab 4, Subbab B: Mengevaluasi Gagasan, Pandangan, atau Pesan dalam Teks Eksplanasi Kompleks"
+        },
+        "teacher_guide": {
+          "pages": "187-193",
+          "section": "Bab 4, Subbab B: Panduan Pembelajaran Aktivitas 4.3, 4.4, & 4.5"
+        }
+      },
+      "provenance": "Soal pemahaman karakteristik kekuatan argumen ilmiah teks eksplanasi berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 4.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C04-A",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C04-B: Mengevaluasi gagasan, pandangan, atau pesan dalam teks eksplanasi kompleks berdasarkan kriteria kelogisan dan validitas",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 144-149 (Subbab B: Mengevaluasi Gagasan, Pandangan, atau Pesan dalam Teks Eksplanasi Kompleks)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 187-193 (Subbab B: Panduan Pembelajaran Aktivitas 4.3, 4.4, & 4.5)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal tolok ukur kekuatan argumen berbasis data empiris disusun mandiri sesuai acuan materi Kurikulum Merdeka."
+      }
+    }
+  ]
+}

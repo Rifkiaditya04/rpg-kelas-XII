@@ -1,477 +1,457 @@
-﻿{
-    "track":  "wajib",
-    "questions":  [
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C04-A-4885",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Bacalah penggalan paragraf berikut:\n\u0027Selama masa pandemi, banyak orang mulai membiasakan diri berbelanja tanpa keluar rumah. Aplikasi pesan-antar makanan menjadi pilihan utama bagi mereka yang ingin tetap aman di rumah. Demikian pula dengan layanan belanja daring yang menyediakan kebutuhan rumah tangga hingga kesehatan. Semua perubahan ini menunjukkan bahwa masyarakat telah beralih ke pola hidup digital sebagai bentuk adaptasi terhadap kondisi krisis.\u0027\nBerdasarkan letak gagasan utamanya, paragraf tersebut termasuk ke dalam jenis paragraf...",
-                          "answer":  "B",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Deduktif"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Induktif"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Campuran (Deduktif-Induktif)"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Ineratif"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C04-A",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Gagasan utama paragraf ini terletak di kalimat terakhir (\u0027Semua perubahan ini menunjukkan bahwa masyarakat telah beralih ke pola hidup digital...\u0027), yang menyimpulkan rincian fakta dari kalimat-kalimat sebelumnya. Oleh karena itu, ini adalah paragraf induktif.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C04-A-2876",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Dalam Teks Eksplanasi Kompleks yang baik, argumen atau gagasan harus dievaluasi berdasarkan tiga aspek utama, yaitu...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Kekuatan argumen, keakuratan informasi, dan relevansi"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Jumlah kata, gaya bahasa, dan jumlah paragraf"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Pernyataan umum, deretan penjelas, dan interpretasi"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Tokoh, alur, dan amanat"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C04-A",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Evaluasi gagasan bertujuan untuk menilai kualitas ide berdasarkan logika (kekuatan argumen), fakta ilmiah (keakuratan informasi), serta kaitannya dengan kehidupan masa kini (relevansi).",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C04-A-5899",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Sebuah argumen mengenai Kecerdasan Artifisial (AI) dikategorikan memiliki \u0027kekuatan argumen yang kuat\u0027 jika...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Gagasan tersebut didukung oleh data, fakta nyata, dan penjelasan yang jelas serta logis."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Gagasan tersebut memuat kalimat-kalimat panjang yang menggunakan istilah ilmiah asing."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Gagasan tersebut berisi klaim bombastis untuk menakut-nakuti pembaca tentang bahaya AI."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Gagasan tersebut hanya berupa opini tunggal tanpa penjelasan atau bukti pendukung."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C04-A",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Kekuatan argumen bergantung pada bukti (evidence) yang valid, bukan sekadar panjang tulisan atau penggunaan istilah yang rumit tanpa dasar fakta.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C04-B-8072",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Secara umum, struktur teks eksplanasi kompleks terdiri atas tiga bagian utama, yaitu...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Pernyataan Umum, Deretan Penjelas, dan Interpretasi"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Tesis, Argumentasi, dan Penegasan Ulang"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Orientasi, Komplikasi, dan Resolusi"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Abstraksi, Orientasi, dan Koda"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C04-B",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Teks eksplanasi memiliki struktur khusus yang bertujuan menjelaskan suatu fenomena: Pernyataan umum (pengenalan topik), deretan penjelas (urutan sebab-akibat), dan interpretasi (simpulan atau penegasan ulang dampak fenomena).",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C04-B-7547",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Dalam model refleksi 5R, tahapan di mana pembaca menghubungkan gagasan dalam teks dengan pengalaman pribadi atau fenomena sosial yang pernah mereka alami disebut tahap...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Relating (Mengaitkan)"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Responding (Menanggapi)"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Reasoning (Menalar)"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Reporting (Melaporkan)"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C04-B",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Tahap Relating bertujuan untuk menunjukkan sejauh mana pembaca menginternalisasi teks dengan cara mencari hubungannya dengan pengetahuan atau pengalaman masa lalu pembaca tersebut.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C04-B-4346",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Tahap terakhir dalam model refleksi 5R adalah \u0027Reconstructing\u0027 (Membangun Kembali). Apa yang dilakukan pembaca pada tahap ini?",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Mengembangkan pemahaman baru, memberikan saran, atau menyusun ulang gagasan berdasarkan hasil refleksi."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Menyebutkan kembali isi teks secara objektif tanpa menambahkan opini pribadi."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Menilai secara logis apakah argumen penulis kuat dan akurat."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Memberikan kesan emosional pertama terhadap bacaan (setuju/tidak setuju)."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C04-B",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Reconstructing (Membangun kembali) adalah puncak refleksi di mana pembaca berhasil meramu isi teks dengan pikirannya sendiri untuk menciptakan sebuah gagasan, saran, atau perspektif baru yang lebih komprehensif.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C04-C-4707",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Bacalah kalimat berikut: \u0027Oleh karena itu, masyarakat menjadi lebih bergantung pada teknologi kecerdasan buatan dalam bekerja dan berinteraksi.\u0027\nKalimat di atas menunjukkan salah satu ciri kebahasaan teks eksplanasi kompleks, yaitu penggunaan...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Konjungsi kausalitas"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Kalimat pasif"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Perbandingan atau analogi"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Pernyataan retoris"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C04-C",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Frasa \u0027Oleh karena itu\u0027 adalah konjungsi kausalitas (sebab-akibat) yang menghubungkan dampak atau akibat logis dari suatu rentetan penjelasan sebelumnya, yang merupakan ciri khas teks eksplanasi.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C04-C-2494",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Untuk menjelaskan cara kerja AI yang abstrak kepada pembaca umum, penulis sering kali menggunakan gaya bahasa berupa...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Perbandingan atau analogi"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Sindiran tajam (Sarkasme)"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Gaya bahasa hiperbola (melebih-lebihkan)"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Gaya bahasa santai dan prokem"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C04-C",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Dalam teks eksplanasi yang membahas hal teknis, pengarang sering menyederhanakan konsep rumit menggunakan analogi, misalnya \u0027AI bekerja seperti otak manusia\u0027, agar lebih mudah dipahami oleh pembaca.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C04-C-8321",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Dalam teks eksplanasi ilmiah seperti kecerdasan buatan, mengapa penulis harus menggunakan gaya bahasa yang \u0027Objektif dan Informatif\u0027 alih-alih emosional?",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Agar penulis dapat menyajikan data, fakta, dan proses secara langsung dan akurat tanpa dipengaruhi opini pribadi."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Agar tulisan menjadi lebih panjang dan terlihat seperti karya tulis mahasiswa."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Agar pembaca merasa takut dan mewaspadai perkembangan teknologi AI."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Karena aturan dalam sastra melarang adanya unsur emosi dalam menulis kalimat."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C04-C",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Tujuan utama teks eksplanasi kompleks adalah memberi pemahaman (informatif) tentang bagaimana/mengapa fenomena terjadi. Oleh karena itu, penulis harus menjaga netralitas dan objektivitas agar informasi yang disajikan akurat dan rasional, tidak condong pada bias pribadi.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "understand",
-                          "question_id":  "BI12-C04-K13-8518",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Teks eksplanasi menurut kaidah K13 banyak menggunakan istilah teknis dan kalimat pasif. Manakah dari kalimat pasif berikut yang paling lazim ditemukan dalam teks eksplanasi ilmiah?",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Energi surya diubah menjadi energi listrik melalui panel surya."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Para ilmuwan mengubah energi surya menjadi energi listrik."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Kita dapat mengubah energi surya menjadi energi listrik."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Energi surya sangat mudah untuk kita ubah menjadi energi listrik."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C04-K13",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Teks eksplanasi ilmiah cenderung berfokus pada fenomena/objeknya (energi surya), sehingga kalimat pasif (\u0027diubah\u0027) lebih lazim digunakan untuk menghilangkan fokus pada subjek (pelaku).",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      }
-                  ],
-    "curriculum":  [
-                       "K13",
-                       "Merdeka"
-                   ],
-    "grade":  12,
-    "competencies":  [
-                         {
-                             "name":  "Kompetensi BI12-C04-A",
-                             "question_count":  3,
-                             "competency_id":  "BI12-C04-A"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C04-K13",
-                             "question_count":  1,
-                             "competency_id":  "BI12-C04-K13"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C04-C",
-                             "question_count":  3,
-                             "competency_id":  "BI12-C04-C"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C04-B",
-                             "question_count":  3,
-                             "competency_id":  "BI12-C04-B"
-                         }
-                     ],
-    "subject":  "bahasa-indonesia",
-    "chapter":  "BI12-C04",
-    "status":  "active",
-    "content_version":  1,
-    "pool_id":  "POOL-BAHASA-INDONESIA-BI12-C04"
+{
+  "track": "wajib",
+  "questions": [
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "analyze",
+      "question_id": "BI12-C04-A-4885",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Bacalah penggalan paragraf berikut:\n'Selama masa pandemi, banyak orang mulai membiasakan diri berbelanja tanpa keluar rumah. Aplikasi pesan-antar makanan menjadi pilihan utama bagi mereka yang ingin tetap aman di rumah. Demikian pula dengan layanan belanja daring yang menyediakan kebutuhan rumah tangga hingga kesehatan. Semua perubahan ini menunjukkan bahwa masyarakat telah beralih ke pola hidup digital sebagai bentuk adaptasi terhadap kondisi krisis.'\nBerdasarkan letak gagasan utamanya, paragraf tersebut termasuk ke dalam jenis paragraf...",
+      "answer": "B",
+      "options": [
+        {
+          "id": "A",
+          "text": "Deduktif"
+        },
+        {
+          "id": "B",
+          "text": "Induktif"
+        },
+        {
+          "id": "C",
+          "text": "Campuran (Deduktif-Induktif)"
+        },
+        {
+          "id": "D",
+          "text": "Ineratif"
+        }
+      ],
+      "primary_competency": "BI12-C04-A",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Pola Penalaran Paragraf Eksplanasi:\n   Berdasarkan posisi letak gagasan utama (ide pokok), paragraf dibedakan menjadi: deduktif (gagasan utama di awal), induktif (gagasan utama di akhir sebagai simpulan), campuran/deduktif-induktif (gagasan utama di awal dan ditegaskan kembali di akhir), serta ineratif (gagasan utama di tengah). Paragraf induktif bergerak dari pemaparan rincian-rincian peristiwa atau bukti-bukti khusus menuju pernyataan umum yang bersifat inferensial/menyimpulkan.\n\n2. Pembahasan Kunci Jawaban:\n   - Induktif (BENAR): Tiga kalimat awal menyajikan rincian fakta khusus: kebiasaan belanja dari rumah, aplikasi pesan-antar makanan, dan belanja kebutuhan daring. Kalimat terakhir ('Semua perubahan ini menunjukkan bahwa masyarakat telah beralih ke pola hidup digital sebagai bentuk adaptasi terhadap kondisi krisis') memadukan seluruh rincian tersebut ke dalam satu simpulan umum. Karena gagasan utama berada di akhir paragraf, paragraf ini berpola induktif.\n\n3. Pembahasan Distraktor:\n   - Deduktif (Salah): Paragraf deduktif menempatkan pernyataan umum/topik di awal paragraf lalu diikuti uraian rincian penjelasan khusus; kalimat pertama teks stimulus bukan simpulan umum melainkan rincian fakta masa pandemi.\n   - Campuran (Deduktif-Induktif) (Salah): Paragraf campuran mengharuskan kalimat pertama dan kalimat terakhir sama-sama memuat gagasan utama yang saling menegaskan; pada teks stimulus, gagasan utama hanya muncul di kalimat penutup.\n   - Ineratif (Salah): Paragraf ineratif diawali kalimat penjelas, diikuti gagasan utama di tengah paragraf, dan ditutup kembali oleh kalimat penjelas; pola ini tidak sesuai dengan struktur teks stimulus.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C04-A-2876",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Dalam Teks Eksplanasi Kompleks yang baik, argumen atau gagasan harus dievaluasi berdasarkan tiga aspek utama, yaitu...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kekuatan argumen, keakuratan informasi, dan relevansi"
+        },
+        {
+          "id": "B",
+          "text": "Jumlah kata, gaya bahasa, dan jumlah paragraf"
+        },
+        {
+          "id": "C",
+          "text": "Pernyataan umum, deretan penjelas, dan interpretasi"
+        },
+        {
+          "id": "D",
+          "text": "Tokoh, alur, dan amanat"
+        }
+      ],
+      "primary_competency": "BI12-C04-A",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kriteria Evaluasi Argumen Teks Eksplanasi:\n   Mengevaluasi teks eksplanasi ilmiah menuntut penilaian kritis terhadap mutu penalaran penulis. Berdasarkan Buku Siswa Kurikulum Merdeka hlm. 147, terdapat tiga tolok ukur pokok dalam mengevaluasi gagasan atau argumen:\n   a. Kekuatan argumen: sejauh mana argumen dibangun secara logis, rasional, dan didukung oleh premis yang kokoh.\n   b. Keakuratan informasi: kebenaran data, fakta empiris, dan rujukan ilmiah yang disajikan.\n   c. Relevansi: keterkaitan langsung antara argumen dengan fenomena/permasalahan modern yang sedang dibahas.\n\n2. Pembahasan Kunci Jawaban:\n   - Kekuatan argumen, keakuratan informasi, dan relevansi (BENAR): Ketiga aspek ini merupakan pilar resmi penilaian kritis teks eksplanasi untuk memastikan bahwa uraian ilmiah tidak hanya masuk akal, tetapi juga valid secara faktual dan kontekstual dengan topik bahasan.\n\n3. Pembahasan Distraktor:\n   - Jumlah kata, gaya bahasa, dan jumlah paragraf (Salah): Merupakan unsur fisik mekanis teks yang tidak mencerminkan validitas isi gagasan atau mutu penalaran ilmiah penulis.\n   - Pernyataan umum, deretan penjelas, dan interpretasi (Salah): Merupakan bagian-bagian dari struktur makro teks eksplanasi, bukan kriteria evaluasi keabsahan argumen.\n   - Tokoh, alur, dan amanat (Salah): Merupakan unsur intrinsik karya sastra prosa fiksi/cerpen/novel, bukan unsur telaah teks eksplanasi ilmiah nonsastra.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C04-A-5899",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Sebuah argumen mengenai Kecerdasan Artifisial (AI) dikategorikan memiliki 'kekuatan argumen yang kuat' jika...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gagasan tersebut didukung oleh data, fakta nyata, dan penjelasan yang jelas serta logis."
+        },
+        {
+          "id": "B",
+          "text": "Gagasan tersebut memuat kalimat-kalimat panjang yang menggunakan istilah ilmiah asing."
+        },
+        {
+          "id": "C",
+          "text": "Gagasan tersebut berisi klaim bombastis untuk menakut-nakuti pembaca tentang bahaya AI."
+        },
+        {
+          "id": "D",
+          "text": "Gagasan tersebut hanya berupa opini tunggal tanpa penjelasan atau bukti pendukung."
+        }
+      ],
+      "primary_competency": "BI12-C04-A",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kekuatan Argumen dalam Penjelasan Ilmiah:\n   Dalam teks eksplanasi kompleks tentang teknologi modern seperti kecerdasan artifisial (AI), kekuatan sebuah argumen tidak ditentukan oleh nada bicara yang persuasif atau jargon yang rumit, melainkan oleh rasionalitas hubungan kausal dan keterdukungan bukti (evidence-based reasoning). Sebuah argumen bernilai kuat apabila klaim yang diajukan disertai data statistik yang kredibel, fakta empiris terverifikasi, dan alur penalaran yang runtut tanpa sesat pikir (logical fallacies).\n\n2. Pembahasan Kunci Jawaban:\n   - Gagasan tersebut didukung oleh data, fakta nyata, dan penjelasan yang jelas serta logis (BENAR): Definisi argumen yang kuat mensyaratkan adanya premis pendukung berupa fakta riil, data objektif, serta eksplanasi yang masuk akal sehingga mampu meyakinkan pembaca atas kebenaran penjelasan fenomena tersebut.\n\n3. Pembahasan Distraktor:\n   - Gagasan tersebut memuat kalimat-kalimat panjang yang menggunakan istilah ilmiah asing (Salah): Kompleksitas kalimat atau keberadaan istilah asing tidak menjamin kebenaran substansi ide; tulisan bertele-tele tanpa bukti justru mengaburkan esensi argumen.\n   - Gagasan tersebut berisi klaim bombastis untuk menakut-nakuti pembaca tentang bahaya AI (Salah): Pendekatan sensasional atau menakut-nakuti (appeal to fear) adalah bentuk bias emosional dan sesat pikir, bukan ciri argumen ilmiah yang kuat.\n   - Gagasan tersebut hanya berupa opini tunggal tanpa penjelasan atau bukti pendukung (Salah): Opini tanpa bukti pendukung dikategorikan sebagai klaim lemah (unsubstantiated claim) yang tidak memenuhi syarat kekuatan argumen teks eksplanasi.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C04-B-8072",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Secara umum, struktur teks eksplanasi kompleks terdiri atas tiga bagian utama, yaitu...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pernyataan Umum, Deretan Penjelas, dan Interpretasi"
+        },
+        {
+          "id": "B",
+          "text": "Tesis, Argumentasi, dan Penegasan Ulang"
+        },
+        {
+          "id": "C",
+          "text": "Orientasi, Komplikasi, dan Resolusi"
+        },
+        {
+          "id": "D",
+          "text": "Abstraksi, Orientasi, dan Koda"
+        }
+      ],
+      "primary_competency": "BI12-C04-B",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Struktur Makro Teks Eksplanasi Kompleks:\n   Teks eksplanasi bertujuan menerangkan proses terjadinya suatu fenomena alam, sosial, atau teknologi secara kausal. Struktur baku teks eksplanasi terdiri atas:\n   a. Pernyataan Umum (Identifikasi Fenomena): mengenalkan fenomena yang akan diterangkan latar belakang keberadaannya.\n   b. Deretan Penjelas (Rangkaian Sebab-Akibat): memaparkan proses, tahapan runtut, atau hubungan kausalitas mengapa dan bagaimana fenomena itu terjadi.\n   c. Interpretasi (Ulasan/Simpulan): memberikan tinjauan akhir, intisari simpulan, atau konsekuensi dari fenomena yang telah dijelaskan.\n\n2. Pembahasan Kunci Jawaban:\n   - Pernyataan Umum, Deretan Penjelas, dan Interpretasi (BENAR): Ketiga tahapan ini merupakan struktur standar genre teks eksplanasi yang memandu pembaca dari pengenalan fenomena, penjabaran proses kausalitas, hingga simpulan interpretatif.\n\n3. Pembahasan Distraktor:\n   - Tesis, Argumentasi, dan Penegasan Ulang (Salah): Merupakan struktur genre teks eksposisi yang berfokus meyakinkan pembaca mengenai suatu sudut pandang pendapat.\n   - Orientasi, Komplikasi, dan Resolusi (Salah): Merupakan struktur genre teks narasi/cerpen/novel yang berpusat pada perkembangan alur konflik tokoh.\n   - Abstraksi, Orientasi, dan Koda (Salah): Merupakan struktur genre teks anekdot yang menyajikan cerita rekaan lucu berisi sindiran publik.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C04-B-7547",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Dalam model refleksi 5R, tahapan di mana pembaca menghubungkan gagasan dalam teks dengan pengalaman pribadi atau fenomena sosial yang pernah mereka alami disebut tahap...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Relating (Mengaitkan)"
+        },
+        {
+          "id": "B",
+          "text": "Responding (Menanggapi)"
+        },
+        {
+          "id": "C",
+          "text": "Reasoning (Menalar)"
+        },
+        {
+          "id": "D",
+          "text": "Reporting (Melaporkan)"
+        }
+      ],
+      "primary_competency": "BI12-C04-B",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kerangka Refleksi Model 5R:\n   Model refleksi 5R (Bain dkk., diadaptasi dalam Kurikulum Merdeka hlm. 150-151) membimbing peserta didik berpikir kritis melalui lima jenjang refleksi:\n   a. Reporting (Melaporkan): mendeskripsikan ulang isu atau fakta teks.\n   b. Responding (Menanggapi): memberikan reaksi emosional atau opini awal.\n   c. Relating (Mengaitkan): menghubungkan isu teks dengan pengalaman pribadi, pengetahuan terdahulu, atau fenomena nyata di sekitarnya.\n   d. Reasoning (Menalar): menganalisis alasan mendalam mengapa peristiwa itu terjadi dan dampaknya.\n   e. Reconstructing (Membangun Kembali): merumuskan rencana tindakan, pemahaman baru, atau rekomendasi masa depan.\n\n2. Pembahasan Kunci Jawaban:\n   - Relating (Mengaitkan) (BENAR): Deskripsi pertanyaan mengenai aktivitas menghubungkan gagasan bacaan dengan pengalaman pribadi atau kondisi fenomena sosial yang dialami pembaca merupakan definisi definitif dari tahap 'Relating' (Mengaitkan).\n\n3. Pembahasan Distraktor:\n   - Responding (Menanggapi) (Salah): Tahap Responding berfokus pada tanggapan impresif, reaksi perasaan (setuju/tidak setuju), atau keheranan awal pembaca terhadap isi teks.\n   - Reasoning (Menalar) (Salah): Tahap Reasoning mengeksplorasi telaah logis, penjelasan teoretis, dan bukti-bukti mengapa isu tersebut memiliki signifikansi ilmiah/sosial.\n   - Reporting (Melaporkan) (Salah): Tahap Reporting hanya memaparkan kembali apa yang tertulis dalam teks secara faktual tanpa menyambungkannya dengan konteks diri sendiri.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C04-B-4346",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Tahap terakhir dalam model refleksi 5R adalah 'Reconstructing' (Membangun Kembali). Apa yang dilakukan pembaca pada tahap ini?",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mengembangkan pemahaman baru, memberikan saran, atau menyusun ulang gagasan berdasarkan hasil refleksi."
+        },
+        {
+          "id": "B",
+          "text": "Menyebutkan kembali isi teks secara objektif tanpa menambahkan opini pribadi."
+        },
+        {
+          "id": "C",
+          "text": "Menilai secara logis apakah argumen penulis kuat dan akurat."
+        },
+        {
+          "id": "D",
+          "text": "Memberikan kesan emosional pertama terhadap bacaan (setuju/tidak setuju)."
+        }
+      ],
+      "primary_competency": "BI12-C04-B",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Tahap Puncak Model Refleksi 5R (Reconstructing):\n   Dalam model refleksi 5R, 'Reconstructing' (Membangun Kembali) merupakan tahapan tertinggi dari proses metakognitif. Pada tahap ini, pembaca tidak lagi hanya menelaah apa yang telah terjadi atau mengapa hal itu terjadi, melainkan menarik pembelajaran bermakna untuk masa depan. Aktivitas inti pada tahap Reconstructing adalah merumuskan rencana aksi baru, memberikan solusi alternatif, mengadaptasi strategi berpikir, atau menyusun kembali pemahaman yang lebih komprehensif.\n\n2. Pembahasan Kunci Jawaban:\n   - Mengembangkan pemahaman baru, memberikan saran, atau menyusun ulang gagasan berdasarkan hasil refleksi (BENAR): Pada tahap Reconstructing, pembaca memproyeksikan wawasan yang diperolehnya ke dalam rekonstruksi gagasan, rekomendasi solutif, atau pemikiran baru untuk menghadapi fenomena serupa di masa depan.\n\n3. Pembahasan Distraktor:\n   - Menyebutkan kembali isi teks secara objektif tanpa menambahkan opini pribadi (Salah): Merupakan aktivitas pada tahap pertama, yaitu Reporting (Melaporkan).\n   - Menilai secara logis apakah argumen penulis kuat dan akurat (Salah): Merupakan fokus aktivitas analitis pada tahap keempat, yaitu Reasoning (Menalar).\n   - Memberikan kesan emosional pertama terhadap bacaan (setuju/tidak setuju) (Salah): Merupakan karakteristik respons awal pada tahap kedua, yaitu Responding (Menanggapi).",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C04-C-4707",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Bacalah kalimat berikut: 'Oleh karena itu, masyarakat menjadi lebih bergantung pada teknologi kecerdasan buatan dalam bekerja dan berinteraksi.'\nKalimat di atas menunjukkan salah satu ciri kebahasaan teks eksplanasi kompleks, yaitu penggunaan...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Konjungsi kausalitas"
+        },
+        {
+          "id": "B",
+          "text": "Kalimat pasif"
+        },
+        {
+          "id": "C",
+          "text": "Perbandingan atau analogi"
+        },
+        {
+          "id": "D",
+          "text": "Pernyataan retoris"
+        }
+      ],
+      "primary_competency": "BI12-C04-C",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Ciri Kebahasaan Teks Eksplanasi (Konjungsi Kausalitas):\n   Teks eksplanasi menguraikan rantai peristiwa berbasis hubungan sebab-akibat. Oleh sebab itu, konjungsi kausalitas (baik intrakalimat maupun antarkalimat) menjadi penanda leksikogramatikal utama. Konjungsi kausalitas berfungsi menghubungkan klausul penyebab dengan klausul dampak/akibat yang ditimbulkannya. Contoh konjungsi kausalitas antara lain: 'karena', 'sebab', 'sehingga', 'akibatnya', dan 'oleh karena itu'.\n\n2. Pembahasan Kunci Jawaban:\n   - Konjungsi kausalitas (BENAR): Frasa 'Oleh karena itu' pada awal kalimat stimulus merupakan konjungsi antarkalimat yang menyatakan konsekuensi logis atau akibat dari rentetan eksplanasi sebelumnya. Ciri kebahasaan ini secara tepat merepresentasikan konjungsi kausalitas.\n\n3. Pembahasan Distraktor:\n   - Kalimat pasif (Salah): Kalimat pasif ditandai oleh predikat verba berprefiks di- atau ter- di mana subjek dikenai tindakan; kalimat pada stimulus berstruktur aktif intransitif ('masyarakat menjadi lebih bergantung...').\n   - Perbandingan atau analogi (Salah): Perbandingan atau analogi merupakan gaya bahasa yang menyamakan dua hal berbeda untuk memudahkan pemahaman; kalimat stimulus tidak memuat unsur perumpamaan atau analogi.\n   - Pernyataan retoris (Salah): Pernyataan retoris berbentuk kalimat tanya penegas yang tidak menuntut jawaban langsung; kalimat stimulus adalah kalimat berita (deklaratif).",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "BI12-C04-C-2494",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Untuk menjelaskan cara kerja AI yang abstrak kepada pembaca umum, penulis sering kali menggunakan gaya bahasa berupa...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Perbandingan atau analogi"
+        },
+        {
+          "id": "B",
+          "text": "Sindiran tajam (Sarkasme)"
+        },
+        {
+          "id": "C",
+          "text": "Gaya bahasa hiperbola (melebih-lebihkan)"
+        },
+        {
+          "id": "D",
+          "text": "Gaya bahasa santai dan prokem"
+        }
+      ],
+      "primary_competency": "BI12-C04-C",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Gaya Bahasa Analogi dalam Penjelasan Ilmiah Populer:\n   Teks eksplanasi kompleks yang membedah topik teknologi mutakhir (seperti kecerdasan buatan, algoritma jaringan saraf tiruan, atau komputasi kuantum) sering kali berhadapan dengan konsep-konsep abstrak yang sukar dipahami pembaca awam. Untuk menjembatani hal ini, penulis menerapkan gaya bahasa perbandingan atau analogi (Buku Siswa hlm. 157). Melalui analogi, cara kerja mesin yang rumit disepadankan dengan objek atau pengalaman konkret sehari-hari yang sudah akrab bagi pembaca (misalnya menganalogikan memori komputer dengan perpustakaan mini).\n\n2. Pembahasan Kunci Jawaban:\n   - Perbandingan atau analogi (BENAR): Penggunaan analogi merupakan strategi retoris pedagogis yang sah dan dianjurkan dalam teks eksplanasi populer untuk mendemistifikasi mekanisme abstrak sehingga lebih mudah divisualisasikan dan dipahami secara intuitif.\n\n3. Pembahasan Distraktor:\n   - Sindiran tajam (Sarkasme) (Salah): Sarkasme adalah gaya bahasa sindiran yang bermuatan cemoohan atau kepahitan; penggunaannya melanggar prinsip keobjektifan dan etika tulisan ilmiah.\n   - Gaya bahasa hiperbola (melebih-lebihkan) (Salah): Hiperbola mendistorsi fakta melalui pernyataan yang dilebih-lebihkan melampaui batas kewajaran, bertentangan secara diametral dengan akurasi data eksplanasi ilmiah.\n   - Gaya bahasa santai dan prokem (Salah): Laras bahasa prokem/slang merusak formalitas dan kredibilitas teks eksplanasi akademik.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "analyze",
+      "question_id": "BI12-C04-C-8321",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Dalam teks eksplanasi ilmiah seperti kecerdasan buatan, mengapa penulis harus menggunakan gaya bahasa yang 'Objektif dan Informatif' alih-alih emosional?",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Agar penulis dapat menyajikan data, fakta, dan proses secara langsung dan akurat tanpa dipengaruhi opini pribadi."
+        },
+        {
+          "id": "B",
+          "text": "Agar tulisan menjadi lebih panjang dan terlihat seperti karya tulis mahasiswa."
+        },
+        {
+          "id": "C",
+          "text": "Agar pembaca merasa takut dan mewaspadai perkembangan teknologi AI."
+        },
+        {
+          "id": "D",
+          "text": "Karena aturan dalam sastra melarang adanya unsur emosi dalam menulis kalimat."
+        }
+      ],
+      "primary_competency": "BI12-C04-C",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Laras Bahasa Objektif dan Informatif dalam Sains:\n   Karakteristik primer teks eksplanasi ilmiah adalah netralitas epistemik. Tujuan komunikatif eksplanasi adalah menguraikan 'bagaimana' dan 'mengapa' suatu proses berlangsung berdasarkan hukum alam, kaidah logika, atau data teknologi empiris. Oleh sebab itu, laras bahasa yang dipakai wajib objektif dan informatif (Buku Siswa hlm. 156-157). Penulis membatasi kehadiran sikap subjektif atau nada sentimental agar fakta dan pembuktian sains dapat dinilai pembaca secara jernih dan rasional.\n\n2. Pembahasan Kunci Jawaban:\n   - Agar penulis dapat menyajikan data, fakta, dan proses secara langsung dan akurat tanpa dipengaruhi opini pribadi (BENAR): Penggunaan gaya bahasa objektif menjamin integritas informasi teks sehingga data yang disampaikan bebas dari bias emosional, kepentingan persuasif sepihak, atau prasangka personal penulis.\n\n3. Pembahasan Distraktor:\n   - Agar tulisan menjadi lebih panjang dan terlihat seperti karya tulis mahasiswa (Salah): Tulisan ilmiah mengutamakan keefektifan dan kepadatan makna (lugas), bukan memperpanjang teks tanpa substansi.\n   - Agar pembaca merasa takut dan mewaspadai perkembangan teknologi AI (Salah): Membangkitkan rasa takut adalah bentuk manipulasi emosi pembaca (fear-mongering) yang dilarang dalam penulisan eksplanasi ilmiah objektif.\n   - Karena aturan dalam sastra melarang adanya unsur emosi dalam menulis kalimat (Salah): Teks eksplanasi merupakan teks nonsastra (faktual-ilmiah); alasan objektivitas berakar pada metodologi keilmuan, bukan aturan teori sastra fiksi.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "BI12-C04-K13-8518",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Teks eksplanasi menurut kaidah K13 banyak menggunakan istilah teknis dan kalimat pasif. Manakah dari kalimat pasif berikut yang paling lazim ditemukan dalam teks eksplanasi ilmiah?",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Energi surya diubah menjadi energi listrik melalui panel surya."
+        },
+        {
+          "id": "B",
+          "text": "Para ilmuwan mengubah energi surya menjadi energi listrik."
+        },
+        {
+          "id": "C",
+          "text": "Kita dapat mengubah energi surya menjadi energi listrik."
+        },
+        {
+          "id": "D",
+          "text": "Energi surya sangat mudah untuk kita ubah menjadi energi listrik."
+        }
+      ],
+      "primary_competency": "BI12-C04-K13",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kalimat Pasif Ilmiah dalam Teks Eksplanasi (K13 KD 3.8):\n   Dalam kaidah kebahasaan teks eksplanasi ilmiah Kurikulum 2013 (KD 3.8), kalimat pasif (passive voice) memegang peranan esensial. Teks eksplanasi berorientasi pada fenomena, benda, atau proses alami/teknologis, bukan pada pelaku manusia (agen). Penggunaan kalimat pasif dengan verba berafiks di-kan atau di- berfungsi menempatkan fenomena yang diamati sebagai subjek kalimat di posisi awal (topikalisasi), sehingga laporan bersifat netral, ilmiah, dan tidak egosentris.\n\n2. Pembahasan Kunci Jawaban:\n   - Energi surya diubah menjadi energi listrik melalui panel surya (BENAR): Kalimat ini berstruktur pasif kanonikal ('diubah') dengan menempatkan fenomena 'Energi surya' sebagai subjek utama di awal kalimat dan instrumen proses ('melalui panel surya') sebagai keterangan cara. Bentuk ini adalah representasi paling lazim dan baku dalam teks eksplanasi sains.\n\n3. Pembahasan Distraktor:\n   - Para ilmuwan mengubah energi surya menjadi energi listrik (Salah): Merupakan kalimat aktif transitif yang berfokus pada subjek manusia pelaku ('Para ilmuwan'), bukan pada proses perubahan fisik energi itu sendiri.\n   - Kita dapat mengubah energi surya menjadi energi listrik (Salah): Merupakan kalimat aktif yang melibatkan sudut pandang orang pertama jamak ('Kita'), sehingga mengurangi kadar keformalan teks ilmiah.\n   - Energi surya sangat mudah untuk kita ubah menjadi energi listrik (Salah): Merupakan bentuk pasif persona yang berbelit-belit dan memuat opini evaluatif ('sangat mudah') yang tidak objektif.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    }
+  ],
+  "curriculum": [
+    "K13",
+    "Merdeka"
+  ],
+  "grade": 12,
+  "competencies": [
+    {
+      "name": "Kompetensi BI12-C04-A",
+      "question_count": 3,
+      "competency_id": "BI12-C04-A"
+    },
+    {
+      "name": "Kompetensi BI12-C04-K13",
+      "question_count": 1,
+      "competency_id": "BI12-C04-K13"
+    },
+    {
+      "name": "Kompetensi BI12-C04-C",
+      "question_count": 3,
+      "competency_id": "BI12-C04-C"
+    },
+    {
+      "name": "Kompetensi BI12-C04-B",
+      "question_count": 3,
+      "competency_id": "BI12-C04-B"
+    }
+  ],
+  "subject": "bahasa-indonesia",
+  "chapter": "BI12-C04",
+  "status": "active",
+  "content_version": 1,
+  "pool_id": "POOL-BAHASA-INDONESIA-BI12-C04"
 }

@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_V1.1_RECONCILED",
+  "dataset": "World 1 KM Standard Chapter 4 Original Content - Misi 13 v1.0",
+  "purpose": "Canonical v1.1 reconciled dataset for World 1 Bahasa Indonesia Chapter 4 Misi 13.",
+  "chapter_id": "BI12-C04",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "KM04-B1",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-B",
+      "skill": "understand",
+      "question": "Secara umum, struktur teks eksplanasi kompleks terdiri atas tiga bagian utama, yaitu...",
+      "options": [
+        "Pernyataan Umum, Deretan Penjelas, dan Interpretasi",
+        "Tesis, Argumentasi, dan Penegasan Ulang",
+        "Orientasi, Komplikasi, dan Resolusi",
+        "Abstraksi, Orientasi, dan Koda"
+      ],
+      "answer": "Pernyataan Umum, Deretan Penjelas, dan Interpretasi",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Struktur Makro Teks Eksplanasi Kompleks:\n   Teks eksplanasi bertujuan menerangkan proses terjadinya suatu fenomena alam, sosial, atau teknologi secara kausal. Struktur baku teks eksplanasi terdiri atas:\n   a. Pernyataan Umum (Identifikasi Fenomena): mengenalkan fenomena yang akan diterangkan latar belakang keberadaannya.\n   b. Deretan Penjelas (Rangkaian Sebab-Akibat): memaparkan proses, tahapan runtut, atau hubungan kausalitas mengapa dan bagaimana fenomena itu terjadi.\n   c. Interpretasi (Ulasan/Simpulan): memberikan tinjauan akhir, intisari simpulan, atau konsekuensi dari fenomena yang telah dijelaskan.\n\n2. Pembahasan Kunci Jawaban:\n   - Pernyataan Umum, Deretan Penjelas, dan Interpretasi (BENAR): Ketiga tahapan ini merupakan struktur standar genre teks eksplanasi yang memandu pembaca dari pengenalan fenomena, penjabaran proses kausalitas, hingga simpulan interpretatif.\n\n3. Pembahasan Distraktor:\n   - Tesis, Argumentasi, dan Penegasan Ulang (Salah): Merupakan struktur genre teks eksposisi yang berfokus meyakinkan pembaca mengenai suatu sudut pandang pendapat.\n   - Orientasi, Komplikasi, dan Resolusi (Salah): Merupakan struktur genre teks narasi/cerpen/novel yang berpusat pada perkembangan alur konflik tokoh.\n   - Abstraksi, Orientasi, dan Koda (Salah): Merupakan struktur genre teks anekdot yang menyajikan cerita rekaan lucu berisi sindiran publik.",
+      "source": {
+        "student_book": {
+          "pages": "154-160",
+          "section": "Bab 4, Subbab D: Analisis Struktur Teks, Gaya Bahasa, dan Tujuan Teks Eksplanasi Kompleks"
+        },
+        "teacher_guide": {
+          "pages": "198-206",
+          "section": "Bab 4, Subbab D: Panduan Pembelajaran Aktivitas 4.7 & 4.8"
+        }
+      },
+      "provenance": "Soal pemahaman struktur baku teks eksplanasi kompleks berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 4.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C04-B",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C04-D: Menganalisis struktur teks, gaya bahasa, dan tujuan teks eksplanasi kompleks",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 154-160 (Subbab D: Analisis Struktur Teks, Gaya Bahasa, dan Tujuan Teks Eksplanasi Kompleks)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 198-206 (Subbab D: Panduan Pembelajaran Aktivitas 4.7 & 4.8)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal pemahaman struktur makro teks eksplanasi disusun mandiri merujuk Buku Siswa hlm. 154."
+      }
+    },
+    {
+      "id": "KM04-B2",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-B",
+      "skill": "understand",
+      "question": "Dalam model refleksi 5R, tahapan di mana pembaca menghubungkan gagasan dalam teks dengan pengalaman pribadi atau fenomena sosial yang pernah mereka alami disebut tahap...",
+      "options": [
+        "Relating (Mengaitkan)",
+        "Responding (Menanggapi)",
+        "Reasoning (Menalar)",
+        "Reporting (Melaporkan)"
+      ],
+      "answer": "Relating (Mengaitkan)",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kerangka Refleksi Model 5R:\n   Model refleksi 5R (Bain dkk., diadaptasi dalam Kurikulum Merdeka hlm. 150-151) membimbing peserta didik berpikir kritis melalui lima jenjang refleksi:\n   a. Reporting (Melaporkan): mendeskripsikan ulang isu atau fakta teks.\n   b. Responding (Menanggapi): memberikan reaksi emosional atau opini awal.\n   c. Relating (Mengaitkan): menghubungkan isu teks dengan pengalaman pribadi, pengetahuan terdahulu, atau fenomena nyata di sekitarnya.\n   d. Reasoning (Menalar): menganalisis alasan mendalam mengapa peristiwa itu terjadi dan dampaknya.\n   e. Reconstructing (Membangun Kembali): merumuskan rencana tindakan, pemahaman baru, atau rekomendasi masa depan.\n\n2. Pembahasan Kunci Jawaban:\n   - Relating (Mengaitkan) (BENAR): Deskripsi pertanyaan mengenai aktivitas menghubungkan gagasan bacaan dengan pengalaman pribadi atau kondisi fenomena sosial yang dialami pembaca merupakan definisi definitif dari tahap 'Relating' (Mengaitkan).\n\n3. Pembahasan Distraktor:\n   - Responding (Menanggapi) (Salah): Tahap Responding berfokus pada tanggapan impresif, reaksi perasaan (setuju/tidak setuju), atau keheranan awal pembaca terhadap isi teks.\n   - Reasoning (Menalar) (Salah): Tahap Reasoning mengeksplorasi telaah logis, penjelasan teoretis, dan bukti-bukti mengapa isu tersebut memiliki signifikansi ilmiah/sosial.\n   - Reporting (Melaporkan) (Salah): Tahap Reporting hanya memaparkan kembali apa yang tertulis dalam teks secara faktual tanpa menyambungkannya dengan konteks diri sendiri.",
+      "source": {
+        "student_book": {
+          "pages": "149-153",
+          "section": "Bab 4, Subbab C: Merefleksi Gagasan dan Pandangan Berdasarkan Kaidah Logika Berpikir dari Teks Eksplanasi Kompleks"
+        },
+        "teacher_guide": {
+          "pages": "193-198",
+          "section": "Bab 4, Subbab C: Panduan Pembelajaran Aktivitas 4.6"
+        }
+      },
+      "provenance": "Soal pemahaman tahapan model refleksi 5R teks eksplanasi berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 4.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C04-B",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C04-C: Merefleksi gagasan dan pandangan berdasarkan kaidah logika berpikir menggunakan model refleksi 5R",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 149-153 (Subbab C: Merefleksi Gagasan dan Pandangan Berdasarkan Kaidah Logika Berpikir dari Teks Eksplanasi Kompleks)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 193-198 (Subbab C: Panduan Pembelajaran Aktivitas 4.6)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal karakteristik tahap Relating pada model refleksi 5R disusun mandiri merujuk Buku Siswa hlm. 150-151."
+      }
+    },
+    {
+      "id": "KM04-B3",
+      "chapter_id": "BI12-C04",
+      "topic_id": "BI12-C04-B",
+      "skill": "understand",
+      "question": "Tahap terakhir dalam model refleksi 5R adalah 'Reconstructing' (Membangun Kembali). Apa yang dilakukan pembaca pada tahap ini?",
+      "options": [
+        "Mengembangkan pemahaman baru, memberikan saran, atau menyusun ulang gagasan berdasarkan hasil refleksi.",
+        "Menyebutkan kembali isi teks secara objektif tanpa menambahkan opini pribadi.",
+        "Menilai secara logis apakah argumen penulis kuat dan akurat.",
+        "Memberikan kesan emosional pertama terhadap bacaan (setuju/tidak setuju)."
+      ],
+      "answer": "Mengembangkan pemahaman baru, memberikan saran, atau menyusun ulang gagasan berdasarkan hasil refleksi.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Tahap Puncak Model Refleksi 5R (Reconstructing):\n   Dalam model refleksi 5R, 'Reconstructing' (Membangun Kembali) merupakan tahapan tertinggi dari proses metakognitif. Pada tahap ini, pembaca tidak lagi hanya menelaah apa yang telah terjadi atau mengapa hal itu terjadi, melainkan menarik pembelajaran bermakna untuk masa depan. Aktivitas inti pada tahap Reconstructing adalah merumuskan rencana aksi baru, memberikan solusi alternatif, mengadaptasi strategi berpikir, atau menyusun kembali pemahaman yang lebih komprehensif.\n\n2. Pembahasan Kunci Jawaban:\n   - Mengembangkan pemahaman baru, memberikan saran, atau menyusun ulang gagasan berdasarkan hasil refleksi (BENAR): Pada tahap Reconstructing, pembaca memproyeksikan wawasan yang diperolehnya ke dalam rekonstruksi gagasan, rekomendasi solutif, atau pemikiran baru untuk menghadapi fenomena serupa di masa depan.\n\n3. Pembahasan Distraktor:\n   - Menyebutkan kembali isi teks secara objektif tanpa menambahkan opini pribadi (Salah): Merupakan aktivitas pada tahap pertama, yaitu Reporting (Melaporkan).\n   - Menilai secara logis apakah argumen penulis kuat dan akurat (Salah): Merupakan fokus aktivitas analitis pada tahap keempat, yaitu Reasoning (Menalar).\n   - Memberikan kesan emosional pertama terhadap bacaan (setuju/tidak setuju) (Salah): Merupakan karakteristik respons awal pada tahap kedua, yaitu Responding (Menanggapi).",
+      "source": {
+        "student_book": {
+          "pages": "149-153",
+          "section": "Bab 4, Subbab C: Merefleksi Gagasan dan Pandangan Berdasarkan Kaidah Logika Berpikir dari Teks Eksplanasi Kompleks"
+        },
+        "teacher_guide": {
+          "pages": "193-198",
+          "section": "Bab 4, Subbab C: Panduan Pembelajaran Aktivitas 4.6"
+        }
+      },
+      "provenance": "Soal pemahaman karakteristik tahap Reconstructing model refleksi 5R berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 4.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C04-B",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C04-C: Merefleksi gagasan dan pandangan berdasarkan kaidah logika berpikir menggunakan model refleksi 5R",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 149-153 (Subbab C: Merefleksi Gagasan dan Pandangan Berdasarkan Kaidah Logika Berpikir dari Teks Eksplanasi Kompleks)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 193-198 (Subbab C: Panduan Pembelajaran Aktivitas 4.6)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal konsep tahap Reconstructing pada model refleksi 5R disusun mandiri merujuk Buku Siswa hlm. 151."
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "BI12-W01-CH04-M14-V1.1-REV",
+  "base_batch": "phase-3/world-1-km-chapter-4-misi-14-canonical-v1.0.json",
+  "status": "qa_pending",
+  "purpose": "Deterministic revision overlay for Chapter 4 Misi 14 (Subbab D, Kaidah Kebahasaan Teks Eksplanasi, dan Jembatan K13: Konjungsi Kausalitas, Gaya Bahasa Analogi Konsep Abstrak, Laras Bahasa Objektif, dan Kalimat Pasif Ilmiah): upgrading explanations to standard 3-step pedagogical structure with distractor deconstruction, calibrating Bloom cognitive levels (C2 Understand for causal conjunctions, C3 Apply for analogical explanation, C4 Analyze for objective register purpose, C3 Apply for K13 passive voice transformation), resolving teacher guide page locators to verified BG pages 198-206, and adding Decision 009 compliant source_basis metadata.",
+  "revisions": [
+    {
+      "id": "KM04-C1",
+      "change_type": "cognitive_calibration_pedagogical_and_source_revision",
+      "reason": "Penyempurnaan pembahasan menjadi struktur 3 langkah pedagogis (Analisis Konsep Konjungsi Kausalitas Teks Eksplanasi, Pembahasan Kunci, Dekonstruksi Distraktor), kalibrasi tingkat kognitif dari analyze menjadi understand (C2) karena mengidentifikasi jenis peranti kohesi gramatikal konjungsi kausalitas 'Oleh karena itu' (Buku Siswa hlm. 155), penyelarasan locator Buku Siswa (hlm. 154-160) dan Buku Guru (hlm. 198-206), serta penambahan metadata source_basis terverifikasi Kurikulum Merdeka Subbab D.",
+      "before_question": "Bacalah kalimat berikut: 'Oleh karena itu, masyarakat menjadi lebih bergantung pada teknologi kecerdasan buatan dalam bekerja dan berinteraksi.'\nKalimat di atas menunjukkan salah satu ciri kebahasaan teks eksplanasi kompleks, yaitu penggunaan...",
+      "after_question": "Bacalah kalimat berikut: 'Oleh karena itu, masyarakat menjadi lebih bergantung pada teknologi kecerdasan buatan dalam bekerja dan berinteraksi.'\nKalimat di atas menunjukkan salah satu ciri kebahasaan teks eksplanasi kompleks, yaitu penggunaan...",
+      "answer": "Konjungsi kausalitas",
+      "replacement_options": [
+        "Konjungsi kausalitas",
+        "Kalimat pasif",
+        "Perbandingan atau analogi",
+        "Pernyataan retoris"
+      ],
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Ciri Kebahasaan Teks Eksplanasi (Konjungsi Kausalitas):\n   Teks eksplanasi menguraikan rantai peristiwa berbasis hubungan sebab-akibat. Oleh sebab itu, konjungsi kausalitas (baik intrakalimat maupun antarkalimat) menjadi penanda leksikogramatikal utama. Konjungsi kausalitas berfungsi menghubungkan klausul penyebab dengan klausul dampak/akibat yang ditimbulkannya. Contoh konjungsi kausalitas antara lain: 'karena', 'sebab', 'sehingga', 'akibatnya', dan 'oleh karena itu'.\n\n2. Pembahasan Kunci Jawaban:\n   - Konjungsi kausalitas (BENAR): Frasa 'Oleh karena itu' pada awal kalimat stimulus merupakan konjungsi antarkalimat yang menyatakan konsekuensi logis atau akibat dari rentetan eksplanasi sebelumnya. Ciri kebahasaan ini secara tepat merepresentasikan konjungsi kausalitas.\n\n3. Pembahasan Distraktor:\n   - Kalimat pasif (Salah): Kalimat pasif ditandai oleh predikat verba berprefiks di- atau ter- di mana subjek dikenai tindakan; kalimat pada stimulus berstruktur aktif intransitif ('masyarakat menjadi lebih bergantung...').\n   - Perbandingan atau analogi (Salah): Perbandingan atau analogi merupakan gaya bahasa yang menyamakan dua hal berbeda untuk memudahkan pemahaman; kalimat stimulus tidak memuat unsur perumpamaan atau analogi.\n   - Pernyataan retoris (Salah): Pernyataan retoris berbentuk kalimat tanya penegas yang tidak menuntut jawaban langsung; kalimat stimulus adalah kalimat berita (deklaratif).",
+      "source": {
+        "student_book": {
+          "pages": "154-160",
+          "section": "Bab 4, Subbab D: Analisis Struktur Teks, Gaya Bahasa, dan Tujuan Teks Eksplanasi Kompleks"
+        },
+        "teacher_guide": {
+          "pages": "198-206",
+          "section": "Bab 4, Subbab D: Panduan Pembelajaran Aktivitas 4.7 & 4.8"
+        }
+      },
+      "provenance": "Soal pemahaman ciri kebahasaan konjungsi kausalitas teks eksplanasi berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 4.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C04-D: Menganalisis ciri kebahasaan dan konjungsi pada teks eksplanasi kompleks",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 154-160 (Subbab D: Analisis Struktur Teks, Gaya Bahasa, dan Tujuan Teks Eksplanasi Kompleks)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 198-206 (Subbab D: Panduan Pembelajaran Aktivitas 4.7 & 4.8)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal identifikasi konjungsi kausalitas pada kalimat eksplanasi teknologi AI disusun mandiri merujuk Buku Siswa hlm. 155."
+      }
+    },
+    {
+      "id": "KM04-C2",
+      "change_type": "cognitive_calibration_pedagogical_and_source_revision",
+      "reason": "Penyempurnaan pembahasan menjadi struktur 3 langkah pedagogis (Analisis Konsep Gaya Bahasa Analogi dalam Teks Eksplanasi, Pembahasan Kunci, Dekonstruksi Distraktor), kalibrasi tingkat kognitif dari analyze menjadi apply (C3) karena menguji penerapan strategi retorika analogi/perbandingan dalam menyederhanakan mekanisme teknis AI yang rumit (Buku Siswa hlm. 156-158), penyelarasan locator Buku Siswa (hlm. 154-160) dan Buku Guru (hlm. 198-206), serta penambahan metadata source_basis terverifikasi Kurikulum Merdeka Subbab D.",
+      "before_question": "Untuk menjelaskan cara kerja AI yang abstrak kepada pembaca umum, penulis sering kali menggunakan gaya bahasa berupa...",
+      "after_question": "Untuk menjelaskan cara kerja AI yang abstrak kepada pembaca umum, penulis sering kali menggunakan gaya bahasa berupa...",
+      "answer": "Perbandingan atau analogi",
+      "replacement_options": [
+        "Perbandingan atau analogi",
+        "Sindiran tajam (Sarkasme)",
+        "Gaya bahasa hiperbola (melebih-lebihkan)",
+        "Gaya bahasa santai dan prokem"
+      ],
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Gaya Bahasa Analogi dalam Penjelasan Ilmiah Populer:\n   Teks eksplanasi kompleks yang membedah topik teknologi mutakhir (seperti kecerdasan buatan, algoritma jaringan saraf tiruan, atau komputasi kuantum) sering kali berhadapan dengan konsep-konsep abstrak yang sukar dipahami pembaca awam. Untuk menjembatani hal ini, penulis menerapkan gaya bahasa perbandingan atau analogi (Buku Siswa hlm. 157). Melalui analogi, cara kerja mesin yang rumit disepadankan dengan objek atau pengalaman konkret sehari-hari yang sudah akrab bagi pembaca (misalnya menganalogikan memori komputer dengan perpustakaan mini).\n\n2. Pembahasan Kunci Jawaban:\n   - Perbandingan atau analogi (BENAR): Penggunaan analogi merupakan strategi retoris pedagogis yang sah dan dianjurkan dalam teks eksplanasi populer untuk mendemistifikasi mekanisme abstrak sehingga lebih mudah divisualisasikan dan dipahami secara intuitif.\n\n3. Pembahasan Distraktor:\n   - Sindiran tajam (Sarkasme) (Salah): Sarkasme adalah gaya bahasa sindiran yang bermuatan cemoohan atau kepahitan; penggunaannya melanggar prinsip keobjektifan dan etika tulisan ilmiah.\n   - Gaya bahasa hiperbola (melebih-lebihkan) (Salah): Hiperbola mendistorsi fakta melalui pernyataan yang dilebih-lebihkan melampaui batas kewajaran, bertentangan secara diametral dengan akurasi data eksplanasi ilmiah.\n   - Gaya bahasa santai dan prokem (Salah): Laras bahasa prokem/slang merusak formalitas dan kredibilitas teks eksplanasi akademik.",
+      "source": {
+        "student_book": {
+          "pages": "154-160",
+          "section": "Bab 4, Subbab D: Analisis Struktur Teks, Gaya Bahasa, dan Tujuan Teks Eksplanasi Kompleks"
+        },
+        "teacher_guide": {
+          "pages": "198-206",
+          "section": "Bab 4, Subbab D: Panduan Pembelajaran Aktivitas 4.7 & 4.8"
+        }
+      },
+      "provenance": "Soal penerapan gaya bahasa analogi teks eksplanasi kompleks berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 4.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C04-D: Menganalisis gaya bahasa (analogi/perbandingan) dalam teks eksplanasi kompleks",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 154-160 (Subbab D: Analisis Struktur Teks, Gaya Bahasa, dan Tujuan Teks Eksplanasi Kompleks)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 198-206 (Subbab D: Panduan Pembelajaran Aktivitas 4.7 & 4.8)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal penerapan gaya bahasa perbandingan/analogi sains populer disusun mandiri merujuk Buku Siswa hlm. 156-158."
+      }
+    },
+    {
+      "id": "KM04-C3",
+      "change_type": "pedagogical_and_source_basis_revision",
+      "reason": "Penyempurnaan pembahasan menjadi struktur 3 langkah pedagogis (Analisis Konsep Laras Bahasa Objektif dan Informatif, Pembahasan Kunci, Dekonstruksi Distraktor), konfirmasi tingkat kognitif analyze (C4) karena menganalisis fungsi epistemik objektivitas laras bahasa ilmiah terhadap kepercayaan pembaca, penyelarasan locator Buku Siswa (hlm. 154-160) dan Buku Guru (hlm. 198-206), serta penambahan metadata source_basis terverifikasi Kurikulum Merdeka Subbab D.",
+      "before_question": "Dalam teks eksplanasi ilmiah seperti kecerdasan buatan, mengapa penulis harus menggunakan gaya bahasa yang 'Objektif dan Informatif' alih-alih emosional?",
+      "after_question": "Dalam teks eksplanasi ilmiah seperti kecerdasan buatan, mengapa penulis harus menggunakan gaya bahasa yang 'Objektif dan Informatif' alih-alih emosional?",
+      "answer": "Agar penulis dapat menyajikan data, fakta, dan proses secara langsung dan akurat tanpa dipengaruhi opini pribadi.",
+      "replacement_options": [
+        "Agar penulis dapat menyajikan data, fakta, dan proses secara langsung dan akurat tanpa dipengaruhi opini pribadi.",
+        "Agar tulisan menjadi lebih panjang dan terlihat seperti karya tulis mahasiswa.",
+        "Agar pembaca merasa takut dan mewaspadai perkembangan teknologi AI.",
+        "Karena aturan dalam sastra melarang adanya unsur emosi dalam menulis kalimat."
+      ],
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Laras Bahasa Objektif dan Informatif dalam Sains:\n   Karakteristik primer teks eksplanasi ilmiah adalah netralitas epistemik. Tujuan komunikatif eksplanasi adalah menguraikan 'bagaimana' dan 'mengapa' suatu proses berlangsung berdasarkan hukum alam, kaidah logika, atau data teknologi empiris. Oleh sebab itu, laras bahasa yang dipakai wajib objektif dan informatif (Buku Siswa hlm. 156-157). Penulis membatasi kehadiran sikap subjektif atau nada sentimental agar fakta dan pembuktian sains dapat dinilai pembaca secara jernih dan rasional.\n\n2. Pembahasan Kunci Jawaban:\n   - Agar penulis dapat menyajikan data, fakta, dan proses secara langsung dan akurat tanpa dipengaruhi opini pribadi (BENAR): Penggunaan gaya bahasa objektif menjamin integritas informasi teks sehingga data yang disampaikan bebas dari bias emosional, kepentingan persuasif sepihak, atau prasangka personal penulis.\n\n3. Pembahasan Distraktor:\n   - Agar tulisan menjadi lebih panjang dan terlihat seperti karya tulis mahasiswa (Salah): Tulisan ilmiah mengutamakan keefektifan dan kepadatan makna (lugas), bukan memperpanjang teks tanpa substansi.\n   - Agar pembaca merasa takut dan mewaspadai perkembangan teknologi AI (Salah): Membangkitkan rasa takut adalah bentuk manipulasi emosi pembaca (fear-mongering) yang dilarang dalam penulisan eksplanasi ilmiah objektif.\n   - Karena aturan dalam sastra melarang adanya unsur emosi dalam menulis kalimat (Salah): Teks eksplanasi merupakan teks nonsastra (faktual-ilmiah); alasan objektivitas berakar pada metodologi keilmuan, bukan aturan teori sastra fiksi.",
+      "source": {
+        "student_book": {
+          "pages": "154-160",
+          "section": "Bab 4, Subbab D: Analisis Struktur Teks, Gaya Bahasa, dan Tujuan Teks Eksplanasi Kompleks"
+        },
+        "teacher_guide": {
+          "pages": "198-206",
+          "section": "Bab 4, Subbab D: Panduan Pembelajaran Aktivitas 4.7 & 4.8"
+        }
+      },
+      "provenance": "Soal analisis fungsi laras bahasa objektif-informatif teks eksplanasi ilmiah berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 4.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C04-D: Menganalisis gaya bahasa objektif dan informatif serta tujuan teks eksplanasi kompleks",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 154-160 (Subbab D: Analisis Struktur Teks, Gaya Bahasa, dan Tujuan Teks Eksplanasi Kompleks)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 198-206 (Subbab D: Panduan Pembelajaran Aktivitas 4.7 & 4.8)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal analisis fungsi laras bahasa objektif-informatif teks eksplanasi ilmiah disusun mandiri merujuk Buku Siswa hlm. 156-158."
+      }
+    },
+    {
+      "id": "K13-C04-EKSPLANASI-01",
+      "change_type": "cognitive_calibration_pedagogical_and_source_revision",
+      "reason": "Penyempurnaan pembahasan menjadi struktur 3 langkah pedagogis (Analisis Konsep Kalimat Pasif Ilmiah Teks Eksplanasi, Pembahasan Kunci, Dekonstruksi Distraktor), kalibrasi tingkat kognitif dari understand menjadi apply (C3) karena menguji penerapan prinsip pembentukan kalimat pasif ilmiah berfokus proses fenomena, serta penambahan metadata source_basis terverifikasi Kurikulum 2013 Revisi SMA KD 3.8.",
+      "before_question": "Teks eksplanasi menurut kaidah K13 banyak menggunakan istilah teknis dan kalimat pasif. Manakah dari kalimat pasif berikut yang paling lazim ditemukan dalam teks eksplanasi ilmiah?",
+      "after_question": "Teks eksplanasi menurut kaidah K13 banyak menggunakan istilah teknis dan kalimat pasif. Manakah dari kalimat pasif berikut yang paling lazim ditemukan dalam teks eksplanasi ilmiah?",
+      "answer": "Energi surya diubah menjadi energi listrik melalui panel surya.",
+      "replacement_options": [
+        "Energi surya diubah menjadi energi listrik melalui panel surya.",
+        "Para ilmuwan mengubah energi surya menjadi energi listrik.",
+        "Kita dapat mengubah energi surya menjadi energi listrik.",
+        "Energi surya sangat mudah untuk kita ubah menjadi energi listrik."
+      ],
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kalimat Pasif Ilmiah dalam Teks Eksplanasi (K13 KD 3.8):\n   Dalam kaidah kebahasaan teks eksplanasi ilmiah Kurikulum 2013 (KD 3.8), kalimat pasif (passive voice) memegang peranan esensial. Teks eksplanasi berorientasi pada fenomena, benda, atau proses alami/teknologis, bukan pada pelaku manusia (agen). Penggunaan kalimat pasif dengan verba berafiks di-kan atau di- berfungsi menempatkan fenomena yang diamati sebagai subjek kalimat di posisi awal (topikalisasi), sehingga laporan bersifat netral, ilmiah, dan tidak egosentris.\n\n2. Pembahasan Kunci Jawaban:\n   - Energi surya diubah menjadi energi listrik melalui panel surya (BENAR): Kalimat ini berstruktur pasif kanonikal ('diubah') dengan menempatkan fenomena 'Energi surya' sebagai subjek utama di awal kalimat dan instrumen proses ('melalui panel surya') sebagai keterangan cara. Bentuk ini adalah representasi paling lazim dan baku dalam teks eksplanasi sains.\n\n3. Pembahasan Distraktor:\n   - Para ilmuwan mengubah energi surya menjadi energi listrik (Salah): Merupakan kalimat aktif transitif yang berfokus pada subjek manusia pelaku ('Para ilmuwan'), bukan pada proses perubahan fisik energi itu sendiri.\n   - Kita dapat mengubah energi surya menjadi energi listrik (Salah): Merupakan kalimat aktif yang melibatkan sudut pandang orang pertama jamak ('Kita'), sehingga mengurangi kadar keformalan teks ilmiah.\n   - Energi surya sangat mudah untuk kita ubah menjadi energi listrik (Salah): Merupakan bentuk pasif persona yang berbelit-belit dan memuat opini evaluatif ('sangat mudah') yang tidak objektif.",
+      "source": {
+        "student_book": {
+          "pages": "N/A",
+          "section": "K13 SMA Kelas XI - KD 3.8 Kebahasaan Teks Eksplanasi (Verba Pasif & Istilah Teknis)"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Silabus K13 SMA Kelas XI - Analisis Kebahasaan Teks Eksplanasi Ilmiah"
+        }
+      },
+      "provenance": "Soal jembatan kurikulum K13 materi unsur kebahasaan kalimat pasif ilmiah teks eksplanasi SMA.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum 2013 Revisi Jenjang SMA (Permendikbud No. 37 Tahun 2018)",
+        "competency_target": "KD 3.8: Menganalisis struktur dan kebahasaan teks eksplanasi (fokus: kalimat pasif ilmiah dan fokus proses)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Indonesia SMA/MA/SMK/MAK Kelas XI K13 Revisi Bab 2 (Mempelajari Teks Eksplanasi - Aspek Kebahasaan Kalimat Pasif)",
+          "teacher_guide": "Buku Guru Bahasa Indonesia SMA/MA/SMK/MAK Kelas XI K13 Revisi Bab 2 (Panduan Pembelajaran Kaidah Kebahasaan Teks Eksplanasi)"
+        },
+        "support_category": "BRIDGING",
+        "authoring_statement": "Formulasi butir soal penerapan kalimat pasif ilmiah proses transformasi energi surya disusun mandiri sebagai jembatan kompetensi kebahasaan eksplanasi K13."
+      }
+    }
+  ]
+}
