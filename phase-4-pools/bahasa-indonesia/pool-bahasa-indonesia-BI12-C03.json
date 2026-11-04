@@ -1,580 +1,556 @@
 {
-    "track":  "wajib",
-    "questions":  [
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "BI12-C03-C-2314",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Perhatikan kutipan cerita berikut: 'Ketegangan bermula saat Nadia meletakkan novelnya dengan dentuman keras di atas meja, terganggu oleh tawa kelompok Bagas yang sedang mendiskusikan tugas poster digital. Teguran tajam Nadia dibalas Bagas dengan nada defensif, memicu adu mulut yang membuat beberapa siswa lain ikut bersuara. Ketika seorang siswa mengusulkan agar kedua kelompok menggunakan ruang secara bergiliran, masing-masing pihak menolak karena merasa kebutuhannya belum dipertimbangkan. Perselisihan itu akhirnya berujung pada aksi saling memboikot pemakaian ruang baca. Rencana gotong-royong penataan selasar yang semula dijadwalkan selesai dalam sepekan pun terhenti total karena para siswa menolak hadir bersamaan di ruangan tersebut.' Penilaian yang paling tepat terhadap kelogisan pengembangan alur dalam kutipan cerita tersebut adalah...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Alur berkembang secara logis karena gangguan suara memicu teguran, respons defensif memperluas konflik, lalu penolakan berbagi ruang berdampak langsung pada kegiatan bersama."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Alur berkembang secara kurang proporsional karena perselisihan antartokoh diekskalasikan secara berlebihan sehingga mengaburkan persoalan utama mengenai ketiadaan tata ruang."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Alur berkembang secara berulang karena ketegangan antartokoh hanya berputar pada adu mulut tanpa memperlihatkan perubahan sikap yang mendorong cerita bergerak maju."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Alur berkembang secara tergesa-gesa karena aksi saling memboikot seharusnya dihadirkan sebagai akhir krisis, bukan sebagai pemicu awal berhentinya kegiatan bersama."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-C",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Pengembangan alur memiliki rantai kausalitas yang utuh dan runtut: gangguan suara memicu teguran, respons defensif memperluas konflik ke siswa lain, penolakan kompromi giliran ruang berujung pada boikot, dan berdampak langsung pada terhentinya proyek penataan bersama.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C03-C-5033",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Bagian akhir cerita di mana ketegangan telah menurun dan tokoh-tokoh menemukan penyelesaian dari masalah mereka disebut dengan tahap...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Resolusi (Resolution)"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Klimaks (Climax)"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Eksposisi (Exposition)"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Rising Action"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-C",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Resolusi adalah tahap penyelesaian masalah di akhir cerita di mana keadaan kembali stabil atau mencapai titik keseimbangan baru.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C03-D-6601",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Perhatikan kutipan cerita berikut: 'Memasuki hari ketujuh masa uji coba, selasar ruang baca memperlihatkan suasana yang berbeda. Nadia dapat menuntaskan bacaannya di zona mandiri dekat jendela, sementara kelompok Bagas leluasa merancang tata letak poster digital di meja tengah dengan nada suara terkendali. Di dekat pintu keluar, kotak saran kayu terisi catatan: usulan penambahan stopkontak dari kelompok diskusi dan permohonan penyesuaian arah lampu dari pembaca mandiri. Pada rapat evaluasi di akhir masa uji coba, kedua pihak bersama-sama menyetujui pemindahan meja ke dekat stopkontak dan pengajuan lampu baca tambahan, lalu menyepakati jadwal piket kebersihan bersama.' Amanat tersirat yang paling kuat didukung oleh rangkaian peristiwa dalam penggalan cerita tersebut adalah...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Keberhasilan pengelolaan ruang bersama terwujud melalui kesediaan saling menyesuaikan kebiasaan dan komitmen menindaklanjuti masukan para pengguna ruang."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Keteraturan fasilitas belajar dapat terpelihara apabila kelompok yang membutuhkan ketenangan diberikan wewenang lebih dalam menentukan tata tertib ruangan."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Penataan fisik meja belajar merupakan faktor utama yang dengan sendirinya menjamin kelancaran interaksi antar-pengguna fasilitas sekolah."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Ketertiban lingkungan belajar bersama idealnya dikendalikan melalui pengawasan berkala guru pembina agar kesepakatan siswa tetap dipatuhi."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-D",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Amanat tersirat disimpulkan dari tindakan nyata para tokoh: adaptasi kebiasaan volume suara dan penataan meja, keterbukaan menelaah catatan kotak saran, serta komitmen menyusun jadwal piket bersama oleh kedua perwakilan kelompok.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C03-F-2538",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Penulisan kalimat langsung yang paling tepat sesuai dengan kaidah kebahasaan adalah...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Guru BK berkata, \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi.\""
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Guru BK berkata: \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\"."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Guru BK berkata, \"jika kamu diam, kamu ikut membiarkan kekerasan terjadi\"."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "\"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\", kata Guru BK."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-F",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Dalam penulisan kalimat langsung, kutipan diapit tanda petik dua (\"...\"), diawali huruf kapital, dan tanda baca akhir (seperti titik) diletakkan di dalam tanda petik.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C03-F-5886",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Bacalah kalimat berikut: \u0027Mamak menasihati Maul agar ia tetap kuat dan menyadari bahwa pukulan yang tidak mematikannya justru akan menguatkannya.\u0027\nKalimat di atas merupakan contoh dari...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Kalimat tidak langsung"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Kalimat langsung"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Kalimat majemuk setara"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Kalimat retoris"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-F",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Kalimat tersebut adalah kalimat tidak langsung karena mengutip ucapan Mamak yang disampaikan kembali menggunakan bahasa pencerita tanpa menggunakan tanda petik.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C03-F-1167",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Jika seorang penulis memiliki poin kerangka cerita (Pemicu Konflik) berbunyi: \u0027Dita direkam diam-diam saat menyanyi dan videonya menjadi bahan ejekan teman-teman sekolah.\u0027\nLangkah paling tepat untuk mengembangkan poin tersebut menjadi adegan novel yang hidup adalah dengan...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Menambahkan deskripsi latar, dialog tokoh, dan ekspresi emosi tokoh agar pembaca dapat merasakan suasana kejadian tersebut."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Mengulangi kalimat poin tersebut berkali-kali di setiap paragraf agar pembaca tidak lupa inti masalahnya."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Langsung melompat ke bagian klimaks untuk menghemat jumlah halaman buku."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Mengganti tokoh Dita dengan tokoh lain agar konflik terasa lebih segar."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-F",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Mengembangkan kerangka cerita (outlining) menjadi draf novel mengharuskan penulis menambahkan deskripsi rinci, gerak-gerik, emosi, dan dialog untuk membangun adegan yang nyata (show, don\u0027t tell).",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "apply",
-                          "question_id":  "BI12-C03-K13-9100",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Dalam penulisan novel sesuai standar apresiasi sastra K13, majas metafora sering digunakan untuk memperindah deskripsi. Manakah kalimat berikut yang menggunakan majas metafora?",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Perpustakaan itu adalah gudang ilmu bagi para siswa."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Angin malam membisikkan lagu sendu di telinganya."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Wajahnya bersinar bagaikan rembulan purnama."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Dia berlari secepat kilat menyusuri lorong sekolah."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-K13",
-                          "difficulty_label":  "easy",
-                          "gameplay":  {
-                                           "correct_damage":  50,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "light"
-                                       },
-                          "explanation":  "Metafora adalah kiasan yang membandingkan dua hal secara langsung tanpa kata pembanding (seperti, bagaikan). \u0027Perpustakaan = gudang ilmu\u0027 adalah metafora.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  60
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "evaluate",
-                          "question_id":  "BI12-C03-TKA-9052",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "literacy",
-                                                "stimulus_type":  "contextual",
-                                                "suitable":  true
-                                            },
-                          "question":  "Bacalah penggalan novel berikut: \u0027Rifki menatap kertas pendaftarannya dengan ragu. Di satu sisi, ia sangat ingin mengambil jurusan seni yang diimpikannya, namun bayangan wajah ayahnya yang berharap ia menjadi insinyur membuat dadanya sesak.\u0027 Konflik utama yang dialami tokoh Rifki adalah...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Konflik batin antara keinginan pribadi dan harapan orang tua."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Konflik fisik dengan ayahnya mengenai pilihan jurusan."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Konflik sosial dengan lingkungan sekolah yang tidak mendukung seni."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Konflik ide dari ketidakmampuannya mengisi formulir pendaftaran."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-TKA",
-                          "difficulty_label":  "hard",
-                          "gameplay":  {
-                                           "correct_damage":  150,
-                                           "base_xp":  20,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "heavy"
-                                       },
-                          "explanation":  "Rifki mengalami konflik internal (batin) karena harus memilih antara impian pribadinya (seni) dan ekspektasi/harapan ayahnya (insinyur).",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  120
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C03-A-8222",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Berdasarkan kutipan: \u0027Aku berjalan menyusuri gang sempit itu dengan hati berdebar. Malam terasa begitu sunyi.\u0027, sudut pandang apakah yang digunakan oleh pengarang?",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Sudut pandang orang pertama"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Sudut pandang orang kedua"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Sudut pandang orang ketiga serba tahu"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Sudut pandang orang ketiga terbatas"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-A",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Penggunaan kata ganti \u0027Aku\u0027 menunjukkan bahwa pengarang menempatkan dirinya sebagai tokoh utama dalam cerita tersebut, yang merupakan ciri khas sudut pandang orang pertama.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C03-A-4832",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Pengarang hanya memahami cerita dan perasaan salah satu tokoh saja, namun ia tetap menggunakan kata ganti \u0027dia\u0027 atau \u0027ia\u0027 sebagai pencerita. Jenis sudut pandang ini disebut...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Sudut pandang orang ketiga terbatas"
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Sudut pandang orang ketiga serba tahu"
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Sudut pandang orang pertama"
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Sudut pandang campuran"
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-A",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Berbeda dengan sudut pandang serba tahu di mana pengarang mengetahui isi hati semua tokoh, sudut pandang orang ketiga terbatas (limited) membatasi akses emosi hanya pada satu tokoh tertentu saja.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C03-B-2094",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Perhatikan kutipan cerita berikut: 'Di tengah perdebatan yang kian memanas antara kelompok pembaca mandiri dan kelompok diskusi tugas, Pak Danar melangkah ke tengah ruangan. Tanpa mengetuk meja atau menuntut siapa yang harus meminta maaf terlebih dahulu, ia membagikan selembar kertas kepada masing-masing perwakilan. Di papan tulis kecil, ia hanya menuliskan dua kolom: Kebutuhan Utama Kegiatan dan Kekhawatiran yang Dirasakan. Ia meminta kedua belah pihak mencatat poin-poin tersebut secara bergantian sebelum forum musyawarah bersama dibuka kembali.' Berdasarkan kutipan tersebut, perwatakan Pak Danar yang paling kuat tercermin melalui tindakannya adalah...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Bijaksana dan terstruktur dalam mengurai pokok permasalahan sebelum membuka ruang kesepakatan bersama."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Ragu-ragu dan cenderung menunda keputusan tegas karena belum memiliki aturan resmi mengenai tata tertib ruangan."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Tertutup dan berupaya menggantikan proses musyawarah langsung dengan prosedur administratif tertulis."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Kompromistis dan mengutamakan ketenangan sesaat tanpa menyelidiki latar belakang keresahan para siswa."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-B",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Sikap Pak Danar yang tidak menjatuhkan sanksi sepihak, membagikan kertas, dan memetakan dua kolom (kebutuhan dan kekhawatiran) sebelum musyawarah dibuka kembali mencerminkan perwatakan yang bijaksana, tenang, dan terstruktur dalam memfasilitasi resolusi konflik.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      },
-                      {
-                          "secondary_competencies":  [
-
-                                                     ],
-                          "cognitive_level":  "analyze",
-                          "question_id":  "BI12-C03-B-2065",
-                          "question_role":  "practice",
-                          "tka_alignment":  {
-                                                "competency":  "",
-                                                "stimulus_type":  "",
-                                                "suitable":  false
-                                            },
-                          "question":  "Perhatikan kutipan cerita berikut: 'Selama tiga hari berturut-turut, Sinta duduk di sudut selasar membawa lembar pengamatan. Ia mencatat jam-jam puncak keterisian ruang baca, jenis kegiatan di setiap meja, serta dinamika suara yang memicu keluhan. Saat forum penataan dimulai, ia tidak mengajukan sangkaan pribadi, melainkan memaparkan data: keramaian selalu memuncak pada pukul dua siang ketika kelompok tugas poster digital masuk bersamaan dengan waktu belajar mandiri. Berdasarkan catatan itu, Sinta mengusulkan penataan zona meja, draf kesepakatan batas nada suara, dan penyesuaian jadwal kelompok.' Watak Sinta yang paling kuat tergambar melalui caranya menyusun usulan penataan ruang baca adalah...",
-                          "answer":  "A",
-                          "options":  [
-                                          {
-                                              "id":  "A",
-                                              "text":  "Cermat dan objektif dalam merumuskan pemecahan masalah berdasarkan data pengamatan yang terukur."
-                                          },
-                                          {
-                                              "id":  "B",
-                                              "text":  "Kurang luwes dan cenderung membatasi ruang gerak teman-temannya semata-mata demi keteraturan jadwal."
-                                          },
-                                          {
-                                              "id":  "C",
-                                              "text":  "Pasif dan berhati-hati karena memilih mencatat dari kejauhan alih-alih melibatkan diri dalam dinamika kelompok."
-                                          },
-                                          {
-                                              "id":  "D",
-                                              "text":  "Cepat berpuas diri karena menganggap data catatan tiga hari sudah cukup mewakili seluruh kebiasaan siswa."
-                                          }
-                                      ],
-                          "primary_competency":  "BI12-C03-B",
-                          "difficulty_label":  "medium",
-                          "gameplay":  {
-                                           "correct_damage":  100,
-                                           "base_xp":  10,
-                                           "wrong_penalty":  5,
-                                           "attack_type":  "medium"
-                                       },
-                          "explanation":  "Karakter cermat dan objektif terbukti secara eksplisit dari tindakan Sinta melakukan observasi sistematis selama tiga hari dan mendasarkan usulannya pada data faktual jam sibuk alih-alih sangkaan pribadi.",
-                          "question_type":  "single_select",
-                          "estimated_time_seconds":  90
-                      }
-                  ],
-    "curriculum":  [
-                       "K13",
-                       "Merdeka"
-                   ],
-    "grade":  12,
-    "competencies":  [
-                         {
-                             "name":  "Kompetensi BI12-C03-D",
-                             "question_count":  1,
-                             "competency_id":  "BI12-C03-D"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C03-A",
-                             "question_count":  2,
-                             "competency_id":  "BI12-C03-A"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C03-K13",
-                             "question_count":  1,
-                             "competency_id":  "BI12-C03-K13"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C03-F",
-                             "question_count":  3,
-                             "competency_id":  "BI12-C03-F"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C03-C",
-                             "question_count":  2,
-                             "competency_id":  "BI12-C03-C"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C03-B",
-                             "question_count":  2,
-                             "competency_id":  "BI12-C03-B"
-                         },
-                         {
-                             "name":  "Kompetensi BI12-C03-TKA",
-                             "question_count":  1,
-                             "competency_id":  "BI12-C03-TKA"
-                         }
-                     ],
-    "subject":  "bahasa-indonesia",
-    "chapter":  "BI12-C03",
-    "status":  "active",
-    "content_version":  1,
-    "pool_id":  "POOL-BAHASA-INDONESIA-BI12-C03"
+  "track": "wajib",
+  "questions": [
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "evaluate",
+      "question_id": "BI12-C03-C-2314",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Perhatikan kutipan cerita berikut: 'Ketegangan bermula saat Nadia meletakkan novelnya dengan dentuman keras di atas meja, terganggu oleh tawa kelompok Bagas yang sedang mendiskusikan tugas poster digital. Teguran tajam Nadia dibalas Bagas dengan nada defensif, memicu adu mulut yang membuat beberapa siswa lain ikut bersuara. Ketika seorang siswa mengusulkan agar kedua kelompok menggunakan ruang secara bergiliran, masing-masing pihak menolak karena merasa kebutuhannya belum dipertimbangkan. Perselisihan itu akhirnya berujung pada aksi saling memboikot pemakaian ruang baca. Rencana gotong-royong penataan selasar yang semula dijadwalkan selesai dalam sepekan pun terhenti total karena para siswa menolak hadir bersamaan di ruangan tersebut.' Penilaian yang paling tepat terhadap kelogisan pengembangan alur dalam kutipan cerita tersebut adalah...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alur berkembang secara logis karena gangguan suara memicu teguran, respons defensif memperluas konflik, lalu penolakan berbagi ruang berdampak langsung pada kegiatan bersama."
+        },
+        {
+          "id": "B",
+          "text": "Alur berkembang secara kurang proporsional karena perselisihan antartokoh diekskalasikan secara berlebihan sehingga mengaburkan persoalan utama mengenai ketiadaan tata ruang."
+        },
+        {
+          "id": "C",
+          "text": "Alur berkembang secara berulang karena ketegangan antartokoh hanya berputar pada adu mulut tanpa memperlihatkan perubahan sikap yang mendorong cerita bergerak maju."
+        },
+        {
+          "id": "D",
+          "text": "Alur berkembang secara tergesa-gesa karena aksi saling memboikot seharusnya dihadirkan sebagai akhir krisis, bukan sebagai pemicu awal berhentinya kegiatan bersama."
+        }
+      ],
+      "primary_competency": "BI12-C03-C",
+      "difficulty_label": "hard",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kausalitas dan Kelogisan Pengembangan Alur:\n   Alur (plot) yang baik dibangun atas prinsip kausalitas (sebab-akibat) yang wajar dan dapat diterima akal pembaca. Setiap insiden harus menjadi penyebab bagi peristiwa berikutnya dan menjadi akibat dari peristiwa sebelumnya. Mengevaluasi kelogisan alur menuntut telaah kritis apakah rangkaian tindakan antartokoh berkembang secara bertahap dan berpijak pada motivasi psikologis yang masuk akal.\n\n2. Pembahasan Kunci Jawaban:\n   - Alur berkembang secara logis karena gangguan suara memicu teguran, respons defensif memperluas konflik, lalu penolakan berbagi ruang berdampak langsung pada kegiatan bersama (BENAR): Rangkaian insiden dalam kutipan cerita memperlihatkan rantai kausalitas yang sangat runtut: dentuman buku Nadia dipicu suara tawa -> teguran Nadia direspons secara defensif oleh Bagas -> perdebatan menarik keterlibatan siswa lain -> usulan kompromi ditolak karena ego kelompok -> eskalasi berujung pada boikot pemakaian ruang baca yang menghentikan rencana gotong-royong. Kausalitas ini terbangun secara meyakinkan dan proporsional.\n\n3. Pembahasan Distraktor:\n   - Alur berkembang secara kurang proporsional karena perselisihan antartokoh diekskalasikan secara berlebihan sehingga mengaburkan persoalan utama mengenai ketiadaan tata ruang (Salah): Eskalasi perselisihan tidak berlebihan melainkan cerminan wajar dari akumulasi ketidaknyamanan ruang bersama yang belum memiliki aturan jelas.\n   - Alur berkembang secara berulang karena ketegangan antartokoh hanya berputar pada adu mulut tanpa memperlihatkan perubahan sikap yang mendorong cerita bergerak maju (Salah): Cerita bergerak maju dengan cepat dari perdebatan dua orang, meluas ke kelompok lain, menemui jalan buntu kompromi, hingga memicu dampak nyata berupa terhentinya gotong royong.\n   - Alur berkembang secara tergesa-gesa karena aksi saling memboikot seharusnya dihadirkan sebagai akhir krisis, bukan sebagai pemicu awal berhentinya kegiatan bersama (Salah): Aksi saling boikot merupakan puncak ketegangan lokal (krisis jangka pendek) yang secara logis langsung berdampak seketika pada batalnya kegiatan bersama.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C03-C-5033",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Bagian akhir cerita di mana ketegangan telah menurun dan tokoh-tokoh menemukan penyelesaian dari masalah mereka disebut dengan tahap...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Resolusi (Resolution)"
+        },
+        {
+          "id": "B",
+          "text": "Klimaks (Climax)"
+        },
+        {
+          "id": "C",
+          "text": "Eksposisi (Exposition)"
+        },
+        {
+          "id": "D",
+          "text": "Rising Action"
+        }
+      ],
+      "primary_competency": "BI12-C03-C",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Struktur Alur Naratif Fiksi:\n   Struktur alur tradisional dalam prosa novel (mengikuti piramida Freytag) terdiri atas beberapa tahapan progresif: pengenalan/eksposisi, pemunculan konflik/tindakan bergerak (rising action), puncak ketegangan/klimaks, peleraian/ketegangan menurun (falling action), dan penyelesaian (resolusi). Pemahaman yang tepat atas batasan fungsional masing-masing bagian alur sangat krusial dalam menganalisis konstruksi cerita fiksi.\n\n2. Pembahasan Kunci Jawaban:\n   - Resolusi (Resolution) (BENAR): Tahap akhir cerita di mana ketegangan telah melandai/mereda dan para tokoh menemukan jalan keluar, penyelesaian, atau penataan kembali kondisi kehidupan pascakonflik secara baku disebut sebagai resolusi (atau peleraian akhir).\n\n3. Pembahasan Distraktor:\n   - Klimaks (Climax) (Salah): Klimaks adalah titik puncak ketegangan emosional dan konflik terhebat dalam cerita di mana nasib tokoh dipertaruhkan, bukan bagian ketika ketegangan telah menurun.\n   - Eksposisi (Exposition) (Salah): Eksposisi adalah bagian awal cerita yang berfungsi memperkenalkan tokoh, latar ruang, waktu, serta suasana awal sebelum konflik muncul.\n   - Rising Action (Salah): Rising action merupakan serangkaian peristiwa komplikasi yang membangun eskalasi ketegangan menuju klimaks cerita, bukan tahap penyelesaian masalah.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "analyze",
+      "question_id": "BI12-C03-D-6601",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Perhatikan kutipan cerita berikut: 'Memasuki hari ketujuh masa uji coba, selasar ruang baca memperlihatkan suasana yang berbeda. Nadia dapat menuntaskan bacaannya di zona mandiri dekat jendela, sementara kelompok Bagas leluasa merancang tata letak poster digital di meja tengah dengan nada suara terkendali. Di dekat pintu keluar, kotak saran kayu terisi catatan: usulan penambahan stopkontak dari kelompok diskusi dan permohonan penyesuaian arah lampu dari pembaca mandiri. Pada rapat evaluasi di akhir masa uji coba, kedua pihak bersama-sama menyetujui pemindahan meja ke dekat stopkontak dan pengajuan lampu baca tambahan, lalu menyepakati jadwal piket kebersihan bersama.' Amanat tersirat yang paling kuat didukung oleh rangkaian peristiwa dalam penggalan cerita tersebut adalah...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keberhasilan pengelolaan ruang bersama terwujud melalui kesediaan saling menyesuaikan kebiasaan dan komitmen menindaklanjuti masukan para pengguna ruang."
+        },
+        {
+          "id": "B",
+          "text": "Keteraturan fasilitas belajar dapat terpelihara apabila kelompok yang membutuhkan ketenangan diberikan wewenang lebih dalam menentukan tata tertib ruangan."
+        },
+        {
+          "id": "C",
+          "text": "Penataan fisik meja belajar merupakan faktor utama yang dengan sendirinya menjamin kelancaran interaksi antar-pengguna fasilitas sekolah."
+        },
+        {
+          "id": "D",
+          "text": "Ketertiban lingkungan belajar bersama idealnya dikendalikan melalui pengawasan berkala guru pembina agar kesepakatan siswa tetap dipatuhi."
+        }
+      ],
+      "primary_competency": "BI12-C03-D",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Penarikan Amanat Tersirat dalam Fiksi:\n   Amanat merupakan pesan moral atau nilai kehidupan yang ingin disampaikan pengarang melalui jalan cerita dan penyelesaian konflik. Amanat tersirat tidak dituliskan secara eksplisit dalam teks, melainkan harus dianalisis dari hubungan sebab-akibat antara perubahan sikap tokoh, tindakan nyata yang disepakati bersama, dan hasil positif yang diraih pada akhir cerita.\n\n2. Pembahasan Kunci Jawaban:\n   - Keberhasilan pengelolaan ruang bersama terwujud melalui kesediaan saling menyesuaikan kebiasaan dan komitmen menindaklanjuti masukan para pengguna ruang (BENAR): Rangkaian peristiwa pada stimulus memperlihatkan: kelompok Bagas mengendalikan suara dan mengajukan stopkontak melalui kotak saran, Nadia membaca tenang di zona senyap, lalu kedua belah pihak bersama-sama menyetujui pemindahan meja dan jadwal piket bersama. Keberhasilan terciptanya kenyamanan bersama ini membuktikan bahwa penyesuaian timbal balik dan tindak lanjut atas masukan adalah kunci hidup rukun di ruang publik sekolah.\n\n3. Pembahasan Distraktor:\n   - Keteraturan fasilitas belajar dapat terpelihara apabila kelompok yang membutuhkan ketenangan diberikan wewenang lebih dalam menentukan tata tertib ruangan (Salah): Stimulus menunjukkan bahwa kenyamanan lahir dari kesepakatan bersama dan penghargaan setara terhadap kebutuhan kedua pihak, bukan dengan memberikan hak istimewa sepihak kepada salah satu kelompok.\n   - Penataan fisik meja belajar merupakan faktor utama yang dengan sendirinya menjamin kelancaran interaksi antar-pengguna fasilitas sekolah (Salah): Penataan meja hanyalah sarana pendukung fisik; faktor penentu utamanya adalah perubahan sikap para siswa yang bersedia saling menghargai dan mengendalikan suara.\n   - Ketertiban lingkungan belajar bersama idealnya dikendalikan melalui pengawasan berkala guru pembina agar kesepakatan siswa tetap dipatuhi (Salah): Penyelesaian yang digambarkan bersumber dari inisiatif mandiri kedua kelompok siswa melalui kotak saran, rapat evaluasi bersama, dan kesepakatan piket gotong-royong, bukan karena paksaan pengawasan otoriter guru pembina.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "BI12-C03-F-2538",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Penulisan kalimat langsung yang paling tepat sesuai dengan kaidah kebahasaan adalah...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Guru BK berkata, \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi.\""
+        },
+        {
+          "id": "B",
+          "text": "Guru BK berkata: \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\"."
+        },
+        {
+          "id": "C",
+          "text": "Guru BK berkata, \"jika kamu diam, kamu ikut membiarkan kekerasan terjadi\"."
+        },
+        {
+          "id": "D",
+          "text": "\"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\", kata Guru BK."
+        }
+      ],
+      "primary_competency": "BI12-C03-F",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kaidah Kebahasaan Kalimat Langsung (PUEBI/EYD):\n   Kalimat langsung dalam teks narasi mengutip tuturan tokoh persis seperti yang diucapkan. Kaidah kebakuan penulisan kalimat langsung meliputi:\n   a. Bagian kalimat pengiring sebelum petikan diakhiri tanda koma (,), bukan titik dua (:).\n   b. Petikan langsung diapit tanda petik dua (\"\").\n   c. Huruf pertama kalimat di dalam tanda petik diawali huruf kapital.\n   d. Tanda baca penutup kalimat (titik, tanya, atau seru) ditempatkan di SEBELUM tanda petik penutup (di dalam tanda petik).\n\n2. Pembahasan Kunci Jawaban:\n   - Guru BK berkata, \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi.\" (BENAR): Kalimat pengiring 'Guru BK berkata' diikuti tanda koma; huruf pertama kutipan 'Jika' diawali huruf kapital; dan tanda titik (.) terletak di dalam tanda petik penutup. Seluruh aturan kaidah tata tanda baca kalimat langsung terpenuhi secara sempurna.\n\n3. Pembahasan Distraktor:\n   - Guru BK berkata: \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\". (Salah): Tanda titik dua (:) tidak digunakan untuk memisahkan pengiring sebelum kalimat langsung tunggal dalam narasi prosa, dan tanda titik (.) keliru diletakkan di luar tanda petik penutup.\n   - Guru BK berkata, \"jika kamu diam, kamu ikut membiarkan kekerasan terjadi\". (Salah): Huruf pertama di awal kutipan langsung wajib menggunakan huruf kapital ('Jika', bukan 'jika').\n   - \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\", kata Guru BK. (Salah): Ketika kutipan langsung deklaratif mendahului pengiring narasi, tanda baca di akhir petikan harus berupa tanda koma (,) yang berada di dalam tanda petik, bukan di luar tanda petik.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "BI12-C03-F-5886",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Bacalah kalimat berikut: 'Mamak menasihati Maul agar ia tetap kuat dan menyadari bahwa pukulan yang tidak mematikannya justru akan menguatkannya.'\nKalimat di atas merupakan contoh dari...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kalimat tidak langsung"
+        },
+        {
+          "id": "B",
+          "text": "Kalimat langsung"
+        },
+        {
+          "id": "C",
+          "text": "Kalimat majemuk setara"
+        },
+        {
+          "id": "D",
+          "text": "Kalimat retoris"
+        }
+      ],
+      "primary_competency": "BI12-C03-F",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Karakteristik Sintaksis Kalimat Tidak Langsung:\n   Kalimat tidak langsung (reported speech) merupakan bentuk kalimat yang menceritakan kembali ujaran atau tuturan orang lain tanpa mengutip perkataan aslinya secara verbatim. Ciri-ciri pokok kalimat tidak langsung meliputi:\n   a. Tidak menggunakan tanda petik dua (\"\").\n   b. Menggunakan konjungsi penerang atau pengantar makna seperti 'agar', 'bahwa', 'untuk', atau 'supaya'.\n   c. Terjadi pergeseran sudut pandang pronomina persona (misalnya persona pertama 'aku' bergeser menjadi persona ketiga 'ia' atau 'dia').\n\n2. Pembahasan Kunci Jawaban:\n   - Kalimat tidak langsung (BENAR): Kalimat 'Mamak menasihati Maul agar ia tetap kuat dan menyadari bahwa pukulan yang tidak mematikannya justru akan menguatkannya' menyampaikan kembali pesan lisan Mamak melalui penceritaan narator menggunakan konjungsi 'agar' dan 'bahwa' serta kata ganti persona ketiga ('ia'), tanpa diapit tanda petik. Struktur ini merupakan perwujudan konkret dari kalimat tidak langsung.\n\n3. Pembahasan Distraktor:\n   - Kalimat langsung (Salah): Kalimat langsung mewajibkan penulisan tuturan lisan asli tokoh dengan diapit tanda petik dua (\"...\") dan menggunakan kata ganti persona sesuai tuturan aslinya.\n   - Kalimat majemuk setara (Salah): Kalimat majemuk setara menghubungkan klausa-klausa yang berkedudukan sejajar (menggunakan konjungsi koordinatif seperti 'dan', 'atau', 'tetapi'); kalimat pada stimulus berstruktur subordinatif/bertingkat yang berfungsi sebagai tuturan pelaporan pesan.\n   - Kalimat retoris (Salah): Kalimat retoris adalah pertanyaan yang tidak menuntut jawaban langsung karena jawabannya sudah jelas atau berfungsi sebagai penegasan emosional, bukan kalimat deklaratif pelaporan nasihat.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "BI12-C03-F-1167",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Jika seorang penulis memiliki poin kerangka cerita (Pemicu Konflik) berbunyi: 'Dita direkam diam-diam saat menyanyi dan videonya menjadi bahan ejekan teman-teman sekolah.'\nLangkah paling tepat untuk mengembangkan poin tersebut menjadi adegan novel yang hidup adalah dengan...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Menambahkan deskripsi latar, dialog tokoh, dan ekspresi emosi tokoh agar pembaca dapat merasakan suasana kejadian tersebut."
+        },
+        {
+          "id": "B",
+          "text": "Mengulangi kalimat poin tersebut berkali-kali di setiap paragraf agar pembaca tidak lupa inti masalahnya."
+        },
+        {
+          "id": "C",
+          "text": "Langsung melompat ke bagian klimaks untuk menghemat jumlah halaman buku."
+        },
+        {
+          "id": "D",
+          "text": "Mengganti tokoh Dita dengan tokoh lain agar konflik terasa lebih segar."
+        }
+      ],
+      "primary_competency": "BI12-C03-F",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Prinsip Pengembangan Kerangka Novel ('Show, Don't Tell'):\n   Kerangka cerita (outline) hanya memuat poin-poin gagasan pokok peristiwa naratif secara ringkas. Untuk mengubah poin kerangka menjadi adegan fiksi yang hidup, berbobot, dan memikat pembaca, penulis harus menerapkan prinsip 'show, don't tell' (tunjukkan, jangan sekadar beritahukan). Hal ini diwujudkan dengan membangun latar suasana yang mendalam, menciptakan interaksi dialog yang autentik, serta menggambarkan bahasa tubuh dan gejolak emosi tokoh secara detail.\n\n2. Pembahasan Kunci Jawaban:\n   - Menambahkan deskripsi latar, dialog tokoh, dan ekspresi emosi tokoh agar pembaca dapat merasakan suasana kejadian tersebut (BENAR): Poin kerangka 'Dita direkam diam-diam...' memerlukan perwujudan adegan konkret: seperti apa sudut koridor tempat rekaman diambil, bisik-bisik ejekan di kelas, dan getaran rasa malu serta air mata Dita. Unsur-unsur deskripsi latar, dialog, dan ekspresi emosi ini adalah instrumen pokok yang membuat adegan novel berdenyut hidup di benak pembaca.\n\n3. Pembahasan Distraktor:\n   - Mengulangi kalimat poin tersebut berkali-kali di setiap paragraf agar pembaca tidak lupa inti masalahnya (Salah): Pengulangan kalimat garis besar secara harfiah akan menghasilkan tulisan yang monoton, miskin imajinasi, dan membosankan bagi pembaca.\n   - Langsung melompat ke bagian klimaks untuk menghemat jumlah halaman buku (Salah): Melompati pembangunan suasana konflik akan menyebabkan alur terasa tergesa-gesa (hasty) dan pembaca kehilangan keterikatan emosional dengan penderitaan tokoh.\n   - Mengganti tokoh Dita dengan tokoh lain agar konflik terasa lebih segar (Salah): Mengganti tokoh utama secara sembarangan di tengah proses penulisan merusak konsistensi karakterisasi dan kerangka cerita yang sudah direncanakan.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "apply",
+      "question_id": "BI12-C03-K13-9100",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Dalam penulisan novel sesuai standar apresiasi sastra K13, majas metafora sering digunakan untuk memperindah deskripsi. Manakah kalimat berikut yang menggunakan majas metafora?",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Perpustakaan itu adalah gudang ilmu bagi para siswa."
+        },
+        {
+          "id": "B",
+          "text": "Angin malam membisikkan lagu sendu di telinganya."
+        },
+        {
+          "id": "C",
+          "text": "Wajahnya bersinar bagaikan rembulan purnama."
+        },
+        {
+          "id": "D",
+          "text": "Dia berlari secepat kilat menyusuri lorong sekolah."
+        }
+      ],
+      "primary_competency": "BI12-C03-K13",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Majas Metafora dalam Teks Prosa Sastra:\n   Majas metafora merupakan gaya bahasa perbandingan analogis langsung yang menyamakan dua hal berbeda berdasarkan kesamaan sifat atau karakteristiknya tanpa menggunakan kata pembanding eksplisit (seperti: 'bagai', 'bak', 'laksana', atau 'seperti'). Metafora memperlakukan suatu objek secara langsung sebagai objek lain yang memiliki asosiasi makna simbolis yang kuat.\n\n2. Pembahasan Kunci Jawaban:\n   - Perpustakaan itu adalah gudang ilmu bagi para siswa (BENAR): Kalimat ini membandingkan 'perpustakaan' secara langsung dengan 'gudang ilmu' tanpa partikel pembanding. Persamaan ini bersifat metaforis karena perpustakaan secara fisik menyimpan buku/pengetahuan sebagaimana sebuah gudang menyimpan perbendaharaan berharga.\n\n3. Pembahasan Distraktor:\n   - Angin malam membisikkan lagu sendu di telinganya (Salah): Merupakan majas personifikasi, yaitu gaya bahasa yang melekatkan sifat-sifat insani/manusiawi (membisikkan lagu) pada benda mati atau unsur alam (angin malam).\n   - Wajahnya bersinar bagaikan rembulan purnama (Salah): Merupakan majas asosiasi/simile, yaitu gaya bahasa perbandingan eksplisit yang menggunakan kata penghubung pembanding ('bagaikan').\n   - Dia berlari secepat kilat menyusuri lorong sekolah (Salah): Merupakan majas hiperbola, yaitu gaya bahasa kiasan yang menyatakan sesuatu secara berlebihan melampaui batas kewajaran kenyataan ('secepat kilat').",
+      "question_type": "single_select",
+      "estimated_time_seconds": 60
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "analyze",
+      "question_id": "BI12-C03-TKA-9052",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "literacy",
+        "stimulus_type": "contextual",
+        "suitable": true
+      },
+      "question": "Bacalah penggalan novel berikut: 'Rifki menatap kertas pendaftarannya dengan ragu. Di satu sisi, ia sangat ingin mengambil jurusan seni yang diimpikannya, namun bayangan wajah ayahnya yang berharap ia menjadi insinyur membuat dadanya sesak.' Konflik utama yang dialami tokoh Rifki adalah...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Konflik batin antara keinginan pribadi dan harapan orang tua."
+        },
+        {
+          "id": "B",
+          "text": "Konflik fisik dengan ayahnya mengenai pilihan jurusan."
+        },
+        {
+          "id": "C",
+          "text": "Konflik sosial dengan lingkungan sekolah yang tidak mendukung seni."
+        },
+        {
+          "id": "D",
+          "text": "Konflik ide dari ketidakmampuannya mengisi formulir pendaftaran."
+        }
+      ],
+      "primary_competency": "BI12-C03-TKA",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Dimensi Konflik Tokoh Fiksi (Asesmen Literasi Membaca):\n   Dalam telaah struktur fiksi, konflik merupakan pertentangan yang dialami tokoh. Konflik terbagi menjadi dua kategori utama:\n   a. Konflik internal (konflik batin/psikologis): pertentangan di dalam diri tokoh itu sendiri antara dua pilihan, motif, atau nilai yang saling bertolak belakang (misalnya impian versus kewajiban moral).\n   b. Konflik eksternal: pertentangan antara tokoh dengan entitas di luar dirinya (tokoh lain, norma masyarakat, atau kekuatan alam).\n\n2. Pembahasan Kunci Jawaban:\n   - Konflik batin antara keinginan pribadi dan harapan orang tua (BENAR): Kutipan teks menggambarkan: 'Di satu sisi, ia sangat ingin mengambil jurusan seni yang diimpikannya, namun bayangan wajah ayahnya yang berharap ia menjadi insinyur membuat dadanya sesak.' Rifki mengalami pergulatan jiwa di dalam batinnya sendiri antara mengejar aspirasi pribadinya (seni) dan rasa bersalah terhadap ekspektasi ayahnya (teknik). Ini merupakan representasi otentik dari konflik batin (intrapersonal conflict).\n\n3. Pembahasan Distraktor:\n   - Konflik fisik dengan ayahnya mengenai pilihan jurusan (Salah): Teks hanya menyebut 'bayangan wajah ayahnya membuat dadanya sesak'; tidak ada insiden kekerasan fisik, adu fisik, atau benturan jasmani sama sekali.\n   - Konflik sosial dengan lingkungan sekolah yang tidak mendukung seni (Salah): Tidak ada informasi dalam teks mengenai sekolah atau guru yang melarang atau tidak mendukung jurusan seni; pertentangan berpusat pada dinamika internal keluarga.\n   - Konflik ide dari ketidakmampuannya mengisi formulir pendaftaran (Salah): Rifki memegang kertas pendaftaran dengan ragu bukan karena kendala teknis mengisi kolom formulir, melainkan karena kebimbangan emosional dalam menentukan arah masa depannya.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 120
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C03-A-8222",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Berdasarkan kutipan: 'Aku berjalan menyusuri gang sempit itu dengan hati berdebar. Malam terasa begitu sunyi.', sudut pandang apakah yang digunakan oleh pengarang?",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sudut pandang orang pertama"
+        },
+        {
+          "id": "B",
+          "text": "Sudut pandang orang kedua"
+        },
+        {
+          "id": "C",
+          "text": "Sudut pandang orang ketiga serba tahu"
+        },
+        {
+          "id": "D",
+          "text": "Sudut pandang orang ketiga terbatas"
+        }
+      ],
+      "primary_competency": "BI12-C03-A",
+      "difficulty_label": "easy",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Sudut Pandang Narasi Novel:\n   Sudut pandang (point of view) merupakan cara pengarang menempatkan dirinya dalam membawakan cerita kepada pembaca. Dalam fiksi sastra, sudut pandang orang pertama ditandai secara gramatikal oleh penggunaan pronomina persona pertama seperti 'aku' atau 'saya'. Pengarang bertindak langsung sebagai tokoh cerita (baik tokoh utama maupun tokoh sampingan) yang menuturkan pengalaman, persepsi, dan emosi batinnya dari sudut pandang internal.\n\n2. Pembahasan Kunci Jawaban:\n   - Sudut pandang orang pertama (BENAR): Penggunaan klausul 'Aku berjalan menyusuri gang sempit itu dengan hati berdebar' secara eksplisit memperlihatkan bahwa narator berbicara sebagai subjek pelaku di dalam cerita menggunakan kata ganti persona pertama ('Aku'). Dengan demikian, pengarang memosisikan pencerita sebagai tokoh yang mengalami sendiri peristiwa tersebut.\n\n3. Pembahasan Distraktor:\n   - Sudut pandang orang kedua (Salah): Sudut pandang orang kedua menggunakan kata ganti 'kamu', 'kau', atau 'Anda', yang memosisikan pembaca seolah-olah menjadi tokoh utama yang mengalami tindakan tersebut; bentuk ini sangat jarang digunakan dalam novel naratif konvensional.\n   - Sudut pandang orang ketiga serba tahu (Salah): Menggunakan pronomina persona ketiga ('dia', 'ia', atau nama tokoh) dan pencerita mengetahui seluruh isi hati, motif tersembunyi, dan peristiwa simultan di masa lalu maupun masa depan dari semua tokoh cerita.\n   - Sudut pandang orang ketiga terbatas (Salah): Menggunakan pronomina orang ketiga ('dia' atau nama orang), namun akses batin pencerita dibatasi hanya pada pikiran dan perasaan satu tokoh tertentu saja, bukan narator bersuara 'Aku'.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "understand",
+      "question_id": "BI12-C03-A-4832",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Pengarang hanya memahami cerita dan perasaan salah satu tokoh saja, namun ia tetap menggunakan kata ganti 'dia' atau 'ia' sebagai pencerita. Jenis sudut pandang ini disebut...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sudut pandang orang ketiga terbatas"
+        },
+        {
+          "id": "B",
+          "text": "Sudut pandang orang ketiga serba tahu"
+        },
+        {
+          "id": "C",
+          "text": "Sudut pandang orang pertama"
+        },
+        {
+          "id": "D",
+          "text": "Sudut pandang campuran"
+        }
+      ],
+      "primary_competency": "BI12-C03-A",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Sudut Pandang Orang Ketiga Terbatas:\n   Dalam teori naratologi fiksi, sudut pandang orang ketiga terbagi menjadi dua kategori utama: serba tahu (omniscient) dan terarah/terbatas (limited). Pada sudut pandang orang ketiga terbatas, narator berada di luar cerita dan menyebut tokoh dengan kata ganti 'ia', 'dia', atau nama diri, tetapi lensa perspektif narator menempel secara ketat hanya pada satu tokoh utama. Narator hanya melaporkan apa yang dilihat, didengar, dirasakan, dan dipikirkan oleh satu tokoh tersebut, tanpa memiliki akses ke batin tokoh lainnya.\n\n2. Pembahasan Kunci Jawaban:\n   - Sudut pandang orang ketiga terbatas (BENAR): Karakteristik narator yang membatasi pemahaman emosi dan pikiran hanya pada salah satu tokoh tertentu sembari menggunakan pronomina persona ketiga ('dia' atau 'ia') merupakan definisi baku dari sudut pandang orang ketiga terbatas (third-person limited point of view).\n\n3. Pembahasan Distraktor:\n   - Sudut pandang orang ketiga serba tahu (Salah): Pada sudut pandang serba tahu (omniscient), narator memiliki kebebasan mutlak untuk melompati ruang dan waktu serta menyelami isi pikiran dan perasaan seluruh tokoh tanpa pembatasan satu sudut pandang tokoh saja.\n   - Sudut pandang orang pertama (Salah): Menggunakan pronomina persona pertama ('aku' atau 'saya') di mana narator terlibat langsung dalam interaksi cerita, bukan pengamat luar yang menggunakan kata ganti 'ia' atau 'dia'.\n   - Sudut pandang campuran (Salah): Mengombinasikan sudut pandang persona pertama dan persona ketiga secara bergantian dalam bab-bab yang berbeda; bukan narator persona ketiga yang akses emosinya dibatasi pada satu tokoh.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "analyze",
+      "question_id": "BI12-C03-B-2094",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Perhatikan kutipan cerita berikut: 'Di tengah perdebatan yang kian memanas antara kelompok pembaca mandiri dan kelompok diskusi tugas, Pak Danar melangkah ke tengah ruangan. Tanpa mengetuk meja atau menuntut siapa yang harus meminta maaf terlebih dahulu, ia membagikan selembar kertas kepada masing-masing perwakilan. Di papan tulis kecil, ia hanya menuliskan dua kolom: Kebutuhan Utama Kegiatan dan Kekhawatiran yang Dirasakan. Ia meminta kedua belah pihak mencatat poin-poin tersebut secara bergantian sebelum forum musyawarah bersama dibuka kembali.' Berdasarkan kutipan tersebut, perwatakan Pak Danar yang paling kuat tercermin melalui tindakannya adalah...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bijaksana dan terstruktur dalam mengurai pokok permasalahan sebelum membuka ruang kesepakatan bersama."
+        },
+        {
+          "id": "B",
+          "text": "Ragu-ragu dan cenderung menunda keputusan tegas karena belum memiliki aturan resmi mengenai tata tertib ruangan."
+        },
+        {
+          "id": "C",
+          "text": "Tertutup dan berupaya menggantikan proses musyawarah langsung dengan prosedur administratif tertulis."
+        },
+        {
+          "id": "D",
+          "text": "Kompromistis dan mengutamakan ketenangan sesaat tanpa menyelidiki latar belakang keresahan para siswa."
+        }
+      ],
+      "primary_competency": "BI12-C03-B",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Penokohan Melalui Tindakan (Metode Dramatik):\n   Penokohan (karakterisasi) dalam novel dapat disampaikan secara analitik (langsung disebutkan oleh pengarang) atau dramatik (tersirat melalui dialog, pikiran tokoh, reaksi tokoh lain, dan tindakan nyata tokoh). Menganalisis karakter melalui metode dramatik menuntut kemampuan menghubungkan motif dan cara tokoh menyelesaikan suatu konflik dengan kualitas kepribadian moralnya.\n\n2. Pembahasan Kunci Jawaban:\n   - Bijaksana dan terstruktur dalam mengurai pokok permasalahan sebelum membuka ruang kesepakatan bersama (BENAR): Tindakan Pak Danar yang tidak terpancing emosi, tidak mengetuk meja secara otoriter, tidak menuntut siapa yang salah terlebih dahulu, melainkan membagikan kertas dan menuliskan dua kolom pemetaan ('Kebutuhan Utama' dan 'Kekhawatiran') menunjukkan perwatakan seorang pendidik yang berkepala dingin, adil, bijaksana, dan memiliki pendekatan sistematis/terstruktur dalam memfasilitasi resolusi konflik antarkelompok siswa.\n\n3. Pembahasan Distraktor:\n   - Ragu-ragu dan cenderung menunda keputusan tegas karena belum memiliki aturan resmi mengenai tata tertib ruangan (Salah): Tindakan membagikan kertas dan memetakan masalah bukan tanda keragu-raguan, melainkan langkah aktif dan strategis untuk meredakan ketegangan verbal agar musyawarah berjalan berlandaskan substansi.\n   - Tertutup dan berupaya menggantikan proses musyawarah langsung dengan prosedur administratif tertulis (Salah): Pak Danar menggunakan catatan tertulis sebagai alat bantu identifikasi masalah sebelum musyawarah bersama dibuka kembali, bukan untuk meniadakan komunikasi lisan.\n   - Kompromistis dan mengutamakan ketenangan sesaat tanpa menyelidiki latar belakang keresahan para siswa (Salah): Pembuatan dua kolom kebutuhan dan kekhawatiran justru dirancang secara khusus untuk menggali akar latar belakang keresahan kedua belah pihak secara mendalam.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    },
+    {
+      "secondary_competencies": [],
+      "cognitive_level": "analyze",
+      "question_id": "BI12-C03-B-2065",
+      "question_role": "practice",
+      "tka_alignment": {
+        "competency": "",
+        "stimulus_type": "",
+        "suitable": false
+      },
+      "question": "Perhatikan kutipan cerita berikut: 'Selama tiga hari berturut-turut, Sinta duduk di sudut selasar membawa lembar pengamatan. Ia mencatat jam-jam puncak keterisian ruang baca, jenis kegiatan di setiap meja, serta dinamika suara yang memicu keluhan. Saat forum penataan dimulai, ia tidak mengajukan sangkaan pribadi, melainkan memaparkan data: keramaian selalu memuncak pada pukul dua siang ketika kelompok tugas poster digital masuk bersamaan dengan waktu belajar mandiri. Berdasarkan catatan itu, Sinta mengusulkan penataan zona meja, draf kesepakatan batas nada suara, dan penyesuaian jadwal kelompok.' Watak Sinta yang paling kuat tergambar melalui caranya menyusun usulan penataan ruang baca adalah...",
+      "answer": "A",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cermat dan objektif dalam merumuskan pemecahan masalah berdasarkan data pengamatan yang terukur."
+        },
+        {
+          "id": "B",
+          "text": "Kurang luwes dan cenderung membatasi ruang gerak teman-temannya semata-mata demi keteraturan jadwal."
+        },
+        {
+          "id": "C",
+          "text": "Pasif dan berhati-hati karena memilih mencatat dari kejauhan alih-alih melibatkan diri dalam dinamika kelompok."
+        },
+        {
+          "id": "D",
+          "text": "Cepat berpuas diri karena menganggap data catatan tiga hari sudah cukup mewakili seluruh kebiasaan siswa."
+        }
+      ],
+      "primary_competency": "BI12-C03-B",
+      "difficulty_label": "medium",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Penokohan Berbasis Bukti Tekstual:\n   Watak tokoh dalam teks naratif dicerminkan oleh bagaimana tokoh menyikapi permasalahan di sekitarnya. Pengambilan kesimpulan atas watak tokoh harus berakar langsung pada bukti perilaku, cara berpikir, dan metode yang digunakan tokoh dalam berinteraksi dengan lingkungannya.\n\n2. Pembahasan Kunci Jawaban:\n   - Cermat dan objektif dalam merumuskan pemecahan masalah berdasarkan data pengamatan yang terukur (BENAR): Kutipan teks membuktikan bahwa Sinta melakukan observasi sistematis selama tiga hari berturut-turut, mencatat jam sibuk, jenis kegiatan, dan dinamika suara, lalu menyajikan data faktual saat forum musyawarah tanpa sangkaan subjektif pribadi. Berdasarkan bukti tersebut, usulannya (penataan zona meja, batas suara, jadwal) disusun secara cermat dan objektif.\n\n3. Pembahasan Distraktor:\n   - Kurang luwes dan cenderung membatasi ruang gerak teman-temannya semata-mata demi keteraturan jadwal (Salah): Usulan Sinta berakar dari temuan jam sibuk pukul 14.00 di mana kelompok tugas poster masuk bersamaan dengan waktu belajar mandiri, bukan keinginan sepihak untuk membatasi ruang gerak.\n   - Pasif dan berhati-hati karena memilih mencatat dari kejauhan alih-alih melibatkan diri dalam dinamika kelompok (Salah): Mengambil posisi mencatat merupakan metode pengumpulan data lapangan yang sistematis dan bertujuan, yang kemudian ditindaklanjuti secara aktif dengan memaparkan solusi di forum resmi.\n   - Cepat berpuas diri karena menganggap data catatan tiga hari sudah cukup mewakili seluruh kebiasaan siswa (Salah): Stimulus menyajikan tindakan Sinta sebagai langkah terarah untuk memetakan jam-jam puncak konflik, bukan gambaran watak yang cepat puas atau meremehkan persoalan.",
+      "question_type": "single_select",
+      "estimated_time_seconds": 90
+    }
+  ],
+  "curriculum": [
+    "K13",
+    "Merdeka"
+  ],
+  "grade": 12,
+  "competencies": [
+    {
+      "name": "Kompetensi BI12-C03-D",
+      "question_count": 1,
+      "competency_id": "BI12-C03-D"
+    },
+    {
+      "name": "Kompetensi BI12-C03-A",
+      "question_count": 2,
+      "competency_id": "BI12-C03-A"
+    },
+    {
+      "name": "Kompetensi BI12-C03-K13",
+      "question_count": 1,
+      "competency_id": "BI12-C03-K13"
+    },
+    {
+      "name": "Kompetensi BI12-C03-F",
+      "question_count": 3,
+      "competency_id": "BI12-C03-F"
+    },
+    {
+      "name": "Kompetensi BI12-C03-C",
+      "question_count": 2,
+      "competency_id": "BI12-C03-C"
+    },
+    {
+      "name": "Kompetensi BI12-C03-B",
+      "question_count": 2,
+      "competency_id": "BI12-C03-B"
+    },
+    {
+      "name": "Kompetensi BI12-C03-TKA",
+      "question_count": 1,
+      "competency_id": "BI12-C03-TKA"
+    }
+  ],
+  "subject": "bahasa-indonesia",
+  "chapter": "BI12-C03",
+  "status": "active",
+  "content_version": 1,
+  "pool_id": "POOL-BAHASA-INDONESIA-BI12-C03"
 }

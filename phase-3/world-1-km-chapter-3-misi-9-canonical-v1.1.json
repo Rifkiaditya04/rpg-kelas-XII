@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_V1.1_RECONCILED",
+  "dataset": "World 1 KM Standard Chapter 3 Original Content - Misi 9 v1.0",
+  "purpose": "Canonical v1.1 reconciled dataset for World 1 Bahasa Indonesia Chapter 3 Misi 9.",
+  "chapter_id": "BI12-C03",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "KM03-A1",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-A",
+      "skill": "understand",
+      "question": "Berdasarkan kutipan: 'Aku berjalan menyusuri gang sempit itu dengan hati berdebar. Malam terasa begitu sunyi.', sudut pandang apakah yang digunakan oleh pengarang?",
+      "options": [
+        "Sudut pandang orang pertama",
+        "Sudut pandang orang kedua",
+        "Sudut pandang orang ketiga serba tahu",
+        "Sudut pandang orang ketiga terbatas"
+      ],
+      "answer": "Sudut pandang orang pertama",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Sudut Pandang Narasi Novel:\n   Sudut pandang (point of view) merupakan cara pengarang menempatkan dirinya dalam membawakan cerita kepada pembaca. Dalam fiksi sastra, sudut pandang orang pertama ditandai secara gramatikal oleh penggunaan pronomina persona pertama seperti 'aku' atau 'saya'. Pengarang bertindak langsung sebagai tokoh cerita (baik tokoh utama maupun tokoh sampingan) yang menuturkan pengalaman, persepsi, dan emosi batinnya dari sudut pandang internal.\n\n2. Pembahasan Kunci Jawaban:\n   - Sudut pandang orang pertama (BENAR): Penggunaan klausul 'Aku berjalan menyusuri gang sempit itu dengan hati berdebar' secara eksplisit memperlihatkan bahwa narator berbicara sebagai subjek pelaku di dalam cerita menggunakan kata ganti persona pertama ('Aku'). Dengan demikian, pengarang memosisikan pencerita sebagai tokoh yang mengalami sendiri peristiwa tersebut.\n\n3. Pembahasan Distraktor:\n   - Sudut pandang orang kedua (Salah): Sudut pandang orang kedua menggunakan kata ganti 'kamu', 'kau', atau 'Anda', yang memosisikan pembaca seolah-olah menjadi tokoh utama yang mengalami tindakan tersebut; bentuk ini sangat jarang digunakan dalam novel naratif konvensional.\n   - Sudut pandang orang ketiga serba tahu (Salah): Menggunakan pronomina persona ketiga ('dia', 'ia', atau nama tokoh) dan pencerita mengetahui seluruh isi hati, motif tersembunyi, dan peristiwa simultan di masa lalu maupun masa depan dari semua tokoh cerita.\n   - Sudut pandang orang ketiga terbatas (Salah): Menggunakan pronomina orang ketiga ('dia' atau nama orang), namun akses batin pencerita dibatasi hanya pada pikiran dan perasaan satu tokoh tertentu saja, bukan narator bersuara 'Aku'.",
+      "source": {
+        "student_book": {
+          "pages": "101-105",
+          "section": "Bab 3, Subbab A: Memahami Cara Pandang Pengarang terhadap Permasalahan dalam Novel yang Disimak"
+        },
+        "teacher_guide": {
+          "pages": "128-130",
+          "section": "Bab 3, Subbab A: Panduan Pembelajaran Aktivitas 3.1 & 3.2"
+        }
+      },
+      "provenance": "Soal pemahaman konsep sudut pandang naratif sastra berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-A",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C03-A: Memahami dan mengidentifikasi cara pandang (sudut pandang) pengarang terhadap permasalahan dalam novel yang disimak",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 101-105 (Subbab A: Memahami Cara Pandang Pengarang terhadap Permasalahan dalam Novel yang Disimak)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 128-130 (Subbab A: Panduan Pembelajaran Aktivitas 3.1 & 3.2)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal identifikasi sudut pandang persona pertama berdasarkan penanda gramatikal stimulus kutipan disusun mandiri sesuai kurikulum acuan."
+      }
+    },
+    {
+      "id": "KM03-A2",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-A",
+      "skill": "understand",
+      "question": "Pengarang hanya memahami cerita dan perasaan salah satu tokoh saja, namun ia tetap menggunakan kata ganti 'dia' atau 'ia' sebagai pencerita. Jenis sudut pandang ini disebut...",
+      "options": [
+        "Sudut pandang orang ketiga terbatas",
+        "Sudut pandang orang ketiga serba tahu",
+        "Sudut pandang orang pertama",
+        "Sudut pandang campuran"
+      ],
+      "answer": "Sudut pandang orang ketiga terbatas",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Sudut Pandang Orang Ketiga Terbatas:\n   Dalam teori naratologi fiksi, sudut pandang orang ketiga terbagi menjadi dua kategori utama: serba tahu (omniscient) dan terarah/terbatas (limited). Pada sudut pandang orang ketiga terbatas, narator berada di luar cerita dan menyebut tokoh dengan kata ganti 'ia', 'dia', atau nama diri, tetapi lensa perspektif narator menempel secara ketat hanya pada satu tokoh utama. Narator hanya melaporkan apa yang dilihat, didengar, dirasakan, dan dipikirkan oleh satu tokoh tersebut, tanpa memiliki akses ke batin tokoh lainnya.\n\n2. Pembahasan Kunci Jawaban:\n   - Sudut pandang orang ketiga terbatas (BENAR): Karakteristik narator yang membatasi pemahaman emosi dan pikiran hanya pada salah satu tokoh tertentu sembari menggunakan pronomina persona ketiga ('dia' atau 'ia') merupakan definisi baku dari sudut pandang orang ketiga terbatas (third-person limited point of view).\n\n3. Pembahasan Distraktor:\n   - Sudut pandang orang ketiga serba tahu (Salah): Pada sudut pandang serba tahu (omniscient), narator memiliki kebebasan mutlak untuk melompati ruang dan waktu serta menyelami isi pikiran dan perasaan seluruh tokoh tanpa pembatasan satu sudut pandang tokoh saja.\n   - Sudut pandang orang pertama (Salah): Menggunakan pronomina persona pertama ('aku' atau 'saya') di mana narator terlibat langsung dalam interaksi cerita, bukan pengamat luar yang menggunakan kata ganti 'ia' atau 'dia'.\n   - Sudut pandang campuran (Salah): Mengombinasikan sudut pandang persona pertama dan persona ketiga secara bergantian dalam bab-bab yang berbeda; bukan narator persona ketiga yang akses emosinya dibatasi pada satu tokoh.",
+      "source": {
+        "student_book": {
+          "pages": "101-105",
+          "section": "Bab 3, Subbab A: Memahami Cara Pandang Pengarang terhadap Permasalahan dalam Novel yang Disimak"
+        },
+        "teacher_guide": {
+          "pages": "128-130",
+          "section": "Bab 3, Subbab A: Panduan Pembelajaran Aktivitas 3.1 & 3.2"
+        }
+      },
+      "provenance": "Soal pemahaman karakteristik sudut pandang naratif novel berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-A",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C03-A: Memahami dan mengidentifikasi cara pandang (sudut pandang) pengarang terhadap permasalahan dalam novel yang disimak",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 101-105 (Subbab A: Memahami Cara Pandang Pengarang terhadap Permasalahan dalam Novel yang Disimak)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 128-130 (Subbab A: Panduan Pembelajaran Aktivitas 3.1 & 3.2)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal telaah definisi karakteristik sudut pandang persona ketiga terbatas disusun mandiri sesuai acuan materi sastra Kurikulum Merdeka."
+      }
+    },
+    {
+      "id": "KM03-B1",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-B",
+      "skill": "analyze",
+      "question": "Perhatikan kutipan cerita berikut: 'Di tengah perdebatan yang kian memanas antara kelompok pembaca mandiri dan kelompok diskusi tugas, Pak Danar melangkah ke tengah ruangan. Tanpa mengetuk meja atau menuntut siapa yang harus meminta maaf terlebih dahulu, ia membagikan selembar kertas kepada masing-masing perwakilan. Di papan tulis kecil, ia hanya menuliskan dua kolom: Kebutuhan Utama Kegiatan dan Kekhawatiran yang Dirasakan. Ia meminta kedua belah pihak mencatat poin-poin tersebut secara bergantian sebelum forum musyawarah bersama dibuka kembali.' Berdasarkan kutipan tersebut, perwatakan Pak Danar yang paling kuat tercermin melalui tindakannya adalah...",
+      "options": [
+        "Bijaksana dan terstruktur dalam mengurai pokok permasalahan sebelum membuka ruang kesepakatan bersama.",
+        "Ragu-ragu dan cenderung menunda keputusan tegas karena belum memiliki aturan resmi mengenai tata tertib ruangan.",
+        "Tertutup dan berupaya menggantikan proses musyawarah langsung dengan prosedur administratif tertulis.",
+        "Kompromistis dan mengutamakan ketenangan sesaat tanpa menyelidiki latar belakang keresahan para siswa."
+      ],
+      "answer": "Bijaksana dan terstruktur dalam mengurai pokok permasalahan sebelum membuka ruang kesepakatan bersama.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Penokohan Melalui Tindakan (Metode Dramatik):\n   Penokohan (karakterisasi) dalam novel dapat disampaikan secara analitik (langsung disebutkan oleh pengarang) atau dramatik (tersirat melalui dialog, pikiran tokoh, reaksi tokoh lain, dan tindakan nyata tokoh). Menganalisis karakter melalui metode dramatik menuntut kemampuan menghubungkan motif dan cara tokoh menyelesaikan suatu konflik dengan kualitas kepribadian moralnya.\n\n2. Pembahasan Kunci Jawaban:\n   - Bijaksana dan terstruktur dalam mengurai pokok permasalahan sebelum membuka ruang kesepakatan bersama (BENAR): Tindakan Pak Danar yang tidak terpancing emosi, tidak mengetuk meja secara otoriter, tidak menuntut siapa yang salah terlebih dahulu, melainkan membagikan kertas dan menuliskan dua kolom pemetaan ('Kebutuhan Utama' dan 'Kekhawatiran') menunjukkan perwatakan seorang pendidik yang berkepala dingin, adil, bijaksana, dan memiliki pendekatan sistematis/terstruktur dalam memfasilitasi resolusi konflik antarkelompok siswa.\n\n3. Pembahasan Distraktor:\n   - Ragu-ragu dan cenderung menunda keputusan tegas karena belum memiliki aturan resmi mengenai tata tertib ruangan (Salah): Tindakan membagikan kertas dan memetakan masalah bukan tanda keragu-raguan, melainkan langkah aktif dan strategis untuk meredakan ketegangan verbal agar musyawarah berjalan berlandaskan substansi.\n   - Tertutup dan berupaya menggantikan proses musyawarah langsung dengan prosedur administratif tertulis (Salah): Pak Danar menggunakan catatan tertulis sebagai alat bantu identifikasi masalah sebelum musyawarah bersama dibuka kembali, bukan untuk meniadakan komunikasi lisan.\n   - Kompromistis dan mengutamakan ketenangan sesaat tanpa menyelidiki latar belakang keresahan para siswa (Salah): Pembuatan dua kolom kebutuhan dan kekhawatiran justru dirancang secara khusus untuk menggali akar latar belakang keresahan kedua belah pihak secara mendalam.",
+      "source": {
+        "student_book": {
+          "pages": "106-112",
+          "section": "Bab 3, Subbab B: Mengungkapkan Perwatakan Tokoh dalam Novel"
+        },
+        "teacher_guide": {
+          "pages": "135-142",
+          "section": "Bab 3, Subbab B: Panduan Pembelajaran Aktivitas 3.3 & 3.4"
+        }
+      },
+      "provenance": "Skenario fiksi sekolah orisinal mandiri disusun berdasarkan target kompetensi Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3 (Decision 009).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-B",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C03-B: Mengungkapkan dan menganalisis perwatakan tokoh dalam novel melalui tindakan dan respon tokoh",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 106-112 (Subbab B: Mengungkapkan Perwatakan Tokoh dalam Novel)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 135-142 (Subbab B: Panduan Pembelajaran Aktivitas 3.3 & 3.4)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Skenario orisinal dinamika ruang baca sekolah, karakterisasi Pak Danar, dan perumusan distraktor disusun mandiri sebagai instrumen evaluasi penokohan novel bebas hak cipta pihak ketiga."
+      }
+    },
+    {
+      "id": "KM03-B2",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-B",
+      "skill": "analyze",
+      "question": "Perhatikan kutipan cerita berikut: 'Selama tiga hari berturut-turut, Sinta duduk di sudut selasar membawa lembar pengamatan. Ia mencatat jam-jam puncak keterisian ruang baca, jenis kegiatan di setiap meja, serta dinamika suara yang memicu keluhan. Saat forum penataan dimulai, ia tidak mengajukan sangkaan pribadi, melainkan memaparkan data: keramaian selalu memuncak pada pukul dua siang ketika kelompok tugas poster digital masuk bersamaan dengan waktu belajar mandiri. Berdasarkan catatan itu, Sinta mengusulkan penataan zona meja, draf kesepakatan batas nada suara, dan penyesuaian jadwal kelompok.' Watak Sinta yang paling kuat tergambar melalui caranya menyusun usulan penataan ruang baca adalah...",
+      "options": [
+        "Cermat dan objektif dalam merumuskan pemecahan masalah berdasarkan data pengamatan yang terukur.",
+        "Kurang luwes dan cenderung membatasi ruang gerak teman-temannya semata-mata demi keteraturan jadwal.",
+        "Pasif dan berhati-hati karena memilih mencatat dari kejauhan alih-alih melibatkan diri dalam dinamika kelompok.",
+        "Cepat berpuas diri karena menganggap data catatan tiga hari sudah cukup mewakili seluruh kebiasaan siswa."
+      ],
+      "answer": "Cermat dan objektif dalam merumuskan pemecahan masalah berdasarkan data pengamatan yang terukur.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Penokohan Berbasis Bukti Tekstual:\n   Watak tokoh dalam teks naratif dicerminkan oleh bagaimana tokoh menyikapi permasalahan di sekitarnya. Pengambilan kesimpulan atas watak tokoh harus berakar langsung pada bukti perilaku, cara berpikir, dan metode yang digunakan tokoh dalam berinteraksi dengan lingkungannya.\n\n2. Pembahasan Kunci Jawaban:\n   - Cermat dan objektif dalam merumuskan pemecahan masalah berdasarkan data pengamatan yang terukur (BENAR): Kutipan teks membuktikan bahwa Sinta melakukan observasi sistematis selama tiga hari berturut-turut, mencatat jam sibuk, jenis kegiatan, dan dinamika suara, lalu menyajikan data faktual saat forum musyawarah tanpa sangkaan subjektif pribadi. Berdasarkan bukti tersebut, usulannya (penataan zona meja, batas suara, jadwal) disusun secara cermat dan objektif.\n\n3. Pembahasan Distraktor:\n   - Kurang luwes dan cenderung membatasi ruang gerak teman-temannya semata-mata demi keteraturan jadwal (Salah): Usulan Sinta berakar dari temuan jam sibuk pukul 14.00 di mana kelompok tugas poster masuk bersamaan dengan waktu belajar mandiri, bukan keinginan sepihak untuk membatasi ruang gerak.\n   - Pasif dan berhati-hati karena memilih mencatat dari kejauhan alih-alih melibatkan diri dalam dinamika kelompok (Salah): Mengambil posisi mencatat merupakan metode pengumpulan data lapangan yang sistematis dan bertujuan, yang kemudian ditindaklanjuti secara aktif dengan memaparkan solusi di forum resmi.\n   - Cepat berpuas diri karena menganggap data catatan tiga hari sudah cukup mewakili seluruh kebiasaan siswa (Salah): Stimulus menyajikan tindakan Sinta sebagai langkah terarah untuk memetakan jam-jam puncak konflik, bukan gambaran watak yang cepat puas atau meremehkan persoalan.",
+      "source": {
+        "student_book": {
+          "pages": "106-112",
+          "section": "Bab 3, Subbab B: Mengungkapkan Perwatakan Tokoh dalam Novel"
+        },
+        "teacher_guide": {
+          "pages": "135-142",
+          "section": "Bab 3, Subbab B: Panduan Pembelajaran Aktivitas 3.3 & 3.4"
+        }
+      },
+      "provenance": "Skenario fiksi sekolah orisinal mandiri disusun berdasarkan target kompetensi Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3 (Decision 009).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-B",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C03-B: Mengungkapkan dan menganalisis perwatakan tokoh dalam novel melalui tindakan dan respon tokoh",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 106-112 (Subbab B: Mengungkapkan Perwatakan Tokoh dalam Novel)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 135-142 (Subbab B: Panduan Pembelajaran Aktivitas 3.3 & 3.4)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Skenario orisinal metodologi observasi Sinta, konstruksi butir soal watak objektif, dan opsi distraktor disusun mandiri sebagai instrumen evaluasi karakterisasi bebas hak cipta."
+      }
+    }
+  ]
+}

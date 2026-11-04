@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_V1.1_RECONCILED",
+  "dataset": "World 1 KM Standard Chapter 3 Original Content - Misi 11 v1.0",
+  "purpose": "Canonical v1.1 reconciled dataset for World 1 Bahasa Indonesia Chapter 3 Misi 11.",
+  "chapter_id": "BI12-C03",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "KM03-F1",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-F",
+      "skill": "apply",
+      "question": "Penulisan kalimat langsung yang paling tepat sesuai dengan kaidah kebahasaan adalah...",
+      "options": [
+        "Guru BK berkata, \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi.\"",
+        "Guru BK berkata: \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\".",
+        "Guru BK berkata, \"jika kamu diam, kamu ikut membiarkan kekerasan terjadi\".",
+        "\"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\", kata Guru BK."
+      ],
+      "answer": "Guru BK berkata, \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi.\"",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kaidah Kebahasaan Kalimat Langsung (PUEBI/EYD):\n   Kalimat langsung dalam teks narasi mengutip tuturan tokoh persis seperti yang diucapkan. Kaidah kebakuan penulisan kalimat langsung meliputi:\n   a. Bagian kalimat pengiring sebelum petikan diakhiri tanda koma (,), bukan titik dua (:).\n   b. Petikan langsung diapit tanda petik dua (\"\").\n   c. Huruf pertama kalimat di dalam tanda petik diawali huruf kapital.\n   d. Tanda baca penutup kalimat (titik, tanya, atau seru) ditempatkan di SEBELUM tanda petik penutup (di dalam tanda petik).\n\n2. Pembahasan Kunci Jawaban:\n   - Guru BK berkata, \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi.\" (BENAR): Kalimat pengiring 'Guru BK berkata' diikuti tanda koma; huruf pertama kutipan 'Jika' diawali huruf kapital; dan tanda titik (.) terletak di dalam tanda petik penutup. Seluruh aturan kaidah tata tanda baca kalimat langsung terpenuhi secara sempurna.\n\n3. Pembahasan Distraktor:\n   - Guru BK berkata: \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\". (Salah): Tanda titik dua (:) tidak digunakan untuk memisahkan pengiring sebelum kalimat langsung tunggal dalam narasi prosa, dan tanda titik (.) keliru diletakkan di luar tanda petik penutup.\n   - Guru BK berkata, \"jika kamu diam, kamu ikut membiarkan kekerasan terjadi\". (Salah): Huruf pertama di awal kutipan langsung wajib menggunakan huruf kapital ('Jika', bukan 'jika').\n   - \"Jika kamu diam, kamu ikut membiarkan kekerasan terjadi\", kata Guru BK. (Salah): Ketika kutipan langsung deklaratif mendahului pengiring narasi, tanda baca di akhir petikan harus berupa tanda koma (,) yang berada di dalam tanda petik, bukan di luar tanda petik.",
+      "source": {
+        "student_book": {
+          "pages": "124-128",
+          "section": "Bab 3, Subbab F: Menyajikan Novel secara Kreatif dan Menarik dengan Memperhatikan Penggunaan Tanda Baca"
+        },
+        "teacher_guide": {
+          "pages": "155-159",
+          "section": "Bab 3, Subbab F: Panduan Pembelajaran Aktivitas 3.9 & 3.10"
+        }
+      },
+      "provenance": "Soal penerapan kaidah ejaan dan tanda baca kalimat langsung novel berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-F",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C03-F: Menerapkan kaidah tata tanda baca dan kalimat langsung dalam teks sastra (novel)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 124-128 (Subbab F: Menyajikan Novel secara Kreatif dan Menarik dengan Memperhatikan Penggunaan Tanda Baca)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 155-159 (Subbab F: Panduan Pembelajaran Aktivitas 3.9 & 3.10)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal penerapan kaidah penulisan kalimat langsung sesuai standar EYD/PUEBI pada konteks sekolah aman disusun mandiri."
+      }
+    },
+    {
+      "id": "KM03-F2",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-F",
+      "skill": "apply",
+      "question": "Bacalah kalimat berikut: 'Mamak menasihati Maul agar ia tetap kuat dan menyadari bahwa pukulan yang tidak mematikannya justru akan menguatkannya.'\nKalimat di atas merupakan contoh dari...",
+      "options": [
+        "Kalimat tidak langsung",
+        "Kalimat langsung",
+        "Kalimat majemuk setara",
+        "Kalimat retoris"
+      ],
+      "answer": "Kalimat tidak langsung",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Karakteristik Sintaksis Kalimat Tidak Langsung:\n   Kalimat tidak langsung (reported speech) merupakan bentuk kalimat yang menceritakan kembali ujaran atau tuturan orang lain tanpa mengutip perkataan aslinya secara verbatim. Ciri-ciri pokok kalimat tidak langsung meliputi:\n   a. Tidak menggunakan tanda petik dua (\"\").\n   b. Menggunakan konjungsi penerang atau pengantar makna seperti 'agar', 'bahwa', 'untuk', atau 'supaya'.\n   c. Terjadi pergeseran sudut pandang pronomina persona (misalnya persona pertama 'aku' bergeser menjadi persona ketiga 'ia' atau 'dia').\n\n2. Pembahasan Kunci Jawaban:\n   - Kalimat tidak langsung (BENAR): Kalimat 'Mamak menasihati Maul agar ia tetap kuat dan menyadari bahwa pukulan yang tidak mematikannya justru akan menguatkannya' menyampaikan kembali pesan lisan Mamak melalui penceritaan narator menggunakan konjungsi 'agar' dan 'bahwa' serta kata ganti persona ketiga ('ia'), tanpa diapit tanda petik. Struktur ini merupakan perwujudan konkret dari kalimat tidak langsung.\n\n3. Pembahasan Distraktor:\n   - Kalimat langsung (Salah): Kalimat langsung mewajibkan penulisan tuturan lisan asli tokoh dengan diapit tanda petik dua (\"...\") dan menggunakan kata ganti persona sesuai tuturan aslinya.\n   - Kalimat majemuk setara (Salah): Kalimat majemuk setara menghubungkan klausa-klausa yang berkedudukan sejajar (menggunakan konjungsi koordinatif seperti 'dan', 'atau', 'tetapi'); kalimat pada stimulus berstruktur subordinatif/bertingkat yang berfungsi sebagai tuturan pelaporan pesan.\n   - Kalimat retoris (Salah): Kalimat retoris adalah pertanyaan yang tidak menuntut jawaban langsung karena jawabannya sudah jelas atau berfungsi sebagai penegasan emosional, bukan kalimat deklaratif pelaporan nasihat.",
+      "source": {
+        "student_book": {
+          "pages": "124-128",
+          "section": "Bab 3, Subbab F: Menyajikan Novel secara Kreatif dan Menarik dengan Memperhatikan Penggunaan Tanda Baca"
+        },
+        "teacher_guide": {
+          "pages": "155-159",
+          "section": "Bab 3, Subbab F: Panduan Pembelajaran Aktivitas 3.9 & 3.10"
+        }
+      },
+      "provenance": "Soal pemahaman karakteristik kalimat tidak langsung dalam teks naratif berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-F",
+      "difficulty": "easy",
+      "cognitive_level": "apply",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C03-F: Membedakan dan mengubah kalimat langsung serta kalimat tidak langsung dalam teks narasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 124-128 (Subbab F: Menyajikan Novel secara Kreatif dan Menarik dengan Memperhatikan Penggunaan Tanda Baca)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 155-159 (Subbab F: Panduan Pembelajaran Aktivitas 3.9 & 3.10)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal identifikasi bentuk kalimat tidak langsung dalam kutipan novel disusun mandiri sesuai kurikulum acuan sastra."
+      }
+    },
+    {
+      "id": "KM03-F3",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-F",
+      "skill": "apply",
+      "question": "Jika seorang penulis memiliki poin kerangka cerita (Pemicu Konflik) berbunyi: 'Dita direkam diam-diam saat menyanyi dan videonya menjadi bahan ejekan teman-teman sekolah.'\nLangkah paling tepat untuk mengembangkan poin tersebut menjadi adegan novel yang hidup adalah dengan...",
+      "options": [
+        "Menambahkan deskripsi latar, dialog tokoh, dan ekspresi emosi tokoh agar pembaca dapat merasakan suasana kejadian tersebut.",
+        "Mengulangi kalimat poin tersebut berkali-kali di setiap paragraf agar pembaca tidak lupa inti masalahnya.",
+        "Langsung melompat ke bagian klimaks untuk menghemat jumlah halaman buku.",
+        "Mengganti tokoh Dita dengan tokoh lain agar konflik terasa lebih segar."
+      ],
+      "answer": "Menambahkan deskripsi latar, dialog tokoh, dan ekspresi emosi tokoh agar pembaca dapat merasakan suasana kejadian tersebut.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Prinsip Pengembangan Kerangka Novel ('Show, Don't Tell'):\n   Kerangka cerita (outline) hanya memuat poin-poin gagasan pokok peristiwa naratif secara ringkas. Untuk mengubah poin kerangka menjadi adegan fiksi yang hidup, berbobot, dan memikat pembaca, penulis harus menerapkan prinsip 'show, don't tell' (tunjukkan, jangan sekadar beritahukan). Hal ini diwujudkan dengan membangun latar suasana yang mendalam, menciptakan interaksi dialog yang autentik, serta menggambarkan bahasa tubuh dan gejolak emosi tokoh secara detail.\n\n2. Pembahasan Kunci Jawaban:\n   - Menambahkan deskripsi latar, dialog tokoh, dan ekspresi emosi tokoh agar pembaca dapat merasakan suasana kejadian tersebut (BENAR): Poin kerangka 'Dita direkam diam-diam...' memerlukan perwujudan adegan konkret: seperti apa sudut koridor tempat rekaman diambil, bisik-bisik ejekan di kelas, dan getaran rasa malu serta air mata Dita. Unsur-unsur deskripsi latar, dialog, dan ekspresi emosi ini adalah instrumen pokok yang membuat adegan novel berdenyut hidup di benak pembaca.\n\n3. Pembahasan Distraktor:\n   - Mengulangi kalimat poin tersebut berkali-kali di setiap paragraf agar pembaca tidak lupa inti masalahnya (Salah): Pengulangan kalimat garis besar secara harfiah akan menghasilkan tulisan yang monoton, miskin imajinasi, dan membosankan bagi pembaca.\n   - Langsung melompat ke bagian klimaks untuk menghemat jumlah halaman buku (Salah): Melompati pembangunan suasana konflik akan menyebabkan alur terasa tergesa-gesa (hasty) dan pembaca kehilangan keterikatan emosional dengan penderitaan tokoh.\n   - Mengganti tokoh Dita dengan tokoh lain agar konflik terasa lebih segar (Salah): Mengganti tokoh utama secara sembarangan di tengah proses penulisan merusak konsistensi karakterisasi dan kerangka cerita yang sudah direncanakan.",
+      "source": {
+        "student_book": {
+          "pages": "121-124",
+          "section": "Bab 3, Subbab E: Merancang Kerangka Novel"
+        },
+        "teacher_guide": {
+          "pages": "151-155",
+          "section": "Bab 3, Subbab E: Panduan Pembelajaran Penyusunan Kerangka Novel"
+        }
+      },
+      "provenance": "Soal penerapan teknik pengembangan kerangka novel berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-F",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C03-E: Menuliskan gagasan, pandangan, dan ide imajinatif dalam bentuk kerangka novel dan mengembangkannya menjadi draf narasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 121-124 (Subbab E: Merancang Kerangka Novel)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 151-155 (Subbab E: Panduan Pembelajaran Penyusunan Kerangka Novel)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal penerapan teknik pengembangan kerangka novel (show don't tell) pada pencegahan perundungan sekolah disusun mandiri."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "subject": "Bahasa Indonesia",
+      "question": "Dalam penulisan novel sesuai standar apresiasi sastra K13, majas metafora sering digunakan untuk memperindah deskripsi. Manakah kalimat berikut yang menggunakan majas metafora?",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Majas Metafora dalam Teks Prosa Sastra:\n   Majas metafora merupakan gaya bahasa perbandingan analogis langsung yang menyamakan dua hal berbeda berdasarkan kesamaan sifat atau karakteristiknya tanpa menggunakan kata pembanding eksplisit (seperti: 'bagai', 'bak', 'laksana', atau 'seperti'). Metafora memperlakukan suatu objek secara langsung sebagai objek lain yang memiliki asosiasi makna simbolis yang kuat.\n\n2. Pembahasan Kunci Jawaban:\n   - Perpustakaan itu adalah gudang ilmu bagi para siswa (BENAR): Kalimat ini membandingkan 'perpustakaan' secara langsung dengan 'gudang ilmu' tanpa partikel pembanding. Persamaan ini bersifat metaforis karena perpustakaan secara fisik menyimpan buku/pengetahuan sebagaimana sebuah gudang menyimpan perbendaharaan berharga.\n\n3. Pembahasan Distraktor:\n   - Angin malam membisikkan lagu sendu di telinganya (Salah): Merupakan majas personifikasi, yaitu gaya bahasa yang melekatkan sifat-sifat insani/manusiawi (membisikkan lagu) pada benda mati atau unsur alam (angin malam).\n   - Wajahnya bersinar bagaikan rembulan purnama (Salah): Merupakan majas asosiasi/simile, yaitu gaya bahasa perbandingan eksplisit yang menggunakan kata penghubung pembanding ('bagaikan').\n   - Dia berlari secepat kilat menyusuri lorong sekolah (Salah): Merupakan majas hiperbola, yaitu gaya bahasa kiasan yang menyatakan sesuatu secara berlebihan melampaui batas kewajaran kenyataan ('secepat kilat').",
+      "game_mechanic": "language_scan",
+      "provenance": "Soal jembatan kurikulum K13 materi unsur kebahasaan gaya bahasa (majas) teks sastra novel SMA.",
+      "source": {
+        "student_book": {
+          "pages": "N/A",
+          "section": "K13 SMA Kelas XII - Silabus dan KD 3.9 Kebahasaan Novel"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Permendikbud No. 37 Tahun 2018 - Analisis Gaya Bahasa Figuratif Novel"
+        }
+      },
+      "chapter_id": "BI12-C03",
+      "question_type": "konseptual",
+      "mode": "learning",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "answer": "Perpustakaan itu adalah gudang ilmu bagi para siswa.",
+      "estimated_time_seconds": 60,
+      "curriculum_source": [
+        "K13"
+      ],
+      "tags": [
+        "novel",
+        "majas",
+        "metafora",
+        "fundamental_k13"
+      ],
+      "topic_id": "BI12-C03-K13",
+      "topic": "Gaya Bahasa Novel (K13)",
+      "track": "wajib",
+      "options": [
+        "Perpustakaan itu adalah gudang ilmu bagi para siswa.",
+        "Angin malam membisikkan lagu sendu di telinganya.",
+        "Wajahnya bersinar bagaikan rembulan purnama.",
+        "Dia berlari secepat kilat menyusuri lorong sekolah."
+      ],
+      "id": "K13-C03-MAJAS-01",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum 2013 Revisi Jenjang SMA (Permendikbud No. 37 Tahun 2018)",
+        "competency_target": "KD 3.9: Menganalisis isi dan kebahasaan novel (fokus: gaya bahasa figuratif/majas metafora)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Bahasa Indonesia SMA/MA/SMK/MAK Kelas XII K13 Revisi Bab 4 (Menikmati Novel - Unsur Kebahasaan dan Gaya Bahasa)",
+          "teacher_guide": "Buku Guru Bahasa Indonesia SMA/MA/SMK/MAK Kelas XII K13 Revisi Bab 4 (Panduan Analisis Gaya Bahasa Novel)"
+        },
+        "support_category": "BRIDGING",
+        "authoring_statement": "Formulasi butir soal apresiasi gaya bahasa metafora dan dekonstruksi distraktor figuratif disusun mandiri sebagai jembatan kompetensi kebahasaan sastra K13."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "subject": "Bahasa Indonesia",
+      "question": "Bacalah penggalan novel berikut: 'Rifki menatap kertas pendaftarannya dengan ragu. Di satu sisi, ia sangat ingin mengambil jurusan seni yang diimpikannya, namun bayangan wajah ayahnya yang berharap ia menjadi insinyur membuat dadanya sesak.' Konflik utama yang dialami tokoh Rifki adalah...",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Dimensi Konflik Tokoh Fiksi (Asesmen Literasi Membaca):\n   Dalam telaah struktur fiksi, konflik merupakan pertentangan yang dialami tokoh. Konflik terbagi menjadi dua kategori utama:\n   a. Konflik internal (konflik batin/psikologis): pertentangan di dalam diri tokoh itu sendiri antara dua pilihan, motif, atau nilai yang saling bertolak belakang (misalnya impian versus kewajiban moral).\n   b. Konflik eksternal: pertentangan antara tokoh dengan entitas di luar dirinya (tokoh lain, norma masyarakat, atau kekuatan alam).\n\n2. Pembahasan Kunci Jawaban:\n   - Konflik batin antara keinginan pribadi dan harapan orang tua (BENAR): Kutipan teks menggambarkan: 'Di satu sisi, ia sangat ingin mengambil jurusan seni yang diimpikannya, namun bayangan wajah ayahnya yang berharap ia menjadi insinyur membuat dadanya sesak.' Rifki mengalami pergulatan jiwa di dalam batinnya sendiri antara mengejar aspirasi pribadinya (seni) dan rasa bersalah terhadap ekspektasi ayahnya (teknik). Ini merupakan representasi otentik dari konflik batin (intrapersonal conflict).\n\n3. Pembahasan Distraktor:\n   - Konflik fisik dengan ayahnya mengenai pilihan jurusan (Salah): Teks hanya menyebut 'bayangan wajah ayahnya membuat dadanya sesak'; tidak ada insiden kekerasan fisik, adu fisik, atau benturan jasmani sama sekali.\n   - Konflik sosial dengan lingkungan sekolah yang tidak mendukung seni (Salah): Tidak ada informasi dalam teks mengenai sekolah atau guru yang melarang atau tidak mendukung jurusan seni; pertentangan berpusat pada dinamika internal keluarga.\n   - Konflik ide dari ketidakmampuannya mengisi formulir pendaftaran (Salah): Rifki memegang kertas pendaftaran dengan ragu bukan karena kendala teknis mengisi kolom formulir, melainkan karena kebimbangan emosional dalam menentukan arah masa depannya.",
+      "game_mechanic": "meaning_check",
+      "provenance": "Soal pengayaan asesmen literasi membaca fiksi (TKA/AKM) sub-elemen penalaran dan interpretasi dinamika konflik tokoh fiksi.",
+      "source": {
+        "student_book": {
+          "pages": "N/A",
+          "section": "Asesmen Kompetensi Minimum / TKA Literasi Membaca Fiksi"
+        },
+        "teacher_guide": {
+          "pages": "N/A",
+          "section": "Kerangka Asesmen Literasi Membaca Pusmendik - Penalaran Konflik Fiksi"
+        }
+      },
+      "chapter_id": "BI12-C03",
+      "question_type": "penalaran",
+      "mode": "tka_preview",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "answer": "Konflik batin antara keinginan pribadi dan harapan orang tua.",
+      "estimated_time_seconds": 120,
+      "curriculum_source": [
+        "TKA"
+      ],
+      "tags": [
+        "novel",
+        "konflik_batin",
+        "tka_bonus"
+      ],
+      "topic_id": "BI12-C03-TKA",
+      "topic": "Analisis Fiksi (TKA)",
+      "track": "wajib",
+      "options": [
+        "Konflik batin antara keinginan pribadi dan harapan orang tua.",
+        "Konflik fisik dengan ayahnya mengenai pilihan jurusan.",
+        "Konflik sosial dengan lingkungan sekolah yang tidak mendukung seni.",
+        "Konflik ide dari ketidakmampuannya mengisi formulir pendaftaran."
+      ],
+      "id": "TKA-C03-BONUS-01",
+      "source_basis": {
+        "curriculum_framework": "Kerangka Asesmen Tes Kemampuan Akademik (Pusmendik / Kemendikdasmen)",
+        "competency_target": "Literasi Membaca Teks Sastra: Menemukan, menginterpretasi, dan menganalisis konflik intrapersonal tokoh cerita",
+        "concept_reference": {
+          "student_book": "Panduan Asesmen Literasi Membaca Teks Fiksi SMA Pusmendik Kemendikbudristek",
+          "teacher_guide": "Kerangka Asesmen Kompetensi Minimum dan Ujian Masuk PTN (Sub-elemen Refleksi Karakter Tokoh)"
+        },
+        "support_category": "ENRICHMENT",
+        "authoring_statement": "Formulasi butir soal penalaran konflik batin tokoh fiksi dan dekonstruksi distraktor disusun mandiri sebagai instrumen pengayaan literasi membaca TKA."
+      }
+    }
+  ]
+}

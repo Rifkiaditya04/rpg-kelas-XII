@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_V1.1_RECONCILED",
+  "dataset": "World 1 KM Standard Chapter 3 Original Content - Misi 10 v1.0",
+  "purpose": "Canonical v1.1 reconciled dataset for World 1 Bahasa Indonesia Chapter 3 Misi 10.",
+  "chapter_id": "BI12-C03",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "KM03-C1",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-C",
+      "skill": "evaluate",
+      "question": "Perhatikan kutipan cerita berikut: 'Ketegangan bermula saat Nadia meletakkan novelnya dengan dentuman keras di atas meja, terganggu oleh tawa kelompok Bagas yang sedang mendiskusikan tugas poster digital. Teguran tajam Nadia dibalas Bagas dengan nada defensif, memicu adu mulut yang membuat beberapa siswa lain ikut bersuara. Ketika seorang siswa mengusulkan agar kedua kelompok menggunakan ruang secara bergiliran, masing-masing pihak menolak karena merasa kebutuhannya belum dipertimbangkan. Perselisihan itu akhirnya berujung pada aksi saling memboikot pemakaian ruang baca. Rencana gotong-royong penataan selasar yang semula dijadwalkan selesai dalam sepekan pun terhenti total karena para siswa menolak hadir bersamaan di ruangan tersebut.' Penilaian yang paling tepat terhadap kelogisan pengembangan alur dalam kutipan cerita tersebut adalah...",
+      "options": [
+        "Alur berkembang secara logis karena gangguan suara memicu teguran, respons defensif memperluas konflik, lalu penolakan berbagi ruang berdampak langsung pada kegiatan bersama.",
+        "Alur berkembang secara kurang proporsional karena perselisihan antartokoh diekskalasikan secara berlebihan sehingga mengaburkan persoalan utama mengenai ketiadaan tata ruang.",
+        "Alur berkembang secara berulang karena ketegangan antartokoh hanya berputar pada adu mulut tanpa memperlihatkan perubahan sikap yang mendorong cerita bergerak maju.",
+        "Alur berkembang secara tergesa-gesa karena aksi saling memboikot seharusnya dihadirkan sebagai akhir krisis, bukan sebagai pemicu awal berhentinya kegiatan bersama."
+      ],
+      "answer": "Alur berkembang secara logis karena gangguan suara memicu teguran, respons defensif memperluas konflik, lalu penolakan berbagi ruang berdampak langsung pada kegiatan bersama.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kausalitas dan Kelogisan Pengembangan Alur:\n   Alur (plot) yang baik dibangun atas prinsip kausalitas (sebab-akibat) yang wajar dan dapat diterima akal pembaca. Setiap insiden harus menjadi penyebab bagi peristiwa berikutnya dan menjadi akibat dari peristiwa sebelumnya. Mengevaluasi kelogisan alur menuntut telaah kritis apakah rangkaian tindakan antartokoh berkembang secara bertahap dan berpijak pada motivasi psikologis yang masuk akal.\n\n2. Pembahasan Kunci Jawaban:\n   - Alur berkembang secara logis karena gangguan suara memicu teguran, respons defensif memperluas konflik, lalu penolakan berbagi ruang berdampak langsung pada kegiatan bersama (BENAR): Rangkaian insiden dalam kutipan cerita memperlihatkan rantai kausalitas yang sangat runtut: dentuman buku Nadia dipicu suara tawa -> teguran Nadia direspons secara defensif oleh Bagas -> perdebatan menarik keterlibatan siswa lain -> usulan kompromi ditolak karena ego kelompok -> eskalasi berujung pada boikot pemakaian ruang baca yang menghentikan rencana gotong-royong. Kausalitas ini terbangun secara meyakinkan dan proporsional.\n\n3. Pembahasan Distraktor:\n   - Alur berkembang secara kurang proporsional karena perselisihan antartokoh diekskalasikan secara berlebihan sehingga mengaburkan persoalan utama mengenai ketiadaan tata ruang (Salah): Eskalasi perselisihan tidak berlebihan melainkan cerminan wajar dari akumulasi ketidaknyamanan ruang bersama yang belum memiliki aturan jelas.\n   - Alur berkembang secara berulang karena ketegangan antartokoh hanya berputar pada adu mulut tanpa memperlihatkan perubahan sikap yang mendorong cerita bergerak maju (Salah): Cerita bergerak maju dengan cepat dari perdebatan dua orang, meluas ke kelompok lain, menemui jalan buntu kompromi, hingga memicu dampak nyata berupa terhentinya gotong royong.\n   - Alur berkembang secara tergesa-gesa karena aksi saling memboikot seharusnya dihadirkan sebagai akhir krisis, bukan sebagai pemicu awal berhentinya kegiatan bersama (Salah): Aksi saling boikot merupakan puncak ketegangan lokal (krisis jangka pendek) yang secara logis langsung berdampak seketika pada batalnya kegiatan bersama.",
+      "source": {
+        "student_book": {
+          "pages": "113-116",
+          "section": "Bab 3, Subbab C: Memberikan Penilaian terhadap Pengembangan Alur pada Novel yang Dibaca"
+        },
+        "teacher_guide": {
+          "pages": "142-147",
+          "section": "Bab 3, Subbab C: Panduan Pembelajaran Aktivitas 3.5 & 3.6"
+        }
+      },
+      "provenance": "Skenario fiksi sekolah orisinal mandiri disusun berdasarkan target kompetensi Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3 (Decision 009).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-C",
+      "difficulty": "hard",
+      "cognitive_level": "evaluate",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C03-C: Memberikan penilaian kritis terhadap kelogisan dan tahapan pengembangan alur pada novel yang dibaca",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 113-116 (Subbab C: Memberikan Penilaian terhadap Pengembangan Alur pada Novel yang Dibaca)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 142-147 (Subbab C: Panduan Pembelajaran Aktivitas 3.5 & 3.6)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Skenario orisinal eskalasi konflik ruang baca Nadia dan Bagas, formulasi butir evaluasi kausalitas alur, dan dekonstruksi distraktor disusun mandiri bebas hak cipta pihak ketiga."
+      }
+    },
+    {
+      "id": "KM03-C2",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-C",
+      "skill": "understand",
+      "question": "Bagian akhir cerita di mana ketegangan telah menurun dan tokoh-tokoh menemukan penyelesaian dari masalah mereka disebut dengan tahap...",
+      "options": [
+        "Resolusi (Resolution)",
+        "Klimaks (Climax)",
+        "Eksposisi (Exposition)",
+        "Rising Action"
+      ],
+      "answer": "Resolusi (Resolution)",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Struktur Alur Naratif Fiksi:\n   Struktur alur tradisional dalam prosa novel (mengikuti piramida Freytag) terdiri atas beberapa tahapan progresif: pengenalan/eksposisi, pemunculan konflik/tindakan bergerak (rising action), puncak ketegangan/klimaks, peleraian/ketegangan menurun (falling action), dan penyelesaian (resolusi). Pemahaman yang tepat atas batasan fungsional masing-masing bagian alur sangat krusial dalam menganalisis konstruksi cerita fiksi.\n\n2. Pembahasan Kunci Jawaban:\n   - Resolusi (Resolution) (BENAR): Tahap akhir cerita di mana ketegangan telah melandai/mereda dan para tokoh menemukan jalan keluar, penyelesaian, atau penataan kembali kondisi kehidupan pascakonflik secara baku disebut sebagai resolusi (atau peleraian akhir).\n\n3. Pembahasan Distraktor:\n   - Klimaks (Climax) (Salah): Klimaks adalah titik puncak ketegangan emosional dan konflik terhebat dalam cerita di mana nasib tokoh dipertaruhkan, bukan bagian ketika ketegangan telah menurun.\n   - Eksposisi (Exposition) (Salah): Eksposisi adalah bagian awal cerita yang berfungsi memperkenalkan tokoh, latar ruang, waktu, serta suasana awal sebelum konflik muncul.\n   - Rising Action (Salah): Rising action merupakan serangkaian peristiwa komplikasi yang membangun eskalasi ketegangan menuju klimaks cerita, bukan tahap penyelesaian masalah.",
+      "source": {
+        "student_book": {
+          "pages": "113-116",
+          "section": "Bab 3, Subbab C: Memberikan Penilaian terhadap Pengembangan Alur pada Novel yang Dibaca"
+        },
+        "teacher_guide": {
+          "pages": "142-147",
+          "section": "Bab 3, Subbab C: Panduan Pembelajaran Aktivitas 3.5 & 3.6"
+        }
+      },
+      "provenance": "Soal pemahaman konsep tahapan alur naratif sastra berdasarkan Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3.",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-C",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C03-C: Memberikan penilaian kritis terhadap kelogisan dan tahapan pengembangan alur pada novel yang dibaca",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 113-116 (Subbab C: Memberikan Penilaian terhadap Pengembangan Alur pada Novel yang Dibaca)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 142-147 (Subbab C: Panduan Pembelajaran Aktivitas 3.5 & 3.6)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Formulasi butir soal telaah konsep tahap resolusi alur disusun mandiri sesuai kurikulum acuan sastra Kurikulum Merdeka."
+      }
+    },
+    {
+      "id": "KM03-D1",
+      "chapter_id": "BI12-C03",
+      "topic_id": "BI12-C03-D",
+      "skill": "analyze",
+      "question": "Perhatikan kutipan cerita berikut: 'Memasuki hari ketujuh masa uji coba, selasar ruang baca memperlihatkan suasana yang berbeda. Nadia dapat menuntaskan bacaannya di zona mandiri dekat jendela, sementara kelompok Bagas leluasa merancang tata letak poster digital di meja tengah dengan nada suara terkendali. Di dekat pintu keluar, kotak saran kayu terisi catatan: usulan penambahan stopkontak dari kelompok diskusi dan permohonan penyesuaian arah lampu dari pembaca mandiri. Pada rapat evaluasi di akhir masa uji coba, kedua pihak bersama-sama menyetujui pemindahan meja ke dekat stopkontak dan pengajuan lampu baca tambahan, lalu menyepakati jadwal piket kebersihan bersama.' Amanat tersirat yang paling kuat didukung oleh rangkaian peristiwa dalam penggalan cerita tersebut adalah...",
+      "options": [
+        "Keberhasilan pengelolaan ruang bersama terwujud melalui kesediaan saling menyesuaikan kebiasaan dan komitmen menindaklanjuti masukan para pengguna ruang.",
+        "Keteraturan fasilitas belajar dapat terpelihara apabila kelompok yang membutuhkan ketenangan diberikan wewenang lebih dalam menentukan tata tertib ruangan.",
+        "Penataan fisik meja belajar merupakan faktor utama yang dengan sendirinya menjamin kelancaran interaksi antar-pengguna fasilitas sekolah.",
+        "Ketertiban lingkungan belajar bersama idealnya dikendalikan melalui pengawasan berkala guru pembina agar kesepakatan siswa tetap dipatuhi."
+      ],
+      "answer": "Keberhasilan pengelolaan ruang bersama terwujud melalui kesediaan saling menyesuaikan kebiasaan dan komitmen menindaklanjuti masukan para pengguna ruang.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Penarikan Amanat Tersirat dalam Fiksi:\n   Amanat merupakan pesan moral atau nilai kehidupan yang ingin disampaikan pengarang melalui jalan cerita dan penyelesaian konflik. Amanat tersirat tidak dituliskan secara eksplisit dalam teks, melainkan harus dianalisis dari hubungan sebab-akibat antara perubahan sikap tokoh, tindakan nyata yang disepakati bersama, dan hasil positif yang diraih pada akhir cerita.\n\n2. Pembahasan Kunci Jawaban:\n   - Keberhasilan pengelolaan ruang bersama terwujud melalui kesediaan saling menyesuaikan kebiasaan dan komitmen menindaklanjuti masukan para pengguna ruang (BENAR): Rangkaian peristiwa pada stimulus memperlihatkan: kelompok Bagas mengendalikan suara dan mengajukan stopkontak melalui kotak saran, Nadia membaca tenang di zona senyap, lalu kedua belah pihak bersama-sama menyetujui pemindahan meja dan jadwal piket bersama. Keberhasilan terciptanya kenyamanan bersama ini membuktikan bahwa penyesuaian timbal balik dan tindak lanjut atas masukan adalah kunci hidup rukun di ruang publik sekolah.\n\n3. Pembahasan Distraktor:\n   - Keteraturan fasilitas belajar dapat terpelihara apabila kelompok yang membutuhkan ketenangan diberikan wewenang lebih dalam menentukan tata tertib ruangan (Salah): Stimulus menunjukkan bahwa kenyamanan lahir dari kesepakatan bersama dan penghargaan setara terhadap kebutuhan kedua pihak, bukan dengan memberikan hak istimewa sepihak kepada salah satu kelompok.\n   - Penataan fisik meja belajar merupakan faktor utama yang dengan sendirinya menjamin kelancaran interaksi antar-pengguna fasilitas sekolah (Salah): Penataan meja hanyalah sarana pendukung fisik; faktor penentu utamanya adalah perubahan sikap para siswa yang bersedia saling menghargai dan mengendalikan suara.\n   - Ketertiban lingkungan belajar bersama idealnya dikendalikan melalui pengawasan berkala guru pembina agar kesepakatan siswa tetap dipatuhi (Salah): Penyelesaian yang digambarkan bersumber dari inisiatif mandiri kedua kelompok siswa melalui kotak saran, rapat evaluasi bersama, dan kesepakatan piket gotong-royong, bukan karena paksaan pengawasan otoriter guru pembina.",
+      "source": {
+        "student_book": {
+          "pages": "117-120",
+          "section": "Bab 3, Subbab D: Mendiskusikan Pesan yang Terkandung dalam Novel"
+        },
+        "teacher_guide": {
+          "pages": "147-151",
+          "section": "Bab 3, Subbab D: Panduan Pembelajaran Aktivitas 3.7 & 3.8"
+        }
+      },
+      "provenance": "Skenario fiksi sekolah orisinal mandiri disusun berdasarkan target kompetensi Buku Siswa dan Buku Panduan Guru Kurikulum Merdeka Bab 3 (Decision 009).",
+      "mode": "learning",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-D",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII)",
+        "competency_target": "BI12-C03-D: Mendiskusikan dan menyimpulkan pesan moral/amanat yang terkandung dalam novel",
+        "concept_reference": {
+          "student_book": "Buku Siswa Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 117-120 (Subbab D: Mendiskusikan Pesan yang Terkandung dalam Novel)",
+          "teacher_guide": "Buku Panduan Guru Cerdas Cergas Berbahasa dan Bersastra Indonesia Kelas XII Edisi Revisi 2025 hlm. 147-151 (Subbab D: Panduan Pembelajaran Aktivitas 3.7 & 3.8)"
+        },
+        "support_category": "DIRECT",
+        "authoring_statement": "Skenario orisinal resolusi uji coba ruang baca, penyusunan butir analisis amanat tersirat, dan dekonstruksi distraktor disusun mandiri sebagai instrumen evaluasi pesan fiksi bebas hak cipta."
+      }
+    }
+  ]
+}
