@@ -1,0 +1,1138 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_V1.1_RECONCILED",
+  "dataset": "World 1 KM Standard Final Exam Original Content v1.1",
+  "purpose": "Canonical v1.1 reconciled dataset for World 1 Bahasa Indonesia Final Exam (Misi 18) with calibrated Bloom levels, verified page locators, 3-step pedagogical explanations, and naturally varied option ordering.",
+  "chapter_id": "BI12-FINAL",
+  "rewards": {
+    "xp_per_correct": 0,
+    "mission_completion_xp": 0
+  },
+  "questions": [
+    {
+      "id": "FINAL-C01-1",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C01-A",
+      "skill": "memahami",
+      "question": "Bacalah penggalan surat resmi berikut:\n'Dengan hormat, kami sampaikan bahwa pelaksanaan kegiatan Pentas Seni Tahunan yang semula dijadwalkan pada tanggal 10 Oktober 2025 ditunda hingga waktu yang belum ditentukan karena kondisi cuaca ekstrem.'\nInformasi eksplisit yang paling akurat berdasarkan surat tersebut adalah...",
+      "options": [
+        "Kegiatan Pentas Seni Tahunan dibatalkan selamanya karena cuaca.",
+        "Kegiatan Pentas Seni Tahunan ditunda dan jadwal baru belum ditetapkan.",
+        "Kegiatan Pentas Seni dipindahkan ke gedung lain akibat cuaca ekstrem.",
+        "Pihak sekolah belum mengetahui adanya kondisi cuaca ekstrem."
+      ],
+      "answer": "Kegiatan Pentas Seni Tahunan ditunda dan jadwal baru belum ditetapkan.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Informasi Eksplisit Surat Resmi (Bab 1 Subbab A): Informasi eksplisit adalah informasi yang tertulis secara jelas, tegas, dan harfiah di dalam teks tanpa memerlukan interpretasi atau kesimpulan tersirat pembaca.\n2. Pembahasan Kunci Jawaban: Pilihan 'Kegiatan Pentas Seni Tahunan ditunda dan jadwal baru belum ditetapkan' (BENAR) secara presisi memparafrasakan kutipan surat 'ditunda hingga waktu yang belum ditentukan karena kondisi cuaca ekstrem'.\n3. Pembahasan Distraktor:\n- 'Kegiatan Pentas Seni Tahunan dibatalkan selamanya karena cuaca' (Salah), surat menyatakan 'ditunda' (penjadwalan ulang sementara), bukan 'dibatalkan' (pembatalan permanen).\n- 'Kegiatan Pentas Seni dipindahkan ke gedung lain akibat cuaca ekstrem' (Salah), tidak terdapat keterangan pemindahan lokasi acara dalam isi surat.\n- 'Pihak sekolah belum mengetahui adanya kondisi cuaca ekstrem' (Salah), pihak pengirim surat justru secara sadar menyebut cuaca ekstrem sebagai dasar penundaan.",
+      "source": {
+        "student_book": {
+          "pages": "5-7",
+          "section": "Bab 1, Subbab A"
+        },
+        "teacher_guide": {
+          "pages": "33-38",
+          "section": "Bab 1, Aktivitas 1.1"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 5-7 (Subbab A: Menyimak Informasi Penting dalam Surat Resmi) & Buku Panduan Guru hlm. 33-38.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C01-A",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Mengidentifikasi informasi penting yang disampaikan secara eksplisit dalam surat dinas/resmi.",
+        "concept_reference": "Informasi Tersurat dan Eksplisit Surat Resmi (Bab 1 Subbab A)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Skenario surat dinas resmi sekolah dirancang khusus untuk mengukur kemampuan identifikasi informasi eksplisit tanpa menyalin teks pihak ketiga."
+      }
+    },
+    {
+      "id": "FINAL-C01-2",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C01-B",
+      "skill": "menganalisis",
+      "question": "Sebuah undangan kepada orang tua/wali menyatakan: 'Bapak/Ibu diharapkan hadir pada Pertemuan Orang Tua yang akan dilaksanakan di Aula Sekolah hari Sabtu, pukul 09.00.' Makna tersirat yang dapat disimpulkan dari surat tersebut adalah...",
+      "options": [
+        "Kehadiran orang tua sangat penting dan diharapkan oleh pihak sekolah.",
+        "Pertemuan itu akan dihadiri oleh seluruh guru dan kepala sekolah.",
+        "Sekolah mengharuskan orang tua membawa dokumen tertentu.",
+        "Pertemuan tersebut berlangsung selama lebih dari dua jam."
+      ],
+      "answer": "Kehadiran orang tua sangat penting dan diharapkan oleh pihak sekolah.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Makna Tersirat dalam Undangan Resmi (Bab 1 Subbab B): Makna tersirat adalah pesan, intensi, atau implikasi pragmatis yang tidak dituliskan secara eksplisit, melainkan disimpulkan dari pilihan kata, nada tuturan, dan konteks komunikasi kelembagaan.\n2. Pembahasan Kunci Jawaban: Pilihan 'Kehadiran orang tua sangat penting dan diharapkan oleh pihak sekolah' (BENAR) secara tepat menyimpulkan makna pragmatis frasa santun 'diharapkan hadir' yang mencerminkan urgensi dan harapan besar pihak sekolah terhadap partisipasi orang tua.\n3. Pembahasan Distraktor:\n- 'Pertemuan itu akan dihadiri oleh seluruh guru dan kepala sekolah' (Salah), tidak ada data pendukung dalam teks mengenai daftar lengkap pihak sekolah yang hadir.\n- 'Sekolah mengharuskan orang tua membawa dokumen tertentu' (Salah), tidak ada instruksi atau prasyarat membawa dokumen pada penggalan surat tersebut.\n- 'Pertemuan tersebut berlangsung selama lebih dari dua jam' (Salah), penggalan hanya menyebut jam mulai (09.00) tanpa menyebut durasi pertemuan.",
+      "source": {
+        "student_book": {
+          "pages": "8-11",
+          "section": "Bab 1, Subbab B"
+        },
+        "teacher_guide": {
+          "pages": "38-42",
+          "section": "Bab 1, Aktivitas 1.4"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 8-11 (Subbab B: Menilai Informasi Tersurat dan Tersirat) & Buku Panduan Guru hlm. 38-42.",
+      "mode": "assessment",
+      "game_mechanic": "meaning_check",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C01-B",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Menganalisis pesan tersirat dan intensi komunikatif dalam surat resmi kelembagaan.",
+        "concept_reference": "Pesan Tersurat dan Tersirat Surat Resmi (Bab 1 Subbab B)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Skenario undangan pertemuan orang tua disusun orisinal guna menguji inferensi pragmatis terhadap kesantunan berbahasa."
+      }
+    },
+    {
+      "id": "FINAL-C01-3",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C01-D",
+      "skill": "memahami",
+      "question": "Perhatikan penggalan surat berikut:\n'Kepada Yth.\nKepala SMA Budi Utama\nJl. Melati No. 22, Bandung'\nBagian surat ini berfungsi untuk...",
+      "options": [
+        "Menjelaskan tujuan dikirimkannya surat kepada pihak sekolah.",
+        "Memberikan konteks waktu dan tempat penulisan surat.",
+        "Mengidentifikasi secara jelas penerima surat beserta alamat yang dituju.",
+        "Menyatakan penutupan dari isi surat yang disampaikan."
+      ],
+      "answer": "Mengidentifikasi secara jelas penerima surat beserta alamat yang dituju.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Struktur Surat Resmi (Bab 1 Subbab D): Struktur surat resmi terdiri atas kepala surat, nomor/lampiran/perihal, tanggal, alamat tujuan, salam pembuka, isi, salam penutup, serta nama terang dan tanda tangan pengirim.\n2. Pembahasan Kunci Jawaban: Pilihan 'Mengidentifikasi secara jelas penerima surat beserta alamat yang dituju' (BENAR) secara tepat mendefinisikan fungsi struktural bagian alamat dalam (tujuan surat).\n3. Pembahasan Distraktor:\n- 'Menjelaskan tujuan dikirimkannya surat kepada pihak sekolah' (Salah), fungsi ini merupakan ranah bagian perihal/hal dan paragraf pembuka surat.\n- 'Memberikan konteks waktu dan tempat penulisan surat' (Salah), ini fungsi dari titimangsa (tempat dan tanggal pembuatan surat).\n- 'Menyatakan penutupan dari isi surat yang disampaikan' (Salah), ini fungsi bagian paragraf penutup atau salam penutup.",
+      "source": {
+        "student_book": {
+          "pages": "14-18",
+          "section": "Bab 1, Subbab D"
+        },
+        "teacher_guide": {
+          "pages": "45-51",
+          "section": "Bab 1, Aktivitas 1.6"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 14-18 (Subbab D: Menganalisis Unsur dan Struktur Surat Resmi) & Buku Panduan Guru hlm. 45-51.",
+      "mode": "assessment",
+      "game_mechanic": "document_inspection",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C01-D",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Memahami fungsi struktural komponen alamat tujuan dalam sistematika surat resmi.",
+        "concept_reference": "Sistematika dan Unsur-Unsur Surat Resmi (Bab 1 Subbab D)",
+        "support_category": "adapted_curricular_scenario",
+        "authoring_statement": "Adapted curricular scenario: Mengadaptasi struktur alamat dalam surat resmi standar format kedinasan Kemendikbudristek."
+      }
+    },
+    {
+      "id": "FINAL-C01-4",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C01-D",
+      "skill": "mengevaluasi",
+      "question": "Kalimat manakah yang menggunakan ragam bahasa paling tepat untuk surat resmi?",
+      "options": [
+        "Gue mau kasih tahu kalau besok ada rapat OSIS penting di ruang aula.",
+        "Jangan lupa besok kumpul ya, teman-teman pengurus OSIS, penting banget!",
+        "Harap semua anggota OSIS besok datang ya ke sekolah, ada hal penting.",
+        "Kami mohon kehadiran Bapak/Ibu pada acara pelepasan siswa kelas XII."
+      ],
+      "answer": "Kami mohon kehadiran Bapak/Ibu pada acara pelepasan siswa kelas XII.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Ragam Bahasa Baku dan Kesantunan Surat Resmi (Bab 1 Subbab D): Surat dinas/resmi wajib menggunakan ragam bahasa baku, santun, lugas, denotatif, serta mematuhi kaidah tata bahasa baku Indonesia (EYD V).\n2. Pembahasan Kunci Jawaban: Pilihan 'Kami mohon kehadiran Bapak/Ibu pada acara pelepasan siswa kelas XII' (BENAR) memenuhi seluruh kriteria ragam resmi: menggunakan pronomina persona pertama jamak kedinasan 'kami', verba santun 'memohon kehadiran', dan struktur kalimat baku.\n3. Pembahasan Distraktor:\n- 'Gue mau kasih tahu...' (Salah), menggunakan pronomina dan kosakata slang/ragam akrab informal ('gue', 'mau kasih tahu').\n- 'Jangan lupa besok kumpul ya...' (Salah), berstruktur kalimat obrolan lisan informal nonstandar dengan partikel 'ya' dan seruan 'banget'.\n- 'Harap semua anggota OSIS besok datang ya...' (Salah), mengandung partikel informal lisan 'ya' dan struktur yang kurang takzim.",
+      "source": {
+        "student_book": {
+          "pages": "14-18",
+          "section": "Bab 1, Subbab D"
+        },
+        "teacher_guide": {
+          "pages": "45-51",
+          "section": "Bab 1, Aktivitas 1.7"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 14-18 (Subbab D: Ragam Bahasa Surat Resmi) & Buku Panduan Guru hlm. 45-51.",
+      "mode": "assessment",
+      "game_mechanic": "language_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C01-D",
+      "difficulty": "medium",
+      "cognitive_level": "evaluate",
+      "question_type": "contextual",
+      "estimated_time_seconds": 120,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Mengevaluasi kesantunan dan kebakuan ragam bahasa dalam kalimat surat dinas resmi.",
+        "concept_reference": "Kaidah Kebahasaan dan Register Surat Resmi (Bab 1 Subbab D)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Pilihan kalimat dirancang baru untuk menguji kepekaan register kebahasaan formal vs nonformal."
+      }
+    },
+    {
+      "id": "FINAL-C01-5",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C01-B",
+      "skill": "menganalisis",
+      "question": "Surat A menyatakan bahwa perlombaan diadakan Sabtu pagi dan pendaftaran ditutup Jumat sore. Surat B menyatakan bahwa peserta wajib mendaftar satu hari sebelum kegiatan. Kesimpulan yang valid dari perbandingan dua surat tersebut adalah...",
+      "options": [
+        "Kedua surat memiliki waktu pelaksanaan dan penutupan pendaftaran yang identik.",
+        "Kedua surat sepakat bahwa pendaftaran harus selesai sebelum perlombaan dimulai.",
+        "Surat A memberikan waktu persiapan lomba yang lebih fleksibel daripada Surat B.",
+        "Surat B membatalkan seluruh jadwal kegiatan yang telah diumumkan Surat A."
+      ],
+      "answer": "Kedua surat sepakat bahwa pendaftaran harus selesai sebelum perlombaan dimulai.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Membandingkan Informasi Dua Surat Resmi (Bab 1 Subbab B): Menganalisis perbedaan rincian teknis sembari menarik benang merah prinsip umum dari dua teks dokumen yang setara.\n2. Pembahasan Kunci Jawaban: Pilihan 'Kedua surat sepakat bahwa pendaftaran harus selesai sebelum perlombaan dimulai' (BENAR) secara logis menyimpulkan prinsip prosedural umum kedua surat: Surat A (tutup Jumat sore sebelum lomba Sabtu pagi) dan Surat B (tutup satu hari sebelum kegiatan).\n3. Pembahasan Distraktor:\n- 'Kedua surat memiliki waktu pelaksanaan dan penutupan pendaftaran yang identik' (Salah), kedua surat menggunakan redaksi dan batasan waktu yang berbeda.\n- 'Surat A memberikan waktu persiapan lomba yang lebih fleksibel daripada Surat B' (Salah), Surat A menetapkan batas waktu spesifik tanpa indikasi fleksibilitas lebih longgar.\n- 'Surat B membatalkan seluruh jadwal kegiatan yang telah diumumkan Surat A' (Salah), tidak terdapat pernyataan pembatalan resmi dalam premis.",
+      "source": {
+        "student_book": {
+          "pages": "8-11",
+          "section": "Bab 1, Subbab B"
+        },
+        "teacher_guide": {
+          "pages": "38-42",
+          "section": "Bab 1, Aktivitas 1.4"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 8-11 (Subbab B: Membandingkan Dua Teks Surat Resmi) & Buku Panduan Guru hlm. 38-42.",
+      "mode": "assessment",
+      "game_mechanic": "comparison_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C01-B",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 120,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Menganalisis dan menyimpulkan keterkaitan informasi dari dua teks surat resmi yang berbeda.",
+        "concept_reference": "Perbandingan Dua Surat Resmi yang Berbeda (Bab 1 Subbab B)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Skenario komparasi dua surat dirancang orisinal menguji kemampuan sintesis logis siswa."
+      }
+    },
+    {
+      "id": "FINAL-C02-1",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C02-A",
+      "skill": "menerapkan",
+      "question": "Sebuah prosedur mencuci tangan memiliki langkah-langkah acak. Urutan yang paling benar dan higienis dalam prosedur mencuci tangan dengan sabun (CTPS) adalah...",
+      "options": [
+        "Mengeringkan tangan → sabuni → basahi tangan → bilas air bersih → gosok sela jari.",
+        "Basahi tangan → keringkan tangan → sabuni → bilas air bersih → gosok sela jari.",
+        "Basahi tangan → sabuni → gosok sela jari → bilas air bersih → keringkan.",
+        "Sabuni tangan → basahi air mengalir → keringkan → gosok sela jari → bilas."
+      ],
+      "answer": "Basahi tangan → sabuni → gosok sela jari → bilas air bersih → keringkan.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Struktur Runtut Teks Prosedur (Bab 2 Subbab A): Teks prosedur menuntut urutan kronologis yang logis (tahap demi tahap) agar tujuan keselamatan dan efektivitas tindakan tercapai secara optimal.\n2. Pembahasan Kunci Jawaban: Pilihan 'Basahi tangan → sabuni → gosok sela jari → bilas air bersih → keringkan' (BENAR) mencerminkan standar sanitasi WHO dan panduan gaya hidup sehat Kemendikbudristek.\n3. Pembahasan Distraktor:\n- 'Mengeringkan tangan → sabuni...' (Salah), mengeringkan tangan di awal proses bertentangan secara fungsional dengan langkah pembersihan.\n- 'Basahi tangan → keringkan tangan...' (Salah), tidak masuk akal mengeringkan tangan sebelum diberi sabun dan dibersihkan.\n- 'Sabuni tangan → basahi air mengalir...' (Salah), mengaplikasikan sabun pada tangan kering menyulitkan pembusaan aktif dan pembersihan mikroba.",
+      "source": {
+        "student_book": {
+          "pages": "54-56",
+          "section": "Bab 2, Subbab A"
+        },
+        "teacher_guide": {
+          "pages": "81-87",
+          "section": "Bab 2, Aktivitas 2.1"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 54-56 (Subbab A: Teks Prosedur Gaya Hidup Sehat) & Buku Panduan Guru hlm. 81-87.",
+      "mode": "assessment",
+      "game_mechanic": "sequence_check",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C02-A",
+      "difficulty": "easy",
+      "cognitive_level": "apply",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Menerapkan langkah-langkah prosedural secara kronologis dan logis dalam aktivitas hidup sehat.",
+        "concept_reference": "Informasi Prosedural Runtut (Bab 2 Subbab A)",
+        "support_category": "adapted_curricular_scenario",
+        "authoring_statement": "Adapted curricular scenario: Mengadaptasi protokol Cuci Tangan Pakai Sabun (CTPS) dari materi gaya hidup sehat Bab 2 Buku Siswa."
+      }
+    },
+    {
+      "id": "FINAL-C02-2",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C02-B",
+      "skill": "memahami",
+      "question": "Bacalah kalimat berikut: 'Kemudian, panaskan wajan di atas kompor sebelum menuangkan minyak.' Kata 'Kemudian' dalam teks prosedur merupakan contoh dari...",
+      "options": [
+        "Kata keterangan tempat dan suasana",
+        "Kata kerja material tindakan fisik",
+        "Kata sifat penjelas derajat panas",
+        "Konjungsi temporal (penghubung waktu)"
+      ],
+      "answer": "Konjungsi temporal (penghubung waktu)",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kaidah Kebahasaan Teks Prosedur (Bab 2 Subbab B): Ciri utama teks prosedur adalah penggunaan konjungsi temporal yang menghubungkan urutan waktu atau transisi antar-tahapan tindakan.\n2. Pembahasan Kunci Jawaban: Pilihan 'Konjungsi temporal (penghubung waktu)' (BENAR) secara tepat mengidentifikasi fungsi gramatikal kata 'kemudian' yang menandai langkah berikutnya setelah langkah sebelumnya tuntas.\n3. Pembahasan Distraktor:\n- 'Kata keterangan tempat dan suasana' (Salah), 'kemudian' tidak menyatakan lokasi spasial (seperti 'di wajan').\n- 'Kata kerja material tindakan fisik' (Salah), verba tindakan fisik pada kalimat tersebut adalah 'panaskan' dan 'menuangkan'.\n- 'Kata sifat penjelas derajat panas' (Salah), adjektiva pada kalimat tidak diwakili oleh kata 'kemudian'.",
+      "source": {
+        "student_book": {
+          "pages": "57-60",
+          "section": "Bab 2, Subbab B"
+        },
+        "teacher_guide": {
+          "pages": "87-91",
+          "section": "Bab 2, Aktivitas 2.2"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 57-60 (Subbab B: Ciri Kebahasaan Teks Prosedur) & Buku Panduan Guru hlm. 87-91.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C02-B",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Mengidentifikasi dan memahami fungsi konjungsi temporal dalam menghubungkan tahapan teks prosedur.",
+        "concept_reference": "Ciri Kebahasaan Konjungsi Temporal (Bab 2 Subbab B)",
+        "support_category": "adapted_curricular_scenario",
+        "authoring_statement": "Adapted curricular scenario: Ilustrasi kalimat prosedur kuliner sehat diadaptasi dari pemodelan kebahasaan Bab 2 Buku Siswa."
+      }
+    },
+    {
+      "id": "FINAL-C02-3",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C02-C",
+      "skill": "memahami",
+      "question": "Dalam teks prosedur pembuatan jamu tradisional, kata kerja seperti 'tumbuk rimpang kunyit', 'peras airnya', dan 'rebus hingga mendidih' termasuk dalam kategori...",
+      "options": [
+        "Verba material",
+        "Verba relasional",
+        "Verba mental",
+        "Verba persepsi"
+      ],
+      "answer": "Verba material",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Klasifikasi Verba dalam Teks Prosedur (Bab 2 Subbab C): Verba material adalah kata kerja yang menunjukkan tindakan fisik teramati yang dilakukan oleh partisipan terhadap suatu objek konkret.\n2. Pembahasan Kunci Jawaban: Pilihan 'Verba material' (BENAR) secara tepat mengklasifikasikan kata kerja 'tumbuk', 'peras', dan 'rebus' yang melibatkan aktivitas motorik nyata pada bahan masakan.\n3. Pembahasan Distraktor:\n- 'Verba relasional' (Salah), verba ini berfungsi sebagai penghubung subjek dengan pelengkap/sifat (seperti 'adalah', 'merupakan', 'menjadi').\n- 'Verba mental' (Salah), verba yang menerangkan persepsi, afeksi, atau kognisi batiniah manusia (seperti 'merasa', 'mengetahui', 'menyadari').\n- 'Verba persepsi' (Salah), subkategori verba mental yang berkaitan dengan panca indra (seperti 'melihat', 'mendengar').",
+      "source": {
+        "student_book": {
+          "pages": "61-65",
+          "section": "Bab 2, Subbab C"
+        },
+        "teacher_guide": {
+          "pages": "91-95",
+          "section": "Bab 2, Aktivitas 2.3"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 61-65 (Subbab C: Menelaah Kaidah Verba Teks Prosedur) & Buku Panduan Guru hlm. 91-95.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C02-C",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Mengidentifikasi jenis verba material tindakan fisik dalam instruksi teks prosedur.",
+        "concept_reference": "Kaidah Verba Material Teks Prosedur (Bab 2 Subbab C)",
+        "support_category": "adapted_curricular_scenario",
+        "authoring_statement": "Adapted curricular scenario: Mengadaptasi klasifikasi verba material dalam teks prosedur pembuatan herbal tradisional nusantara."
+      }
+    },
+    {
+      "id": "FINAL-C02-4",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C02-D",
+      "skill": "menerapkan",
+      "question": "Kamu menonton video memasak dan menemukan bahwa penyaji melewatkan langkah mencuci bahan makanan sebelum dipotong. Tindakan evaluatif yang paling tepat adalah...",
+      "options": [
+        "Mengabaikan hal itu karena pemanasan akan membunuh kuman secara otomatis.",
+        "Menyadari bahwa mencuci bahan sebelum dipotong terlewat dan menambahkannya agar higienis.",
+        "Menyimpulkan bahwa bahan makanan mentah tidak perlu dicuci jika tampak segar.",
+        "Mengikuti seluruh langkah dalam video tanpa mempertanyakan aspek kebersihannya."
+      ],
+      "answer": "Menyadari bahwa mencuci bahan sebelum dipotong terlewat dan menambahkannya agar higienis.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Evaluasi Kritis Teks Prosedur Audiovisual (Bab 2 Subbab D): Memirsa video instruksional menuntut daya kritis untuk mengidentifikasi kekeliruan langkah teknis demi menjamin standar higienitas dan kesehatan.\n2. Pembahasan Kunci Jawaban: Pilihan 'Menyadari bahwa mencuci bahan sebelum dipotong terlewat dan menambahkannya agar higienis' (BENAR) secara tepat menunjukkan sikap prosedural yang korektif dan berorientasi pada keamanan pangan.\n3. Pembahasan Distraktor:\n- 'Mengabaikan hal itu karena pemanasan akan membunuh kuman secara otomatis' (Salah), kotoran fisik dan residu pestisida tidak hilang hanya dengan pemanasan tanpa pencucian awal.\n- 'Menyimpulkan bahwa bahan makanan mentah tidak perlu dicuci jika tampak segar' (Salah), kesegaran visual tidak menjamin bebas dari bakteri patogen.\n- 'Mengikuti seluruh langkah dalam video tanpa mempertanyakan aspek kebersihannya' (Salah), sikap pasif bertentangan dengan profil pelajar kritis yang ditekankan kurikulum.",
+      "source": {
+        "student_book": {
+          "pages": "66-73",
+          "section": "Bab 2, Subbab D"
+        },
+        "teacher_guide": {
+          "pages": "95-100",
+          "section": "Bab 2, Aktivitas 2.4"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 66-73 (Subbab D: Mengevaluasi Informasi dan Prosedur Multimodal) & Buku Panduan Guru hlm. 95-100.",
+      "mode": "assessment",
+      "game_mechanic": "scenario_decision",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C02-D",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question_type": "contextual",
+      "estimated_time_seconds": 120,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Menerapkan sikap kritis dan evaluatif dalam menyikapi prosedur multimodal audiovisual.",
+        "concept_reference": "Evaluasi Kritis Informasi Prosedur (Bab 2 Subbab D)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Studi kasus evaluasi tayangan video instruksional kuliner dirancang baru menguji penerapan sanitasi."
+      }
+    },
+    {
+      "id": "FINAL-C02-5",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C02-A",
+      "skill": "mengevaluasi",
+      "question": "Prosedur olahraga X menyatakan: 'Pemanasan dilakukan 10 menit, lalu lakukan latihan inti selama 45 menit, dan pendinginan selama 10 menit.' Berdasarkan evaluasi fisiologis keolahragaan, jika seseorang langsung melompati pemanasan menuju latihan inti berat, dampak paling berbahaya adalah...",
+      "options": [
+        "Latihan inti menjadi jauh lebih cepat selesai tanpa efek negatif apa pun.",
+        "Detak jantung langsung stabil dan kapasitas pernapasan bekerja lebih hemat.",
+        "Otot yang belum siap dapat mengalami kram atau cedera robek serat otot karena peregangan mendadak.",
+        "Tubuh membakar lemak dua kali lebih efisien karena langsung bekerja keras."
+      ],
+      "answer": "Otot yang belum siap dapat mengalami kram atau cedera robek serat otot karena peregangan mendadak.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Relevansi Kausalitas Prosedur Kesehatan Fisik (Bab 2 Subbab A): Evaluasi teks prosedur menuntut pemahaman terhadap fungsi esensial setiap tahapan, di mana tahapan pemanasan berfungsi menaikkan elastisitas jaringan otot dan aliran darah.\n2. Pembahasan Kunci Jawaban: Pilihan 'Otot yang belum siap dapat mengalami kram atau cedera robek serat otot karena peregangan mendadak' (BENAR) secara ilmiah mengevaluasi konsekuensi langsung pengabaian pemanasan.\n3. Pembahasan Distraktor:\n- 'Latihan inti menjadi jauh lebih cepat selesai tanpa efek negatif apa pun' (Salah), mengabaikan risiko cedera fisik yang fatal.\n- 'Detak jantung langsung stabil dan kapasitas pernapasan bekerja lebih hemat' (Salah), lonjakan intensitas mendadak justru memicu aritmia atau takikardia yang membebani jantung.\n- 'Tubuh membakar lemak dua kali lebih efisien karena langsung bekerja keras' (Salah), mitos keliru tanpa dasar medis olahraga.",
+      "source": {
+        "student_book": {
+          "pages": "54-56",
+          "section": "Bab 2, Subbab A"
+        },
+        "teacher_guide": {
+          "pages": "81-87",
+          "section": "Bab 2, Aktivitas 2.1"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 54-56 (Subbab A: Teks Prosedur Olahraga dan Kebugaran) & Buku Panduan Guru hlm. 81-87.",
+      "mode": "assessment",
+      "game_mechanic": "scenario_decision",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C02-A",
+      "difficulty": "medium",
+      "cognitive_level": "evaluate",
+      "question_type": "contextual",
+      "estimated_time_seconds": 120,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Mengevaluasi konsekuensi logis dan keselamatan tubuh dari pengabaian tahapan prosedur kebugaran.",
+        "concept_reference": "Kaidah Keselamatan Teks Prosedur Kebugaran (Bab 2 Subbab A)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Skenario asesmen evaluasi keselamatan berolahraga disusun orisinal berpedoman pada materi kebugaran jasmani."
+      }
+    },
+    {
+      "id": "FINAL-C03-1",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C03-A",
+      "skill": "memahami",
+      "question": "Bacalah penggalan cerita: 'Ibu selalu tahu ketika aku bohong. Tatapannya tajam menembusiku, seolah membaca setiap pikiran yang kupendam.' Sudut pandang yang digunakan oleh pengarang adalah...",
+      "options": [
+        "Orang pertama",
+        "Orang ketiga serbatahu",
+        "Orang ketiga pengamat",
+        "Orang kedua"
+      ],
+      "answer": "Orang pertama",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Sudut Pandang Naratif dalam Novel (Bab 3 Subbab A): Sudut pandang pengarang terdiri atas orang pertama (tokoh utama/sampingan dengan pronomina 'aku'/'saya'), orang ketiga serbatahu ('dia'/'ia'/nama tokoh dengan akses ke pikiran batin seluruh tokoh), dan orang ketiga pengamat.\n2. Pembahasan Kunci Jawaban: Pilihan 'Orang pertama' (BENAR) secara tegas dibuktikan oleh penggunaan kata ganti orang pertama tunggal 'aku' dan klitika kepunyaan '-ku' ('kupendam') sebagai narator yang mengalami langsung peristiwa.\n3. Pembahasan Distraktor:\n- 'Orang ketiga serbatahu' (Salah), tidak menggunakan sudut pandang narator eksternal serbatahu yang mengamati dari luar cerita.\n- 'Orang ketiga pengamat' (Salah), narator terlibat langsung dalam lakon cerita sebagai subjek tuturan.\n- 'Orang kedua' (Salah), sudut pandang orang kedua ('kamu'/'kau') sangat jarang dan tidak tampak pada penggalan tersebut.",
+      "source": {
+        "student_book": {
+          "pages": "102-106",
+          "section": "Bab 3, Subbab A"
+        },
+        "teacher_guide": {
+          "pages": "128-135",
+          "section": "Bab 3, Aktivitas 3.1"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 102-106 (Subbab A: Mengidentifikasi Sudut Pandang Pengarang) & Buku Panduan Guru hlm. 128-135.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-A",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Mengidentifikasi dan memahami sudut pandang pengarang dalam kutipan teks narasi/novel.",
+        "concept_reference": "Sudut Pandang Pengarang dalam Novel (Bab 3 Subbab A)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Cuplikan teks naratif fiksi bertema kejujuran anak terhadap ibu ditulis baru sebagai stimulus uji sudut pandang."
+      }
+    },
+    {
+      "id": "FINAL-C03-2",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C03-B",
+      "skill": "menganalisis",
+      "question": "Tokoh dalam cerita selalu membantu teman-temannya bahkan saat dirinya sendiri dalam kesulitan. Ia tak pernah mengeluh dan terus tersenyum meski hatinya hancur. Perwatakan tokoh ini paling tepat disebut...",
+      "options": [
+        "Keras kepala dan pemarah",
+        "Ambisius dan kompetitif",
+        "Rela berkorban dan penyabar",
+        "Pengecut dan penakut"
+      ],
+      "answer": "Rela berkorban dan penyabar",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Karakterisasi dan Penokohan Novel (Bab 3 Subbab B): Penokohan dianalisis melalui tindakan dramatis tokoh, dialog, respon terhadap tantangan batin, dan relasi sosial antartokoh.\n2. Pembahasan Kunci Jawaban: Pilihan 'Rela berkorban dan penyabar' (BENAR) secara utuh merangkum dua perilaku kunci: menolong orang lain saat dirinya sendiri terhimpit (rela berkorban) dan tidak pernah mengeluh (penyabar).\n3. Pembahasan Distraktor:\n- 'Keras kepala dan pemarah' (Salah), watak ini bertolak belakang dengan sikap altruistik dan ketenangan batin tokoh.\n- 'Ambisius dan kompetitif' (Salah), motivasi tindakan tokoh berakar pada empati, bukan mengejar prestasi atau persaingan pribadi.\n- 'Pengecut dan penakut' (Salah), menolong orang lain dalam kondisi sulit menuntut keberanian moral nyata.",
+      "source": {
+        "student_book": {
+          "pages": "107-113",
+          "section": "Bab 3, Subbab B"
+        },
+        "teacher_guide": {
+          "pages": "135-142",
+          "section": "Bab 3, Aktivitas 3.3"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 107-113 (Subbab B: Mengungkapkan Perwatakan Tokoh dalam Novel) & Buku Panduan Guru hlm. 135-142.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-B",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Menganalisis watak tokoh dan teknik perwatakan dalam teks cerita naratif fiksi.",
+        "concept_reference": "Perwatakan dan Karakterisasi Tokoh Novel (Bab 3 Subbab B)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Ilustrasi karakterisasi tokoh fiksi disusun orisinal untuk mengukur kepekaan analisis perwatakan naratif."
+      }
+    },
+    {
+      "id": "FINAL-C03-3",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C03-C",
+      "skill": "memahami",
+      "question": "Bacalah kutipan pembuka novel berikut:\n'Pagi itu kabut tebal menyelimuti lereng Gunung Merbabu. Di sebuah teras rumah kayu sederhana, Pak Rahmat tampak merapikan cangkul tuanya seraya menatap hamparan kebun sayur.'\nKutipan tersebut berada pada tahap pengembangan alur...",
+      "options": [
+        "Klimaks",
+        "Resolusi",
+        "Komplikasi",
+        "Eksposisi"
+      ],
+      "answer": "Eksposisi",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Struktur Alur Cerita Novel (Bab 3 Subbab C): Alur dramatik teks novel bergerak melalui tahapan: (1) Eksposisi/Orientasi (pengenalan latar, waktu, suasana, dan karakter), (2) Munculnya konflik, (3) Komplikasi, (4) Klimaks, (5) Antiklimaks/Pelerai, dan (6) Resolusi.\n2. Pembahasan Kunci Jawaban: Pilihan 'Eksposisi' (BENAR) secara tepat mendeteksi fungsi kutipan yang melukiskan latar ruang (lereng Gunung Merbabu), waktu (pagi hari), dan sosok tokoh awal (Pak Rahmat).\n3. Pembahasan Distraktor:\n- 'Klimaks' (Salah), puncak ketegangan dan krisis puncak antar-tokoh belum hadir pada pembuka cerita.\n- 'Resolusi' (Salah), resolusi merupakan penyelesaian akhir atas seluruh konflik yang telah mereda di penghujung alur.\n- 'Komplikasi' (Salah), tahap perkembangan rintangan atau pertentangan batin belum dimulai.",
+      "source": {
+        "student_book": {
+          "pages": "114-116",
+          "section": "Bab 3, Subbab C"
+        },
+        "teacher_guide": {
+          "pages": "142-147",
+          "section": "Bab 3, Aktivitas 3.5"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 114-116 (Subbab C: Menilai Tahapan Alur Novel) & Buku Panduan Guru hlm. 142-147.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-C",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Memahami dan mengidentifikasi tahapan alur dramatik eksposisi/orientasi dalam teks cerita naratif.",
+        "concept_reference": "Tahap Pengembangan Alur Cerita Novel (Bab 3 Subbab C)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Penggalan deskripsi latar fiksi lereng pegunungan ditulis orisinal sebagai stimulus autentik tahap eksposisi naratif."
+      }
+    },
+    {
+      "id": "FINAL-C03-4",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C03-D",
+      "skill": "menganalisis",
+      "question": "Dari sebuah cerita tentang seorang anak yang berjuang mempertahankan taman sekolah dari penebangan, pesan moral yang paling kuat adalah...",
+      "options": [
+        "Taman sekolah tidak memiliki manfaat nyata bagi proses belajar peserta didik.",
+        "Perjuangan menjaga lingkungan hidup adalah tanggung jawab bersama demi keberlanjutan masa depan.",
+        "Pembangunan komersial selalu jauh lebih penting daripada kelestarian alam sekitar.",
+        "Anak-anak tidak perlu peduli terhadap isu-isu lingkungan di sekitar lingkungan sekolah."
+      ],
+      "answer": "Perjuangan menjaga lingkungan hidup adalah tanggung jawab bersama demi keberlanjutan masa depan.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Menemukan Pesan/Amanat Novel (Bab 3 Subbab D): Amanat atau pesan moral adalah nilai etis dan pandangan hidup pengarang yang dikomunikasikan melalui konflik naratif tokoh.\n2. Pembahasan Kunci Jawaban: Pilihan 'Perjuangan menjaga lingkungan hidup adalah tanggung jawab bersama demi keberlanjutan masa depan' (BENAR) secara tepat merefleksikan nilai perjuangan ekologis tokoh protagonis dalam membela ruang hijau bersama.\n3. Pembahasan Distraktor:\n- 'Taman sekolah tidak memiliki manfaat nyata...' (Salah), bertentangan secara frontal dengan esensi cerita pelestarian alam.\n- 'Pembangunan komersial selalu jauh lebih penting...' (Salah), mengabaikan pertimbangan etis ekologis yang menjadi fokus kritik naratif.\n- 'Anak-anak tidak perlu peduli...' (Salah), bertentangan dengan representasi keteladanan karakter pelajar pembelajar sepanjang hayat.",
+      "source": {
+        "student_book": {
+          "pages": "117-118",
+          "section": "Bab 3, Subbab D"
+        },
+        "teacher_guide": {
+          "pages": "147-151",
+          "section": "Bab 3, Aktivitas 3.6"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 117-118 (Subbab D: Mendiskusikan Pesan Moral dalam Novel) & Buku Panduan Guru hlm. 147-151.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-D",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Menganalisis pesan moral dan nilai-nilai kehidupan yang terkandung dalam teks fiksi naratif.",
+        "concept_reference": "Amanat dan Pesan Moral dalam Novel (Bab 3 Subbab D)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Tema advokasi taman sekolah dirancang orisinal untuk menumbuhkan karakter peduli lingkungan peserta didik."
+      }
+    },
+    {
+      "id": "FINAL-C03-5",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C03-F",
+      "skill": "mengevaluasi",
+      "question": "Penulisan kalimat langsung yang benar sesuai kaidah ejaan baku (EYD V / PUEBI) adalah...",
+      "options": [
+        "\"Aku tidak menyerah,\" bisik Raka dengan suara bergetar.",
+        "\"Aku tidak menyerah\", bisik Raka dengan suara bergetar.",
+        "\"Aku tidak menyerah\" bisik Raka dengan suara bergetar.",
+        "Aku tidak menyerah bisik Raka dengan suara bergetar."
+      ],
+      "answer": "\"Aku tidak menyerah,\" bisik Raka dengan suara bergetar.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kaidah Tanda Baca Kalimat Langsung EYD V (Bab 3 Subbab F): Pedoman Umum Ejaan Bahasa Indonesia (EYD V) menetapkan bahwa: tanda petik pembuka dan penutup mengapit kutipan langsung, dan tanda baca penutup (tanda koma, titik, seru, atau tanya) wajib diletakkan DI DALAM tanda petik penutup sebelum bagian pengiring.\n2. Pembahasan Kunci Jawaban: Pilihan '\"Aku tidak menyerah,\" bisik Raka dengan suara bergetar.' (BENAR) secara sempurna mematuhi tata letak tanda koma di dalam tanda petik penutup.\n3. Pembahasan Distraktor:\n- '\"Aku tidak menyerah\", bisik Raka...' (Salah), penempatan tanda koma di luar tanda petik penutup merupakan kesalahan format yang paling lazim terjadi.\n- '\"Aku tidak menyerah\" bisik Raka...' (Salah), menghilangkan tanda koma pemisah antara kutipan langsung dan kalimat pengiring.\n- 'Aku tidak menyerah bisik Raka...' (Salah), ketiadaan tanda petik mengacaukan batasan tuturan langsung dalam wacana sastra.",
+      "source": {
+        "student_book": {
+          "pages": "122-125",
+          "section": "Bab 3, Subbab F"
+        },
+        "teacher_guide": {
+          "pages": "155-159",
+          "section": "Bab 3, Aktivitas 3.8"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 122-125 (Subbab F: Menulis Dialog dengan Kaidah Tanda Baca) & Buku Panduan Guru hlm. 155-159.",
+      "mode": "assessment",
+      "game_mechanic": "language_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C03-F",
+      "difficulty": "hard",
+      "cognitive_level": "evaluate",
+      "question_type": "contextual",
+      "estimated_time_seconds": 120,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Mengevaluasi ketepatan penggunaan tanda baca petik ganda dan koma dalam penulisan kalimat langsung dialog novel.",
+        "concept_reference": "Kaidah Tanda Baca Kalimat Langsung EYD V (Bab 3 Subbab F)",
+        "support_category": "adapted_curricular_scenario",
+        "authoring_statement": "Adapted curricular scenario: Menguji penerapan kaidah ortografi tanda petik dan koma pada dialog novel sesuai EYD V."
+      }
+    },
+    {
+      "id": "FINAL-C04-1",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C04-A",
+      "skill": "memahami",
+      "question": "Sebuah paragraf diawali dengan pernyataan umum bahwa 'AI telah mengubah dunia pendidikan secara luas', kemudian diikuti dengan kalimat-kalimat rincian yang menjelaskan dampaknya pada metode belajar, evaluasi, dan kurikulum. Pola pengembangan paragraf tersebut adalah...",
+      "options": [
+        "Induktif",
+        "Campuran",
+        "Deskriptif naratif",
+        "Deduktif"
+      ],
+      "answer": "Deduktif",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Pola Pengembangan Paragraf Teks Eksplanasi (Bab 4 Subbab A): Pola pengembangan paragraf dapat bersifat deduktif (gagasan umum di awal diikuti rincian penjelas khusus) atau induktif (rincian penjelas fakta di awal bermuara pada simpulan umum di akhir).\n2. Pembahasan Kunci Jawaban: Pilihan 'Deduktif' (BENAR) secara tepat mencirikan paragraf yang meletakkan proposisi tesis umum di kalimat topik awal ('AI telah mengubah dunia pendidikan...'), kemudian menjabarkannya dengan rincian khusus.\n3. Pembahasan Distraktor:\n- 'Induktif' (Salah), pola induktif menempatkan fakta-fakta khusus di awal dan merumuskan kesimpulan umum di penutup.\n- 'Campuran' (Salah), pola campuran menegaskan kembali ide pokok umum pada kalimat akhir paragraf.\n- 'Deskriptif naratif' (Salah), merupakan jenis karangan corak cerita/penggambaran spasial, bukan pola penalaran paragraf eksplanatif ilmiah.",
+      "source": {
+        "student_book": {
+          "pages": "139-141",
+          "section": "Bab 4, Subbab A"
+        },
+        "teacher_guide": {
+          "pages": "179-188",
+          "section": "Bab 4, Aktivitas 4.1"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 139-141 (Subbab A: Memahami Teks Eksplanasi Fenomena AI) & Buku Panduan Guru hlm. 179-188.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C04-A",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Memahami dan mengidentifikasi pola pengembangan gagasan deduktif dalam paragraf eksplanasi.",
+        "concept_reference": "Pola Pengembangan Paragraf Eksplanasi (Bab 4 Subbab A)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Skenario pola paragraf eksplanasi teknologi kecerdasan buatan dirancang orisinal sebagai materi uji penalaran ilmiah."
+      }
+    },
+    {
+      "id": "FINAL-C04-2",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C04-B",
+      "skill": "memahami",
+      "question": "Perhatikan penggalan penutup teks eksplanasi berikut:\n'Dengan demikian, kecerdasan buatan bukanlah pengganti manusia, melainkan alat bantu yang memerlukan regulasi etis demi kemaslahatan bersama.'\nDalam struktur teks eksplanasi kompleks, fungsi utama dari bagian interpretasi tersebut adalah...",
+      "options": [
+        "Menguraikan deretan peristiwa sebab-akibat secara detail.",
+        "Memberikan penegasan ulang, simpulan, atau pandangan akhir penulis terkait topik.",
+        "Memperkenalkan fenomena yang akan dibahas pertama kali kepada pembaca.",
+        "Menyajikan bantahan emosional terhadap pendapat para ahli terdahulu."
+      ],
+      "answer": "Memberikan penegasan ulang, simpulan, atau pandangan akhir penulis terkait topik.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Struktur Retorika Teks Eksplanasi Kompleks (Bab 4 Subbab D): Struktur standar eksplanasi terdiri atas: (1) Pernyataan Umum (Identifikasi Fenomena), (2) Deretan Penjelas / Proses Kausalitas, dan (3) Interpretasi (Ulasan / Simpulan / Rekomendasi pandangan akhir).\n2. Pembahasan Kunci Jawaban: Pilihan 'Memberikan penegasan ulang, simpulan, atau pandangan akhir penulis terkait topik' (BENAR) secara tepat mendefinisikan fungsi struktural kutipan penutup interpretasi tersebut.\n3. Pembahasan Distraktor:\n- 'Menguraikan deretan peristiwa sebab-akibat secara detail' (Salah), ini fungsi dari bagian deretan penjelas (eksplanasi inti).\n- 'Memperkenalkan fenomena yang akan dibahas pertama kali...' (Salah), ini fungsi pernyataan umum di awal teks.\n- 'Menyajikan bantahan emosional terhadap pendapat para ahli...' (Salah), eksplanasi kompleks mengedepankan objektivitas rasional, bukan bantahan emosional.",
+      "source": {
+        "student_book": {
+          "pages": "153-158",
+          "section": "Bab 4, Subbab D"
+        },
+        "teacher_guide": {
+          "pages": "198-206",
+          "section": "Bab 4, Aktivitas 4.7"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 153-158 (Subbab D: Menganalisis Struktur Teks Eksplanasi Kompleks) & Buku Panduan Guru hlm. 198-206.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C04-B",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Memahami fungsi struktural bagian interpretasi dalam teks eksplanasi kompleks.",
+        "concept_reference": "Struktur Teks Eksplanasi Kompleks (Bab 4 Subbab D)",
+        "support_category": "adapted_curricular_scenario",
+        "authoring_statement": "Adapted curricular scenario: Mengadaptasi struktur retorika eksplanasi kompleks bertema AI dari pemodelan Bab 4 Buku Siswa."
+      }
+    },
+    {
+      "id": "FINAL-C04-3",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C04-C",
+      "skill": "menerapkan",
+      "question": "Kalimat mana yang menunjukkan penggunaan konjungsi kausalitas yang tepat dalam konteks keamanan sistem digital?",
+      "options": [
+        "Meskipun data telah dienkripsi dengan baik, sistem tetap berhasil diretas.",
+        "Sebelum mengunggah berkas ke peladen, pengguna harus memverifikasi kata sandi.",
+        "Karena tidak diperbarui secara rutin, sistem keamanan server sekolah berhasil diretas.",
+        "Pengguna dapat memilih masuk menggunakan akun surel atau nomor telepon aktif."
+      ],
+      "answer": "Karena tidak diperbarui secara rutin, sistem keamanan server sekolah berhasil diretas.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Konjungsi Kausalitas dalam Eksplanasi Kompleks (Bab 4 Subbab D): Konjungsi kausalitas menghubungkan anak kalimat sebab dengan induk kalimat akibat ('karena', 'sebab', 'oleh karena itu', 'sehingga').\n2. Pembahasan Kunci Jawaban: Pilihan 'Karena tidak diperbarui secara rutin, sistem keamanan server sekolah berhasil diretas' (BENAR) menggunakan konjungsi kausalitas subordinatif 'karena' yang secara logis menyatakan relasi sebab (tidak diperbarui) dan akibat (berhasil diretas).\n3. Pembahasan Distraktor:\n- 'Meskipun data telah dienkripsi...' (Salah), 'meskipun' adalah konjungsi subordinatif konsesif (perlawanan/pertentangan tak terduga).\n- 'Sebelum mengunggah berkas...' (Salah), 'sebelum' adalah konjungsi temporal waktu.\n- 'Pengguna dapat memilih masuk menggunakan surel atau...' (Salah), 'atau' adalah konjungsi koordinatif disjungtif (pilihan).",
+      "source": {
+        "student_book": {
+          "pages": "153-158",
+          "section": "Bab 4, Subbab D"
+        },
+        "teacher_guide": {
+          "pages": "198-206",
+          "section": "Bab 4, Aktivitas 4.7"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 153-158 (Subbab D: Kaidah Kebahasaan Konjungsi Kausalitas) & Buku Panduan Guru hlm. 198-206.",
+      "mode": "assessment",
+      "game_mechanic": "language_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C04-C",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Menerapkan konjungsi kausalitas secara tepat dalam menyatakan relasi sebab-akibat ilmiah.",
+        "concept_reference": "Kaidah Kebahasaan Konjungsi Kausalitas (Bab 4 Subbab D)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Kalimat latihan relasi sebab-akibat keamanan siber dirancang baru menguji penerapan kaidah sintaksis."
+      }
+    },
+    {
+      "id": "FINAL-C04-4",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C04-C",
+      "skill": "menganalisis",
+      "question": "Dalam teks eksplanasi ilmiah tentang AI, penulis menulis: 'Algoritma AI bekerja seperti seorang detektif yang mengumpulkan petunjuk satu per satu sebelum menarik kesimpulan.' Gaya bahasa perbandingan yang digunakan penulis adalah...",
+      "options": [
+        "Analogi",
+        "Hiperbola",
+        "Personifikasi",
+        "Eufemisme"
+      ],
+      "answer": "Analogi",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Gaya Bahasa Perbandingan dalam Teks Eksplanasi (Bab 4 Subbab D Aktivitas 4.8, Buku Siswa hlm. 157): Penulis teks eksplanasi ilmiah sering menggunakan gaya bahasa analogi/perbandingan untuk mempermudah pemahaman konsep abstrak teknologi dengan cara menyandingkannya dengan profesi atau proses konkret yang akrab bagi masyarakat.\n2. Pembahasan Kunci Jawaban: Pilihan 'Analogi' (BENAR) secara tepat mengidentifikasi teknik retoris membandingkan kerja algoritma komputasi data yang rumit dengan deduksi langkah demi langkah seorang detektif kriminal.\n3. Pembahasan Distraktor:\n- 'Hiperbola' (Salah), majas yang melebih-lebihkan suatu kenyataan secara ekstrem.\n- 'Personifikasi' (Salah), majas yang melekatkan sifat insani ragawi manusia pada benda mati secara harfiah.\n- 'Eufemisme' (Salah), ungkapan pelembut atau penghalus makna untuk menghindari kata kasar/tabu.",
+      "source": {
+        "student_book": {
+          "pages": "153-158",
+          "section": "Bab 4, Subbab D"
+        },
+        "teacher_guide": {
+          "pages": "198-206",
+          "section": "Bab 4, Aktivitas 4.8"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 153-158 (khususnya hlm. 157 Subbab D: Gaya Bahasa Analogi) & Buku Panduan Guru hlm. 198-206.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C04-C",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Menganalisis penggunaan gaya bahasa perbandingan/analogi dalam teks eksplanasi fenomena AI.",
+        "concept_reference": "Gaya Bahasa Analogi Teks Eksplanasi (Bab 4 Subbab D)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Stimulus analogi komparatif detektif dan sistem kecerdasan buatan dirancang orisinal mengacu pada panduan gaya bahasa Bab 4 Subbab D."
+      }
+    },
+    {
+      "id": "FINAL-C04-5",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C04-B",
+      "skill": "memahami",
+      "question": "Dalam jurnal refleksi model 5R setelah membaca teks eksplanasi AI, seorang siswa menulis: 'Pengalaman membaca tentang otomatisasi AI ini mengingatkan saya pada pekerjaan paman saya di pabrik garmen yang kini digantikan oleh mesin pemotong kain digital.' Berdasarkan model 5R, catatan siswa tersebut mencerminkan tahapan...",
+      "options": [
+        "Reporting (Melaporkan)",
+        "Reasoning (Menalar)",
+        "Reconstructing (Merekonstruksi)",
+        "Relating (Mengaitkan)"
+      ],
+      "answer": "Relating (Mengaitkan)",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kerangka Refleksi Kritis 5R (Bab 4 Subbab C, Buku Siswa hlm. 149-152, Buku Panduan Guru hlm. 193-198): Model refleksi 5R terdiri atas: (1) Reporting (melaporkan isi teks), (2) Responding (merespons secara personal), (3) Relating (mengaitkan isi bacaan dengan pengalaman pribadi atau fakta nyata di sekitar), (4) Reasoning (menalar akar penyebab secara kritis), dan (5) Reconstructing (menyusun kembali simpulan/rencana aksi baru).\n2. Pembahasan Kunci Jawaban: Pilihan 'Relating (Mengaitkan)' (BENAR) secara presisi mencocokkan tindakan siswa yang mengaitkan fenomena otomatisasi AI dengan pengalaman nyata pamannya di industri manufaktur garmen.\n3. Pembahasan Distraktor:\n- 'Reporting (Melaporkan)' (Salah), reporting hanya merangkum fakta objektif tanpa mengaitkannya dengan riwayat personal.\n- 'Reasoning (Menalar)' (Salah), tahap reasoning menganalisis mengapa fenomena tersebut terjadi dan apa hukum sebab-akibat ilmiahnya.\n- 'Reconstructing (Merekonstruksi)' (Salah), tahap rekonstruksi merumuskan resolusi atau alternatif solusi masa depan.",
+      "source": {
+        "student_book": {
+          "pages": "149-152",
+          "section": "Bab 4, Subbab C"
+        },
+        "teacher_guide": {
+          "pages": "193-198",
+          "section": "Bab 4, Aktivitas 4.6"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 149-152 (Subbab C: Refleksi Teks Eksplanasi Model 5R) & Buku Panduan Guru hlm. 193-198.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C04-B",
+      "difficulty": "medium",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 120,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Memahami dan mengklasifikasikan tahapan kerangka reflektif 5R (khususnya tahap Relating) berdasarkan catatan membaca.",
+        "concept_reference": "Model Refleksi 5R Teks Eksplanasi (Bab 4 Subbab C)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Catatan reflektif siswa berbasis pengalaman kerja keluarga dirancang orisinal sebagai stimulus autentik tahap Relating dalam model 5R."
+      }
+    },
+    {
+      "id": "FINAL-C05-1",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C05-A",
+      "skill": "memahami",
+      "question": "Kearifan lokal (*local wisdom*) suatu masyarakat, seperti tradisi Subak di Bali atau Sasi di Maluku, pada umumnya diwariskan secara...",
+      "options": [
+        "Resmi melalui undang-undang formal negara",
+        "Komersial melalui transaksi jual beli hak paten",
+        "Turun-temurun melalui cerita, tradisi, dan praktik sehari-hari masyarakat setempat.",
+        "Rahasia dan tertutup hanya untuk kalangan bangsawan tertentu"
+      ],
+      "answer": "Turun-temurun melalui cerita, tradisi, dan praktik sehari-hari masyarakat setempat.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Hakikat Kearifan Lokal dalam Esai Budaya (Bab 5 Subbab A): Kearifan lokal adalah tatanan nilai, norma, dan kecakapan hidup yang mengakar dalam kebudayaan masyarakat adat nusantara untuk mengelola relasi harmonis dengan sesama dan alam.\n2. Pembahasan Kunci Jawaban: Pilihan 'Turun-temurun melalui cerita, tradisi, dan praktik sehari-hari masyarakat setempat' (BENAR) secara tepat mendeskripsikan mekanisme pewarisan tradisi lisan dan praktik budaya lintas generasi.\n3. Pembahasan Distraktor:\n- 'Resmi melalui undang-undang formal negara' (Salah), kearifan lokal lahir secara organik dari adat kultural jauh sebelum terbentuknya hukum positif negara.\n- 'Komersial melalui transaksi jual beli hak paten' (Salah), nilai tradisi bersifat komunal dan filosofis, bukan komoditas paten ekonomi.\n- 'Rahasia dan tertutup hanya untuk kalangan bangsawan tertentu' (Salah), kearifan lokal dipraktikkan secara terbuka dan inklusif oleh seluruh warga komunitas.",
+      "source": {
+        "student_book": {
+          "pages": "187-190",
+          "section": "Bab 5, Pengantar & Subbab A"
+        },
+        "teacher_guide": {
+          "pages": "241-245",
+          "section": "Bab 5, Aktivitas 5.1"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 187-190 (Pengantar Bab 5 & Subbab A: Mengapresiasi Esai Kearifan Lokal) & Buku Panduan Guru hlm. 241-245.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C05-A",
+      "difficulty": "easy",
+      "cognitive_level": "understand",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Memahami konsep dan pola pewarisan kultural kearifan lokal nusantara.",
+        "concept_reference": "Hakikat Kearifan Lokal dalam Esai (Bab 5 Subbab A)",
+        "support_category": "adapted_curricular_scenario",
+        "authoring_statement": "Adapted curricular scenario: Mengadaptasi pengenalan konsep kearifan lokal dari materi apresiasi esai Bab 5 Buku Siswa."
+      }
+    },
+    {
+      "id": "FINAL-C05-2",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C05-C",
+      "skill": "menganalisis",
+      "question": "Pernyataan 'Rendang telah tersebar luas karena dibawa para perantau Minangkabau sejak abad ke-16 berdasarkan catatan sejarah' dalam sebuah esai budaya termasuk ke dalam kategori...",
+      "options": [
+        "Fakta sejarah",
+        "Opini pribadi penulis",
+        "Asumsi tanpa bukti pendukung",
+        "Prasangka kultural"
+      ],
+      "answer": "Fakta sejarah",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Membedakan Fakta, Opini, dan Asumsi dalam Esai (Bab 5 Subbab C): Fakta adalah kenyataan objektif yang terverifikasi secara empiris atau memiliki bukti dokumen historis yang sahih.\n2. Pembahasan Kunci Jawaban: Pilihan 'Fakta sejarah' (BENAR) secara tepat mengidentifikasi kalimat tersebut karena memuat entitas waktu terukur ('abad ke-16'), subjek migrasi sosiologis nyata ('perantau Minangkabau'), dan merujuk pada catatan sejarah.\n3. Pembahasan Distraktor:\n- 'Opini pribadi penulis' (Salah), opini memuat pertimbangan subjektif emotif (seperti 'rendang adalah makanan terenak di dunia').\n- 'Asumsi tanpa bukti pendukung' (Salah), klaim ini didukung oleh catatan literatur historiografi perantauan Minang.\n- 'Prasangka kultural' (Salah), kalimat tidak memuat stereotipe atau penilaian negatif prasangka etnis.",
+      "source": {
+        "student_book": {
+          "pages": "196-203",
+          "section": "Bab 5, Subbab C"
+        },
+        "teacher_guide": {
+          "pages": "249-254",
+          "section": "Bab 5, Aktivitas 5.4"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 196-203 (Subbab C: Menelaah Fakta, Opini, dan Asumsi) & Buku Panduan Guru hlm. 249-254.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C05-C",
+      "difficulty": "medium",
+      "cognitive_level": "analyze",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Menganalisis dan membedakan fakta objektif dengan opini atau asumsi dalam teks esai.",
+        "concept_reference": "Fakta, Opini, dan Asumsi dalam Esai (Bab 5 Subbab C)",
+        "support_category": "adapted_curricular_scenario",
+        "authoring_statement": "Adapted curricular scenario: Contoh fakta sejarah rendang Minangkabau diadaptasi dari teks pemodelan esai budaya Bab 5 Buku Siswa."
+      }
+    },
+    {
+      "id": "FINAL-C05-3",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C05-C",
+      "skill": "menerapkan",
+      "question": "Frasa korelatif yang tepat untuk kalimat berikut adalah: 'Budaya lokal harus dilestarikan, ... di kota ... di desa.'",
+      "options": [
+        "baik ... ataupun",
+        "baik ... maupun",
+        "bukan ... melainkan",
+        "antara ... dengan"
+      ],
+      "answer": "baik ... maupun",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kaidah Konjungsi Korelatif Baku EYD V (Bab 5 Subbab C): Konjungsi korelatif adalah pasangan konjungsi tetap yang menghubungkan dua unsur kalimat yang setara sintaksisnya. Pasangan baku yang sah dalam bahasa Indonesia meliputi: 'baik ... maupun', 'bukan ... melainkan', 'tidak ... tetapi', dan 'antara ... dan'.\n2. Pembahasan Kunci Jawaban: Pilihan 'baik ... maupun' (BENAR) adalah satu-satunya pasangan korelatif aditif yang tepat dan baku untuk menggabungkan dua lingkungan geografis dalam kalimat 'Budaya lokal harus dilestarikan, baik di kota maupun di desa'.\n3. Pembahasan Distraktor:\n- 'baik ... ataupun' (Salah), 'baik' tidak boleh dipasangkan dengan 'ataupun' (bentuk kerancuan berbahasa yang lazim terjadi).\n- 'bukan ... melainkan' (Salah), pasangan ini digunakan untuk hubungan pertentangan/koreksi, bukan penggabungan inklusif dua wilayah.\n- 'antara ... dengan' (Salah), 'antara' harus berpasangan dengan 'dan' (antara... dan...), bukan 'dengan'.",
+      "source": {
+        "student_book": {
+          "pages": "196-203",
+          "section": "Bab 5, Subbab C"
+        },
+        "teacher_guide": {
+          "pages": "249-254",
+          "section": "Bab 5, Aktivitas 5.5"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 196-203 (Subbab C: Kaidah Bahasa Konjungsi Korelatif) & Buku Panduan Guru hlm. 249-254.",
+      "mode": "assessment",
+      "game_mechanic": "language_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C05-C",
+      "difficulty": "easy",
+      "cognitive_level": "apply",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Menerapkan penggunaan konjungsi korelatif baku dalam kalimat tulisan esai.",
+        "concept_reference": "Kaidah Bahasa Konjungsi Korelatif (Bab 5 Subbab C)",
+        "support_category": "adapted_curricular_scenario",
+        "authoring_statement": "Adapted curricular scenario: Menguji penerapan pasangan konjungsi korelatif baku bahasa Indonesia sesuai pedoman EYD V."
+      }
+    },
+    {
+      "id": "FINAL-C05-4",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C05-D",
+      "skill": "mengevaluasi",
+      "question": "Bacalah kalimat: 'Melestarikan kearifan lokal memerlukan kerjasama antar komunitas dan pemerintah daerah.' Kesalahan penulisan yang tepat adalah...",
+      "options": [
+        "'kerjasama' sudah benar, namun 'antar komunitas' seharusnya 'antara komunitas'.",
+        "Tidak ada kesalahan dalam kalimat tersebut.",
+        "'pemerintah daerah' seharusnya ditulis dengan huruf kapital.",
+        "'kerjasama' seharusnya 'kerja sama' dan 'antar komunitas' seharusnya 'antarkomunitas'."
+      ],
+      "answer": "'kerjasama' seharusnya 'kerja sama' dan 'antar komunitas' seharusnya 'antarkomunitas'.",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Kaidah Ejaan Kata Majemuk dan Bentuk Terikat EYD V (Bab 5 Subbab D): Pedoman Umum Ejaan Bahasa Indonesia (EYD V) menetapkan: (a) Gabungan kata (kata majemuk) yang belum padu bersenyawa wajib ditulis terpisah ('kerja sama', bukan 'kerjasama'), (b) Bentuk terikat seperti 'antar-', 'pasca-', 'sub-', 'multi-' wajib ditulis serangkai langsung tanpa spasi dengan kata dasar yang mengikutinya ('antarkomunitas', bukan 'antar komunitas').\n2. Pembahasan Kunci Jawaban: Pilihan ''kerjasama' seharusnya 'kerja sama' dan 'antar komunitas' seharusnya 'antarkomunitas'' (BENAR) secara tepat mendeteksi dan mengoreksi kedua kesalahan ejaan dalam kalimat tersebut.\n3. Pembahasan Distraktor:\n- ''kerjasama' sudah benar, namun 'antar komunitas' seharusnya 'antara komunitas'' (Salah), penulisan 'kerjasama' jelas salah karena wajib dipisah, dan bentuk terikat bukan preposisi 'antara'.\n- 'Tidak ada kesalahan dalam kalimat tersebut' (Salah), terdapat dua kesalahan ortografis nyata dalam kalimat tersebut.\n- ''pemerintah daerah' seharusnya ditulis dengan huruf kapital' (Salah), 'pemerintah daerah' adalah nomina umum institusional yang tidak memerlukan huruf kapital di tengah kalimat.",
+      "source": {
+        "student_book": {
+          "pages": "204-213",
+          "section": "Bab 5, Subbab D"
+        },
+        "teacher_guide": {
+          "pages": "254-259",
+          "section": "Bab 5, Aktivitas 5.7"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 204-213 (Subbab D: Menyunting Draf Esai Berdasarkan Kaidah Ejaan EYD) & Buku Panduan Guru hlm. 254-259.",
+      "mode": "assessment",
+      "game_mechanic": "language_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C05-D",
+      "difficulty": "hard",
+      "cognitive_level": "evaluate",
+      "question_type": "contextual",
+      "estimated_time_seconds": 120,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Mengevaluasi dan menyunting kesalahan ejaan kata majemuk dan bentuk terikat berdasarkan EYD V.",
+        "concept_reference": "Penyuntingan Ejaan Kata Majemuk dan Bentuk Terikat (Bab 5 Subbab D)",
+        "support_category": "adapted_curricular_scenario",
+        "authoring_statement": "Adapted curricular scenario: Menguji kecermatan penyuntingan ejaan kata majemuk dan bentuk terikat sesuai EYD V Bab 5 Subbab D."
+      }
+    },
+    {
+      "id": "FINAL-C05-5",
+      "chapter_id": "BI12-FINAL",
+      "topic_id": "BI12-C05-E",
+      "skill": "menerapkan",
+      "question": "Setelah mempelajari esai tentang tradisi sasi dan kearifan masyarakat Jawa dalam membaca tanda alam, seorang siswa menulis di jurnalnya: 'Kedua tradisi ini berbeda dalam cara dan bentuknya, namun sama-sama menunjukkan bahwa nenek moyang kita adalah penjaga alam yang bijak.' Dalam model refleksi ALACT, tulisan jurnal tersebut termasuk ke dalam tahap...",
+      "options": [
+        "Tindakan/Aksi (Action)",
+        "Uji Coba (Trial)",
+        "Kesadaran akan Aspek-aspek Penting (Awareness of Essential Aspect)",
+        "Melihat Kembali (Looking Back)"
+      ],
+      "answer": "Kesadaran akan Aspek-aspek Penting (Awareness of Essential Aspect)",
+      "explanation": "Langkah Penyelesaian:\n1. Analisis Konsep Model Refleksi ALACT (Korthagen) (Bab 5 Subbab E): Model refleksi ALACT terdiri atas 5 tahap berurutan: (1) Action (Aksi/Tindakan membaca), (2) Looking back on action (Melihat kembali proses membaca), (3) Awareness of essential aspects (Menyadari aspek esensial/makna luhur mendalam), (4) Creating alternative methods of action (Menciptakan alternatif aksi baru), dan (5) Trial (Menguji coba metode baru).\n2. Pembahasan Kunci Jawaban: Pilihan 'Kesadaran akan Aspek-aspek Penting (Awareness of Essential Aspect)' (BENAR) secara tepat mengidentifikasi proses mental siswa pada kutipan jurnal, di mana siswa mulai mengabstraksikan dan menyadari nilai luhur hakiki (aspek esensial) di balik tradisi yang berbeda, yakni peran nenek moyang sebagai penjaga alam yang bijak.\n3. Pembahasan Distraktor:\n- 'Tindakan/Aksi (Action)' (Salah), tahap ke-1 berupa aktivitas fisik membaca dan mencermati teks secara langsung.\n- 'Uji Coba (Trial)' (Salah), tahap ke-5 berupa implementasi nyata tindakan alternatif dalam situasi hidup baru.\n- 'Melihat Kembali (Looking Back)' (Salah), tahap ke-2 berupa peninjauan kembali apa yang dipikirkan dan dirasakan selama membaca tanpa penarikan makna esensial.",
+      "source": {
+        "student_book": {
+          "pages": "214-217",
+          "section": "Bab 5, Subbab E"
+        },
+        "teacher_guide": {
+          "pages": "259-264",
+          "section": "Bab 5, Aktivitas 5.8"
+        }
+      },
+      "provenance": "Buku Siswa Kelas XII Cetakan 2024 hlm. 214-217 (Subbab E: Model Refleksi ALACT dalam Mengapresiasi Esai) & Buku Panduan Guru hlm. 259-264.",
+      "mode": "assessment",
+      "game_mechanic": "evidence_scan",
+      "subject": "Bahasa Indonesia",
+      "track": "wajib",
+      "curriculum_source": [
+        "Kurikulum Merdeka"
+      ],
+      "topic": "BI12-C05-E",
+      "difficulty": "medium",
+      "cognitive_level": "apply",
+      "question_type": "contextual",
+      "estimated_time_seconds": 90,
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka - Bahasa Indonesia Fase F Kelas XII",
+        "competency_target": "Menerapkan kerangka reflektif model ALACT (tahap Awareness) dalam merespons bacaan esai kebudayaan.",
+        "concept_reference": "Model Refleksi ALACT (Bab 5 Subbab E)",
+        "support_category": "newly_authored_scenario",
+        "authoring_statement": "Newly authored educational scenario: Catatan jurnal reflektif siswa disusun baru merefleksikan nilai-nilai tradisi nusantara dalam kerangka ALACT."
+      }
+    }
+  ]
+}
