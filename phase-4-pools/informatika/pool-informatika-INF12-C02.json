@@ -1,0 +1,792 @@
+{
+  "pool_id": "POOL-INFORMATIKA-INF12-C02",
+  "subject": "informatika",
+  "chapter": "INF12-C02",
+  "track": "pilihan",
+  "curriculum": [
+    "Merdeka"
+  ],
+  "grade": 12,
+  "status": "active",
+  "content_version": 1,
+  "competencies": [
+    {
+      "competency_id": "INF12-C02-A",
+      "name": "Single Board Computer (SBC) dan Arsitektur GPIO",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C02-B",
+      "name": "Single Board Controller dan Siklus Program Arduino",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C02-C",
+      "name": "Komponen Elektronika Penunjang dan Simulator Mikrokontroler",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C02-D",
+      "name": "Pemrograman I/O Digital dan Sinyal Kontrol Mikrokontroler",
+      "question_count": 3
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "INF12-C02-A-1101",
+      "phase3_id": "INF12-C02-M04-Q01",
+      "primary_competency": "INF12-C02-A",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Single Board Computer (SBC) seperti Raspberry Pi semakin banyak digunakan dalam pembelajaran komputasi dan proyek otomasi. Berdasarkan perbandingan karakteristik perangkat keras pada buku teks, manakah pernyataan yang paling tepat membedakan SBC dengan Personal Computer (PC) desktop konvensional?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SBC tidak memiliki prosesor dan kartu grafis sehingga wajib dihubungkan ke komputer lain untuk mengeksekusi program."
+        },
+        {
+          "id": "B",
+          "text": "SBC mengintegrasikan mikroprosesor, memori RAM, pemroses grafis, dan port I/O pada satu papan sirkuit tunggal dengan konsumsi daya rendah, sedangkan PC desktop menggunakan kartu ekspansi terpisah yang dapat diganti."
+        },
+        {
+          "id": "C",
+          "text": "SBC tidak dapat menjalankan sistem operasi lengkap seperti Linux dan hanya mampu menjalankan instruksi perulangan sederhana."
+        },
+        {
+          "id": "D",
+          "text": "SBC membutuhkan daya listrik tegangan tinggi AC 220V secara langsung tanpa melalui regulator adaptor atau port USB."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 25–26 (Tabel 2.1) dan Panduan Guru hlm. 60–64, SBC adalah komputer lengkap yang dibangun di atas satu papan sirkuit tunggal (PCB) dengan mikroprosesor, RAM, slot I/O, GPU, dan antarmuka jaringan terintegrasi permanen, dengan konsumsi daya rata-rata di bawah 5 watt. Sebaliknya, PC desktop memiliki komponen modular (daughter board) terpisah. Pilihan A salah karena SBC memiliki CPU dan GPU sendiri. Pilihan C salah karena SBC mampu menjalankan OS penuh (misal: Raspberry Pi OS/Linux). Pilihan D salah karena SBC beroperasi pada tegangan DC rendah (umumnya 5V via port micro-USB/USB-C).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "25-26",
+          "section": "Bab 2, Subbab A: Single Board Computer (SBC)"
+        },
+        "teacher_guide": {
+          "pages": "60-64",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal asesmen konsep arsitektur Single Board Computer mengacu pada Buku Siswa hlm. 25–26.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-A: Memahami arsitektur dan karakteristik Single Board Computer (SBC) dibanding komputer konvensional",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 25-26 (Karakteristik SBC)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 60-64"
+        },
+        "authoring_statement": "Deskripsi diferensiasi perangkat keras komputasi papan tunggal dirancang mandiri untuk menguji pemahaman arsitektur sistem komputer."
+      }
+    },
+    {
+      "question_id": "INF12-C02-A-2102",
+      "phase3_id": "INF12-C02-M04-Q02",
+      "primary_competency": "INF12-C02-A",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah tim siswa merancang prototipe sistem absensi digital pintar berbasis Raspberry Pi di sekolah. Mereka menghubungkan modul pemindai kartu RFID dan layar LCD mini ke deretan pin header pada papan Raspberry Pi. Fitur perangkat keras utama manakah pada SBC yang memungkinkan papan tersebut berinteraksi langsung dengan perangkat keras eksternal tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Port HDMI, yang bertugas mendeteksi aliran arus dari kartu identitas siswa."
+        },
+        {
+          "id": "B",
+          "text": "Port audio jack 3.5mm, yang memproses gelombang magnetik dari modul RFID."
+        },
+        {
+          "id": "C",
+          "text": "Pin General Purpose Input Output (GPIO), yang dapat dikonfigurasi melalui program untuk menerima sinyal masukan atau mengirimkan sinyal keluaran."
+        },
+        {
+          "id": "D",
+          "text": "Kabel daya adaptor, yang berfungsi mengonversi frekuensi kartu menjadi kode program."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sesuai penjelasan Buku Siswa hlm. 26–27 (Gambar 2.3) dan Panduan Guru hlm. 60–64, pin GPIO (General Purpose Input Output) adalah sekumpulan pin multifungsi pada SBC yang dapat diprogram secara fleksibel sebagai pin input (misal: menerima data dari modul sensor/RFID) maupun pin output (mengirimkan data perintah ke aktuator/layar). Pilihan A keliru karena HDMI hanya untuk keluaran video/tampilan monitor. Pilihan B keliru karena audio jack hanya untuk keluaran suara. Pilihan D salah karena kabel daya hanya menyuplai arus listrik.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "26-27",
+          "section": "Bab 2, Subbab A: Single Board Computer (Pin GPIO)"
+        },
+        "teacher_guide": {
+          "pages": "60-64",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal antarmuka sensor RFID dengan pin GPIO Raspberry Pi merujuk pada Buku Siswa hlm. 26–27.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-A: Menerapkan pemanfaatan pin GPIO pada SBC untuk antarmuka perangkat keras eksternal",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 26-27 (Skema Pin GPIO Raspberry Pi)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 60-64"
+        },
+        "authoring_statement": "Kasus integrasi RFID sekolah disusun orisinal untuk mengukur penerapan praktis fungsi pin GPIO pada proyek otomasi."
+      }
+    },
+    {
+      "question_id": "INF12-C02-A-3103",
+      "phase3_id": "INF12-C02-M04-Q03",
+      "primary_competency": "INF12-C02-A",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah laboratorium botani membutuhkan sistem pemantauan lingkungan rumah kaca. Terdapat dua kebutuhan: (1) Sistem A bertugas membaca sensor suhu sederhana lalu menyalakan kipas saat suhu melampaui 32°C secara terus-menerus tanpa henti dengan keandalan instan saat dinyalakan; (2) Sistem B bertugas merekam citra daun tanaman via kamera resolusi tinggi, menjalankan algoritma pengenalan citra berbasis kecerdasan buatan untuk mendeteksi penyakit tanaman, dan menyajikan dasbor web interaktif. Berdasarkan arsitektur perangkat keras, rekomendasi pemilihan perangkat yang paling tepat dan efisien adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sistem A menggunakan PC server berdaya 500W, sedangkan Sistem B cukup menggunakan mikrokontroler Arduino Uno 8-bit tanpa memori tambahan."
+        },
+        {
+          "id": "B",
+          "text": "Sistem A menggunakan Single Board Controller (Arduino) karena hanya memerlukan eksekusi kontrol I/O sederhana yang ringan dan andal, sedangkan Sistem B menggunakan Single Board Computer (Raspberry Pi) karena membutuhkan daya komputasi tinggi, sistem operasi, dan antarmuka kamera."
+        },
+        {
+          "id": "C",
+          "text": "Kedua sistem wajib menggunakan mikrokontroler Arduino karena Arduino memiliki kemampuan pemrosesan gambar dan kecerdasan buatan yang setara dengan komputer desktop."
+        },
+        {
+          "id": "D",
+          "text": "Kedua sistem harus menggunakan Single Board Computer Raspberry Pi karena mikrokontroler tidak memiliki kemampuan membaca sensor suhu sama sekali."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Analisis pemilihan teknologi berdasarkan Buku Siswa hlm. 25–29 dan Panduan Guru hlm. 60–64: Sistem A hanya menjalankan loop pembacaan nilai sensor dan kendali relay kipas (tugas kontrol deterministik tanpa sistem operasi), sehingga Single Board Controller (seperti Arduino) adalah pilihan paling efisien, hemat daya, dan andal (instant-on). Sebaliknya, Sistem B memerlukan pengolahan citra komputer (computer vision), penyimpanan data besar, dan web server lokal, yang mutlak membutuhkan kapabilitas sistem operasi penuh dan komputasi prosesor pada Single Board Computer (seperti Raspberry Pi). Pilihan A tidak efisien dan mikrokontroler tidak mampu memproses AI grafis. Pilihan C salah karena mikrokontroler memiliki keterbatasan RAM dan komputasi untuk AI gambar. Pilihan D salah karena mikrokontroler justru sangat umum dipakai membaca sensor suhu.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "25-29",
+          "section": "Bab 2, Subbab A & B: Perbedaan SBC dan Controller"
+        },
+        "teacher_guide": {
+          "pages": "60-64",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario analitis komparasi beban kerja SBC vs Mikrokontroler merujuk pada Buku Siswa hlm. 25–29.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-A: Menganalisis kriteria pemilihan perangkat komputasi fisik (SBC vs Mikrokontroler) berdasarkan spesifikasi beban komputasi dan kebutuhan sistem",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 25-29 (Tabel Perbedaan PC, CB, Smartphone, SBC)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 60-64"
+        },
+        "authoring_statement": "Studi kasus rekayasa kebutuhan perangkat keras sistem monitoring botani dirancang orisinal untuk menguji kemampuan analisis arsitektur komputer."
+      }
+    },
+    {
+      "question_id": "INF12-C02-B-4201",
+      "phase3_id": "INF12-C02-M05-Q01",
+      "primary_competency": "INF12-C02-B",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam pemrograman papan Arduino menggunakan Arduino IDE, berkas kode program (sketch) wajib memiliki dua fungsi utama: void setup() dan void loop(). Manakah pernyataan yang paling tepat menjelaskan perbedaan prinsip kerja antara kedua fungsi tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "void setup() dieksekusi terus-menerus selama papan menyala, sedangkan void loop() hanya dieksekusi satu kali saat papan menerima sinyal Wi-Fi."
+        },
+        {
+          "id": "B",
+          "text": "void setup() hanya dieksekusi satu kali saat papan pertama kali dinyalakan atau di-reset untuk inisialisasi pin/komunikasi, sedangkan void loop() dieksekusi berulang-ulang tanpa henti selama papan aktif."
+        },
+        {
+          "id": "C",
+          "text": "void setup() digunakan khusus untuk memprogram sensor analog, sedangkan void loop() hanya digunakan untuk mengendalikan lampu LED digital."
+        },
+        {
+          "id": "D",
+          "text": "void setup() berfungsi untuk menghapus memori mikrokontroler, sedangkan void loop() berfungsi untuk mengunduh kode dari internet."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai penjelasan Buku Siswa hlm. 32 (Gambar 2.8) dan Panduan Guru hlm. 65–68, void setup() adalah blok fungsi yang dieksekusi tepat satu kali ketika papan Arduino pertama kali dinyalakan (power up) atau tombol reset ditekan, biasanya digunakan untuk inisialisasi mode pin (pinMode) atau memulai komunikasi serial (Serial.begin). Sementara itu, void loop() adalah fungsi yang dieksekusi secara berulang-ulang tanpa henti (infinite loop) untuk menjalankan algoritma utama sistem. Pilihan A terbalik. Pilihan C salah membatasi jenis pin. Pilihan D salah mendeskripsikan fungsi memori/unduhan.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "30-33",
+          "section": "Bab 2, Subbab B.2: Instalasi IDE Arduino dan Struktur Program"
+        },
+        "teacher_guide": {
+          "pages": "65-68",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal asesmen konsep siklus eksekusi program Arduino IDE mengacu pada Buku Siswa hlm. 30–33.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-B: Memahami struktur dasar dan siklus eksekusi kode program Arduino (setup vs loop)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 30-33 (Struktur Program Arduino)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 65-68"
+        },
+        "authoring_statement": "Perumusan butir siklus eksekusi mikrokontroler dirancang mandiri untuk menguji pemahaman logika runtime program dasar."
+      }
+    },
+    {
+      "question_id": "INF12-C02-B-5202",
+      "phase3_id": "INF12-C02-M05-Q02",
+      "primary_competency": "INF12-C02-B",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Seorang siswa ingin merakit prototipe alarm pintu berbasis Arduino. Rangkaian tersebut menggunakan sebuah sensor tombol sentuh (push button) yang dipasang pada pin 7 sebagai detektor, dan sebuah buzzer alarm yang dipasang pada pin 12 sebagai pemberi peringatan bunyi. Sintaks inisialisasi yang paling tepat ditulis di dalam blok void setup() adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "pinMode(7, OUTPUT); dan pinMode(12, INPUT);"
+        },
+        {
+          "id": "B",
+          "text": "digitalWrite(7, HIGH); dan digitalWrite(12, LOW);"
+        },
+        {
+          "id": "C",
+          "text": "pinMode(7, INPUT); dan pinMode(12, OUTPUT);"
+        },
+        {
+          "id": "D",
+          "text": "analogRead(7); dan analogWrite(12, 255);"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Penerapan fungsi pinMode(pin, mode) pada Buku Siswa hlm. 32 dan 44: Tombol sentuh (push button) merupakan perangkat masukan yang mengirimkan sinyal status penekanan ke mikrokontroler, sehingga pin 7 wajib diatur sebagai INPUT. Sebaliknya, buzzer alarm adalah perangkat keluaran yang menerima sinyal dari mikrokontroler untuk membunyikan alarm, sehingga pin 12 wajib diatur sebagai OUTPUT. Pilihan A terbalik. Pilihan B adalah fungsi penulisan nilai logika, bukan konfigurasi mode pin. Pilihan D adalah pembacaan/penulisan nilai analog.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "32-33",
+          "section": "Bab 2, Subbab B.2: Inisialisasi Mode Pin Arduino"
+        },
+        "teacher_guide": {
+          "pages": "65-68",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal konfigurasi pin masukan dan keluaran Arduino merujuk pada Buku Siswa hlm. 32–33.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-B: Menerapkan penulisan sintaks inisialisasi pin digital I/O pada mikrokontroler",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 32-33 (Perintah pinMode)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 65-68"
+        },
+        "authoring_statement": "Kasus perakitan alarm pintu sensor tombol disusun orisinal untuk melatih ketepatan penetapan arah sinyal mikrokontroler."
+      }
+    },
+    {
+      "question_id": "INF12-C02-B-6203",
+      "phase3_id": "INF12-C02-M05-Q03",
+      "primary_competency": "INF12-C02-B",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Perhatikan potongan kode program Arduino berikut:\nvoid setup() {\n  pinMode(13, OUTPUT);\n  digitalWrite(13, HIGH);\n  delay(1000);\n  digitalWrite(13, LOW);\n  delay(1000);\n}\nvoid loop() {\n  // kosong\n}\nSeorang siswa berharap lampu LED pada pin 13 akan berkedip terus-menerus selama mikrokontroler dialiri listrik. Namun, saat dijalankan, lampu LED hanya berkedip tepat satu kali lalu mati permanen. Analisis manakah yang paling tepat menjelaskan penyebab kegagalan logika tersebut dan solusi perbaikannya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mikrokontroler Arduino kekurangan daya listrik; solusinya adalah mengganti kabel USB dengan adaptor tegangan 220V."
+        },
+        {
+          "id": "B",
+          "text": "Pin 13 pada Arduino hanya mendukung sinyal masukan; solusinya adalah mengganti nomor pin menjadi pin analog A0."
+        },
+        {
+          "id": "C",
+          "text": "Kode penyalaan dan pemadaman LED ditempatkan di dalam fungsi setup() yang hanya berjalan satu kali saat start-up; solusinya adalah memindahkan baris digitalWrite dan delay ke dalam fungsi loop() agar dieksekusi berulang kali."
+        },
+        {
+          "id": "D",
+          "text": "Nilai delay(1000) terlalu kecil untuk dilihat mata manusia; solusinya adalah menaikkan nilai delay menjadi 100.000 milidetik di dalam setup()."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan siklus eksekusi program Arduino (Buku Siswa hlm. 32 dan Panduan Guru hlm. 65–68), seluruh instruksi di dalam void setup() hanya dieksekusi satu kali sejak mikrokontroler menyala. Karena baris instruksi digitalWrite dan delay diletakkan di setup(), LED hanya menyala selama 1 detik, padam selama 1 detik, lalu program masuk ke void loop() yang kosong tanpa melakukan tindakan apa pun lagi. Solusi yang tepat adalah mempertahankan pinMode(13, OUTPUT); di dalam setup(), dan memindahkan siklus hidup-mati LED ke dalam void loop(). Pilihan A salah karena masalahnya ada pada logika kode. Pilihan B keliru karena pin 13 adalah pin digital I/O yang valid. Pilihan D salah karena 1000ms = 1 detik sangat jelas terlihat mata manusia.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "32-33",
+          "section": "Bab 2, Subbab B.2: Analisis Siklus Program Arduino"
+        },
+        "teacher_guide": {
+          "pages": "65-68",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario analitis debugging penempatan blok kode Arduino merujuk pada Buku Siswa hlm. 32.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-B: Menganalisis alur eksekusi logika kode mikrokontroler dan melakukan debugging kesalahan struktur program",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 32 (Siklus Eksekusi Fungsi setup dan loop)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 65-68"
+        },
+        "authoring_statement": "Kasus kesalahan penempatan fungsi perulangan dirancang mandiri untuk menguji kemampuan pelacakan alur eksekusi program (tracing)."
+      }
+    },
+    {
+      "question_id": "INF12-C02-C-7301",
+      "phase3_id": "INF12-C02-M06-Q01",
+      "primary_competency": "INF12-C02-C",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Saat merangkai komponen Light Emitting Diode (LED) pada papan percobaan (breadboard) bersama Arduino, pemasangan resistor pembatas arus secara seri sangat diwajibkan. Manakah pernyataan yang paling tepat mengenai fungsi resistor dan polaritas kaki LED tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Resistor berfungsi menaikkan tegangan hingga 100V, dan LED dapat dipasang bolak-balik tanpa memperhatikan polaritas kaki."
+        },
+        {
+          "id": "B",
+          "text": "Resistor berfungsi membatasi arus listrik agar LED tidak terbakar (overcurrent), dan kaki LED yang lebih panjang merupakan anoda (kutub positif) sedangkan kaki yang lebih pendek merupakan katoda (kutub negatif)."
+        },
+        {
+          "id": "C",
+          "text": "Resistor berfungsi mengubah sinyal digital menjadi sinyal analog, dan kaki LED yang lebih panjang wajib dihubungkan ke ground (GND)."
+        },
+        {
+          "id": "D",
+          "text": "Resistor hanya berfungsi sebagai sakelar manual yang harus ditekan dengan tangan agar LED menyala."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai penjelasan Buku Siswa hlm. 34 (Subbab B.3.c dan B.3.d), LED memiliki polaritas: kaki yang lebih panjang adalah anoda (positif) dan kaki yang lebih pendek/berpinggul rata adalah katoda (negatif). Karena arus maju maksimum LED sangat kecil (sekitar 20–30 mA), resistor wajib dipasang secara seri untuk membatasi aliran arus listrik agar komponen LED tidak rusak/terbakar akibat arus berlebih dari pin Arduino. Pilihan A keliru karena resistor menurunkan/membatasi arus dan LED memiliki polaritas searah. Pilihan C terbalik (anoda dihubungkan ke sumber tegangan positif, bukan ground). Pilihan D keliru mendeskripsikan resistor sebagai sakelar.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "34-35",
+          "section": "Bab 2, Subbab B.3.c & B.3.d: LED dan Resistor"
+        },
+        "teacher_guide": {
+          "pages": "69-74",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal fungsi komponen elektronika LED dan resistor merujuk pada Buku Siswa hlm. 34–35.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-C: Memahami karakteristik fisik, polaritas, dan fungsi proteksi komponen penunjang sirkuit mikrokontroler",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 34-35 (Karakteristik LED dan Resistor)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 69-74"
+        },
+        "authoring_statement": "Deskripsi polaritas LED dan kalkulasi proteksi arus resistor dirancang mandiri untuk memverifikasi pemahaman dasar keselamatan elektronika."
+      }
+    },
+    {
+      "question_id": "INF12-C02-C-8302",
+      "phase3_id": "INF12-C02-M06-Q02",
+      "primary_competency": "INF12-C02-C",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah sistem penerangan jalan otomatis dirancang menggunakan sensor cahaya Photoresistor (LDR) yang dihubungkan ke pin analog A0 Arduino. Berdasarkan prinsip kerja LDR pada buku teks, bagaimana perubahan nilai resistansi LDR dan tegangan yang terbaca saat kondisi lingkungan berubah dari siang hari (terang) menjadi malam hari (gelap gulita)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Saat kondisi makin gelap, resistansi LDR meningkat sangat tinggi (dapat mencapai skala Megohms), sehingga mengubah tegangan analog yang dibaca oleh mikrokontroler."
+        },
+        {
+          "id": "B",
+          "text": "Saat kondisi makin gelap, resistansi LDR turun menjadi 0 Ohm sehingga mengalirkan arus listrik maksimum."
+        },
+        {
+          "id": "C",
+          "text": "Resistansi LDR selalu konstan pada 220 Ohm baik dalam kondisi terang benderang maupun gelap gulita."
+        },
+        {
+          "id": "D",
+          "text": "LDR tidak merespons intensitas cahaya dan hanya mendeteksi gelombang suara frekuensi tinggi."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Berdasarkan Buku Siswa hlm. 36 (Subbab B.3.g.1 Mengenai Modul Sensor Cahaya / Photoresistor), LDR memiliki karakteristik nilai resistansi yang berbanding terbalik dengan intensitas cahaya: saat kondisi terang, resistansinya rendah (arus mudah lewat); saat kondisi gelap, resistansinya meningkat drastis hingga mencapai 10 Megohms. Perubahan resistansi ini dimanfaatkan dalam rangkaian pembagi tegangan (voltage divider) sehingga pin analog Arduino dapat mendeteksi perubahan level tegangan (0–5V atau 0–1023) untuk menentukan kapan lampu harus dinyalakan. Pilihan B terbalik. Pilihan C salah karena resistor konstan adalah fixed resistor. Pilihan D salah mendeskripsikan sensor suara.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "36-37",
+          "section": "Bab 2, Subbab B.3.g: Modul Sensor (Sensor Cahaya LDR)"
+        },
+        "teacher_guide": {
+          "pages": "69-74",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal karakteristik sensor LDR merujuk pada Buku Siswa hlm. 36.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-C: Menerapkan prinsip kerja sensor analog (LDR) dalam sistem kendali otomatisasi lingkungan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 36 (Karakteristik Sensor Cahaya)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 69-74"
+        },
+        "authoring_statement": "Kasus rangkaian lampu otomatis sensor LDR disusun mandiri untuk melatih penerapan konsep transduser cahaya ke sinyal listrik."
+      }
+    },
+    {
+      "question_id": "INF12-C02-C-9303",
+      "phase3_id": "INF12-C02-M06-Q03",
+      "primary_competency": "INF12-C02-C",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam pembelajaran Informatika di sekolah yang memiliki keterbatasan perangkat keras fisik, guru memanfaatkan perangkat lunak simulator mikrokontroler seperti UnoArduSim dan Tinkercad sebelum siswa merakit komponen nyata. Berdasarkan aspek pedagogis dan keselamatan teknis, evaluasi analitis manakah yang paling tepat mengenai peran simulator dalam rekayasa sistem komputer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Simulator sepenuhnya menggantikan kebutuhan perangkat keras fisik sehingga sekolah tidak perlu lagi memperkenalkan mikrokontroler nyata kepada siswa."
+        },
+        {
+          "id": "B",
+          "text": "Simulator hanya dapat menampilkan teks kode program tanpa mampu memvisualisasikan interaksi komponen input/output secara interaktif."
+        },
+        {
+          "id": "C",
+          "text": "Simulator memungkinkan siswa menguji logika algoritma, mengamati visualisasi pin I/O secara dinamis, dan mencegah risiko kerusakan perangkat keras fisik akibat hubungan arus pendek (korsleting) atau kesalahan pengkabelan selama fase perancangan awal."
+        },
+        {
+          "id": "D",
+          "text": "Penggunaan simulator memperlambat proses belajar karena siswa harus menulis kode dalam bahasa mesin biner secara manual."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sesuai pembahasan Buku Siswa hlm. 37–41 dan Panduan Guru hlm. 69–74, penggunaan simulator Arduino (seperti UnoArduSim, Tinkercad, atau Wokwi) memberikan nilai tambah pedagogis signifikan: 1) Memungkinkan verifikasi logika algoritma baris demi baris (step-by-step execution); 2) Menyediakan simulasi visual interaksi I/O (LED berkedip, respons tombol, grafik serial); 3) Mengeliminasi risiko biaya kerusakan komponen fisik akibat short circuit atau polaritas terbalik saat siswa pemula bereksperimen. Pilihan A keliru karena pengalaman taktil merakit fisik tetap penting. Pilihan B keliru karena simulator modern memvisualisasikan perangkat keras virtual secara interaktif. Pilihan D keliru karena simulator menggunakan bahasa tingkat tinggi (C/C++ Arduino) yang sama dengan IDE aslinya.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "37-41",
+          "section": "Bab 2, Subbab B.4 & B.5: Simulator Arduino dan UnoArduSim"
+        },
+        "teacher_guide": {
+          "pages": "69-74",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario analitis evaluasi peran simulator mikrokontroler merujuk pada Buku Siswa hlm. 37–41.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-C: Menganalisis nilai tambah, batasan, dan peran simulator perangkat keras (UnoArduSim, Tinkercad) dalam rekayasa sistem siber-fisik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 37-41 (Peran Simulator Arduino)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 69-74"
+        },
+        "authoring_statement": "Evaluasi pedagogis dan keselamatan teknis simulator mikrokontroler disusun mandiri untuk mengukur daya analisis kritis peserta didik."
+      }
+    },
+    {
+      "question_id": "INF12-C02-D-8401",
+      "phase3_id": "INF12-C02-M07-Q01",
+      "primary_competency": "INF12-C02-D",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam eksperimen UnoArduSim pada buku teks, siswa menguji program dasar Blink. Perintah digitalWrite(13, HIGH); yang diikuti dengan delay(500); memiliki makna operasional...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mematikan arus listrik pada pin 13 selama 500 detik."
+        },
+        {
+          "id": "B",
+          "text": "Mengatur pin 13 ke tegangan tinggi (5V) sehingga komponen keluaran aktif, lalu menahan kondisi tersebut selama 500 milidetik (0,5 detik)."
+        },
+        {
+          "id": "C",
+          "text": "Mengubah nomor pin dari pin 13 menjadi pin 500 secara otomatis."
+        },
+        {
+          "id": "D",
+          "text": "Membaca nilai sensor analog pada pin 13 sebanyak 500 kali dalam satu menit."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai penjelasan Buku Siswa hlm. 41–44 dan Panduan Guru hlm. 75–80, digitalWrite(pin, HIGH) mengirimkan sinyal logika 1 (tegangan 5V) ke pin keluaran digital untuk menyalakan komponen (misalnya LED). Fungsi delay(500) menghentikan sementara jalannya eksekusi program berikutnya selama 500 milidetik (setengah detik), sehingga kondisi menyala tersebut dapat teramati sebelum dieksekusi perintah berikutnya. Pilihan A keliru karena HIGH berarti menyala dan 500ms bukan 500 detik. Pilihan C salah mengaitkan nomor pin. Pilihan D salah mengaitkan dengan pembacaan analog.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "41-44",
+          "section": "Bab 2, Subbab B.5: Menyalakan LED dengan UnoArduSim"
+        },
+        "teacher_guide": {
+          "pages": "75-80",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal fungsi dasar digitalWrite dan delay merujuk pada Buku Siswa hlm. 41–44.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-D: Memahami fungsi perintah penulisan digital (digitalWrite) dan pengatur pewaktuan (delay) pada mikrokontroler",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 41-44 (Kode Program Dasar Blink)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 75-80"
+        },
+        "authoring_statement": "Deskripsi operasional logika instruksi waktu tunda mikrokontroler disusun mandiri untuk memverifikasi pemahaman dasar sinyal digital."
+      }
+    },
+    {
+      "question_id": "INF12-C02-D-9402",
+      "phase3_id": "INF12-C02-M07-Q02",
+      "primary_competency": "INF12-C02-D",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Pada Aktivitas SK-K12-05 (Ayo Kembangkan: Pembuatan Kode S.O.S pada Lampu LED), siswa diminta memprogram sinyal darurat morse internasional. Kode morse untuk S.O.S terdiri atas: 3 kedipan pendek (huruf S), 3 kedipan panjang (huruf O), dan 3 kedipan pendek (huruf S). Jika kedipan pendek menggunakan delay 200 milidetik dan kedipan panjang menggunakan delay 800 milidetik, pola penulisan perintah program yang benar untuk membentuk satu huruf 'O' adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 kali pengulangan: digitalWrite(LED, HIGH); delay(200); digitalWrite(LED, LOW); delay(200);"
+        },
+        {
+          "id": "B",
+          "text": "3 kali pengulangan: digitalWrite(LED, HIGH); delay(800); digitalWrite(LED, LOW); delay(200);"
+        },
+        {
+          "id": "C",
+          "text": "1 kali instruksi: digitalWrite(LED, LOW); delay(800); tanpa menyalakan LED."
+        },
+        {
+          "id": "D",
+          "text": "9 kali pengulangan: pinMode(LED, OUTPUT); delay(800);"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Aktivitas SK-K12-05 Buku Siswa hlm. 46 dan Panduan Guru hlm. 75–80, huruf 'O' dalam kode morse dilambangkan dengan tiga garis panjang (---). Untuk menghasilkan kedipan panjang, LED dinyalakan (HIGH) selama durasi panjang (800ms), lalu dimatikan (LOW) selama jeda antar-elemen (misal 200ms), dan siklus ini diulang sebanyak 3 kali. Pilihan A adalah pola 3 titik pendek (...) untuk huruf 'S'. Pilihan C tidak menyalakan lampu. Pilihan D adalah konfigurasi mode pin, bukan pola kedip.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "46",
+          "section": "Bab 2, Subbab B.5: Aktivitas SK-K12-05 (Kode S.O.S LED)"
+        },
+        "teacher_guide": {
+          "pages": "75-80",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal modulasi sinyal morse LED merujuk pada Aktivitas SK-K12-05 Buku Siswa hlm. 46.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-D: Menerapkan pemrograman pola pewaktuan sinyal biner/Morse menggunakan fungsi delay dan digitalWrite",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 46 (Aktivitas SK-K12-05)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 75-80"
+        },
+        "authoring_statement": "Perancangan pola transmisi sandi morse LED disusun orisinal untuk menguji penerapan praktis logika sekuensial waktu."
+      }
+    },
+    {
+      "question_id": "INF12-C02-D-9403",
+      "phase3_id": "INF12-C02-M07-Q03",
+      "primary_competency": "INF12-C02-D",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Perhatikan dua pendekatan kode program berikut yang memiliki keluaran visual kedip LED sama:\nPendekatan 1: Menuliskan baris digitalWrite dan delay secara berulang-ulang sebanyak 20 kali secara manual dalam baris-baris terpisah.\nPendekatan 2: Menggunakan struktur perulangan for:\nfor (int i = 0; i < 20; i++) {\n  digitalWrite(ledPin, HIGH);\n  delay(100);\n  digitalWrite(ledPin, LOW);\n  delay(100);\n}\nBerdasarkan prinsip efisiensi pemrograman pada sistem berkapasitas memori terbatas (mikrokontroler), analisis manakah yang paling tepat membandingkan kedua pendekatan tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pendekatan 1 lebih baik karena mikrokontroler tidak mampu mengeksekusi instruksi perulangan for."
+        },
+        {
+          "id": "B",
+          "text": "Pendekatan 2 jauh lebih unggul karena menerapkan prinsip modularitas dan penghematan memori program (program storage space), serta memudahkan pemeliharaan kode (maintainability) jika jumlah kedipan atau durasi delay perlu diubah."
+        },
+        {
+          "id": "C",
+          "text": "Kedua pendekatan menghasilkan ukuran berkas biner mesin yang sama persis dan tidak memiliki dampak apa pun terhadap keterbacaan kode."
+        },
+        {
+          "id": "D",
+          "text": "Pendekatan 2 membahayakan perangkat keras karena variabel i akan menyebabkan memori flash mikrokontroler cepat panas."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai pembahasan efisiensi kode dan modifikasi algoritma UnoArduSim pada Buku Siswa hlm. 42–46 dan Panduan Guru hlm. 75–80, menuliskan kode secara berulang-ulang tanpa struktur perulangan (code duplication/spaghetti code) meningkatkan ukuran baris kode (source lines), rentan kesalahan (error-prone), dan menyulitkan modifikasi parameter. Pendekatan 2 memanfaatkan struktur kontrol for yang ringkas, menghemat memori, mempermudah skalabilitas jumlah iterasi, dan meningkatkan keterbacaan kode (clean code). Pilihan A keliru karena mikrokontroler sangat handal menjalankan loop for. Pilihan C keliru karena struktur loop menghasilkan instruksi percabangan yang lebih ringkas. Pilihan D adalah mitos tak berdasar.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "42-46",
+          "section": "Bab 2, Subbab B.5: Modifikasi Baris Kode Program Arduino"
+        },
+        "teacher_guide": {
+          "pages": "75-80",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario analitis efisiensi perulangan kode mikrokontroler merujuk pada Buku Siswa hlm. 42–46.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-D: Menganalisis efisiensi struktur kontrol algoritma (perulangan for) terhadap optimasi memori dan pemeliharaan program mikrokontroler",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 42-46 (Modifikasi Baris Kode Standar Arduino)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 75-80"
+        },
+        "authoring_statement": "Kasus komparasi duplikasi kode manual vs perulangan for dirancang mandiri untuk melatih kemampuan optimasi algoritma perangkat keras."
+      }
+    }
+  ]
+}

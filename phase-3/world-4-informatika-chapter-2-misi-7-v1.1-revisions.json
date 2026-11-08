@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "world-4-informatika-chapter-2-misi-7-v1.1",
+  "base_batch": "world-4-informatika-chapter-2-misi-7-canonical-v1.0.json",
+  "status": "CONTROLLED_REVISION_DRAFT",
+  "purpose": "Standardize Chapter 2 Mission 7 items to SOP v2.0 Base-Plus-Overlay v1.1 with explicit option objects (A-D) and full provenance.",
+  "revisions": [
+    {
+      "question_id": "INF12-C02-M07-Q01",
+      "before_question": "Dalam eksperimen UnoArduSim pada buku teks, siswa menguji program dasar Blink. Perintah digitalWrite(13, HIGH); yang diikuti dengan delay(500); memiliki makna operasional...",
+      "after_question": "Dalam eksperimen UnoArduSim pada buku teks, siswa menguji program dasar Blink. Perintah digitalWrite(13, HIGH); yang diikuti dengan delay(500); memiliki makna operasional...",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Mematikan arus listrik pada pin 13 selama 500 detik."
+        },
+        {
+          "id": "B",
+          "text": "Mengatur pin 13 ke tegangan tinggi (5V) sehingga komponen keluaran aktif, lalu menahan kondisi tersebut selama 500 milidetik (0,5 detik)."
+        },
+        {
+          "id": "C",
+          "text": "Mengubah nomor pin dari pin 13 menjadi pin 500 secara otomatis."
+        },
+        {
+          "id": "D",
+          "text": "Membaca nilai sensor analog pada pin 13 sebanyak 500 kali dalam satu menit."
+        }
+      ],
+      "explanation": "Sesuai penjelasan Buku Siswa hlm. 41–44 dan Panduan Guru hlm. 75–80, digitalWrite(pin, HIGH) mengirimkan sinyal logika 1 (tegangan 5V) ke pin keluaran digital untuk menyalakan komponen (misalnya LED). Fungsi delay(500) menghentikan sementara jalannya eksekusi program berikutnya selama 500 milidetik (setengah detik), sehingga kondisi menyala tersebut dapat teramati sebelum dieksekusi perintah berikutnya. Pilihan A keliru karena HIGH berarti menyala dan 500ms bukan 500 detik. Pilihan C salah mengaitkan nomor pin. Pilihan D salah mengaitkan dengan pembacaan analog.",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "source": {
+        "student_book": {
+          "pages": "41-44",
+          "section": "Bab 2, Subbab B.5: Menyalakan LED dengan UnoArduSim"
+        },
+        "teacher_guide": {
+          "pages": "75-80",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal fungsi dasar digitalWrite dan delay merujuk pada Buku Siswa hlm. 41–44.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-D: Memahami fungsi perintah penulisan digital (digitalWrite) dan pengatur pewaktuan (delay) pada mikrokontroler",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 41-44 (Kode Program Dasar Blink)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 75-80"
+        },
+        "authoring_statement": "Deskripsi operasional logika instruksi waktu tunda mikrokontroler disusun mandiri untuk memverifikasi pemahaman dasar sinyal digital."
+      }
+    },
+    {
+      "question_id": "INF12-C02-M07-Q02",
+      "before_question": "Pada Aktivitas SK-K12-05 (Ayo Kembangkan: Pembuatan Kode S.O.S pada Lampu LED), siswa diminta memprogram sinyal darurat morse internasional. Kode morse untuk S.O.S terdiri atas: 3 kedipan pendek (huruf S), 3 kedipan panjang (huruf O), dan 3 kedipan pendek (huruf S). Jika kedipan pendek menggunakan delay 200 milidetik dan kedipan panjang menggunakan delay 800 milidetik, pola penulisan perintah program yang benar untuk membentuk satu huruf 'O' adalah...",
+      "after_question": "Pada Aktivitas SK-K12-05 (Ayo Kembangkan: Pembuatan Kode S.O.S pada Lampu LED), siswa diminta memprogram sinyal darurat morse internasional. Kode morse untuk S.O.S terdiri atas: 3 kedipan pendek (huruf S), 3 kedipan panjang (huruf O), dan 3 kedipan pendek (huruf S). Jika kedipan pendek menggunakan delay 200 milidetik dan kedipan panjang menggunakan delay 800 milidetik, pola penulisan perintah program yang benar untuk membentuk satu huruf 'O' adalah...",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "3 kali pengulangan: digitalWrite(LED, HIGH); delay(200); digitalWrite(LED, LOW); delay(200);"
+        },
+        {
+          "id": "B",
+          "text": "3 kali pengulangan: digitalWrite(LED, HIGH); delay(800); digitalWrite(LED, LOW); delay(200);"
+        },
+        {
+          "id": "C",
+          "text": "1 kali instruksi: digitalWrite(LED, LOW); delay(800); tanpa menyalakan LED."
+        },
+        {
+          "id": "D",
+          "text": "9 kali pengulangan: pinMode(LED, OUTPUT); delay(800);"
+        }
+      ],
+      "explanation": "Berdasarkan Aktivitas SK-K12-05 Buku Siswa hlm. 46 dan Panduan Guru hlm. 75–80, huruf 'O' dalam kode morse dilambangkan dengan tiga garis panjang (---). Untuk menghasilkan kedipan panjang, LED dinyalakan (HIGH) selama durasi panjang (800ms), lalu dimatikan (LOW) selama jeda antar-elemen (misal 200ms), dan siklus ini diulang sebanyak 3 kali. Pilihan A adalah pola 3 titik pendek (...) untuk huruf 'S'. Pilihan C tidak menyalakan lampu. Pilihan D adalah konfigurasi mode pin, bukan pola kedip.",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "source": {
+        "student_book": {
+          "pages": "46",
+          "section": "Bab 2, Subbab B.5: Aktivitas SK-K12-05 (Kode S.O.S LED)"
+        },
+        "teacher_guide": {
+          "pages": "75-80",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal modulasi sinyal morse LED merujuk pada Aktivitas SK-K12-05 Buku Siswa hlm. 46.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-D: Menerapkan pemrograman pola pewaktuan sinyal biner/Morse menggunakan fungsi delay dan digitalWrite",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 46 (Aktivitas SK-K12-05)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 75-80"
+        },
+        "authoring_statement": "Perancangan pola transmisi sandi morse LED disusun orisinal untuk menguji penerapan praktis logika sekuensial waktu."
+      }
+    },
+    {
+      "question_id": "INF12-C02-M07-Q03",
+      "before_question": "Perhatikan dua pendekatan kode program berikut yang memiliki keluaran visual kedip LED sama:\nPendekatan 1: Menuliskan baris digitalWrite dan delay secara berulang-ulang sebanyak 20 kali secara manual dalam baris-baris terpisah.\nPendekatan 2: Menggunakan struktur perulangan for:\nfor (int i = 0; i < 20; i++) {\n  digitalWrite(ledPin, HIGH);\n  delay(100);\n  digitalWrite(ledPin, LOW);\n  delay(100);\n}\nBerdasarkan prinsip efisiensi pemrograman pada sistem berkapasitas memori terbatas (mikrokontroler), analisis manakah yang paling tepat membandingkan kedua pendekatan tersebut?",
+      "after_question": "Perhatikan dua pendekatan kode program berikut yang memiliki keluaran visual kedip LED sama:\nPendekatan 1: Menuliskan baris digitalWrite dan delay secara berulang-ulang sebanyak 20 kali secara manual dalam baris-baris terpisah.\nPendekatan 2: Menggunakan struktur perulangan for:\nfor (int i = 0; i < 20; i++) {\n  digitalWrite(ledPin, HIGH);\n  delay(100);\n  digitalWrite(ledPin, LOW);\n  delay(100);\n}\nBerdasarkan prinsip efisiensi pemrograman pada sistem berkapasitas memori terbatas (mikrokontroler), analisis manakah yang paling tepat membandingkan kedua pendekatan tersebut?",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Pendekatan 1 lebih baik karena mikrokontroler tidak mampu mengeksekusi instruksi perulangan for."
+        },
+        {
+          "id": "B",
+          "text": "Pendekatan 2 jauh lebih unggul karena menerapkan prinsip modularitas dan penghematan memori program (program storage space), serta memudahkan pemeliharaan kode (maintainability) jika jumlah kedipan atau durasi delay perlu diubah."
+        },
+        {
+          "id": "C",
+          "text": "Kedua pendekatan menghasilkan ukuran berkas biner mesin yang sama persis dan tidak memiliki dampak apa pun terhadap keterbacaan kode."
+        },
+        {
+          "id": "D",
+          "text": "Pendekatan 2 membahayakan perangkat keras karena variabel i akan menyebabkan memori flash mikrokontroler cepat panas."
+        }
+      ],
+      "explanation": "Sesuai pembahasan efisiensi kode dan modifikasi algoritma UnoArduSim pada Buku Siswa hlm. 42–46 dan Panduan Guru hlm. 75–80, menuliskan kode secara berulang-ulang tanpa struktur perulangan (code duplication/spaghetti code) meningkatkan ukuran baris kode (source lines), rentan kesalahan (error-prone), dan menyulitkan modifikasi parameter. Pendekatan 2 memanfaatkan struktur kontrol for yang ringkas, menghemat memori, mempermudah skalabilitas jumlah iterasi, dan meningkatkan keterbacaan kode (clean code). Pilihan A keliru karena mikrokontroler sangat handal menjalankan loop for. Pilihan C keliru karena struktur loop menghasilkan instruksi percabangan yang lebih ringkas. Pilihan D adalah mitos tak berdasar.",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "source": {
+        "student_book": {
+          "pages": "42-46",
+          "section": "Bab 2, Subbab B.5: Modifikasi Baris Kode Program Arduino"
+        },
+        "teacher_guide": {
+          "pages": "75-80",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario analitis efisiensi perulangan kode mikrokontroler merujuk pada Buku Siswa hlm. 42–46.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-D: Menganalisis efisiensi struktur kontrol algoritma (perulangan for) terhadap optimasi memori dan pemeliharaan program mikrokontroler",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 42-46 (Modifikasi Baris Kode Standar Arduino)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 75-80"
+        },
+        "authoring_statement": "Kasus komparasi duplikasi kode manual vs perulangan for dirancang mandiri untuk melatih kemampuan optimasi algoritma perangkat keras."
+      }
+    }
+  ]
+}

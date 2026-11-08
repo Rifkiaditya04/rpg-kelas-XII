@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CONTROLLED_REVISION_DRAFT",
+  "dataset": "World 4 Informatika Standard Chapter 2 Original Content - Misi 5 v1.1",
+  "purpose": "Resolved canonical dataset v1.1 for Chapter 2 Mission 5 (Single Board Controller dan Ekosistem Arduino).",
+  "chapter_id": "INF12-C02",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C02-M05-Q01",
+      "chapter_id": "INF12-C02",
+      "topic_id": "INF12-C02-B",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Dalam pemrograman papan Arduino menggunakan Arduino IDE, berkas kode program (sketch) wajib memiliki dua fungsi utama: void setup() dan void loop(). Manakah pernyataan yang paling tepat menjelaskan perbedaan prinsip kerja antara kedua fungsi tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "void setup() dieksekusi terus-menerus selama papan menyala, sedangkan void loop() hanya dieksekusi satu kali saat papan menerima sinyal Wi-Fi."
+        },
+        {
+          "id": "B",
+          "text": "void setup() hanya dieksekusi satu kali saat papan pertama kali dinyalakan atau di-reset untuk inisialisasi pin/komunikasi, sedangkan void loop() dieksekusi berulang-ulang tanpa henti selama papan aktif."
+        },
+        {
+          "id": "C",
+          "text": "void setup() digunakan khusus untuk memprogram sensor analog, sedangkan void loop() hanya digunakan untuk mengendalikan lampu LED digital."
+        },
+        {
+          "id": "D",
+          "text": "void setup() berfungsi untuk menghapus memori mikrokontroler, sedangkan void loop() berfungsi untuk mengunduh kode dari internet."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai penjelasan Buku Siswa hlm. 32 (Gambar 2.8) dan Panduan Guru hlm. 65–68, void setup() adalah blok fungsi yang dieksekusi tepat satu kali ketika papan Arduino pertama kali dinyalakan (power up) atau tombol reset ditekan, biasanya digunakan untuk inisialisasi mode pin (pinMode) atau memulai komunikasi serial (Serial.begin). Sementara itu, void loop() adalah fungsi yang dieksekusi secara berulang-ulang tanpa henti (infinite loop) untuk menjalankan algoritma utama sistem. Pilihan A terbalik. Pilihan C salah membatasi jenis pin. Pilihan D salah mendeskripsikan fungsi memori/unduhan.",
+      "source": {
+        "student_book": {
+          "pages": "30-33",
+          "section": "Bab 2, Subbab B.2: Instalasi IDE Arduino dan Struktur Program"
+        },
+        "teacher_guide": {
+          "pages": "65-68",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal asesmen konsep siklus eksekusi program Arduino IDE mengacu pada Buku Siswa hlm. 30–33.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-B: Memahami struktur dasar dan siklus eksekusi kode program Arduino (setup vs loop)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 30-33 (Struktur Program Arduino)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 65-68"
+        },
+        "authoring_statement": "Perumusan butir siklus eksekusi mikrokontroler dirancang mandiri untuk menguji pemahaman logika runtime program dasar."
+      }
+    },
+    {
+      "id": "INF12-C02-M05-Q02",
+      "chapter_id": "INF12-C02",
+      "topic_id": "INF12-C02-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Seorang siswa ingin merakit prototipe alarm pintu berbasis Arduino. Rangkaian tersebut menggunakan sebuah sensor tombol sentuh (push button) yang dipasang pada pin 7 sebagai detektor, dan sebuah buzzer alarm yang dipasang pada pin 12 sebagai pemberi peringatan bunyi. Sintaks inisialisasi yang paling tepat ditulis di dalam blok void setup() adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "pinMode(7, OUTPUT); dan pinMode(12, INPUT);"
+        },
+        {
+          "id": "B",
+          "text": "digitalWrite(7, HIGH); dan digitalWrite(12, LOW);"
+        },
+        {
+          "id": "C",
+          "text": "pinMode(7, INPUT); dan pinMode(12, OUTPUT);"
+        },
+        {
+          "id": "D",
+          "text": "analogRead(7); dan analogWrite(12, 255);"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Penerapan fungsi pinMode(pin, mode) pada Buku Siswa hlm. 32 dan 44: Tombol sentuh (push button) merupakan perangkat masukan yang mengirimkan sinyal status penekanan ke mikrokontroler, sehingga pin 7 wajib diatur sebagai INPUT. Sebaliknya, buzzer alarm adalah perangkat keluaran yang menerima sinyal dari mikrokontroler untuk membunyikan alarm, sehingga pin 12 wajib diatur sebagai OUTPUT. Pilihan A terbalik. Pilihan B adalah fungsi penulisan nilai logika, bukan konfigurasi mode pin. Pilihan D adalah pembacaan/penulisan nilai analog.",
+      "source": {
+        "student_book": {
+          "pages": "32-33",
+          "section": "Bab 2, Subbab B.2: Inisialisasi Mode Pin Arduino"
+        },
+        "teacher_guide": {
+          "pages": "65-68",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal konfigurasi pin masukan dan keluaran Arduino merujuk pada Buku Siswa hlm. 32–33.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-B: Menerapkan penulisan sintaks inisialisasi pin digital I/O pada mikrokontroler",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 32-33 (Perintah pinMode)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 65-68"
+        },
+        "authoring_statement": "Kasus perakitan alarm pintu sensor tombol disusun orisinal untuk melatih ketepatan penetapan arah sinyal mikrokontroler."
+      }
+    },
+    {
+      "id": "INF12-C02-M05-Q03",
+      "chapter_id": "INF12-C02",
+      "topic_id": "INF12-C02-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Perhatikan potongan kode program Arduino berikut:\nvoid setup() {\n  pinMode(13, OUTPUT);\n  digitalWrite(13, HIGH);\n  delay(1000);\n  digitalWrite(13, LOW);\n  delay(1000);\n}\nvoid loop() {\n  // kosong\n}\nSeorang siswa berharap lampu LED pada pin 13 akan berkedip terus-menerus selama mikrokontroler dialiri listrik. Namun, saat dijalankan, lampu LED hanya berkedip tepat satu kali lalu mati permanen. Analisis manakah yang paling tepat menjelaskan penyebab kegagalan logika tersebut dan solusi perbaikannya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mikrokontroler Arduino kekurangan daya listrik; solusinya adalah mengganti kabel USB dengan adaptor tegangan 220V."
+        },
+        {
+          "id": "B",
+          "text": "Pin 13 pada Arduino hanya mendukung sinyal masukan; solusinya adalah mengganti nomor pin menjadi pin analog A0."
+        },
+        {
+          "id": "C",
+          "text": "Kode penyalaan dan pemadaman LED ditempatkan di dalam fungsi setup() yang hanya berjalan satu kali saat start-up; solusinya adalah memindahkan baris digitalWrite dan delay ke dalam fungsi loop() agar dieksekusi berulang kali."
+        },
+        {
+          "id": "D",
+          "text": "Nilai delay(1000) terlalu kecil untuk dilihat mata manusia; solusinya adalah menaikkan nilai delay menjadi 100.000 milidetik di dalam setup()."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan siklus eksekusi program Arduino (Buku Siswa hlm. 32 dan Panduan Guru hlm. 65–68), seluruh instruksi di dalam void setup() hanya dieksekusi satu kali sejak mikrokontroler menyala. Karena baris instruksi digitalWrite dan delay diletakkan di setup(), LED hanya menyala selama 1 detik, padam selama 1 detik, lalu program masuk ke void loop() yang kosong tanpa melakukan tindakan apa pun lagi. Solusi yang tepat adalah mempertahankan pinMode(13, OUTPUT); di dalam setup(), dan memindahkan siklus hidup-mati LED ke dalam void loop(). Pilihan A salah karena masalahnya ada pada logika kode. Pilihan B keliru karena pin 13 adalah pin digital I/O yang valid. Pilihan D salah karena 1000ms = 1 detik sangat jelas terlihat mata manusia.",
+      "source": {
+        "student_book": {
+          "pages": "32-33",
+          "section": "Bab 2, Subbab B.2: Analisis Siklus Program Arduino"
+        },
+        "teacher_guide": {
+          "pages": "65-68",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario analitis debugging penempatan blok kode Arduino merujuk pada Buku Siswa hlm. 32.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-B: Menganalisis alur eksekusi logika kode mikrokontroler dan melakukan debugging kesalahan struktur program",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 32 (Siklus Eksekusi Fungsi setup dan loop)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 65-68"
+        },
+        "authoring_statement": "Kasus kesalahan penempatan fungsi perulangan dirancang mandiri untuk menguji kemampuan pelacakan alur eksekusi program (tracing)."
+      }
+    }
+  ]
+}

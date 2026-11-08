@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CONTROLLED_REVISION_DRAFT",
+  "dataset": "World 4 Informatika Standard Chapter 2 Original Content - Misi 6 v1.1",
+  "purpose": "Resolved canonical dataset v1.1 for Chapter 2 Mission 6 (Komponen Penunjang Elektronika dan Simulator Mikrokontroler).",
+  "chapter_id": "INF12-C02",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C02-M06-Q01",
+      "chapter_id": "INF12-C02",
+      "topic_id": "INF12-C02-C",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Saat merangkai komponen Light Emitting Diode (LED) pada papan percobaan (breadboard) bersama Arduino, pemasangan resistor pembatas arus secara seri sangat diwajibkan. Manakah pernyataan yang paling tepat mengenai fungsi resistor dan polaritas kaki LED tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Resistor berfungsi menaikkan tegangan hingga 100V, dan LED dapat dipasang bolak-balik tanpa memperhatikan polaritas kaki."
+        },
+        {
+          "id": "B",
+          "text": "Resistor berfungsi membatasi arus listrik agar LED tidak terbakar (overcurrent), dan kaki LED yang lebih panjang merupakan anoda (kutub positif) sedangkan kaki yang lebih pendek merupakan katoda (kutub negatif)."
+        },
+        {
+          "id": "C",
+          "text": "Resistor berfungsi mengubah sinyal digital menjadi sinyal analog, dan kaki LED yang lebih panjang wajib dihubungkan ke ground (GND)."
+        },
+        {
+          "id": "D",
+          "text": "Resistor hanya berfungsi sebagai sakelar manual yang harus ditekan dengan tangan agar LED menyala."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai penjelasan Buku Siswa hlm. 34 (Subbab B.3.c dan B.3.d), LED memiliki polaritas: kaki yang lebih panjang adalah anoda (positif) dan kaki yang lebih pendek/berpinggul rata adalah katoda (negatif). Karena arus maju maksimum LED sangat kecil (sekitar 20–30 mA), resistor wajib dipasang secara seri untuk membatasi aliran arus listrik agar komponen LED tidak rusak/terbakar akibat arus berlebih dari pin Arduino. Pilihan A keliru karena resistor menurunkan/membatasi arus dan LED memiliki polaritas searah. Pilihan C terbalik (anoda dihubungkan ke sumber tegangan positif, bukan ground). Pilihan D keliru mendeskripsikan resistor sebagai sakelar.",
+      "source": {
+        "student_book": {
+          "pages": "34-35",
+          "section": "Bab 2, Subbab B.3.c & B.3.d: LED dan Resistor"
+        },
+        "teacher_guide": {
+          "pages": "69-74",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal fungsi komponen elektronika LED dan resistor merujuk pada Buku Siswa hlm. 34–35.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-C: Memahami karakteristik fisik, polaritas, dan fungsi proteksi komponen penunjang sirkuit mikrokontroler",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 34-35 (Karakteristik LED dan Resistor)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 69-74"
+        },
+        "authoring_statement": "Deskripsi polaritas LED dan kalkulasi proteksi arus resistor dirancang mandiri untuk memverifikasi pemahaman dasar keselamatan elektronika."
+      }
+    },
+    {
+      "id": "INF12-C02-M06-Q02",
+      "chapter_id": "INF12-C02",
+      "topic_id": "INF12-C02-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah sistem penerangan jalan otomatis dirancang menggunakan sensor cahaya Photoresistor (LDR) yang dihubungkan ke pin analog A0 Arduino. Berdasarkan prinsip kerja LDR pada buku teks, bagaimana perubahan nilai resistansi LDR dan tegangan yang terbaca saat kondisi lingkungan berubah dari siang hari (terang) menjadi malam hari (gelap gulita)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Saat kondisi makin gelap, resistansi LDR meningkat sangat tinggi (dapat mencapai skala Megohms), sehingga mengubah tegangan analog yang dibaca oleh mikrokontroler."
+        },
+        {
+          "id": "B",
+          "text": "Saat kondisi makin gelap, resistansi LDR turun menjadi 0 Ohm sehingga mengalirkan arus listrik maksimum."
+        },
+        {
+          "id": "C",
+          "text": "Resistansi LDR selalu konstan pada 220 Ohm baik dalam kondisi terang benderang maupun gelap gulita."
+        },
+        {
+          "id": "D",
+          "text": "LDR tidak merespons intensitas cahaya dan hanya mendeteksi gelombang suara frekuensi tinggi."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Berdasarkan Buku Siswa hlm. 36 (Subbab B.3.g.1 Mengenai Modul Sensor Cahaya / Photoresistor), LDR memiliki karakteristik nilai resistansi yang berbanding terbalik dengan intensitas cahaya: saat kondisi terang, resistansinya rendah (arus mudah lewat); saat kondisi gelap, resistansinya meningkat drastis hingga mencapai 10 Megohms. Perubahan resistansi ini dimanfaatkan dalam rangkaian pembagi tegangan (voltage divider) sehingga pin analog Arduino dapat mendeteksi perubahan level tegangan (0–5V atau 0–1023) untuk menentukan kapan lampu harus dinyalakan. Pilihan B terbalik. Pilihan C salah karena resistor konstan adalah fixed resistor. Pilihan D salah mendeskripsikan sensor suara.",
+      "source": {
+        "student_book": {
+          "pages": "36-37",
+          "section": "Bab 2, Subbab B.3.g: Modul Sensor (Sensor Cahaya LDR)"
+        },
+        "teacher_guide": {
+          "pages": "69-74",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal karakteristik sensor LDR merujuk pada Buku Siswa hlm. 36.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-C: Menerapkan prinsip kerja sensor analog (LDR) dalam sistem kendali otomatisasi lingkungan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 36 (Karakteristik Sensor Cahaya)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 69-74"
+        },
+        "authoring_statement": "Kasus rangkaian lampu otomatis sensor LDR disusun mandiri untuk melatih penerapan konsep transduser cahaya ke sinyal listrik."
+      }
+    },
+    {
+      "id": "INF12-C02-M06-Q03",
+      "chapter_id": "INF12-C02",
+      "topic_id": "INF12-C02-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Dalam pembelajaran Informatika di sekolah yang memiliki keterbatasan perangkat keras fisik, guru memanfaatkan perangkat lunak simulator mikrokontroler seperti UnoArduSim dan Tinkercad sebelum siswa merakit komponen nyata. Berdasarkan aspek pedagogis dan keselamatan teknis, evaluasi analitis manakah yang paling tepat mengenai peran simulator dalam rekayasa sistem komputer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Simulator sepenuhnya menggantikan kebutuhan perangkat keras fisik sehingga sekolah tidak perlu lagi memperkenalkan mikrokontroler nyata kepada siswa."
+        },
+        {
+          "id": "B",
+          "text": "Simulator hanya dapat menampilkan teks kode program tanpa mampu memvisualisasikan interaksi komponen input/output secara interaktif."
+        },
+        {
+          "id": "C",
+          "text": "Simulator memungkinkan siswa menguji logika algoritma, mengamati visualisasi pin I/O secara dinamis, dan mencegah risiko kerusakan perangkat keras fisik akibat hubungan arus pendek (korsleting) atau kesalahan pengkabelan selama fase perancangan awal."
+        },
+        {
+          "id": "D",
+          "text": "Penggunaan simulator memperlambat proses belajar karena siswa harus menulis kode dalam bahasa mesin biner secara manual."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sesuai pembahasan Buku Siswa hlm. 37–41 dan Panduan Guru hlm. 69–74, penggunaan simulator Arduino (seperti UnoArduSim, Tinkercad, atau Wokwi) memberikan nilai tambah pedagogis signifikan: 1) Memungkinkan verifikasi logika algoritma baris demi baris (step-by-step execution); 2) Menyediakan simulasi visual interaksi I/O (LED berkedip, respons tombol, grafik serial); 3) Mengeliminasi risiko biaya kerusakan komponen fisik akibat short circuit atau polaritas terbalik saat siswa pemula bereksperimen. Pilihan A keliru karena pengalaman taktil merakit fisik tetap penting. Pilihan B keliru karena simulator modern memvisualisasikan perangkat keras virtual secara interaktif. Pilihan D keliru karena simulator menggunakan bahasa tingkat tinggi (C/C++ Arduino) yang sama dengan IDE aslinya.",
+      "source": {
+        "student_book": {
+          "pages": "37-41",
+          "section": "Bab 2, Subbab B.4 & B.5: Simulator Arduino dan UnoArduSim"
+        },
+        "teacher_guide": {
+          "pages": "69-74",
+          "section": "Panduan Pembelajaran Bab 2, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario analitis evaluasi peran simulator mikrokontroler merujuk pada Buku Siswa hlm. 37–41.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C02-C: Menganalisis nilai tambah, batasan, dan peran simulator perangkat keras (UnoArduSim, Tinkercad) dalam rekayasa sistem siber-fisik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 37-41 (Peran Simulator Arduino)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 69-74"
+        },
+        "authoring_statement": "Evaluasi pedagogis dan keselamatan teknis simulator mikrokontroler disusun mandiri untuk mengukur daya analisis kritis peserta didik."
+      }
+    }
+  ]
+}
