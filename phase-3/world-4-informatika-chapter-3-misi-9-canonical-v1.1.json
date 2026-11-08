@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CONTROLLED_REVISION_DRAFT",
+  "dataset": "World 4 Informatika Standard Chapter 3 Original Content - Misi 9 v1.1",
+  "purpose": "Resolved canonical dataset v1.1 for Chapter 3 Mission 9 (Algoritma Logika Analitis: Struktur Keputusan, Binary Search, dan Pola Rekursif).",
+  "chapter_id": "INF12-C03",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C03-M09-Q01",
+      "chapter_id": "INF12-C03",
+      "topic_id": "INF12-C03-B",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Pada Aktivitas BKAP-K12-05 (Robot Penebak Angka), sebuah robot diprogram untuk menebak angka rahasia antara 1 sampai 100 dengan menerima umpan balik 'terlalu besar' atau 'terlalu kecil'. Berdasarkan prinsip algoritma pencarian biner (binary search), berapakah tebakan pertama yang paling optimal dan mengapa tebakan tersebut dipilih?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tebakan 1, karena pencarian selalu dimulai secara berurutan dari angka terkecil."
+        },
+        {
+          "id": "B",
+          "text": "Tebakan 100, karena angka terbesar memberikan batas atas ruang pencarian."
+        },
+        {
+          "id": "C",
+          "text": "Tebakan 50, karena membagi ruang pencarian menjadi dua bagian yang sama besar sehingga mengeliminasi separuh kemungkinan angka dalam satu langkah."
+        },
+        {
+          "id": "D",
+          "text": "Tebakan acak (random), karena komputer tidak dapat memprediksi probabilitas angka."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sesuai prinsip algoritma pencarian biner pada Buku Siswa hlm. 63 (Aktivitas BKAP-K12-05) dan Panduan Guru hlm. 99–106, strategi optimal untuk menebak nilai dalam rentang terurut (1–100) adalah memilih nilai tengah (median), yaitu 50. Jika tebakan terlalu besar, rentang tereliminasi menjadi 1–49; jika terlalu kecil, rentang tereliminasi menjadi 51–100. Dengan demikian, separuh (50%) ruang pencarian langsung terpotong hanya dalam satu pengujian (efisiensi O(log n)). Pilihan A adalah pencarian linier yang lambat. Pilihan B tidak membagi ruang pencarian secara seimbang. Pilihan D adalah tebakan untung-untungan yang tidak terstruktur.",
+      "source": {
+        "student_book": {
+          "pages": "63",
+          "section": "Bab 3, Subbab B.3: Aktivitas BKAP-K12-05 (Robot Penebak Angka)"
+        },
+        "teacher_guide": {
+          "pages": "99-106",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal efisiensi pencarian biner merujuk pada Buku Siswa hlm. 63.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-B: Memahami logika efisiensi algoritma pencarian biner (binary search) dalam membagi ruang pencarian terurut",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 63 (Aktivitas Robot Penebak Angka)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 99-106"
+        },
+        "authoring_statement": "Deskripsi algoritma tebak angka berbasis biner dirancang mandiri untuk memverifikasi pemahaman efisiensi kompleksitas waktu logaritmik."
+      }
+    },
+    {
+      "id": "INF12-C03-M09-Q02",
+      "chapter_id": "INF12-C03",
+      "topic_id": "INF12-C03-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Pada Aktivitas BKAP-K12-04 (Migrasi Platipus), platipus berenang menyusuri percabangan aliran sungai dari hulu ke hilir. Di sepanjang aliran terdapat air terjun setinggi 3 meter (aman dilewati) dan 6 meter (mematikan platipus). Di titik hilir, terdapat aliran yang bermuara ke sungai aman dan bebatuan berbahaya. Pemecahan masalah dengan menempatkan penghalang (batu/tanda silang) di percabangan tertentu agar platipus hanya diarahkan ke jalur hilir yang aman menerapkan konsep komputasi...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Penyusunan basis data relasional untuk menghitung berat rata-rata platipus."
+        },
+        {
+          "id": "B",
+          "text": "Penelusuran pohon keputusan (decision tree / graph traversal) untuk memotong cabang jalur yang tidak valid (pruning) dan menjamin rute yang selamat."
+        },
+        {
+          "id": "C",
+          "text": "Enkripsi data simetris untuk mengaburkan peta aliran air dari predator."
+        },
+        {
+          "id": "D",
+          "text": "Kompresi file citra satelit sungai agar dapat disimpan di memori mikrokontroler."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Aktivitas BKAP-K12-04 Buku Siswa hlm. 61–62 dan Panduan Guru hlm. 99–106, masalah penentuan rute aliran sungai dan pemasangan penghalang merupakan pemodelan graf/pohon keputusan (decision tree). Setiap percabangan adalah simpul (node) keputusan, dan penghalang berfungsi sebagai teknik pruning (pemangkasan cabang yang berujung pada kondisi fatal/kematian setinggi 6m atau bebatuan), sehingga hanya cabang yang valid menuju hilir aman yang dapat dilalui. Pilihan A, C, dan D tidak relevan dengan pemodelan logika jalur dan graf.",
+      "source": {
+        "student_book": {
+          "pages": "61-62",
+          "section": "Bab 3, Subbab B.2: Aktivitas BKAP-K12-04 (Migrasi Platipus)"
+        },
+        "teacher_guide": {
+          "pages": "99-106",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal penelusuran pohon keputusan dan pruning rute graf merujuk pada Buku Siswa hlm. 61–62.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-B: Menerapkan penelusuran struktur pohon keputusan (decision tree) dan teknik pemangkasan cabang (pruning) dalam pemodelan alur logika",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 61-62 (Aktivitas Logika Alur Sungai)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 99-106"
+        },
+        "authoring_statement": "Kasus alur keputusan keselamatan migrasi fauna air dirancang mandiri untuk melatih penerapan traversal graf dan eliminasi cabang logika."
+      }
+    },
+    {
+      "id": "INF12-C03-M09-Q03",
+      "chapter_id": "INF12-C03",
+      "topic_id": "INF12-C03-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Perhatikan pola rekursif fraktal Segitiga Sierpinski pada Aktivitas BKAP-K12-06 (Buku Siswa hlm. 64):\n- Pada iterasi ke-1 (tahap awal): terdapat 1 segitiga putih terbalik yang menghadap ke bawah di tengah segitiga hitam.\n- Pada iterasi ke-2: di setiap 3 segitiga hitam yang tersisa, dibuat 1 segitiga putih terbalik baru, sehingga bertambah 3^1 = 3 segitiga putih baru (total akumulasi 1 + 3 = 4 segitiga putih).\n- Pada iterasi ke-3: bertambah 3^2 = 9 segitiga putih baru.\nBerdasarkan analisis pola rekursif pembentukan fraktal tersebut, berapakah jumlah segitiga putih baru yang menghadap ke bawah yang terbentuk tepat pada iterasi ke-5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "27 segitiga putih baru."
+        },
+        {
+          "id": "B",
+          "text": "81 segitiga putih baru."
+        },
+        {
+          "id": "C",
+          "text": "243 segitiga putih baru."
+        },
+        {
+          "id": "D",
+          "text": "729 segitiga putih baru."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan analisis pola rekursif Segitiga Sierpinski pada Buku Siswa hlm. 64 dan Panduan Guru hlm. 99–106: Jumlah segitiga putih baru yang menghadap ke bawah yang ditambahkan pada setiap iterasi ke-k mengikuti barisan geometri dengan rasio r = 3: Iterasi 1: 3^0 = 1; Iterasi 2: 3^1 = 3; Iterasi 3: 3^2 = 9; Iterasi 4: 3^3 = 27; Iterasi 5: 3^4 = 81 segitiga putih baru. Maka pada iterasi ke-5, terbentuk tepat 81 segitiga putih baru yang menghadap ke bawah. Pilihan A (3^3 = 27) adalah iterasi ke-4. Pilihan C (3^5 = 243) adalah iterasi ke-6. Pilihan D (3^6 = 729) adalah iterasi ke-7.",
+      "source": {
+        "student_book": {
+          "pages": "64",
+          "section": "Bab 3, Subbab B.3: Aktivitas BKAP-K12-06 (Segitiga Sierpinski)"
+        },
+        "teacher_guide": {
+          "pages": "99-106",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario analitis perumusan fungsi rekursif pola fraktal geometri merujuk pada Buku Siswa hlm. 64.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-B: Menganalisis pola rekursif matematika-komputasi pada pembentukan struktur fraktal (Segitiga Sierpinski)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 64 (Pola Segitiga Sierpinski)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 99-106"
+        },
+        "authoring_statement": "Analisis pertumbuhan geometri fraktal rekursif dirancang mandiri untuk melatih penalaran analitis matematis tingkat lanjut peserta didik."
+      }
+    }
+  ]
+}

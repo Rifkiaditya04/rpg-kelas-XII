@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_BASELINE",
+  "dataset": "World 4 Informatika Standard Chapter 3 Original Content - Misi 10 v1.0",
+  "purpose": "Authoritative base canonical dataset for Chapter 3 Mission 10 (Sintaks Pemrograman C Arduino: Tipe Data, Operator, dan Komunikasi Serial).",
+  "chapter_id": "INF12-C03",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C03-M10-Q01",
+      "chapter_id": "INF12-C03",
+      "topic_id": "INF12-C03-C",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Dalam pemrograman bahasa C Arduino, komunikasi antara papan mikrokontroler dengan komputer sering ditampilkan melalui jendela Serial Monitor. Manakah pernyataan yang paling tepat membedakan perintah Serial.print() dengan Serial.println()?",
+      "options": [
+        "Serial.print() mencetak teks ke printer kertas fisik, sedangkan Serial.println() mencetak teks ke layar monitor.",
+        "Serial.print() menampilkan data secara horizontal pada baris yang sama, sedangkan Serial.println() menampilkan data lalu secara otomatis memindahkan kursor ke baris baru (new line).",
+        "Serial.print() hanya dapat mencetak angka bilangan bulat, sedangkan Serial.println() hanya dapat mencetak karakter huruf.",
+        "Serial.print() berfungsi menghentikan mikrokontroler, sedangkan Serial.println() berfungsi menyalakan mikrokontroler."
+      ],
+      "answer": "Serial.print() menampilkan data secara horizontal pada baris yang sama, sedangkan Serial.println() menampilkan data lalu secara otomatis memindahkan kursor ke baris baru (new line).",
+      "explanation": "Berdasarkan Buku Siswa hlm. 72–73 (Subbab H) dan Panduan Guru hlm. 107–114, perintah Serial.print() mengirimkan data karakter atau angka ke serial monitor dan membiarkan kursor tetap berada di akhir teks tersebut pada baris yang sama. Sebaliknya, Serial.println() menambahkan karakter baris baru (carriage return and newline / \\r\\n) di akhir teks, sehingga pencetakan berikutnya akan otomatis dimulai pada baris baru di bawahnya. Pilihan A salah karena keduanya menuju serial monitor. Pilihan C salah karena keduanya mendukung berbagai tipe data. Pilihan D salah mendeskripsikan fungsi daya.",
+      "source": {
+        "student_book": {
+          "pages": "72-73",
+          "section": "Bab 3, Subbab H: Serial pada Program Arduino"
+        },
+        "teacher_guide": {
+          "pages": "107-114",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal fungsi komunikasi serial mikrokontroler merujuk pada Buku Siswa hlm. 72–73.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-C: Memahami fungsi komunikasi serial UART (Serial.print vs Serial.println) untuk debugging dan transmisi data",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 72-73 (Perintah Komunikasi Serial)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 107-114"
+        },
+        "authoring_statement": "Deskripsi keluaran serial monitor dirancang mandiri untuk memverifikasi pemahaman dasar komunikasi mikrokontroler."
+      }
+    },
+    {
+      "id": "INF12-C03-M10-Q02",
+      "chapter_id": "INF12-C03",
+      "topic_id": "INF12-C03-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Perhatikan ekspresi logika pada program Arduino berikut:\nint counter = 15;\nbool status = (counter % 4 == 3) && (counter > 10);\nBerdasarkan urutan evaluasi operator matematis dan operator logika boolean pada bahasa C Arduino, nilai akhir dari variabel status adalah...",
+      "options": [
+        "true (atau bernilai 1), karena sisa hasil bagi 15 dibagi 4 adalah 3 (kondisi pertama benar) dan 15 lebih besar dari 10 (kondisi kedua benar), sehingga operasi logika AND bernilai benar.",
+        "false (atau bernilai 0), karena hasil pembagian 15 dibagi 4 adalah 3,75 sehingga tidak sama dengan 3.",
+        "true, karena operator % berfungsi menghitung nilai persentase 15% dari 4.",
+        "false, karena operator && akan bernilai salah jika salah satu kondisi bernilai benar."
+      ],
+      "answer": "true (atau bernilai 1), karena sisa hasil bagi 15 dibagi 4 adalah 3 (kondisi pertama benar) dan 15 lebih besar dari 10 (kondisi kedua benar), sehingga operasi logika AND bernilai benar.",
+      "explanation": "Sesuai pembahasan Operator pada Buku Siswa hlm. 71–72 (Subbab G): 1) Operator modulo (%) menghasilkan sisa hasil bagi bulat (modulo division): 15 dibagi 4 menghasilkan 3 dengan sisa 3 (15 = 4 x 3 + 3). Maka 15 % 4 == 3 bernilai true; 2) Kondisi kedua counter > 10 (15 > 10) juga bernilai true; 3) Operator logika boolean AND (&&) bernilai true jika dan hanya jika kedua operan di kiri dan kanannya bernilai true. Maka true && true menghasilkan nilai true (atau nilai integer 1 pada Arduino). Pilihan B keliru karena modulo menghasilkan sisa pembagian bulat, bukan pecahan desimal. Pilihan C salah mendefinisikan modulo sebagai persen. Pilihan D salah mendefinisikan tabel kebenaran AND.",
+      "source": {
+        "student_book": {
+          "pages": "71-72",
+          "section": "Bab 3, Subbab G: Operator pada Program Arduino"
+        },
+        "teacher_guide": {
+          "pages": "107-114",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal evaluasi operator modulo dan operator logika boolean merujuk pada Buku Siswa hlm. 71–72.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-C: Menerapkan evaluasi operator aritmatika, perbandingan, dan logika boolean dalam pengambilan keputusan kondisional",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 71-72 (Operator Matematis dan Boolean)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 107-114"
+        },
+        "authoring_statement": "Ekspresi logika berbasis aritmatika modulo dirancang mandiri untuk melatih penerapan presisi evaluasi operator bahasa C."
+      }
+    },
+    {
+      "id": "INF12-C03-M10-Q03",
+      "chapter_id": "INF12-C03",
+      "topic_id": "INF12-C03-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Dalam penulisan kode program Arduino, seorang programmer dapat mendefinisikan pin sensor menggunakan dua cara:\nCara 1: #define SENSOR_PIN 7\nCara 2: int sensorPin = 7;\nBerdasarkan karakteristik penulisan kode dan manajemen memori mikrokontroler (Buku Siswa hlm. 70), analisis perbandingan manakah yang paling tepat antara kedua cara tersebut?",
+      "options": [
+        "Cara 1 menyebabkan program mengalami error karena tanda titik koma (;) wajib dicantumkan pada akhir baris #define.",
+        "Cara 1 adalah direktif pra-pemroses (preprocessor directive) yang menggantikan teks sebelum kompilasi tanpa mengalokasikan memori RAM mikrokontroler, sedangkan Cara 2 mengalokasikan 2 byte memori RAM untuk menyimpan variabel integer yang nilainya dapat diubah saat program berjalan.",
+        "Cara 2 jauh lebih hemat memori karena tipe data int pada Arduino tidak menggunakan memori mikrokontroler sama sekali.",
+        "Kedua cara tersebut sepenuhnya identik dan dieksekusi oleh mesin virtual Java pada saat runtime."
+      ],
+      "answer": "Cara 1 adalah direktif pra-pemroses (preprocessor directive) yang menggantikan teks sebelum kompilasi tanpa mengalokasikan memori RAM mikrokontroler, sedangkan Cara 2 mengalokasikan 2 byte memori RAM untuk menyimpan variabel integer yang nilainya dapat diubah saat program berjalan.",
+      "explanation": "Berdasarkan Buku Siswa hlm. 70 (Subbab E Mengenai Aturan Penulisan Kode Program Arduino): #define adalah perintah preprosesor (bukan pernyataan bahasa C) yang bekerja dengan menggantikan teks (textual substitution) saat tahap pra-kompilasi tanpa menggunakan memori data (RAM) dan tidak diakhiri titik koma. Sebaliknya, int sensorPin = 7; adalah deklarasi variabel yang mengalokasikan ruang memori RAM (2 byte pada arsitektur AVR 8-bit Arduino Uno). Pada sistem mikrokontroler dengan kapasitas RAM sangat kecil (hanya 2 KB pada ATmega328P), penggunaan #define atau const byte untuk nomor pin adalah praktik rekayasa yang sangat dianjurkan. Pilihan A keliru karena direktif preprosesor justru tidak menggunakan semicolon. Pilihan C salah karena int memakan RAM. Pilihan D salah karena Arduino dikompilasi murni ke bahasa mesin biner C++, bukan Java runtime.",
+      "source": {
+        "student_book": {
+          "pages": "70",
+          "section": "Bab 3, Subbab E: Aturan Penulisan Kode Program Arduino"
+        },
+        "teacher_guide": {
+          "pages": "107-114",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario analitis perbandingan direktif preprosesor vs alokasi memori variabel merujuk pada Buku Siswa hlm. 70.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-C: Menganalisis perbedaan mekanik kompilasi dan alokasi memori antara direktif pra-pemroses (#define) dengan deklarasi variabel",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 70 (Karakteristik Penulisan #define)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 107-114"
+        },
+        "authoring_statement": "Analisis manajemen memori mikrokontroler dirancang mandiri untuk melatih pemahaman arsitektur perangkat keras tingkat lanjut."
+      }
+    }
+  ]
+}

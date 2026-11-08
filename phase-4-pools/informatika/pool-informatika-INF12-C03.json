@@ -1,0 +1,792 @@
+{
+  "pool_id": "POOL-INFORMATIKA-INF12-C03",
+  "subject": "informatika",
+  "chapter": "INF12-C03",
+  "track": "pilihan",
+  "curriculum": [
+    "Merdeka"
+  ],
+  "grade": 12,
+  "status": "active",
+  "content_version": 1,
+  "competencies": [
+    {
+      "competency_id": "INF12-C03-A",
+      "name": "Empat Pilar Berpikir Komputasional dan Representasi Algoritma",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C03-B",
+      "name": "Algoritma Logika Analitis, Binary Search, dan Pola Rekursif",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C03-C",
+      "name": "Sintaks Bahasa C Arduino, Operator, dan Komunikasi Serial",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C03-D",
+      "name": "Kontrol I/O Analog-Digital, Struktur Kontrol, dan Manipulasi Array",
+      "question_count": 3
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "INF12-C03-A-1101",
+      "phase3_id": "INF12-C03-M08-Q01",
+      "primary_competency": "INF12-C03-A",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam memecahkan masalah kompleks menggunakan pendekatan Berpikir Komputasional (Computational Thinking), tahapan memilah dan memusatkan perhatian hanya pada informasi yang esensial serta mengabaikan detail-detail yang tidak relevan dengan inti permasalahan dinamakan...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dekomposisi, yaitu memecah masalah besar menjadi bagian-bagian yang lebih kecil."
+        },
+        {
+          "id": "B",
+          "text": "Pengenalan Pola, yaitu mencari kesamaan karakteristik di antara berbagai data."
+        },
+        {
+          "id": "C",
+          "text": "Abstraksi, yaitu menyaring dan menghilangkan elemen yang tidak esensial untuk membangun model konseptual yang fokus."
+        },
+        {
+          "id": "D",
+          "text": "Algoritma, yaitu merancang urutan langkah demi langkah penyelesaian masalah secara sistematis."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Buku Siswa hlm. 55–56 dan Panduan Guru hlm. 88–98, empat pilar Berpikir Komputasional adalah: 1) Dekomposisi: memecah masalah kompleks menjadi bagian-bagian yang lebih kecil dan mudah dikelola; 2) Pengenalan Pola (Pattern Recognition): melihat keteraturan, tren, atau kesamaan di antara masalah; 3) Abstraksi (Abstraction): berfokus hanya pada informasi penting dengan mengabaikan detail atau variabel yang tidak relevan; 4) Algoritma: merancang solusi langkah demi langkah yang logis dan runtut. Definisi pada soal tepat merujuk pada pilar Abstraksi. Pilihan A salah karena dekomposisi adalah pemecahan masalah. Pilihan B salah karena pengenalan pola mencari keteraturan. Pilihan D salah karena algoritma adalah sekuens langkah.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "55-56",
+          "section": "Bab 3, Subbab B: Manfaat dan Cara Berpikir Komputasional (Abstraksi)"
+        },
+        "teacher_guide": {
+          "pages": "88-98",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal definisi empat pilar berpikir komputasional merujuk pada Buku Siswa hlm. 55–56.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-A: Memahami empat pilar Berpikir Komputasional (Dekomposisi, Pengenalan Pola, Abstraksi, Algoritma) dalam pemecahan masalah",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 55-56 (Pilar Abstraksi)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 88-98"
+        },
+        "authoring_statement": "Perumusan butir konseptual pilar berpikir komputasional disusun mandiri untuk memverifikasi pemahaman distingtif abstraksi pemodelan sistem."
+      }
+    },
+    {
+      "question_id": "INF12-C03-A-2102",
+      "phase3_id": "INF12-C03-M08-Q02",
+      "primary_competency": "INF12-C03-A",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Seorang siswa mencari file dokumen menggunakan aturan pencarian berbasis simbol wildcard: simbol tanda tanya (?) mewakili tepat satu karakter sembarang, sedangkan simbol tanda bintang (*) mewakili nol atau sekumpulan karakter sembarang. Jika siswa memasukkan pola pencarian b??st*ing, di antara kata-kata berikut, manakah kata yang TIDAK memenuhi kriteria pola pencarian tersebut beserta alasannya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "blasting, karena tidak memiliki karakter tambahan di antara 'st' dan 'ing'."
+        },
+        {
+          "id": "B",
+          "text": "busting, karena hanya memiliki satu karakter ('u') di antara huruf 'b' dan 'st', padahal pola ?? mewajibkan tepat dua karakter."
+        },
+        {
+          "id": "C",
+          "text": "blustering, karena memiliki akhiran 'ing' yang terlalu panjang."
+        },
+        {
+          "id": "D",
+          "text": "boasting, karena mengandung huruf vokal ganda 'oa'."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai aturan pencarian wildcard pada Buku Siswa hlm. 59–60 (Aktivitas BKAP-K12-03), pola b??st*ing menuntut: 1) Dimulai huruf 'b'; 2) Diikuti tepat dua karakter apa pun (??); 3) Diikuti karakter 'st'; 4) Diikuti nol atau lebih karakter apa pun (*); 5) Diakhiri 'ing'. Pada kata busting, setelah huruf 'b' hanya terdapat satu huruf 'u' sebelum 'st' (panjang substring hanya 1 huruf), sehingga gagal memenuhi syarat ??. Sementara itu, blasting (l-a), boasting (o-a), dan blustering (l-u + er) semuanya memenuhi kriteria pola tersebut. Pilihan A keliru karena * mengizinkan 0 karakter. Pilihan C keliru karena * mengizinkan 'er'. Pilihan D keliru karena jenis vokal tidak dibatasi.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "59-60",
+          "section": "Bab 3, Subbab B.1: Aktivitas BKAP-K12-03 (Pencarian Kata / Wildcard)"
+        },
+        "teacher_guide": {
+          "pages": "88-98",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal evaluasi aturan pencarian string berbasis simbol wildcard merujuk pada Buku Siswa hlm. 59–60.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-A: Menerapkan aturan ekspresi penelusuran data (wildcard matching) dalam proses pencarian string terstruktur",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 59-60 (Aktivitas Aturan Mencari Kata)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 88-98"
+        },
+        "authoring_statement": "Kasus evaluasi pencocokan pola karakter wildcard disusun mandiri untuk melatih penerapan logika komputasional pencarian string."
+      }
+    },
+    {
+      "question_id": "INF12-C03-A-3103",
+      "phase3_id": "INF12-C03-M08-Q03",
+      "primary_competency": "INF12-C03-A",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah tim pengembang perangkat lunak sedang mendiskusikan representasi algoritma untuk modul otorisasi transaksi keuangan. Anggota tim A mengusulkan menggunakan kalimat deskriptif bahasa sehari-hari, Anggota B mengusulkan diagram alir (flowchart), dan Anggota C mengusulkan pseudocode. Berdasarkan analisis karakteristik representasi algoritma pada buku teks, evaluasi manakah yang paling tepat untuk menentukan format terbaik sebelum kode program diimplementasikan ke dalam bahasa C/C++?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kalimat deskriptif bahasa sehari-hari adalah yang terbaik untuk pemrograman karena tidak memiliki risiko multitafsir bagi pemrogram."
+        },
+        {
+          "id": "B",
+          "text": "Pseudocode adalah format yang paling efisien dan langsung menjembatani konsep ke bahasa pemrograman karena menyajikan struktur kendali logika yang ringkas tanpa terikat sintaks kaku, sedangkan flowchart sangat baik untuk memvisualisasikan percabangan alur secara grafis bagi pemangku kepentingan umum."
+        },
+        {
+          "id": "C",
+          "text": "Flowchart tidak boleh digunakan dalam industri modern karena komputer tidak dapat membaca gambar diagram alir."
+        },
+        {
+          "id": "D",
+          "text": "Ketiga format tersebut wajib diterjemahkan terlebih dahulu ke kode biner sebelum pemrogram dapat memahami alur logika program."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 56 dan Panduan Guru hlm. 88–98: 1) Kalimat deskriptif mudah dipahami orang awam namun rentan ambiguitas dan sulit diterjemahkan ke kode kompleks; 2) Flowchart (diagram alir) sangat unggul memvisualisasikan arah aliran instruksi dan percabangan keputusan secara grafis; 3) Pseudocode (kode semu) menggunakan konvensi struktur pemrograman tingkat tinggi (seperti IF-THEN, WHILE, FOR) yang tidak terikat aturan kompilator kaku, menjadikannya jembatan terbaik bagi programmer sebelum menulis kode nyata dalam C/C++. Pilihan A keliru karena bahasa natural sangat rawan salah tafsir. Pilihan C keliru karena flowchart tetap menjadi standar dokumentasi rekayasa sistem. Pilihan D salah karena biner adalah urusan kompilator di level mesin.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "56",
+          "section": "Bab 3, Subbab B: Bentuk Penulisan Algoritma"
+        },
+        "teacher_guide": {
+          "pages": "88-98",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario analitis perbandingan representasi algoritma merujuk pada Buku Siswa hlm. 56.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-A: Menganalisis kelebihan, kelemahan, dan peruntukan representasi algoritma (Deskriptif, Flowchart, Pseudocode) dalam rekayasa perangkat lunak",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 56 (Tiga Bentuk Penulisan Algoritma)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 88-98"
+        },
+        "authoring_statement": "Evaluasi komparatif notasi algoritmik dirancang mandiri untuk melatih kemampuan analisis abstraksi rekayasa perangkat lunak."
+      }
+    },
+    {
+      "question_id": "INF12-C03-B-4201",
+      "phase3_id": "INF12-C03-M09-Q01",
+      "primary_competency": "INF12-C03-B",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Pada Aktivitas BKAP-K12-05 (Robot Penebak Angka), sebuah robot diprogram untuk menebak angka rahasia antara 1 sampai 100 dengan menerima umpan balik 'terlalu besar' atau 'terlalu kecil'. Berdasarkan prinsip algoritma pencarian biner (binary search), berapakah tebakan pertama yang paling optimal dan mengapa tebakan tersebut dipilih?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tebakan 1, karena pencarian selalu dimulai secara berurutan dari angka terkecil."
+        },
+        {
+          "id": "B",
+          "text": "Tebakan 100, karena angka terbesar memberikan batas atas ruang pencarian."
+        },
+        {
+          "id": "C",
+          "text": "Tebakan 50, karena membagi ruang pencarian menjadi dua bagian yang sama besar sehingga mengeliminasi separuh kemungkinan angka dalam satu langkah."
+        },
+        {
+          "id": "D",
+          "text": "Tebakan acak (random), karena komputer tidak dapat memprediksi probabilitas angka."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sesuai prinsip algoritma pencarian biner pada Buku Siswa hlm. 63 (Aktivitas BKAP-K12-05) dan Panduan Guru hlm. 99–106, strategi optimal untuk menebak nilai dalam rentang terurut (1–100) adalah memilih nilai tengah (median), yaitu 50. Jika tebakan terlalu besar, rentang tereliminasi menjadi 1–49; jika terlalu kecil, rentang tereliminasi menjadi 51–100. Dengan demikian, separuh (50%) ruang pencarian langsung terpotong hanya dalam satu pengujian (efisiensi O(log n)). Pilihan A adalah pencarian linier yang lambat. Pilihan B tidak membagi ruang pencarian secara seimbang. Pilihan D adalah tebakan untung-untungan yang tidak terstruktur.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "63",
+          "section": "Bab 3, Subbab B.3: Aktivitas BKAP-K12-05 (Robot Penebak Angka)"
+        },
+        "teacher_guide": {
+          "pages": "99-106",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal efisiensi pencarian biner merujuk pada Buku Siswa hlm. 63.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-B: Memahami logika efisiensi algoritma pencarian biner (binary search) dalam membagi ruang pencarian terurut",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 63 (Aktivitas Robot Penebak Angka)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 99-106"
+        },
+        "authoring_statement": "Deskripsi algoritma tebak angka berbasis biner dirancang mandiri untuk memverifikasi pemahaman efisiensi kompleksitas waktu logaritmik."
+      }
+    },
+    {
+      "question_id": "INF12-C03-B-5202",
+      "phase3_id": "INF12-C03-M09-Q02",
+      "primary_competency": "INF12-C03-B",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Pada Aktivitas BKAP-K12-04 (Migrasi Platipus), platipus berenang menyusuri percabangan aliran sungai dari hulu ke hilir. Di sepanjang aliran terdapat air terjun setinggi 3 meter (aman dilewati) dan 6 meter (mematikan platipus). Di titik hilir, terdapat aliran yang bermuara ke sungai aman dan bebatuan berbahaya. Pemecahan masalah dengan menempatkan penghalang (batu/tanda silang) di percabangan tertentu agar platipus hanya diarahkan ke jalur hilir yang aman menerapkan konsep komputasi...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Penyusunan basis data relasional untuk menghitung berat rata-rata platipus."
+        },
+        {
+          "id": "B",
+          "text": "Penelusuran pohon keputusan (decision tree / graph traversal) untuk memotong cabang jalur yang tidak valid (pruning) dan menjamin rute yang selamat."
+        },
+        {
+          "id": "C",
+          "text": "Enkripsi data simetris untuk mengaburkan peta aliran air dari predator."
+        },
+        {
+          "id": "D",
+          "text": "Kompresi file citra satelit sungai agar dapat disimpan di memori mikrokontroler."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Aktivitas BKAP-K12-04 Buku Siswa hlm. 61–62 dan Panduan Guru hlm. 99–106, masalah penentuan rute aliran sungai dan pemasangan penghalang merupakan pemodelan graf/pohon keputusan (decision tree). Setiap percabangan adalah simpul (node) keputusan, dan penghalang berfungsi sebagai teknik pruning (pemangkasan cabang yang berujung pada kondisi fatal/kematian setinggi 6m atau bebatuan), sehingga hanya cabang yang valid menuju hilir aman yang dapat dilalui. Pilihan A, C, dan D tidak relevan dengan pemodelan logika jalur dan graf.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "61-62",
+          "section": "Bab 3, Subbab B.2: Aktivitas BKAP-K12-04 (Migrasi Platipus)"
+        },
+        "teacher_guide": {
+          "pages": "99-106",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal penelusuran pohon keputusan dan pruning rute graf merujuk pada Buku Siswa hlm. 61–62.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-B: Menerapkan penelusuran struktur pohon keputusan (decision tree) dan teknik pemangkasan cabang (pruning) dalam pemodelan alur logika",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 61-62 (Aktivitas Logika Alur Sungai)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 99-106"
+        },
+        "authoring_statement": "Kasus alur keputusan keselamatan migrasi fauna air dirancang mandiri untuk melatih penerapan traversal graf dan eliminasi cabang logika."
+      }
+    },
+    {
+      "question_id": "INF12-C03-B-6203",
+      "phase3_id": "INF12-C03-M09-Q03",
+      "primary_competency": "INF12-C03-B",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Perhatikan pola rekursif fraktal Segitiga Sierpinski pada Aktivitas BKAP-K12-06 (Buku Siswa hlm. 64):\n- Pada iterasi ke-1 (tahap awal): terdapat 1 segitiga putih terbalik yang menghadap ke bawah di tengah segitiga hitam.\n- Pada iterasi ke-2: di setiap 3 segitiga hitam yang tersisa, dibuat 1 segitiga putih terbalik baru, sehingga bertambah 3^1 = 3 segitiga putih baru (total akumulasi 1 + 3 = 4 segitiga putih).\n- Pada iterasi ke-3: bertambah 3^2 = 9 segitiga putih baru.\nBerdasarkan analisis pola rekursif pembentukan fraktal tersebut, berapakah jumlah segitiga putih baru yang menghadap ke bawah yang terbentuk tepat pada iterasi ke-5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "27 segitiga putih baru."
+        },
+        {
+          "id": "B",
+          "text": "81 segitiga putih baru."
+        },
+        {
+          "id": "C",
+          "text": "243 segitiga putih baru."
+        },
+        {
+          "id": "D",
+          "text": "729 segitiga putih baru."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan analisis pola rekursif Segitiga Sierpinski pada Buku Siswa hlm. 64 dan Panduan Guru hlm. 99–106: Jumlah segitiga putih baru yang menghadap ke bawah yang ditambahkan pada setiap iterasi ke-k mengikuti barisan geometri dengan rasio r = 3: Iterasi 1: 3^0 = 1; Iterasi 2: 3^1 = 3; Iterasi 3: 3^2 = 9; Iterasi 4: 3^3 = 27; Iterasi 5: 3^4 = 81 segitiga putih baru. Maka pada iterasi ke-5, terbentuk tepat 81 segitiga putih baru yang menghadap ke bawah. Pilihan A (3^3 = 27) adalah iterasi ke-4. Pilihan C (3^5 = 243) adalah iterasi ke-6. Pilihan D (3^6 = 729) adalah iterasi ke-7.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "64",
+          "section": "Bab 3, Subbab B.3: Aktivitas BKAP-K12-06 (Segitiga Sierpinski)"
+        },
+        "teacher_guide": {
+          "pages": "99-106",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario analitis perumusan fungsi rekursif pola fraktal geometri merujuk pada Buku Siswa hlm. 64.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-B: Menganalisis pola rekursif matematika-komputasi pada pembentukan struktur fraktal (Segitiga Sierpinski)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 64 (Pola Segitiga Sierpinski)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 99-106"
+        },
+        "authoring_statement": "Analisis pertumbuhan geometri fraktal rekursif dirancang mandiri untuk melatih penalaran analitis matematis tingkat lanjut peserta didik."
+      }
+    },
+    {
+      "question_id": "INF12-C03-C-7301",
+      "phase3_id": "INF12-C03-M10-Q01",
+      "primary_competency": "INF12-C03-C",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam pemrograman bahasa C Arduino, komunikasi antara papan mikrokontroler dengan komputer sering ditampilkan melalui jendela Serial Monitor. Manakah pernyataan yang paling tepat membedakan perintah Serial.print() dengan Serial.println()?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Serial.print() mencetak teks ke printer kertas fisik, sedangkan Serial.println() mencetak teks ke layar monitor."
+        },
+        {
+          "id": "B",
+          "text": "Serial.print() menampilkan data secara horizontal pada baris yang sama, sedangkan Serial.println() menampilkan data lalu secara otomatis memindahkan kursor ke baris baru (new line)."
+        },
+        {
+          "id": "C",
+          "text": "Serial.print() hanya dapat mencetak angka bilangan bulat, sedangkan Serial.println() hanya dapat mencetak karakter huruf."
+        },
+        {
+          "id": "D",
+          "text": "Serial.print() berfungsi menghentikan mikrokontroler, sedangkan Serial.println() berfungsi menyalakan mikrokontroler."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 72–73 (Subbab H) dan Panduan Guru hlm. 107–114, perintah Serial.print() mengirimkan data karakter atau angka ke serial monitor dan membiarkan kursor tetap berada di akhir teks tersebut pada baris yang sama. Sebaliknya, Serial.println() menambahkan karakter baris baru (carriage return and newline / \\r\\n) di akhir teks, sehingga pencetakan berikutnya akan otomatis dimulai pada baris baru di bawahnya. Pilihan A salah karena keduanya menuju serial monitor. Pilihan C salah karena keduanya mendukung berbagai tipe data. Pilihan D salah mendeskripsikan fungsi daya.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "72-73",
+          "section": "Bab 3, Subbab H: Serial pada Program Arduino"
+        },
+        "teacher_guide": {
+          "pages": "107-114",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal fungsi komunikasi serial mikrokontroler merujuk pada Buku Siswa hlm. 72–73.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-C: Memahami fungsi komunikasi serial UART (Serial.print vs Serial.println) untuk debugging dan transmisi data",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 72-73 (Perintah Komunikasi Serial)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 107-114"
+        },
+        "authoring_statement": "Deskripsi keluaran serial monitor dirancang mandiri untuk memverifikasi pemahaman dasar komunikasi mikrokontroler."
+      }
+    },
+    {
+      "question_id": "INF12-C03-C-8302",
+      "phase3_id": "INF12-C03-M10-Q02",
+      "primary_competency": "INF12-C03-C",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Perhatikan ekspresi logika pada program Arduino berikut:\nint counter = 15;\nbool status = (counter % 4 == 3) && (counter > 10);\nBerdasarkan urutan evaluasi operator matematis dan operator logika boolean pada bahasa C Arduino, nilai akhir dari variabel status adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "true (atau bernilai 1), karena sisa hasil bagi 15 dibagi 4 adalah 3 (kondisi pertama benar) dan 15 lebih besar dari 10 (kondisi kedua benar), sehingga operasi logika AND bernilai benar."
+        },
+        {
+          "id": "B",
+          "text": "false (atau bernilai 0), karena hasil pembagian 15 dibagi 4 adalah 3,75 sehingga tidak sama dengan 3."
+        },
+        {
+          "id": "C",
+          "text": "true, karena operator % berfungsi menghitung nilai persentase 15% dari 4."
+        },
+        {
+          "id": "D",
+          "text": "false, karena operator && akan bernilai salah jika salah satu kondisi bernilai benar."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Sesuai pembahasan Operator pada Buku Siswa hlm. 71–72 (Subbab G): 1) Operator modulo (%) menghasilkan sisa hasil bagi bulat (modulo division): 15 dibagi 4 menghasilkan 3 dengan sisa 3 (15 = 4 x 3 + 3). Maka 15 % 4 == 3 bernilai true; 2) Kondisi kedua counter > 10 (15 > 10) juga bernilai true; 3) Operator logika boolean AND (&&) bernilai true jika dan hanya jika kedua operan di kiri dan kanannya bernilai true. Maka true && true menghasilkan nilai true (atau nilai integer 1 pada Arduino). Pilihan B keliru karena modulo menghasilkan sisa pembagian bulat, bukan pecahan desimal. Pilihan C salah mendefinisikan modulo sebagai persen. Pilihan D salah mendefinisikan tabel kebenaran AND.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "71-72",
+          "section": "Bab 3, Subbab G: Operator pada Program Arduino"
+        },
+        "teacher_guide": {
+          "pages": "107-114",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal evaluasi operator modulo dan operator logika boolean merujuk pada Buku Siswa hlm. 71–72.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-C: Menerapkan evaluasi operator aritmatika, perbandingan, dan logika boolean dalam pengambilan keputusan kondisional",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 71-72 (Operator Matematis dan Boolean)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 107-114"
+        },
+        "authoring_statement": "Ekspresi logika berbasis aritmatika modulo dirancang mandiri untuk melatih penerapan presisi evaluasi operator bahasa C."
+      }
+    },
+    {
+      "question_id": "INF12-C03-C-9303",
+      "phase3_id": "INF12-C03-M10-Q03",
+      "primary_competency": "INF12-C03-C",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam penulisan kode program Arduino, seorang programmer dapat mendefinisikan pin sensor menggunakan dua cara:\nCara 1: #define SENSOR_PIN 7\nCara 2: int sensorPin = 7;\nBerdasarkan karakteristik penulisan kode dan manajemen memori mikrokontroler (Buku Siswa hlm. 70), analisis perbandingan manakah yang paling tepat antara kedua cara tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cara 1 menyebabkan program mengalami error karena tanda titik koma (;) wajib dicantumkan pada akhir baris #define."
+        },
+        {
+          "id": "B",
+          "text": "Cara 1 adalah direktif pra-pemroses (preprocessor directive) yang menggantikan teks sebelum kompilasi tanpa mengalokasikan memori RAM mikrokontroler, sedangkan Cara 2 mengalokasikan 2 byte memori RAM untuk menyimpan variabel integer yang nilainya dapat diubah saat program berjalan."
+        },
+        {
+          "id": "C",
+          "text": "Cara 2 jauh lebih hemat memori karena tipe data int pada Arduino tidak menggunakan memori mikrokontroler sama sekali."
+        },
+        {
+          "id": "D",
+          "text": "Kedua cara tersebut sepenuhnya identik dan dieksekusi oleh mesin virtual Java pada saat runtime."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 70 (Subbab E Mengenai Aturan Penulisan Kode Program Arduino): #define adalah perintah preprosesor (bukan pernyataan bahasa C) yang bekerja dengan menggantikan teks (textual substitution) saat tahap pra-kompilasi tanpa menggunakan memori data (RAM) dan tidak diakhiri titik koma. Sebaliknya, int sensorPin = 7; adalah deklarasi variabel yang mengalokasikan ruang memori RAM (2 byte pada arsitektur AVR 8-bit Arduino Uno). Pada sistem mikrokontroler dengan kapasitas RAM sangat kecil (hanya 2 KB pada ATmega328P), penggunaan #define atau const byte untuk nomor pin adalah praktik rekayasa yang sangat dianjurkan. Pilihan A keliru karena direktif preprosesor justru tidak menggunakan semicolon. Pilihan C salah karena int memakan RAM. Pilihan D salah karena Arduino dikompilasi murni ke bahasa mesin biner C++, bukan Java runtime.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "70",
+          "section": "Bab 3, Subbab E: Aturan Penulisan Kode Program Arduino"
+        },
+        "teacher_guide": {
+          "pages": "107-114",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario analitis perbandingan direktif preprosesor vs alokasi memori variabel merujuk pada Buku Siswa hlm. 70.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-C: Menganalisis perbedaan mekanik kompilasi dan alokasi memori antara direktif pra-pemroses (#define) dengan deklarasi variabel",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 70 (Karakteristik Penulisan #define)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 107-114"
+        },
+        "authoring_statement": "Analisis manajemen memori mikrokontroler dirancang mandiri untuk melatih pemahaman arsitektur perangkat keras tingkat lanjut."
+      }
+    },
+    {
+      "question_id": "INF12-C03-D-8401",
+      "phase3_id": "INF12-C03-M11-Q01",
+      "primary_competency": "INF12-C03-D",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Papan Arduino Uno memiliki deretan pin digital (0–13) dan pin analog (A0–A5). Manakah pernyataan yang paling tepat membedakan nilai yang dihasilkan oleh perintah digitalRead() dan analogRead()?",
+      "options": [
+        {
+          "id": "A",
+          "text": "digitalRead() menghasilkan nilai kontinu antara 0 hingga 5000, sedangkan analogRead() hanya menghasilkan nilai huruf A atau B."
+        },
+        {
+          "id": "B",
+          "text": "digitalRead() hanya menghasilkan 2 kemungkinan nilai biner yaitu 0 (LOW) atau 1 (HIGH), sedangkan analogRead() membaca nilai tegangan kontinu yang dikonversi menjadi rentang angka integer 0 hingga 1023 (resolusi ADC 10-bit)."
+        },
+        {
+          "id": "C",
+          "text": "digitalRead() digunakan untuk membaca sensor suhu, sedangkan analogRead() digunakan untuk membaca sakelar on-off."
+        },
+        {
+          "id": "D",
+          "text": "digitalRead() dan analogRead() menghasilkan nilai yang sama persis karena semua sinyal di dalam kabel bersifat analog."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai penjelasan Buku Siswa hlm. 74–77 (Subbab J & K) dan Panduan Guru hlm. 115–126: Perintah digitalRead(pin) membaca level logika diskrit (hanya 2 kondisi: 0V/LOW atau 5V/HIGH). Sebaliknya, analogRead(pin) memanfaatkan pengubah analog-ke-digital (ADC) 10-bit yang memetakan tegangan masukan analog 0 hingga 5 Volt menjadi rentang nilai bilangan bulat 0 hingga 1023 (2^10 = 1024 tingkat). Pilihan A terbalik skalanya. Pilihan C terbalik penggunaannya (sensor suhu menghasilkan tegangan analog kontinu, sakelar on-off menghasilkan sinyal digital). Pilihan D salah mengabaikan proses konversi ADC.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "74-77",
+          "section": "Bab 3, Subbab J & K: Perintah Pin Digital dan Analog I/O"
+        },
+        "teacher_guide": {
+          "pages": "115-126",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal perbedaan resolusi ADC analog vs pembacaan digital merujuk pada Buku Siswa hlm. 74–77.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-D: Memahami perbedaan karakteristik resolusi pembacaan sinyal biner (digitalRead) vs kuantisasi ADC 10-bit (analogRead)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 74-77 (Pin Digital dan Analog)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 115-126"
+        },
+        "authoring_statement": "Perumusan butir konversi sinyal ADC dirancang mandiri untuk memverifikasi pemahaman distingtif sinyal digital dan analog."
+      }
+    },
+    {
+      "question_id": "INF12-C03-D-9402",
+      "phase3_id": "INF12-C03-M11-Q02",
+      "primary_competency": "INF12-C03-D",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Perhatikan deklarasi array dan potongan kode pemutar nada musik Arduino berikut:\nint nada[] = {262, 294, 330, 349, 392};\nfor (int i = 0; i < 5; i++) {\n  tone(8, nada[i], 300);\n  delay(400);\n}\nBerdasarkan tabel konversi notasi nada pada buku teks (Tabel konversi notasi pada Piezo Speaker: 262 Hz = Do, 294 Hz = Re, 330 Hz = Mi, 349 Hz = Fa, 392 Hz = Sol), nada musik apakah yang dibunyikan oleh speaker pada iterasi perulangan saat i = 2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nada Do (262 Hz)"
+        },
+        {
+          "id": "B",
+          "text": "Nada Re (294 Hz)"
+        },
+        {
+          "id": "C",
+          "text": "Nada Mi (330 Hz)"
+        },
+        {
+          "id": "D",
+          "text": "Nada Fa (349 Hz)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sesuai pembahasan Array pada Buku Siswa hlm. 81–83 (Tabel konversi notasi Piezo Speaker dan Aktivitas BKAP-K12-12): Pengindeksan elemen array dalam bahasa C dimulai dari indeks 0 (zero-based indexing): nada[0] = 262 (Do), nada[1] = 294 (Re), nada[2] = 330 (Mi), nada[3] = 349 (Fa), nada[4] = 392 (Sol). Saat i = 2, elemen array yang dipanggil adalah nada[2] dengan frekuensi 330 Hz, yang merupakan nada Mi. Pilihan A adalah indeks 0. Pilihan B adalah indeks 1. Pilihan D adalah indeks 3.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "81-83",
+          "section": "Bab 3, Subbab N: Array pada Program Arduino (Piezo Speaker)"
+        },
+        "teacher_guide": {
+          "pages": "115-126",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal manipulasi array nada musik piezo speaker merujuk pada Buku Siswa hlm. 81–83.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-D: Menerapkan struktur data array satu dimensi dan pengindeksan elemen berbasis 0 dalam pembangkitan nada akustik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 81-83 (Array dan Piezo Speaker)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 115-126"
+        },
+        "authoring_statement": "Kasus pemetaan nada musik berbasis array frekuensi dirancang mandiri untuk melatih penerapan praktis struktur data array."
+      }
+    },
+    {
+      "question_id": "INF12-C03-D-9403",
+      "phase3_id": "INF12-C03-M11-Q03",
+      "primary_competency": "INF12-C03-D",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah sistem pengendali robot pemadam api dirancang menggunakan mikrokontroler. Di dalam fungsi void loop(), programmer menuliskan perintah kedip lampu peringatan yang menggunakan fungsi delay(3000); (jeda 3 detik), baru kemudian membaca sensor api. Saat diuji coba di lapangan, robot terlambat mendeteksi api yang muncul mendadak dan baru bereaksi beberapa detik kemudian. Analisis teknis manakah yang paling tepat menjelaskan akar masalah tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sensor api kekurangan daya listrik karena lampu LED menyerap seluruh arus baterai."
+        },
+        {
+          "id": "B",
+          "text": "Fungsi delay() bersifat memblokir (blocking function) yang menghentikan seluruh pemrosesan instruksi CPU mikrokontroler selama durasi tunda, sehingga mikrokontroler tidak mampu merespons perubahan sinyal sensor api secara real-time selama 3 detik tersebut."
+        },
+        {
+          "id": "C",
+          "text": "Kabel data mikrokontroler terpasang terbalik sehingga sinyal analog berubah menjadi sinyal gelombang mikro."
+        },
+        {
+          "id": "D",
+          "text": "Kapasitas array pada memori program Arduino telah habis akibat mendeklarasikan variabel bernilai 3000."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan analisis alur program dan arsitektur eksekusi mikrokontroler pada Buku Siswa hlm. 78–84 dan Panduan Guru hlm. 115–126, fungsi delay() adalah fungsi blocking (menahan eksekusi CPU pada loop kosong). Selama waktu delay 3000 milidetik berjalan, mikrokontroler tidak dapat melakukan pembacaan pin I/O, evaluasi percabangan, maupun merespons input sensor api. Akibatnya, sistem kehilangan responsivitas real-time. Untuk sistem kontrol kritis, programmer profesional menghindari blocking delay dan beralih ke teknik non-blocking menggunakan pembacaan pewaktu internal millis(). Pilihan A salah karena masalahnya ada pada penjadwalan CPU. Pilihan C adalah rekayasa mengada-ada. Pilihan D keliru karena angka 3000 bukan array.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "78-84",
+          "section": "Bab 3, Subbab L & M: Percabangan dan Perulangan"
+        },
+        "teacher_guide": {
+          "pages": "115-126",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario analitis kelemahan fungsi blocking delay pada sistem real-time merujuk pada Buku Siswa hlm. 78–84.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-D: Menganalisis dampak keterlambatan eksekusi fungsi blocking (delay) terhadap responsivitas pembacaan sensor pada sistem kontrol waktu-nyata",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 78-84 (Struktur Kontrol dan Pewaktuan)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 115-126"
+        },
+        "authoring_statement": "Kasus analisis latensi pembacaan sensor robotika dirancang mandiri untuk melatih kemampuan evaluasi kinerja arsitektur kode mikrokontroler."
+      }
+    }
+  ]
+}

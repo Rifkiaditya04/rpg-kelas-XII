@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "world-4-informatika-chapter-3-misi-11-v1.1",
+  "base_batch": "world-4-informatika-chapter-3-misi-11-canonical-v1.0.json",
+  "status": "CONTROLLED_REVISION_DRAFT",
+  "purpose": "Standardize Chapter 3 Mission 11 items to SOP v2.0 Base-Plus-Overlay v1.1 with explicit option objects (A-D) and full provenance.",
+  "revisions": [
+    {
+      "question_id": "INF12-C03-M11-Q01",
+      "before_question": "Papan Arduino Uno memiliki deretan pin digital (0–13) dan pin analog (A0–A5). Manakah pernyataan yang paling tepat membedakan nilai yang dihasilkan oleh perintah digitalRead() dan analogRead()?",
+      "after_question": "Papan Arduino Uno memiliki deretan pin digital (0–13) dan pin analog (A0–A5). Manakah pernyataan yang paling tepat membedakan nilai yang dihasilkan oleh perintah digitalRead() dan analogRead()?",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "digitalRead() menghasilkan nilai kontinu antara 0 hingga 5000, sedangkan analogRead() hanya menghasilkan nilai huruf A atau B."
+        },
+        {
+          "id": "B",
+          "text": "digitalRead() hanya menghasilkan 2 kemungkinan nilai biner yaitu 0 (LOW) atau 1 (HIGH), sedangkan analogRead() membaca nilai tegangan kontinu yang dikonversi menjadi rentang angka integer 0 hingga 1023 (resolusi ADC 10-bit)."
+        },
+        {
+          "id": "C",
+          "text": "digitalRead() digunakan untuk membaca sensor suhu, sedangkan analogRead() digunakan untuk membaca sakelar on-off."
+        },
+        {
+          "id": "D",
+          "text": "digitalRead() dan analogRead() menghasilkan nilai yang sama persis karena semua sinyal di dalam kabel bersifat analog."
+        }
+      ],
+      "explanation": "Sesuai penjelasan Buku Siswa hlm. 74–77 (Subbab J & K) dan Panduan Guru hlm. 115–126: Perintah digitalRead(pin) membaca level logika diskrit (hanya 2 kondisi: 0V/LOW atau 5V/HIGH). Sebaliknya, analogRead(pin) memanfaatkan pengubah analog-ke-digital (ADC) 10-bit yang memetakan tegangan masukan analog 0 hingga 5 Volt menjadi rentang nilai bilangan bulat 0 hingga 1023 (2^10 = 1024 tingkat). Pilihan A terbalik skalanya. Pilihan C terbalik penggunaannya (sensor suhu menghasilkan tegangan analog kontinu, sakelar on-off menghasilkan sinyal digital). Pilihan D salah mengabaikan proses konversi ADC.",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "source": {
+        "student_book": {
+          "pages": "74-77",
+          "section": "Bab 3, Subbab J & K: Perintah Pin Digital dan Analog I/O"
+        },
+        "teacher_guide": {
+          "pages": "115-126",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal perbedaan resolusi ADC analog vs pembacaan digital merujuk pada Buku Siswa hlm. 74–77.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-D: Memahami perbedaan karakteristik resolusi pembacaan sinyal biner (digitalRead) vs kuantisasi ADC 10-bit (analogRead)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 74-77 (Pin Digital dan Analog)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 115-126"
+        },
+        "authoring_statement": "Perumusan butir konversi sinyal ADC dirancang mandiri untuk memverifikasi pemahaman distingtif sinyal digital dan analog."
+      }
+    },
+    {
+      "question_id": "INF12-C03-M11-Q02",
+      "before_question": "Perhatikan deklarasi array dan potongan kode pemutar nada musik Arduino berikut:\nint nada[] = {262, 294, 330, 349, 392};\nfor (int i = 0; i < 5; i++) {\n  tone(8, nada[i], 300);\n  delay(400);\n}\nBerdasarkan tabel konversi notasi nada pada buku teks (Tabel konversi notasi pada Piezo Speaker: 262 Hz = Do, 294 Hz = Re, 330 Hz = Mi, 349 Hz = Fa, 392 Hz = Sol), nada musik apakah yang dibunyikan oleh speaker pada iterasi perulangan saat i = 2?",
+      "after_question": "Perhatikan deklarasi array dan potongan kode pemutar nada musik Arduino berikut:\nint nada[] = {262, 294, 330, 349, 392};\nfor (int i = 0; i < 5; i++) {\n  tone(8, nada[i], 300);\n  delay(400);\n}\nBerdasarkan tabel konversi notasi nada pada buku teks (Tabel konversi notasi pada Piezo Speaker: 262 Hz = Do, 294 Hz = Re, 330 Hz = Mi, 349 Hz = Fa, 392 Hz = Sol), nada musik apakah yang dibunyikan oleh speaker pada iterasi perulangan saat i = 2?",
+      "answer": "C",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Nada Do (262 Hz)"
+        },
+        {
+          "id": "B",
+          "text": "Nada Re (294 Hz)"
+        },
+        {
+          "id": "C",
+          "text": "Nada Mi (330 Hz)"
+        },
+        {
+          "id": "D",
+          "text": "Nada Fa (349 Hz)"
+        }
+      ],
+      "explanation": "Sesuai pembahasan Array pada Buku Siswa hlm. 81–83 (Tabel konversi notasi Piezo Speaker dan Aktivitas BKAP-K12-12): Pengindeksan elemen array dalam bahasa C dimulai dari indeks 0 (zero-based indexing): nada[0] = 262 (Do), nada[1] = 294 (Re), nada[2] = 330 (Mi), nada[3] = 349 (Fa), nada[4] = 392 (Sol). Saat i = 2, elemen array yang dipanggil adalah nada[2] dengan frekuensi 330 Hz, yang merupakan nada Mi. Pilihan A adalah indeks 0. Pilihan B adalah indeks 1. Pilihan D adalah indeks 3.",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "source": {
+        "student_book": {
+          "pages": "81-83",
+          "section": "Bab 3, Subbab N: Array pada Program Arduino (Piezo Speaker)"
+        },
+        "teacher_guide": {
+          "pages": "115-126",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal manipulasi array nada musik piezo speaker merujuk pada Buku Siswa hlm. 81–83.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-D: Menerapkan struktur data array satu dimensi dan pengindeksan elemen berbasis 0 dalam pembangkitan nada akustik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 81-83 (Array dan Piezo Speaker)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 115-126"
+        },
+        "authoring_statement": "Kasus pemetaan nada musik berbasis array frekuensi dirancang mandiri untuk melatih penerapan praktis struktur data array."
+      }
+    },
+    {
+      "question_id": "INF12-C03-M11-Q03",
+      "before_question": "Sebuah sistem pengendali robot pemadam api dirancang menggunakan mikrokontroler. Di dalam fungsi void loop(), programmer menuliskan perintah kedip lampu peringatan yang menggunakan fungsi delay(3000); (jeda 3 detik), baru kemudian membaca sensor api. Saat diuji coba di lapangan, robot terlambat mendeteksi api yang muncul mendadak dan baru bereaksi beberapa detik kemudian. Analisis teknis manakah yang paling tepat menjelaskan akar masalah tersebut?",
+      "after_question": "Sebuah sistem pengendali robot pemadam api dirancang menggunakan mikrokontroler. Di dalam fungsi void loop(), programmer menuliskan perintah kedip lampu peringatan yang menggunakan fungsi delay(3000); (jeda 3 detik), baru kemudian membaca sensor api. Saat diuji coba di lapangan, robot terlambat mendeteksi api yang muncul mendadak dan baru bereaksi beberapa detik kemudian. Analisis teknis manakah yang paling tepat menjelaskan akar masalah tersebut?",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Sensor api kekurangan daya listrik karena lampu LED menyerap seluruh arus baterai."
+        },
+        {
+          "id": "B",
+          "text": "Fungsi delay() bersifat memblokir (blocking function) yang menghentikan seluruh pemrosesan instruksi CPU mikrokontroler selama durasi tunda, sehingga mikrokontroler tidak mampu merespons perubahan sinyal sensor api secara real-time selama 3 detik tersebut."
+        },
+        {
+          "id": "C",
+          "text": "Kabel data mikrokontroler terpasang terbalik sehingga sinyal analog berubah menjadi sinyal gelombang mikro."
+        },
+        {
+          "id": "D",
+          "text": "Kapasitas array pada memori program Arduino telah habis akibat mendeklarasikan variabel bernilai 3000."
+        }
+      ],
+      "explanation": "Berdasarkan analisis alur program dan arsitektur eksekusi mikrokontroler pada Buku Siswa hlm. 78–84 dan Panduan Guru hlm. 115–126, fungsi delay() adalah fungsi blocking (menahan eksekusi CPU pada loop kosong). Selama waktu delay 3000 milidetik berjalan, mikrokontroler tidak dapat melakukan pembacaan pin I/O, evaluasi percabangan, maupun merespons input sensor api. Akibatnya, sistem kehilangan responsivitas real-time. Untuk sistem kontrol kritis, programmer profesional menghindari blocking delay dan beralih ke teknik non-blocking menggunakan pembacaan pewaktu internal millis(). Pilihan A salah karena masalahnya ada pada penjadwalan CPU. Pilihan C adalah rekayasa mengada-ada. Pilihan D keliru karena angka 3000 bukan array.",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "source": {
+        "student_book": {
+          "pages": "78-84",
+          "section": "Bab 3, Subbab L & M: Percabangan dan Perulangan"
+        },
+        "teacher_guide": {
+          "pages": "115-126",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario analitis kelemahan fungsi blocking delay pada sistem real-time merujuk pada Buku Siswa hlm. 78–84.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-D: Menganalisis dampak keterlambatan eksekusi fungsi blocking (delay) terhadap responsivitas pembacaan sensor pada sistem kontrol waktu-nyata",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 78-84 (Struktur Kontrol dan Pewaktuan)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 115-126"
+        },
+        "authoring_statement": "Kasus analisis latensi pembacaan sensor robotika dirancang mandiri untuk melatih kemampuan evaluasi kinerja arsitektur kode mikrokontroler."
+      }
+    }
+  ]
+}

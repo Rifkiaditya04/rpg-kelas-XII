@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CONTROLLED_REVISION_DRAFT",
+  "dataset": "World 4 Informatika Standard Chapter 3 Original Content - Misi 8 v1.1",
+  "purpose": "Resolved canonical dataset v1.1 for Chapter 3 Mission 8 (Empat Pilar Berpikir Komputasional dan Representasi Algoritma).",
+  "chapter_id": "INF12-C03",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C03-M08-Q01",
+      "chapter_id": "INF12-C03",
+      "topic_id": "INF12-C03-A",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Dalam memecahkan masalah kompleks menggunakan pendekatan Berpikir Komputasional (Computational Thinking), tahapan memilah dan memusatkan perhatian hanya pada informasi yang esensial serta mengabaikan detail-detail yang tidak relevan dengan inti permasalahan dinamakan...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dekomposisi, yaitu memecah masalah besar menjadi bagian-bagian yang lebih kecil."
+        },
+        {
+          "id": "B",
+          "text": "Pengenalan Pola, yaitu mencari kesamaan karakteristik di antara berbagai data."
+        },
+        {
+          "id": "C",
+          "text": "Abstraksi, yaitu menyaring dan menghilangkan elemen yang tidak esensial untuk membangun model konseptual yang fokus."
+        },
+        {
+          "id": "D",
+          "text": "Algoritma, yaitu merancang urutan langkah demi langkah penyelesaian masalah secara sistematis."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Buku Siswa hlm. 55–56 dan Panduan Guru hlm. 88–98, empat pilar Berpikir Komputasional adalah: 1) Dekomposisi: memecah masalah kompleks menjadi bagian-bagian yang lebih kecil dan mudah dikelola; 2) Pengenalan Pola (Pattern Recognition): melihat keteraturan, tren, atau kesamaan di antara masalah; 3) Abstraksi (Abstraction): berfokus hanya pada informasi penting dengan mengabaikan detail atau variabel yang tidak relevan; 4) Algoritma: merancang solusi langkah demi langkah yang logis dan runtut. Definisi pada soal tepat merujuk pada pilar Abstraksi. Pilihan A salah karena dekomposisi adalah pemecahan masalah. Pilihan B salah karena pengenalan pola mencari keteraturan. Pilihan D salah karena algoritma adalah sekuens langkah.",
+      "source": {
+        "student_book": {
+          "pages": "55-56",
+          "section": "Bab 3, Subbab B: Manfaat dan Cara Berpikir Komputasional (Abstraksi)"
+        },
+        "teacher_guide": {
+          "pages": "88-98",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal definisi empat pilar berpikir komputasional merujuk pada Buku Siswa hlm. 55–56.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-A: Memahami empat pilar Berpikir Komputasional (Dekomposisi, Pengenalan Pola, Abstraksi, Algoritma) dalam pemecahan masalah",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 55-56 (Pilar Abstraksi)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 88-98"
+        },
+        "authoring_statement": "Perumusan butir konseptual pilar berpikir komputasional disusun mandiri untuk memverifikasi pemahaman distingtif abstraksi pemodelan sistem."
+      }
+    },
+    {
+      "id": "INF12-C03-M08-Q02",
+      "chapter_id": "INF12-C03",
+      "topic_id": "INF12-C03-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Seorang siswa mencari file dokumen menggunakan aturan pencarian berbasis simbol wildcard: simbol tanda tanya (?) mewakili tepat satu karakter sembarang, sedangkan simbol tanda bintang (*) mewakili nol atau sekumpulan karakter sembarang. Jika siswa memasukkan pola pencarian b??st*ing, di antara kata-kata berikut, manakah kata yang TIDAK memenuhi kriteria pola pencarian tersebut beserta alasannya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "blasting, karena tidak memiliki karakter tambahan di antara 'st' dan 'ing'."
+        },
+        {
+          "id": "B",
+          "text": "busting, karena hanya memiliki satu karakter ('u') di antara huruf 'b' dan 'st', padahal pola ?? mewajibkan tepat dua karakter."
+        },
+        {
+          "id": "C",
+          "text": "blustering, karena memiliki akhiran 'ing' yang terlalu panjang."
+        },
+        {
+          "id": "D",
+          "text": "boasting, karena mengandung huruf vokal ganda 'oa'."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai aturan pencarian wildcard pada Buku Siswa hlm. 59–60 (Aktivitas BKAP-K12-03), pola b??st*ing menuntut: 1) Dimulai huruf 'b'; 2) Diikuti tepat dua karakter apa pun (??); 3) Diikuti karakter 'st'; 4) Diikuti nol atau lebih karakter apa pun (*); 5) Diakhiri 'ing'. Pada kata busting, setelah huruf 'b' hanya terdapat satu huruf 'u' sebelum 'st' (panjang substring hanya 1 huruf), sehingga gagal memenuhi syarat ??. Sementara itu, blasting (l-a), boasting (o-a), dan blustering (l-u + er) semuanya memenuhi kriteria pola tersebut. Pilihan A keliru karena * mengizinkan 0 karakter. Pilihan C keliru karena * mengizinkan 'er'. Pilihan D keliru karena jenis vokal tidak dibatasi.",
+      "source": {
+        "student_book": {
+          "pages": "59-60",
+          "section": "Bab 3, Subbab B.1: Aktivitas BKAP-K12-03 (Pencarian Kata / Wildcard)"
+        },
+        "teacher_guide": {
+          "pages": "88-98",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal evaluasi aturan pencarian string berbasis simbol wildcard merujuk pada Buku Siswa hlm. 59–60.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-A: Menerapkan aturan ekspresi penelusuran data (wildcard matching) dalam proses pencarian string terstruktur",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 59-60 (Aktivitas Aturan Mencari Kata)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 88-98"
+        },
+        "authoring_statement": "Kasus evaluasi pencocokan pola karakter wildcard disusun mandiri untuk melatih penerapan logika komputasional pencarian string."
+      }
+    },
+    {
+      "id": "INF12-C03-M08-Q03",
+      "chapter_id": "INF12-C03",
+      "topic_id": "INF12-C03-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Sebuah tim pengembang perangkat lunak sedang mendiskusikan representasi algoritma untuk modul otorisasi transaksi keuangan. Anggota tim A mengusulkan menggunakan kalimat deskriptif bahasa sehari-hari, Anggota B mengusulkan diagram alir (flowchart), dan Anggota C mengusulkan pseudocode. Berdasarkan analisis karakteristik representasi algoritma pada buku teks, evaluasi manakah yang paling tepat untuk menentukan format terbaik sebelum kode program diimplementasikan ke dalam bahasa C/C++?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kalimat deskriptif bahasa sehari-hari adalah yang terbaik untuk pemrograman karena tidak memiliki risiko multitafsir bagi pemrogram."
+        },
+        {
+          "id": "B",
+          "text": "Pseudocode adalah format yang paling efisien dan langsung menjembatani konsep ke bahasa pemrograman karena menyajikan struktur kendali logika yang ringkas tanpa terikat sintaks kaku, sedangkan flowchart sangat baik untuk memvisualisasikan percabangan alur secara grafis bagi pemangku kepentingan umum."
+        },
+        {
+          "id": "C",
+          "text": "Flowchart tidak boleh digunakan dalam industri modern karena komputer tidak dapat membaca gambar diagram alir."
+        },
+        {
+          "id": "D",
+          "text": "Ketiga format tersebut wajib diterjemahkan terlebih dahulu ke kode biner sebelum pemrogram dapat memahami alur logika program."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 56 dan Panduan Guru hlm. 88–98: 1) Kalimat deskriptif mudah dipahami orang awam namun rentan ambiguitas dan sulit diterjemahkan ke kode kompleks; 2) Flowchart (diagram alir) sangat unggul memvisualisasikan arah aliran instruksi dan percabangan keputusan secara grafis; 3) Pseudocode (kode semu) menggunakan konvensi struktur pemrograman tingkat tinggi (seperti IF-THEN, WHILE, FOR) yang tidak terikat aturan kompilator kaku, menjadikannya jembatan terbaik bagi programmer sebelum menulis kode nyata dalam C/C++. Pilihan A keliru karena bahasa natural sangat rawan salah tafsir. Pilihan C keliru karena flowchart tetap menjadi standar dokumentasi rekayasa sistem. Pilihan D salah karena biner adalah urusan kompilator di level mesin.",
+      "source": {
+        "student_book": {
+          "pages": "56",
+          "section": "Bab 3, Subbab B: Bentuk Penulisan Algoritma"
+        },
+        "teacher_guide": {
+          "pages": "88-98",
+          "section": "Panduan Pembelajaran Bab 3, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario analitis perbandingan representasi algoritma merujuk pada Buku Siswa hlm. 56.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C03-A: Menganalisis kelebihan, kelemahan, dan peruntukan representasi algoritma (Deskriptif, Flowchart, Pseudocode) dalam rekayasa perangkat lunak",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 56 (Tiga Bentuk Penulisan Algoritma)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 88-98"
+        },
+        "authoring_statement": "Evaluasi komparatif notasi algoritmik dirancang mandiri untuk melatih kemampuan analisis abstraksi rekayasa perangkat lunak."
+      }
+    }
+  ]
+}
