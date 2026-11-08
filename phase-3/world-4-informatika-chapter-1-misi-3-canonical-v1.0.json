@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_BASELINE",
+  "dataset": "World 4 Informatika Standard Chapter 1 Original Content - Misi 3 v1.0",
+  "purpose": "Authoritative base canonical dataset for Chapter 1 Mission 3 (Artificial Intelligence dan Cloud Computing).",
+  "chapter_id": "INF12-C01",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C01-M03-Q01",
+      "chapter_id": "INF12-C01",
+      "topic_id": "INF12-C01-C",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Komputasi awan (cloud computing) menyediakan berbagai model layanan sesuai dengan tingkat kendali yang dibutuhkan oleh pengguna. Manakah di antara pernyataan berikut yang paling tepat mengklasifikasikan perbedaan tanggung jawab pengguna antara model Software as a Service (SaaS) dan Infrastructure as a Service (IaaS)?",
+      "options": [
+        "Pada model SaaS, pengguna hanya menggunakan aplikasi siap pakai tanpa mengelola server atau sistem operasi, sedangkan pada IaaS, pengguna menyewa infrastruktur mentah (seperti mesin virtual dan penyimpanan) serta bertanggung jawab menginstal dan mengonfigurasi sistem operasi dan aplikasi sendiri.",
+        "Pada model SaaS, pengguna mengontrol penuh perangkat keras fisik di pusat data, sedangkan pada IaaS pengguna hanya menyewa lisensi aplikasi peramban web.",
+        "Model SaaS hanya dapat diakses melalui jaringan lokal tanpa internet, sedangkan IaaS wajib diakses melalui koneksi satelit khusus.",
+        "Model SaaS dan IaaS memiliki pembagian kendali yang sama persis, perbedaannya hanya terletak pada bahasa pemrograman yang didukung."
+      ],
+      "answer": "Pada model SaaS, pengguna hanya menggunakan aplikasi siap pakai tanpa mengelola server atau sistem operasi, sedangkan pada IaaS, pengguna menyewa infrastruktur mentah (seperti mesin virtual dan penyimpanan) serta bertanggung jawab menginstal dan mengonfigurasi sistem operasi dan aplikasi sendiri.",
+      "explanation": "Berdasarkan klasifikasi model layanan komputasi awan pada Buku Siswa hlm. 18–19 dan Panduan Guru hlm. 48–51: 1) SaaS (Software as a Service) adalah model di mana penyedia layanan mengelola seluruh infrastruktur hingga lapisan aplikasi, pengguna tinggal memakai (contoh: Microsoft 365, Google Workspace); 2) IaaS (Infrastructure as a Service) adalah model di mana penyedia hanya menyediakan sumber daya komputasi dasar (mesin virtual, penyimpanan, jaringan), sementara pengguna memiliki kendali penuh atas sistem operasi, konfigurasi jaringan, pangkalan data, dan aplikasi yang diinstal di atasnya (contoh: AWS EC2, Microsoft Azure VM). Pilihan B terbalik. Pilihan C keliru karena keduanya berbasis internet publik/privat. Pilihan D salah karena tingkat abstraksi kendalinya berbeda.",
+      "source": {
+        "student_book": {
+          "pages": "18-19",
+          "section": "Bab 1, Subbab C.5: Cloud Computing (Model Layanan)"
+        },
+        "teacher_guide": {
+          "pages": "48-51",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal asesmen taksonomi model layanan komputasi awan (IaaS, PaaS, SaaS) merujuk pada Buku Siswa hlm. 18–19.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-C: Mengklasifikasikan karakteristik, kelebihan, dan pembagian tanggung jawab pengguna pada model layanan Cloud Computing (IaaS, PaaS, SaaS)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 18-19 (Layanan Cloud Computing)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 48-51"
+        },
+        "authoring_statement": "Perumusan butir komparasi model komputasi awan disusun mandiri secara terstruktur untuk menguji pemahaman arsitektur sistem komputasi modern."
+      }
+    },
+    {
+      "id": "INF12-C01-M03-Q02",
+      "chapter_id": "INF12-C01",
+      "topic_id": "INF12-C01-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah bank swasta nasional ingin memodernisasi layanannya dengan komputasi awan. Sesuai regulasi otoritas keuangan, data saldo dan informasi nasabah yang sangat rahasia wajib disimpan di peladen internal yang terisolasi ketat di dalam negeri. Namun, untuk aplikasi promosi produk dan katalog diskon yang diakses jutaan pengguna umum, bank ingin memanfaatkan fleksibilitas peladen publik berbiaya hemat. Model penerapan (deployment model) komputasi awan manakah yang paling tepat diterapkan oleh bank tersebut?",
+      "options": [
+        "Public Cloud secara penuh, dengan mempublikasikan seluruh pangkalan data nasabah ke internet terbuka agar mudah diakses nasabah.",
+        "Community Cloud murni, dengan menitipkan data keuangan ke peladen bersama beberapa lembaga swadaya masyarakat.",
+        "Private Cloud murni, dengan menolak seluruh akses nasabah melalui internet agar peladen tidak terhubung ke dunia luar.",
+        "Hybrid Cloud, dengan mengintegrasikan Private Cloud untuk data sensitif nasabah yang terproteksi dan Public Cloud untuk layanan informasi umum berkebutuhan skalabilitas tinggi."
+      ],
+      "answer": "Hybrid Cloud, dengan mengintegrasikan Private Cloud untuk data sensitif nasabah yang terproteksi dan Public Cloud untuk layanan informasi umum berkebutuhan skalabilitas tinggi.",
+      "explanation": "Sesuai konsep model penerapan awan pada Buku Siswa hlm. 18–19, Hybrid Cloud menggabungkan keunggulan Private Cloud (keamanan tinggi, kepatuhan regulasi, kendali penuh atas data sensitif dan transaksi perbankan) dengan Public Cloud (skalabilitas tinggi, elastisitas biaya, performa cepat untuk beban lalu lintas massal pada portal informasi umum/promosi). Pilihan A membahayakan privasi dan melanggar regulasi perbankan. Pilihan B tidak menjamin keamanan korporasi finansial. Pilihan C tidak memenuhi kebutuhan skalabilitas aplikasi publik yang fleksibel.",
+      "source": {
+        "student_book": {
+          "pages": "18-19",
+          "section": "Bab 1, Subbab C.5: Cloud Computing (Model Penerapan)"
+        },
+        "teacher_guide": {
+          "pages": "48-51",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal pemilihan model penerapan cloud pada institusi perbankan merujuk pada Buku Siswa hlm. 18–19.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-C: Menerapkan pemilihan model penerapan Cloud Computing (Public, Private, Hybrid) sesuai kebutuhan tata kelola dan keamanan organisasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 18-19 (Tipe Cloud Computing)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 48-51"
+        },
+        "authoring_statement": "Kasus arsitektur cloud perbankan dirancang mandiri untuk melatih penalaran terapan peserta didik dalam menyeimbangkan keamanan data dan efisiensi teknologi."
+      }
+    },
+    {
+      "id": "INF12-C01-M03-Q03",
+      "chapter_id": "INF12-C01",
+      "topic_id": "INF12-C01-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Sebuah sistem kecerdasan buatan (Artificial Intelligence) berbasis Machine Learning dilatih menggunakan jutaan data riwayat transaksi perbankan untuk mendeteksi penipuan (fraud detection). Sistem ini mampu mendeteksi anomali transfer dana mencurigakan dalam milidetik dengan akurasi 99%. Namun, saat seorang nasabah lansia melakukan transfer darurat dalam jumlah besar ke rekening rumah sakit akibat musibah mendadak di luar pola rutinnya, sistem otomatis memblokir transaksi tersebut dan tidak dapat memahami konteks darurat kemanusiaan. Analisis manakah yang paling tepat menggambarkan karakteristik fundamental AI berdasarkan kasus tersebut?",
+      "options": [
+        "Sistem AI tersebut mengalami kerusakan perangkat keras fisik sehingga kapasitas memorinya terhapus saat memproses transaksi.",
+        "AI memiliki kesadaran emosional manusia yang sengaja menolak membantu nasabah lansia demi menegakkan peraturan ketat.",
+        "AI unggul dalam mengenali pola statistis matematis dari data historis, namun memiliki keterbatasan mendasar karena tidak memiliki kesadaran, akal sehat (common sense), dan pemahaman etis kontekstual seperti manusia.",
+        "Kelemahan sistem AI hanya dapat diselesaikan dengan mematikan seluruh algoritma komputasi dan menggantinya kembali dengan pencatatan buku besar manual."
+      ],
+      "answer": "AI unggul dalam mengenali pola statistis matematis dari data historis, namun memiliki keterbatasan mendasar karena tidak memiliki kesadaran, akal sehat (common sense), dan pemahaman etis kontekstual seperti manusia.",
+      "explanation": "Sesuai penjelasan materi Kecerdasan Buatan pada Buku Siswa hlm. 16–18 dan Panduan Guru hlm. 48–51, kecerdasan buatan saat ini bertumpu pada algoritma pembelajaran dari data (machine learning dan statistik) untuk menyelesaikan tugas spesifik (narrow AI). AI sangat cepat dan presisi dalam pengenalan pola data historis, namun tidak memiliki pemahaman sadar, intuisi moral, empati, atau pertimbangan kebijaksanaan kontekstual kemanusiaan (common sense). Oleh karena itu, sistem komputasi cerdas idealnya bekerja dalam kemitraan simbiotik dengan manusia (human-in-the-loop), di mana keputusan akhir pada anomali kritis tetap melibatkan verifikasi pertimbangan akal manusia. Pilihan A keliru karena perilaku sistem sesuai logika latihannya, bukan kerusakan sirkuit. Pilihan B salah karena AI tidak beremosi. Pilihan D salah karena mengabaikan efisiensi analitik AI.",
+      "source": {
+        "student_book": {
+          "pages": "16-18",
+          "section": "Bab 1, Subbab C.4: Artificial Intelligence"
+        },
+        "teacher_guide": {
+          "pages": "48-51",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario analitis orisinal kapabilitas vs batas moral AI pada deteksi fraud finansial merujuk pada Buku Siswa hlm. 16–18.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-C: Menganalisis potensi, kapabilitas, batas kognitif, dan dilema etika implementasi Artificial Intelligence dalam kehidupan modern",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 16-18 (Konsep dan Karakteristik AI)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 48-51"
+        },
+        "authoring_statement": "Dilema etis AI deteksi anomali finansial dirancang orisinal untuk mengukur daya analisis kritis tingkat tinggi sesuai tuntutan Kurikulum Merdeka."
+      }
+    }
+  ]
+}

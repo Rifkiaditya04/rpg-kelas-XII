@@ -1,0 +1,598 @@
+{
+  "pool_id": "POOL-INFORMATIKA-INF12-C01",
+  "subject": "informatika",
+  "chapter": "INF12-C01",
+  "track": "pilihan",
+  "curriculum": [
+    "Merdeka"
+  ],
+  "grade": 12,
+  "status": "active",
+  "content_version": 1,
+  "competencies": [
+    {
+      "competency_id": "INF12-C01-A",
+      "name": "Literasi Digital dan Etika Bermedia",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C01-B",
+      "name": "Revolusi Industri 4.0, IoT, dan Big Data",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C01-C",
+      "name": "Artificial Intelligence dan Cloud Computing",
+      "question_count": 3
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "INF12-C01-A-1101",
+      "phase3_id": "INF12-C01-M01-Q01",
+      "primary_competency": "INF12-C01-A",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Kementerian Komunikasi dan Informatika bersama Gerakan Nasional Literasi Digital merumuskan empat pilar utama kecakapan digital, yaitu Digital Skills, Digital Culture, Digital Ethics, dan Digital Safety. Di antara tindakan berikut, manakah yang merupakan wujud penerapan pilar Digital Safety yang paling tepat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mengoperasikan perangkat lunak pengolah lembar kerja untuk membuat laporan keuangan organisasi secara efisien."
+        },
+        {
+          "id": "B",
+          "text": "Menjunjung tinggi toleransi dan kebhinekaan budaya saat berinteraksi di forum komunitas daring nasional."
+        },
+        {
+          "id": "C",
+          "text": "Mengaktifkan autentikasi dua faktor (2FA) dan rutin memperbarui kata sandi untuk melindungi data pribadi dari akses tanpa hak."
+        },
+        {
+          "id": "D",
+          "text": "Membiasakan diri memeriksa kebenaran informasi sebelum membagikannya agar tidak melanggar etika publik."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Pilar Digital Safety (Aman Bermedia Digital) berfokus pada kemampuan individu dalam mengenali, mempolakan, menerapkan, dan meningkatkan kesadaran perlindungan data pribadi serta keamanan digital dalam kehidupan sehari-hari (Buku Siswa hlm. 8–9). Mengaktifkan autentikasi dua faktor (2FA) dan memperbarui kata sandi secara berkala merupakan tindakan proteksi langsung terhadap akun dan identitas digital. Pilihan A merupakan Digital Skills (keterampilan teknis perangkat lunak). Pilihan B merupakan Digital Culture (kewargaan dan persatuan kultural digital). Pilihan D merupakan Digital Ethics (tata krama dan integritas berbagi informasi).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "8-9",
+          "section": "Bab 1, Subbab B: Literasi Digital (Digital Safety)"
+        },
+        "teacher_guide": {
+          "pages": "40-45",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal asesmen konseptual empat pilar literasi digital mengacu pada Buku Siswa hlm. 8–9 dan Panduan Guru hlm. 40–45.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-A: Memahami empat pilar kecakapan literasi digital dan perlindungan keamanan digital pribadi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 8-9 (Digital Safety)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 40-45"
+        },
+        "authoring_statement": "Skenario studi kasus klasifikasi pilar literasi digital dirancang mandiri untuk menguji pemahaman distingtif proteksi keamanan siber pribadi tanpa menyalin kalimat latihan buku teks."
+      }
+    },
+    {
+      "question_id": "INF12-C01-A-2102",
+      "phase3_id": "INF12-C01-M01-Q02",
+      "primary_competency": "INF12-C01-A",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Seorang siswa menemukan esai karya temannya yang tersimpan di komputer laboratorium sekolah, lalu tergiur untuk mengutip beberapa paragraf utuh ke dalam tugas pribadinya tanpa mencantumkan sumber rujukan karena tenggat waktu pengumpulan tugas sudah dekat. Berdasarkan empat prinsip utama dalam pilar Digital Ethics (kesadaran, integritas, tanggung jawab, dan kebajikan), prinsip manakah yang paling langsung dilanggar oleh tindakan siswa tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kesadaran, karena siswa tidak menyadari bahwa komputer laboratorium dapat diakses oleh banyak pengguna lain."
+        },
+        {
+          "id": "B",
+          "text": "Integritas, karena siswa melakukan plagiasi dan manipulasi karya intelektual orang lain demi menghindari sanksi keterlambatan."
+        },
+        {
+          "id": "C",
+          "text": "Kebajikan, karena siswa tidak bersedia membagikan tugasnya kepada teman sekelas yang membutuhkan bantuan belajar."
+        },
+        {
+          "id": "D",
+          "text": "Keamanan, karena siswa meninggalkan jejak digital riwayat dokumen di komputer sekolah tanpa menghapus riwayat peramban."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dalam pilar Digital Ethics, prinsip integritas menegaskan kejujuran akademik sehingga individu terhindar dari manipulasi, penipuan, berbohong, dan tindakan plagiasi dalam memanfaatkan media digital (Buku Siswa hlm. 7–8). Mengambil paragraf karya orang lain tanpa atribusi sumber adalah bentuk pelanggaran integritas secara langsung. Pilihan A keliru karena kesadaran dalam etika digital merujuk pada pemahaman penuh atas tujuan penggunaan gawai, bukan sekadar memori fisik lab. Pilihan C tidak relevan dengan esensi kecurangan akademis. Pilihan D salah karena merujuk pada pilar keamanan teknis (Digital Safety).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "7-8",
+          "section": "Bab 1, Subbab B: Literasi Digital (Digital Ethics)"
+        },
+        "teacher_guide": {
+          "pages": "40-45",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal etika akademik digital mengacu pada empat prinsip etika bermedia Buku Siswa hlm. 7–8.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-A: Menerapkan prinsip-prinsip etika bermedia digital (Digital Ethics) dalam interaksi dan produksi konten",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 7-8 (Prinsip Integritas Etika Digital)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 40-45"
+        },
+        "authoring_statement": "Studi kasus kontekstual dilema plagiasi tugas sekolah disusun orisinal untuk mengukur penerapan prinsip integritas etika digital sesuai Decision 009."
+      }
+    },
+    {
+      "question_id": "INF12-C01-A-3103",
+      "phase3_id": "INF12-C01-M01-Q03",
+      "primary_competency": "INF12-C01-A",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Data penetrasi internet menunjukkan bahwa mayoritas remaja sangat mahir menggunakan ponsel pintar untuk menyunting video dan mengunggah konten dalam hitungan detik. Namun, survei literasi digital mencatat bahwa kelompok usia yang sama sering kali langsung menyebarkan kabar sensasional tanpa memverifikasi sumber beritanya terlebih dahulu. Berdasarkan konsep pilar literasi digital, kesimpulan analitis manakah yang paling tepat menjelaskan fenomena tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Terdapat kesenjangan antara tingginya kecakapan teknis operasional (Digital Skills) dengan rendahnya kematangan etika dan daya kritis memilah informasi (Digital Ethics)."
+        },
+        {
+          "id": "B",
+          "text": "Tingginya kecakapan teknis secara otomatis menurunkan kepedulian terhadap keamanan perangkat keras (Digital Safety) di kalangan pengguna muda."
+        },
+        {
+          "id": "C",
+          "text": "Penyebaran kabar sensasional merupakan bukti keberhasilan pilar budaya digital (Digital Culture) dalam menciptakan interaksi virtual yang dinamis."
+        },
+        {
+          "id": "D",
+          "text": "Kecakapan bermedia digital hanya dapat dibentuk melalui pembatasan akses gawai secara fisik oleh pihak sekolah dan orang tua."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fenomena tingginya kemampuan teknis menggunakan aplikasi yang tidak dibarengi verifikasi kebenaran mencerminkan kesenjangan (gap) antara Digital Skills (kecepatan teknis memproduksi dan menyebarkan media) dengan Digital Ethics serta nalar kritis Digital Culture (kemampuan menahan diri, memverifikasi fakta, dan berintegritas sebelum membagikan informasi) sebagaimana diuraikan dalam Buku Siswa hlm. 5–8 dan Panduan Guru hlm. 40–45. Pilihan B tidak tepat karena kasus ini membahas etika informasi, bukan kerusakan fisik perangkat. Pilihan C keliru karena budaya digital menuntut penguatan nilai kebangsaan dan etika bermasyarakat, bukan pembiaran disinformasi. Pilihan D salah karena pendekatan literasi digital modern menekankan pembinaan kecakapan berpikir kritis, bukan isolasi akses fisik.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "5-8",
+          "section": "Bab 1, Subbab B: Literasi Digital (Kecakapan vs Etika)"
+        },
+        "teacher_guide": {
+          "pages": "40-45",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario analitis orisinal disparitas kecakapan vs etika bermedia digital merujuk pada Buku Siswa hlm. 5–8.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-A: Menganalisis korelasi dan kesenjangan antarpilar kecakapan literasi digital pada fenomena sosial siber",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 5-8 (Tantangan Etika Bermedia Digital)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 40-45"
+        },
+        "authoring_statement": "Analisis sosio-teknologis fenomena disinformasi disusun orisinal untuk mengukur penalaran evaluatif peserta didik tingkat lanjut."
+      }
+    },
+    {
+      "question_id": "INF12-C01-B-4201",
+      "phase3_id": "INF12-C01-M02-Q01",
+      "primary_competency": "INF12-C01-B",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam arsitektur Internet of Things (IoT), sistem siber-fisik mengandalkan interaksi terpadu antara perangkat masukan (input) dan keluaran (output) untuk beroperasi secara mandiri. Di antara pernyataan berikut, manakah yang membedakan fungsi operasional antara sensor dan aktuator secara tepat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sensor bertugas mengeksekusi aksi mekanis fisik, sedangkan aktuator berfungsi mendeteksi perubahan parameter lingkungan."
+        },
+        {
+          "id": "B",
+          "text": "Sensor dan aktuator sama-sama berfungsi menyimpan data hasil pengukuran di dalam pangkalan data awan."
+        },
+        {
+          "id": "C",
+          "text": "Sensor berfungsi mengonversi sinyal analog menjadi gelombang radio, sedangkan aktuator memprogram mikrokontroler."
+        },
+        {
+          "id": "D",
+          "text": "Sensor bertugas mendeteksi dan mengukur stimulus fisik dari lingkungan, sedangkan aktuator bertugas mengonversi sinyal kontrol menjadi tindakan fisik nyata."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Sesuai konsep IoT pada Buku Siswa hlm. 13–14 dan Panduan Guru hlm. 46–48, sensor adalah komponen input yang mendeteksi perubahan fisis lingkungan (seperti suhu, cahaya, kelembapan tanah, atau tekanan) dan mengubahnya menjadi sinyal data. Sebaliknya, aktuator adalah komponen output yang menerima perintah dari unit pemroses/kontrol untuk menggerakkan atau mengendalikan mekanisme fisik (seperti memutar motor, membuka katup air, menyalakan pompa, atau mengaktifkan sakelar). Pilihan A terbalik. Pilihan B keliru karena penyimpanan data adalah fungsi memori/server. Pilihan C salah mendefinisikan aktuator sebagai aktivitas pemrograman.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "13-14",
+          "section": "Bab 1, Subbab C.2: Internet of Things (IoT)"
+        },
+        "teacher_guide": {
+          "pages": "46-48",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal asesmen konsep arsitektur sensor dan aktuator IoT mengacu pada Buku Siswa hlm. 13–14.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-B: Memahami komponen fungsional sistem IoT (sensor, aktuator, pemroses, dan jaringan komunikasi)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 13-14 (Lingkup dan Komponen IoT)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 46-48"
+        },
+        "authoring_statement": "Deskripsi diferensiasi transduser masukan dan keluaran IoT disusun mandiri untuk memastikan penguasaan konsep fundamental tanpa mengutip soal baku."
+      }
+    },
+    {
+      "question_id": "INF12-C01-B-5202",
+      "phase3_id": "INF12-C01-M02-Q02",
+      "primary_competency": "INF12-C01-B",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah kelompok tani berencana mengimplementasikan sistem pertanian cerdas (smart agriculture) berbasis IoT pada lahan hidroponik mereka. Mereka ingin sistem dapat secara otomatis menyiram tanaman hanya ketika tingkat kelembapan media tanam berada di bawah 40% dan menghentikan aliran air ketika kelembapan mencapai 70%. Rangkaian integrasi komponen IoT manakah yang paling tepat untuk mewujudkan sistem otomatisasi tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Menggunakan sensor kamera CCTV untuk memantau daun tanaman, lalu menginstruksikan petani secara manual melalui pesan instan untuk menyalakan kran."
+        },
+        {
+          "id": "B",
+          "text": "Menggunakan sensor suhu udara untuk menghidupkan kipas angin pendingin ruangan tanpa melibatkan pompa sirkulasi nutrisi air."
+        },
+        {
+          "id": "C",
+          "text": "Menghubungkan sensor kelembapan tanah ke mikrokontroler pengambil keputusan, yang memicu aktuator berupa relay untuk membuka katup pompa air saat nilai ambang batas tercapai."
+        },
+        {
+          "id": "D",
+          "text": "Menginstal perangkat GPS pada traktor otomatis untuk memetakan luas area lahan pertanian hidroponik."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Penerapan otomatisasi IoT pada sektor pertanian (seperti pemodelan eFishery atau smart farming pada Buku Siswa hlm. 14) memerlukan loop umpan balik terpadu: sensor kelembapan tanah membaca parameter fisik, mikrokontroler memproses data berdasarkan logika program (ambang batas <40% dan >=70%), dan aktuator (relay/katup selenoid pompa air) mengeksekusi tindakan fisik penyiraman secara otomatis tanpa intervensi manual. Pilihan A salah karena masih bergantung pada tindakan manual manusia. Pilihan B salah sasaran parameter (suhu vs kelembapan media). Pilihan D tidak relevan dengan sistem irigasi otomatis.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "13-14",
+          "section": "Bab 1, Subbab C.2: Internet of Things (Penerapan Kontekstual)"
+        },
+        "teacher_guide": {
+          "pages": "46-48",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal aplikasi smart agriculture berbasis IoT merujuk pada Buku Siswa hlm. 13–14.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-B: Menerapkan perancangan solusi siber-fisik berbasis IoT untuk otomatisasi sektor riil",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 13-14 (Implementasi IoT di Indonesia)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 46-48"
+        },
+        "authoring_statement": "Kasus rekayasa irigasi presisi hidroponik dirancang orisinal untuk menguji kemampuan penerapan konseptual IoT dalam pemecahan masalah."
+      }
+    },
+    {
+      "question_id": "INF12-C01-B-6203",
+      "phase3_id": "INF12-C01-M02-Q03",
+      "primary_competency": "INF12-C01-B",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah platform niaga elektronik (e-commerce) mencatat jutaan transaksi harian yang terdiri atas data angka nominal transaksi, riwayat penelusuran kata kunci, rekaman audio keluhan pelanggan di layanan bantuan, serta foto ulasan produk. Dalam paradigma Big Data, bagaimana tim data analis mengklasifikasikan jenis data tersebut dan mengoptimalkannya untuk meningkatkan penjualan?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Seluruh data tersebut merupakan data terstruktur yang dapat langsung disimpan dan dihitung menggunakan rumus aritmetika lembar kerja konvensional."
+        },
+        {
+          "id": "B",
+          "text": "Nominal transaksi adalah data terstruktur, sedangkan audio keluhan dan foto ulasan adalah data tidak terstruktur yang memerlukan pemrosesan khusus (seperti NLP dan computer vision) untuk analisis sentimen dan sistem rekomendasi."
+        },
+        {
+          "id": "C",
+          "text": "Data tidak terstruktur harus dihapus secara berkala dari peladen karena tidak memiliki nilai ekonomis bagi strategi bisnis perusahaan."
+        },
+        {
+          "id": "D",
+          "text": "Analisis Big Data hanya mengolah ulasan teks positif dan secara otomatis memblokir akun pengguna yang menyampaikan keluhan transaksi."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai materi Big Data pada Buku Siswa hlm. 14–16, Big Data mencakup volume data yang sangat masif, baik data terstruktur (seperti angka nominal, tanggal, dan ID produk dalam tabel basis data) maupun data tidak terstruktur (seperti teks ulasan bebas, rekaman audio percakapan, dan citra/foto produk). Untuk menghasilkan wawasan bisnis dan sistem rekomendasi yang akurat, data scientist memanfaatkan teknik pemrosesan khusus seperti pemrosesan bahasa alami (NLP) dan machine learning. Pilihan A keliru karena data audio dan foto tidak dapat diolah langsung dengan spreadsheet biasa. Pilihan C salah karena data tidak terstruktur menyimpan informasi perilaku konsumen yang sangat berharga. Pilihan D salah dan bertentangan dengan prinsip analitik kepuasan pelanggan.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "14-16",
+          "section": "Bab 1, Subbab C.3: Big Data"
+        },
+        "teacher_guide": {
+          "pages": "46-48",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario analitis orisinal struktur Big Data e-commerce merujuk pada Buku Siswa hlm. 14–16.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-B: Menganalisis karakteristik data terstruktur vs tidak terstruktur dalam pemanfaatan Big Data dan kecerdasan bisnis",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 14-16 (Big Data dan Pengambilan Keputusan)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 46-48"
+        },
+        "authoring_statement": "Analisis tipologi data multi-modal pada ekosistem niaga digital disusun orisinal untuk mengukur kemampuan analitis tingkat lanjut peserta didik."
+      }
+    },
+    {
+      "question_id": "INF12-C01-C-7301",
+      "phase3_id": "INF12-C01-M03-Q01",
+      "primary_competency": "INF12-C01-C",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Komputasi awan (cloud computing) menyediakan berbagai model layanan sesuai dengan tingkat kendali yang dibutuhkan oleh pengguna. Manakah di antara pernyataan berikut yang paling tepat mengklasifikasikan perbedaan tanggung jawab pengguna antara model Software as a Service (SaaS) dan Infrastructure as a Service (IaaS)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pada model SaaS, pengguna hanya menggunakan aplikasi siap pakai tanpa mengelola server atau sistem operasi, sedangkan pada IaaS, pengguna menyewa infrastruktur mentah (seperti mesin virtual dan penyimpanan) serta bertanggung jawab menginstal dan mengonfigurasi sistem operasi dan aplikasi sendiri."
+        },
+        {
+          "id": "B",
+          "text": "Pada model SaaS, pengguna mengontrol penuh perangkat keras fisik di pusat data, sedangkan pada IaaS pengguna hanya menyewa lisensi aplikasi peramban web."
+        },
+        {
+          "id": "C",
+          "text": "Model SaaS hanya dapat diakses melalui jaringan lokal tanpa internet, sedangkan IaaS wajib diakses melalui koneksi satelit khusus."
+        },
+        {
+          "id": "D",
+          "text": "Model SaaS dan IaaS memiliki pembagian kendali yang sama persis, perbedaannya hanya terletak pada bahasa pemrograman yang didukung."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Berdasarkan klasifikasi model layanan komputasi awan pada Buku Siswa hlm. 18–19 dan Panduan Guru hlm. 48–51: 1) SaaS (Software as a Service) adalah model di mana penyedia layanan mengelola seluruh infrastruktur hingga lapisan aplikasi, pengguna tinggal memakai (contoh: Microsoft 365, Google Workspace); 2) IaaS (Infrastructure as a Service) adalah model di mana penyedia hanya menyediakan sumber daya komputasi dasar (mesin virtual, penyimpanan, jaringan), sementara pengguna memiliki kendali penuh atas sistem operasi, konfigurasi jaringan, pangkalan data, dan aplikasi yang diinstal di atasnya (contoh: AWS EC2, Microsoft Azure VM). Pilihan B terbalik. Pilihan C keliru karena keduanya berbasis internet publik/privat. Pilihan D salah karena tingkat abstraksi kendalinya berbeda.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "18-19",
+          "section": "Bab 1, Subbab C.5: Cloud Computing (Model Layanan)"
+        },
+        "teacher_guide": {
+          "pages": "48-51",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal asesmen taksonomi model layanan komputasi awan (IaaS, PaaS, SaaS) merujuk pada Buku Siswa hlm. 18–19.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-C: Mengklasifikasikan karakteristik, kelebihan, dan pembagian tanggung jawab pengguna pada model layanan Cloud Computing (IaaS, PaaS, SaaS)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 18-19 (Layanan Cloud Computing)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 48-51"
+        },
+        "authoring_statement": "Perumusan butir komparasi model komputasi awan disusun mandiri secara terstruktur untuk menguji pemahaman arsitektur sistem komputasi modern."
+      }
+    },
+    {
+      "question_id": "INF12-C01-C-8302",
+      "phase3_id": "INF12-C01-M03-Q02",
+      "primary_competency": "INF12-C01-C",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah bank swasta nasional ingin memodernisasi layanannya dengan komputasi awan. Sesuai regulasi otoritas keuangan, data saldo dan informasi nasabah yang sangat rahasia wajib disimpan di peladen internal yang terisolasi ketat di dalam negeri. Namun, untuk aplikasi promosi produk dan katalog diskon yang diakses jutaan pengguna umum, bank ingin memanfaatkan fleksibilitas peladen publik berbiaya hemat. Model penerapan (deployment model) komputasi awan manakah yang paling tepat diterapkan oleh bank tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Public Cloud secara penuh, dengan mempublikasikan seluruh pangkalan data nasabah ke internet terbuka agar mudah diakses nasabah."
+        },
+        {
+          "id": "B",
+          "text": "Community Cloud murni, dengan menitipkan data keuangan ke peladen bersama beberapa lembaga swadaya masyarakat."
+        },
+        {
+          "id": "C",
+          "text": "Private Cloud murni, dengan menolak seluruh akses nasabah melalui internet agar peladen tidak terhubung ke dunia luar."
+        },
+        {
+          "id": "D",
+          "text": "Hybrid Cloud, dengan mengintegrasikan Private Cloud untuk data sensitif nasabah yang terproteksi dan Public Cloud untuk layanan informasi umum berkebutuhan skalabilitas tinggi."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Sesuai konsep model penerapan awan pada Buku Siswa hlm. 18–19, Hybrid Cloud menggabungkan keunggulan Private Cloud (keamanan tinggi, kepatuhan regulasi, kendali penuh atas data sensitif dan transaksi perbankan) dengan Public Cloud (skalabilitas tinggi, elastisitas biaya, performa cepat untuk beban lalu lintas massal pada portal informasi umum/promosi). Pilihan A membahayakan privasi dan melanggar regulasi perbankan. Pilihan B tidak menjamin keamanan korporasi finansial. Pilihan C tidak memenuhi kebutuhan skalabilitas aplikasi publik yang fleksibel.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "18-19",
+          "section": "Bab 1, Subbab C.5: Cloud Computing (Model Penerapan)"
+        },
+        "teacher_guide": {
+          "pages": "48-51",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal pemilihan model penerapan cloud pada institusi perbankan merujuk pada Buku Siswa hlm. 18–19.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-C: Menerapkan pemilihan model penerapan Cloud Computing (Public, Private, Hybrid) sesuai kebutuhan tata kelola dan keamanan organisasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 18-19 (Tipe Cloud Computing)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 48-51"
+        },
+        "authoring_statement": "Kasus arsitektur cloud perbankan dirancang mandiri untuk melatih penalaran terapan peserta didik dalam menyeimbangkan keamanan data dan efisiensi teknologi."
+      }
+    },
+    {
+      "question_id": "INF12-C01-C-9303",
+      "phase3_id": "INF12-C01-M03-Q03",
+      "primary_competency": "INF12-C01-C",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah sistem kecerdasan buatan (Artificial Intelligence) berbasis Machine Learning dilatih menggunakan jutaan data riwayat transaksi perbankan untuk mendeteksi penipuan (fraud detection). Sistem ini mampu mendeteksi anomali transfer dana mencurigakan dalam milidetik dengan akurasi 99%. Namun, saat seorang nasabah lansia melakukan transfer darurat dalam jumlah besar ke rekening rumah sakit akibat musibah mendadak di luar pola rutinnya, sistem otomatis memblokir transaksi tersebut dan tidak dapat memahami konteks darurat kemanusiaan. Analisis manakah yang paling tepat menggambarkan karakteristik fundamental AI berdasarkan kasus tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sistem AI tersebut mengalami kerusakan perangkat keras fisik sehingga kapasitas memorinya terhapus saat memproses transaksi."
+        },
+        {
+          "id": "B",
+          "text": "AI memiliki kesadaran emosional manusia yang sengaja menolak membantu nasabah lansia demi menegakkan peraturan ketat."
+        },
+        {
+          "id": "C",
+          "text": "AI unggul dalam mengenali pola statistis matematis dari data historis, namun memiliki keterbatasan mendasar karena tidak memiliki kesadaran, akal sehat (common sense), dan pemahaman etis kontekstual seperti manusia."
+        },
+        {
+          "id": "D",
+          "text": "Kelemahan sistem AI hanya dapat diselesaikan dengan mematikan seluruh algoritma komputasi dan menggantinya kembali dengan pencatatan buku besar manual."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sesuai penjelasan materi Kecerdasan Buatan pada Buku Siswa hlm. 16–18 dan Panduan Guru hlm. 48–51, kecerdasan buatan saat ini bertumpu pada algoritma pembelajaran dari data (machine learning dan statistik) untuk menyelesaikan tugas spesifik (narrow AI). AI sangat cepat dan presisi dalam pengenalan pola data historis, namun tidak memiliki pemahaman sadar, intuisi moral, empati, atau pertimbangan kebijaksanaan kontekstual kemanusiaan (common sense). Oleh karena itu, sistem komputasi cerdas idealnya bekerja dalam kemitraan simbiotik dengan manusia (human-in-the-loop), di mana keputusan akhir pada anomali kritis tetap melibatkan verifikasi pertimbangan akal manusia. Pilihan A keliru karena perilaku sistem sesuai logika latihannya, bukan kerusakan sirkuit. Pilihan B salah karena AI tidak beremosi. Pilihan D salah karena mengabaikan efisiensi analitik AI.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "16-18",
+          "section": "Bab 1, Subbab C.4: Artificial Intelligence"
+        },
+        "teacher_guide": {
+          "pages": "48-51",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario analitis orisinal kapabilitas vs batas moral AI pada deteksi fraud finansial merujuk pada Buku Siswa hlm. 16–18.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-C: Menganalisis potensi, kapabilitas, batas kognitif, dan dilema etika implementasi Artificial Intelligence dalam kehidupan modern",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 16-18 (Konsep dan Karakteristik AI)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 48-51"
+        },
+        "authoring_statement": "Dilema etis AI deteksi anomali finansial dirancang orisinal untuk mengukur daya analisis kritis tingkat tinggi sesuai tuntutan Kurikulum Merdeka."
+      }
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CONTROLLED_REVISION_DRAFT",
+  "dataset": "World 4 Informatika Standard Chapter 1 Original Content - Misi 1 v1.1",
+  "purpose": "Resolved canonical dataset v1.1 for Chapter 1 Mission 1 (Literasi Digital dan Etika Bermedia).",
+  "chapter_id": "INF12-C01",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C01-M01-Q01",
+      "chapter_id": "INF12-C01",
+      "topic_id": "INF12-C01-A",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Kementerian Komunikasi dan Informatika bersama Gerakan Nasional Literasi Digital merumuskan empat pilar utama kecakapan digital, yaitu Digital Skills, Digital Culture, Digital Ethics, dan Digital Safety. Di antara tindakan berikut, manakah yang merupakan wujud penerapan pilar Digital Safety yang paling tepat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mengoperasikan perangkat lunak pengolah lembar kerja untuk membuat laporan keuangan organisasi secara efisien."
+        },
+        {
+          "id": "B",
+          "text": "Menjunjung tinggi toleransi dan kebhinekaan budaya saat berinteraksi di forum komunitas daring nasional."
+        },
+        {
+          "id": "C",
+          "text": "Mengaktifkan autentikasi dua faktor (2FA) dan rutin memperbarui kata sandi untuk melindungi data pribadi dari akses tanpa hak."
+        },
+        {
+          "id": "D",
+          "text": "Membiasakan diri memeriksa kebenaran informasi sebelum membagikannya agar tidak melanggar etika publik."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Pilar Digital Safety (Aman Bermedia Digital) berfokus pada kemampuan individu dalam mengenali, mempolakan, menerapkan, dan meningkatkan kesadaran perlindungan data pribadi serta keamanan digital dalam kehidupan sehari-hari (Buku Siswa hlm. 8–9). Mengaktifkan autentikasi dua faktor (2FA) dan memperbarui kata sandi secara berkala merupakan tindakan proteksi langsung terhadap akun dan identitas digital. Pilihan A merupakan Digital Skills (keterampilan teknis perangkat lunak). Pilihan B merupakan Digital Culture (kewargaan dan persatuan kultural digital). Pilihan D merupakan Digital Ethics (tata krama dan integritas berbagi informasi).",
+      "source": {
+        "student_book": {
+          "pages": "8-9",
+          "section": "Bab 1, Subbab B: Literasi Digital (Digital Safety)"
+        },
+        "teacher_guide": {
+          "pages": "40-45",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal asesmen konseptual empat pilar literasi digital mengacu pada Buku Siswa hlm. 8–9 dan Panduan Guru hlm. 40–45.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-A: Memahami empat pilar kecakapan literasi digital dan perlindungan keamanan digital pribadi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 8-9 (Digital Safety)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 40-45"
+        },
+        "authoring_statement": "Skenario studi kasus klasifikasi pilar literasi digital dirancang mandiri untuk menguji pemahaman distingtif proteksi keamanan siber pribadi tanpa menyalin kalimat latihan buku teks."
+      }
+    },
+    {
+      "id": "INF12-C01-M01-Q02",
+      "chapter_id": "INF12-C01",
+      "topic_id": "INF12-C01-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Seorang siswa menemukan esai karya temannya yang tersimpan di komputer laboratorium sekolah, lalu tergiur untuk mengutip beberapa paragraf utuh ke dalam tugas pribadinya tanpa mencantumkan sumber rujukan karena tenggat waktu pengumpulan tugas sudah dekat. Berdasarkan empat prinsip utama dalam pilar Digital Ethics (kesadaran, integritas, tanggung jawab, dan kebajikan), prinsip manakah yang paling langsung dilanggar oleh tindakan siswa tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kesadaran, karena siswa tidak menyadari bahwa komputer laboratorium dapat diakses oleh banyak pengguna lain."
+        },
+        {
+          "id": "B",
+          "text": "Integritas, karena siswa melakukan plagiasi dan manipulasi karya intelektual orang lain demi menghindari sanksi keterlambatan."
+        },
+        {
+          "id": "C",
+          "text": "Kebajikan, karena siswa tidak bersedia membagikan tugasnya kepada teman sekelas yang membutuhkan bantuan belajar."
+        },
+        {
+          "id": "D",
+          "text": "Keamanan, karena siswa meninggalkan jejak digital riwayat dokumen di komputer sekolah tanpa menghapus riwayat peramban."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dalam pilar Digital Ethics, prinsip integritas menegaskan kejujuran akademik sehingga individu terhindar dari manipulasi, penipuan, berbohong, dan tindakan plagiasi dalam memanfaatkan media digital (Buku Siswa hlm. 7–8). Mengambil paragraf karya orang lain tanpa atribusi sumber adalah bentuk pelanggaran integritas secara langsung. Pilihan A keliru karena kesadaran dalam etika digital merujuk pada pemahaman penuh atas tujuan penggunaan gawai, bukan sekadar memori fisik lab. Pilihan C tidak relevan dengan esensi kecurangan akademis. Pilihan D salah karena merujuk pada pilar keamanan teknis (Digital Safety).",
+      "source": {
+        "student_book": {
+          "pages": "7-8",
+          "section": "Bab 1, Subbab B: Literasi Digital (Digital Ethics)"
+        },
+        "teacher_guide": {
+          "pages": "40-45",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal etika akademik digital mengacu pada empat prinsip etika bermedia Buku Siswa hlm. 7–8.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-A: Menerapkan prinsip-prinsip etika bermedia digital (Digital Ethics) dalam interaksi dan produksi konten",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 7-8 (Prinsip Integritas Etika Digital)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 40-45"
+        },
+        "authoring_statement": "Studi kasus kontekstual dilema plagiasi tugas sekolah disusun orisinal untuk mengukur penerapan prinsip integritas etika digital sesuai Decision 009."
+      }
+    },
+    {
+      "id": "INF12-C01-M01-Q03",
+      "chapter_id": "INF12-C01",
+      "topic_id": "INF12-C01-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Data penetrasi internet menunjukkan bahwa mayoritas remaja sangat mahir menggunakan ponsel pintar untuk menyunting video dan mengunggah konten dalam hitungan detik. Namun, survei literasi digital mencatat bahwa kelompok usia yang sama sering kali langsung menyebarkan kabar sensasional tanpa memverifikasi sumber beritanya terlebih dahulu. Berdasarkan konsep pilar literasi digital, kesimpulan analitis manakah yang paling tepat menjelaskan fenomena tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Terdapat kesenjangan antara tingginya kecakapan teknis operasional (Digital Skills) dengan rendahnya kematangan etika dan daya kritis memilah informasi (Digital Ethics)."
+        },
+        {
+          "id": "B",
+          "text": "Tingginya kecakapan teknis secara otomatis menurunkan kepedulian terhadap keamanan perangkat keras (Digital Safety) di kalangan pengguna muda."
+        },
+        {
+          "id": "C",
+          "text": "Penyebaran kabar sensasional merupakan bukti keberhasilan pilar budaya digital (Digital Culture) dalam menciptakan interaksi virtual yang dinamis."
+        },
+        {
+          "id": "D",
+          "text": "Kecakapan bermedia digital hanya dapat dibentuk melalui pembatasan akses gawai secara fisik oleh pihak sekolah dan orang tua."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fenomena tingginya kemampuan teknis menggunakan aplikasi yang tidak dibarengi verifikasi kebenaran mencerminkan kesenjangan (gap) antara Digital Skills (kecepatan teknis memproduksi dan menyebarkan media) dengan Digital Ethics serta nalar kritis Digital Culture (kemampuan menahan diri, memverifikasi fakta, dan berintegritas sebelum membagikan informasi) sebagaimana diuraikan dalam Buku Siswa hlm. 5–8 dan Panduan Guru hlm. 40–45. Pilihan B tidak tepat karena kasus ini membahas etika informasi, bukan kerusakan fisik perangkat. Pilihan C keliru karena budaya digital menuntut penguatan nilai kebangsaan dan etika bermasyarakat, bukan pembiaran disinformasi. Pilihan D salah karena pendekatan literasi digital modern menekankan pembinaan kecakapan berpikir kritis, bukan isolasi akses fisik.",
+      "source": {
+        "student_book": {
+          "pages": "5-8",
+          "section": "Bab 1, Subbab B: Literasi Digital (Kecakapan vs Etika)"
+        },
+        "teacher_guide": {
+          "pages": "40-45",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario analitis orisinal disparitas kecakapan vs etika bermedia digital merujuk pada Buku Siswa hlm. 5–8.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-A: Menganalisis korelasi dan kesenjangan antarpilar kecakapan literasi digital pada fenomena sosial siber",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 5-8 (Tantangan Etika Bermedia Digital)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 40-45"
+        },
+        "authoring_statement": "Analisis sosio-teknologis fenomena disinformasi disusun orisinal untuk mengukur penalaran evaluatif peserta didik tingkat lanjut."
+      }
+    }
+  ]
+}

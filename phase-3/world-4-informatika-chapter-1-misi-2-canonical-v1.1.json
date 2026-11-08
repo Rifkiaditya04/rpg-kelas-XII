@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CONTROLLED_REVISION_DRAFT",
+  "dataset": "World 4 Informatika Standard Chapter 1 Original Content - Misi 2 v1.1",
+  "purpose": "Resolved canonical dataset v1.1 for Chapter 1 Mission 2 (Revolusi Industri 4.0, IoT, dan Big Data).",
+  "chapter_id": "INF12-C01",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C01-M02-Q01",
+      "chapter_id": "INF12-C01",
+      "topic_id": "INF12-C01-B",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Dalam arsitektur Internet of Things (IoT), sistem siber-fisik mengandalkan interaksi terpadu antara perangkat masukan (input) dan keluaran (output) untuk beroperasi secara mandiri. Di antara pernyataan berikut, manakah yang membedakan fungsi operasional antara sensor dan aktuator secara tepat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sensor bertugas mengeksekusi aksi mekanis fisik, sedangkan aktuator berfungsi mendeteksi perubahan parameter lingkungan."
+        },
+        {
+          "id": "B",
+          "text": "Sensor dan aktuator sama-sama berfungsi menyimpan data hasil pengukuran di dalam pangkalan data awan."
+        },
+        {
+          "id": "C",
+          "text": "Sensor berfungsi mengonversi sinyal analog menjadi gelombang radio, sedangkan aktuator memprogram mikrokontroler."
+        },
+        {
+          "id": "D",
+          "text": "Sensor bertugas mendeteksi dan mengukur stimulus fisik dari lingkungan, sedangkan aktuator bertugas mengonversi sinyal kontrol menjadi tindakan fisik nyata."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Sesuai konsep IoT pada Buku Siswa hlm. 13–14 dan Panduan Guru hlm. 46–48, sensor adalah komponen input yang mendeteksi perubahan fisis lingkungan (seperti suhu, cahaya, kelembapan tanah, atau tekanan) dan mengubahnya menjadi sinyal data. Sebaliknya, aktuator adalah komponen output yang menerima perintah dari unit pemroses/kontrol untuk menggerakkan atau mengendalikan mekanisme fisik (seperti memutar motor, membuka katup air, menyalakan pompa, atau mengaktifkan sakelar). Pilihan A terbalik. Pilihan B keliru karena penyimpanan data adalah fungsi memori/server. Pilihan C salah mendefinisikan aktuator sebagai aktivitas pemrograman.",
+      "source": {
+        "student_book": {
+          "pages": "13-14",
+          "section": "Bab 1, Subbab C.2: Internet of Things (IoT)"
+        },
+        "teacher_guide": {
+          "pages": "46-48",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal asesmen konsep arsitektur sensor dan aktuator IoT mengacu pada Buku Siswa hlm. 13–14.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-B: Memahami komponen fungsional sistem IoT (sensor, aktuator, pemroses, dan jaringan komunikasi)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 13-14 (Lingkup dan Komponen IoT)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 46-48"
+        },
+        "authoring_statement": "Deskripsi diferensiasi transduser masukan dan keluaran IoT disusun mandiri untuk memastikan penguasaan konsep fundamental tanpa mengutip soal baku."
+      }
+    },
+    {
+      "id": "INF12-C01-M02-Q02",
+      "chapter_id": "INF12-C01",
+      "topic_id": "INF12-C01-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah kelompok tani berencana mengimplementasikan sistem pertanian cerdas (smart agriculture) berbasis IoT pada lahan hidroponik mereka. Mereka ingin sistem dapat secara otomatis menyiram tanaman hanya ketika tingkat kelembapan media tanam berada di bawah 40% dan menghentikan aliran air ketika kelembapan mencapai 70%. Rangkaian integrasi komponen IoT manakah yang paling tepat untuk mewujudkan sistem otomatisasi tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Menggunakan sensor kamera CCTV untuk memantau daun tanaman, lalu menginstruksikan petani secara manual melalui pesan instan untuk menyalakan kran."
+        },
+        {
+          "id": "B",
+          "text": "Menggunakan sensor suhu udara untuk menghidupkan kipas angin pendingin ruangan tanpa melibatkan pompa sirkulasi nutrisi air."
+        },
+        {
+          "id": "C",
+          "text": "Menghubungkan sensor kelembapan tanah ke mikrokontroler pengambil keputusan, yang memicu aktuator berupa relay untuk membuka katup pompa air saat nilai ambang batas tercapai."
+        },
+        {
+          "id": "D",
+          "text": "Menginstal perangkat GPS pada traktor otomatis untuk memetakan luas area lahan pertanian hidroponik."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Penerapan otomatisasi IoT pada sektor pertanian (seperti pemodelan eFishery atau smart farming pada Buku Siswa hlm. 14) memerlukan loop umpan balik terpadu: sensor kelembapan tanah membaca parameter fisik, mikrokontroler memproses data berdasarkan logika program (ambang batas <40% dan >=70%), dan aktuator (relay/katup selenoid pompa air) mengeksekusi tindakan fisik penyiraman secara otomatis tanpa intervensi manual. Pilihan A salah karena masih bergantung pada tindakan manual manusia. Pilihan B salah sasaran parameter (suhu vs kelembapan media). Pilihan D tidak relevan dengan sistem irigasi otomatis.",
+      "source": {
+        "student_book": {
+          "pages": "13-14",
+          "section": "Bab 1, Subbab C.2: Internet of Things (Penerapan Kontekstual)"
+        },
+        "teacher_guide": {
+          "pages": "46-48",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal aplikasi smart agriculture berbasis IoT merujuk pada Buku Siswa hlm. 13–14.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-B: Menerapkan perancangan solusi siber-fisik berbasis IoT untuk otomatisasi sektor riil",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 13-14 (Implementasi IoT di Indonesia)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 46-48"
+        },
+        "authoring_statement": "Kasus rekayasa irigasi presisi hidroponik dirancang orisinal untuk menguji kemampuan penerapan konseptual IoT dalam pemecahan masalah."
+      }
+    },
+    {
+      "id": "INF12-C01-M02-Q03",
+      "chapter_id": "INF12-C01",
+      "topic_id": "INF12-C01-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Sebuah platform niaga elektronik (e-commerce) mencatat jutaan transaksi harian yang terdiri atas data angka nominal transaksi, riwayat penelusuran kata kunci, rekaman audio keluhan pelanggan di layanan bantuan, serta foto ulasan produk. Dalam paradigma Big Data, bagaimana tim data analis mengklasifikasikan jenis data tersebut dan mengoptimalkannya untuk meningkatkan penjualan?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Seluruh data tersebut merupakan data terstruktur yang dapat langsung disimpan dan dihitung menggunakan rumus aritmetika lembar kerja konvensional."
+        },
+        {
+          "id": "B",
+          "text": "Nominal transaksi adalah data terstruktur, sedangkan audio keluhan dan foto ulasan adalah data tidak terstruktur yang memerlukan pemrosesan khusus (seperti NLP dan computer vision) untuk analisis sentimen dan sistem rekomendasi."
+        },
+        {
+          "id": "C",
+          "text": "Data tidak terstruktur harus dihapus secara berkala dari peladen karena tidak memiliki nilai ekonomis bagi strategi bisnis perusahaan."
+        },
+        {
+          "id": "D",
+          "text": "Analisis Big Data hanya mengolah ulasan teks positif dan secara otomatis memblokir akun pengguna yang menyampaikan keluhan transaksi."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai materi Big Data pada Buku Siswa hlm. 14–16, Big Data mencakup volume data yang sangat masif, baik data terstruktur (seperti angka nominal, tanggal, dan ID produk dalam tabel basis data) maupun data tidak terstruktur (seperti teks ulasan bebas, rekaman audio percakapan, dan citra/foto produk). Untuk menghasilkan wawasan bisnis dan sistem rekomendasi yang akurat, data scientist memanfaatkan teknik pemrosesan khusus seperti pemrosesan bahasa alami (NLP) dan machine learning. Pilihan A keliru karena data audio dan foto tidak dapat diolah langsung dengan spreadsheet biasa. Pilihan C salah karena data tidak terstruktur menyimpan informasi perilaku konsumen yang sangat berharga. Pilihan D salah dan bertentangan dengan prinsip analitik kepuasan pelanggan.",
+      "source": {
+        "student_book": {
+          "pages": "14-16",
+          "section": "Bab 1, Subbab C.3: Big Data"
+        },
+        "teacher_guide": {
+          "pages": "46-48",
+          "section": "Panduan Pembelajaran Bab 1, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario analitis orisinal struktur Big Data e-commerce merujuk pada Buku Siswa hlm. 14–16.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C01-B: Menganalisis karakteristik data terstruktur vs tidak terstruktur dalam pemanfaatan Big Data dan kecerdasan bisnis",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 14-16 (Big Data dan Pengambilan Keputusan)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 46-48"
+        },
+        "authoring_statement": "Analisis tipologi data multi-modal pada ekosistem niaga digital disusun orisinal untuk mengukur kemampuan analitis tingkat lanjut peserta didik."
+      }
+    }
+  ]
+}
