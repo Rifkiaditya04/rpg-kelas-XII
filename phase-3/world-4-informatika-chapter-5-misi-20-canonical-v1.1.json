@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CONTROLLED_REVISION_DRAFT",
+  "dataset": "World 4 Informatika Standard Chapter 5 Original Content - Misi 20 v1.1",
+  "purpose": "Resolved canonical dataset v1.1 for Chapter 5 Mission 20 (Subbab D: Kerangka Regulasi Hukum Siber UU ITE).",
+  "chapter_id": "INF12-C05",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C05-M20-Q01",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-D",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Dalam rangka menciptakan ruang digital yang berkeadilan, aman, dan bertanggung jawab, Undang-Undang Informasi dan Transaksi Elektronik (UU ITE) mengatur larangan perbuatan tertentu dalam pemanfaatan teknologi informasi. Berdasarkan materi pada Buku Siswa hlm. 174–178 dan Panduan Guru hlm. 232–237, perbuatan yang diatur dan dilarang secara tegas di dalam Pasal 27 UU ITE mencakup pendistribusian informasi elektronik yang bermuatan...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pembuatan animasi model tiga dimensi untuk media simulasi sains sekolah."
+        },
+        {
+          "id": "B",
+          "text": "Pelanggaran kesusilaan (pornografi), perjudian, penghinaan atau pencemaran nama baik, serta pemerasan dan/atau pengancaman."
+        },
+        {
+          "id": "C",
+          "text": "Pengunduhan berkas pembaruan kode perangkat tegar (firmware) mikrokontroler dari situs resmi produsen."
+        },
+        {
+          "id": "D",
+          "text": "Pendaftaran nama domain sekolah menggunakan format resmi web.id di registrar nasional."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 174–178 dan Panduan Guru hlm. 232–237 (Aktivitas DSI-K12-08), Pasal 27 UU ITE merinci 4 larangan perbuatan mendistribusikan, mentransmisikan, atau membuat dapat diaksesnya Informasi/Dokumen Elektronik yang memiliki muatan: 1) melanggar kesusilaan (ayat 1); 2) perjudian (ayat 2); 3) penghinaan dan/atau pencemaran nama baik (ayat 3); dan 4) pemerasan dan/atau pengancaman (ayat 4). Pilihan A, C, dan D adalah aktivitas komputasi legal dan edukatif yang tidak melanggar ketentuan hukum.",
+      "source": {
+        "student_book": {
+          "pages": "174-178",
+          "section": "Bab 5, Subbab D: Tindak Pidana Siber dalam Pasal 27 UU ITE"
+        },
+        "teacher_guide": {
+          "pages": "232-237",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal klasifikasi substansi larangan Pasal 27 UU ITE merujuk pada Buku Siswa hlm. 174–178.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-D: Memahami substansi dan ruang lingkup empat perbuatan terlarang dalam Pasal 27 UU ITE",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 174-178 (Ketentuan Pasal 27 UU ITE)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 232-237"
+        },
+        "authoring_statement": "Perumusan butir pemahaman norma hukum Pasal 27 UU ITE disusun mandiri untuk memverifikasi pengetahuan hukum siber siswa."
+      }
+    },
+    {
+      "id": "INF12-C05-M20-Q02",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-D",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Seorang pengguna media sosial sengaja memotong video pidato tokoh masyarakat, menambahkan takarir (caption) provokatif yang memutarbalikkan fakta, dan menyebarkannya dengan tujuan menghasut masyarakat agar membenci kelompok agama dan suku tertentu hingga menimbulkan kegaduhan publik. Perbuatan penyebaran informasi yang bertujuan menimbulkan rasa kebencian atau permusuhan individu dan/atau kelompok masyarakat berdasarkan SARA tersebut merupakan pelanggaran terhadap...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hak cipta perangkat lunak perkantoran open-source model lisensi MIT."
+        },
+        {
+          "id": "B",
+          "text": "Pasal 28 ayat (2) Undang-Undang Informasi dan Transaksi Elektronik (UU ITE)."
+        },
+        {
+          "id": "C",
+          "text": "Standar protokol fisik pengkabelan serat optik IEEE 802.3."
+        },
+        {
+          "id": "D",
+          "text": "Aturan format tata letak lembar kerja dokumen spreadsheet komersial."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 178–180 dan Panduan Guru hlm. 232–237, Pasal 28 ayat (2) UU ITE secara eksplisit menyatakan bahwa setiap orang dengan sengaja dan tanpa hak menyebarkan informasi yang ditujukan untuk menimbulkan rasa kebencian atau permusuhan individu dan/atau kelompok masyarakat tertentu berdasarkan atas suku, agama, ras, dan antargolongan (SARA) diancam dengan sanksi pidana. Tindakan mengedit video untuk memicu permusuhan antar-SARA memenuhi seluruh unsur pelanggaran pasal ini. Pilihan A, C, dan D tidak berkaitan dengan hukum siber konten SARA.",
+      "source": {
+        "student_book": {
+          "pages": "178-180",
+          "section": "Bab 5, Subbab D: Ujaran Kebencian dan Isu SARA dalam Pasal 28 UU ITE"
+        },
+        "teacher_guide": {
+          "pages": "232-237",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal analisis kasus penyebaran konten permusuhan SARA merujuk pada Buku Siswa hlm. 178–180.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-D: Menerapkan analisis yuridis terhadap kasus penyebaran ujaran kebencian dan permusuhan SARA sesuai Pasal 28 ayat (2) UU ITE",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 178-180 (Ketentuan Pasal 28 UU ITE)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 232-237"
+        },
+        "authoring_statement": "Studi kasus provokasi SARA digital disusun mandiri untuk memverifikasi penerapan kesadaran hukum teknologi informasi."
+      }
+    },
+    {
+      "id": "INF12-C05-M20-Q03",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-D",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Perhatikan tiga kasus hukum siber berikut:\\n(1) Akun toko daring fiktif menyebarkan informasi diskon palsu yang menjerat pembeli mentransfer uang namun barang tidak pernah dikirim (merugikan konsumen dalam transaksi elektronik).\\n(2) Seorang oknum mengirimkan pesan teks langsung melalui aplikasi obrolan ke ponsel pribadi seorang siswi berisi ancaman akan melukai korban secara fisik jika tidak menuruti keinginannya.\\n(3) Seorang warganet mengunggah tuduhan tidak berdasar di media sosial yang menuduh kepala sekolah melakukan korupsi dengan mencantumkan nama lengkap dan foto korban secara terbuka.\\nBerdasarkan klasifikasi ketentuan UU ITE (Buku Siswa hlm. 174–182), urutan pasal yang tepat dilanggar oleh ketiga kasus tersebut secara berturut-turut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kasus (1) Pasal 29; Kasus (2) Pasal 27 ayat (3); Kasus (3) Pasal 28 ayat (1)."
+        },
+        {
+          "id": "B",
+          "text": "Kasus (1) Pasal 28 ayat (1); Kasus (2) Pasal 29; Kasus (3) Pasal 27 ayat (3)."
+        },
+        {
+          "id": "C",
+          "text": "Kasus (1) Pasal 27 ayat (1); Kasus (2) Pasal 28 ayat (2); Kasus (3) Pasal 29."
+        },
+        {
+          "id": "D",
+          "text": "Kasus (1) Pasal 28 ayat (2); Kasus (2) Pasal 27 ayat (4); Kasus (3) Pasal 27 ayat (1)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 174–182 dan Panduan Guru hlm. 232–237:\\n- Kasus (1) menyebarkan berita bohong dan menyesatkan yang mengakibatkan kerugian konsumen dalam transaksi elektronik, melanggar Pasal 28 ayat (1) UU ITE.\\n- Kasus (2) mengirimkan ancaman kekerasan atau menakut-nakuti yang ditujukan secara pribadi, melanggar Pasal 29 UU ITE.\\n- Kasus (3) mendistribusikan dokumen elektronik yang memuat penghinaan dan/atau pencemaran nama baik, melanggar Pasal 27 ayat (3) UU ITE.\\nMaka urutan yang tepat adalah Kasus (1) Pasal 28 ayat (1); Kasus (2) Pasal 29; Kasus (3) Pasal 27 ayat (3). Pilihan B tepat, sedangkan pilihan A, C, dan D keliru memetakan pasal.",
+      "source": {
+        "student_book": {
+          "pages": "174-182",
+          "section": "Bab 5, Subbab D: Diferensiasi Kasus Pelanggaran Pasal 27, 28, dan 29 UU ITE"
+        },
+        "teacher_guide": {
+          "pages": "232-237",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal analisis perbandingan kasus pelanggaran Pasal 27, 28, dan 29 UU ITE merujuk pada Buku Siswa hlm. 174–182.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-D: Menganalisis perbedaan unsur materiil tindak pidana siber pada Pasal 27, 28, dan 29 UU ITE melalui komparasi studi kasus",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 174-182 (Komparasi Pasal 27, 28, 29 UU ITE)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 232-237"
+        },
+        "authoring_statement": "Analisis diferensiasi tiga kasus hukum siber disusun mandiri untuk mengukur ketajaman nalar hukum dan analisis kasus nyata siswa."
+      }
+    }
+  ]
+}

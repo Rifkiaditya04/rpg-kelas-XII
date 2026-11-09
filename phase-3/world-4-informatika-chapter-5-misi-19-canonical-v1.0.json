@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_BASELINE",
+  "dataset": "World 4 Informatika Standard Chapter 5 Original Content - Misi 19 v1.0",
+  "purpose": "Authoritative base canonical dataset for Chapter 5 Mission 19 (Subbab C: Transformasi Informatika dalam Pendidikan dan Ekonomi).",
+  "chapter_id": "INF12-C05",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C05-M19-Q01",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-C",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Penerapan teknologi informasi dalam proses belajar-mengajar menghadirkan kemudahan akses pengetahuan, namun di sisi lain memunculkan tantangan kesenjangan digital (Digital Divide). Istilah kesenjangan digital dalam konteks pendidikan di Indonesia secara tepat merujuk pada...",
+      "options": [
+        "Ketidakmampuan siswa dalam mengetik teks menggunakan sepuluh jari pada papan ketik mekanik komputer.",
+        "Kesenjangan nyata dalam akses terhadap infrastruktur fisik TIK (seperti perangkat gawai dan jaringan internet stabil) serta disparitas tingkat kecakapan literasi digital antardaerah perkotaan dan wilayah 3T (tertinggal, terdepan, terluar).",
+        "Perbedaan merek sistem operasi ponsel pintar yang digunakan oleh dewan guru dan kepala sekolah.",
+        "Selisih harga jual antara buku pelajaran cetak konvensional dan buku elektronik berformat PDF."
+      ],
+      "answer": "Kesenjangan nyata dalam akses terhadap infrastruktur fisik TIK (seperti perangkat gawai dan jaringan internet stabil) serta disparitas tingkat kecakapan literasi digital antardaerah perkotaan dan wilayah 3T (tertinggal, terdepan, terluar).",
+      "explanation": "Berdasarkan Buku Siswa hlm. 163–166 dan Panduan Guru hlm. 227–232, kesenjangan digital (Digital Divide) dalam bidang pendidikan adalah kesenjangan sosial-ekonomi yang dialami masyarakat terkait keterbatasan akses fisik infrastruktur teknologi telekomunikasi (komputer, internet berkecepatan tinggi) serta kesenjangan keterampilan (kompetensi literasi digital) dalam memanfaatkan teknologi tersebut antara wilayah perkotaan maju dan daerah 3T. Pilihan A, C, dan D bukan definisi esensial dari fenomena kesenjangan digital.",
+      "source": {
+        "student_book": {
+          "pages": "163-166",
+          "section": "Bab 5, Subbab C: Peran TIK dalam Pendidikan dan Isu Kesenjangan Digital"
+        },
+        "teacher_guide": {
+          "pages": "227-232",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal konsep kesenjangan digital pendidikan merujuk pada Buku Siswa hlm. 163–166.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-C: Memahami konsep Digital Divide (kesenjangan digital) dalam pemerataan akses dan literasi TIK di dunia pendidikan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 163-166 (Tantangan Kesenjangan Digital)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 227-232"
+        },
+        "authoring_statement": "Perumusan butir konseptual kesenjangan digital disusun mandiri untuk memverifikasi pemahaman keadilan sosial dalam pemanfaatan TIK."
+      }
+    },
+    {
+      "id": "INF12-C05-M19-Q02",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah kelompok wirausaha siswa memproduksi kerajinan daur ulang limbah plastik. Selama ini pemasaran produk hanya menjangkau lingkungan sekitar sekolah dengan pembayaran uang tunai. Untuk memperluas jangkauan pasar secara nasional dan meningkatkan efisiensi transaksi sesuai materi ekonomi digital (Buku Siswa hlm. 167–172), integrasi platform digital yang paling tepat diadopsi adalah...",
+      "options": [
+        "Memanfaatkan gerai lokapasar digital (e-commerce) yang terintegrasi dengan gateway pembayaran nontunai (seperti QRIS dan dompet digital) serta layanan logistik kurir terintegrasi.",
+        "Menghapus seluruh akun perbankan dan beralih ke sistem barter barang secara tatap muka langsung di balai desa.",
+        "Membayar pihak ketiga untuk membobol sistem basis data bank demi mendapatkan modal usaha secara instan.",
+        "Mengirimkan surat penawaran cetak bertanda tangan basah melalui pos kilat ke ribuan alamat rumah warga secara acak."
+      ],
+      "answer": "Memanfaatkan gerai lokapasar digital (e-commerce) yang terintegrasi dengan gateway pembayaran nontunai (seperti QRIS dan dompet digital) serta layanan logistik kurir terintegrasi.",
+      "explanation": "Berdasarkan Buku Siswa hlm. 167–172 dan Panduan Guru hlm. 227–232 mengenai transformasi ekonomi digital, platform e-commerce memfasilitasi transaksi jual-beli lintas geografis tanpa batas ruang fisik, didukung oleh Payment Gateway (seperti QRIS, dompet digital, atau virtual account) yang menjamin pencatatan transaksi secara instan, aman, dan transparan, serta integrasi rantai pasok logistik pihak ketiga. Pilihan B tidak memanfaatkan teknologi modern. Pilihan C merupakan tindak pidana siber berat. Pilihan D tidak efektif dan memakan biaya operasional tinggi.",
+      "source": {
+        "student_book": {
+          "pages": "167-172",
+          "section": "Bab 5, Subbab C: Transformasi Ekonomi Digital dan Platform E-Commerce"
+        },
+        "teacher_guide": {
+          "pages": "227-232",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal adopsi e-commerce dan payment gateway bagi UMKM merujuk pada Buku Siswa hlm. 167–172.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-C: Menerapkan pemanfaatan platform niaga elektronik (e-commerce) dan teknologi finansial (fintech) dalam wirausaha",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 167-172 (Ekonomi Digital dan Transaksi Nontunai)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 227-232"
+        },
+        "authoring_statement": "Studi kasus digitalisasi produk daur ulang siswa disusun mandiri untuk memverifikasi penerapan konsep ekonomi digital."
+      }
+    },
+    {
+      "id": "INF12-C05-M19-Q03",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Saat pandemi melanda, adopsi sistem pembelajaran daring (online learning) dan Learning Management System (LMS) melonjak drastis. Namun ketika pembelajaran tatap muka kembali normal, evaluasi menunjukkan bahwa proses belajar daring murni memiliki kelemahan tertentu bila dibandingkan metode pembelajaran hibrida (blended learning). Analisis kritis yang paling tepat mengenai perbandingan kedua model tersebut adalah...",
+      "options": [
+        "Pembelajaran daring murni unggul dalam pembentukan karakter sosial tatap muka, sedangkan blended learning menghabiskan kuota data tanpa manfaat nyata.",
+        "Pembelajaran daring murni memberikan fleksibilitas akses materi tanpa batas ruang-waktu, namun berisiko mengurangi interaksi sosial langsung dan keterampilan kinestetik-kolaboratif; oleh karena itu, model blended learning memadukan fleksibilitas materi digital dengan kedalaman interaksi emosional dan praktikum di kelas nyata.",
+        "Blended learning adalah metode usang yang tidak lagi menggunakan koneksi internet sama sekali sehingga bebas dari biaya operasional.",
+        "Pembelajaran daring murni terbukti 100% menggantikan seluruh fungsi keberadaan guru dan gedung sekolah secara permanen tanpa perlu asesmen langsung."
+      ],
+      "answer": "Pembelajaran daring murni memberikan fleksibilitas akses materi tanpa batas ruang-waktu, namun berisiko mengurangi interaksi sosial langsung dan keterampilan kinestetik-kolaboratif; oleh karena itu, model blended learning memadukan fleksibilitas materi digital dengan kedalaman interaksi emosional dan praktikum di kelas nyata.",
+      "explanation": "Berdasarkan Buku Siswa hlm. 164–167 dan Panduan Guru hlm. 227–232 (Aktivitas DSI-K12-07), refleksi pemanfaatan TIK dalam pendidikan menunjukkan bahwa pembelajaran daring memberikan kemandirian belajar dan keterbukaan akses referensi digital secara luas. Namun, interaksi langsung guru-siswa sangat penting untuk pembentukan afektif (karakter, empati, dan gotong royong) serta pendampingan praktikum. Oleh karena itu, pendekatan Blended Learning (pembelajaran hibrida/campuran) dinilai paling seimbang dan optimal. Pilihan A membalik fakta. Pilihan C salah mendefinisikan blended learning. Pilihan D mengabaikan peran pedagogis esensial guru di sekolah.",
+      "source": {
+        "student_book": {
+          "pages": "164-167",
+          "section": "Bab 5, Subbab C: Evaluasi Kritis Pembelajaran Daring vs Blended Learning"
+        },
+        "teacher_guide": {
+          "pages": "227-232",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal analisis komparatif pembelajaran daring vs blended learning merujuk pada Buku Siswa hlm. 164–167.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-C: Menganalisis kelebihan, kelemahan, dan efektivitas implementasi pembelajaran daring dibanding model blended learning",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 164-167 (Refleksi Pembelajaran Daring)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 227-232"
+        },
+        "authoring_statement": "Analisis evaluatif pedagogi digital pasca-pandemi disusun mandiri untuk memverifikasi kemampuan berpikir tingkat tinggi peserta didik."
+      }
+    }
+  ]
+}

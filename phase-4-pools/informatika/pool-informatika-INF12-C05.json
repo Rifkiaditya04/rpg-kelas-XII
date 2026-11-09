@@ -1,0 +1,986 @@
+{
+  "pool_id": "POOL-INFORMATIKA-INF12-C05",
+  "subject": "informatika",
+  "chapter": "INF12-C05",
+  "track": "pilihan",
+  "curriculum": [
+    "Merdeka"
+  ],
+  "grade": 12,
+  "status": "active",
+  "content_version": 1,
+  "competencies": [
+    {
+      "competency_id": "INF12-C05-A",
+      "name": "Platform, Fitur, dan Algoritma Media Sosial",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C05-B",
+      "name": "Manfaat, Dampak Negatif, dan Fenomena FOMO Media Sosial",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C05-C",
+      "name": "Transformasi Informatika dalam Pendidikan dan Ekonomi",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C05-D",
+      "name": "Kerangka Regulasi Hukum Siber UU ITE (Pasal 27–29)",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C05-E",
+      "name": "Detoksifikasi Digital, Manajemen Penggunaan TIK, dan Kewirausahaan Siber",
+      "question_count": 3
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "INF12-C05-A-1101",
+      "phase3_id": "INF12-C05-M17-Q01",
+      "primary_competency": "INF12-C05-A",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Media sosial berkembang dalam berbagai format platform dengan spesialisasi konten yang berbeda. Platform yang memfokuskan layanannya pada publikasi dan konsumsi pesan teks pendek (mikroblog) secara cepat untuk menyampaikan opini, berita aktual, dan topik tren (trending topics) secara waktu-nyata (real-time) diklasifikasikan sebagai jenis platform...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Media Sharing Network (jejaring berbagi berkas audio-visual berdurasi panjang)."
+        },
+        {
+          "id": "B",
+          "text": "Microblogging Network (jejaring mikroblog pesan teks ringkas dan pembaruan instan)."
+        },
+        {
+          "id": "C",
+          "text": "Discussion Forum (forum tanya-jawab berbasis utas percakapan komunitas spesifik)."
+        },
+        {
+          "id": "D",
+          "text": "Professional Networking Service (jejaring kurikulum vitae dan relasi rekrutmen kerja formal)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 141–145 dan Panduan Guru hlm. 213–220 mengenai klasifikasi platform media sosial, Microblogging Network (seperti Twitter/X) dirancang khusus untuk memungkinkan pengguna mengirimkan dan membaca pembaruan pesan teks ringkas secara cepat, interaktif, dan real-time guna mendiskusikan topik hangat (trending topics). Pilihan A berfokus pada video/foto resolusi tinggi (seperti YouTube). Pilihan C berbasis papan buletin/utas tanya jawab (seperti Reddit atau Quora). Pilihan D berorientasi pada karier profesional dan lowongan kerja (seperti LinkedIn).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "141-145",
+          "section": "Bab 5, Subbab A: Jenis Platform dan Fitur Media Sosial"
+        },
+        "teacher_guide": {
+          "pages": "213-220",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal klasifikasi platform microblogging merujuk pada Buku Siswa hlm. 141–145.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-A: Memahami berbagai jenis platform media sosial beserta fitur dan peruntukan komunikasinya",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 141-145 (Karakteristik Platform Media Sosial)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 213-220"
+        },
+        "authoring_statement": "Perumusan butir konseptual klasifikasi jenis platform media sosial disusun mandiri untuk mengukur pemahaman taksonomi media digital."
+      }
+    },
+    {
+      "question_id": "INF12-C05-A-2102",
+      "phase3_id": "INF12-C05-M17-Q02",
+      "primary_competency": "INF12-C05-A",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Seorang siswa menyukai tiga video edukasi astronomi di lini masa (feed) akun media sosialnya dan membagikan salah satu video ke temannya. Beberapa hari kemudian, siswa tersebut menyadari bahwa hampir seluruh beranda media sosialnya menampilkan rekomendasi konten terkait sains luar angkasa dan antariksa. Mekanisme komputasi yang paling tepat menjelaskan fenomena perubahan tampilan beranda tersebut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pihak administrator aplikasi memantau percakapan mikrofon siswa secara langsung tanpa perantara perangkat lunak."
+        },
+        {
+          "id": "B",
+          "text": "Alamat IP router sekolah secara otomatis mengganti preferensi akun seluruh siswa yang terhubung dalam satu jaringan LAN."
+        },
+        {
+          "id": "C",
+          "text": "Algoritma rekomendasi platform mengolah riwayat interaksi pengguna (metrik interaksi seperti likes, shares, dan durasi menonton) untuk mempersonalisasi kurasi konten pada umpan beranda (feed)."
+        },
+        {
+          "id": "D",
+          "text": "Terjadi infeksi malware jenis Trojan yang menghapus seluruh data kategori lain pada basis data ponsel pintar siswa."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Buku Siswa hlm. 145–150 dan Panduan Guru hlm. 213–220 mengenai mekanisme kerja dan fitur media sosial, platform media sosial modern memanfaatkan algoritma pembelajaran mesin (machine learning) untuk menganalisis jejak data interaksi pengguna (user engagement signals: riwayat tontonan, klik suka, komentar, dan pembagian konten). Algoritma ini secara dinamis mengurasi dan memprioritaskan konten serupa agar relevan dengan minat pengguna guna meningkatkan waktu interaksi di aplikasi. Pilihan A, B, dan D adalah penjelasan spekulatif yang tidak sesuai dengan cara kerja sistem kurasi berbasis analitik data interaksi platform.",
+      "gameplay": {
+        "correct_damage": 75,
+        "base_xp": 15,
+        "wrong_penalty": 10,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "145-150",
+          "section": "Bab 5, Subbab A: Algoritma Kurasi dan Personalisasi Feed Media Sosial"
+        },
+        "teacher_guide": {
+          "pages": "213-220",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal analisis personalisasi algoritma feed media sosial merujuk pada Buku Siswa hlm. 145–150.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-A: Menerapkan pemahaman mekanisme algoritma rekomendasi konten berbasis interaksi pengguna pada platform media sosial",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 145-150 (Mekanisme Algoritma Media Sosial)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 213-220"
+        },
+        "authoring_statement": "Studi kasus personalisasi beranda konten sains disusun mandiri untuk menguji pemahaman aplikasi algoritma rekomendasi media digital."
+      }
+    },
+    {
+      "question_id": "INF12-C05-A-3103",
+      "phase3_id": "INF12-C05-M17-Q03",
+      "primary_competency": "INF12-C05-A",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Algoritma kurasi media sosial secara terus-menerus menyajikan berita dan opini yang sejalan dengan riwayat interaksi serta pandangan politik seorang pengguna. Akibatnya, pengguna tersebut hanya terpapar pada sudut pandang yang seragam dan tidak pernah melihat pandangan yang berseberangan. Ditinjau dari perspektif dampak sosial informatika (Buku Siswa hlm. 148–150), dampak sosial-psikologis paling kritis yang ditimbulkan dari fenomena ruang gema (echo chamber) dan gelembung filter (filter bubble) ini adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Penurunan kecepatan transmisi data pada kartu jaringan lokal ponsel pintar pengguna."
+        },
+        {
+          "id": "B",
+          "text": "Penguatan polarisasi opini publik dan pengikisan kemampuan berpikir kritis akibat terisolasinya individu dari keberagaman perspektif informasi yang valid."
+        },
+        {
+          "id": "C",
+          "text": "Terhapusnya basis data profil pengguna secara permanen oleh pengembang platform karena dianggap melanggar kuota pencarian."
+        },
+        {
+          "id": "D",
+          "text": "Kenaikan biaya tagihan langganan listrik akibat pemrosesan algoritma peladen media sosial yang intensif."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 148–150 dan Panduan Guru hlm. 213–220 mengenai dampak algoritma rekomendasi terhadap lingkungan sosial, fenomena Filter Bubble (gelembung penyaring informasi) dan Echo Chamber (ruang gema opini) menyebabkan pengguna hanya menerima informasi yang mengonfirmasi bias pemikirannya sendiri (confirmation bias). Dampak negatif sosial yang paling berbahaya adalah meningkatnya polarisasi antarkelompok masyarakat, penurunan toleransi terhadap pandangan yang berbeda, dan tumpulnya nalar kritis karena tidak ada pembanding fakta alternatif. Pilihan A, C, dan D tidak relevan dengan dampak sosiologis dari algoritma kurasi media sosial.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 25,
+        "wrong_penalty": 15,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "148-150",
+          "section": "Bab 5, Subbab A: Dampak Sosial Algoritma (Filter Bubble & Echo Chamber)"
+        },
+        "teacher_guide": {
+          "pages": "213-220",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal analisis dampak sosial filter bubble dan echo chamber merujuk pada Buku Siswa hlm. 148–150.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-A: Menganalisis implikasi sosial-psikologis dari fenomena Filter Bubble dan Echo Chamber akibat kurasi algoritma",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 148-150 (Dampak Ruang Gema dan Gelembung Informasi)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 213-220"
+        },
+        "authoring_statement": "Analisis kritis polarisasi sosial akibat algoritma personalisasi disusun mandiri untuk memverifikasi penalaran tingkat tinggi siswa."
+      }
+    },
+    {
+      "question_id": "INF12-C05-B-4201",
+      "phase3_id": "INF12-C05-M18-Q01",
+      "primary_competency": "INF12-C05-B",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Di era digital saat ini, penggunaan media sosial yang berlebihan kerap memicu fenomena psikologis yang dikenal dengan istilah FOMO (Fear of Missing Out). Sesuai pembahasan Buku Siswa hlm. 155–158 dan Panduan Guru hlm. 221–227, karakteristik utama dari fenomena FOMO adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ketakutan mendalam terhadap kerusakan perangkat keras komputer akibat lonjakan arus listrik saat pengisian daya."
+        },
+        {
+          "id": "B",
+          "text": "Perasaan cemas, gelisah, atau khawatir yang terus-menerus muncul karena merasa tertinggal dari tren, peristiwa menarik, atau pengalaman menyenangkan yang sedang dialami orang lain di media sosial."
+        },
+        {
+          "id": "C",
+          "text": "Dorongan untuk menghapus seluruh akun media sosial secara permanen guna menghindari pembaruan aplikasi otomatis."
+        },
+        {
+          "id": "D",
+          "text": "Ketidakmampuan perangkat lunak penjelajah web dalam memuat konten multimedia beresolusi tinggi di area terpencil."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 155–158 dan Panduan Guru hlm. 221–227 (Aktivitas DSI-K12-04 dan DSI-K12-05), FOMO (Fear of Missing Out) didefinisikan sebagai kecemasan sosial yang ditandai oleh kekhawatiran kompulsif bahwa orang lain sedang menikmati pengalaman berharga atau mengetahui informasi tren tertentu yang terlewatkan oleh dirinya. Perasaan ini mendorong individu untuk memeriksa gawai dan media sosial secara kompulsif tanpa jeda. Pilihan A adalah ketakutan fisik/listrik. Pilihan C mendeskripsikan tindakan detoksifikasi ekstrem. Pilihan D adalah masalah teknis koneksi internet.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "155-158",
+          "section": "Bab 5, Subbab B: Fenomena Psikososial FOMO (Fear of Missing Out)"
+        },
+        "teacher_guide": {
+          "pages": "221-227",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal definisi karakteristik FOMO merujuk pada Buku Siswa hlm. 155–158.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-B: Memahami definisi, karakteristik, dan indikasi psikologis dari fenomena FOMO dalam penggunaan media sosial",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 155-158 (Sindrom FOMO)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 221-227"
+        },
+        "authoring_statement": "Konseptualisasi pemahaman fenomena FOMO disusun mandiri untuk memverifikasi literasi kesehatan mental digital peserta didik."
+      }
+    },
+    {
+      "question_id": "INF12-C05-B-5202",
+      "phase3_id": "INF12-C05-M18-Q02",
+      "primary_competency": "INF12-C05-B",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Seorang siswa merasa rendah diri, cemas, dan tidak percaya diri setelah berulang kali melihat unggahan teman-temannya di media sosial yang tampak selalu berlibur mewah, berpakaian mahal, dan memiliki kehidupan tanpa masalah. Berdasarkan panduan penggunaan media sosial secara bijak dan sehat (Buku Siswa hlm. 158–162), tindakan yang paling tepat diterapkan oleh siswa tersebut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Meminjam uang dari pinjaman daring ilegal agar dapat mengunggah gaya hidup mewah serupa demi menaikkan status sosial semu."
+        },
+        {
+          "id": "B",
+          "text": "Menyadari bahwa unggahan media sosial umumnya hanyalah cuplikan terbaik (highlight reel) yang dikurasi, bukan representasi utuh realitas hidup, serta membatasi durasi layar (screen time) dan fokus pada pengembangan potensi diri nyata."
+        },
+        {
+          "id": "C",
+          "text": "Mengirimkan pesan anonim bernada ancaman dan kebencian ke kolom komentar akun teman-temannya tersebut."
+        },
+        {
+          "id": "D",
+          "text": "Membeli pengikut (followers) palsu secara massal untuk menandingi jumlah interaksi teman-temannya."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 158–162 dan Panduan Guru hlm. 221–227, media sosial kerap menampilkan realitas terdistorsi di mana pengguna hanya memamerkan momen-momen terbaik dan gemerlap (highlight reel effect). Sikap bijak yang dianjurkan adalah mengembangkan literasi digital kritis dengan memahami bahwa apa yang tampil di layar tidak mencerminkan kenyataan hidup seutuhnya, membatasi screen time, menyaring akun yang memicu kecemasan (unfollow/mute), dan memusatkan energi pada pencapaian positif di dunia nyata. Pilihan A, C, dan D merupakan respons destruktif dan melanggar etika/hukum.",
+      "gameplay": {
+        "correct_damage": 75,
+        "base_xp": 15,
+        "wrong_penalty": 10,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "158-162",
+          "section": "Bab 5, Subbab B: Pemanfaatan Media Sosial Secara Bijak dan Sehat"
+        },
+        "teacher_guide": {
+          "pages": "221-227",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal pereduksian dampak perbandingan sosial semu merujuk pada Buku Siswa hlm. 158–162.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-B: Menerapkan prinsip berpikir kritis dan pengelolaan diri dalam menyikapi perbandingan sosial semu di media sosial",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 158-162 (Sikap Bijak Menggunakan Media Sosial)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 221-227"
+        },
+        "authoring_statement": "Studi kasus perbandingan sosial semu disusun mandiri untuk memverifikasi penerapan sikap bijak bermedia digital."
+      }
+    },
+    {
+      "question_id": "INF12-C05-B-6203",
+      "phase3_id": "INF12-C05-M18-Q03",
+      "primary_competency": "INF12-C05-B",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam sebuah grup obrolan kelas daring, seorang peserta didik menjadi sasaran pengiriman stiker editan yang merendahkan fisik (body shaming), disertai pesan ejekan berulang dari beberapa siswa lain hingga korban enggan masuk sekolah karena malu dan tertekan secara psikis. Berdasarkan analisis dampak negatif media digital (Buku Siswa hlm. 152–155), tindakan penanganan yang paling etis, sistematis, dan efektif dilakukan oleh korban maupun pengurus kelas adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Membalas dengan membuat akun tiruan (fake account) untuk menyebarkan fitnah pribadi terhadap keluarga para pelaku."
+        },
+        {
+          "id": "B",
+          "text": "Mengabaikan masalah secara total karena perundungan daring di grup obrolan tertutup dianggap sebagai hal wajar yang akan hilang dengan sendirinya."
+        },
+        {
+          "id": "C",
+          "text": "Menyimpan tangkapan layar (screenshot) bukti percakapan sebagai dokumentasi faktual, segera memblokir akun pelaku dari ruang pribadi, serta melaporkan bukti tersebut kepada guru bimbingan konseling/wali kelas untuk penanganan resmi."
+        },
+        {
+          "id": "D",
+          "text": "Mengunggah tangkapan layar tersebut ke media sosial publik dengan menambahkan narasi provokatif untuk memicu persekusi massa secara terbuka."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Buku Siswa hlm. 152–155 dan Panduan Guru hlm. 221–227 mengenai penanganan perundungan siber (cyberbullying), langkah terstruktur dan bertanggung jawab adalah: 1) mengumpulkan dan mengamankan bukti digital (tangkapan layar/tautan log chat tanpa dimanipulasi); 2) memutus kontak langsung dengan pelaku (blokir/mute); dan 3) melaporkan bukti tersebut ke pihak otoritas yang kompeten (guru BK, kepala sekolah, atau orang tua) untuk diselesaikan melalui jalur mediasi dan disiplin formal sekolah. Pilihan A melanggar etika dan UU ITE. Pilihan B membiarkan korban mengalami trauma psikologis berkepanjangan. Pilihan D berisiko memicu pencemaran nama baik dan persekusi liar di ruang publik.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 25,
+        "wrong_penalty": 15,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "152-155",
+          "section": "Bab 5, Subbab B: Mitigasi Perundungan Siber (Cyberbullying)"
+        },
+        "teacher_guide": {
+          "pages": "221-227",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal analisis penanganan perundungan siber merujuk pada Buku Siswa hlm. 152–155.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-B: Menganalisis dampak perundungan siber dan merumuskan langkah penanganan sistematis, etis, dan bertanggung jawab",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 152-155 (Dampak Negatif Cyberbullying dan Solusinya)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 221-227"
+        },
+        "authoring_statement": "Kasus investigasi perundungan siber di grup kelas daring disusun mandiri untuk memverifikasi penalaran etika dan hukum siber siswa."
+      }
+    },
+    {
+      "question_id": "INF12-C05-C-7301",
+      "phase3_id": "INF12-C05-M19-Q01",
+      "primary_competency": "INF12-C05-C",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Penerapan teknologi informasi dalam proses belajar-mengajar menghadirkan kemudahan akses pengetahuan, namun di sisi lain memunculkan tantangan kesenjangan digital (Digital Divide). Istilah kesenjangan digital dalam konteks pendidikan di Indonesia secara tepat merujuk pada...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ketidakmampuan siswa dalam mengetik teks menggunakan sepuluh jari pada papan ketik mekanik komputer."
+        },
+        {
+          "id": "B",
+          "text": "Kesenjangan nyata dalam akses terhadap infrastruktur fisik TIK (seperti perangkat gawai dan jaringan internet stabil) serta disparitas tingkat kecakapan literasi digital antardaerah perkotaan dan wilayah 3T (tertinggal, terdepan, terluar)."
+        },
+        {
+          "id": "C",
+          "text": "Perbedaan merek sistem operasi ponsel pintar yang digunakan oleh dewan guru dan kepala sekolah."
+        },
+        {
+          "id": "D",
+          "text": "Selisih harga jual antara buku pelajaran cetak konvensional dan buku elektronik berformat PDF."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 163–166 dan Panduan Guru hlm. 227–232, kesenjangan digital (Digital Divide) dalam bidang pendidikan adalah kesenjangan sosial-ekonomi yang dialami masyarakat terkait keterbatasan akses fisik infrastruktur teknologi telekomunikasi (komputer, internet berkecepatan tinggi) serta kesenjangan keterampilan (kompetensi literasi digital) dalam memanfaatkan teknologi tersebut antara wilayah perkotaan maju dan daerah 3T. Pilihan A, C, dan D bukan definisi esensial dari fenomena kesenjangan digital.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "163-166",
+          "section": "Bab 5, Subbab C: Peran TIK dalam Pendidikan dan Isu Kesenjangan Digital"
+        },
+        "teacher_guide": {
+          "pages": "227-232",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal konsep kesenjangan digital pendidikan merujuk pada Buku Siswa hlm. 163–166.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-C: Memahami konsep Digital Divide (kesenjangan digital) dalam pemerataan akses dan literasi TIK di dunia pendidikan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 163-166 (Tantangan Kesenjangan Digital)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 227-232"
+        },
+        "authoring_statement": "Perumusan butir konseptual kesenjangan digital disusun mandiri untuk memverifikasi pemahaman keadilan sosial dalam pemanfaatan TIK."
+      }
+    },
+    {
+      "question_id": "INF12-C05-C-8302",
+      "phase3_id": "INF12-C05-M19-Q02",
+      "primary_competency": "INF12-C05-C",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah kelompok wirausaha siswa memproduksi kerajinan daur ulang limbah plastik. Selama ini pemasaran produk hanya menjangkau lingkungan sekitar sekolah dengan pembayaran uang tunai. Untuk memperluas jangkauan pasar secara nasional dan meningkatkan efisiensi transaksi sesuai materi ekonomi digital (Buku Siswa hlm. 167–172), integrasi platform digital yang paling tepat diadopsi adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Memanfaatkan gerai lokapasar digital (e-commerce) yang terintegrasi dengan gateway pembayaran nontunai (seperti QRIS dan dompet digital) serta layanan logistik kurir terintegrasi."
+        },
+        {
+          "id": "B",
+          "text": "Menghapus seluruh akun perbankan dan beralih ke sistem barter barang secara tatap muka langsung di balai desa."
+        },
+        {
+          "id": "C",
+          "text": "Membayar pihak ketiga untuk membobol sistem basis data bank demi mendapatkan modal usaha secara instan."
+        },
+        {
+          "id": "D",
+          "text": "Mengirimkan surat penawaran cetak bertanda tangan basah melalui pos kilat ke ribuan alamat rumah warga secara acak."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Berdasarkan Buku Siswa hlm. 167–172 dan Panduan Guru hlm. 227–232 mengenai transformasi ekonomi digital, platform e-commerce memfasilitasi transaksi jual-beli lintas geografis tanpa batas ruang fisik, didukung oleh Payment Gateway (seperti QRIS, dompet digital, atau virtual account) yang menjamin pencatatan transaksi secara instan, aman, dan transparan, serta integrasi rantai pasok logistik pihak ketiga. Pilihan B tidak memanfaatkan teknologi modern. Pilihan C merupakan tindak pidana siber berat. Pilihan D tidak efektif dan memakan biaya operasional tinggi.",
+      "gameplay": {
+        "correct_damage": 75,
+        "base_xp": 15,
+        "wrong_penalty": 10,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "167-172",
+          "section": "Bab 5, Subbab C: Transformasi Ekonomi Digital dan Platform E-Commerce"
+        },
+        "teacher_guide": {
+          "pages": "227-232",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal adopsi e-commerce dan payment gateway bagi UMKM merujuk pada Buku Siswa hlm. 167–172.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-C: Menerapkan pemanfaatan platform niaga elektronik (e-commerce) dan teknologi finansial (fintech) dalam wirausaha",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 167-172 (Ekonomi Digital dan Transaksi Nontunai)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 227-232"
+        },
+        "authoring_statement": "Studi kasus digitalisasi produk daur ulang siswa disusun mandiri untuk memverifikasi penerapan konsep ekonomi digital."
+      }
+    },
+    {
+      "question_id": "INF12-C05-C-9303",
+      "phase3_id": "INF12-C05-M19-Q03",
+      "primary_competency": "INF12-C05-C",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Saat pandemi melanda, adopsi sistem pembelajaran daring (online learning) dan Learning Management System (LMS) melonjak drastis. Namun ketika pembelajaran tatap muka kembali normal, evaluasi menunjukkan bahwa proses belajar daring murni memiliki kelemahan tertentu bila dibandingkan metode pembelajaran hibrida (blended learning). Analisis kritis yang paling tepat mengenai perbandingan kedua model tersebut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pembelajaran daring murni unggul dalam pembentukan karakter sosial tatap muka, sedangkan blended learning menghabiskan kuota data tanpa manfaat nyata."
+        },
+        {
+          "id": "B",
+          "text": "Pembelajaran daring murni memberikan fleksibilitas akses materi tanpa batas ruang-waktu, namun berisiko mengurangi interaksi sosial langsung dan keterampilan kinestetik-kolaboratif; oleh karena itu, model blended learning memadukan fleksibilitas materi digital dengan kedalaman interaksi emosional dan praktikum di kelas nyata."
+        },
+        {
+          "id": "C",
+          "text": "Blended learning adalah metode usang yang tidak lagi menggunakan koneksi internet sama sekali sehingga bebas dari biaya operasional."
+        },
+        {
+          "id": "D",
+          "text": "Pembelajaran daring murni terbukti 100% menggantikan seluruh fungsi keberadaan guru dan gedung sekolah secara permanen tanpa perlu asesmen langsung."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 164–167 dan Panduan Guru hlm. 227–232 (Aktivitas DSI-K12-07), refleksi pemanfaatan TIK dalam pendidikan menunjukkan bahwa pembelajaran daring memberikan kemandirian belajar dan keterbukaan akses referensi digital secara luas. Namun, interaksi langsung guru-siswa sangat penting untuk pembentukan afektif (karakter, empati, dan gotong royong) serta pendampingan praktikum. Oleh karena itu, pendekatan Blended Learning (pembelajaran hibrida/campuran) dinilai paling seimbang dan optimal. Pilihan A membalik fakta. Pilihan C salah mendefinisikan blended learning. Pilihan D mengabaikan peran pedagogis esensial guru di sekolah.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 25,
+        "wrong_penalty": 15,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "164-167",
+          "section": "Bab 5, Subbab C: Evaluasi Kritis Pembelajaran Daring vs Blended Learning"
+        },
+        "teacher_guide": {
+          "pages": "227-232",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal analisis komparatif pembelajaran daring vs blended learning merujuk pada Buku Siswa hlm. 164–167.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-C: Menganalisis kelebihan, kelemahan, dan efektivitas implementasi pembelajaran daring dibanding model blended learning",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 164-167 (Refleksi Pembelajaran Daring)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 227-232"
+        },
+        "authoring_statement": "Analisis evaluatif pedagogi digital pasca-pandemi disusun mandiri untuk memverifikasi kemampuan berpikir tingkat tinggi peserta didik."
+      }
+    },
+    {
+      "question_id": "INF12-C05-D-8401",
+      "phase3_id": "INF12-C05-M20-Q01",
+      "primary_competency": "INF12-C05-D",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam rangka menciptakan ruang digital yang berkeadilan, aman, dan bertanggung jawab, Undang-Undang Informasi dan Transaksi Elektronik (UU ITE) mengatur larangan perbuatan tertentu dalam pemanfaatan teknologi informasi. Berdasarkan materi pada Buku Siswa hlm. 174–178 dan Panduan Guru hlm. 232–237, perbuatan yang diatur dan dilarang secara tegas di dalam Pasal 27 UU ITE mencakup pendistribusian informasi elektronik yang bermuatan...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pembuatan animasi model tiga dimensi untuk media simulasi sains sekolah."
+        },
+        {
+          "id": "B",
+          "text": "Pelanggaran kesusilaan (pornografi), perjudian, penghinaan atau pencemaran nama baik, serta pemerasan dan/atau pengancaman."
+        },
+        {
+          "id": "C",
+          "text": "Pengunduhan berkas pembaruan kode perangkat tegar (firmware) mikrokontroler dari situs resmi produsen."
+        },
+        {
+          "id": "D",
+          "text": "Pendaftaran nama domain sekolah menggunakan format resmi web.id di registrar nasional."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 174–178 dan Panduan Guru hlm. 232–237 (Aktivitas DSI-K12-08), Pasal 27 UU ITE merinci 4 larangan perbuatan mendistribusikan, mentransmisikan, atau membuat dapat diaksesnya Informasi/Dokumen Elektronik yang memiliki muatan: 1) melanggar kesusilaan (ayat 1); 2) perjudian (ayat 2); 3) penghinaan dan/atau pencemaran nama baik (ayat 3); dan 4) pemerasan dan/atau pengancaman (ayat 4). Pilihan A, C, dan D adalah aktivitas komputasi legal dan edukatif yang tidak melanggar ketentuan hukum.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "174-178",
+          "section": "Bab 5, Subbab D: Tindak Pidana Siber dalam Pasal 27 UU ITE"
+        },
+        "teacher_guide": {
+          "pages": "232-237",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal klasifikasi substansi larangan Pasal 27 UU ITE merujuk pada Buku Siswa hlm. 174–178.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-D: Memahami substansi dan ruang lingkup empat perbuatan terlarang dalam Pasal 27 UU ITE",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 174-178 (Ketentuan Pasal 27 UU ITE)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 232-237"
+        },
+        "authoring_statement": "Perumusan butir pemahaman norma hukum Pasal 27 UU ITE disusun mandiri untuk memverifikasi pengetahuan hukum siber siswa."
+      }
+    },
+    {
+      "question_id": "INF12-C05-D-9402",
+      "phase3_id": "INF12-C05-M20-Q02",
+      "primary_competency": "INF12-C05-D",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Seorang pengguna media sosial sengaja memotong video pidato tokoh masyarakat, menambahkan takarir (caption) provokatif yang memutarbalikkan fakta, dan menyebarkannya dengan tujuan menghasut masyarakat agar membenci kelompok agama dan suku tertentu hingga menimbulkan kegaduhan publik. Perbuatan penyebaran informasi yang bertujuan menimbulkan rasa kebencian atau permusuhan individu dan/atau kelompok masyarakat berdasarkan SARA tersebut merupakan pelanggaran terhadap...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hak cipta perangkat lunak perkantoran open-source model lisensi MIT."
+        },
+        {
+          "id": "B",
+          "text": "Pasal 28 ayat (2) Undang-Undang Informasi dan Transaksi Elektronik (UU ITE)."
+        },
+        {
+          "id": "C",
+          "text": "Standar protokol fisik pengkabelan serat optik IEEE 802.3."
+        },
+        {
+          "id": "D",
+          "text": "Aturan format tata letak lembar kerja dokumen spreadsheet komersial."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 178–180 dan Panduan Guru hlm. 232–237, Pasal 28 ayat (2) UU ITE secara eksplisit menyatakan bahwa setiap orang dengan sengaja dan tanpa hak menyebarkan informasi yang ditujukan untuk menimbulkan rasa kebencian atau permusuhan individu dan/atau kelompok masyarakat tertentu berdasarkan atas suku, agama, ras, dan antargolongan (SARA) diancam dengan sanksi pidana. Tindakan mengedit video untuk memicu permusuhan antar-SARA memenuhi seluruh unsur pelanggaran pasal ini. Pilihan A, C, dan D tidak berkaitan dengan hukum siber konten SARA.",
+      "gameplay": {
+        "correct_damage": 75,
+        "base_xp": 15,
+        "wrong_penalty": 10,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "178-180",
+          "section": "Bab 5, Subbab D: Ujaran Kebencian dan Isu SARA dalam Pasal 28 UU ITE"
+        },
+        "teacher_guide": {
+          "pages": "232-237",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal analisis kasus penyebaran konten permusuhan SARA merujuk pada Buku Siswa hlm. 178–180.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-D: Menerapkan analisis yuridis terhadap kasus penyebaran ujaran kebencian dan permusuhan SARA sesuai Pasal 28 ayat (2) UU ITE",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 178-180 (Ketentuan Pasal 28 UU ITE)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 232-237"
+        },
+        "authoring_statement": "Studi kasus provokasi SARA digital disusun mandiri untuk memverifikasi penerapan kesadaran hukum teknologi informasi."
+      }
+    },
+    {
+      "question_id": "INF12-C05-D-9403",
+      "phase3_id": "INF12-C05-M20-Q03",
+      "primary_competency": "INF12-C05-D",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Perhatikan tiga kasus hukum siber berikut:\\n(1) Akun toko daring fiktif menyebarkan informasi diskon palsu yang menjerat pembeli mentransfer uang namun barang tidak pernah dikirim (merugikan konsumen dalam transaksi elektronik).\\n(2) Seorang oknum mengirimkan pesan teks langsung melalui aplikasi obrolan ke ponsel pribadi seorang siswi berisi ancaman akan melukai korban secara fisik jika tidak menuruti keinginannya.\\n(3) Seorang warganet mengunggah tuduhan tidak berdasar di media sosial yang menuduh kepala sekolah melakukan korupsi dengan mencantumkan nama lengkap dan foto korban secara terbuka.\\nBerdasarkan klasifikasi ketentuan UU ITE (Buku Siswa hlm. 174–182), urutan pasal yang tepat dilanggar oleh ketiga kasus tersebut secara berturut-turut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kasus (1) Pasal 29; Kasus (2) Pasal 27 ayat (3); Kasus (3) Pasal 28 ayat (1)."
+        },
+        {
+          "id": "B",
+          "text": "Kasus (1) Pasal 28 ayat (1); Kasus (2) Pasal 29; Kasus (3) Pasal 27 ayat (3)."
+        },
+        {
+          "id": "C",
+          "text": "Kasus (1) Pasal 27 ayat (1); Kasus (2) Pasal 28 ayat (2); Kasus (3) Pasal 29."
+        },
+        {
+          "id": "D",
+          "text": "Kasus (1) Pasal 28 ayat (2); Kasus (2) Pasal 27 ayat (4); Kasus (3) Pasal 27 ayat (1)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 174–182 dan Panduan Guru hlm. 232–237:\\n- Kasus (1) menyebarkan berita bohong dan menyesatkan yang mengakibatkan kerugian konsumen dalam transaksi elektronik, melanggar Pasal 28 ayat (1) UU ITE.\\n- Kasus (2) mengirimkan ancaman kekerasan atau menakut-nakuti yang ditujukan secara pribadi, melanggar Pasal 29 UU ITE.\\n- Kasus (3) mendistribusikan dokumen elektronik yang memuat penghinaan dan/atau pencemaran nama baik, melanggar Pasal 27 ayat (3) UU ITE.\\nMaka urutan yang tepat adalah Kasus (1) Pasal 28 ayat (1); Kasus (2) Pasal 29; Kasus (3) Pasal 27 ayat (3). Pilihan B tepat, sedangkan pilihan A, C, dan D keliru memetakan pasal.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 25,
+        "wrong_penalty": 15,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "174-182",
+          "section": "Bab 5, Subbab D: Diferensiasi Kasus Pelanggaran Pasal 27, 28, dan 29 UU ITE"
+        },
+        "teacher_guide": {
+          "pages": "232-237",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal analisis perbandingan kasus pelanggaran Pasal 27, 28, dan 29 UU ITE merujuk pada Buku Siswa hlm. 174–182.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-D: Menganalisis perbedaan unsur materiil tindak pidana siber pada Pasal 27, 28, dan 29 UU ITE melalui komparasi studi kasus",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 174-182 (Komparasi Pasal 27, 28, 29 UU ITE)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 232-237"
+        },
+        "authoring_statement": "Analisis diferensiasi tiga kasus hukum siber disusun mandiri untuk mengukur ketajaman nalar hukum dan analisis kasus nyata siswa."
+      }
+    },
+    {
+      "question_id": "INF12-C05-E-9501",
+      "phase3_id": "INF12-C05-M21-Q01",
+      "primary_competency": "INF12-C05-E",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam rangka menjaga kesehatan mental dan meningkatkan kualitas hidup di era paparan layar gawai yang berlebihan, pakar teknologi dan kesehatan merekomendasikan aktivitas detoksifikasi digital (digital detox). Berdasarkan artikel dan materi pada Buku Siswa hlm. 183–186 dan Panduan Guru hlm. 237–243 (Aktivitas DSI-K12-10), makna utama dari detoksifikasi digital adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Membersihkan debu dan kotoran fisik pada layar ponsel menggunakan cairan alkohol bertekanan tinggi."
+        },
+        {
+          "id": "B",
+          "text": "Menghapus seluruh sistem operasi komputer dan menggantinya dengan perangkat lunak simulator mikrokontroler."
+        },
+        {
+          "id": "C",
+          "text": "Praktik secara sadar dan terencana membatasi atau menghentikan sementara penggunaan gawai elektronik dan media sosial untuk meredakan stres, meningkatkan konsentrasi, serta memulihkan koneksi sosial nyata."
+        },
+        {
+          "id": "D",
+          "text": "Mematikan jaringan internet sekolah saat ujian nasional agar siswa tidak dapat membuka buku referensi digital."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Buku Siswa hlm. 183–186 dan Panduan Guru hlm. 237–243 mengenai Aktivitas DSI-K12-10 (\"13 Hal yang Terjadi Saat Puasa Media Sosial\"), detoksifikasi digital (digital detox) adalah periode waktu di mana seseorang secara sadar dan sukarela mengurangi atau menghentikan sementara interaksi dengan gawai digital, internet, dan platform media sosial. Tujuannya adalah untuk menurunkan tingkat kecemasan, memperbaiki kualitas tidur, meningkatkan fokus belajar, serta menikmati interaksi tatap muka secara berkualitas di dunia nyata. Pilihan A adalah pembersihan fisik perangkat. Pilihan B dan D tidak berkaitan dengan konsep kesehatan digital pribadi.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "183-186",
+          "section": "Bab 5, Subbab E: Konsep Detoksifikasi Media Sosial (Digital Detox)"
+        },
+        "teacher_guide": {
+          "pages": "237-243",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal konsep detoksifikasi digital merujuk pada Buku Siswa hlm. 183–186.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-E: Memahami konsep, tujuan, dan manfaat psikologis dari detoksifikasi digital (puasa media sosial)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 183-186 (Puasa Media Sosial)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 237-243"
+        },
+        "authoring_statement": "Perumusan butir konseptual detoksifikasi media sosial disusun mandiri untuk memverifikasi pemahaman manajemen kesejahteraan digital."
+      }
+    },
+    {
+      "question_id": "INF12-C05-E-9502",
+      "phase3_id": "INF12-C05-M21-Q02",
+      "primary_competency": "INF12-C05-E",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Seorang siswa Kelas XII sering mengalami kelelahan mata, kesulitan berkonsentrasi saat belajar di kelas, dan begadang hingga larut malam karena terpaku menggulir konten video pendek di ponsel pintarnya. Berdasarkan rekomendasi penggunaan TIK yang sehat dan produktif (Buku Siswa hlm. 186–188), strategi praktis yang paling efektif diterapkan oleh siswa tersebut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mengunduh sepuluh aplikasi media sosial baru untuk mencari variasi hiburan tambahan di malam hari."
+        },
+        {
+          "id": "B",
+          "text": "Mengaktifkan fitur pengingat batas waktu harian (screen time limit / app timer), mematikan notifikasi non-esensial saat belajar dan menjelang tidur, serta menerapkan aturan area bebas gawai (device-free zone) di tempat tidur."
+        },
+        {
+          "id": "C",
+          "text": "Meningkatkan kecerahan layar ponsel hingga tingkat maksimal agar mata tidak cepat mengantuk."
+        },
+        {
+          "id": "D",
+          "text": "Menjual ponsel pintar dan menolak menggunakan komputer sama sekali hingga lulus sekolah."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 186–188 dan Panduan Guru hlm. 237–243 mengenai manajemen penggunaan TIK, langkah konkret dan proporsional untuk mengatasi kecanduan layar adalah: 1) memasang batas waktu penggunaan aplikasi (app timer / screen time monitoring); 2) menonaktifkan notifikasi yang mengganggu saat jam belajar dan istirahat; 3) menciptakan lingkungan bebas gawai di kamar tidur untuk menjamin istirahat berkualitas; dan 4) menyeimbangkan kegiatan digital dengan aktivitas fisik. Pilihan A memperparah adiksi. Pilihan C merusak kesehatan mata. Pilihan D adalah respons ekstrem yang menghambat proses belajar modern.",
+      "gameplay": {
+        "correct_damage": 75,
+        "base_xp": 15,
+        "wrong_penalty": 10,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "186-188",
+          "section": "Bab 5, Subbab E: Manajemen Waktu Layar (Screen Time) dan Pola Hidup Sehat Digital"
+        },
+        "teacher_guide": {
+          "pages": "237-243",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal penerapan manajemen waktu layar sehat merujuk pada Buku Siswa hlm. 186–188.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-E: Menerapkan strategi manajemen waktu layar (screen time) dan kebiasaan sehat dalam penggunaan perangkat teknologi informasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 186-188 (Pengelolaan Waktu Layar)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 237-243"
+        },
+        "authoring_statement": "Studi kasus pengendalian waktu layar disusun mandiri untuk memverifikasi kemampuan praktis mitigasi adiksi digital."
+      }
+    },
+    {
+      "question_id": "INF12-C05-E-9503",
+      "phase3_id": "INF12-C05-M21-Q03",
+      "primary_competency": "INF12-C05-E",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sekelompok siswa ingin merintis usaha digital berupa penyediaan jasa pembuatan konten grafis dan pengelolaan media sosial untuk UMKM lokal di daerahnya (Aktivitas DSI-K12-11). Mereka mempertimbangkan dua pendekatan:\\n- Pendekatan I: Menggunakan aset visual berbayar ilegal hasil unduhan bajakan dan memakai strategi komentar spam otomatis di akun kompetitor untuk menjatuhkan reputasi mereka.\\n- Pendekatan II: Memanfaatkan aplikasi desain legal/berlisensi terbuka (open-source/creative commons), menyusun portofolio orisinal, serta menerapkan strategi pemasaran konten edukatif yang membangun interaksi organik dan transparan.\\nDitinjau dari prinsip etika digital dan keberlanjutan bisnis siber (Buku Siswa hlm. 188–190), analisis perbandingan yang paling tepat atas kedua pendekatan tersebut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pendekatan I lebih unggul dan berkelanjutan karena bisnis digital tidak memerlukan etika atau perlindungan hak cipta kekayaan intelektual."
+        },
+        {
+          "id": "B",
+          "text": "Pendekatan II jauh lebih kredibel dan berkelanjutan karena menjunjung tinggi orisinalitas, kepatuhan hak cipta (HAKI), serta etika kompetisi sehat yang membangun kepercayaan jangka panjang klien, sedangkan Pendekatan I berisiko menghadapi gugatan hukum pelanggaran hak cipta dan pemblokiran akun akibat spam."
+        },
+        {
+          "id": "C",
+          "text": "Kedua pendekatan sama-sama melanggar undang-undang telekomunikasi dan dilarang dipraktikkan oleh peserta didik."
+        },
+        {
+          "id": "D",
+          "text": "Pendekatan I dan Pendekatan II tidak memiliki perbedaan hasil finansial karena algoritma media sosial hanya memprioritaskan akun dengan modal kapital miliaran rupiah."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 188–190 dan Panduan Guru hlm. 237–243 mengenai pemanfaatan TIK untuk peluang wirausaha (Aktivitas DSI-K12-11), keberhasilan wirausaha digital generasi muda bertumpu pada integritas profesional: menghormati Hak atas Kekayaan Intelektual (HAKI) dengan menggunakan aset berlisensi sah, membangun merek melalui konten bernilai (value-driven content), serta menjaga etika komunikasi tanpa taktik manipulatif (spam atau perusakan reputasi kompetitor). Pendekatan I melanggar hukum hak cipta dan ketentuan layanan platform (ToS). Pendekatan II menciptakan reputasi bisnis yang kokoh, profesional, dan berkelanjutan. Pilihan B adalah analisis yang paling objektif dan komprehensif.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 25,
+        "wrong_penalty": 15,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "188-190",
+          "section": "Bab 5, Subbab E: Etika dan Keberlanjutan Kewirausahaan Digital Berbasis TIK"
+        },
+        "teacher_guide": {
+          "pages": "237-243",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal analisis etika dan keberlanjutan wirausaha digital merujuk pada Buku Siswa hlm. 188–190.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-E: Menganalisis etika bisnis siber, kepatuhan hak cipta, dan strategi keberlanjutan dalam perintisan wirausaha digital",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 188-190 (Peluang Wirausaha Berbasis TIK)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 237-243"
+        },
+        "authoring_statement": "Analisis perbandingan model etika wirausaha digital disusun mandiri untuk memverifikasi penalaran profesional dan integritas bisnis siber."
+      }
+    }
+  ]
+}

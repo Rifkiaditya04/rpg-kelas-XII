@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_BASELINE",
+  "dataset": "World 4 Informatika Standard Chapter 5 Original Content - Misi 17 v1.0",
+  "purpose": "Authoritative base canonical dataset for Chapter 5 Mission 17 (Subbab A: Platform, Fitur, dan Algoritma Media Sosial).",
+  "chapter_id": "INF12-C05",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C05-M17-Q01",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-A",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Media sosial berkembang dalam berbagai format platform dengan spesialisasi konten yang berbeda. Platform yang memfokuskan layanannya pada publikasi dan konsumsi pesan teks pendek (mikroblog) secara cepat untuk menyampaikan opini, berita aktual, dan topik tren (trending topics) secara waktu-nyata (real-time) diklasifikasikan sebagai jenis platform...",
+      "options": [
+        "Media Sharing Network (jejaring berbagi berkas audio-visual berdurasi panjang).",
+        "Microblogging Network (jejaring mikroblog pesan teks ringkas dan pembaruan instan).",
+        "Discussion Forum (forum tanya-jawab berbasis utas percakapan komunitas spesifik).",
+        "Professional Networking Service (jejaring kurikulum vitae dan relasi rekrutmen kerja formal)."
+      ],
+      "answer": "Microblogging Network (jejaring mikroblog pesan teks ringkas dan pembaruan instan).",
+      "explanation": "Berdasarkan Buku Siswa hlm. 141–145 dan Panduan Guru hlm. 213–220 mengenai klasifikasi platform media sosial, Microblogging Network (seperti Twitter/X) dirancang khusus untuk memungkinkan pengguna mengirimkan dan membaca pembaruan pesan teks ringkas secara cepat, interaktif, dan real-time guna mendiskusikan topik hangat (trending topics). Pilihan A berfokus pada video/foto resolusi tinggi (seperti YouTube). Pilihan C berbasis papan buletin/utas tanya jawab (seperti Reddit atau Quora). Pilihan D berorientasi pada karier profesional dan lowongan kerja (seperti LinkedIn).",
+      "source": {
+        "student_book": {
+          "pages": "141-145",
+          "section": "Bab 5, Subbab A: Jenis Platform dan Fitur Media Sosial"
+        },
+        "teacher_guide": {
+          "pages": "213-220",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal klasifikasi platform microblogging merujuk pada Buku Siswa hlm. 141–145.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-A: Memahami berbagai jenis platform media sosial beserta fitur dan peruntukan komunikasinya",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 141-145 (Karakteristik Platform Media Sosial)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 213-220"
+        },
+        "authoring_statement": "Perumusan butir konseptual klasifikasi jenis platform media sosial disusun mandiri untuk mengukur pemahaman taksonomi media digital."
+      }
+    },
+    {
+      "id": "INF12-C05-M17-Q02",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Seorang siswa menyukai tiga video edukasi astronomi di lini masa (feed) akun media sosialnya dan membagikan salah satu video ke temannya. Beberapa hari kemudian, siswa tersebut menyadari bahwa hampir seluruh beranda media sosialnya menampilkan rekomendasi konten terkait sains luar angkasa dan antariksa. Mekanisme komputasi yang paling tepat menjelaskan fenomena perubahan tampilan beranda tersebut adalah...",
+      "options": [
+        "Pihak administrator aplikasi memantau percakapan mikrofon siswa secara langsung tanpa perantara perangkat lunak.",
+        "Alamat IP router sekolah secara otomatis mengganti preferensi akun seluruh siswa yang terhubung dalam satu jaringan LAN.",
+        "Algoritma rekomendasi platform mengolah riwayat interaksi pengguna (metrik interaksi seperti likes, shares, dan durasi menonton) untuk mempersonalisasi kurasi konten pada umpan beranda (feed).",
+        "Terjadi infeksi malware jenis Trojan yang menghapus seluruh data kategori lain pada basis data ponsel pintar siswa."
+      ],
+      "answer": "Algoritma rekomendasi platform mengolah riwayat interaksi pengguna (metrik interaksi seperti likes, shares, dan durasi menonton) untuk mempersonalisasi kurasi konten pada umpan beranda (feed).",
+      "explanation": "Berdasarkan Buku Siswa hlm. 145–150 dan Panduan Guru hlm. 213–220 mengenai mekanisme kerja dan fitur media sosial, platform media sosial modern memanfaatkan algoritma pembelajaran mesin (machine learning) untuk menganalisis jejak data interaksi pengguna (user engagement signals: riwayat tontonan, klik suka, komentar, dan pembagian konten). Algoritma ini secara dinamis mengurasi dan memprioritaskan konten serupa agar relevan dengan minat pengguna guna meningkatkan waktu interaksi di aplikasi. Pilihan A, B, dan D adalah penjelasan spekulatif yang tidak sesuai dengan cara kerja sistem kurasi berbasis analitik data interaksi platform.",
+      "source": {
+        "student_book": {
+          "pages": "145-150",
+          "section": "Bab 5, Subbab A: Algoritma Kurasi dan Personalisasi Feed Media Sosial"
+        },
+        "teacher_guide": {
+          "pages": "213-220",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal analisis personalisasi algoritma feed media sosial merujuk pada Buku Siswa hlm. 145–150.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-A: Menerapkan pemahaman mekanisme algoritma rekomendasi konten berbasis interaksi pengguna pada platform media sosial",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 145-150 (Mekanisme Algoritma Media Sosial)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 213-220"
+        },
+        "authoring_statement": "Studi kasus personalisasi beranda konten sains disusun mandiri untuk menguji pemahaman aplikasi algoritma rekomendasi media digital."
+      }
+    },
+    {
+      "id": "INF12-C05-M17-Q03",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Algoritma kurasi media sosial secara terus-menerus menyajikan berita dan opini yang sejalan dengan riwayat interaksi serta pandangan politik seorang pengguna. Akibatnya, pengguna tersebut hanya terpapar pada sudut pandang yang seragam dan tidak pernah melihat pandangan yang berseberangan. Ditinjau dari perspektif dampak sosial informatika (Buku Siswa hlm. 148–150), dampak sosial-psikologis paling kritis yang ditimbulkan dari fenomena ruang gema (echo chamber) dan gelembung filter (filter bubble) ini adalah...",
+      "options": [
+        "Penurunan kecepatan transmisi data pada kartu jaringan lokal ponsel pintar pengguna.",
+        "Penguatan polarisasi opini publik dan pengikisan kemampuan berpikir kritis akibat terisolasinya individu dari keberagaman perspektif informasi yang valid.",
+        "Terhapusnya basis data profil pengguna secara permanen oleh pengembang platform karena dianggap melanggar kuota pencarian.",
+        "Kenaikan biaya tagihan langganan listrik akibat pemrosesan algoritma peladen media sosial yang intensif."
+      ],
+      "answer": "Penguatan polarisasi opini publik dan pengikisan kemampuan berpikir kritis akibat terisolasinya individu dari keberagaman perspektif informasi yang valid.",
+      "explanation": "Berdasarkan Buku Siswa hlm. 148–150 dan Panduan Guru hlm. 213–220 mengenai dampak algoritma rekomendasi terhadap lingkungan sosial, fenomena Filter Bubble (gelembung penyaring informasi) dan Echo Chamber (ruang gema opini) menyebabkan pengguna hanya menerima informasi yang mengonfirmasi bias pemikirannya sendiri (confirmation bias). Dampak negatif sosial yang paling berbahaya adalah meningkatnya polarisasi antarkelompok masyarakat, penurunan toleransi terhadap pandangan yang berbeda, dan tumpulnya nalar kritis karena tidak ada pembanding fakta alternatif. Pilihan A, C, dan D tidak relevan dengan dampak sosiologis dari algoritma kurasi media sosial.",
+      "source": {
+        "student_book": {
+          "pages": "148-150",
+          "section": "Bab 5, Subbab A: Dampak Sosial Algoritma (Filter Bubble & Echo Chamber)"
+        },
+        "teacher_guide": {
+          "pages": "213-220",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal analisis dampak sosial filter bubble dan echo chamber merujuk pada Buku Siswa hlm. 148–150.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-A: Menganalisis implikasi sosial-psikologis dari fenomena Filter Bubble dan Echo Chamber akibat kurasi algoritma",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 148-150 (Dampak Ruang Gema dan Gelembung Informasi)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 213-220"
+        },
+        "authoring_statement": "Analisis kritis polarisasi sosial akibat algoritma personalisasi disusun mandiri untuk memverifikasi penalaran tingkat tinggi siswa."
+      }
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CONTROLLED_REVISION_DRAFT",
+  "dataset": "World 4 Informatika Standard Chapter 5 Original Content - Misi 18 v1.1",
+  "purpose": "Resolved canonical dataset v1.1 for Chapter 5 Mission 18 (Subbab B: Manfaat, Dampak Negatif, dan Fenomena FOMO Media Sosial).",
+  "chapter_id": "INF12-C05",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C05-M18-Q01",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-B",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Di era digital saat ini, penggunaan media sosial yang berlebihan kerap memicu fenomena psikologis yang dikenal dengan istilah FOMO (Fear of Missing Out). Sesuai pembahasan Buku Siswa hlm. 155–158 dan Panduan Guru hlm. 221–227, karakteristik utama dari fenomena FOMO adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ketakutan mendalam terhadap kerusakan perangkat keras komputer akibat lonjakan arus listrik saat pengisian daya."
+        },
+        {
+          "id": "B",
+          "text": "Perasaan cemas, gelisah, atau khawatir yang terus-menerus muncul karena merasa tertinggal dari tren, peristiwa menarik, atau pengalaman menyenangkan yang sedang dialami orang lain di media sosial."
+        },
+        {
+          "id": "C",
+          "text": "Dorongan untuk menghapus seluruh akun media sosial secara permanen guna menghindari pembaruan aplikasi otomatis."
+        },
+        {
+          "id": "D",
+          "text": "Ketidakmampuan perangkat lunak penjelajah web dalam memuat konten multimedia beresolusi tinggi di area terpencil."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 155–158 dan Panduan Guru hlm. 221–227 (Aktivitas DSI-K12-04 dan DSI-K12-05), FOMO (Fear of Missing Out) didefinisikan sebagai kecemasan sosial yang ditandai oleh kekhawatiran kompulsif bahwa orang lain sedang menikmati pengalaman berharga atau mengetahui informasi tren tertentu yang terlewatkan oleh dirinya. Perasaan ini mendorong individu untuk memeriksa gawai dan media sosial secara kompulsif tanpa jeda. Pilihan A adalah ketakutan fisik/listrik. Pilihan C mendeskripsikan tindakan detoksifikasi ekstrem. Pilihan D adalah masalah teknis koneksi internet.",
+      "source": {
+        "student_book": {
+          "pages": "155-158",
+          "section": "Bab 5, Subbab B: Fenomena Psikososial FOMO (Fear of Missing Out)"
+        },
+        "teacher_guide": {
+          "pages": "221-227",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal definisi karakteristik FOMO merujuk pada Buku Siswa hlm. 155–158.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-B: Memahami definisi, karakteristik, dan indikasi psikologis dari fenomena FOMO dalam penggunaan media sosial",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 155-158 (Sindrom FOMO)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 221-227"
+        },
+        "authoring_statement": "Konseptualisasi pemahaman fenomena FOMO disusun mandiri untuk memverifikasi literasi kesehatan mental digital peserta didik."
+      }
+    },
+    {
+      "id": "INF12-C05-M18-Q02",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Seorang siswa merasa rendah diri, cemas, dan tidak percaya diri setelah berulang kali melihat unggahan teman-temannya di media sosial yang tampak selalu berlibur mewah, berpakaian mahal, dan memiliki kehidupan tanpa masalah. Berdasarkan panduan penggunaan media sosial secara bijak dan sehat (Buku Siswa hlm. 158–162), tindakan yang paling tepat diterapkan oleh siswa tersebut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Meminjam uang dari pinjaman daring ilegal agar dapat mengunggah gaya hidup mewah serupa demi menaikkan status sosial semu."
+        },
+        {
+          "id": "B",
+          "text": "Menyadari bahwa unggahan media sosial umumnya hanyalah cuplikan terbaik (highlight reel) yang dikurasi, bukan representasi utuh realitas hidup, serta membatasi durasi layar (screen time) dan fokus pada pengembangan potensi diri nyata."
+        },
+        {
+          "id": "C",
+          "text": "Mengirimkan pesan anonim bernada ancaman dan kebencian ke kolom komentar akun teman-temannya tersebut."
+        },
+        {
+          "id": "D",
+          "text": "Membeli pengikut (followers) palsu secara massal untuk menandingi jumlah interaksi teman-temannya."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 158–162 dan Panduan Guru hlm. 221–227, media sosial kerap menampilkan realitas terdistorsi di mana pengguna hanya memamerkan momen-momen terbaik dan gemerlap (highlight reel effect). Sikap bijak yang dianjurkan adalah mengembangkan literasi digital kritis dengan memahami bahwa apa yang tampil di layar tidak mencerminkan kenyataan hidup seutuhnya, membatasi screen time, menyaring akun yang memicu kecemasan (unfollow/mute), dan memusatkan energi pada pencapaian positif di dunia nyata. Pilihan A, C, dan D merupakan respons destruktif dan melanggar etika/hukum.",
+      "source": {
+        "student_book": {
+          "pages": "158-162",
+          "section": "Bab 5, Subbab B: Pemanfaatan Media Sosial Secara Bijak dan Sehat"
+        },
+        "teacher_guide": {
+          "pages": "221-227",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal pereduksian dampak perbandingan sosial semu merujuk pada Buku Siswa hlm. 158–162.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-B: Menerapkan prinsip berpikir kritis dan pengelolaan diri dalam menyikapi perbandingan sosial semu di media sosial",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 158-162 (Sikap Bijak Menggunakan Media Sosial)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 221-227"
+        },
+        "authoring_statement": "Studi kasus perbandingan sosial semu disusun mandiri untuk memverifikasi penerapan sikap bijak bermedia digital."
+      }
+    },
+    {
+      "id": "INF12-C05-M18-Q03",
+      "chapter_id": "INF12-C05",
+      "topic_id": "INF12-C05-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Dalam sebuah grup obrolan kelas daring, seorang peserta didik menjadi sasaran pengiriman stiker editan yang merendahkan fisik (body shaming), disertai pesan ejekan berulang dari beberapa siswa lain hingga korban enggan masuk sekolah karena malu dan tertekan secara psikis. Berdasarkan analisis dampak negatif media digital (Buku Siswa hlm. 152–155), tindakan penanganan yang paling etis, sistematis, dan efektif dilakukan oleh korban maupun pengurus kelas adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Membalas dengan membuat akun tiruan (fake account) untuk menyebarkan fitnah pribadi terhadap keluarga para pelaku."
+        },
+        {
+          "id": "B",
+          "text": "Mengabaikan masalah secara total karena perundungan daring di grup obrolan tertutup dianggap sebagai hal wajar yang akan hilang dengan sendirinya."
+        },
+        {
+          "id": "C",
+          "text": "Menyimpan tangkapan layar (screenshot) bukti percakapan sebagai dokumentasi faktual, segera memblokir akun pelaku dari ruang pribadi, serta melaporkan bukti tersebut kepada guru bimbingan konseling/wali kelas untuk penanganan resmi."
+        },
+        {
+          "id": "D",
+          "text": "Mengunggah tangkapan layar tersebut ke media sosial publik dengan menambahkan narasi provokatif untuk memicu persekusi massa secara terbuka."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Buku Siswa hlm. 152–155 dan Panduan Guru hlm. 221–227 mengenai penanganan perundungan siber (cyberbullying), langkah terstruktur dan bertanggung jawab adalah: 1) mengumpulkan dan mengamankan bukti digital (tangkapan layar/tautan log chat tanpa dimanipulasi); 2) memutus kontak langsung dengan pelaku (blokir/mute); dan 3) melaporkan bukti tersebut ke pihak otoritas yang kompeten (guru BK, kepala sekolah, atau orang tua) untuk diselesaikan melalui jalur mediasi dan disiplin formal sekolah. Pilihan A melanggar etika dan UU ITE. Pilihan B membiarkan korban mengalami trauma psikologis berkepanjangan. Pilihan D berisiko memicu pencemaran nama baik dan persekusi liar di ruang publik.",
+      "source": {
+        "student_book": {
+          "pages": "152-155",
+          "section": "Bab 5, Subbab B: Mitigasi Perundungan Siber (Cyberbullying)"
+        },
+        "teacher_guide": {
+          "pages": "221-227",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal analisis penanganan perundungan siber merujuk pada Buku Siswa hlm. 152–155.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-B: Menganalisis dampak perundungan siber dan merumuskan langkah penanganan sistematis, etis, dan bertanggung jawab",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 152-155 (Dampak Negatif Cyberbullying dan Solusinya)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 221-227"
+        },
+        "authoring_statement": "Kasus investigasi perundungan siber di grup kelas daring disusun mandiri untuk memverifikasi penalaran etika dan hukum siber siswa."
+      }
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "world-4-informatika-chapter-5-misi-21-v1.1",
+  "base_batch": "world-4-informatika-chapter-5-misi-21-canonical-v1.0.json",
+  "status": "CONTROLLED_REVISION_DRAFT",
+  "purpose": "Standardize Chapter 5 Mission 21 items to SOP v2.0 Base-Plus-Overlay v1.1 with explicit option objects (A-D) and full provenance.",
+  "revisions": [
+    {
+      "question_id": "INF12-C05-M21-Q01",
+      "before_question": "Dalam rangka menjaga kesehatan mental dan meningkatkan kualitas hidup di era paparan layar gawai yang berlebihan, pakar teknologi dan kesehatan merekomendasikan aktivitas detoksifikasi digital (digital detox). Berdasarkan artikel dan materi pada Buku Siswa hlm. 183–186 dan Panduan Guru hlm. 237–243 (Aktivitas DSI-K12-10), makna utama dari detoksifikasi digital adalah...",
+      "after_question": "Dalam rangka menjaga kesehatan mental dan meningkatkan kualitas hidup di era paparan layar gawai yang berlebihan, pakar teknologi dan kesehatan merekomendasikan aktivitas detoksifikasi digital (digital detox). Berdasarkan artikel dan materi pada Buku Siswa hlm. 183–186 dan Panduan Guru hlm. 237–243 (Aktivitas DSI-K12-10), makna utama dari detoksifikasi digital adalah...",
+      "answer": "C",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Membersihkan debu dan kotoran fisik pada layar ponsel menggunakan cairan alkohol bertekanan tinggi."
+        },
+        {
+          "id": "B",
+          "text": "Menghapus seluruh sistem operasi komputer dan menggantinya dengan perangkat lunak simulator mikrokontroler."
+        },
+        {
+          "id": "C",
+          "text": "Praktik secara sadar dan terencana membatasi atau menghentikan sementara penggunaan gawai elektronik dan media sosial untuk meredakan stres, meningkatkan konsentrasi, serta memulihkan koneksi sosial nyata."
+        },
+        {
+          "id": "D",
+          "text": "Mematikan jaringan internet sekolah saat ujian nasional agar siswa tidak dapat membuka buku referensi digital."
+        }
+      ],
+      "explanation": "Berdasarkan Buku Siswa hlm. 183–186 dan Panduan Guru hlm. 237–243 mengenai Aktivitas DSI-K12-10 (\"13 Hal yang Terjadi Saat Puasa Media Sosial\"), detoksifikasi digital (digital detox) adalah periode waktu di mana seseorang secara sadar dan sukarela mengurangi atau menghentikan sementara interaksi dengan gawai digital, internet, dan platform media sosial. Tujuannya adalah untuk menurunkan tingkat kecemasan, memperbaiki kualitas tidur, meningkatkan fokus belajar, serta menikmati interaksi tatap muka secara berkualitas di dunia nyata. Pilihan A adalah pembersihan fisik perangkat. Pilihan B dan D tidak berkaitan dengan konsep kesehatan digital pribadi.",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "source": {
+        "student_book": {
+          "pages": "183-186",
+          "section": "Bab 5, Subbab E: Konsep Detoksifikasi Media Sosial (Digital Detox)"
+        },
+        "teacher_guide": {
+          "pages": "237-243",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal konsep detoksifikasi digital merujuk pada Buku Siswa hlm. 183–186.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-E: Memahami konsep, tujuan, dan manfaat psikologis dari detoksifikasi digital (puasa media sosial)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 183-186 (Puasa Media Sosial)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 237-243"
+        },
+        "authoring_statement": "Perumusan butir konseptual detoksifikasi media sosial disusun mandiri untuk memverifikasi pemahaman manajemen kesejahteraan digital."
+      }
+    },
+    {
+      "question_id": "INF12-C05-M21-Q02",
+      "before_question": "Seorang siswa Kelas XII sering mengalami kelelahan mata, kesulitan berkonsentrasi saat belajar di kelas, dan begadang hingga larut malam karena terpaku menggulir konten video pendek di ponsel pintarnya. Berdasarkan rekomendasi penggunaan TIK yang sehat dan produktif (Buku Siswa hlm. 186–188), strategi praktis yang paling efektif diterapkan oleh siswa tersebut adalah...",
+      "after_question": "Seorang siswa Kelas XII sering mengalami kelelahan mata, kesulitan berkonsentrasi saat belajar di kelas, dan begadang hingga larut malam karena terpaku menggulir konten video pendek di ponsel pintarnya. Berdasarkan rekomendasi penggunaan TIK yang sehat dan produktif (Buku Siswa hlm. 186–188), strategi praktis yang paling efektif diterapkan oleh siswa tersebut adalah...",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Mengunduh sepuluh aplikasi media sosial baru untuk mencari variasi hiburan tambahan di malam hari."
+        },
+        {
+          "id": "B",
+          "text": "Mengaktifkan fitur pengingat batas waktu harian (screen time limit / app timer), mematikan notifikasi non-esensial saat belajar dan menjelang tidur, serta menerapkan aturan area bebas gawai (device-free zone) di tempat tidur."
+        },
+        {
+          "id": "C",
+          "text": "Meningkatkan kecerahan layar ponsel hingga tingkat maksimal agar mata tidak cepat mengantuk."
+        },
+        {
+          "id": "D",
+          "text": "Menjual ponsel pintar dan menolak menggunakan komputer sama sekali hingga lulus sekolah."
+        }
+      ],
+      "explanation": "Berdasarkan Buku Siswa hlm. 186–188 dan Panduan Guru hlm. 237–243 mengenai manajemen penggunaan TIK, langkah konkret dan proporsional untuk mengatasi kecanduan layar adalah: 1) memasang batas waktu penggunaan aplikasi (app timer / screen time monitoring); 2) menonaktifkan notifikasi yang mengganggu saat jam belajar dan istirahat; 3) menciptakan lingkungan bebas gawai di kamar tidur untuk menjamin istirahat berkualitas; dan 4) menyeimbangkan kegiatan digital dengan aktivitas fisik. Pilihan A memperparah adiksi. Pilihan C merusak kesehatan mata. Pilihan D adalah respons ekstrem yang menghambat proses belajar modern.",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "source": {
+        "student_book": {
+          "pages": "186-188",
+          "section": "Bab 5, Subbab E: Manajemen Waktu Layar (Screen Time) dan Pola Hidup Sehat Digital"
+        },
+        "teacher_guide": {
+          "pages": "237-243",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal penerapan manajemen waktu layar sehat merujuk pada Buku Siswa hlm. 186–188.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-E: Menerapkan strategi manajemen waktu layar (screen time) dan kebiasaan sehat dalam penggunaan perangkat teknologi informasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 186-188 (Pengelolaan Waktu Layar)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 237-243"
+        },
+        "authoring_statement": "Studi kasus pengendalian waktu layar disusun mandiri untuk memverifikasi kemampuan praktis mitigasi adiksi digital."
+      }
+    },
+    {
+      "question_id": "INF12-C05-M21-Q03",
+      "before_question": "Sekelompok siswa ingin merintis usaha digital berupa penyediaan jasa pembuatan konten grafis dan pengelolaan media sosial untuk UMKM lokal di daerahnya (Aktivitas DSI-K12-11). Mereka mempertimbangkan dua pendekatan:\\n- Pendekatan I: Menggunakan aset visual berbayar ilegal hasil unduhan bajakan dan memakai strategi komentar spam otomatis di akun kompetitor untuk menjatuhkan reputasi mereka.\\n- Pendekatan II: Memanfaatkan aplikasi desain legal/berlisensi terbuka (open-source/creative commons), menyusun portofolio orisinal, serta menerapkan strategi pemasaran konten edukatif yang membangun interaksi organik dan transparan.\\nDitinjau dari prinsip etika digital dan keberlanjutan bisnis siber (Buku Siswa hlm. 188–190), analisis perbandingan yang paling tepat atas kedua pendekatan tersebut adalah...",
+      "after_question": "Sekelompok siswa ingin merintis usaha digital berupa penyediaan jasa pembuatan konten grafis dan pengelolaan media sosial untuk UMKM lokal di daerahnya (Aktivitas DSI-K12-11). Mereka mempertimbangkan dua pendekatan:\\n- Pendekatan I: Menggunakan aset visual berbayar ilegal hasil unduhan bajakan dan memakai strategi komentar spam otomatis di akun kompetitor untuk menjatuhkan reputasi mereka.\\n- Pendekatan II: Memanfaatkan aplikasi desain legal/berlisensi terbuka (open-source/creative commons), menyusun portofolio orisinal, serta menerapkan strategi pemasaran konten edukatif yang membangun interaksi organik dan transparan.\\nDitinjau dari prinsip etika digital dan keberlanjutan bisnis siber (Buku Siswa hlm. 188–190), analisis perbandingan yang paling tepat atas kedua pendekatan tersebut adalah...",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Pendekatan I lebih unggul dan berkelanjutan karena bisnis digital tidak memerlukan etika atau perlindungan hak cipta kekayaan intelektual."
+        },
+        {
+          "id": "B",
+          "text": "Pendekatan II jauh lebih kredibel dan berkelanjutan karena menjunjung tinggi orisinalitas, kepatuhan hak cipta (HAKI), serta etika kompetisi sehat yang membangun kepercayaan jangka panjang klien, sedangkan Pendekatan I berisiko menghadapi gugatan hukum pelanggaran hak cipta dan pemblokiran akun akibat spam."
+        },
+        {
+          "id": "C",
+          "text": "Kedua pendekatan sama-sama melanggar undang-undang telekomunikasi dan dilarang dipraktikkan oleh peserta didik."
+        },
+        {
+          "id": "D",
+          "text": "Pendekatan I dan Pendekatan II tidak memiliki perbedaan hasil finansial karena algoritma media sosial hanya memprioritaskan akun dengan modal kapital miliaran rupiah."
+        }
+      ],
+      "explanation": "Berdasarkan Buku Siswa hlm. 188–190 dan Panduan Guru hlm. 237–243 mengenai pemanfaatan TIK untuk peluang wirausaha (Aktivitas DSI-K12-11), keberhasilan wirausaha digital generasi muda bertumpu pada integritas profesional: menghormati Hak atas Kekayaan Intelektual (HAKI) dengan menggunakan aset berlisensi sah, membangun merek melalui konten bernilai (value-driven content), serta menjaga etika komunikasi tanpa taktik manipulatif (spam atau perusakan reputasi kompetitor). Pendekatan I melanggar hukum hak cipta dan ketentuan layanan platform (ToS). Pendekatan II menciptakan reputasi bisnis yang kokoh, profesional, dan berkelanjutan. Pilihan B adalah analisis yang paling objektif dan komprehensif.",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "source": {
+        "student_book": {
+          "pages": "188-190",
+          "section": "Bab 5, Subbab E: Etika dan Keberlanjutan Kewirausahaan Digital Berbasis TIK"
+        },
+        "teacher_guide": {
+          "pages": "237-243",
+          "section": "Panduan Pembelajaran Bab 5, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal analisis etika dan keberlanjutan wirausaha digital merujuk pada Buku Siswa hlm. 188–190.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C05-E: Menganalisis etika bisnis siber, kepatuhan hak cipta, dan strategi keberlanjutan dalam perintisan wirausaha digital",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 188-190 (Peluang Wirausaha Berbasis TIK)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 237-243"
+        },
+        "authoring_statement": "Analisis perbandingan model etika wirausaha digital disusun mandiri untuk memverifikasi penalaran profesional dan integritas bisnis siber."
+      }
+    }
+  ]
+}
