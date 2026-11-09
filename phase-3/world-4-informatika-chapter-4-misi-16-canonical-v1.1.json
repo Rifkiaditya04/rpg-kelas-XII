@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CONTROLLED_REVISION_DRAFT",
+  "dataset": "World 4 Informatika Standard Chapter 4 Original Content - Misi 16 v1.1",
+  "purpose": "Resolved canonical dataset v1.1 for Chapter 4 Mission 16 (Keamanan Siber, Tata Kelola Data, dan Firewall).",
+  "chapter_id": "INF12-C04",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C04-M16-Q01",
+      "chapter_id": "INF12-C04",
+      "topic_id": "INF12-C04-E",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Dalam konsep keamanan informasi dan jaringan komputer, kerangka dasar CIA Triad menjadi fondasi utama perlindungan sistem. Aspek integritas (Integrity) dalam pilar CIA Triad secara prinsip bermakna bahwa...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sistem dan data harus dapat diakses secara cepat setiap saat selama 24 jam nonstop oleh pengguna yang terdaftar tanpa mengalami kegagalan server."
+        },
+        {
+          "id": "B",
+          "text": "Informasi rahasia hanya boleh diketahui atau dibaca oleh pihak-pihak berwenang yang telah diverifikasi identitasnya."
+        },
+        {
+          "id": "C",
+          "text": "Data atau informasi harus terjaga keasliannya, akurat, konsisten, serta tidak boleh diubah, dirusak, atau dimanipulasi oleh pihak yang tidak berhak."
+        },
+        {
+          "id": "D",
+          "text": "Seluruh jalur transmisi jaringan nirkabel harus menggunakan perangkat keras dengan sertifikasi frekuensi militer bebas biaya lisensi."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Buku Siswa hlm. 118–122 dan Panduan Guru hlm. 184–193, CIA Triad terdiri atas tiga pilar utama: Confidentiality (Kerahasiaan), Integrity (Integritas), dan Availability (Ketersediaan). Pilar Integrity (Integritas) menekankan bahwa informasi dan data harus tetap akurat, utuh, serta terlindungi dari modifikasi, perubahan, pemalsuan, atau penghapusan tanpa izin (unauthorized tampering) selama masa penyimpanan maupun transmisi. Pilihan A menjelaskan aspek Availability (Ketersediaan). Pilihan B menjelaskan aspek Confidentiality (Kerahasiaan). Pilihan D adalah opsi pengecoh yang tidak relevan dengan konsep keamanan informasi.",
+      "source": {
+        "student_book": {
+          "pages": "118-122",
+          "section": "Bab 4, Subbab H: Fondasi Keamanan Informasi (CIA Triad)"
+        },
+        "teacher_guide": {
+          "pages": "184-193",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal pemahaman pilar Integrity pada CIA Triad merujuk pada Buku Siswa hlm. 118–122.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-E: Memahami definisi dan fungsi pilar Integritas (Integrity) dalam kerangka keamanan siber CIA Triad",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 118-122 (Pilar CIA Triad)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 184-193"
+        },
+        "authoring_statement": "Perumusan butir konseptual pilar integritas data disusun mandiri untuk memverifikasi pemahaman pilar fondasi keamanan informasi."
+      }
+    },
+    {
+      "id": "INF12-C04-M16-Q02",
+      "chapter_id": "INF12-C04",
+      "topic_id": "INF12-C04-E",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Dalam portal Sistem Informasi Akademik Sekolah, seorang guru berhasil masuk ke sistem setelah memasukkan username, kata sandi, dan kode OTP (One-Time Password) dari ponselnya. Namun, saat guru tersebut mencoba membuka menu manajemen penggajian pegawai, sistem menampilkan pesan: \"Akses Ditolak: Anda tidak memiliki izin untuk melihat modul ini\". Peristiwa penolakan ini merupakan contoh penerapan prinsip...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kegagalan proses enkripsi data asimetris pada lapisan fisik jaringan lokal sekolah."
+        },
+        {
+          "id": "B",
+          "text": "Pemisahan antara proses Autentikasi (memverifikasi kebenaran identitas pengguna) dan proses Otorisasi (menentukan batasan hak akses sesuai peran/role)."
+        },
+        {
+          "id": "C",
+          "text": "Deteksi otomatis terhadap serangan pemalsuan identitas situs (phishing) oleh modul antivirus klien."
+        },
+        {
+          "id": "D",
+          "text": "Pembatasan laju transfer berkas (bandwidth throttling) akibat beban pemrosesan basis data yang melebihi kapasitas server."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 122–126 dan Panduan Guru hlm. 184–193 mengenai tata kelola akses dan keamanan data, kontrol akses membedakan dengan tegas antara Autentikasi (Authentication) dan Otorisasi (Authorization). Guru tersebut telah berhasil melalui tahap Autentikasi (\"Who are you?\" terbukti sah melalui username, password, dan OTP). Namun pada tahap Otorisasi (\"What are you allowed to do?\"), sistem memeriksa peran (Role-Based Access Control / RBAC) pengguna. Karena perannya adalah Guru, ia berhak menginput nilai siswa tetapi tidak memiliki kewenangan (hak izin) mengakses modul penggajian keuangan/staf TU. Pilihan A, C, dan D tidak sesuai dengan konteks mekanisme kontrol akses RBAC.",
+      "source": {
+        "student_book": {
+          "pages": "122-126",
+          "section": "Bab 4, Subbab I: Tata Kelola Akses Data, Autentikasi, dan Otorisasi"
+        },
+        "teacher_guide": {
+          "pages": "184-193",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal tata kelola akses RBAC sekolah (Autentikasi vs Otorisasi) merujuk pada Buku Siswa hlm. 122–126.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-E: Menerapkan tata kelola akses data berbasis peran (RBAC) dengan membedakan proses Autentikasi dan Otorisasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 122-126 (Tata Kelola Akses dan Peran Pengguna)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 184-193"
+        },
+        "authoring_statement": "Skenario kontrol akses sistem informasi akademik disusun mandiri untuk memverifikasi kemampuan membedakan verifikasi identitas dan penegakan wewenang."
+      }
+    },
+    {
+      "id": "INF12-C04-M16-Q03",
+      "chapter_id": "INF12-C04",
+      "topic_id": "INF12-C04-E",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Pada hari pertama pendaftaran penerimaan peserta didik baru (PPDB) daring, server web sekolah mendadak tidak merespons dan mengalami downtime parah. Tim IT menemukan jutaan paket permintaan koneksi TCP SYN palsu dikirim secara serentak dari ribuan perangkat yang tersebar di berbagai belahan dunia (jaringan botnet). Serangan yang menargetkan aspek ketersediaan (Availability) ini beserta fungsi perangkat pertahanan jaringan yang tepat untuk memfilter lalu lintas berbahaya tersebut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Serangan Ransomware; dimitigasi dengan memasang perangkat Repeater sinyal radio frekuensi."
+        },
+        {
+          "id": "B",
+          "text": "Serangan Distributed Denial of Service (DDoS); dimitigasi menggunakan konfigurasi Firewall dan sistem pendeteksi intrusi (IDS/IPS) dengan penyaringan lalu lintas abnormal (traffic filtering/rate limiting)."
+        },
+        {
+          "id": "C",
+          "text": "Serangan Phishing; dimitigasi dengan memperpanjang jarak jangkauan kabel twisted pair UTP Cat6."
+        },
+        {
+          "id": "D",
+          "text": "Serangan SQL Injection; dimitigasi dengan mengganti seluruh topologi fisik jaringan sekolah dari star menjadi topologi bus."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 126–137 dan Panduan Guru hlm. 184–193 mengenai ancaman keamanan siber dan perlindungan jaringan, serangan yang melumpuhkan ketersediaan (Availability) server dengan membanjiri lalu lintas data tiruan (seperti SYN Flood) dari ribuan komputer korban yang dikendalikan (botnet) adalah Distributed Denial of Service (DDoS). Mitigasi teknis yang tepat adalah mengimplementasikan Firewall berlapis, Intrusion Detection/Prevention System (IDS/IPS), dan aturan penyaringan lalu lintas (rate limiting/traffic scrubbing) untuk memblokir IP botnet dan mencegah server kehabisan sumber daya komputasi. Pilihan A (Ransomware menyandera data), C (Phishing adalah penipuan rekayasa sosial pencurian kredensial), dan D (SQL Injection menyusupkan query ke database) tidak mendeskripsikan serangan banjir paket botnet, serta tindakan mitigasi pada pilihan tersebut tidak relevan.",
+      "source": {
+        "student_book": {
+          "pages": "126-137",
+          "section": "Bab 4, Subbab J: Ancaman Keamanan Siber dan Sistem Proteksi Firewall"
+        },
+        "teacher_guide": {
+          "pages": "184-193",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal serangan DDoS botnet dan mitigasi Firewall merujuk pada Buku Siswa hlm. 126–137.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-E: Menganalisis karakteristik serangan siber DDoS botnet dan menentukan fungsi mitigasi Firewall pada keamanan jaringan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 126-137 (Jenis Ancaman Siber dan Proteksi Firewall)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 184-193"
+        },
+        "authoring_statement": "Kasus investigasi serangan DDoS pada server PPDB daring disusun mandiri untuk memverifikasi analisis ancaman siber dan arsitektur proteksi firewall."
+      }
+    }
+  ]
+}

@@ -1,0 +1,986 @@
+{
+  "pool_id": "POOL-INFORMATIKA-INF12-C04",
+  "subject": "informatika",
+  "chapter": "INF12-C04",
+  "track": "pilihan",
+  "curriculum": [
+    "Merdeka"
+  ],
+  "grade": 12,
+  "status": "active",
+  "content_version": 1,
+  "competencies": [
+    {
+      "competency_id": "INF12-C04-A",
+      "name": "Arsitektur Jaringan, Pengalamatan IP, dan Klasifikasi Geografis",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C04-B",
+      "name": "Topologi Jaringan dan Pemodelan Aspek Teknis",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C04-C",
+      "name": "Pemodelan Lapisan Protokol (OSI 7 Layer vs TCP/IP 4 Layer)",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C04-D",
+      "name": "Komponen Jaringan, Media Transmisi, dan Pengkabelan UTP",
+      "question_count": 3
+    },
+    {
+      "competency_id": "INF12-C04-E",
+      "name": "Keamanan Siber, Tata Kelola Data, dan Proteksi Firewall",
+      "question_count": 3
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "INF12-C04-A-1101",
+      "phase3_id": "INF12-C04-M12-Q01",
+      "primary_competency": "INF12-C04-A",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam skema pengalamatan IPv4, sebuah alamat IP terdiri atas 32 bit bilangan biner yang dibagi menjadi empat oktet angka desimal bertitik (dotted-decimal). Jika sebuah laboratorium komputer sekolah menggunakan alamat IP 192.168.10.25 dengan subnet mask default 255.255.255.0, manakah pernyataan yang paling tepat menjelaskan identitas jaringan (network-id) dan identitas perangkat (host-id) alamat tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "192 adalah network-id, sedangkan 168.10.25 adalah host-id."
+        },
+        {
+          "id": "B",
+          "text": "192.168.10 adalah network-id (menunjukkan identitas kelompok jaringan), sedangkan 25 adalah host-id (menunjukkan nomor unik komputer di dalam jaringan tersebut)."
+        },
+        {
+          "id": "C",
+          "text": "192.168.10.25 seluruhnya adalah host-id tanpa memiliki network-id."
+        },
+        {
+          "id": "D",
+          "text": "255.255.255.0 adalah network-id, sedangkan 192.168.10.25 adalah kartu jaringan."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 90 (Tabel 4.2) dan Panduan Guru hlm. 144–154, alamat IP 192.168.10.25 termasuk dalam rentang Alamat IP Kelas C (192.0.0.0 s.d. 223.255.255.255) dengan subnet mask default 255.255.255.0 (24 bit network). Pada Kelas C, 3 oktet pertama (192.168.10) berfungsi sebagai Network-ID yang mengidentifikasi alamat jaringan lokal, sedangkan 1 oktet terakhir (25) berfungsi sebagai Host-ID yang menandai komputer/antarmuka tertentu di dalam jaringan tersebut. Pilihan A adalah karakteristik pembagian Kelas A (8 bit network). Pilihan C salah karena setiap alamat IPv4 selalu memuat network-id dan host-id. Pilihan D salah mendeskripsikan subnet mask.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "90",
+          "section": "Bab 4, Subbab A: Jaringan Komputer dan Manfaatnya (IP Address)"
+        },
+        "teacher_guide": {
+          "pages": "144-154",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal analisis struktur alamat IPv4 Kelas C merujuk pada Buku Siswa hlm. 90.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-A: Memahami format pengalamatan IPv4, pembagian oktet network-id dan host-id, serta kelas alamat jaringan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 90 (Tabel Kelas IP Address)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 144-154"
+        },
+        "authoring_statement": "Perumusan struktur pengalamatan logika IPv4 disusun mandiri untuk memverifikasi pemahaman dasar identitas jaringan lokal."
+      }
+    },
+    {
+      "question_id": "INF12-C04-A-2102",
+      "phase3_id": "INF12-C04-M12-Q02",
+      "primary_competency": "INF12-C04-A",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah dinas pendidikan provinsi ingin mengintegrasikan sistem pelaporan nilai ujian dari 15 kantor dinas pendidikan kabupaten/kota yang tersebar di wilayah kepulauan provinsi tersebut. Setiap kantor kabupaten memiliki jaringan lokal komputernya sendiri, dan seluruh kantor kini dihubungkan melalui jaringan privat terenkripsi jarak jauh menggunakan sambungan satelit dan serat optik lintas wilayah. Berdasarkan jangkauan geografisnya (Tabel 4.4 Buku Siswa), klasifikasi jaringan yang menghubungkan kantor dinas antar-kabupaten tersebut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Personal Area Network (PAN), karena hanya digunakan oleh staf pegawai pribadi."
+        },
+        {
+          "id": "B",
+          "text": "Local Area Network (LAN), karena seluruh data bernilai pendidikan sekolah."
+        },
+        {
+          "id": "C",
+          "text": "Wide Area Network (WAN), karena mencakup wilayah geografis yang sangat luas lintas kabupaten/provinsi dan menghubungkan berbagai sub-jaringan melalui infrastruktur telekomunikasi publik/satelit."
+        },
+        {
+          "id": "D",
+          "text": "Storage Area Network (SAN), karena hanya menyimpan berkas teks tanpa komputasi."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sesuai klasifikasi jaringan berdasarkan area geografis pada Buku Siswa hlm. 91–93 (Tabel 4.4) dan Panduan Guru hlm. 144–154: PAN mencakup area pribadi (<10 meter); LAN mencakup area lokal terbatas seperti satu gedung/sekolah; MAN mencakup wilayah metropolitan/satu kota; sedangkan WAN (Wide Area Network) menghubungkan beberapa LAN atau jaringan yang terpisah secara geografis lintas kota, kabupaten, provinsi, atau bahkan negara menggunakan router dan saluran telekomunikasi jarak jauh. Pilihan A keliru skala ruangnya. Pilihan B keliru karena LAN tidak dapat menjangkau antar-kabupaten secara langsung. Pilihan D bukan klasifikasi geografis.",
+      "gameplay": {
+        "correct_damage": 75,
+        "base_xp": 15,
+        "wrong_penalty": 10,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "91-93",
+          "section": "Bab 4, Subbab B: Klasifikasi Jaringan Komputer"
+        },
+        "teacher_guide": {
+          "pages": "144-154",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal klasifikasi geografis jaringan kepulauan WAN merujuk pada Buku Siswa hlm. 91–93.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-A: Menerapkan klasifikasi jaringan komputer berdasarkan jangkauan geografis (PAN, LAN, MAN, WAN) dalam pemecahan masalah konektivitas wilayah",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 91-93 (Jenis Jaringan Berdasarkan Area)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 144-154"
+        },
+        "authoring_statement": "Kasus integrasi jaringan dinas pendidikan antar-kabupaten dirancang mandiri untuk melatih penerapan konsep skala jaringan komputer."
+      }
+    },
+    {
+      "question_id": "INF12-C04-A-3103",
+      "phase3_id": "INF12-C04-M12-Q03",
+      "primary_competency": "INF12-C04-A",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam Buku Siswa hlm. 90 dijelaskan bahwa alamat IP versi 4 (IPv4) menggunakan format 32 bit yang secara teoritis menyediakan sekitar 4,3 miliar alamat unik (2^32). Mengingat saat ini miliaran telepon pintar, perangkat IoT, dan server komputasi terhubung ke internet, analisis manakah yang paling tepat menjelaskan dampak keterbatasan alamat IPv4 dan solusi teknologi yang diadopsi di industri global?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jumlah alamat IPv4 masih sangat berlimpah sehingga organisasi tidak memerlukan mekanisme translasi alamat atau migrasi protokol baru."
+        },
+        {
+          "id": "B",
+          "text": "Keterbatasan alamat IPv4 memicu kelangkaan alamat IP publik (IP address exhaustion), yang diatasi secara transisi menggunakan teknik NAT (Network Address Translation) pada tingkat lokal dan migrasi permanen ke IPv6 yang berukuran 128 bit dengan kapasitas alamat nyaris tak terbatas (2^128)."
+        },
+        {
+          "id": "C",
+          "text": "IPv4 diselesaikan dengan membatasi durasi akses internet setiap pengguna maksimal 1 jam per hari agar alamat IP dapat dipakai bergantian."
+        },
+        {
+          "id": "D",
+          "text": "Seluruh komputer di dunia diubah menjadi perangkat analog agar tidak lagi memerlukan alamat IP."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan pembahasan perkembangan internet dan pengalamatan IP pada Buku Siswa hlm. 90 dan Panduan Guru hlm. 144–154: Pertumbuhan eksponensial pengguna internet dan perangkat IoT menyebabkan alokasi 32-bit IPv4 habis (IPv4 exhaustion). Untuk mengatasi masalah ini, dunia teknologi menerapkan: 1) NAT (Network Address Translation) yang memungkinkan ribuan perangkat lokal (private IP) berbagi satu alamat IP publik ke internet; 2) Pengadopsian standar IPv6 (128 bit) yang menyediakan 2^128 (sekitar 3,4 x 10^38) alamat unik, menjamin setiap perangkat siber di masa depan memiliki alamat unik permanen. Pilihan A tidak sesuai fakta krisis alamat IP. Pilihan C dan D adalah opsi keliru dan tidak masuk akal.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 25,
+        "wrong_penalty": 15,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "90",
+          "section": "Bab 4, Subbab A: Pengalamatan IP Address dan Tantangan Internet"
+        },
+        "teacher_guide": {
+          "pages": "144-154",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario analitis krisis alamat IPv4 dan transisi ke IPv6/NAT merujuk pada Buku Siswa hlm. 90.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-A: Menganalisis keterbatasan kapasitas pengalamatan IPv4, fenomena IP exhaustion, dan mekanisme solusi transisi teknologi (NAT dan IPv6)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 90 (Kapasitas IP Address)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 144-154"
+        },
+        "authoring_statement": "Evaluasi analitis krisis alamat IP global disusun mandiri untuk menguji daya nalar komputasional tingkat tinggi peserta didik."
+      }
+    },
+    {
+      "question_id": "INF12-C04-B-4201",
+      "phase3_id": "INF12-C04-M13-Q01",
+      "primary_competency": "INF12-C04-B",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah laboratorium komputer sekolah menggunakan topologi Star, di mana seluruh kabel dari 30 unit komputer klien terhubung secara terpusat ke sebuah perangkat konsentrator (Switch). Manakah pernyataan yang paling tepat mengenai keunggulan operasional utama dari topologi Star dibanding topologi Bus?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Topologi Star tidak membutuhkan kabel sama sekali karena menggunakan gelombang elektromagnetik."
+        },
+        {
+          "id": "B",
+          "text": "Jika salah satu kabel atau komputer klien mengalami kerusakan/terputus, komunikasi pada komputer klien lainnya di dalam jaringan tetap berjalan normal tanpa terganggu."
+        },
+        {
+          "id": "C",
+          "text": "Topologi Star memiliki biaya instalasi kabel yang jauh lebih murah daripada topologi Bus karena hanya membutuhkan satu kabel utama."
+        },
+        {
+          "id": "D",
+          "text": "Jika perangkat konsentrator Switch pusat mati total, seluruh komputer di laboratorium tetap dapat saling bertukar data secara otomatis."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai penjelasan Buku Siswa hlm. 94–96 (Tabel 4.7) dan Panduan Guru hlm. 155–163: Keunggulan fundamental topologi Star adalah isolasi kesalahan (fault isolation). Karena setiap node memiliki jalur kabel mandiri ke konsentrator tengah (Switch), putusnya kabel pada salah satu stasiun kerja tidak akan melumpuhkan jaringan komputer lainnya. Sebaliknya, pada topologi Bus, jika kabel backbone putus, seluruh jaringan akan mati total. Pilihan A keliru karena Star kabel tetap memakai kabel fisik. Pilihan C terbalik (Star membutuhkan kabel lebih banyak dibanding Bus). Pilihan D salah karena Switch adalah titik kegagalan tunggal (single point of failure) pada topologi Star.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "94-96",
+          "section": "Bab 4, Subbab C: Topologi Jaringan (Topologi Star)"
+        },
+        "teacher_guide": {
+          "pages": "155-163",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal analisis keunggulan isolasi kesalahan topologi Star merujuk pada Buku Siswa hlm. 94–96.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-B: Memahami karakteristik, cara kerja, dan keunggulan operasional berbagai topologi jaringan komputer (Bus, Ring, Star, Mesh, Tree)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 94-96 (Tabel Karakteristik Topologi Jaringan)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 155-163"
+        },
+        "authoring_statement": "Deskripsi toleransi kesalahan topologi bintang disusun mandiri untuk memverifikasi pemahaman dasar keandalan jaringan lokal."
+      }
+    },
+    {
+      "question_id": "INF12-C04-B-5202",
+      "phase3_id": "INF12-C04-M13-Q02",
+      "primary_competency": "INF12-C04-B",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah rumah sakit rujukan provinsi membangun jaringan komputer khusus untuk menghubungkan 5 unit peladen vital (Server Rekam Medis, Server ICU, Server Farmasi, Server Bedah Sentral, dan Server IGD). Pihak manajemen mensyaratkan keandalan mutlak (high availability): antar-server tidak boleh terputus sama sekali meskipun ada 1 atau 2 kabel yang putus atau rusak mendadak. Topologi fisik manakah yang paling tepat diimplementasikan dan berapa jumlah kabel tautan langsung (point-to-point) yang harus dipasang untuk menghubungkan kelima server tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Topologi Bus dengan 1 kabel utama sepanjang koridor rumah sakit."
+        },
+        {
+          "id": "B",
+          "text": "Topologi Ring dengan 5 kabel yang membentuk cincin tertutup melingkar."
+        },
+        {
+          "id": "C",
+          "text": "Topologi Fully-Connected Mesh dengan 10 kabel tautan langsung, menggunakan rumus n(n - 1) / 2 = 5(4) / 2 = 10 kabel."
+        },
+        {
+          "id": "D",
+          "text": "Topologi Star dengan 4 kabel yang dihubungkan ke server IGD sebagai pusat."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan konsep Topologi Mesh pada Buku Siswa hlm. 95–96 dan Panduan Guru hlm. 155–163: Topologi Full Mesh menghubungkan setiap simpul secara langsung ke setiap simpul lainnya (point-to-point). Topologi ini menyediakan jalur alternatif jamak (redundant paths), sehingga jika satu atau dua tautan putus, data langsung dialihkan ke rute lain tanpa gangguan. Jumlah tautan pada jaringan Full Mesh dengan n simpul dihitung dengan rumus kombinatorial n(n - 1) / 2. Untuk n = 5 server: 5 x 4 / 2 = 10 kabel tautan fisik mandiri. Pilihan A dan B tidak memiliki redundansi jalur yang memadai. Pilihan D tidak memenuhi kriteria Full Mesh.",
+      "gameplay": {
+        "correct_damage": 75,
+        "base_xp": 15,
+        "wrong_penalty": 10,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "95-96",
+          "section": "Bab 4, Subbab C: Topologi Jaringan (Topologi Mesh)"
+        },
+        "teacher_guide": {
+          "pages": "155-163",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal perancangan topologi Mesh redundansi tinggi server rumah sakit merujuk pada Buku Siswa hlm. 95–96.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-B: Menerapkan perancangan topologi jaringan berkeandalan tinggi (Mesh) dan kalkulasi kebutuhan media transmisi titik-ke-titik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 95-96 (Topologi Mesh)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 155-163"
+        },
+        "authoring_statement": "Perancangan topologi jaringan mission-critical rumah sakit disusun orisinal untuk menguji penerapan praktis kalkulasi tautan transmisi data."
+      }
+    },
+    {
+      "question_id": "INF12-C04-B-6203",
+      "phase3_id": "INF12-C04-M13-Q03",
+      "primary_competency": "INF12-C04-B",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah sekolah menengah kejuruan memiliki anggaran terbatas namun ingin memperluas jaringan komputer ke 3 gedung bengkel praktik yang berjarak 100 meter dari gedung utama. Tim teknisi memperdebatkan dua rancangan:\nRancangan X: Memasang topologi Full Mesh kabel serat optik yang menghubungkan setiap komputer di bengkel ke setiap komputer di gedung utama secara langsung.\nRancangan Y: Memasang topologi Tree / Hierarchical (pohon), di mana satu switch distribusi utama di gedung pusat dihubungkan dengan kabel optik ke switch akses di masing-masing bengkel, lalu dari switch akses didistribusikan ke komputer klien via kabel UTP topologi Star.\nBerdasarkan aspek teknis perancangan jaringan komputer (Buku Siswa hlm. 97–99, Tabel 4.10), evaluasi analitis manakah yang paling tepat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rancangan X adalah yang paling rasional karena biaya pemasangan ribuan kabel mesh sebanding dengan anggaran terbatas sekolah."
+        },
+        {
+          "id": "B",
+          "text": "Rancangan Y jauh lebih unggul dan realistis karena menyeimbangkan aspek skala, efisiensi biaya, kemudahan pengelolaan kabel, dan skalabilitas ekspansi, sedangkan Rancangan X menghamburkan biaya dan tidak layak secara teknis (impractical) untuk komputer klien."
+        },
+        {
+          "id": "C",
+          "text": "Kedua rancangan tidak dapat diterapkan karena kabel jaringan tidak boleh dibentangkan melebihi jarak 10 meter."
+        },
+        {
+          "id": "D",
+          "text": "Rancangan X lebih baik karena topologi Tree dilarang oleh standar industri telekomunikasi."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Tabel 4.10 mengenai Aspek Teknis Jaringan Komputer pada Buku Siswa hlm. 97–99 (Analisis Kebutuhan, Biaya, Skala, Konfigurasi, dan Pemeliharaan): Topologi Tree/Hierarchical (Rancangan Y) adalah standar emas jaringan kampus/sekolah karena membagi arsitektur ke lapisan inti/distribusi dan akses. Pendekatan ini menghemat ribuan meter kabel, menekan biaya switch, mudah di-troubleshoot jika salah satu bengkel bermasalah, dan siap dikembangkan di masa depan (scalable). Sebaliknya, menerapkan Full Mesh (Rancangan X) pada ratusan PC klien adalah pemborosan ekstrem yang mustahil secara fisik (impractical cable sprawl). Pilihan A keliru secara ekonomi. Pilihan C keliru karena serat optik mendukung transmisi hingga kilometer. Pilihan D salah karena topologi Tree adalah standar de-facto.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 25,
+        "wrong_penalty": 15,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "97-99",
+          "section": "Bab 4, Subbab D: Aspek Teknis Jaringan Komputer"
+        },
+        "teacher_guide": {
+          "pages": "155-163",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario analitis evaluasi aspek teknis pemilihan topologi jaringan kampus SMK merujuk pada Buku Siswa hlm. 97–99.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-B: Menganalisis parameter teknis (skala, biaya, lokasi, keandalan, pemeliharaan) dalam pengambilan keputusan rancang bangun jaringan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 97-99 (Tabel Aspek Teknis Jaringan)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 155-163"
+        },
+        "authoring_statement": "Evaluasi studi kasus perluasan jaringan bengkel SMK dirancang mandiri untuk melatih penalaran analitis rekayasa infrastruktur komputer."
+      }
+    },
+    {
+      "question_id": "INF12-C04-C-7301",
+      "phase3_id": "INF12-C04-M14-Q01",
+      "primary_competency": "INF12-C04-C",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Model referensi OSI (Open System Interconnection) membagi arsitektur komunikasi data menjadi 7 lapisan terstruktur. Lapisan yang bertugas menentukan jalur pengiriman data terbaik (routing), mengelola pengalamatan logis (IP Address), dan memaketkan data menjadi Packets adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Physical Layer (Lapisan Fisik)"
+        },
+        {
+          "id": "B",
+          "text": "Data Link Layer (Lapisan Tautan Data)"
+        },
+        {
+          "id": "C",
+          "text": "Network Layer (Lapisan Jaringan)"
+        },
+        {
+          "id": "D",
+          "text": "Application Layer (Lapisan Aplikasi)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Buku Siswa hlm. 100–101 (Gambar 4.2) dan Panduan Guru hlm. 164–173, Network Layer (Layer 3) bertanggung jawab atas pengalamatan logis (IP Address) dan penentuan rute terbaik (routing / path determination) agar paket data dapat sampai ke jaringan tujuan melintasi berbagai router. Unit data pada layer ini disebut Packets. Pilihan A bertugas mentransmisikan bit listrik/cahaya mentah. Pilihan B mengelola frame dan MAC address fisik. Pilihan D menyediakan antarmuka langsung ke aplikasi pengguna.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "100-101",
+          "section": "Bab 4, Subbab E: Model Open System Interconnection (OSI) Layer"
+        },
+        "teacher_guide": {
+          "pages": "164-173",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal fungsi lapisan jaringan OSI Layer 3 merujuk pada Buku Siswa hlm. 100–101.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-C: Memahami hierarki fungsi tujuh lapisan model referensi OSI dan unit data enkapsulasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 100-101 (Bagan Model OSI Layer)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 164-173"
+        },
+        "authoring_statement": "Deskripsi fungsi lapisan jaringan Network Layer disusun mandiri untuk memverifikasi pemahaman dasar arsitektur komunikasi data."
+      }
+    },
+    {
+      "question_id": "INF12-C04-C-8302",
+      "phase3_id": "INF12-C04-M14-Q02",
+      "primary_competency": "INF12-C04-C",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Arsitektur internet global secara praktis beroperasi menggunakan model protokol TCP/IP yang terdiri atas 4 lapisan: Network Access, Internet, Transport, dan Application. Jika dibandingkan dengan model teoritis OSI 7 Layer (Buku Siswa hlm. 101–103), lapisan OSI manakah yang dilebur dan fungsinya tercakup di dalam Application Layer pada model TCP/IP?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Physical Layer, Data Link Layer, dan Network Layer."
+        },
+        {
+          "id": "B",
+          "text": "Session Layer, Presentation Layer, dan Application Layer."
+        },
+        {
+          "id": "C",
+          "text": "Network Layer dan Transport Layer."
+        },
+        {
+          "id": "D",
+          "text": "Data Link Layer dan Transport Layer."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sesuai bagan perbandingan model OSI dan TCP/IP pada Buku Siswa hlm. 102–103 (Gambar 4.3 dan Aktivitas JKI-K12-08) serta Panduan Guru hlm. 164–173: Lapisan teratas pada TCP/IP (Application Layer) mencakup seluruh fungsi dari 3 lapisan teratas OSI, yaitu Session Layer (manajemen dialog/sesi), Presentation Layer (format, kompresi, dan enkripsi data), dan Application Layer (antarmuka protokol aplikasi seperti HTTP, FTP, SMTP, DNS). Di sisi bawah, Network Access Layer pada TCP/IP menggabungkan fungsi Physical dan Data Link Layer dari model OSI. Pilihan A, C, dan D tidak sesuai dengan skema pemetaan OSI-TCP/IP.",
+      "gameplay": {
+        "correct_damage": 75,
+        "base_xp": 15,
+        "wrong_penalty": 10,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "101-103",
+          "section": "Bab 4, Subbab E: Perbandingan OSI Layer dan TCP/IP Layer"
+        },
+        "teacher_guide": {
+          "pages": "164-173",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal perbandingan arsitektur OSI 7 Layer vs TCP/IP 4 Layer merujuk pada Buku Siswa hlm. 101–103.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-C: Menerapkan pemetaan hierarkis antara model teoretis OSI 7 Layer dan model implementasi TCP/IP 4 Layer",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 101-103 (Arsitektur TCP/IP Layer)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 164-173"
+        },
+        "authoring_statement": "Perbandingan integrasi lapisan aplikasi TCP/IP disusun orisinal untuk menguji penerapan abstraksi protokol jaringan."
+      }
+    },
+    {
+      "question_id": "INF12-C04-C-9303",
+      "phase3_id": "INF12-C04-M14-Q03",
+      "primary_competency": "INF12-C04-C",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Pada Transport Layer di protokol TCP/IP, terdapat dua protokol pengiriman data utama: TCP (Transmission Control Protocol) dan UDP (User Datagram Protocol). Sebuah tim pengembang sedang merancang dua aplikasi: Aplikasi P adalah sistem transfer dana antar-bank di mana setiap rupiah tidak boleh hilang atau rusak, sedangkan Aplikasi Q adalah platform siaran langsung (video live streaming) pertandingan olahraga di mana kecepatan transmisi mulus diutamakan dan hilangnya 1–2 frame gambar dapat ditoleransi. Berdasarkan analisis karakteristik protokol transport, pasangan protokol manakah yang paling tepat untuk masing-masing aplikasi?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aplikasi P menggunakan UDP karena lebih cepat, sedangkan Aplikasi Q menggunakan TCP karena menjamin tidak ada frame yang hilang."
+        },
+        {
+          "id": "B",
+          "text": "Aplikasi P menggunakan TCP karena bersifat connection-oriented dan menjamin keutuhan data (reliable delivery) melalui mekanisme three-way handshake dan pengiriman ulang (retransmission), sedangkan Aplikasi Q menggunakan UDP karena bersifat connectionless dengan overhead rendah yang meminimalkan latency (keterlambatan waktu)."
+        },
+        {
+          "id": "C",
+          "text": "Kedua aplikasi wajib menggunakan protokol ICMP karena beroperasi di lapisan aplikasi."
+        },
+        {
+          "id": "D",
+          "text": "Kedua aplikasi wajib menggunakan UDP karena TCP sudah ditinggalkan di era internet modern."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 102 dan Panduan Guru hlm. 164–173: TCP menyediakan transmisi data andal (reliable, connection-oriented) dengan mekanisme error-checking, sequence numbering, dan retransmission, menjadikannya mutlak untuk transaksi finansial (Aplikasi P) di mana integritas data tidak boleh cacat. Sebaliknya, UDP bersifat unreliable, connectionless tanpa verifikasi acknowledge, sehingga memiliki latensi sangat rendah yang sempurna untuk streaming multimedia, video call, atau game online (Aplikasi Q), di mana kecepatan real-time lebih penting daripada menunggu pengiriman ulang paket yang hilang. Pilihan A terbalik. Pilihan C salah karena ICMP adalah protokol layer internet (ping/troubleshooting). Pilihan D salah karena TCP tetap menjadi tulang punggung web dan transaksi.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 25,
+        "wrong_penalty": 15,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "102-103",
+          "section": "Bab 4, Subbab E.2: TCP/IP Layer (Transport Layer - TCP vs UDP)"
+        },
+        "teacher_guide": {
+          "pages": "164-173",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario analitis pemilihan protokol transport TCP vs UDP pada kasus riil merujuk pada Buku Siswa hlm. 102.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-C: Menganalisis karakteristik, kelebihan, dan trade-off protokol Transport Layer (TCP connection-oriented vs UDP connectionless)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 102 (Protokol TCP dan UDP)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 164-173"
+        },
+        "authoring_statement": "Analisis kasus keandalan vs latensi pengiriman data disusun mandiri untuk melatih evaluasi arsitektur protokol jaringan komputer."
+      }
+    },
+    {
+      "question_id": "INF12-C04-D-8401",
+      "phase3_id": "INF12-C04-M15-Q01",
+      "primary_competency": "INF12-C04-D",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam sebuah jaringan lokal laboratorium komputer, teknisi ingin mengganti perangkat konsentrator lama (Hub) dengan Switch jaringan yang lebih modern. Alasan teknis utama mengapa penggunaan Switch jauh lebih efisien dalam mengelola lalu lintas data dibanding Hub adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hub mampu memfilter data berdasarkan alamat IP publik, sedangkan Switch hanya bekerja pada gelombang radio nirkabel."
+        },
+        {
+          "id": "B",
+          "text": "Switch meneruskan bingkai data (frame) secara selektif ke port komputer tujuan berdasarkan tabel MAC address, sedangkan Hub memancarkan (broadcast) data ke seluruh port secara pasif."
+        },
+        {
+          "id": "C",
+          "text": "Switch bertindak sebagai pengubah sinyal digital menjadi sinyal analog termodulasi, sedangkan Hub berfungsi menyimpan halaman web secara lokal."
+        },
+        {
+          "id": "D",
+          "text": "Hub memiliki kecepatan transmisi data hingga satuan Terabit per detik, sedangkan Switch terbatas pada transmisi setengah-dupleks (half-duplex)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 104–106 dan Panduan Guru hlm. 174–183, perbedaan mendasar antara Hub dan Switch terletak pada cara kerja meneruskan data pada Data Link Layer. Hub adalah perangkat pasif yang mem-broadcast setiap bingkai data yang masuk ke semua port lainnya, sehingga rawan tabrakan data (collision) dan menurunkan efisiensi bandwidth. Sebaliknya, Switch adalah perangkat cerdas yang mempelajari dan mencatat MAC address setiap komputer yang terhubung ke port-nya (tabel CAM/MAC address), sehingga Switch dapat mengirimkan bingkai data secara selektif (unicast) langsung ke port komputer tujuan. Pilihan A salah karena filtering IP adalah fungsi router. Pilihan C mendeskripsikan modem dan web cache. Pilihan D salah karena Switch justru mendukung full-duplex dan kecepatan tinggi.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "104-106",
+          "section": "Bab 4, Subbab F: Perangkat Keras Jaringan Komputer (Hub dan Switch)"
+        },
+        "teacher_guide": {
+          "pages": "174-183",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal perbandingan mekanisme transmisi Hub vs Switch merujuk pada Buku Siswa hlm. 104–106.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-D: Memahami perbedaan fungsional perangkat keras jaringan (Hub vs Switch) dan manajemen transmisi data Data Link Layer",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 104-106 (Fungsi Hub dan Switch)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 174-183"
+        },
+        "authoring_statement": "Deskripsi fungsional selektivitas Switch dan broadcast Hub disusun mandiri untuk memverifikasi pemahaman cara kerja perangkat keras penghubung jaringan."
+      }
+    },
+    {
+      "question_id": "INF12-C04-D-9402",
+      "phase3_id": "INF12-C04-M15-Q02",
+      "primary_competency": "INF12-C04-D",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dua orang siswa ingin menyalin data tugas berukuran sangat besar secara langsung antar-laptop menggunakan kabel twisted pair (UTP/STP) tanpa melalui perantara switch, hub, atau router (koneksi point-to-point / peer-to-peer). Standar susunan kabel UTP yang paling tepat dirakit pada kedua ujung konektor RJ-45 untuk skenario tersebut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Menggunakan susunan Straight-Through dengan kedua ujung menggunakan standar TIA/EIA-568A."
+        },
+        {
+          "id": "B",
+          "text": "Menggunakan susunan Crossover dengan salah satu ujung berstandar TIA/EIA-568A dan ujung lainnya berstandar TIA/EIA-568B."
+        },
+        {
+          "id": "C",
+          "text": "Menggunakan susunan Rollover di mana urutan pin 1 sampai 8 dibalik tepat menjadi urutan 8 sampai 1."
+        },
+        {
+          "id": "D",
+          "text": "Menggunakan susunan Straight-Through dengan kedua ujung menggunakan standar TIA/EIA-568B."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 106–109 dan Panduan Guru hlm. 174–183 mengenai media transmisi dan standar pengkabelan EIA/TIA-568, kabel Crossover digunakan untuk menghubungkan dua perangkat sejenis (perangkat DTE ke DTE seperti laptop ke laptop, komputer ke komputer, atau switch ke switch) secara langsung tanpa perangkat perantara. Kabel crossover dirakit dengan satu ujung mengikuti standar T-568A dan ujung lainnya mengikuti standar T-568B (pin 1-2 [TX] bersilangan dengan pin 3-6 [RX]). Pilihan A dan D adalah kabel Straight-Through yang digunakan untuk menghubungkan perangkat berbeda jenis (komputer ke switch/hub). Pilihan C (rollover) umumnya digunakan untuk kabel konsol manajemen perangkat cisco/router.",
+      "gameplay": {
+        "correct_damage": 75,
+        "base_xp": 15,
+        "wrong_penalty": 10,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "106-109",
+          "section": "Bab 4, Subbab G: Media Transmisi Data dan Standar Pengkabelan UTP"
+        },
+        "teacher_guide": {
+          "pages": "174-183",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal standar perakitan kabel Crossover T-568A ke T-568B merujuk pada Buku Siswa hlm. 106–109.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-D: Menerapkan standar pengkabelan kabel twisted pair (Straight vs Crossover) sesuai jenis perangkat yang dihubungkan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 106-109 (Standar TIA/EIA-568A dan 568B)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 174-183"
+        },
+        "authoring_statement": "Skenario perakitan kabel crossover peer-to-peer disusun mandiri untuk memverifikasi kemampuan praktis penataan pin kabel jaringan."
+      }
+    },
+    {
+      "question_id": "INF12-C04-D-9403",
+      "phase3_id": "INF12-C04-M15-Q03",
+      "primary_competency": "INF12-C04-D",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah kawasan industri manufaktur memiliki gardu induk transformator daya listrik tegangan tinggi dan mesin-mesin motor induksi berdaya besar. Teknisi jaringan diminta memasang kabel transmisi data sepanjang 400 meter yang menghubungkan ruang kontrol utama dengan gedung laboratorium melewati area gardu transformator tersebut. Berdasarkan analisis karakteristik fisik media transmisi (Buku Siswa hlm. 110–118), jenis kabel yang paling tepat dipilih untuk menjamin integritas transmisi data tanpa risiko kerusakan sinyal adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kabel UTP (Unshielded Twisted Pair) Kategori 5e karena memiliki fleksibilitas tinggi dan instalasi paling ekonomis."
+        },
+        {
+          "id": "B",
+          "text": "Kabel Coaxial RG-6 karena memiliki impedansi 75 ohm yang cocok untuk jalur frekuensi audio-visual."
+        },
+        {
+          "id": "C",
+          "text": "Kabel Serat Optik (Fiber Optic) karena mentransmisikan data berupa pulsa cahaya di dalam kaca sehingga kebal terhadap interferensi gelombang elektromagnetik (EMI)."
+        },
+        {
+          "id": "D",
+          "text": "Kabel STP (Shielded Twisted Pair) tanpa grounding karena lapisan timahnya dapat menyerap lonjakan tegangan kilat secara permanen."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Buku Siswa hlm. 110–118 dan Panduan Guru hlm. 174–183 mengenai perbandingan media transmisi (kabel tembaga vs serat optik), kabel Serat Optik (Fiber Optic) menggunakan serat kaca/silika murni untuk menghantarkan data dalam bentuk berkas pulsa cahaya (foton). Karena tidak menggunakan sinyal elektrik, kabel serat optik 100% kebal (imun) terhadap gangguan interferensi elektromagnetik (Electromagnetic Interference / EMI) dan lonjakan frekuensi radio (RFI) yang intensif di sekitar gardu transformator tegangan tinggi dan motor industri besar. Selain itu, serat optik memiliki redaman sinyal sangat rendah sehingga mampu menempuh jarak 400 meter tanpa memerlukan repeater/penguat sinyal (kabel UTP tembaga terbatas hanya 100 meter). Pilihan A, B, dan D tetap rentan terhadap radiasi magnetik dan kabel UTP dibatasi jarak maksimal 100 meter.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 25,
+        "wrong_penalty": 15,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "110-118",
+          "section": "Bab 4, Subbab G: Karakteristik Media Kabel Tembaga vs Serat Optik (Fiber Optic)"
+        },
+        "teacher_guide": {
+          "pages": "174-183",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal analisis kekebalan interferensi elektromagnetik serat optik merujuk pada Buku Siswa hlm. 110–118.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-D: Menganalisis ketahanan dan karakteristik fisik media transmisi data terhadap interferensi lingkungan elektromagnetik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 110-118 (Kelebihan dan Karakteristik Fiber Optic)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 174-183"
+        },
+        "authoring_statement": "Studi kasus transmisi data di kawasan gardu daya tegangan tinggi disusun mandiri untuk memverifikasi penalaran analitis pemilihan media fisik jaringan."
+      }
+    },
+    {
+      "question_id": "INF12-C04-E-9501",
+      "phase3_id": "INF12-C04-M16-Q01",
+      "primary_competency": "INF12-C04-E",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "understand",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam konsep keamanan informasi dan jaringan komputer, kerangka dasar CIA Triad menjadi fondasi utama perlindungan sistem. Aspek integritas (Integrity) dalam pilar CIA Triad secara prinsip bermakna bahwa...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sistem dan data harus dapat diakses secara cepat setiap saat selama 24 jam nonstop oleh pengguna yang terdaftar tanpa mengalami kegagalan server."
+        },
+        {
+          "id": "B",
+          "text": "Informasi rahasia hanya boleh diketahui atau dibaca oleh pihak-pihak berwenang yang telah diverifikasi identitasnya."
+        },
+        {
+          "id": "C",
+          "text": "Data atau informasi harus terjaga keasliannya, akurat, konsisten, serta tidak boleh diubah, dirusak, atau dimanipulasi oleh pihak yang tidak berhak."
+        },
+        {
+          "id": "D",
+          "text": "Seluruh jalur transmisi jaringan nirkabel harus menggunakan perangkat keras dengan sertifikasi frekuensi militer bebas biaya lisensi."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Buku Siswa hlm. 118–122 dan Panduan Guru hlm. 184–193, CIA Triad terdiri atas tiga pilar utama: Confidentiality (Kerahasiaan), Integrity (Integritas), dan Availability (Ketersediaan). Pilar Integrity (Integritas) menekankan bahwa informasi dan data harus tetap akurat, utuh, serta terlindungi dari modifikasi, perubahan, pemalsuan, atau penghapusan tanpa izin (unauthorized tampering) selama masa penyimpanan maupun transmisi. Pilihan A menjelaskan aspek Availability (Ketersediaan). Pilihan B menjelaskan aspek Confidentiality (Kerahasiaan). Pilihan D adalah opsi pengecoh yang tidak relevan dengan konsep keamanan informasi.",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "118-122",
+          "section": "Bab 4, Subbab H: Fondasi Keamanan Informasi (CIA Triad)"
+        },
+        "teacher_guide": {
+          "pages": "184-193",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal pemahaman pilar Integrity pada CIA Triad merujuk pada Buku Siswa hlm. 118–122.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-E: Memahami definisi dan fungsi pilar Integritas (Integrity) dalam kerangka keamanan siber CIA Triad",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 118-122 (Pilar CIA Triad)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 184-193"
+        },
+        "authoring_statement": "Perumusan butir konseptual pilar integritas data disusun mandiri untuk memverifikasi pemahaman pilar fondasi keamanan informasi."
+      }
+    },
+    {
+      "question_id": "INF12-C04-E-9502",
+      "phase3_id": "INF12-C04-M16-Q02",
+      "primary_competency": "INF12-C04-E",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam portal Sistem Informasi Akademik Sekolah, seorang guru berhasil masuk ke sistem setelah memasukkan username, kata sandi, dan kode OTP (One-Time Password) dari ponselnya. Namun, saat guru tersebut mencoba membuka menu manajemen penggajian pegawai, sistem menampilkan pesan: \"Akses Ditolak: Anda tidak memiliki izin untuk melihat modul ini\". Peristiwa penolakan ini merupakan contoh penerapan prinsip...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kegagalan proses enkripsi data asimetris pada lapisan fisik jaringan lokal sekolah."
+        },
+        {
+          "id": "B",
+          "text": "Pemisahan antara proses Autentikasi (memverifikasi kebenaran identitas pengguna) dan proses Otorisasi (menentukan batasan hak akses sesuai peran/role)."
+        },
+        {
+          "id": "C",
+          "text": "Deteksi otomatis terhadap serangan pemalsuan identitas situs (phishing) oleh modul antivirus klien."
+        },
+        {
+          "id": "D",
+          "text": "Pembatasan laju transfer berkas (bandwidth throttling) akibat beban pemrosesan basis data yang melebihi kapasitas server."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 122–126 dan Panduan Guru hlm. 184–193 mengenai tata kelola akses dan keamanan data, kontrol akses membedakan dengan tegas antara Autentikasi (Authentication) dan Otorisasi (Authorization). Guru tersebut telah berhasil melalui tahap Autentikasi (\"Who are you?\" terbukti sah melalui username, password, dan OTP). Namun pada tahap Otorisasi (\"What are you allowed to do?\"), sistem memeriksa peran (Role-Based Access Control / RBAC) pengguna. Karena perannya adalah Guru, ia berhak menginput nilai siswa tetapi tidak memiliki kewenangan (hak izin) mengakses modul penggajian keuangan/staf TU. Pilihan A, C, dan D tidak sesuai dengan konteks mekanisme kontrol akses RBAC.",
+      "gameplay": {
+        "correct_damage": 75,
+        "base_xp": 15,
+        "wrong_penalty": 10,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "122-126",
+          "section": "Bab 4, Subbab I: Tata Kelola Akses Data, Autentikasi, dan Otorisasi"
+        },
+        "teacher_guide": {
+          "pages": "184-193",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal tata kelola akses RBAC sekolah (Autentikasi vs Otorisasi) merujuk pada Buku Siswa hlm. 122–126.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-E: Menerapkan tata kelola akses data berbasis peran (RBAC) dengan membedakan proses Autentikasi dan Otorisasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 122-126 (Tata Kelola Akses dan Peran Pengguna)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 184-193"
+        },
+        "authoring_statement": "Skenario kontrol akses sistem informasi akademik disusun mandiri untuk memverifikasi kemampuan membedakan verifikasi identitas dan penegakan wewenang."
+      }
+    },
+    {
+      "question_id": "INF12-C04-E-9503",
+      "phase3_id": "INF12-C04-M16-Q03",
+      "primary_competency": "INF12-C04-E",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Pada hari pertama pendaftaran penerimaan peserta didik baru (PPDB) daring, server web sekolah mendadak tidak merespons dan mengalami downtime parah. Tim IT menemukan jutaan paket permintaan koneksi TCP SYN palsu dikirim secara serentak dari ribuan perangkat yang tersebar di berbagai belahan dunia (jaringan botnet). Serangan yang menargetkan aspek ketersediaan (Availability) ini beserta fungsi perangkat pertahanan jaringan yang tepat untuk memfilter lalu lintas berbahaya tersebut adalah...",
+      "options": [
+        {
+          "id": "A",
+          "text": "Serangan Ransomware; dimitigasi dengan memasang perangkat Repeater sinyal radio frekuensi."
+        },
+        {
+          "id": "B",
+          "text": "Serangan Distributed Denial of Service (DDoS); dimitigasi menggunakan konfigurasi Firewall dan sistem pendeteksi intrusi (IDS/IPS) dengan penyaringan lalu lintas abnormal (traffic filtering/rate limiting)."
+        },
+        {
+          "id": "C",
+          "text": "Serangan Phishing; dimitigasi dengan memperpanjang jarak jangkauan kabel twisted pair UTP Cat6."
+        },
+        {
+          "id": "D",
+          "text": "Serangan SQL Injection; dimitigasi dengan mengganti seluruh topologi fisik jaringan sekolah dari star menjadi topologi bus."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Buku Siswa hlm. 126–137 dan Panduan Guru hlm. 184–193 mengenai ancaman keamanan siber dan perlindungan jaringan, serangan yang melumpuhkan ketersediaan (Availability) server dengan membanjiri lalu lintas data tiruan (seperti SYN Flood) dari ribuan komputer korban yang dikendalikan (botnet) adalah Distributed Denial of Service (DDoS). Mitigasi teknis yang tepat adalah mengimplementasikan Firewall berlapis, Intrusion Detection/Prevention System (IDS/IPS), dan aturan penyaringan lalu lintas (rate limiting/traffic scrubbing) untuk memblokir IP botnet dan mencegah server kehabisan sumber daya komputasi. Pilihan A (Ransomware menyandera data), C (Phishing adalah penipuan rekayasa sosial pencurian kredensial), dan D (SQL Injection menyusupkan query ke database) tidak mendeskripsikan serangan banjir paket botnet, serta tindakan mitigasi pada pilihan tersebut tidak relevan.",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 25,
+        "wrong_penalty": 15,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "126-137",
+          "section": "Bab 4, Subbab J: Ancaman Keamanan Siber dan Sistem Proteksi Firewall"
+        },
+        "teacher_guide": {
+          "pages": "184-193",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 5"
+        }
+      },
+      "provenance": "Skenario orisinal serangan DDoS botnet dan mitigasi Firewall merujuk pada Buku Siswa hlm. 126–137.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-E: Menganalisis karakteristik serangan siber DDoS botnet dan menentukan fungsi mitigasi Firewall pada keamanan jaringan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 126-137 (Jenis Ancaman Siber dan Proteksi Firewall)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 184-193"
+        },
+        "authoring_statement": "Kasus investigasi serangan DDoS pada server PPDB daring disusun mandiri untuk memverifikasi analisis ancaman siber dan arsitektur proteksi firewall."
+      }
+    }
+  ]
+}

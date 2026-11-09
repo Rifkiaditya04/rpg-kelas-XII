@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_BASELINE",
+  "dataset": "World 4 Informatika Standard Chapter 4 Original Content - Misi 13 v1.0",
+  "purpose": "Authoritative base canonical dataset for Chapter 4 Mission 13 (Topologi Jaringan dan Pemodelan Aspek Teknis).",
+  "chapter_id": "INF12-C04",
+  "rewards": {
+    "xp_per_correct": 100,
+    "mission_completion_xp": 100
+  },
+  "questions": [
+    {
+      "id": "INF12-C04-M13-Q01",
+      "chapter_id": "INF12-C04",
+      "topic_id": "INF12-C04-B",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Sebuah laboratorium komputer sekolah menggunakan topologi Star, di mana seluruh kabel dari 30 unit komputer klien terhubung secara terpusat ke sebuah perangkat konsentrator (Switch). Manakah pernyataan yang paling tepat mengenai keunggulan operasional utama dari topologi Star dibanding topologi Bus?",
+      "options": [
+        "Topologi Star tidak membutuhkan kabel sama sekali karena menggunakan gelombang elektromagnetik.",
+        "Jika salah satu kabel atau komputer klien mengalami kerusakan/terputus, komunikasi pada komputer klien lainnya di dalam jaringan tetap berjalan normal tanpa terganggu.",
+        "Topologi Star memiliki biaya instalasi kabel yang jauh lebih murah daripada topologi Bus karena hanya membutuhkan satu kabel utama.",
+        "Jika perangkat konsentrator Switch pusat mati total, seluruh komputer di laboratorium tetap dapat saling bertukar data secara otomatis."
+      ],
+      "answer": "Jika salah satu kabel atau komputer klien mengalami kerusakan/terputus, komunikasi pada komputer klien lainnya di dalam jaringan tetap berjalan normal tanpa terganggu.",
+      "explanation": "Sesuai penjelasan Buku Siswa hlm. 94–96 (Tabel 4.7) dan Panduan Guru hlm. 155–163: Keunggulan fundamental topologi Star adalah isolasi kesalahan (fault isolation). Karena setiap node memiliki jalur kabel mandiri ke konsentrator tengah (Switch), putusnya kabel pada salah satu stasiun kerja tidak akan melumpuhkan jaringan komputer lainnya. Sebaliknya, pada topologi Bus, jika kabel backbone putus, seluruh jaringan akan mati total. Pilihan A keliru karena Star kabel tetap memakai kabel fisik. Pilihan C terbalik (Star membutuhkan kabel lebih banyak dibanding Bus). Pilihan D salah karena Switch adalah titik kegagalan tunggal (single point of failure) pada topologi Star.",
+      "source": {
+        "student_book": {
+          "pages": "94-96",
+          "section": "Bab 4, Subbab C: Topologi Jaringan (Topologi Star)"
+        },
+        "teacher_guide": {
+          "pages": "155-163",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal analisis keunggulan isolasi kesalahan topologi Star merujuk pada Buku Siswa hlm. 94–96.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-B: Memahami karakteristik, cara kerja, dan keunggulan operasional berbagai topologi jaringan komputer (Bus, Ring, Star, Mesh, Tree)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 94-96 (Tabel Karakteristik Topologi Jaringan)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 155-163"
+        },
+        "authoring_statement": "Deskripsi toleransi kesalahan topologi bintang disusun mandiri untuk memverifikasi pemahaman dasar keandalan jaringan lokal."
+      }
+    },
+    {
+      "id": "INF12-C04-M13-Q02",
+      "chapter_id": "INF12-C04",
+      "topic_id": "INF12-C04-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah rumah sakit rujukan provinsi membangun jaringan komputer khusus untuk menghubungkan 5 unit peladen vital (Server Rekam Medis, Server ICU, Server Farmasi, Server Bedah Sentral, dan Server IGD). Pihak manajemen mensyaratkan keandalan mutlak (high availability): antar-server tidak boleh terputus sama sekali meskipun ada 1 atau 2 kabel yang putus atau rusak mendadak. Topologi fisik manakah yang paling tepat diimplementasikan dan berapa jumlah kabel tautan langsung (point-to-point) yang harus dipasang untuk menghubungkan kelima server tersebut?",
+      "options": [
+        "Topologi Bus dengan 1 kabel utama sepanjang koridor rumah sakit.",
+        "Topologi Ring dengan 5 kabel yang membentuk cincin tertutup melingkar.",
+        "Topologi Fully-Connected Mesh dengan 10 kabel tautan langsung, menggunakan rumus n(n - 1) / 2 = 5(4) / 2 = 10 kabel.",
+        "Topologi Star dengan 4 kabel yang dihubungkan ke server IGD sebagai pusat."
+      ],
+      "answer": "Topologi Fully-Connected Mesh dengan 10 kabel tautan langsung, menggunakan rumus n(n - 1) / 2 = 5(4) / 2 = 10 kabel.",
+      "explanation": "Berdasarkan konsep Topologi Mesh pada Buku Siswa hlm. 95–96 dan Panduan Guru hlm. 155–163: Topologi Full Mesh menghubungkan setiap simpul secara langsung ke setiap simpul lainnya (point-to-point). Topologi ini menyediakan jalur alternatif jamak (redundant paths), sehingga jika satu atau dua tautan putus, data langsung dialihkan ke rute lain tanpa gangguan. Jumlah tautan pada jaringan Full Mesh dengan n simpul dihitung dengan rumus kombinatorial n(n - 1) / 2. Untuk n = 5 server: 5 x 4 / 2 = 10 kabel tautan fisik mandiri. Pilihan A dan B tidak memiliki redundansi jalur yang memadai. Pilihan D tidak memenuhi kriteria Full Mesh.",
+      "source": {
+        "student_book": {
+          "pages": "95-96",
+          "section": "Bab 4, Subbab C: Topologi Jaringan (Topologi Mesh)"
+        },
+        "teacher_guide": {
+          "pages": "155-163",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario orisinal perancangan topologi Mesh redundansi tinggi server rumah sakit merujuk pada Buku Siswa hlm. 95–96.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-B: Menerapkan perancangan topologi jaringan berkeandalan tinggi (Mesh) dan kalkulasi kebutuhan media transmisi titik-ke-titik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 95-96 (Topologi Mesh)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 155-163"
+        },
+        "authoring_statement": "Perancangan topologi jaringan mission-critical rumah sakit disusun orisinal untuk menguji penerapan praktis kalkulasi tautan transmisi data."
+      }
+    },
+    {
+      "id": "INF12-C04-M13-Q03",
+      "chapter_id": "INF12-C04",
+      "topic_id": "INF12-C04-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Sebuah sekolah menengah kejuruan memiliki anggaran terbatas namun ingin memperluas jaringan komputer ke 3 gedung bengkel praktik yang berjarak 100 meter dari gedung utama. Tim teknisi memperdebatkan dua rancangan:\nRancangan X: Memasang topologi Full Mesh kabel serat optik yang menghubungkan setiap komputer di bengkel ke setiap komputer di gedung utama secara langsung.\nRancangan Y: Memasang topologi Tree / Hierarchical (pohon), di mana satu switch distribusi utama di gedung pusat dihubungkan dengan kabel optik ke switch akses di masing-masing bengkel, lalu dari switch akses didistribusikan ke komputer klien via kabel UTP topologi Star.\nBerdasarkan aspek teknis perancangan jaringan komputer (Buku Siswa hlm. 97–99, Tabel 4.10), evaluasi analitis manakah yang paling tepat?",
+      "options": [
+        "Rancangan X adalah yang paling rasional karena biaya pemasangan ribuan kabel mesh sebanding dengan anggaran terbatas sekolah.",
+        "Rancangan Y jauh lebih unggul dan realistis karena menyeimbangkan aspek skala, efisiensi biaya, kemudahan pengelolaan kabel, dan skalabilitas ekspansi, sedangkan Rancangan X menghamburkan biaya dan tidak layak secara teknis (impractical) untuk komputer klien.",
+        "Kedua rancangan tidak dapat diterapkan karena kabel jaringan tidak boleh dibentangkan melebihi jarak 10 meter.",
+        "Rancangan X lebih baik karena topologi Tree dilarang oleh standar industri telekomunikasi."
+      ],
+      "answer": "Rancangan Y jauh lebih unggul dan realistis karena menyeimbangkan aspek skala, efisiensi biaya, kemudahan pengelolaan kabel, dan skalabilitas ekspansi, sedangkan Rancangan X menghamburkan biaya dan tidak layak secara teknis (impractical) untuk komputer klien.",
+      "explanation": "Berdasarkan Tabel 4.10 mengenai Aspek Teknis Jaringan Komputer pada Buku Siswa hlm. 97–99 (Analisis Kebutuhan, Biaya, Skala, Konfigurasi, dan Pemeliharaan): Topologi Tree/Hierarchical (Rancangan Y) adalah standar emas jaringan kampus/sekolah karena membagi arsitektur ke lapisan inti/distribusi dan akses. Pendekatan ini menghemat ribuan meter kabel, menekan biaya switch, mudah di-troubleshoot jika salah satu bengkel bermasalah, dan siap dikembangkan di masa depan (scalable). Sebaliknya, menerapkan Full Mesh (Rancangan X) pada ratusan PC klien adalah pemborosan ekstrem yang mustahil secara fisik (impractical cable sprawl). Pilihan A keliru secara ekonomi. Pilihan C keliru karena serat optik mendukung transmisi hingga kilometer. Pilihan D salah karena topologi Tree adalah standar de-facto.",
+      "source": {
+        "student_book": {
+          "pages": "97-99",
+          "section": "Bab 4, Subbab D: Aspek Teknis Jaringan Komputer"
+        },
+        "teacher_guide": {
+          "pages": "155-163",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 2"
+        }
+      },
+      "provenance": "Skenario analitis evaluasi aspek teknis pemilihan topologi jaringan kampus SMK merujuk pada Buku Siswa hlm. 97–99.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-B: Menganalisis parameter teknis (skala, biaya, lokasi, keandalan, pemeliharaan) dalam pengambilan keputusan rancang bangun jaringan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 97-99 (Tabel Aspek Teknis Jaringan)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 155-163"
+        },
+        "authoring_statement": "Evaluasi studi kasus perluasan jaringan bengkel SMK dirancang mandiri untuk melatih penalaran analitis rekayasa infrastruktur komputer."
+      }
+    }
+  ]
+}

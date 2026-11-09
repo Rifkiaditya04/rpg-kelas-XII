@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "world-4-informatika-chapter-4-misi-15-v1.1",
+  "base_batch": "world-4-informatika-chapter-4-misi-15-canonical-v1.0.json",
+  "status": "CONTROLLED_REVISION_DRAFT",
+  "purpose": "Standardize Chapter 4 Mission 15 items to SOP v2.0 Base-Plus-Overlay v1.1 with explicit option objects (A-D) and full provenance.",
+  "revisions": [
+    {
+      "question_id": "INF12-C04-M15-Q01",
+      "before_question": "Dalam sebuah jaringan lokal laboratorium komputer, teknisi ingin mengganti perangkat konsentrator lama (Hub) dengan Switch jaringan yang lebih modern. Alasan teknis utama mengapa penggunaan Switch jauh lebih efisien dalam mengelola lalu lintas data dibanding Hub adalah...",
+      "after_question": "Dalam sebuah jaringan lokal laboratorium komputer, teknisi ingin mengganti perangkat konsentrator lama (Hub) dengan Switch jaringan yang lebih modern. Alasan teknis utama mengapa penggunaan Switch jauh lebih efisien dalam mengelola lalu lintas data dibanding Hub adalah...",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Hub mampu memfilter data berdasarkan alamat IP publik, sedangkan Switch hanya bekerja pada gelombang radio nirkabel."
+        },
+        {
+          "id": "B",
+          "text": "Switch meneruskan bingkai data (frame) secara selektif ke port komputer tujuan berdasarkan tabel MAC address, sedangkan Hub memancarkan (broadcast) data ke seluruh port secara pasif."
+        },
+        {
+          "id": "C",
+          "text": "Switch bertindak sebagai pengubah sinyal digital menjadi sinyal analog termodulasi, sedangkan Hub berfungsi menyimpan halaman web secara lokal."
+        },
+        {
+          "id": "D",
+          "text": "Hub memiliki kecepatan transmisi data hingga satuan Terabit per detik, sedangkan Switch terbatas pada transmisi setengah-dupleks (half-duplex)."
+        }
+      ],
+      "explanation": "Berdasarkan Buku Siswa hlm. 104–106 dan Panduan Guru hlm. 174–183, perbedaan mendasar antara Hub dan Switch terletak pada cara kerja meneruskan data pada Data Link Layer. Hub adalah perangkat pasif yang mem-broadcast setiap bingkai data yang masuk ke semua port lainnya, sehingga rawan tabrakan data (collision) dan menurunkan efisiensi bandwidth. Sebaliknya, Switch adalah perangkat cerdas yang mempelajari dan mencatat MAC address setiap komputer yang terhubung ke port-nya (tabel CAM/MAC address), sehingga Switch dapat mengirimkan bingkai data secara selektif (unicast) langsung ke port komputer tujuan. Pilihan A salah karena filtering IP adalah fungsi router. Pilihan C mendeskripsikan modem dan web cache. Pilihan D salah karena Switch justru mendukung full-duplex dan kecepatan tinggi.",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "source": {
+        "student_book": {
+          "pages": "104-106",
+          "section": "Bab 4, Subbab F: Perangkat Keras Jaringan Komputer (Hub dan Switch)"
+        },
+        "teacher_guide": {
+          "pages": "174-183",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal perbandingan mekanisme transmisi Hub vs Switch merujuk pada Buku Siswa hlm. 104–106.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-D: Memahami perbedaan fungsional perangkat keras jaringan (Hub vs Switch) dan manajemen transmisi data Data Link Layer",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 104-106 (Fungsi Hub dan Switch)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 174-183"
+        },
+        "authoring_statement": "Deskripsi fungsional selektivitas Switch dan broadcast Hub disusun mandiri untuk memverifikasi pemahaman cara kerja perangkat keras penghubung jaringan."
+      }
+    },
+    {
+      "question_id": "INF12-C04-M15-Q02",
+      "before_question": "Dua orang siswa ingin menyalin data tugas berukuran sangat besar secara langsung antar-laptop menggunakan kabel twisted pair (UTP/STP) tanpa melalui perantara switch, hub, atau router (koneksi point-to-point / peer-to-peer). Standar susunan kabel UTP yang paling tepat dirakit pada kedua ujung konektor RJ-45 untuk skenario tersebut adalah...",
+      "after_question": "Dua orang siswa ingin menyalin data tugas berukuran sangat besar secara langsung antar-laptop menggunakan kabel twisted pair (UTP/STP) tanpa melalui perantara switch, hub, atau router (koneksi point-to-point / peer-to-peer). Standar susunan kabel UTP yang paling tepat dirakit pada kedua ujung konektor RJ-45 untuk skenario tersebut adalah...",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Menggunakan susunan Straight-Through dengan kedua ujung menggunakan standar TIA/EIA-568A."
+        },
+        {
+          "id": "B",
+          "text": "Menggunakan susunan Crossover dengan salah satu ujung berstandar TIA/EIA-568A dan ujung lainnya berstandar TIA/EIA-568B."
+        },
+        {
+          "id": "C",
+          "text": "Menggunakan susunan Rollover di mana urutan pin 1 sampai 8 dibalik tepat menjadi urutan 8 sampai 1."
+        },
+        {
+          "id": "D",
+          "text": "Menggunakan susunan Straight-Through dengan kedua ujung menggunakan standar TIA/EIA-568B."
+        }
+      ],
+      "explanation": "Berdasarkan Buku Siswa hlm. 106–109 dan Panduan Guru hlm. 174–183 mengenai media transmisi dan standar pengkabelan EIA/TIA-568, kabel Crossover digunakan untuk menghubungkan dua perangkat sejenis (perangkat DTE ke DTE seperti laptop ke laptop, komputer ke komputer, atau switch ke switch) secara langsung tanpa perangkat perantara. Kabel crossover dirakit dengan satu ujung mengikuti standar T-568A dan ujung lainnya mengikuti standar T-568B (pin 1-2 [TX] bersilangan dengan pin 3-6 [RX]). Pilihan A dan D adalah kabel Straight-Through yang digunakan untuk menghubungkan perangkat berbeda jenis (komputer ke switch/hub). Pilihan C (rollover) umumnya digunakan untuk kabel konsol manajemen perangkat cisco/router.",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "source": {
+        "student_book": {
+          "pages": "106-109",
+          "section": "Bab 4, Subbab G: Media Transmisi Data dan Standar Pengkabelan UTP"
+        },
+        "teacher_guide": {
+          "pages": "174-183",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal standar perakitan kabel Crossover T-568A ke T-568B merujuk pada Buku Siswa hlm. 106–109.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-D: Menerapkan standar pengkabelan kabel twisted pair (Straight vs Crossover) sesuai jenis perangkat yang dihubungkan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 106-109 (Standar TIA/EIA-568A dan 568B)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 174-183"
+        },
+        "authoring_statement": "Skenario perakitan kabel crossover peer-to-peer disusun mandiri untuk memverifikasi kemampuan praktis penataan pin kabel jaringan."
+      }
+    },
+    {
+      "question_id": "INF12-C04-M15-Q03",
+      "before_question": "Sebuah kawasan industri manufaktur memiliki gardu induk transformator daya listrik tegangan tinggi dan mesin-mesin motor induksi berdaya besar. Teknisi jaringan diminta memasang kabel transmisi data sepanjang 400 meter yang menghubungkan ruang kontrol utama dengan gedung laboratorium melewati area gardu transformator tersebut. Berdasarkan analisis karakteristik fisik media transmisi (Buku Siswa hlm. 110–118), jenis kabel yang paling tepat dipilih untuk menjamin integritas transmisi data tanpa risiko kerusakan sinyal adalah...",
+      "after_question": "Sebuah kawasan industri manufaktur memiliki gardu induk transformator daya listrik tegangan tinggi dan mesin-mesin motor induksi berdaya besar. Teknisi jaringan diminta memasang kabel transmisi data sepanjang 400 meter yang menghubungkan ruang kontrol utama dengan gedung laboratorium melewati area gardu transformator tersebut. Berdasarkan analisis karakteristik fisik media transmisi (Buku Siswa hlm. 110–118), jenis kabel yang paling tepat dipilih untuk menjamin integritas transmisi data tanpa risiko kerusakan sinyal adalah...",
+      "answer": "C",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Kabel UTP (Unshielded Twisted Pair) Kategori 5e karena memiliki fleksibilitas tinggi dan instalasi paling ekonomis."
+        },
+        {
+          "id": "B",
+          "text": "Kabel Coaxial RG-6 karena memiliki impedansi 75 ohm yang cocok untuk jalur frekuensi audio-visual."
+        },
+        {
+          "id": "C",
+          "text": "Kabel Serat Optik (Fiber Optic) karena mentransmisikan data berupa pulsa cahaya di dalam kaca sehingga kebal terhadap interferensi gelombang elektromagnetik (EMI)."
+        },
+        {
+          "id": "D",
+          "text": "Kabel STP (Shielded Twisted Pair) tanpa grounding karena lapisan timahnya dapat menyerap lonjakan tegangan kilat secara permanen."
+        }
+      ],
+      "explanation": "Berdasarkan Buku Siswa hlm. 110–118 dan Panduan Guru hlm. 174–183 mengenai perbandingan media transmisi (kabel tembaga vs serat optik), kabel Serat Optik (Fiber Optic) menggunakan serat kaca/silika murni untuk menghantarkan data dalam bentuk berkas pulsa cahaya (foton). Karena tidak menggunakan sinyal elektrik, kabel serat optik 100% kebal (imun) terhadap gangguan interferensi elektromagnetik (Electromagnetic Interference / EMI) dan lonjakan frekuensi radio (RFI) yang intensif di sekitar gardu transformator tegangan tinggi dan motor industri besar. Selain itu, serat optik memiliki redaman sinyal sangat rendah sehingga mampu menempuh jarak 400 meter tanpa memerlukan repeater/penguat sinyal (kabel UTP tembaga terbatas hanya 100 meter). Pilihan A, B, dan D tetap rentan terhadap radiasi magnetik dan kabel UTP dibatasi jarak maksimal 100 meter.",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "source": {
+        "student_book": {
+          "pages": "110-118",
+          "section": "Bab 4, Subbab G: Karakteristik Media Kabel Tembaga vs Serat Optik (Fiber Optic)"
+        },
+        "teacher_guide": {
+          "pages": "174-183",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 4"
+        }
+      },
+      "provenance": "Skenario orisinal analisis kekebalan interferensi elektromagnetik serat optik merujuk pada Buku Siswa hlm. 110–118.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-D: Menganalisis ketahanan dan karakteristik fisik media transmisi data terhadap interferensi lingkungan elektromagnetik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 110-118 (Kelebihan dan Karakteristik Fiber Optic)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 174-183"
+        },
+        "authoring_statement": "Studi kasus transmisi data di kawasan gardu daya tegangan tinggi disusun mandiri untuk memverifikasi penalaran analitis pemilihan media fisik jaringan."
+      }
+    }
+  ]
+}

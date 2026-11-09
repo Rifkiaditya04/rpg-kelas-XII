@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "world-4-informatika-chapter-4-misi-14-v1.1",
+  "base_batch": "world-4-informatika-chapter-4-misi-14-canonical-v1.0.json",
+  "status": "CONTROLLED_REVISION_DRAFT",
+  "purpose": "Standardize Chapter 4 Mission 14 items to SOP v2.0 Base-Plus-Overlay v1.1 with explicit option objects (A-D) and full provenance.",
+  "revisions": [
+    {
+      "question_id": "INF12-C04-M14-Q01",
+      "before_question": "Model referensi OSI (Open System Interconnection) membagi arsitektur komunikasi data menjadi 7 lapisan terstruktur. Lapisan yang bertugas menentukan jalur pengiriman data terbaik (routing), mengelola pengalamatan logis (IP Address), dan memaketkan data menjadi Packets adalah...",
+      "after_question": "Model referensi OSI (Open System Interconnection) membagi arsitektur komunikasi data menjadi 7 lapisan terstruktur. Lapisan yang bertugas menentukan jalur pengiriman data terbaik (routing), mengelola pengalamatan logis (IP Address), dan memaketkan data menjadi Packets adalah...",
+      "answer": "C",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Physical Layer (Lapisan Fisik)"
+        },
+        {
+          "id": "B",
+          "text": "Data Link Layer (Lapisan Tautan Data)"
+        },
+        {
+          "id": "C",
+          "text": "Network Layer (Lapisan Jaringan)"
+        },
+        {
+          "id": "D",
+          "text": "Application Layer (Lapisan Aplikasi)"
+        }
+      ],
+      "explanation": "Berdasarkan Buku Siswa hlm. 100–101 (Gambar 4.2) dan Panduan Guru hlm. 164–173, Network Layer (Layer 3) bertanggung jawab atas pengalamatan logis (IP Address) dan penentuan rute terbaik (routing / path determination) agar paket data dapat sampai ke jaringan tujuan melintasi berbagai router. Unit data pada layer ini disebut Packets. Pilihan A bertugas mentransmisikan bit listrik/cahaya mentah. Pilihan B mengelola frame dan MAC address fisik. Pilihan D menyediakan antarmuka langsung ke aplikasi pengguna.",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "source": {
+        "student_book": {
+          "pages": "100-101",
+          "section": "Bab 4, Subbab E: Model Open System Interconnection (OSI) Layer"
+        },
+        "teacher_guide": {
+          "pages": "164-173",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal fungsi lapisan jaringan OSI Layer 3 merujuk pada Buku Siswa hlm. 100–101.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-C: Memahami hierarki fungsi tujuh lapisan model referensi OSI dan unit data enkapsulasi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 100-101 (Bagan Model OSI Layer)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 164-173"
+        },
+        "authoring_statement": "Deskripsi fungsi lapisan jaringan Network Layer disusun mandiri untuk memverifikasi pemahaman dasar arsitektur komunikasi data."
+      }
+    },
+    {
+      "question_id": "INF12-C04-M14-Q02",
+      "before_question": "Arsitektur internet global secara praktis beroperasi menggunakan model protokol TCP/IP yang terdiri atas 4 lapisan: Network Access, Internet, Transport, dan Application. Jika dibandingkan dengan model teoritis OSI 7 Layer (Buku Siswa hlm. 101–103), lapisan OSI manakah yang dilebur dan fungsinya tercakup di dalam Application Layer pada model TCP/IP?",
+      "after_question": "Arsitektur internet global secara praktis beroperasi menggunakan model protokol TCP/IP yang terdiri atas 4 lapisan: Network Access, Internet, Transport, dan Application. Jika dibandingkan dengan model teoritis OSI 7 Layer (Buku Siswa hlm. 101–103), lapisan OSI manakah yang dilebur dan fungsinya tercakup di dalam Application Layer pada model TCP/IP?",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Physical Layer, Data Link Layer, dan Network Layer."
+        },
+        {
+          "id": "B",
+          "text": "Session Layer, Presentation Layer, dan Application Layer."
+        },
+        {
+          "id": "C",
+          "text": "Network Layer dan Transport Layer."
+        },
+        {
+          "id": "D",
+          "text": "Data Link Layer dan Transport Layer."
+        }
+      ],
+      "explanation": "Sesuai bagan perbandingan model OSI dan TCP/IP pada Buku Siswa hlm. 102–103 (Gambar 4.3 dan Aktivitas JKI-K12-08) serta Panduan Guru hlm. 164–173: Lapisan teratas pada TCP/IP (Application Layer) mencakup seluruh fungsi dari 3 lapisan teratas OSI, yaitu Session Layer (manajemen dialog/sesi), Presentation Layer (format, kompresi, dan enkripsi data), dan Application Layer (antarmuka protokol aplikasi seperti HTTP, FTP, SMTP, DNS). Di sisi bawah, Network Access Layer pada TCP/IP menggabungkan fungsi Physical dan Data Link Layer dari model OSI. Pilihan A, C, dan D tidak sesuai dengan skema pemetaan OSI-TCP/IP.",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "source": {
+        "student_book": {
+          "pages": "101-103",
+          "section": "Bab 4, Subbab E: Perbandingan OSI Layer dan TCP/IP Layer"
+        },
+        "teacher_guide": {
+          "pages": "164-173",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario orisinal perbandingan arsitektur OSI 7 Layer vs TCP/IP 4 Layer merujuk pada Buku Siswa hlm. 101–103.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-C: Menerapkan pemetaan hierarkis antara model teoretis OSI 7 Layer dan model implementasi TCP/IP 4 Layer",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 101-103 (Arsitektur TCP/IP Layer)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 164-173"
+        },
+        "authoring_statement": "Perbandingan integrasi lapisan aplikasi TCP/IP disusun orisinal untuk menguji penerapan abstraksi protokol jaringan."
+      }
+    },
+    {
+      "question_id": "INF12-C04-M14-Q03",
+      "before_question": "Pada Transport Layer di protokol TCP/IP, terdapat dua protokol pengiriman data utama: TCP (Transmission Control Protocol) dan UDP (User Datagram Protocol). Sebuah tim pengembang sedang merancang dua aplikasi: Aplikasi P adalah sistem transfer dana antar-bank di mana setiap rupiah tidak boleh hilang atau rusak, sedangkan Aplikasi Q adalah platform siaran langsung (video live streaming) pertandingan olahraga di mana kecepatan transmisi mulus diutamakan dan hilangnya 1–2 frame gambar dapat ditoleransi. Berdasarkan analisis karakteristik protokol transport, pasangan protokol manakah yang paling tepat untuk masing-masing aplikasi?",
+      "after_question": "Pada Transport Layer di protokol TCP/IP, terdapat dua protokol pengiriman data utama: TCP (Transmission Control Protocol) dan UDP (User Datagram Protocol). Sebuah tim pengembang sedang merancang dua aplikasi: Aplikasi P adalah sistem transfer dana antar-bank di mana setiap rupiah tidak boleh hilang atau rusak, sedangkan Aplikasi Q adalah platform siaran langsung (video live streaming) pertandingan olahraga di mana kecepatan transmisi mulus diutamakan dan hilangnya 1–2 frame gambar dapat ditoleransi. Berdasarkan analisis karakteristik protokol transport, pasangan protokol manakah yang paling tepat untuk masing-masing aplikasi?",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Aplikasi P menggunakan UDP karena lebih cepat, sedangkan Aplikasi Q menggunakan TCP karena menjamin tidak ada frame yang hilang."
+        },
+        {
+          "id": "B",
+          "text": "Aplikasi P menggunakan TCP karena bersifat connection-oriented dan menjamin keutuhan data (reliable delivery) melalui mekanisme three-way handshake dan pengiriman ulang (retransmission), sedangkan Aplikasi Q menggunakan UDP karena bersifat connectionless dengan overhead rendah yang meminimalkan latency (keterlambatan waktu)."
+        },
+        {
+          "id": "C",
+          "text": "Kedua aplikasi wajib menggunakan protokol ICMP karena beroperasi di lapisan aplikasi."
+        },
+        {
+          "id": "D",
+          "text": "Kedua aplikasi wajib menggunakan UDP karena TCP sudah ditinggalkan di era internet modern."
+        }
+      ],
+      "explanation": "Berdasarkan Buku Siswa hlm. 102 dan Panduan Guru hlm. 164–173: TCP menyediakan transmisi data andal (reliable, connection-oriented) dengan mekanisme error-checking, sequence numbering, dan retransmission, menjadikannya mutlak untuk transaksi finansial (Aplikasi P) di mana integritas data tidak boleh cacat. Sebaliknya, UDP bersifat unreliable, connectionless tanpa verifikasi acknowledge, sehingga memiliki latensi sangat rendah yang sempurna untuk streaming multimedia, video call, atau game online (Aplikasi Q), di mana kecepatan real-time lebih penting daripada menunggu pengiriman ulang paket yang hilang. Pilihan A terbalik. Pilihan C salah karena ICMP adalah protokol layer internet (ping/troubleshooting). Pilihan D salah karena TCP tetap menjadi tulang punggung web dan transaksi.",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "source": {
+        "student_book": {
+          "pages": "102-103",
+          "section": "Bab 4, Subbab E.2: TCP/IP Layer (Transport Layer - TCP vs UDP)"
+        },
+        "teacher_guide": {
+          "pages": "164-173",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 3"
+        }
+      },
+      "provenance": "Skenario analitis pemilihan protokol transport TCP vs UDP pada kasus riil merujuk pada Buku Siswa hlm. 102.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-C: Menganalisis karakteristik, kelebihan, dan trade-off protokol Transport Layer (TCP connection-oriented vs UDP connectionless)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 102 (Protokol TCP dan UDP)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 164-173"
+        },
+        "authoring_statement": "Analisis kasus keandalan vs latensi pengiriman data disusun mandiri untuk melatih evaluasi arsitektur protokol jaringan komputer."
+      }
+    }
+  ]
+}

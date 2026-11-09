@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.1",
+  "revision_batch_id": "world-4-informatika-chapter-4-misi-12-v1.1",
+  "base_batch": "world-4-informatika-chapter-4-misi-12-canonical-v1.0.json",
+  "status": "CONTROLLED_REVISION_DRAFT",
+  "purpose": "Standardize Chapter 4 Mission 12 items to SOP v2.0 Base-Plus-Overlay v1.1 with explicit option objects (A-D) and full provenance.",
+  "revisions": [
+    {
+      "question_id": "INF12-C04-M12-Q01",
+      "before_question": "Dalam skema pengalamatan IPv4, sebuah alamat IP terdiri atas 32 bit bilangan biner yang dibagi menjadi empat oktet angka desimal bertitik (dotted-decimal). Jika sebuah laboratorium komputer sekolah menggunakan alamat IP 192.168.10.25 dengan subnet mask default 255.255.255.0, manakah pernyataan yang paling tepat menjelaskan identitas jaringan (network-id) dan identitas perangkat (host-id) alamat tersebut?",
+      "after_question": "Dalam skema pengalamatan IPv4, sebuah alamat IP terdiri atas 32 bit bilangan biner yang dibagi menjadi empat oktet angka desimal bertitik (dotted-decimal). Jika sebuah laboratorium komputer sekolah menggunakan alamat IP 192.168.10.25 dengan subnet mask default 255.255.255.0, manakah pernyataan yang paling tepat menjelaskan identitas jaringan (network-id) dan identitas perangkat (host-id) alamat tersebut?",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "192 adalah network-id, sedangkan 168.10.25 adalah host-id."
+        },
+        {
+          "id": "B",
+          "text": "192.168.10 adalah network-id (menunjukkan identitas kelompok jaringan), sedangkan 25 adalah host-id (menunjukkan nomor unik komputer di dalam jaringan tersebut)."
+        },
+        {
+          "id": "C",
+          "text": "192.168.10.25 seluruhnya adalah host-id tanpa memiliki network-id."
+        },
+        {
+          "id": "D",
+          "text": "255.255.255.0 adalah network-id, sedangkan 192.168.10.25 adalah kartu jaringan."
+        }
+      ],
+      "explanation": "Berdasarkan Buku Siswa hlm. 90 (Tabel 4.2) dan Panduan Guru hlm. 144–154, alamat IP 192.168.10.25 termasuk dalam rentang Alamat IP Kelas C (192.0.0.0 s.d. 223.255.255.255) dengan subnet mask default 255.255.255.0 (24 bit network). Pada Kelas C, 3 oktet pertama (192.168.10) berfungsi sebagai Network-ID yang mengidentifikasi alamat jaringan lokal, sedangkan 1 oktet terakhir (25) berfungsi sebagai Host-ID yang menandai komputer/antarmuka tertentu di dalam jaringan tersebut. Pilihan A adalah karakteristik pembagian Kelas A (8 bit network). Pilihan C salah karena setiap alamat IPv4 selalu memuat network-id dan host-id. Pilihan D salah mendeskripsikan subnet mask.",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "source": {
+        "student_book": {
+          "pages": "90",
+          "section": "Bab 4, Subbab A: Jaringan Komputer dan Manfaatnya (IP Address)"
+        },
+        "teacher_guide": {
+          "pages": "144-154",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal analisis struktur alamat IPv4 Kelas C merujuk pada Buku Siswa hlm. 90.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-A: Memahami format pengalamatan IPv4, pembagian oktet network-id dan host-id, serta kelas alamat jaringan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 90 (Tabel Kelas IP Address)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 144-154"
+        },
+        "authoring_statement": "Perumusan struktur pengalamatan logika IPv4 disusun mandiri untuk memverifikasi pemahaman dasar identitas jaringan lokal."
+      }
+    },
+    {
+      "question_id": "INF12-C04-M12-Q02",
+      "before_question": "Sebuah dinas pendidikan provinsi ingin mengintegrasikan sistem pelaporan nilai ujian dari 15 kantor dinas pendidikan kabupaten/kota yang tersebar di wilayah kepulauan provinsi tersebut. Setiap kantor kabupaten memiliki jaringan lokal komputernya sendiri, dan seluruh kantor kini dihubungkan melalui jaringan privat terenkripsi jarak jauh menggunakan sambungan satelit dan serat optik lintas wilayah. Berdasarkan jangkauan geografisnya (Tabel 4.4 Buku Siswa), klasifikasi jaringan yang menghubungkan kantor dinas antar-kabupaten tersebut adalah...",
+      "after_question": "Sebuah dinas pendidikan provinsi ingin mengintegrasikan sistem pelaporan nilai ujian dari 15 kantor dinas pendidikan kabupaten/kota yang tersebar di wilayah kepulauan provinsi tersebut. Setiap kantor kabupaten memiliki jaringan lokal komputernya sendiri, dan seluruh kantor kini dihubungkan melalui jaringan privat terenkripsi jarak jauh menggunakan sambungan satelit dan serat optik lintas wilayah. Berdasarkan jangkauan geografisnya (Tabel 4.4 Buku Siswa), klasifikasi jaringan yang menghubungkan kantor dinas antar-kabupaten tersebut adalah...",
+      "answer": "C",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Personal Area Network (PAN), karena hanya digunakan oleh staf pegawai pribadi."
+        },
+        {
+          "id": "B",
+          "text": "Local Area Network (LAN), karena seluruh data bernilai pendidikan sekolah."
+        },
+        {
+          "id": "C",
+          "text": "Wide Area Network (WAN), karena mencakup wilayah geografis yang sangat luas lintas kabupaten/provinsi dan menghubungkan berbagai sub-jaringan melalui infrastruktur telekomunikasi publik/satelit."
+        },
+        {
+          "id": "D",
+          "text": "Storage Area Network (SAN), karena hanya menyimpan berkas teks tanpa komputasi."
+        }
+      ],
+      "explanation": "Sesuai klasifikasi jaringan berdasarkan area geografis pada Buku Siswa hlm. 91–93 (Tabel 4.4) dan Panduan Guru hlm. 144–154: PAN mencakup area pribadi (<10 meter); LAN mencakup area lokal terbatas seperti satu gedung/sekolah; MAN mencakup wilayah metropolitan/satu kota; sedangkan WAN (Wide Area Network) menghubungkan beberapa LAN atau jaringan yang terpisah secara geografis lintas kota, kabupaten, provinsi, atau bahkan negara menggunakan router dan saluran telekomunikasi jarak jauh. Pilihan A keliru skala ruangnya. Pilihan B keliru karena LAN tidak dapat menjangkau antar-kabupaten secara langsung. Pilihan D bukan klasifikasi geografis.",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "source": {
+        "student_book": {
+          "pages": "91-93",
+          "section": "Bab 4, Subbab B: Klasifikasi Jaringan Komputer"
+        },
+        "teacher_guide": {
+          "pages": "144-154",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario orisinal klasifikasi geografis jaringan kepulauan WAN merujuk pada Buku Siswa hlm. 91–93.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-A: Menerapkan klasifikasi jaringan komputer berdasarkan jangkauan geografis (PAN, LAN, MAN, WAN) dalam pemecahan masalah konektivitas wilayah",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 91-93 (Jenis Jaringan Berdasarkan Area)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 144-154"
+        },
+        "authoring_statement": "Kasus integrasi jaringan dinas pendidikan antar-kabupaten dirancang mandiri untuk melatih penerapan konsep skala jaringan komputer."
+      }
+    },
+    {
+      "question_id": "INF12-C04-M12-Q03",
+      "before_question": "Dalam Buku Siswa hlm. 90 dijelaskan bahwa alamat IP versi 4 (IPv4) menggunakan format 32 bit yang secara teoritis menyediakan sekitar 4,3 miliar alamat unik (2^32). Mengingat saat ini miliaran telepon pintar, perangkat IoT, dan server komputasi terhubung ke internet, analisis manakah yang paling tepat menjelaskan dampak keterbatasan alamat IPv4 dan solusi teknologi yang diadopsi di industri global?",
+      "after_question": "Dalam Buku Siswa hlm. 90 dijelaskan bahwa alamat IP versi 4 (IPv4) menggunakan format 32 bit yang secara teoritis menyediakan sekitar 4,3 miliar alamat unik (2^32). Mengingat saat ini miliaran telepon pintar, perangkat IoT, dan server komputasi terhubung ke internet, analisis manakah yang paling tepat menjelaskan dampak keterbatasan alamat IPv4 dan solusi teknologi yang diadopsi di industri global?",
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Jumlah alamat IPv4 masih sangat berlimpah sehingga organisasi tidak memerlukan mekanisme translasi alamat atau migrasi protokol baru."
+        },
+        {
+          "id": "B",
+          "text": "Keterbatasan alamat IPv4 memicu kelangkaan alamat IP publik (IP address exhaustion), yang diatasi secara transisi menggunakan teknik NAT (Network Address Translation) pada tingkat lokal dan migrasi permanen ke IPv6 yang berukuran 128 bit dengan kapasitas alamat nyaris tak terbatas (2^128)."
+        },
+        {
+          "id": "C",
+          "text": "IPv4 diselesaikan dengan membatasi durasi akses internet setiap pengguna maksimal 1 jam per hari agar alamat IP dapat dipakai bergantian."
+        },
+        {
+          "id": "D",
+          "text": "Seluruh komputer di dunia diubah menjadi perangkat analog agar tidak lagi memerlukan alamat IP."
+        }
+      ],
+      "explanation": "Berdasarkan pembahasan perkembangan internet dan pengalamatan IP pada Buku Siswa hlm. 90 dan Panduan Guru hlm. 144–154: Pertumbuhan eksponensial pengguna internet dan perangkat IoT menyebabkan alokasi 32-bit IPv4 habis (IPv4 exhaustion). Untuk mengatasi masalah ini, dunia teknologi menerapkan: 1) NAT (Network Address Translation) yang memungkinkan ribuan perangkat lokal (private IP) berbagi satu alamat IP publik ke internet; 2) Pengadopsian standar IPv6 (128 bit) yang menyediakan 2^128 (sekitar 3,4 x 10^38) alamat unik, menjamin setiap perangkat siber di masa depan memiliki alamat unik permanen. Pilihan A tidak sesuai fakta krisis alamat IP. Pilihan C dan D adalah opsi keliru dan tidak masuk akal.",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "source": {
+        "student_book": {
+          "pages": "90",
+          "section": "Bab 4, Subbab A: Pengalamatan IP Address dan Tantangan Internet"
+        },
+        "teacher_guide": {
+          "pages": "144-154",
+          "section": "Panduan Pembelajaran Bab 4, Pertemuan 1"
+        }
+      },
+      "provenance": "Skenario analitis krisis alamat IPv4 dan transisi ke IPv6/NAT merujuk pada Buku Siswa hlm. 90.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "INF12-C04-A: Menganalisis keterbatasan kapasitas pengalamatan IPv4, fenomena IP exhaustion, dan mekanisme solusi transisi teknologi (NAT dan IPv6)",
+        "concept_reference": {
+          "student_book": "Buku Siswa Informatika Kelas XII hlm. 90 (Kapasitas IP Address)",
+          "teacher_guide": "Buku Panduan Guru Informatika Kelas XII hlm. 144-154"
+        },
+        "authoring_statement": "Evaluasi analitis krisis alamat IP global disusun mandiri untuk menguji daya nalar komputasional tingkat tinggi peserta didik."
+      }
+    }
+  ]
+}
