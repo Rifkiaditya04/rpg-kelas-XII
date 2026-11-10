@@ -665,3 +665,25 @@ Berdasarkan evaluasi alur kerja perakitan bank soal kelas XII dan keberhasilan p
 - **Tautan Otoritatif:**
   1. SOP Batch v2.0: `Alur Kerja Proyek/SOP-PRODUKSI-BANK-SOAL-BATCH-v2.0.md`
   2. Kebijakan Hak Cipta: `Alur Kerja Proyek/PROJECT LOG/decisions/009-content-source-and-copyright-safe-pipeline.md`
+
+## 31. Usulan Penutupan Bank Soal Reguler Informatika (Bab 1–5) & Penetapan Asesmen Capstone Kinerja Bab 6 (2026-11-09)
+Berdasarkan hasil produksi batch Misi 1–21 dan kajian akademik mendalam terhadap Buku Siswa (hlm. 1–217) serta Buku Panduan Guru (hlm. 252–288) Informatika Kelas XII:
+- **Status:** APPROVED — USER APPROVED (2026-11-10) (Persetujuan diberikan oleh pemilik proyek pada 10 November 2026; Project Log 108 / Decision 010).
+- **Usulan Penutupan Bank Soal Reguler Informatika:**
+  1. *Inventaris Resmi:* Bank soal reguler Informatika Kelas XII diusulkan ditutup pada **Misi 21** dengan total inventaris **63 butir soal objektif** yang terbagi dalam 5 bab materi buku teks:
+     - Bab 1: *Informatika Sekarang dan Masa Depan* (BS hlm. 1–22) — Misi 1–3 (9 butir, 9 berkas misi P3)
+     - Bab 2: *Sistem Komputer* (BS hlm. 23–48) — Misi 4–7 (12 butir, 12 berkas misi P3)
+     - Bab 3: *Berpikir Komputasional dan Algoritma Pemrograman* (BS hlm. 49–86) — Misi 8–11 (12 butir, 12 berkas misi P3)
+     - Bab 4: *Jaringan Komputer dan Internet* (BS hlm. 87–138) — Misi 12–16 (15 butir, 15 berkas misi P3)
+     - Bab 5: *Dampak Sosial Informatika* (BS hlm. 139–190) — Misi 17–21 (15 butir, 15 berkas misi P3)
+  2. *Integritas Berkas Data:* Seluruh data terdistribusi dalam **5 berkas pool Phase 4** (`pool-informatika-INF12-C01.json` s.d. `pool-informatika-INF12-C05.json`), **5 berkas Master Source Map** per bab, dan **63 berkas misi Phase 3** (setiap misi memiliki tiga berkas Phase 3 per misi: baseline v1.0, revision overlay v1.1, dan canonical v1.1). Kualitas batch Bab 5 divalidasi dengan 388/388 pemeriksaan lulus khusus pada skrip pengujian `validate_bab5.js`.
+- **Usulan Status Bab 6 (Praktik Lintas Bidang):**
+  1. *Cakupan Kurikulum Sah:* Bab 6 (*Praktik Lintas Bidang*, BS hlm. 191–217) tetap menjadi bagian sah dari cakupan kurikulum Informatika Kelas XII.
+  2. *Format Asesmen Kinerja:* Bab 6 diusulkan sebagai **Capstone Proyek Kolaboratif Berbasis Kinerja** berbasis Project-Based Learning berkelompok (pengelolaan sampah 3R, prototipe komputasi/Arduino, laporan tertulis, dan presentasi), bukan berupa pool soal pilihan ganda konvensional.
+  3. *Penangguhan Misi 22–25:* Misi 22–25 tidak diproduksi pada batch ini. Konsep *Eco-Informatics Capstone Quest* dialokasikan ke dalam backlog pengembangan game terpisah dan tidak dihitung sebagai konten yang sudah diproduksi.
+  4. *Integritas Klaim Capaian Pembelajaran:* Ditegaskan bahwa Bab 1–5 mencakup domain pengetahuan materi buku teks. Proyek tidak mengklaim ketercakupan 100% seluruh elemen Fase F sebelum pemetaan komprehensif multi-tahun (Kelas XI–XII) dan elemen terapan Bab 6 (SK dan PLB) diverifikasi secara formal.
+- **Integritas Berkas Terlindungi:**
+  - Tiga berkas laporan terlindungi (`missions/learning_curve_report.json`, `missions/recipe_validation_report.json`, dan `missions/smoke_test_report.json`) berstatus `modified/unstaged` dan tidak disentuh.
+- **Tautan Otoritatif:**
+  1. Keputusan Desain: `Alur Kerja Proyek/PROJECT LOG/decisions/010-informatika-chapter-6-capstone-and-regular-pool-closure.md`
+  2. Project Log: `Alur Kerja Proyek/PROJECT LOG/108-Informatika-Bab-1-5-Finalization-and-Bab-6-Capstone-Determination.md`
