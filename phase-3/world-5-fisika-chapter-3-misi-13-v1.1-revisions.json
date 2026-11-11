@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "revision_batch_id": "world-5-fisika-chapter-3-misi-13-v1.1",
+  "base_batch": "world-5-fisika-chapter-3-misi-13-canonical-v1.0.json",
+  "status": "APPROVED",
+  "purpose": "Revision overlay v1.1 for Fisika Bab 3 Misi 13 - Verifikasi Akademis & Penyelarasan Standar Lintas Mapel",
+  "revisions": [
+    {
+      "question_id": "FIS12-C03-M13-Q01",
+      "before_question": "Sebuah kumparan solenoida panjang ideal memiliki panjang l = 20 cm (0,2 m), luas penampang A = 10 cm² (10⁻³ m²), dan terdiri atas N = 400 lilitan kawat. Inti kumparan berupa bahan feromagnetik dengan permeabilitas relatif μ_r = 500. Diketahui permeabilitas vakum μ₀ = 4π × 10⁻⁷ H/m. Jika arus listrik yang mengalir pada kumparan solenoida tersebut diputus dari I₁ = 4 A menjadi nol dalam selang waktu singkat Δt = 0,05 sekon, berapakah nilai induktansi diri solenoida dan besar GGL induksi diri yang timbul?",
+      "after_question": "Sebuah kumparan solenoida panjang ideal memiliki panjang l = 20 cm (0,2 m), luas penampang A = 10 cm² (10⁻³ m²), dan terdiri atas N = 400 lilitan kawat. Inti kumparan berupa bahan feromagnetik dengan permeabilitas relatif μ_r = 500. Diketahui permeabilitas vakum μ₀ = 4π × 10⁻⁷ H/m. Jika arus listrik yang mengalir pada kumparan solenoida tersebut diputus dari I₁ = 4 A menjadi nol dalam selang waktu singkat Δt = 0,05 sekon, berapakah nilai induktansi diri solenoida dan besar GGL induksi diri yang timbul?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "L = 0,16π H dan |ε_diri| = 12,8π V"
+        },
+        {
+          "id": "B",
+          "text": "L = 0,32π H dan |ε_diri| = 25,6π V"
+        },
+        {
+          "id": "C",
+          "text": "L = 0,16π H dan |ε_diri| = 6,4π V"
+        },
+        {
+          "id": "D",
+          "text": "L = 0,08π H dan |ε_diri| = 12,8π V"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "L = 0,16π H dan |ε_diri| = 12,8π V"
+        },
+        {
+          "id": "B",
+          "text": "L = 0,32π H dan |ε_diri| = 25,6π V"
+        },
+        {
+          "id": "C",
+          "text": "L = 0,16π H dan |ε_diri| = 6,4π V"
+        },
+        {
+          "id": "D",
+          "text": "L = 0,08π H dan |ε_diri| = 12,8π V"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Permeabilitas bahan inti kumparan adalah μ = μ₀ · μ_r = (4π × 10⁻⁷ H/m) × 500 = 2π × 10⁻⁴ H/m. Berdasarkan rumus induktansi diri solenoida panjang ideal: L = (μ·N²·A) / l = (2π × 10⁻⁴ × 400² × 10⁻³) / 0,2 = (2π × 10⁻⁴ × 160.000 × 10⁻³) / 0,2 = (32π × 10⁻³) / 0,2 = 0,16π H (sekitar 0,503 H). Besar GGL induksi diri akibat perubahan arus adalah: |ε_diri| = L · (|ΔI| / Δt) = 0,16π H × (4 A / 0,05 s) = 0,16π × 80 = 12,8π Volt (sekitar 40,2 V) (Buku Siswa hlm. 67–68; Buku Guru hlm. 79–82).",
+      "after_explanation": "Permeabilitas bahan inti kumparan adalah μ = μ₀ · μ_r = (4π × 10⁻⁷ H/m) × 500 = 2π × 10⁻⁴ H/m. Berdasarkan rumus induktansi diri solenoida panjang ideal: L = (μ·N²·A) / l = (2π × 10⁻⁴ × 400² × 10⁻³) / 0,2 = (2π × 10⁻⁴ × 160.000 × 10⁻³) / 0,2 = (32π × 10⁻³) / 0,2 = 0,16π H (sekitar 0,503 H). Besar GGL induksi diri akibat perubahan arus adalah: |ε_diri| = L · (|ΔI| / Δt) = 0,16π H × (4 A / 0,05 s) = 0,16π × 80 = 12,8π Volt (sekitar 40,2 V) (Buku Siswa hlm. 67–68; Buku Guru hlm. 79–82).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C03-M13-Q02",
+      "before_question": "Sebuah model generator listrik laboratorium memiliki kumparan datar seluas A = 0,04 m² dengan N = 250 lilitan yang diputar dengan frekuensi konstan f = 50 Hz di dalam medan magnet homogen B = 0,2 T. Generator tersebut diuji dalam dua konfigurasi kontak terminal: Konfigurasi 1 menggunakan dua cincin geser terpisah (slip rings), sedangkan Konfigurasi 2 menggunakan sebuah komutator cincin belah (split-ring commutator). Berapakah nilai GGL induksi maksimum yang dibangkitkan, dan bagaimanakah perbedaan bentuk gelombang tegangan keluaran dari kedua konfigurasi tersebut?",
+      "after_question": "Sebuah model generator listrik laboratorium memiliki kumparan datar seluas A = 0,04 m² dengan N = 250 lilitan yang diputar dengan frekuensi konstan f = 50 Hz di dalam medan magnet homogen B = 0,2 T. Generator tersebut diuji dalam dua konfigurasi kontak terminal: Konfigurasi 1 menggunakan dua cincin geser terpisah (slip rings), sedangkan Konfigurasi 2 menggunakan sebuah komutator cincin belah (split-ring commutator). Berapakah nilai GGL induksi maksimum yang dibangkitkan, dan bagaimanakah perbedaan bentuk gelombang tegangan keluaran dari kedua konfigurasi tersebut?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "ε_maks = 200π V; Konfigurasi 1 menghasilkan tegangan AC sinusoidal bolak-balik, sedangkan Konfigurasi 2 menghasilkan tegangan searah berdenyut (pulsating DC)"
+        },
+        {
+          "id": "B",
+          "text": "ε_maks = 200π V; kedua konfigurasi menghasilkan tegangan bolak-balik sinusoidal yang identik karena parameter kumparannya sama"
+        },
+        {
+          "id": "C",
+          "text": "ε_maks = 100π V; Konfigurasi 1 menghasilkan tegangan searah murni, sedangkan Konfigurasi 2 menghasilkan tegangan bolak-balik"
+        },
+        {
+          "id": "D",
+          "text": "ε_maks = 400π V; Konfigurasi 1 menghasilkan tegangan pulsa kotak, sedangkan Konfigurasi 2 menghasilkan tegangan sinusoidal"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "ε_maks = 200π V; Konfigurasi 1 menghasilkan tegangan AC sinusoidal bolak-balik, sedangkan Konfigurasi 2 menghasilkan tegangan searah berdenyut (pulsating DC)"
+        },
+        {
+          "id": "B",
+          "text": "ε_maks = 200π V; kedua konfigurasi menghasilkan tegangan bolak-balik sinusoidal yang identik karena parameter kumparannya sama"
+        },
+        {
+          "id": "C",
+          "text": "ε_maks = 100π V; Konfigurasi 1 menghasilkan tegangan searah murni, sedangkan Konfigurasi 2 menghasilkan tegangan bolak-balik"
+        },
+        {
+          "id": "D",
+          "text": "ε_maks = 400π V; Konfigurasi 1 menghasilkan tegangan pulsa kotak, sedangkan Konfigurasi 2 menghasilkan tegangan sinusoidal"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Kecepatan sudut rotasi kumparan adalah ω = 2π·f = 2π × 50 = 100π rad/s. Besar GGL induksi maksimum yang dibangkitkan kumparan adalah: ε_maks = N·B·A·ω = 250 × 0,2 T × 0,04 m² × 100π rad/s = 2 × 100π = 200π Volt (sekitar 628 V). Perbedaan bentuk gelombang keluaran: Konfigurasi 1 (Generator AC dengan cincin geser) menyalurkan tegangan bolak-balik yang membalik polaritasnya setiap setengah putaran: ε(t) = 200π·sin(100πt). Konfigurasi 2 (Generator DC sederhana dengan komutator) membalik hubungan kontak terminal ke sikat karbon saat kumparan melewati bidang netral, sehingga polaritas tegangan keluaran selalu searah (hanya bernilai positif berupa gelombang berdenyut / pulsating DC: ε(t) = |200π·sin(100πt)|) (Buku Siswa hlm. 65–67; Buku Guru hlm. 79–80).",
+      "after_explanation": "Kecepatan sudut rotasi kumparan adalah ω = 2π·f = 2π × 50 = 100π rad/s. Besar GGL induksi maksimum yang dibangkitkan kumparan adalah: ε_maks = N·B·A·ω = 250 × 0,2 T × 0,04 m² × 100π rad/s = 2 × 100π = 200π Volt (sekitar 628 V). Perbedaan bentuk gelombang keluaran: Konfigurasi 1 (Generator AC dengan cincin geser) menyalurkan tegangan bolak-balik yang membalik polaritasnya setiap setengah putaran: ε(t) = 200π·sin(100πt). Konfigurasi 2 (Generator DC sederhana dengan komutator) membalik hubungan kontak terminal ke sikat karbon saat kumparan melewati bidang netral, sehingga polaritas tegangan keluaran selalu searah (hanya bernilai positif berupa gelombang berdenyut / pulsating DC: ε(t) = |200π·sin(100πt)|) (Buku Siswa hlm. 65–67; Buku Guru hlm. 79–80).",
+      "before_cognitive_level": "analyze",
+      "after_cognitive_level": "analyze",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C03-M13-Q03",
+      "before_question": "Sebuah stasiun pembangkit listrik menghasilkan daya listrik rata-rata P = 2,4 MW (2,4 × 10⁶ Watt) pada tegangan awal V₁ = 12 kV (12.000 V). Daya listrik tersebut hendak ditransmisikan ke gardu induk kota yang jauh melalui saluran kabel transmisi dengan hambatan total R_kabel = 5 Ω. Sebelum ditransmisikan, digunakan transformator ideal step-up dengan perbandingan lilitan 1 : 10 untuk menaikkan tegangan saluran transmisi menjadi V₂ = 120 kV (120.000 V). Berapakah daya disipasi yang hilang sebagai panas pada kabel transmisi (P_dis = I²·R) jika ditransmisikan langsung pada tegangan 12 kV, dan berapakah daya disipasinya setelah dinaikkan menjadi 120 kV dengan trafo step-up?",
+      "after_question": "Sebuah stasiun pembangkit listrik menghasilkan daya listrik rata-rata P = 2,4 MW (2,4 × 10⁶ Watt) pada tegangan awal V₁ = 12 kV (12.000 V). Daya listrik tersebut hendak ditransmisikan ke gardu induk kota yang jauh melalui saluran kabel transmisi dengan hambatan total R_kabel = 5 Ω. Sebelum ditransmisikan, digunakan transformator ideal step-up dengan perbandingan lilitan 1 : 10 untuk menaikkan tegangan saluran transmisi menjadi V₂ = 120 kV (120.000 V). Berapakah daya disipasi yang hilang sebagai panas pada kabel transmisi (P_dis = I²·R) jika ditransmisikan langsung pada tegangan 12 kV, dan berapakah daya disipasinya setelah dinaikkan menjadi 120 kV dengan trafo step-up?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "200 kW pada tegangan awal 12 kV dan berkurang drastis menjadi 2 kW setelah dinaikkan dengan trafo step-up 120 kV"
+        },
+        {
+          "id": "B",
+          "text": "20 kW pada tegangan awal 12 kV dan menjadi 2 kW setelah dinaikkan dengan trafo step-up 120 kV"
+        },
+        {
+          "id": "C",
+          "text": "200 kW pada tegangan awal 12 kV dan menjadi 20 kW setelah dinaikkan dengan trafo step-up 120 kV"
+        },
+        {
+          "id": "D",
+          "text": "100 kW pada tegangan awal 12 kV dan tidak berubah karena hambatan kabel transmisi tetap 5 Ω"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "200 kW pada tegangan awal 12 kV dan berkurang drastis menjadi 2 kW setelah dinaikkan dengan trafo step-up 120 kV"
+        },
+        {
+          "id": "B",
+          "text": "20 kW pada tegangan awal 12 kV dan menjadi 2 kW setelah dinaikkan dengan trafo step-up 120 kV"
+        },
+        {
+          "id": "C",
+          "text": "200 kW pada tegangan awal 12 kV dan menjadi 20 kW setelah dinaikkan dengan trafo step-up 120 kV"
+        },
+        {
+          "id": "D",
+          "text": "100 kW pada tegangan awal 12 kV dan tidak berubah karena hambatan kabel transmisi tetap 5 Ω"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Kasus 1 (Sebelum dinaikkan, V₁ = 12.000 V): Kuat arus pada kabel transmisi adalah I₁ = P / V₁ = (2,4 × 10⁶ W) / (12.000 V) = 200 A. Daya disipasi yang hilang sebagai panas pada kabel: P_dis,1 = I₁² · R_kabel = (200 A)² × 5 Ω = 40.000 × 5 = 200.000 Watt = 200 kW. Kasus 2 (Setelah dinaikkan oleh trafo step-up 1:10, V₂ = 120.000 V): Kuat arus pada kabel transmisi menjadi I₂ = P / V₂ = (2,4 × 10⁶ W) / (120.000 V) = 20 A. Daya disipasi baru pada kabel: P_dis,2 = I₂² · R_kabel = (20 A)² × 5 Ω = 400 × 5 = 2.000 Watt = 2 kW. Kesimpulan: Menaikkan tegangan transmisi 10 kali lipat mereduksi arus transmisi menjadi 1/10 kali, sehingga rugi daya transmisi berkurang sebesar (1/10)² = 1/100 kali (dari 200 kW turun menjadi hanya 2 kW), membuktikan peran vital transformator step-up dalam efisiensi energi nasional (Buku Siswa hlm. 67, 70; Buku Guru hlm. 80–81, 88–89).",
+      "after_explanation": "Kasus 1 (Sebelum dinaikkan, V₁ = 12.000 V): Kuat arus pada kabel transmisi adalah I₁ = P / V₁ = (2,4 × 10⁶ W) / (12.000 V) = 200 A. Daya disipasi yang hilang sebagai panas pada kabel: P_dis,1 = I₁² · R_kabel = (200 A)² × 5 Ω = 40.000 × 5 = 200.000 Watt = 200 kW. Kasus 2 (Setelah dinaikkan oleh trafo step-up 1:10, V₂ = 120.000 V): Kuat arus pada kabel transmisi menjadi I₂ = P / V₂ = (2,4 × 10⁶ W) / (120.000 V) = 20 A. Daya disipasi baru pada kabel: P_dis,2 = I₂² · R_kabel = (20 A)² × 5 Ω = 400 × 5 = 2.000 Watt = 2 kW. Kesimpulan: Menaikkan tegangan transmisi 10 kali lipat mereduksi arus transmisi menjadi 1/10 kali, sehingga rugi daya transmisi berkurang sebesar (1/10)² = 1/100 kali (dari 200 kW turun menjadi hanya 2 kW), membuktikan peran vital transformator step-up dalam efisiensi energi nasional (Buku Siswa hlm. 67, 70; Buku Guru hlm. 80–81, 88–89).",
+      "before_cognitive_level": "analyze",
+      "after_cognitive_level": "analyze",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    }
+  ]
+}

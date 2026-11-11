@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "revision_batch_id": "world-5-fisika-chapter-4-misi-16-v1.1",
+  "base_batch": "world-5-fisika-chapter-4-misi-16-canonical-v1.0.json",
+  "status": "APPROVED",
+  "purpose": "Revision overlay v1.1 for Fisika Bab 4 Misi 16 - Verifikasi Akademis & Penyelarasan Standar Lintas Mapel",
+  "revisions": [
+    {
+      "question_id": "FIS12-C04-M16-Q01",
+      "before_question": "Sebuah instalasi motor listrik AC pada bengkel kerja memiliki impedansi ekivalen berupa rangkaian seri dengan hambatan murni R = 40 Ω dan reaktansi induktif X_L = 30 Ω (tanpa kapasitor). Rangkaian dihubungkan ke sumber tegangan bolak-balik dengan tegangan efektif V_ef = 200 Volt. Berapakah faktor daya (cos φ) instalasi tersebut, berapakah daya semu (S) yang ditarik dari jaringan listrik PLN, dan berapakah daya aktif nyata (P) yang diubah menjadi energi gerak dan kalor?",
+      "after_question": "Sebuah instalasi motor listrik AC pada bengkel kerja memiliki impedansi ekivalen berupa rangkaian seri dengan hambatan murni R = 40 Ω dan reaktansi induktif X_L = 30 Ω (tanpa kapasitor). Rangkaian dihubungkan ke sumber tegangan bolak-balik dengan tegangan efektif V_ef = 200 Volt. Berapakah faktor daya (cos φ) instalasi tersebut, berapakah daya semu (S) yang ditarik dari jaringan listrik PLN, dan berapakah daya aktif nyata (P) yang diubah menjadi energi gerak dan kalor?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "Faktor daya cos φ = 0,8; daya semu S = 800 VA; dan daya nyata P = 640 W"
+        },
+        {
+          "id": "B",
+          "text": "Faktor daya cos φ = 1,0; daya semu S = 800 VA; dan daya nyata P = 800 W"
+        },
+        {
+          "id": "C",
+          "text": "Faktor daya cos φ = 0,6; daya semu S = 640 VA; dan daya nyata P = 480 W"
+        },
+        {
+          "id": "D",
+          "text": "Faktor daya cos φ = 0,8; daya semu S = 1.000 VA; dan daya nyata P = 800 W"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "Faktor daya cos φ = 0,8; daya semu S = 800 VA; dan daya nyata P = 640 W"
+        },
+        {
+          "id": "B",
+          "text": "Faktor daya cos φ = 1,0; daya semu S = 800 VA; dan daya nyata P = 800 W"
+        },
+        {
+          "id": "C",
+          "text": "Faktor daya cos φ = 0,6; daya semu S = 640 VA; dan daya nyata P = 480 W"
+        },
+        {
+          "id": "D",
+          "text": "Faktor daya cos φ = 0,8; daya semu S = 1.000 VA; dan daya nyata P = 800 W"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Langkah 1: Menghitung impedansi rangkaian: Z = √[R² + X_L²] = √[40² + 30²] = √[1.600 + 900] = √2.500 = 50 Ω. Langkah 2: Menghitung arus efektif rangkaian: I_ef = V_ef / Z = 200 V / 50 Ω = 4 Ampere. Langkah 3: Menghitung faktor daya: cos φ = R / Z = 40 / 50 = 0,8. Langkah 4: Menghitung daya semu (daya total terpasang dari PLN): S = V_ef × I_ef = 200 V × 4 A = 800 Volt-Ampere (VA). Langkah 5: Menghitung daya aktif nyata (daya disipasi kerja sesungguhnya): P = V_ef × I_ef × cos φ = 800 VA × 0,8 = 640 Watt (atau melalui P = I_ef² × R = 4² × 40 = 16 × 40 = 640 Watt). Perhatikan bahwa induktor ideal tidak menyerap daya rata-rata (daya reaktif netto = 0). Opsi B mengabaikan faktor daya dan menyamakan daya nyata dengan daya semu. Opsi C salah menghitung faktor daya sebagai X_L / Z = 30 / 50 = 0,6. Opsi D salah menghitung arus menggunakan R alih-alih Z (Buku Siswa hlm. 85, 87; Buku Guru hlm. 98, 104–105).",
+      "after_explanation": "Langkah 1: Menghitung impedansi rangkaian: Z = √[R² + X_L²] = √[40² + 30²] = √[1.600 + 900] = √2.500 = 50 Ω. Langkah 2: Menghitung arus efektif rangkaian: I_ef = V_ef / Z = 200 V / 50 Ω = 4 Ampere. Langkah 3: Menghitung faktor daya: cos φ = R / Z = 40 / 50 = 0,8. Langkah 4: Menghitung daya semu (daya total terpasang dari PLN): S = V_ef × I_ef = 200 V × 4 A = 800 Volt-Ampere (VA). Langkah 5: Menghitung daya aktif nyata (daya disipasi kerja sesungguhnya): P = V_ef × I_ef × cos φ = 800 VA × 0,8 = 640 Watt (atau melalui P = I_ef² × R = 4² × 40 = 16 × 40 = 640 Watt). Perhatikan bahwa induktor ideal tidak menyerap daya rata-rata (daya reaktif netto = 0). Opsi B mengabaikan faktor daya dan menyamakan daya nyata dengan daya semu. Opsi C salah menghitung faktor daya sebagai X_L / Z = 30 / 50 = 0,6. Opsi D salah menghitung arus menggunakan R alih-alih Z (Buku Siswa hlm. 85, 87; Buku Guru hlm. 98, 104–105).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, konvensi fase, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C04-M16-Q02",
+      "before_question": "Sebuah rangkaian RLC seri di laboratorium fisika memiliki spesifikasi nilai komponen R = 20 Ω, induktansi L = 50 mH (0,05 H), dan kapasitansi C = 20 µF (2 × 10⁻⁵ F). Rangkaian ini dihubungkan ke generator sinyal AC bertegangan efektif konstan V_ef = 10 Volt yang frekuensinya dapat diatur bebas. Pada frekuensi sudut berapakah (ω₀) rangkaian mengalami keadaan resonansi seri, berapakah arus efektif maksimum yang mengalir saat resonansi, dan berapakah tegangan efektif pada induktor (V_L) serta kapasitor (V_C) saat resonansi terjadi?",
+      "after_question": "Sebuah rangkaian RLC seri di laboratorium fisika memiliki spesifikasi nilai komponen R = 20 Ω, induktansi L = 50 mH (0,05 H), dan kapasitansi C = 20 µF (2 × 10⁻⁵ F). Rangkaian ini dihubungkan ke generator sinyal AC bertegangan efektif konstan V_ef = 10 Volt yang frekuensinya dapat diatur bebas. Pada frekuensi sudut berapakah (ω₀) rangkaian mengalami keadaan resonansi seri, berapakah arus efektif maksimum yang mengalir saat resonansi, dan berapakah tegangan efektif pada induktor (V_L) serta kapasitor (V_C) saat resonansi terjadi?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "ω₀ = 1.000 rad/s, arus maksimum I_ef = 0,5 A, serta V_L = V_C = 25 V (saling meniadakan secara fasor)"
+        },
+        {
+          "id": "B",
+          "text": "ω₀ = 1.000 rad/s, arus maksimum I_ef = 0,5 A, serta V_L = V_C = 0 V (tidak ada tegangan pada L dan C)"
+        },
+        {
+          "id": "C",
+          "text": "ω₀ = 500 rad/s, arus maksimum I_ef = 0,25 A, serta V_L = V_C = 10 V"
+        },
+        {
+          "id": "D",
+          "text": "ω₀ = 2.000 rad/s, arus maksimum I_ef = 1,0 A, serta V_L = 50 V dan V_C = 10 V"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "ω₀ = 1.000 rad/s, arus maksimum I_ef = 0,5 A, serta V_L = V_C = 25 V (saling meniadakan secara fasor)"
+        },
+        {
+          "id": "B",
+          "text": "ω₀ = 1.000 rad/s, arus maksimum I_ef = 0,5 A, serta V_L = V_C = 0 V (tidak ada tegangan pada L dan C)"
+        },
+        {
+          "id": "C",
+          "text": "ω₀ = 500 rad/s, arus maksimum I_ef = 0,25 A, serta V_L = V_C = 10 V"
+        },
+        {
+          "id": "D",
+          "text": "ω₀ = 2.000 rad/s, arus maksimum I_ef = 1,0 A, serta V_L = 50 V dan V_C = 10 V"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Langkah 1: Menghitung frekuensi sudut resonansi seri: ω₀ = 1 / √(L C) = 1 / √[0,05 × (2 × 10⁻⁵)] = 1 / √[10⁻⁶] = 1 / 10⁻³ = 1.000 rad/s (setara f₀ = 1.000 / (2π) ≈ 159,2 Hz). Langkah 2: Pada keadaan resonansi, reaktansi induktif tepat menyamai reaktansi kapasitif: X_L = ω₀ L = 1.000 × 0,05 = 50 Ω, dan X_C = 1 / (ω₀ C) = 1 / (1.000 × 2 × 10⁻⁵) = 50 Ω. Impedansi rangkaian mencapai nilai minimum Z_min = R = 20 Ω. Langkah 3: Menghitung arus efektif maksimum saat resonansi: I_maks-ef = V_ef / Z_min = 10 V / 20 Ω = 0,5 Ampere. Langkah 4: Menghitung tegangan pada L dan C saat resonansi: V_L = I × X_L = 0,5 A × 50 Ω = 25 Volt; V_C = I × X_C = 0,5 A × 50 Ω = 25 Volt. Poin konseptual penting: Saat resonansi, tegangan pada induktor (25 V) dan kapasitor (25 V) BUKAN NOL, melainkan berharga 25 V dan saling meniadakan karena berbeda fase 180° (V_L - V_C = 25 - 25 = 0), sehingga seluruh tegangan sumber 10 V jatuh pada resistor (V_R = 10 V). Opsi B mencerminkan miskonsepsi fatal bahwa saat resonansi induktor dan kapasitor tidak bertegangan. Opsi C salah menghitung akar LC. Opsi D melanggar syarat kesetimbangan reaktansi resonansi (Buku Siswa hlm. 88–90; Buku Guru hlm. 99, 107–109).",
+      "after_explanation": "Langkah 1: Menghitung frekuensi sudut resonansi seri: ω₀ = 1 / √(L C) = 1 / √[0,05 × (2 × 10⁻⁵)] = 1 / √[10⁻⁶] = 1 / 10⁻³ = 1.000 rad/s (setara f₀ = 1.000 / (2π) ≈ 159,2 Hz). Langkah 2: Pada keadaan resonansi, reaktansi induktif tepat menyamai reaktansi kapasitif: X_L = ω₀ L = 1.000 × 0,05 = 50 Ω, dan X_C = 1 / (ω₀ C) = 1 / (1.000 × 2 × 10⁻⁵) = 50 Ω. Impedansi rangkaian mencapai nilai minimum Z_min = R = 20 Ω. Langkah 3: Menghitung arus efektif maksimum saat resonansi: I_maks-ef = V_ef / Z_min = 10 V / 20 Ω = 0,5 Ampere. Langkah 4: Menghitung tegangan pada L dan C saat resonansi: V_L = I × X_L = 0,5 A × 50 Ω = 25 Volt; V_C = I × X_C = 0,5 A × 50 Ω = 25 Volt. Poin konseptual penting: Saat resonansi, tegangan pada induktor (25 V) dan kapasitor (25 V) BUKAN NOL, melainkan berharga 25 V dan saling meniadakan karena berbeda fase 180° (V_L - V_C = 25 - 25 = 0), sehingga seluruh tegangan sumber 10 V jatuh pada resistor (V_R = 10 V). Opsi B mencerminkan miskonsepsi fatal bahwa saat resonansi induktor dan kapasitor tidak bertegangan. Opsi C salah menghitung akar LC. Opsi D melanggar syarat kesetimbangan reaktansi resonansi (Buku Siswa hlm. 88–90; Buku Guru hlm. 99, 107–109).",
+      "before_cognitive_level": "analyze",
+      "after_cognitive_level": "analyze",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, konvensi fase, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C04-M16-Q03",
+      "before_question": "Sebuah sirkuit penala (tuner) penerima radio menggunakan prinsip resonansi rangkaian seri RLC dengan induktansi tetap L = 2,5 µH dan sebuah kapasitor variabel. Pada saat kapasitor variabel diatur pada nilai C₁ = 10 pF, rangkaian beresonansi untuk menangkap siaran radio pada frekuensi f₁ ≈ 31,8 MHz. Jika pengguna memutar tombol penala untuk memindahkan siaran ke frekuensi stasiun radio yang dua kali lipat lebih tinggi (f₂ = 2 f₁ ≈ 63,7 MHz), bagaimanakah nilai kapasitansi kapasitor variabel C₂ harus diubah?",
+      "after_question": "Sebuah sirkuit penala (tuner) penerima radio menggunakan prinsip resonansi rangkaian seri RLC dengan induktansi tetap L = 2,5 µH dan sebuah kapasitor variabel. Pada saat kapasitor variabel diatur pada nilai C₁ = 10 pF, rangkaian beresonansi untuk menangkap siaran radio pada frekuensi f₁ ≈ 31,8 MHz. Jika pengguna memutar tombol penala untuk memindahkan siaran ke frekuensi stasiun radio yang dua kali lipat lebih tinggi (f₂ = 2 f₁ ≈ 63,7 MHz), bagaimanakah nilai kapasitansi kapasitor variabel C₂ harus diubah?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "Kapasitansi harus diperkecil menjadi seperempat kali semula (C₂ = 2,5 pF)"
+        },
+        {
+          "id": "B",
+          "text": "Kapasitansi harus diperkecil menjadi setengah kali semula (C₂ = 5,0 pF)"
+        },
+        {
+          "id": "C",
+          "text": "Kapasitansi harus diperbesar menjadi dua kali semula (C₂ = 20 pF)"
+        },
+        {
+          "id": "D",
+          "text": "Kapasitansi harus diperbesar menjadi empat kali semula (C₂ = 40 pF)"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "Kapasitansi harus diperkecil menjadi seperempat kali semula (C₂ = 2,5 pF)"
+        },
+        {
+          "id": "B",
+          "text": "Kapasitansi harus diperkecil menjadi setengah kali semula (C₂ = 5,0 pF)"
+        },
+        {
+          "id": "C",
+          "text": "Kapasitansi harus diperbesar menjadi dua kali semula (C₂ = 20 pF)"
+        },
+        {
+          "id": "D",
+          "text": "Kapasitansi harus diperbesar menjadi empat kali semula (C₂ = 40 pF)"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Langkah 1: Frekuensi resonansi penala RLC adalah f₀ = 1 / [2π √(L C)]. Karena induktansi L bernilai konstan, maka frekuensi resonansi berbanding terbalik dengan akar kuadrat kapasitansi: f₀ ∝ 1 / √C, yang berarti C ∝ 1 / f₀². Langkah 2: Menghitung perbandingan kapasitansi: C₂ / C₁ = (f₁ / f₂)² = [f₁ / (2 f₁)]² = (1/2)² = 1/4. Langkah 3: Menghitung nilai kapasitansi baru: C₂ = C₁ / 4 = 10 pF / 4 = 2,5 pF. Jadi, untuk menangkap frekuensi siaran yang dua kali lebih tinggi, kapasitansi variabel harus diturunkan menjadi seperempat dari nilai semula. Opsi B salah karena mengabaikan hubungan kuadrat (menganggap hubungan linear). Opsi C dan D keliru karena memperbesar nilai kapasitor justru akan menurunkan frekuensi penerimaan siaran radio (Buku Siswa hlm. 88–90; Buku Guru hlm. 99, 107).",
+      "after_explanation": "Langkah 1: Frekuensi resonansi penala RLC adalah f₀ = 1 / [2π √(L C)]. Karena induktansi L bernilai konstan, maka frekuensi resonansi berbanding terbalik dengan akar kuadrat kapasitansi: f₀ ∝ 1 / √C, yang berarti C ∝ 1 / f₀². Langkah 2: Menghitung perbandingan kapasitansi: C₂ / C₁ = (f₁ / f₂)² = [f₁ / (2 f₁)]² = (1/2)² = 1/4. Langkah 3: Menghitung nilai kapasitansi baru: C₂ = C₁ / 4 = 10 pF / 4 = 2,5 pF. Jadi, untuk menangkap frekuensi siaran yang dua kali lebih tinggi, kapasitansi variabel harus diturunkan menjadi seperempat dari nilai semula. Opsi B salah karena mengabaikan hubungan kuadrat (menganggap hubungan linear). Opsi C dan D keliru karena memperbesar nilai kapasitor justru akan menurunkan frekuensi penerimaan siaran radio (Buku Siswa hlm. 88–90; Buku Guru hlm. 99, 107).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, konvensi fase, dan opsi diverifikasi akurat 100%."
+    }
+  ]
+}

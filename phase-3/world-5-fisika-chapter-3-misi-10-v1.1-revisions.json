@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "revision_batch_id": "world-5-fisika-chapter-3-misi-10-v1.1",
+  "base_batch": "world-5-fisika-chapter-3-misi-10-canonical-v1.0.json",
+  "status": "APPROVED",
+  "purpose": "Revision overlay v1.1 for Fisika Bab 3 Misi 10 - Verifikasi Akademis & Penyelarasan Standar Lintas Mapel",
+  "revisions": [
+    {
+      "question_id": "FIS12-C03-M10-Q01",
+      "before_question": "Sebuah berkas elektron (muatan q = -1,6 × 10⁻¹⁹ C) bergerak dengan kelajuan konstan v = 5 × 10⁶ m/s mendatar ke arah timur (sumbu +x). Berkas elektron tersebut memasuki daerah medan magnet homogen B = 0,4 T yang berarah tegak lurus ke utara (sumbu +y). Berdasarkan kaidah tiga jari tangan kanan untuk gaya Lorentz F = q(v × B), berapakah besar gaya magnetik yang dialami elektron dan ke manakah arah pembelokannya?",
+      "after_question": "Sebuah berkas elektron (muatan q = -1,6 × 10⁻¹⁹ C) bergerak dengan kelajuan konstan v = 5 × 10⁶ m/s mendatar ke arah timur (sumbu +x). Berkas elektron tersebut memasuki daerah medan magnet homogen B = 0,4 T yang berarah tegak lurus ke utara (sumbu +y). Berdasarkan kaidah tiga jari tangan kanan untuk gaya Lorentz F = q(v × B), berapakah besar gaya magnetik yang dialami elektron dan ke manakah arah pembelokannya?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke bawah menembus masuk bidang (sumbu -z)"
+        },
+        {
+          "id": "B",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke atas keluar bidang (sumbu +z)"
+        },
+        {
+          "id": "C",
+          "text": "1,6 × 10⁻¹³ N, mengarah ke selatan (sumbu -y)"
+        },
+        {
+          "id": "D",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke barat mendatar (sumbu -x)"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke bawah menembus masuk bidang (sumbu -z)"
+        },
+        {
+          "id": "B",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke atas keluar bidang (sumbu +z)"
+        },
+        {
+          "id": "C",
+          "text": "1,6 × 10⁻¹³ N, mengarah ke selatan (sumbu -y)"
+        },
+        {
+          "id": "D",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke barat mendatar (sumbu -x)"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Besar gaya Lorentz pada partikel bermuatan adalah F = |q|·v·B·sin(90°) = (1,6 × 10⁻¹⁹ C) × (5 × 10⁶ m/s) × 0,4 T = 3,2 × 10⁻¹³ N. Arah vektor: Gunakan kaidah tiga jari tangan kanan untuk perkalian silang (v × B): jari telunjuk menunjuk ke timur (+x), jari tengah menunjuk ke utara (+y), maka ibu jari mengarah ke atas keluar bidang (+z) untuk muatan positif. Namun, karena elektron bermuatan negatif (q < 0), arah gaya magnetik Lorentz dibalik 180° berlawanan dengan arah ibu jari, yaitu mengarah ke bawah menembus masuk bidang (sumbu -z) (Buku Siswa hlm. 48–49; Buku Guru hlm. 70–72).",
+      "after_explanation": "Besar gaya Lorentz pada partikel bermuatan adalah F = |q|·v·B·sin(90°) = (1,6 × 10⁻¹⁹ C) × (5 × 10⁶ m/s) × 0,4 T = 3,2 × 10⁻¹³ N. Arah vektor: Gunakan kaidah tiga jari tangan kanan untuk perkalian silang (v × B): jari telunjuk menunjuk ke timur (+x), jari tengah menunjuk ke utara (+y), maka ibu jari mengarah ke atas keluar bidang (+z) untuk muatan positif. Namun, karena elektron bermuatan negatif (q < 0), arah gaya magnetik Lorentz dibalik 180° berlawanan dengan arah ibu jari, yaitu mengarah ke bawah menembus masuk bidang (sumbu -z) (Buku Siswa hlm. 48–49; Buku Guru hlm. 70–72).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C03-M10-Q02",
+      "before_question": "Perhatikan diagram spektrometer massa pada gambar. Dua ion positif sejenis dengan muatan identik q = +e dipercepat dari keadaan diam oleh beda potensial listrik yang sama ΔV. Kedua ion tersebut kemudian memasuki daerah medan magnet homogen B secara tegak lurus sehingga membelok membentuk lintasan setengah lingkaran sebelum menumbuk pelat detektor. Jika massa Ion 2 adalah dua kali massa Ion 1 (m₂ = 2·m₁), berapakah perbandingan jari-jari lintasan lingkaran Ion 1 terhadap Ion 2 (r₁ : r₂)?",
+      "after_question": "Perhatikan diagram spektrometer massa pada gambar. Dua ion positif sejenis dengan muatan identik q = +e dipercepat dari keadaan diam oleh beda potensial listrik yang sama ΔV. Kedua ion tersebut kemudian memasuki daerah medan magnet homogen B secara tegak lurus sehingga membelok membentuk lintasan setengah lingkaran sebelum menumbuk pelat detektor. Jika massa Ion 2 adalah dua kali massa Ion 1 (m₂ = 2·m₁), berapakah perbandingan jari-jari lintasan lingkaran Ion 1 terhadap Ion 2 (r₁ : r₂)?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "1 : 2"
+        },
+        {
+          "id": "B",
+          "text": "1 : √2"
+        },
+        {
+          "id": "C",
+          "text": "√2 : 1"
+        },
+        {
+          "id": "D",
+          "text": "1 : 4"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "1 : 2"
+        },
+        {
+          "id": "B",
+          "text": "1 : √2"
+        },
+        {
+          "id": "C",
+          "text": "√2 : 1"
+        },
+        {
+          "id": "D",
+          "text": "1 : 4"
+        }
+      ],
+      "before_answer": "B",
+      "after_answer": "B",
+      "before_explanation": "Langkah 1: Hubungan energi kinetik percepatan listrik: q·ΔV = ½·m·v² ⟹ v = √(2q·ΔV / m). Langkah 2: Di dalam medan magnet, gaya Lorentz berfungsi sebagai gaya sentripetal: q·v·B = m·v² / r ⟹ r = (m·v) / (q·B). Langkah 3: Substitusi v ke rumus jari-jari: r = (m / (q·B)) · √(2q·ΔV / m) = (1/B) · √(2m·ΔV / q). Karena q, B, dan ΔV sama untuk kedua ion, maka jari-jari lintasan sebanding dengan akar massa: r ∝ √m. Dengan m₂ = 2m₁, maka r₁ / r₂ = √(m₁ / m₂) = √(1/2) = 1/√2 ⟹ r₁ : r₂ = 1 : √2 (Buku Siswa hlm. 49–50; Buku Guru hlm. 65, 71).",
+      "after_explanation": "Langkah 1: Hubungan energi kinetik percepatan listrik: q·ΔV = ½·m·v² ⟹ v = √(2q·ΔV / m). Langkah 2: Di dalam medan magnet, gaya Lorentz berfungsi sebagai gaya sentripetal: q·v·B = m·v² / r ⟹ r = (m·v) / (q·B). Langkah 3: Substitusi v ke rumus jari-jari: r = (m / (q·B)) · √(2q·ΔV / m) = (1/B) · √(2m·ΔV / q). Karena q, B, dan ΔV sama untuk kedua ion, maka jari-jari lintasan sebanding dengan akar massa: r ∝ √m. Dengan m₂ = 2m₁, maka r₁ / r₂ = √(m₁ / m₂) = √(1/2) = 1/√2 ⟹ r₁ : r₂ = 1 : √2 (Buku Siswa hlm. 49–50; Buku Guru hlm. 65, 71).",
+      "before_cognitive_level": "analyze",
+      "after_cognitive_level": "analyze",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C03-M10-Q03",
+      "before_question": "Dalam sebuah alat pemilih kecepatan (velocity selector), terdapat medan listrik homogen E = 6 × 10⁴ V/m yang berarah ke bawah dan medan magnet homogen B = 0,15 T yang berarah tegak lurus masuk menembus bidang gambar (⊗). Suatu berkas ion positif bermuatan q = +3,2 × 10⁻¹⁹ C ditembakkan horizontal ke arah kanan memotong kedua medan tersebut. Berapakah besar kelajuan partikel v agar ion dapat melintas lurus tanpa pembelokan keluar melalui celah selektor, dan ke manakah ion akan membelok jika kelajuannya lebih besar dari nilai tersebut (v' > v)?",
+      "after_question": "Dalam sebuah alat pemilih kecepatan (velocity selector), terdapat medan listrik homogen E = 6 × 10⁴ V/m yang berarah ke bawah dan medan magnet homogen B = 0,15 T yang berarah tegak lurus masuk menembus bidang gambar (⊗). Suatu berkas ion positif bermuatan q = +3,2 × 10⁻¹⁹ C ditembakkan horizontal ke arah kanan memotong kedua medan tersebut. Berapakah besar kelajuan partikel v agar ion dapat melintas lurus tanpa pembelokan keluar melalui celah selektor, dan ke manakah ion akan membelok jika kelajuannya lebih besar dari nilai tersebut (v' > v)?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "v = 4 × 10⁵ m/s; jika v' > v, ion akan membelok ke arah atas"
+        },
+        {
+          "id": "B",
+          "text": "v = 4 × 10⁵ m/s; jika v' > v, ion akan membelok ke arah bawah"
+        },
+        {
+          "id": "C",
+          "text": "v = 9 × 10³ m/s; jika v' > v, ion tetap melintas lurus"
+        },
+        {
+          "id": "D",
+          "text": "v = 2,5 × 10⁻⁶ m/s; jika v' > v, ion akan berbalik arah ke kiri"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "v = 4 × 10⁵ m/s; jika v' > v, ion akan membelok ke arah atas"
+        },
+        {
+          "id": "B",
+          "text": "v = 4 × 10⁵ m/s; jika v' > v, ion akan membelok ke arah bawah"
+        },
+        {
+          "id": "C",
+          "text": "v = 9 × 10³ m/s; jika v' > v, ion tetap melintas lurus"
+        },
+        {
+          "id": "D",
+          "text": "v = 2,5 × 10⁻⁶ m/s; jika v' > v, ion akan berbalik arah ke kiri"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Pada ion positif, gaya listrik F_E = q·E mengarah ke bawah (searah medan listrik E). Gaya Lorentz F_B = q(v × B): telunjuk ke kanan (v), jari tengah masuk bidang (B), maka ibu jari mengarah ke atas (F_B ke atas). Agar ion bergerak lurus tanpa defleksi, resultan gaya harus nol: F_B = F_E ⟹ q·v·B = q·E ⟹ v = E / B = (6 × 10⁴ V/m) / 0,15 T = 4 × 10⁵ m/s. Jika kelajuan ion lebih besar (v' > v), maka gaya magnet F_B' = q·v'·B menjadi lebih besar daripada gaya listrik F_E yang nilainya tetap. Karena F_B mengarah ke atas, resultan gaya mengarah ke atas sehingga ion membelok ke arah atas (Buku Siswa hlm. 51; Buku Guru hlm. 64, 70–71).",
+      "after_explanation": "Pada ion positif, gaya listrik F_E = q·E mengarah ke bawah (searah medan listrik E). Gaya Lorentz F_B = q(v × B): telunjuk ke kanan (v), jari tengah masuk bidang (B), maka ibu jari mengarah ke atas (F_B ke atas). Agar ion bergerak lurus tanpa defleksi, resultan gaya harus nol: F_B = F_E ⟹ q·v·B = q·E ⟹ v = E / B = (6 × 10⁴ V/m) / 0,15 T = 4 × 10⁵ m/s. Jika kelajuan ion lebih besar (v' > v), maka gaya magnet F_B' = q·v'·B menjadi lebih besar daripada gaya listrik F_E yang nilainya tetap. Karena F_B mengarah ke atas, resultan gaya mengarah ke atas sehingga ion membelok ke arah atas (Buku Siswa hlm. 51; Buku Guru hlm. 64, 70–71).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    }
+  ]
+}

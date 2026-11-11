@@ -1,0 +1,1067 @@
+{
+  "pool_id": "POOL-FISIKA-FIS12-C03",
+  "subject": "fisika",
+  "chapter": "FIS12-C03",
+  "track": "pilihan",
+  "curriculum": [
+    "Merdeka"
+  ],
+  "grade": 12,
+  "status": "active",
+  "content_version": 1,
+  "competencies": [
+    {
+      "competency_id": "FIS12-C03-A",
+      "name": "Medan Magnet di Sekitar Arus Listrik",
+      "question_count": 3
+    },
+    {
+      "competency_id": "FIS12-C03-B",
+      "name": "Gaya Lorentz pada Muatan Bergerak dan Pemilih Kecepatan",
+      "question_count": 3
+    },
+    {
+      "competency_id": "FIS12-C03-C",
+      "name": "Gaya Magnet pada Kawat Berarus dan Torsi Motor Listrik",
+      "question_count": 3
+    },
+    {
+      "competency_id": "FIS12-C03-D",
+      "name": "Fluks Magnetik, Hukum Faraday-Lenz, dan GGL Gerak",
+      "question_count": 4
+    },
+    {
+      "competency_id": "FIS12-C03-E",
+      "name": "Induktansi Diri, Generator AC/DC, Transformator, dan Transmisi Daya",
+      "question_count": 3
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "FIS12-C03-A-1901",
+      "phase3_id": "FIS12-C03-M09-Q01",
+      "primary_competency": "FIS12-C03-A",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dua kawat lurus panjang sejajar terpisah pada jarak d = 30 cm di udara. Kawat 1 dialiri arus I₁ = 4 A ke arah atas (sumbu +y) dan Kawat 2 dialiri arus I₂ = 6 A juga ke arah atas (searah dengan I₁). Sebuah titik P terletak pada garis hubung mendatar antara kedua kawat di mana kuat medan magnet totalnya bernilai nol (B_total = 0). Di manakah letak titik P tersebut diukur dari Kawat 1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "12 cm di antara kedua kawat di sebelah kanan Kawat 1"
+        },
+        {
+          "id": "B",
+          "text": "18 cm di antara kedua kawat di sebelah kanan Kawat 1"
+        },
+        {
+          "id": "C",
+          "text": "15 cm tepat di tengah-tengah antara kedua kawat"
+        },
+        {
+          "id": "D",
+          "text": "60 cm di sebelah kiri Kawat 1 di luar rentang kedua kawat"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Berdasarkan kaidah tangan kanan, arus I₁ (ke atas) menghasilkan medan magnet B₁ yang masuk bidang (⊗) di sebelah kanannya, sedangkan arus I₂ (ke atas) menghasilkan medan magnet B₂ yang keluar bidang (⊙) di sebelah kirinya. Karena kedua medan berlawanan arah di daerah antara kedua kawat, titik dengan medan nol (B_total = 0) harus berada di antara kedua kawat pada jarak x dari Kawat 1 dan (d - x) dari Kawat 2. Syarat B₁ = B₂ menghasilkan: (μ₀·I₁)/(2π·x) = (μ₀·I₂)/(2π·(d - x)) ⟹ 4/x = 6/(30 - x) ⟹ 4(30 - x) = 6x ⟹ 120 - 4x = 6x ⟹ 10x = 120 ⟹ x = 12 cm di sebelah kanan Kawat 1 (Buku Siswa hlm. 47, 56; Buku Guru hlm. 75–77, 89–90).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 15,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "47, 56",
+          "section": "Bab 3, Subbab A & D.1: Medan Magnet di Sekitar Kawat Lurus"
+        },
+        "teacher_guide": {
+          "pages": "75-77, 89-90",
+          "section": "Panduan Pembelajaran Bab 3, Subbab D & Kunci Asesmen No. 1"
+        }
+      },
+      "provenance": "Skenario orisinal analisis superposisi medan magnet Biot-Savart dua kawat lurus sejajar dirancang mandiri berdasarkan konsep medan kawat berarus Buku Siswa hlm. 47, 56.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-A: Menganalisis superposisi kuat medan magnet di sekitar kawat lurus berarus listrik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 47, 56 (Medan Magnet Kawat Lurus)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 75-77, 89-90"
+        },
+        "authoring_statement": "Skenario penentuan posisi medan nol dirumuskan mandiri secara bersih tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-A-2902",
+      "phase3_id": "FIS12-C03-M09-Q02",
+      "primary_competency": "FIS12-C03-A",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Suatu kumparan kawat melingkar tipis terdiri atas N = 20 lilitan dengan jari-jari lingkaran a = 10 cm (0,1 m) dialiri arus listrik konstan I = 5 A di udara. Diketahui permeabilitas ruang hampa μ₀ = 4π × 10⁻⁷ T·m/A. Berapakah besar kuat medan magnet induksi tepat di titik pusat kumparan melingkar tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "π × 10⁻⁴ T"
+        },
+        {
+          "id": "B",
+          "text": "2π × 10⁻⁴ T"
+        },
+        {
+          "id": "C",
+          "text": "4π × 10⁻⁴ T"
+        },
+        {
+          "id": "D",
+          "text": "2π × 10⁻⁵ T"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Kuat medan magnet induksi di pusat kawat melingkar dengan N lilitan dirumuskan: B_pusat = (μ₀·N·I)/(2a). Substitusi nilai: B_pusat = (4π × 10⁻⁷ T·m/A × 20 × 5 A) / (2 × 0,1 m) = (400π × 10⁻⁷) / 0,2 = 2000π × 10⁻⁷ = 2π × 10⁻⁴ T (sekitar 6,28 × 10⁻⁴ T). Opsi A salah karena lupa memperhitungkan jumlah lilitan N = 20. Opsi C salah karena membagi dengan a bukan 2a. Opsi D salah dalam konversi orde pangkat satuan (Buku Siswa hlm. 57; Buku Guru hlm. 75–77).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "57",
+          "section": "Bab 3, Subbab D.2: Kawat Melingkar Berarus Listrik"
+        },
+        "teacher_guide": {
+          "pages": "75-77",
+          "section": "Panduan Pembelajaran Bab 3, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan induksi magnetik di pusat lingkaran kumparan disusun mandiri berdasarkan rumus Biot-Savart Buku Siswa hlm. 57.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-A: Menerapkan persamaan kuat medan magnet di pusat kawat melingkar berarus",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 57 (Kawat Melingkar Berarus)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 75-77"
+        },
+        "authoring_statement": "Perhitungan medan kumparan melingkar disusun mandiri menggunakan parameter fisika standar tanpa menjiplak soal buku."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-A-3903",
+      "phase3_id": "FIS12-C03-M09-Q03",
+      "primary_competency": "FIS12-C03-A",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah toroida ideal memiliki N = 500 lilitan kawat yang melingkar rapat dengan jari-jari efektif inti r = 20 cm (0,2 m). Toroida dialiri arus listrik konstan I = 2 A dan intinya terbuat dari bahan feromagnetik dengan permeabilitas relatif μ_r = 400. Diketahui μ₀ = 4π × 10⁻⁷ T·m/A. Berdasarkan prinsip fisika toroida ideal, berapakah besar kuat medan magnet di dalam inti toroida tersebut, dan bagaimanakah nilai kuat medan magnet di lubang tengah toroida (pusat lingkaran luar inti) serta di luar cincin toroida?",
+      "options": [
+        {
+          "id": "A",
+          "text": "B_inti = 0,4 T, sedangkan medan di lubang tengah toroida dan di luar toroida bernilai nol (0 T)"
+        },
+        {
+          "id": "B",
+          "text": "B_inti = 0,4 T, sedangkan medan di lubang tengah toroida mencapai nilai maksimum 0,8 T"
+        },
+        {
+          "id": "C",
+          "text": "B_inti = 1,6 T, sedangkan medan di lubang tengah toroida dan di luar toroida bernilai nol (0 T)"
+        },
+        {
+          "id": "D",
+          "text": "B_inti = 0,001 T, sedangkan medan di luar toroida sama besarnya dengan medan di dalam inti"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Permeabilitas bahan inti toroida adalah μ = μ₀ · μ_r = (4π × 10⁻⁷) × 400 = 1,6π × 10⁻⁴ T·m/A. Berdasarkan Hukum Ampere untuk toroida ideal, kuat medan magnet di dalam inti pada jari-jari efektif r adalah: B_inti = (μ·N·I)/(2π·r) = (1,6π × 10⁻⁴ × 500 × 2) / (2π × 0,2) = (1,6π × 10⁻⁴ × 1000) / (0,4π) = 0,16π / 0,4π = 0,4 T. Pada toroida ideal, garis medan magnetik terkurung sempurna di dalam penampang inti lingkaran. Di lubang tengah (pusat cincin) dan di luar badan toroida, arus total yang dilingkupi lintasan tertutup Ampere adalah nol sehingga kuat medan magnetnya bernilai nol (B = 0 T) (Buku Siswa hlm. 58–59; Buku Guru hlm. 75–77).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "58-59",
+          "section": "Bab 3, Subbab D.3: Solenoida dan Toroida"
+        },
+        "teacher_guide": {
+          "pages": "75-77",
+          "section": "Panduan Pembelajaran Bab 3, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis spasial medan magnetik toroida ideal dan permeabilitas relatif bahan inti disusun mandiri berbasis Buku Siswa hlm. 58–59.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-A: Menganalisis medan magnet induksi di dalam inti toroida ideal dan batas-batas spasialnya",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 58-59 (Toroida)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 75-77"
+        },
+        "authoring_statement": "Analisis komparatif medan inti vs lubang toroida dirancang mandiri untuk menguji pemahaman Hukum Ampere secara mendalam tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-B-11001",
+      "phase3_id": "FIS12-C03-M10-Q01",
+      "primary_competency": "FIS12-C03-B",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah berkas elektron (muatan q = -1,6 × 10⁻¹⁹ C) bergerak dengan kelajuan konstan v = 5 × 10⁶ m/s mendatar ke arah timur (sumbu +x). Berkas elektron tersebut memasuki daerah medan magnet homogen B = 0,4 T yang berarah tegak lurus ke utara (sumbu +y). Berdasarkan kaidah tiga jari tangan kanan untuk gaya Lorentz F = q(v × B), berapakah besar gaya magnetik yang dialami elektron dan ke manakah arah pembelokannya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke bawah menembus masuk bidang (sumbu -z)"
+        },
+        {
+          "id": "B",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke atas keluar bidang (sumbu +z)"
+        },
+        {
+          "id": "C",
+          "text": "1,6 × 10⁻¹³ N, mengarah ke selatan (sumbu -y)"
+        },
+        {
+          "id": "D",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke barat mendatar (sumbu -x)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Besar gaya Lorentz pada partikel bermuatan adalah F = |q|·v·B·sin(90°) = (1,6 × 10⁻¹⁹ C) × (5 × 10⁶ m/s) × 0,4 T = 3,2 × 10⁻¹³ N. Arah vektor: Gunakan kaidah tiga jari tangan kanan untuk perkalian silang (v × B): jari telunjuk menunjuk ke timur (+x), jari tengah menunjuk ke utara (+y), maka ibu jari mengarah ke atas keluar bidang (+z) untuk muatan positif. Namun, karena elektron bermuatan negatif (q < 0), arah gaya magnetik Lorentz dibalik 180° berlawanan dengan arah ibu jari, yaitu mengarah ke bawah menembus masuk bidang (sumbu -z) (Buku Siswa hlm. 48–49; Buku Guru hlm. 70–72).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 15,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "48-49",
+          "section": "Bab 3, Subbab B.1: Gaya pada Muatan Bergerak"
+        },
+        "teacher_guide": {
+          "pages": "70-72",
+          "section": "Panduan Pembelajaran Bab 3, Subbab A: Gaya Magnet"
+        }
+      },
+      "provenance": "Skenario orisinal penerapan kaidah tiga jari tangan kanan dan sifat muatan negatif elektron disusun mandiri berdasarkan Buku Siswa hlm. 48–49.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-B: Menentukan besar dan arah gaya Lorentz pada partikel bermuatan negatif menggunakan kaidah vektor",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 48-49 (Gaya Lorentz)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 70-72"
+        },
+        "authoring_statement": "Penentuan arah gaya elektron dirancang mandiri untuk menguji pemahaman kaidah tangan kanan dan pembalikan tanda muatan tanpa plagiarisme."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-B-21002",
+      "phase3_id": "FIS12-C03-M10-Q02",
+      "primary_competency": "FIS12-C03-B",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "media": {
+        "type": "image",
+        "src": "fisika/ch3/lintasan-partikel-medan-b.svg",
+        "alt": "Diagram spektrometer massa yang memperlihatkan berkas ion positif dipercepat oleh celah lalu memasuki daerah medan magnet tegak lurus masuk bidang (tanda silang), membelok melingkar setengah lingkaran dengan jari-jari r1 dan r2 menuju pelat detektor ion.",
+        "caption": "Lintasan setengah lingkaran ion isotop dalam medan magnet homogen spektrometer massa."
+      },
+      "question": "Perhatikan diagram spektrometer massa pada gambar. Dua ion positif sejenis dengan muatan identik q = +e dipercepat dari keadaan diam oleh beda potensial listrik yang sama ΔV. Kedua ion tersebut kemudian memasuki daerah medan magnet homogen B secara tegak lurus sehingga membelok membentuk lintasan setengah lingkaran sebelum menumbuk pelat detektor. Jika massa Ion 2 adalah dua kali massa Ion 1 (m₂ = 2·m₁), berapakah perbandingan jari-jari lintasan lingkaran Ion 1 terhadap Ion 2 (r₁ : r₂)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 2"
+        },
+        {
+          "id": "B",
+          "text": "1 : √2"
+        },
+        {
+          "id": "C",
+          "text": "√2 : 1"
+        },
+        {
+          "id": "D",
+          "text": "1 : 4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Langkah 1: Hubungan energi kinetik percepatan listrik: q·ΔV = ½·m·v² ⟹ v = √(2q·ΔV / m). Langkah 2: Di dalam medan magnet, gaya Lorentz berfungsi sebagai gaya sentripetal: q·v·B = m·v² / r ⟹ r = (m·v) / (q·B). Langkah 3: Substitusi v ke rumus jari-jari: r = (m / (q·B)) · √(2q·ΔV / m) = (1/B) · √(2m·ΔV / q). Karena q, B, dan ΔV sama untuk kedua ion, maka jari-jari lintasan sebanding dengan akar massa: r ∝ √m. Dengan m₂ = 2m₁, maka r₁ / r₂ = √(m₁ / m₂) = √(1/2) = 1/√2 ⟹ r₁ : r₂ = 1 : √2 (Buku Siswa hlm. 49–50; Buku Guru hlm. 65, 71).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "49-50",
+          "section": "Bab 3, Subbab B.1: Gaya pada Muatan Bergerak (Spektrometer Massa)"
+        },
+        "teacher_guide": {
+          "pages": "65, 71",
+          "section": "Panduan Pembelajaran Bab 3, Subbab A: Spektrometer Massa"
+        }
+      },
+      "provenance": "Skenario orisinal analisis rasio lintasan spektrometer massa disusun mandiri dengan stimulus visual SVG berdasarkan konsep Buku Siswa hlm. 49–50.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-B: Menganalisis hubungan massa partikel dan jari-jari lintasan melingkar pada spektrometer massa",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 49-50 (Prinsip Spektrometer Massa)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 65, 71"
+        },
+        "authoring_statement": "Penurunan rumus jari-jari spektrometer massa dirancang mandiri memadukan konsep usaha listrik dan gaya magnet tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-B-31003",
+      "phase3_id": "FIS12-C03-M10-Q03",
+      "primary_competency": "FIS12-C03-B",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam sebuah alat pemilih kecepatan (velocity selector), terdapat medan listrik homogen E = 6 × 10⁴ V/m yang berarah ke bawah dan medan magnet homogen B = 0,15 T yang berarah tegak lurus masuk menembus bidang gambar (⊗). Suatu berkas ion positif bermuatan q = +3,2 × 10⁻¹⁹ C ditembakkan horizontal ke arah kanan memotong kedua medan tersebut. Berapakah besar kelajuan partikel v agar ion dapat melintas lurus tanpa pembelokan keluar melalui celah selektor, dan ke manakah ion akan membelok jika kelajuannya lebih besar dari nilai tersebut (v' > v)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "v = 4 × 10⁵ m/s; jika v' > v, ion akan membelok ke arah atas"
+        },
+        {
+          "id": "B",
+          "text": "v = 4 × 10⁵ m/s; jika v' > v, ion akan membelok ke arah bawah"
+        },
+        {
+          "id": "C",
+          "text": "v = 9 × 10³ m/s; jika v' > v, ion tetap melintas lurus"
+        },
+        {
+          "id": "D",
+          "text": "v = 2,5 × 10⁻⁶ m/s; jika v' > v, ion akan berbalik arah ke kiri"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pada ion positif, gaya listrik F_E = q·E mengarah ke bawah (searah medan listrik E). Gaya Lorentz F_B = q(v × B): telunjuk ke kanan (v), jari tengah masuk bidang (B), maka ibu jari mengarah ke atas (F_B ke atas). Agar ion bergerak lurus tanpa defleksi, resultan gaya harus nol: F_B = F_E ⟹ q·v·B = q·E ⟹ v = E / B = (6 × 10⁴ V/m) / 0,15 T = 4 × 10⁵ m/s. Jika kelajuan ion lebih besar (v' > v), maka gaya magnet F_B' = q·v'·B menjadi lebih besar daripada gaya listrik F_E yang nilainya tetap. Karena F_B mengarah ke atas, resultan gaya mengarah ke atas sehingga ion membelok ke arah atas (Buku Siswa hlm. 51; Buku Guru hlm. 64, 70–71).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 15,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "51",
+          "section": "Bab 3, Subbab B.1: Pemilih Kecepatan"
+        },
+        "teacher_guide": {
+          "pages": "64, 70-71",
+          "section": "Panduan Pembelajaran Bab 3, Subbab A: Pemilih Kecepatan"
+        }
+      },
+      "provenance": "Skenario orisinal analisis kesetimbangan gaya medan silang pemilih kecepatan disusun mandiri berdasarkan Buku Siswa hlm. 51.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-B: Menganalisis kondisi kesetimbangan gerak lurus partikel pada alat pemilih kecepatan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 51 (Pemilih Kecepatan)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 64, 70-71"
+        },
+        "authoring_statement": "Persoalan kesetimbangan gaya listrik dan magnet disusun mandiri untuk mengevaluasi penalaran fisis tanpa plagiarisme."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-C-11101",
+      "phase3_id": "FIS12-C03-M11-Q01",
+      "primary_competency": "FIS12-C03-C",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah kawat penghantar tembaga lurus mendatar dengan panjang L = 50 cm (0,5 m) dan massa m = 20 gram (0,02 kg) berada di dalam medan magnet homogen B = 0,08 T yang berarah tegak lurus masuk menembus bidang gambar (⊗). Percepatan gravitasi diketahui g = 10 m/s². Agar kawat tembaga tersebut dapat melayang dalam keadaan setimbang (gaya Lorentz tepat mengimbangi gaya gravitasi kawat), berapakah besar kuat arus listrik I yang harus dialirkan pada kawat dan ke manakah arah alirannya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I = 5 A, mengalir mendatar ke arah kanan"
+        },
+        {
+          "id": "B",
+          "text": "I = 5 A, mengalir mendatar ke arah kiri"
+        },
+        {
+          "id": "C",
+          "text": "I = 2,5 A, mengalir mendatar ke arah kanan"
+        },
+        {
+          "id": "D",
+          "text": "I = 10 A, mengalir mendatar ke arah kiri"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Gaya berat kawat adalah W = m·g = 0,02 kg × 10 m/s² = 0,2 N ke arah bawah. Agar melayang setimbang, gaya Lorentz harus mengarah ke atas dengan besar F_B = 0,2 N. Rumus gaya Lorentz pada kawat: F_B = I·L·B·sin(90°) ⟹ 0,2 = I × 0,5 m × 0,08 T ⟹ 0,2 = 0,04·I ⟹ I = 0,2 / 0,04 = 5 A. Berdasarkan kaidah tangan kanan (F = I(L × B)), agar gaya F mengarah ke atas saat medan magnet B masuk bidang (⊗), arah arus I harus mengalir ke arah kanan (Buku Siswa hlm. 52; Buku Guru hlm. 72–74).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 15,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "52",
+          "section": "Bab 3, Subbab B.2: Gaya Magnet pada Kawat Berarus Listrik"
+        },
+        "teacher_guide": {
+          "pages": "72-74",
+          "section": "Panduan Pembelajaran Bab 3, Subbab B: Gaya Magnet pada Kawat Berarus"
+        }
+      },
+      "provenance": "Skenario orisinal kesetimbangan gaya Lorentz dan gaya berat kawat penghantar disusun mandiri berdasarkan Buku Siswa hlm. 52.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-C: Menghitung kuat arus dan arah aliran pada kawat berarus dalam medan magnet untuk mencapai kesetimbangan statis",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 52 (Gaya Magnet Kawat)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 72-74"
+        },
+        "authoring_statement": "Skenario kawat melayang dirumuskan secara mandiri tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-C-21102",
+      "phase3_id": "FIS12-C03-M11-Q02",
+      "primary_competency": "FIS12-C03-C",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "media": {
+        "type": "image",
+        "src": "fisika/ch3/interaksi-dua-kawat-dan-kumparan.svg",
+        "alt": "Diagram dua kawat lurus panjang sejajar terpisah jarak a = 10 cm, Kawat 1 dialiri arus I1 = 6 A ke atas dan Kawat 2 dialiri arus I2 = 10 A ke bawah dengan vektor gaya tolak-menolak yang saling menjauh.",
+        "caption": "Gaya interaksi tolak-menolak antara dua kawat sejajar dengan arus berlawanan arah."
+      },
+      "question": "Perhatikan diagram dua kawat lurus panjang sejajar Kawat 1 dan Kawat 2 yang terpisah sejauh a = 10 cm (0,1 m) di udara pada gambar. Kawat 1 dialiri arus listrik I₁ = 6 A ke arah atas, sedangkan Kawat 2 dialiri arus listrik I₂ = 10 A ke arah bawah (berlawanan arah). Diketahui permeabilitas ruang hampa μ₀ = 4π × 10⁻⁷ T·m/A. Berapakah besar gaya interaksi magnetik per satuan panjang (F/L) yang dialami oleh kedua kawat dan bagaimanakah sifat interaksinya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1,2 × 10⁻⁴ N/m, saling tolak-menolak"
+        },
+        {
+          "id": "B",
+          "text": "1,2 × 10⁻⁴ N/m, saling tarik-menarik"
+        },
+        {
+          "id": "C",
+          "text": "2,4 × 10⁻⁴ N/m, saling tolak-menolak"
+        },
+        {
+          "id": "D",
+          "text": "6,0 × 10⁻⁵ N/m, saling tarik-menarik"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Gaya magnetik per satuan panjang antara dua kawat sejajar berarus dirumuskan: F/L = (μ₀·I₁·I₂) / (2π·a). Substitusi nilai: F/L = (4π × 10⁻⁷ × 6 × 10) / (2π × 0,1) = (240π × 10⁻⁷) / (0,2π) = 1200 × 10⁻⁷ = 1,2 × 10⁻⁴ N/m. Berdasarkan aturan Biot-Savart dan Lorentz, jika dua kawat sejajar dialiri arus dengan arah berlawanan (satu ke atas dan satu ke bawah), medan magnet di daerah antara kedua kawat memiliki arah yang searah (keduanya masuk bidang), sehingga kerapatan garis gaya magnetik meningkat dan menghasilkan gaya yang saling tolak-menolak (Buku Siswa hlm. 52–53; Buku Guru hlm. 72–74).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 15,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "52-53",
+          "section": "Bab 3, Subbab B.2: Interaksi Dua Kawat Sejajar"
+        },
+        "teacher_guide": {
+          "pages": "72-74",
+          "section": "Panduan Pembelajaran Bab 3, Subbab B: Interaksi Dua Kawat"
+        }
+      },
+      "provenance": "Skenario orisinal analisis gaya interaksi antar-kawat sejajar berarus berlawanan arah disusun mandiri dengan stimulus visual SVG berdasarkan Buku Siswa hlm. 52–53.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-C: Menghitung gaya per satuan panjang antara dua kawat sejajar berarus serta menentukan sifat interaksinya",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 52-53 (Interaksi Kawat Sejajar)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 72-74"
+        },
+        "authoring_statement": "Perhitungan gaya interaksi dan sifat tolak-menolak disusun mandiri secara otentik tanpa menyalin soal buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-C-31103",
+      "phase3_id": "FIS12-C03-M11-Q03",
+      "primary_competency": "FIS12-C03-C",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah kumparan datar berbentuk persegi panjang pada motor listrik DC terdiri dari N = 100 lilitan dengan ukuran 10 cm × 5 cm (luas bidang A = 50 cm² = 5 × 10⁻³ m²) dialiri arus listrik konstan I = 2 A. Kumparan tersebut berada di dalam daerah medan magnet homogen B = 0,3 T. Pada suatu posisi rotasi, bidang kumparan membentuk sudut α = 30° terhadap arah garis medan magnetik. Berapakah besar momen gaya (torsi) yang memutar kumparan pada posisi tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0,15√3 N·m (sekitar 0,26 N·m)"
+        },
+        {
+          "id": "B",
+          "text": "0,15 N·m"
+        },
+        {
+          "id": "C",
+          "text": "0,30 N·m"
+        },
+        {
+          "id": "D",
+          "text": "0,30√3 N·m"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rumus momen gaya (torsi) pada kumparan adalah τ = N·I·A·B·sin(θ), di mana θ adalah sudut antara vektor normal bidang kumparan (n̂) terhadap garis medan magnet B. Jika bidang kumparan membentuk sudut α = 30° terhadap arah medan magnet, maka sudut antara garis normal kumparan dan medan magnet adalah θ = 90° - α = 90° - 30° = 60° (atau setara dengan τ = N·I·A·B·cos(α)). Perhitungan: τ = 100 × 2 A × (5 × 10⁻³ m²) × 0,3 T × sin(60°) = 0,3 × (½√3) = 0,15√3 N·m ≈ 0,26 N·m. Opsi B salah karena menggunakan sin(30°) secara keliru tanpa memperhatikan definisi normal bidang (Buku Siswa hlm. 53–54; Buku Guru hlm. 74–75).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "53-54",
+          "section": "Bab 3, Subbab C: Motor Listrik"
+        },
+        "teacher_guide": {
+          "pages": "74-75",
+          "section": "Panduan Pembelajaran Bab 3, Subbab C: Motor Listrik"
+        }
+      },
+      "provenance": "Skenario orisinal analisis momen gaya torsi motor listrik dengan orientasi sudut bidang kumparan disusun mandiri berdasarkan Buku Siswa hlm. 53–54.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-C: Menganalisis momen gaya (torsi) kumparan berarus dalam medan magnet dan orientasi sudut normal bidangnya",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 53-54 (Torsi Motor Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 74-75"
+        },
+        "authoring_statement": "Analisis torsi sudut normal dirancang mandiri untuk melatih ketelitian geometris vektor tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-D-11201",
+      "phase3_id": "FIS12-C03-M12-Q01",
+      "primary_competency": "FIS12-C03-D",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah kumparan datar melingkar memiliki N = 200 lilitan kawat dengan luas penampang A = 50 cm² (5 × 10⁻³ m²). Bidang kumparan diletakkan tegak lurus terhadap medan magnetik homogen (garis normal bidang loop sejajar dengan medan magnet, θ = 0°). Kuat medan magnet berubah terhadap waktu menurut persamaan B(t) = (0,2 + 0,06 t) Tesla, dengan t dalam sekon. Berapakah besar GGL induksi rata-rata yang timbul pada ujung-ujung kumparan tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "60 mV"
+        },
+        {
+          "id": "B",
+          "text": "120 mV"
+        },
+        {
+          "id": "C",
+          "text": "20 mV"
+        },
+        {
+          "id": "D",
+          "text": "600 mV"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fluks magnetik pada saat sudut normal sejajar medan (cos 0° = 1) adalah Φ(t) = B(t) · A. Laju perubahan kuat medan magnet terhadap waktu adalah turunan dB/dt = d(0,2 + 0,06t)/dt = 0,06 T/s. Berdasarkan Hukum Induksi Faraday, besar GGL induksi adalah: |ε| = N · A · (dB/dt) = 200 × (5 × 10⁻³ m²) × 0,06 T/s = 1 × 0,06 = 0,06 Volt = 60 mV. Opsi B salah karena mengalikan dengan 2. Opsi C salah karena membagi laju perubahan. Opsi D salah dalam konversi satuan milivolt (Buku Siswa hlm. 61–63; Buku Guru hlm. 77–79, 90).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 15,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "61-63",
+          "section": "Bab 3, Subbab E.1 & E.2: Fluks Magnet dan Besar GGL Induksi"
+        },
+        "teacher_guide": {
+          "pages": "77-79, 90",
+          "section": "Panduan Pembelajaran Bab 3, Subbab E: GGL Induksi"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan GGL induksi Faraday akibat perubahan medan magnet waktu disusun mandiri berdasarkan Buku Siswa hlm. 61–63.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-D: Menghitung GGL induksi elektromagnetik berdasarkan Hukum Faraday",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 61-63 (GGL Induksi Faraday)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 77-79, 90"
+        },
+        "authoring_statement": "Perhitungan GGL induksi waktu linier disusun mandiri secara bersih tanpa menyalin soal buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-D-21202",
+      "phase3_id": "FIS12-C03-M12-Q02",
+      "primary_competency": "FIS12-C03-D",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah magnet batang didekatkan dengan kutub utara (U) terlebih dahulu menuju ke dalam ujung kiri sebuah kumparan silinder kawat yang terhubung seri dengan sebuah galvanometer sensitif. Berdasarkan Hukum Lenz mengenai arah arus induksi elektromagnetik, bagaimanakah kutub magnetik yang terbentuk pada ujung kiri kumparan dan bagaimana respon fisisnya terhadap gerak magnet tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ujung kiri kumparan menjadi kutub utara untuk menghasilkan gaya tolak yang menentang gerak masuk magnet"
+        },
+        {
+          "id": "B",
+          "text": "Ujung kiri kumparan menjadi kutub selatan untuk menarik magnet agar bergerak masuk lebih cepat"
+        },
+        {
+          "id": "C",
+          "text": "Ujung kiri kumparan tidak membentuk kutub magnet karena kawat belum disentuh secara fisik oleh magnet"
+        },
+        {
+          "id": "D",
+          "text": "Ujung kiri kumparan menjadi kutub utara saat magnet diam dan menjadi kutub selatan saat magnet bergerak"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Hukum Lenz menyatakan bahwa arah arus induksi selalu sedemikian rupa sehingga medan magnet yang dihasilkannya menentang perubahan fluks magnetik yang menyebabkannya. Ketika kutub utara magnet digerakkan mendekati kumparan, fluks magnetik luar yang menembus kumparan bertambah. Kumparan merespons dengan menghasilkan arus induksi yang membentuk kutub utara (U) pada ujung kirinya, sehingga timbul gaya tolak-menolak yang menentang gerak masuk kutub utara magnet tersebut. Hal ini menjamin berlakunya Hukum Kekekalan Energi, di mana diperlukan usaha luar untuk memasukkan magnet (Buku Siswa hlm. 63–64; Buku Guru hlm. 77–79, 91).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "63-64",
+          "section": "Bab 3, Subbab E.2: Hukum Lenz"
+        },
+        "teacher_guide": {
+          "pages": "77-79, 91",
+          "section": "Panduan Pembelajaran Bab 3, Subbab E: Hukum Lenz"
+        }
+      },
+      "provenance": "Skenario orisinal analisis arah arus induksi dan polaritas kutub Hukum Lenz disusun mandiri berdasarkan Buku Siswa hlm. 63–64.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-D: Menganalisis polaritas kutub induksi dan arah arus berdasarkan Hukum Lenz",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 63-64 (Hukum Lenz)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 77-79, 91"
+        },
+        "authoring_statement": "Analisis konseptual polaritas Hukum Lenz dirumuskan mandiri untuk menguji pemahaman fisis murni tanpa plagiarisme."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-D-31203",
+      "phase3_id": "FIS12-C03-M12-Q03",
+      "primary_competency": "FIS12-C03-D",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "media": {
+        "type": "image",
+        "src": "fisika/ch3/ggl-kawat-luncur-u.svg",
+        "alt": "Diagram kawat konduktor lurus PQ dengan panjang efektif l = 40 cm meluncur ke kanan dengan laju konstan v = 5 m/s pada rel konduktor U tertutup berhambatan R = 2 ohm dalam medan magnet homogen B = 0,5 T yang masuk menembus bidang.",
+        "caption": "GGL gerak kanonikal dan arus induksi pada batang konduktor yang meluncur di atas rel U tertutup."
+      },
+      "question": "Perhatikan diagram batang konduktor PQ pada gambar. Batang konduktor lurus dengan panjang efektif l = 40 cm (0,4 m) meluncur ke arah kanan dengan laju konstan v = 5 m/s di atas rel konduktor U horizontal tanpa gesekan. Rel tersebut dihubungkan dengan resistor R = 2 Ω sehingga membentuk rangkaian tertutup. Seluruh sistem berada di dalam medan magnet homogen B = 0,5 T yang berarah tegak lurus masuk ke dalam bidang kertas (⊗). Berapakah besar GGL induksi gerak kanonikal yang dibangkitkan, besar arus induksi yang mengalir pada rangkaian, dan ke manakah arah arus yang mengalir melalui batang konduktor tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ε = 1,0 V, I = 0,5 A, arus pada batang mengalir dari Q ke P"
+        },
+        {
+          "id": "B",
+          "text": "ε = 1,0 V, I = 0,5 A, arus pada batang mengalir dari P ke Q"
+        },
+        {
+          "id": "C",
+          "text": "ε = 2,0 V, I = 1,0 A, arus pada batang mengalir dari Q ke P"
+        },
+        {
+          "id": "D",
+          "text": "ε = 0,5 V, I = 0,25 A, arus pada batang mengalir dari P ke Q"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Karena orientasi panjang batang l, kecepatan v, dan medan magnet B saling tegak lurus, berlaku rumus GGL gerak kanonikal: ε = B·l·v = 0,5 T × 0,4 m × 5 m/s = 1,0 Volt. Arus induksi pada rangkaian tertutup berhambatan R = 2 Ω adalah: I = ε / R = 1,0 V / 2 Ω = 0,5 A. Berdasarkan kaidah tangan kanan untuk gaya Lorentz pada muatan positif di dalam batang yang bergerak ke kanan dalam medan masuk bidang: ibu jari ke kanan (v), empat jari masuk bidang (B), maka telapak tangan mendorong muatan ke atas, sehingga potensial titik P lebih tinggi daripada Q (V_P > V_Q). Di dalam batang konduktor PQ, arus mengalir dari potensial rendah ke tinggi (dari Q ke P), lalu mengalir memutari rel luar melalui resistor R dari atas ke bawah (Buku Siswa hlm. 64–65; Buku Guru hlm. 77–79, 91).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 15,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "64-65",
+          "section": "Bab 3, Subbab E.2: GGL Induksi Gerak (Motional EMF)"
+        },
+        "teacher_guide": {
+          "pages": "77-79, 91",
+          "section": "Panduan Pembelajaran Bab 3, Subbab E & Kunci Asesmen No. 4"
+        }
+      },
+      "provenance": "Skenario orisinal GGL gerak batang konduktor kanonikal dan penentuan arah arus induksi disusun mandiri dengan stimulus visual SVG berdasarkan Buku Siswa hlm. 64–65.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-D: Menghitung GGL induksi gerak kanonikal ε = Blv dan menentukan arah arus induksi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 64-65 (GGL Induksi Gerak)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 77-79, 91"
+        },
+        "authoring_statement": "Perhitungan GGL gerak rel U dirumuskan mandiri menguji penguasaan konsep motional EMF tanpa menjiplak buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-D-41204",
+      "phase3_id": "FIS12-C03-M12-Q04",
+      "primary_competency": "FIS12-C03-D",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Melanjutkan skenario batang konduktor meluncur pada rel U tertutup sebelumnya (l = 0,4 m, v = 5 m/s, B = 0,5 T, R = 2 Ω, dan arus induksi I = 0,5 A ke atas), timbul gaya magnetik Lorentz pada batang tersebut akibat interaksi arus induksi dengan medan magnet luar. Berapakah besar gaya magnetik penghambat (F_lawan) yang dialami batang konduktor, dan berapakah daya mekanik luar yang harus dikerjakan agar batang dapat mempertahankan kelajuannya tetap konstan 5 m/s?",
+      "options": [
+        {
+          "id": "A",
+          "text": "F_lawan = 0,1 N ke arah kiri dan daya mekanik P = 0,5 Watt"
+        },
+        {
+          "id": "B",
+          "text": "F_lawan = 0,1 N ke arah kanan dan daya mekanik P = 0,25 Watt"
+        },
+        {
+          "id": "C",
+          "text": "F_lawan = 0,2 N ke arah kiri dan daya mekanik P = 1,0 Watt"
+        },
+        {
+          "id": "D",
+          "text": "F_lawan = 0,05 N ke arah kiri dan daya mekanik P = 0,5 Watt"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Gaya magnetik Lorentz pada batang berarus induksi: F_lawan = I·l·B·sin(90°) = 0,5 A × 0,4 m × 0,5 T = 0,1 N. Arah gaya dihitung dengan kaidah tangan kanan: arus I ke atas, medan B masuk bidang (⊗), maka gaya Lorentz mengarah ke kiri (berlawanan arah dengan gerak batang, sesuai Hukum Lenz). Langkah 2: Agar kelajuan batang tetap konstan (percepatan a = 0), gaya luar tarik harus mengimbangi gaya penghambat: F_luar = F_lawan = 0,1 N ke kanan. Langkah 3: Daya mekanik yang dikerjakan gaya luar adalah P_mekanik = F_luar · v = 0,1 N × 5 m/s = 0,5 Watt. Perhatikan bahwa daya mekanik ini tepat sama dengan daya disipasi kalor pada resistor: P_listrik = I² · R = (0,5 A)² × 2 Ω = 0,25 × 2 = 0,5 Watt, membuktikan berlakunya Hukum Kekekalan Energi (Buku Siswa hlm. 64–65; Buku Guru hlm. 77–79).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "64-65",
+          "section": "Bab 3, Subbab E.2: GGL Induksi Gerak dan Kekekalan Energi"
+        },
+        "teacher_guide": {
+          "pages": "77-79",
+          "section": "Panduan Pembelajaran Bab 3, Subbab E: Kekekalan Energi Induksi"
+        }
+      },
+      "provenance": "Skenario orisinal analisis gaya Lorentz penghambat dan pembuktian kekekalan daya mekanik-listrik disusun mandiri berdasarkan Buku Siswa hlm. 64–65.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-D: Menganalisis gaya penghambat magnetik dan kesetaraan daya mekanik dengan daya listrik pada induksi gerak",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 64-65 (Kekekalan Energi)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 77-79"
+        },
+        "authoring_statement": "Pembuktian kekekalan daya mekanik ke listrik dirancang mandiri untuk melatih penalaran analitis hukum termodinamika-elektromagnetik tanpa plagiarisme."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-E-11301",
+      "phase3_id": "FIS12-C03-M13-Q01",
+      "primary_competency": "FIS12-C03-E",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah kumparan solenoida panjang ideal memiliki panjang l = 20 cm (0,2 m), luas penampang A = 10 cm² (10⁻³ m²), dan terdiri atas N = 400 lilitan kawat. Inti kumparan berupa bahan feromagnetik dengan permeabilitas relatif μ_r = 500. Diketahui permeabilitas vakum μ₀ = 4π × 10⁻⁷ H/m. Jika arus listrik yang mengalir pada kumparan solenoida tersebut diputus dari I₁ = 4 A menjadi nol dalam selang waktu singkat Δt = 0,05 sekon, berapakah nilai induktansi diri solenoida dan besar GGL induksi diri yang timbul?",
+      "options": [
+        {
+          "id": "A",
+          "text": "L = 0,16π H dan |ε_diri| = 12,8π V"
+        },
+        {
+          "id": "B",
+          "text": "L = 0,32π H dan |ε_diri| = 25,6π V"
+        },
+        {
+          "id": "C",
+          "text": "L = 0,16π H dan |ε_diri| = 6,4π V"
+        },
+        {
+          "id": "D",
+          "text": "L = 0,08π H dan |ε_diri| = 12,8π V"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Permeabilitas bahan inti kumparan adalah μ = μ₀ · μ_r = (4π × 10⁻⁷ H/m) × 500 = 2π × 10⁻⁴ H/m. Berdasarkan rumus induktansi diri solenoida panjang ideal: L = (μ·N²·A) / l = (2π × 10⁻⁴ × 400² × 10⁻³) / 0,2 = (2π × 10⁻⁴ × 160.000 × 10⁻³) / 0,2 = (32π × 10⁻³) / 0,2 = 0,16π H (sekitar 0,503 H). Besar GGL induksi diri akibat perubahan arus adalah: |ε_diri| = L · (|ΔI| / Δt) = 0,16π H × (4 A / 0,05 s) = 0,16π × 80 = 12,8π Volt (sekitar 40,2 V) (Buku Siswa hlm. 67–68; Buku Guru hlm. 79–82).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 15,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "67-68",
+          "section": "Bab 3, Subbab G.1: Induktansi Diri Kumparan"
+        },
+        "teacher_guide": {
+          "pages": "79-82",
+          "section": "Panduan Pembelajaran Bab 3, Subbab G: Induktansi"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan induktansi diri solenoida feromagnetik dan GGL diri disusun mandiri berdasarkan konsep Buku Siswa hlm. 67–68.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-E: Menghitung nilai induktansi diri solenoida ideal dan besar GGL induksi diri yang dibangkitkan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 67-68 (Induktansi Kumparan)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 79-82"
+        },
+        "authoring_statement": "Perhitungan induktansi diri kumparan disusun mandiri secara otentik tanpa menyalin soal buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-E-21302",
+      "phase3_id": "FIS12-C03-M13-Q02",
+      "primary_competency": "FIS12-C03-E",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah model generator listrik laboratorium memiliki kumparan datar seluas A = 0,04 m² dengan N = 250 lilitan yang diputar dengan frekuensi konstan f = 50 Hz di dalam medan magnet homogen B = 0,2 T. Generator tersebut diuji dalam dua konfigurasi kontak terminal: Konfigurasi 1 menggunakan dua cincin geser terpisah (slip rings), sedangkan Konfigurasi 2 menggunakan sebuah komutator cincin belah (split-ring commutator). Berapakah nilai GGL induksi maksimum yang dibangkitkan, dan bagaimanakah perbedaan bentuk gelombang tegangan keluaran dari kedua konfigurasi tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ε_maks = 200π V; Konfigurasi 1 menghasilkan tegangan AC sinusoidal bolak-balik, sedangkan Konfigurasi 2 menghasilkan tegangan searah berdenyut (pulsating DC)"
+        },
+        {
+          "id": "B",
+          "text": "ε_maks = 200π V; kedua konfigurasi menghasilkan tegangan bolak-balik sinusoidal yang identik karena parameter kumparannya sama"
+        },
+        {
+          "id": "C",
+          "text": "ε_maks = 100π V; Konfigurasi 1 menghasilkan tegangan searah murni, sedangkan Konfigurasi 2 menghasilkan tegangan bolak-balik"
+        },
+        {
+          "id": "D",
+          "text": "ε_maks = 400π V; Konfigurasi 1 menghasilkan tegangan pulsa kotak, sedangkan Konfigurasi 2 menghasilkan tegangan sinusoidal"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Kecepatan sudut rotasi kumparan adalah ω = 2π·f = 2π × 50 = 100π rad/s. Besar GGL induksi maksimum yang dibangkitkan kumparan adalah: ε_maks = N·B·A·ω = 250 × 0,2 T × 0,04 m² × 100π rad/s = 2 × 100π = 200π Volt (sekitar 628 V). Perbedaan bentuk gelombang keluaran: Konfigurasi 1 (Generator AC dengan cincin geser) menyalurkan tegangan bolak-balik yang membalik polaritasnya setiap setengah putaran: ε(t) = 200π·sin(100πt). Konfigurasi 2 (Generator DC sederhana dengan komutator) membalik hubungan kontak terminal ke sikat karbon saat kumparan melewati bidang netral, sehingga polaritas tegangan keluaran selalu searah (hanya bernilai positif berupa gelombang berdenyut / pulsating DC: ε(t) = |200π·sin(100πt)|) (Buku Siswa hlm. 65–67; Buku Guru hlm. 79–80).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "65-67",
+          "section": "Bab 3, Subbab F: Generator Listrik AC dan DC"
+        },
+        "teacher_guide": {
+          "pages": "79-80",
+          "section": "Panduan Pembelajaran Bab 3, Subbab F: Prinsip Kerja Generator"
+        }
+      },
+      "provenance": "Skenario orisinal analisis komparatif bentuk gelombang generator AC cincin geser vs generator DC komutator cincin belah disusun mandiri berdasarkan Buku Siswa hlm. 65–67.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-E: Menghitung GGL induksi maksimum generator dan membedakan karakteristik keluaran AC vs DC berdenyut",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 65-67 (Generator)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 79-80"
+        },
+        "authoring_statement": "Analisis komparatif slip rings vs komutator dirumuskan mandiri untuk menegaskan distingsi keluaran gelombang tanpa plagiarisme."
+      }
+    },
+    {
+      "question_id": "FIS12-C03-E-31303",
+      "phase3_id": "FIS12-C03-M13-Q03",
+      "primary_competency": "FIS12-C03-E",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah stasiun pembangkit listrik menghasilkan daya listrik rata-rata P = 2,4 MW (2,4 × 10⁶ Watt) pada tegangan awal V₁ = 12 kV (12.000 V). Daya listrik tersebut hendak ditransmisikan ke gardu induk kota yang jauh melalui saluran kabel transmisi dengan hambatan total R_kabel = 5 Ω. Sebelum ditransmisikan, digunakan transformator ideal step-up dengan perbandingan lilitan 1 : 10 untuk menaikkan tegangan saluran transmisi menjadi V₂ = 120 kV (120.000 V). Berapakah daya disipasi yang hilang sebagai panas pada kabel transmisi (P_dis = I²·R) jika ditransmisikan langsung pada tegangan 12 kV, dan berapakah daya disipasinya setelah dinaikkan menjadi 120 kV dengan trafo step-up?",
+      "options": [
+        {
+          "id": "A",
+          "text": "200 kW pada tegangan awal 12 kV dan berkurang drastis menjadi 2 kW setelah dinaikkan dengan trafo step-up 120 kV"
+        },
+        {
+          "id": "B",
+          "text": "20 kW pada tegangan awal 12 kV dan menjadi 2 kW setelah dinaikkan dengan trafo step-up 120 kV"
+        },
+        {
+          "id": "C",
+          "text": "200 kW pada tegangan awal 12 kV dan menjadi 20 kW setelah dinaikkan dengan trafo step-up 120 kV"
+        },
+        {
+          "id": "D",
+          "text": "100 kW pada tegangan awal 12 kV dan tidak berubah karena hambatan kabel transmisi tetap 5 Ω"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Kasus 1 (Sebelum dinaikkan, V₁ = 12.000 V): Kuat arus pada kabel transmisi adalah I₁ = P / V₁ = (2,4 × 10⁶ W) / (12.000 V) = 200 A. Daya disipasi yang hilang sebagai panas pada kabel: P_dis,1 = I₁² · R_kabel = (200 A)² × 5 Ω = 40.000 × 5 = 200.000 Watt = 200 kW. Kasus 2 (Setelah dinaikkan oleh trafo step-up 1:10, V₂ = 120.000 V): Kuat arus pada kabel transmisi menjadi I₂ = P / V₂ = (2,4 × 10⁶ W) / (120.000 V) = 20 A. Daya disipasi baru pada kabel: P_dis,2 = I₂² · R_kabel = (20 A)² × 5 Ω = 400 × 5 = 2.000 Watt = 2 kW. Kesimpulan: Menaikkan tegangan transmisi 10 kali lipat mereduksi arus transmisi menjadi 1/10 kali, sehingga rugi daya transmisi berkurang sebesar (1/10)² = 1/100 kali (dari 200 kW turun menjadi hanya 2 kW), membuktikan peran vital transformator step-up dalam efisiensi energi nasional (Buku Siswa hlm. 67, 70; Buku Guru hlm. 80–81, 88–89).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "67, 70",
+          "section": "Bab 3, Subbab G.2: Transformator dan Transmisi Daya"
+        },
+        "teacher_guide": {
+          "pages": "80-81, 88-89",
+          "section": "Panduan Pembelajaran Bab 3, Subbab G & Kunci Asesmen No. 2"
+        }
+      },
+      "provenance": "Skenario orisinal analisis rugi daya disipasi kabel transmisi tegangan tinggi menggunakan transformator step-up disusun mandiri berdasarkan Buku Siswa hlm. 67, 70 dan Buku Guru hlm. 88–89.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-E: Menganalisis peranan transformator step-up dalam mereduksi disipasi daya pada sistem transmisi listrik jarak jauh",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 67, 70 (Transmisi Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 80-81, 88-89"
+        },
+        "authoring_statement": "Perhitungan komparasi daya hilang transmisi dirancang mandiri untuk mengevaluasi pemahaman efisiensi energi tanpa menjiplak soal buku."
+      }
+    }
+  ]
+}

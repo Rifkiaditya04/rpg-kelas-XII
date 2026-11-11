@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_BASELINE",
+  "dataset": "world-5-fisika-chapter-3-misi-9",
+  "purpose": "Bank Soal Fisika Kelas XII Bab 3 Misi 9 - Canonical Baseline v1.0",
+  "chapter_id": "FIS12-C03",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C03-M09-Q01",
+      "chapter_id": "FIS12-C03",
+      "topic_id": "FIS12-C03-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Dua kawat lurus panjang sejajar terpisah pada jarak d = 30 cm di udara. Kawat 1 dialiri arus I₁ = 4 A ke arah atas (sumbu +y) dan Kawat 2 dialiri arus I₂ = 6 A juga ke arah atas (searah dengan I₁). Sebuah titik P terletak pada garis hubung mendatar antara kedua kawat di mana kuat medan magnet totalnya bernilai nol (B_total = 0). Di manakah letak titik P tersebut diukur dari Kawat 1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "12 cm di antara kedua kawat di sebelah kanan Kawat 1"
+        },
+        {
+          "id": "B",
+          "text": "18 cm di antara kedua kawat di sebelah kanan Kawat 1"
+        },
+        {
+          "id": "C",
+          "text": "15 cm tepat di tengah-tengah antara kedua kawat"
+        },
+        {
+          "id": "D",
+          "text": "60 cm di sebelah kiri Kawat 1 di luar rentang kedua kawat"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Berdasarkan kaidah tangan kanan, arus I₁ (ke atas) menghasilkan medan magnet B₁ yang masuk bidang (⊗) di sebelah kanannya, sedangkan arus I₂ (ke atas) menghasilkan medan magnet B₂ yang keluar bidang (⊙) di sebelah kirinya. Karena kedua medan berlawanan arah di daerah antara kedua kawat, titik dengan medan nol (B_total = 0) harus berada di antara kedua kawat pada jarak x dari Kawat 1 dan (d - x) dari Kawat 2. Syarat B₁ = B₂ menghasilkan: (μ₀·I₁)/(2π·x) = (μ₀·I₂)/(2π·(d - x)) ⟹ 4/x = 6/(30 - x) ⟹ 4(30 - x) = 6x ⟹ 120 - 4x = 6x ⟹ 10x = 120 ⟹ x = 12 cm di sebelah kanan Kawat 1 (Buku Siswa hlm. 47, 56; Buku Guru hlm. 75–77, 89–90).",
+      "source": {
+        "student_book": {
+          "pages": "47, 56",
+          "section": "Bab 3, Subbab A & D.1: Medan Magnet di Sekitar Kawat Lurus"
+        },
+        "teacher_guide": {
+          "pages": "75-77, 89-90",
+          "section": "Panduan Pembelajaran Bab 3, Subbab D & Kunci Asesmen No. 1"
+        }
+      },
+      "provenance": "Skenario orisinal analisis superposisi medan magnet Biot-Savart dua kawat lurus sejajar dirancang mandiri berdasarkan konsep medan kawat berarus Buku Siswa hlm. 47, 56.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-A: Menganalisis superposisi kuat medan magnet di sekitar kawat lurus berarus listrik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 47, 56 (Medan Magnet Kawat Lurus)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 75-77, 89-90"
+        },
+        "authoring_statement": "Skenario penentuan posisi medan nol dirumuskan mandiri secara bersih tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "id": "FIS12-C03-M09-Q02",
+      "chapter_id": "FIS12-C03",
+      "topic_id": "FIS12-C03-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "question": "Suatu kumparan kawat melingkar tipis terdiri atas N = 20 lilitan dengan jari-jari lingkaran a = 10 cm (0,1 m) dialiri arus listrik konstan I = 5 A di udara. Diketahui permeabilitas ruang hampa μ₀ = 4π × 10⁻⁷ T·m/A. Berapakah besar kuat medan magnet induksi tepat di titik pusat kumparan melingkar tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "π × 10⁻⁴ T"
+        },
+        {
+          "id": "B",
+          "text": "2π × 10⁻⁴ T"
+        },
+        {
+          "id": "C",
+          "text": "4π × 10⁻⁴ T"
+        },
+        {
+          "id": "D",
+          "text": "2π × 10⁻⁵ T"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Kuat medan magnet induksi di pusat kawat melingkar dengan N lilitan dirumuskan: B_pusat = (μ₀·N·I)/(2a). Substitusi nilai: B_pusat = (4π × 10⁻⁷ T·m/A × 20 × 5 A) / (2 × 0,1 m) = (400π × 10⁻⁷) / 0,2 = 2000π × 10⁻⁷ = 2π × 10⁻⁴ T (sekitar 6,28 × 10⁻⁴ T). Opsi A salah karena lupa memperhitungkan jumlah lilitan N = 20. Opsi C salah karena membagi dengan a bukan 2a. Opsi D salah dalam konversi orde pangkat satuan (Buku Siswa hlm. 57; Buku Guru hlm. 75–77).",
+      "source": {
+        "student_book": {
+          "pages": "57",
+          "section": "Bab 3, Subbab D.2: Kawat Melingkar Berarus Listrik"
+        },
+        "teacher_guide": {
+          "pages": "75-77",
+          "section": "Panduan Pembelajaran Bab 3, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan induksi magnetik di pusat lingkaran kumparan disusun mandiri berdasarkan rumus Biot-Savart Buku Siswa hlm. 57.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-A: Menerapkan persamaan kuat medan magnet di pusat kawat melingkar berarus",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 57 (Kawat Melingkar Berarus)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 75-77"
+        },
+        "authoring_statement": "Perhitungan medan kumparan melingkar disusun mandiri menggunakan parameter fisika standar tanpa menjiplak soal buku."
+      }
+    },
+    {
+      "id": "FIS12-C03-M09-Q03",
+      "chapter_id": "FIS12-C03",
+      "topic_id": "FIS12-C03-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Sebuah toroida ideal memiliki N = 500 lilitan kawat yang melingkar rapat dengan jari-jari efektif inti r = 20 cm (0,2 m). Toroida dialiri arus listrik konstan I = 2 A dan intinya terbuat dari bahan feromagnetik dengan permeabilitas relatif μ_r = 400. Diketahui μ₀ = 4π × 10⁻⁷ T·m/A. Berdasarkan prinsip fisika toroida ideal, berapakah besar kuat medan magnet di dalam inti toroida tersebut, dan bagaimanakah nilai kuat medan magnet di lubang tengah toroida (pusat lingkaran luar inti) serta di luar cincin toroida?",
+      "options": [
+        {
+          "id": "A",
+          "text": "B_inti = 0,4 T, sedangkan medan di lubang tengah toroida dan di luar toroida bernilai nol (0 T)"
+        },
+        {
+          "id": "B",
+          "text": "B_inti = 0,4 T, sedangkan medan di lubang tengah toroida mencapai nilai maksimum 0,8 T"
+        },
+        {
+          "id": "C",
+          "text": "B_inti = 1,6 T, sedangkan medan di lubang tengah toroida dan di luar toroida bernilai nol (0 T)"
+        },
+        {
+          "id": "D",
+          "text": "B_inti = 0,001 T, sedangkan medan di luar toroida sama besarnya dengan medan di dalam inti"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Permeabilitas bahan inti toroida adalah μ = μ₀ · μ_r = (4π × 10⁻⁷) × 400 = 1,6π × 10⁻⁴ T·m/A. Berdasarkan Hukum Ampere untuk toroida ideal, kuat medan magnet di dalam inti pada jari-jari efektif r adalah: B_inti = (μ·N·I)/(2π·r) = (1,6π × 10⁻⁴ × 500 × 2) / (2π × 0,2) = (1,6π × 10⁻⁴ × 1000) / (0,4π) = 0,16π / 0,4π = 0,4 T. Pada toroida ideal, garis medan magnetik terkurung sempurna di dalam penampang inti lingkaran. Di lubang tengah (pusat cincin) dan di luar badan toroida, arus total yang dilingkupi lintasan tertutup Ampere adalah nol sehingga kuat medan magnetnya bernilai nol (B = 0 T) (Buku Siswa hlm. 58–59; Buku Guru hlm. 75–77).",
+      "source": {
+        "student_book": {
+          "pages": "58-59",
+          "section": "Bab 3, Subbab D.3: Solenoida dan Toroida"
+        },
+        "teacher_guide": {
+          "pages": "75-77",
+          "section": "Panduan Pembelajaran Bab 3, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis spasial medan magnetik toroida ideal dan permeabilitas relatif bahan inti disusun mandiri berbasis Buku Siswa hlm. 58–59.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-A: Menganalisis medan magnet induksi di dalam inti toroida ideal dan batas-batas spasialnya",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 58-59 (Toroida)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 75-77"
+        },
+        "authoring_statement": "Analisis komparatif medan inti vs lubang toroida dirancang mandiri untuk menguji pemahaman Hukum Ampere secara mendalam tanpa menyalin kalimat buku teks."
+      }
+    }
+  ]
+}

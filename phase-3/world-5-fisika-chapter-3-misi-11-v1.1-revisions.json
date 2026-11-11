@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "revision_batch_id": "world-5-fisika-chapter-3-misi-11-v1.1",
+  "base_batch": "world-5-fisika-chapter-3-misi-11-canonical-v1.0.json",
+  "status": "APPROVED",
+  "purpose": "Revision overlay v1.1 for Fisika Bab 3 Misi 11 - Verifikasi Akademis & Penyelarasan Standar Lintas Mapel",
+  "revisions": [
+    {
+      "question_id": "FIS12-C03-M11-Q01",
+      "before_question": "Sebuah kawat penghantar tembaga lurus mendatar dengan panjang L = 50 cm (0,5 m) dan massa m = 20 gram (0,02 kg) berada di dalam medan magnet homogen B = 0,08 T yang berarah tegak lurus masuk menembus bidang gambar (⊗). Percepatan gravitasi diketahui g = 10 m/s². Agar kawat tembaga tersebut dapat melayang dalam keadaan setimbang (gaya Lorentz tepat mengimbangi gaya gravitasi kawat), berapakah besar kuat arus listrik I yang harus dialirkan pada kawat dan ke manakah arah alirannya?",
+      "after_question": "Sebuah kawat penghantar tembaga lurus mendatar dengan panjang L = 50 cm (0,5 m) dan massa m = 20 gram (0,02 kg) berada di dalam medan magnet homogen B = 0,08 T yang berarah tegak lurus masuk menembus bidang gambar (⊗). Percepatan gravitasi diketahui g = 10 m/s². Agar kawat tembaga tersebut dapat melayang dalam keadaan setimbang (gaya Lorentz tepat mengimbangi gaya gravitasi kawat), berapakah besar kuat arus listrik I yang harus dialirkan pada kawat dan ke manakah arah alirannya?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "I = 5 A, mengalir mendatar ke arah kanan"
+        },
+        {
+          "id": "B",
+          "text": "I = 5 A, mengalir mendatar ke arah kiri"
+        },
+        {
+          "id": "C",
+          "text": "I = 2,5 A, mengalir mendatar ke arah kanan"
+        },
+        {
+          "id": "D",
+          "text": "I = 10 A, mengalir mendatar ke arah kiri"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "I = 5 A, mengalir mendatar ke arah kanan"
+        },
+        {
+          "id": "B",
+          "text": "I = 5 A, mengalir mendatar ke arah kiri"
+        },
+        {
+          "id": "C",
+          "text": "I = 2,5 A, mengalir mendatar ke arah kanan"
+        },
+        {
+          "id": "D",
+          "text": "I = 10 A, mengalir mendatar ke arah kiri"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Gaya berat kawat adalah W = m·g = 0,02 kg × 10 m/s² = 0,2 N ke arah bawah. Agar melayang setimbang, gaya Lorentz harus mengarah ke atas dengan besar F_B = 0,2 N. Rumus gaya Lorentz pada kawat: F_B = I·L·B·sin(90°) ⟹ 0,2 = I × 0,5 m × 0,08 T ⟹ 0,2 = 0,04·I ⟹ I = 0,2 / 0,04 = 5 A. Berdasarkan kaidah tangan kanan (F = I(L × B)), agar gaya F mengarah ke atas saat medan magnet B masuk bidang (⊗), arah arus I harus mengalir ke arah kanan (Buku Siswa hlm. 52; Buku Guru hlm. 72–74).",
+      "after_explanation": "Gaya berat kawat adalah W = m·g = 0,02 kg × 10 m/s² = 0,2 N ke arah bawah. Agar melayang setimbang, gaya Lorentz harus mengarah ke atas dengan besar F_B = 0,2 N. Rumus gaya Lorentz pada kawat: F_B = I·L·B·sin(90°) ⟹ 0,2 = I × 0,5 m × 0,08 T ⟹ 0,2 = 0,04·I ⟹ I = 0,2 / 0,04 = 5 A. Berdasarkan kaidah tangan kanan (F = I(L × B)), agar gaya F mengarah ke atas saat medan magnet B masuk bidang (⊗), arah arus I harus mengalir ke arah kanan (Buku Siswa hlm. 52; Buku Guru hlm. 72–74).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C03-M11-Q02",
+      "before_question": "Perhatikan diagram dua kawat lurus panjang sejajar Kawat 1 dan Kawat 2 yang terpisah sejauh a = 10 cm (0,1 m) di udara pada gambar. Kawat 1 dialiri arus listrik I₁ = 6 A ke arah atas, sedangkan Kawat 2 dialiri arus listrik I₂ = 10 A ke arah bawah (berlawanan arah). Diketahui permeabilitas ruang hampa μ₀ = 4π × 10⁻⁷ T·m/A. Berapakah besar gaya interaksi magnetik per satuan panjang (F/L) yang dialami oleh kedua kawat dan bagaimanakah sifat interaksinya?",
+      "after_question": "Perhatikan diagram dua kawat lurus panjang sejajar Kawat 1 dan Kawat 2 yang terpisah sejauh a = 10 cm (0,1 m) di udara pada gambar. Kawat 1 dialiri arus listrik I₁ = 6 A ke arah atas, sedangkan Kawat 2 dialiri arus listrik I₂ = 10 A ke arah bawah (berlawanan arah). Diketahui permeabilitas ruang hampa μ₀ = 4π × 10⁻⁷ T·m/A. Berapakah besar gaya interaksi magnetik per satuan panjang (F/L) yang dialami oleh kedua kawat dan bagaimanakah sifat interaksinya?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "1,2 × 10⁻⁴ N/m, saling tolak-menolak"
+        },
+        {
+          "id": "B",
+          "text": "1,2 × 10⁻⁴ N/m, saling tarik-menarik"
+        },
+        {
+          "id": "C",
+          "text": "2,4 × 10⁻⁴ N/m, saling tolak-menolak"
+        },
+        {
+          "id": "D",
+          "text": "6,0 × 10⁻⁵ N/m, saling tarik-menarik"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "1,2 × 10⁻⁴ N/m, saling tolak-menolak"
+        },
+        {
+          "id": "B",
+          "text": "1,2 × 10⁻⁴ N/m, saling tarik-menarik"
+        },
+        {
+          "id": "C",
+          "text": "2,4 × 10⁻⁴ N/m, saling tolak-menolak"
+        },
+        {
+          "id": "D",
+          "text": "6,0 × 10⁻⁵ N/m, saling tarik-menarik"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Gaya magnetik per satuan panjang antara dua kawat sejajar berarus dirumuskan: F/L = (μ₀·I₁·I₂) / (2π·a). Substitusi nilai: F/L = (4π × 10⁻⁷ × 6 × 10) / (2π × 0,1) = (240π × 10⁻⁷) / (0,2π) = 1200 × 10⁻⁷ = 1,2 × 10⁻⁴ N/m. Berdasarkan aturan Biot-Savart dan Lorentz, jika dua kawat sejajar dialiri arus dengan arah berlawanan (satu ke atas dan satu ke bawah), medan magnet di daerah antara kedua kawat memiliki arah yang searah (keduanya masuk bidang), sehingga kerapatan garis gaya magnetik meningkat dan menghasilkan gaya yang saling tolak-menolak (Buku Siswa hlm. 52–53; Buku Guru hlm. 72–74).",
+      "after_explanation": "Gaya magnetik per satuan panjang antara dua kawat sejajar berarus dirumuskan: F/L = (μ₀·I₁·I₂) / (2π·a). Substitusi nilai: F/L = (4π × 10⁻⁷ × 6 × 10) / (2π × 0,1) = (240π × 10⁻⁷) / (0,2π) = 1200 × 10⁻⁷ = 1,2 × 10⁻⁴ N/m. Berdasarkan aturan Biot-Savart dan Lorentz, jika dua kawat sejajar dialiri arus dengan arah berlawanan (satu ke atas dan satu ke bawah), medan magnet di daerah antara kedua kawat memiliki arah yang searah (keduanya masuk bidang), sehingga kerapatan garis gaya magnetik meningkat dan menghasilkan gaya yang saling tolak-menolak (Buku Siswa hlm. 52–53; Buku Guru hlm. 72–74).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C03-M11-Q03",
+      "before_question": "Sebuah kumparan datar berbentuk persegi panjang pada motor listrik DC terdiri dari N = 100 lilitan dengan ukuran 10 cm × 5 cm (luas bidang A = 50 cm² = 5 × 10⁻³ m²) dialiri arus listrik konstan I = 2 A. Kumparan tersebut berada di dalam daerah medan magnet homogen B = 0,3 T. Pada suatu posisi rotasi, bidang kumparan membentuk sudut α = 30° terhadap arah garis medan magnetik. Berapakah besar momen gaya (torsi) yang memutar kumparan pada posisi tersebut?",
+      "after_question": "Sebuah kumparan datar berbentuk persegi panjang pada motor listrik DC terdiri dari N = 100 lilitan dengan ukuran 10 cm × 5 cm (luas bidang A = 50 cm² = 5 × 10⁻³ m²) dialiri arus listrik konstan I = 2 A. Kumparan tersebut berada di dalam daerah medan magnet homogen B = 0,3 T. Pada suatu posisi rotasi, bidang kumparan membentuk sudut α = 30° terhadap arah garis medan magnetik. Berapakah besar momen gaya (torsi) yang memutar kumparan pada posisi tersebut?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "0,15√3 N·m (sekitar 0,26 N·m)"
+        },
+        {
+          "id": "B",
+          "text": "0,15 N·m"
+        },
+        {
+          "id": "C",
+          "text": "0,30 N·m"
+        },
+        {
+          "id": "D",
+          "text": "0,30√3 N·m"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "0,15√3 N·m (sekitar 0,26 N·m)"
+        },
+        {
+          "id": "B",
+          "text": "0,15 N·m"
+        },
+        {
+          "id": "C",
+          "text": "0,30 N·m"
+        },
+        {
+          "id": "D",
+          "text": "0,30√3 N·m"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Rumus momen gaya (torsi) pada kumparan adalah τ = N·I·A·B·sin(θ), di mana θ adalah sudut antara vektor normal bidang kumparan (n̂) terhadap garis medan magnet B. Jika bidang kumparan membentuk sudut α = 30° terhadap arah medan magnet, maka sudut antara garis normal kumparan dan medan magnet adalah θ = 90° - α = 90° - 30° = 60° (atau setara dengan τ = N·I·A·B·cos(α)). Perhitungan: τ = 100 × 2 A × (5 × 10⁻³ m²) × 0,3 T × sin(60°) = 0,3 × (½√3) = 0,15√3 N·m ≈ 0,26 N·m. Opsi B salah karena menggunakan sin(30°) secara keliru tanpa memperhatikan definisi normal bidang (Buku Siswa hlm. 53–54; Buku Guru hlm. 74–75).",
+      "after_explanation": "Rumus momen gaya (torsi) pada kumparan adalah τ = N·I·A·B·sin(θ), di mana θ adalah sudut antara vektor normal bidang kumparan (n̂) terhadap garis medan magnet B. Jika bidang kumparan membentuk sudut α = 30° terhadap arah medan magnet, maka sudut antara garis normal kumparan dan medan magnet adalah θ = 90° - α = 90° - 30° = 60° (atau setara dengan τ = N·I·A·B·cos(α)). Perhitungan: τ = 100 × 2 A × (5 × 10⁻³ m²) × 0,3 T × sin(60°) = 0,3 × (½√3) = 0,15√3 N·m ≈ 0,26 N·m. Opsi B salah karena menggunakan sin(30°) secara keliru tanpa memperhatikan definisi normal bidang (Buku Siswa hlm. 53–54; Buku Guru hlm. 74–75).",
+      "before_cognitive_level": "analyze",
+      "after_cognitive_level": "analyze",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    }
+  ]
+}

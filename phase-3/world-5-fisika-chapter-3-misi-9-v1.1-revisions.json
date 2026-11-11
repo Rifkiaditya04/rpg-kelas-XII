@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "revision_batch_id": "world-5-fisika-chapter-3-misi-9-v1.1",
+  "base_batch": "world-5-fisika-chapter-3-misi-9-canonical-v1.0.json",
+  "status": "APPROVED",
+  "purpose": "Revision overlay v1.1 for Fisika Bab 3 Misi 9 - Verifikasi Akademis & Penyelarasan Standar Lintas Mapel",
+  "revisions": [
+    {
+      "question_id": "FIS12-C03-M09-Q01",
+      "before_question": "Dua kawat lurus panjang sejajar terpisah pada jarak d = 30 cm di udara. Kawat 1 dialiri arus I₁ = 4 A ke arah atas (sumbu +y) dan Kawat 2 dialiri arus I₂ = 6 A juga ke arah atas (searah dengan I₁). Sebuah titik P terletak pada garis hubung mendatar antara kedua kawat di mana kuat medan magnet totalnya bernilai nol (B_total = 0). Di manakah letak titik P tersebut diukur dari Kawat 1?",
+      "after_question": "Dua kawat lurus panjang sejajar terpisah pada jarak d = 30 cm di udara. Kawat 1 dialiri arus I₁ = 4 A ke arah atas (sumbu +y) dan Kawat 2 dialiri arus I₂ = 6 A juga ke arah atas (searah dengan I₁). Sebuah titik P terletak pada garis hubung mendatar antara kedua kawat di mana kuat medan magnet totalnya bernilai nol (B_total = 0). Di manakah letak titik P tersebut diukur dari Kawat 1?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "12 cm di antara kedua kawat di sebelah kanan Kawat 1"
+        },
+        {
+          "id": "B",
+          "text": "18 cm di antara kedua kawat di sebelah kanan Kawat 1"
+        },
+        {
+          "id": "C",
+          "text": "15 cm tepat di tengah-tengah antara kedua kawat"
+        },
+        {
+          "id": "D",
+          "text": "60 cm di sebelah kiri Kawat 1 di luar rentang kedua kawat"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "12 cm di antara kedua kawat di sebelah kanan Kawat 1"
+        },
+        {
+          "id": "B",
+          "text": "18 cm di antara kedua kawat di sebelah kanan Kawat 1"
+        },
+        {
+          "id": "C",
+          "text": "15 cm tepat di tengah-tengah antara kedua kawat"
+        },
+        {
+          "id": "D",
+          "text": "60 cm di sebelah kiri Kawat 1 di luar rentang kedua kawat"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Berdasarkan kaidah tangan kanan, arus I₁ (ke atas) menghasilkan medan magnet B₁ yang masuk bidang (⊗) di sebelah kanannya, sedangkan arus I₂ (ke atas) menghasilkan medan magnet B₂ yang keluar bidang (⊙) di sebelah kirinya. Karena kedua medan berlawanan arah di daerah antara kedua kawat, titik dengan medan nol (B_total = 0) harus berada di antara kedua kawat pada jarak x dari Kawat 1 dan (d - x) dari Kawat 2. Syarat B₁ = B₂ menghasilkan: (μ₀·I₁)/(2π·x) = (μ₀·I₂)/(2π·(d - x)) ⟹ 4/x = 6/(30 - x) ⟹ 4(30 - x) = 6x ⟹ 120 - 4x = 6x ⟹ 10x = 120 ⟹ x = 12 cm di sebelah kanan Kawat 1 (Buku Siswa hlm. 47, 56; Buku Guru hlm. 75–77, 89–90).",
+      "after_explanation": "Berdasarkan kaidah tangan kanan, arus I₁ (ke atas) menghasilkan medan magnet B₁ yang masuk bidang (⊗) di sebelah kanannya, sedangkan arus I₂ (ke atas) menghasilkan medan magnet B₂ yang keluar bidang (⊙) di sebelah kirinya. Karena kedua medan berlawanan arah di daerah antara kedua kawat, titik dengan medan nol (B_total = 0) harus berada di antara kedua kawat pada jarak x dari Kawat 1 dan (d - x) dari Kawat 2. Syarat B₁ = B₂ menghasilkan: (μ₀·I₁)/(2π·x) = (μ₀·I₂)/(2π·(d - x)) ⟹ 4/x = 6/(30 - x) ⟹ 4(30 - x) = 6x ⟹ 120 - 4x = 6x ⟹ 10x = 120 ⟹ x = 12 cm di sebelah kanan Kawat 1 (Buku Siswa hlm. 47, 56; Buku Guru hlm. 75–77, 89–90).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C03-M09-Q02",
+      "before_question": "Suatu kumparan kawat melingkar tipis terdiri atas N = 20 lilitan dengan jari-jari lingkaran a = 10 cm (0,1 m) dialiri arus listrik konstan I = 5 A di udara. Diketahui permeabilitas ruang hampa μ₀ = 4π × 10⁻⁷ T·m/A. Berapakah besar kuat medan magnet induksi tepat di titik pusat kumparan melingkar tersebut?",
+      "after_question": "Suatu kumparan kawat melingkar tipis terdiri atas N = 20 lilitan dengan jari-jari lingkaran a = 10 cm (0,1 m) dialiri arus listrik konstan I = 5 A di udara. Diketahui permeabilitas ruang hampa μ₀ = 4π × 10⁻⁷ T·m/A. Berapakah besar kuat medan magnet induksi tepat di titik pusat kumparan melingkar tersebut?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "π × 10⁻⁴ T"
+        },
+        {
+          "id": "B",
+          "text": "2π × 10⁻⁴ T"
+        },
+        {
+          "id": "C",
+          "text": "4π × 10⁻⁴ T"
+        },
+        {
+          "id": "D",
+          "text": "2π × 10⁻⁵ T"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "π × 10⁻⁴ T"
+        },
+        {
+          "id": "B",
+          "text": "2π × 10⁻⁴ T"
+        },
+        {
+          "id": "C",
+          "text": "4π × 10⁻⁴ T"
+        },
+        {
+          "id": "D",
+          "text": "2π × 10⁻⁵ T"
+        }
+      ],
+      "before_answer": "B",
+      "after_answer": "B",
+      "before_explanation": "Kuat medan magnet induksi di pusat kawat melingkar dengan N lilitan dirumuskan: B_pusat = (μ₀·N·I)/(2a). Substitusi nilai: B_pusat = (4π × 10⁻⁷ T·m/A × 20 × 5 A) / (2 × 0,1 m) = (400π × 10⁻⁷) / 0,2 = 2000π × 10⁻⁷ = 2π × 10⁻⁴ T (sekitar 6,28 × 10⁻⁴ T). Opsi A salah karena lupa memperhitungkan jumlah lilitan N = 20. Opsi C salah karena membagi dengan a bukan 2a. Opsi D salah dalam konversi orde pangkat satuan (Buku Siswa hlm. 57; Buku Guru hlm. 75–77).",
+      "after_explanation": "Kuat medan magnet induksi di pusat kawat melingkar dengan N lilitan dirumuskan: B_pusat = (μ₀·N·I)/(2a). Substitusi nilai: B_pusat = (4π × 10⁻⁷ T·m/A × 20 × 5 A) / (2 × 0,1 m) = (400π × 10⁻⁷) / 0,2 = 2000π × 10⁻⁷ = 2π × 10⁻⁴ T (sekitar 6,28 × 10⁻⁴ T). Opsi A salah karena lupa memperhitungkan jumlah lilitan N = 20. Opsi C salah karena membagi dengan a bukan 2a. Opsi D salah dalam konversi orde pangkat satuan (Buku Siswa hlm. 57; Buku Guru hlm. 75–77).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C03-M09-Q03",
+      "before_question": "Sebuah toroida ideal memiliki N = 500 lilitan kawat yang melingkar rapat dengan jari-jari efektif inti r = 20 cm (0,2 m). Toroida dialiri arus listrik konstan I = 2 A dan intinya terbuat dari bahan feromagnetik dengan permeabilitas relatif μ_r = 400. Diketahui μ₀ = 4π × 10⁻⁷ T·m/A. Berdasarkan prinsip fisika toroida ideal, berapakah besar kuat medan magnet di dalam inti toroida tersebut, dan bagaimanakah nilai kuat medan magnet di lubang tengah toroida (pusat lingkaran luar inti) serta di luar cincin toroida?",
+      "after_question": "Sebuah toroida ideal memiliki N = 500 lilitan kawat yang melingkar rapat dengan jari-jari efektif inti r = 20 cm (0,2 m). Toroida dialiri arus listrik konstan I = 2 A dan intinya terbuat dari bahan feromagnetik dengan permeabilitas relatif μ_r = 400. Diketahui μ₀ = 4π × 10⁻⁷ T·m/A. Berdasarkan prinsip fisika toroida ideal, berapakah besar kuat medan magnet di dalam inti toroida tersebut, dan bagaimanakah nilai kuat medan magnet di lubang tengah toroida (pusat lingkaran luar inti) serta di luar cincin toroida?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "B_inti = 0,4 T, sedangkan medan di lubang tengah toroida dan di luar toroida bernilai nol (0 T)"
+        },
+        {
+          "id": "B",
+          "text": "B_inti = 0,4 T, sedangkan medan di lubang tengah toroida mencapai nilai maksimum 0,8 T"
+        },
+        {
+          "id": "C",
+          "text": "B_inti = 1,6 T, sedangkan medan di lubang tengah toroida dan di luar toroida bernilai nol (0 T)"
+        },
+        {
+          "id": "D",
+          "text": "B_inti = 0,001 T, sedangkan medan di luar toroida sama besarnya dengan medan di dalam inti"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "B_inti = 0,4 T, sedangkan medan di lubang tengah toroida dan di luar toroida bernilai nol (0 T)"
+        },
+        {
+          "id": "B",
+          "text": "B_inti = 0,4 T, sedangkan medan di lubang tengah toroida mencapai nilai maksimum 0,8 T"
+        },
+        {
+          "id": "C",
+          "text": "B_inti = 1,6 T, sedangkan medan di lubang tengah toroida dan di luar toroida bernilai nol (0 T)"
+        },
+        {
+          "id": "D",
+          "text": "B_inti = 0,001 T, sedangkan medan di luar toroida sama besarnya dengan medan di dalam inti"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Permeabilitas bahan inti toroida adalah μ = μ₀ · μ_r = (4π × 10⁻⁷) × 400 = 1,6π × 10⁻⁴ T·m/A. Berdasarkan Hukum Ampere untuk toroida ideal, kuat medan magnet di dalam inti pada jari-jari efektif r adalah: B_inti = (μ·N·I)/(2π·r) = (1,6π × 10⁻⁴ × 500 × 2) / (2π × 0,2) = (1,6π × 10⁻⁴ × 1000) / (0,4π) = 0,16π / 0,4π = 0,4 T. Pada toroida ideal, garis medan magnetik terkurung sempurna di dalam penampang inti lingkaran. Di lubang tengah (pusat cincin) dan di luar badan toroida, arus total yang dilingkupi lintasan tertutup Ampere adalah nol sehingga kuat medan magnetnya bernilai nol (B = 0 T) (Buku Siswa hlm. 58–59; Buku Guru hlm. 75–77).",
+      "after_explanation": "Permeabilitas bahan inti toroida adalah μ = μ₀ · μ_r = (4π × 10⁻⁷) × 400 = 1,6π × 10⁻⁴ T·m/A. Berdasarkan Hukum Ampere untuk toroida ideal, kuat medan magnet di dalam inti pada jari-jari efektif r adalah: B_inti = (μ·N·I)/(2π·r) = (1,6π × 10⁻⁴ × 500 × 2) / (2π × 0,2) = (1,6π × 10⁻⁴ × 1000) / (0,4π) = 0,16π / 0,4π = 0,4 T. Pada toroida ideal, garis medan magnetik terkurung sempurna di dalam penampang inti lingkaran. Di lubang tengah (pusat cincin) dan di luar badan toroida, arus total yang dilingkupi lintasan tertutup Ampere adalah nol sehingga kuat medan magnetnya bernilai nol (B = 0 T) (Buku Siswa hlm. 58–59; Buku Guru hlm. 75–77).",
+      "before_cognitive_level": "analyze",
+      "after_cognitive_level": "analyze",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, orientasi vektor, dan opsi diverifikasi akurat 100%."
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_FINAL",
+  "dataset": "world-5-fisika-chapter-3-misi-10",
+  "purpose": "Bank Soal Fisika Kelas XII Bab 3 Misi 10 - Canonical Final v1.1",
+  "chapter_id": "FIS12-C03",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C03-M10-Q01",
+      "chapter_id": "FIS12-C03",
+      "topic_id": "FIS12-C03-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah berkas elektron (muatan q = -1,6 × 10⁻¹⁹ C) bergerak dengan kelajuan konstan v = 5 × 10⁶ m/s mendatar ke arah timur (sumbu +x). Berkas elektron tersebut memasuki daerah medan magnet homogen B = 0,4 T yang berarah tegak lurus ke utara (sumbu +y). Berdasarkan kaidah tiga jari tangan kanan untuk gaya Lorentz F = q(v × B), berapakah besar gaya magnetik yang dialami elektron dan ke manakah arah pembelokannya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke bawah menembus masuk bidang (sumbu -z)"
+        },
+        {
+          "id": "B",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke atas keluar bidang (sumbu +z)"
+        },
+        {
+          "id": "C",
+          "text": "1,6 × 10⁻¹³ N, mengarah ke selatan (sumbu -y)"
+        },
+        {
+          "id": "D",
+          "text": "3,2 × 10⁻¹³ N, mengarah ke barat mendatar (sumbu -x)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Besar gaya Lorentz pada partikel bermuatan adalah F = |q|·v·B·sin(90°) = (1,6 × 10⁻¹⁹ C) × (5 × 10⁶ m/s) × 0,4 T = 3,2 × 10⁻¹³ N. Arah vektor: Gunakan kaidah tiga jari tangan kanan untuk perkalian silang (v × B): jari telunjuk menunjuk ke timur (+x), jari tengah menunjuk ke utara (+y), maka ibu jari mengarah ke atas keluar bidang (+z) untuk muatan positif. Namun, karena elektron bermuatan negatif (q < 0), arah gaya magnetik Lorentz dibalik 180° berlawanan dengan arah ibu jari, yaitu mengarah ke bawah menembus masuk bidang (sumbu -z) (Buku Siswa hlm. 48–49; Buku Guru hlm. 70–72).",
+      "source": {
+        "student_book": {
+          "pages": "48-49",
+          "section": "Bab 3, Subbab B.1: Gaya pada Muatan Bergerak"
+        },
+        "teacher_guide": {
+          "pages": "70-72",
+          "section": "Panduan Pembelajaran Bab 3, Subbab A: Gaya Magnet"
+        }
+      },
+      "provenance": "Skenario orisinal penerapan kaidah tiga jari tangan kanan dan sifat muatan negatif elektron disusun mandiri berdasarkan Buku Siswa hlm. 48–49.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-B: Menentukan besar dan arah gaya Lorentz pada partikel bermuatan negatif menggunakan kaidah vektor",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 48-49 (Gaya Lorentz)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 70-72"
+        },
+        "authoring_statement": "Penentuan arah gaya elektron dirancang mandiri untuk menguji pemahaman kaidah tangan kanan dan pembalikan tanda muatan tanpa plagiarisme."
+      }
+    },
+    {
+      "id": "FIS12-C03-M10-Q02",
+      "chapter_id": "FIS12-C03",
+      "topic_id": "FIS12-C03-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Perhatikan diagram spektrometer massa pada gambar. Dua ion positif sejenis dengan muatan identik q = +e dipercepat dari keadaan diam oleh beda potensial listrik yang sama ΔV. Kedua ion tersebut kemudian memasuki daerah medan magnet homogen B secara tegak lurus sehingga membelok membentuk lintasan setengah lingkaran sebelum menumbuk pelat detektor. Jika massa Ion 2 adalah dua kali massa Ion 1 (m₂ = 2·m₁), berapakah perbandingan jari-jari lintasan lingkaran Ion 1 terhadap Ion 2 (r₁ : r₂)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 2"
+        },
+        {
+          "id": "B",
+          "text": "1 : √2"
+        },
+        {
+          "id": "C",
+          "text": "√2 : 1"
+        },
+        {
+          "id": "D",
+          "text": "1 : 4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Langkah 1: Hubungan energi kinetik percepatan listrik: q·ΔV = ½·m·v² ⟹ v = √(2q·ΔV / m). Langkah 2: Di dalam medan magnet, gaya Lorentz berfungsi sebagai gaya sentripetal: q·v·B = m·v² / r ⟹ r = (m·v) / (q·B). Langkah 3: Substitusi v ke rumus jari-jari: r = (m / (q·B)) · √(2q·ΔV / m) = (1/B) · √(2m·ΔV / q). Karena q, B, dan ΔV sama untuk kedua ion, maka jari-jari lintasan sebanding dengan akar massa: r ∝ √m. Dengan m₂ = 2m₁, maka r₁ / r₂ = √(m₁ / m₂) = √(1/2) = 1/√2 ⟹ r₁ : r₂ = 1 : √2 (Buku Siswa hlm. 49–50; Buku Guru hlm. 65, 71).",
+      "source": {
+        "student_book": {
+          "pages": "49-50",
+          "section": "Bab 3, Subbab B.1: Gaya pada Muatan Bergerak (Spektrometer Massa)"
+        },
+        "teacher_guide": {
+          "pages": "65, 71",
+          "section": "Panduan Pembelajaran Bab 3, Subbab A: Spektrometer Massa"
+        }
+      },
+      "provenance": "Skenario orisinal analisis rasio lintasan spektrometer massa disusun mandiri dengan stimulus visual SVG berdasarkan konsep Buku Siswa hlm. 49–50.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-B: Menganalisis hubungan massa partikel dan jari-jari lintasan melingkar pada spektrometer massa",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 49-50 (Prinsip Spektrometer Massa)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 65, 71"
+        },
+        "authoring_statement": "Penurunan rumus jari-jari spektrometer massa dirancang mandiri memadukan konsep usaha listrik dan gaya magnet tanpa menyalin kalimat buku teks."
+      },
+      "media": {
+        "type": "image",
+        "src": "fisika/ch3/lintasan-partikel-medan-b.svg",
+        "alt": "Diagram spektrometer massa yang memperlihatkan berkas ion positif dipercepat oleh celah lalu memasuki daerah medan magnet tegak lurus masuk bidang (tanda silang), membelok melingkar setengah lingkaran dengan jari-jari r1 dan r2 menuju pelat detektor ion.",
+        "caption": "Lintasan setengah lingkaran ion isotop dalam medan magnet homogen spektrometer massa."
+      }
+    },
+    {
+      "id": "FIS12-C03-M10-Q03",
+      "chapter_id": "FIS12-C03",
+      "topic_id": "FIS12-C03-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Dalam sebuah alat pemilih kecepatan (velocity selector), terdapat medan listrik homogen E = 6 × 10⁴ V/m yang berarah ke bawah dan medan magnet homogen B = 0,15 T yang berarah tegak lurus masuk menembus bidang gambar (⊗). Suatu berkas ion positif bermuatan q = +3,2 × 10⁻¹⁹ C ditembakkan horizontal ke arah kanan memotong kedua medan tersebut. Berapakah besar kelajuan partikel v agar ion dapat melintas lurus tanpa pembelokan keluar melalui celah selektor, dan ke manakah ion akan membelok jika kelajuannya lebih besar dari nilai tersebut (v' > v)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "v = 4 × 10⁵ m/s; jika v' > v, ion akan membelok ke arah atas"
+        },
+        {
+          "id": "B",
+          "text": "v = 4 × 10⁵ m/s; jika v' > v, ion akan membelok ke arah bawah"
+        },
+        {
+          "id": "C",
+          "text": "v = 9 × 10³ m/s; jika v' > v, ion tetap melintas lurus"
+        },
+        {
+          "id": "D",
+          "text": "v = 2,5 × 10⁻⁶ m/s; jika v' > v, ion akan berbalik arah ke kiri"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pada ion positif, gaya listrik F_E = q·E mengarah ke bawah (searah medan listrik E). Gaya Lorentz F_B = q(v × B): telunjuk ke kanan (v), jari tengah masuk bidang (B), maka ibu jari mengarah ke atas (F_B ke atas). Agar ion bergerak lurus tanpa defleksi, resultan gaya harus nol: F_B = F_E ⟹ q·v·B = q·E ⟹ v = E / B = (6 × 10⁴ V/m) / 0,15 T = 4 × 10⁵ m/s. Jika kelajuan ion lebih besar (v' > v), maka gaya magnet F_B' = q·v'·B menjadi lebih besar daripada gaya listrik F_E yang nilainya tetap. Karena F_B mengarah ke atas, resultan gaya mengarah ke atas sehingga ion membelok ke arah atas (Buku Siswa hlm. 51; Buku Guru hlm. 64, 70–71).",
+      "source": {
+        "student_book": {
+          "pages": "51",
+          "section": "Bab 3, Subbab B.1: Pemilih Kecepatan"
+        },
+        "teacher_guide": {
+          "pages": "64, 70-71",
+          "section": "Panduan Pembelajaran Bab 3, Subbab A: Pemilih Kecepatan"
+        }
+      },
+      "provenance": "Skenario orisinal analisis kesetimbangan gaya medan silang pemilih kecepatan disusun mandiri berdasarkan Buku Siswa hlm. 51.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-B: Menganalisis kondisi kesetimbangan gerak lurus partikel pada alat pemilih kecepatan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 51 (Pemilih Kecepatan)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 64, 70-71"
+        },
+        "authoring_statement": "Persoalan kesetimbangan gaya listrik dan magnet disusun mandiri untuk mengevaluasi penalaran fisis tanpa plagiarisme."
+      }
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_BASELINE",
+  "dataset": "world-5-fisika-chapter-3-misi-12",
+  "purpose": "Bank Soal Fisika Kelas XII Bab 3 Misi 12 - Canonical Baseline v1.0",
+  "chapter_id": "FIS12-C03",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C03-M12-Q01",
+      "chapter_id": "FIS12-C03",
+      "topic_id": "FIS12-C03-D",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah kumparan datar melingkar memiliki N = 200 lilitan kawat dengan luas penampang A = 50 cm² (5 × 10⁻³ m²). Bidang kumparan diletakkan tegak lurus terhadap medan magnetik homogen (garis normal bidang loop sejajar dengan medan magnet, θ = 0°). Kuat medan magnet berubah terhadap waktu menurut persamaan B(t) = (0,2 + 0,06 t) Tesla, dengan t dalam sekon. Berapakah besar GGL induksi rata-rata yang timbul pada ujung-ujung kumparan tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "60 mV"
+        },
+        {
+          "id": "B",
+          "text": "120 mV"
+        },
+        {
+          "id": "C",
+          "text": "20 mV"
+        },
+        {
+          "id": "D",
+          "text": "600 mV"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fluks magnetik pada saat sudut normal sejajar medan (cos 0° = 1) adalah Φ(t) = B(t) · A. Laju perubahan kuat medan magnet terhadap waktu adalah turunan dB/dt = d(0,2 + 0,06t)/dt = 0,06 T/s. Berdasarkan Hukum Induksi Faraday, besar GGL induksi adalah: |ε| = N · A · (dB/dt) = 200 × (5 × 10⁻³ m²) × 0,06 T/s = 1 × 0,06 = 0,06 Volt = 60 mV. Opsi B salah karena mengalikan dengan 2. Opsi C salah karena membagi laju perubahan. Opsi D salah dalam konversi satuan milivolt (Buku Siswa hlm. 61–63; Buku Guru hlm. 77–79, 90).",
+      "source": {
+        "student_book": {
+          "pages": "61-63",
+          "section": "Bab 3, Subbab E.1 & E.2: Fluks Magnet dan Besar GGL Induksi"
+        },
+        "teacher_guide": {
+          "pages": "77-79, 90",
+          "section": "Panduan Pembelajaran Bab 3, Subbab E: GGL Induksi"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan GGL induksi Faraday akibat perubahan medan magnet waktu disusun mandiri berdasarkan Buku Siswa hlm. 61–63.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-D: Menghitung GGL induksi elektromagnetik berdasarkan Hukum Faraday",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 61-63 (GGL Induksi Faraday)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 77-79, 90"
+        },
+        "authoring_statement": "Perhitungan GGL induksi waktu linier disusun mandiri secara bersih tanpa menyalin soal buku teks."
+      }
+    },
+    {
+      "id": "FIS12-C03-M12-Q02",
+      "chapter_id": "FIS12-C03",
+      "topic_id": "FIS12-C03-D",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "medium",
+      "question": "Sebuah magnet batang didekatkan dengan kutub utara (U) terlebih dahulu menuju ke dalam ujung kiri sebuah kumparan silinder kawat yang terhubung seri dengan sebuah galvanometer sensitif. Berdasarkan Hukum Lenz mengenai arah arus induksi elektromagnetik, bagaimanakah kutub magnetik yang terbentuk pada ujung kiri kumparan dan bagaimana respon fisisnya terhadap gerak magnet tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ujung kiri kumparan menjadi kutub utara untuk menghasilkan gaya tolak yang menentang gerak masuk magnet"
+        },
+        {
+          "id": "B",
+          "text": "Ujung kiri kumparan menjadi kutub selatan untuk menarik magnet agar bergerak masuk lebih cepat"
+        },
+        {
+          "id": "C",
+          "text": "Ujung kiri kumparan tidak membentuk kutub magnet karena kawat belum disentuh secara fisik oleh magnet"
+        },
+        {
+          "id": "D",
+          "text": "Ujung kiri kumparan menjadi kutub utara saat magnet diam dan menjadi kutub selatan saat magnet bergerak"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Hukum Lenz menyatakan bahwa arah arus induksi selalu sedemikian rupa sehingga medan magnet yang dihasilkannya menentang perubahan fluks magnetik yang menyebabkannya. Ketika kutub utara magnet digerakkan mendekati kumparan, fluks magnetik luar yang menembus kumparan bertambah. Kumparan merespons dengan menghasilkan arus induksi yang membentuk kutub utara (U) pada ujung kirinya, sehingga timbul gaya tolak-menolak yang menentang gerak masuk kutub utara magnet tersebut. Hal ini menjamin berlakunya Hukum Kekekalan Energi, di mana diperlukan usaha luar untuk memasukkan magnet (Buku Siswa hlm. 63–64; Buku Guru hlm. 77–79, 91).",
+      "source": {
+        "student_book": {
+          "pages": "63-64",
+          "section": "Bab 3, Subbab E.2: Hukum Lenz"
+        },
+        "teacher_guide": {
+          "pages": "77-79, 91",
+          "section": "Panduan Pembelajaran Bab 3, Subbab E: Hukum Lenz"
+        }
+      },
+      "provenance": "Skenario orisinal analisis arah arus induksi dan polaritas kutub Hukum Lenz disusun mandiri berdasarkan Buku Siswa hlm. 63–64.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-D: Menganalisis polaritas kutub induksi dan arah arus berdasarkan Hukum Lenz",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 63-64 (Hukum Lenz)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 77-79, 91"
+        },
+        "authoring_statement": "Analisis konseptual polaritas Hukum Lenz dirumuskan mandiri untuk menguji pemahaman fisis murni tanpa plagiarisme."
+      }
+    },
+    {
+      "id": "FIS12-C03-M12-Q03",
+      "chapter_id": "FIS12-C03",
+      "topic_id": "FIS12-C03-D",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Perhatikan diagram batang konduktor PQ pada gambar. Batang konduktor lurus dengan panjang efektif l = 40 cm (0,4 m) meluncur ke arah kanan dengan laju konstan v = 5 m/s di atas rel konduktor U horizontal tanpa gesekan. Rel tersebut dihubungkan dengan resistor R = 2 Ω sehingga membentuk rangkaian tertutup. Seluruh sistem berada di dalam medan magnet homogen B = 0,5 T yang berarah tegak lurus masuk ke dalam bidang kertas (⊗). Berapakah besar GGL induksi gerak kanonikal yang dibangkitkan, besar arus induksi yang mengalir pada rangkaian, dan ke manakah arah arus yang mengalir melalui batang konduktor tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ε = 1,0 V, I = 0,5 A, arus pada batang mengalir dari Q ke P"
+        },
+        {
+          "id": "B",
+          "text": "ε = 1,0 V, I = 0,5 A, arus pada batang mengalir dari P ke Q"
+        },
+        {
+          "id": "C",
+          "text": "ε = 2,0 V, I = 1,0 A, arus pada batang mengalir dari Q ke P"
+        },
+        {
+          "id": "D",
+          "text": "ε = 0,5 V, I = 0,25 A, arus pada batang mengalir dari P ke Q"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Karena orientasi panjang batang l, kecepatan v, dan medan magnet B saling tegak lurus, berlaku rumus GGL gerak kanonikal: ε = B·l·v = 0,5 T × 0,4 m × 5 m/s = 1,0 Volt. Arus induksi pada rangkaian tertutup berhambatan R = 2 Ω adalah: I = ε / R = 1,0 V / 2 Ω = 0,5 A. Berdasarkan kaidah tangan kanan untuk gaya Lorentz pada muatan positif di dalam batang yang bergerak ke kanan dalam medan masuk bidang: ibu jari ke kanan (v), empat jari masuk bidang (B), maka telapak tangan mendorong muatan ke atas, sehingga potensial titik P lebih tinggi daripada Q (V_P > V_Q). Di dalam batang konduktor PQ, arus mengalir dari potensial rendah ke tinggi (dari Q ke P), lalu mengalir memutari rel luar melalui resistor R dari atas ke bawah (Buku Siswa hlm. 64–65; Buku Guru hlm. 77–79, 91).",
+      "source": {
+        "student_book": {
+          "pages": "64-65",
+          "section": "Bab 3, Subbab E.2: GGL Induksi Gerak (Motional EMF)"
+        },
+        "teacher_guide": {
+          "pages": "77-79, 91",
+          "section": "Panduan Pembelajaran Bab 3, Subbab E & Kunci Asesmen No. 4"
+        }
+      },
+      "provenance": "Skenario orisinal GGL gerak batang konduktor kanonikal dan penentuan arah arus induksi disusun mandiri dengan stimulus visual SVG berdasarkan Buku Siswa hlm. 64–65.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-D: Menghitung GGL induksi gerak kanonikal ε = Blv dan menentukan arah arus induksi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 64-65 (GGL Induksi Gerak)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 77-79, 91"
+        },
+        "authoring_statement": "Perhitungan GGL gerak rel U dirumuskan mandiri menguji penguasaan konsep motional EMF tanpa menjiplak buku teks."
+      },
+      "media": {
+        "type": "image",
+        "src": "fisika/ch3/ggl-kawat-luncur-u.svg",
+        "alt": "Diagram kawat konduktor lurus PQ dengan panjang efektif l = 40 cm meluncur ke kanan dengan laju konstan v = 5 m/s pada rel konduktor U tertutup berhambatan R = 2 ohm dalam medan magnet homogen B = 0,5 T yang masuk menembus bidang.",
+        "caption": "GGL gerak kanonikal dan arus induksi pada batang konduktor yang meluncur di atas rel U tertutup."
+      }
+    },
+    {
+      "id": "FIS12-C03-M12-Q04",
+      "chapter_id": "FIS12-C03",
+      "topic_id": "FIS12-C03-D",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Melanjutkan skenario batang konduktor meluncur pada rel U tertutup sebelumnya (l = 0,4 m, v = 5 m/s, B = 0,5 T, R = 2 Ω, dan arus induksi I = 0,5 A ke atas), timbul gaya magnetik Lorentz pada batang tersebut akibat interaksi arus induksi dengan medan magnet luar. Berapakah besar gaya magnetik penghambat (F_lawan) yang dialami batang konduktor, dan berapakah daya mekanik luar yang harus dikerjakan agar batang dapat mempertahankan kelajuannya tetap konstan 5 m/s?",
+      "options": [
+        {
+          "id": "A",
+          "text": "F_lawan = 0,1 N ke arah kiri dan daya mekanik P = 0,5 Watt"
+        },
+        {
+          "id": "B",
+          "text": "F_lawan = 0,1 N ke arah kanan dan daya mekanik P = 0,25 Watt"
+        },
+        {
+          "id": "C",
+          "text": "F_lawan = 0,2 N ke arah kiri dan daya mekanik P = 1,0 Watt"
+        },
+        {
+          "id": "D",
+          "text": "F_lawan = 0,05 N ke arah kiri dan daya mekanik P = 0,5 Watt"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Gaya magnetik Lorentz pada batang berarus induksi: F_lawan = I·l·B·sin(90°) = 0,5 A × 0,4 m × 0,5 T = 0,1 N. Arah gaya dihitung dengan kaidah tangan kanan: arus I ke atas, medan B masuk bidang (⊗), maka gaya Lorentz mengarah ke kiri (berlawanan arah dengan gerak batang, sesuai Hukum Lenz). Langkah 2: Agar kelajuan batang tetap konstan (percepatan a = 0), gaya luar tarik harus mengimbangi gaya penghambat: F_luar = F_lawan = 0,1 N ke kanan. Langkah 3: Daya mekanik yang dikerjakan gaya luar adalah P_mekanik = F_luar · v = 0,1 N × 5 m/s = 0,5 Watt. Perhatikan bahwa daya mekanik ini tepat sama dengan daya disipasi kalor pada resistor: P_listrik = I² · R = (0,5 A)² × 2 Ω = 0,25 × 2 = 0,5 Watt, membuktikan berlakunya Hukum Kekekalan Energi (Buku Siswa hlm. 64–65; Buku Guru hlm. 77–79).",
+      "source": {
+        "student_book": {
+          "pages": "64-65",
+          "section": "Bab 3, Subbab E.2: GGL Induksi Gerak dan Kekekalan Energi"
+        },
+        "teacher_guide": {
+          "pages": "77-79",
+          "section": "Panduan Pembelajaran Bab 3, Subbab E: Kekekalan Energi Induksi"
+        }
+      },
+      "provenance": "Skenario orisinal analisis gaya Lorentz penghambat dan pembuktian kekekalan daya mekanik-listrik disusun mandiri berdasarkan Buku Siswa hlm. 64–65.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C03-D: Menganalisis gaya penghambat magnetik dan kesetaraan daya mekanik dengan daya listrik pada induksi gerak",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 64-65 (Kekekalan Energi)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 77-79"
+        },
+        "authoring_statement": "Pembuktian kekekalan daya mekanik ke listrik dirancang mandiri untuk melatih penalaran analitis hukum termodinamika-elektromagnetik tanpa plagiarisme."
+      }
+    }
+  ]
+}

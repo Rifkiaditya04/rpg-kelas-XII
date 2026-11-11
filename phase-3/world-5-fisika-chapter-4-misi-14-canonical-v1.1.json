@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_FINAL_APPROVED",
+  "dataset": "World 5 Fisika Standard Chapter 4 Original Content - Misi 14 v1.1",
+  "purpose": "Canonical final v1.1 bank soal Fisika Kelas XII Bab 4 - Misi 14: Arus dan Tegangan Bolak-Balik",
+  "chapter_id": "FIS12-C04",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C04-M14-Q01",
+      "chapter_id": "FIS12-C04",
+      "topic_id": "FIS12-C04-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah sumber tegangan bolak-balik sinusoidal menghasilkan sinyal tegangan yang memenuhi persamaan: V(t) = 100√2 sin(100π t) Volt (dengan t dalam sekon). Sebuah voltmeter AC ideal dan sebuah lampu pijar dihubungkan paralel ke sumber tegangan tersebut. Berapakah nilai tegangan yang terukur pada voltmeter AC, frekuensi sumber AC tersebut, serta nilai tegangan sesaat pada saat t = 1/600 sekon?",
+      "options": [
+        {
+          "id": "A",
+          "text": "V_ef = 100 V, f = 50 Hz, dan V(t) = 50√2 V"
+        },
+        {
+          "id": "B",
+          "text": "V_ef = 100√2 V, f = 100 Hz, dan V(t) = 50√2 V"
+        },
+        {
+          "id": "C",
+          "text": "V_ef = 100 V, f = 50 Hz, dan V(t) = 50 V"
+        },
+        {
+          "id": "D",
+          "text": "V_ef = 50√2 V, f = 25 Hz, dan V(t) = 100 V"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Nilai yang terukur pada voltmeter AC adalah nilai tegangan efektif (RMS): V_ef = V_maks / √2 = (100√2 V) / √2 = 100 Volt. Langkah 2: Frekuensi sudut adalah ω = 100π rad/s. Karena ω = 2π f, maka frekuensi sumber adalah f = ω / (2π) = (100π) / (2π) = 50 Hz. Langkah 3: Pada saat t = 1/600 s, sudut fase adalah θ = ω t = 100π × (1/600) = π/6 rad = 30°. Nilai tegangan sesaat adalah: V(1/600) = 100√2 sin(30°) = 100√2 × 0,5 = 50√2 Volt. Opsi B salah karena mengira voltmeter membaca nilai puncak dan salah mengartikan ω sebagai f. Opsi C salah dalam perhitungan sin 30°. Opsi D salah menerapkan rumus konversi efektif (Buku Siswa hlm. 77–81; Buku Guru hlm. 97, 100–102).",
+      "source": {
+        "student_book": {
+          "pages": "77-81",
+          "section": "Bab 4, Subbab A: Persamaan Arus Bolak-Balik & Nilai Efektif"
+        },
+        "teacher_guide": {
+          "pages": "97, 100-102",
+          "section": "Panduan Pembelajaran Bab 4, Subbab A"
+        }
+      },
+      "provenance": "Skenario orisinal analisis fungsi tegangan sinusoidal AC, pembacaan voltmeter RMS, dan evaluasi tegangan sesaat dirancang mandiri berdasarkan materi Buku Siswa hlm. 77–81.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C04-A: Menganalisis besaran fungsi tegangan dan arus bolak-balik sinusoidal serta hubungan nilai maksimum dan efektif",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 77-81 (Persamaan Arus Bolak-Balik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 97, 100-102"
+        },
+        "authoring_statement": "Skenario evaluasi tegangan sesaat dan nilai RMS dirumuskan mandiri secara bersih tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "id": "FIS12-C04-M14-Q02",
+      "chapter_id": "FIS12-C04",
+      "topic_id": "FIS12-C04-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Perhatikan tampilan sinyal tegangan bolak-balik pada layar osiloskop mini DSO berikut. Tombol pengatur vertikal diatur pada skala 5 V/div dan tombol pengatur horizontal diatur pada skala 2 ms/div. Pada layar, gelombang sinusoidal membentang dengan simpangan vertikal dari puncak tertinggi ke lembah terendah setinggi tepat 4 divisi (div), serta satu gelombang penuh (satu siklus lengkap) menempati lebar horizontal tepat 5 divisi (div). Berdasarkan data pembacaan osiloskop tersebut, berapakah tegangan puncak-ke-puncak (V_pp), tegangan efektif (V_ef), dan frekuensi sinyal bolak-balik tersebut?",
+      "media": {
+        "type": "image",
+        "src": "fisika/ch4/sinyal-osiloskop-ac.svg",
+        "alt": "Tampilan kisi osiloskop 10 horizontal x 8 vertikal menampilkan gelombang sinusoidal dengan simpangan puncak-ke-puncak 4 divisi pada skala 5 V/div dan satu periode 5 divisi pada skala 2 ms/div.",
+        "caption": "Tampilan sinyal tegangan bolak-balik sinusoidal pada layar osiloskop."
+      },
+      "options": [
+        {
+          "id": "A",
+          "text": "V_pp = 20 V, V_ef = 5√2 V, dan frekuensi f = 100 Hz"
+        },
+        {
+          "id": "B",
+          "text": "V_pp = 20 V, V_ef = 10 V, dan frekuensi f = 100 Hz"
+        },
+        {
+          "id": "C",
+          "text": "V_pp = 10 V, V_ef = 5√2 V, dan frekuensi f = 50 Hz"
+        },
+        {
+          "id": "D",
+          "text": "V_pp = 20 V, V_ef = 10√2 V, dan frekuensi f = 200 Hz"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Menghitung tegangan puncak-ke-puncak: V_pp = jumlah div vertikal × Volt/div = 4 div × 5 V/div = 20 Volt. Langkah 2: Menghitung tegangan maksimum: V_maks = V_pp / 2 = 20 V / 2 = 10 Volt. Langkah 3: Menghitung tegangan efektif: V_ef = V_maks / √2 = 10 / √2 = 5√2 Volt ≈ 7,07 Volt. Langkah 4: Menghitung periode dari sumbu horizontal: Periode T = jumlah div horizontal × Time/div = 5 div × 2 ms/div = 10 ms = 10 × 10⁻³ s = 0,01 s. Langkah 5: Menghitung frekuensi sinyal: f = 1 / T = 1 / 0,01 s = 100 Hz. Opsi B salah karena menyamakan tegangan efektif dengan tegangan puncak 10 V. Opsi C salah mengira simpangan puncak sebagai V_pp. Opsi D salah membagi nilai efektif dan frekuensi (Buku Siswa hlm. 78–81; Buku Guru hlm. 97, 100–102).",
+      "source": {
+        "student_book": {
+          "pages": "78-81",
+          "section": "Bab 4, Subbab A: Aktivitas 4.1 Membaca Layar Osiloskop"
+        },
+        "teacher_guide": {
+          "pages": "97, 100-102",
+          "section": "Panduan Pembelajaran Bab 4, Penyelidikan Osiloskop CRO / DSO"
+        }
+      },
+      "provenance": "Skenario orisinal analisis kisi layar osiloskop berkisi Volt/div dan Time/div dirancang mandiri berdasarkan Aktivitas 4.1 Buku Siswa hlm. 78–81.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C04-A: Menganalisis parameter sinyal listrik AC dari tampilan skala layar osiloskop",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 78-81 (Pengukuran Osiloskop)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 97, 100-102"
+        },
+        "authoring_statement": "Skenario pembacaan kisi osiloskop disusun mandiri dan orisinal dengan visual SVG modular terverifikasi."
+      }
+    },
+    {
+      "id": "FIS12-C04-M14-Q03",
+      "chapter_id": "FIS12-C04",
+      "topic_id": "FIS12-C04-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah elemen pemanas listrik berhambatan murni R = 50 Ω dihubungkan ke sumber tegangan AC bolak-balik sinusoidal. Alat ukur voltmeter AC yang terpasang menunjukkan tegangan 220 V. Apabila elemen pemanas tersebut ingin menghasilkan laju kalor (daya pemanasan) yang sama persis menggunakan sumber tegangan arus searah (DC), berapakah nilai tegangan DC yang harus diberikan, berapakah nilai tegangan maksimum (V_maks) dari sumber AC tersebut, dan berapakah daya rata-rata pemanasnya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "V_DC = 220 V, V_maks = 220√2 V ≈ 311 V, dan daya P = 968 W"
+        },
+        {
+          "id": "B",
+          "text": "V_DC = 220√2 V, V_maks = 220 V, dan daya P = 968 W"
+        },
+        {
+          "id": "C",
+          "text": "V_DC = 220 V, V_maks = 220√2 V, dan daya P = 1.936 W"
+        },
+        {
+          "id": "D",
+          "text": "V_DC = 110√2 V, V_maks = 440 V, dan daya P = 484 W"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Berdasarkan definisi fisis nilai efektif (Root-Mean-Square/RMS), nilai tegangan efektif AC adalah nilai tegangan bolak-balik yang menghasilkan disipasi kalor yang tepat sama dengan tegangan arus searah (DC) pada hambatan yang sama. Oleh karena itu, tegangan DC ekuivalen adalah V_DC = V_ef = 220 Volt. Langkah 2: Tegangan maksimum sumber AC sinusoidal adalah V_maks = V_ef × √2 = 220√2 Volt ≈ 311,1 Volt. Langkah 3: Daya rata-rata pemanas dihitung menggunakan nilai efektif: P = V_ef² / R = (220)² / 50 = 48.400 / 50 = 968 Watt. Opsi B tertukar antara nilai DC ekuivalen dan nilai puncak AC. Opsi C salah karena menghitung daya menggunakan V_maks kuadrat alih-alih V_ef kuadrat. Opsi D salah dalam konversi skala (Buku Siswa hlm. 80–81; Buku Guru hlm. 101–102).",
+      "source": {
+        "student_book": {
+          "pages": "80-81",
+          "section": "Bab 4, Subbab A: Makna Fisis Nilai Efektif & Tegangan Maksimum"
+        },
+        "teacher_guide": {
+          "pages": "101-102",
+          "section": "Panduan Pembelajaran Bab 4, Penguatan Konsep Tegangan Efektif"
+        }
+      },
+      "provenance": "Skenario orisinal analisis kesetaraan disipasi termal RMS sumber AC dan DC dirancang mandiri berdasarkan konsep nilai efektif Buku Siswa hlm. 80–81.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C04-A: Menjelaskan makna fisis nilai efektif serta menghitung daya disipasi pemanas listrik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 80-81 (Tegangan Maksimum dan Efektif)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 101-102"
+        },
+        "authoring_statement": "Skenario perbandingan termal AC-DC dirumuskan mandiri secara bersih tanpa menyalin kalimat buku teks."
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.1",
+  "batch_status": "CANONICAL_FINAL_APPROVED",
+  "dataset": "World 5 Fisika Standard Chapter 4 Original Content - Misi 15 v1.1",
+  "purpose": "Canonical final v1.1 bank soal Fisika Kelas XII Bab 4 - Misi 15: Rangkaian R, L, dan C dalam Arus Bolak-Balik",
+  "chapter_id": "FIS12-C04",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C04-M15-Q01",
+      "chapter_id": "FIS12-C04",
+      "topic_id": "FIS12-C04-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah induktor murni dengan L = 0,2 H dan sebuah kapasitor murni dengan C = 50 µF masing-masing dihubungkan secara terpisah ke generator AC bertegangan efektif konstan V_ef = 100 V. Pada frekuensi sudut awal ω₁ = 100 rad/s, arus efektif yang mengalir pada masing-masing komponen adalah I_L dan I_C. Jika frekuensi sudut generator dinaikkan dua kali lipat menjadi ω₂ = 200 rad/s, bagaimanakah perubahan reaktansi dan arus efektif baru pada induktor dan kapasitor tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "X_L naik menjadi 40 Ω sehingga I_L turun menjadi 2,5 A; X_C turun menjadi 100 Ω sehingga I_C naik menjadi 1,0 A"
+        },
+        {
+          "id": "B",
+          "text": "X_L turun menjadi 10 Ω sehingga I_L naik menjadi 10 A; X_C naik menjadi 400 Ω sehingga I_C turun menjadi 0,25 A"
+        },
+        {
+          "id": "C",
+          "text": "X_L naik menjadi 40 Ω dan X_C naik menjadi 400 Ω sehingga kedua arus berkurang"
+        },
+        {
+          "id": "D",
+          "text": "X_L tetap 20 Ω dan X_C tetap 200 Ω karena reaktansi komponen tidak bergantung pada frekuensi"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Reaktansi induktif sebanding lurus dengan frekuensi sudut (X_L = ω L). Pada ω₁ = 100 rad/s, X_L1 = 100 × 0,2 = 20 Ω dan I_L1 = 100 / 20 = 5 A. Saat frekuensi naik 2 kali (ω₂ = 200 rad/s), X_L2 = 200 × 0,2 = 40 Ω (naik 2x), sehingga arus induktor turun menjadi I_L2 = 100 / 40 = 2,5 A. Langkah 2: Reaktansi kapasitif berbanding terbalik dengan frekuensi sudut (X_C = 1 / (ω C)). Pada ω₁ = 100 rad/s, X_C1 = 1 / (100 × 50 × 10⁻⁶) = 1 / (5 × 10⁻³) = 200 Ω dan I_C1 = 100 / 200 = 0,5 A. Saat frekuensi naik 2 kali, X_C2 = 1 / (200 × 50 × 10⁻⁶) = 100 Ω (turun menjadi setengahnya), sehingga arus kapasitor naik menjadi I_C2 = 100 / 100 = 1,0 A. Opsi B terbalik menafsirkan hubungan proporsionalitas. Opsi C mencerminkan miskonsepsi umum bahwa reaktansi kapasitif meningkat seiring frekuensi (Buku Guru hlm. 109 Miskonsepsi No. 3). Opsi D salah menganggap reaktansi bernilai tetap (Buku Siswa hlm. 81–84; Buku Guru hlm. 97, 102–104).",
+      "source": {
+        "student_book": {
+          "pages": "81-84",
+          "section": "Bab 4, Subbab B: Rangkaian Induktor dan Kapasitor Murni pada AC"
+        },
+        "teacher_guide": {
+          "pages": "97, 102-104",
+          "section": "Panduan Pembelajaran Bab 4, Karakteristik Rangkaian Arus Bolak-Balik"
+        }
+      },
+      "provenance": "Skenario orisinal analisis respons frekuensi reaktansi induktif dan kapasitif dirancang mandiri berdasarkan materi Buku Siswa hlm. 81–84.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C04-B: Menganalisis karakteristik reaktansi induktif dan reaktansi kapasitif terhadap perubahan frekuensi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 81-84 (Reaktansi Induktif dan Kapasitif)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 97, 102-104"
+        },
+        "authoring_statement": "Skenario hubungan fisis reaktansi dan frekuensi sudut dirumuskan mandiri secara bersih tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "id": "FIS12-C04-M15-Q02",
+      "chapter_id": "FIS12-C04",
+      "topic_id": "FIS12-C04-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Perhatikan diagram rangkaian seri RLC berikut. Sebuah resistor R = 60 Ω, induktor dengan reaktansi X_L = 100 Ω, dan kapasitor dengan reaktansi X_C = 20 Ω dihubungkan seri dengan sumber tegangan bolak-balik sehingga mengalir arus efektif sebesar I_ef = 2 A. Berapakah impedansi total rangkaian (Z), tegangan pada masing-masing komponen (V_R, V_L, V_C), dan tegangan efektif total sumber (V_total)?",
+      "media": {
+        "type": "image",
+        "src": "fisika/ch4/rangkaian-seri-rlc.svg",
+        "alt": "Diagram skematik rangkaian seri RLC pada arus bolak-balik dengan resistor 60 ohm, induktor reaktansi 100 ohm, dan kapasitor reaktansi 20 ohm, serta arus 2 A.",
+        "caption": "Diagram skematik rangkaian seri RLC pada arus bolak-balik."
+      },
+      "options": [
+        {
+          "id": "A",
+          "text": "Z = 100 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 200 V"
+        },
+        {
+          "id": "B",
+          "text": "Z = 180 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 360 V"
+        },
+        {
+          "id": "C",
+          "text": "Z = 100 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 360 V"
+        },
+        {
+          "id": "D",
+          "text": "Z = 140 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 280 V"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Menghitung impedansi total rangkaian seri RLC: Z = √[R² + (X_L - X_C)²] = √[60² + (100 - 20)²] = √[3.600 + 80²] = √[3.600 + 6.400] = √10.000 = 100 Ω. Langkah 2: Menghitung tegangan masing-masing komponen: V_R = I_ef × R = 2 A × 60 Ω = 120 V; V_L = I_ef × X_L = 2 A × 100 Ω = 200 V; V_C = I_ef × X_C = 2 A × 20 Ω = 40 V. Langkah 3: Menghitung tegangan efektif total sumber melalui penjumlahan fasor kuadratis: V_total = √[V_R² + (V_L - V_C)²] = √[120² + (200 - 40)²] = √[14.400 + 160²] = √[14.400 + 25.600] = √40.000 = 200 Volt (atau ekuivalen dengan V_total = I_ef × Z = 2 A × 100 Ω = 200 V). Perhatikan bahwa V_total BUKAN penjumlahan aljabar biasa (120 + 200 + 40 = 360 V adalah salah fatal, lihat Buku Guru hlm. 109 Miskonsepsi No. 7). Opsi B menjumlahkan seluruh reaktansi dan tegangan secara aljabar skalar. Opsi C benar menghitung Z tetapi salah menjumlahkan tegangan. Opsi D salah menghitung reaktansi reaktif netto (Buku Siswa hlm. 84–86; Buku Guru hlm. 98, 104–105).",
+      "source": {
+        "student_book": {
+          "pages": "84-86",
+          "section": "Bab 4, Subbab B: Rangkaian Seri RLC & Penjumlahan Fasor"
+        },
+        "teacher_guide": {
+          "pages": "98, 104-105",
+          "section": "Panduan Pembelajaran Bab 4, Aktivitas 4.3 Karakteristik Rangkaian RLC"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan impedansi seri RLC dan pembuktian tegangan total penjumlahan fasor dirancang mandiri berdasarkan Aktivitas 4.3 Buku Siswa hlm. 84–86.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C04-B: Menghitung impedansi total rangkaian seri RLC serta tegangan komponen menggunakan analisis fasor",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 84-86 (Rangkaian Seri RLC)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 98, 104-105"
+        },
+        "authoring_statement": "Skenario analisis rangkaian RLC seri disusun mandiri dan orisinal dengan visual skematik SVG modular terverifikasi."
+      }
+    },
+    {
+      "id": "FIS12-C04-M15-Q03",
+      "chapter_id": "FIS12-C04",
+      "topic_id": "FIS12-C04-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Suatu rangkaian seri RLC dihubungkan ke sumber generator AC. Pengukuran tegangan efektif pada komponen menunjukkan V_R = 30 V, V_L = 20 V, dan V_C = 60 V. Arus yang mengalir pada rangkaian memenuhi persamaan fungsi sesaat I(t) = 2 sin(100 t) Ampere. Berdasarkan diagram fasor dan konvensi fase yang berlaku, berapakah tegangan efektif total sumber (V_total), bagaimanakah sifat rangkaian tersebut, dan bagaimanakah persamaan tegangan sumber sesaat V(t) yang tepat?",
+      "media": {
+        "type": "image",
+        "src": "fisika/ch4/diagram-fasor-rlc.svg",
+        "alt": "Diagram fasor tegangan pada sumbu kartesius menunjukkan VR = 30 V horizontal, VL = 20 V ke atas, VC = 60 V ke bawah, reaktif netto -40 V, dan resultan V = 50 V pada kuadran IV dengan sudut -53 derajat.",
+        "caption": "Diagram fasor tegangan rangkaian seri RLC yang memperlihatkan sifat kapasitif."
+      },
+      "options": [
+        {
+          "id": "A",
+          "text": "V_total = 50 V, rangkaian bersifat kapasitif dengan tan φ = -4/3, dan V(t) = 50√2 sin(100 t - 53°) V"
+        },
+        {
+          "id": "B",
+          "text": "V_total = 50 V, rangkaian bersifat induktif dengan tan φ = +4/3, dan V(t) = 50√2 sin(100 t + 53°) V"
+        },
+        {
+          "id": "C",
+          "text": "V_total = 110 V, rangkaian bersifat kapasitif dengan tan φ = -4/3, dan V(t) = 110√2 sin(100 t - 53°) V"
+        },
+        {
+          "id": "D",
+          "text": "V_total = 50 V, rangkaian bersifat resistif murni dengan φ = 0°, dan V(t) = 50√2 sin(100 t) V"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Menghitung tegangan reaktif netto: V_L - V_C = 20 V - 60 V = -40 Volt. Karena V_C > V_L (reaktansi kapasitif mendominasi), rangkaian bersifat KAPASITIF. Langkah 2: Menghitung tegangan efektif total sumber: V_total = √[V_R² + (V_L - V_C)²] = √[30² + (-40)²] = √[900 + 1.600] = √2.500 = 50 Volt. Maka amplitudo tegangan maksimum adalah V_maks = V_total × √2 = 50√2 Volt. Langkah 3: Menghitung sudut fase: tan φ = (V_L - V_C) / V_R = -40 / 30 = -4/3, sehingga φ = -53° (atau -0,93 rad). Sudut fase negatif menunjukkan bahwa tegangan tertinggal dari arus sebesar 53° (atau arus mendahului tegangan). Langkah 4: Berdasarkan konvensi fase baku jika arus I(t) = I_maks sin(ω t), maka tegangan adalah V(t) = V_maks sin(ω t + φ) = 50√2 sin(100 t - 53°) Volt. Opsi B salah karena menetapkan sifat induktif dengan sudut fase positif. Opsi C menjumlahkan tegangan secara skalar aljabar biasa (30 + 20 + 60 = 110 V). Opsi D mengabaikan pergeseran fase kapasitif (Buku Siswa hlm. 84–86; Buku Guru hlm. 104–105).",
+      "source": {
+        "student_book": {
+          "pages": "84-86",
+          "section": "Bab 4, Subbab B: Diagram Fasor & Pergeseran Fase Rangkaian AC"
+        },
+        "teacher_guide": {
+          "pages": "104-105",
+          "section": "Panduan Pembelajaran Bab 4, Analisis Sifat Induktif dan Kapasitif"
+        }
+      },
+      "provenance": "Skenario orisinal analisis diagram fasor tegangan kuadran IV, pergeseran sudut fase, dan perumusan V(t) dirancang mandiri berdasarkan materi Buku Siswa hlm. 84–86.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C04-B: Menganalisis diagram fasor tegangan, menentukan sudut fase, serta mengklasifikasikan sifat kapasitif rangkaian RLC",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 84-86 (Diagram Fasor RLC)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 104-105"
+        },
+        "authoring_statement": "Skenario analisis fasor sudut fase dirumuskan mandiri dan orisinal dengan visual SVG modular terverifikasi."
+      }
+    },
+    {
+      "id": "FIS12-C04-M15-Q04",
+      "chapter_id": "FIS12-C04",
+      "topic_id": "FIS12-C04-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Dalam sebuah eksperimen penyelidikan rangkaian arus bolak-balik untuk menguji karakteristik induktor, sebuah kumparan solenoida tanpa inti besi dirangkai seri dengan sebuah lampu pijar berhambatan murni R = 30 Ω membentuk rangkaian seri RL (tanpa kapasitor). Rangkaian dihubungkan ke sumber tegangan AC bolak-balik dengan tegangan efektif dan frekuensi tetap V_ef = 100 V, f = 50 Hz. Pada awalnya, reaktansi induktif kumparan adalah X_L1 = 40 Ω sehingga mengalir arus efektif I₁. Selanjutnya, sebuah batang inti besi dimasukkan ke dalam rongga kumparan sehingga permeabilitas inti meningkat dan reaktansi induktifnya melonjak menjadi X_L2 = 100 Ω. Bagaimanakah perbandingan impedansi rangkaian RL sebelum dan sesudah inti besi dimasukkan, serta bagaimana dampak fisisnya terhadap nyala lampu pijar tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Impedansi rangkaian RL naik dari 50 Ω menjadi √10.900 Ω ≈ 104,4 Ω, arus efektif turun dari 2,0 A menjadi 0,96 A, dan nyala lampu menjadi jauh lebih redup"
+        },
+        {
+          "id": "B",
+          "text": "Impedansi rangkaian RL turun dari 70 Ω menjadi 30 Ω, arus efektif naik, dan nyala lampu menjadi lebih terang"
+        },
+        {
+          "id": "C",
+          "text": "Impedansi rangkaian RL tetap 50 Ω dan arus tidak berubah karena inti besi hanya mempengaruhi kemagnetan statis tanpa mengubah impedansi AC"
+        },
+        {
+          "id": "D",
+          "text": "Impedansi rangkaian RL naik menjadi 130 Ω (penjumlahan aljabar 30 + 100), arus turun menjadi 0,77 A, namun nyala lampu tetap konstan"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Mengidentifikasi konfigurasi rangkaian: Rangkaian merupakan rangkaian seri RL murni tanpa kapasitor dengan beban lampu pijar berhambatan tetap R = 30 Ω serta sumber AC bertegangan dan frekuensi konstan (V_ef = 100 V, f = 50 Hz). Menghitung impedansi awal tanpa inti besi: Z₁ = √[R² + X_L1²] = √[30² + 40²] = 50 Ω. Arus efektif awal yang mengalir pada lampu: I₁ = V_ef / Z₁ = 100 V / 50 Ω = 2,0 Ampere. Langkah 2: Ketika batang inti besi feromagnetik dimasukkan ke dalam solenoida, permeabilitas magnetik inti meningkat tajam (μ = μ_r · μ₀). Karena induktansi diri kumparan berbanding lurus dengan permeabilitas inti (L = μ N² A / l) dan reaktansi induktif sebanding dengan induktansi (X_L = 2π f L), maka reaktansi induktif melonjak menjadi X_L2 = 100 Ω. Karena pada rangkaian seri RL impedansi total adalah Z = √[R² + X_L²] tanpa suku pengurang kapasitif (X_C = 0), kenaikan X_L pasti secara monotonik menaikkan impedansi total rangkaian: Z₂ = √[R² + X_L2²] = √[30² + 100²] = √[900 + 10.000] = √10.900 ≈ 104,4 Ω. Arus efektif baru pada rangkaian menjadi: I₂ = V_ef / Z₂ = 100 V / 104,4 Ω ≈ 0,958 A ≈ 0,96 Ampere. Langkah 3: Daya disipasi termal dan cahaya pada lampu pijar bergantung pada kuadrat arus (P = I² R). Karena arus efektif anjlok dari 2,0 A menjadi 0,96 A (turun lebih dari 50%), daya lampu turun drastis menjadi kurang dari seperempat semula (dari 120 W menjadi ≈ 27,6 W), sehingga nyala lampu menjadi jauh lebih redup. Opsi B bertentangan dengan hukum impedansi rangkaian RL. Opsi C salah karena permeabilitas inti secara dinamis memperbesar induktansi dan reaktansi AC. Opsi D keliru karena menjumlahkan hambatan dan reaktansi secara aljabar skalar (Buku Siswa hlm. 86–87; Buku Guru hlm. 99, 105–106).",
+      "source": {
+        "student_book": {
+          "pages": "86-87",
+          "section": "Bab 4, Subbab B: Aktivitas 4.4 Pengaruh Inti Besi terhadap Induktansi Kumparan"
+        },
+        "teacher_guide": {
+          "pages": "99, 105-106",
+          "section": "Panduan Pembelajaran Bab 4, Penyelidikan Pengaruh Inti Besi"
+        }
+      },
+      "provenance": "Skenario orisinal analisis eksperimen pengaruh batang inti besi feromagnetik pada rangkaian AC dirancang mandiri berdasarkan Aktivitas 4.4 Buku Siswa hlm. 86–87.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C04-B: Menganalisis pengaruh permeabilitas inti besi terhadap impedansi rangkaian dan arus listrik bolak-balik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 86-87 (Pengaruh Inti Besi)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 99, 105-106"
+        },
+        "authoring_statement": "Skenario eksperimen inti besi dirumuskan mandiri secara bersih tanpa menyalin kalimat buku teks."
+      }
+    }
+  ]
+}

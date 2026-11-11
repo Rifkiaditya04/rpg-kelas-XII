@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%" style="background:#090d16; border-radius:12px; font-family:system-ui, -apple-system, sans-serif;">
+  <defs>
+    <marker id="arrow-i" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#22c55e"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="300" y="26" fill="#f8fafc" font-size="14" font-weight="bold" text-anchor="middle">RANGKAIAN SERI RLC DALAM ARUS BOLAK-BALIK (AC)</text>
+
+  <!-- Main Loop Wires -->
+  <line x1="80" y1="90" x2="520" y2="90" stroke="#cbd5e1" stroke-width="3"/>
+  <line x1="520" y1="90" x2="520" y2="230" stroke="#cbd5e1" stroke-width="3"/>
+  <line x1="520" y1="230" x2="80" y2="230" stroke="#cbd5e1" stroke-width="3"/>
+  <line x1="80" y1="230" x2="80" y2="90" stroke="#cbd5e1" stroke-width="3"/>
+
+  <!-- AC Voltage Source (Left branch) -->
+  <circle cx="80" cy="160" r="22" fill="#0f172a" stroke="#38bdf8" stroke-width="2.5"/>
+  <path d="M 70 160 Q 75 152, 80 160 T 90 160" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+  <text x="45" y="165" fill="#38bdf8" font-size="12" font-weight="bold" text-anchor="end">Sumber AC</text>
+  <text x="45" y="180" fill="#94a3b8" font-size="10" text-anchor="end">Vtotal = ?</text>
+
+  <!-- Current Arrow (Clockwise, top branch) -->
+  <line x1="100" y1="75" x2="160" y2="75" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrow-i)"/>
+  <text x="130" y="68" fill="#22c55e" font-size="12" font-weight="bold" text-anchor="middle">Ief = 2 A</text>
+
+  <!-- Resistor R (Top branch: x=170 to 240) -->
+  <rect x="175" y="80" width="60" height="20" fill="#0f172a" stroke="#fbbf24" stroke-width="2"/>
+  <text x="205" y="70" fill="#fbbf24" font-size="12" font-weight="bold" text-anchor="middle">R = 60 Ω</text>
+  <!-- Voltage Drop VR -->
+  <text x="205" y="120" fill="#94a3b8" font-size="11" text-anchor="middle">VR = 120 V</text>
+
+  <!-- Inductor L (Top branch: x=290 to 370) -->
+  <path d="M 290 90 Q 300 70, 310 90 Q 320 70, 330 90 Q 340 70, 350 90 Q 360 70, 370 90" fill="none" stroke="#ef4444" stroke-width="3"/>
+  <text x="330" y="65" fill="#ef4444" font-size="12" font-weight="bold" text-anchor="middle">Induktor (XL = 100 Ω)</text>
+  <!-- Voltage Drop VL -->
+  <text x="330" y="120" fill="#94a3b8" font-size="11" text-anchor="middle">VL = 200 V</text>
+
+  <!-- Capacitor C (Top branch: x=420 to 470) -->
+  <line x1="435" y1="75" x2="435" y2="105" stroke="#a855f7" stroke-width="3.5"/>
+  <line x1="450" y1="75" x2="450" y2="105" stroke="#a855f7" stroke-width="3.5"/>
+  <text x="442" y="65" fill="#a855f7" font-size="12" font-weight="bold" text-anchor="middle">Kapasitor (XC = 20 Ω)</text>
+  <!-- Voltage Drop VC -->
+  <text x="442" y="120" fill="#94a3b8" font-size="11" text-anchor="middle">VC = 40 V</text>
+
+  <!-- Formula and Calculation Box (Lower area) -->
+  <rect x="110" y="145" width="380" height="70" rx="6" fill="#1e293b" fill-opacity="0.5" stroke="#475569" stroke-width="1.5"/>
+  <text x="300" y="168" fill="#f8fafc" font-size="12" font-weight="bold" text-anchor="middle">Impedansi: Z = √( R² + (XL - XC)² ) = √( 60² + 80² ) = 100 Ω</text>
+  <text x="300" y="195" fill="#38bdf8" font-size="12" font-weight="bold" text-anchor="middle">Tegangan Total: Vtotal = Ief · Z = 2 A × 100 Ω = 200 V (Penjumlahan Fasor)</text>
+
+  <!-- Bottom Warning Note -->
+  <text x="300" y="275" fill="#ef4444" font-size="11" text-anchor="middle">PERHATIAN: Vtotal ≠ VR + VL + VC (120 + 200 + 40 = 360 V adalah salah total!)</text>
+  <text x="300" y="298" fill="#94a3b8" font-size="11" text-anchor="middle">Tegangan reaktif netto (VL - VC) = 160 V tegak lurus terhadap tegangan resistif VR = 120 V</text>
+</svg>

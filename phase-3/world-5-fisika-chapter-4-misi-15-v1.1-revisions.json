@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "revision_batch_id": "world-5-fisika-chapter-4-misi-15-v1.1",
+  "base_batch": "world-5-fisika-chapter-4-misi-15-canonical-v1.0.json",
+  "status": "APPROVED",
+  "purpose": "Revision overlay v1.1 for Fisika Bab 4 Misi 15 - Verifikasi Akademis & Penyelarasan Standar Lintas Mapel",
+  "revisions": [
+    {
+      "question_id": "FIS12-C04-M15-Q01",
+      "before_question": "Sebuah induktor murni dengan L = 0,2 H dan sebuah kapasitor murni dengan C = 50 µF masing-masing dihubungkan secara terpisah ke generator AC bertegangan efektif konstan V_ef = 100 V. Pada frekuensi sudut awal ω₁ = 100 rad/s, arus efektif yang mengalir pada masing-masing komponen adalah I_L dan I_C. Jika frekuensi sudut generator dinaikkan dua kali lipat menjadi ω₂ = 200 rad/s, bagaimanakah perubahan reaktansi dan arus efektif baru pada induktor dan kapasitor tersebut?",
+      "after_question": "Sebuah induktor murni dengan L = 0,2 H dan sebuah kapasitor murni dengan C = 50 µF masing-masing dihubungkan secara terpisah ke generator AC bertegangan efektif konstan V_ef = 100 V. Pada frekuensi sudut awal ω₁ = 100 rad/s, arus efektif yang mengalir pada masing-masing komponen adalah I_L dan I_C. Jika frekuensi sudut generator dinaikkan dua kali lipat menjadi ω₂ = 200 rad/s, bagaimanakah perubahan reaktansi dan arus efektif baru pada induktor dan kapasitor tersebut?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "X_L naik menjadi 40 Ω sehingga I_L turun menjadi 2,5 A; X_C turun menjadi 100 Ω sehingga I_C naik menjadi 1,0 A"
+        },
+        {
+          "id": "B",
+          "text": "X_L turun menjadi 10 Ω sehingga I_L naik menjadi 10 A; X_C naik menjadi 400 Ω sehingga I_C turun menjadi 0,25 A"
+        },
+        {
+          "id": "C",
+          "text": "X_L naik menjadi 40 Ω dan X_C naik menjadi 400 Ω sehingga kedua arus berkurang"
+        },
+        {
+          "id": "D",
+          "text": "X_L tetap 20 Ω dan X_C tetap 200 Ω karena reaktansi komponen tidak bergantung pada frekuensi"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "X_L naik menjadi 40 Ω sehingga I_L turun menjadi 2,5 A; X_C turun menjadi 100 Ω sehingga I_C naik menjadi 1,0 A"
+        },
+        {
+          "id": "B",
+          "text": "X_L turun menjadi 10 Ω sehingga I_L naik menjadi 10 A; X_C naik menjadi 400 Ω sehingga I_C turun menjadi 0,25 A"
+        },
+        {
+          "id": "C",
+          "text": "X_L naik menjadi 40 Ω dan X_C naik menjadi 400 Ω sehingga kedua arus berkurang"
+        },
+        {
+          "id": "D",
+          "text": "X_L tetap 20 Ω dan X_C tetap 200 Ω karena reaktansi komponen tidak bergantung pada frekuensi"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Langkah 1: Reaktansi induktif sebanding lurus dengan frekuensi sudut (X_L = ω L). Pada ω₁ = 100 rad/s, X_L1 = 100 × 0,2 = 20 Ω dan I_L1 = 100 / 20 = 5 A. Saat frekuensi naik 2 kali (ω₂ = 200 rad/s), X_L2 = 200 × 0,2 = 40 Ω (naik 2x), sehingga arus induktor turun menjadi I_L2 = 100 / 40 = 2,5 A. Langkah 2: Reaktansi kapasitif berbanding terbalik dengan frekuensi sudut (X_C = 1 / (ω C)). Pada ω₁ = 100 rad/s, X_C1 = 1 / (100 × 50 × 10⁻⁶) = 1 / (5 × 10⁻³) = 200 Ω dan I_C1 = 100 / 200 = 0,5 A. Saat frekuensi naik 2 kali, X_C2 = 1 / (200 × 50 × 10⁻⁶) = 100 Ω (turun menjadi setengahnya), sehingga arus kapasitor naik menjadi I_C2 = 100 / 100 = 1,0 A. Opsi B terbalik menafsirkan hubungan proporsionalitas. Opsi C mencerminkan miskonsepsi umum bahwa reaktansi kapasitif meningkat seiring frekuensi (Buku Guru hlm. 109 Miskonsepsi No. 3). Opsi D salah menganggap reaktansi bernilai tetap (Buku Siswa hlm. 81–84; Buku Guru hlm. 97, 102–104).",
+      "after_explanation": "Langkah 1: Reaktansi induktif sebanding lurus dengan frekuensi sudut (X_L = ω L). Pada ω₁ = 100 rad/s, X_L1 = 100 × 0,2 = 20 Ω dan I_L1 = 100 / 20 = 5 A. Saat frekuensi naik 2 kali (ω₂ = 200 rad/s), X_L2 = 200 × 0,2 = 40 Ω (naik 2x), sehingga arus induktor turun menjadi I_L2 = 100 / 40 = 2,5 A. Langkah 2: Reaktansi kapasitif berbanding terbalik dengan frekuensi sudut (X_C = 1 / (ω C)). Pada ω₁ = 100 rad/s, X_C1 = 1 / (100 × 50 × 10⁻⁶) = 1 / (5 × 10⁻³) = 200 Ω dan I_C1 = 100 / 200 = 0,5 A. Saat frekuensi naik 2 kali, X_C2 = 1 / (200 × 50 × 10⁻⁶) = 100 Ω (turun menjadi setengahnya), sehingga arus kapasitor naik menjadi I_C2 = 100 / 100 = 1,0 A. Opsi B terbalik menafsirkan hubungan proporsionalitas. Opsi C mencerminkan miskonsepsi umum bahwa reaktansi kapasitif meningkat seiring frekuensi (Buku Guru hlm. 109 Miskonsepsi No. 3). Opsi D salah menganggap reaktansi bernilai tetap (Buku Siswa hlm. 81–84; Buku Guru hlm. 97, 102–104).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, konvensi fase, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C04-M15-Q02",
+      "before_question": "Perhatikan diagram rangkaian seri RLC berikut. Sebuah resistor R = 60 Ω, induktor dengan reaktansi X_L = 100 Ω, dan kapasitor dengan reaktansi X_C = 20 Ω dihubungkan seri dengan sumber tegangan bolak-balik sehingga mengalir arus efektif sebesar I_ef = 2 A. Berapakah impedansi total rangkaian (Z), tegangan pada masing-masing komponen (V_R, V_L, V_C), dan tegangan efektif total sumber (V_total)?",
+      "after_question": "Perhatikan diagram rangkaian seri RLC berikut. Sebuah resistor R = 60 Ω, induktor dengan reaktansi X_L = 100 Ω, dan kapasitor dengan reaktansi X_C = 20 Ω dihubungkan seri dengan sumber tegangan bolak-balik sehingga mengalir arus efektif sebesar I_ef = 2 A. Berapakah impedansi total rangkaian (Z), tegangan pada masing-masing komponen (V_R, V_L, V_C), dan tegangan efektif total sumber (V_total)?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "Z = 100 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 200 V"
+        },
+        {
+          "id": "B",
+          "text": "Z = 180 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 360 V"
+        },
+        {
+          "id": "C",
+          "text": "Z = 100 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 360 V"
+        },
+        {
+          "id": "D",
+          "text": "Z = 140 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 280 V"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "Z = 100 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 200 V"
+        },
+        {
+          "id": "B",
+          "text": "Z = 180 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 360 V"
+        },
+        {
+          "id": "C",
+          "text": "Z = 100 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 360 V"
+        },
+        {
+          "id": "D",
+          "text": "Z = 140 Ω, V_R = 120 V, V_L = 200 V, V_C = 40 V, dan V_total = 280 V"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Langkah 1: Menghitung impedansi total rangkaian seri RLC: Z = √[R² + (X_L - X_C)²] = √[60² + (100 - 20)²] = √[3.600 + 80²] = √[3.600 + 6.400] = √10.000 = 100 Ω. Langkah 2: Menghitung tegangan masing-masing komponen: V_R = I_ef × R = 2 A × 60 Ω = 120 V; V_L = I_ef × X_L = 2 A × 100 Ω = 200 V; V_C = I_ef × X_C = 2 A × 20 Ω = 40 V. Langkah 3: Menghitung tegangan efektif total sumber melalui penjumlahan fasor kuadratis: V_total = √[V_R² + (V_L - V_C)²] = √[120² + (200 - 40)²] = √[14.400 + 160²] = √[14.400 + 25.600] = √40.000 = 200 Volt (atau ekuivalen dengan V_total = I_ef × Z = 2 A × 100 Ω = 200 V). Perhatikan bahwa V_total BUKAN penjumlahan aljabar biasa (120 + 200 + 40 = 360 V adalah salah fatal, lihat Buku Guru hlm. 109 Miskonsepsi No. 7). Opsi B menjumlahkan seluruh reaktansi dan tegangan secara aljabar skalar. Opsi C benar menghitung Z tetapi salah menjumlahkan tegangan. Opsi D salah menghitung reaktansi reaktif netto (Buku Siswa hlm. 84–86; Buku Guru hlm. 98, 104–105).",
+      "after_explanation": "Langkah 1: Menghitung impedansi total rangkaian seri RLC: Z = √[R² + (X_L - X_C)²] = √[60² + (100 - 20)²] = √[3.600 + 80²] = √[3.600 + 6.400] = √10.000 = 100 Ω. Langkah 2: Menghitung tegangan masing-masing komponen: V_R = I_ef × R = 2 A × 60 Ω = 120 V; V_L = I_ef × X_L = 2 A × 100 Ω = 200 V; V_C = I_ef × X_C = 2 A × 20 Ω = 40 V. Langkah 3: Menghitung tegangan efektif total sumber melalui penjumlahan fasor kuadratis: V_total = √[V_R² + (V_L - V_C)²] = √[120² + (200 - 40)²] = √[14.400 + 160²] = √[14.400 + 25.600] = √40.000 = 200 Volt (atau ekuivalen dengan V_total = I_ef × Z = 2 A × 100 Ω = 200 V). Perhatikan bahwa V_total BUKAN penjumlahan aljabar biasa (120 + 200 + 40 = 360 V adalah salah fatal, lihat Buku Guru hlm. 109 Miskonsepsi No. 7). Opsi B menjumlahkan seluruh reaktansi dan tegangan secara aljabar skalar. Opsi C benar menghitung Z tetapi salah menjumlahkan tegangan. Opsi D salah menghitung reaktansi reaktif netto (Buku Siswa hlm. 84–86; Buku Guru hlm. 98, 104–105).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, konvensi fase, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C04-M15-Q03",
+      "before_question": "Suatu rangkaian seri RLC dihubungkan ke sumber generator AC. Pengukuran tegangan efektif pada komponen menunjukkan V_R = 30 V, V_L = 20 V, dan V_C = 60 V. Arus yang mengalir pada rangkaian memenuhi persamaan fungsi sesaat I(t) = 2 sin(100 t) Ampere. Berdasarkan diagram fasor dan konvensi fase yang berlaku, berapakah tegangan efektif total sumber (V_total), bagaimanakah sifat rangkaian tersebut, dan bagaimanakah persamaan tegangan sumber sesaat V(t) yang tepat?",
+      "after_question": "Suatu rangkaian seri RLC dihubungkan ke sumber generator AC. Pengukuran tegangan efektif pada komponen menunjukkan V_R = 30 V, V_L = 20 V, dan V_C = 60 V. Arus yang mengalir pada rangkaian memenuhi persamaan fungsi sesaat I(t) = 2 sin(100 t) Ampere. Berdasarkan diagram fasor dan konvensi fase yang berlaku, berapakah tegangan efektif total sumber (V_total), bagaimanakah sifat rangkaian tersebut, dan bagaimanakah persamaan tegangan sumber sesaat V(t) yang tepat?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "V_total = 50 V, rangkaian bersifat kapasitif dengan tan φ = -4/3, dan V(t) = 50√2 sin(100 t - 53°) V"
+        },
+        {
+          "id": "B",
+          "text": "V_total = 50 V, rangkaian bersifat induktif dengan tan φ = +4/3, dan V(t) = 50√2 sin(100 t + 53°) V"
+        },
+        {
+          "id": "C",
+          "text": "V_total = 110 V, rangkaian bersifat kapasitif dengan tan φ = -4/3, dan V(t) = 110√2 sin(100 t - 53°) V"
+        },
+        {
+          "id": "D",
+          "text": "V_total = 50 V, rangkaian bersifat resistif murni dengan φ = 0°, dan V(t) = 50√2 sin(100 t) V"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "V_total = 50 V, rangkaian bersifat kapasitif dengan tan φ = -4/3, dan V(t) = 50√2 sin(100 t - 53°) V"
+        },
+        {
+          "id": "B",
+          "text": "V_total = 50 V, rangkaian bersifat induktif dengan tan φ = +4/3, dan V(t) = 50√2 sin(100 t + 53°) V"
+        },
+        {
+          "id": "C",
+          "text": "V_total = 110 V, rangkaian bersifat kapasitif dengan tan φ = -4/3, dan V(t) = 110√2 sin(100 t - 53°) V"
+        },
+        {
+          "id": "D",
+          "text": "V_total = 50 V, rangkaian bersifat resistif murni dengan φ = 0°, dan V(t) = 50√2 sin(100 t) V"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Langkah 1: Menghitung tegangan reaktif netto: V_L - V_C = 20 V - 60 V = -40 Volt. Karena V_C > V_L (reaktansi kapasitif mendominasi), rangkaian bersifat KAPASITIF. Langkah 2: Menghitung tegangan efektif total sumber: V_total = √[V_R² + (V_L - V_C)²] = √[30² + (-40)²] = √[900 + 1.600] = √2.500 = 50 Volt. Maka amplitudo tegangan maksimum adalah V_maks = V_total × √2 = 50√2 Volt. Langkah 3: Menghitung sudut fase: tan φ = (V_L - V_C) / V_R = -40 / 30 = -4/3, sehingga φ = -53° (atau -0,93 rad). Sudut fase negatif menunjukkan bahwa tegangan tertinggal dari arus sebesar 53° (atau arus mendahului tegangan). Langkah 4: Berdasarkan konvensi fase baku jika arus I(t) = I_maks sin(ω t), maka tegangan adalah V(t) = V_maks sin(ω t + φ) = 50√2 sin(100 t - 53°) Volt. Opsi B salah karena menetapkan sifat induktif dengan sudut fase positif. Opsi C menjumlahkan tegangan secara skalar aljabar biasa (30 + 20 + 60 = 110 V). Opsi D mengabaikan pergeseran fase kapasitif (Buku Siswa hlm. 84–86; Buku Guru hlm. 104–105).",
+      "after_explanation": "Langkah 1: Menghitung tegangan reaktif netto: V_L - V_C = 20 V - 60 V = -40 Volt. Karena V_C > V_L (reaktansi kapasitif mendominasi), rangkaian bersifat KAPASITIF. Langkah 2: Menghitung tegangan efektif total sumber: V_total = √[V_R² + (V_L - V_C)²] = √[30² + (-40)²] = √[900 + 1.600] = √2.500 = 50 Volt. Maka amplitudo tegangan maksimum adalah V_maks = V_total × √2 = 50√2 Volt. Langkah 3: Menghitung sudut fase: tan φ = (V_L - V_C) / V_R = -40 / 30 = -4/3, sehingga φ = -53° (atau -0,93 rad). Sudut fase negatif menunjukkan bahwa tegangan tertinggal dari arus sebesar 53° (atau arus mendahului tegangan). Langkah 4: Berdasarkan konvensi fase baku jika arus I(t) = I_maks sin(ω t), maka tegangan adalah V(t) = V_maks sin(ω t + φ) = 50√2 sin(100 t - 53°) Volt. Opsi B salah karena menetapkan sifat induktif dengan sudut fase positif. Opsi C menjumlahkan tegangan secara skalar aljabar biasa (30 + 20 + 60 = 110 V). Opsi D mengabaikan pergeseran fase kapasitif (Buku Siswa hlm. 84–86; Buku Guru hlm. 104–105).",
+      "before_cognitive_level": "analyze",
+      "after_cognitive_level": "analyze",
+      "revision_notes": "Sinkronisasi representasi kanonikal v1.0 ke v1.1 operasional; seluruh parameter fisis, konvensi fase, dan opsi diverifikasi akurat 100%."
+    },
+    {
+      "question_id": "FIS12-C04-M15-Q04",
+      "before_question": "Dalam Aktivitas Penyelidikan 4.4, sebuah kumparan solenoida tanpa inti besi dirangkai seri dengan resistor R = 30 Ω dan lampu indikator pada sumber tegangan AC tetap V_ef = 100 V, f = 50 Hz. Pada awalnya, reaktansi induktif kumparan adalah X_L1 = 40 Ω sehingga mengalir arus efektif I₁. Selanjutnya, sebuah batang inti besi dimasukkan ke dalam rongga kumparan sehingga reaktansi induktifnya meningkat tajam menjadi X_L2 = 100 Ω. Bagaimanakah perbandingan impedansi rangkaian sebelum dan sesudah inti besi dimasukkan, serta bagaimana dampak fisisnya terhadap nyala lampu indikator?",
+      "after_question": "Dalam sebuah eksperimen penyelidikan rangkaian arus bolak-balik untuk menguji karakteristik induktor, sebuah kumparan solenoida tanpa inti besi dirangkai seri dengan sebuah lampu pijar berhambatan murni R = 30 Ω membentuk rangkaian seri RL (tanpa kapasitor). Rangkaian dihubungkan ke sumber tegangan AC bolak-balik dengan tegangan efektif dan frekuensi tetap V_ef = 100 V, f = 50 Hz. Pada awalnya, reaktansi induktif kumparan adalah X_L1 = 40 Ω sehingga mengalir arus efektif I₁. Selanjutnya, sebuah batang inti besi dimasukkan ke dalam rongga kumparan sehingga permeabilitas inti meningkat dan reaktansi induktifnya melonjak menjadi X_L2 = 100 Ω. Bagaimanakah perbandingan impedansi rangkaian RL sebelum dan sesudah inti besi dimasukkan, serta bagaimana dampak fisisnya terhadap nyala lampu pijar tersebut?",
+      "before_options": [
+        {
+          "id": "A",
+          "text": "Impedansi naik dari 50 Ω menjadi √10.900 Ω ≈ 104,4 Ω, arus efektif turun dari 2,0 A menjadi 0,96 A, dan nyala lampu menjadi jauh lebih redup"
+        },
+        {
+          "id": "B",
+          "text": "Impedansi turun dari 70 Ω menjadi 30 Ω, arus efektif naik, dan nyala lampu menjadi lebih terang"
+        },
+        {
+          "id": "C",
+          "text": "Impedansi tetap 50 Ω dan arus tidak berubah karena inti besi hanya mempengaruhi kemagnetan statis tanpa mengubah impedansi AC"
+        },
+        {
+          "id": "D",
+          "text": "Impedansi naik menjadi 130 Ω (penjumlahan aljabar 30 + 100), arus turun menjadi 0,77 A, namun nyala lampu tetap konstan"
+        }
+      ],
+      "after_options": [
+        {
+          "id": "A",
+          "text": "Impedansi rangkaian RL naik dari 50 Ω menjadi √10.900 Ω ≈ 104,4 Ω, arus efektif turun dari 2,0 A menjadi 0,96 A, dan nyala lampu menjadi jauh lebih redup"
+        },
+        {
+          "id": "B",
+          "text": "Impedansi rangkaian RL turun dari 70 Ω menjadi 30 Ω, arus efektif naik, dan nyala lampu menjadi lebih terang"
+        },
+        {
+          "id": "C",
+          "text": "Impedansi rangkaian RL tetap 50 Ω dan arus tidak berubah karena inti besi hanya mempengaruhi kemagnetan statis tanpa mengubah impedansi AC"
+        },
+        {
+          "id": "D",
+          "text": "Impedansi rangkaian RL naik menjadi 130 Ω (penjumlahan aljabar 30 + 100), arus turun menjadi 0,77 A, namun nyala lampu tetap konstan"
+        }
+      ],
+      "before_answer": "A",
+      "after_answer": "A",
+      "before_explanation": "Langkah 1: Menghitung impedansi awal tanpa inti besi: Z₁ = √[R² + X_L1²] = √[30² + 40²] = 50 Ω. Arus efektif awal: I₁ = V_ef / Z₁ = 100 V / 50 Ω = 2,0 Ampere. Langkah 2: Ketika inti besi feromagnetik dimasukkan, permeabilitas magnetik meningkat (μ = μ_r · μ₀), meningkatkan induktansi kumparan (L = μ N² A / l) dan reaktansi induktifnya menjadi X_L2 = 100 Ω. Impedansi baru adalah: Z₂ = √[R² + X_L2²] = √[30² + 100²] = √[900 + 10.000] = √10.900 ≈ 104,4 Ω. Arus efektif baru: I₂ = V_ef / Z₂ = 100 V / 104,4 Ω ≈ 0,958 A ≈ 0,96 Ampere. Langkah 3: Karena arus efektif berkurang lebih dari separuhnya (dari 2,0 A menjadi 0,96 A), daya disipasi pada lampu indikator (P = I² R_lampu) anjlok drastis, sehingga lampu menyala jauh lebih redup. Opsi B bertentangan dengan hukum impedansi. Opsi C mencerminkan pengabaian peran permeabilitas inti pada reaktansi induktif AC. Opsi D menjumlahkan impedansi secara aljabar skalar (Buku Siswa hlm. 86–87; Buku Guru hlm. 99, 105–106).",
+      "after_explanation": "Langkah 1: Mengidentifikasi konfigurasi rangkaian: Rangkaian merupakan rangkaian seri RL murni tanpa kapasitor dengan beban lampu pijar berhambatan tetap R = 30 Ω serta sumber AC bertegangan dan frekuensi konstan (V_ef = 100 V, f = 50 Hz). Menghitung impedansi awal tanpa inti besi: Z₁ = √[R² + X_L1²] = √[30² + 40²] = 50 Ω. Arus efektif awal yang mengalir pada lampu: I₁ = V_ef / Z₁ = 100 V / 50 Ω = 2,0 Ampere. Langkah 2: Ketika batang inti besi feromagnetik dimasukkan ke dalam solenoida, permeabilitas magnetik inti meningkat tajam (μ = μ_r · μ₀). Karena induktansi diri kumparan berbanding lurus dengan permeabilitas inti (L = μ N² A / l) dan reaktansi induktif sebanding dengan induktansi (X_L = 2π f L), maka reaktansi induktif melonjak menjadi X_L2 = 100 Ω. Karena pada rangkaian seri RL impedansi total adalah Z = √[R² + X_L²] tanpa suku pengurang kapasitif (X_C = 0), kenaikan X_L pasti secara monotonik menaikkan impedansi total rangkaian: Z₂ = √[R² + X_L2²] = √[30² + 100²] = √[900 + 10.000] = √10.900 ≈ 104,4 Ω. Arus efektif baru pada rangkaian menjadi: I₂ = V_ef / Z₂ = 100 V / 104,4 Ω ≈ 0,958 A ≈ 0,96 Ampere. Langkah 3: Daya disipasi termal dan cahaya pada lampu pijar bergantung pada kuadrat arus (P = I² R). Karena arus efektif anjlok dari 2,0 A menjadi 0,96 A (turun lebih dari 50%), daya lampu turun drastis menjadi kurang dari seperempat semula (dari 120 W menjadi ≈ 27,6 W), sehingga nyala lampu menjadi jauh lebih redup. Opsi B bertentangan dengan hukum impedansi rangkaian RL. Opsi C salah karena permeabilitas inti secara dinamis memperbesar induktansi dan reaktansi AC. Opsi D keliru karena menjumlahkan hambatan dan reaktansi secara aljabar skalar (Buku Siswa hlm. 86–87; Buku Guru hlm. 99, 105–106).",
+      "before_cognitive_level": "apply",
+      "after_cognitive_level": "apply",
+      "revision_notes": "Penyempurnaan presisi akademis pada M15-Q04: menegaskan konfigurasi rangkaian seri RL murni (tanpa kapasitor) dengan beban lampu pijar berhambatan tetap R = 30 Ω pada tegangan dan frekuensi sumber konstan. Penegasan ketiadaan kapasitor (XC = 0) memastikan secara mutlak keabsahan fisis dan matematis bahwa kenaikan induktansi dan reaktansi induktif XL akibat penambahan inti besi feromagnetik pasti menaikkan impedansi Z = √(R² + XL²) dan menurunkan arus I = Vef/Z secara terbukti."
+    }
+  ]
+}
