@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_V1.1",
+  "dataset": "world-5-fisika-chapter-2-misi-6",
+  "purpose": "Bank Soal Fisika Kelas XII Bab 2 Misi 6 - Canonical v1.1",
+  "chapter_id": "FIS12-C02",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C02-M06-Q01",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah kawat tembaga homogen dengan panjang mula-mula L₀ dan luas penampang A₀ memiliki nilai hambatan listrik sebesar R₀ = 12 Ω. Kawat tersebut kemudian ditarik melalui cetakan mesin peregang kawat hingga panjangnya bertambah menjadi 3 kali panjang semula (L' = 3L₀). Jika proses peregangan berlangsung tanpa mengubah massa jenis dan volume total kawat konstan, berapakah nilai hambatan listrik kawat tembaga tersebut sekarang?",
+      "options": [
+        {
+          "id": "A",
+          "text": "36 Ω"
+        },
+        {
+          "id": "B",
+          "text": "4 Ω"
+        },
+        {
+          "id": "C",
+          "text": "144 Ω"
+        },
+        {
+          "id": "D",
+          "text": "108 Ω"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Karena kawat ditarik tanpa ada massa yang hilang, volumenya tetap konstan: V = A₀ · L₀ = A' · L'. Dengan L' = 3L₀, maka luas penampang kawat menyusut menjadi A' = A₀ / 3. Rumus hambatan kawat adalah R = ρ · L / A. Nilai hambatan baru: R' = ρ · L' / A' = ρ · (3L₀) / (A₀ / 3) = 9 · (ρ · L₀ / A₀) = 9 · R₀ = 9 × 12 Ω = 108 Ω. Hambatan kawat sebanding dengan kuadrat kelipatan panjangnya saat volume kawat konstan (Buku Siswa hlm. 31–33).",
+      "source": {
+        "student_book": {
+          "pages": "31-33",
+          "section": "Bab 2, Subbab C: Hambatan Jenis Kawat"
+        },
+        "teacher_guide": {
+          "pages": "50-51",
+          "section": "Panduan Pembelajaran Bab 2, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal analisis deformasi geometri kawat volume konstan dirancang mandiri berdasarkan formula resistansi kawat Buku Siswa hlm. 31–33.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-B: Menganalisis pengaruh perubahan panjang dan luas penampang kawat terhadap nilai resistansi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 31-33 (Hambatan Kawat Penghantar)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 50-51"
+        },
+        "authoring_statement": "Persoalan peregangan kawat volume konstan disusun secara orisinal dengan penalaran aljabar proporsional yang kokoh."
+      }
+    },
+    {
+      "id": "FIS12-C02-M06-Q02",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "media": {
+        "type": "image",
+        "src": "fisika/ch2/resistor-kode-warna.svg",
+        "alt": "Diagram fisik resistor karbon 4 gelang: Gelang 1 berwarna Merah (angka 2), Gelang 2 berwarna Ungu (angka 7), Gelang 3 berwarna Oranye (pengali 10 pangkat 3), Gelang 4 berwarna Emas (toleransi 5 persen).",
+        "caption": "Kode warna resistor tetap 4 gelang: Merah, Ungu, Oranye, Emas."
+      },
+      "question": "Perhatikan diagram resistor karbon 4 gelang. Gelang ke-1 berwarna Merah, gelang ke-2 berwarna Ungu, gelang ke-3 berwarna Oranye, dan gelang ke-4 berwarna Emas. Berapakah nilai hambatan nominal resistor tersebut dan berapakah rentang nilai hambatan aktual yang masih memenuhi batas toleransinya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "27 kΩ ± 5% dengan rentang nilai aktual 25,65 kΩ hingga 28,35 kΩ"
+        },
+        {
+          "id": "B",
+          "text": "270 Ω ± 5% dengan rentang nilai aktual 256,5 Ω hingga 283,5 Ω"
+        },
+        {
+          "id": "C",
+          "text": "27 kΩ ± 10% dengan rentang nilai aktual 24,30 kΩ hingga 29,70 kΩ"
+        },
+        {
+          "id": "D",
+          "text": "37 kΩ ± 5% dengan rentang nilai aktual 35,15 kΩ hingga 38,85 kΩ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Berdasarkan tabel kode warna resistor EIA: Gelang 1 (Merah) = digit pertama 2. Gelang 2 (Ungu) = digit kedua 7. Gelang 3 (Oranye) = faktor pengali 10³ Ω = 1000 Ω. Nilai nominal hambatan = 27 × 10³ Ω = 27 kΩ = 27.000 Ω. Gelang 4 (Emas) = toleransi ±5%. Nilai toleransi = 5% × 27.000 Ω = 1.350 Ω = 1,35 kΩ. Rentang hambatan aktual: R_min = 27 kΩ - 1,35 kΩ = 25,65 kΩ dan R_max = 27 kΩ + 1,35 kΩ = 28,35 kΩ (Buku Siswa hlm. 33).",
+      "source": {
+        "student_book": {
+          "pages": "33",
+          "section": "Bab 2, Subbab C: Kode Warna Resistor"
+        },
+        "teacher_guide": {
+          "pages": "51-52",
+          "section": "Panduan Pembelajaran Bab 2, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal pembacaan kode warna gelang resistor karbon disusun mandiri dengan dukungan aset visual SVG sesuai konsep Buku Siswa hlm. 33.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-B: Mengidentifikasi nilai resistansi nominal dan batas toleransi resistor dari kode warna gelang",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 33 (Kode Warna Resistor)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 51-52"
+        },
+        "authoring_statement": "Persoalan kode warna resistor 4 gelang dirancang orisinal dengan visual diagram akurat."
+      }
+    },
+    {
+      "id": "FIS12-C02-M06-Q03",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-B",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah kawat kumparan pemanas terbuat dari bahan platina memiliki hambatan listrik sebesar R₀ = 50 Ω pada suhu ruangan T₀ = 20°C. Koefisien suhu hambatan jenis platina adalah α = 4 × 10⁻³ °C⁻¹. Ketika kumparan tersebut dialiri arus listrik sehingga mencapai suhu kerja stabil sebesar T = 120°C, berapakah nilai hambatan listrik kumparan platina tersebut sekarang?",
+      "options": [
+        {
+          "id": "A",
+          "text": "54 Ω"
+        },
+        {
+          "id": "B",
+          "text": "60 Ω"
+        },
+        {
+          "id": "C",
+          "text": "70 Ω"
+        },
+        {
+          "id": "D",
+          "text": "74 Ω"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Perubahan suhu kumparan pemanas: ΔT = T - T₀ = 120°C - 20°C = 100°C. Hambatan konduktor logam meningkat terhadap suhu sesuai persamaan: R = R₀ · (1 + α · ΔT) = 50 Ω · (1 + (4 × 10⁻³ °C⁻¹ × 100°C)) = 50 Ω · (1 + 0,4) = 50 Ω × 1,4 = 70 Ω (Buku Siswa hlm. 32–33).",
+      "source": {
+        "student_book": {
+          "pages": "32-33",
+          "section": "Bab 2, Subbab C: Pengaruh Suhu terhadap Hambatan"
+        },
+        "teacher_guide": {
+          "pages": "51",
+          "section": "Panduan Pembelajaran Bab 2, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal kenaikan hambatan kawat pemanas platina akibat peningkatan suhu kerja dirancang mandiri berdasarkan hukum koefisien termal Buku Siswa hlm. 32–33.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-B: Menghitung perubahan nilai hambatan listrik konduktor akibat kenaikan suhu",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 32-33 (Pengaruh Suhu terhadap Hambatan)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 51"
+        },
+        "authoring_statement": "Persoalan pengaruh termal terhadap hambatan kawat disusun mandiri dengan besaran standar platina."
+      }
+    },
+    {
+      "id": "FIS12-C02-M06-Q04",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-B",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Empat buah resistor identik masing-masing bernilai R = 12 Ω dirangkai dalam konfigurasi berikut: dua resistor dirangkai paralel (kelompok P), kemudian kelompok P ini diserikan dengan resistor ketiga, dan seluruh susunan cabang seri tersebut diparalelkan dengan resistor keempat. Rangkaian kombinasi ini kemudian dihubungkan ke sumber tegangan searah V = 18 V. Tentukan besar hambatan total pengganti rangkaian (R_total) dan besar kuat arus listrik yang mengalir melalui cabang kelompok paralel P!",
+      "options": [
+        {
+          "id": "A",
+          "text": "R_total = 12 Ω dan I = 1,5 A"
+        },
+        {
+          "id": "B",
+          "text": "R_total = 7,2 Ω dan I = 1,0 A"
+        },
+        {
+          "id": "C",
+          "text": "R_total = 7,2 Ω dan I = 2,5 A"
+        },
+        {
+          "id": "D",
+          "text": "R_total = 9,0 Ω dan I = 2,0 A"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Langkah 1: Hambatan pengganti paralel kelompok P: 1/R_P = 1/12 + 1/12 = 2/12 ⇒ R_P = 6 Ω. Langkah 2: Hambatan cabang seri (kelompok P + resistor ketiga): R_seri = R_P + 12 Ω = 6 + 12 = 18 Ω. Langkah 3: Hambatan total rangkaian (cabang seri paralel dengan resistor keempat): 1/R_total = 1/R_seri + 1/12 = 1/18 + 1/12 = (2 + 3)/36 = 5/36 ⇒ R_total = 36/5 = 7,2 Ω. Langkah 4: Kuat arus pada cabang seri: Karena cabang seri terhubung paralel langsung ke sumber tegangan 18 V, maka tegangannya V_cabang = 18 V. Kuat arus cabang seri adalah I_cabang = V_cabang / R_seri = 18 V / 18 Ω = 1,0 A. Karena kelompok P berada pada cabang seri tersebut, arus yang melintasi kelompok P adalah tepat 1,0 A (Buku Siswa hlm. 34–36).",
+      "source": {
+        "student_book": {
+          "pages": "34-36",
+          "section": "Bab 2, Subbab C: Rangkaian Resistor Seri dan Paralel"
+        },
+        "teacher_guide": {
+          "pages": "52-54",
+          "section": "Panduan Pembelajaran Bab 2, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal analisis jaringan kombinasi resistor bertingkat dirancang mandiri berdasarkan kaidah sirkuit ekuivalen Buku Siswa hlm. 34–36.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-B: Menganalisis hambatan pengganti dan pembagian arus pada rangkaian kombinasi resistor bertingkat",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 34-36 (Rangkaian Resistor)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 52-54"
+        },
+        "authoring_statement": "Persoalan topologi kombinasi empat resistor dirumuskan mandiri secara bertahap dan terverifikasi analitis."
+      }
+    }
+  ]
+}

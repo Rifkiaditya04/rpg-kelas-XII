@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_BASELINE",
+  "dataset": "world-5-fisika-chapter-1-misi-3",
+  "purpose": "Bank Soal Fisika Kelas XII Bab 1 Misi 3 - Canonical Baseline v1.0",
+  "chapter_id": "FIS12-C01",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C01-M03-Q01",
+      "chapter_id": "FIS12-C01",
+      "topic_id": "FIS12-C01-C",
+      "skill": "understand",
+      "cognitive_level": "understand",
+      "difficulty": "easy",
+      "question": "Dua muatan titik q₁ = +6 nC dan q₂ = -2 nC berada di ruang hampa. Titik P terletak pada jarak 30 cm dari q₁ dan 20 cm dari q₂. Jika konstanta Coulomb k = 9 × 10⁹ N·m²/C², berapakah potensial listrik total di titik P dan berapakah nilai energi kinetik sebesar 1,44 × 10⁻¹⁷ J jika dinyatakan dalam satuan elektronvolt (eV), dengan 1 eV = 1,6 × 10⁻¹⁹ J?",
+      "options": [
+        {
+          "id": "A",
+          "text": "V_P = +45 V dan E = 45 eV"
+        },
+        {
+          "id": "B",
+          "text": "V_P = +180 V dan E = 90 eV"
+        },
+        {
+          "id": "C",
+          "text": "V_P = -90 V dan E = 180 eV"
+        },
+        {
+          "id": "D",
+          "text": "V_P = +90 V dan E = 90 eV"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Potensial listrik merupakan besaran skalar sehingga tanda aljabar muatan dimasukkan langsung dalam penjumlahan: V_P = k·(q₁/r₁ + q₂/r₂) = 9×10⁹ · ((6×10⁻⁹ / 0,3) + (-2×10⁻⁹ / 0,2)) = 9×10⁹ · (20×10⁻⁹ - 10×10⁻⁹) = 9×10⁹ · (10×10⁻⁹) = +90 V. Konversi satuan energi ke elektronvolt: E(eV) = E(J) / (1,6 × 10⁻¹⁹ J/eV) = (1,44 × 10⁻¹⁷ J) / (1,6 × 10⁻¹⁹ J/eV) = 90 eV (Buku Siswa hlm. 11–16).",
+      "source": {
+        "student_book": {
+          "pages": "11-16",
+          "section": "Bab 1, Subbab B & C: Potensial Listrik dan Energi Potensial Listrik"
+        },
+        "teacher_guide": {
+          "pages": "23-26",
+          "section": "Panduan Pembelajaran Bab 1, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan potensial listrik skalar dan konversi elektronvolt dirancang mandiri berdasarkan konsep potensial Buku Siswa hlm. 11–16.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-C: Menghitung potensial listrik skalar muatan titik dan mengonversi satuan energi ke elektronvolt",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 11-16 (Potensial Listrik dan Energi)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 23-26"
+        },
+        "authoring_statement": "Persoalan potensial skalar dan konversi satuan eV dirancang mandiri dengan perhitungan bersih tanpa menyalin teks buku."
+      }
+    },
+    {
+      "id": "FIS12-C01-M03-Q02",
+      "chapter_id": "FIS12-C01",
+      "topic_id": "FIS12-C01-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Dalam suatu daerah medan elektrostatik, potensial listrik di titik A adalah V_A = +150 V dan potensial listrik di titik B adalah V_B = +50 V. Sebuah partikel bermuatan listrik q = +4 μC berpindah secara spontan dari titik A ke titik B. Berapakah usaha yang dilakukan oleh medan listrik (W_medan) dan berapakah perubahan energi potensial listrik (ΔE_p) partikel tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "W_medan = -4 × 10⁻⁴ J dan ΔE_p = +4 × 10⁻⁴ J"
+        },
+        {
+          "id": "B",
+          "text": "W_medan = +4 × 10⁻⁴ J dan ΔE_p = -4 × 10⁻⁴ J"
+        },
+        {
+          "id": "C",
+          "text": "W_medan = +4 × 10⁻⁴ J dan ΔE_p = +4 × 10⁻⁴ J"
+        },
+        {
+          "id": "D",
+          "text": "W_medan = +8 × 10⁻⁴ J dan ΔE_p = -8 × 10⁻⁴ J"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Perubahan energi potensial listrik didefinisikan sebagai ΔE_p = E_pB - E_pA = q·(V_B - V_A) = (4 × 10⁻⁶ C) · (50 V - 150 V) = -4 × 10⁻⁴ J. Usaha yang dilakukan oleh gaya konservatif medan listrik adalah W_medan = -ΔE_p = -(-4 × 10⁻⁴ J) = +4 × 10⁻⁴ J (atau W_medan = q·(V_A - V_B) = 4×10⁻⁶ · (150 - 50) = +4 × 10⁻⁴ J). Muatan positif berpindah spontan dari potensial tinggi ke potensial rendah sehingga medan listrik melakukan usaha positif dan energi potensial sistem berkurang (Buku Siswa hlm. 12–14).",
+      "source": {
+        "student_book": {
+          "pages": "12-14",
+          "section": "Bab 1, Subbab B & C: Hubungan Usaha Medan dan Energi Potensial"
+        },
+        "teacher_guide": {
+          "pages": "23-25",
+          "section": "Panduan Pembelajaran Bab 1, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal penegasan tanda usaha medan listrik dan perubahan energi potensial dirancang mandiri berdasarkan teorema usaha-energi konservatif Buku Siswa hlm. 12–14.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-C: Membedakan dan menghitung usaha oleh medan listrik serta perubahan energi potensial muatan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 12-14 (Usaha dan Energi Potensial Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 23-25"
+        },
+        "authoring_statement": "Persoalan distingsi tanda aljabar usaha medan elektrostatik disusun secara orisinal untuk mencegah miskonsepsi tanda aljabar."
+      }
+    },
+    {
+      "id": "FIS12-C01-M03-Q03",
+      "chapter_id": "FIS12-C01",
+      "topic_id": "FIS12-C01-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Dua muatan titik q₁ = +5 μC dan q₂ = -3 μC mula-mula berada pada jarak r₁ = 60 cm di ruang hampa. Seorang teknisi laboratorium ingin memindahkan muatan q₂ menjauhi q₁ secara perlahan dengan kelajuan konstan (kuasistatik, tanpa percepatan) sehingga jarak pisah keduanya bertambah menjadi r₂ = 90 cm. Jika konstanta Coulomb k = 9 × 10⁹ N·m²/C², berapakah besar usaha yang harus dilakukan oleh gaya luar (W_luar) teknisi tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "-0,150 J"
+        },
+        {
+          "id": "B",
+          "text": "-0,075 J"
+        },
+        {
+          "id": "C",
+          "text": "+0,075 J"
+        },
+        {
+          "id": "D",
+          "text": "+0,225 J"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Energi potensial elektrostatik awal sistem dua muatan: E_p1 = k·(q₁·q₂)/r₁ = 9×10⁹ · (5×10⁻⁶ · (-3×10⁻⁶)) / 0,6 = -0,225 J. Energi potensial elektrostatik akhir sistem: E_p2 = k·(q₁·q₂)/r₂ = 9×10⁹ · (5×10⁻⁶ · (-3×10⁻⁶)) / 0,9 = -0,150 J. Perubahan energi potensial sistem: ΔE_p = E_p2 - E_p1 = -0,150 J - (-0,225 J) = +0,075 J. Pada perpindahan kuasistatik tanpa perubahan energi kinetik (ΔE_k = 0), gaya luar F_luar bekerja berlawanan arah dengan gaya tarik medan elektrostatik, sehingga usaha oleh gaya luar adalah W_luar = +ΔE_p = +0,075 J = +7,5 × 10⁻² J (Buku Siswa hlm. 12–15).",
+      "source": {
+        "student_book": {
+          "pages": "12-15",
+          "section": "Bab 1, Subbab B & C: Usaha oleh Gaya Luar pada Medan Listrik"
+        },
+        "teacher_guide": {
+          "pages": "24-26",
+          "section": "Panduan Pembelajaran Bab 1, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal analisis usaha gaya luar kuasistatik pada sistem muatan tarik-menarik dirancang mandiri berdasarkan konsep usaha eksternal Buku Siswa hlm. 12–15.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-C: Menganalisis usaha yang dilakukan oleh gaya luar pada pemindahan muatan kuasistatik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 12-15 (Usaha Luar dan Energi Sistem)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 24-26"
+        },
+        "authoring_statement": "Persoalan pemisahan muatan berlawanan tanda disusun mandiri dengan formulasi energi potensial skalar dan pembuktian matematis rigor."
+      }
+    }
+  ]
+}

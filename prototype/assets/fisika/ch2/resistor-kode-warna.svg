@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%" style="background:#090d16; border-radius:12px; font-family:system-ui, -apple-system, sans-serif;">
+  <!-- Title -->
+  <text x="300" y="28" fill="#f8fafc" font-size="15" font-weight="bold" text-anchor="middle">PEMBACAAN KODE WARNA RESISTOR KARBON 4 GELANG</text>
+
+  <!-- Kawat Timah Terminal Kiri dan Kanan -->
+  <line x1="40" y1="120" x2="160" y2="120" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+  <line x1="440" y1="120" x2="560" y2="120" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Badan Resistor (Bentuk Silinder Menggembung Khas Resistor Aksial) -->
+  <path d="M 160 85 C 190 85 200 95 230 95 L 370 95 C 400 95 410 85 440 85 C 450 85 450 155 440 155 C 410 155 400 145 370 145 L 230 145 C 200 145 190 155 160 155 C 150 155 150 85 160 85 Z" fill="#334155" stroke="#475569" stroke-width="2"/>
+
+  <!-- Gelang 1: Merah (Digit 1 = 2) di x=200 -->
+  <rect x="195" y="87" width="16" height="66" fill="#ef4444"/>
+
+  <!-- Gelang 2: Ungu (Digit 2 = 7) di x=245 -->
+  <rect x="245" y="95" width="16" height="50" fill="#a855f7"/>
+
+  <!-- Gelang 3: Oranye (Pengali = 10^3) di x=295 -->
+  <rect x="295" y="95" width="16" height="50" fill="#f97316"/>
+
+  <!-- Gelang 4: Emas (Toleransi = 5%) di x=385 (agak berjarak) -->
+  <rect x="385" y="87" width="16" height="66" fill="#eab308"/>
+
+  <!-- Garis Petunjuk dan Label Gelang -->
+  <!-- Gelang 1 -->
+  <line x1="203" y1="155" x2="203" y2="195" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <text x="203" y="210" fill="#ef4444" font-size="12" font-weight="bold" text-anchor="middle">Gelang 1: MERAH</text>
+  <text x="203" y="226" fill="#f8fafc" font-size="11" text-anchor="middle">Digit ke-1 = 2</text>
+
+  <!-- Gelang 2 -->
+  <line x1="253" y1="148" x2="253" y2="245" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <text x="253" y="260" fill="#a855f7" font-size="12" font-weight="bold" text-anchor="middle">Gelang 2: UNGU</text>
+  <text x="253" y="276" fill="#f8fafc" font-size="11" text-anchor="middle">Digit ke-2 = 7</text>
+
+  <!-- Gelang 3 -->
+  <line x1="303" y1="148" x2="303" y2="195" stroke="#f97316" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <text x="303" y="210" fill="#f97316" font-size="12" font-weight="bold" text-anchor="middle">Gelang 3: ORANYE</text>
+  <text x="303" y="226" fill="#f8fafc" font-size="11" text-anchor="middle">Pengali = 10³ Ω</text>
+
+  <!-- Gelang 4 -->
+  <line x1="393" y1="155" x2="393" y2="245" stroke="#eab308" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <text x="393" y="260" fill="#eab308" font-size="12" font-weight="bold" text-anchor="middle">Gelang 4: EMAS</text>
+  <text x="393" y="276" fill="#f8fafc" font-size="11" text-anchor="middle">Toleransi = ± 5%</text>
+
+  <!-- Nilai Nominal Box -->
+  <rect x="420" y="180" width="150" height="40" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="495" y="197" fill="#38bdf8" font-size="11" text-anchor="middle">Nilai Nominal:</text>
+  <text x="495" y="213" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">27 kΩ ± 5%</text>
+</svg>
+

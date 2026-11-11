@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_V1.1",
+  "dataset": "world-5-fisika-chapter-2-misi-8",
+  "purpose": "Bank Soal Fisika Kelas XII Bab 2 Misi 8 - Canonical v1.1",
+  "chapter_id": "FIS12-C02",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C02-M08-Q01",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-D",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah elemen pemanas listrik memiliki spesifikasi nominal bertuliskan 220 V / 400 W. Karena terjadi penurunan tegangan pada jaringan distribusi listrik lokal di malam hari, pemanas tersebut hanya menerima tegangan listrik sebesar 110 V. Asumsikan nilai hambatan elemen pemanas konstan dan tidak dipengaruhi suhu. Berapakah daya listrik aktual yang diserap oleh pemanas tersebut pada tegangan 110 V?",
+      "options": [
+        {
+          "id": "A",
+          "text": "200 W"
+        },
+        {
+          "id": "B",
+          "text": "50 W"
+        },
+        {
+          "id": "C",
+          "text": "100 W"
+        },
+        {
+          "id": "D",
+          "text": "300 W"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Hambatan listrik elemen pemanas pada kondisi nominal adalah R = V₀² / P₀ = (220)² / 400 = 48.400 / 400 = 121 Ω. Ketika tegangan turun menjadi V' = 110 V, daya listrik yang diserap adalah: P' = (V')² / R = (110)² / 121 = 12.100 / 121 = 100 W. Cara perbandingan cepat: P sebanding dengan V² untuk hambatan konstan, sehingga P' = P₀ · (V'/V₀)² = 400 W · (110/220)² = 400 W · (1/2)² = 400 W × 1/4 = 100 W. Penurunan tegangan menjadi setengah kali semula menyebabkan daya berkurang menjadi seperempat kali semula (Buku Siswa hlm. 43–45).",
+      "source": {
+        "student_book": {
+          "pages": "43-45",
+          "section": "Bab 2, Subbab E: Daya dan Energi Listrik"
+        },
+        "teacher_guide": {
+          "pages": "57-58",
+          "section": "Panduan Pembelajaran Bab 2, Subbab E"
+        }
+      },
+      "provenance": "Skenario orisinal analisis daya listrik pada variasi tegangan kerja dirancang mandiri berdasarkan formulasi daya kuadratik Buku Siswa hlm. 43–45.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-D: Menghitung daya listrik aktual peralatan pada tegangan kerja yang berbeda dari spesifikasi nominal",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 43-45 (Daya dan Energi Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 57-58"
+        },
+        "authoring_statement": "Persoalan daya kuadratik tegangan disusun mandiri untuk mencegah miskonsepsi perbandingan linier."
+      }
+    },
+    {
+      "id": "FIS12-C02-M08-Q02",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-D",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah rumah tangga menyalakan beberapa peralatan listrik setiap hari dengan rincian: 5 buah lampu LED masing-masing berdaya 20 W menyala rata-rata 10 jam/hari, 1 unit lemari es berdaya rata-rata 100 W beroperasi 24 jam/hari, 1 unit televisi berdaya 80 W menyala rata-rata 5 jam/hari, dan 1 unit pompa air berdaya 250 W menyala rata-rata 2 jam/hari. Jika digunakan tarif simulasi sebesar Rp1.500,00 per kWh, berapakah total energi listrik yang dikonsumsi seluruh peralatan tersebut selama 30 hari (dalam kWh) dan berapakah taksiran tagihan rekening listrik bulanan yang harus dibayar berdasarkan tarif simulasi tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "129 kWh dan Rp193.500,00"
+        },
+        {
+          "id": "B",
+          "text": "105 kWh dan Rp157.500,00"
+        },
+        {
+          "id": "C",
+          "text": "129 kWh dan Rp258.000,00"
+        },
+        {
+          "id": "D",
+          "text": "144 kWh dan Rp216.000,00"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Menghitung energi harian tiap peralatan (dengan asumsi daya rata-rata untuk peralatan dengan siklus kerja seperti lemari es): (1) Lampu: 5 × 20 W × 10 jam = 1.000 Wh = 1,0 kWh/hari; (2) Lemari es: 1 × 100 W × 24 jam = 2.400 Wh = 2,4 kWh/hari; (3) Televisi: 1 × 80 W × 5 jam = 400 Wh = 0,4 kWh/hari; (4) Pompa air: 1 × 250 W × 2 jam = 500 Wh = 0,5 kWh/hari. Langkah 2: Energi total harian: E_hari = 1,0 + 2,4 + 0,4 + 0,5 = 4,3 kWh/hari. Langkah 3: Total energi selama 30 hari: E_30 = 4,3 kWh/hari × 30 hari = 129 kWh. Langkah 4: Taksiran tagihan rekening listrik bulanan berdasarkan asumsi tarif simulasi skenario: Biaya = 129 kWh × Rp1.500,00/kWh = Rp193.500,00 (Buku Siswa hlm. 45–46).",
+      "source": {
+        "student_book": {
+          "pages": "45-46",
+          "section": "Bab 2, Subbab E: Perhitungan Energi Listrik Rumah Tangga"
+        },
+        "teacher_guide": {
+          "pages": "58-59",
+          "section": "Panduan Pembelajaran Bab 2, Subbab E"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan konsumsi energi listrik rumah tangga dalam kWh dan rekening listrik disusun mandiri menggunakan tarif simulasi dan model daya rata-rata berdasarkan konsep energi rumah tangga Buku Siswa hlm. 45–46.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-D: Menghitung akumulasi konsumsi energi listrik bulanan (kWh) dan estimasi biaya tagihan rekening listrik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 45-46 (Konsumsi Energi Listrik Rumah Tangga)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 58-59"
+        },
+        "authoring_statement": "Persoalan perhitungan rekening listrik rumah tangga disusun mandiri dengan model daya rata-rata autentik dan tarif simulasi eksplisit."
+      }
+    },
+    {
+      "id": "FIS12-C02-M08-Q03",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-D",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Sebuah laboratorium fisika memasang instalasi listrik DC bertegangan 24 V yang diproteksi oleh sekering (fuse) berbasis efek peleburan kawat Joule heating (H = I²Rt). Jalur kelistrikan ini menyuplai tiga beban yang terhubung paralel: motor DC 48 W, rangkaian pemanas 72 W, dan panel instrumen digital 24 W. Tersedia pilihan sekering komersial dengan rating arus: 2 A, 4 A, 6 A, 8 A, dan 16 A. Untuk keperluan analisis pada soal ini, gunakan ketentuan skenario berikut: (1) terapkan margin desain sebesar 25% di atas arus beban normal sebagai asumsi batas minimum pemilihan rating sekering; (2) kabel instalasi memiliki Kapasitas Hantar Arus (KHA) sebesar 10 A sehingga rating sekering tidak boleh melebihi 10 A; dan (3) pilihlah rating sekering komersial terkecil yang memenuhi batas minimum perhitungan margin desain dan tidak melebihi KHA kabel. Berapakah kuat arus listrik total normal saat ketiga beban menyala bersamaan, dan rating sekering manakah yang paling tepat dipilih berdasarkan kriteria skenario tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I_normal = 4,5 A, dan rating sekering yang tepat adalah 6 A"
+        },
+        {
+          "id": "B",
+          "text": "I_normal = 6,0 A, dan rating sekering yang tepat adalah 6 A"
+        },
+        {
+          "id": "C",
+          "text": "I_normal = 6,0 A, dan rating sekering yang tepat adalah 16 A"
+        },
+        {
+          "id": "D",
+          "text": "I_normal = 6,0 A, dan rating sekering yang tepat adalah 8 A"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Langkah 1: Menghitung daya total beban instalasi: P_total = 48 W + 72 W + 24 W = 144 W. Langkah 2: Menghitung arus beban total normal: I_normal = P_total / V = 144 W / 24 V = 6,0 A. Langkah 3: Menghitung batas minimum rating sekering berdasarkan asumsi margin desain skenario (25% di atas arus normal): I_minimum = 1,25 × I_normal = 1,25 × 6,0 A = 7,5 A. Langkah 4: Menerapkan batas Kapasitas Hantar Arus (KHA) kabel: Rating sekering yang dipilih tidak boleh melebihi KHA kabel (I_fuse ≤ 10 A) agar kabel terlindungi dari beban berlebih kontinu. Langkah 5: Evaluasi pilihan sekering yang tersedia (2 A, 4 A, 6 A, 8 A, 16 A): (a) Sekering 2 A dan 4 A berada di bawah arus beban normal 6,0 A; (b) Sekering 6 A tidak memenuhi batas minimum margin desain skenario (6,0 A < 7,5 A); (c) Sekering 8 A memenuhi batas minimum (8 A ≥ 7,5 A) dan tidak melebihi KHA kabel (8 A ≤ 10 A); (d) Sekering 16 A melebihi KHA kabel instalasi (16 A > 10 A). Langkah 6: Kesimpulan: Rating sekering komersial terkecil yang memenuhi kedua kriteria skenario adalah tepat 8 A, sehingga diperoleh I_normal = 6,0 A dan rating sekering 8 A (kunci D). Catatan pedagogis: Model margin 25% dan batas KHA pada soal ini merupakan penyederhanaan skenario untuk melatih penalaran analitis fisika terapan. Pada perancangan instalasi kelistrikan nyata, pemilihan perangkat proteksi memerlukan pertimbangan kurva karakteristik waktu-arus sekering, jenis beban, suhu lingkungan, serta standar teknis kelistrikan yang berlaku.",
+      "source": {
+        "student_book": {
+          "pages": "46-48",
+          "section": "Bab 2, Subbab F: Pengaman Kelistrikan dan Sekering"
+        },
+        "teacher_guide": {
+          "pages": "59-60",
+          "section": "Panduan Pembelajaran Bab 2, Subbab F"
+        }
+      },
+      "provenance": "Skenario orisinal analisis proteksi sekering kawat lebur Joule heating pada instalasi beban listrik DC dirancang mandiri dengan kriteria margin desain dan batas KHA kabel eksplisit berdasarkan konsep pengaman Buku Siswa hlm. 43.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-D: Menganalisis arus kerja beban listrik dan menentukan rating proteksi sekering berbasis efek pemanasan Joule",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 43 (Pengayaan: Sistem Pengaman Sekring Mobil)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 53-54"
+        },
+        "authoring_statement": "Persoalan proteksi sekering kawat lebur dirumuskan mandiri secara murni pada domain DC dengan kriteria margin desain dan batas KHA eksplisit sebagai model latihan penalaran fisika terapan."
+      }
+    }
+  ]
+}

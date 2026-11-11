@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_V1.1",
+  "dataset": "world-5-fisika-chapter-1-misi-1",
+  "purpose": "Bank Soal Fisika Kelas XII Bab 1 Misi 1 - Canonical v1.1",
+  "chapter_id": "FIS12-C01",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C01-M01-Q01",
+      "chapter_id": "FIS12-C01",
+      "topic_id": "FIS12-C01-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "question": "Dua bola konduktor identik bermuatan q₁ = +2 μC dan q₂ = -6 μC mula-mula terpisah sejauh r di udara dan mengalami gaya tarik-menarik elektrostatik sebesar F. Kedua bola tersebut kemudian disentuhkan sesaat lalu dikembalikan ke posisi semula dengan jarak pisah yang tetap r. Bagaimanakah sifat interaksi dan besar gaya elektrostatik baru antara kedua bola konduktor tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gaya menjadi tolak-menolak sebesar 1/3 F"
+        },
+        {
+          "id": "B",
+          "text": "Gaya tetap tarik-menarik sebesar 1/3 F"
+        },
+        {
+          "id": "C",
+          "text": "Gaya menjadi tolak-menolak sebesar 1/4 F"
+        },
+        {
+          "id": "D",
+          "text": "Gaya menjadi tolak-menolak sebesar 2/3 F"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Mula-mula gaya elektrostatik adalah tarik-menarik dengan besar F = k·|q₁·q₂|/r² = k·(2·6)/r² = 12k/r². Ketika kedua bola konduktor identik disentuhkan, terjadi perpindahan elektron hingga potensial kedua bola sama, sehingga muatan total terbagi rata: q' = (q₁ + q₂)/2 = (+2 + (-6))/2 = -2 μC pada masing-masing bola. Karena kedua muatan kini bertanda sama (negatif), interaksinya berubah menjadi tolak-menolak. Besar gaya elektrostatik yang baru adalah F' = k·|q'·q'|/r² = k·(2·2)/r² = 4k/r² = 1/3 F (Buku Siswa hlm. 4–7).",
+      "source": {
+        "student_book": {
+          "pages": "4-7",
+          "section": "Bab 1, Subbab A: Gaya Listrik dan Hukum Coulomb"
+        },
+        "teacher_guide": {
+          "pages": "18-20",
+          "section": "Panduan Pembelajaran Bab 1, Subbab A"
+        }
+      },
+      "provenance": "Skenario orisinal asesmen konseptual interaksi kontak konduktor dan hukum Coulomb dirancang mandiri berdasarkan konsep transfer muatan Buku Siswa hlm. 4–7.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-A: Menganalisis interaksi muatan listrik dan pengaruh perubahan muatan serta jarak terhadap gaya elektrostatik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 4-7 (Hukum Coulomb dan Interaksi Muatan)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 18-20"
+        },
+        "authoring_statement": "Skenario perhitungan kontak bola konduktor identik disusun mandiri untuk menguji pemahaman fisis kekekalan muatan dan hukum kuadrat terbalik tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "id": "FIS12-C01-M01-Q02",
+      "chapter_id": "FIS12-C01",
+      "topic_id": "FIS12-C01-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Dua muatan titik q_A = +4 μC dan q_B = +16 μC diletakkan terpisah pada sumbu-x di udara. Muatan q_A berada pada posisi x = 0 cm dan muatan q_B berada pada posisi x = 30 cm. Sebuah muatan ketiga q_C = -2 μC hendak diletakkan di antara q_A dan q_B agar resultan gaya elektrostatik yang dialami muatan q_C sama dengan nol. Pada posisi x berapakah muatan q_C harus diletakkan?",
+      "options": [
+        {
+          "id": "A",
+          "text": "x = 7,5 cm"
+        },
+        {
+          "id": "B",
+          "text": "x = 10 cm"
+        },
+        {
+          "id": "C",
+          "text": "x = 15 cm"
+        },
+        {
+          "id": "D",
+          "text": "x = 20 cm"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Muatan q_C (-2 μC) berada di antara dua muatan positif, sehingga q_C ditarik ke kiri oleh q_A (F_CA) dan ditarik ke kanan oleh q_B (F_CB). Agar resultan gaya bernilai nol, maka F_CA = F_CB. Misalkan jarak q_C dari q_A adalah x cm, maka jarak q_C dari q_B adalah (30 - x) cm. Berdasarkan Hukum Coulomb: k·|q_A·q_C|/x² = k·|q_B·q_C|/(30 - x)² ⇒ 4/x² = 16/(30 - x)². Menarik akar kuadrat kedua ruas: 2/x = 4/(30 - x) ⇒ 1/x = 2/(30 - x) ⇒ 30 - x = 2x ⇒ 3x = 30 ⇒ x = 10 cm dari q_A (Buku Siswa hlm. 5–7).",
+      "source": {
+        "student_book": {
+          "pages": "5-7",
+          "section": "Bab 1, Subbab A.2: Resultan Gaya Listrik"
+        },
+        "teacher_guide": {
+          "pages": "19-20",
+          "section": "Panduan Pembelajaran Bab 1, Subbab A"
+        }
+      },
+      "provenance": "Skenario orisinal analisis kesetimbangan gaya elektrostatik 1D dirancang mandiri berdasarkan prinsip superposisi resultan gaya Buku Siswa hlm. 5–7.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-A: Menghitung resultan gaya elektrostatik segaris dan menganalisis syarat kesetimbangan gaya nol",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 5-7 (Resultan Gaya Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 19-20"
+        },
+        "authoring_statement": "Persoalan kesetimbangan gaya elektrostatik 1D dirumuskan secara orisinal dengan nilai numerik bersih dan terverifikasi secara analitis."
+      }
+    },
+    {
+      "id": "FIS12-C01-M01-Q03",
+      "chapter_id": "FIS12-C01",
+      "topic_id": "FIS12-C01-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "hard",
+      "question": "Tiga muatan titik diletakkan pada sistem koordinat tegak lurus di udara. Muatan q_B = -1 μC berada di titik pusat (0, 0), muatan q_A = +3 μC berada di sumbu-y pada koordinat (0, 30 cm), dan muatan q_C = +4 μC berada di sumbu-x pada koordinat (30 cm, 0). Jika konstanta Coulomb k = 9 × 10⁹ N·m²/C², berapakah besar resultan gaya elektrostatik yang bekerja pada muatan q_B?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0,1 N"
+        },
+        {
+          "id": "B",
+          "text": "0,7 N"
+        },
+        {
+          "id": "C",
+          "text": "1,2 N"
+        },
+        {
+          "id": "D",
+          "text": "0,5 N"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Muatan q_B (-1 μC) mengalami dua gaya tarik elektrostatik yang saling tegak lurus: (1) Gaya tarik oleh q_A ke arah sumbu-y positif: F_BA = k·|q_A·q_B|/r_AB² = 9×10⁹ · (3×10⁻⁶ · 1×10⁻⁶)/(0,3)² = 9×10⁹ · (3×10⁻¹²)/0,09 = 0,3 N. (2) Gaya tarik oleh q_C ke arah sumbu-x positif: F_BC = k·|q_C·q_B|/r_BC² = 9×10⁹ · (4×10⁻⁶ · 1×10⁻⁶)/(0,3)² = 9×10⁹ · (4×10⁻¹²)/0,09 = 0,4 N. Karena sudut antara sumbu-x dan sumbu-y adalah 90°, besar resultan gaya adalah F_total = √(F_BA² + F_BC²) = √(0,3² + 0,4²) = √(0,09 + 0,16) = √0,25 = 0,5 N (Buku Siswa hlm. 5–7).",
+      "source": {
+        "student_book": {
+          "pages": "5-7",
+          "section": "Bab 1, Subbab A.2: Resultan Gaya Listrik"
+        },
+        "teacher_guide": {
+          "pages": "19-20",
+          "section": "Panduan Pembelajaran Bab 1, Subbab A"
+        }
+      },
+      "provenance": "Skenario orisinal superposisi vektor gaya Coulomb 2D tegak lurus disusun mandiri berdasarkan konsep superposisi vektor Buku Siswa hlm. 5–7.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-A: Menganalisis superposisi vektor gaya elektrostatik 2D pada konfigurasi muatan ortogonal",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 5-7 (Resultan Gaya Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 19-20"
+        },
+        "authoring_statement": "Skenario resultan vektor gaya dua dimensi dirumuskan mandiri menggunakan konfigurasi tripel Pythagoras bersih tanpa menyalin latihan buku."
+      }
+    }
+  ]
+}

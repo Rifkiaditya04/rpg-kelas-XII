@@ -1,0 +1,804 @@
+{
+  "pool_id": "POOL-FISIKA-FIS12-C01",
+  "subject": "fisika",
+  "chapter": "FIS12-C01",
+  "track": "pilihan",
+  "curriculum": [
+    "Merdeka"
+  ],
+  "grade": 12,
+  "status": "active",
+  "content_version": 1,
+  "competencies": [
+    {
+      "competency_id": "FIS12-C01-A",
+      "name": "Gaya Listrik dan Hukum Coulomb",
+      "question_count": 3
+    },
+    {
+      "competency_id": "FIS12-C01-B",
+      "name": "Medan Listrik dan Gerak Partikel",
+      "question_count": 3
+    },
+    {
+      "competency_id": "FIS12-C01-C",
+      "name": "Energi Potensial, Potensial Listrik, dan Usaha",
+      "question_count": 3
+    },
+    {
+      "competency_id": "FIS12-C01-D",
+      "name": "Kapasitor dan Energi Tersimpan",
+      "question_count": 3
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "FIS12-C01-A-1101",
+      "phase3_id": "FIS12-C01-M01-Q01",
+      "primary_competency": "FIS12-C01-A",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dua bola konduktor identik bermuatan q₁ = +2 μC dan q₂ = -6 μC mula-mula terpisah sejauh r di udara dan mengalami gaya tarik-menarik elektrostatik sebesar F. Kedua bola tersebut kemudian disentuhkan sesaat lalu dikembalikan ke posisi semula dengan jarak pisah yang tetap r. Bagaimanakah sifat interaksi dan besar gaya elektrostatik baru antara kedua bola konduktor tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gaya menjadi tolak-menolak sebesar 1/3 F"
+        },
+        {
+          "id": "B",
+          "text": "Gaya tetap tarik-menarik sebesar 1/3 F"
+        },
+        {
+          "id": "C",
+          "text": "Gaya menjadi tolak-menolak sebesar 1/4 F"
+        },
+        {
+          "id": "D",
+          "text": "Gaya menjadi tolak-menolak sebesar 2/3 F"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Mula-mula gaya elektrostatik adalah tarik-menarik dengan besar F = k·|q₁·q₂|/r² = k·(2·6)/r² = 12k/r². Ketika kedua bola konduktor identik disentuhkan, terjadi perpindahan elektron hingga potensial kedua bola sama, sehingga muatan total terbagi rata: q' = (q₁ + q₂)/2 = (+2 + (-6))/2 = -2 μC pada masing-masing bola. Karena kedua muatan kini bertanda sama (negatif), interaksinya berubah menjadi tolak-menolak. Besar gaya elektrostatik yang baru adalah F' = k·|q'·q'|/r² = k·(2·2)/r² = 4k/r² = 1/3 F (Buku Siswa hlm. 4–7).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "4-7",
+          "section": "Bab 1, Subbab A: Gaya Listrik dan Hukum Coulomb"
+        },
+        "teacher_guide": {
+          "pages": "18-20",
+          "section": "Panduan Pembelajaran Bab 1, Subbab A"
+        }
+      },
+      "provenance": "Skenario orisinal asesmen konseptual interaksi kontak konduktor dan hukum Coulomb dirancang mandiri berdasarkan konsep transfer muatan Buku Siswa hlm. 4–7.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-A: Menganalisis interaksi muatan listrik dan pengaruh perubahan muatan serta jarak terhadap gaya elektrostatik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 4-7 (Hukum Coulomb dan Interaksi Muatan)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 18-20"
+        },
+        "authoring_statement": "Skenario perhitungan kontak bola konduktor identik disusun mandiri untuk menguji pemahaman fisis kekekalan muatan dan hukum kuadrat terbalik tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-A-2102",
+      "phase3_id": "FIS12-C01-M01-Q02",
+      "primary_competency": "FIS12-C01-A",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dua muatan titik q_A = +4 μC dan q_B = +16 μC diletakkan terpisah pada sumbu-x di udara. Muatan q_A berada pada posisi x = 0 cm dan muatan q_B berada pada posisi x = 30 cm. Sebuah muatan ketiga q_C = -2 μC hendak diletakkan di antara q_A dan q_B agar resultan gaya elektrostatik yang dialami muatan q_C sama dengan nol. Pada posisi x berapakah muatan q_C harus diletakkan?",
+      "options": [
+        {
+          "id": "A",
+          "text": "x = 7,5 cm"
+        },
+        {
+          "id": "B",
+          "text": "x = 10 cm"
+        },
+        {
+          "id": "C",
+          "text": "x = 15 cm"
+        },
+        {
+          "id": "D",
+          "text": "x = 20 cm"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Muatan q_C (-2 μC) berada di antara dua muatan positif, sehingga q_C ditarik ke kiri oleh q_A (F_CA) dan ditarik ke kanan oleh q_B (F_CB). Agar resultan gaya bernilai nol, maka F_CA = F_CB. Misalkan jarak q_C dari q_A adalah x cm, maka jarak q_C dari q_B adalah (30 - x) cm. Berdasarkan Hukum Coulomb: k·|q_A·q_C|/x² = k·|q_B·q_C|/(30 - x)² ⇒ 4/x² = 16/(30 - x)². Menarik akar kuadrat kedua ruas: 2/x = 4/(30 - x) ⇒ 1/x = 2/(30 - x) ⇒ 30 - x = 2x ⇒ 3x = 30 ⇒ x = 10 cm dari q_A (Buku Siswa hlm. 5–7).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "5-7",
+          "section": "Bab 1, Subbab A.2: Resultan Gaya Listrik"
+        },
+        "teacher_guide": {
+          "pages": "19-20",
+          "section": "Panduan Pembelajaran Bab 1, Subbab A"
+        }
+      },
+      "provenance": "Skenario orisinal analisis kesetimbangan gaya elektrostatik 1D dirancang mandiri berdasarkan prinsip superposisi resultan gaya Buku Siswa hlm. 5–7.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-A: Menghitung resultan gaya elektrostatik segaris dan menganalisis syarat kesetimbangan gaya nol",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 5-7 (Resultan Gaya Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 19-20"
+        },
+        "authoring_statement": "Persoalan kesetimbangan gaya elektrostatik 1D dirumuskan secara orisinal dengan nilai numerik bersih dan terverifikasi secara analitis."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-A-3103",
+      "phase3_id": "FIS12-C01-M01-Q03",
+      "primary_competency": "FIS12-C01-A",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Tiga muatan titik diletakkan pada sistem koordinat tegak lurus di udara. Muatan q_B = -1 μC berada di titik pusat (0, 0), muatan q_A = +3 μC berada di sumbu-y pada koordinat (0, 30 cm), dan muatan q_C = +4 μC berada di sumbu-x pada koordinat (30 cm, 0). Jika konstanta Coulomb k = 9 × 10⁹ N·m²/C², berapakah besar resultan gaya elektrostatik yang bekerja pada muatan q_B?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0,1 N"
+        },
+        {
+          "id": "B",
+          "text": "0,7 N"
+        },
+        {
+          "id": "C",
+          "text": "1,2 N"
+        },
+        {
+          "id": "D",
+          "text": "0,5 N"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Muatan q_B (-1 μC) mengalami dua gaya tarik elektrostatik yang saling tegak lurus: (1) Gaya tarik oleh q_A ke arah sumbu-y positif: F_BA = k·|q_A·q_B|/r_AB² = 9×10⁹ · (3×10⁻⁶ · 1×10⁻⁶)/(0,3)² = 9×10⁹ · (3×10⁻¹²)/0,09 = 0,3 N. (2) Gaya tarik oleh q_C ke arah sumbu-x positif: F_BC = k·|q_C·q_B|/r_BC² = 9×10⁹ · (4×10⁻⁶ · 1×10⁻⁶)/(0,3)² = 9×10⁹ · (4×10⁻¹²)/0,09 = 0,4 N. Karena sudut antara sumbu-x dan sumbu-y adalah 90°, besar resultan gaya adalah F_total = √(F_BA² + F_BC²) = √(0,3² + 0,4²) = √(0,09 + 0,16) = √0,25 = 0,5 N (Buku Siswa hlm. 5–7).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "5-7",
+          "section": "Bab 1, Subbab A.2: Resultan Gaya Listrik"
+        },
+        "teacher_guide": {
+          "pages": "19-20",
+          "section": "Panduan Pembelajaran Bab 1, Subbab A"
+        }
+      },
+      "provenance": "Skenario orisinal superposisi vektor gaya Coulomb 2D tegak lurus disusun mandiri berdasarkan konsep superposisi vektor Buku Siswa hlm. 5–7.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-A: Menganalisis superposisi vektor gaya elektrostatik 2D pada konfigurasi muatan ortogonal",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 5-7 (Resultan Gaya Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 19-20"
+        },
+        "authoring_statement": "Skenario resultan vektor gaya dua dimensi dirumuskan mandiri menggunakan konfigurasi tripel Pythagoras bersih tanpa menyalin latihan buku."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-B-4201",
+      "phase3_id": "FIS12-C01-M02-Q01",
+      "primary_competency": "FIS12-C01-B",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dua muatan titik tak sejenis q₁ = +9 μC dan q₂ = -4 μC terpisah sejauh 10 cm pada sumbu-x di udara, dengan q₁ berada di posisi x = 0 cm dan q₂ berada di posisi x = 10 cm. Di manakah posisi titik pada garis hubung kedua muatan tersebut yang memiliki kuat medan listrik total sama dengan nol?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6 cm di antara q₁ dan q₂"
+        },
+        {
+          "id": "B",
+          "text": "15 cm di sebelah kiri q₁"
+        },
+        {
+          "id": "C",
+          "text": "20 cm di sebelah kanan q₂"
+        },
+        {
+          "id": "D",
+          "text": "25 cm di sebelah kanan q₂"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Karena kedua muatan berlawanan jenis, kuat medan listrik di antara kedua muatan selalu searah (menjauhi q₁ positif ke arah kanan dan mendekati q₂ negatif juga ke arah kanan), sehingga tidak mungkin bernilai nol di antara keduanya. Titik medan nol harus berada di luar kedua muatan pada sisi muatan yang nilai mutlaknya lebih kecil, yaitu di sebelah kanan q₂. Misalkan jarak titik tersebut adalah d cm dari q₂, maka jaraknya dari q₁ adalah (10 + d) cm. Syarat E_total = 0 adalah E₁ = E₂ ⇒ k·|q₁|/(10 + d)² = k·|q₂|/d² ⇒ 9/(10 + d)² = 4/d². Menarik akar kedua ruas: 3/(10 + d) = 2/d ⇒ 3d = 20 + 2d ⇒ d = 20 cm di sebelah kanan q₂ (koordinat x = 30 cm) (Buku Siswa hlm. 8–10).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "8-10",
+          "section": "Bab 1, Subbab B.1: Medan Listrik Muatan Titik"
+        },
+        "teacher_guide": {
+          "pages": "21-22",
+          "section": "Panduan Pembelajaran Bab 1, Subbab B"
+        }
+      },
+      "provenance": "Skenario orisinal penentuan titik kuat medan listrik nol dirancang mandiri berdasarkan prinsip superposisi medan elektrostatik Buku Siswa hlm. 8–10.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-B: Menganalisis distribusi garis medan listrik dan menentukan posisi titik medan elektrostatik nol",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 8-10 (Medan Listrik Muatan Titik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 21-22"
+        },
+        "authoring_statement": "Persoalan titik medan listrik nol dirumuskan mandiri secara analitis dengan angka bulat dan rasional matematis yang kuat."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-B-5202",
+      "phase3_id": "FIS12-C01-M02-Q02",
+      "primary_competency": "FIS12-C01-B",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dua pelat logam konduktor sejajar berjarak d = 2 cm dihubungkan dengan sumber tegangan listrik searah 100 V sehingga terbentuk medan listrik homogen di antara kedua pelat. Sebuah partikel uji bermuatan listrik q = +5 × 10⁻⁸ C ditempatkan di ruang antara kedua pelat tersebut. Berapakah besar kuat medan listrik di antara kedua pelat dan besar gaya elektrostatik yang dialami partikel uji tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "E = 5000 V/m dan F = 2,5 × 10⁻⁴ N"
+        },
+        {
+          "id": "B",
+          "text": "E = 2500 V/m dan F = 1,25 × 10⁻⁴ N"
+        },
+        {
+          "id": "C",
+          "text": "E = 5000 V/m dan F = 5,0 × 10⁻⁴ N"
+        },
+        {
+          "id": "D",
+          "text": "E = 10000 V/m dan F = 2,5 × 10⁻⁴ N"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pada pelat konduktor sejajar, medan listrik di antara pelat bersifat homogen dan memenuhi hubungan E = V/d, dengan V = 100 V dan d = 2 cm = 0,02 m. Maka kuat medan listrik adalah E = 100 V / 0,02 m = 5000 V/m (atau 5000 N/C). Besar gaya elektrostatik yang bekerja pada muatan uji q adalah F = q·E = (5 × 10⁻⁸ C) × (5000 N/C) = 2,5 × 10⁻⁴ N (Buku Siswa hlm. 10–11).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "10-11",
+          "section": "Bab 1, Subbab B.2: Medan Listrik pada Pelat Paralel"
+        },
+        "teacher_guide": {
+          "pages": "22-23",
+          "section": "Panduan Pembelajaran Bab 1, Subbab B"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan medan listrik homogen pelat sejajar dan gaya muatan uji dirancang mandiri berdasarkan konsep medan pelat konduktor Buku Siswa hlm. 10–11.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-B: Menghitung kuat medan listrik homogen antara pelat konduktor sejajar dan gaya pada muatan uji",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 10-11 (Medan Listrik Pelat Paralel)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 22-23"
+        },
+        "authoring_statement": "Skenario relasi medan listrik dan beda potensial pelat sejajar disusun secara orisinal dengan nilai besaran standar SI."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-B-6203",
+      "phase3_id": "FIS12-C01-M02-Q03",
+      "primary_competency": "FIS12-C01-B",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "media": {
+        "type": "image",
+        "src": "fisika/ch1/defleksi-partikel-pelat.svg",
+        "alt": "Diagram skematik pembelokan berkas elektron yang ditembakkan secara horizontal dengan kecepatan v0 memasuki ruang antara dua pelat sejajar berjarak d dengan panjang L. Medan listrik seragam E mengarah ke bawah, menyebabkan elektron membelok ke atas mendekati pelat positif hingga keluar dari ujung pelat dengan simpangan vertikal y.",
+        "caption": "Lintasan pembelokan elektron dalam medan listrik homogen antar-pelat sejajar."
+      },
+      "question": "Sebuah elektron bermassa m = 9 × 10⁻³¹ kg dan bermuatan q = -1,6 × 10⁻¹⁹ C ditembakkan horizontal dengan kecepatan awal v₀ = 2 × 10⁷ m/s memasuki medan listrik homogen di antara dua pelat sejajar. Panjang pelat adalah L = 10 cm dan jarak antar-pelat adalah d = 1 cm. Di antara kedua pelat terdapat medan listrik homogen seragam berarah vertikal ke bawah dengan kuat medan E = 1800 N/C. Mengabaikan pengaruh gravitasi, ke arah manakah elektron berbelok dan berapakah simpangan vertikal (y) elektron saat tepat meninggalkan ujung pelat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Membelok ke bawah dengan simpangan vertikal 0,2 cm"
+        },
+        {
+          "id": "B",
+          "text": "Membelok ke atas dengan simpangan vertikal 0,4 cm"
+        },
+        {
+          "id": "C",
+          "text": "Membelok ke atas dengan simpangan vertikal 0,8 cm"
+        },
+        {
+          "id": "D",
+          "text": "Membelok ke bawah dengan simpangan vertikal 0,4 cm"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Arah pembelokan: Karena muatan elektron negatif (q = -e), gaya elektrostatik F_e = q·E berlawanan arah dengan medan listrik. Medan listrik mengarah ke bawah, sehingga gaya elektrostatik bekerja ke arah atas (menuju pelat positif). Waktu elektron melintasi pelat sepanjang L = 10 cm = 0,1 m dengan kecepatan horizontal tetap v₀ = 2 × 10⁷ m/s adalah t = L/v₀ = 0,1 / (2 × 10⁷) = 5 × 10⁻⁹ s. Percepatan vertikal ke atas: a_y = |q|·E / m = (1,6 × 10⁻¹⁹ · 1800) / (9 × 10⁻³¹) = 2880 × 10⁻¹⁹ / (9 × 10⁻³¹) = 3,2 × 10¹⁴ m/s². Simpangan vertikal: y = 1/2 · a_y · t² = 1/2 · (3,2 × 10¹⁴) · (5 × 10⁻⁹)² = 1,6 × 10¹⁴ · 25 × 10⁻¹⁸ = 40 × 10⁻⁴ m = 4 × 10⁻³ m = 0,4 cm ke arah atas (Buku Siswa hlm. 10).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "10",
+          "section": "Bab 1, Subbab B.2: Gerak Partikel Bermuatan dalam Medan Listrik Homogen"
+        },
+        "teacher_guide": {
+          "pages": "22",
+          "section": "Panduan Pembelajaran Bab 1, Subbab B"
+        }
+      },
+      "provenance": "Skenario orisinal defleksi partikel bermuatan dalam medan homogen disusun mandiri dengan dukungan aset visual SVG sesuai konsep Buku Siswa hlm. 10.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-B: Menganalisis kinematika gerak pembelokan partikel bermuatan di dalam medan listrik homogen",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 10 (Aplikasi Gerak Partikel)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 22"
+        },
+        "authoring_statement": "Skenario defleksi elektron dirancang orisinal memadukan hukum elektrostatik dan kinematika 2D tanpa menyalin soal buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-C-7301",
+      "phase3_id": "FIS12-C01-M03-Q01",
+      "primary_competency": "FIS12-C01-C",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dua muatan titik q₁ = +6 nC dan q₂ = -2 nC berada di ruang hampa. Titik P terletak pada jarak 30 cm dari q₁ dan 20 cm dari q₂. Jika konstanta Coulomb k = 9 × 10⁹ N·m²/C², berapakah potensial listrik total di titik P dan berapakah nilai energi kinetik sebesar 1,44 × 10⁻¹⁷ J jika dinyatakan dalam satuan elektronvolt (eV), dengan 1 eV = 1,6 × 10⁻¹⁹ J?",
+      "options": [
+        {
+          "id": "A",
+          "text": "V_P = +45 V dan E = 45 eV"
+        },
+        {
+          "id": "B",
+          "text": "V_P = +180 V dan E = 90 eV"
+        },
+        {
+          "id": "C",
+          "text": "V_P = -90 V dan E = 180 eV"
+        },
+        {
+          "id": "D",
+          "text": "V_P = +90 V dan E = 90 eV"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Potensial listrik merupakan besaran skalar sehingga tanda aljabar muatan dimasukkan langsung dalam penjumlahan: V_P = k·(q₁/r₁ + q₂/r₂) = 9×10⁹ · ((6×10⁻⁹ / 0,3) + (-2×10⁻⁹ / 0,2)) = 9×10⁹ · (20×10⁻⁹ - 10×10⁻⁹) = 9×10⁹ · (10×10⁻⁹) = +90 V. Konversi satuan energi ke elektronvolt: E(eV) = E(J) / (1,6 × 10⁻¹⁹ J/eV) = (1,44 × 10⁻¹⁷ J) / (1,6 × 10⁻¹⁹ J/eV) = 90 eV (Buku Siswa hlm. 11–16).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "11-16",
+          "section": "Bab 1, Subbab B & C: Potensial Listrik dan Energi Potensial Listrik"
+        },
+        "teacher_guide": {
+          "pages": "23-26",
+          "section": "Panduan Pembelajaran Bab 1, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan potensial listrik skalar dan konversi elektronvolt dirancang mandiri berdasarkan konsep potensial Buku Siswa hlm. 11–16.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-C: Menghitung potensial listrik skalar muatan titik dan mengonversi satuan energi ke elektronvolt",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 11-16 (Potensial Listrik dan Energi)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 23-26"
+        },
+        "authoring_statement": "Persoalan potensial skalar dan konversi satuan eV dirancang mandiri dengan perhitungan bersih tanpa menyalin teks buku."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-C-8302",
+      "phase3_id": "FIS12-C01-M03-Q02",
+      "primary_competency": "FIS12-C01-C",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dalam suatu daerah medan elektrostatik, potensial listrik di titik A adalah V_A = +150 V dan potensial listrik di titik B adalah V_B = +50 V. Sebuah partikel bermuatan listrik q = +4 μC berpindah secara spontan dari titik A ke titik B. Berapakah usaha yang dilakukan oleh medan listrik (W_medan) dan berapakah perubahan energi potensial listrik (ΔE_p) partikel tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "W_medan = -4 × 10⁻⁴ J dan ΔE_p = +4 × 10⁻⁴ J"
+        },
+        {
+          "id": "B",
+          "text": "W_medan = +4 × 10⁻⁴ J dan ΔE_p = -4 × 10⁻⁴ J"
+        },
+        {
+          "id": "C",
+          "text": "W_medan = +4 × 10⁻⁴ J dan ΔE_p = +4 × 10⁻⁴ J"
+        },
+        {
+          "id": "D",
+          "text": "W_medan = +8 × 10⁻⁴ J dan ΔE_p = -8 × 10⁻⁴ J"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Perubahan energi potensial listrik didefinisikan sebagai ΔE_p = E_pB - E_pA = q·(V_B - V_A) = (4 × 10⁻⁶ C) · (50 V - 150 V) = -4 × 10⁻⁴ J. Usaha yang dilakukan oleh gaya konservatif medan listrik adalah W_medan = -ΔE_p = -(-4 × 10⁻⁴ J) = +4 × 10⁻⁴ J (atau W_medan = q·(V_A - V_B) = 4×10⁻⁶ · (150 - 50) = +4 × 10⁻⁴ J). Muatan positif berpindah spontan dari potensial tinggi ke potensial rendah sehingga medan listrik melakukan usaha positif dan energi potensial sistem berkurang (Buku Siswa hlm. 12–14).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "12-14",
+          "section": "Bab 1, Subbab B & C: Hubungan Usaha Medan dan Energi Potensial"
+        },
+        "teacher_guide": {
+          "pages": "23-25",
+          "section": "Panduan Pembelajaran Bab 1, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal penegasan tanda usaha medan listrik dan perubahan energi potensial dirancang mandiri berdasarkan teorema usaha-energi konservatif Buku Siswa hlm. 12–14.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-C: Membedakan dan menghitung usaha oleh medan listrik serta perubahan energi potensial muatan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 12-14 (Usaha dan Energi Potensial Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 23-25"
+        },
+        "authoring_statement": "Persoalan distingsi tanda aljabar usaha medan elektrostatik disusun secara orisinal untuk mencegah miskonsepsi tanda aljabar."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-C-9303",
+      "phase3_id": "FIS12-C01-M03-Q03",
+      "primary_competency": "FIS12-C01-C",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Dua muatan titik q₁ = +5 μC dan q₂ = -3 μC mula-mula berada pada jarak r₁ = 60 cm di ruang hampa. Seorang teknisi laboratorium ingin memindahkan muatan q₂ menjauhi q₁ secara perlahan dengan kelajuan konstan (kuasistatik, tanpa percepatan) sehingga jarak pisah keduanya bertambah menjadi r₂ = 90 cm. Jika konstanta Coulomb k = 9 × 10⁹ N·m²/C², berapakah besar usaha yang harus dilakukan oleh gaya luar (W_luar) teknisi tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "-0,150 J"
+        },
+        {
+          "id": "B",
+          "text": "-0,075 J"
+        },
+        {
+          "id": "C",
+          "text": "+0,075 J"
+        },
+        {
+          "id": "D",
+          "text": "+0,225 J"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Energi potensial elektrostatik awal sistem dua muatan: E_p1 = k·(q₁·q₂)/r₁ = 9×10⁹ · (5×10⁻⁶ · (-3×10⁻⁶)) / 0,6 = -0,225 J. Energi potensial elektrostatik akhir sistem: E_p2 = k·(q₁·q₂)/r₂ = 9×10⁹ · (5×10⁻⁶ · (-3×10⁻⁶)) / 0,9 = -0,150 J. Perubahan energi potensial sistem: ΔE_p = E_p2 - E_p1 = -0,150 J - (-0,225 J) = +0,075 J. Pada perpindahan kuasistatik tanpa perubahan energi kinetik (ΔE_k = 0), gaya luar F_luar bekerja berlawanan arah dengan gaya tarik medan elektrostatik, sehingga usaha oleh gaya luar adalah W_luar = +ΔE_p = +0,075 J = +7,5 × 10⁻² J (Buku Siswa hlm. 12–15).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "12-15",
+          "section": "Bab 1, Subbab B & C: Usaha oleh Gaya Luar pada Medan Listrik"
+        },
+        "teacher_guide": {
+          "pages": "24-26",
+          "section": "Panduan Pembelajaran Bab 1, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal analisis usaha gaya luar kuasistatik pada sistem muatan tarik-menarik dirancang mandiri berdasarkan konsep usaha eksternal Buku Siswa hlm. 12–15.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-C: Menganalisis usaha yang dilakukan oleh gaya luar pada pemindahan muatan kuasistatik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 12-15 (Usaha Luar dan Energi Sistem)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 24-26"
+        },
+        "authoring_statement": "Persoalan pemisahan muatan berlawanan tanda disusun mandiri dengan formulasi energi potensial skalar dan pembuktian matematis rigor."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-D-1401",
+      "phase3_id": "FIS12-C01-M04-Q01",
+      "primary_competency": "FIS12-C01-D",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah kapasitor keping sejajar dengan dielektrik udara mula-mula memiliki luas penampang keping A dan jarak pisah antar-keping d, dengan nilai kapasitansi sebesar C₀. Jika luas keping diperbesar menjadi 2A, jarak pisah antar-keping diperkecil menjadi 1/2 d, dan seluruh ruang di antara kedua keping disisipi bahan dielektrik mika dengan konstanta dielektrik K = 6, berapakah nilai kapasitansi kapasitor tersebut sekarang?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6 C₀"
+        },
+        {
+          "id": "B",
+          "text": "12 C₀"
+        },
+        {
+          "id": "C",
+          "text": "48 C₀"
+        },
+        {
+          "id": "D",
+          "text": "24 C₀"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Kapasitansi kapasitor keping sejajar dirumuskan sebagai C = K·ε₀·A/d. Pada keadaan awal di udara (K = 1), kapasitasnya adalah C₀ = ε₀·A/d. Pada keadaan baru dengan A' = 2A, d' = 1/2 d, dan K' = 6: C' = K'·ε₀·A'/d' = 6·ε₀·(2A)/(1/2 d) = 6 · 4 · (ε₀·A/d) = 24 C₀. Dengan demikian, kapasitansinya meningkat menjadi 24 kali semula (Buku Siswa hlm. 17–20).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "17-20",
+          "section": "Bab 1, Subbab C: Kapasitor Keping Sejajar dan Bahan Dielektrik"
+        },
+        "teacher_guide": {
+          "pages": "26-27",
+          "section": "Panduan Pembelajaran Bab 1, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal analisis proporsionalitas geometri dan dielektrik kapasitor keping sejajar dirancang mandiri berdasarkan konsep kapasitansi Buku Siswa hlm. 17–20.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-D: Menganalisis faktor fisis geometri keping dan konstanta dielektrik terhadap nilai kapasitansi kapasitor",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 17-20 (Kapasitor Keping Sejajar)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 26-27"
+        },
+        "authoring_statement": "Persoalan faktor penentu kapasitas keping sejajar dirumuskan mandiri secara proporsional aljabar tanpa menyalin latihan buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-D-2402",
+      "phase3_id": "FIS12-C01-M04-Q02",
+      "primary_competency": "FIS12-C01-D",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "media": {
+        "type": "image",
+        "src": "fisika/ch1/rangkaian-kapasitor-kombinasi.svg",
+        "alt": "Diagram skematik rangkaian kombinasi kapasitor seri-paralel. Dua kapasitor C1 = 6 μF dan C2 = 3 μF dirangkai secara seri pada cabang atas, kemudian cabang seri tersebut diparalelkan dengan kapasitor C3 = 4 μF pada cabang bawah, dan dihubungkan ke sumber tegangan baterai V = 12 V.",
+        "caption": "Diagram rangkaian kombinasi kapasitor seri-paralel yang dihubungkan ke sumber tegangan 12 V."
+      },
+      "question": "Perhatikan diagram rangkaian kapasitor. Tiga buah kapasitor masing-masing C₁ = 6 μF, C₂ = 3 μF, dan C₃ = 4 μF dirangkai sebagai berikut: kapasitor C₁ dan C₂ dirangkai seri, lalu rangkaian seri tersebut dirangkai paralel dengan kapasitor C₃. Rangkaian kombinasi ini kemudian dihubungkan ke sumber tegangan baterai V = 12 V. Tentukan kapasitas total pengganti rangkaian (C_total) dan besar muatan listrik yang tersimpan pada kapasitor C₁ (Q₁)!",
+      "options": [
+        {
+          "id": "A",
+          "text": "C_total = 6 μF dan Q₁ = 24 μC"
+        },
+        {
+          "id": "B",
+          "text": "C_total = 4 μF dan Q₁ = 12 μC"
+        },
+        {
+          "id": "C",
+          "text": "C_total = 6 μF dan Q₁ = 48 μC"
+        },
+        {
+          "id": "D",
+          "text": "C_total = 9 μF dan Q₁ = 72 μC"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Kapasitas pengganti seri C₁ dan C₂: 1/C_s = 1/C₁ + 1/C₂ = 1/6 + 1/3 = (1 + 2)/6 = 3/6 = 1/2 ⇒ C_s = 2 μF. Langkah 2: Kapasitas total rangkaian (C_s paralel dengan C₃): C_total = C_s + C₃ = 2 μF + 4 μF = 6 μF. Langkah 3: Menentukan muatan pada C₁: Cabang seri C_s terhubung paralel langsung ke sumber tegangan 12 V, sehingga beda potensial cabang seri adalah V_s = 12 V. Muatan total pada cabang seri adalah Q_s = C_s · V_s = 2 μF · 12 V = 24 μC. Karena pada susunan seri muatan setiap kapasitor adalah sama dengan muatan total cabang serinya, maka Q₁ = Q₂ = Q_s = 24 μC (Buku Siswa hlm. 20–22).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "20-22",
+          "section": "Bab 1, Subbab D: Rangkaian Kapasitor Seri dan Paralel"
+        },
+        "teacher_guide": {
+          "pages": "27-28",
+          "section": "Panduan Pembelajaran Bab 1, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis rangkaian kombinasi kapasitor seri-paralel disusun mandiri dengan dukungan visual SVG diagram rangkaian sesuai konsep Buku Siswa hlm. 20–22.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-D: Menghitung kapasitas pengganti dan distribusi muatan pada rangkaian kombinasi kapasitor seri-paralel",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 20-22 (Rangkaian Kapasitor)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 27-28"
+        },
+        "authoring_statement": "Persoalan kombinasi kapasitor dirancang orisinal dengan topologi jelas dan nilai numerik bulat tanpa menyalin soal buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-D-3403",
+      "phase3_id": "FIS12-C01-M04-Q03",
+      "primary_competency": "FIS12-C01-D",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah kapasitor keping sejajar dengan dielektrik udara mula-mula dihubungkan ke baterai bertegangan V₀ hingga bermuatan penuh Q₀ dan menyimpan energi elektrostatik sebesar W₀. Baterai kemudian DILEPASKAN sehingga kapasitor terisolasi (muatannya terperangkap konstan). Ruang di antara kedua keping kemudian disisipi penuh dengan bahan dielektrik yang memiliki konstanta dielektrik K = 4. Bagaimanakah perbandingan tegangan baru (V') dan energi elektrostatik baru (W') yang tersimpan di dalam kapasitor dibandingkan nilai awalnya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "V' = 4 V₀ dan W' = 16 W₀"
+        },
+        {
+          "id": "B",
+          "text": "V' = V₀ dan W' = 4 W₀"
+        },
+        {
+          "id": "C",
+          "text": "V' = 1/4 V₀ dan W' = 1/4 W₀"
+        },
+        {
+          "id": "D",
+          "text": "V' = 1/4 V₀ dan W' = 4 W₀"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Karena baterai dilepaskan sebelum dielektrik disisipkan, muatan listrik pada kapasitor tetap konstan: Q' = Q₀. Kapasitansi kapasitor meningkat menjadi C' = K·C₀ = 4 C₀. Tegangan baru antara kedua keping: V' = Q'/C' = Q₀/(4 C₀) = 1/4 V₀. Energi elektrostatik yang tersimpan dihitung menggunakan rumus W = Q²/(2C): W' = (Q')²/(2C') = Q₀²/(2 · 4C₀) = 1/4 · (Q₀²/(2C₀)) = 1/4 W₀. Berkurangnya energi elektrostatik terjadi karena medan listrik kapasitor melakukan usaha mekanik saat menarik lembaran bahan dielektrik masuk ke dalam celah keping (Buku Siswa hlm. 17–20).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "17-20",
+          "section": "Bab 1, Subbab C & D: Energi Tersimpan pada Kapasitor dan Dielektrik"
+        },
+        "teacher_guide": {
+          "pages": "26-28",
+          "section": "Panduan Pembelajaran Bab 1, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis energi tersimpan dan tegangan kapasitor terisolasi saat disisipi dielektrik dirancang mandiri berdasarkan hukum kekekalan muatan dan termodinamika dielektrik Buku Siswa hlm. 17–20.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-D: Menganalisis perubahan energi elektrostatik tersimpan dan beda potensial kapasitor terisolasi berdielektrik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 17-20 (Energi Kapasitor dan Dielektrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 26-28"
+        },
+        "authoring_statement": "Persoalan kapasitor terisolasi berdielektrik dirancang mandiri untuk menguji pemahaman fisis mendalam mengenai kekekalan muatan vs kekekalan tegangan."
+      }
+    }
+  ]
+}

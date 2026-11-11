@@ -1,0 +1,873 @@
+{
+  "pool_id": "POOL-FISIKA-FIS12-C02",
+  "subject": "fisika",
+  "chapter": "FIS12-C02",
+  "track": "pilihan",
+  "curriculum": [
+    "Merdeka"
+  ],
+  "grade": 12,
+  "status": "active",
+  "content_version": 1,
+  "competencies": [
+    {
+      "competency_id": "FIS12-C02-A",
+      "name": "Arus Listrik dan Hukum Ohm",
+      "question_count": 3
+    },
+    {
+      "competency_id": "FIS12-C02-B",
+      "name": "Hambatan Kawat, Suhu, Kode Warna, dan Rangkaian Resistor",
+      "question_count": 4
+    },
+    {
+      "competency_id": "FIS12-C02-C",
+      "name": "Hukum Kirchhoff pada Rangkaian Majemuk",
+      "question_count": 3
+    },
+    {
+      "competency_id": "FIS12-C02-D",
+      "name": "Daya, Energi Listrik, Rekening Rumah Tangga, dan Pengaman",
+      "question_count": 3
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "FIS12-C02-A-1501",
+      "phase3_id": "FIS12-C02-M05-Q01",
+      "primary_competency": "FIS12-C02-A",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Suatu kawat penghantar tembaga dialiri arus listrik konstan sebesar I = 3,2 A selama durasi waktu t = 2 menit. Jika besar muatan dasar sebuah elektron adalah e = 1,6 × 10⁻¹⁹ C, berapakah besar muatan listrik total yang melintasi penampang kawat tersebut dan berapakah jumlah elektron yang mengalir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Q = 192 C dan n = 1,2 × 10²¹ elektron"
+        },
+        {
+          "id": "B",
+          "text": "Q = 384 C dan n = 2,4 × 10²¹ elektron"
+        },
+        {
+          "id": "C",
+          "text": "Q = 384 C dan n = 1,2 × 10²¹ elektron"
+        },
+        {
+          "id": "D",
+          "text": "Q = 6,4 C dan n = 4,0 × 10¹⁹ elektron"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Langkah 1: Konversi waktu ke satuan SI: t = 2 menit = 2 × 60 s = 120 s. Langkah 2: Menghitung muatan total berdasarkan definisi arus listrik: Q = I · t = 3,2 A × 120 s = 384 C. Langkah 3: Menghitung jumlah elektron yang mengalir: n = Q / e = 384 C / (1,6 × 10⁻¹⁹ C/elektron) = 240 × 10¹⁹ = 2,4 × 10²¹ elektron (Buku Siswa hlm. 28–29).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "28-29",
+          "section": "Bab 2, Subbab A: Kuat Arus Listrik"
+        },
+        "teacher_guide": {
+          "pages": "48-49",
+          "section": "Panduan Pembelajaran Bab 2, Subbab A"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan laju aliran muatan listrik dan cacah elektron bebas disusun mandiri berdasarkan konsep arus listrik Buku Siswa hlm. 28–29.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-A: Menghitung muatan total dan jumlah elektron yang melintasi penampang konduktor",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 28-29 (Arus Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 48-49"
+        },
+        "authoring_statement": "Skenario aliran muatan kawat tembaga dirumuskan mandiri secara bersih tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-A-2502",
+      "phase3_id": "FIS12-C02-M05-Q02",
+      "primary_competency": "FIS12-C02-A",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah resistor ohmik dihubungkan ke sumber tegangan searah variabel. Ketika tegangan diatur pada V₁ = 6 V, kuat arus yang terukur pada amperemeter adalah I₁ = 150 mA. Jika tegangan listrik dinaikkan menjadi V₂ = 15 V pada suhu konstan, berapakah nilai hambatan resistor tersebut dan berapakah kuat arus listrik baru (I₂) yang mengalir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "R = 25 Ω dan I₂ = 600 mA"
+        },
+        {
+          "id": "B",
+          "text": "R = 40 Ω dan I₂ = 250 mA"
+        },
+        {
+          "id": "C",
+          "text": "R = 40 Ω dan I₂ = 375 mA"
+        },
+        {
+          "id": "D",
+          "text": "R = 90 Ω dan I₂ = 167 mA"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Hukum Ohm, untuk konduktor ohmik pada suhu konstan nilai hambatan bersifat tetap: R = V₁ / I₁ = 6 V / (150 × 10⁻³ A) = 6 / 0,15 = 40 Ω. Ketika tegangan dinaikkan menjadi V₂ = 15 V, kuat arus baru adalah: I₂ = V₂ / R = 15 V / 40 Ω = 0,375 A = 375 mA (Buku Siswa hlm. 29–31).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "29-31",
+          "section": "Bab 2, Subbab B: Hukum Ohm"
+        },
+        "teacher_guide": {
+          "pages": "49-50",
+          "section": "Panduan Pembelajaran Bab 2, Subbab B"
+        }
+      },
+      "provenance": "Skenario orisinal penentuan resistansi ohmik dan arus baru pada tegangan berubah dirancang mandiri berdasarkan Hukum Ohm Buku Siswa hlm. 29–31.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-A: Menerapkan Hukum Ohm untuk menghitung resistansi konstan dan kuat arus pada konduktor ohmik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 29-31 (Hukum Ohm)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 49-50"
+        },
+        "authoring_statement": "Persoalan karakteristik linier resistor ohmik disusun mandiri dengan angka bulat bersih tanpa plagiasi."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-A-3503",
+      "phase3_id": "FIS12-C02-M05-Q03",
+      "primary_competency": "FIS12-C02-A",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "media": {
+        "type": "image",
+        "src": "fisika/ch2/grafik-ohmik-non-ohmik.svg",
+        "alt": "Grafik hubungan arus I pada sumbu vertikal terhadap tegangan V pada sumbu horizontal untuk Komponen A berbentuk garis lurus linier melalui origin dan Komponen B berbentuk kurva melengkung lampu filamen wolfram yang kemiringannya semakin landai pada tegangan tinggi.",
+        "caption": "Grafik karakteristik I-V komponen ohmik (A) dan non-ohmik lampu filamen (B)."
+      },
+      "question": "Perhatikan grafik karakteristik arus terhadap tegangan (I - V) untuk Komponen A dan Komponen B. Berdasarkan karakteristik kelengkungan grafik tersebut, manakah pernyataan dan kesimpulan fisis yang paling tepat mengenai sifat resistansi dari kedua komponen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Komponen A bersifat ohmik dengan nilai hambatan konstan, sedangkan Komponen B bersifat non-ohmik dengan nilai hambatan yang semakin membesar seiring naiknya tegangan akibat pemanasan filamen."
+        },
+        {
+          "id": "B",
+          "text": "Komponen A bersifat non-ohmik karena hambatannya berubah secara linier, sedangkan Komponen B bersifat ohmik dengan nilai hambatan konstan."
+        },
+        {
+          "id": "C",
+          "text": "Komponen A dan Komponen B keduanya bersifat ohmik karena grafik keduanya melalui titik koordinat origin (0, 0)."
+        },
+        {
+          "id": "D",
+          "text": "Komponen B bersifat non-ohmik dengan nilai hambatan yang semakin mengecil seiring naiknya tegangan karena konduktivitas logam meningkat saat panas."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pada grafik I-V (arus pada sumbu tegak dan tegangan pada sumbu mendatar), kemiringan kurva menyatakan konduktansi (ΔI/ΔV = 1/R). Komponen A membentuk garis lurus linier dengan kemiringan konstan, menunjukkan nilai resistansi R konstan (memenuhi Hukum Ohm, komponen ohmik). Komponen B membentuk kurva melengkung di mana kemiringan ΔI/ΔV semakin mengecil pada tegangan tinggi, yang berarti nilai hambatannya R semakin membesar. Fenomena ini khas pada lampu filamen pijar non-ohmik, di mana arus listrik yang meningkat menaikkan suhu kawat filamen wolfram sehingga getaran termal kisi ion meningkat dan menghambat laju elektron bebas (Buku Siswa hlm. 30–31).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "30-31",
+          "section": "Bab 2, Subbab B: Hambatan Ohmik dan Non-Ohmik"
+        },
+        "teacher_guide": {
+          "pages": "49-50",
+          "section": "Panduan Pembelajaran Bab 2, Subbab B"
+        }
+      },
+      "provenance": "Skenario orisinal analisis komparatif grafik I-V konduktor linier vs filamen wolfram non-ohmik disusun mandiri dengan aset visual SVG sesuai konsep Buku Siswa hlm. 30–31.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-A: Menganalisis kurva karakteristik I-V serta membedakan perilaku konduktor ohmik dan non-ohmik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 30-31 (Karakteristik Ohmik vs Non-Ohmik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 49-50"
+        },
+        "authoring_statement": "Persoalan perbandingan grafik I-V dirancang mandiri memadukan konsep konduktivitas dan efek termal filamen tanpa menyalin teks buku."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-B-4601",
+      "phase3_id": "FIS12-C02-M06-Q01",
+      "primary_competency": "FIS12-C02-B",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah kawat tembaga homogen dengan panjang mula-mula L₀ dan luas penampang A₀ memiliki nilai hambatan listrik sebesar R₀ = 12 Ω. Kawat tersebut kemudian ditarik melalui cetakan mesin peregang kawat hingga panjangnya bertambah menjadi 3 kali panjang semula (L' = 3L₀). Jika proses peregangan berlangsung tanpa mengubah massa jenis dan volume total kawat konstan, berapakah nilai hambatan listrik kawat tembaga tersebut sekarang?",
+      "options": [
+        {
+          "id": "A",
+          "text": "36 Ω"
+        },
+        {
+          "id": "B",
+          "text": "4 Ω"
+        },
+        {
+          "id": "C",
+          "text": "144 Ω"
+        },
+        {
+          "id": "D",
+          "text": "108 Ω"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Karena kawat ditarik tanpa ada massa yang hilang, volumenya tetap konstan: V = A₀ · L₀ = A' · L'. Dengan L' = 3L₀, maka luas penampang kawat menyusut menjadi A' = A₀ / 3. Rumus hambatan kawat adalah R = ρ · L / A. Nilai hambatan baru: R' = ρ · L' / A' = ρ · (3L₀) / (A₀ / 3) = 9 · (ρ · L₀ / A₀) = 9 · R₀ = 9 × 12 Ω = 108 Ω. Hambatan kawat sebanding dengan kuadrat kelipatan panjangnya saat volume kawat konstan (Buku Siswa hlm. 31–33).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "31-33",
+          "section": "Bab 2, Subbab C: Hambatan Jenis Kawat"
+        },
+        "teacher_guide": {
+          "pages": "50-51",
+          "section": "Panduan Pembelajaran Bab 2, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal analisis deformasi geometri kawat volume konstan dirancang mandiri berdasarkan formula resistansi kawat Buku Siswa hlm. 31–33.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-B: Menganalisis pengaruh perubahan panjang dan luas penampang kawat terhadap nilai resistansi",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 31-33 (Hambatan Kawat Penghantar)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 50-51"
+        },
+        "authoring_statement": "Persoalan peregangan kawat volume konstan disusun secara orisinal dengan penalaran aljabar proporsional yang kokoh."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-B-5602",
+      "phase3_id": "FIS12-C02-M06-Q02",
+      "primary_competency": "FIS12-C02-B",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "media": {
+        "type": "image",
+        "src": "fisika/ch2/resistor-kode-warna.svg",
+        "alt": "Diagram fisik resistor karbon 4 gelang: Gelang 1 berwarna Merah (angka 2), Gelang 2 berwarna Ungu (angka 7), Gelang 3 berwarna Oranye (pengali 10 pangkat 3), Gelang 4 berwarna Emas (toleransi 5 persen).",
+        "caption": "Kode warna resistor tetap 4 gelang: Merah, Ungu, Oranye, Emas."
+      },
+      "question": "Perhatikan diagram resistor karbon 4 gelang. Gelang ke-1 berwarna Merah, gelang ke-2 berwarna Ungu, gelang ke-3 berwarna Oranye, dan gelang ke-4 berwarna Emas. Berapakah nilai hambatan nominal resistor tersebut dan berapakah rentang nilai hambatan aktual yang masih memenuhi batas toleransinya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "27 kΩ ± 5% dengan rentang nilai aktual 25,65 kΩ hingga 28,35 kΩ"
+        },
+        {
+          "id": "B",
+          "text": "270 Ω ± 5% dengan rentang nilai aktual 256,5 Ω hingga 283,5 Ω"
+        },
+        {
+          "id": "C",
+          "text": "27 kΩ ± 10% dengan rentang nilai aktual 24,30 kΩ hingga 29,70 kΩ"
+        },
+        {
+          "id": "D",
+          "text": "37 kΩ ± 5% dengan rentang nilai aktual 35,15 kΩ hingga 38,85 kΩ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Berdasarkan tabel kode warna resistor EIA: Gelang 1 (Merah) = digit pertama 2. Gelang 2 (Ungu) = digit kedua 7. Gelang 3 (Oranye) = faktor pengali 10³ Ω = 1000 Ω. Nilai nominal hambatan = 27 × 10³ Ω = 27 kΩ = 27.000 Ω. Gelang 4 (Emas) = toleransi ±5%. Nilai toleransi = 5% × 27.000 Ω = 1.350 Ω = 1,35 kΩ. Rentang hambatan aktual: R_min = 27 kΩ - 1,35 kΩ = 25,65 kΩ dan R_max = 27 kΩ + 1,35 kΩ = 28,35 kΩ (Buku Siswa hlm. 33).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "33",
+          "section": "Bab 2, Subbab C: Kode Warna Resistor"
+        },
+        "teacher_guide": {
+          "pages": "51-52",
+          "section": "Panduan Pembelajaran Bab 2, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal pembacaan kode warna gelang resistor karbon disusun mandiri dengan dukungan aset visual SVG sesuai konsep Buku Siswa hlm. 33.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-B: Mengidentifikasi nilai resistansi nominal dan batas toleransi resistor dari kode warna gelang",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 33 (Kode Warna Resistor)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 51-52"
+        },
+        "authoring_statement": "Persoalan kode warna resistor 4 gelang dirancang orisinal dengan visual diagram akurat."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-B-6603",
+      "phase3_id": "FIS12-C02-M06-Q03",
+      "primary_competency": "FIS12-C02-B",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah kawat kumparan pemanas terbuat dari bahan platina memiliki hambatan listrik sebesar R₀ = 50 Ω pada suhu ruangan T₀ = 20°C. Koefisien suhu hambatan jenis platina adalah α = 4 × 10⁻³ °C⁻¹. Ketika kumparan tersebut dialiri arus listrik sehingga mencapai suhu kerja stabil sebesar T = 120°C, berapakah nilai hambatan listrik kumparan platina tersebut sekarang?",
+      "options": [
+        {
+          "id": "A",
+          "text": "54 Ω"
+        },
+        {
+          "id": "B",
+          "text": "60 Ω"
+        },
+        {
+          "id": "C",
+          "text": "70 Ω"
+        },
+        {
+          "id": "D",
+          "text": "74 Ω"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Perubahan suhu kumparan pemanas: ΔT = T - T₀ = 120°C - 20°C = 100°C. Hambatan konduktor logam meningkat terhadap suhu sesuai persamaan: R = R₀ · (1 + α · ΔT) = 50 Ω · (1 + (4 × 10⁻³ °C⁻¹ × 100°C)) = 50 Ω · (1 + 0,4) = 50 Ω × 1,4 = 70 Ω (Buku Siswa hlm. 32–33).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "32-33",
+          "section": "Bab 2, Subbab C: Pengaruh Suhu terhadap Hambatan"
+        },
+        "teacher_guide": {
+          "pages": "51",
+          "section": "Panduan Pembelajaran Bab 2, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal kenaikan hambatan kawat pemanas platina akibat peningkatan suhu kerja dirancang mandiri berdasarkan hukum koefisien termal Buku Siswa hlm. 32–33.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-B: Menghitung perubahan nilai hambatan listrik konduktor akibat kenaikan suhu",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 32-33 (Pengaruh Suhu terhadap Hambatan)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 51"
+        },
+        "authoring_statement": "Persoalan pengaruh termal terhadap hambatan kawat disusun mandiri dengan besaran standar platina."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-B-7604",
+      "phase3_id": "FIS12-C02-M06-Q04",
+      "primary_competency": "FIS12-C02-B",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Empat buah resistor identik masing-masing bernilai R = 12 Ω dirangkai dalam konfigurasi berikut: dua resistor dirangkai paralel (kelompok P), kemudian kelompok P ini diserikan dengan resistor ketiga, dan seluruh susunan cabang seri tersebut diparalelkan dengan resistor keempat. Rangkaian kombinasi ini kemudian dihubungkan ke sumber tegangan searah V = 18 V. Tentukan besar hambatan total pengganti rangkaian (R_total) dan besar kuat arus listrik yang mengalir melalui cabang kelompok paralel P!",
+      "options": [
+        {
+          "id": "A",
+          "text": "R_total = 12 Ω dan I = 1,5 A"
+        },
+        {
+          "id": "B",
+          "text": "R_total = 7,2 Ω dan I = 1,0 A"
+        },
+        {
+          "id": "C",
+          "text": "R_total = 7,2 Ω dan I = 2,5 A"
+        },
+        {
+          "id": "D",
+          "text": "R_total = 9,0 Ω dan I = 2,0 A"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Langkah 1: Hambatan pengganti paralel kelompok P: 1/R_P = 1/12 + 1/12 = 2/12 ⇒ R_P = 6 Ω. Langkah 2: Hambatan cabang seri (kelompok P + resistor ketiga): R_seri = R_P + 12 Ω = 6 + 12 = 18 Ω. Langkah 3: Hambatan total rangkaian (cabang seri paralel dengan resistor keempat): 1/R_total = 1/R_seri + 1/12 = 1/18 + 1/12 = (2 + 3)/36 = 5/36 ⇒ R_total = 36/5 = 7,2 Ω. Langkah 4: Kuat arus pada cabang seri: Karena cabang seri terhubung paralel langsung ke sumber tegangan 18 V, maka tegangannya V_cabang = 18 V. Kuat arus cabang seri adalah I_cabang = V_cabang / R_seri = 18 V / 18 Ω = 1,0 A. Karena kelompok P berada pada cabang seri tersebut, arus yang melintasi kelompok P adalah tepat 1,0 A (Buku Siswa hlm. 34–36).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "34-36",
+          "section": "Bab 2, Subbab C: Rangkaian Resistor Seri dan Paralel"
+        },
+        "teacher_guide": {
+          "pages": "52-54",
+          "section": "Panduan Pembelajaran Bab 2, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal analisis jaringan kombinasi resistor bertingkat dirancang mandiri berdasarkan kaidah sirkuit ekuivalen Buku Siswa hlm. 34–36.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-B: Menganalisis hambatan pengganti dan pembagian arus pada rangkaian kombinasi resistor bertingkat",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 34-36 (Rangkaian Resistor)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 52-54"
+        },
+        "authoring_statement": "Persoalan topologi kombinasi empat resistor dirumuskan mandiri secara bertahap dan terverifikasi analitis."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-C-8701",
+      "phase3_id": "FIS12-C02-M07-Q01",
+      "primary_competency": "FIS12-C02-C",
+      "secondary_competencies": [],
+      "difficulty_label": "easy",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Pada suatu titik simpul percabangan rangkaian listrik terdapat lima kawat penghantar. Tiga kawat mengalirkan arus listrik menuju titik simpul masing-masing sebesar I₁ = 4,0 A, I₂ = 2,5 A, dan I₃ = 1,5 A. Kawat keempat mengalirkan arus listrik keluar dari titik simpul sebesar I₄ = 5,0 A, sedangkan kawat kelima dialiri arus I₅. Berdasarkan Hukum I Kirchhoff, berapakah besar dan bagaimanakah arah aliran arus listrik pada kawat kelima (I₅)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1,5 A keluar dari titik simpul"
+        },
+        {
+          "id": "B",
+          "text": "3,0 A keluar dari titik simpul"
+        },
+        {
+          "id": "C",
+          "text": "3,0 A menuju titik simpul"
+        },
+        {
+          "id": "D",
+          "text": "5,0 A keluar dari titik simpul"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Hukum I Kirchhoff, jumlah kuat arus yang masuk ke suatu titik simpul percabangan sama dengan jumlah kuat arus yang keluar dari titik simpul tersebut: Σ I_masuk = Σ I_keluar. Arus total yang masuk ke titik simpul: Σ I_masuk = I₁ + I₂ + I₃ = 4,0 A + 2,5 A + 1,5 A = 8,0 A. Arus keluar yang diketahui: I₄ = 5,0 A. Karena Σ I_masuk (8,0 A) > I₄ (5,0 A), maka kawat kelima harus mengalirkan arus keluar dari simpul: Σ I_masuk = I₄ + I₅ ⇒ 8,0 A = 5,0 A + I₅ ⇒ I₅ = 3,0 A mengalir keluar dari titik simpul (Buku Siswa hlm. 37–38).",
+      "gameplay": {
+        "correct_damage": 50,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "light"
+      },
+      "estimated_time_seconds": 60,
+      "source": {
+        "student_book": {
+          "pages": "37-38",
+          "section": "Bab 2, Subbab D: Hukum I Kirchhoff"
+        },
+        "teacher_guide": {
+          "pages": "54-55",
+          "section": "Panduan Pembelajaran Bab 2, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis titik percabangan arus multi-kawat dirancang mandiri berdasarkan Hukum I Kirchhoff Buku Siswa hlm. 37–38.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-C: Menerapkan Hukum I Kirchhoff untuk menentukan besar dan arah arus pada simpul percabangan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 37-38 (Hukum I Kirchhoff)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 54-55"
+        },
+        "authoring_statement": "Persoalan titik percabangan kawat dirumuskan mandiri secara analitis tanpa menyalin soal latihan buku."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-C-9702",
+      "phase3_id": "FIS12-C02-M07-Q02",
+      "primary_competency": "FIS12-C02-C",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Suatu rangkaian listrik tertutup satu loop terdiri dari dua sumber tegangan baterai dan dua resistor eksternal. Baterai pertama memiliki ggl ε₁ = 18 V dan hambatan dalam r₁ = 1 Ω. Baterai kedua memiliki ggl ε₂ = 6 V dan hambatan dalam r₂ = 1 Ω, dipasang berlawanan arah dengan baterai pertama (kutub positif baterai 1 menghadap kutub positif baterai 2 sehingga kedua ggl saling melemahkan). Resistor eksternal bernilai R₁ = 4 Ω dan R₂ = 6 Ω. Tentukan besar kuat arus listrik yang mengalir dalam loop dan besar tegangan jepit (V₁) pada terminal baterai pertama!",
+      "options": [
+        {
+          "id": "A",
+          "text": "I = 1,0 A dan V₁ = 17 V"
+        },
+        {
+          "id": "B",
+          "text": "I = 1,0 A dan V₁ = 19 V"
+        },
+        {
+          "id": "C",
+          "text": "I = 2,0 A dan V₁ = 16 V"
+        },
+        {
+          "id": "D",
+          "text": "I = 0,5 A dan V₁ = 17,5 V"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Menghitung ggl total loop: Karena polaritas baterai saling berlawanan arah, ggl total adalah Σ ε = ε₁ - ε₂ = 18 V - 6 V = 12 V. Langkah 2: Menghitung hambatan total loop (termasuk hambatan dalam): R_total = R₁ + R₂ + r₁ + r₂ = 4 + 6 + 1 + 1 = 12 Ω. Langkah 3: Menghitung kuat arus loop: I = Σ ε / R_total = 12 V / 12 Ω = 1,0 A. Langkah 4: Menghitung tegangan jepit baterai 1 (baterai yang menyalurkan arus / discharging): V₁ = ε₁ - I · r₁ = 18 V - (1,0 A × 1 Ω) = 17 V (Buku Siswa hlm. 38–40).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "38-40",
+          "section": "Bab 2, Subbab D: Hukum II Kirchhoff Rangkaian 1 Loop"
+        },
+        "teacher_guide": {
+          "pages": "55-56",
+          "section": "Panduan Pembelajaran Bab 2, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis rangkaian tertutup 1 loop dengan baterai ggl berlawanan dan tegangan jepit disusun mandiri berdasarkan Hukum II Kirchhoff Buku Siswa hlm. 38–40.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-C: Menghitung kuat arus dan tegangan jepit sumber ggl pada rangkaian tertutup satu loop",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 38-40 (Hukum II Kirchhoff Rangkaian Sederhana)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 55-56"
+        },
+        "authoring_statement": "Persoalan satu loop dirumuskan mandiri dengan distingsi tegangan ggl vs tegangan jepit."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-C-1703",
+      "phase3_id": "FIS12-C02-M07-Q03",
+      "primary_competency": "FIS12-C02-C",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "media": {
+        "type": "image",
+        "src": "fisika/ch2/rangkaian-majemuk-dua-loop.svg",
+        "alt": "Diagram rangkaian 2 loop dengan simpul atas A dan simpul bawah B. Cabang kiri memiliki baterai 12 V dan resistor 4 Ohm dengan arus I1 mengalir ke atas menuju A. Cabang tengah memiliki resistor 2 Ohm dengan arus I3 mengalir ke bawah dari A ke B. Cabang kanan memiliki baterai 6 V dan resistor 4 Ohm dengan arus I2 mengalir ke atas menuju A.",
+        "caption": "Diagram rangkaian listrik majemuk 2 loop dengan simpul A dan B."
+      },
+      "question": "Perhatikan diagram rangkaian listrik majemuk dua loop. Cabang kiri memuat sumber ggl ε₁ = 12 V dan resistor R₁ = 4 Ω dengan arus I₁ mengalir ke atas menuju simpul A. Cabang tengah memuat resistor R₂ = 2 Ω dengan arus I₃ mengalir ke bawah dari A ke B. Cabang kanan memuat sumber ggl ε₂ = 6 V dan resistor R₃ = 4 Ω dengan arus I₂ mengalir ke atas menuju simpul A. Abaikan hambatan dalam kedua baterai. Menggunakan Hukum II Kirchhoff, berapakah besar kuat arus yang mengalir melalui resistor cabang tengah R₂ (I₃) dan berapakah beda potensial antara simpul A dan B (V_AB)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I₃ = 1,50 A dan V_AB = 3,0 V"
+        },
+        {
+          "id": "B",
+          "text": "I₃ = 3,00 A dan V_AB = 6,0 V"
+        },
+        {
+          "id": "C",
+          "text": "I₃ = 1,75 A dan V_AB = 3,5 V"
+        },
+        {
+          "id": "D",
+          "text": "I₃ = 2,25 A dan V_AB = 4,5 V"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Langkah 1: Hukum I Kirchhoff pada simpul A: I₁ + I₂ = I₃. Langkah 2: Hukum II Kirchhoff pada Loop 1 (searah jarum jam): -ε₁ + I₁·R₁ + I₃·R₂ = 0 ⇒ -12 + 4 I₁ + 2 I₃ = 0 ⇒ 4 I₁ + 2 I₃ = 12 ⇒ 2 I₁ + I₃ = 6 ⇒ I₁ = 3 - 0,5 I₃. Langkah 3: Hukum II Kirchhoff pada Loop 2 (berlawanan arah jarum jam): -ε₂ + I₂·R₃ + I₃·R₂ = 0 ⇒ -6 + 4 I₂ + 2 I₃ = 6 ⇒ 2 I₂ + I₃ = 3 ⇒ I₂ = 1,5 - 0,5 I₃. Langkah 4: Substitusi I₁ dan I₂ ke persamaan simpul A: I₃ = (3 - 0,5 I₃) + (1,5 - 0,5 I₃) = 4,5 - I₃ ⇒ 2 I₃ = 4,5 ⇒ I₃ = 2,25 A. Langkah 5: Beda potensial simpul A dan B (V_AB = V_A - V_B): Melalui cabang tengah yang hanya memuat resistor R₂: V_AB = I₃ · R₂ = 2,25 A × 2 Ω = 4,5 V. Hasil ini konsisten jika diuji melalui cabang kiri (12 - 1,875×4 = 4,5 V) maupun cabang kanan (6 - 0,375×4 = 4,5 V) (Buku Siswa hlm. 40–42).",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "40-42",
+          "section": "Bab 2, Subbab D: Hukum II Kirchhoff Rangkaian Majemuk"
+        },
+        "teacher_guide": {
+          "pages": "56-57",
+          "section": "Panduan Pembelajaran Bab 2, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis sirkuit majemuk dua loop dengan konvensi tanda loop terstandarisasi dirancang mandiri dengan aset visual SVG sesuai konsep Buku Siswa hlm. 40–42.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-C: Menganalisis sistem persamaan rangkaian majemuk dua loop dan menghitung beda potensial antarsimpul",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 40-42 (Hukum II Kirchhoff Rangkaian Majemuk)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 56-57"
+        },
+        "authoring_statement": "Persoalan sirkuit dua loop disusun mandiri dengan konvensi loop konsisten dan nilai numerik bulat/desimal bersih."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-D-2801",
+      "phase3_id": "FIS12-C02-M08-Q01",
+      "primary_competency": "FIS12-C02-D",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah elemen pemanas listrik memiliki spesifikasi nominal bertuliskan 220 V / 400 W. Karena terjadi penurunan tegangan pada jaringan distribusi listrik lokal di malam hari, pemanas tersebut hanya menerima tegangan listrik sebesar 110 V. Asumsikan nilai hambatan elemen pemanas konstan dan tidak dipengaruhi suhu. Berapakah daya listrik aktual yang diserap oleh pemanas tersebut pada tegangan 110 V?",
+      "options": [
+        {
+          "id": "A",
+          "text": "200 W"
+        },
+        {
+          "id": "B",
+          "text": "50 W"
+        },
+        {
+          "id": "C",
+          "text": "100 W"
+        },
+        {
+          "id": "D",
+          "text": "300 W"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Hambatan listrik elemen pemanas pada kondisi nominal adalah R = V₀² / P₀ = (220)² / 400 = 48.400 / 400 = 121 Ω. Ketika tegangan turun menjadi V' = 110 V, daya listrik yang diserap adalah: P' = (V')² / R = (110)² / 121 = 12.100 / 121 = 100 W. Cara perbandingan cepat: P sebanding dengan V² untuk hambatan konstan, sehingga P' = P₀ · (V'/V₀)² = 400 W · (110/220)² = 400 W · (1/2)² = 400 W × 1/4 = 100 W. Penurunan tegangan menjadi setengah kali semula menyebabkan daya berkurang menjadi seperempat kali semula (Buku Siswa hlm. 43–45).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "43-45",
+          "section": "Bab 2, Subbab E: Daya dan Energi Listrik"
+        },
+        "teacher_guide": {
+          "pages": "57-58",
+          "section": "Panduan Pembelajaran Bab 2, Subbab E"
+        }
+      },
+      "provenance": "Skenario orisinal analisis daya listrik pada variasi tegangan kerja dirancang mandiri berdasarkan formulasi daya kuadratik Buku Siswa hlm. 43–45.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-D: Menghitung daya listrik aktual peralatan pada tegangan kerja yang berbeda dari spesifikasi nominal",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 43-45 (Daya dan Energi Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 57-58"
+        },
+        "authoring_statement": "Persoalan daya kuadratik tegangan disusun mandiri untuk mencegah miskonsepsi perbandingan linier."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-D-3802",
+      "phase3_id": "FIS12-C02-M08-Q02",
+      "primary_competency": "FIS12-C02-D",
+      "secondary_competencies": [],
+      "difficulty_label": "medium",
+      "cognitive_level": "apply",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah rumah tangga menyalakan beberapa peralatan listrik setiap hari dengan rincian: 5 buah lampu LED masing-masing berdaya 20 W menyala rata-rata 10 jam/hari, 1 unit lemari es berdaya rata-rata 100 W beroperasi 24 jam/hari, 1 unit televisi berdaya 80 W menyala rata-rata 5 jam/hari, dan 1 unit pompa air berdaya 250 W menyala rata-rata 2 jam/hari. Jika digunakan tarif simulasi sebesar Rp1.500,00 per kWh, berapakah total energi listrik yang dikonsumsi seluruh peralatan tersebut selama 30 hari (dalam kWh) dan berapakah taksiran tagihan rekening listrik bulanan yang harus dibayar berdasarkan tarif simulasi tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "129 kWh dan Rp193.500,00"
+        },
+        {
+          "id": "B",
+          "text": "105 kWh dan Rp157.500,00"
+        },
+        {
+          "id": "C",
+          "text": "129 kWh dan Rp258.000,00"
+        },
+        {
+          "id": "D",
+          "text": "144 kWh dan Rp216.000,00"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Menghitung energi harian tiap peralatan (dengan asumsi daya rata-rata untuk peralatan dengan siklus kerja seperti lemari es): (1) Lampu: 5 × 20 W × 10 jam = 1.000 Wh = 1,0 kWh/hari; (2) Lemari es: 1 × 100 W × 24 jam = 2.400 Wh = 2,4 kWh/hari; (3) Televisi: 1 × 80 W × 5 jam = 400 Wh = 0,4 kWh/hari; (4) Pompa air: 1 × 250 W × 2 jam = 500 Wh = 0,5 kWh/hari. Langkah 2: Energi total harian: E_hari = 1,0 + 2,4 + 0,4 + 0,5 = 4,3 kWh/hari. Langkah 3: Total energi selama 30 hari: E_30 = 4,3 kWh/hari × 30 hari = 129 kWh. Langkah 4: Taksiran tagihan rekening listrik bulanan berdasarkan asumsi tarif simulasi skenario: Biaya = 129 kWh × Rp1.500,00/kWh = Rp193.500,00 (Buku Siswa hlm. 45–46).",
+      "gameplay": {
+        "correct_damage": 100,
+        "base_xp": 10,
+        "wrong_penalty": 5,
+        "attack_type": "medium"
+      },
+      "estimated_time_seconds": 90,
+      "source": {
+        "student_book": {
+          "pages": "45-46",
+          "section": "Bab 2, Subbab E: Perhitungan Energi Listrik Rumah Tangga"
+        },
+        "teacher_guide": {
+          "pages": "58-59",
+          "section": "Panduan Pembelajaran Bab 2, Subbab E"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan konsumsi energi listrik rumah tangga dalam kWh dan rekening listrik disusun mandiri menggunakan tarif simulasi dan model daya rata-rata berdasarkan konsep energi rumah tangga Buku Siswa hlm. 45–46.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-D: Menghitung akumulasi konsumsi energi listrik bulanan (kWh) dan estimasi biaya tagihan rekening listrik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 45-46 (Konsumsi Energi Listrik Rumah Tangga)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 58-59"
+        },
+        "authoring_statement": "Persoalan perhitungan rekening listrik rumah tangga disusun mandiri dengan model daya rata-rata autentik dan tarif simulasi eksplisit."
+      }
+    },
+    {
+      "question_id": "FIS12-C02-D-4803",
+      "phase3_id": "FIS12-C02-M08-Q03",
+      "primary_competency": "FIS12-C02-D",
+      "secondary_competencies": [],
+      "difficulty_label": "hard",
+      "cognitive_level": "analyze",
+      "question_role": "practice",
+      "question_type": "single_select",
+      "tka_alignment": {
+        "suitable": false,
+        "competency": "",
+        "stimulus_type": ""
+      },
+      "question": "Sebuah laboratorium fisika memasang instalasi listrik DC bertegangan 24 V yang diproteksi oleh sekering (fuse) berbasis efek peleburan kawat Joule heating (H = I²Rt). Jalur kelistrikan ini menyuplai tiga beban yang terhubung paralel: motor DC 48 W, rangkaian pemanas 72 W, dan panel instrumen digital 24 W. Tersedia pilihan sekering komersial dengan rating arus: 2 A, 4 A, 6 A, 8 A, dan 16 A. Untuk keperluan analisis pada soal ini, gunakan ketentuan skenario berikut: (1) terapkan margin desain sebesar 25% di atas arus beban normal sebagai asumsi batas minimum pemilihan rating sekering; (2) kabel instalasi memiliki Kapasitas Hantar Arus (KHA) sebesar 10 A sehingga rating sekering tidak boleh melebihi 10 A; dan (3) pilihlah rating sekering komersial terkecil yang memenuhi batas minimum perhitungan margin desain dan tidak melebihi KHA kabel. Berapakah kuat arus listrik total normal saat ketiga beban menyala bersamaan, dan rating sekering manakah yang paling tepat dipilih berdasarkan kriteria skenario tersebut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I_normal = 4,5 A, dan rating sekering yang tepat adalah 6 A"
+        },
+        {
+          "id": "B",
+          "text": "I_normal = 6,0 A, dan rating sekering yang tepat adalah 6 A"
+        },
+        {
+          "id": "C",
+          "text": "I_normal = 6,0 A, dan rating sekering yang tepat adalah 16 A"
+        },
+        {
+          "id": "D",
+          "text": "I_normal = 6,0 A, dan rating sekering yang tepat adalah 8 A"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Langkah 1: Menghitung daya total beban instalasi: P_total = 48 W + 72 W + 24 W = 144 W. Langkah 2: Menghitung arus beban total normal: I_normal = P_total / V = 144 W / 24 V = 6,0 A. Langkah 3: Menghitung batas minimum rating sekering berdasarkan asumsi margin desain skenario (25% di atas arus normal): I_minimum = 1,25 × I_normal = 1,25 × 6,0 A = 7,5 A. Langkah 4: Menerapkan batas Kapasitas Hantar Arus (KHA) kabel: Rating sekering yang dipilih tidak boleh melebihi KHA kabel (I_fuse ≤ 10 A) agar kabel terlindungi dari beban berlebih kontinu. Langkah 5: Evaluasi pilihan sekering yang tersedia (2 A, 4 A, 6 A, 8 A, 16 A): (a) Sekering 2 A dan 4 A berada di bawah arus beban normal 6,0 A; (b) Sekering 6 A tidak memenuhi batas minimum margin desain skenario (6,0 A < 7,5 A); (c) Sekering 8 A memenuhi batas minimum (8 A ≥ 7,5 A) dan tidak melebihi KHA kabel (8 A ≤ 10 A); (d) Sekering 16 A melebihi KHA kabel instalasi (16 A > 10 A). Langkah 6: Kesimpulan: Rating sekering komersial terkecil yang memenuhi kedua kriteria skenario adalah tepat 8 A, sehingga diperoleh I_normal = 6,0 A dan rating sekering 8 A (kunci D). Catatan pedagogis: Model margin 25% dan batas KHA pada soal ini merupakan penyederhanaan skenario untuk melatih penalaran analitis fisika terapan. Pada perancangan instalasi kelistrikan nyata, pemilihan perangkat proteksi memerlukan pertimbangan kurva karakteristik waktu-arus sekering, jenis beban, suhu lingkungan, serta standar teknis kelistrikan yang berlaku.",
+      "gameplay": {
+        "correct_damage": 150,
+        "base_xp": 20,
+        "wrong_penalty": 5,
+        "attack_type": "heavy"
+      },
+      "estimated_time_seconds": 120,
+      "source": {
+        "student_book": {
+          "pages": "46-48",
+          "section": "Bab 2, Subbab F: Pengaman Kelistrikan dan Sekering"
+        },
+        "teacher_guide": {
+          "pages": "59-60",
+          "section": "Panduan Pembelajaran Bab 2, Subbab F"
+        }
+      },
+      "provenance": "Skenario orisinal analisis proteksi sekering kawat lebur Joule heating pada instalasi beban listrik DC dirancang mandiri dengan kriteria margin desain dan batas KHA kabel eksplisit berdasarkan konsep pengaman Buku Siswa hlm. 43.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-D: Menganalisis arus kerja beban listrik dan menentukan rating proteksi sekering berbasis efek pemanasan Joule",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 43 (Pengayaan: Sistem Pengaman Sekring Mobil)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 53-54"
+        },
+        "authoring_statement": "Persoalan proteksi sekering kawat lebur dirumuskan mandiri secara murni pada domain DC dengan kriteria margin desain dan batas KHA eksplisit sebagai model latihan penalaran fisika terapan."
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%" style="background:#090d16; border-radius:12px; font-family:system-ui, -apple-system, sans-serif;">
+  <defs>
+    <!-- Pelat Positif Gradient -->
+    <linearGradient id="plate-pos" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f87171" stop-opacity="0.9"/>
+    </linearGradient>
+    <!-- Pelat Negatif Gradient -->
+    <linearGradient id="plate-neg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.9"/>
+    </linearGradient>
+    <!-- Arrow Marker Medan Listrik -->
+    <marker id="arrow-field" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#38bdf8"/>
+    </marker>
+    <!-- Arrow Marker Kecepatan -->
+    <marker id="arrow-vel" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#fbbf24"/>
+    </marker>
+  </defs>
+
+  <!-- Title / Label -->
+  <text x="300" y="28" fill="#f8fafc" font-size="15" font-weight="bold" text-anchor="middle">PEMBELOKAN ELEKTRON PADA MEDAN LISTRIK HOMOGEN</text>
+
+  <!-- Pelat Atas (Positif) -->
+  <rect x="140" y="55" width="320" height="14" rx="4" fill="url(#plate-pos)"/>
+  <text x="300" y="67" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">+  +  +  +  +  +  +  +  +  +  Pelat Positif (+V)  +  +  +  +  +  +  +  +  +  +</text>
+
+  <!-- Pelat Bawah (Negatif) -->
+  <rect x="140" y="235" width="320" height="14" rx="4" fill="url(#plate-neg)"/>
+  <text x="300" y="247" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">-  -  -  -  -  -  -  -  -  -  Pelat Negatif (0 V)  -  -  -  -  -  -  -  -  -  -</text>
+
+  <!-- Garis-garis Medan Listrik (Seragam ke Bawah) -->
+  <g stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.75">
+    <line x1="180" y1="75" x2="180" y2="225" marker-end="url(#arrow-field)"/>
+    <line x1="230" y1="75" x2="230" y2="225" marker-end="url(#arrow-field)"/>
+    <line x1="280" y1="75" x2="280" y2="225" marker-end="url(#arrow-field)"/>
+    <line x1="330" y1="75" x2="330" y2="225" marker-end="url(#arrow-field)"/>
+    <line x1="380" y1="75" x2="380" y2="225" marker-end="url(#arrow-field)"/>
+    <line x1="430" y1="75" x2="430" y2="225" marker-end="url(#arrow-field)"/>
+  </g>
+  <text x="445" y="155" fill="#38bdf8" font-size="13" font-weight="bold">Medan E</text>
+
+  <!-- Jarak Antar Pelat (d) -->
+  <line x1="120" y1="62" x2="120" y2="242" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="115" y1="62" x2="125" y2="62" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="115" y1="242" x2="125" y2="242" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="110" y="155" fill="#94a3b8" font-size="12" text-anchor="end">d = 1 cm</text>
+
+  <!-- Panjang Pelat (L) -->
+  <line x1="140" y1="265" x2="460" y2="265" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="140" y1="260" x2="140" y2="270" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="460" y1="260" x2="460" y2="270" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="300" y="282" fill="#94a3b8" font-size="12" text-anchor="middle">Panjang pelat L = 10 cm</text>
+
+  <!-- Lintasan Elektron Parabola (Kecepatan Awal Horizontal di Sumbu Tengah y=152) -->
+  <!-- Elektron masuk di x=60, meluncur lurus ke x=140, lalu melengkung ke atas dari x=140 ke x=460 -->
+  <line x1="60" y1="152" x2="140" y2="152" stroke="#fbbf24" stroke-width="2" stroke-dasharray="3 3"/>
+  <path d="M 140 152 Q 300 152 460 92" fill="none" stroke="#34d399" stroke-width="2.5"/>
+
+  <!-- Vektor Kecepatan Awal v0 -->
+  <line x1="60" y1="152" x2="120" y2="152" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrow-vel)"/>
+  <circle cx="60" cy="152" r="5" fill="#fbbf24"/>
+  <text x="60" y="142" fill="#fbbf24" font-size="11" font-weight="bold">elektron (e⁻)</text>
+  <text x="90" y="172" fill="#fbbf24" font-size="12">v₀</text>
+
+  <!-- Garis Simpangan Vertikal (y) saat Keluar Pelat -->
+  <line x1="460" y1="152" x2="520" y2="152" stroke="#64748b" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="480" y1="92" x2="480" y2="152" stroke="#34d399" stroke-width="1.5"/>
+  <line x1="475" y1="92" x2="485" y2="92" stroke="#34d399" stroke-width="1.5"/>
+  <line x1="475" y1="152" x2="485" y2="152" stroke="#34d399" stroke-width="1.5"/>
+  <text x="490" y="126" fill="#34d399" font-size="13" font-weight="bold">y = ?</text>
+
+  <!-- Partikel Elektron di Ujung Lintasan -->
+  <circle cx="460" cy="92" r="5" fill="#34d399"/>
+</svg>
+

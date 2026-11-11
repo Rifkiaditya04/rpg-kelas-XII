@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_V1.1",
+  "dataset": "world-5-fisika-chapter-2-misi-7",
+  "purpose": "Bank Soal Fisika Kelas XII Bab 2 Misi 7 - Canonical v1.1",
+  "chapter_id": "FIS12-C02",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C02-M07-Q01",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "question": "Pada suatu titik simpul percabangan rangkaian listrik terdapat lima kawat penghantar. Tiga kawat mengalirkan arus listrik menuju titik simpul masing-masing sebesar I₁ = 4,0 A, I₂ = 2,5 A, dan I₃ = 1,5 A. Kawat keempat mengalirkan arus listrik keluar dari titik simpul sebesar I₄ = 5,0 A, sedangkan kawat kelima dialiri arus I₅. Berdasarkan Hukum I Kirchhoff, berapakah besar dan bagaimanakah arah aliran arus listrik pada kawat kelima (I₅)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1,5 A keluar dari titik simpul"
+        },
+        {
+          "id": "B",
+          "text": "3,0 A keluar dari titik simpul"
+        },
+        {
+          "id": "C",
+          "text": "3,0 A menuju titik simpul"
+        },
+        {
+          "id": "D",
+          "text": "5,0 A keluar dari titik simpul"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Berdasarkan Hukum I Kirchhoff, jumlah kuat arus yang masuk ke suatu titik simpul percabangan sama dengan jumlah kuat arus yang keluar dari titik simpul tersebut: Σ I_masuk = Σ I_keluar. Arus total yang masuk ke titik simpul: Σ I_masuk = I₁ + I₂ + I₃ = 4,0 A + 2,5 A + 1,5 A = 8,0 A. Arus keluar yang diketahui: I₄ = 5,0 A. Karena Σ I_masuk (8,0 A) > I₄ (5,0 A), maka kawat kelima harus mengalirkan arus keluar dari simpul: Σ I_masuk = I₄ + I₅ ⇒ 8,0 A = 5,0 A + I₅ ⇒ I₅ = 3,0 A mengalir keluar dari titik simpul (Buku Siswa hlm. 37–38).",
+      "source": {
+        "student_book": {
+          "pages": "37-38",
+          "section": "Bab 2, Subbab D: Hukum I Kirchhoff"
+        },
+        "teacher_guide": {
+          "pages": "54-55",
+          "section": "Panduan Pembelajaran Bab 2, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis titik percabangan arus multi-kawat dirancang mandiri berdasarkan Hukum I Kirchhoff Buku Siswa hlm. 37–38.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-C: Menerapkan Hukum I Kirchhoff untuk menentukan besar dan arah arus pada simpul percabangan",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 37-38 (Hukum I Kirchhoff)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 54-55"
+        },
+        "authoring_statement": "Persoalan titik percabangan kawat dirumuskan mandiri secara analitis tanpa menyalin soal latihan buku."
+      }
+    },
+    {
+      "id": "FIS12-C02-M07-Q02",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-C",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Suatu rangkaian listrik tertutup satu loop terdiri dari dua sumber tegangan baterai dan dua resistor eksternal. Baterai pertama memiliki ggl ε₁ = 18 V dan hambatan dalam r₁ = 1 Ω. Baterai kedua memiliki ggl ε₂ = 6 V dan hambatan dalam r₂ = 1 Ω, dipasang berlawanan arah dengan baterai pertama (kutub positif baterai 1 menghadap kutub positif baterai 2 sehingga kedua ggl saling melemahkan). Resistor eksternal bernilai R₁ = 4 Ω dan R₂ = 6 Ω. Tentukan besar kuat arus listrik yang mengalir dalam loop dan besar tegangan jepit (V₁) pada terminal baterai pertama!",
+      "options": [
+        {
+          "id": "A",
+          "text": "I = 1,0 A dan V₁ = 17 V"
+        },
+        {
+          "id": "B",
+          "text": "I = 1,0 A dan V₁ = 19 V"
+        },
+        {
+          "id": "C",
+          "text": "I = 2,0 A dan V₁ = 16 V"
+        },
+        {
+          "id": "D",
+          "text": "I = 0,5 A dan V₁ = 17,5 V"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Menghitung ggl total loop: Karena polaritas baterai saling berlawanan arah, ggl total adalah Σ ε = ε₁ - ε₂ = 18 V - 6 V = 12 V. Langkah 2: Menghitung hambatan total loop (termasuk hambatan dalam): R_total = R₁ + R₂ + r₁ + r₂ = 4 + 6 + 1 + 1 = 12 Ω. Langkah 3: Menghitung kuat arus loop: I = Σ ε / R_total = 12 V / 12 Ω = 1,0 A. Langkah 4: Menghitung tegangan jepit baterai 1 (baterai yang menyalurkan arus / discharging): V₁ = ε₁ - I · r₁ = 18 V - (1,0 A × 1 Ω) = 17 V (Buku Siswa hlm. 38–40).",
+      "source": {
+        "student_book": {
+          "pages": "38-40",
+          "section": "Bab 2, Subbab D: Hukum II Kirchhoff Rangkaian 1 Loop"
+        },
+        "teacher_guide": {
+          "pages": "55-56",
+          "section": "Panduan Pembelajaran Bab 2, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis rangkaian tertutup 1 loop dengan baterai ggl berlawanan dan tegangan jepit disusun mandiri berdasarkan Hukum II Kirchhoff Buku Siswa hlm. 38–40.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-C: Menghitung kuat arus dan tegangan jepit sumber ggl pada rangkaian tertutup satu loop",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 38-40 (Hukum II Kirchhoff Rangkaian Sederhana)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 55-56"
+        },
+        "authoring_statement": "Persoalan satu loop dirumuskan mandiri dengan distingsi tegangan ggl vs tegangan jepit."
+      }
+    },
+    {
+      "id": "FIS12-C02-M07-Q03",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-C",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "media": {
+        "type": "image",
+        "src": "fisika/ch2/rangkaian-majemuk-dua-loop.svg",
+        "alt": "Diagram rangkaian 2 loop dengan simpul atas A dan simpul bawah B. Cabang kiri memiliki baterai 12 V dan resistor 4 Ohm dengan arus I1 mengalir ke atas menuju A. Cabang tengah memiliki resistor 2 Ohm dengan arus I3 mengalir ke bawah dari A ke B. Cabang kanan memiliki baterai 6 V dan resistor 4 Ohm dengan arus I2 mengalir ke atas menuju A.",
+        "caption": "Diagram rangkaian listrik majemuk 2 loop dengan simpul A dan B."
+      },
+      "question": "Perhatikan diagram rangkaian listrik majemuk dua loop. Cabang kiri memuat sumber ggl ε₁ = 12 V dan resistor R₁ = 4 Ω dengan arus I₁ mengalir ke atas menuju simpul A. Cabang tengah memuat resistor R₂ = 2 Ω dengan arus I₃ mengalir ke bawah dari A ke B. Cabang kanan memuat sumber ggl ε₂ = 6 V dan resistor R₃ = 4 Ω dengan arus I₂ mengalir ke atas menuju simpul A. Abaikan hambatan dalam kedua baterai. Menggunakan Hukum II Kirchhoff, berapakah besar kuat arus yang mengalir melalui resistor cabang tengah R₂ (I₃) dan berapakah beda potensial antara simpul A dan B (V_AB)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I₃ = 1,50 A dan V_AB = 3,0 V"
+        },
+        {
+          "id": "B",
+          "text": "I₃ = 3,00 A dan V_AB = 6,0 V"
+        },
+        {
+          "id": "C",
+          "text": "I₃ = 1,75 A dan V_AB = 3,5 V"
+        },
+        {
+          "id": "D",
+          "text": "I₃ = 2,25 A dan V_AB = 4,5 V"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Langkah 1: Hukum I Kirchhoff pada simpul A: I₁ + I₂ = I₃. Langkah 2: Hukum II Kirchhoff pada Loop 1 (searah jarum jam): -ε₁ + I₁·R₁ + I₃·R₂ = 0 ⇒ -12 + 4 I₁ + 2 I₃ = 0 ⇒ 4 I₁ + 2 I₃ = 12 ⇒ 2 I₁ + I₃ = 6 ⇒ I₁ = 3 - 0,5 I₃. Langkah 3: Hukum II Kirchhoff pada Loop 2 (berlawanan arah jarum jam): -ε₂ + I₂·R₃ + I₃·R₂ = 0 ⇒ -6 + 4 I₂ + 2 I₃ = 6 ⇒ 2 I₂ + I₃ = 3 ⇒ I₂ = 1,5 - 0,5 I₃. Langkah 4: Substitusi I₁ dan I₂ ke persamaan simpul A: I₃ = (3 - 0,5 I₃) + (1,5 - 0,5 I₃) = 4,5 - I₃ ⇒ 2 I₃ = 4,5 ⇒ I₃ = 2,25 A. Langkah 5: Beda potensial simpul A dan B (V_AB = V_A - V_B): Melalui cabang tengah yang hanya memuat resistor R₂: V_AB = I₃ · R₂ = 2,25 A × 2 Ω = 4,5 V. Hasil ini konsisten jika diuji melalui cabang kiri (12 - 1,875×4 = 4,5 V) maupun cabang kanan (6 - 0,375×4 = 4,5 V) (Buku Siswa hlm. 40–42).",
+      "source": {
+        "student_book": {
+          "pages": "40-42",
+          "section": "Bab 2, Subbab D: Hukum II Kirchhoff Rangkaian Majemuk"
+        },
+        "teacher_guide": {
+          "pages": "56-57",
+          "section": "Panduan Pembelajaran Bab 2, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis sirkuit majemuk dua loop dengan konvensi tanda loop terstandarisasi dirancang mandiri dengan aset visual SVG sesuai konsep Buku Siswa hlm. 40–42.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-C: Menganalisis sistem persamaan rangkaian majemuk dua loop dan menghitung beda potensial antarsimpul",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 40-42 (Hukum II Kirchhoff Rangkaian Majemuk)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 56-57"
+        },
+        "authoring_statement": "Persoalan sirkuit dua loop disusun mandiri dengan konvensi loop konsisten dan nilai numerik bulat/desimal bersih."
+      }
+    }
+  ]
+}

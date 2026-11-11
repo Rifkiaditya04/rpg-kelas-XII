@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_BASELINE",
+  "dataset": "world-5-fisika-chapter-2-misi-5",
+  "purpose": "Bank Soal Fisika Kelas XII Bab 2 Misi 5 - Canonical Baseline v1.0",
+  "chapter_id": "FIS12-C02",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C02-M05-Q01",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "question": "Suatu kawat penghantar tembaga dialiri arus listrik konstan sebesar I = 3,2 A selama durasi waktu t = 2 menit. Jika besar muatan dasar sebuah elektron adalah e = 1,6 × 10⁻¹⁹ C, berapakah besar muatan listrik total yang melintasi penampang kawat tersebut dan berapakah jumlah elektron yang mengalir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Q = 192 C dan n = 1,2 × 10²¹ elektron"
+        },
+        {
+          "id": "B",
+          "text": "Q = 384 C dan n = 2,4 × 10²¹ elektron"
+        },
+        {
+          "id": "C",
+          "text": "Q = 384 C dan n = 1,2 × 10²¹ elektron"
+        },
+        {
+          "id": "D",
+          "text": "Q = 6,4 C dan n = 4,0 × 10¹⁹ elektron"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Langkah 1: Konversi waktu ke satuan SI: t = 2 menit = 2 × 60 s = 120 s. Langkah 2: Menghitung muatan total berdasarkan definisi arus listrik: Q = I · t = 3,2 A × 120 s = 384 C. Langkah 3: Menghitung jumlah elektron yang mengalir: n = Q / e = 384 C / (1,6 × 10⁻¹⁹ C/elektron) = 240 × 10¹⁹ = 2,4 × 10²¹ elektron (Buku Siswa hlm. 28–29).",
+      "source": {
+        "student_book": {
+          "pages": "28-29",
+          "section": "Bab 2, Subbab A: Kuat Arus Listrik"
+        },
+        "teacher_guide": {
+          "pages": "48-49",
+          "section": "Panduan Pembelajaran Bab 2, Subbab A"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan laju aliran muatan listrik dan cacah elektron bebas disusun mandiri berdasarkan konsep arus listrik Buku Siswa hlm. 28–29.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-A: Menghitung muatan total dan jumlah elektron yang melintasi penampang konduktor",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 28-29 (Arus Listrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 48-49"
+        },
+        "authoring_statement": "Skenario aliran muatan kawat tembaga dirumuskan mandiri secara bersih tanpa menyalin kalimat buku teks."
+      }
+    },
+    {
+      "id": "FIS12-C02-M05-Q02",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-A",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "question": "Sebuah resistor ohmik dihubungkan ke sumber tegangan searah variabel. Ketika tegangan diatur pada V₁ = 6 V, kuat arus yang terukur pada amperemeter adalah I₁ = 150 mA. Jika tegangan listrik dinaikkan menjadi V₂ = 15 V pada suhu konstan, berapakah nilai hambatan resistor tersebut dan berapakah kuat arus listrik baru (I₂) yang mengalir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "R = 25 Ω dan I₂ = 600 mA"
+        },
+        {
+          "id": "B",
+          "text": "R = 40 Ω dan I₂ = 250 mA"
+        },
+        {
+          "id": "C",
+          "text": "R = 40 Ω dan I₂ = 375 mA"
+        },
+        {
+          "id": "D",
+          "text": "R = 90 Ω dan I₂ = 167 mA"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Berdasarkan Hukum Ohm, untuk konduktor ohmik pada suhu konstan nilai hambatan bersifat tetap: R = V₁ / I₁ = 6 V / (150 × 10⁻³ A) = 6 / 0,15 = 40 Ω. Ketika tegangan dinaikkan menjadi V₂ = 15 V, kuat arus baru adalah: I₂ = V₂ / R = 15 V / 40 Ω = 0,375 A = 375 mA (Buku Siswa hlm. 29–31).",
+      "source": {
+        "student_book": {
+          "pages": "29-31",
+          "section": "Bab 2, Subbab B: Hukum Ohm"
+        },
+        "teacher_guide": {
+          "pages": "49-50",
+          "section": "Panduan Pembelajaran Bab 2, Subbab B"
+        }
+      },
+      "provenance": "Skenario orisinal penentuan resistansi ohmik dan arus baru pada tegangan berubah dirancang mandiri berdasarkan Hukum Ohm Buku Siswa hlm. 29–31.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-A: Menerapkan Hukum Ohm untuk menghitung resistansi konstan dan kuat arus pada konduktor ohmik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 29-31 (Hukum Ohm)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 49-50"
+        },
+        "authoring_statement": "Persoalan karakteristik linier resistor ohmik disusun mandiri dengan angka bulat bersih tanpa plagiasi."
+      }
+    },
+    {
+      "id": "FIS12-C02-M05-Q03",
+      "chapter_id": "FIS12-C02",
+      "topic_id": "FIS12-C02-A",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "media": {
+        "type": "image",
+        "src": "fisika/ch2/grafik-ohmik-non-ohmik.svg",
+        "alt": "Grafik hubungan arus I pada sumbu vertikal terhadap tegangan V pada sumbu horizontal untuk Komponen A berbentuk garis lurus linier melalui origin dan Komponen B berbentuk kurva melengkung lampu filamen wolfram yang kemiringannya semakin landai pada tegangan tinggi.",
+        "caption": "Grafik karakteristik I-V komponen ohmik (A) dan non-ohmik lampu filamen (B)."
+      },
+      "question": "Perhatikan grafik karakteristik arus terhadap tegangan (I - V) untuk Komponen A dan Komponen B. Berdasarkan karakteristik kelengkungan grafik tersebut, manakah pernyataan dan kesimpulan fisis yang paling tepat mengenai sifat resistansi dari kedua komponen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Komponen A bersifat ohmik dengan nilai hambatan konstan, sedangkan Komponen B bersifat non-ohmik dengan nilai hambatan yang semakin membesar seiring naiknya tegangan akibat pemanasan filamen."
+        },
+        {
+          "id": "B",
+          "text": "Komponen A bersifat non-ohmik karena hambatannya berubah secara linier, sedangkan Komponen B bersifat ohmik dengan nilai hambatan konstan."
+        },
+        {
+          "id": "C",
+          "text": "Komponen A dan Komponen B keduanya bersifat ohmik karena grafik keduanya melalui titik koordinat origin (0, 0)."
+        },
+        {
+          "id": "D",
+          "text": "Komponen B bersifat non-ohmik dengan nilai hambatan yang semakin mengecil seiring naiknya tegangan karena konduktivitas logam meningkat saat panas."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pada grafik I-V (arus pada sumbu tegak dan tegangan pada sumbu mendatar), kemiringan kurva menyatakan konduktansi (ΔI/ΔV = 1/R). Komponen A membentuk garis lurus linier dengan kemiringan konstan, menunjukkan nilai resistansi R konstan (memenuhi Hukum Ohm, komponen ohmik). Komponen B membentuk kurva melengkung di mana kemiringan ΔI/ΔV semakin mengecil pada tegangan tinggi, yang berarti nilai hambatannya R semakin membesar. Fenomena ini khas pada lampu filamen pijar non-ohmik, di mana arus listrik yang meningkat menaikkan suhu kawat filamen wolfram sehingga getaran termal kisi ion meningkat dan menghambat laju elektron bebas (Buku Siswa hlm. 30–31).",
+      "source": {
+        "student_book": {
+          "pages": "30-31",
+          "section": "Bab 2, Subbab B: Hambatan Ohmik dan Non-Ohmik"
+        },
+        "teacher_guide": {
+          "pages": "49-50",
+          "section": "Panduan Pembelajaran Bab 2, Subbab B"
+        }
+      },
+      "provenance": "Skenario orisinal analisis komparatif grafik I-V konduktor linier vs filamen wolfram non-ohmik disusun mandiri dengan aset visual SVG sesuai konsep Buku Siswa hlm. 30–31.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C02-A: Menganalisis kurva karakteristik I-V serta membedakan perilaku konduktor ohmik dan non-ohmik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 30-31 (Karakteristik Ohmik vs Non-Ohmik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 49-50"
+        },
+        "authoring_statement": "Persoalan perbandingan grafik I-V dirancang mandiri memadukan konsep konduktivitas dan efek termal filamen tanpa menyalin teks buku."
+      }
+    }
+  ]
+}

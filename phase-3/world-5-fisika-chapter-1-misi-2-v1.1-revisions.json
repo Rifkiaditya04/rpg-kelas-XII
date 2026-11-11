@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "revision_batch_id": "world-5-fisika-chapter-1-misi-2-v1.1",
+  "base_batch": "world-5-fisika-chapter-1-misi-2-canonical-v1.0.json",
+  "status": "APPROVED",
+  "purpose": "Revision overlay v1.1 for Fisika Bab 1 Misi 2 - Verifikasi Akademis & Penyelarasan Standar Lintas Mapel",
+  "revisions": [
+    {
+      "question_id": "FIS12-C01-M02-Q01",
+      "before_question": "Dua muatan titik tak sejenis q₁ = +9 μC dan q₂ = -4 μC terpisah sejauh 10 cm pada sumbu-x di udara, dengan q₁ berada di posisi x = 0 cm dan q₂ berada di posisi x = 10 cm. Di manakah posisi titik pada garis hubung kedua muatan tersebut yang memiliki kuat medan listrik total sama dengan nol?",
+      "after_question": "Dua muatan titik tak sejenis q₁ = +9 μC dan q₂ = -4 μC terpisah sejauh 10 cm pada sumbu-x di udara, dengan q₁ berada di posisi x = 0 cm dan q₂ berada di posisi x = 10 cm. Di manakah posisi titik pada garis hubung kedua muatan tersebut yang memiliki kuat medan listrik total sama dengan nol?",
+      "answer": "C",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "6 cm di antara q₁ dan q₂"
+        },
+        {
+          "id": "B",
+          "text": "15 cm di sebelah kiri q₁"
+        },
+        {
+          "id": "C",
+          "text": "20 cm di sebelah kanan q₂"
+        },
+        {
+          "id": "D",
+          "text": "25 cm di sebelah kanan q₂"
+        }
+      ],
+      "explanation": "Karena kedua muatan berlawanan jenis, kuat medan listrik di antara kedua muatan selalu searah (menjauhi q₁ positif ke arah kanan dan mendekati q₂ negatif juga ke arah kanan), sehingga tidak mungkin bernilai nol di antara keduanya. Titik medan nol harus berada di luar kedua muatan pada sisi muatan yang nilai mutlaknya lebih kecil, yaitu di sebelah kanan q₂. Misalkan jarak titik tersebut adalah d cm dari q₂, maka jaraknya dari q₁ adalah (10 + d) cm. Syarat E_total = 0 adalah E₁ = E₂ ⇒ k·|q₁|/(10 + d)² = k·|q₂|/d² ⇒ 9/(10 + d)² = 4/d². Menarik akar kedua ruas: 3/(10 + d) = 2/d ⇒ 3d = 20 + 2d ⇒ d = 20 cm di sebelah kanan q₂ (koordinat x = 30 cm) (Buku Siswa hlm. 8–10).",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "source": {
+        "student_book": {
+          "pages": "8-10",
+          "section": "Bab 1, Subbab B.1: Medan Listrik Muatan Titik"
+        },
+        "teacher_guide": {
+          "pages": "21-22",
+          "section": "Panduan Pembelajaran Bab 1, Subbab B"
+        }
+      },
+      "provenance": "Skenario orisinal penentuan titik kuat medan listrik nol dirancang mandiri berdasarkan prinsip superposisi medan elektrostatik Buku Siswa hlm. 8–10.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-B: Menganalisis distribusi garis medan listrik dan menentukan posisi titik medan elektrostatik nol",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 8-10 (Medan Listrik Muatan Titik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 21-22"
+        },
+        "authoring_statement": "Persoalan titik medan listrik nol dirumuskan mandiri secara analitis dengan angka bulat dan rasional matematis yang kuat."
+      },
+      "bloom_verification": {
+        "prior_level": "C2",
+        "verified_level": "C3",
+        "justification": "Penyesuaian Bloom dari C2 ke C3 berdasarkan evaluasi tugas kognitif aktual: penentuan letak titik kuat medan nol di luar dua muatan tak sejenis menuntut penalaran arah vektor medan dan eksekusi penyelesaian persamaan aljabar matematis E1 = E2."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-M02-Q02",
+      "before_question": "Dua pelat logam konduktor sejajar berjarak d = 2 cm dihubungkan dengan sumber tegangan listrik searah 100 V sehingga terbentuk medan listrik homogen di antara kedua pelat. Sebuah partikel uji bermuatan listrik q = +5 × 10⁻⁸ C ditempatkan di ruang antara kedua pelat tersebut. Berapakah besar kuat medan listrik di antara kedua pelat dan besar gaya elektrostatik yang dialami partikel uji tersebut?",
+      "after_question": "Dua pelat logam konduktor sejajar berjarak d = 2 cm dihubungkan dengan sumber tegangan listrik searah 100 V sehingga terbentuk medan listrik homogen di antara kedua pelat. Sebuah partikel uji bermuatan listrik q = +5 × 10⁻⁸ C ditempatkan di ruang antara kedua pelat tersebut. Berapakah besar kuat medan listrik di antara kedua pelat dan besar gaya elektrostatik yang dialami partikel uji tersebut?",
+      "answer": "A",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "E = 5000 V/m dan F = 2,5 × 10⁻⁴ N"
+        },
+        {
+          "id": "B",
+          "text": "E = 2500 V/m dan F = 1,25 × 10⁻⁴ N"
+        },
+        {
+          "id": "C",
+          "text": "E = 5000 V/m dan F = 5,0 × 10⁻⁴ N"
+        },
+        {
+          "id": "D",
+          "text": "E = 10000 V/m dan F = 2,5 × 10⁻⁴ N"
+        }
+      ],
+      "explanation": "Pada pelat konduktor sejajar, medan listrik di antara pelat bersifat homogen dan memenuhi hubungan E = V/d, dengan V = 100 V dan d = 2 cm = 0,02 m. Maka kuat medan listrik adalah E = 100 V / 0,02 m = 5000 V/m (atau 5000 N/C). Besar gaya elektrostatik yang bekerja pada muatan uji q adalah F = q·E = (5 × 10⁻⁸ C) × (5000 N/C) = 2,5 × 10⁻⁴ N (Buku Siswa hlm. 10–11).",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "source": {
+        "student_book": {
+          "pages": "10-11",
+          "section": "Bab 1, Subbab B.2: Medan Listrik pada Pelat Paralel"
+        },
+        "teacher_guide": {
+          "pages": "22-23",
+          "section": "Panduan Pembelajaran Bab 1, Subbab B"
+        }
+      },
+      "provenance": "Skenario orisinal perhitungan medan listrik homogen pelat sejajar dan gaya muatan uji dirancang mandiri berdasarkan konsep medan pelat konduktor Buku Siswa hlm. 10–11.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-B: Menghitung kuat medan listrik homogen antara pelat konduktor sejajar dan gaya pada muatan uji",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 10-11 (Medan Listrik Pelat Paralel)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 22-23"
+        },
+        "authoring_statement": "Skenario relasi medan listrik dan beda potensial pelat sejajar disusun secara orisinal dengan nilai besaran standar SI."
+      },
+      "bloom_verification": {
+        "prior_level": "C3",
+        "verified_level": "C3",
+        "justification": "Dipertahankan pada C3: penerapan formula medan homogen E=V/d dan gaya Lorentz elektrostatik F=qE."
+      }
+    },
+    {
+      "question_id": "FIS12-C01-M02-Q03",
+      "before_question": "Sebuah elektron bermassa m = 9 × 10⁻³¹ kg dan bermuatan q = -1,6 × 10⁻¹⁹ C ditembakkan horizontal dengan kecepatan awal v₀ = 2 × 10⁷ m/s memasuki medan listrik homogen di antara dua pelat sejajar. Panjang pelat adalah L = 10 cm dan jarak antar-pelat adalah d = 1 cm. Di antara kedua pelat terdapat medan listrik homogen seragam berarah vertikal ke bawah dengan kuat medan E = 1800 N/C. Mengabaikan pengaruh gravitasi, ke arah manakah elektron berbelok dan berapakah simpangan vertikal (y) elektron saat tepat meninggalkan ujung pelat?",
+      "after_question": "Sebuah elektron bermassa m = 9 × 10⁻³¹ kg dan bermuatan q = -1,6 × 10⁻¹⁹ C ditembakkan horizontal dengan kecepatan awal v₀ = 2 × 10⁷ m/s memasuki medan listrik homogen di antara dua pelat sejajar. Panjang pelat adalah L = 10 cm dan jarak antar-pelat adalah d = 1 cm. Di antara kedua pelat terdapat medan listrik homogen seragam berarah vertikal ke bawah dengan kuat medan E = 1800 N/C. Mengabaikan pengaruh gravitasi, ke arah manakah elektron berbelok dan berapakah simpangan vertikal (y) elektron saat tepat meninggalkan ujung pelat?",
+      "media": {
+        "type": "image",
+        "src": "fisika/ch1/defleksi-partikel-pelat.svg",
+        "alt": "Diagram skematik pembelokan berkas elektron yang ditembakkan secara horizontal dengan kecepatan v0 memasuki ruang antara dua pelat sejajar berjarak d dengan panjang L. Medan listrik seragam E mengarah ke bawah, menyebabkan elektron membelok ke atas mendekati pelat positif hingga keluar dari ujung pelat dengan simpangan vertikal y.",
+        "caption": "Lintasan pembelokan elektron dalam medan listrik homogen antar-pelat sejajar."
+      },
+      "answer": "B",
+      "replacement_options": [
+        {
+          "id": "A",
+          "text": "Membelok ke bawah dengan simpangan vertikal 0,2 cm"
+        },
+        {
+          "id": "B",
+          "text": "Membelok ke atas dengan simpangan vertikal 0,4 cm"
+        },
+        {
+          "id": "C",
+          "text": "Membelok ke atas dengan simpangan vertikal 0,8 cm"
+        },
+        {
+          "id": "D",
+          "text": "Membelok ke bawah dengan simpangan vertikal 0,4 cm"
+        }
+      ],
+      "explanation": "Arah pembelokan: Karena muatan elektron negatif (q = -e), gaya elektrostatik F_e = q·E berlawanan arah dengan medan listrik. Medan listrik mengarah ke bawah, sehingga gaya elektrostatik bekerja ke arah atas (menuju pelat positif). Waktu elektron melintasi pelat sepanjang L = 10 cm = 0,1 m dengan kecepatan horizontal tetap v₀ = 2 × 10⁷ m/s adalah t = L/v₀ = 0,1 / (2 × 10⁷) = 5 × 10⁻⁹ s. Percepatan vertikal ke atas: a_y = |q|·E / m = (1,6 × 10⁻¹⁹ · 1800) / (9 × 10⁻³¹) = 2880 × 10⁻¹⁹ / (9 × 10⁻³¹) = 3,2 × 10¹⁴ m/s². Simpangan vertikal: y = 1/2 · a_y · t² = 1/2 · (3,2 × 10¹⁴) · (5 × 10⁻⁹)² = 1,6 × 10¹⁴ · 25 × 10⁻¹⁸ = 40 × 10⁻⁴ m = 4 × 10⁻³ m = 0,4 cm ke arah atas (Buku Siswa hlm. 10).",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "source": {
+        "student_book": {
+          "pages": "10",
+          "section": "Bab 1, Subbab B.2: Gerak Partikel Bermuatan dalam Medan Listrik Homogen"
+        },
+        "teacher_guide": {
+          "pages": "22",
+          "section": "Panduan Pembelajaran Bab 1, Subbab B"
+        }
+      },
+      "provenance": "Skenario orisinal defleksi partikel bermuatan dalam medan homogen disusun mandiri dengan dukungan aset visual SVG sesuai konsep Buku Siswa hlm. 10.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-B: Menganalisis kinematika gerak pembelokan partikel bermuatan di dalam medan listrik homogen",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 10 (Aplikasi Gerak Partikel)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 22"
+        },
+        "authoring_statement": "Skenario defleksi elektron dirancang orisinal memadukan hukum elektrostatik dan kinematika 2D tanpa menyalin soal buku teks."
+      },
+      "bloom_verification": {
+        "prior_level": "C4",
+        "verified_level": "C4",
+        "justification": "Dipertahankan pada C4: dekomposisi analitis gerak 2D partikel bermuatan dan integrasi diagram visual SVG."
+      }
+    }
+  ]
+}

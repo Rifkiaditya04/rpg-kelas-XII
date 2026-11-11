@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "batch_status": "CANONICAL_V1.1",
+  "dataset": "world-5-fisika-chapter-1-misi-4",
+  "purpose": "Bank Soal Fisika Kelas XII Bab 1 Misi 4 - Canonical v1.1",
+  "chapter_id": "FIS12-C01",
+  "rewards": {
+    "exp": 100,
+    "coins": 50
+  },
+  "questions": [
+    {
+      "id": "FIS12-C01-M04-Q01",
+      "chapter_id": "FIS12-C01",
+      "topic_id": "FIS12-C01-D",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "easy",
+      "question": "Sebuah kapasitor keping sejajar dengan dielektrik udara mula-mula memiliki luas penampang keping A dan jarak pisah antar-keping d, dengan nilai kapasitansi sebesar C₀. Jika luas keping diperbesar menjadi 2A, jarak pisah antar-keping diperkecil menjadi 1/2 d, dan seluruh ruang di antara kedua keping disisipi bahan dielektrik mika dengan konstanta dielektrik K = 6, berapakah nilai kapasitansi kapasitor tersebut sekarang?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6 C₀"
+        },
+        {
+          "id": "B",
+          "text": "12 C₀"
+        },
+        {
+          "id": "C",
+          "text": "48 C₀"
+        },
+        {
+          "id": "D",
+          "text": "24 C₀"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Kapasitansi kapasitor keping sejajar dirumuskan sebagai C = K·ε₀·A/d. Pada keadaan awal di udara (K = 1), kapasitasnya adalah C₀ = ε₀·A/d. Pada keadaan baru dengan A' = 2A, d' = 1/2 d, dan K' = 6: C' = K'·ε₀·A'/d' = 6·ε₀·(2A)/(1/2 d) = 6 · 4 · (ε₀·A/d) = 24 C₀. Dengan demikian, kapasitansinya meningkat menjadi 24 kali semula (Buku Siswa hlm. 17–20).",
+      "source": {
+        "student_book": {
+          "pages": "17-20",
+          "section": "Bab 1, Subbab C: Kapasitor Keping Sejajar dan Bahan Dielektrik"
+        },
+        "teacher_guide": {
+          "pages": "26-27",
+          "section": "Panduan Pembelajaran Bab 1, Subbab C"
+        }
+      },
+      "provenance": "Skenario orisinal analisis proporsionalitas geometri dan dielektrik kapasitor keping sejajar dirancang mandiri berdasarkan konsep kapasitansi Buku Siswa hlm. 17–20.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-D: Menganalisis faktor fisis geometri keping dan konstanta dielektrik terhadap nilai kapasitansi kapasitor",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 17-20 (Kapasitor Keping Sejajar)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 26-27"
+        },
+        "authoring_statement": "Persoalan faktor penentu kapasitas keping sejajar dirumuskan mandiri secara proporsional aljabar tanpa menyalin latihan buku teks."
+      }
+    },
+    {
+      "id": "FIS12-C01-M04-Q02",
+      "chapter_id": "FIS12-C01",
+      "topic_id": "FIS12-C01-D",
+      "skill": "apply",
+      "cognitive_level": "apply",
+      "difficulty": "medium",
+      "media": {
+        "type": "image",
+        "src": "fisika/ch1/rangkaian-kapasitor-kombinasi.svg",
+        "alt": "Diagram skematik rangkaian kombinasi kapasitor seri-paralel. Dua kapasitor C1 = 6 μF dan C2 = 3 μF dirangkai secara seri pada cabang atas, kemudian cabang seri tersebut diparalelkan dengan kapasitor C3 = 4 μF pada cabang bawah, dan dihubungkan ke sumber tegangan baterai V = 12 V.",
+        "caption": "Diagram rangkaian kombinasi kapasitor seri-paralel yang dihubungkan ke sumber tegangan 12 V."
+      },
+      "question": "Perhatikan diagram rangkaian kapasitor. Tiga buah kapasitor masing-masing C₁ = 6 μF, C₂ = 3 μF, dan C₃ = 4 μF dirangkai sebagai berikut: kapasitor C₁ dan C₂ dirangkai seri, lalu rangkaian seri tersebut dirangkai paralel dengan kapasitor C₃. Rangkaian kombinasi ini kemudian dihubungkan ke sumber tegangan baterai V = 12 V. Tentukan kapasitas total pengganti rangkaian (C_total) dan besar muatan listrik yang tersimpan pada kapasitor C₁ (Q₁)!",
+      "options": [
+        {
+          "id": "A",
+          "text": "C_total = 6 μF dan Q₁ = 24 μC"
+        },
+        {
+          "id": "B",
+          "text": "C_total = 4 μF dan Q₁ = 12 μC"
+        },
+        {
+          "id": "C",
+          "text": "C_total = 6 μF dan Q₁ = 48 μC"
+        },
+        {
+          "id": "D",
+          "text": "C_total = 9 μF dan Q₁ = 72 μC"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Langkah 1: Kapasitas pengganti seri C₁ dan C₂: 1/C_s = 1/C₁ + 1/C₂ = 1/6 + 1/3 = (1 + 2)/6 = 3/6 = 1/2 ⇒ C_s = 2 μF. Langkah 2: Kapasitas total rangkaian (C_s paralel dengan C₃): C_total = C_s + C₃ = 2 μF + 4 μF = 6 μF. Langkah 3: Menentukan muatan pada C₁: Cabang seri C_s terhubung paralel langsung ke sumber tegangan 12 V, sehingga beda potensial cabang seri adalah V_s = 12 V. Muatan total pada cabang seri adalah Q_s = C_s · V_s = 2 μF · 12 V = 24 μC. Karena pada susunan seri muatan setiap kapasitor adalah sama dengan muatan total cabang serinya, maka Q₁ = Q₂ = Q_s = 24 μC (Buku Siswa hlm. 20–22).",
+      "source": {
+        "student_book": {
+          "pages": "20-22",
+          "section": "Bab 1, Subbab D: Rangkaian Kapasitor Seri dan Paralel"
+        },
+        "teacher_guide": {
+          "pages": "27-28",
+          "section": "Panduan Pembelajaran Bab 1, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis rangkaian kombinasi kapasitor seri-paralel disusun mandiri dengan dukungan visual SVG diagram rangkaian sesuai konsep Buku Siswa hlm. 20–22.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-D: Menghitung kapasitas pengganti dan distribusi muatan pada rangkaian kombinasi kapasitor seri-paralel",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 20-22 (Rangkaian Kapasitor)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 27-28"
+        },
+        "authoring_statement": "Persoalan kombinasi kapasitor dirancang orisinal dengan topologi jelas dan nilai numerik bulat tanpa menyalin soal buku teks."
+      }
+    },
+    {
+      "id": "FIS12-C01-M04-Q03",
+      "chapter_id": "FIS12-C01",
+      "topic_id": "FIS12-C01-D",
+      "skill": "analyze",
+      "cognitive_level": "analyze",
+      "difficulty": "hard",
+      "question": "Sebuah kapasitor keping sejajar dengan dielektrik udara mula-mula dihubungkan ke baterai bertegangan V₀ hingga bermuatan penuh Q₀ dan menyimpan energi elektrostatik sebesar W₀. Baterai kemudian DILEPASKAN sehingga kapasitor terisolasi (muatannya terperangkap konstan). Ruang di antara kedua keping kemudian disisipi penuh dengan bahan dielektrik yang memiliki konstanta dielektrik K = 4. Bagaimanakah perbandingan tegangan baru (V') dan energi elektrostatik baru (W') yang tersimpan di dalam kapasitor dibandingkan nilai awalnya?",
+      "options": [
+        {
+          "id": "A",
+          "text": "V' = 4 V₀ dan W' = 16 W₀"
+        },
+        {
+          "id": "B",
+          "text": "V' = V₀ dan W' = 4 W₀"
+        },
+        {
+          "id": "C",
+          "text": "V' = 1/4 V₀ dan W' = 1/4 W₀"
+        },
+        {
+          "id": "D",
+          "text": "V' = 1/4 V₀ dan W' = 4 W₀"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Karena baterai dilepaskan sebelum dielektrik disisipkan, muatan listrik pada kapasitor tetap konstan: Q' = Q₀. Kapasitansi kapasitor meningkat menjadi C' = K·C₀ = 4 C₀. Tegangan baru antara kedua keping: V' = Q'/C' = Q₀/(4 C₀) = 1/4 V₀. Energi elektrostatik yang tersimpan dihitung menggunakan rumus W = Q²/(2C): W' = (Q')²/(2C') = Q₀²/(2 · 4C₀) = 1/4 · (Q₀²/(2C₀)) = 1/4 W₀. Berkurangnya energi elektrostatik terjadi karena medan listrik kapasitor melakukan usaha mekanik saat menarik lembaran bahan dielektrik masuk ke dalam celah keping (Buku Siswa hlm. 17–20).",
+      "source": {
+        "student_book": {
+          "pages": "17-20",
+          "section": "Bab 1, Subbab C & D: Energi Tersimpan pada Kapasitor dan Dielektrik"
+        },
+        "teacher_guide": {
+          "pages": "26-28",
+          "section": "Panduan Pembelajaran Bab 1, Subbab D"
+        }
+      },
+      "provenance": "Skenario orisinal analisis energi tersimpan dan tegangan kapasitor terisolasi saat disisipi dielektrik dirancang mandiri berdasarkan hukum kekekalan muatan dan termodinamika dielektrik Buku Siswa hlm. 17–20.",
+      "source_basis": {
+        "curriculum_framework": "Kurikulum Merdeka (Fase F - Kelas XII Edisi 2022)",
+        "competency_target": "FIS12-C01-D: Menganalisis perubahan energi elektrostatik tersimpan dan beda potensial kapasitor terisolasi berdielektrik",
+        "concept_reference": {
+          "student_book": "Buku Siswa Fisika Kelas XII hlm. 17-20 (Energi Kapasitor dan Dielektrik)",
+          "teacher_guide": "Buku Panduan Guru Fisika Kelas XII hlm. 26-28"
+        },
+        "authoring_statement": "Persoalan kapasitor terisolasi berdielektrik dirancang mandiri untuk menguji pemahaman fisis mendalam mengenai kekekalan muatan vs kekekalan tegangan."
+      }
+    }
+  ]
+}
